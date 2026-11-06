@@ -8,7 +8,7 @@
 <meta name="description" content="OpenMotor: human reaching experiments in one format. 97 studies of sensorimotor adaptation, one row per trial, downloadable.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
 <style>
 /* Layout: dark navy header and hero (text beside a real learning-curve chart, wave line art behind),
    a white stats strip overlapping the hero edge, three link cards, then light content pages.
@@ -345,6 +345,37 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
 @media (max-width: 1000px) { .ct-top, .ct-form-grid { grid-template-columns: minmax(0, 1fr); } .ct-fields { padding-right: 0; border-right: 0; } .ct-review { grid-template-columns: minmax(0, 1fr); } .rv { border-left: 0; padding-left: 0; } }
 @media (max-width: 700px) { .steps { grid-template-columns: minmax(0, 1fr); } .step-arrow { display: none; } .two-f, .three-f { grid-template-columns: minmax(0, 1fr); } }
 
+/* add-your-dataset top block: measured from the mockup (1536 px wide frame) */
+.ct-wrap { max-width: 1292px; }
+.page[data-view="contribute"] { padding-top: 18px; }
+.ct-head { padding-left: 18px; }
+.ct-head .crumbs { font-size: 15px; margin: 0 0 4px; }
+.ct-head h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; margin: 0; color: #14203a; }
+.ct-lead { font-size: 17.5px; line-height: 1.4; color: #2c3546; margin: 2px 0 0; max-width: none; }
+.ct-wrap .ct-top { grid-template-columns: minmax(0, 788fr) minmax(0, 441fr); gap: 23px; margin-top: 10px; align-items: stretch; }
+.ct-wrap .ct-card { border-radius: 14px; border: 1px solid #e3e9f1; box-shadow: 0 4px 18px -8px rgba(20, 40, 80, 0.14); padding: 13px 28px 13px; }
+.page .ct-wrap .ct-h { font-size: 26px; font-weight: 800; margin: 0 0 2px; line-height: 1.2; letter-spacing: -0.005em; color: #14203a; }
+.ct-desc { font-size: 16.5px; line-height: 1.34; color: #1f2735; margin: 0; max-width: none; }
+.ct-wrap .steps { margin: 14px 0 14px; grid-template-columns: minmax(0, 220fr) 46px minmax(0, 211fr) 46px minmax(0, 217fr); gap: 0; align-items: stretch; }
+.ct-wrap .steps > li:not(.step-arrow) { background: #f1f4f9; border-radius: 12px; padding: 7px 12px 8px 14px; gap: 12px; min-height: 0; align-items: flex-start; }
+.ct-wrap .step-n { width: 34px; height: 34px; background: #e3ecfb; border: 0; color: #2563d9; font-size: 19px; font-weight: 800; }
+.ct-wrap .steps b { font-size: 17.5px; font-weight: 700; line-height: 1.25; margin-top: 3px; color: #14203a; }
+.ct-wrap .steps span:not(.step-n) { font-size: 13.5px; line-height: 1.3; color: #364051; margin-top: 3px; }
+.ct-wrap .step-arrow .icon { width: 17px; height: 17px; stroke-width: 1.8; color: #2c3546; }
+.ct-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.ct-btn-primary, .ct-btn-outline { display: inline-flex; align-items: center; gap: 10px; height: 37px; padding: 0 22px; border-radius: 6px; font-family: var(--font); font-size: 16.5px; font-weight: 700; text-decoration: none; }
+.ct-btn-primary { background: #1f6fe8; color: #ffffff; }
+.ct-btn-primary:hover { background: #1a5fcc; color: #ffffff; }
+.ct-btn-outline { background: #ffffff; color: #14203a; border: 1px solid #c9d2df; padding: 0 18px 0 16px; }
+.ct-btn-outline:hover { border-color: var(--accent); color: #14203a; }
+.ct-btn-outline .icon { width: 19px; height: 19px; stroke-width: 1.8; }
+.ct-wrap .needs { gap: 3px; margin: 10px 0 10px; font-size: 16.5px; color: #14203a; }
+.ct-wrap .needs li { gap: 14px; }
+.ct-wrap .needs .icon { width: 26px; height: 26px; padding: 5px; border-radius: 6px; background: #e3ecfb; color: #2563d9; stroke-width: 2.6; }
+.ct-wrap .ct-help { padding-top: 11px; font-size: 15.5px; color: #3b4658; }
+.ct-wrap .ct-help .icon { width: 20px; height: 20px; color: #3b4658; stroke-width: 1.8; }
+.ct-wrap .ct-help a { color: #1f5fbf; text-decoration: underline; }
+
 .tip { position: fixed; z-index: 40; pointer-events: none; background: var(--card); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 14px rgba(16, 32, 64, 0.18); border-radius: 8px; padding: 7px 10px; font-size: 14px; line-height: 1.35; max-width: 280px; }
 
 @media (max-width: 1100px) {
@@ -663,34 +694,36 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
 </section>
 
 <section class="view page" data-view="contribute" aria-labelledby="h-contribute" hidden>
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
-    <h1 id="h-contribute">Add your dataset</h1>
-    <p class="lead">Labs can contribute a new reaching dataset to OpenMotor by sharing trial-level data, metadata, citation information and license details.</p>
+  <div class="wrap ct-wrap">
+    <div class="ct-head">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
+      <h1 id="h-contribute">Add your dataset</h1>
+      <p class="ct-lead">Labs can contribute a new reaching dataset to OpenMotor by sharing trial-level data, metadata, citation information, and license details.</p>
+    </div>
     <div class="ct-top">
-      <div class="ct-card">
+      <div class="ct-card ct-submit">
         <h2 class="ct-h">Submit a study to OpenMotor</h2>
-        <p>Share your reaching experiment with the community. We will convert the data to the OpenMotor format, check it against your paper, and make it available alongside the other studies.</p>
+        <p class="ct-desc">Share your reaching experiment with the community. We'll help you package the data in the OpenMotor format, verify it, and make it available alongside other studies.</p>
         <ol class="steps">
           <li><span class="step-n">1</span><div><b>Prepare files</b><span>Organize your trial-level data (CSV or ZIP) and supporting files.</span></div></li>
           <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-          <li><span class="step-n">2</span><div><b>Add metadata</b><span>Give study details, citation information and a license.</span></div></li>
+          <li><span class="step-n">2</span><div><b>Add metadata</b><span>Provide study details, citation information, and a license.</span></div></li>
           <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-          <li><span class="step-n">3</span><div><b>Review and submit</b><span>Check your information and submit it for review by the OpenMotor team.</span></div></li>
+          <li><span class="step-n">3</span><div><b>Review &amp; submit</b><span>Check your information and submit for review by the OpenMotor team.</span></div></li>
         </ol>
-        <div class="dl-actions">
-          <a class="btn btn-primary" href="#contribute" id="ct-start">Start submission</a>
-          <a class="btn btn-outline" href="#format"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>View the format guide</a>
+        <div class="ct-btns">
+          <a class="ct-btn-primary" href="#contribute" id="ct-start">Start submission</a>
+          <a class="ct-btn-outline" href="#format"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>View submission guide</a>
         </div>
       </div>
-      <div class="ct-card">
+      <div class="ct-card ct-need">
         <h2 class="ct-h">What you'll need</h2>
         <ul class="needs">
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trial-level dataset (CSV or ZIP)</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>README or study notes</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Citation or paper information</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>License information</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Contact email</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Trial-level dataset (CSV or ZIP)</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>README or study notes</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Citation / paper information</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>License information</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Contact email</span></li>
         </ul>
         <p class="ct-help"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>Need help preparing your files? <a href="#format">See the format guide.</a></span></p>
       </div>
