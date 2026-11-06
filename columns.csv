@@ -1,0 +1,91 @@
+section,column,type,values_or_units,description
+Identification,dataset,text,,Dataset name. Most studies have one dataset; a few have two.
+Identification,experiment,text,,"Experiment within the dataset, usually one design or one source file. Labels follow the authors' files, not always the paper's experiment numbers."
+Identification,study,text,,"Study name: first author, year and journal of the paper."
+Identification,subject,text,,"One sequence of trials from one participant, coded within this dataset."
+Identification,person,text,,"One participant, coded within this dataset. A person can have more than one sequence, for example two runs."
+Identification,id_type,category,"prolific, mturk, uuid, lab, unknown",Kind of identifier the authors used for participants. The identifiers themselves are not included.
+Identification,person_link,category,"verified, assumed_unique, unknown","How sure it is that one person code is one human: verified (platform identifier or documented link), assumed_unique, or unknown (the same human may appear under more than one code)."
+Identification,group,text,,"Between-participant condition, in the authors' naming. Empty for single-group experiments."
+Identification,prior_exposure,category,"false, true, unknown","true if the participant had done an earlier perturbation experiment, including another study in OpenMotor; false if the paper excluded such participants; otherwise unknown."
+Identification,subject_excluded_by_authors,true/false,,The original analysis excluded this whole sequence.
+Identification,subject_exclusion_reason,text,,Why the authors excluded the sequence. Empty unless excluded.
+Identification,learner,true/false,,"The paper's learner classification, for papers that make one. Empty otherwise."
+Participant,age,number,years,Age in years.
+Participant,sex,category,"F, M, other",Sex or gender as reported.
+Participant,handedness,category,"right, left, ambi",Handedness.
+Participant,visual_acuity_logmar,number,logMAR,Visual acuity.
+Participant,medication_state,category,"on, off, unmedicated","Medication state at testing, for clinical groups."
+Participant,device,category,"mouse, trackpad, touchscreen, tablet, robot, kinarm, other, mouse_or_trackpad, unknown",Input device. tablet means a digitizing tablet; mouse_or_trackpad when the paper does not say which.
+Participant,setting,category,"online, lab",Tested online or in the lab.
+Participant,population,category,"healthy, parkinsons, cerebellar_degeneration, low_vision, deafferented, unknown",Sample population. Healthy older adults count as healthy.
+Trial order and timing,trial,integer,,"Trial number within the sequence, from 0, counting every trial in order across sessions, including practice, no-feedback, probe and placeholder trials."
+Trial order and timing,trial_orig,number,,"The authors' own trial number. It may restart at a new session, and is empty when the authors' files are ordered by position only."
+Trial order and timing,session,integer,,"Visit number within the sequence, from 0."
+Trial order and timing,block,text,,The authors' block label.
+Trial order and timing,phase,category,"practice, baseline, learning, aftereffect, washout, relearning, probe, transfer, other",Standardized phase of the block.
+Trial order and timing,trial_kind,category,"reach, proprio_probe, aim_report_only, other, demo, missing","reach; proprio_probe (the hand was moved passively, no reach); aim_report_only; demo (an instructed demonstration reach); missing (a placeholder row for a gap in the authors' trial numbers, with no data); other."
+Trial order and timing,break_before,true/false,,"A documented pause came before this trial: the first trial, a new session, a rest break or an instruction screen."
+Trial order and timing,time_s,number,seconds,Target onset time since the first trial of the sequence.
+Trial order and timing,gap_before_s,number,seconds,Time from the end of the previous trial to this trial's target onset.
+Target,target_angle,number,"degrees, 0 to 360","Direction of the target, the instructed goal of the movement. 0 points right and angles increase counter-clockwise."
+Target,target_id,integer,,"Target location within the experiment, one per direction and distance."
+Target,stimulus_angle,number,degrees,"Direction of the displayed stimulus when it differs from the goal, for example when people reach opposite the stimulus."
+Target,target_size_deg,number,degrees,Angular radius of the target at the target distance.
+Target,target_distance_norm,number,,Target distance divided by the largest target distance in the experiment.
+Target,target_visible_during_move,true/false,,False if the target disappeared when the movement started.
+Target,display_scale,number,,Display size relative to the experiment's reference display (1 = reference).
+Target,target_event,category,"none, jump, flicker",What the target did after movement onset.
+Target,target_jump,number,degrees,How far the target jumped after movement onset; 0 for none and flicker.
+Target,jump_time_ms,number,ms,Time of the target event after movement onset.
+Target,probe_kind,category,"none, active_post_reach, passive_robot, passive_experimenter","Proprioceptive probe: active_post_reach (felt hand reported after the participant's own reach), or passive_robot and passive_experimenter (the hand was moved for them)."
+Target,probe_location_deg,number,degrees,"On passive probes, where the hand was moved to."
+Instructions and cues,instr_goal,category,"cursor_to_target, hand_to_target, hand_to_angle","What participants were told to bring to the target: the cursor, the hand, or the hand at an instructed angle."
+Instructions and cues,goal_angle_deg,number,degrees,"Instructed hand direction relative to the target, when instr_goal is hand_to_angle."
+Instructions and cues,instr_strategy,category,"allowed, forbidden, maintain, remove, given_with_angle, unspecified","Instruction about aiming: allowed; forbidden (for example, ignore the cursor); maintain; remove (stop aiming and reach straight to the target); given_with_angle (told where to aim); unspecified."
+Instructions and cues,strategy_angle_deg,number,degrees,"Instructed aiming direction relative to the target, when instr_strategy is given_with_angle."
+Instructions and cues,instr_disclosure,category,"none, exists, exact","What participants were told about the perturbation: nothing, that there is one, or exactly what it is."
+Instructions and cues,instr_report,category,"none, aim_pre, hand_post, hand_passive","Report collected on the trial: an aim report, the felt hand position after a reach, or after a passive movement."
+Instructions and cues,aim_report_timing,category,"pre, post",Whether the aim report came before or after the reach.
+Instructions and cues,cue_elements,text,,"Contextual cues present before the movement, joined with | (for example light|tone or target_color:red)."
+Instructions and cues,cue_onset_to_go_ms,number,ms,Time from cue onset to the go signal.
+Instructions and cues,prep_time_lo_ms,number,ms,Lower bound of a forced preparation-time window.
+Instructions and cues,prep_time_hi_ms,number,ms,Upper bound of a forced preparation-time window.
+Instructions and cues,target_to_go_ms,number,ms,Time from target onset to the go signal.
+Instructions and cues,fb_cued,true/false,,"Participants knew before moving whether a cursor would be shown, from a blocked design or an explicit cue."
+Movement,hand_used,category,"right, left","Hand that moved, or that was moved on passive probes."
+Movement,hand_angle,number,degrees,"Direction of the hand relative to the target, counter-clockwise positive, from the earliest reliable measure the authors recorded (see hand_measure)."
+Movement,hand_angle_fb,number,degrees,"Hand direction that determined the cursor, for example the endpoint at the target distance."
+Movement,hand_measure,category,"endpoint, peak_velocity, fixed_distance, initial_direction, other",How hand_angle was measured. Constant within an experiment.
+Movement,hand_extent,number,,Movement extent in units of the target distance.
+Movement,rt_ms,number,ms,Reaction time.
+Movement,mt_ms,number,ms,Movement time.
+Movement,aim_report,number,degrees,Reported aiming direction relative to the target.
+Movement,hand_report,number,degrees,"Reported felt hand position relative to the target. On passive probes, the proprioceptive error."
+Movement,excluded_by_authors,true/false,,The original analysis excluded this trial. Also true on placeholder rows.
+Feedback,fb_visible,category,"none, online, endpoint, unknown","What was shown: no cursor, a cursor during the movement, or the cursor only at or after the end of the movement (including delayed feedback)."
+Feedback,fb_mode,category,"none, veridical, rotated, clamped, mirror, gain, other, unknown",How the cursor related to the hand.
+Feedback,fb_form,category,"cursor, cloud, blur, multi_cursor, none",Form of the feedback.
+Feedback,online_cursor,category,"none, veridical, perturbed",What the cursor did during the movement.
+Feedback,fb_endpoint_transform_only,true/false,,A veridical cursor during the movement was followed by a transformed endpoint.
+Feedback,rotation,number,degrees,Visuomotor rotation in force: cursor = hand_angle_fb + rotation. 0 on veridical trials.
+Feedback,clamp,number,degrees,"Cursor direction relative to the target on error-clamp trials, 0 degree clamps included."
+Feedback,mirror_axis_deg,number,"degrees, 0 to 180",Mirror axis on mirror trials.
+Feedback,gain,number,,Extent gain on gain trials: cursor extent = gain x hand extent.
+Feedback,translation_xy,text,,"Endpoint shift dx,dy in units of the target distance, on other-mapping trials."
+Feedback,fb_spread_deg,number,degrees,Spread of a cloud or blurred cursor at the target distance.
+Feedback,n_cursors,integer,,"Number of cursors, when more than one was shown."
+Feedback,cursor_error,number,degrees,"Where the cursor ended up relative to the original target, as the participant saw it. Empty when no cursor was shown."
+Feedback,cursor_extent_error,number,,"Cursor extent minus the target distance, in target-distance units."
+Feedback,fb_delay_ms,number,ms,Delay of the feedback after the end of the movement; 0 if immediate.
+Feedback,fb_duration_ms,number,ms,How long the feedback stayed on screen.
+Outcomes,outcome_channels,text,,"Outcome signals shown on the trial, joined with | (cursor, hit_color, points, reward_tone, symbolic_error)."
+Outcomes,reward,number,1 or 0,Reward delivered on the trial. Empty if the task had none.
+Outcomes,score,number,,"Number shown to the participant: points, or a signed error."
+Outcomes,score_max,number,,Maximum possible score.
+Outcomes,reward_space,category,"cursor, hand",Whether the reward rule was applied to the cursor or to the hand.
+Outcomes,reward_center_deg,number,degrees,Center of the rewarded zone relative to the target.
+Outcomes,reward_halfwidth_deg,number,degrees,Half-width of the rewarded zone.
+Outcomes,hit,number,1 or 0,The cursor hit the target.
+Outcomes,speed_warning,number,1 or 0,A too-slow or too-fast message was shown.
+Outcomes,other_warning,number,1 or 0,"Another warning was shown, for example too far."
