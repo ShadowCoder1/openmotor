@@ -376,6 +376,9 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
 .ct-wrap .ct-help .icon { width: 20px; height: 20px; color: #3b4658; stroke-width: 1.8; }
 .ct-wrap .ct-help a { color: #1f5fbf; text-decoration: underline; }
 
+.ct-fallback { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; background: #f4f8ff; border: 1px solid #c9d7f2; border-radius: 10px; font-size: 15px; }
+.ct-fallback .btn { padding: 6px 14px; font-size: 14.5px; }
+.sel { user-select: all; }
 .tip { position: fixed; z-index: 40; pointer-events: none; background: var(--card); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 14px rgba(16, 32, 64, 0.18); border-radius: 8px; padding: 7px 10px; font-size: 14px; line-height: 1.35; max-width: 280px; }
 
 @media (max-width: 1100px) {
@@ -743,7 +746,7 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
           <div class="drop" id="om-drop" tabindex="0" role="button" aria-describedby="om-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Drop a ZIP, CSV, or supporting files here</b><span>or click to browse</span></div>
           <input id="om-files" type="file" multiple hidden>
           <ul class="file-list" id="om-file-list"></ul>
-          <p class="drop-note" id="om-drop-note">Include the trial-level dataset (CSV or ZIP) and any supporting files (for example a README or task details). You attach them in the next step, on GitHub (up to 25 MB each); for larger data, give a repository link.</p>
+          <p class="drop-note" id="om-drop-note">Include the trial-level dataset (CSV or ZIP) and any supporting files (for example a README or task details). You attach them to the email in the next step (up to 25 MB in Gmail); for larger data, give a repository or Drive link.</p>
           <div class="ct-actions">
             <button type="button" class="btn btn-outline" id="om-save">Save draft</button>
             <button type="submit" class="btn btn-primary">Submit for review</button>
@@ -751,7 +754,8 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
           <p class="ct-status" id="om-status" role="status"></p>
         </div>
       </div>
-      <p class="ct-public">Submitting opens a public GitHub issue with these details filled in; you need a GitHub account to send it, and everything you enter will be visible.</p>
+      <p class="ct-public">Submitting opens an email to the OpenMotor team at <b>physical.intelligence.lab@gmail.com</b> with your details filled in; attach your files and press send.</p>
+      <div class="ct-fallback" id="om-fallback" hidden>No email window? Send your details and files to <b class="sel">physical.intelligence.lab@gmail.com</b> <button type="button" class="btn btn-outline" id="om-copy">Copy details</button></div>
     </form>
     <div class="ct-card ct-review">
       <div><h2 class="ct-h">Review process</h2><p>After you submit, our team will review your dataset:</p></div>
@@ -1197,6 +1201,18 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
     catch (err) { $("#om-status").textContent = "This browser would not save the draft; keep this page open instead."; }
   });
   $("#ct-start").addEventListener("click", function (e) { e.preventDefault(); ctForm.scrollIntoView({ behavior: "smooth", block: "start" }); setTimeout(function () { $("#om-name").focus({ preventScroll: true }); }, 400); });
+  var SUBMIT_TO = "physical.intelligence.lab@gmail.com";
+  function ctText() {
+    function v(id) { return $("#" + id).value.trim(); }
+    var lines = [
+      "OpenMotor dataset submission", "",
+      "Dataset name: " + v("om-name"), "Study or paper title: " + v("om-title"), "Lead author: " + v("om-author"),
+      "Lab or institution: " + v("om-lab"), "Publication year: " + v("om-year"), "Contact email: " + v("om-email"),
+      "License: " + v("om-license"), "Repository link: " + v("om-repo"), "", "Notes:", v("om-notes") || "(none)", "",
+      "Files:", ctFiles.length ? ctFiles.map(function (f) { return "- " + f.name + " (" + mb(f.size) + ")"; }).join("\n") : "(attached to this email, or see the repository link)"
+    ];
+    return { subject: "OpenMotor dataset submission: " + v("om-name"), body: lines.join("\n") };
+  }
   ctForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var bad = null;
@@ -1205,14 +1221,17 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
       el.setAttribute("aria-invalid", ok ? "false" : "true"); if (!ok && !bad) bad = el;
     });
     if (bad) { $("#om-status").textContent = "Fill in the fields marked with a star; the email needs to be a full address."; bad.focus(); return; }
-    function v(id) { return $("#" + id).value.trim(); }
-    var q = { template: "dataset-submission.yml", title: "[Dataset] " + v("om-name"), "dataset-name": v("om-name"), "paper-title": v("om-title"),
-      "lead-author": v("om-author"), lab: v("om-lab"), year: v("om-year"), email: v("om-email"), license: v("om-license"),
-      repository: v("om-repo"), notes: v("om-notes"),
-      files: ctFiles.length ? "Files to attach:\n" + ctFiles.map(function (f) { return "- " + f.name + " (" + mb(f.size) + ")"; }).join("\n") + "\n\n(Drag the files into this box.)" : "" };
-    var url = "https://github.com/" + (META.repo || "ShadowCoder1/openmotor") + "/issues/new?" + Object.keys(q).filter(function (k) { return q[k]; }).map(function (k) { return encodeURIComponent(k) + "=" + encodeURIComponent(q[k]); }).join("&");
-    var a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove();
-    $("#om-status").textContent = "A GitHub issue with your details opened in a new tab. Attach your files there and press Create to send it.";
+    var m = ctText();
+    var a = document.createElement("a");
+    a.href = "mailto:" + SUBMIT_TO + "?subject=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body + "\n\n(Attach your files to this email before sending.)");
+    document.body.appendChild(a); a.click(); a.remove();
+    $("#om-status").textContent = "An email to the OpenMotor team should have opened with your details filled in. Attach your files and press send.";
+    $("#om-fallback").hidden = false;
+  });
+  $("#om-copy").addEventListener("click", function () {
+    var b = this, m = ctText();
+    navigator.clipboard.writeText("To: " + SUBMIT_TO + "\nSubject: " + m.subject + "\n\n" + m.body).then(function () { b.textContent = "Copied"; }, function () { b.textContent = "Select the address and copy it"; });
+    setTimeout(function () { b.textContent = "Copy details"; }, 2000);
   });
 
   /* ---------- views ---------- */
