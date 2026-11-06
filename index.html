@@ -99,7 +99,6 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); 
 #hero-chart { clear: both; }
 #hero-chart svg { display: block; overflow: visible; }
 #hero-chart text { font-family: var(--font); }
-.hero-cap { font-size: 14px; line-height: 1.45; color: var(--on-dark-3); margin-top: 8px; max-width: none; }
 
 /* ---------- stats strip + cards ---------- */
 .stats { position: relative; z-index: 2; margin-top: -64px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 10px 30px -12px rgba(16, 32, 64, 0.22); display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1.1fr) minmax(0, 1.35fr); }
@@ -307,7 +306,6 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
           <span><i style="background: var(--c-lowvision)"></i>Low vision</span>
         </div>
         <div id="hero-chart"></div>
-        <figcaption class="hero-cap" id="hero-cap"></figcaption>
       </figure>
     </div>
   </div>
@@ -567,7 +565,6 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
   /* ---------- hero chart (real data) ---------- */
   var heroGroups = [["Control", COL.control, "Control"], ["LV", COL.low, "Low vision"]];
   var heroN = HERO.groups.Control.n + HERO.groups.LV.n;
-  $("#hero-cap").textContent = "Real data from OpenMotor: mean hand angle (shading, standard error) of " + HERO.groups.Control.n + " control and " + HERO.groups.LV.n + " low-vision participants adapting to a 60° rotation of the cursor, in the first " + HERO.last + " trials of Cipleu et al. (2026). Each point averages 5 trials per participant; angles are flipped for participants rotated the other way, so compensating is positive.";
   function drawHero() {
     var box = $("#hero-chart"), W = box.clientWidth;
     if (!W) return;
