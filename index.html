@@ -117,11 +117,23 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); 
 .card-link .chev { margin-left: auto; color: var(--ink-2); width: 22px; height: 22px; }
 
 /* ---------- content ---------- */
-main { padding-bottom: 20px; }
+main { padding-bottom: 0; }
+.band { padding-block: 56px 60px; }
+.band-about { padding-top: 64px; }
+.band-tint { background: #e9eef6; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.sec-title { font-size: 34px; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); }
+.sec-sub { font-size: 17.5px; color: var(--ink-2); margin: 8px 0 22px; max-width: 86ch; }
+.about-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 44px; align-items: start; }
+.about-text .sec-title { margin-bottom: 16px; }
+.about-text p { color: var(--ink-2); line-height: 1.62; }
+.figure-card { margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: 0 8px 24px -16px rgba(16, 32, 64, 0.35); }
+.figure-card figcaption { font-size: 14px; line-height: 1.5; color: var(--ink-2); margin: 12px 2px 2px; }
+.figure-card figcaption b { color: var(--ink); }
+.chart-note { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
 .section { margin-top: 56px; }
 .section > h2, .page h1 { font-size: 30px; font-weight: 700; line-height: 1.2; color: var(--ink); }
 .section > h2 { margin-bottom: 14px; }
-.page { padding-top: 40px; }
+.page { padding-top: 40px; padding-bottom: 64px; }
 .page h1 { margin-bottom: 10px; }
 .page h2 { font-size: 23px; font-weight: 700; margin: 36px 0 12px; }
 .page h3 { font-size: 18px; font-weight: 700; margin: 26px 0 8px; }
@@ -131,7 +143,7 @@ main { padding-bottom: 20px; }
 figure.fig { margin: 0; }
 .fig figcaption { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); margin-top: 10px; }
 .fig figcaption b { color: var(--ink); }
-.photos { display: grid; grid-template-columns: 1.46fr 1.37fr; gap: 14px; align-items: start; }
+.photos { display: grid; grid-template-columns: 1.46fr 1.37fr; gap: 12px; align-items: start; }
 .photo { position: relative; margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--card); }
 .photo img { display: block; width: 100%; height: auto; }
 .photo .letter { position: absolute; left: 10px; top: 10px; width: 26px; height: 26px; border-radius: 50%; background: var(--card); color: var(--ink); font-weight: 700; font-size: 15px; display: grid; place-items: center; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); }
@@ -205,11 +217,13 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
 .btn-light:hover { background: #f4f8ff; color: var(--accent-dark); }
 
 /* footer */
-.site-footer { margin-top: 72px; background: var(--navy-900); color: var(--on-dark-2); }
-.site-footer .wrap { padding-block: 30px 36px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 10px 48px; font-size: 14.5px; }
+.site-footer { margin-top: 0; background: var(--navy-900); color: var(--on-dark-2); }
+.site-footer .wrap { padding-block: 36px 42px; display: grid; grid-template-columns: minmax(0, 0.9fr) 1px minmax(0, 1.4fr); gap: 10px 44px; align-items: start; font-size: 15px; }
+.foot-sep { align-self: stretch; background: var(--line-dark); }
 .site-footer p { margin: 0 0 6px; max-width: none; }
 .site-footer a { color: var(--on-dark); }
-.site-footer .foot-brand { color: var(--on-dark); font-weight: 700; font-size: 17px; }
+.site-footer .foot-brand { display: flex; align-items: center; gap: 12px; color: var(--on-dark); font-weight: 700; font-size: 23px; margin-bottom: 10px; }
+.site-footer .foot-brand svg { width: 30px; height: 30px; flex: none; }
 
 .tip { position: fixed; z-index: 40; pointer-events: none; background: var(--card); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 14px rgba(16, 32, 64, 0.18); border-radius: 8px; padding: 7px 10px; font-size: 14px; line-height: 1.35; max-width: 280px; }
 
@@ -224,7 +238,12 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
   .hero h1 { font-size: 36px; }
   .cards { grid-template-columns: minmax(0, 1fr); }
   .two { grid-template-columns: minmax(0, 1fr); }
+  .about-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; }
   .site-footer .wrap { grid-template-columns: minmax(0, 1fr); }
+  .foot-sep { display: none; }
+}
+@media (max-width: 430px) {
+  .photos { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 760px) {
   body { font-size: 16px; }
@@ -236,7 +255,8 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
   .stat:nth-child(n+3) { border-top: 1px solid var(--border); }
   .stat:nth-child(5) { grid-column: 1 / -1; }
   .stat:nth-child(4) { border-left: 1px solid var(--border); }
-  .photos { grid-template-columns: minmax(0, 1fr); }
+  .sec-title { font-size: 28px; }
+  .band { padding-block: 44px 48px; }
   .format-grid { grid-template-columns: minmax(0, 1fr); }
   .filters .f-sort { display: grid; }
   .site-nav { margin-left: -12px; }
@@ -329,12 +349,16 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
         <svg class="icon chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
       </a>
     </div>
+  </div>
 
-    <div class="section">
-      <h2>About OpenMotor</h2>
-      <p id="about-1"></p>
-      <p>Every experiment has been converted, trial by trial, into the same table: one row per trial, the same 90 columns, the same units and the same sign conventions. Each conversion was checked against results reported in its paper.</p>
-      <figure class="fig" style="margin-top: 22px">
+  <div class="band band-about">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <h2 class="sec-title">About OpenMotor</h2>
+        <p id="about-1"></p>
+        <p>Every experiment has been converted, trial by trial, into the same table: one row per trial, the same 90 columns, the same units and the same sign conventions. Each conversion was checked against results reported in its paper.</p>
+      </div>
+      <figure class="figure-card">
         <div class="photos">
           <div class="photo"><span class="letter" aria-hidden="true">A</span><img src="img/hewitson2023-fig1.jpg" width="1000" height="685" alt="Illustration of a seated participant holding the handle of a robotic arm beneath a horizontal display that shows a start point and a target."></div>
           <div class="photo"><span class="letter" aria-hidden="true">B</span><img src="img/clayton2024-fig1.jpg" width="900" height="656" alt="Drawing of a laptop whose screen shows targets at 45, 90 and 135 degrees, a cursor travelling to the 45 degree target, and a dashed arrow labelled adapted hand path."></div>
@@ -342,9 +366,12 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
         <figcaption><b>Two of the setups in OpenMotor.</b> (A) In the lab: the participant holds the handle of a KINARM endpoint robot and sees the targets and the cursor on a display above the arm, which keeps the hand out of view. From Hewitson, Kaplan and Crossley (2023), <i>PLoS Comput Biol</i> 19(9):e1010526. (B) On a laptop: after adapting to a 45&deg; rotation, the hand moves along the dashed path so that the cursor lands on the target. From Clayton et al. (2024), <i>PLoS ONE</i> 19(7):e0306276. Both reproduced under CC BY 4.0.</figcaption>
       </figure>
     </div>
+  </div>
 
-    <div class="section">
-      <h2>What is in OpenMotor</h2>
+  <div class="band band-tint">
+    <div class="wrap">
+      <h2 class="sec-title">What's in OpenMotor</h2>
+      <p class="sec-sub">A broad, standardized collection of human sensorimotor adaptation experiments.</p>
       <div class="two">
         <div class="panel">
           <div class="chart-title">Studies by year of publication</div>
@@ -353,11 +380,16 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
         <div class="panel">
           <div class="chart-title">Participants per study</div>
           <div class="chart" id="chart-people"></div>
-          <p class="fig" style="font-size: 14px; color: var(--muted); margin: 8px 0 0" id="people-note"></p>
+          <p class="chart-note" id="people-note"></p>
         </div>
       </div>
-      <h3 style="margin: 30px 0 10px; font-size: 20px">Manipulations</h3>
-      <p id="manip-text" style="color: var(--ink-2)"></p>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <h2 class="sec-title">Manipulations</h2>
+      <p class="sec-sub" id="manip-text"></p>
       <div class="table-card"><div class="table-wrap">
         <table class="data" id="manip-table">
           <thead><tr><th scope="col">Manipulation</th><th scope="col">What changes</th><th scope="col" class="num">Experiments</th></tr></thead>
@@ -365,7 +397,6 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
         </table>
       </div></div>
     </div>
-  </div>
 </section>
 
 <section class="view page" data-view="studies" aria-labelledby="h-studies" hidden>
@@ -489,10 +520,18 @@ ol.refs .held-tag { color: var(--muted); font-size: 14px; }
 <footer class="site-footer">
   <div class="wrap">
     <div>
-      <p class="foot-brand">OpenMotor</p>
+      <p class="foot-brand"><svg viewBox="0 0 34 34" aria-hidden="true">
+        <g style="fill: none; stroke: var(--on-dark)" stroke-width="1.7">
+          <circle cx="29.5" cy="17" r="2.3"/><circle cx="25.84" cy="8.16" r="2.3"/><circle cx="17" cy="4.5" r="2.3"/><circle cx="8.16" cy="8.16" r="2.3"/>
+          <circle cx="4.5" cy="17" r="2.3"/><circle cx="8.16" cy="25.84" r="2.3"/><circle cx="17" cy="29.5" r="2.3"/><circle cx="25.84" cy="25.84" r="2.3"/>
+        </g>
+        <line x1="17" y1="17" x2="23.9" y2="10.1" style="stroke: var(--on-dark)" stroke-width="2.3" stroke-linecap="round"/>
+        <circle cx="17" cy="17" r="2.8" style="fill: var(--on-dark)"/>
+      </svg>OpenMotor</p>
       <p>Human reaching experiments in one format.</p>
       <p id="foot-version"></p>
     </div>
+    <span class="foot-sep" aria-hidden="true"></span>
     <div>
       <p>OpenMotor is curated by the Tsay lab at Carnegie Mellon University. The data belong to the labs that collected them; each download names the paper to cite. Questions, corrections and removal requests: <a href="https://github.com/ShadowCoder1/openmotor/issues" target="_blank" rel="noopener">GitHub issues</a>.</p>
       <p>Setup figures on the home page are from Hewitson et al. (2023) and Clayton et al. (2024), CC BY 4.0. Icons from Lucide (ISC license).</p>
