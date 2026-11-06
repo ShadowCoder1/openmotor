@@ -1,0 +1,46 @@
+name: Dataset submission
+description: Contribute a reaching dataset to OpenMotor
+title: "[Dataset] "
+labels: ["dataset submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for contributing to OpenMotor. Attach your files in the Files box (up to 25 MB each), or give a repository link. This issue is public."
+  - type: input
+    id: dataset-name
+    attributes: {label: Dataset name, placeholder: FirstAuthor2025_Journal}
+    validations: {required: true}
+  - type: input
+    id: paper-title
+    attributes: {label: Study or paper title}
+    validations: {required: true}
+  - type: input
+    id: lead-author
+    attributes: {label: Lead author}
+    validations: {required: true}
+  - type: input
+    id: lab
+    attributes: {label: Lab or institution}
+    validations: {required: true}
+  - type: input
+    id: year
+    attributes: {label: Publication year}
+  - type: input
+    id: email
+    attributes: {label: Contact email}
+    validations: {required: true}
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options: ["CC BY 4.0", "CC0", "CC BY-NC 4.0", "MIT", "GPL-3.0", "Other or not sure"]
+    validations: {required: true}
+  - type: input
+    id: repository
+    attributes: {label: Repository link (OSF, GitHub, Zenodo or other)}
+  - type: textarea
+    id: files
+    attributes: {label: Files, description: "Drag your trial-level CSV or ZIP and any README here, or list where to find them."}
+  - type: textarea
+    id: notes
+    attributes: {label: Notes, description: "Experimental setup, known caveats, anything else."}

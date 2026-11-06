@@ -82,10 +82,11 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; color: var(--on-dark); background: linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 55%, var(--navy-700) 100%); }
 .hero .waves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.hero .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 36px; align-items: center; padding-block: 48px 112px; }
+.hero .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 36px; align-items: center; padding-block: 48px 112px; }
 .hero h1 { font-size: 46px; line-height: 1.08; font-weight: 700; letter-spacing: -0.01em; }
 .hero .lede { font-size: 19px; line-height: 1.5; color: var(--on-dark-2); margin-top: 16px; max-width: 34em; }
-.hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.hero .actions .btn { padding: 10px 15px; font-size: 15.5px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font); font-size: 16px; font-weight: 600; line-height: 1.2; padding: 11px 18px; border-radius: 8px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
 .btn .icon { width: 18px; height: 18px; }
 .btn-primary { background: var(--accent); color: #ffffff; }
@@ -289,6 +290,61 @@ table.files td b { font-size: 16.5px; }
 table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
 @media (max-width: 900px) { .dl-cards { grid-template-columns: minmax(0, 1fr); } }
 
+/* add-your-dataset page */
+.crumbs { display: flex; gap: 8px; font-size: 15px; color: var(--ink-2); margin-bottom: 8px; }
+.crumbs a { text-decoration: none; }
+.ct-top { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 24px; margin-top: 24px; }
+.ct-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; }
+.ct-h { font-size: 26px; font-weight: 700; margin: 0 0 8px; }
+.steps { list-style: none; padding: 0; margin: 20px 0 22px; display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr); align-items: center; gap: 4px; }
+.steps > li:not(.step-arrow) { display: flex; gap: 12px; background: #f2f6fc; border-radius: 12px; padding: 14px; height: 100%; }
+.steps b { display: block; font-size: 16.5px; }
+.steps span:not(.step-n) { display: block; font-size: 14.5px; color: var(--ink-2); line-height: 1.4; margin-top: 2px; }
+.step-n { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--card); border: 1px solid #c9d7f2; color: var(--accent); font-weight: 700; display: grid; place-items: center; }
+.step-arrow { display: grid; place-items: center; color: var(--ink-2); }
+.step-arrow .icon { width: 18px; height: 18px; }
+.needs { list-style: none; padding: 0; margin: 14px 0 18px; display: grid; gap: 10px; font-size: 16.5px; }
+.needs li { display: flex; align-items: center; gap: 12px; }
+.needs .icon { width: 20px; height: 20px; padding: 3px; border-radius: 6px; background: var(--icon-bg); color: var(--accent); stroke-width: 2.5; }
+.ct-help { display: flex; gap: 10px; align-items: center; border-top: 1px solid var(--border); padding-top: 14px; margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.ct-help .icon { width: 19px; height: 19px; }
+.ct-form { margin-top: 24px; }
+.ct-form-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 28px; margin-top: 14px; }
+.ct-fields { display: grid; gap: 14px; padding-right: 28px; border-right: 1px solid var(--border); }
+.frow { display: grid; gap: 16px; }
+.two-f { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.three-f { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr) minmax(0, 1fr); }
+.ff { display: grid; gap: 6px; min-width: 0; }
+.ff label, .ct-upload > label { font-weight: 700; font-size: 15px; }
+.req { color: #d93a3a; }
+.ff input, .ff select, .ff textarea { font-family: var(--font); font-size: 15.5px; color: var(--ink); background: var(--card); border: 1px solid var(--border-2); border-radius: 8px; padding: 9px 12px; width: 100%; }
+.ff textarea { resize: vertical; }
+.ff input:focus, .ff select:focus, .ff textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
+.ff input[aria-invalid="true"], .ff select[aria-invalid="true"] { border-color: #d93a3a; }
+.in-icon { position: relative; }
+.in-icon .icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
+.in-icon input { padding-left: 38px; }
+.ct-upload { display: grid; gap: 8px; align-content: start; }
+.drop { display: grid; justify-items: center; gap: 6px; padding: 30px 16px; border: 2px dashed #9db7e6; border-radius: 12px; background: #f7faff; text-align: center; cursor: pointer; color: var(--ink); }
+.drop .icon { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.6; }
+.drop b { font-size: 16.5px; }
+.drop span { font-size: 14.5px; color: var(--ink-2); }
+.drop.over, .drop:hover { background: #eef4ff; border-color: var(--accent); }
+.file-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14.5px; }
+.file-list li { display: flex; justify-content: space-between; gap: 10px; background: #f4f7fb; border-radius: 6px; padding: 6px 10px; }
+.drop-note { font-size: 14px; color: var(--ink-2); margin: 0; }
+.ct-actions { display: flex; justify-content: flex-end; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.ct-status { margin: 0; font-size: 14.5px; color: var(--ink-2); min-height: 1.4em; }
+.ct-public { margin: 16px 0 0; font-size: 14px; color: var(--muted); }
+.ct-review { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1.1fr) repeat(3, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.ct-review p { margin: 0; color: var(--ink-2); }
+.rv { display: flex; gap: 14px; padding-left: 18px; border-left: 1px solid var(--border); }
+.rv-i { width: 44px; height: 44px; padding: 11px; border-radius: 50%; background: var(--icon-bg); color: var(--icon); flex: none; }
+.rv b { display: block; font-size: 16px; }
+.rv span { display: block; font-size: 14.5px; color: var(--ink-2); line-height: 1.4; margin-top: 2px; }
+@media (max-width: 1000px) { .ct-top, .ct-form-grid { grid-template-columns: minmax(0, 1fr); } .ct-fields { padding-right: 0; border-right: 0; } .ct-review { grid-template-columns: minmax(0, 1fr); } .rv { border-left: 0; padding-left: 0; } }
+@media (max-width: 700px) { .steps { grid-template-columns: minmax(0, 1fr); } .step-arrow { display: none; } .two-f, .three-f { grid-template-columns: minmax(0, 1fr); } }
+
 .tip { position: fixed; z-index: 40; pointer-events: none; background: var(--card); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 14px rgba(16, 32, 64, 0.18); border-radius: 8px; padding: 7px 10px; font-size: 14px; line-height: 1.35; max-width: 280px; }
 
 @media (max-width: 1100px) {
@@ -382,6 +438,7 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
         <div class="actions">
           <a class="btn btn-primary" href="#studies">Browse the studies</a>
           <a class="btn btn-ghost" href="#download"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download data</a>
+          <a class="btn btn-ghost" href="#contribute"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>Add your data</a>
         </div>
       </div>
       <figure class="chart-hero" style="margin: 0">
@@ -602,6 +659,73 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
     <h2>References</h2>
     <p>The papers for all 97 studies, sorted by first author. <button type="button" class="btn btn-light" id="copy-refs" style="padding: 6px 12px; font-size: 14.5px">Copy all references</button></p>
     <ol class="refs" id="refs"></ol>
+  </div>
+</section>
+
+<section class="view page" data-view="contribute" aria-labelledby="h-contribute" hidden>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
+    <h1 id="h-contribute">Add your dataset</h1>
+    <p class="lead">Labs can contribute a new reaching dataset to OpenMotor by sharing trial-level data, metadata, citation information and license details.</p>
+    <div class="ct-top">
+      <div class="ct-card">
+        <h2 class="ct-h">Submit a study to OpenMotor</h2>
+        <p>Share your reaching experiment with the community. We will convert the data to the OpenMotor format, check it against your paper, and make it available alongside the other studies.</p>
+        <ol class="steps">
+          <li><span class="step-n">1</span><div><b>Prepare files</b><span>Organize your trial-level data (CSV or ZIP) and supporting files.</span></div></li>
+          <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+          <li><span class="step-n">2</span><div><b>Add metadata</b><span>Give study details, citation information and a license.</span></div></li>
+          <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+          <li><span class="step-n">3</span><div><b>Review and submit</b><span>Check your information and submit it for review by the OpenMotor team.</span></div></li>
+        </ol>
+        <div class="dl-actions">
+          <a class="btn btn-primary" href="#contribute" id="ct-start">Start submission</a>
+          <a class="btn btn-outline" href="#format"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>View the format guide</a>
+        </div>
+      </div>
+      <div class="ct-card">
+        <h2 class="ct-h">What you'll need</h2>
+        <ul class="needs">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trial-level dataset (CSV or ZIP)</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>README or study notes</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Citation or paper information</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>License information</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Contact email</li>
+        </ul>
+        <p class="ct-help"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>Need help preparing your files? <a href="#format">See the format guide.</a></span></p>
+      </div>
+    </div>
+    <form class="ct-card ct-form" id="ct-form" novalidate>
+      <h2 class="ct-h">Dataset details</h2>
+      <div class="ct-form-grid">
+        <div class="ct-fields">
+          <div class="frow two-f"><div class="ff"><label for="om-name">Dataset name <span class="req" aria-hidden="true">*</span></label><input id="om-name" name="om-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" required></div><div class="ff"><label for="om-title">Study or paper title <span class="req" aria-hidden="true">*</span></label><input id="om-title" name="om-title" type="text" placeholder="e.g., Implicit adaptation in older adults" required></div></div>
+          <div class="frow two-f"><div class="ff"><label for="om-author">Lead author <span class="req" aria-hidden="true">*</span></label><input id="om-author" name="om-author" type="text" placeholder="Last name and initials" required></div><div class="ff"><label for="om-lab">Lab or institution <span class="req" aria-hidden="true">*</span></label><input id="om-lab" name="om-lab" type="text" placeholder="e.g., Tsay lab, Carnegie Mellon University" required></div></div>
+          <div class="frow three-f"><div class="ff"><label for="om-year">Publication year</label><input id="om-year" name="om-year" type="number" placeholder="e.g., 2025" min="1950" max="2100"></div><div class="ff"><label for="om-email">Contact email <span class="req" aria-hidden="true">*</span></label><input id="om-email" name="om-email" type="email" placeholder="name@university.edu" required></div><div class="ff"><label for="om-license">License <span class="req" aria-hidden="true">*</span></label><select id="om-license" name="om-license" required><option value="">Select a license</option><option>CC BY 4.0</option><option>CC0</option><option>CC BY-NC 4.0</option><option>MIT</option><option>GPL-3.0</option><option>Other or not sure</option></select></div></div>
+          <div class="ff"><label for="om-repo">Repository link (OSF, GitHub, Zenodo or other)</label><div class="in-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><input id="om-repo" name="om-repo" type="url" placeholder="https://"></div></div>
+          <div class="ff"><label for="om-notes">Notes</label><textarea id="om-notes" name="om-notes" rows="3" placeholder="Any additional details about the dataset, experimental setup, or known caveats (optional)."></textarea></div>
+        </div>
+        <div class="ct-upload">
+          <label for="om-files">Files <span class="req" aria-hidden="true">*</span></label>
+          <div class="drop" id="om-drop" tabindex="0" role="button" aria-describedby="om-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Drop a ZIP, CSV, or supporting files here</b><span>or click to browse</span></div>
+          <input id="om-files" type="file" multiple hidden>
+          <ul class="file-list" id="om-file-list"></ul>
+          <p class="drop-note" id="om-drop-note">Include the trial-level dataset (CSV or ZIP) and any supporting files (for example a README or task details). You attach them in the next step, on GitHub (up to 25 MB each); for larger data, give a repository link.</p>
+          <div class="ct-actions">
+            <button type="button" class="btn btn-outline" id="om-save">Save draft</button>
+            <button type="submit" class="btn btn-primary">Submit for review</button>
+          </div>
+          <p class="ct-status" id="om-status" role="status"></p>
+        </div>
+      </div>
+      <p class="ct-public">Submitting opens a public GitHub issue with these details filled in; you need a GitHub account to send it, and everything you enter will be visible.</p>
+    </form>
+    <div class="ct-card ct-review">
+      <div><h2 class="ct-h">Review process</h2><p>After you submit, our team will review your dataset:</p></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><div><b>We verify the format</b><span>Check that your data follow the OpenMotor standard.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg><div><b>We reproduce at least one reported result</b><span>Run an analysis to confirm the dataset matches the paper.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><div><b>We confirm metadata and licensing</b><span>Make sure the study details, citation and license are complete.</span></div></div>
+    </div>
   </div>
 </section>
 
@@ -1019,8 +1143,47 @@ table.files .dl { padding: 8px 14px; font-size: 15.5px; border-radius: 8px; }
     }).catch(function () {});
   }
 
+  /* ---------- add your dataset ---------- */
+  var ctForm = $("#ct-form"), ctFiles = [], DRAFT = "openmotor-draft";
+  var FIELDS = ["om-name", "om-title", "om-author", "om-lab", "om-year", "om-email", "om-license", "om-repo", "om-notes"];
+  function fileListRender() {
+    $("#om-file-list").innerHTML = ctFiles.map(function (f) { return "<li><span>" + esc(f.name) + "</span><span>" + mb(f.size) + "</span></li>"; }).join("");
+  }
+  function addFiles(list) { Array.prototype.forEach.call(list, function (f) { if (!ctFiles.some(function (g) { return g.name === f.name && g.size === f.size; })) ctFiles.push({ name: f.name, size: f.size }); }); fileListRender(); }
+  var drop = $("#om-drop"), picker = $("#om-files");
+  drop.addEventListener("click", function () { picker.click(); });
+  drop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); picker.click(); } });
+  picker.addEventListener("change", function () { addFiles(picker.files); picker.value = ""; });
+  ["dragenter", "dragover"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add("over"); }); });
+  ["dragleave", "drop"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove("over"); }); });
+  drop.addEventListener("drop", function (e) { if (e.dataTransfer && e.dataTransfer.files) addFiles(e.dataTransfer.files); });
+  try { var saved = JSON.parse(localStorage.getItem(DRAFT) || "null"); if (saved) FIELDS.forEach(function (id) { if (saved[id] != null) $("#" + id).value = saved[id]; }); } catch (err) {}
+  $("#om-save").addEventListener("click", function () {
+    var v = {}; FIELDS.forEach(function (id) { v[id] = $("#" + id).value; });
+    try { localStorage.setItem(DRAFT, JSON.stringify(v)); $("#om-status").textContent = "Draft saved in this browser."; }
+    catch (err) { $("#om-status").textContent = "This browser would not save the draft; keep this page open instead."; }
+  });
+  $("#ct-start").addEventListener("click", function (e) { e.preventDefault(); ctForm.scrollIntoView({ behavior: "smooth", block: "start" }); setTimeout(function () { $("#om-name").focus({ preventScroll: true }); }, 400); });
+  ctForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var bad = null;
+    ["om-name", "om-title", "om-author", "om-lab", "om-email", "om-license"].forEach(function (id) {
+      var el = $("#" + id), ok = el.value.trim() && (id !== "om-email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim()));
+      el.setAttribute("aria-invalid", ok ? "false" : "true"); if (!ok && !bad) bad = el;
+    });
+    if (bad) { $("#om-status").textContent = "Fill in the fields marked with a star; the email needs to be a full address."; bad.focus(); return; }
+    function v(id) { return $("#" + id).value.trim(); }
+    var q = { template: "dataset-submission.yml", title: "[Dataset] " + v("om-name"), "dataset-name": v("om-name"), "paper-title": v("om-title"),
+      "lead-author": v("om-author"), lab: v("om-lab"), year: v("om-year"), email: v("om-email"), license: v("om-license"),
+      repository: v("om-repo"), notes: v("om-notes"),
+      files: ctFiles.length ? "Files to attach:\n" + ctFiles.map(function (f) { return "- " + f.name + " (" + mb(f.size) + ")"; }).join("\n") + "\n\n(Drag the files into this box.)" : "" };
+    var url = "https://github.com/" + (META.repo || "ShadowCoder1/openmotor") + "/issues/new?" + Object.keys(q).filter(function (k) { return q[k]; }).map(function (k) { return encodeURIComponent(k) + "=" + encodeURIComponent(q[k]); }).join("&");
+    var a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove();
+    $("#om-status").textContent = "A GitHub issue with your details opened in a new tab. Attach your files there and press Create to send it.";
+  });
+
   /* ---------- views ---------- */
-  var VIEWS = ["home", "studies", "format", "download", "cite"];
+  var VIEWS = ["home", "studies", "format", "download", "cite", "contribute"];
   function show() {
     var v = location.hash.replace("#", "");
     if (v === "main") return;
