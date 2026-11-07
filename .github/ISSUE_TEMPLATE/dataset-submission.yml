@@ -1,5 +1,5 @@
 name: Dataset submission
-description: Contribute a reaching dataset to OpenMotor
+description: Contribute a motor control or motor learning dataset to OpenMotor
 title: "[Dataset] "
 labels: ["dataset submission"]
 body:
