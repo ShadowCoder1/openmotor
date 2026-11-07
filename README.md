@@ -13,8 +13,8 @@ Browse and download: https://shadowcoder1.github.io/openmotor/
 
 - `data/<dataset>.zip`: one file per dataset, with the trial table as CSV, a README (citation, lab, license,
   original deposit) and `columns.csv`.
-- `catalog.csv`: every study with its paper, lab, counts, license, tags, a link to the authors' original data
-  and its file format, and the standardized download.
+- `catalog.csv`: every study with its paper, lab, number of participants, license, tags, and a link to the
+  authors' original data and its file format.
 - `columns.csv`: what each of the 90 columns means.
 - `SHA256SUMS.txt`: checksums of the data files.
 
