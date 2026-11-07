@@ -869,7 +869,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   }
 
   /* home: topic chips and the most recent studies */
-  var CHIPS = [["Visuomotor rotation", "manipulation-abrupt-rotation"], ["Error clamp", "manipulation-error-clamp"], ["Implicit learning", "implicit-learning"],
+  var CHIPS = [["Abrupt rotation", "manipulation-abrupt-rotation"], ["Error clamp", "manipulation-error-clamp"], ["Implicit learning", "implicit-learning"],
                ["Explicit strategies", "explicit-strategies"], ["Reward-based learning", "reward-based-learning"], ["Proprioception", "proprioception"], ["Others", ""]];
   $("#chips").innerHTML = CHIPS.filter(function (c) { return !c[1] || TAGS[c[1]]; }).map(function (c) { return "<a class=\"chip\" href=\"" + (c[1] ? "#tag/" + c[1] : "#studies") + "\">" + esc(c[0]) + "</a>"; }).join("");
   var FEED_N = 5;
