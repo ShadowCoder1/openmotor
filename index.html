@@ -176,6 +176,8 @@ dl.facts small { display: block; color: var(--muted); font-size: 14px; margin-to
 .muted { color: var(--muted); }
 .page .study-h2 { font-size: 20px; margin: 30px 0 8px; }
 .st-ref { max-width: 900px; }
+.about ol { padding-left: 1.4em; max-width: 74ch; }
+.about li { margin: 4px 0; }
 .sp-nav { display: flex; justify-content: space-between; gap: 12px; max-width: 900px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--border); }
 .pill { display: inline-flex; align-items: center; padding: 11px 26px; border: 1px solid var(--border-2); border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 16.5px; text-decoration: none; }
 .pill:hover { border-color: var(--accent); color: var(--ink); }
@@ -436,6 +438,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
     <nav class="site-nav" aria-label="Main">
       <a href="#home" data-view="home">Home</a>
       <a href="#studies" data-view="studies">Studies</a>
+      <a href="#about" data-view="about">About</a>
       <span class="nav-sep" aria-hidden="true"></span>
       <a class="gh" id="gh-link" href="https://github.com/ShadowCoder1/openmotor" target="_blank" rel="noopener" aria-label="OpenMotor on GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
     </nav>
@@ -561,6 +564,25 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   </div>
 </section>
 
+<section class="view page" data-view="about" aria-labelledby="h-about" hidden>
+  <div class="wrap about">
+    <h1 id="h-about">About OpenMotor</h1>
+    <p class="lead">OpenMotor is a hub of publicly available datasets from human motor control and motor learning experiments. To browse them, open <a href="#studies">Studies</a>.</p>
+    <h2>Goal</h2>
+    <p>To make it easier for researchers to find and reuse open motor control and motor learning data. Each study links to the data its authors shared, with the paper, the file format, the abstract and tags. The data can be used to test new hypotheses, compare and validate models, estimate effect sizes when planning a study, and combine results across studies. Many datasets are also available in a standardized, trial-level format.</p>
+    <h2>Scope</h2>
+    <p>Any open dataset from human motor control or motor learning research. A dataset is included when:</p>
+    <ol>
+      <li>the data were collected from human participants,</li>
+      <li>the experiment involves a motor control or motor learning task, and</li>
+      <li>the data are publicly available and organized well enough to be reused.</li>
+    </ol>
+    <h2>People</h2>
+    <p>OpenMotor is curated by the <a href="https://www.tsaylab.com/" target="_blank" rel="noopener">Physical Intelligence Lab</a> at Carnegie Mellon University: Jonathan Tsay (principal investigator) and Sritej Padmanabhan.</p>
+    <p>To add a dataset, use <a href="#contribute">Add your data</a>. For questions or issues, email <a href="mailto:physical.intelligence.lab@gmail.com">physical.intelligence.lab@gmail.com</a>.</p>
+  </div>
+</section>
+
 <section class="view page" data-view="contribute" aria-labelledby="h-contribute" hidden>
   <div class="wrap ct-wrap">
     <div class="ct-head">
@@ -646,13 +668,12 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
     <div>
       <p class="foot-brand"><img src="img/openmotor-logo.png" width="155" height="30" alt="OpenMotor"></p>
       <p>Open data for motor control and motor learning.</p>
-      <p id="foot-version"></p>
-      <p class="foot-links"><a href="#studies">Studies</a><a href="#format">Data format</a><a href="#cite">How to cite</a><a href="#contribute">Add your data</a></p>
+      <p class="foot-links"><a href="#studies">Studies</a><a href="#format">Standardized data format</a><a href="#contribute">Add your data</a></p>
     </div>
     <span class="foot-sep" aria-hidden="true"></span>
     <div>
-      <p>OpenMotor is curated by the Tsay lab at Carnegie Mellon University. The data belong to the labs that collected them; each download names the paper to cite. Questions, corrections and removal requests: <a href="https://github.com/ShadowCoder1/openmotor/issues" target="_blank" rel="noopener">GitHub issues</a>.</p>
-      <p>Abstracts are reproduced from the papers, which every study links to. Icons from Lucide (ISC license).</p>
+      <p>OpenMotor is curated by the <a href="https://www.tsaylab.com/" target="_blank" rel="noopener">Physical Intelligence Lab</a> at Carnegie Mellon University. Email <a href="mailto:physical.intelligence.lab@gmail.com">physical.intelligence.lab@gmail.com</a> with any questions or issues.</p>
+      <!-- Icons: Lucide (https://lucide.dev, ISC license). Abstracts are reproduced from the papers each study links to. -->
     </div>
   </div>
 </footer>
@@ -694,7 +715,6 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   /* ---------- home ---------- */
   var stats = [[ICON.layers, fmt(T.studies), "Studies"], [ICON.users, fmt(T.people), "Participants"], [ICON.activity, fmt(T.trials), T.studies > META.standardizedStudies ? "Standardized trials" : "Trials"]];
   $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b>" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
-  $("#foot-version").textContent = "Version frozen on " + longDate(META.frozen) + ".";
 
   /* ---------- downloads ---------- */
   var filesByStudy = {};
@@ -888,8 +908,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
       (s.lab ? "<dt>Lab</dt><dd>" + esc(s.lab) + "</dd>" : "") +
       "<dt>License</dt><dd>" + esc(s.license) + (licNote ? "<small>" + esc(licNote) + "</small>" : "") + "</dd>" +
       "</dl>" +
-      "<h2 class=\"study-h2\">How to cite</h2>" + s.papers.map(function (p) { return "<p class=\"st-ref\">" + esc(refText(p)) + "</p>"; }).join("") +
-      "<p class=\"muted\">Please also cite OpenMotor; see <a href=\"#cite\">How to cite</a>.</p>" +
+      "<h2 class=\"study-h2\">Reference</h2>" + s.papers.map(function (p) { return "<p class=\"st-ref\">" + esc(refText(p)) + "</p>"; }).join("") +
       "<nav class=\"sp-nav\" aria-label=\"Other studies\">" + (prev ? "<a class=\"pill\" href=\"" + studyLink(prev) + "\" title=\"" + esc(prev._name) + "\">Previous</a>" : "<span></span>") +
       (next ? "<a class=\"pill\" href=\"" + studyLink(next) + "\" title=\"" + esc(next._name) + "\">Next</a>" : "") + "</nav>";
     return s._name;
@@ -1002,10 +1021,10 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   });
 
   /* ---------- views ---------- */
-  var VIEWS = ["home", "studies", "study", "format", "cite", "contribute"];
+  var VIEWS = ["home", "studies", "study", "about", "format", "cite", "contribute"];
   var ALIAS = { archive: "studies", tags: "studies", download: "studies" };
   var NAV_OF = { study: "studies" };
-  var TITLE = { studies: "Studies", format: "Data Format", cite: "How to Cite", contribute: "Add your dataset" };
+  var TITLE = { studies: "Studies", about: "About", format: "Standardized Data Format", cite: "How to Cite", contribute: "Add your dataset" };
   function show() {
     var h = location.hash.replace("#", ""), v = h, arg = "";
     if (v === "main") return;
