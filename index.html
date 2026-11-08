@@ -444,6 +444,18 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
 .std-fig figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
 .std-fig figcaption span { display: block; max-width: 120ch; }
 .std-fig figcaption a { display: inline-block; margin-top: 8px; font-weight: 600; }
+.std-list-card { background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; padding: 6px 26px 10px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04); }
+.std-list { list-style: none; margin: 0; padding: 0; columns: 3 300px; column-gap: 48px; }
+.std-list li { break-inside: avoid; display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 15.5px; }
+.std-who { min-width: 0; }
+.std-name { color: var(--ink); font-weight: 600; text-decoration: none; }
+.std-jr { display: block; color: var(--muted); font-size: 13.5px; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.std-name:hover { color: var(--link); text-decoration: underline; }
+.std-dl { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; flex: none; }
+.std-dl a { display: inline-flex; align-items: center; gap: 5px; font-size: 14.5px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.std-dl a:hover { text-decoration: underline; }
+.std-dl .icon { width: 15px; height: 15px; }
+.std-dl .sz { color: var(--muted); font-weight: 400; }
 @media (max-width: 900px) {
   .std-top { grid-template-columns: minmax(0, 1fr); }
   .std-intro { padding-right: 0; }
@@ -454,6 +466,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   .flow-arrow .icon { transform: rotate(90deg); }
   .page .std-h2 { font-size: 28px; margin-top: 44px; }
   .std-fig { padding: 12px 12px 14px; }
+  .std-list-card { padding: 4px 16px 8px; }
 }
 </style>
 
@@ -712,6 +725,9 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
       <a href="img/openmotor-insights.png" target="_blank" rel="noopener" title="Open the full-size figure"><img src="img/openmotor-insights.png" width="1788" height="1084" loading="lazy" alt="Six panels from the standardized data: a, hand bias by target direction; b, variability by target direction; c, variability of the dominant and non-dominant hand in left- and right-handers; d, variability by age; e, adaptation by target direction; f, implicit adaptation by error-clamp size."></a>
       <figcaption><span>(a) Accuracy and (b) precision of reaching by target direction; (c) precision of each hand in left- and right-handers; (d) precision across the lifespan; (e) learning by target direction; (f) implicit learning by error-clamp size.</span><a href="img/openmotor-insights.png" target="_blank" rel="noopener">Open the figure full size</a></figcaption>
     </figure>
+    <h2 class="std-h2" id="std-studies">Standardized studies</h2>
+    <p class="std-sub" id="std-list-lead"></p>
+    <div class="std-list-card"><ul class="std-list" id="std-list"></ul></div>
   </div>
 </section>
 
@@ -1038,7 +1054,20 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   });
 
   /* ---------- standardization ---------- */
-  var nStd = STUDIES.filter(function (s) { return FILES.some(function (f) { return f.catalog_study === s.id; }); }).length;
+  var FILES_OF = {};
+  FILES.forEach(function (f) { (FILES_OF[f.catalog_study] = FILES_OF[f.catalog_study] || []).push(f); });
+  var STD = STUDIES.filter(function (s) { return FILES_OF[s.id]; }).sort(function (a, b) { return a._first.localeCompare(b._first) || a.year - b.year; });
+  var nStd = STD.length;
+  $("#std-list-lead").innerHTML = "The " + nStd + " studies we standardized, by first author. Each ZIP has the trials as one CSV file, a README with the citation and license, and columns.csv." +
+    (META.bundle ? " <a href=\"" + esc(META.bundle.url) + "\">Download all of them in one ZIP (" + mb(META.bundle.bytes) + ")</a>." : "");
+  $("#std-list").innerHTML = STD.map(function (s) {
+    var fs = FILES_OF[s.id];
+    var t = s.papers[0].title;
+    return "<li><span class=\"std-who\"><a class=\"std-name\" href=\"" + studyLink(s) + "\" title=\"" + esc(t) + "\">" + esc(s._name) + "</a><span class=\"std-jr\" title=\"" + esc(t) + "\">" + esc(t) + "</span></span><span class=\"std-dl\">" + fs.map(function (f) {
+      var part = fs.length < 2 ? "" : (f.name.indexOf(s.id) === 0 ? f.name.slice(s.id.length).replace(/^_/, "") : f.name.replace(/^([A-Za-z']+?)(\d{4})_.*$/, "$1 $2")) + " ";
+      return "<a href=\"data/" + esc(f.file) + "\" download>" + ICON.download + esc(part) + "ZIP <span class=\"sz\">" + mb(f.bytes) + "</span></a>";
+    }).join("") + "</span></li>";
+  }).join("");
   $("#std-lead").textContent = "We standardized the data from " + nStd + " of the studies in OpenMotor: " + fmt(META.development.people) + " participants and " +
     (META.development.trials / 1e6).toFixed(2) + " million trials, converted to one format with one row per trial and the same 90 columns, units and sign conventions in every study. Code written for one study runs on all of them.";
 
