@@ -425,22 +425,40 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
 .beta-note { max-width: 86ch; margin: 18px 0 0; padding: 14px 18px; background: #fff7f8; border: 1px solid #f1c2cc; border-left: 4px solid var(--accent); border-radius: 8px; }
 .beta-note p { margin: 0; max-width: none; color: var(--ink-2); }
 .beta-note b { color: var(--ink); }
-.beta-toc { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 18px 0 0; padding-bottom: 14px; border-bottom: 1px solid var(--border); font-size: 16px; }
-.beta-toc a { text-decoration: none; font-weight: 600; }
-.beta-toc a:hover { text-decoration: underline; }
+.beta-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 28px 64px; align-items: start; padding-bottom: 6px; }
+.beta-top .lead, .beta-top .beta-note { max-width: none; }
+.beta-toc { display: grid; gap: 2px; padding: 16px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; margin-top: 6px; }
+.beta-toc-h { font-weight: 700; color: var(--ink-2); font-size: 15px; margin: 0 10px 4px; }
+.beta-toc a { display: block; padding: 8px 10px; border-radius: 8px; text-decoration: none; }
+.beta-toc a:hover { background: var(--icon-bg); }
+.beta-toc a b { display: block; color: var(--link); font-size: 16.5px; }
+.beta-toc a span { display: block; color: var(--ink-2); font-size: 14.5px; line-height: 1.4; }
+.beta-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 64px; align-items: start; }
+.beta-split > div > p, .beta-split > p { max-width: none; }
+.beta-row { align-items: end; margin-bottom: 14px; }
+.beta-row > p { margin: 0; }
+.bc-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.bc-tools .dl-search { flex: 1 1 260px; }
+.bc-count { font-size: 15px; color: var(--ink-2); }
+.fmt-fig { margin: 0; padding: 18px 22px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+.fmt-fig figcaption { font-weight: 700; color: var(--ink-2); font-size: 15px; margin: 0 0 12px; }
+.bs-top { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 64px; align-items: start; }
+.bs-top dl.facts { margin: 4px 0 0; max-width: none; grid-template-columns: 150px minmax(0, 1fr); }
+.bs-col { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.beta .sp-nav { max-width: none; }
 .beta-anchor { scroll-margin-top: 16px; }
 .page .beta h2 { font-size: 26px; margin-top: 44px; }
-.beta-stats { display: flex; flex-wrap: wrap; gap: 14px 0; margin: 4px 0 18px; }
-.beta-stats div { padding: 2px 34px 2px 0; }
-.beta-stats div + div { padding-left: 34px; border-left: 1px solid var(--border-2); }
+.beta-stats { display: grid; grid-template-columns: max-content max-content; gap: 16px 0; margin: 4px 0 20px; }
+.beta-stats div { padding: 2px 40px 2px 0; }
+.beta-stats div:nth-child(2n) { padding-left: 40px; border-left: 1px solid var(--border-2); }
 .beta-stats b { display: block; font-size: 30px; line-height: 1.1; font-weight: 800; color: var(--ink); }
 .beta-stats span { display: block; font-size: 15.5px; color: var(--ink-2); }
-.fmt-bars { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 7px 14px; align-items: center; max-width: 640px; margin: 4px 0 16px; font-size: 15px; }
+.fmt-bars { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 7px 14px; align-items: center; max-width: none; margin: 0; font-size: 15px; }
 .fmt-bars .fb-name { color: var(--ink); }
 .fmt-bars .fb-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .fmt-bars .fb-bar { height: 16px; background: var(--accent); border-radius: 0 4px 4px 0; min-width: 2px; }
 .fmt-bars .fb-val { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.beta-links { display: flex; flex-wrap: wrap; gap: 8px 22px; max-width: none; }
+.beta-links { display: grid; justify-items: start; gap: 6px; max-width: none; }
 .beta-links a { font-weight: 600; }
 table.bc-table td, table.bc-table th { padding: 10px 14px; }
 table.bc-table .bc-name { display: block; font-weight: 700; color: var(--ink); text-decoration: none; }
@@ -456,7 +474,10 @@ table.bc-table td.bc-dl { white-space: nowrap; }
 .beta-steps { padding-left: 1.4em; max-width: 80ch; margin: 0 0 16px; }
 .beta-steps li { margin: 3px 0; }
 .cv-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; }
-.cv-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 22px; align-items: start; }
+.cv-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px 48px; align-items: start; }
+.cv-text p { max-width: none; }
+.cv-text .beta-steps { margin: 0; }
+.cv-pick { display: grid; gap: 14px; }
 .cv-drop { padding: 22px 16px; }
 .cv-hint { display: block; color: var(--muted); font-size: 14px; line-height: 1.45; }
 .cv-intro { margin: 20px 0 0; color: var(--ink-2); }
@@ -511,9 +532,9 @@ details.tbl summary { cursor: pointer; color: var(--link); font-weight: 600; fon
 details.tbl .table-card { margin-top: 10px; }
 .bs-sub { font-size: 19px; color: var(--ink-2); margin: 2px 0 0; max-width: 90ch; }
 .bs-cite { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
-.bs-report { margin-top: 40px; padding: 22px 24px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; max-width: 980px; display: grid; gap: 14px; }
+.bs-report { margin-top: 40px; padding: 24px 28px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 16px 48px; align-items: start; }
 .page .bs-report h2 { margin: 0; font-size: 24px; }
-.bs-report > p { margin: 0; color: var(--ink-2); }
+.bs-report .bs-col > p { margin: 0; color: var(--ink-2); max-width: none; }
 .bs-report fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
 .bs-report fieldset legend { font-weight: 700; font-size: 15px; margin-bottom: 6px; padding: 0; }
 .bs-report fieldset label { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; cursor: pointer; }
@@ -522,13 +543,15 @@ details.tbl .table-card { margin-top: 10px; }
 .page .fig h3 { margin: 0 0 4px; font-size: 19px; }
 .fig .fig-sub { color: var(--ink-2); margin: 0 0 10px; }
 .fig .chart { max-width: 920px; }
-.fig-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 34px; }
+.beta-method { margin: 0; font-size: 14.5px; }
+.fig-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 34px 64px; }
 @media (max-width: 1100px) { .fig-grid { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 900px) { .cv-grid, .cv-top { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 900px) { .cv-grid, .cv-top, .beta-top, .beta-split, .bs-top, .bs-report { grid-template-columns: minmax(0, 1fr); } .beta-row { align-items: start; } }
 @media (max-width: 760px) {
   .beta-stats { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 18px; }
   .beta-stats div, .beta-stats div + div { padding: 0; border-left: 0; }
-  .beta-stats b { font-size: 24px; }
+  .beta-stats div:nth-child(2n) { padding-left: 16px; }
+  .beta-stats b { font-size: 22px; white-space: nowrap; }
   .page .beta h2 { font-size: 23px; }
   table.bc-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   table.bc-table, table.bc-table tbody, table.bc-table tr, table.bc-table td { display: block; width: 100%; }
@@ -775,29 +798,40 @@ details.tbl .table-card { margin-top: 10px; }
 
 <section class="view page" data-view="beta" aria-labelledby="h-beta" hidden>
   <div class="wrap beta" id="beta-home">
-    <h1 id="h-beta">Standardized data <span class="beta-mark">Beta</span></h1>
-    <p class="lead">Besides linking to the data the authors shared, we converted most of the datasets in OpenMotor into one standardized format: one row per trial, with the same 90 columns and the same conventions in every study. This page is where you can see that work, check it, and try it on your own data.</p>
-    <div class="beta-note" role="note">
-      <p><b>This section is in beta.</b> We converted each dataset from the files its authors shared, and checked every experiment against at least one result reported in its paper or in the authors' own files. Mistakes are still possible, and the format may still change. Before you use a standardized file in your own work, compare it with the original data, and cite the original paper. If something looks wrong, open the study below and tell us.</p>
+    <div class="beta-top">
+      <div>
+        <h1 id="h-beta">Standardized data <span class="beta-mark">Beta</span></h1>
+        <p class="lead">Besides linking to the data the authors shared, we converted most of the datasets in OpenMotor into one standardized format: one row per trial, with the same 90 columns and the same conventions in every study. This page is where you can see that work, check it, and try it on your own data.</p>
+        <div class="beta-note" role="note">
+          <p><b>This section is in beta.</b> We converted each dataset from the files its authors shared, and checked every experiment against at least one result reported in its paper or in the authors' own files. Mistakes are still possible, and the format may still change. Before you use a standardized file in your own work, compare it with the original data, and cite the original paper. If something looks wrong, open the study below and tell us.</p>
+        </div>
+      </div>
+      <nav class="beta-toc" aria-label="On this page">
+        <p class="beta-toc-h">On this page</p>
+        <a href="#beta" data-jump="beta-work"><b>One format for every study</b><span>What we converted, and from which kinds of files</span></a>
+        <a href="#beta" data-jump="beta-check"><b>Check a study</b><span>Plots of each standardized study, and a way to tell us if something is wrong</span></a>
+        <a href="#beta" data-jump="beta-convert"><b>Convert your own data</b><span>See a CSV of your reaching trials in the OpenMotor format</span></a>
+        <a href="#beta" data-jump="beta-summary"><b>What the data show</b><span>Two results compared across studies</span></a>
+      </nav>
     </div>
-    <nav class="beta-toc" aria-label="On this page">
-      <a href="#beta" data-jump="beta-work">One format</a>
-      <a href="#beta" data-jump="beta-check">Check a study</a>
-      <a href="#beta" data-jump="beta-convert">Convert your data</a>
-      <a href="#beta" data-jump="beta-summary">What the data show</a>
-    </nav>
 
     <h2 id="beta-work" class="beta-anchor">One format for every study</h2>
-    <div class="beta-stats" id="beta-stats"></div>
-    <p id="beta-formats-lead"></p>
-    <div class="fmt-bars" id="beta-formats"></div>
-    <p class="beta-links" id="beta-links"></p>
+    <div class="beta-split">
+      <div>
+        <div class="beta-stats" id="beta-stats"></div>
+        <p id="beta-formats-lead"></p>
+        <p class="beta-links" id="beta-links"></p>
+      </div>
+      <figure class="fmt-fig"><figcaption>Kinds of files the authors shared, by number of studies</figcaption><div class="fmt-bars" id="beta-formats"></div></figure>
+    </div>
 
     <h2 id="beta-check" class="beta-anchor">Check a study</h2>
-    <p>Open a study to see its standardized data: who is in it, the trial schedule, and the average hand angle on every trial. If it is your study, check that it matches your paper, then tell us whether it looks right.</p>
-    <div class="st-tools" role="search">
-      <label class="dl-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="bc-q" type="search" placeholder="Search by author, title or journal" aria-label="Search the standardized studies" autocomplete="off"></label>
-      <span class="st-meta"><span id="bc-count" aria-live="polite"></span></span>
+    <div class="beta-split beta-row">
+      <p>Open a study to see its standardized data: who is in it, the trial schedule, and the average hand angle on every trial. If it is your study, check that it matches your paper, then tell us whether it looks right.</p>
+      <div class="bc-tools" role="search">
+        <label class="dl-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="bc-q" type="search" placeholder="Search by author, title or journal" aria-label="Search the standardized studies" autocomplete="off"></label>
+        <span class="bc-count" id="bc-count" aria-live="polite"></span>
+      </div>
     </div>
     <div class="table-card"><div class="table-wrap">
       <table class="data bc-table" id="bc-table">
@@ -808,17 +842,21 @@ details.tbl .table-card { margin-top: 10px; }
     <p class="st-foot"><button type="button" class="btn btn-outline" id="bc-more" hidden></button></p>
 
     <h2 id="beta-convert" class="beta-anchor">Convert your own data</h2>
-    <p>If your data are not in OpenMotor yet, you can see them in the OpenMotor format here. Choose a CSV file of reaching trials with one row per trial. The conversion runs in your browser: your file is not uploaded anywhere.</p>
-    <ol class="beta-steps">
-      <li>Choose your file.</li>
-      <li>Check how its columns were matched, and answer the questions marked as needed.</li>
-      <li>Check the plot, then download the converted file. To add it to OpenMotor, send it with <a href="#contribute">Add your data</a>.</li>
-    </ol>
     <div class="cv-box">
       <div class="cv-top">
-        <div class="drop cv-drop" id="cv-drop" tabindex="0" role="button" aria-describedby="cv-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Choose a CSV file</b><span>or drop it here</span></div>
-        <input id="cv-file" type="file" accept=".csv,.tsv,.txt,text/csv" hidden>
-        <div class="ff"><label for="cv-name">Dataset name</label><input id="cv-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" autocomplete="off"><small class="cv-hint" id="cv-drop-note">Used to name the converted file. The converter reads reaching tasks with hand angles. For other tasks, send your data through <a href="#contribute">Add your data</a> and we convert it for you.</small></div>
+        <div class="cv-text">
+          <p>If your data are not in OpenMotor yet, you can see them in the OpenMotor format here. Choose a CSV file of reaching trials with one row per trial. The conversion runs in your browser: your file is not uploaded anywhere.</p>
+          <ol class="beta-steps">
+            <li>Choose your file.</li>
+            <li>Check how its columns were matched, and answer the questions marked as needed.</li>
+            <li>Check the plot, then download the converted file. To add it to OpenMotor, send it with <a href="#contribute">Add your data</a>.</li>
+          </ol>
+        </div>
+        <div class="cv-pick">
+          <div class="drop cv-drop" id="cv-drop" tabindex="0" role="button" aria-describedby="cv-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Choose a CSV file</b><span>or drop it here</span></div>
+          <input id="cv-file" type="file" accept=".csv,.tsv,.txt,text/csv" hidden>
+          <div class="ff"><label for="cv-name">Dataset name</label><input id="cv-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" autocomplete="off"><small class="cv-hint" id="cv-drop-note">Used to name the converted file. The converter reads reaching tasks with hand angles. For other tasks, send your data through <a href="#contribute">Add your data</a> and we convert it for you.</small></div>
+        </div>
       </div>
       <div id="cv-work" hidden>
         <p class="cv-intro" id="cv-intro"></p>
@@ -837,7 +875,10 @@ details.tbl .table-card { margin-top: 10px; }
     </div>
 
     <h2 id="beta-summary" class="beta-anchor">What the data show</h2>
-    <p>With every experiment in one format, the same measure can be computed across studies with a few lines of code. Two first looks, from the experiments that used one constant rotation or error clamp.</p>
+    <div class="beta-split">
+      <p>With every experiment in one format, the same measure can be computed across studies with a few lines of code. Two first looks, from the experiments that used one constant rotation or error clamp. Click a dot to check where its number comes from.</p>
+      <p class="chart-note beta-method" id="beta-method"></p>
+    </div>
     <div id="beta-figs"><p class="muted">Loading...</p></div>
   </div>
 
@@ -847,6 +888,7 @@ details.tbl .table-card { margin-top: 10px; }
     <div id="bs-head"></div>
     <div id="bs-body"></div>
     <form class="bs-report" id="bs-report" novalidate>
+      <div class="bs-col">
       <h2 id="bs-report-h">Does this look right?</h2>
       <p>If you are an author of this study, or you have worked with its data, tell us whether the standardized version matches what you know. Your answer goes to the OpenMotor team by email.</p>
       <fieldset class="bs-verdict">
@@ -862,6 +904,8 @@ details.tbl .table-card { margin-top: 10px; }
         <label><input type="checkbox" value="Missing trials or experiments"> Missing trials or experiments</label>
         <label><input type="checkbox" value="Something else"> Something else</label>
       </fieldset>
+      </div>
+      <div class="bs-col">
       <div class="ff"><label for="bs-details">Details</label><textarea id="bs-details" rows="4" placeholder="What did you compare, and what differs? For example: the rotation in Experiment 2 started at trial 81, not 61."></textarea></div>
       <div class="frow three-f">
         <div class="ff"><label for="bs-name">Your name</label><input id="bs-name" type="text" autocomplete="name"></div>
@@ -871,6 +915,7 @@ details.tbl .table-card { margin-top: 10px; }
       <p class="cv-actions"><button type="submit" class="btn btn-primary">Send to the OpenMotor team</button></p>
       <p class="ct-status" id="bs-status" role="status"></p>
       <div class="ct-fallback" id="bs-fallback" hidden>No email window? Send it to <b class="sel">physical.intelligence.lab@gmail.com</b> <button type="button" class="btn btn-outline" id="bs-copy">Copy the message</button></div>
+      </div>
     </form>
     <nav class="sp-nav" aria-label="Other studies"><a class="pill" href="#beta" data-jump="beta-check">All standardized studies</a><a class="pill" id="bs-page" href="#studies">Study page</a></nav>
   </div>
@@ -1213,7 +1258,7 @@ details.tbl .table-card { margin-top: 10px; }
       .map(function (s) { return "<div><b>" + s[0] + "</b><span>" + s[1] + "</span></div>"; }).join("");
     $("#beta-stats").innerHTML = html;
     var F = META.beta.formats, max = F.reduce(function (m, f) { return Math.max(m, f.studies); }, 1);
-    $("#beta-formats-lead").textContent = "The authors shared these data in their own layouts and in " + F.length + " kinds of files. Every dataset was converted to the same table, so code written for one study runs on all of them. Kinds of files the authors shared, by number of studies:";
+    $("#beta-formats-lead").textContent = "The authors shared these data in their own layouts and in " + F.length + " kinds of files. Every dataset was converted to the same table, so code written for one study runs on all of them.";
     $("#beta-formats").innerHTML = F.map(function (f) {
       return "<span class=\"fb-name\">" + esc(f.name) + "</span><span class=\"fb-row\" title=\"" + esc(f.name) + ": " + f.studies + " studies\"><span class=\"fb-bar\" style=\"width:" + (100 * f.studies / max).toFixed(1) + "%\"></span><span class=\"fb-val\">" + f.studies + "</span></span>";
     }).join("");
@@ -1496,10 +1541,10 @@ details.tbl .table-card { margin-top: 10px; }
     files.forEach(function (f) { people += f.persons; trials += f.rows; });
     if (s.people) people = s.people;
     var p = s.papers[0];
-    $("#bs-head").innerHTML = "<p class=\"bs-sub\">" + esc(p.title) + "</p><p class=\"bs-cite\">" + esc(p.authors) + " (" + p.year + "). <i>" + esc(p.venue) + "</i>.</p>" +
-      "<dl class=\"facts\"><dt>Standardized data</dt><dd class=\"bc-dl\">" + dlLinks(s) + "<small>Each ZIP has the data as one CSV file, a README with the citation and license, and columns.csv.</small></dd>" +
+    $("#bs-head").innerHTML = "<div class=\"bs-top\"><div><p class=\"bs-sub\">" + esc(p.title) + "</p><p class=\"bs-cite\">" + esc(p.authors) + " (" + p.year + "). <i>" + esc(p.venue) + "</i>.</p></div>" +
+      "<dl class=\"facts bs-facts\"><dt>Standardized data</dt><dd class=\"bc-dl\">" + dlLinks(s) + "<small>Each ZIP has the data as one CSV file, a README with the citation and license, and columns.csv.</small></dd>" +
       "<dt>Participants</dt><dd>" + fmt(people) + "</dd><dt>Trials</dt><dd>" + fmt(trials) + "</dd>" +
-      "<dt>Original data</dt><dd class=\"orig\">" + origLinks(s) + "</dd></dl>";
+      "<dt>Original data</dt><dd class=\"orig\">" + origLinks(s) + "</dd></dl></div>";
     var body = $("#bs-body");
     body.innerHTML = inViewer ? "<p class=\"muted\">The plots load on the public OpenMotor site.</p>" : "<p class=\"muted\">Loading the plots...</p>";
     if (inViewer) return s._name + " | Beta";
@@ -1651,7 +1696,8 @@ details.tbl .table-card { margin-top: 10px; }
     host.innerHTML = "<div class=\"fig-grid\">" +
       "<div class=\"fig\"><h3>How much of a rotation people learn</h3><p class=\"fig-sub\">Hand angle at the end of the first block of a constant visuomotor rotation, as a percentage of the rotation. Each dot is one group in one experiment: " + rot.length + " groups from " + nStudies(rot) + " studies.</p>" + legend(rot) + "<div id=\"fig-rot\"></div>" + figTable(rot, "rotation") + "</div>" +
       "<div class=\"fig\"><h3>Implicit adaptation to an error clamp</h3><p class=\"fig-sub\">Hand angle at the end of the first block of a constant error clamp: the cursor moves in a fixed direction whatever the hand does, and people are told to ignore it. " + cl.length + " groups from " + nStudies(cl) + " studies.</p>" + legend(cl) + "<div id=\"fig-clamp\"></div>" + figTable(cl, "clamp") + "</div>" +
-      "</div><p class=\"chart-note\">Each value is a participant's average hand angle over their last 20 trials with feedback in the block (at least 40 trials long), averaged over the group, with the sign flipped so that adaptation is positive. Only healthy participants; groups of fewer than 5, gradual rotations, contextual cues, instructed aiming angles, and groups whose participants had different schedules are left out. Dots at the same size are spread sideways a little so they do not hide each other. These are descriptive summaries, not a meta-analysis: the experiments differ in feedback, instructions, number of trials and more. Click a dot to check where its number comes from.</p>";
+      "</div>";
+    $("#beta-method").textContent = "Each value is a participant's average hand angle over their last 20 trials with feedback in the block (at least 40 trials long), averaged over the group, with the sign flipped so that adaptation is positive. Only healthy participants; groups of fewer than 5, gradual rotations, contextual cues, instructed aiming angles, and groups whose participants had different schedules are left out. Dots at the same size are spread sideways a little so they do not hide each other. These are descriptive summaries, not a meta-analysis: the experiments differ in feedback, instructions, number of trials and more.";
     BETA.drawFigs = function () {
       scatter($("#fig-rot"), { points: rot, xName: "Rotation size", yName: "Compensation (% of rotation)", yTick: "%", refY: 100, refLabel: "Full compensation", tip: figTip("rotation"), aria: "Compensation as a percentage of the rotation, against rotation size, for " + rot.length + " groups" });
       scatter($("#fig-clamp"), { points: cl, xName: "Clamp size", yName: "Hand angle (°)", tip: figTip("clamp"), aria: "Hand angle at the end of a clamp block, against clamp size, for " + cl.length + " groups" });
