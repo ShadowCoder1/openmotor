@@ -426,9 +426,8 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
 .std-lead { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); max-width: 64ch; margin: 0 0 22px; }
 .std-actions { margin: 0; max-width: none; }
 .std-actions .btn { padding: 12px 24px; font-weight: 700; border-radius: 8px; }
-.std-side { margin-top: 28px; padding: 8px 0 8px 44px; border-left: 1px solid var(--border-2); }
-.std-note { padding: 20px 24px; background: #fdf1f3; border: 1px solid #f4c9d1; border-left: 5px solid var(--accent); border-radius: 10px; box-shadow: 0 6px 18px -10px rgba(228, 3, 53, 0.35); }
-.std-note p { margin: 0; color: var(--ink-2); font-size: 16.5px; line-height: 1.65; max-width: none; }
+.std-side { margin-top: 28px; padding: 36px 0 8px 44px; border-left: 1px solid var(--border-2); }
+.std-note p { margin: 0; color: var(--ink-2); font-size: 16.5px; line-height: 1.6; max-width: 46ch; }
 .std-note b { color: var(--ink); }
 .flow { list-style: none; padding: 0; margin: 44px 0 0; display: grid; grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr); align-items: stretch; }
 .flow > li:not(.flow-arrow) { display: flex; gap: 18px; align-items: flex-start; background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; padding: 22px 22px 22px 20px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04), 0 8px 20px -12px rgba(30, 30, 35, 0.14); }
@@ -448,7 +447,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
 @media (max-width: 900px) {
   .std-top { grid-template-columns: minmax(0, 1fr); }
   .std-intro { padding-right: 0; }
-  .std-side { margin-top: 24px; padding: 0; border-left: 0; }
+  .std-side { margin-top: 26px; padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--border-2); }
   .page .std h1 { font-size: 36px; }
   .flow { grid-template-columns: minmax(0, 1fr); margin-top: 32px; }
   .flow-arrow { height: 36px; }
