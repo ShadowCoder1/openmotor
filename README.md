@@ -7,7 +7,7 @@ links to the data its authors shared and to a standardized version: the same tri
 columns, units and sign conventions, checked against results reported in the paper. It starts with 97 studies of
 reaching and sensorimotor adaptation (12,498 participants, 5,286,546 trials) and welcomes data from any motor task.
 
-Browse and download: https://shadowcoder1.github.io/openmotor/
+Browse and download: https://physicalintelligencelab.github.io/openmotor/
 
 ## Files
 
