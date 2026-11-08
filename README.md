@@ -21,7 +21,7 @@ problems, and converts a CSV of reaching trials to the OpenMotor format in the b
 - `columns.csv`: what each of the 90 columns means.
 - `SHA256SUMS.txt`: checksums of the data files.
 - `beta/`: the summaries behind the site's Beta page: the average hand angle on each trial for every group in
-  every experiment, and the cross-study points, computed from the data files.
+  every experiment, computed from the data files.
 
 ## Licenses
 

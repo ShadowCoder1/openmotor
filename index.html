@@ -418,7 +418,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   dl.facts dd { margin-bottom: 10px; }
 }
 
-/* ---------- beta: the standardized collection, study checks, converter, cross-study figures ---------- */
+/* ---------- beta: the standardized collection, study checks, converter ---------- */
 .site-nav .nav-beta { display: inline-flex; align-items: center; gap: 7px; }
 .beta-mark { display: inline-block; font-size: 12px; font-weight: 700; line-height: 1; padding: 4px 7px 3px; border-radius: 5px; background: var(--icon-bg); color: var(--accent-dark); vertical-align: middle; letter-spacing: 0.02em; }
 .page h1 .beta-mark { font-size: 15px; padding: 5px 9px 4px; margin-left: 6px; position: relative; top: -3px; }
@@ -811,7 +811,6 @@ details.tbl .table-card { margin-top: 10px; }
         <a href="#beta" data-jump="beta-work"><b>One format for every study</b><span>What we converted, and from which kinds of files</span></a>
         <a href="#beta" data-jump="beta-check"><b>Check a study</b><span>Plots of each standardized study, and a way to tell us if something is wrong</span></a>
         <a href="#beta" data-jump="beta-convert"><b>Convert your own data</b><span>See a CSV of your reaching trials in the OpenMotor format</span></a>
-        <a href="#beta" data-jump="beta-summary"><b>What the data show</b><span>Two results compared across studies</span></a>
       </nav>
     </div>
 
@@ -874,12 +873,6 @@ details.tbl .table-card { margin-top: 10px; }
       </div>
     </div>
 
-    <h2 id="beta-summary" class="beta-anchor">What the data show</h2>
-    <div class="beta-split">
-      <p>With every experiment in one format, the same measure can be computed across studies with a few lines of code. Two first looks, from the experiments that used one constant rotation or error clamp. Click a dot to check where its number comes from.</p>
-      <p class="chart-note beta-method" id="beta-method"></p>
-    </div>
-    <div id="beta-figs"><p class="muted">Loading...</p></div>
   </div>
 
   <div class="wrap beta" id="beta-study" hidden>
@@ -1243,7 +1236,7 @@ details.tbl .table-card { margin-top: 10px; }
     setTimeout(function () { b.textContent = "Copy details"; }, 2000);
   });
 
-  /* ---------- beta: the standardized collection, study checks, the converter, cross-study figures ---------- */
+  /* ---------- beta: the standardized collection, study checks, the converter ---------- */
   var SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"];
   var ONE_COLOR = "#e40335", REF_GRAY = "#6f7074", NOFB_FILL = "#ececef";
   var PHASE_NAME = { practice: "Practice", baseline: "Baseline", learning: "Learning", aftereffect: "Aftereffect", washout: "Washout", relearning: "Relearning", probe: "Probe" };
@@ -1563,7 +1556,7 @@ details.tbl .table-card { margin-top: 10px; }
     return s._name + " | Beta";
   }
   var rzT;
-  window.addEventListener("resize", function () { clearTimeout(rzT); rzT = setTimeout(function () { if (!$("#beta-study").hidden) redraws.forEach(function (f) { f(); }); if (!$("#beta-home").hidden && BETA.drawFigs) BETA.drawFigs(); if (!$("#cv-result").hidden && CV.draw) CV.draw(); }, 150); });
+  window.addEventListener("resize", function () { clearTimeout(rzT); rzT = setTimeout(function () { if (!$("#beta-study").hidden) redraws.forEach(function (f) { f(); }); if (!$("#cv-result").hidden && CV.draw) CV.draw(); }, 150); });
 
   /* the report form */
   function resetReport() {
@@ -1597,121 +1590,8 @@ details.tbl .table-card { margin-top: 10px; }
     setTimeout(function () { b.textContent = "Copy the message"; }, 2000);
   });
 
-  /* ---------- cross-study figures ---------- */
-  function scatter(el, cfg) {
-    el.innerHTML = "";
-    var box = document.createElement("div"); box.className = "chart"; el.appendChild(box);
-    var W = Math.max(300, Math.round(box.clientWidth - 8) || 600), small = W < 520, H = small ? 280 : 340;
-    var M = { l: (small ? 46 : 56) + (cfg.yTick ? 10 : 0), r: 16, t: 16, b: 44 };
-    var P = cfg.points, xs = P.map(function (p) { return p.x; }), ys = P.map(function (p) { return p.y; });
-    var x0 = 0, x1 = Math.max.apply(null, xs) * 1.05, y0 = Math.min(0, Math.min.apply(null, ys)), y1 = Math.max.apply(null, ys.concat(cfg.refY != null ? [cfg.refY] : []));
-    var pad = (y1 - y0) * 0.06; y0 -= pad; y1 += pad;
-    var px = function (v) { return M.l + (v - x0) / (x1 - x0) * (W - M.l - M.r); };
-    var py = function (v) { return M.t + (y1 - v) / (y1 - y0) * (H - M.t - M.b); };
-    var svg = sv("svg", { viewBox: "0 0 " + W + " " + H, role: "img", tabindex: "0", "aria-label": cfg.aria }, box);
-    ticks(y0, y1, small ? 4 : 6).forEach(function (v) {
-      if (v < y0 || v > y1) return;
-      sv("line", { x1: M.l, x2: W - M.r, y1: py(v), y2: py(v), stroke: v === 0 ? "#c9c9cc" : "#ececef", "stroke-width": 1 }, svg);
-      sv("text", { x: M.l - 8, y: py(v) + 4, "text-anchor": "end", class: "ax" }, svg).textContent = tickText(v) + (cfg.yTick || "");
-    });
-    ticks(x0, x1, small ? 5 : 8).forEach(function (v) {
-      if (v < x0 || v > x1) return;
-      sv("text", { x: px(v), y: H - M.b + 18, "text-anchor": "middle", class: "ax" }, svg).textContent = tickText(v) + "°";
-    });
-    sv("text", { x: (M.l + W - M.r) / 2, y: H - 6, "text-anchor": "middle", class: "ax-l" }, svg).textContent = cfg.xName;
-    sv("text", { transform: "translate(13," + (M.t + (H - M.t - M.b) / 2) + ") rotate(-90)", "text-anchor": "middle", class: "ax-l" }, svg).textContent = cfg.yName;
-    if (cfg.refY != null) {
-      sv("line", { x1: M.l, x2: W - M.r, y1: py(cfg.refY), y2: py(cfg.refY), stroke: REF_GRAY, "stroke-width": 1.5, "stroke-dasharray": "6 4" }, svg);
-      sv("text", { x: W - M.r - 4, y: py(cfg.refY) - 6, "text-anchor": "end", class: "ax-l" }, svg).textContent = cfg.refLabel;
-    }
-    var same = {};
-    P.forEach(function (p) { (same[p.x] = same[p.x] || []).push(p); });
-    Object.keys(same).forEach(function (k) {
-      var g = same[k].sort(function (a, b) { return a.y - b.y; });
-      g.forEach(function (p, j) {
-        var near = g.filter(function (q) { return Math.abs(py(q.y) - py(p.y)) < 9; }), r = near.indexOf(p);
-        p.dx = near.length > 1 ? (r - (near.length - 1) / 2) * 6 : 0;
-      });
-    });
-    var gP = sv("g", {}, svg);
-    P.forEach(function (p) { p.cx = px(p.x) + p.dx; p.cy = py(p.y); sv("circle", { cx: p.cx, cy: p.cy, r: 4.5, fill: p.color, stroke: "#ffffff", "stroke-width": 2 }, gP); });
-    var ring = sv("circle", { r: 8, fill: "none", stroke: "#202124", "stroke-width": 1.5, visibility: "hidden" }, svg);
-    var tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; box.appendChild(tip);
-    var cur = null;
-    function pick(p) {
-      cur = p;
-      if (!p) { tip.hidden = true; ring.setAttribute("visibility", "hidden"); svg.style.cursor = ""; return; }
-      ring.setAttribute("cx", p.cx); ring.setAttribute("cy", p.cy); ring.setAttribute("visibility", "visible"); svg.style.cursor = "pointer";
-      tip.innerHTML = cfg.tip(p); tip.hidden = false;
-      var sc = svg.getBoundingClientRect().width / W;
-      tipPlace(box, tip, p.cx * sc + 4, p.cy * sc + 6);
-    }
-    svg.addEventListener("pointermove", function (e) {
-      var r = svg.getBoundingClientRect(), sc = W / r.width, x = (e.clientX - r.left) * sc, y = (e.clientY - r.top) * sc, best = null, bd = 24 * sc;
-      P.forEach(function (p) { var d = Math.hypot(p.cx - x, p.cy - y); if (d < bd) { bd = d; best = p; } });
-      pick(best);
-    });
-    svg.addEventListener("pointerleave", function () { pick(null); });
-    svg.addEventListener("click", function () { if (cur) location.hash = "#beta/" + encodeURIComponent(cur.study); });
-    var order = P.slice().sort(function (a, b) { return a.x - b.x || a.y - b.y; }), oi = -1;
-    svg.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); oi = Math.max(0, Math.min(order.length - 1, oi + (e.key === "ArrowRight" ? 1 : -1))); pick(order[oi]); }
-      else if (e.key === "Enter" && cur) location.hash = "#beta/" + encodeURIComponent(cur.study);
-      else if (e.key === "Escape") pick(null);
-    });
-    svg.addEventListener("blur", function () { pick(null); });
-  }
-  var SETTING = { lab: { label: "In the lab", color: SERIES_COLORS[0] }, online: { label: "Online", color: SERIES_COLORS[1] } };
-  function figPoints(kind) {
-    return (BETA.summary.points || []).filter(function (p) { return p.kind === kind && FILES_OF[studyOfDataset(p.ds)]; }).map(function (p) {
-      var st = SETTING[p.setting] || SETTING.lab, sid = studyOfDataset(p.ds);
-      return { x: p.size, y: kind === "rotation" ? 100 * p.late / p.size : p.late, sem: kind === "rotation" ? 100 * p.sem / p.size : p.sem, color: st.color, setting: p.setting, src: p, study: sid };
-    });
-  }
-  function studyOfDataset(ds) { var f = FILES.filter(function (x) { return x.name === ds; })[0]; return f ? f.catalog_study : ds; }
-  function figTip(kind) {
-    return function (p) {
-      var s = BY_ID[p.study], q = p.src;
-      return "<b>" + esc(s ? s._name : p.study) + "</b><div>" + esc(expLabelOf(q)) + (q.label && q.label !== "All participants" ? ", " + esc(q.label) : "") + "</div>" +
-        "<div class=\"tr\"><strong>" + (kind === "rotation" ? num1(p.y) + "% of the rotation" : num1(p.y) + "°") + "</strong></div>" +
-        "<div>" + (kind === "rotation" ? "Rotation " : "Clamp ") + num1(q.size) + "°, " + q.n + " participants, " + (SETTING[q.setting] || SETTING.lab).label.toLowerCase() + "</div><div class=\"muted\">Click to check this study</div>";
-    };
-  }
-  function expLabelOf(q) {
-    var d = BETA.summary.datasets[q.ds], e = d && d.experiments.filter(function (x) { return x.id === q.exp; })[0];
-    return e ? e.label : q.exp;
-  }
-  function figTable(pts, kind) {
-    var rows = pts.slice().sort(function (a, b) { return a.x - b.x || b.y - a.y; });
-    return "<details class=\"tbl\"><summary>Show the numbers</summary><div class=\"table-card\"><div class=\"table-wrap\"><table class=\"data compact\"><thead><tr><th scope=\"col\">Study</th><th scope=\"col\">Experiment and group</th><th scope=\"col\" class=\"num\">" + (kind === "rotation" ? "Rotation" : "Clamp") + "</th><th scope=\"col\" class=\"num\">Participants</th><th scope=\"col\" class=\"num\">" + (kind === "rotation" ? "Compensation" : "Hand angle") + "</th><th scope=\"col\">Setting</th></tr></thead><tbody>" +
-      rows.map(function (p) { var s = BY_ID[p.study], q = p.src; return "<tr><td><a href=\"#beta/" + encodeURIComponent(p.study) + "\">" + esc(s ? s._name : p.study) + "</a></td><td>" + esc(expLabelOf(q)) + (q.label && q.label !== "All participants" ? ", " + esc(q.label) : "") + "</td><td class=\"num\">" + num1(q.size) + "°</td><td class=\"num\">" + q.n + "</td><td class=\"num\">" + (kind === "rotation" ? num1(p.y) + "%" : num1(p.y) + "°") + " ± " + num1(p.sem) + "</td><td>" + (SETTING[q.setting] || SETTING.lab).label + "</td></tr>"; }).join("") +
-      "</tbody></table></div></div></details>";
-  }
-  function renderFigs() {
-    var host = $("#beta-figs");
-    if (!BETA.summary) { host.innerHTML = "<p class=\"muted\">The figures could not be loaded.</p>"; return; }
-    var rot = figPoints("rotation"), cl = figPoints("clamp");
-    function nStudies(pts) { return Object.keys(pts.reduce(function (m, p) { m[p.study] = 1; return m; }, {})).length; }
-    function legend(pts) { return "<div class=\"legend\">" + ["lab", "online"].filter(function (k) { return pts.some(function (p) { return p.setting === k; }); }).map(function (k) { return "<span><i class=\"dot\" style=\"background:" + SETTING[k].color + "\"></i>" + SETTING[k].label + " (" + pts.filter(function (p) { return p.setting === k; }).length + ")</span>"; }).join("") + "</div>"; }
-    host.innerHTML = "<div class=\"fig-grid\">" +
-      "<div class=\"fig\"><h3>How much of a rotation people learn</h3><p class=\"fig-sub\">Hand angle at the end of the first block of a constant visuomotor rotation, as a percentage of the rotation. Each dot is one group in one experiment: " + rot.length + " groups from " + nStudies(rot) + " studies.</p>" + legend(rot) + "<div id=\"fig-rot\"></div>" + figTable(rot, "rotation") + "</div>" +
-      "<div class=\"fig\"><h3>Implicit adaptation to an error clamp</h3><p class=\"fig-sub\">Hand angle at the end of the first block of a constant error clamp: the cursor moves in a fixed direction whatever the hand does, and people are told to ignore it. " + cl.length + " groups from " + nStudies(cl) + " studies.</p>" + legend(cl) + "<div id=\"fig-clamp\"></div>" + figTable(cl, "clamp") + "</div>" +
-      "</div>";
-    $("#beta-method").textContent = "Each value is a participant's average hand angle over their last 20 trials with feedback in the block (at least 40 trials long), averaged over the group, with the sign flipped so that adaptation is positive. Only healthy participants; groups of fewer than 5, gradual rotations, contextual cues, instructed aiming angles, and groups whose participants had different schedules are left out. Dots at the same size are spread sideways a little so they do not hide each other. These are descriptive summaries, not a meta-analysis: the experiments differ in feedback, instructions, number of trials and more.";
-    BETA.drawFigs = function () {
-      scatter($("#fig-rot"), { points: rot, xName: "Rotation size", yName: "Compensation (% of rotation)", yTick: "%", refY: 100, refLabel: "Full compensation", tip: figTip("rotation"), aria: "Compensation as a percentage of the rotation, against rotation size, for " + rot.length + " groups" });
-      scatter($("#fig-clamp"), { points: cl, xName: "Clamp size", yName: "Hand angle (°)", tip: figTip("clamp"), aria: "Hand angle at the end of a clamp block, against clamp size, for " + cl.length + " groups" });
-    };
-    BETA.drawFigs();
-  }
-
   function showBetaHome() {
     if (!BETA.home) { BETA.home = true; betaStats(); renderBetaList(); }
-    if (!BETA.figs && !inViewer) {
-      BETA.figs = true;
-      fetch("beta/index.json").then(function (r) { return r.json(); }).then(function (d) { BETA.summary = d; renderFigs(); }).catch(function () { $("#beta-figs").innerHTML = "<p class=\"muted\">The figures could not be loaded. Reload the page to try again.</p>"; BETA.figs = false; });
-    } else if (inViewer) $("#beta-figs").innerHTML = "<p class=\"muted\">The figures load on the public OpenMotor site.</p>";
-    else if (BETA.drawFigs) setTimeout(BETA.drawFigs, 0);
     return "Standardized data (beta)";
   }
   function showBeta(arg) {
