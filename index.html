@@ -418,32 +418,43 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   dl.facts dd { margin-bottom: 10px; }
 }
 
-/* ---------- standardization: what we did, how it works, beta ---------- */
-.std-top { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px 56px; align-items: start; }
-.std-top .lead { max-width: none; margin-bottom: 18px; }
-.flow { list-style: none; padding: 0; margin: 28px 0 26px; display: grid; grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr); align-items: stretch; }
-.flow > li:not(.flow-arrow) { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
-.flow b { display: block; font-size: 19px; color: var(--ink); margin-bottom: 4px; }
-.flow span { display: block; color: var(--ink-2); font-size: 15.5px; line-height: 1.45; }
-.flow a { display: inline-block; margin-top: 10px; font-weight: 600; font-size: 15.5px; }
-.flow-arrow { display: grid; place-items: center; color: var(--muted); }
-.flow-arrow .icon { width: 22px; height: 22px; }
-.std-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; max-width: none; }
-.std-note { margin-top: 4px; padding: 14px 18px; background: #fff7f8; border: 1px solid #f1c2cc; border-left: 4px solid var(--accent); border-radius: 8px; }
-.std-note p { margin: 0; max-width: none; color: var(--ink-2); }
+/* ---------- standardization page (styled after the user's mockup, 2026-11-08; only this page) ---------- */
+.page.std-page { padding-top: 34px; }
+.std-top { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: stretch; }
+.std-intro { padding-right: 44px; }
+.page .std h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; margin: 0 0 14px; color: var(--ink); }
+.std-lead { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); max-width: 64ch; margin: 0 0 22px; }
+.std-actions { margin: 0; max-width: none; }
+.std-actions .btn { padding: 12px 24px; font-weight: 700; border-radius: 8px; }
+.std-side { margin-top: 28px; padding: 8px 0 8px 44px; border-left: 1px solid var(--border-2); }
+.std-note { padding: 20px 24px; background: #fdf1f3; border: 1px solid #f4c9d1; border-left: 5px solid var(--accent); border-radius: 10px; box-shadow: 0 6px 18px -10px rgba(228, 3, 53, 0.35); }
+.std-note p { margin: 0; color: var(--ink-2); font-size: 16.5px; line-height: 1.65; max-width: none; }
 .std-note b { color: var(--ink); }
-.page .std-h2 { margin: 40px 0 6px; }
-.std-sub { color: var(--ink-2); max-width: 90ch; }
-.std-fig { margin: 14px 0 0; padding: 18px; background: #ffffff; border: 1px solid var(--border); border-radius: 14px; }
-.std-fig a { display: block; }
-.std-fig img { display: block; width: 100%; max-width: 1400px; height: auto; margin: 0 auto; }
-.std-fig figcaption { margin: 12px 4px 0; font-size: 14.5px; color: var(--ink-2); max-width: 110ch; }
-@media (max-width: 800px) {
+.flow { list-style: none; padding: 0; margin: 44px 0 0; display: grid; grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr); align-items: stretch; }
+.flow > li:not(.flow-arrow) { display: flex; gap: 18px; align-items: flex-start; background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; padding: 22px 22px 22px 20px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04), 0 8px 20px -12px rgba(30, 30, 35, 0.14); }
+.flow .flow-icon { width: 34px; height: 34px; color: var(--accent); stroke-width: 1.8; flex: none; margin-top: 2px; }
+.flow b { display: block; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.flow span { display: block; color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.flow-arrow { display: grid; place-items: center; color: var(--muted); }
+.flow-arrow .icon { width: 22px; height: 22px; stroke-width: 1.6; }
+.page .std-h2 { font-size: 34px; font-weight: 800; letter-spacing: -0.015em; line-height: 1.15; margin: 56px 0 10px; }
+.std-sub { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); max-width: 104ch; margin: 0 0 20px; }
+.std-fig { margin: 0; padding: 24px 28px 20px; background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04), 0 10px 28px -16px rgba(30, 30, 35, 0.16); }
+.std-fig > a { display: block; }
+.std-fig img { display: block; width: 100%; height: auto; }
+.std-fig figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
+.std-fig figcaption span { display: block; max-width: 120ch; }
+.std-fig figcaption a { display: inline-block; margin-top: 8px; font-weight: 600; }
+@media (max-width: 900px) {
   .std-top { grid-template-columns: minmax(0, 1fr); }
-  .std-fig { padding: 10px; }
-  .flow { grid-template-columns: minmax(0, 1fr); gap: 0; }
-  .flow-arrow { height: 34px; }
+  .std-intro { padding-right: 0; }
+  .std-side { margin-top: 24px; padding: 0; border-left: 0; }
+  .page .std h1 { font-size: 36px; }
+  .flow { grid-template-columns: minmax(0, 1fr); margin-top: 32px; }
+  .flow-arrow { height: 36px; }
   .flow-arrow .icon { transform: rotate(90deg); }
+  .page .std-h2 { font-size: 28px; margin-top: 44px; }
+  .std-fig { padding: 12px 12px 14px; }
 }
 </style>
 
@@ -677,28 +688,30 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   </div>
 </section>
 
-<section class="view page" data-view="standardization" aria-labelledby="h-std" hidden>
+<section class="view page std-page" data-view="standardization" aria-labelledby="h-std" hidden>
   <div class="wrap std">
-    <h1 id="h-std">Standardization</h1>
     <div class="std-top">
-      <div>
-        <p class="lead" id="std-lead"></p>
+      <div class="std-intro">
+        <h1 id="h-std">Standardization</h1>
+        <p class="std-lead" id="std-lead"></p>
         <p class="std-actions"><a class="btn btn-primary" href="#format">How it works</a></p>
       </div>
-      <div class="std-note" role="note"><p><b>Standardization is in beta.</b> The format may still change, and mistakes are possible. If you use a standardized dataset, check it against the original data and cite the original paper.</p></div>
+      <div class="std-side">
+        <div class="std-note" role="note"><p><b>Standardization is in beta.</b> The format may still change, and mistakes are possible. If you use a standardized dataset, check it against the original data and cite the original paper.</p></div>
+      </div>
     </div>
     <ol class="flow" aria-label="From studies to insights">
-      <li><b>Study</b><span>Each study's data as its authors shared them, in their own layout and kind of file.</span></li>
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><div><b>Study</b><span>Each study's data as its authors shared them, in their own layout and kind of file.</span></div></li>
       <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-      <li><b>Standardized data</b><span>The same trials in one table, with the same columns, units and conventions in every study.</span></li>
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg><div><b>Standardized data</b><span>The same trials in one table, with the same columns, units and conventions in every study.</span></div></li>
       <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-      <li><b>Insights</b><span>Questions that span studies: comparing and combining results, and testing models on many experiments at once.</span></li>
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg><div><b>Insights</b><span>Questions that span studies: comparing and combining results, and testing models on many experiments at once.</span></div></li>
     </ol>
     <h2 class="std-h2">Insights</h2>
     <p class="std-sub">A first look at what the standardized data can show: six questions, each answered by combining many studies at once. The number of studies and people is in each panel.</p>
     <figure class="std-fig">
       <a href="img/openmotor-insights.png" target="_blank" rel="noopener" title="Open the full-size figure"><img src="img/openmotor-insights.png" width="1788" height="1084" loading="lazy" alt="Six panels from the standardized data: a, hand bias by target direction; b, variability by target direction; c, variability of the dominant and non-dominant hand in left- and right-handers; d, variability by age; e, adaptation by target direction; f, implicit adaptation by error-clamp size."></a>
-      <figcaption>(a) Accuracy and (b) precision of reaching by target direction; (c) precision of each hand in left- and right-handers; (d) precision across the lifespan; (e) learning by target direction; (f) implicit learning by error-clamp size. <a href="img/openmotor-insights.png" target="_blank" rel="noopener">Open the figure full size</a></figcaption>
+      <figcaption><span>(a) Accuracy and (b) precision of reaching by target direction; (c) precision of each hand in left- and right-handers; (d) precision across the lifespan; (e) learning by target direction; (f) implicit learning by error-clamp size.</span><a href="img/openmotor-insights.png" target="_blank" rel="noopener">Open the figure full size</a></figcaption>
     </figure>
   </div>
 </section>
