@@ -9,9 +9,6 @@ reaching and sensorimotor adaptation (12,498 participants, 5,286,546 trials) and
 
 Browse and download: https://shadowcoder1.github.io/openmotor/
 
-The site's Beta page shows the standardized version of each study as plots, so authors can check it and report
-problems, and converts a CSV of reaching trials to the OpenMotor format in the browser.
-
 ## Files
 
 - `data/<dataset>.zip`: one file per dataset, with the trial table as CSV, a README (citation, lab, license,
@@ -20,8 +17,6 @@ problems, and converts a CSV of reaching trials to the OpenMotor format in the b
   authors' original data and its file format.
 - `columns.csv`: what each of the 90 columns means.
 - `SHA256SUMS.txt`: checksums of the data files.
-- `beta/`: the summaries behind the site's Beta page: the average hand angle on each trial for every group in
-  every experiment, computed from the data files.
 
 ## Licenses
 

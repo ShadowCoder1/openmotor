@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
 <style>
-/* Layout: white header bar with tabs (Home, Studies, Beta, About), then plain light pages. The home page is a short
+/* Layout: white header bar with tabs (Home, Studies, Standardization, About), then plain light pages. The home page is a short
    introduction, the numbers and the most recent studies; Studies is one table of every study, by year.
    Icons are Lucide (ISC license), inlined. Single fixed light look. */
 :root {
@@ -418,152 +418,26 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   dl.facts dd { margin-bottom: 10px; }
 }
 
-/* ---------- beta: the standardized collection, study checks, converter ---------- */
-.site-nav .nav-beta { display: inline-flex; align-items: center; gap: 7px; }
-.beta-mark { display: inline-block; font-size: 12px; font-weight: 700; line-height: 1; padding: 4px 7px 3px; border-radius: 5px; background: var(--icon-bg); color: var(--accent-dark); vertical-align: middle; letter-spacing: 0.02em; }
-.page h1 .beta-mark { font-size: 15px; padding: 5px 9px 4px; margin-left: 6px; position: relative; top: -3px; }
-.beta-note { max-width: 86ch; margin: 18px 0 0; padding: 14px 18px; background: #fff7f8; border: 1px solid #f1c2cc; border-left: 4px solid var(--accent); border-radius: 8px; }
-.beta-note p { margin: 0; max-width: none; color: var(--ink-2); }
-.beta-note b { color: var(--ink); }
-.beta-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 28px 64px; align-items: start; padding-bottom: 6px; }
-.beta-top .lead, .beta-top .beta-note { max-width: none; }
-.beta-toc { display: grid; gap: 2px; padding: 16px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; margin-top: 6px; }
-.beta-toc-h { font-weight: 700; color: var(--ink-2); font-size: 15px; margin: 0 10px 4px; }
-.beta-toc a { display: block; padding: 8px 10px; border-radius: 8px; text-decoration: none; }
-.beta-toc a:hover { background: var(--icon-bg); }
-.beta-toc a b { display: block; color: var(--link); font-size: 16.5px; }
-.beta-toc a span { display: block; color: var(--ink-2); font-size: 14.5px; line-height: 1.4; }
-.beta-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 64px; align-items: start; }
-.beta-split > div > p, .beta-split > p { max-width: none; }
-.beta-row { align-items: end; margin-bottom: 14px; }
-.beta-row > p { margin: 0; }
-.bc-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
-.bc-tools .dl-search { flex: 1 1 260px; }
-.bc-count { font-size: 15px; color: var(--ink-2); }
-.fmt-fig { margin: 0; padding: 18px 22px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
-.fmt-fig figcaption { font-weight: 700; color: var(--ink-2); font-size: 15px; margin: 0 0 12px; }
-.bs-top { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 64px; align-items: start; }
-.bs-top dl.facts { margin: 4px 0 0; max-width: none; grid-template-columns: 150px minmax(0, 1fr); }
-.bs-col { display: grid; gap: 14px; align-content: start; min-width: 0; }
-.beta .sp-nav { max-width: none; }
-.beta-anchor { scroll-margin-top: 16px; }
-.page .beta h2 { font-size: 26px; margin-top: 44px; }
-.beta-stats { display: grid; grid-template-columns: max-content max-content; gap: 16px 0; margin: 4px 0 20px; }
-.beta-stats div { padding: 2px 40px 2px 0; }
-.beta-stats div:nth-child(2n) { padding-left: 40px; border-left: 1px solid var(--border-2); }
-.beta-stats b { display: block; font-size: 30px; line-height: 1.1; font-weight: 800; color: var(--ink); }
-.beta-stats span { display: block; font-size: 15.5px; color: var(--ink-2); }
-.fmt-bars { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 7px 14px; align-items: center; max-width: none; margin: 0; font-size: 15px; }
-.fmt-bars .fb-name { color: var(--ink); }
-.fmt-bars .fb-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
-.fmt-bars .fb-bar { height: 16px; background: var(--accent); border-radius: 0 4px 4px 0; min-width: 2px; }
-.fmt-bars .fb-val { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.beta-links { display: grid; justify-items: start; gap: 6px; max-width: none; }
-.beta-links a { font-weight: 600; }
-table.bc-table td, table.bc-table th { padding: 10px 14px; }
-table.bc-table .bc-name { display: block; font-weight: 700; color: var(--ink); text-decoration: none; }
-table.bc-table .bc-name:hover { color: var(--link); text-decoration: underline; }
-table.bc-table .bc-title { display: block; color: var(--ink-2); font-size: 14.5px; }
-table.bc-table .bc-check { font-weight: 600; font-size: 14.5px; }
-table.bc-table td.bc-dl { white-space: nowrap; }
-.bc-dl a { display: flex; width: max-content; align-items: center; gap: 6px; font-weight: 600; font-size: 15px; text-decoration: none; }
-.bc-dl a + a { margin-top: 4px; }
-.bc-dl a:hover { text-decoration: underline; }
-.bc-dl .icon { width: 16px; height: 16px; }
-.bc-dl .sz { color: var(--muted); font-weight: 400; font-size: 14px; }
-.beta-steps { padding-left: 1.4em; max-width: 80ch; margin: 0 0 16px; }
-.beta-steps li { margin: 3px 0; }
-.cv-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; }
-.cv-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px 48px; align-items: start; }
-.cv-text p { max-width: none; }
-.cv-text .beta-steps { margin: 0; }
-.cv-pick { display: grid; gap: 14px; }
-.cv-drop { padding: 22px 16px; }
-.cv-hint { display: block; color: var(--muted); font-size: 14px; line-height: 1.45; }
-.cv-intro { margin: 20px 0 0; color: var(--ink-2); }
-.cv-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; margin: 14px 0 6px; }
-.page .cv-h { font-size: 18px; font-weight: 700; margin: 0 0 10px; }
-.cv-map { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 8px 12px; align-items: center; font-size: 15px; }
-.cv-map select, .cv-qs select, .cv-qs input { font-family: var(--font); font-size: 15px; border: 1px solid var(--border-2); border-radius: 8px; padding: 7px 10px; background: var(--card); color: var(--ink); width: 100%; }
-.cv-qs { display: grid; gap: 14px; }
-.cv-q label { display: block; font-weight: 700; font-size: 15px; margin-bottom: 5px; }
-.cv-q small { display: block; color: var(--muted); font-size: 13.5px; margin-top: 4px; }
-.cv-q.need label::after { content: " (needed)"; color: #c0262d; font-weight: 600; }
-.cv-inline { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
-.cv-inline input { width: 90px !important; }
-.cv-status { font-size: 15.5px; color: var(--ink-2); margin: 14px 0 10px; max-width: none; }
-.cv-status.ok { color: #1d6b3f; }
-.cv-status.need { color: #9a4b00; }
-.cv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 0; max-width: none; }
-#cv-result .table-card { margin-top: 14px; }
-
-/* charts */
-.chart-block { margin: 6px 0 4px; }
-.chart-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 4px 0 8px; font-size: 14.5px; color: var(--ink-2); }
-.chart-tools .seg { display: inline-flex; border: 1px solid var(--border-2); border-radius: 8px; overflow: hidden; }
-.chart-tools .seg button { font: inherit; font-size: 14.5px; padding: 6px 12px; border: 0; background: var(--card); color: var(--ink); cursor: pointer; }
-.chart-tools .seg button + button { border-left: 1px solid var(--border-2); }
-.chart-tools .seg button[aria-pressed="true"] { background: var(--accent-dark); color: #ffffff; }
-.chart-tools select { font: inherit; font-size: 14.5px; padding: 5px 8px; border: 1px solid var(--border-2); border-radius: 8px; background: var(--card); color: var(--ink); }
-.legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 6px; font-size: 14px; color: var(--ink-2); }
-.legend span { display: inline-flex; align-items: center; gap: 7px; }
-.legend i { display: inline-block; width: 18px; height: 0; border-top: 2px solid currentColor; }
-.legend i.dash { border-top: 2px dashed #6f7074; }
-.legend i.sw { width: 14px; height: 12px; border: 0; background: #ececef; }
-.legend i.dot { width: 10px; height: 10px; border: 0; border-radius: 50%; }
-.chart { position: relative; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 6px 4px 0; }
-.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
-.chart svg:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
-.chart .tip { position: absolute; pointer-events: none; z-index: 5; background: #ffffff; border: 1px solid var(--border-2); border-radius: 8px; box-shadow: 0 6px 18px rgba(30, 30, 35, 0.12); padding: 8px 10px; font-size: 13.5px; line-height: 1.35; color: var(--ink-2); min-width: 150px; max-width: 280px; }
-.chart .tip b { color: var(--ink); }
-.chart .tip .tr { display: flex; align-items: center; gap: 7px; margin-top: 3px; }
-.chart .tip .tr i { width: 12px; height: 0; border-top: 2px solid currentColor; flex: none; }
-.chart .tip .tr strong { color: var(--ink); font-variant-numeric: tabular-nums; }
-.chart-note { font-size: 14px; color: var(--muted); margin: 8px 0 0; max-width: 100ch; }
-.chart-note.warn { color: #9a4b00; }
-.exp-block { margin-top: 30px; padding-top: 6px; }
-.exp-block + .exp-block { border-top: 1px solid var(--border); padding-top: 22px; }
-.page .exp-block h2 { font-size: 22px; margin: 0 0 2px; }
-.exp-meta { color: var(--ink-2); margin: 0 0 10px; }
-table.phase-sum { width: auto; min-width: min(560px, 100%); }
-table.phase-sum td:first-child { white-space: nowrap; }
-details.tbl { margin-top: 12px; }
-details.tbl summary { cursor: pointer; color: var(--link); font-weight: 600; font-size: 15px; }
-details.tbl .table-card { margin-top: 10px; }
-.bs-sub { font-size: 19px; color: var(--ink-2); margin: 2px 0 0; max-width: 90ch; }
-.bs-cite { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
-.bs-report { margin-top: 40px; padding: 24px 28px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 16px 48px; align-items: start; }
-.page .bs-report h2 { margin: 0; font-size: 24px; }
-.bs-report .bs-col > p { margin: 0; color: var(--ink-2); max-width: none; }
-.bs-report fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
-.bs-report fieldset legend { font-weight: 700; font-size: 15px; margin-bottom: 6px; padding: 0; }
-.bs-report fieldset label { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; cursor: pointer; }
-.bs-report input[type="radio"], .bs-report input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--accent-dark); }
-.fig { margin: 22px 0 8px; }
-.page .fig h3 { margin: 0 0 4px; font-size: 19px; }
-.fig .fig-sub { color: var(--ink-2); margin: 0 0 10px; }
-.fig .chart { max-width: 920px; }
-.beta-method { margin: 0; font-size: 14.5px; }
-.fig-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 34px 64px; }
-@media (max-width: 1100px) { .fig-grid { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 900px) { .cv-grid, .cv-top, .beta-top, .beta-split, .bs-top, .bs-report { grid-template-columns: minmax(0, 1fr); } .beta-row { align-items: start; } }
-@media (max-width: 760px) {
-  .beta-stats { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 18px; }
-  .beta-stats div, .beta-stats div + div { padding: 0; border-left: 0; }
-  .beta-stats div:nth-child(2n) { padding-left: 16px; }
-  .beta-stats b { font-size: 22px; white-space: nowrap; }
-  .page .beta h2 { font-size: 23px; }
-  table.bc-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  table.bc-table, table.bc-table tbody, table.bc-table tr, table.bc-table td { display: block; width: 100%; }
-  table.bc-table tr { border-bottom: 1px solid var(--border); padding: 10px 12px; }
-  table.bc-table td { border: 0; padding: 2px 0; text-align: left; }
-  table.bc-table td.num { text-align: left; }
-  table.bc-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; color: var(--ink-2); }
-  .bs-report { padding: 18px 16px; }
+/* ---------- standardization: what we did, how it works, beta ---------- */
+.std-top { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px 56px; align-items: start; }
+.std-top .lead { max-width: none; margin-bottom: 18px; }
+.flow { list-style: none; padding: 0; margin: 28px 0 26px; display: grid; grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr); align-items: stretch; }
+.flow > li:not(.flow-arrow) { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+.flow b { display: block; font-size: 19px; color: var(--ink); margin-bottom: 4px; }
+.flow span { display: block; color: var(--ink-2); font-size: 15.5px; line-height: 1.45; }
+.flow a { display: inline-block; margin-top: 10px; font-weight: 600; font-size: 15.5px; }
+.flow-arrow { display: grid; place-items: center; color: var(--muted); }
+.flow-arrow .icon { width: 22px; height: 22px; }
+.std-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; max-width: none; }
+.std-note { margin-top: 4px; padding: 14px 18px; background: #fff7f8; border: 1px solid #f1c2cc; border-left: 4px solid var(--accent); border-radius: 8px; }
+.std-note p { margin: 0; max-width: none; color: var(--ink-2); }
+.std-note b { color: var(--ink); }
+@media (max-width: 800px) {
+  .std-top { grid-template-columns: minmax(0, 1fr); }
+  .flow { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .flow-arrow { height: 34px; }
+  .flow-arrow .icon { transform: rotate(90deg); }
 }
-.chart .ax { font-size: 12px; fill: #6f7074; font-variant-numeric: tabular-nums; }
-.chart .ax-l { font-size: 12.5px; fill: #4a4b4f; }
-.chart .ph { font-size: 12px; fill: #4a4b4f; font-weight: 600; }
 </style>
 
 </head>
@@ -575,7 +449,7 @@ details.tbl .table-card { margin-top: 10px; }
     <nav class="site-nav" aria-label="Main">
       <a href="#home" data-view="home">Home</a>
       <a href="#studies" data-view="studies">Studies</a>
-      <a href="#beta" data-view="beta">Beta</a>
+      <a href="#standardization" data-view="standardization">Standardization</a>
       <a href="#about" data-view="about">About</a>
     </nav>
   </div>
@@ -647,7 +521,7 @@ details.tbl .table-card { margin-top: 10px; }
     </aside>
     <div class="doc-main">
       <div id="fmt-overview" class="doc-anchor">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="#beta">Beta</a><span aria-hidden="true">/</span><span>Standardized data format</span></nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#standardization">Standardization</a><span aria-hidden="true">/</span><span>Standardized data format</span></nav>
         <h1 id="h-format">Data Format</h1>
         <p class="lead">The reaching datasets in OpenMotor share one format: one table with one row per trial of one participant, and the same 90 columns in every dataset, so code written for one study runs on every other. The columns are described below and in <code>columns.csv</code>, which comes with every download.</p>
       </div>
@@ -796,121 +670,23 @@ details.tbl .table-card { margin-top: 10px; }
   </div>
 </section>
 
-<section class="view page" data-view="beta" aria-labelledby="h-beta" hidden>
-  <div class="wrap beta" id="beta-home">
-    <div class="beta-top">
+<section class="view page" data-view="standardization" aria-labelledby="h-std" hidden>
+  <div class="wrap std">
+    <h1 id="h-std">Standardization</h1>
+    <div class="std-top">
       <div>
-        <h1 id="h-beta">Standardized data <span class="beta-mark">Beta</span></h1>
-        <p class="lead">Besides linking to the data the authors shared, we converted most of the datasets in OpenMotor into one standardized format: one row per trial, with the same 90 columns and the same conventions in every study. This page is where you can see that work, check it, and try it on your own data.</p>
-        <div class="beta-note" role="note">
-          <p><b>This section is in beta.</b> We converted each dataset from the files its authors shared, and checked every experiment against at least one result reported in its paper or in the authors' own files. Mistakes are still possible, and the format may still change. Before you use a standardized file in your own work, compare it with the original data, and cite the original paper. If something looks wrong, open the study below and tell us.</p>
-        </div>
+        <p class="lead" id="std-lead"></p>
+        <p class="std-actions"><a class="btn btn-primary" href="#format">How it works</a></p>
       </div>
-      <nav class="beta-toc" aria-label="On this page">
-        <p class="beta-toc-h">On this page</p>
-        <a href="#beta" data-jump="beta-work"><b>One format for every study</b><span>What we converted, and from which kinds of files</span></a>
-        <a href="#beta" data-jump="beta-check"><b>Check a study</b><span>Plots of each standardized study, and a way to tell us if something is wrong</span></a>
-        <a href="#beta" data-jump="beta-convert"><b>Convert your own data</b><span>See a CSV of your reaching trials in the OpenMotor format</span></a>
-      </nav>
+      <div class="std-note" role="note"><p><b>Standardization is in beta.</b> The format may still change, and mistakes are possible. If you use a standardized dataset, check it against the original data and cite the original paper.</p></div>
     </div>
-
-    <h2 id="beta-work" class="beta-anchor">One format for every study</h2>
-    <div class="beta-split">
-      <div>
-        <div class="beta-stats" id="beta-stats"></div>
-        <p id="beta-formats-lead"></p>
-        <p class="beta-links" id="beta-links"></p>
-      </div>
-      <figure class="fmt-fig"><figcaption>Kinds of files the authors shared, by number of studies</figcaption><div class="fmt-bars" id="beta-formats"></div></figure>
-    </div>
-
-    <h2 id="beta-check" class="beta-anchor">Check a study</h2>
-    <div class="beta-split beta-row">
-      <p>Open a study to see its standardized data: who is in it, the trial schedule, and the average hand angle on every trial. If it is your study, check that it matches your paper, then tell us whether it looks right.</p>
-      <div class="bc-tools" role="search">
-        <label class="dl-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="bc-q" type="search" placeholder="Search by author, title or journal" aria-label="Search the standardized studies" autocomplete="off"></label>
-        <span class="bc-count" id="bc-count" aria-live="polite"></span>
-      </div>
-    </div>
-    <div class="table-card"><div class="table-wrap">
-      <table class="data bc-table" id="bc-table">
-        <thead><tr><th scope="col">Study</th><th scope="col" class="num">Participants</th><th scope="col" class="num">Trials</th><th scope="col">Standardized data</th></tr></thead>
-        <tbody></tbody>
-      </table>
-    </div></div>
-    <p class="st-foot"><button type="button" class="btn btn-outline" id="bc-more" hidden></button></p>
-
-    <h2 id="beta-convert" class="beta-anchor">Convert your own data</h2>
-    <div class="cv-box">
-      <div class="cv-top">
-        <div class="cv-text">
-          <p>If your data are not in OpenMotor yet, you can see them in the OpenMotor format here. Choose a CSV file of reaching trials with one row per trial. The conversion runs in your browser: your file is not uploaded anywhere.</p>
-          <ol class="beta-steps">
-            <li>Choose your file.</li>
-            <li>Check how its columns were matched, and answer the questions marked as needed.</li>
-            <li>Check the plot, then download the converted file. To add it to OpenMotor, send it with <a href="#contribute">Add your data</a>.</li>
-          </ol>
-        </div>
-        <div class="cv-pick">
-          <div class="drop cv-drop" id="cv-drop" tabindex="0" role="button" aria-describedby="cv-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Choose a CSV file</b><span>or drop it here</span></div>
-          <input id="cv-file" type="file" accept=".csv,.tsv,.txt,text/csv" hidden>
-          <div class="ff"><label for="cv-name">Dataset name</label><input id="cv-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" autocomplete="off"><small class="cv-hint" id="cv-drop-note">Used to name the converted file. The converter reads reaching tasks with hand angles. For other tasks, send your data through <a href="#contribute">Add your data</a> and we convert it for you.</small></div>
-        </div>
-      </div>
-      <div id="cv-work" hidden>
-        <p class="cv-intro" id="cv-intro"></p>
-        <div class="cv-grid">
-          <div><h3 class="cv-h">Matched columns</h3><div class="cv-map" id="cv-map"></div></div>
-          <div><h3 class="cv-h">A few questions</h3><div class="cv-qs" id="cv-qs"></div></div>
-        </div>
-        <p class="cv-status" id="cv-status" role="status"></p>
-        <div id="cv-result" hidden>
-          <h3 class="cv-h">Your data in the OpenMotor format</h3>
-          <div class="chart-block" id="cv-chart"></div>
-          <div class="table-card"><div class="table-wrap"><table class="data compact sample" id="cv-preview"></table></div></div>
-          <p class="cv-actions"><button type="button" class="btn btn-primary" id="cv-download">Download the converted file</button><a class="btn btn-outline" href="#contribute">Add your data to OpenMotor</a></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="wrap beta" id="beta-study" hidden>
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#beta">Beta</a><span aria-hidden="true">/</span><span id="bs-crumb"></span></nav>
-    <h1 id="bs-h"></h1>
-    <div id="bs-head"></div>
-    <div id="bs-body"></div>
-    <form class="bs-report" id="bs-report" novalidate>
-      <div class="bs-col">
-      <h2 id="bs-report-h">Does this look right?</h2>
-      <p>If you are an author of this study, or you have worked with its data, tell us whether the standardized version matches what you know. Your answer goes to the OpenMotor team by email.</p>
-      <fieldset class="bs-verdict">
-        <legend class="sr">Your answer</legend>
-        <label><input type="radio" name="bs-verdict" value="ok"> It looks right</label>
-        <label><input type="radio" name="bs-verdict" value="problem"> Something is wrong</label>
-      </fieldset>
-      <fieldset class="bs-what" id="bs-what" hidden>
-        <legend>What is wrong? Check all that apply.</legend>
-        <label><input type="checkbox" value="Participants or groups"> Participants or groups</label>
-        <label><input type="checkbox" value="Trial order or schedule"> Trial order or schedule</label>
-        <label><input type="checkbox" value="Hand angles (sign, size or units)"> Hand angles (sign, size or units)</label>
-        <label><input type="checkbox" value="Missing trials or experiments"> Missing trials or experiments</label>
-        <label><input type="checkbox" value="Something else"> Something else</label>
-      </fieldset>
-      </div>
-      <div class="bs-col">
-      <div class="ff"><label for="bs-details">Details</label><textarea id="bs-details" rows="4" placeholder="What did you compare, and what differs? For example: the rotation in Experiment 2 started at trial 81, not 61."></textarea></div>
-      <div class="frow three-f">
-        <div class="ff"><label for="bs-name">Your name</label><input id="bs-name" type="text" autocomplete="name"></div>
-        <div class="ff"><label for="bs-email">Email <span class="req" aria-hidden="true">*</span></label><input id="bs-email" type="email" autocomplete="email" placeholder="name@university.edu"></div>
-        <div class="ff"><label for="bs-role">You are</label><select id="bs-role"><option value="">Choose one</option><option>An author of this study</option><option>Someone who used these data</option><option>Other</option></select></div>
-      </div>
-      <p class="cv-actions"><button type="submit" class="btn btn-primary">Send to the OpenMotor team</button></p>
-      <p class="ct-status" id="bs-status" role="status"></p>
-      <div class="ct-fallback" id="bs-fallback" hidden>No email window? Send it to <b class="sel">physical.intelligence.lab@gmail.com</b> <button type="button" class="btn btn-outline" id="bs-copy">Copy the message</button></div>
-      </div>
-    </form>
-    <nav class="sp-nav" aria-label="Other studies"><a class="pill" href="#beta" data-jump="beta-check">All standardized studies</a><a class="pill" id="bs-page" href="#studies">Study page</a></nav>
+    <ol class="flow" aria-label="From studies to insights">
+      <li><b>Study</b><span>Each study's data as its authors shared them, in their own layout and kind of file.</span></li>
+      <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+      <li><b>Standardized data</b><span>The same trials in one table, with the same columns, units and conventions in every study.</span></li>
+      <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+      <li><b>Insights</b><span>Questions that span studies: comparing and combining results, and testing models on many experiments at once.</span></li>
+    </ol>
   </div>
 </section>
 
@@ -1236,615 +1012,16 @@ details.tbl .table-card { margin-top: 10px; }
     setTimeout(function () { b.textContent = "Copy details"; }, 2000);
   });
 
-  /* ---------- beta: the standardized collection, study checks, the converter ---------- */
-  var SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"];
-  var ONE_COLOR = "#e40335", REF_GRAY = "#6f7074", NOFB_FILL = "#ececef";
-  var PHASE_NAME = { practice: "Practice", baseline: "Baseline", learning: "Learning", aftereffect: "Aftereffect", washout: "Washout", relearning: "Relearning", probe: "Probe" };
-  var FILES_OF = {};
-  FILES.forEach(function (f) { (FILES_OF[f.catalog_study] = FILES_OF[f.catalog_study] || []).push(f); });
-  var STD = STUDIES.filter(function (s) { return FILES_OF[s.id]; }).sort(function (a, b) { return a._first.localeCompare(b._first) || a.year - b.year; });
-  var BETA = { cache: {}, summary: null, home: false, figs: false };
-
-  function betaStats() {
-    var people = META.development.people, trials = META.development.trials;  /* participants counted once per study */
-    var html = [[fmt(STD.length), "studies"], [fmt(META.total.experiments), "experiments"], [fmt(people), "participants"], [(trials / 1e6).toFixed(2) + " million", "trials"]]
-      .map(function (s) { return "<div><b>" + s[0] + "</b><span>" + s[1] + "</span></div>"; }).join("");
-    $("#beta-stats").innerHTML = html;
-    var F = META.beta.formats, max = F.reduce(function (m, f) { return Math.max(m, f.studies); }, 1);
-    $("#beta-formats-lead").textContent = "The authors shared these data in their own layouts and in " + F.length + " kinds of files. Every dataset was converted to the same table, so code written for one study runs on all of them.";
-    $("#beta-formats").innerHTML = F.map(function (f) {
-      return "<span class=\"fb-name\">" + esc(f.name) + "</span><span class=\"fb-row\" title=\"" + esc(f.name) + ": " + f.studies + " studies\"><span class=\"fb-bar\" style=\"width:" + (100 * f.studies / max).toFixed(1) + "%\"></span><span class=\"fb-val\">" + f.studies + "</span></span>";
-    }).join("");
-    var links = ["<a href=\"#format\">How the standardized format works</a>", "<a href=\"columns.csv\" download>The 90 columns (columns.csv)</a>"];
-    if (META.bundle) links.splice(1, 0, "<a href=\"" + esc(META.bundle.url) + "\">Download every standardized dataset (one ZIP, " + mb(META.bundle.bytes) + ")</a>");
-    $("#beta-links").innerHTML = links.join("");
-  }
-
-  /* the list of standardized studies */
-  function dlLinks(s) {
-    return FILES_OF[s.id].map(function (f) {
-      var many = FILES_OF[s.id].length > 1;
-      return "<a href=\"data/" + esc(f.file) + "\" download>" + ICON.download + (many ? esc(f.name.indexOf(s.id) === 0 ? f.name.slice(s.id.length).replace(/^_/, "") : f.name.replace(/^([A-Za-z']+?)(\d{4})_.*$/, "$1 $2")) : "ZIP") + " <span class=\"sz\">" + mb(f.bytes) + "</span></a>";
-    }).join("");
-  }
-  function betaRow(s) {
-    var people = 0, trials = 0;
-    FILES_OF[s.id].forEach(function (f) { people += f.persons; trials += f.rows; });
-    if (s.people) people = s.people;
-    return "<tr><td><a class=\"bc-name\" href=\"#beta/" + encodeURIComponent(s.id) + "\">" + esc(s._name) + "</a><span class=\"bc-title\">" + esc(s.papers[0].title) + "</span>" +
-      "<a class=\"bc-check\" href=\"#beta/" + encodeURIComponent(s.id) + "\">Check this study</a></td>" +
-      "<td class=\"num\" data-label=\"Participants\">" + fmt(people) + "</td><td class=\"num\" data-label=\"Trials\">" + fmt(trials) + "</td>" +
-      "<td class=\"bc-dl\" data-label=\"Standardized data\">" + dlLinks(s) + "</td></tr>";
-  }
-  function renderBetaList() {
-    var words = $("#bc-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    var rows = STD.filter(function (s) { return words.every(function (w) { return s._q.indexOf(w) >= 0; }); });
-    var cut = !BETA.all && !words.length && rows.length > 10;
-    $("#bc-more").hidden = !cut; $("#bc-more").textContent = "Show all " + rows.length + " studies";
-    $("#bc-table tbody").innerHTML = rows.length ? (cut ? rows.slice(0, 10) : rows).map(betaRow).join("") : "<tr><td colspan=\"4\">No standardized study matches. Studies that are only linked are listed under <a href=\"#studies\">Studies</a>.</td></tr>";
-    $("#bc-count").textContent = cut ? "Showing 10 of " + STD.length + " standardized studies" : rows.length === STD.length ? STD.length + " standardized studies" : "Showing " + rows.length + " of " + STD.length;
-  }
-  var bcTimer;
-  $("#bc-q").addEventListener("input", function () { clearTimeout(bcTimer); bcTimer = setTimeout(renderBetaList, 100); });
-  $("#bc-more").addEventListener("click", function () { BETA.all = true; renderBetaList(); });
-
-  /* ---------- charts (inline SVG) ---------- */
-  var SVGNS = "http://www.w3.org/2000/svg";
-  function sv(tag, attrs, parent) { var e = document.createElementNS(SVGNS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
-  function niceStep(span, n) { var raw = span / Math.max(1, n), p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * p; }
-  function ticks(lo, hi, n) { var st = niceStep(hi - lo || 1, n), out = []; for (var v = Math.ceil(lo / st - 1e-9) * st; v <= hi + 1e-9; v += st) out.push(+v.toFixed(8)); return out; }
-  function expand(r, T) { var a = new Array(T).fill(null); (r || []).forEach(function (x) { for (var i = x[0]; i < x[0] + x[1] && i < T; i++) a[i] = x[2]; }); return a; }
-  function num1(v) { return v == null ? "" : (Math.round(v * 10) / 10).toFixed(1).replace("-0.0", "0.0").replace("-", "−"); }
-  function tickText(v) { return (Math.abs(v) >= 1000 ? fmt(v) : String(+v.toFixed(6))).replace("-", "−"); }
-  function pct(arr, q) { var a = arr.slice().sort(function (x, y) { return x - y; }); return a.length ? a[Math.min(a.length - 1, Math.max(0, Math.round(q * (a.length - 1))))] : null; }
-  function stepPath(r, x, y) {
-    var d = "", prev = null;
-    for (var i = 0; i <= r.length; i++) {
-      var v = i < r.length ? r[i] : null;
-      if (v === prev) continue;
-      if (prev !== null) d += "L" + x(i - 0.5).toFixed(1) + " " + y(prev).toFixed(1);
-      if (v !== null) d += (prev === null ? "M" : "L") + x(i - 0.5).toFixed(1) + " " + y(v).toFixed(1);
-      prev = v;
-    }
-    return d;
-  }
-  function tipPlace(box, tip, px, py) {
-    var bw = box.clientWidth, tw = tip.offsetWidth, th = tip.offsetHeight;
-    var left = px + 16 + tw > bw ? px - 16 - tw : px + 16;
-    tip.style.left = Math.max(4, left) + "px";
-    tip.style.top = Math.max(4, Math.min(box.clientHeight - th - 4, py - th / 2)) + "px";
-  }
-
-  /* trial-by-trial lines: cfg = { T, series: [{ label, color, n, y, sem, ref, modes }], nofb, phase, yName, unit, zero, bin, refName } */
-  function lineChart(el, cfg) {
-    el.innerHTML = "";
-    var box = document.createElement("div"); box.className = "chart"; el.appendChild(box);
-    var W = Math.max(300, Math.round(box.clientWidth - 8) || 860), small = W < 560, H = small ? 250 : 330;
-    var M = { l: small ? 44 : 56, r: 14, t: 26, b: 42 };
-    var T = cfg.T, k = Math.max(1, cfg.bin || 1);
-    var S = cfg.series.map(function (s) {
-      var pts = [], filled = 0;
-      for (var i = 0; i < T; i += k) {
-        var sum = 0, c = 0, j1 = Math.min(i + k, T);
-        for (var j = i; j < j1; j++) { var v = s.y[j]; if (v != null) { sum += v; c++; } }
-        if (c) filled++;
-        pts.push({ x: i + (j1 - i - 1) / 2, y: c ? sum / c : null, i0: i, i1: j1 - 1 });
-      }
-      return { s: s, pts: pts, dots: filled / Math.max(1, pts.length) < 0.3 };
-    });
-    var vals = [];
-    S.forEach(function (o) { o.pts.forEach(function (p) { if (p.y != null) vals.push(p.y); }); if (o.s.ref) o.s.ref.forEach(function (v) { if (v != null) vals.push(v); }); });
-    var lo = vals.length ? pct(vals, 0.005) : -1, hi = vals.length ? pct(vals, 0.995) : 1;
-    if (cfg.zero !== false) { lo = Math.min(lo, 0); hi = Math.max(hi, 0); }
-    if (hi - lo < 1e-6) { lo -= 1; hi += 1; }
-    var pad = (hi - lo) * 0.07; lo -= pad; hi += pad;
-    var yt = ticks(lo, hi, small ? 4 : 6);
-    var px = function (v) { return M.l + (T <= 1 ? 0 : v / (T - 1)) * (W - M.l - M.r); };
-    var py = function (v) { return M.t + (hi - v) / (hi - lo) * (H - M.t - M.b); };
-    var svg = sv("svg", { viewBox: "0 0 " + W + " " + H, role: "img", tabindex: "0", "aria-label": cfg.aria || cfg.yName }, box);
-    var cid = "clip" + Math.random().toString(36).slice(2, 9);
-    sv("rect", { x: M.l, y: M.t, width: W - M.l - M.r, height: H - M.t - M.b }, sv("clipPath", { id: cid }, sv("defs", {}, svg)));
-    var clip = "url(#" + cid + ")";
-    var gB = sv("g", { "clip-path": clip }, svg), run = null;
-    for (var i = 0; i <= T; i++) {
-      var on = i < T && cfg.nofb && cfg.nofb[i];
-      if (on && run === null) run = i;
-      if (!on && run !== null) { sv("rect", { x: px(run - 0.5), y: M.t, width: Math.max(1, px(i - 0.5) - px(run - 0.5)), height: H - M.t - M.b, fill: NOFB_FILL }, gB); run = null; }
-    }
-    yt.forEach(function (v) {
-      if (v < lo || v > hi) return;
-      sv("line", { x1: M.l, x2: W - M.r, y1: py(v), y2: py(v), stroke: v === 0 ? "#c9c9cc" : "#ececef", "stroke-width": 1 }, svg);
-      sv("text", { x: M.l - 8, y: py(v) + 4, "text-anchor": "end", class: "ax" }, svg).textContent = tickText(v);
-    });
-    ticks(1, T, small ? 4 : 8).filter(function (v) { return v >= 1 && v <= T && v % 1 === 0; }).forEach(function (v) {
-      sv("text", { x: px(v - 1), y: H - M.b + 18, "text-anchor": "middle", class: "ax" }, svg).textContent = fmt(v);
-    });
-    sv("text", { x: (M.l + W - M.r) / 2, y: H - 6, "text-anchor": "middle", class: "ax-l" }, svg).textContent = "Trial";
-    sv("text", { transform: "translate(13," + (M.t + (H - M.t - M.b) / 2) + ") rotate(-90)", "text-anchor": "middle", class: "ax-l" }, svg).textContent = cfg.yName + " (" + cfg.unit.trim() + ")";
-    var segs = [];
-    (cfg.phase || []).forEach(function (p, i) { if (!segs.length || segs[segs.length - 1].p !== p) segs.push({ p: p, a: i, b: i }); else segs[segs.length - 1].b = i; });
-    segs.forEach(function (sg, j) {
-      if (j > 0 && segs.length <= 24) sv("line", { x1: px(sg.a - 0.5), x2: px(sg.a - 0.5), y1: M.t - 6, y2: H - M.b, stroke: "#c9c9cc", "stroke-width": 1 }, svg);
-      if (sg.p && px(sg.b + 0.5) - px(sg.a - 0.5) > 64) sv("text", { x: Math.max(M.l, px(sg.a - 0.5)) + 5, y: M.t - 9, class: "ph" }, svg).textContent = PHASE_NAME[sg.p] || sg.p;
-    });
-    var refs = S.map(function (o) { return o.s.ref || null; });
-    var refKey = refs.map(function (r) { return r ? r.join(",") : ""; });
-    var sameRef = refKey.every(function (r) { return r === refKey[0]; });
-    var gR = sv("g", { "clip-path": clip }, svg);
-    (sameRef ? [{ r: refs[0], c: REF_GRAY }] : S.map(function (o) { return { r: o.s.ref, c: o.s.color }; })).forEach(function (q) {
-      if (!q.r || !q.r.some(function (v) { return v != null; })) return;
-      sv("path", { d: stepPath(q.r, px, py), fill: "none", stroke: q.c, "stroke-width": 1.5, "stroke-dasharray": "6 4" }, gR);
-    });
-    var gL = sv("g", { "clip-path": clip }, svg);
-    S.forEach(function (o) {
-      var s = o.s;
-      if (o.dots) {
-        o.pts.forEach(function (p) { if (p.y != null) sv("circle", { cx: px(p.x), cy: py(p.y), r: 2.6, fill: s.color }, gL); });
-        return;
-      }
-      var runs = [], cur = null, gap = 0;
-      o.pts.forEach(function (p) {
-        if (p.y == null) { gap++; if (gap > Math.max(1, Math.round(5 / k))) cur = null; return; }
-        gap = 0; if (!cur) { cur = []; runs.push(cur); } cur.push(p);
-      });
-      if (k === 1 && s.sem && S.length <= 3) {
-        runs.forEach(function (rr) {
-          var up = "", dn = "";
-          rr.forEach(function (p) { var e = s.sem[p.i0] || 0; up += (up ? "L" : "M") + px(p.x).toFixed(1) + " " + py(p.y + e).toFixed(1); });
-          rr.slice().reverse().forEach(function (p) { var e = s.sem[p.i0] || 0; dn += "L" + px(p.x).toFixed(1) + " " + py(p.y - e).toFixed(1); });
-          if (rr.length > 1) sv("path", { d: up + dn + "Z", fill: s.color, "fill-opacity": 0.12, stroke: "none" }, gL);
-        });
-      }
-      var d = runs.map(function (rr) { return rr.map(function (p, j) { return (j ? "L" : "M") + px(p.x).toFixed(1) + " " + py(p.y).toFixed(1); }).join(""); }).join("");
-      sv("path", { d: d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, gL);
-      runs.forEach(function (rr) { if (rr.length === 1) sv("circle", { cx: px(rr[0].x), cy: py(rr[0].y), r: 2.6, fill: s.color }, gL); });
-    });
-    var cross = sv("line", { y1: M.t, y2: H - M.b, stroke: "#4a4b4f", "stroke-width": 1, visibility: "hidden" }, svg);
-    var tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; box.appendChild(tip);
-    var curI = 0;
-    function showAt(i, cx, cy) {
-      i = Math.max(0, Math.min(T - 1, i)); curI = i;
-      var b = Math.floor(i / k), i0 = b * k, i1 = Math.min(i0 + k, T) - 1, xc = px(i0 + (i1 - i0) / 2);
-      cross.setAttribute("x1", xc); cross.setAttribute("x2", xc); cross.setAttribute("visibility", "visible");
-      var ph = cfg.phase && cfg.phase[i0], mode = S[0].s.modes ? S[0].s.modes[i0] : null;
-      var h = "<b>Trial " + fmt(i0 + 1) + (i1 > i0 ? " to " + fmt(i1 + 1) : "") + "</b>" + (ph ? " <span>" + esc(PHASE_NAME[ph] || ph) + "</span>" : "");
-      S.forEach(function (o) {
-        var p = o.pts[b], v = p ? p.y : null;
-        h += "<div class=\"tr\" style=\"color:" + o.s.color + "\"><i></i><strong>" + (v == null ? "no data" : num1(v) + cfg.unit) + "</strong><span>" + (S.length > 1 ? esc(o.s.label) : "") + (o.s.nt && v != null ? (S.length > 1 ? ", " : "") + "n = " + o.s.nt[i0] : "") + "</span></div>";
-      });
-      var rv = S.map(function (o) { var r = o.s.tref || o.s.ref; return r ? r[i0] : null; }).filter(function (v) { return v != null; });
-      if (mode !== "rotated" && mode !== "clamped" && rv.every(function (v) { return v === 0; })) rv = [];
-      if (rv.length && cfg.refName) h += "<div class=\"tr\"><span>" + esc(mode === "clamped" ? "Clamp" : mode === "rotated" || mode === "none" ? "Rotation" : cfg.refName) + " " + Array.from(new Set(rv.map(function (v) { return num1(v) + "°"; }))).join(", ") + "</span></div>";
-      if (cfg.nofb && cfg.nofb[i0]) h += "<div class=\"tr\"><span>No feedback</span></div>";
-      tip.innerHTML = h; tip.hidden = false;
-      var r = svg.getBoundingClientRect(), scale = r.width / W;
-      tipPlace(box, tip, cx != null ? cx : xc * scale + 4, cy != null ? cy : (H / 2) * scale);
-    }
-    function hide() { tip.hidden = true; cross.setAttribute("visibility", "hidden"); }
-    svg.addEventListener("pointermove", function (e) {
-      var r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * (W / r.width);
-      showAt(Math.round((x - M.l) / (W - M.l - M.r) * (T - 1)), e.clientX - box.getBoundingClientRect().left, e.clientY - box.getBoundingClientRect().top);
-    });
-    svg.addEventListener("pointerleave", hide);
-    svg.addEventListener("blur", hide);
-    svg.addEventListener("focus", function () { showAt(curI); });
-    svg.addEventListener("keydown", function (e) {
-      var step = e.shiftKey ? 10 * k : k;
-      if (e.key === "ArrowRight") { e.preventDefault(); showAt(curI + step); }
-      else if (e.key === "ArrowLeft") { e.preventDefault(); showAt(curI - step); }
-      else if (e.key === "Escape") hide();
-    });
-  }
-
-  function legendHtml(series, hasRef, refText, hasNofb) {
-    var items = series.length > 1 ? series.map(function (s) { return "<span><i style=\"color:" + s.color + "\"></i>" + esc(s.label) + " (n = " + s.n + ")</span>"; }) : [];
-    if (hasRef) items.push("<span><i class=\"dash\"></i>" + esc(refText) + "</span>");
-    if (hasNofb) items.push("<span><i class=\"sw\"></i>No feedback</span>");
-    return items.length ? "<div class=\"legend\">" + items.join("") + "</div>" : "";
-  }
-
-  /* ---------- one study ---------- */
-  function loadDataset(name) {
-    if (BETA.cache[name]) return Promise.resolve(BETA.cache[name]);
-    return fetch("beta/" + encodeURIComponent(name) + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (d) { BETA.cache[name] = d; return d; });
-  }
-  function seriesFor(e, T) {
-    return e.series.map(function (s, j) {
-      var color = e.series.length > 1 ? SERIES_COLORS[j % SERIES_COLORS.length] : ONE_COLOR;
-      return { label: s.label, color: color, n: s.n, raw: s, T: s.trials,
-               hand: s.hand.concat(new Array(Math.max(0, T - s.hand.length)).fill(null)),
-               sem: s.sem, nt: expand(s.nt, T), ref: expand(s.pert, T), modes: expand(s.mode, T), refDraw: null,
-               nofb: expand(s.nofb, T), phase: expand(s.phase, T), rt: s.rt || null, aim: s.aim || null, varies: !!s.varies };
-    });
-  }
-  function phaseTable(series, T) {
-    var p0 = series[0].phase, segs = [];
-    p0.forEach(function (p, i) { if (i < series[0].T) { if (!segs.length || segs[segs.length - 1].p !== p) segs.push({ p: p, a: i, b: i }); else segs[segs.length - 1].b = i; } });
-    segs = segs.filter(function (s) { return s.p; });
-    if (!segs.length) return "";
-    var rows = [];
-    segs.slice(0, 14).forEach(function (sg) {
-      rows.push({ name: (PHASE_NAME[sg.p] || sg.p) + ", trials " + fmt(sg.a + 1) + " to " + fmt(sg.b + 1), a: sg.a, b: sg.b });
-      if (sg.p === "learning" && sg.b - sg.a + 1 >= 40) rows.push({ name: "Learning, last 20 trials", a: sg.b - 19, b: sg.b });
-    });
-    function mean(arr, a, b) { var s = 0, c = 0; for (var i = a; i <= b; i++) if (arr[i] != null) { s += arr[i]; c++; } return c ? s / c : null; }
-    var head = "<tr><th scope=\"col\">Phase</th>" + series.map(function (s) { return "<th scope=\"col\" class=\"num\">" + (series.length > 1 ? esc(s.label) : "Hand angle") + "</th>"; }).join("") + "</tr>";
-    var body = rows.map(function (r) { return "<tr><td>" + esc(r.name) + "</td>" + series.map(function (s) { var m = mean(s.hand, r.a, r.b); return "<td class=\"num\">" + (m == null ? "" : num1(m) + "°") + "</td>"; }).join("") + "</tr>"; }).join("");
-    return "<details class=\"tbl\"><summary>Average hand angle in each phase</summary><div class=\"table-card\"><div class=\"table-wrap\"><table class=\"data compact phase-sum\"><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div></div>" +
-      (segs.length > 14 ? "<p class=\"chart-note\">The first 14 phases are shown.</p>" : "") + "</details>";
-  }
-  function expBlock(e, host) {
-    var T = e.series.reduce(function (m, s) { return Math.max(m, s.trials); }, 1);
-    var S = seriesFor(e, T);
-    S.forEach(function (s) { s.refDraw = s.ref.map(function (v, i) { return s.modes[i] === "clamped" ? null : v; }); });
-    var anyClamp = S.some(function (s) { return s.modes.indexOf("clamped") >= 0; });
-    var measures = [["hand", "Hand angle"]];
-    if (S.some(function (s) { return s.aim; })) measures.push(["aim", "Aim reports"]);
-    if (S.some(function (s) { return s.rt; })) measures.push(["rt", "Reaction time"]);
-    var narrow = window.innerWidth < 600, bins = [1, 2, 5, 10, 20];
-    var state = { m: "hand", bin: narrow ? (T <= 120 ? 1 : T <= 600 ? 5 : 10) : (T <= 400 ? 1 : T <= 1200 ? 5 : 10) };
-    var nG = S.length, people = S.reduce(function (t, s) { return t + s.n; }, 0);
-    var meta = fmt(e.n) + " participant" + (e.n === 1 ? "" : "s") + (e.n_excluded ? ", of whom " + e.n_excluded + " were excluded by the authors and are left out" : "") + ". " +
-      fmt(T) + " trials" + (nG > 1 ? ", shown as " + nG + " lines" : "") + ".";
-    var div = document.createElement("div"); div.className = "exp-block";
-    div.innerHTML = "<h2>" + esc(e.label) + "</h2><p class=\"exp-meta\">" + meta + "</p>" +
-      "<div class=\"chart-tools\">" + (measures.length > 1 ? "<span class=\"seg\" role=\"group\" aria-label=\"Measure\">" + measures.map(function (m) { return "<button type=\"button\" data-m=\"" + m[0] + "\" aria-pressed=\"" + (m[0] === state.m) + "\">" + m[1] + "</button>"; }).join("") + "</span>" : "") +
-      "<label>Average over <select data-bin>" + bins.map(function (b) { return "<option value=\"" + b + "\"" + (b === state.bin ? " selected" : "") + ">" + (b === 1 ? "each trial" : b + " trials") + "</option>"; }).join("") + "</select></label></div>" +
-      "<div class=\"lg\"></div><div class=\"cv\"></div><div class=\"nt\"></div>" + phaseTable(S, T);
-    host.appendChild(div);
-    function draw() {
-      var m = state.m, isAng = m !== "rt";
-      var series = S.map(function (s) { return { label: s.label, color: s.color, n: s.n, y: m === "hand" ? s.hand : (s[m] || []), sem: m === "hand" ? s.sem : null, ref: isAng ? s.refDraw : null, tref: s.ref, modes: s.modes, nt: m === "hand" ? s.nt : null }; });
-      var hasRef = isAng && S.some(function (s) { return s.refDraw.some(function (v) { return v != null && v !== 0; }); });
-      var hasNofb = S[0].nofb.some(Boolean);
-      var refText = "Rotation" + (S.length > 1 && !S.every(function (s) { return s.refDraw.join() === S[0].refDraw.join(); }) ? " (dashed, in each line's color)" : "");
-      div.querySelector(".lg").innerHTML = legendHtml(series, hasRef, refText, hasNofb);
-      lineChart(div.querySelector(".cv"), { T: T, series: series, nofb: S[0].nofb, phase: S[0].phase, bin: state.bin,
-        yName: m === "rt" ? "Reaction time, median" : m === "aim" ? "Aim report" : "Hand angle", unit: m === "rt" ? " ms" : "°", zero: m !== "rt", refName: "Perturbation",
-        aria: e.label + ": " + (m === "rt" ? "median reaction time" : m === "aim" ? "average aim report" : "average hand angle") + " on each trial" });
-      var notes = [];
-      if (isAng) notes.push((m === "aim" ? "Aim reports" : "Hand angles") + " are flipped for each participant so that moving against their first rotation or clamp is positive" + (hasRef ? "; the dashed line is the rotation, flipped the same way, so a hand that fully cancels it sits on the line" : "") + "." + (anyClamp ? " Clamp sizes are in the tooltip: a clamp is not a direction the hand is meant to reach, so it has no line." : ""));
-      notes.push("Trials and participants that the authors excluded are left out." + (m === "hand" && S.length <= 3 && state.bin === 1 ? " The shaded band is plus or minus one standard error." : ""));
-      var nv = S.filter(function (s) { return s.varies; });
-      var warn = nv.length ? "<p class=\"chart-note warn\">Participants in " + (S.length > 1 ? "the line" + (nv.length > 1 ? "s " : " ") + nv.map(function (s) { return esc(s.label); }).join(", ") : "this experiment") + " did not all have the same trial schedule (for example, perturbations in a different order or at different trials), so the average mixes them. Download the data to look at each participant.</p>" : "";
-      var omit = (e.omitted ? "<p class=\"chart-note\">" + e.omitted + " smaller line" + (e.omitted > 1 ? "s are" : " is") + " not shown; every participant is in the download.</p>" : "") +
-        (e.odd ? "<p class=\"chart-note\">" + e.odd + " participant" + (e.odd > 1 ? "s whose schedules differ" : " whose schedule differs") + " from the rest of their group " + (e.odd > 1 ? "are" : "is") + " not shown.</p>" : "");
-      div.querySelector(".nt").innerHTML = "<p class=\"chart-note\">" + notes.join(" ") + "</p>" + warn + omit;
-    }
-    div.querySelector(".chart-tools").addEventListener("click", function (ev) { var b = ev.target.closest("button[data-m]"); if (!b) return; state.m = b.getAttribute("data-m"); div.querySelectorAll("button[data-m]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); }); draw(); });
-    div.querySelector("select[data-bin]").addEventListener("change", function (ev) { state.bin = +ev.target.value; draw(); });
-    draw();
-    return draw;
-  }
-
-  var redraws = [];
-  function showBetaStudy(id) {
-    var s = BY_ID[id];
-    redraws = [];
-    if (!s || !FILES_OF[id]) {
-      $("#bs-crumb").textContent = "Not found"; $("#bs-h").textContent = "No standardized study by that name";
-      $("#bs-head").innerHTML = "<p><a href=\"#beta\">See all standardized studies</a></p>"; $("#bs-body").innerHTML = ""; $("#bs-report").hidden = true;
-      return "Beta";
-    }
-    $("#bs-report").hidden = false;
-    $("#bs-crumb").textContent = s._name; $("#bs-h").textContent = s._name;
-    $("#bs-page").href = studyLink(s);
-    var files = FILES_OF[id], people = 0, trials = 0;
-    files.forEach(function (f) { people += f.persons; trials += f.rows; });
-    if (s.people) people = s.people;
-    var p = s.papers[0];
-    $("#bs-head").innerHTML = "<div class=\"bs-top\"><div><p class=\"bs-sub\">" + esc(p.title) + "</p><p class=\"bs-cite\">" + esc(p.authors) + " (" + p.year + "). <i>" + esc(p.venue) + "</i>.</p></div>" +
-      "<dl class=\"facts bs-facts\"><dt>Standardized data</dt><dd class=\"bc-dl\">" + dlLinks(s) + "<small>Each ZIP has the data as one CSV file, a README with the citation and license, and columns.csv.</small></dd>" +
-      "<dt>Participants</dt><dd>" + fmt(people) + "</dd><dt>Trials</dt><dd>" + fmt(trials) + "</dd>" +
-      "<dt>Original data</dt><dd class=\"orig\">" + origLinks(s) + "</dd></dl></div>";
-    var body = $("#bs-body");
-    body.innerHTML = inViewer ? "<p class=\"muted\">The plots load on the public OpenMotor site.</p>" : "<p class=\"muted\">Loading the plots...</p>";
-    if (inViewer) return s._name + " | Beta";
-    Promise.all(files.map(function (f) { return loadDataset(f.name); })).then(function (ds) {
-      if (location.hash.indexOf("#beta/") !== 0 || decodeURIComponent(location.hash.slice(6)) !== id) return;
-      body.innerHTML = "";
-      ds.forEach(function (d) {
-        d.experiments.forEach(function (e) {
-          var pre = d.name.indexOf(id) === 0 ? d.name.slice(id.length).replace(/^_/, "") : d.name.replace(/^([A-Za-z']+?)(\d{4})_.*$/, "$1 $2");
-          var lab = ds.length > 1 ? { label: pre + ": " + e.label } : {};
-          redraws.push(expBlock(Object.assign({}, e, lab), body));
-        });
-      });
-    }).catch(function () { body.innerHTML = "<p>The plots could not be loaded. Check your connection and reload the page, or download the data above.</p>"; });
-    resetReport();
-    return s._name + " | Beta";
-  }
-  var rzT;
-  window.addEventListener("resize", function () { clearTimeout(rzT); rzT = setTimeout(function () { if (!$("#beta-study").hidden) redraws.forEach(function (f) { f(); }); if (!$("#cv-result").hidden && CV.draw) CV.draw(); }, 150); });
-
-  /* the report form */
-  function resetReport() {
-    $("#bs-report").reset(); $("#bs-what").hidden = true; $("#bs-status").textContent = ""; $("#bs-fallback").hidden = true;
-  }
-  $("#bs-report").addEventListener("change", function (e) { if (e.target.name === "bs-verdict") $("#bs-what").hidden = e.target.value !== "problem"; });
-  function reportText() {
-    var id = decodeURIComponent(location.hash.slice(6)), s = BY_ID[id], v = ($("#bs-report").querySelector("input[name=bs-verdict]:checked") || {}).value;
-    var what = Array.prototype.map.call($("#bs-what").querySelectorAll("input:checked"), function (x) { return x.value; });
-    var lines = ["OpenMotor beta: check of a standardized study", "", "Study: " + (s ? s._name : id) + " (" + id + ")", "Page: " + location.href.split("#")[0] + "#beta/" + encodeURIComponent(id), "",
-      "Answer: " + (v === "ok" ? "It looks right" : "Something is wrong")];
-    if (v === "problem") lines.push("What is wrong: " + (what.join("; ") || "(not said)"));
-    lines.push("", "Details:", $("#bs-details").value.trim() || "(none)", "", "From: " + ($("#bs-name").value.trim() || "(no name)") + ", " + $("#bs-email").value.trim() + ", " + ($("#bs-role").value || "role not said"));
-    return { subject: "OpenMotor beta check: " + (s ? s._name : id) + (v === "ok" ? ": looks right" : ": problem"), body: lines.join("\n") };
-  }
-  $("#bs-report").addEventListener("submit", function (e) {
-    e.preventDefault();
-    var v = $("#bs-report").querySelector("input[name=bs-verdict]:checked"), em = $("#bs-email"), ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim());
-    em.setAttribute("aria-invalid", ok ? "false" : "true");
-    if (!v) { $("#bs-status").textContent = "Choose whether it looks right or something is wrong."; return; }
-    if (!ok) { $("#bs-status").textContent = "Add your email, so we can reply."; em.focus(); return; }
-    var m = reportText(), a = document.createElement("a");
-    a.href = "mailto:" + SUBMIT_TO + "?subject=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body);
-    document.body.appendChild(a); a.click(); a.remove();
-    $("#bs-status").textContent = "An email to the OpenMotor team should have opened with your answer filled in. Press send to finish.";
-    $("#bs-fallback").hidden = false;
-  });
-  $("#bs-copy").addEventListener("click", function () {
-    var b = this, m = reportText();
-    navigator.clipboard.writeText("To: " + SUBMIT_TO + "\nSubject: " + m.subject + "\n\n" + m.body).then(function () { b.textContent = "Copied"; }, function () { b.textContent = "Select the address and copy it"; });
-    setTimeout(function () { b.textContent = "Copy the message"; }, 2000);
-  });
-
-  function showBetaHome() {
-    if (!BETA.home) { BETA.home = true; betaStats(); renderBetaList(); }
-    return "Standardized data (beta)";
-  }
-  function showBeta(arg) {
-    $("#beta-home").hidden = !!arg; $("#beta-study").hidden = !arg;
-    return arg ? showBetaStudy(arg) : showBetaHome();
-  }
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest("[data-jump]");
-    if (!a) return;
-    e.preventDefault();
-    var go = function () { var t = document.getElementById(a.getAttribute("data-jump")); if (t) t.scrollIntoView({ behavior: "smooth", block: "start" }); };
-    if (location.hash !== "#beta") { location.hash = "#beta"; setTimeout(go, 80); } else go();
-  });
-
-  /* ---------- convert your own data (CSV, in the browser) ---------- */
-  var CV = { header: null, rows: null, file: null, map: {}, ans: {}, out: null, draw: null };
-  var TARGETS = [
-    { key: "subject", label: "Participant", req: true, ex: /^(subj(ect)?(_?id)?|participant(_?id)?|pid|sub|sn|id|ppt)$/i, lo: /subj|participant|^id$|^sn$/i },
-    { key: "trial", label: "Trial number", req: true, ex: /^(trial|tn|trial_?(n|no|num|number|idx|index)|trialnum)$/i, lo: /trial/i },
-    { key: "target_angle", label: "Target direction", ex: /^(target(_?angle)?|ti|tgt|target_?dir(ection)?|targetangle|target_?deg)$/i, lo: /target|tgt/i },
-    { key: "hand_angle", label: "Hand angle", req: true, ex: /^(hand(_?angle)?|handdeg|hand_?dir(ection)?|reach(_?angle)?|endpoint(_?angle)?|ha|movement_?angle|heading)$/i, lo: /hand|reach|endpoint|heading/i },
-    { key: "rotation", label: "Rotation", ex: /^(rot(ation)?|ri|perturbation|pert|rotation_?deg)$/i, lo: /rot|pert/i },
-    { key: "clamp", label: "Error clamp", ex: /^clamp(_?angle|_?size)?$/i, lo: /clamp/i },
-    { key: "group", label: "Group", ex: /^(group|condition|cond|grp)$/i, lo: /group|cond/i },
-    { key: "block", label: "Block or phase", ex: /^(block|phase|epoch|blk)$/i, lo: /block|phase|epoch/i },
-    { key: "fb_shown", label: "Feedback shown (1 or 0)", ex: /^(fbi|fb|fb_?on|fb_?shown|fb_?visible|feedback(_?(on|shown|visible))?)$/i, lo: /^fb|feedback/i },
-    { key: "rt_ms", label: "Reaction time", ex: /^(rt|reaction_?time|rt_?ms)$/i, lo: /^rt|reaction/i },
-    { key: "mt_ms", label: "Movement time", ex: /^(mt|movement_?time|mt_?ms)$/i, lo: /^mt|movement_?time/i }
-  ];
-  function parseCSV(text) {
-    var first = text.slice(0, text.indexOf("\n") >= 0 ? text.indexOf("\n") : text.length);
-    var sep = first.split("\t").length > first.split(",").length ? "\t" : (first.split(";").length > first.split(",").length ? ";" : ",");
-    var rows = [], row = [], f = "", q = false;
-    for (var i = 0; i < text.length; i++) {
-      var c = text[i];
-      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
-      else if (c === '"') q = true;
-      else if (c === sep) { row.push(f); f = ""; }
-      else if (c === "\n" || c === "\r") { if (c === "\r" && text[i + 1] === "\n") i++; row.push(f); f = ""; if (row.length > 1 || row[0] !== "") rows.push(row); row = []; }
-      else f += c;
-    }
-    if (f !== "" || row.length) { row.push(f); rows.push(row); }
-    return rows;
-  }
-  function numv(v) { if (v == null) return NaN; var t = String(v).trim(); return t === "" || /^(nan|na|null)$/i.test(t) ? NaN : Number(t); }
-  function wrap180(a) { a = ((a + 180) % 360 + 360) % 360 - 180; return a === -180 ? 180 : a; }
-  function wrap360(a) { return ((a % 360) + 360) % 360; }
-  function colVals(key) { var i = CV.header.indexOf(CV.map[key]); return i < 0 ? null : CV.rows.map(function (r) { return r[i]; }); }
-  function colK(key) {
-    var v = (colVals(key) || []).map(numv).filter(isFinite);
-    if (!v.length) return 1;
-    var maxAbs = v.reduce(function (m, x) { return Math.max(m, Math.abs(x)); }, 0);
-    return maxAbs <= 6.3 && v.some(function (x) { return x % 1 !== 0; }) ? 180 / Math.PI : 1;
-  }
-  function detect() {
-    var used = {}; CV.map = {};
-    ["ex", "lo"].forEach(function (pass) {
-      TARGETS.forEach(function (t) {
-        if (CV.map[t.key]) return;
-        var hit = CV.header.find(function (h) { return !used[h] && t[pass].test(h.trim()); });
-        if (hit) { CV.map[t.key] = hit; used[hit] = 1; }
-      });
-    });
-    var hv = (colVals("hand_angle") || []).map(numv).filter(isFinite);
-    var maxAbs = hv.reduce(function (m, v) { return Math.max(m, Math.abs(v)); }, 0);
-    CV.ans = { units: hv.length && maxAbs <= 6.3 ? "radians" : "degrees", frame: "relative", dir: "", pert: "", pertSize: "", pertFrom: "", pertTo: "", ids: "", cursor: "unknown" };
-    var tv = colVals("target_angle");
-    if (tv && hv.length) {
-      var hs = (colVals("hand_angle") || []).map(numv), ts = tv.map(numv), k = CV.ans.units === "radians" ? 180 / Math.PI : 1, kt = colK("target_angle"), dRel = [], dAbs = [];
-      hs.forEach(function (h, i) { if (isFinite(h) && isFinite(ts[i])) { dRel.push(Math.abs(wrap180(h * k))); dAbs.push(Math.abs(wrap180(h * k - ts[i] * kt))); } });
-      var med = function (a) { a = a.slice().sort(function (x, y) { return x - y; }); return a.length ? a[a.length >> 1] : 0; };
-      if (dAbs.length && med(dAbs) < med(dRel)) CV.ans.frame = "absolute";
-    }
-    var rt = (colVals("rt_ms") || []).map(numv).filter(isFinite).sort(function (a, b) { return a - b; });
-    CV.ans.rtSeconds = rt.length > 0 && rt[rt.length >> 1] < 10;
-    CV.overlap = idOverlap();
-  }
-  function idOverlap() {
-    var si = CV.header.indexOf(CV.map.subject), gi = CV.header.indexOf(CV.map.group);
-    if (si < 0 || gi < 0) return false;
-    var seen = {};
-    return CV.rows.some(function (r) { var s0 = r[si], g = r[gi]; if (seen[s0] != null && seen[s0] !== g) return true; seen[s0] = g; return false; });
-  }
-  function missing() {
-    var m = [];
-    TARGETS.forEach(function (t) { if (t.req && !CV.map[t.key]) m.push("which column holds the " + t.label.toLowerCase()); });
-    if (!CV.ans.dir) m.push("which way positive angles go");
-    if (CV.overlap && !CV.ans.ids) m.push("whether the same participant ID in different groups is the same person");
-    if (!CV.map.rotation && !CV.map.clamp) {
-      if (!CV.ans.pert) m.push("what the cursor did");
-      else if (CV.ans.pert !== "none" && (!isFinite(numv(CV.ans.pertSize)) || !isFinite(numv(CV.ans.pertFrom)) || !isFinite(numv(CV.ans.pertTo)))) m.push("the size and trials of the perturbation");
-    }
-    return m;
-  }
-  function convert() {
-    var names = DICT.reduce(function (a, sec) { return a.concat(sec.columns.map(function (c) { return c.name; })); }, []), col = {};
-    names.forEach(function (n, i) { col[n] = i; });
-    var ds = ($("#cv-name").value.trim() || "MyDataset").replace(/[^\w.-]+/g, "_");
-    var k = CV.ans.units === "radians" ? 180 / Math.PI : 1, sg = CV.ans.dir === "cw" ? -1 : 1;
-    var kT = colK("target_angle"), kR = colK("rotation"), kC = colK("clamp");
-    var get = {}; TARGETS.forEach(function (t) { get[t.key] = CV.header.indexOf(CV.map[t.key]); });
-    var byGroup = CV.overlap && CV.ans.ids === "different" && get.group >= 0;
-    var recs = CV.rows.map(function (r, i) { return { r: r, i: i, s: (byGroup ? r[get.group] + "|" : "") + (get.subject >= 0 ? r[get.subject] : ""), t: get.trial >= 0 ? numv(r[get.trial]) : NaN }; });
-    recs.sort(function (a, b) { return a.s < b.s ? -1 : a.s > b.s ? 1 : ((isFinite(a.t) ? a.t : a.i) - (isFinite(b.t) ? b.t : b.i)); });
-    var subjIdx = {}, nS = 0, cur = null, tr = 0, out = [], lite = [];
-    recs.forEach(function (x) {
-      if (!(x.s in subjIdx)) subjIdx[x.s] = ++nS;
-      if (x.s !== cur) { cur = x.s; tr = 0; } else tr++;
-      var o = new Array(names.length).fill(""), L = {};
-      function put(n, v) { o[col[n]] = v; L[n] = v; }
-      var code = String(subjIdx[x.s]).padStart(4, "0");
-      put("dataset", ds); put("study", ds); put("experiment", ds + "_Exp1"); put("subject", ds + "_S" + code); put("person", ds + "_P" + code);
-      put("id_type", "lab"); put("person_link", "assumed_unique"); put("trial", tr); put("trial_orig", isFinite(x.t) ? x.t : ""); put("session", 0);
-      put("trial_kind", "reach"); put("break_before", tr === 0 ? "True" : "False"); put("instr_goal", "cursor_to_target");
-      put("group", get.group >= 0 ? x.r[get.group] : "");
-      if (get.block >= 0) put("block", x.r[get.block]);
-      var tgt = get.target_angle >= 0 ? numv(x.r[get.target_angle]) * kT * sg : NaN;
-      if (isFinite(tgt)) put("target_angle", +wrap360(tgt).toFixed(3));
-      var h = get.hand_angle >= 0 ? numv(x.r[get.hand_angle]) * k * sg : NaN;
-      if (isFinite(h)) put("hand_angle", +wrap180(CV.ans.frame === "absolute" && isFinite(tgt) ? h - tgt : h).toFixed(3));
-      var rot = get.rotation >= 0 ? numv(x.r[get.rotation]) * kR * sg : NaN, cl = get.clamp >= 0 ? numv(x.r[get.clamp]) * kC * sg : NaN;
-      if (get.rotation < 0 && get.clamp < 0 && CV.ans.pert) {
-        var on = CV.ans.pert !== "none" && tr + 1 >= numv(CV.ans.pertFrom) && tr + 1 <= numv(CV.ans.pertTo), size = numv(CV.ans.pertSize) * sg;
-        if (CV.ans.pert === "rotation") rot = on ? size : 0;
-        else if (CV.ans.pert === "clamp") { if (on) cl = size; else rot = 0; }
-        else rot = 0;
-      }
-      if (isFinite(cl)) { put("clamp", cl); put("fb_mode", "clamped"); put("cursor_error", cl); }
-      else { var rr = isFinite(rot) ? rot : 0; put("rotation", rr); put("fb_mode", rr ? "rotated" : "veridical"); if (isFinite(L.hand_angle)) put("cursor_error", +wrap180(L.hand_angle + rr).toFixed(3)); }
-      var noFb = get.fb_shown >= 0 && /^(0|0\.0|false|no|off|none)$/i.test(String(x.r[get.fb_shown]).trim());
-      put("fb_visible", noFb ? "none" : CV.ans.cursor);
-      if (noFb) { put("fb_mode", "none"); put("cursor_error", ""); }
-      if (L.hand_angle !== undefined) put("hand_angle_fb", L.hand_angle);
-      var rt = get.rt_ms >= 0 ? numv(x.r[get.rt_ms]) : NaN, mt = get.mt_ms >= 0 ? numv(x.r[get.mt_ms]) : NaN;
-      if (isFinite(rt)) put("rt_ms", CV.ans.rtSeconds ? +(rt * 1000).toFixed(1) : rt);
-      if (isFinite(mt)) put("mt_ms", CV.ans.rtSeconds ? +(mt * 1000).toFixed(1) : mt);
-      out.push(o); lite.push(L);
-    });
-    CV.out = { names: names, rows: out, lite: lite, nSubj: nS, ds: ds };
-  }
-  function csvText() {
-    var e2 = function (v) { v = String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
-    return CV.out.names.join(",") + "\n" + CV.out.rows.map(function (o) { return o.map(e2).join(","); }).join("\n") + "\n";
-  }
-  function convertedSeries() {
-    var subs = {}, order = [];
-    CV.out.lite.forEach(function (o) { if (!subs[o.subject]) { subs[o.subject] = []; order.push(o.subject); } subs[o.subject].push(o); });
-    var groups = {}, gorder = [], T = 0;
-    order.forEach(function (sid) {
-      var tr = subs[sid], first = null;
-      T = Math.max(T, tr.length);
-      tr.forEach(function (o) { var p = o.clamp !== undefined && o.clamp !== "" ? o.clamp : o.rotation; if (first === null && isFinite(p) && p !== 0) first = p; });
-      var g = tr[0].group || "";
-      if (!groups[g]) { groups[g] = []; gorder.push(g); }
-      groups[g].push({ tr: tr, f: first ? -Math.sign(first) : 1 });
-    });
-    return { T: T, groups: gorder.length, series: gorder.slice(0, 8).map(function (g, j) {
-      var y = new Array(T).fill(null), sem = new Array(T).fill(null), nt = new Array(T).fill(0), ref = new Array(T).fill(null), tref = new Array(T).fill(null), modes = new Array(T).fill(null), nofb = new Array(T).fill(false);
-      for (var t = 0; t < T; t++) {
-        var v = [], r = [];
-        var off = 0, all = 0;
-        var rAll = [];
-        groups[g].forEach(function (s) { var o = s.tr[t]; if (!o) return; all++; if (o.fb_visible === "none") off++; if (isFinite(o.hand_angle)) v.push(s.f * o.hand_angle); var isC = o.clamp !== undefined && o.clamp !== "", p = isC ? o.clamp : o.rotation; if (isFinite(p)) { rAll.push(-s.f * p); if (!isC) r.push(-s.f * p); } if (!modes[t] || modes[t] === "none") modes[t] = o.fb_mode; });
-        if (rAll.length) tref[t] = pct(rAll, 0.5);
-        nofb[t] = all > 0 && off / all >= 0.5;
-        if (v.length) { var m = v.reduce(function (a, b) { return a + b; }, 0) / v.length; y[t] = m; nt[t] = v.length; if (v.length > 1) sem[t] = Math.sqrt(v.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / (v.length - 1) / v.length); }
-        if (r.length) ref[t] = pct(r, 0.5);
-      }
-      return { label: g || "All participants", color: gorder.length > 1 ? SERIES_COLORS[j] : ONE_COLOR, n: groups[g].length, y: y, sem: sem, nt: nt, ref: ref, tref: tref, modes: modes, nofb: nofb };
-    }) };
-  }
-  function renderConvert() {
-    var info = CV.file.name + " (" + fmt(CV.rows.length) + " rows, " + CV.header.length + " columns)";
-    $("#cv-intro").textContent = "We read " + info + " and matched its columns to the OpenMotor format. Check the matches and answer anything marked as needed.";
-    var opts = function (sel) { return "<option value=\"\">Not in my data</option>" + CV.header.map(function (h) { return "<option" + (h === sel ? " selected" : "") + ">" + esc(h) + "</option>"; }).join(""); };
-    $("#cv-map").innerHTML = TARGETS.map(function (t) {
-      return "<label for=\"cv-" + t.key + "\">" + esc(t.label) + (t.req ? " <span class=\"req\">*</span>" : "") + "</label><select id=\"cv-" + t.key + "\" data-key=\"" + t.key + "\">" + opts(CV.map[t.key]) + "</select>";
-    }).join("");
-    var q = [];
-    q.push("<div class=\"cv-q" + (CV.ans.dir ? "" : " need") + "\"><label for=\"cv-dir\">Positive angles go</label><select id=\"cv-dir\" data-ans=\"dir\"><option value=\"\">Choose</option><option value=\"ccw\"" + (CV.ans.dir === "ccw" ? " selected" : "") + ">Counter-clockwise</option><option value=\"cw\"" + (CV.ans.dir === "cw" ? " selected" : "") + ">Clockwise</option></select><small>We can't tell this from the numbers alone.</small></div>");
-    q.push("<div class=\"cv-q\"><label for=\"cv-units\">Hand angles are in</label><select id=\"cv-units\" data-ans=\"units\"><option value=\"degrees\"" + (CV.ans.units === "degrees" ? " selected" : "") + ">Degrees</option><option value=\"radians\"" + (CV.ans.units === "radians" ? " selected" : "") + ">Radians</option></select><small>Detected from your values; change it if it's wrong.</small></div>");
-    q.push("<div class=\"cv-q\"><label for=\"cv-cursor\">The cursor was shown</label><select id=\"cv-cursor\" data-ans=\"cursor\"><option value=\"unknown\"" + (CV.ans.cursor === "unknown" ? " selected" : "") + ">Not sure</option><option value=\"online\"" + (CV.ans.cursor === "online" ? " selected" : "") + ">During the movement</option><option value=\"endpoint\"" + (CV.ans.cursor === "endpoint" ? " selected" : "") + ">Only at the end of the movement</option></select>" + (CV.map.fb_shown ? "<small>On trials where your feedback column is 0, no cursor was shown.</small>" : "") + "</div>");
-    if (CV.map.target_angle) q.push("<div class=\"cv-q\"><label for=\"cv-frame\">Hand angles are measured</label><select id=\"cv-frame\" data-ans=\"frame\"><option value=\"relative\"" + (CV.ans.frame === "relative" ? " selected" : "") + ">From the target (0 = straight at it)</option><option value=\"absolute\"" + (CV.ans.frame === "absolute" ? " selected" : "") + ">As screen directions</option></select><small>Detected from your values.</small></div>");
-    if (!CV.map.rotation && !CV.map.clamp) {
-      var need = !CV.ans.pert || (CV.ans.pert !== "none" && !(CV.ans.pertSize && CV.ans.pertFrom && CV.ans.pertTo));
-      q.push("<div class=\"cv-q" + (need ? " need" : "") + "\"><label for=\"cv-pert\">What did the cursor do?</label><select id=\"cv-pert\" data-ans=\"pert\"><option value=\"\">Choose</option><option value=\"none\"" + (CV.ans.pert === "none" ? " selected" : "") + ">Followed the hand (no perturbation)</option><option value=\"rotation\"" + (CV.ans.pert === "rotation" ? " selected" : "") + ">Rotated by a fixed angle</option><option value=\"clamp\"" + (CV.ans.pert === "clamp" ? " selected" : "") + ">Error clamp</option></select>" +
-        (CV.ans.pert === "rotation" || CV.ans.pert === "clamp" ? "<div class=\"cv-inline\">Size <input data-ans=\"pertSize\" type=\"number\" placeholder=\"deg\" aria-label=\"Size in degrees\" value=\"" + esc(CV.ans.pertSize) + "\"> from trial <input data-ans=\"pertFrom\" type=\"number\" aria-label=\"First trial\" value=\"" + esc(CV.ans.pertFrom) + "\"> to <input data-ans=\"pertTo\" type=\"number\" aria-label=\"Last trial\" value=\"" + esc(CV.ans.pertTo) + "\"></div><small>Trials count from 1 for each participant.</small>" : "<small>Your file has no rotation or clamp column.</small>") + "</div>");
-    }
-    if (CV.overlap) q.push("<div class=\"cv-q" + (CV.ans.ids ? "" : " need") + "\"><label for=\"cv-ids\">The same participant ID appears in more than one group. Are they</label><select id=\"cv-ids\" data-ans=\"ids\"><option value=\"\">Choose</option><option value=\"different\"" + (CV.ans.ids === "different" ? " selected" : "") + ">Different people (IDs restart in each group)</option><option value=\"same\"" + (CV.ans.ids === "same" ? " selected" : "") + ">The same people, tested in several groups</option></select></div>");
-    $("#cv-qs").innerHTML = q.join("");
-    var miss = missing(), st = $("#cv-status");
-    if (miss.length) {
-      CV.out = null; CV.draw = null; $("#cv-result").hidden = true;
-      st.className = "cv-status need"; st.textContent = "To convert your data, tell us " + miss.join(", ") + ".";
-      return;
-    }
-    convert();
-    st.className = "cv-status ok"; st.textContent = "Converted " + fmt(CV.out.rows.length) + " trials from " + CV.out.nSubj + " participant" + (CV.out.nSubj === 1 ? "" : "s") + ". Check the plot: does it look like your data?";
-    $("#cv-result").hidden = false;
-    var cols = ["subject", "trial", "group", "target_angle", "hand_angle", "rotation", "clamp", "fb_mode", "cursor_error", "rt_ms"];
-    $("#cv-preview").innerHTML = "<thead><tr>" + cols.map(function (c) { return "<th><code>" + c + "</code></th>"; }).join("") + "</tr></thead><tbody>" +
-      CV.out.lite.slice(0, 8).map(function (o) { return "<tr>" + cols.map(function (c) { return "<td>" + esc(o[c] == null ? "" : o[c]) + "</td>"; }).join("") + "</tr>"; }).join("") + "</tbody>";
-    var cs = convertedSeries();
-    CV.draw = function () {
-      var host = $("#cv-chart"), hasRef = cs.series.some(function (s) { return s.ref.some(function (v) { return v; }); });
-      var nf = cs.series[0].nofb, anyNf = nf.some(Boolean);
-      host.innerHTML = legendHtml(cs.series, hasRef, "Rotation", anyNf) + "<div class=\"cvc\"></div><p class=\"chart-note\">The average hand angle on each trial" + (cs.series.length > 1 ? ", for each group" : "") + ", flipped for each participant so that moving against their first rotation or clamp is positive. If the curve goes the wrong way, check which way positive angles go." + (cs.groups > 8 ? " The plot shows 8 of your " + cs.groups + " groups; the converted file has all of them." : "") + "</p>";
-      lineChart(host.querySelector(".cvc"), { T: cs.T, series: cs.series, nofb: anyNf ? nf : null, bin: cs.T > 150 && cs.series.length > 3 ? 5 : cs.T <= 400 ? 1 : 5, yName: "Hand angle", unit: "°", refName: "Perturbation", aria: "Average hand angle on each trial of your converted data" });
-    };
-    CV.draw();
-  }
-  $("#cv-work").addEventListener("change", function (e) {
-    var t = e.target;
-    if (t.dataset.key) { CV.map[t.dataset.key] = t.value; CV.overlap = idOverlap(); }
-    if (t.dataset.ans) CV.ans[t.dataset.ans] = t.value;
-    renderConvert();
-  });
-  $("#cv-name").addEventListener("change", function () { if (CV.out) renderConvert(); });
-  function loadCSV(f) {
-    var st = $("#cv-status");
-    if (f.size > 150e6) { $("#cv-work").hidden = false; st.className = "cv-status need"; st.textContent = "This file is larger than 150 MB, too large to convert in the browser. Send it through Add your data instead."; return; }
-    var r = new FileReader();
-    r.onload = function () {
-      var rows = parseCSV(String(r.result));
-      $("#cv-work").hidden = false;
-      if (rows.length < 2) { st.className = "cv-status need"; st.textContent = "We could not read rows from this file. It needs a header row and one row per trial."; $("#cv-result").hidden = true; return; }
-      CV.file = f; CV.header = rows[0].map(function (h) { return h.trim(); }); CV.rows = rows.slice(1);
-      if (!$("#cv-name").value.trim()) $("#cv-name").value = f.name.replace(/\.[^.]+$/, "").replace(/[^\w.-]+/g, "_");
-      detect(); renderConvert();
-      $("#cv-work").scrollIntoView({ behavior: "smooth", block: "start" });
-    };
-    r.readAsText(f);
-  }
-  var cvDrop = $("#cv-drop"), cvPick = $("#cv-file");
-  cvDrop.addEventListener("click", function () { cvPick.click(); });
-  cvDrop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cvPick.click(); } });
-  cvPick.addEventListener("change", function () { if (cvPick.files[0]) loadCSV(cvPick.files[0]); cvPick.value = ""; });
-  ["dragenter", "dragover"].forEach(function (t) { cvDrop.addEventListener(t, function (e) { e.preventDefault(); cvDrop.classList.add("over"); }); });
-  ["dragleave", "drop"].forEach(function (t) { cvDrop.addEventListener(t, function (e) { e.preventDefault(); cvDrop.classList.remove("over"); }); });
-  cvDrop.addEventListener("drop", function (e) { if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) loadCSV(e.dataTransfer.files[0]); });
-  $("#cv-download").addEventListener("click", function () {
-    if (!CV.out) return;
-    var url = URL.createObjectURL(new Blob([csvText()], { type: "text/csv" })), a = document.createElement("a");
-    a.href = url; a.download = CV.out.ds + "_openmotor.csv"; document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
-  });
-
+  /* ---------- standardization ---------- */
+  var nStd = STUDIES.filter(function (s) { return FILES.some(function (f) { return f.catalog_study === s.id; }); }).length;
+  $("#std-lead").textContent = "We standardized the data from " + nStd + " of the studies in OpenMotor: " + fmt(META.development.people) + " participants and " +
+    (META.development.trials / 1e6).toFixed(2) + " million trials, converted to one format with one row per trial and the same 90 columns, units and sign conventions in every study. Code written for one study runs on all of them.";
 
   /* ---------- views ---------- */
-  var VIEWS = ["home", "studies", "study", "about", "format", "cite", "contribute", "beta"];
-  var ALIAS = { archive: "studies", tags: "studies", download: "studies" };
-  var NAV_OF = { study: "studies", format: "beta" };
-  var TITLE = { studies: "Studies", about: "About", format: "Standardized Data Format", cite: "How to Cite", contribute: "Add your dataset", beta: "Standardized data (beta)" };
+  var VIEWS = ["home", "studies", "study", "about", "format", "cite", "contribute", "standardization"];
+  var ALIAS = { archive: "studies", tags: "studies", download: "studies", beta: "standardization" };
+  var NAV_OF = { study: "studies", format: "standardization" };
+  var TITLE = { studies: "Studies", about: "About", format: "Standardized Data Format", cite: "How to Cite", contribute: "Add your dataset", standardization: "Standardization" };
   function show() {
     var h = location.hash.replace("#", ""), v = h, arg = "";
     if (v === "main") return;
@@ -1856,7 +1033,6 @@ details.tbl .table-card { margin-top: 10px; }
     if (VIEWS.indexOf(v) < 0 || (v === "study" && !arg)) v = "home";
     var title = TITLE[v];
     if (v === "study") title = showStudy(arg);
-    if (v === "beta") title = showBeta(arg);
     if (v === "studies" && ST.tag) title = tagText(TAGS[ST.tag]) + " | Studies";
     document.querySelectorAll("section.view").forEach(function (el) { el.hidden = el.getAttribute("data-view") !== v; });
     var nav = NAV_OF[v] || v;
