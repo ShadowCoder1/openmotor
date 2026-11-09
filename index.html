@@ -146,9 +146,9 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); 
 .st-layout .st-tools { margin-top: 0; }
 .task-nav { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; padding-bottom: 12px; }
 .task-nav-h { margin: 4px 12px 8px; font-size: 15px; font-weight: 700; color: var(--ink-2); }
-.task-nav a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 7px 12px; border-left: 3px solid transparent; border-radius: 8px; margin-bottom: 1px; color: var(--ink); text-decoration: none; font-size: 15.5px; }
-.task-nav a:hover { background: var(--icon-bg); color: var(--ink); }
-.task-nav a.active { background: #fdecef; border-left-color: var(--accent); font-weight: 700; }
+.task-nav a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 6px 12px; color: var(--ink); text-decoration: none; font-size: 15.5px; }
+.task-nav a:hover { color: var(--accent-dark); }
+.task-nav a.active { color: var(--accent-dark); font-weight: 700; }
 @media (max-width: 1000px) { .st-layout { grid-template-columns: minmax(0, 1fr); } .task-nav { display: none; } }
 @media (max-width: 760px) {
   .nav-drop { position: static; }
