@@ -1,0 +1,148 @@
+{
+ "id": "Crowe2023_ExpBrainRes",
+ "module": "timeseries",
+ "rows": 14400,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 48438147,
+ "zip_sha256": "61c86d6c26d67e6498f536bb5b768ea9651935586341dfd3225c04f3973cef1c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every line of the trial files is a sample, a condition line or a recognised event line",
+   "ok": true,
+   "detail": "{}"
+  },
+  {
+   "kind": "internal",
+   "what": "trials without a target-jump line (kept; the response analysis treats them as missing)",
+   "ok": true,
+   "detail": "42 trials: Counter({('main', 3): 4, ('main', 2): 3, ('main', 5): 3, ('main', 13): 3, ('main', 20): 3, ('replication', 1): 3, ('main', 4): 2, ('main', 10): 2, ('main', 11): 2, ('main', 12): 2, ('main', 16): 2, ('main', 1): 1, ('main', 7): 1, ('main', 8): 1, ('main', 9): 1, ('main', 14): 1, ('main', 15): 1, ('main', 18): 1, ('main', 21): 1, ('main', 24): 1, ('replication', 2): 1, ('replication', 6): 1, ('replication', 9): 1, ('replication', 11): 1})"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has 50 trials in each of the 8 conditions (400 in all)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = (24 + 12) participants x 400 trials",
+   "ok": true,
+   "detail": "14400 rows"
+  },
+  {
+   "kind": "published",
+   "what": "participants, main experiment",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 participants, two groups of 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, obstacles group",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, irrelevant-items group",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, replication experiment",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 new participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 400.0,
+   "reported": 400.0,
+   "tol": 0,
+   "source": "Methods, Design and trials (400 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per gap-change x timing cell",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Design and trials (100 trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per cell with target jump direction",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Design and trials (50 trials each per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "obstacles group, late condition: t(11) of the response modulation (150-200 ms after the jump) against 0",
+   "computed": 4.001100140819291,
+   "reported": 4.0,
+   "tol": 0.005,
+   "source": "Results, Main experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late condition: t(22), obstacles minus irrelevant-items group (response modulation)",
+   "computed": 2.3648122597159076,
+   "reported": 2.36,
+   "tol": 0.005,
+   "source": "Results, Main experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "obstacles group, late condition: t(11) with the 100-200 ms window",
+   "computed": 4.399007231242125,
+   "reported": 4.4,
+   "tol": 0.005,
+   "source": "Results, Robustness check (footnote 1)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "replication, late condition: t(11) of the response modulation: the paper prints 2.60, the main-experiment pipeline (the replication script was not read) gives 2.562.",
+  "The deposit's jump lines read 'target jump x +-0.5' (cm); the paper says the target jumped 1 cm. pert_value holds the deposit's number.",
+  "Coordinate axes and units of the Optotrak positions are not stated in the paper or deposit; mm follows from the 350 units the finger travels from the start disc to the hitting zone (35 cm apart). Lateral motion is x."
+ ],
+ "sources": [
+  {
+   "file": "MainExperiment.zip",
+   "url": "https://osf.io/3x5qr/download",
+   "bytes": 36295317,
+   "sha256": "802f95a46c23f28ae3f028d8a2008c8c5b9bfca0ccb0140b8af3101180bec24e",
+   "fetched_utc": "2026-11-09T10:22:52Z"
+  },
+  {
+   "file": "ReplicationExperiment.zip",
+   "url": "https://osf.io/download/jcmrx/",
+   "bytes": 19192406,
+   "sha256": "6c1fa7ad80995567483ec1a4795a215d181f9b3c21cd4c1082a3ffafcb001acf",
+   "fetched_utc": "2026-11-09T10:23:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Crowe2023_ExpBrainRes.zip"
+}

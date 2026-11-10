@@ -1,0 +1,159 @@
+{
+ "id": "Beuter2001_ThalamusRelatSyst",
+ "module": "timeseries",
+ "rows": 101,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 2459664,
+ "zip_sha256": "641f856c0cdd5f63fdb84a88d000156d8b947ef57bd22014d45b1a656ad6291b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants described",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "PhysioNet record page (Data Description)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "subjects with at least one recording (subject v3 has none in the deposit)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "recordings",
+   "computed": 101.0,
+   "reported": 101.0,
+   "tol": 0,
+   "source": "PhysioNet record page: 55 + 46 recordings",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings of high amplitude tremor subjects",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "PhysioNet record page (Tremor Recordings)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings of low amplitude tremor subjects",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "PhysioNet record page (Tremor Recordings)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings with DBS on or off, medication on or off (not time-after-stop)",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 1,
+   "source": "PhysioNet record page (55, README says 54)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings after DBS was stopped (15-60 min)",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "PhysioNet record page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with Vim / GPi / STN targets (Vim)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "PhysioNet record page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with GPi target",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "PhysioNet record page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with STN target",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "PhysioNet record page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "subject_description / PhysioNet page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HAT 'ren' recordings",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet record page (Tremor Recordings)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAT 'r60of' recordings",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "PhysioNet record page (Tremor Recordings)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each file's sample count equals the SAMPLES column of file_description.txt",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording in file_description.txt was converted",
+   "ok": true,
+   "detail": "101 vs 101"
+  },
+  {
+   "kind": "internal",
+   "what": "all samples finite",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (Thalamus & Related Systems, not open access) could not be read, so no tremor amplitude or frequency result of it is reproduced; checks are against the counts the PhysioNet record page and file_description.txt state.",
+  "Subject v3 is described (and listed in the 16) but has no recording file in the deposit, so 15 subjects have rows and v3 is not in participants.csv.",
+  "The PhysioNet README says 54 recordings in the DBS x medication conditions and 8 STN subjects, its web page says 55 recordings and 6 STN; the data have 55 recordings, 6 STN subjects."
+ ],
+ "sources": [
+  {
+   "file": "tremordb.zip",
+   "url": "https://physionet.org/static/published-projects/tremordb/effect-of-deep-brain-stimulation-on-parkinsonian-tremor-1.0.0.zip",
+   "bytes": 3654880,
+   "sha256": "d879dc2600fe06797446783e209ffeded2261f46a1939b180ca88c4561a7c674",
+   "fetched_utc": "2026-11-09T06:42:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Beuter2001_ThalamusRelatSyst.zip"
+}

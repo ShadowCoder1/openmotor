@@ -1,0 +1,7 @@
+{
+ "id": "Herrick2025_limbspeed",
+ "skipped": true,
+ "reason": "no number to check against",
+ "details": "Six CSVs (one row per trial: group, trial type, session id, left/right belt speed ratios, L/R response, preferred speed, age) are readable, CC BY 4.0, ~12.5k trials. But the preprint full text (Research Square, DOI 10.21203/rs.3.rs-7594824/v1) is blocked/not in Europe PMC, so the task wording, participant counts and any reportable number could not be verified; retry when the paper is accessible. Not a data-gate failure.",
+ "sources": []
+}

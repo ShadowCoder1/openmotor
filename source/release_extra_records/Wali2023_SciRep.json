@@ -1,0 +1,123 @@
+{
+ "id": "Wali2023_SciRep",
+ "module": "summary",
+ "rows": 438,
+ "subjects": 73,
+ "persons": 73,
+ "zip_bytes": 8745,
+ "zip_sha256": "bbd0d07f59c1ad075b9af0f188d40fa7efeb2391da8c160883b9f0d8cd0d6a33",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed (75 recruited, one excluded each from groups 3 and 4)",
+   "computed": 73.0,
+   "reported": 73.0,
+   "tol": 0,
+   "source": "Methods, Participants and Statistical analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group AV",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods: 5 groups of 15, one excluded each from groups 3 and 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group PV",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods: 5 groups of 15, one excluded each from groups 3 and 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group ANV",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods: 5 groups of 15, one excluded each from groups 3 and 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group PNV",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods: 5 groups of 15, one excluded each from groups 3 and 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group 24H",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods: 5 groups of 15, one excluded each from groups 3 and 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "24H group visual retention (mm)",
+   "computed": 3.216666666666667,
+   "reported": 3.2,
+   "tol": 0.05,
+   "source": "Results, Visual recalibration and retention",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mixed ANOVA error degrees of freedom (N - 5 groups)",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Results: F(4,68)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Total_ra = V_ra + P_ra within 0.02 mm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Total_ret = V_ret + P_ret within 0.02 mm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = participants x 6 measures",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The file labels groups AV, PV, ANV, PNV and 24H; the paper calls groups 2 and 4 'rest' (RV, RNV). The file has 73 participants because the paper's 75 includes one person each from groups 3 and 4 excluded for touchscreen problems; the excluded people are not in the deposit.",
+  "Two printed group means did not reproduce within the paper's rounding and are not used as checks: the rest-vision group's visual retention is 36.58 mm from the file (paper: 36.5 mm) and the 24H group's visual recalibration is 38.84 mm from the file (paper: 38.3 mm).",
+  "Handedness 'right' is from the Methods (all participants right-handed), not a per-person column."
+ ],
+ "sources": [
+  {
+   "file": "MixedAnova_data.xlsx",
+   "url": "https://osf.io/download/6xtfe/",
+   "bytes": 12297,
+   "sha256": "804cb8baf7e63733003610c29f4764f81c1c4e53791c5ae1d3812c91d613d4bf",
+   "fetched_utc": "2026-11-09T15:08:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wali2023_SciRep.zip"
+}

@@ -1,0 +1,168 @@
+{
+ "id": "Makino2023_CommunBiol",
+ "module": "summary",
+ "rows": 1684,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 25985,
+ "zip_sha256": "b4d6facca27466c9935939d1febc14f970dc6a73bc7cee374f34136d25a4ebd9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participants kept: 8 + 16 + 12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 single cursor 7.5 deg, one-sample t (df 7; magnitude, stored sign is negative)",
+   "computed": 6.354010120221589,
+   "reported": 6.354,
+   "tol": 0.0005,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 single cursor 15 deg, one-sample t (df 7; magnitude, stored sign is negative)",
+   "computed": 3.563610137314668,
+   "reported": 3.564,
+   "tol": 0.0005,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 single cursor 30 deg, one-sample t (df 7; magnitude, stored sign is negative)",
+   "computed": 6.504355016118085,
+   "reported": 6.504,
+   "tol": 0.0005,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 single cursor 45 deg, one-sample t (df 7; magnitude, stored sign is negative)",
+   "computed": 3.353650497439675,
+   "reported": 3.354,
+   "tol": 0.0005,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 participants analysed",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 participants analysed",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants (16 recruited, 1 excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 participants analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 recruited, 2 excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 participants recruited",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 participants recruited",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes 39 perturbation types in experiment 1; the file has 64 trial kinds (mirrored conditions included), so kinds do not match the paper's count. The paper's t statistics are given as positive; the stored values are negative.",
+  "Which participants are the same across the learning- and feedback-response files is assumed from column order."
+ ],
+ "sources": [
+  {
+   "file": "exp1_af.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp1_af.mat/content",
+   "bytes": 6008,
+   "sha256": "ffa02141acd381c0c3acd22381332411f86ff7f232e3ea0d3eb2d6062749d0c7",
+   "fetched_utc": "2026-11-09T14:44:52Z"
+  },
+  {
+   "file": "exp1_fbr.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp1_fbr.mat/content",
+   "bytes": 6008,
+   "sha256": "2bbfb8a808f2593fd1a0f5bed567b252ca06bab75c26a650a69191c96fa5139b",
+   "fetched_utc": "2026-11-09T14:44:58Z"
+  },
+  {
+   "file": "exp2_af.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp2_af.mat/content",
+   "bytes": 3832,
+   "sha256": "a6c8abd9e4d47f23aa60535f3883aade0b8eeaab7d4dea51a94409a72e0e5d1d",
+   "fetched_utc": "2026-11-09T14:45:16Z"
+  },
+  {
+   "file": "exp2_fbr.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp2_fbr.mat/content",
+   "bytes": 3832,
+   "sha256": "ecea1b3c176b38aac69d9f6a196e4188fe72f5eace9d199900ebfc3c7c5c0f35",
+   "fetched_utc": "2026-11-09T14:45:23Z"
+  },
+  {
+   "file": "exp3_afre.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp3_afre.mat/content",
+   "bytes": 1561,
+   "sha256": "d871189d835a5233d363afc563432ddd5875eb4088bfd9c132040ac4a76c6075",
+   "fetched_utc": "2026-11-09T14:45:29Z"
+  },
+  {
+   "file": "exp1_waves.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp1_waves.mat/content",
+   "bytes": 3204353,
+   "sha256": "e67ba2fa75c4f5fa7b6602c4c053876609a4fa42344f3b3072d7f776fc142093",
+   "fetched_utc": "2026-11-09T14:45:37Z"
+  },
+  {
+   "file": "exp2_waves.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp2_waves.mat/content",
+   "bytes": 3452162,
+   "sha256": "d1df4086a03c53e20c40b57f46760aae870f94bcc724f1f1cfc0c8874a1b798f",
+   "fetched_utc": "2026-11-09T14:45:58Z"
+  },
+  {
+   "file": "exp3_wavere.mat",
+   "url": "https://zenodo.org/api/records/8343357/files/exp3_wavere.mat/content",
+   "bytes": 2584355,
+   "sha256": "4d25407bee505628fb077c88f98ae83e83e9d90ab5c627a14c397b190cb902e0",
+   "fetched_utc": "2026-11-09T14:46:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Makino2023_CommunBiol.zip"
+}

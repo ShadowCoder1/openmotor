@@ -1,0 +1,161 @@
+{
+ "id": "Boebinger2026_eNeuro",
+ "module": "timeseries",
+ "rows": 464,
+ "subjects": 38,
+ "persons": 38,
+ "zip_bytes": 103382673,
+ "zip_sha256": "b80ebfd9d01e1c2837d08f799cf453c5602d4dcaad2216cba42db4c09571753c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "older adults analysed",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "README / Methods: Participants (nineteen older adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with PD analysed",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "README / Methods: Participants (seventeen individuals with PD)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female older adults",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods: Participants (6 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female people with PD",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods: Participants (4 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age of older adults, mean years",
+   "computed": 71.0,
+   "reported": 71.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (71 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age of people with PD, mean years",
+   "computed": 69.23529411764706,
+   "reported": 69.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (69 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height of older adults, mean cm",
+   "computed": 174.93157894736845,
+   "reported": 175.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (175 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height of people with PD, mean cm",
+   "computed": 171.02352941176468,
+   "reported": 171.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (171 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of older adults, mean kg",
+   "computed": 78.77368421052631,
+   "reported": 79.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (79 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of people with PD, mean kg",
+   "computed": 84.50588235294119,
+   "reported": 84.0,
+   "tol": 0.7,
+   "source": "Methods: Participants (84 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG sampling rate, Hz",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 1,
+   "source": "Methods: EMG (sampled at 1000 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "motion capture sampling rate, Hz",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 1,
+   "source": "Methods: CoM kinematics (collected at 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per analysed participant (3 magnitudes x 2 directions)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods: Balance perturbations",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "232 averages, two sample files each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "38 participants in the deposit, 36 analysed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: all 216 rows of the authors' table are matched",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's methods say participant-condition pairs with fewer than 3 averaged trials were removed; the authors' table still contains rows whose trial count (averaged_trials in trial_info) is below 3, and they are kept and not marked excluded here.",
+  "The paper reports single-trial EEG-derived measures (beta, N1); the EEG signals are not in the deposit's tables, only the derived columns in condition_measures.csv."
+ ],
+ "sources": [
+  {
+   "file": "DataAndCode.zip",
+   "url": "https://osf.io/download/vgt6z/",
+   "bytes": 2120008337,
+   "sha256": "ba6b205d666cb0f838637b994fedbc919c812aff5f9c51d350b25861d615644b",
+   "fetched_utc": "2026-11-09T08:31:35Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Boebinger2026_eNeuro.zip"
+}

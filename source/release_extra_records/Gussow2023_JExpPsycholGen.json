@@ -1,0 +1,278 @@
+{
+ "id": "Gussow2023_JExpPsycholGen",
+ "module": "speech",
+ "rows": 134492,
+ "subjects": 245,
+ "persons": 140,
+ "zip_bytes": 1651238,
+ "zip_sha256": "69fd99888a646bca4f901d0e0a0f4cea6fbddbf7f27bac827f7144d203d9d873",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, Experiment 2",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Experiment 2, Method, Participants (thirty-five)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant (16 TT/FF, 16 non, 16 Control), Exp 1a",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Experiment 1, Procedure (48 test trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech test trials per participant, Exp 1b",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Experiment 1, Method (48 test trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control trials per participant, Exp 1a",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Experiment 1, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, finger fumblers, ABBA, position 1",
+   "computed": 0.10447128912543438,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, finger fumblers, ABBA, position 2",
+   "computed": 0.11997146842694695,
+   "reported": 0.12,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, finger fumblers, ABBA, position 3",
+   "computed": 0.07987074593871639,
+   "reported": 0.08,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, finger fumblers, ABBA, position 4",
+   "computed": 0.09708062668381491,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, finger fumblers, Control, position 2",
+   "computed": 0.12225299815360677,
+   "reported": 0.12,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, monosyllabic tongue twisters, ABBA, position 3",
+   "computed": 0.29997437086023815,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, monosyllabic tongue twisters, Control, position 3",
+   "computed": 0.42119048804539094,
+   "reported": 0.42,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 2 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, ABBA, position 1",
+   "computed": 0.19185058193187107,
+   "reported": 0.19,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, ABBA, position 2",
+   "computed": 0.1941456018740392,
+   "reported": 0.19,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, ABBA, position 3",
+   "computed": 0.0980358043189486,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, ABBA, position 4",
+   "computed": 0.18692371250382847,
+   "reported": 0.19,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, AABB, position 1",
+   "computed": 0.16127495234740505,
+   "reported": 0.16,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, AABB, position 2",
+   "computed": 0.13452759967001798,
+   "reported": 0.13,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, AABB, position 3",
+   "computed": 0.16059507860927968,
+   "reported": 0.16,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, AABB, position 4",
+   "computed": 0.0864470136911692,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, Control, position 1",
+   "computed": 0.15120272445916763,
+   "reported": 0.15,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, Control, position 2",
+   "computed": 0.1570543921328761,
+   "reported": 0.16,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "onset error proportion, disyllabic tongue twisters, Control, position 3",
+   "computed": 0.11186084704737242,
+   "reported": 0.11,
+   "tol": 0.005,
+   "source": "Gussow et al. 2023, Journal of Experimental Psychology: General, Table 5 (mean of by-subject means)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "dvErr is empty or equal to onsetErr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "most participants of Exp 1 are in both the manual and the speech file",
+   "ok": true,
+   "detail": "105 shared of 105"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 Method: N = 103 participants in the paper, 105 in the deposit's manual file and 105 in its speech file; the deposit does not say which were left out of the paper.",
+  "Table 2, onset error proportion, finger fumblers, AABB, position 1: 0.147 here from the analysed onset errors (dvErr) against 0.14 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, AABB, position 2: 0.079 here from the analysed onset errors (dvErr) against 0.07 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, AABB, position 3: 0.145 here from the analysed onset errors (dvErr) against 0.14 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, AABB, position 4: 0.082 here from the analysed onset errors (dvErr) against 0.09 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, Control, position 1: 0.149 here from the analysed onset errors (dvErr) against 0.14 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, Control, position 3: 0.092 here from the analysed onset errors (dvErr) against 0.1 in the paper.",
+  "Table 2, onset error proportion, finger fumblers, Control, position 4: 0.101 here from the analysed onset errors (dvErr) against 0.11 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, ABBA, position 1: 0.382 here from the analysed onset errors (dvErr) against 0.37 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, ABBA, position 2: 0.375 here from the analysed onset errors (dvErr) against 0.36 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, ABBA, position 4: 0.260 here from the analysed onset errors (dvErr) against 0.3 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, AABB, position 1: 0.316 here from the analysed onset errors (dvErr) against 0.31 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, AABB, position 2: 0.259 here from the analysed onset errors (dvErr) against 0.25 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, AABB, position 3: 0.315 here from the analysed onset errors (dvErr) against 0.3 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, AABB, position 4: 0.199 here from the analysed onset errors (dvErr) against 0.23 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, Control, position 1: 0.359 here from the analysed onset errors (dvErr) against 0.35 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, Control, position 2: 0.275 here from the analysed onset errors (dvErr) against 0.26 in the paper.",
+  "Table 2, onset error proportion, monosyllabic tongue twisters, Control, position 4: 0.489 here from the analysed onset errors (dvErr) against 0.52 in the paper.",
+  "Table 5, onset error proportion, disyllabic tongue twisters, Control, position 4: 0.150 here from the analysed onset errors (dvErr) against 0.16 in the paper.",
+  "Results, mean onset error rate, finger fumblers: 0.093 here against 0.11 in the paper.",
+  "Results, mean onset error rate, monosyllabic tongue twisters: 0.305 here against 0.33 in the paper.",
+  "Results, mean onset error rate, disyllabic tongue twisters: 0.138 here against 0.15 in the paper.",
+  "Most Table 2 and Table 5 cells reproduce to the table's two decimals; the cells listed here, and the three overall mean onset error rates, come out a little lower (by up to 0.03) from dvErr, so the paper's tables were probably built from a slightly different row selection that the deposit does not show."
+ ],
+ "sources": [
+  {
+   "file": "DT_data.xlsx",
+   "url": "https://osf.io/download/efv2w/",
+   "bytes": 674928,
+   "sha256": "05690263ebd8f70d0ceb2b75c70483337a42cef739734f1c03b25b445ea33dc3",
+   "fetched_utc": "2026-11-09T11:21:34Z"
+  },
+  {
+   "file": "FF_data.xlsx",
+   "url": "https://osf.io/download/61eaf1cf133169011d992dc8/",
+   "bytes": 2000778,
+   "sha256": "54578a196fc03f58983b71d68d6ec225193a6fb1dadc2c8d348b4cf61796d45a",
+   "fetched_utc": "2026-11-09T11:21:36Z"
+  },
+  {
+   "file": "MT_data.xlsx",
+   "url": "https://osf.io/download/dm82q/",
+   "bytes": 2001677,
+   "sha256": "af040009aee7ac5c22da51cc42373ff4d1022aaee868362e93e539a8d79f156f",
+   "fetched_utc": "2026-11-09T11:21:37Z"
+  },
+  {
+   "file": "LTTF_script.R",
+   "url": "https://osf.io/download/wvz34/",
+   "bytes": 7267,
+   "sha256": "1f94d6375b5d76b67b9bcf6fa8a7d5ae285d613710833e3142fa76232c8e05b2",
+   "fetched_utc": "2026-11-09T11:21:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gussow2023_JExpPsycholGen.zip"
+}

@@ -1,0 +1,192 @@
+{
+ "id": "Haith2015_PLoSCompBiol",
+ "module": "reach90",
+ "rows": 38388,
+ "subjects": 38,
+ "persons": 24,
+ "zip_bytes": 957955,
+ "zip_sha256": "8b66177bdeab3580de6a095af7db1e26b46a2663bc9d809e023ef05aa8a3349c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "jump flag (jump_time > 0) agrees with pre != post jump target on every trial",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = sum of trials in the three .mat files",
+   "ok": true,
+   "detail": "38388"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants / Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants / Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants / Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials per session (8 blocks of 100)",
+   "computed": 800.0,
+   "reported": 800.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (two sessions, each 8 blocks of 100 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: largest absolute jump on any trial (deg)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 ('always +-45')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: number of distinct jump sizes (45, 90, 135)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fraction of jump trials",
+   "computed": 0.2989736375950818,
+   "reported": 0.3,
+   "tol": 0.03,
+   "source": "Methods, Experiment 1 ('About 30% of trials')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: target separation in the 45 deg condition",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: target separation in the 135 deg condition",
+   "computed": 135.0,
+   "reported": 135.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SD of initial reach direction, no-jump trials, no barrier, outliers beyond 5 robust SD removed (deg)",
+   "computed": 4.383196628148856,
+   "reported": 4.8,
+   "tol": 1.0,
+   "source": "Methods, Experiment 3, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SD of initial reach direction, no-jump trials, barrier, outliers beyond 5 robust SD removed (deg)",
+   "computed": 4.074380328997746,
+   "reported": 4.4,
+   "tol": 1.0,
+   "source": "Methods, Experiment 3, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean of per-participant SD of movement onset time, no-jump trials (ms)",
+   "computed": 75.40370794239944,
+   "reported": 79.0,
+   "tol": 25,
+   "source": "Methods, Experiment 1, Movement onset",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all hand angles within (-180, 180]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no-jump, non-excluded trials: mean |hand_angle| < 15 deg (X, Y axes and the 0=East, counter-clockwise target coding agree)",
+   "ok": true,
+   "detail": "8.21"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The SD of initial reach direction (Experiment 3) is 11 deg without outlier removal and about 4.5 deg after removing, per participant and target, trials more than 5 robust SDs (1.4826 x MAD) from the median; the paper says it rejected outlier points but not by which rule, so the published 4.8 and 4.4 deg are reproduced only with such a rule (a tolerance of 1 deg is used). Mean movement-onset SD and the number of excluded trials per participant are recomputed by us from the unfiltered paths with the paper's rules, and may differ slightly from the published values (see the checks)."
+ ],
+ "sources": [
+  {
+   "file": "Expt1_Data.mat",
+   "url": "https://zenodo.org/api/records/4936553/files/Expt1_Data.mat/content",
+   "bytes": 31066794,
+   "sha256": "6c1af9a802f632fb6205471f3820aafe92d8e499233e5dd8b299f5a1039f00de",
+   "fetched_utc": "2026-11-09T07:36:10Z"
+  },
+  {
+   "file": "Expt2_Data.mat",
+   "url": "https://zenodo.org/api/records/4936553/files/Expt2_Data.mat/content",
+   "bytes": 24225378,
+   "sha256": "56283eb7949530dba6963248d3c96a16fb5a82fa0c4e4b26b054a8fb15fa1f10",
+   "fetched_utc": "2026-11-09T07:36:37Z"
+  },
+  {
+   "file": "Expt3_Data.mat",
+   "url": "https://zenodo.org/api/records/4936553/files/Expt3_Data.mat/content",
+   "bytes": 48863824,
+   "sha256": "4f5f6dd9c663b3da5d86aa7f333fb5c81a4b1d3eb214ca09b785b208d932ba4e",
+   "fetched_utc": "2026-11-09T07:37:15Z"
+  },
+  {
+   "file": "README_for_Expt1_Data.txt",
+   "url": "https://zenodo.org/api/records/4936553/files/README_for_Expt1_Data.txt/content",
+   "bytes": 1600,
+   "sha256": "5d6e3bfc18ef807c957e4dd6687dd382923ebf3c70510146f78f225d959b27c2",
+   "fetched_utc": "2026-11-09T07:37:23Z"
+  },
+  {
+   "file": "README_for_Expt2_Data.txt",
+   "url": "https://zenodo.org/api/records/4936553/files/README_for_Expt2_Data.txt/content",
+   "bytes": 1600,
+   "sha256": "5d6e3bfc18ef807c957e4dd6687dd382923ebf3c70510146f78f225d959b27c2",
+   "fetched_utc": "2026-11-09T07:37:29Z"
+  },
+  {
+   "file": "README_for_Expt3_Data.txt",
+   "url": "https://zenodo.org/api/records/4936553/files/README_for_Expt3_Data.txt/content",
+   "bytes": 1600,
+   "sha256": "5d6e3bfc18ef807c957e4dd6687dd382923ebf3c70510146f78f225d959b27c2",
+   "fetched_utc": "2026-11-09T07:37:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Haith2015_PLoSCompBiol.zip"
+}

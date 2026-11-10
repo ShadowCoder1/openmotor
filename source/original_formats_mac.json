@@ -1,0 +1,276 @@
+{
+ "2018-06_Codol": {
+  "CSV": 2
+ },
+ "2020-10_Tsay": {
+  "CSV": 2
+ },
+ "2021-03_Avraham": {
+  "CSV": 4
+ },
+ "2021-07_Tsay": {
+  "CSV": 3
+ },
+ "2021-09_Tsay": {
+  "CSV": 2
+ },
+ "2021-12_Tsay": {
+  "CSV": 2
+ },
+ "2022-02_McDougle": {
+  "CSV": 1
+ },
+ "2022-03_Tsay": {
+  "CSV": 2
+ },
+ "2022-03_Tsay_1": {
+  "CSV": 7
+ },
+ "2022-04_Tsay": {
+  "CSV": 2
+ },
+ "2022-10_Avraham": {
+  "CSV": 4
+ },
+ "2023-01_Tsay": {
+  "CSV": 1
+ },
+ "2023-04_Tsay": {
+  "CSV": 1
+ },
+ "2023-08_Mastrigt": {
+  "CSV": 2
+ },
+ "2024-01_Tsay": {
+  "CSV": 1
+ },
+ "2024-06_Tsay": {
+  "CSV": 1
+ },
+ "2024-07_Chen": {
+  "CSV": 14
+ },
+ "2024-10_Wang": {
+  "CSV": 4
+ },
+ "2025-01_Niyogi": {
+  "CSV": 1
+ },
+ "2025-01_Villavicencio": {
+  "CSV": 1
+ },
+ "2025-06_Avraham": {
+  "CSV": 5
+ },
+ "2025-07_Cipleu": {
+  "CSV": 1
+ },
+ "2025-07_Padmanabhan": {
+  "CSV": 1
+ },
+ "2025-08_Wang": {
+  "CSV": 5
+ },
+ "2025-12_Ding": {
+  "CSV": 1
+ },
+ "2026-05_Cisneros": {
+  "CSV": 3
+ },
+ "2026-08_Villavicencio": {
+  "CSV": 4
+ },
+ "2026_07_Nyamsuren": {
+  "CSV": 10
+ },
+ "ext_Bromberg2019": {
+  "MATLAB": 1
+ },
+ "ext_Cook2026": {
+  "CSV": 1
+ },
+ "ext_Casasnovas2024": {
+  "CSV": 2
+ },
+ "ext_Kumar2026": {
+  "Excel": 1
+ },
+ "ext_Kim2015": {
+  "MATLAB": 90
+ },
+ "ext_Berland2025": {
+  "CSV": 6938,
+  "Excel": 1
+ },
+ "ext_MillerMills2026": {
+  "MATLAB": 225,
+  "CSV": 1
+ },
+ "ext_Takada2025": {
+  "CSV": 14800
+ },
+ "ext_Maresch2022": {
+  "MATLAB": 53,
+  "text": 3
+ },
+ "ext_Hulst2024": {
+  "MATLAB": 1
+ },
+ "ext_Moskowitz2020": {
+  "MATLAB": 1
+ },
+ "ext_Matsuda2023": {
+  "CSV": 2,
+  "Excel": 1
+ },
+ "ext_Liddy2026": {
+  "Excel": 11,
+  "MATLAB": 3
+ },
+ "ext_Stroh2024": {
+  "R": 10,
+  "CSV": 3
+ },
+ "ext_Abekawa2022": {
+  "MATLAB": 7
+ },
+ "ext_Brudner2016": {
+  "CSV": 1
+ },
+ "ext_Holland2018": {
+  "MATLAB": 4
+ },
+ "ext_Hadjiosif2023": {
+  "MATLAB": 4
+ },
+ "ext_Ruttle2023": {
+  "CSV": 9
+ },
+ "ext_Ruttle2022": {
+  "CSV": 18,
+  "Excel": 1
+ },
+ "ext_Ruttle2021": {
+  "CSV": 23
+ },
+ "ext_Morehead2017": {
+  "CSV": 2
+ },
+ "ext_Areshenkoff2024": {
+  "CSV": 2,
+  "TSV": 1
+ },
+ "ext_Hewitson2023_uncertainty": {
+  "text": 900,
+  "CSV": 6
+ },
+ "ext_Ruttle2016": {
+  "text": 6
+ },
+ "ext_Modchalingam2023": {
+  "CSV": 1
+ },
+ "ext_Clayton2024": {
+  "CSV": 158,
+  "Excel": 3
+ },
+ "ext_Kim2025": {
+  "CSV": 5,
+  "MATLAB": 1
+ },
+ "ext_Ayala2021": {
+  "CSV": 7,
+  "Excel": 1
+ },
+ "ext_Modchalingam2024": {
+  "CSV": 2
+ },
+ "ext_vanderKooij2015": {},
+ "ext_tHart2024": {
+  "CSV": 84
+ },
+ "ext_Hewitson2023_metacog": {
+  "MATLAB": 23,
+  "CSV": 10
+ },
+ "ext_Bansal2023": {
+  "CSV": 356
+ },
+ "ext_Cesanek2024_sr": {
+  "Excel": 1
+ },
+ "ext_Cesanek2024_dual": {
+  "Excel": 1
+ },
+ "ext_Hadjiosif2025": {
+  "MATLAB": 4
+ },
+ "ext_Henriques2026": {
+  "CSV": 2830
+ },
+ "ext_DAmario2024": {
+  "CSV": 533
+ },
+ "ext_Wilterson2021": {
+  "MATLAB": 2
+ },
+ "ext_Holland2019": {
+  "MATLAB": 15
+ },
+ "ext_Szarka2025": {
+  "CSV": 3
+ },
+ "ext_Sharma2026": {
+  "CSV": 111040
+ },
+ "ext_Evans2025_explicit": {
+  "MATLAB": 210
+ },
+ "ext_Evans2025_implicit": {
+  "MATLAB": 148
+ },
+ "ext_Dexheimer2026": {
+  "CSV": 4
+ },
+ "ext_Arrighi2016": {
+  "Excel": 4
+ },
+ "ext_Johnson2017": {
+  "MATLAB": 1
+ },
+ "ext_Balestrucci2022": {
+  "R": 4,
+  "CSV": 3
+ },
+ "ext_Vandevoorde2019": {
+  "MATLAB": 15,
+  "Excel": 2
+ },
+ "ext_Vandevoorde2020": {
+  "MATLAB": 289,
+  "Excel": 3
+ },
+ "ext_Onagawa2026": {
+  "CSV": 5
+ },
+ "ext_Wang2024": {
+  "MATLAB": 16
+ },
+ "ext_Wang2025": {
+  "MATLAB": 30
+ },
+ "ext_Wang2026": {
+  "MATLAB": 7,
+  "Excel": 1
+ },
+ "ext_Khan2025": {
+  "CSV": 6
+ },
+ "ext_tHart2016": {
+  "text": 2
+ },
+ "ext_Buggeln2026": {
+  "Python pickle": 239,
+  "NumPy": 121
+ }
+}

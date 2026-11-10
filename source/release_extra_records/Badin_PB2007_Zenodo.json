@@ -1,0 +1,114 @@
+{
+ "id": "Badin_PB2007_Zenodo",
+ "module": "timeseries",
+ "rows": 1109,
+ "subjects": 1,
+ "persons": 1,
+ "zip_bytes": 6193956,
+ "zip_sha256": "04a8407eebe6d34197fb805dbd048e0fa5ceb0bda8b789a6b13867fcc1803d7d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "items (utterances) of the corpus: 740 for training plus 369 for testing",
+   "computed": 1109.0,
+   "reported": 1109.0,
+   "tol": 0,
+   "source": "Ben Youssef et al. 2009, Sec. 4 (evaluation: two thirds, 740 utterances, for training and the remaining third, 369 utterances, for testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "coils recorded (jaw, tongue tip, middle, back, upper lip, lower lip)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Ben Youssef et al. 2009, Sec. 3.2 (six coils are used)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Ben Youssef et al. 2009, Sec. 3.1 (a single male French subject)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "instances of the most frequent phone, /a/",
+   "computed": 348.0,
+   "reported": 348.0,
+   "tol": 0,
+   "source": "Ben Youssef et al. 2009, Sec. 3.3 (maximum number of instances per phoneme: 348, for /a/)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct segment labels (36 phonemes including the two pause labels)",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Ben Youssef et al. 2009, Sec. 3.1 (the 36 phonemes; _ and __ are the short and the long pause)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "/a/ is the most frequent non-pause label",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every .seq line is '#' plus 12 values, a label file exists for each item, no missing values",
+   "ok": true,
+   "detail": "bad lines 0, 1109 label files"
+  },
+  {
+   "kind": "internal",
+   "what": "the last label of an item ends within 3 frames of the end of its EMA signal",
+   "ok": true,
+   "detail": "0.00 to 3.00 frames"
+  },
+  {
+   "kind": "internal",
+   "what": "x increases from tongue tip to dorsum to back in nearly every item (x grows towards the back of the mouth)",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "lower-lip z larger than upper-lip z in nearly every item (z grows downwards)",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "jaw z smaller than lower-lip z in nearly every item",
+   "ok": true,
+   "detail": "1.0000"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper counts 7352 phones and at least 18 short pauses ('minimum ... 18 for short pauses'); the label files hold 7350 labels in all (pauses included) and 17 short pauses (_), so these two counts do not reproduce and are not used as checks. The paper says about 12 minutes of speech; the EMA signals are 22.5 minutes in all, silences included.",
+  "The licence is CC BY-SA in the deposit's readme and CC BY 4.0 in the Zenodo record's metadata (and source/extra_studies.json lists CC BY-SA 4.0)."
+ ],
+ "sources": [
+  {
+   "file": "README",
+   "url": "https://zenodo.org/api/records/6390598/files/README/content",
+   "bytes": 2479,
+   "sha256": "d3b86d1c957c376f256c777332306ea703824be46b226b40c305f3c7fe5f9d11",
+   "fetched_utc": "2026-11-09T19:18:16Z"
+  },
+  {
+   "file": "PB2007.zip",
+   "url": "https://zenodo.org/api/records/6390598/files/PB2007.zip/content",
+   "bytes": 37793957,
+   "sha256": "123d3fc2f114ab37724c7f05e00a03ff21d7e815f7f957987e8255f56d73f243",
+   "fetched_utc": "2026-11-09T19:18:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Badin_PB2007_Zenodo.zip"
+}

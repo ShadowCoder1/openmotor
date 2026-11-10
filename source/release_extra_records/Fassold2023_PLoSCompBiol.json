@@ -1,0 +1,174 @@
+{
+ "id": "Fassold2023_PLoSCompBiol",
+ "module": "endpoint_reaching",
+ "rows": 16740,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 454085,
+ "zip_sha256": "50a610b2bceaa56ba88d69b095efa544a0178358d5de0adb0724483d205ddc16",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "14 participant files, all with the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every file has 900 main-task reaches and equally many control reaches and reported endpoints (300 in 13 files, 240 in one)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "on every third reach the raw error distance equals the distance of the deposit's endPoints (confidence trials), all 14 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all targets and endpoints lie within 10 mm of the 476 x 268 mm tablet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 14 x 900 + control reaches",
+   "ok": true,
+   "detail": "16740 rows"
+  },
+  {
+   "kind": "published",
+   "what": "control-task test reaches, most in any participant",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Methods, Control motor-awareness task (five blocks of 60 test trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-task reaches per participant (sessions 2 to 4, 300 trials each)",
+   "computed": 900.0,
+   "reported": 900.0,
+   "tol": 0,
+   "source": "Methods, Main task (300 experimental trials per session, sessions 2 to 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-task sessions per participant",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Main task (sessions 2 to 4)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One participant's control task has 240 reaches (the paper says 300 test trials); rows are kept as shared.",
+  "The paper reports 16 participants; the OSF deposit holds files for 14, so counts, means and fitted parameters computed here cannot match the paper's (for example the mean reach error of the confidence trials is 20.2 mm here against 20.57 mm in the paper, and the mean confidence circle 27.0 mm against 26.93 mm)."
+ ],
+ "sources": [
+  {
+   "file": "SM_output.mat",
+   "url": "https://osf.io/download/641b3f36e25636167223303d/",
+   "bytes": 53265,
+   "sha256": "c6d2af0d935d0590d33692d3d81c39dde59bc10723bbeec1bf57ca026938886c",
+   "fetched_utc": "2026-11-09T10:26:03Z"
+  },
+  {
+   "file": "CS_output.mat",
+   "url": "https://osf.io/download/3u7jd/",
+   "bytes": 52993,
+   "sha256": "87c861a533c2bdda204c21a4dbc7e8efe918e39039de8b778a1151c6f4d5ef60",
+   "fetched_utc": "2026-11-09T10:29:13Z"
+  },
+  {
+   "file": "ET_output.mat",
+   "url": "https://osf.io/download/641b3f16c7472316fe10b0d1/",
+   "bytes": 53170,
+   "sha256": "5643864505187afefdd0c051f9c252138793eaa1ec2acd096da0f332a7515782",
+   "fetched_utc": "2026-11-09T10:29:18Z"
+  },
+  {
+   "file": "FH_output.mat",
+   "url": "https://osf.io/download/641b3f18c7472316fa10b776/",
+   "bytes": 52811,
+   "sha256": "fea4ea3b0b3ea983bdfe4b984e348bac0998d19b6b44c2ffe45882baa3bb5a7d",
+   "fetched_utc": "2026-11-09T10:29:26Z"
+  },
+  {
+   "file": "FL_output.mat",
+   "url": "https://osf.io/download/641b3f1dc7472316fe10b0dc/",
+   "bytes": 52774,
+   "sha256": "eb43469c41157b11bee64dd03a58ff2d49938792c5c1721deecab478a54b361f",
+   "fetched_utc": "2026-11-09T10:29:32Z"
+  },
+  {
+   "file": "HP_output.mat",
+   "url": "https://osf.io/download/641b3f1dc7472316fe10b0df/",
+   "bytes": 52898,
+   "sha256": "56591a61fcd3cc4e48a79767817a8c10765cde1b36bbadc599a192ad9e425864",
+   "fetched_utc": "2026-11-09T10:29:37Z"
+  },
+  {
+   "file": "LL_output.mat",
+   "url": "https://osf.io/download/641b3f24e2563616b423173a/",
+   "bytes": 52583,
+   "sha256": "dbe0e57496bf02394c6a282ff4526dfbcf8753cd9c4e7e0945b320953ec7850f",
+   "fetched_utc": "2026-11-09T10:29:40Z"
+  },
+  {
+   "file": "ME_output.mat",
+   "url": "https://osf.io/download/641b3f26e256361672233023/",
+   "bytes": 52729,
+   "sha256": "06f8229223b24fe805635133671043fd5a8f8a7d869cc594c51c60f4283faa9c",
+   "fetched_utc": "2026-11-09T10:29:46Z"
+  },
+  {
+   "file": "MK_output.mat",
+   "url": "https://osf.io/download/641b3f27c7472316fe10b103/",
+   "bytes": 52532,
+   "sha256": "de51a97d806d65cf545d65c80acc6db9315dbfd682be738019e01f035f601f9a",
+   "fetched_utc": "2026-11-09T10:29:52Z"
+  },
+  {
+   "file": "MP_output.mat",
+   "url": "https://osf.io/download/641b3f29c74723170210ae89/",
+   "bytes": 51010,
+   "sha256": "6b23080d69b271b6f12b06a0a9f5a240798708d1c9dd831ef2badfea3ab7634b",
+   "fetched_utc": "2026-11-09T10:30:00Z"
+  },
+  {
+   "file": "OX_output.mat",
+   "url": "https://osf.io/download/641b3f2ce2563616b4231753/",
+   "bytes": 52333,
+   "sha256": "b732cb33cf2accc2fa0a7fe1eb4e1de338ff30396ed468036a4c20efdcdec147",
+   "fetched_utc": "2026-11-09T10:30:05Z"
+  },
+  {
+   "file": "PL_output.mat",
+   "url": "https://osf.io/download/641b3f2dc7472316fa10b79a/",
+   "bytes": 52688,
+   "sha256": "34ba97420d9c499a1c0b646753d45795812fa42a8e048da5bcec357fa326e56e",
+   "fetched_utc": "2026-11-09T10:30:19Z"
+  },
+  {
+   "file": "RE_output.mat",
+   "url": "https://osf.io/download/641b3f3128e5c5158b93854a/",
+   "bytes": 53245,
+   "sha256": "516940cd62aede1d7af1ea0772834bfcbf69e97e533de269c0796e550f6bd1cc",
+   "fetched_utc": "2026-11-09T10:30:24Z"
+  },
+  {
+   "file": "SX_output.mat",
+   "url": "https://osf.io/download/641b3f34c7472316cd10c70a/",
+   "bytes": 52648,
+   "sha256": "ffffb212b11715b25395301e040b3481bb4b0deed8008c0ba45f38bccb919a37",
+   "fetched_utc": "2026-11-09T10:30:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Fassold2023_PLoSCompBiol.zip"
+}

@@ -1,0 +1,89 @@
+{
+ "id": "Bacek2024_SciData",
+ "module": "walking",
+ "rows": 154338,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 8920502,
+ "zip_sha256": "5ce9cd6011fc6aeeb70d14ac809bc84abef74c2bf8e2404b9c073bf1e49f7854",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Abstract; Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who completed the entire protocol (all 30 walking tests)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants (19 completed the entire protocol)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test conditions in the design (3 speeds x 5 step frequencies x 2 constraints)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Abstract; Experimental conditions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean step rate over the free-walking tests at the preferred step frequency (steps/min, 62 participant-speed values)",
+   "computed": 86.27015893057187,
+   "reported": 86.24193548387096,
+   "tol": 0.5,
+   "source": "Table 3 (preferred cadence per speed, printed to 1 step/min)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "measured step rate at preferred frequency vs Table 3 (steps/min), median absolute difference",
+   "ok": true,
+   "detail": "0.03 over 62 values"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride has positive times",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stance shorter than stride",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tests last about 5 minutes (min, max of last heel strike, s)",
+   "ok": true,
+   "detail": "134, 320"
+  },
+  {
+   "kind": "internal",
+   "what": "tests per participant",
+   "ok": true,
+   "detail": "{1: 30, 2: 30, 3: 30, 4: 30, 5: 30, 6: 30, 7: 15, 8: 30, 9: 30, 10: 30, 11: 30, 12: 13, 13: 30, 14: 30, 15: 30, 16: 30, 17: 30, 18: 30, 19: 30, 20: 30, 21: 30}"
+  },
+  {
+   "kind": "internal",
+   "what": "rows",
+   "ok": true,
+   "detail": "154338"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "A few tests are shorter than the 5 minutes the paper describes (the last heel strike falls between 134 s and 320 s after the start; the paper says test data were trimmed or removed when a participant had to stop), and two participants have only 15 and 13 of the 30 tests; the paper says one participant could not walk with the orthosis and two dropped out after two of three sessions."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bacek2024_SciData.zip"
+}

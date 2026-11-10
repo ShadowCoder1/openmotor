@@ -1,0 +1,161 @@
+{
+ "id": "Myers2024_OpenMind",
+ "module": "summary",
+ "rows": 643,
+ "subjects": 92,
+ "persons": 92,
+ "zip_bytes": 11123,
+ "zip_sha256": "a31feef8640f445b4bdd0e6ce99ebcae820918544d6bf797b6a9152772a05cd7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "imitators",
+   "computed": 92.0,
+   "reported": 92.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (n = 92)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 20.858695652173914,
+   "reported": 20.86,
+   "tol": 0.005,
+   "source": "Myers et al. 2024, Methods, Participants (mean = 20.86)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 6.836523635798974,
+   "reported": 6.84,
+   "tol": 0.005,
+   "source": "Myers et al. 2024, Methods, Participants (SD = 6.84)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (age range 18-58)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (age range 18-58)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (60 women)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (32 men)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "professional actors",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (6 professional actors)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "musicians",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (45 musicians)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monolingual participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Myers et al. 2024, Methods, Participants (22 monolingual)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every imitator has 3 accent ratings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "92 persons",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ratings within 1-7",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mixed-model and correlation results were not recomputed. The OSF node states no licence."
+ ],
+ "sources": [
+  {
+   "file": "STEAM_Data_PenPaper_Only.csv",
+   "url": "https://osf.io/download/bhn6z/",
+   "bytes": 9510,
+   "sha256": "e7e2af34ea4d826666882a9a99076cfd2858b6171c6c67158e3c481041b0cc51",
+   "fetched_utc": "2026-11-09T15:29:53Z"
+  },
+  {
+   "file": "AccentImitation.Rmd",
+   "url": "https://osf.io/download/d5mv3/",
+   "bytes": 69659,
+   "sha256": "f3db3abb1bfb9c3aa2ce14f14005d4f5320a133d4f31351fea98844a22eef254",
+   "fetched_utc": "2026-11-09T15:29:57Z"
+  },
+  {
+   "file": "README",
+   "url": "https://osf.io/download/hxywf/",
+   "bytes": 500,
+   "sha256": "d588ae8a8be7e89be8fd982c8850dc92f19917c2ab0565dfa5b1ac0ed99aab13",
+   "fetched_utc": "2026-11-09T15:30:03Z"
+  },
+  {
+   "file": "all.ratings.csv",
+   "url": "https://osf.io/download/kefzm/",
+   "bytes": 3115575,
+   "sha256": "7c9c8a08e056752318828b2342f88a0e62e89a75cb01a8a45fd286b6c6b121f1",
+   "fetched_utc": "2026-11-09T15:38:05Z"
+  },
+  {
+   "file": "steam_alldata_vas.csv",
+   "url": "https://osf.io/download/3hrdp/",
+   "bytes": 7895193,
+   "sha256": "2ee3e7428dda2df6d904c31ce765012d7b73465e174a98e70ee721ac499ff45b",
+   "fetched_utc": "2026-11-09T15:38:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Myers2024_OpenMind.zip"
+}

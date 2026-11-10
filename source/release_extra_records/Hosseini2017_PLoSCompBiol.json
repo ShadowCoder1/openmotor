@@ -1,0 +1,125 @@
+{
+ "id": "Hosseini2017_PLoSCompBiol",
+ "module": "timeseries",
+ "rows": 2945,
+ "subjects": 56,
+ "persons": 56,
+ "zip_bytes": 78116907,
+ "zip_sha256": "f3a532f907386e1ce34a429186d25c3c04867f7cf74f729827c6dab2f88f56ba",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows + all-NaN traces dropped = 4 experiments x 14 participants x 53 traces",
+   "ok": true,
+   "detail": "2945 + 23"
+  },
+  {
+   "kind": "published",
+   "what": "participants (4 groups of 14)",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0,
+   "source": "Methods, Participants (56 healthy adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the smallest force-field group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (4 groups of 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline error-clamp trials per participant",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Trial structure (12 baseline error-clamp trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unbiased combination field: position coefficient (cK)",
+   "computed": 0.7071067811865475,
+   "reported": 0.71,
+   "tol": 0.005,
+   "source": "Methods, Force field definitions (0.71)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unbiased combination field: velocity coefficient (cB)",
+   "computed": 0.7071067811865475,
+   "reported": 0.71,
+   "tol": 0.005,
+   "source": "Methods, Force field definitions (0.71)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "position-biased combination field: position coefficient (cK)",
+   "computed": 0.8490666666666666,
+   "reported": 0.85,
+   "tol": 0.005,
+   "source": "Methods, Force field definitions (0.85)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "position-biased combination field: velocity coefficient (cB)",
+   "computed": 0.5282666666666667,
+   "reported": 0.53,
+   "tol": 0.005,
+   "source": "Methods, Force field definitions (0.53)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "position-dependent field: position coefficient (cK), velocity-dependent field: velocity coefficient (cB), sum",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Force field definitions (+-1 each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trace window (ms, 1501 samples at 1000 Hz)",
+   "computed": 1500.0,
+   "reported": 1500.0,
+   "tol": 0,
+   "source": "Methods, Error-clamp trials (window of 1500 ms around peak velocity)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "traces are lateral and small: median |position| under 2 mm",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's adaptation coefficients, gain-space fits and time constants need the single trials (or the baseline-subtracted force and the kinematic regressors) that the deposit does not share, so only design counts and field coefficients are checked."
+ ],
+ "sources": [
+  {
+   "file": "Exp_Data.mat",
+   "url": "https://zenodo.org/api/records/4931545/files/Exp_Data.mat/content",
+   "bytes": 97969331,
+   "sha256": "aad6bc16d38b652faf874ab1b51df00f1cbdfa5a90294c10e3526d788c950928",
+   "fetched_utc": "2026-11-09T07:38:16Z"
+  },
+  {
+   "file": "README_for_Exp_Data.txt",
+   "url": "https://zenodo.org/api/records/4931545/files/README_for_Exp_Data.txt/content",
+   "bytes": 2084,
+   "sha256": "0d6b7a91e47583a2c47109fc41e7ab18d856601b788405b8c6e977d0d8df9e8e",
+   "fetched_utc": "2026-11-09T07:38:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hosseini2017_PLoSCompBiol.zip"
+}

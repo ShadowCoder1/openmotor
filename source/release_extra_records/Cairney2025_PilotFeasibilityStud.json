@@ -1,0 +1,591 @@
+{
+ "id": "Cairney2025_PilotFeasibilityStud",
+ "module": "speech",
+ "rows": 11139,
+ "subjects": 19,
+ "persons": 19,
+ "zip_bytes": 165651,
+ "zip_sha256": "fffc324bb822f8b9cf6b580b15e03b9ad277de717dd368882bd5233da21db566",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "11139 rows in file order (the order column runs 1..11139), 19 children, 157 recordings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows left after the authors' filters: 7436 (the rest are flagged as excluded)",
+   "ok": true,
+   "detail": "7436 kept by the script, 7436 not flagged"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' appendix table (mean PCC per child, arm and session) is reproduced from the converted rows",
+   "ok": true,
+   "detail": "147 cells"
+  },
+  {
+   "kind": "published",
+   "what": "children randomised and analysed",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Results / Table 5 and Exploratory (19 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children in the articulation therapy arm",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Abstract (eight to articulation therapy)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children in the ultrasound arm",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Abstract (eleven to ultrasound)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, baseline",
+   "computed": 12.741312741312742,
+   "reported": 13.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, baseline",
+   "computed": 33.40807519436748,
+   "reported": 33.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, baseline",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, baseline",
+   "computed": 14.285714285714285,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, baseline",
+   "computed": 35.03515175548438,
+   "reported": 35.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, baseline",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 1",
+   "computed": 16.055045871559635,
+   "reported": 16.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 1",
+   "computed": 36.7537527648095,
+   "reported": 37.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 1",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 1",
+   "computed": 18.899521531100476,
+   "reported": 19.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 1",
+   "computed": 39.19739689101701,
+   "reported": 39.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 1",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 2",
+   "computed": 20.59925093632959,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 2",
+   "computed": 40.51845025993552,
+   "reported": 41.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 2",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 2",
+   "computed": 25.170068027210885,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 2",
+   "computed": 43.448303787844424,
+   "reported": 43.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 2",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 3",
+   "computed": 26.651982378854626,
+   "reported": 27.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 3",
+   "computed": 44.26268699071102,
+   "reported": 44.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 3",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 3",
+   "computed": 14.285714285714285,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 3",
+   "computed": 35.021475688475725,
+   "reported": 35.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 3",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 4",
+   "computed": 26.122448979591837,
+   "reported": 26.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 4",
+   "computed": 43.97509643496728,
+   "reported": 44.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 4",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 4",
+   "computed": 14.031971580817052,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 4",
+   "computed": 34.762729676705526,
+   "reported": 35.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 4",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 5",
+   "computed": 25.95573440643863,
+   "reported": 26.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 5",
+   "computed": 43.88334577726198,
+   "reported": 44.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 5",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 5",
+   "computed": 29.178470254957507,
+   "reported": 29.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 5",
+   "computed": 45.5229012163464,
+   "reported": 46.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 5",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, therapy session 6",
+   "computed": 11.501597444089457,
+   "reported": 12.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, therapy session 6",
+   "computed": 31.955209498713348,
+   "reported": 32.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, therapy session 6",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, therapy session 6",
+   "computed": 21.298701298701296,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, therapy session 6",
+   "computed": 40.995129580849586,
+   "reported": 41.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, therapy session 6",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, 1 week after",
+   "computed": 43.25259515570934,
+   "reported": 43.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, 1 week after",
+   "computed": 49.6285704198936,
+   "reported": 50.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, 1 week after",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, 1 week after",
+   "computed": 21.749408983451538,
+   "reported": 22.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, 1 week after",
+   "computed": 41.30299087641324,
+   "reported": 41.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, 1 week after",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), articulation, 1 month after",
+   "computed": 39.37007874015748,
+   "reported": 39.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), articulation, 1 month after",
+   "computed": 48.92122612445543,
+   "reported": 49.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, articulation, 1 month after",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC mean (%), ultrasound, 1 month after",
+   "computed": 37.2093023255814,
+   "reported": 37.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PCC SD (%), ultrasound, 1 month after",
+   "computed": 48.387478223985035,
+   "reported": 48.0,
+   "tol": 0.5,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children analysed, ultrasound, 1 month after",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Cairney et al. 2025, Table 5, percentage targeted consonants correct",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 5 of the paper is reproduced for all 18 cells (means, SDs and numbers of children). The rows of the deposit's older versions differ (a spreadsheet error found on 3 December 2024 affected 39 recordings); this is the corrected version."
+ ],
+ "sources": [
+  {
+   "file": "PCC_digitised_tx_20241203-anon-OSF.csv",
+   "url": "https://osf.io/download/6756df2303c26cc884563809/",
+   "bytes": 1463975,
+   "sha256": "978a4bc04f471eb307f3d1679eeedcbdcb859d39ab21d039f8db1a0e17bda934",
+   "fetched_utc": "2026-11-08T22:59:21Z"
+  },
+  {
+   "file": "Table5_Appendix_PCC_per_participant_per_group.csv",
+   "url": "https://osf.io/download/6756df10745b126f27563711/",
+   "bytes": 5344,
+   "sha256": "74a86041df5901fa579036fc07571871f45e5f6089ea08f8a47a4f240583300d",
+   "fetched_utc": "2026-11-08T22:59:25Z"
+  },
+  {
+   "file": "Scores_from_standardised_assessments-OSF.csv",
+   "url": "https://osf.io/download/pkcd9/",
+   "bytes": 5438,
+   "sha256": "3062348e517ad19dae980272289e75ead35b00ec0783ff475fbbc3c0761cb42c",
+   "fetched_utc": "2026-11-08T22:59:39Z"
+  },
+  {
+   "file": "Fidelity_ICC_final.csv",
+   "url": "https://osf.io/download/tes8g/",
+   "bytes": 604,
+   "sha256": "dd5ddcbb007aa36089527a2f7ee66c9a7e3c5cac57c7cc696cefa8a6cdc20e25",
+   "fetched_utc": "2026-11-08T22:59:43Z"
+  },
+  {
+   "file": "PCC_wrangling_clean-OSF-241209.R",
+   "url": "https://osf.io/download/6756dec52acd3c2bb456372b/",
+   "bytes": 8754,
+   "sha256": "643bd788b5a5bacb51b2675585ee8ba17f0548aacdb0ceb21ef2b841fff3d88b",
+   "fetched_utc": "2026-11-08T22:59:47Z"
+  },
+  {
+   "file": "Versions-tracking-OSF.txt",
+   "url": "https://osf.io/download/6756dfff3ca05c4c20563926/",
+   "bytes": 637,
+   "sha256": "430fbbaf03e0142278c07297bc66acc53b55b51047895192bfa212e9317ea185",
+   "fetched_utc": "2026-11-08T22:59:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cairney2025_PilotFeasibilityStud.zip"
+}

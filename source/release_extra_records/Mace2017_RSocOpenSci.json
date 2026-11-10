@@ -1,0 +1,171 @@
+{
+ "id": "Mace2017_RSocOpenSci",
+ "module": "timeseries",
+ "rows": 265,
+ "subjects": 66,
+ "persons": 66,
+ "zip_bytes": 25722279,
+ "zip_sha256": "0ade205719355c342a3268ea9682368f2087efada938106390b9e751b52eeacb",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, feedforward task",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, feedback task",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 66.0,
+   "reported": 66.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age feedforward (years)",
+   "computed": 42.970588235294116,
+   "reported": 43.0,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age feedforward (years)",
+   "computed": 17.73454990264919,
+   "reported": 17.7,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age feedback (years)",
+   "computed": 37.75,
+   "reported": 37.8,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age feedback (years)",
+   "computed": 15.046165517306845,
+   "reported": 15.0,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age all (years)",
+   "computed": 40.43939393939394,
+   "reported": 40.4,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women, feedforward",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women, feedback",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean handedness score feedforward",
+   "computed": 85.50882352941177,
+   "reported": 85.5,
+   "tol": 0.1,
+   "source": "Methods (Participants) and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent preferring the elastic handgrip",
+   "computed": 62.121212121212125,
+   "reported": 62.1,
+   "tol": 0.1,
+   "source": "Results (user experience)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent preferring the rigid handgrip",
+   "computed": 21.21212121212121,
+   "reported": 21.2,
+   "tol": 0.1,
+   "source": "Results (user experience)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rigid-first participants preferring elastic",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results (order effects)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has recordings for both devices",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all but one recording last 119-121 s (one lasts 222 s)",
+   "ok": true,
+   "detail": "120.0-221.96"
+  },
+  {
+   "kind": "internal",
+   "what": "265 recordings, one sample file each",
+   "ok": true,
+   "detail": "265"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The questionnaire has one preference answer per participant; positive values mean the second device tried was preferred (inferred, as it reproduces 62.1% and 21.2% in the paper). One feedback participant has 5 recordings (an extra first attempt in one trajectory; attempt_in_block=2 marks the later one).",
+  "One feedback recording (the first participant of the PRC series, first device) lasts 222 s instead of 120 s; it is kept as logged.",
+  "The paper's minimum moving error (MME) was not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "mace.zip",
+   "url": "https://zenodo.org/api/records/5024391/files/MMace%20CVR%20study%20data.zip/content",
+   "bytes": 25215440,
+   "sha256": "93f04a8c5d9b1ca9d2fea6dd6da23d9cb114a9ee7b2880b1fc2bb7118dad347a",
+   "fetched_utc": "2026-11-09T04:19:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mace2017_RSocOpenSci.zip"
+}

@@ -1,0 +1,170 @@
+{
+ "id": "Bennett2018_JIPA",
+ "module": "tongue_ultrasound",
+ "rows": 833,
+ "subjects": 5,
+ "persons": 5,
+ "zip_bytes": 1370758,
+ "zip_sha256": "031115ab59ae8db137e882502f55c2e6b0d15db494887e7faf029f1b32b673a6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Method, Participants (five speakers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words in the list",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Method, Stimuli (24-word list)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions per word and speaker, overall",
+   "computed": 6.108333333333333,
+   "reported": 6.1,
+   "tol": 0.05,
+   "source": "Table 2 caption (average number of repetitions overall = 6.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions, speaker 1",
+   "computed": 6.666666666666667,
+   "reported": 6.7,
+   "tol": 0.05,
+   "source": "Method (6.7, 8.0, 5.9, 6.0 and 4.0 repetitions by speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions, speaker 2",
+   "computed": 7.958333333333333,
+   "reported": 8.0,
+   "tol": 0.05,
+   "source": "Method (6.7, 8.0, 5.9, 6.0 and 4.0 repetitions by speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions, speaker 3",
+   "computed": 5.916666666666667,
+   "reported": 5.9,
+   "tol": 0.05,
+   "source": "Method (6.7, 8.0, 5.9, 6.0 and 4.0 repetitions by speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions, speaker 4",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0.05,
+   "source": "Method (6.7, 8.0, 5.9, 6.0 and 4.0 repetitions by speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average repetitions, speaker 5",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Method (6.7, 8.0, 5.9, 6.0 and 4.0 repetitions by speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fewest useable repetitions of a word",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Method (between 4 and 8 useable repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "most useable repetitions of a word",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Method (between 4 and 8 useable repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "points per tracing",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Method, Ultrasound tracing (100 points)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "landmarks traced per token",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Method (onset, midpoint and offset of the consonant)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tracings of the reference word per speaker",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Method (20 tracings of the /a/ of scairt per speaker)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tracings of the reference word per speaker (largest)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Method",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "833 tokens: 733 target words and 100 reference words",
+   "ok": true,
+   "detail": "833 tokens, 733 target"
+  },
+  {
+   "kind": "internal",
+   "what": "249,900 table lines are all used (833 tokens x 3 landmarks x 100 points)",
+   "ok": true,
+   "detail": "249900 lines"
+  },
+  {
+   "kind": "internal",
+   "what": "x rises with the point number in every offset contour",
+   "ok": true,
+   "detail": "mean x from 42.5 to 100.4"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "1 token of speaker P0004 (repetition 2) is coded p_i (p before i) in the authors' table but carries the Irish spelling ciunas, which is the spelling of the word coded kj_u; it is kept as shared and counted under ciunas for the repetition counts.",
+  "The paper's 24-word list was read 6-8 times (144-192 productions per speaker); the table holds only the useable repetitions (96-191 tokens per speaker), as the paper's 4-8 useable repetitions say."
+ ],
+ "sources": [
+  {
+   "file": "Phase_1_results.zip",
+   "url": "https://zenodo.org/api/records/4934835/files/Phase_1_results.zip/content",
+   "bytes": 280242194,
+   "sha256": "3e7fb15c71ab5f62a2ff2c9ba5612abf3fd16fdb88dc60f62722741e63c0f4c2",
+   "fetched_utc": "2026-11-08T22:40:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bennett2018_JIPA.zip"
+}

@@ -1,0 +1,111 @@
+{
+ "id": "Nardi2025_npjSciLearn",
+ "module": "game",
+ "rows": 640,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 24500,
+ "zip_sha256": "7f4bdc34a63e3548e3a546eaa6e985ce186edeb0acd9200208c9b0257c686fd9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Participants, Methods and Results (npj Sci Learn 10:73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per participant (2 sessions x (3 baseline + 6 rotation + 1 washout))",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Design, Methods and Results (npj Sci Learn 10:73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "every participant has 20 blocks",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Design, Methods and Results (npj Sci Learn 10:73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with usable EEG, error session",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "EEG exclusions, Methods and Results (npj Sci Learn 10:73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with usable EEG, reward session",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "EEG exclusions, Methods and Results (npj Sci Learn 10:73)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "success rates are multiples of 1/25",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one error and one reward session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "real success rate present only in reward sessions",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's derived tables (intertrialvariability.csv, tbt_between.csv, tbt_within.csv: inter-trial variability decay and success-dependent trial-to-trial change statistics) are not carried over; they are computed from shot-level data that the authors did not share.",
+  "The paper's EEG band is given as 12-30 Hz in one place and 13-30 Hz in another; pmbr_percent is the authors' value as shared.",
+  "Per-participant age and sex are not in the deposit (the paper reports 20 men and 12 women, aged 20 to 25)."
+ ],
+ "sources": [
+  {
+   "file": "behavioural_eeg.csv",
+   "url": "https://ndownloader.figshare.com/files/58685413",
+   "bytes": 49484,
+   "sha256": "e5162ca0582e0ccb426c811327184021d88b28bac017426e7ffc1a5987641332",
+   "fetched_utc": "2026-11-09T14:07:51Z"
+  },
+  {
+   "file": "intertrialvariability.csv",
+   "url": "https://ndownloader.figshare.com/files/58685416",
+   "bytes": 5540,
+   "sha256": "0fd8356e866cfd0f20d344b44239ab8a6df3a77ba785121fe4ad78b2d79830b4",
+   "fetched_utc": "2026-11-09T14:07:55Z"
+  },
+  {
+   "file": "tbt_between.csv",
+   "url": "https://ndownloader.figshare.com/files/58685419",
+   "bytes": 11569,
+   "sha256": "be773c28f71f96feb04cc145788a8eb7dd9504bbb53ec7f9135f4e9afa06be8b",
+   "fetched_utc": "2026-11-09T14:07:59Z"
+  },
+  {
+   "file": "tbt_within.csv",
+   "url": "https://ndownloader.figshare.com/files/58685422",
+   "bytes": 13670,
+   "sha256": "811c31e8c65560ca3b08880f30255ccb35ee6aee1299a474c9f01bd40f1fd643",
+   "fetched_utc": "2026-11-09T14:08:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nardi2025_npjSciLearn.zip"
+}

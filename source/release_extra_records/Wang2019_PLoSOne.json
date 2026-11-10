@@ -1,0 +1,132 @@
+{
+ "id": "Wang2019_PLoSOne",
+ "module": "summary",
+ "rows": 5188,
+ "subjects": 74,
+ "persons": 74,
+ "zip_bytes": 51471,
+ "zip_sha256": "c0ad3c6177aca6d054839afacfccf4361444b75b332875ff65c619b719cf7eed",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "1to3: 3 groups of 9 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline cycles",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Experimental design (baseline 48 trials, 6-trial cycles)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training cycles",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Experimental design (120 trials, 6-trial cycles)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "2n4 file repeats the direction-error columns of the G2 vs 4 file (not released twice)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "implicit session trial 1 mean direction error, group 2 (Imp-to-Exp)",
+   "computed": -27.652734301621454,
+   "reported": -27.7,
+   "tol": 0.05,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "implicit session trial 1 mean direction error, group 4 (Exp-to-Imp/Inst)",
+   "computed": -21.735978597267994,
+   "reported": -21.7,
+   "tol": 0.05,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no-feedback file: 6 participants in each of two groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 participants in the Imp-to-NoVFB and Exp-to-NoVFB groups",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Experiment 2, Experimental design (2 groups of 6)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows written",
+   "ok": true,
+   "detail": "5188"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 'grps 2n3' trial file is labelled groups 2 and 4 inside, and holds 11 and 9 participants (8 with a first trial) in them, not the 9 per group of the paper; released as is.",
+  "The file 'Cycle data for grps 2n4' repeats the direction-error columns of 'G2 vs 4' and was not released twice."
+ ],
+ "sources": [
+  {
+   "file": "Cycle data for G2 vs 4_bsln adj_abs val_implicit only.sav",
+   "url": "https://osf.io/download/j5238",
+   "bytes": 29918,
+   "sha256": "7acaca529899d82063c3b7fc6ecb363a0e06dfa679c80572b6ba657298bb6a8a",
+   "fetched_utc": "2026-11-09T15:09:36Z"
+  },
+  {
+   "file": "Cycle data for G5 vs 6_no fb only.sav",
+   "url": "https://osf.io/download/yuhv9",
+   "bytes": 1237,
+   "sha256": "eefdc097bbdfc29c5060f34f34025f960cd61ae488b57e5901557acf08af5a9d",
+   "fetched_utc": "2026-11-09T15:09:41Z"
+  },
+  {
+   "file": "Trial data for grps 2n3_implicit only.sav",
+   "url": "https://osf.io/download/n7jsv",
+   "bytes": 16376,
+   "sha256": "c638cce05c2822069655c5ee2a5ae105cfe04ef022269684f651e6e497a8da52",
+   "fetched_utc": "2026-11-09T15:09:45Z"
+  },
+  {
+   "file": "Cycle data for grps 2n4_implicit only.sav",
+   "url": "https://osf.io/download/tkg26",
+   "bytes": 15665,
+   "sha256": "e2515a8ccfc598de8d7229269276c55fb3503b101b2036d0dc9cf39c6635b081",
+   "fetched_utc": "2026-11-09T15:09:49Z"
+  },
+  {
+   "file": "Cycle data for grps 1to3.sav",
+   "url": "https://osf.io/download/7frjq",
+   "bytes": 39617,
+   "sha256": "3d369e47e79c740473c3e7074f1b490719296f51956186493d7051aa0f93d788",
+   "fetched_utc": "2026-11-09T15:09:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2019_PLoSOne.zip"
+}

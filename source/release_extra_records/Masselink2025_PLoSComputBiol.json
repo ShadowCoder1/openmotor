@@ -1,0 +1,124 @@
+{
+ "id": "Masselink2025_PLoSComputBiol",
+ "module": "saccade",
+ "rows": 13780,
+ "subjects": 26,
+ "persons": 13,
+ "zip_bytes": 302289,
+ "zip_sha256": "5996d7f13ca5b3d4cfe59a7a1f1b47ab9cb3ee95001a0a131a50fbeb5111bea6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "trial type vector has 530 entries",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "pre-adaptation trials of each kind (pre-saccadic loc., post-saccadic loc., saccade)",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Trial structure (165 pre-adaptation trials, 55 of each kind)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "post-adaptation trials of each kind (post-saccadic loc.)",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Trial structure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation trials (all saccade trials)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "Methods, Trial structure (200 adaptation trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session",
+   "computed": 530.0,
+   "reported": 530.0,
+   "tol": 0,
+   "source": "Methods, Trial structure (165 + 200 + 165)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "probe positions",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Probe positions (11)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants (N = 13)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation target (probe position 1) is 12 deg right of fixation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every adaptation-phase trial is a saccade trial to probe position 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "13 subjects x 2 sessions x 530 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "measure present exactly where the trial kind has one (no values in other columns)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean over subjects of the median horizontal saccade amplitude to the adaptation target before adaptation (deg)",
+   "computed": 11.883316294322627,
+   "reported": 11.9,
+   "tol": 0.1,
+   "source": "Results, Saccade amplitudes and localizations (started at 11.9 dva)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "saccade amplitudes shorten by 1.5-3 deg by the end of adaptation",
+   "ok": true,
+   "detail": "2.11 deg"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports that saccade amplitude shortened by 2.4 deg by the end of adaptation (t(12) = -6.46); the rows here give 2.1 deg (median of the last 20 adaptation trials against the median before adaptation, per subject), and 1.6 deg for all 200 adaptation trials, so that number is not reproduced; the pre-adaptation amplitude of 11.9 deg is."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/15298976/files/Masselink_Lappe_2025_data.zip/content",
+   "bytes": 331639,
+   "sha256": "8fd4cb15f06b842e7358f2e4d6d164ec960f8625fde2a64859b63ade49f5a64f",
+   "fetched_utc": "2026-11-09T08:29:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Masselink2025_PLoSComputBiol.zip"
+}

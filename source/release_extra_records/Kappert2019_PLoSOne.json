@@ -1,0 +1,510 @@
+{
+ "id": "Kappert2019_PLoSOne",
+ "module": "timeseries",
+ "rows": 82,
+ "subjects": 59,
+ "persons": 59,
+ "zip_bytes": 22670716,
+ "zip_sha256": "7b49e3e928bf8468dcb2e29763f41472169af455c88cce72d61964e2653adb59",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "63 recordings: 19 surgery, 19 chemoradiation, 21+9+9+5 healthy; corr columns 4-6 of the jaw-compensated array equal the plain array in every file",
+   "ok": true,
+   "detail": "{'Chemoradiation': 19, 'Healthy': 44, 'Surgery': 19}"
+  },
+  {
+   "kind": "internal",
+   "what": "the only file whose corrected arrays have another length than its raw tracks is R19 (2081 raw frames, 3647 corrected, the length of R16)",
+   "ok": true,
+   "detail": "[('ROM_R19.mat', 2081, 3647)]"
+  },
+  {
+   "kind": "published",
+   "what": "participants after surgery enrolled (files in the Surgery folder)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Patients (19 post-surgery patients enrolled)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants after chemoradiation enrolled",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Patients (19 enrolled)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy recordings re-tracked by observer 2 (inter-rater reliability)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, reliability (nine healthy participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repeated measurements of one healthy participant",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, repeatability (measured five times)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tracking rate (fps)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, optical tracking (100 fps)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean left-right range of the tongue tip (mm), healthy, jaw-compensated (paper: peak of the distribution near 85 mm)",
+   "computed": 83.84294209523809,
+   "reported": 85.0,
+   "tol": 6,
+   "source": "Results, Fig 6 text (R_total of healthy peaks near 85 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean left-right range (mm), after surgery (paper: peak near 60 mm)",
+   "computed": 56.727223563157885,
+   "reported": 60.0,
+   "tol": 6,
+   "source": "Results (post-surgery R_total peaks near 60 mm)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analyses 19 healthy, 17 post-surgery and 18 post-chemoradiation participants after exclusions; the deposit has 19 surgery and 19 chemoradiation recordings and does not say which were excluded, so none is flagged (subject_excluded_by_authors is False for all).",
+  "Healthy folder 'Observer 1' has 21 files with IDs H01-H11, H17-H25 and H024; H024 holds exactly the same corrected arrays as H24 and is coded as the same person. In Chemoradiation, R19's corrected arrays (markers3D_corr and markers3D_corr_JAW) are identical to R16's and have R16's length (3647 frames) while R19's raw tracks have 2081 frames, so they look like a copy of R16's; the corrected channels of R19 are left empty here and its raw channels are kept.",
+  "The paper reports repeatability SD of about 3.5 mm without and 2.5 mm with jaw compensation for range; the left-right range from the five repeated recordings computed here from the authors' arrays and frame labels is about 4.2 mm and 3.4 mm, so that value is not reproduced exactly (the authors' own range definition is not given in the deposit)."
+ ],
+ "sources": [
+  {
+   "file": "Data/Surgery/ROM_S09.mat",
+   "url": "https://osf.io/download/5cee5d5f23fec40018e823d3/",
+   "bytes": 513303
+  },
+  {
+   "file": "Data/Surgery/ROM_S07.mat",
+   "url": "https://osf.io/download/5cee5d6035f2580018aa23da/",
+   "bytes": 878967
+  },
+  {
+   "file": "Data/Surgery/ROM_S08.mat",
+   "url": "https://osf.io/download/5cee5d6023fec40019e9903a/",
+   "bytes": 426405
+  },
+  {
+   "file": "Data/Surgery/ROM_S11.mat",
+   "url": "https://osf.io/download/5cee5d6123fec4001ae749bb/",
+   "bytes": 1179346
+  },
+  {
+   "file": "Data/Surgery/ROM_S10.mat",
+   "url": "https://osf.io/download/5cee5d6135f2580018aa23de/",
+   "bytes": 533762
+  },
+  {
+   "file": "Data/Surgery/ROM_S13.mat",
+   "url": "https://osf.io/download/5cee5d6523fec40017ee78ac/",
+   "bytes": 1084543
+  },
+  {
+   "file": "Data/Surgery/ROM_S12.mat",
+   "url": "https://osf.io/download/5cee5d6535f2580019aa8114/",
+   "bytes": 520537
+  },
+  {
+   "file": "Data/Surgery/ROM_S14.mat",
+   "url": "https://osf.io/download/5cee5d658d6e0500196254d2/",
+   "bytes": 529150
+  },
+  {
+   "file": "Data/Surgery/ROM_S16.mat",
+   "url": "https://osf.io/download/5cee5d6823fec40018e823de/",
+   "bytes": 624390
+  },
+  {
+   "file": "Data/Surgery/ROM_S15.mat",
+   "url": "https://osf.io/download/5cee5d6835f2580017ac6514/",
+   "bytes": 710710
+  },
+  {
+   "file": "Data/Surgery/ROM_S17.mat",
+   "url": "https://osf.io/download/5cee5d692a50c40019814764/",
+   "bytes": 333136
+  },
+  {
+   "file": "Data/Surgery/ROM_S18.mat",
+   "url": "https://osf.io/download/5cee5d6a23fec40017ee78ba/",
+   "bytes": 616528
+  },
+  {
+   "file": "Data/Surgery/ROM_S19.mat",
+   "url": "https://osf.io/download/5cee5d6a2a50c40019814769/",
+   "bytes": 539547
+  },
+  {
+   "file": "Data/Surgery/ROM_S21.mat",
+   "url": "https://osf.io/download/5cee5d6e35f2580017ac651d/",
+   "bytes": 883628
+  },
+  {
+   "file": "Data/Surgery/ROM_S20.mat",
+   "url": "https://osf.io/download/5cee5d6e23fec40017ee78c2/",
+   "bytes": 577740
+  },
+  {
+   "file": "Data/Surgery/ROM_S22.mat",
+   "url": "https://osf.io/download/5cee5d708d6e050018663b7b/",
+   "bytes": 1069872
+  },
+  {
+   "file": "Data/Surgery/ROM_S24.mat",
+   "url": "https://osf.io/download/5cee5d7135f2580017ac6522/",
+   "bytes": 924412
+  },
+  {
+   "file": "Data/Surgery/ROM_S23.mat",
+   "url": "https://osf.io/download/5cee5d712a50c4001784d3bc/",
+   "bytes": 758193
+  },
+  {
+   "file": "Data/Surgery/ROM_S06.mat",
+   "url": "https://osf.io/download/5cee5d742a50c4001784d3c4/",
+   "bytes": 736830
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R18.mat",
+   "url": "https://osf.io/download/5cee5d7423fec40019e99055/",
+   "bytes": 954415
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R21.mat",
+   "url": "https://osf.io/download/5cee5d762a50c40019814776/",
+   "bytes": 558855
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R19.mat",
+   "url": "https://osf.io/download/5cee5d762a50c400187f1ec2/",
+   "bytes": 427214
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R20.mat",
+   "url": "https://osf.io/download/5cee5d778d6e050018663b84/",
+   "bytes": 731729
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R23.mat",
+   "url": "https://osf.io/download/5cee5d792a50c4001784d3d6/",
+   "bytes": 406271
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R22.mat",
+   "url": "https://osf.io/download/5cee5d798d6e05001a608d3e/",
+   "bytes": 770052
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R26.mat",
+   "url": "https://osf.io/download/5cee5d7b35f2580019aa8124/",
+   "bytes": 975267
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R25.mat",
+   "url": "https://osf.io/download/5cee5d7b8d6e05001a608d44/",
+   "bytes": 726852
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R24.mat",
+   "url": "https://osf.io/download/5cee5d7b23fec40019e99063/",
+   "bytes": 554710
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R28.mat",
+   "url": "https://osf.io/download/5cee5d7c23fec40019e99068/",
+   "bytes": 681745
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R27.mat",
+   "url": "https://osf.io/download/5cee5d7e23fec40018e823f3/",
+   "bytes": 476671
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R31.mat",
+   "url": "https://osf.io/download/5cee5d8023fec40019e9906c/",
+   "bytes": 1046037
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R29.mat",
+   "url": "https://osf.io/download/5cee5d8035f2580016b1ebe8/",
+   "bytes": 803193
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R30.mat",
+   "url": "https://osf.io/download/5cee5d802a50c40019814787/",
+   "bytes": 779598
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R32.mat",
+   "url": "https://osf.io/download/5cee5d812a50c400187f1ecb/",
+   "bytes": 741486
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R14.mat",
+   "url": "https://osf.io/download/5cee5d8223fec40019e99071/",
+   "bytes": 942410
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R17.mat",
+   "url": "https://osf.io/download/5cee5d8535f2580016b1ebf4/",
+   "bytes": 746805
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R16.mat",
+   "url": "https://osf.io/download/5cee5d852a50c400187f1ed1/",
+   "bytes": 498417
+  },
+  {
+   "file": "Data/Chemoradiation/ROM_R15.mat",
+   "url": "https://osf.io/download/5cee5d8523fec40018e823fd/",
+   "bytes": 1054675
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H07.mat",
+   "url": "https://osf.io/download/5cee5d862a50c40019814790/",
+   "bytes": 795756
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H06.mat",
+   "url": "https://osf.io/download/5cee5d8723fec40019e9907a/",
+   "bytes": 589375
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H08.mat",
+   "url": "https://osf.io/download/5cee5d8923fec40019e99080/",
+   "bytes": 628205
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H09.mat",
+   "url": "https://osf.io/download/5cee5d8a2a50c400187f1ed8/",
+   "bytes": 991977
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H10.mat",
+   "url": "https://osf.io/download/5cee5d8b8d6e0500196254ef/",
+   "bytes": 672069
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H11.mat",
+   "url": "https://osf.io/download/5cee5d8c8d6e0500196254f4/",
+   "bytes": 923547
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H17.mat",
+   "url": "https://osf.io/download/5cee5d8d23fec40017ee78f4/",
+   "bytes": 762279
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H18.mat",
+   "url": "https://osf.io/download/5cee5d8d23fec40017ee78fa/",
+   "bytes": 967922
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H19.mat",
+   "url": "https://osf.io/download/5cee5d8f2a50c4001981479c/",
+   "bytes": 795661
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H21.mat",
+   "url": "https://osf.io/download/5cee5d9035f2580016b1ec09/",
+   "bytes": 698059
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H20.mat",
+   "url": "https://osf.io/download/5cee5d9035f2580016b1ec0d/",
+   "bytes": 780638
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H22.mat",
+   "url": "https://osf.io/download/5cee5d912a50c400198147a1/",
+   "bytes": 626668
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H024.mat",
+   "url": "https://osf.io/download/5cee5d9323fec40018e8240c/",
+   "bytes": 733127
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H23.mat",
+   "url": "https://osf.io/download/5cee5d9423fec40019e99089/",
+   "bytes": 625314
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H25.mat",
+   "url": "https://osf.io/download/5cee5d968d6e050018663ba6/",
+   "bytes": 624835
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H24.mat",
+   "url": "https://osf.io/download/5cee5d9635f2580016b1ec14/",
+   "bytes": 733033
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H02.mat",
+   "url": "https://osf.io/download/5cee5d978d6e050018663bab/",
+   "bytes": 604322
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H01.mat",
+   "url": "https://osf.io/download/ceqsy/",
+   "bytes": 1213786
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H03.mat",
+   "url": "https://osf.io/download/5cee5d992a50c400187f1ee7/",
+   "bytes": 1086580
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H04.mat",
+   "url": "https://osf.io/download/5cee5d9c35f2580018aa23fe/",
+   "bytes": 891733
+  },
+  {
+   "file": "Data/Healthy/Observer 1/ROM_H05.mat",
+   "url": "https://osf.io/download/5cee5d9c2a50c4001784d405/",
+   "bytes": 1091636
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H20.mat",
+   "url": "https://osf.io/download/5cee5d9c2a50c4001784d401/",
+   "bytes": 835607
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H21.mat",
+   "url": "https://osf.io/download/5cee5d9c35f2580016b1ec20/",
+   "bytes": 616516
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H22.mat",
+   "url": "https://osf.io/download/5cee5d9e8d6e050019625505/",
+   "bytes": 603131
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H25.mat",
+   "url": "https://osf.io/download/5cee5da02a50c400198147af/",
+   "bytes": 639510
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H17.mat",
+   "url": "https://osf.io/download/5cee5da123fec40017ee790f/",
+   "bytes": 706352
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H24.mat",
+   "url": "https://osf.io/download/5cee5da12a50c400187f1eee/",
+   "bytes": 745165
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H23.mat",
+   "url": "https://osf.io/download/5cee5da223fec40019e9909f/",
+   "bytes": 590130
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H18.mat",
+   "url": "https://osf.io/download/5cee5da42a50c400167f351a/",
+   "bytes": 980029
+  },
+  {
+   "file": "Data/Healthy/Observer 1 intraobserver/ROM_H19.mat",
+   "url": "https://osf.io/download/5cee5da42a50c400187f1ef5/",
+   "bytes": 792258
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H18.mat",
+   "url": "https://osf.io/download/5cee5da62a50c400187f1efa/",
+   "bytes": 1098496
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H20.mat",
+   "url": "https://osf.io/download/5cee5da82a50c400198147b8/",
+   "bytes": 900920
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H19.mat",
+   "url": "https://osf.io/download/5cee5da823fec4001ae749f8/",
+   "bytes": 853468
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H21.mat",
+   "url": "https://osf.io/download/5cee5da923fec40018e8241c/",
+   "bytes": 616294
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H22.mat",
+   "url": "https://osf.io/download/5cee5dab35f2580018aa2409/",
+   "bytes": 580511
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H23.mat",
+   "url": "https://osf.io/download/5cee5dab23fec40019e990a6/",
+   "bytes": 855503
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H24.mat",
+   "url": "https://osf.io/download/5cee5dab8d6e05001b605535/",
+   "bytes": 748419
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H25.mat",
+   "url": "https://osf.io/download/5cee5dae2a50c4001784d421/",
+   "bytes": 649341
+  },
+  {
+   "file": "Data/Healthy/Observer 2/ROM_H17.mat",
+   "url": "https://osf.io/download/5cee5daf23fec40018e82423/",
+   "bytes": 688004
+  },
+  {
+   "file": "Data/Healthy/Reproducibility/ROM_repro_2.mat",
+   "url": "https://osf.io/download/5cee5daf23fec40017ee7918/",
+   "bytes": 661636
+  },
+  {
+   "file": "Data/Healthy/Reproducibility/ROM_repro_3.mat",
+   "url": "https://osf.io/download/5cee5db035f2580019aa8149/",
+   "bytes": 778000
+  },
+  {
+   "file": "Data/Healthy/Reproducibility/ROM_repro_4.mat",
+   "url": "https://osf.io/download/ys4xd/",
+   "bytes": 666200
+  },
+  {
+   "file": "Data/Healthy/Reproducibility/ROM_repro_5.mat",
+   "url": "https://osf.io/download/z5fqs/",
+   "bytes": 651964
+  },
+  {
+   "file": "Data/Healthy/Reproducibility/ROM_repro_1.mat",
+   "url": "https://osf.io/download/py4rg/",
+   "bytes": 653669
+  },
+  {
+   "file": "Data/Data_Manual.pdf",
+   "url": "https://osf.io/download/kvrys/",
+   "bytes": 111367
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kappert2019_PLoSOne.zip"
+}

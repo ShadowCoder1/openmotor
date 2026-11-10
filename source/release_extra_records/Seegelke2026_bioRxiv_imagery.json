@@ -1,0 +1,602 @@
+{
+ "id": "Seegelke2026_bioRxiv_imagery",
+ "module": "reach90",
+ "rows": 130816,
+ "subjects": 93,
+ "persons": 93,
+ "zip_bytes": 2923459,
+ "zip_sha256": "bb7ec7cd47f788049f7d968eac561941163d76f072fdada1e946dfcc5ffa0349",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "A061: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A061: ReachDiff2_sig (hand_angle) equals the counter-clockwise angle (in the stored target-up frame) of the first movement relative to the direction to the target, recomputed from the stored positions, modulo 360",
+   "ok": true,
+   "detail": "22459 probes, max diff 2.84e-12 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "A054: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A054: ReachDiff2_sig (hand_angle) equals the counter-clockwise angle (in the stored target-up frame) of the first movement relative to the direction to the target, recomputed from the stored positions, modulo 360",
+   "ok": true,
+   "detail": "21818 probes, max diff 1.42e-12 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "A069: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A069: ReachDiff2_sig (hand_angle) equals the counter-clockwise angle (in the stored target-up frame) of the first movement relative to the direction to the target, recomputed from the stored positions, modulo 360",
+   "ok": true,
+   "detail": "21120 probes, max diff 2.44e-12 deg"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants analysed",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: female participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: male participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean age",
+   "computed": 22.967741935483872,
+   "reported": 23.0,
+   "tol": 0.06,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SD of age",
+   "computed": 3.478350863725911,
+   "reported": 3.48,
+   "tol": 0.006,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: youngest age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: oldest age",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials where the cursor left the start on a withheld/imagery trial",
+   "computed": 773.0,
+   "reported": 773.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: too-slow trials, prime",
+   "computed": 152.0,
+   "reported": 152.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: too-slow trials, probe",
+   "computed": 168.0,
+   "reported": 168.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: obstacle hits, prime",
+   "computed": 161.0,
+   "reported": 161.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: obstacle hits, probe",
+   "computed": 296.0,
+   "reported": 296.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: movement onset not detected, prime",
+   "computed": 127.0,
+   "reported": 127.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: movement onset not detected, probe",
+   "computed": 198.0,
+   "reported": 198.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials with more than two velocity peaks (not already excluded)",
+   "computed": 806.0,
+   "reported": 806.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials excluded before the RT/MT rule",
+   "computed": 2479.0,
+   "reported": 2479.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials removed by RT < 100 ms or MT > 1000 ms",
+   "computed": 471.0,
+   "reported": 471.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: converted rows flag every analysed-trial exclusion (rows excluded = first + RT/MT rules)",
+   "ok": true,
+   "detail": "2950 trials flagged"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: female participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: male participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean age",
+   "computed": 24.366666666666667,
+   "reported": 24.4,
+   "tol": 0.06,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SD of age",
+   "computed": 6.059949546468776,
+   "reported": 6.06,
+   "tol": 0.006,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: youngest age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: oldest age",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials where the cursor left the start on a withheld/imagery trial",
+   "computed": 358.0,
+   "reported": 358.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: too-slow trials, prime",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: too-slow trials, probe",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: obstacle hits, prime",
+   "computed": 89.0,
+   "reported": 89.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: obstacle hits, probe",
+   "computed": 264.0,
+   "reported": 264.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: movement onset not detected, prime",
+   "computed": 144.0,
+   "reported": 144.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: movement onset not detected, probe",
+   "computed": 178.0,
+   "reported": 178.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials with more than two velocity peaks (not already excluded)",
+   "computed": 666.0,
+   "reported": 666.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials excluded before the RT/MT rule",
+   "computed": 1756.0,
+   "reported": 1756.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials removed by RT < 100 ms or MT > 1000 ms",
+   "computed": 268.0,
+   "reported": 268.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: converted rows flag every analysed-trial exclusion (rows excluded = first + RT/MT rules)",
+   "ok": true,
+   "detail": "2024 trials flagged"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: female participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: male participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: mean age",
+   "computed": 22.8,
+   "reported": 22.8,
+   "tol": 0.06,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SD of age",
+   "computed": 1.7694729392558173,
+   "reported": 1.77,
+   "tol": 0.006,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: youngest age",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: oldest age",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials where the cursor left the start on a withheld/imagery trial",
+   "computed": 374.0,
+   "reported": 374.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: too-slow trials, prime",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: too-slow trials, probe",
+   "computed": 289.0,
+   "reported": 289.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: obstacle hits, prime",
+   "computed": 176.0,
+   "reported": 176.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: obstacle hits, probe",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: movement onset not detected, prime",
+   "computed": 426.0,
+   "reported": 426.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: movement onset not detected, probe",
+   "computed": 482.0,
+   "reported": 482.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials with more than two velocity peaks (not already excluded)",
+   "computed": 771.0,
+   "reported": 771.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials excluded before the RT/MT rule",
+   "computed": 2632.0,
+   "reported": 2632.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials removed by RT < 100 ms or MT > 1000 ms",
+   "computed": 717.0,
+   "reported": 717.0,
+   "tol": 0,
+   "source": "Methods, Participants and Data processing and analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: converted rows flag every analysed-trial exclusion (rows excluded = first + RT/MT rules)",
+   "ok": true,
+   "detail": "3349 trials flagged"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angles within (-180, 180]",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "A054_data.csv",
+   "url": "https://zenodo.org/api/records/22251643/files/A054_data.csv/content",
+   "bytes": 71338932,
+   "sha256": "80a35d2e2bac0a863d1ccf9bb4eac9af0c72ec3dcbfd321fe99e550f00201a12",
+   "fetched_utc": "2026-11-09T07:46:12Z"
+  },
+  {
+   "file": "A054_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22251643/files/A054_SubjInfo.xlsx/content",
+   "bytes": 12437,
+   "sha256": "7ef68afce2e5284acfd4f7d41519aa75f69c516382056a12ffc9ba19cf700c0d",
+   "fetched_utc": "2026-11-09T07:46:18Z"
+  },
+  {
+   "file": "Data_Roberts_2025_EBR.xlsx",
+   "url": "https://zenodo.org/api/records/22251643/files/Data_Roberts_2025_EBR.xlsx/content",
+   "bytes": 82386,
+   "sha256": "e00ee68aafebcefaecc2ebde921aec8e10300052f5b028bf4b6bdfa67839c73c",
+   "fetched_utc": "2026-11-09T07:46:24Z"
+  },
+  {
+   "file": "A061_data.csv",
+   "url": "https://zenodo.org/api/records/22251643/files/A061_data.csv/content",
+   "bytes": 74886324,
+   "sha256": "54a292f603d70e8d6799859137bacda43c4fb4c96a6cf3a02e6793ba57c05a0c",
+   "fetched_utc": "2026-11-09T07:53:05Z"
+  },
+  {
+   "file": "A061_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22251643/files/A061_SubjInfo.xlsx/content",
+   "bytes": 19426,
+   "sha256": "08bcbce1cde047c518c03f912c2dc395ab15b12cf9c5c5d376473257ff67917e",
+   "fetched_utc": "2026-11-09T07:53:12Z"
+  },
+  {
+   "file": "A069_data.csv",
+   "url": "https://zenodo.org/api/records/22251643/files/A069_data.csv/content",
+   "bytes": 70595333,
+   "sha256": "58a484e35e6ed184fa7e677b11def053628755f0382fb1a434875de4f70d225a",
+   "fetched_utc": "2026-11-09T07:53:56Z"
+  },
+  {
+   "file": "A069_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22251643/files/A069_SubjInfo.xlsx/content",
+   "bytes": 19175,
+   "sha256": "cde480b26d79d8c4b6f65999b647e452ed897b2ae0b437b1fdd903ba001b5f8f",
+   "fetched_utc": "2026-11-09T07:54:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Seegelke2026_bioRxiv_imagery.zip"
+}

@@ -1,0 +1,1025 @@
+{
+ "id": "Klanke2026_JVis",
+ "module": "saccade",
+ "rows": 79166,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 7514986,
+ "zip_sha256": "4997d1136f1026bb07b95f8b4cea370f19972173388df820ffd9c23aa1cb1693",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "104 participant-session files read (SPCS 24, SPC2 40, SPVS 40)",
+   "ok": true,
+   "detail": "104"
+  },
+  {
+   "kind": "internal",
+   "what": "rows of a trial are contiguous and sacNumber counts up within a trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of every file kept in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "report coding is 0/1 everywhere",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "visResp text agrees with perceptualResponse",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "at most 90 recorded trials per block in Experiment 1 (6 blocks x 90 per session; the deposit's trial counter also counts repeated trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): mean valid trials per participant",
+   "computed": 1566.25,
+   "reported": 1566.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): 95% CI half-width of trials per participant",
+   "computed": 81.1497244797152,
+   "reported": 81.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): mean valid trials per participant",
+   "computed": 2037.9,
+   "reported": 2038.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): 95% CI half-width of trials per participant",
+   "computed": 98.10128827116898,
+   "reported": 98.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): mean valid trials per participant",
+   "computed": 1946.2,
+   "reported": 1946.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): 95% CI half-width of trials per participant",
+   "computed": 91.97510530284151,
+   "reported": 92.0,
+   "tol": 0.5,
+   "source": "Results, trial counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): saccade rate at 6 deg/s (per s)",
+   "computed": 0.9822277369242116,
+   "reported": 0.98,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): 95% CI half-width of saccade rate at 6 deg/s",
+   "computed": 0.3342369620200262,
+   "reported": 0.33,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): saccade rate at 9 deg/s (per s)",
+   "computed": 1.3029847001064563,
+   "reported": 1.3,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): 95% CI half-width of saccade rate at 9 deg/s",
+   "computed": 0.4206769763400851,
+   "reported": 0.42,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): saccade rate at 12 deg/s (per s)",
+   "computed": 1.5483887036198967,
+   "reported": 1.55,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 (SPCS): 95% CI half-width of saccade rate at 12 deg/s",
+   "computed": 0.5318332398509342,
+   "reported": 0.53,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): saccade rate at 3 deg/s (per s)",
+   "computed": 0.9958277606366648,
+   "reported": 1.0,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): 95% CI half-width of saccade rate at 3 deg/s",
+   "computed": 0.18369419079126448,
+   "reported": 0.18,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): saccade rate at 6 deg/s (per s)",
+   "computed": 1.4972177056274643,
+   "reported": 1.5,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): 95% CI half-width of saccade rate at 6 deg/s",
+   "computed": 0.2338013926828386,
+   "reported": 0.23,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): saccade rate at 9 deg/s (per s)",
+   "computed": 1.9424863620781485,
+   "reported": 1.94,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 (SPC2): 95% CI half-width of saccade rate at 9 deg/s",
+   "computed": 0.27571540341271433,
+   "reported": 0.28,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): saccade rate at 3 deg/s (per s)",
+   "computed": 0.6897579597588086,
+   "reported": 0.69,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): 95% CI half-width of saccade rate at 3 deg/s",
+   "computed": 0.18714189966699224,
+   "reported": 0.19,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): saccade rate at 6 deg/s (per s)",
+   "computed": 0.9248171647679223,
+   "reported": 0.92,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): 95% CI half-width of saccade rate at 6 deg/s",
+   "computed": 0.20709686900012594,
+   "reported": 0.21,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): saccade rate at 9 deg/s (per s)",
+   "computed": 1.1177076275649849,
+   "reported": 1.12,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 (SPVS): 95% CI half-width of saccade rate at 9 deg/s",
+   "computed": 0.26778978646482005,
+   "reported": 0.27,
+   "tol": 0.0051,
+   "source": "Results, 'Saccade rate'",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Experiment 3 intended-versus-unintended saccade rates (0.77 and 1.05 per s, with a +-0.13/0.12 interval) were not reproduced: the same calculation gives 0.78 and 1.05 with +-0.18 intervals, so these are not used as checks. The deposit's listed project (mhfke) holds only Experiment 1; Experiments 2 and 3 come from the two further OSF projects cited by the paper."
+ ],
+ "sources": [
+  {
+   "file": "SPCS_h01.csv",
+   "url": "https://osf.io/download/69b97d97d3e4e02b98a729c8/",
+   "bytes": 215156,
+   "sha256": "e999a535369702da81b532277ef082a31b585f915952a6f4f5a109cae667c161",
+   "fetched_utc": "2026-11-09T12:04:18Z"
+  },
+  {
+   "file": "SPCS_d01.csv",
+   "url": "https://osf.io/download/69b97d984ceb048eece37dea/",
+   "bytes": 418660,
+   "sha256": "3566991b7e976f6d47e11e3819ab8760d5370e648ea4a5a0d6d08a91f770bf58",
+   "fetched_utc": "2026-11-09T12:04:26Z"
+  },
+  {
+   "file": "SPCS_j03.csv",
+   "url": "https://osf.io/download/69b97d98d097aad876e37e03/",
+   "bytes": 480160,
+   "sha256": "b6e0ef84337446961dc1c3ac0ca537d56e22fb6488ddf62726ca603f4830a80c",
+   "fetched_utc": "2026-11-09T12:04:32Z"
+  },
+  {
+   "file": "SPCS_c03.csv",
+   "url": "https://osf.io/download/69b97d98996510710fa729f6/",
+   "bytes": 271937,
+   "sha256": "73a6ab699d97e8bb158b099cff5ea01dc43415c7560c9c8ee9c609e5a1f4d116",
+   "fetched_utc": "2026-11-09T12:04:39Z"
+  },
+  {
+   "file": "SPCS_h03.csv",
+   "url": "https://osf.io/download/69b97d99d3e4e02b98a729ce/",
+   "bytes": 208453,
+   "sha256": "1fcf799e03569a81345bc7d6dbbc060f330d334dffc15ef46e33672a77021a0e",
+   "fetched_utc": "2026-11-09T12:04:46Z"
+  },
+  {
+   "file": "SPCS_g03.csv",
+   "url": "https://osf.io/download/69b97d99996510710fa729f8/",
+   "bytes": 438939,
+   "sha256": "15d6daec5154d70f776c8284db48c4fe321c23d0245103c68cc00512666bbdfc",
+   "fetched_utc": "2026-11-09T12:04:54Z"
+  },
+  {
+   "file": "SPCS_e03.csv",
+   "url": "https://osf.io/download/69b97d99ead5d62949a72bcc/",
+   "bytes": 422066,
+   "sha256": "f8c1bd46750d9edb499a5cf924fe5b7fb8c401975b463c7e3a448cf4dd991f45",
+   "fetched_utc": "2026-11-09T12:04:59Z"
+  },
+  {
+   "file": "SPCS_j01.csv",
+   "url": "https://osf.io/download/69b97d9989477d8fc8e37dea/",
+   "bytes": 428813,
+   "sha256": "b3f6e99c0cd94a0d233bf0bb808e0f8d3198765739470c6d7ddd34a0b66f0267",
+   "fetched_utc": "2026-11-09T12:05:18Z"
+  },
+  {
+   "file": "SPCS_g01.csv",
+   "url": "https://osf.io/download/69b97d99b56c977761e37dfc/",
+   "bytes": 424694,
+   "sha256": "e8317877b0b3b2c5fc1ff0243a4191ea05d0276ed31af2074d57269229fa7c18",
+   "fetched_utc": "2026-11-09T12:05:27Z"
+  },
+  {
+   "file": "SPCS_c02.csv",
+   "url": "https://osf.io/download/69b97d99fcb0d0f3ebe38166/",
+   "bytes": 275566,
+   "sha256": "c344c9817873e0968615563ea3833bc9743f2ef58739c49123aa7ff36efc455b",
+   "fetched_utc": "2026-11-09T12:05:36Z"
+  },
+  {
+   "file": "SPCS_j02.csv",
+   "url": "https://osf.io/download/69b97d991001fb38a09f0001/",
+   "bytes": 410417,
+   "sha256": "701e0def6b3dbe51d0de6fb24f9c37df2f1d0e8a39e0ece019086b49c8bb17d3",
+   "fetched_utc": "2026-11-09T12:05:42Z"
+  },
+  {
+   "file": "SPCS_b01.csv",
+   "url": "https://osf.io/download/69b97d99d097aad876e37e05/",
+   "bytes": 446901,
+   "sha256": "ed71da726441d20428ac3cf9a4d17dd223a5f370cb61f285d4f0f86aa4abc477",
+   "fetched_utc": "2026-11-09T12:05:49Z"
+  },
+  {
+   "file": "SPCS_a03.csv",
+   "url": "https://osf.io/download/69b97d99fcb0d0f3ebe38168/",
+   "bytes": 249622,
+   "sha256": "25763a0e74c76569e2cd33131483ed9e7f4486035bd0ed760854ead5f60e8789",
+   "fetched_utc": "2026-11-09T12:05:56Z"
+  },
+  {
+   "file": "SPCS_a02.csv",
+   "url": "https://osf.io/download/69b97d99996510710fa729fa/",
+   "bytes": 241409,
+   "sha256": "75f87c301884dc0be5fe8def61a2660ae8f77a8d92a2564218568c9c9538d8b5",
+   "fetched_utc": "2026-11-09T12:06:05Z"
+  },
+  {
+   "file": "SPCS_h02.csv",
+   "url": "https://osf.io/download/69b97d99ead5d62949a72bce/",
+   "bytes": 214956,
+   "sha256": "3a6695fa158a9ff6d02de7570384322ee36a09f332764e124032900b0aa38125",
+   "fetched_utc": "2026-11-09T12:06:20Z"
+  },
+  {
+   "file": "SPCS_b03.csv",
+   "url": "https://osf.io/download/69b97d994ceb048eece37ded/",
+   "bytes": 451404,
+   "sha256": "fee331827409a438e455211ad8c2faaa18bcf35a9530b5867be3f5dcf984d80c",
+   "fetched_utc": "2026-11-09T12:06:28Z"
+  },
+  {
+   "file": "SPCS_d02.csv",
+   "url": "https://osf.io/download/69b97d9989477d8fc8e37dec/",
+   "bytes": 357022,
+   "sha256": "e52ecacad8114686ba5fd93faf98a21b83e5c7cc938a35a358a94d1b5e5a445b",
+   "fetched_utc": "2026-11-09T12:06:34Z"
+  },
+  {
+   "file": "SPCS_b02.csv",
+   "url": "https://osf.io/download/69b97d999cdb8cf8d6a7334b/",
+   "bytes": 438199,
+   "sha256": "9b3745eed8424499c8414bd9108cb6f9ac19217e86cdef1b226194a78cb92cb3",
+   "fetched_utc": "2026-11-09T12:06:43Z"
+  },
+  {
+   "file": "SPCS_d03.csv",
+   "url": "https://osf.io/download/69b97d99b56c977761e37dfe/",
+   "bytes": 344914,
+   "sha256": "f0dca82fe8ba0aaf2f1db6766d84f1eb52b9c33ba5ec5f16ef11637891208c18",
+   "fetched_utc": "2026-11-09T12:06:52Z"
+  },
+  {
+   "file": "SPCS_g02.csv",
+   "url": "https://osf.io/download/69b97d99d3e4e02b98a729d0/",
+   "bytes": 440757,
+   "sha256": "22d66326f9e36b4b398c82ed75ee47248792b81649337e7a19619f4c54dbc400",
+   "fetched_utc": "2026-11-09T12:06:58Z"
+  },
+  {
+   "file": "SPCS_a01.csv",
+   "url": "https://osf.io/download/69b97d99186ae3ad20a730e8/",
+   "bytes": 280099,
+   "sha256": "70b68623342d056a5b5d4a549c34a3c556534981f43d2f4cca54a9a7436f851e",
+   "fetched_utc": "2026-11-09T12:07:04Z"
+  },
+  {
+   "file": "SPCS_e02.csv",
+   "url": "https://osf.io/download/69b97d99d097aad876e37e06/",
+   "bytes": 223413,
+   "sha256": "6be2add657a7eddf26ec279350be7d70555ea65b960d6333f514560f6053d681",
+   "fetched_utc": "2026-11-09T12:07:10Z"
+  },
+  {
+   "file": "SPCS_c01.csv",
+   "url": "https://osf.io/download/69b97d9b186ae3ad20a730ec/",
+   "bytes": 277508,
+   "sha256": "e8d9725b7b059cf94347ed479aa8300b4990fcd9932ad5a81740680993383ec2",
+   "fetched_utc": "2026-11-09T12:07:19Z"
+  },
+  {
+   "file": "SPCS_e01.csv",
+   "url": "https://osf.io/download/69b97d9b4684fe7f849effa9/",
+   "bytes": 379085,
+   "sha256": "c5a41ca83be7c471250df2e4220bb93693f3361638a52d770f8720ef40e1e53a",
+   "fetched_utc": "2026-11-09T12:07:33Z"
+  },
+  {
+   "file": "SPC2_k04.csv",
+   "url": "https://osf.io/download/dw97j/",
+   "bytes": 704647,
+   "sha256": "6ff175c58d41c37bb8c96ad6495c02338d9c897230618524e9e9692ad06b9c0b",
+   "fetched_utc": "2026-11-09T12:07:39Z"
+  },
+  {
+   "file": "SPC2_d02.csv",
+   "url": "https://osf.io/download/69b97d5647d36c48149f036b/",
+   "bytes": 573801,
+   "sha256": "092210da41a3216816d0a9affbbc9492bf2b57b1278a7748f4fd05daeaac8559",
+   "fetched_utc": "2026-11-09T12:07:46Z"
+  },
+  {
+   "file": "SPC2_d01.csv",
+   "url": "https://osf.io/download/69b97d56568155d1c7e37fe5/",
+   "bytes": 425085,
+   "sha256": "eb5780292c1d65f891376bfe6a15f5369ff244fe817cdde3c790232bb5840fb3",
+   "fetched_utc": "2026-11-09T12:07:53Z"
+  },
+  {
+   "file": "SPC2_a01.csv",
+   "url": "https://osf.io/download/69b97d56186ae3ad20a730c3/",
+   "bytes": 172310,
+   "sha256": "e7890daf91dbb244e8b41a8d558bb7b2489b6c5c1ec4f559094eb9d61eee8140",
+   "fetched_utc": "2026-11-09T12:08:03Z"
+  },
+  {
+   "file": "SPC2_e04.csv",
+   "url": "https://osf.io/download/69b97d56996510710fa7299c/",
+   "bytes": 473745,
+   "sha256": "96bae79bfe83f94b6421421b345675cc9bb7c4e8ec5ff4807506e2e9cdfb424f",
+   "fetched_utc": "2026-11-09T12:08:10Z"
+  },
+  {
+   "file": "SPC2_a03.csv",
+   "url": "https://osf.io/download/69b97d56b270272c4aa72bbb/",
+   "bytes": 344271,
+   "sha256": "c794544b1a1f72c25f7299de17b2205b8c704895c8a6d7b4e738ad09a0214bca",
+   "fetched_utc": "2026-11-09T12:08:17Z"
+  },
+  {
+   "file": "SPC2_p01.csv",
+   "url": "https://osf.io/download/69b97d56d3e4e02b98a72987/",
+   "bytes": 447239,
+   "sha256": "6f06c07cf37ef9a8b28b89a3d526bad65c5d860dda9663b0e97d8dc2782b61b6",
+   "fetched_utc": "2026-11-09T12:08:25Z"
+  },
+  {
+   "file": "SPC2_e03.csv",
+   "url": "https://osf.io/download/69b97d564684fe7f849eff8b/",
+   "bytes": 539669,
+   "sha256": "595c17f50295310156a75da222fca5d1b9348317aefe1a7a33e4513b3f7d9436",
+   "fetched_utc": "2026-11-09T12:08:44Z"
+  },
+  {
+   "file": "SPC2_p02.csv",
+   "url": "https://osf.io/download/69b97d569cdb8cf8d6a73325/",
+   "bytes": 578494,
+   "sha256": "80c171b84237c569081ad0c15bdd6e6c1fc7f162366a5950d68f61dcbbafb0fe",
+   "fetched_utc": "2026-11-09T12:08:50Z"
+  },
+  {
+   "file": "SPC2_k01.csv",
+   "url": "https://osf.io/download/9myt5/",
+   "bytes": 485753,
+   "sha256": "dd9d52349d43375fa60abd1ff5a61011a7bae0526b7064727228a5b40ed94abe",
+   "fetched_utc": "2026-11-09T12:08:57Z"
+  },
+  {
+   "file": "SPC2_k03.csv",
+   "url": "https://osf.io/download/9c6vy/",
+   "bytes": 722254,
+   "sha256": "aa4d6a19306f31abcd2bc534e371c5f287628c5d3128120b2a017a79fd93286e",
+   "fetched_utc": "2026-11-09T12:09:04Z"
+  },
+  {
+   "file": "SPC2_b01.csv",
+   "url": "https://osf.io/download/69b97d568ef876606fe3836b/",
+   "bytes": 386176,
+   "sha256": "e60b52492bbcc20de6f0c7b3a3508f96f418bcbe53272265edbb096a6e8a7a3b",
+   "fetched_utc": "2026-11-09T12:09:12Z"
+  },
+  {
+   "file": "SPC2_d04.csv",
+   "url": "https://osf.io/download/69b97d561001fb38a09effac/",
+   "bytes": 484570,
+   "sha256": "555db416aebd558b59bd4eb5d92e952ec68ce4015527e49dbbb39244ea06a94e",
+   "fetched_utc": "2026-11-09T12:09:22Z"
+  },
+  {
+   "file": "SPC2_h02.csv",
+   "url": "https://osf.io/download/dhb7e/",
+   "bytes": 331813,
+   "sha256": "36e5fba16dc228d930ca19fb6c3cdeeee216e03f8e8b79c728be5691d7020734",
+   "fetched_utc": "2026-11-09T12:09:31Z"
+  },
+  {
+   "file": "SPC2_h01.csv",
+   "url": "https://osf.io/download/wv5ep/",
+   "bytes": 347286,
+   "sha256": "bd273d3fe1d5ffff07808165e63f7a2ed6056ced5031b05347fe84d3e4123f36",
+   "fetched_utc": "2026-11-09T12:09:37Z"
+  },
+  {
+   "file": "SPC2_c03.csv",
+   "url": "https://osf.io/download/69b97d56568155d1c7e37fe7/",
+   "bytes": 212735,
+   "sha256": "ad837c033f4c6d195be00877a0345c6f767857badc75c513c6972e7fd8409b25",
+   "fetched_utc": "2026-11-09T12:09:58Z"
+  },
+  {
+   "file": "SPC2_b03.csv",
+   "url": "https://osf.io/download/69b97d57996510710fa7299f/",
+   "bytes": 352369,
+   "sha256": "7f8229b6c7a621b9400859abaf3c5a5e78fd3eec96e4ea46ab3018f329a2aefe",
+   "fetched_utc": "2026-11-09T12:10:05Z"
+  },
+  {
+   "file": "SPC2_a02.csv",
+   "url": "https://osf.io/download/69b97d57d3e4e02b98a7298a/",
+   "bytes": 387502,
+   "sha256": "4716ea5cddf3bdf2a96397fcfdb53ca2f100b86b6542e8ab1e519a3cd85f74bd",
+   "fetched_utc": "2026-11-09T12:10:11Z"
+  },
+  {
+   "file": "SPC2_b02.csv",
+   "url": "https://osf.io/download/dkhpj/",
+   "bytes": 471702,
+   "sha256": "2f4d839eac66937d4daeff0cf47e20612f754c991ef2310f1ba7e4e3af68445e",
+   "fetched_utc": "2026-11-09T12:10:18Z"
+  },
+  {
+   "file": "SPC2_a04.csv",
+   "url": "https://osf.io/download/y3b8x/",
+   "bytes": 323694,
+   "sha256": "96266999734a3847a476faf8b7f433805b7c6a02558326bede92f5b24bfd87f8",
+   "fetched_utc": "2026-11-09T12:10:26Z"
+  },
+  {
+   "file": "SPC2_e02.csv",
+   "url": "https://osf.io/download/69b97d589cdb8cf8d6a7332f/",
+   "bytes": 549415,
+   "sha256": "1e5dfecf29aa9c8a3e24116b8063e6d6e591802f95d4e7841cb6abdbc326fb13",
+   "fetched_utc": "2026-11-09T12:10:36Z"
+  },
+  {
+   "file": "SPC2_b04.csv",
+   "url": "https://osf.io/download/69b97d58996510710fa729a3/",
+   "bytes": 349013,
+   "sha256": "236faf2caa88bf43439926fb8f8757935b58bb2a2c1d12d4077a7002cb069c08",
+   "fetched_utc": "2026-11-09T12:10:44Z"
+  },
+  {
+   "file": "SPC2_p04.csv",
+   "url": "https://osf.io/download/m462p/",
+   "bytes": 585505,
+   "sha256": "a566cf6f1210a93c8f6842f6bac8c77b8b2ae5fd6b9df8410b5ff6de5f610cf9",
+   "fetched_utc": "2026-11-09T12:11:06Z"
+  },
+  {
+   "file": "SPC2_l03.csv",
+   "url": "https://osf.io/download/69b97d59da8c8d94eb9f0929/",
+   "bytes": 271865,
+   "sha256": "1cf71b975164f977e7baa293ffd7ca95762eacd5d8704728cc5f9255b25a520e",
+   "fetched_utc": "2026-11-09T12:11:15Z"
+  },
+  {
+   "file": "SPC2_n04.csv",
+   "url": "https://osf.io/download/69b97d59568155d1c7e37fef/",
+   "bytes": 240362,
+   "sha256": "b74dbc33678a1d7c0f095c4bd932998869872d1f07f0ad8a20eb8df01daa2cb9",
+   "fetched_utc": "2026-11-09T12:11:23Z"
+  },
+  {
+   "file": "SPC2_h04.csv",
+   "url": "https://osf.io/download/69b97d59d3e4e02b98a7298d/",
+   "bytes": 365526,
+   "sha256": "784fecaa5d3707e74557efa56bc2c64b0614ce5679efffb15432078caa5ce0a4",
+   "fetched_utc": "2026-11-09T12:11:30Z"
+  },
+  {
+   "file": "SPC2_c01.csv",
+   "url": "https://osf.io/download/ztywh/",
+   "bytes": 226660,
+   "sha256": "1d6186408b62aed38e781b3f616472ccc6648f630f4b06f89a896e2ce7329f4d",
+   "fetched_utc": "2026-11-09T12:11:37Z"
+  },
+  {
+   "file": "SPC2_d03.csv",
+   "url": "https://osf.io/download/69b97d598ef876606fe38376/",
+   "bytes": 403222,
+   "sha256": "812e67a209869275321b5501f7c260a7b2709cb50b0c722a821a85028c691d13",
+   "fetched_utc": "2026-11-09T12:11:47Z"
+  },
+  {
+   "file": "SPC2_h03.csv",
+   "url": "https://osf.io/download/69b97d595d77aced27e38740/",
+   "bytes": 229373,
+   "sha256": "ff5c67680e870927cbd136d11def1138acfccd5a3b0c146e5977d769217508da",
+   "fetched_utc": "2026-11-09T12:11:56Z"
+  },
+  {
+   "file": "SPC2_k02.csv",
+   "url": "https://osf.io/download/69b97d59fcb0d0f3ebe38142/",
+   "bytes": 512872,
+   "sha256": "2fa6666e1a70b722c3f1f6aa77eaa6860ffe0fa19153a94c8debb382e5a2f042",
+   "fetched_utc": "2026-11-09T12:12:05Z"
+  },
+  {
+   "file": "SPC2_n01.csv",
+   "url": "https://osf.io/download/as3gj/",
+   "bytes": 256953,
+   "sha256": "ce435a1652f33b75efbde1405a97da425f4e62b62f5311aa73011bc4649d34bb",
+   "fetched_utc": "2026-11-09T12:12:12Z"
+  },
+  {
+   "file": "SPC2_n03.csv",
+   "url": "https://osf.io/download/69b97d5a4684fe7f849eff92/",
+   "bytes": 246699,
+   "sha256": "169dc8f3409281ecb1e765c710002b39ad29172d1bc419a8d819a44a6a11ab9f",
+   "fetched_utc": "2026-11-09T12:12:21Z"
+  },
+  {
+   "file": "SPC2_e01.csv",
+   "url": "https://osf.io/download/69b97d5a8ef876606fe38377/",
+   "bytes": 406627,
+   "sha256": "fbeee09d00cac096c1025de5785dd88a39be4b7596e50bccacba3093e02aee2d",
+   "fetched_utc": "2026-11-09T12:12:30Z"
+  },
+  {
+   "file": "SPC2_l02.csv",
+   "url": "https://osf.io/download/69b97d5a1001fb38a09effb9/",
+   "bytes": 314575,
+   "sha256": "453cc535e61f484a4971365a6ca925b1809a6274e25df15b89cc22e7c1516e95",
+   "fetched_utc": "2026-11-09T12:12:38Z"
+  },
+  {
+   "file": "SPC2_c02.csv",
+   "url": "https://osf.io/download/69b97d5a996510710fa729a8/",
+   "bytes": 213242,
+   "sha256": "b54a3ddbcef9b951a81a2fc6ac02b1ebbb7538da2a5559f0fd67481ca7145e18",
+   "fetched_utc": "2026-11-09T12:12:45Z"
+  },
+  {
+   "file": "SPC2_l04.csv",
+   "url": "https://osf.io/download/69b97d5a186ae3ad20a730c7/",
+   "bytes": 250395,
+   "sha256": "7c90bb3cac0be3b7e55a2a3aca2b35de403714e1c215eff8293d11b767ec4fdc",
+   "fetched_utc": "2026-11-09T12:12:52Z"
+  },
+  {
+   "file": "SPC2_c04.csv",
+   "url": "https://osf.io/download/nh69g/",
+   "bytes": 251248,
+   "sha256": "a5d1d275c5d73179476f3303ea6c3dd16ac37a96510eccf7d9b8d1ac368245b5",
+   "fetched_utc": "2026-11-09T12:12:59Z"
+  },
+  {
+   "file": "SPC2_n02.csv",
+   "url": "https://osf.io/download/69b97d5afcb0d0f3ebe38144/",
+   "bytes": 219349,
+   "sha256": "d413ececd1694fb1ba0e0a841efde049637ce7b927b18597b7a2b0e6bb73e75d",
+   "fetched_utc": "2026-11-09T12:13:13Z"
+  },
+  {
+   "file": "SPC2_l01.csv",
+   "url": "https://osf.io/download/69b97d5a5d77aced27e38742/",
+   "bytes": 272155,
+   "sha256": "35e6c05c54f7a1f7d1b3cd8bb8217410a7e378a99aec59d8b687e59ae852665c",
+   "fetched_utc": "2026-11-09T12:13:20Z"
+  },
+  {
+   "file": "SPC2_p03.csv",
+   "url": "https://osf.io/download/69b97d5a8ef876606fe3837a/",
+   "bytes": 550391,
+   "sha256": "23ed8ecc258127a31f8a6cf42ba6d8ef4fda26a9bad1821a704773245f7039c5",
+   "fetched_utc": "2026-11-09T12:13:27Z"
+  },
+  {
+   "file": "SPVS_h01.csv",
+   "url": "https://osf.io/download/69b97ddc4ceb048eece37e36/",
+   "bytes": 155572,
+   "sha256": "9b452371957b7a4f06fd2fe6d7e65044d9ddec78466330f35d0448ff37706687",
+   "fetched_utc": "2026-11-09T12:13:33Z"
+  },
+  {
+   "file": "SPVS_c02.csv",
+   "url": "https://osf.io/download/69b97ddcfcb0d0f3ebe38175/",
+   "bytes": 273985,
+   "sha256": "d36b9f198968f9f1234e58315fc73322589a6b36b7159f43bb0e9a1bc4622017",
+   "fetched_utc": "2026-11-09T12:13:41Z"
+  },
+  {
+   "file": "SPVS_a04.csv",
+   "url": "https://osf.io/download/69b97ddd4684fe7f849f007f/",
+   "bytes": 172402,
+   "sha256": "e7393017a214c4361e02db5bfe081f444125885f1939c9eb2982213ab9d32ca5",
+   "fetched_utc": "2026-11-09T12:13:48Z"
+  },
+  {
+   "file": "SPVS_g04.csv",
+   "url": "https://osf.io/download/69b97ddd89477d8fc8e37e0f/",
+   "bytes": 278731,
+   "sha256": "c25170d6ca6bfd55a68f6465247d52446c97dcbad2676ce9dda69ab01c730b9d",
+   "fetched_utc": "2026-11-09T12:13:54Z"
+  },
+  {
+   "file": "SPVS_a01.csv",
+   "url": "https://osf.io/download/69b97ddd996510710fa72a66/",
+   "bytes": 235598,
+   "sha256": "1e70ca2f77d32fb30e41d52ee4047791059aa50f8fccad8958ceb3688f1660dc",
+   "fetched_utc": "2026-11-09T12:14:00Z"
+  },
+  {
+   "file": "SPVS_d01.csv",
+   "url": "https://osf.io/download/69b97dddd3e4e02b98a72a25/",
+   "bytes": 143333,
+   "sha256": "47a6a8ff21685f328f65d3c22b96e6a433ded908004cc17dd466ba7d9acf8b0b",
+   "fetched_utc": "2026-11-09T12:14:07Z"
+  },
+  {
+   "file": "SPVS_h02.csv",
+   "url": "https://osf.io/download/69b97dddb270272c4aa72c0a/",
+   "bytes": 190905,
+   "sha256": "4f8bb1876665bbbf28d0814e70fcf942ca0ecaf9a320007cbbde79101296d592",
+   "fetched_utc": "2026-11-09T12:14:28Z"
+  },
+  {
+   "file": "SPVS_c04.csv",
+   "url": "https://osf.io/download/69b97ddd4ceb048eece37e39/",
+   "bytes": 288265,
+   "sha256": "b5765c09fb738b2d345afe4470c095d587ef1dd7a7892d1c3901bfe011ef997b",
+   "fetched_utc": "2026-11-09T12:14:35Z"
+  },
+  {
+   "file": "SPVS_e02.csv",
+   "url": "https://osf.io/download/69b97ddd47d36c48149f03a2/",
+   "bytes": 327124,
+   "sha256": "17381fc77f037420a83328abe7856f30ea73fe58d5ddafc1f9211a28c38e7ef1",
+   "fetched_utc": "2026-11-09T12:14:42Z"
+  },
+  {
+   "file": "SPVS_d04.csv",
+   "url": "https://osf.io/download/69b97dde996510710fa72a69/",
+   "bytes": 223193,
+   "sha256": "664656853642bab9307cb0362af468ab74867ad2d485a2d1a709294966171989",
+   "fetched_utc": "2026-11-09T12:14:48Z"
+  },
+  {
+   "file": "SPVS_b04.csv",
+   "url": "https://osf.io/download/69b97dded3e4e02b98a72a2b/",
+   "bytes": 328585,
+   "sha256": "5b076a9a651029fc6b4081638b7b1dae4709ff0fc59c292772b581cd41866d17",
+   "fetched_utc": "2026-11-09T12:14:57Z"
+  },
+  {
+   "file": "SPVS_b03.csv",
+   "url": "https://osf.io/download/69b97ddeb270272c4aa72c0c/",
+   "bytes": 196766,
+   "sha256": "aea04a009f0150f69fc1932c0e96f6a3322d326afc0fc6e3cb710b5fb22ff14e",
+   "fetched_utc": "2026-11-09T12:15:03Z"
+  },
+  {
+   "file": "SPVS_n04.csv",
+   "url": "https://osf.io/download/69b97dde352c7573179f055e/",
+   "bytes": 256496,
+   "sha256": "61e64969b0c77c99dd3f9931226aee591af70e4cbb6912e1ce1ed4cd56062795",
+   "fetched_utc": "2026-11-09T12:15:11Z"
+  },
+  {
+   "file": "SPVS_k03.csv",
+   "url": "https://osf.io/download/69b97dde89477d8fc8e37e14/",
+   "bytes": 446622,
+   "sha256": "d7ecba11aa8c1ad685218989525938f34ab0d4e572b5d1212c92479b391ab338",
+   "fetched_utc": "2026-11-09T12:15:17Z"
+  },
+  {
+   "file": "SPVS_d02.csv",
+   "url": "https://osf.io/download/69b97dde1001fb38a09f0063/",
+   "bytes": 224758,
+   "sha256": "e97286f0778fbfb54c32c6a059d7a757a9b642365cdb1fba617b20054bd06d9d",
+   "fetched_utc": "2026-11-09T12:15:39Z"
+  },
+  {
+   "file": "SPVS_d03.csv",
+   "url": "https://osf.io/download/69b97dde89477d8fc8e37e16/",
+   "bytes": 232024,
+   "sha256": "1f1ee78ab8097573b8dbd70a03f1021fbfa5ff5a0f9f9f42261e6e5f15af6993",
+   "fetched_utc": "2026-11-09T12:15:47Z"
+  },
+  {
+   "file": "SPVS_h04.csv",
+   "url": "https://osf.io/download/69b97ddeb270272c4aa72c0e/",
+   "bytes": 261061,
+   "sha256": "56aef6e43ba1a688c49c1be1c905799ca06db40f595c499e908baef8bb1d7150",
+   "fetched_utc": "2026-11-09T12:15:53Z"
+  },
+  {
+   "file": "SPVS_c01.csv",
+   "url": "https://osf.io/download/69b97ddf4684fe7f849f0082/",
+   "bytes": 124818,
+   "sha256": "aaa03a95f6176e949243eae65a99a820e3f068afb630da3553109b9eb88df436",
+   "fetched_utc": "2026-11-09T12:16:00Z"
+  },
+  {
+   "file": "SPVS_a03.csv",
+   "url": "https://osf.io/download/69b97ddf47d36c48149f03a4/",
+   "bytes": 225650,
+   "sha256": "c2eb10860de8601a917f7ecfbcff10019475873b1b400f61b43689ae11809597",
+   "fetched_utc": "2026-11-09T12:16:08Z"
+  },
+  {
+   "file": "SPVS_n03.csv",
+   "url": "https://osf.io/download/69b97ddf361a9a4d7aa72951/",
+   "bytes": 269611,
+   "sha256": "89e8b8cbf748dc539dda99d54dfcad73fa9b92a1fe598d602635c937a6f397d8",
+   "fetched_utc": "2026-11-09T12:16:14Z"
+  },
+  {
+   "file": "SPVS_h03.csv",
+   "url": "https://osf.io/download/69b97de0b56c977761e37e1d/",
+   "bytes": 264159,
+   "sha256": "72f40ef2370de9b64c1f2d3518e71925c738722be76859bb92a4ca3ddad17521",
+   "fetched_utc": "2026-11-09T12:16:21Z"
+  },
+  {
+   "file": "SPVS_g01.csv",
+   "url": "https://osf.io/download/69b97de0dbab9619d7a72950/",
+   "bytes": 134949,
+   "sha256": "b5b64dd7baba8c850e747ec4913d61894b15a4fbdd2d23ebd2ad68675cc3093a",
+   "fetched_utc": "2026-11-09T12:16:27Z"
+  },
+  {
+   "file": "SPVS_m03.csv",
+   "url": "https://osf.io/download/69b97de04ceb048eece37e3d/",
+   "bytes": 566364,
+   "sha256": "230c5267f2a44ab87b0bac315f8d7960f61af8d60e6a84f832083b302ea887b0",
+   "fetched_utc": "2026-11-09T12:16:41Z"
+  },
+  {
+   "file": "SPVS_g02.csv",
+   "url": "https://osf.io/download/69b97de0d3e4e02b98a72a31/",
+   "bytes": 246850,
+   "sha256": "1bd83455018829df7cab353ac1d059f96d04111435a85173882fcd372f5e5db6",
+   "fetched_utc": "2026-11-09T12:16:47Z"
+  },
+  {
+   "file": "SPVS_a02.csv",
+   "url": "https://osf.io/download/69b97de04684fe7f849f0084/",
+   "bytes": 208668,
+   "sha256": "24826a9e000df6f260ef46dfb3d94467cd7f2e65e7d3f446a377f7e71d074656",
+   "fetched_utc": "2026-11-09T12:16:55Z"
+  },
+  {
+   "file": "SPVS_e04.csv",
+   "url": "https://osf.io/download/69b97de0dbab9619d7a72953/",
+   "bytes": 341429,
+   "sha256": "4bd7d77c8d466396a147f1fecb43bf5fd7601b977d9e4973cc86ed3ed8ef03d9",
+   "fetched_utc": "2026-11-09T12:17:03Z"
+  },
+  {
+   "file": "SPVS_m02.csv",
+   "url": "https://osf.io/download/69b97de0ead5d62949a72bed/",
+   "bytes": 475150,
+   "sha256": "bbdde8dadd1de7b9a60abbcab2bfd85abe0cc65da88bd4cdbec368616552cb17",
+   "fetched_utc": "2026-11-09T12:17:10Z"
+  },
+  {
+   "file": "SPVS_b01.csv",
+   "url": "https://osf.io/download/69b97de04ceb048eece37e3f/",
+   "bytes": 138300,
+   "sha256": "b71d6cf7662e343cbfc7d52197362f60b5f8194f3e5d0929262bab6010f9df39",
+   "fetched_utc": "2026-11-09T12:17:20Z"
+  },
+  {
+   "file": "SPVS_e01.csv",
+   "url": "https://osf.io/download/69b97de0568155d1c7e3801f/",
+   "bytes": 183763,
+   "sha256": "2d35f4fa86b08a94550f8412dc2f2952a43869ef504c4555280736178fad92d4",
+   "fetched_utc": "2026-11-09T12:17:26Z"
+  },
+  {
+   "file": "SPVS_g03.csv",
+   "url": "https://osf.io/download/69b97de0d097aad876e37e28/",
+   "bytes": 274753,
+   "sha256": "ce2943339002bd63e4f96bc1c10a9013f6a681579656ad940cad8370d523671e",
+   "fetched_utc": "2026-11-09T12:17:34Z"
+  },
+  {
+   "file": "SPVS_e03.csv",
+   "url": "https://osf.io/download/69b97de089477d8fc8e37e19/",
+   "bytes": 324775,
+   "sha256": "304044b100e0aa6b1f5f0d08e774ded0389c4789f45a1e1968aa5d5d8f7fde5b",
+   "fetched_utc": "2026-11-09T12:17:53Z"
+  },
+  {
+   "file": "SPVS_n01.csv",
+   "url": "https://osf.io/download/69b97de0b56c977761e37e1f/",
+   "bytes": 170722,
+   "sha256": "de700a4d4d75cc02e852fae7c29eb29f5fa28d332d17f672ef0dcbc96d76339c",
+   "fetched_utc": "2026-11-09T12:17:59Z"
+  },
+  {
+   "file": "SPVS_k02.csv",
+   "url": "https://osf.io/download/69b97de0fcb0d0f3ebe38177/",
+   "bytes": 341321,
+   "sha256": "d9d5a3fbb1a40a5814f5c50b3fb29fc81e330561b12f38b504f801c17338aea3",
+   "fetched_utc": "2026-11-09T12:18:06Z"
+  },
+  {
+   "file": "SPVS_b02.csv",
+   "url": "https://osf.io/download/69b97de05d77aced27e3876a/",
+   "bytes": 265687,
+   "sha256": "e9372718d6ce2ed85476ecfc51ff9c23feec4fe9f237781b3c658810ca45bb41",
+   "fetched_utc": "2026-11-09T12:18:17Z"
+  },
+  {
+   "file": "SPVS_n02.csv",
+   "url": "https://osf.io/download/69b97de1996510710fa72a6b/",
+   "bytes": 302890,
+   "sha256": "ad0a130cf3f009187c8f9f13be3958ea4ddf6b195588ed94d64c57342fdd7f60",
+   "fetched_utc": "2026-11-09T12:18:24Z"
+  },
+  {
+   "file": "SPVS_m04.csv",
+   "url": "https://osf.io/download/69b97de189477d8fc8e37e1b/",
+   "bytes": 512171,
+   "sha256": "11f21de6f61c1cd4e8560491c2f836dc7989ed192bb34166efdb5666c7e17ab8",
+   "fetched_utc": "2026-11-09T12:18:33Z"
+  },
+  {
+   "file": "SPVS_k04.csv",
+   "url": "https://osf.io/download/69b97de11001fb38a09f006e/",
+   "bytes": 460911,
+   "sha256": "95f862de998f5a16e3d2fb4709e4737a15d4c8b276f31da274abd3de39be20d4",
+   "fetched_utc": "2026-11-09T12:18:41Z"
+  },
+  {
+   "file": "SPVS_m01.csv",
+   "url": "https://osf.io/download/69b97de14684fe7f849f0086/",
+   "bytes": 243593,
+   "sha256": "ea8e47d50d22e36c1f8f36c52945eb08f28443d49a932f35e8f469792ba71fed",
+   "fetched_utc": "2026-11-09T12:18:58Z"
+  },
+  {
+   "file": "SPVS_c03.csv",
+   "url": "https://osf.io/download/69b97de116165d6b809f0756/",
+   "bytes": 303551,
+   "sha256": "978f747301822be27b410425501c9bcf2d5ee00be97cba9f47f48c2b7e8ac116",
+   "fetched_utc": "2026-11-09T12:24:04Z"
+  },
+  {
+   "file": "SPVS_k01.csv",
+   "url": "https://osf.io/download/69b97de0da8c8d94eb9f0982/",
+   "bytes": 105676,
+   "sha256": "8477f34a534e7d9ba64224cd55389d7ce93a159e71daa08dc684a764d28d1e28",
+   "fetched_utc": "2026-11-09T12:24:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Klanke2026_JVis.zip"
+}

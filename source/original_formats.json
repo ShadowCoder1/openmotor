@@ -1,0 +1,318 @@
+{
+ "Codol2018_SciRep": {
+  "CSV": 2
+ },
+ "Tsay2020_JNeurophysiol": {
+  "CSV": 2
+ },
+ "Avraham2021_PLoSBiol": {
+  "CSV": 4
+ },
+ "Tsay2021_NBDT": {
+  "CSV": 3
+ },
+ "Tsay2021_JNeurophysiol_proprioception": {
+  "CSV": 2
+ },
+ "Tsay2021_JNeurophysiol_uncertainty": {
+  "CSV": 2
+ },
+ "Tsay2022_Cerebellum": {
+  "CSV": 1
+ },
+ "Tsay2022_BrainCommun": {
+  "CSV": 2
+ },
+ "Avraham2022_eLife": {
+  "CSV": 4
+ },
+ "Tsay2023_ProcRSocB": {
+  "CSV": 1
+ },
+ "Tsay2023_JCognNeurosci": {
+  "CSV": 1
+ },
+ "vanMastrigt2023_ExpBrainRes": {
+  "CSV": 2
+ },
+ "Tsay2024_NatHumBehav": {
+  "CSV": 1
+ },
+ "Tsay2024_JNeurophysiol": {
+  "CSV": 1
+ },
+ "Chen2024_bioRxiv": {
+  "CSV": 14
+ },
+ "Wang2024_eLife": {
+  "CSV": 4
+ },
+ "Niyogi2026_bioRxiv": {
+  "CSV": 1
+ },
+ "Avraham2025_eNeuro": {
+  "CSV": 5
+ },
+ "Cipleu2026_NeurorehabilNeuralRepair": {
+  "CSV": 1
+ },
+ "Padmanabhan2026_JNeurophysiol": {
+  "CSV": 1
+ },
+ "Wang2025_SciAdv": {
+  "CSV": 5
+ },
+ "Ding2026_npjSciLearn": {
+  "CSV": 1
+ },
+ "Cisneros2026_NatHumBehav": {
+  "CSV": 3
+ },
+ "Nyamsuren2026_bioRxiv": {
+  "CSV": 10
+ },
+ "Abekawa2022_CurrBiol": {
+  "MATLAB": 7
+ },
+ "Areshenkoff2024_PLoSBiol": {
+  "CSV": 2,
+  "TSV": 1
+ },
+ "Arrighi2016_PLoSOne": {
+  "Excel": 4
+ },
+ "Ayala2021_PLoSONE": {
+  "CSV": 7,
+  "Excel": 1
+ },
+ "Bansal2023_ExpBrainRes": {
+  "CSV": 356
+ },
+ "Barzi2026_ExpBrainRes": {
+  "MATLAB": 31
+ },
+ "Berland2025_JNeurophysiol": {
+  "CSV": 6938,
+  "Excel": 1
+ },
+ "Bromberg2019_eNeuro": {
+  "MATLAB": 1
+ },
+ "Brudner2016_JNeurophysiol": {
+  "CSV": 1
+ },
+ "Buggeln2026_PLoSComputBiol": {
+  "Python pickle": 239,
+  "NumPy": 121
+ },
+ "Casasnovas2024_JNeurophysiol": {
+  "CSV": 2
+ },
+ "Cesanek2024_NatHumBehav_dual": {
+  "Excel": 1
+ },
+ "Cesanek2024_NatHumBehav_sr": {
+  "Excel": 1
+ },
+ "Clayton2024_PLoSONE": {
+  "CSV": 158,
+  "Excel": 3
+ },
+ "Cook2026_InfantChildDev": {
+  "CSV": 1
+ },
+ "Crossley2023_BlockedUncertainty": {
+  "text": 240,
+  "CSV": 2
+ },
+ "DAmario2024_bioRxiv": {
+  "CSV": 533
+ },
+ "Goldschmidt2016_Joystick": {
+  "MATLAB": 41
+ },
+ "Guo2023_SciRep": {
+  "text": 1462,
+  "MATLAB": 76
+ },
+ "Hadjiosif2023_PLoSBiol": {
+  "MATLAB": 4
+ },
+ "Henriques2026_DiscovNeurosci": {
+  "CSV": 2830
+ },
+ "Hewitson2023_JNeurophysiol": {
+  "MATLAB": 23,
+  "CSV": 10
+ },
+ "Hewitson2023_PLoSComputBiol": {
+  "text": 900,
+  "CSV": 6
+ },
+ "Holland2018_JNeurophysiol": {
+  "MATLAB": 4
+ },
+ "Holland2019_JNeurosci": {
+  "MATLAB": 15
+ },
+ "Hulst2024_bioRxiv": {
+  "MATLAB": 1
+ },
+ "Johnson2017_PLoSOne": {
+  "MATLAB": 1
+ },
+ "Kim2015_PLoSOne": {
+  "MATLAB": 90
+ },
+ "Kim2018_CommunBiol": {
+  "MATLAB": 2
+ },
+ "Kim2019_eLife": {
+  "MATLAB": 11
+ },
+ "Kim2025_ProcRSocB": {
+  "CSV": 5,
+  "MATLAB": 1
+ },
+ "King2025_bioRxiv": {
+  "CSV": 432
+ },
+ "Kobayashi2024_eLife": {
+  "MATLAB": 6
+ },
+ "Korka2023_Cortex": {},
+ "Kunavar2023_PLoSONE": {
+  "CSV": 2
+ },
+ "LangHodge2023_PLOSONE": {
+  "Excel": 2
+ },
+ "Li2021_FrontAgingNeurosci": {},
+ "Liddy2026_eNeuro": {
+  "Excel": 11,
+  "MATLAB": 3
+ },
+ "Xu2023_JBBS": {
+  "MATLAB": 13208
+ },
+ "Luo2025_bioRxiv": {
+  "MATLAB": 1
+ },
+ "Maresch2022_eNeuro": {
+  "MATLAB": 53,
+  "text": 3
+ },
+ "Matsuda2023_ExpBrainRes": {
+  "CSV": 2,
+  "Excel": 1
+ },
+ "MillerMills2026_EJN": {
+  "MATLAB": 225,
+  "CSV": 1
+ },
+ "Modchalingam2023_SciRep": {
+  "CSV": 1
+ },
+ "Morehead2017_JCogNeurosci": {
+  "CSV": 2
+ },
+ "Moskowitz2020_PLoSCompBiol": {
+  "MATLAB": 1
+ },
+ "Nakano2024_bioRxiv": {
+  "CSV": 107
+ },
+ "Nettekoven2022_BrainStimul": {
+  "text": 2
+ },
+ "OBryan2025_bioRxiv": {
+  "MATLAB": 351,
+  "text": 6
+ },
+ "Petitet2021_NeuroImage": {
+  "CSV": 6,
+  "Excel": 1
+ },
+ "Ruttle2016_PLoSONE": {
+  "text": 6
+ },
+ "Ruttle2021_SciRep": {
+  "CSV": 23
+ },
+ "Ruttle2022_JNeurophysiol": {
+  "CSV": 18,
+  "Excel": 1
+ },
+ "Senna2022_eLife": {
+  "Excel": 2
+ },
+ "Sharma2026_PLoSCompBiol": {
+  "CSV": 111040
+ },
+ "Shingane2025_JNeurophysiol": {
+  "Excel": 1
+ },
+ "Slade2026_ExpBrainRes": {
+  "CSV": 2
+ },
+ "Spang2017_iPerception": {
+  "Excel": 2
+ },
+ "Stroh2024_JDeafStudDeafEduc": {
+  "R": 10,
+  "CSV": 3
+ },
+ "Sugiyama2024_PNAS": {
+  "R": 579,
+  "CSV": 30,
+  "text": 16
+ },
+ "Szarka2025_PLoSONE": {
+  "CSV": 3
+ },
+ "Takada2025_PsyArXiv": {
+  "CSV": 14800
+ },
+ "Todorov2025_bioRxiv": {},
+ "Tsay2024_JCogNeurosci": {
+  "MATLAB": 2
+ },
+ "VelazquezVargas2024_JNeurophysiol": {
+  "CSV": 79,
+  "MATLAB": 73,
+  "R": 25
+ },
+ "Wang2022_BrainSci": {
+  "MATLAB": 2
+ },
+ "Wang2024_CurrBiol": {
+  "MATLAB": 16
+ },
+ "Wang2025_JNeurosci": {
+  "MATLAB": 30
+ },
+ "Wang2026_PLoSBiol": {
+  "MATLAB": 7,
+  "Excel": 1
+ },
+ "Warburton2025_JNeurosci": {
+  "CSV": 12,
+  "R": 1
+ },
+ "Will2024_JNeurophysiol": {
+  "MATLAB": 3
+ },
+ "Wilterson2021_eNeuro": {
+  "MATLAB": 2
+ },
+ "Zhu2023_PLoSComputBiol": {
+  "MATLAB": 464,
+  "text": 162
+ },
+ "tHart2016_PLoSOne": {
+  "text": 2
+ },
+ "tHart2024_eNeuro": {
+  "CSV": 84
+ }
+}

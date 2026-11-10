@@ -1,0 +1,96 @@
+{
+ "ext_Kunavar2023": {
+  "CSV": 2
+ },
+ "ext_Slade2026": {
+  "CSV": 2
+ },
+ "ext_Luo2025": {
+  "MATLAB": 1
+ },
+ "ext_Shingane2025": {
+  "Excel": 1
+ },
+ "ext_Petitet2021": {
+  "CSV": 6,
+  "Excel": 1
+ },
+ "ext_Nakano2024": {
+  "CSV": 107
+ },
+ "ext_Barzi2026": {
+  "MATLAB": 31
+ },
+ "ext_Sugiyama2024": {
+  "R": 579,
+  "CSV": 30,
+  "text": 16
+ },
+ "ext_Todorov2025": {},
+ "ext_Senna2022": {
+  "Excel": 2
+ },
+ "ext_LangHodge2023": {
+  "Excel": 2
+ },
+ "ext_OBryan2025": {
+  "MATLAB": 351,
+  "text": 6
+ },
+ "ext_King2025": {
+  "CSV": 432
+ },
+ "ext_Guo2023": {
+  "text": 1462,
+  "MATLAB": 76
+ },
+ "ext_Kim2019": {
+  "MATLAB": 11
+ },
+ "ext_Kim2018": {
+  "MATLAB": 2
+ },
+ "ext_Goldschmidt2016": {
+  "MATLAB": 41
+ },
+ "ext_Crossley2023": {
+  "text": 240,
+  "CSV": 2
+ },
+ "ext_Tsay2024": {
+  "MATLAB": 2
+ },
+ "ext_Will2024": {
+  "MATLAB": 3
+ },
+ "ext_Korka2023": {},
+ "ext_Zhu2023": {
+  "MATLAB": 464,
+  "text": 162
+ },
+ "ext_Warburton2025": {
+  "CSV": 12,
+  "R": 1
+ },
+ "ext_Liufu2021": {
+  "MATLAB": 13208
+ },
+ "ext_VelazquezVargas2024": {
+  "CSV": 79,
+  "MATLAB": 73,
+  "R": 25
+ },
+ "ext_Li2021": {},
+ "ext_Wang2022": {
+  "MATLAB": 2
+ },
+ "ext_Nettekoven2022": {
+  "text": 2
+ },
+ "ext_Kobayashi2024": {
+  "MATLAB": 6
+ },
+ "ext_Spang2017": {
+  "Excel": 2
+ }
+}

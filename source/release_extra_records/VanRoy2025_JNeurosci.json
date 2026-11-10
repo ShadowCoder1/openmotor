@@ -1,0 +1,62 @@
+{
+ "id": "VanRoy2025_JNeurosci",
+ "module": "summary",
+ "rows": 6624,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 74997,
+ "zip_sha256": "2adce5f246cd9d58c20a04345177d90bf048d76542be5e3837892807f6fe7264",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Abstract: 'Forty-two drug-naive individuals with ... unilateral PD'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy control participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Abstract: '30 healthy control subjects'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with data rows",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Abstract: 42 + 30 participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has block 1 mean sequence duration",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "14 blocks in Fig 1A",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "VanRoy_MicroPD_FigureData.xlsx",
+   "url": "https://zenodo.org/api/records/15864553/files/VanRoy_MicroPD_FigureData.xlsx/content",
+   "bytes": 110747,
+   "sha256": "b8e71c95efd9d02cb3f477f390565fd21b8ba05a58ff3b8c26c4eb639a34ca60",
+   "fetched_utc": "2026-11-09T15:21:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2025_JNeurosci.zip"
+}

@@ -1,0 +1,132 @@
+{
+ "id": "Leow2024_eNeuro",
+ "module": "reach90",
+ "rows": 42560,
+ "subjects": 76,
+ "persons": 38,
+ "zip_bytes": 786111,
+ "zip_sha256": "68f954fd3ff55fd5f3d1cacedae5ccf19100d020c952a5995b36b286c631e108",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "levodopa group",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "placebo group",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aiming blocks per session (0, 30, 60, 120, 135, 150, 165 deg)",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per aiming block (10 bins x 8)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants missing the 165 deg block (two levodopa people; the deposit has them in session 2)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the missing 165 deg block belongs to levodopa people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows",
+   "ok": true,
+   "detail": "42560"
+  },
+  {
+   "kind": "internal",
+   "what": "late-block hand angle follows instruction: median |angle| for 135 deg blocks within 10 deg of 135",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "mentalrotS1.mat",
+   "url": "https://osf.io/download/jfqcy",
+   "bytes": 1835287,
+   "sha256": "8dc669bd0f1d1dc02792638a7e91e48e45696956b102ef61e393e77db208530e",
+   "fetched_utc": "2026-11-09T10:05:42Z"
+  },
+  {
+   "file": "mentalrotS2.mat",
+   "url": "https://osf.io/download/vcasz",
+   "bytes": 1823588,
+   "sha256": "f349da9ad180980a28ae620b41fd6ca899c1c9f987f9259c8d3c7a68e0789174",
+   "fetched_utc": "2026-11-09T10:05:51Z"
+  },
+  {
+   "file": "peakvelocity.sav",
+   "url": "https://osf.io/download/bm3nd",
+   "bytes": 656432,
+   "sha256": "f435662c153781b9027c3cdccec51898a5d73295041f47ba2fb3826e9d2cde52",
+   "fetched_utc": "2026-11-09T10:06:00Z"
+  },
+  {
+   "file": "RT.sav",
+   "url": "https://osf.io/download/mf7e9",
+   "bytes": 602768,
+   "sha256": "9822fc933a275d41bd00d4653a2b327dbcfbaa0ee52c358c2f02e1cb4c4eaa16",
+   "fetched_utc": "2026-11-09T10:06:26Z"
+  },
+  {
+   "file": "Error.sav",
+   "url": "https://osf.io/download/4paj9",
+   "bytes": 629679,
+   "sha256": "e583b36d4a0653d304c3fd0ef7af116c97fb963879e338694e9939eb13c3c4b6",
+   "fetched_utc": "2026-11-09T10:06:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Leow2024_eNeuro.zip"
+}

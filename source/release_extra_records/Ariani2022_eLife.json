@@ -1,0 +1,135 @@
+{
+ "id": "Ariani2022_eLife",
+ "module": "timeseries",
+ "rows": 6172,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 35332652,
+ "zip_sha256": "39586632ef3ca826c364cc8ebd30a90b079e560856e8a204f8bef0f66721e26e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "13 trials appear twice (same run and trial number) and are kept as separate recordings",
+   "ok": true,
+   "detail": "13"
+  },
+  {
+   "kind": "internal",
+   "what": "plan table holds the same recordings with the same go/no-go, sequence, planning time and error flag as pre",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exe table holds the same recordings with the same go/no-go, sequence, planning time and error flag as pre",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sequences 1, 2, 3 are pressed with finger 1, 3, 5 (thumb, middle, little): highest mean execution force on go trials",
+   "ok": true,
+   "detail": "{1: 1, 2: 3, 3: 5, 4: 3, 5: 3, 6: 1}"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording-phase-bin has all five fingers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proportion of go trials",
+   "computed": 0.6009397278029812,
+   "reported": 0.6,
+   "tol": 0.02,
+   "source": "Methods, Task design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proportion of trials with 4 s preparation",
+   "computed": 0.5677252106286454,
+   "reported": 0.56,
+   "tol": 0.02,
+   "source": "Methods, Task design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proportion of trials with 6 s preparation",
+   "computed": 0.30055087491898896,
+   "reported": 0.3,
+   "tol": 0.02,
+   "source": "Methods, Task design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proportion of trials with 8 s preparation",
+   "computed": 0.13172391445236553,
+   "reported": 0.14,
+   "tol": 0.02,
+   "source": "Methods, Task design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "planning-phase bins in an 8 s trial",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods (8 s preparation, 100 ms bins)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "280 distinct trials per participant (279 for one), 28 per run of the 30 in the design",
+   "ok": true,
+   "detail": "{280: 21, 279: 1}"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = recordings in the 'pre' table",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper has 300 trials per participant (180 go, 120 no-go); the force deposit holds 279 or 280 distinct trials per participant (28 of the 30 per run; 6,172 recordings in all, including 13 repeated trial numbers), so counts of trials do not match the design. The go and planning-time proportions do reproduce."
+ ],
+ "sources": [
+  {
+   "file": "force_group.mat",
+   "url": "https://raw.githubusercontent.com/g14r/single-finger-planning/HEAD/data/force_data-group-100ms.mat",
+   "bytes": 46698722,
+   "sha256": "d833eeba5358ecf119da48feeb1fe182b1fab368568a51b60fead39867f04ecd",
+   "fetched_utc": "2026-11-09T03:43:25Z"
+  },
+  {
+   "file": "s15.dat",
+   "url": "https://raw.githubusercontent.com/g14r/single-finger-planning/HEAD/data/force_data-s15.dat",
+   "bytes": 56490,
+   "sha256": "eed693ea2b8da76181bfe97ecc461b04986d17b1212eb44bc9c76ff483557e3d",
+   "fetched_utc": "2026-11-09T03:43:27Z"
+  },
+  {
+   "file": "sfp_imana.m",
+   "url": "https://raw.githubusercontent.com/g14r/single-finger-planning/HEAD/code/sfp_imana.m",
+   "bytes": 25977,
+   "sha256": "ae77df3a983564577b6c4d8cc56ca460318ee78c3652cab7c189fd42ea0ce891",
+   "fetched_utc": "2026-11-09T03:43:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ariani2022_eLife.zip"
+}

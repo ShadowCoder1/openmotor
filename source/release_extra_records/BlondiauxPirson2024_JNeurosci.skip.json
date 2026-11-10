@@ -1,0 +1,7 @@
+{
+ "id": "BlondiauxPirson2024_JNeurosci",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Zenodo 10843311 (CC BY 4.0): the per-participant trial files are in ET_Trials.zip (9.6 GB) and NI_Trials.zip (10.9 GB), about 20.5 GB, over the 5 GB limit; calibration zips add 2.7 GB. Task is also an upper-limb (KINARM) postural perturbation, not whole-body balance.",
+ "sources": []
+}

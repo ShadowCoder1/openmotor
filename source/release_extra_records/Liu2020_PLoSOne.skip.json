@@ -1,0 +1,7 @@
+{
+ "id": "Liu2020_PLoSOne",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "OSF deposit has no readme or data dictionary: StepTable holds AngMom_X/Y/Z per participant, step type, asymmetry bin and side with no statistic, normalisation or units stated, and the per-stride files hold unlabeled 3-column momentum arrays per step with no sampling rate, so the values cannot be tied to the paper (integrated whole-body angular momentum, normalised by mass, speed and height) with confidence. No licence stated on OSF; article is CC BY 4.0.",
+ "sources": []
+}

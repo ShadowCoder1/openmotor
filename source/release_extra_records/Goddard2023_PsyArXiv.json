@@ -1,0 +1,223 @@
+{
+ "id": "Goddard2023_PsyArXiv",
+ "module": "speech",
+ "rows": 29965,
+ "subjects": 218,
+ "persons": 22,
+ "zip_bytes": 1000837,
+ "zip_sha256": "c94b0c98462af5c7a4a509b1b6f415f908bc44a404ee052d42957388f19c6ebc",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "training: 65 files x 250 trials, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "training rows marked kept equal the authors' cleaned file (trials 11-250 after their cleaning)",
+   "ok": true,
+   "detail": "10354 kept"
+  },
+  {
+   "kind": "internal",
+   "what": "control group: feedback equal to production (no shift) on every trial with a valid estimate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "experimental group: alteration present in the Feedback phase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per training day",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline-phase trials",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material, Feedback alteration (FA) training",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "feedback-phase trials",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material, Feedback alteration (FA) training",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "noise-phase trials",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material, Feedback alteration (FA) training",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "washout-phase trials",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material, Feedback alteration (FA) training",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of training data discarded (%)",
+   "computed": 35.66153846153847,
+   "reported": 35.7,
+   "tol": 0.05,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Results, Feedback alteration training",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words in the vowel production task (4 Spanish, 5 English)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Goddard et al. 2023 (PsyArXiv preprint xysc5), Method, Tasks and material, Production task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "vowel production task: 13715 rows in the authors' order, sessions 1-7",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Zero formant values: the paper reports 2.7% of the data in the sessions it kept; counting the rows of those sessions here gives 2.85%.",
+  "Utterances per session: the paper describes 9 words x 10 repetitions (90 per participant and session); the file has up to 107 rows for some participant-sessions, all kept."
+ ],
+ "sources": [
+  {
+   "file": "all_sub_M.txt",
+   "url": "https://osf.io/download/nupvg/",
+   "bytes": 1072267,
+   "sha256": "35748f573e3b1997268725c1452021eb6b00c23c889512523f689c52181fb0b6",
+   "fetched_utc": "2026-11-09T11:48:25Z"
+  },
+  {
+   "file": "fa_cleaned.csv",
+   "url": "https://osf.io/download/ymbn4/",
+   "bytes": 1271090,
+   "sha256": "29d7dc523d9a13cf01c05e10af9d484b069ea495b01a85c1d94916176f7537f6",
+   "fetched_utc": "2026-11-09T11:48:28Z"
+  },
+  {
+   "file": "Raw3AFC.csv",
+   "url": "https://osf.io/download/2s8vy/",
+   "bytes": 1539775,
+   "sha256": "6c944af8a2ef4269bca6b0945966029e88ae73cb6179e71576e551fdf1490381",
+   "fetched_utc": "2026-11-09T11:49:42Z"
+  },
+  {
+   "file": "RawAxB.csv",
+   "url": "https://osf.io/download/d5nvf/",
+   "bytes": 513871,
+   "sha256": "1d840d090d78e78b6554ef46584f1c090e750c06739d0db6f43ef9c830d349bb",
+   "fetched_utc": "2026-11-09T11:49:56Z"
+  },
+  {
+   "file": "VST.csv",
+   "url": "https://osf.io/download/r6b5v/",
+   "bytes": 2180387,
+   "sha256": "4173991c37b919b02ee75e6cf70e756cc6cdb94ef1a0769e95fac5dedf6affd3",
+   "fetched_utc": "2026-11-09T11:50:02Z"
+  },
+  {
+   "file": "VowelProductionTask.Rmd",
+   "url": "https://osf.io/download/36p2t/",
+   "bytes": 10899,
+   "sha256": "44395287e6848306afc9405393c8d8bbb4a497e194f4ad9778a53a487b16f5ea",
+   "fetched_utc": "2026-11-09T11:50:07Z"
+  },
+  {
+   "file": "PerceptionTasks.Rmd",
+   "url": "https://osf.io/download/654zb/",
+   "bytes": 20315,
+   "sha256": "7e69988e30ca870be07cb9588aece068613bdd4af749c9783bc37c22e7af20d4",
+   "fetched_utc": "2026-11-09T11:50:20Z"
+  },
+  {
+   "file": "functionswithin.R",
+   "url": "https://osf.io/download/72yhs/",
+   "bytes": 6059,
+   "sha256": "12dbd4cc4be73e277ba3c3339b8648cdc4e7709aaf00e7e5f412a9cdd1ebd47a",
+   "fetched_utc": "2026-11-09T11:50:24Z"
+  },
+  {
+   "file": "FA_1_preprocessing.Rmd",
+   "url": "https://osf.io/download/s4aky/",
+   "bytes": 13330,
+   "sha256": "00191c179a2b98399a5ef9a002d9c6b682e815b2e33c9d09bb665881ceee7f8a",
+   "fetched_utc": "2026-11-09T11:50:28Z"
+  },
+  {
+   "file": "FA_2_compensation_adaptation.Rmd",
+   "url": "https://osf.io/download/jpw4h/",
+   "bytes": 10003,
+   "sha256": "5051cce7d69b26114ab599c04cf905e4bf8578a4ede6ad3deb03144e401969cb",
+   "fetched_utc": "2026-11-09T11:50:31Z"
+  },
+  {
+   "file": "OSF_Analysis.Rmd",
+   "url": "https://osf.io/download/tu2jz/",
+   "bytes": 23392,
+   "sha256": "47383f0165bf9883ba8b710c3d784dc2753a65d00e80328950c6755319034776",
+   "fetched_utc": "2026-11-09T11:50:35Z"
+  },
+  {
+   "file": "FA.csv",
+   "url": "https://osf.io/download/fxhtb/",
+   "bytes": 1170600,
+   "sha256": "ce2c25ac7e6d82ca81a8b6639481faea435a8e3f852b90618dc169241242ae45",
+   "fetched_utc": "2026-11-09T11:57:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Goddard2023_PsyArXiv.zip"
+}

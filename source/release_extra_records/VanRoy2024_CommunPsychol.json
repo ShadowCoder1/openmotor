@@ -1,0 +1,699 @@
+{
+ "id": "VanRoy2024_CommunPsychol",
+ "module": "keypress",
+ "rows": 402624,
+ "subjects": 238,
+ "persons": 199,
+ "zip_bytes": 4725665,
+ "zip_sha256": "b07eeb71cd7f35cc77efa604690c6f239c1d7b5a0b07cc49c1f4220452b86d3d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment1.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "FiguresTables_SourceData.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "454 text files: 130 in Experiment 1, 3 x 108 in Experiment 2, each Experiment 2 participant with one file per session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the demographics sheet lists exactly the participants with data files, in the same age groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: the demographics sheet lists exactly the participants with data files, in the same age groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants in both experiments have the same age and gender in Table 1 and Table 2 source data",
+   "ok": true,
+   "detail": "39 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "402,624 key presses: 130 x 28 blocks + 108 x (28 + 8 + 8) blocks of 48, less the missing random run of one adolescent's third session",
+   "ok": true,
+   "detail": "402624 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "one Experiment 2 participant (an adolescent) has no random run in session 3 (paper: post-test random data of one adolescent missing)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every sequential block repeats 4-7-3-8-6-2-5-1 six times from its first press",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every pseudorandom block is six 8-press cycles that each cue all eight positions once (Methods, SRTT)",
+   "ok": true,
+   "detail": "16584 cycles"
+  },
+  {
+   "kind": "internal",
+   "what": "no cue repeats on consecutive presses within a pseudorandom block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "correct is true exactly when the key pressed equals the cued position",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RT range and odd values (kept as the authors logged them)",
+   "ok": true,
+   "detail": "rt_ms -190 to 20000 ms; 28 at 0 ms and 2 below 0; keys pressed ['1', '11', '2', '3', '4', '5', '6', '7', '8']"
+  },
+  {
+   "kind": "internal",
+   "what": "39 participants appear in both experiments; their Experiment 1 file is byte-identical to their Experiment 2 session 1 file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 block mean RT of correct, non-excluded presses, all 28 blocks (ms): equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 1.71e-13"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 block accuracy, % correct of all presses, all 28 blocks: equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 normalized RT, training, test and post-learning random blocks: equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 learning magnitude (normalized RT): equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 micro-online gains per training block: equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 micro-offline gains per rest: equal to the authors' source data (FiguresTables_SourceData.xlsx) for every participant",
+   "ok": true,
+   "detail": "max abs difference 0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 block mean RT, all 44 blocks of sessions 1-3: equal to the authors' source data (FiguresTables_SourceData.xlsx) for 101 of 108 participants",
+   "ok": true,
+   "detail": "101 equal"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 source data: the rows of five young adults are one cycle of five, each holding exactly the values computed here for the next young adult in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 source data: for one child and one older adult only the eight session 3 blocks differ (their deposited session 3 files are not the data behind the source data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 5 h and 24 h sequential offline gains (Fig. 5 source data): equal for every participant once the five young-adult rows are rotated back, except the 24 h gains of the two participants whose session 3 files differ",
+   "ok": true,
+   "detail": "max abs difference elsewhere 3.1e-16"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, children: participants",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, children: female participants",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, children: mean age (years)",
+   "computed": 10.244969696969697,
+   "reported": 10.2,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, children: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 1.5771885128742007,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adolescents: participants",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adolescents: female participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adolescents: mean age (years)",
+   "computed": 15.295454545454543,
+   "reported": 15.3,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adolescents: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 1.3408228837209044,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, young adults: participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, young adults: female participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, young adults: mean age (years)",
+   "computed": 26.2681875,
+   "reported": 26.3,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, young adults: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 5.031042787270224,
+   "reported": 5.0,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, older adults: participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, older adults: female participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, older adults: mean age (years)",
+   "computed": 64.3515625,
+   "reported": 64.4,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, older adults: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 5.2130621275881355,
+   "reported": 5.2,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, older adults: mean % of key presses excluded as RT outliers",
+   "computed": 1.6508556547619047,
+   "reported": 1.65,
+   "tol": 0.005,
+   "source": "Methods, Serial Reaction Time Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, children: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, children: female participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, children: mean age (years)",
+   "computed": 10.589481481481481,
+   "reported": 10.6,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, children: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 1.5857652988353599,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adolescents: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adolescents: female participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adolescents: mean age (years)",
+   "computed": 15.413592592592593,
+   "reported": 15.4,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adolescents: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 1.382416356300573,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, young adults: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, young adults: female participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, young adults: mean age (years)",
+   "computed": 26.614074074074075,
+   "reported": 26.6,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, young adults: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 4.408340385845448,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, older adults: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, older adults: female participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, older adults: mean age (years)",
+   "computed": 63.00303703703703,
+   "reported": 63.0,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, older adults: SD of age (years; n in the denominator, which all eight of the tables' SDs match)",
+   "computed": 4.404531559415544,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Methods, Participants, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, all participants: mean % of key presses excluded as RT outliers",
+   "computed": 1.693015221661055,
+   "reported": 1.69,
+   "tol": 0.005,
+   "source": "Methods, Serial Reaction Time Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, children: mean % of key presses excluded as RT outliers",
+   "computed": 2.009680134680135,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Methods, Serial Reaction Time Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adolescents: mean % of key presses excluded as RT outliers",
+   "computed": 1.8320356341189676,
+   "reported": 1.83,
+   "tol": 0.005,
+   "source": "Methods, Serial Reaction Time Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, young adults: mean % of key presses excluded as RT outliers",
+   "computed": 1.5765291806958472,
+   "reported": 1.58,
+   "tol": 0.005,
+   "source": "Methods, Serial Reaction Time Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: one-way ANOVA F of learning magnitude across age groups",
+   "computed": 5.440147608477931,
+   "reported": 5.44,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014sequence-specific learning'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: Hedges' g of learning magnitude, children vs adolescents",
+   "computed": -0.7142013315540354,
+   "reported": -0.714,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014sequence-specific learning'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: Hedges' g of learning magnitude, children vs young adults",
+   "computed": -0.9699378095898069,
+   "reported": -0.97,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014sequence-specific learning'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F on normalized RT of the post-learning random run (mixed ANOVA group effect = one-way ANOVA of participant means)",
+   "computed": 5.794816983183773,
+   "reported": 5.795,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014sequence-specific learning'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, normalized RT, training blocks",
+   "computed": 1.5776378921964758,
+   "reported": 1.578,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014dynamics of performance improvements'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, normalized RT, post-learning test blocks",
+   "computed": 1.0985630226918113,
+   "reported": 1.099,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014dynamics of performance improvements'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, normalized accuracy, training blocks",
+   "computed": 0.3218047394575887,
+   "reported": 0.322,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014dynamics of performance improvements'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, normalized accuracy, post-learning test blocks",
+   "computed": 1.795548408789641,
+   "reported": 1.796,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014dynamics of performance improvements'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants with complete micro-online gains (16 blocks)",
+   "computed": 128.0,
+   "reported": 128.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1\u2014micro-learning across sequential training' (F(3,124); Fig. 3: 31 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, micro-online gains (16 blocks)",
+   "computed": 2.663411972340434,
+   "reported": 2.663,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014micro-learning across sequential training'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants with complete micro-offline gains (15 rests)",
+   "computed": 128.0,
+   "reported": 128.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1\u2014micro-learning across sequential training' (F(3,124); Fig. 3: 31 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: group effect F, micro-offline gains (15 rests)",
+   "computed": 2.489862304764508,
+   "reported": 2.49,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 1\u2014micro-learning across sequential training'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: one-way ANOVA F of 5 h sequential offline gains",
+   "computed": 5.756362303955905,
+   "reported": 5.756,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 2\u2014macro-offline performance gains'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Hedges' g of 5 h sequential offline gains, children vs young adults",
+   "computed": 0.5896710583455418,
+   "reported": 0.59,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 2\u2014macro-offline performance gains'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Hedges' g of 5 h sequential offline gains, adolescents vs young adults",
+   "computed": 0.5480226630138432,
+   "reported": 0.548,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 2\u2014macro-offline performance gains'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Hedges' g of 5 h sequential offline gains, children vs older adults",
+   "computed": 1.3822666660322882,
+   "reported": 1.382,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 2\u2014macro-offline performance gains'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Hedges' g of 5 h sequential offline gains, adolescents vs older adults",
+   "computed": 1.2899816308181875,
+   "reported": 1.29,
+   "tol": 0.0005,
+   "source": "Results, 'Experiment 2\u2014macro-offline performance gains'",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2, 24 h statistics with the authors' 24 h gains for the two participants whose session 3 files differ: all seven reported values reproduced",
+   "ok": true,
+   "detail": "one-way ANOVA F of 24 h sequential offline gains 20.582; group effect F of the group x offline period ANOVA 14.541; group x offline period interaction F 3.382; Hedges' g of 24 h gains, children vs young adults 1.285; Hedges' g of 24 h gains, children vs older adults 2.449; Hedges' g of 24 h gains, adolescents vs older adults 1.256; Hedges' g of 24 h gains, young adults vs older adults 1.237"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean % of key presses excluded as RT outliers, Experiment 1: 1.79 here (children 2.05, adolescents 1.77, young adults 1.69, older adults 1.65) against 1.78 (2.03, 1.76, 1.68, 1.65) in the paper; Experiment 2 older adults: 1.35 against 1.34. The cause is not known: the flags here reproduce the authors' per-block RT means (source data) exactly for all 130 Experiment 1 participants.",
+  "Experiment 2, 24 h: for one child and one older adult the deposited session 3 files give other session 3 RTs than the authors' source data, so the 24 h statistics computed from this table differ from the paper: one-way ANOVA F of 24 h sequential offline gains 19.602 (paper 20.582); group effect F of the group x offline period ANOVA 14.307 (paper 14.541); group x offline period interaction F 3.668 (paper 3.382); Hedges' g of 24 h gains, children vs young adults 1.218 (paper 1.285); Hedges' g of 24 h gains, children vs older adults 2.202 (paper 2.449); Hedges' g of 24 h gains, adolescents vs older adults 1.231 (paper 1.256); Hedges' g of 24 h gains, young adults vs older adults 1.198 (paper 1.237). With the authors' source-data 24 h gains for those two participants, all seven values are reproduced; the 5 h statistics, which use sessions 1 and 2 only, are reproduced from the table.",
+  "In the authors' Experiment 2 source data the rows of five young adults are rotated by one participant (each row holds the next one's values); rows here follow the participant numbers of the data files, and the age and sex of these five come from the Table 2 sheet by participant number, so they may be affected in the same way.",
+  "The paper says 42 participants (16 children, 19 adolescents, 4 young adults, 3 older adults) took part in both experiments; the deposit has 39 participant numbers in both (14, 18, 4 and 3), whose Experiment 1 and Experiment 2 session 1 files are identical.",
+  "The paper says the third session of one young adult was missing; the deposit and the authors' source data hold all three sessions for every young adult (only one adolescent's session 3 random run is missing)."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/10365065/files/README.txt/content",
+   "bytes": 5436,
+   "sha256": "3a460c123f48c537b748516afd55615ebd5604497d6d4f61949699d7d441a5ea",
+   "fetched_utc": "2026-11-08T19:45:45Z"
+  },
+  {
+   "file": "AnalysisScripts.zip",
+   "url": "https://zenodo.org/api/records/10365065/files/AnalysisScripts.zip/content",
+   "bytes": 108741,
+   "sha256": "a1bf52218d34d19274e42d401b6f288a07826d8fdf7adaf30f77f19e23a2a096",
+   "fetched_utc": "2026-11-08T19:45:48Z"
+  },
+  {
+   "file": "Experiment1.zip",
+   "url": "https://zenodo.org/api/records/10365065/files/Experiment1.zip/content",
+   "bytes": 787678,
+   "sha256": "5d41de20ca01c60faeb3c7c8d5e59249c08cbffc1842d3ea8600ff6aad78c984",
+   "fetched_utc": "2026-11-08T19:45:52Z"
+  },
+  {
+   "file": "Experiment2.zip",
+   "url": "https://zenodo.org/api/records/10365065/files/Experiment2.zip/content",
+   "bytes": 1040815,
+   "sha256": "30fb07748a9c46b6a40afdba292b2c68aeebcda459e50d84d5bee5f7558f2f94",
+   "fetched_utc": "2026-11-08T19:45:55Z"
+  },
+  {
+   "file": "FiguresTables_SourceData.xlsx",
+   "url": "https://zenodo.org/api/records/10365065/files/FiguresTables_SourceData.xlsx/content",
+   "bytes": 587862,
+   "sha256": "b519ef6054c7b094f67b10803d84fe05b459f518de5292b655f3d829d2d07047",
+   "fetched_utc": "2026-11-08T19:46:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2024_CommunPsychol.zip"
+}

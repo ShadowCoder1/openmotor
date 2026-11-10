@@ -1,0 +1,170 @@
+{
+ "id": "Chou2025_SciData",
+ "module": "game",
+ "rows": 97350,
+ "subjects": 93,
+ "persons": 93,
+ "zip_bytes": 17602250,
+ "zip_sha256": "25421c9308f5f8976a80a4e4ab379a1e0a2846b7c4c493ed8b63b2f33878e89b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "47 columns, 34 sensor features after the 6 index columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "gender constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "age constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "play years constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "height constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "weight constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "handedness constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hold racket handed constant within player",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every (player, mode, stage, round) holds a multiple of 50 strokes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "players",
+   "computed": 93.0,
+   "reported": 93.0,
+   "tol": 0,
+   "source": "Abstract / Data Records",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male players",
+   "computed": 53.0,
+   "reported": 53.0,
+   "tol": 0,
+   "source": "Methods / Data Records",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female players",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods / Data Records",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "records (strokes) in total",
+   "computed": 97350.0,
+   "reported": 97350.0,
+   "tol": 0,
+   "source": "Data Records (97,350 records)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "records in mode 0 (air swing)",
+   "computed": 7500.0,
+   "reported": 7500.0,
+   "tol": 0,
+   "source": "Data Records / Data Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "records in mode 1 (full power stroke)",
+   "computed": 73850.0,
+   "reported": 73850.0,
+   "tol": 0,
+   "source": "Data Records / Data Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "records in mode 2 (stable hitting)",
+   "computed": 16000.0,
+   "reported": 16000.0,
+   "tol": 0,
+   "source": "Data Records / Data Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handed players",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Data Records (78 right-handed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed players",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Data Records (15 left-handed)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper gives the total as 97,350 records and also says 'over 90,000 strokes'; the deposit has 97,350 rows, which match the first number.",
+  "The paper's text calls mode 1 both 'aerobic swing' and 'full power stroke' and ties the three serving-machine ball speeds to different modes in different places; the deposit README (mode 0 air swing, 1 full power stroke, 2 stable hitting) and the data (stages 1-3 occur only in mode 1) agree, and are used here.",
+  "50 rows of the deposit are exact duplicates of another row; all rows are kept as shared. The 'fileindex' (here 'round') is not unique within a player, mode and stage: some combinations hold 100 or 150 strokes (two or three rounds on different dates), so use date as well.",
+  "Age, experience, height and weight are only given as low/medium/high tiers (privacy), so age is empty and the tiers are in participants.csv.",
+  "The Dryad record states CC0 and the Zenodo copy used here states Apache-2.0; both allow sharing a converted copy."
+ ],
+ "sources": [
+  {
+   "file": "TTSWING.zip",
+   "url": "https://zenodo.org/api/records/14818398/files/TTSWING.zip/content",
+   "bytes": 38753942,
+   "sha256": "bd1009a3fa02bf02acd7ce39d78138bdf4cc4a14b75015b3a523d62c6cfa5c36",
+   "fetched_utc": "2026-11-09T12:28:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Chou2025_SciData.zip"
+}

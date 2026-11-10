@@ -1,0 +1,1032 @@
+{
+ "id": "Park2022_NeuroImage",
+ "module": "keypress",
+ "rows": 121975,
+ "subjects": 35,
+ "persons": 35,
+ "zip_bytes": 1991865,
+ "zip_sha256": "4e786251e2d8719a29b0d12453ee8d7e8d97de4f25b13f88083e6c4b19d225a0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "35 participants x (1445 + 1020 + 1020) trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "firstACC is 1 exactly when the pressed key equals the cued position",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cues 1-4, responses 1-4 or none, RT 0-499 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no-response trials: RT is 0 and accuracy 0",
+   "ok": true,
+   "detail": "4132 trials, RT 0 with a response on 1 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "41 blocks of 85 trials per participant (5 practice blocks + 36 task blocks)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blocks 1-5 are all Prac trials; every task block starts with 5 Prac trials then 40 P and 40 R alternating, pattern first",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's four pattern positions are the same in every cycle",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Condition is set on all task-block trials except the first two of each block",
+   "ok": true,
+   "detail": "98280 coded trials"
+  },
+  {
+   "kind": "internal",
+   "what": "PatternHigh <-> P, RandomLow/RandomHigh <-> R",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants with accuracy below 80% excluded",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods 2.1 (four participants excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean accuracy over the 31 analysed participants, task blocks (%)",
+   "computed": 91.40008960573476,
+   "reported": 91.4,
+   "tol": 0.05,
+   "source": "Results 4.1.1 (91.4%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy in run 1 (%)",
+   "computed": 91.3508064516129,
+   "reported": 91.4,
+   "tol": 0.05,
+   "source": "Results 4.1.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy in run 2 (%)",
+   "computed": 92.02620967741936,
+   "reported": 92.0,
+   "tol": 0.05,
+   "source": "Results 4.1.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy in run 3 (%)",
+   "computed": 90.82325268817203,
+   "reported": 90.8,
+   "tol": 0.05,
+   "source": "Results 4.1.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "statistical learning score (normalised RT, Random-Low minus Random-High) t(30), across three runs",
+   "computed": 11.206447821536432,
+   "reported": 11.21,
+   "tol": 0.005,
+   "source": "Results 4.1.2 (two SD outlier cut per participant, correct trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "SL score df = 30 (across three runs)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "statistical learning score (normalised RT, Random-Low minus Random-High) t(30), run 1",
+   "computed": 7.263919754743729,
+   "reported": 7.26,
+   "tol": 0.005,
+   "source": "Results 4.1.2 (two SD outlier cut per participant, correct trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "SL score df = 30 (run 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "statistical learning score (normalised RT, Random-Low minus Random-High) t(30), run 2",
+   "computed": 7.183506012031303,
+   "reported": 7.18,
+   "tol": 0.005,
+   "source": "Results 4.1.2 (two SD outlier cut per participant, correct trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "SL score df = 30 (run 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "statistical learning score (normalised RT, Random-Low minus Random-High) t(30), run 3",
+   "computed": 13.084077933242149,
+   "reported": 13.08,
+   "tol": 0.005,
+   "source": "Results 4.1.2 (two SD outlier cut per participant, correct trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "SL score df = 30 (run 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "one-way ANOVA of block-wise SL scores on block number, F(1,1114)",
+   "computed": 19.645702256872273,
+   "reported": 19.65,
+   "tol": 0.005,
+   "source": "Results 4.1.2 (F(1,1114) = 19.65)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "block-wise SL scores: 31 participants x 36 blocks (df 1114)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the study",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the 35 participants (years)",
+   "computed": 23.085714285714285,
+   "reported": 23.1,
+   "tol": 0.05,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, 35 participants",
+   "computed": 2.842652329938989,
+   "reported": 2.8,
+   "tol": 0.05,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females among the 35",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the 31 analysed (years)",
+   "computed": 22.967741935483872,
+   "reported": 23.0,
+   "tol": 0.05,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females among the 31 analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean correct RT after the 2-SD cut is 349.6 ms here against 349.9 ms in the paper (runs 356.2, 347.1, 345.6 ms against 356.6, 347.2, 346.1); the difference is larger than the paper's rounding, so these were not used as checks.",
+  "The SD of age of the 31 analysed participants is 2.86 years from the deposit's participants.tsv, against 2.8 in the paper."
+ ],
+ "sources": [
+  {
+   "file": "CHANGES",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/CHANGES",
+   "bytes": 391,
+   "sha256": "35415f044b2f6f4775541919bac3a2acdaaba98b99f3657cf570c4fbb940ac8a",
+   "fetched_utc": "2026-11-09T10:59:04Z"
+  },
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/README",
+   "bytes": 138,
+   "sha256": "f5ecfd95e0e9f17ea2222d6394c6d6b8a3e9620ff29ec995834eef3b8e091d10",
+   "fetched_utc": "2026-11-09T10:59:05Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/dataset_description.json",
+   "bytes": 651,
+   "sha256": "5cf9255b149aa21480b370d7edd34a3f184371f91313dfa21ed498f5a3a73449",
+   "fetched_utc": "2026-11-09T10:59:05Z"
+  },
+  {
+   "file": "participants.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/participants.json",
+   "bytes": 405,
+   "sha256": "e862bb475e5303f9e5df0fba93ecc34c494b7ccc31934de01452bba02f7a06f7",
+   "fetched_utc": "2026-11-09T10:59:05Z"
+  },
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/participants.tsv",
+   "bytes": 729,
+   "sha256": "59f6892f2f786e46908024c376c99bb01ae6331489fdc2fb167cc554445b125a",
+   "fetched_utc": "2026-11-09T10:59:05Z"
+  },
+  {
+   "file": "sub-01_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-01/func/sub-01_task-asrt_run-1_events.tsv",
+   "bytes": 149250,
+   "sha256": "35ad61a031b259857a813fa631808dd26a52c3dd774e57c33b3c37437148678a",
+   "fetched_utc": "2026-11-09T10:59:06Z"
+  },
+  {
+   "file": "sub-01_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-01/func/sub-01_task-asrt_run-2_events.tsv",
+   "bytes": 105853,
+   "sha256": "90cb8f8f7e39554b82aceafad1c8ee8499dcc885cf639b1f46a8515fded1a825",
+   "fetched_utc": "2026-11-09T10:59:06Z"
+  },
+  {
+   "file": "sub-01_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-01/func/sub-01_task-asrt_run-3_events.tsv",
+   "bytes": 105660,
+   "sha256": "73bbb1b58356c6e9be6a03fb26df6e2adc0f521e919dfe2523b5d32119158720",
+   "fetched_utc": "2026-11-09T10:59:06Z"
+  },
+  {
+   "file": "sub-02_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-02/func/sub-02_task-asrt_run-1_events.tsv",
+   "bytes": 150945,
+   "sha256": "e03fe6789f93a4cbff51e1b3a4d3b16cee0eaa119c37eb33d975f7c02bc4868f",
+   "fetched_utc": "2026-11-09T10:59:06Z"
+  },
+  {
+   "file": "sub-02_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-02/func/sub-02_task-asrt_run-2_events.tsv",
+   "bytes": 105790,
+   "sha256": "5cc62f11bfeb4bf61c90e8750c991f5fe471a6199483480361b434b8c0616949",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-02_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-02/func/sub-02_task-asrt_run-3_events.tsv",
+   "bytes": 105944,
+   "sha256": "4a39f120bb0703c6d762f969fb66874439c57f51aab1aca6b28f06d12767aa48",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-03_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-03/func/sub-03_task-asrt_run-1_events.tsv",
+   "bytes": 151527,
+   "sha256": "b9dc550cff8805cf8ffe8a5b0f769b868ea4c13fb765810e8434e96f69031957",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-03_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-03/func/sub-03_task-asrt_run-2_events.tsv",
+   "bytes": 105887,
+   "sha256": "b7a8f20a64474e88fe7f010cbb72f6ebdd81c61f378fac15205c612b9c84b72b",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-03_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-03/func/sub-03_task-asrt_run-3_events.tsv",
+   "bytes": 105655,
+   "sha256": "791d72c099a35c1aa110d6ce9c4882ca22bc9746f6692453972f93d0c7b7bcc6",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-04_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-04/func/sub-04_task-asrt_run-1_events.tsv",
+   "bytes": 151523,
+   "sha256": "8449cd595d869dcfd84206c4292dcbe859cf565ff0080a7950f8994897e05216",
+   "fetched_utc": "2026-11-09T10:59:07Z"
+  },
+  {
+   "file": "sub-04_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-04/func/sub-04_task-asrt_run-2_events.tsv",
+   "bytes": 105821,
+   "sha256": "5389b6f70eb2a23041a8936d11bf2f391d9d086f8ac65daff02bdb542961ff45",
+   "fetched_utc": "2026-11-09T10:59:08Z"
+  },
+  {
+   "file": "sub-04_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-04/func/sub-04_task-asrt_run-3_events.tsv",
+   "bytes": 106021,
+   "sha256": "99ce9b8ae17b825f2ede5a77d3d22b3153f185750ba056dead910780a76da46a",
+   "fetched_utc": "2026-11-09T10:59:08Z"
+  },
+  {
+   "file": "sub-05_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-05/func/sub-05_task-asrt_run-1_events.tsv",
+   "bytes": 151163,
+   "sha256": "635f1cbdd287a6272947b50412baa8c849934872ffa06a91b0956279bb1996a2",
+   "fetched_utc": "2026-11-09T10:59:08Z"
+  },
+  {
+   "file": "sub-05_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-05/func/sub-05_task-asrt_run-2_events.tsv",
+   "bytes": 105898,
+   "sha256": "bfa7137cdf19c9d22845f4d99acafb6283c0505b12ed9d9f910c128fedbaec71",
+   "fetched_utc": "2026-11-09T10:59:08Z"
+  },
+  {
+   "file": "sub-05_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-05/func/sub-05_task-asrt_run-3_events.tsv",
+   "bytes": 105989,
+   "sha256": "4c4804a3a44fc886feb8a66c0ca2cf28e101fee91895c00ef4c591ee6bf7c35b",
+   "fetched_utc": "2026-11-09T10:59:08Z"
+  },
+  {
+   "file": "sub-06_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-06/func/sub-06_task-asrt_run-1_events.tsv",
+   "bytes": 151070,
+   "sha256": "37ed3798d84e78e104f450e4addf7f1ab19ea89b726c920dd06acfe41c444b99",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-06_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-06/func/sub-06_task-asrt_run-2_events.tsv",
+   "bytes": 105973,
+   "sha256": "578b61e62e1a1ad1d8145f9f006ebf0a1e88b72f9db57cf0de48a6f23d5ef1ab",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-06_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-06/func/sub-06_task-asrt_run-3_events.tsv",
+   "bytes": 105796,
+   "sha256": "a14eed931f0da113dcf38b43e70a0fc650d7e00aa622587ef37b0e5222b8934e",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-07_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-07/func/sub-07_task-asrt_run-1_events.tsv",
+   "bytes": 151090,
+   "sha256": "553607d6f917ff9cb9d825cb391ec597217d6bf3fd7b6181f67deb5f3d9aa785",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-07_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-07/func/sub-07_task-asrt_run-2_events.tsv",
+   "bytes": 105931,
+   "sha256": "d13be460d04cb6e654ab4501eaedbad47a706de347dbe62e072313b15a31adbf",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-07_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-07/func/sub-07_task-asrt_run-3_events.tsv",
+   "bytes": 105819,
+   "sha256": "360eb88914bfd51f23111ba2540fef3da24aa29aa30231897931239339fb8682",
+   "fetched_utc": "2026-11-09T10:59:09Z"
+  },
+  {
+   "file": "sub-08_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-08/func/sub-08_task-asrt_run-1_events.tsv",
+   "bytes": 153414,
+   "sha256": "e0b6f4a22a9f270b754b35e076dfd6f1b3dc30ca41e2c701c1d671e73b87f8de",
+   "fetched_utc": "2026-11-09T10:59:10Z"
+  },
+  {
+   "file": "sub-08_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-08/func/sub-08_task-asrt_run-2_events.tsv",
+   "bytes": 105757,
+   "sha256": "916240070e4bd196145ec270edcc3045d4e3eb12b6255fccb24275a3632ff3fc",
+   "fetched_utc": "2026-11-09T10:59:10Z"
+  },
+  {
+   "file": "sub-08_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-08/func/sub-08_task-asrt_run-3_events.tsv",
+   "bytes": 105840,
+   "sha256": "3db41fae16d779c220245074d079653b251dfd64cc600dbe9f0025235d9f1681",
+   "fetched_utc": "2026-11-09T10:59:10Z"
+  },
+  {
+   "file": "sub-09_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-09/func/sub-09_task-asrt_run-1_events.tsv",
+   "bytes": 151199,
+   "sha256": "e0f1d68935ee7f409c07dad618b33070fcf02b2278cb38e034b95f7d33616077",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-09_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-09/func/sub-09_task-asrt_run-2_events.tsv",
+   "bytes": 105919,
+   "sha256": "60ca43eed9471263c9be068e42fe51f28b560ddae35d23ebc336d245682341cc",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-09_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-09/func/sub-09_task-asrt_run-3_events.tsv",
+   "bytes": 105700,
+   "sha256": "73d3faa20a9866fe36294903cd9280a0639e222eaa5f4c4cdb0088c5db846d0b",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-10_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-10/func/sub-10_task-asrt_run-1_events.tsv",
+   "bytes": 152369,
+   "sha256": "a83c5a7e3cff45858cf3b6a450b8678e30854ec51a53548e37c457cec0b35f96",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-10_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-10/func/sub-10_task-asrt_run-2_events.tsv",
+   "bytes": 106848,
+   "sha256": "a2136e3cfad021245aaee9ba7f4df002e57e9e61173ea67285a03197f3fcd906",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-10_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-10/func/sub-10_task-asrt_run-3_events.tsv",
+   "bytes": 106743,
+   "sha256": "01062dd2de674c13214b2f471bf61e1d7c8f233e837b4f5613c202cb39b76f7f",
+   "fetched_utc": "2026-11-09T10:59:11Z"
+  },
+  {
+   "file": "sub-11_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-11/func/sub-11_task-asrt_run-1_events.tsv",
+   "bytes": 154674,
+   "sha256": "4bec01f67381ec40987581095d96bd4f8ca75209a654ad6771cab5acab02a7d6",
+   "fetched_utc": "2026-11-09T10:59:12Z"
+  },
+  {
+   "file": "sub-11_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-11/func/sub-11_task-asrt_run-2_events.tsv",
+   "bytes": 106816,
+   "sha256": "b145ea824c8f17f07c1c80f9b23cda88f30e09e35a9c273fbf355558e2bdf3d3",
+   "fetched_utc": "2026-11-09T10:59:12Z"
+  },
+  {
+   "file": "sub-11_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-11/func/sub-11_task-asrt_run-3_events.tsv",
+   "bytes": 106368,
+   "sha256": "d2d8fbb3f200f8fb7fea9f833b5486883fd5dc39d92f18dddfc14e24af6f40e8",
+   "fetched_utc": "2026-11-09T10:59:12Z"
+  },
+  {
+   "file": "sub-12_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-12/func/sub-12_task-asrt_run-1_events.tsv",
+   "bytes": 152311,
+   "sha256": "ba06d08d7a38f09e0ad7272f0aa07df4e1475e8957bceb13ffa07a3296f6ae7e",
+   "fetched_utc": "2026-11-09T10:59:12Z"
+  },
+  {
+   "file": "sub-12_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-12/func/sub-12_task-asrt_run-2_events.tsv",
+   "bytes": 106705,
+   "sha256": "9d356e59b86dd35a5866c75902cceb479cfd537900e1d584689449d00776a33b",
+   "fetched_utc": "2026-11-09T10:59:12Z"
+  },
+  {
+   "file": "sub-12_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-12/func/sub-12_task-asrt_run-3_events.tsv",
+   "bytes": 106851,
+   "sha256": "b79cd333febdd53763a72a7305ac502d7b03667da4e78ebb9fbe6f13bf69c882",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-13_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-13/func/sub-13_task-asrt_run-1_events.tsv",
+   "bytes": 152870,
+   "sha256": "c5865ad63e742fd800d0d76efc6acfab3c3b32235e48c28a41a54b12e5ee8707",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-13_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-13/func/sub-13_task-asrt_run-2_events.tsv",
+   "bytes": 106803,
+   "sha256": "309182c2ca8254abb501a38eed764f0eaa5444df71df684b3e719dec82c0ad60",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-13_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-13/func/sub-13_task-asrt_run-3_events.tsv",
+   "bytes": 106766,
+   "sha256": "98a9209eeaacb9e0eae325974b68448e64703a65aacd5549f38f52188153de1b",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-14_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-14/func/sub-14_task-asrt_run-1_events.tsv",
+   "bytes": 152447,
+   "sha256": "b437dbda1a90cc6da388433a77a57f473c4bf6cddd164ede9d59bf643f6e14cc",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-14_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-14/func/sub-14_task-asrt_run-2_events.tsv",
+   "bytes": 106899,
+   "sha256": "bb2361d0e69011115144076ed1a12761107ab332604a8b9fde2ac71e1fc2a27a",
+   "fetched_utc": "2026-11-09T10:59:13Z"
+  },
+  {
+   "file": "sub-14_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-14/func/sub-14_task-asrt_run-3_events.tsv",
+   "bytes": 106981,
+   "sha256": "4b0958d39cd27a183bede380e17dbbc2412ff848765837b2b0b9e574de248933",
+   "fetched_utc": "2026-11-09T10:59:14Z"
+  },
+  {
+   "file": "sub-15_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-15/func/sub-15_task-asrt_run-1_events.tsv",
+   "bytes": 152602,
+   "sha256": "5641f31a99abac4dbfaf0b837dbe98c7af7d7ea4e1723860bf849fb6591f6f38",
+   "fetched_utc": "2026-11-09T10:59:14Z"
+  },
+  {
+   "file": "sub-15_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-15/func/sub-15_task-asrt_run-2_events.tsv",
+   "bytes": 106990,
+   "sha256": "8b93f58d63fb06afb9b38ee8f662485d893f91fd964ff3af6fa69f563f0caa48",
+   "fetched_utc": "2026-11-09T10:59:14Z"
+  },
+  {
+   "file": "sub-15_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-15/func/sub-15_task-asrt_run-3_events.tsv",
+   "bytes": 106927,
+   "sha256": "9952054f9497533090aa6114738b5b5330e7087b86e81a580b8dea1306fa9f26",
+   "fetched_utc": "2026-11-09T10:59:14Z"
+  },
+  {
+   "file": "sub-16_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-16/func/sub-16_task-asrt_run-1_events.tsv",
+   "bytes": 150552,
+   "sha256": "a18bb6c299ba3f39c65a19d487935b019e9f419539a7758b20e93df8b1c9ddcf",
+   "fetched_utc": "2026-11-09T10:59:14Z"
+  },
+  {
+   "file": "sub-16_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-16/func/sub-16_task-asrt_run-2_events.tsv",
+   "bytes": 106847,
+   "sha256": "19383ae58f21e0fe45d42f56fa0e49df5593a3ded013ac3d43341175f7c18d4b",
+   "fetched_utc": "2026-11-09T10:59:15Z"
+  },
+  {
+   "file": "sub-16_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-16/func/sub-16_task-asrt_run-3_events.tsv",
+   "bytes": 106806,
+   "sha256": "4cf697462752015204cf1f709e3c8b927808cf42e723c8b789cae5460de618c7",
+   "fetched_utc": "2026-11-09T10:59:15Z"
+  },
+  {
+   "file": "sub-17_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-17/func/sub-17_task-asrt_run-1_events.tsv",
+   "bytes": 154852,
+   "sha256": "91d80543985e9381b199698a43dc27db5a857c04d900a91a0c1322ca4ffc5277",
+   "fetched_utc": "2026-11-09T10:59:15Z"
+  },
+  {
+   "file": "sub-17_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-17/func/sub-17_task-asrt_run-2_events.tsv",
+   "bytes": 106773,
+   "sha256": "38ec6a7f9fa0e5f644e7594275e0e6165a75cbc570339182b9debece460af29f",
+   "fetched_utc": "2026-11-09T10:59:15Z"
+  },
+  {
+   "file": "sub-17_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-17/func/sub-17_task-asrt_run-3_events.tsv",
+   "bytes": 106904,
+   "sha256": "747d33017864a79351261b456063147c46cc49843d3c7b45e61b77ccd96c505f",
+   "fetched_utc": "2026-11-09T10:59:15Z"
+  },
+  {
+   "file": "sub-18_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-18/func/sub-18_task-asrt_run-1_events.tsv",
+   "bytes": 154717,
+   "sha256": "f4c8fa2dcfea2af72075bfb5249733d90042a05ac630c44e2b6817d4cfcef42b",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-18_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-18/func/sub-18_task-asrt_run-2_events.tsv",
+   "bytes": 107012,
+   "sha256": "a8dcbfd37070de749f3ace1d3d3f4036bfc390c77e20f4a3da7e49d731c1a531",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-18_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-18/func/sub-18_task-asrt_run-3_events.tsv",
+   "bytes": 106961,
+   "sha256": "5262a8f496abd94d56fd8aaf65648694ce934400f7b476670d8f398e7fed45c4",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-19_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-19/func/sub-19_task-asrt_run-1_events.tsv",
+   "bytes": 150594,
+   "sha256": "058af8ba52aac9543ec2e274c0e583346e910b3cf4f8ac3ab99b2b3324c6ee31",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-19_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-19/func/sub-19_task-asrt_run-2_events.tsv",
+   "bytes": 106931,
+   "sha256": "75a071807fa10c8f9dfb5129b20a161f83bf78a35d3a991a5727d9016b80e7c0",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-19_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-19/func/sub-19_task-asrt_run-3_events.tsv",
+   "bytes": 106915,
+   "sha256": "be740cd9c52de07355ccdb279c135af9448933bf2a9d945220561f7d8500404b",
+   "fetched_utc": "2026-11-09T10:59:16Z"
+  },
+  {
+   "file": "sub-20_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-20/func/sub-20_task-asrt_run-1_events.tsv",
+   "bytes": 152557,
+   "sha256": "facc65d6e83c3771111e012272e6eadef4102d9e69e215eb0ff780fbae478a36",
+   "fetched_utc": "2026-11-09T10:59:17Z"
+  },
+  {
+   "file": "sub-20_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-20/func/sub-20_task-asrt_run-2_events.tsv",
+   "bytes": 106906,
+   "sha256": "8b9a3ed40857d3d439829b88fac9108842eddf8fa755c9a73f47239cf2fb40fb",
+   "fetched_utc": "2026-11-09T10:59:17Z"
+  },
+  {
+   "file": "sub-20_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-20/func/sub-20_task-asrt_run-3_events.tsv",
+   "bytes": 106994,
+   "sha256": "9032b9dc3040da89e82a1eb39a5862a3135416ee3a62ef1eaae759923a7a33d1",
+   "fetched_utc": "2026-11-09T10:59:17Z"
+  },
+  {
+   "file": "sub-21_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-21/func/sub-21_task-asrt_run-1_events.tsv",
+   "bytes": 152109,
+   "sha256": "b783a0b488b8c69b242448afae4fa4cd4b74d824140fa7771404ce183b4bd201",
+   "fetched_utc": "2026-11-09T10:59:17Z"
+  },
+  {
+   "file": "sub-21_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-21/func/sub-21_task-asrt_run-2_events.tsv",
+   "bytes": 106616,
+   "sha256": "70b7d5aae6516fce302b5198fc1f9237282bdadcbae3aa39b930a06f2f788773",
+   "fetched_utc": "2026-11-09T10:59:17Z"
+  },
+  {
+   "file": "sub-21_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-21/func/sub-21_task-asrt_run-3_events.tsv",
+   "bytes": 106636,
+   "sha256": "9955df1e387e3f4e5d433356e8ea26167e66a30808a102d529be9ffc6a9c463c",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-22_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-22/func/sub-22_task-asrt_run-1_events.tsv",
+   "bytes": 154956,
+   "sha256": "a0b06b40c70d8a09185bd52a6167a192995ff7f45b80afb1f99f19d8cc7241c0",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-22_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-22/func/sub-22_task-asrt_run-2_events.tsv",
+   "bytes": 106926,
+   "sha256": "98c944e095d6a914b4c0a053ec5b2ab960d1199f8d473c9095fcf9da84a52771",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-22_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-22/func/sub-22_task-asrt_run-3_events.tsv",
+   "bytes": 106960,
+   "sha256": "2b314e573dcf15ff6887c0f9944f568fc9f7fe8798bd8b40d6804de7cc4028db",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-23_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-23/func/sub-23_task-asrt_run-1_events.tsv",
+   "bytes": 152472,
+   "sha256": "af8def33fa4ba91d0caa326a48b6f7fdfa9815a37bcd80737ec718a41da7434b",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-23_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-23/func/sub-23_task-asrt_run-2_events.tsv",
+   "bytes": 106942,
+   "sha256": "d81d06ff220367794aee6111bbffe51920108398d16e5a6301426a1b044057c1",
+   "fetched_utc": "2026-11-09T10:59:18Z"
+  },
+  {
+   "file": "sub-23_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-23/func/sub-23_task-asrt_run-3_events.tsv",
+   "bytes": 106964,
+   "sha256": "9df7d1830ba4045a1f5b9629426f4bdb9c9d0a24b669115cb9f8faad69d5667a",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-24_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-24/func/sub-24_task-asrt_run-1_events.tsv",
+   "bytes": 152474,
+   "sha256": "f24b60595997a465c8a02e9680c7c927e4abe6be539128273880c6191ea0d02e",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-24_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-24/func/sub-24_task-asrt_run-2_events.tsv",
+   "bytes": 106787,
+   "sha256": "61689165952c3c92e1b291d42339c5dc0596b3fd44f044d239bd611c31c7fbd6",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-24_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-24/func/sub-24_task-asrt_run-3_events.tsv",
+   "bytes": 106743,
+   "sha256": "a87626d5b2ae61c05a072f9705cb8412f78d57de07eaaadc85f369b15a70d4e7",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-25_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-25/func/sub-25_task-asrt_run-1_events.tsv",
+   "bytes": 154833,
+   "sha256": "5b50c591d9240b4a93199681a5900692735f48bcca65d1e8f70f9733d72cf495",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-25_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-25/func/sub-25_task-asrt_run-2_events.tsv",
+   "bytes": 106825,
+   "sha256": "5e978599fe36262e546167490f957c65e270fb22211c69f211beda775d506d66",
+   "fetched_utc": "2026-11-09T10:59:19Z"
+  },
+  {
+   "file": "sub-25_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-25/func/sub-25_task-asrt_run-3_events.tsv",
+   "bytes": 106814,
+   "sha256": "308c3c3a3a78900b7ad7c002b6911d811569315d89bfbd68269b94fa867e0126",
+   "fetched_utc": "2026-11-09T10:59:20Z"
+  },
+  {
+   "file": "sub-26_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-26/func/sub-26_task-asrt_run-1_events.tsv",
+   "bytes": 152544,
+   "sha256": "ce9fd84793f3e9de9d1aaf04910799a5b63da32f14135dde00009db3b1a6957d",
+   "fetched_utc": "2026-11-09T10:59:20Z"
+  },
+  {
+   "file": "sub-26_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-26/func/sub-26_task-asrt_run-2_events.tsv",
+   "bytes": 106845,
+   "sha256": "a4751f715e43f9102075d1b6f3d6e81987007ac117645a90469a1d2b06b89d0a",
+   "fetched_utc": "2026-11-09T10:59:20Z"
+  },
+  {
+   "file": "sub-26_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-26/func/sub-26_task-asrt_run-3_events.tsv",
+   "bytes": 106822,
+   "sha256": "78ab1403a10dd8a5c7b4e1a8e785682337ed1d8966a274127788277d0a523b27",
+   "fetched_utc": "2026-11-09T10:59:20Z"
+  },
+  {
+   "file": "sub-27_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-27/func/sub-27_task-asrt_run-1_events.tsv",
+   "bytes": 150571,
+   "sha256": "e74ac2526a94fdfce2c09a03962fd05029ed3e3601c62bf2fc9222530902de45",
+   "fetched_utc": "2026-11-09T10:59:20Z"
+  },
+  {
+   "file": "sub-27_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-27/func/sub-27_task-asrt_run-2_events.tsv",
+   "bytes": 106864,
+   "sha256": "4ef5994f13ed3939e0f925041a22935c30d6e35193e92c8b6d25b4f9a4803606",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-27_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-27/func/sub-27_task-asrt_run-3_events.tsv",
+   "bytes": 106954,
+   "sha256": "164e080eba0e5d2f92791b816e696422ca58027b9d5895167fad47ca716cffef",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-28_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-28/func/sub-28_task-asrt_run-1_events.tsv",
+   "bytes": 152629,
+   "sha256": "75458a573e67e90aa6243ac157e03119311cb01c6983eb263cfa115143f89577",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-28_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-28/func/sub-28_task-asrt_run-2_events.tsv",
+   "bytes": 106941,
+   "sha256": "4d4df3b58b012222976fda33b63469acb0eaa96fce23e203951379381e8ef90c",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-28_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-28/func/sub-28_task-asrt_run-3_events.tsv",
+   "bytes": 106879,
+   "sha256": "0afef4dab9d44e0dd23e85bcf8d8083cbd9b8e892d835210635ab7f6611fdc1f",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-29_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-29/func/sub-29_task-asrt_run-1_events.tsv",
+   "bytes": 152401,
+   "sha256": "94f910e1851f4e3dbe51aed11f545fc7e0c9e6b4e626aff25dbf1d826fda24e9",
+   "fetched_utc": "2026-11-09T10:59:21Z"
+  },
+  {
+   "file": "sub-29_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-29/func/sub-29_task-asrt_run-2_events.tsv",
+   "bytes": 106812,
+   "sha256": "721fb0b29bfe2ca8e763ea9aee99676f02319a51e0bc15a7406fca04d192ba34",
+   "fetched_utc": "2026-11-09T10:59:22Z"
+  },
+  {
+   "file": "sub-29_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-29/func/sub-29_task-asrt_run-3_events.tsv",
+   "bytes": 106878,
+   "sha256": "0ca931eed5f679415a22d7596daeb1ccef41e56ef42d40177b0391256a57d9d3",
+   "fetched_utc": "2026-11-09T10:59:22Z"
+  },
+  {
+   "file": "sub-30_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-30/func/sub-30_task-asrt_run-1_events.tsv",
+   "bytes": 154809,
+   "sha256": "0719fe9b4d91d433f54e36c572f84a32eaedc3e70ed3c8a0ec86ed892027f71f",
+   "fetched_utc": "2026-11-09T10:59:22Z"
+  },
+  {
+   "file": "sub-30_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-30/func/sub-30_task-asrt_run-2_events.tsv",
+   "bytes": 106768,
+   "sha256": "d7697a3ac58a55ac55f9ecc78217130275107ed21acd6e298f29c9646e10f996",
+   "fetched_utc": "2026-11-09T10:59:22Z"
+  },
+  {
+   "file": "sub-30_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-30/func/sub-30_task-asrt_run-3_events.tsv",
+   "bytes": 106912,
+   "sha256": "a9e064fc81db72d555acd8f83e41fa8fb01a3047f12ec5d298e96a6949387e07",
+   "fetched_utc": "2026-11-09T10:59:22Z"
+  },
+  {
+   "file": "sub-31_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-31/func/sub-31_task-asrt_run-1_events.tsv",
+   "bytes": 152672,
+   "sha256": "5a391a83357eeafa4d7cd8b4f4805b3ba330f25000b49fa8e09f8a979959aa29",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-31_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-31/func/sub-31_task-asrt_run-2_events.tsv",
+   "bytes": 106909,
+   "sha256": "45e35ea941a09e3c3dfa5eb92fe24b62d6788198f8a07112424f44ca2e7ac36b",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-31_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-31/func/sub-31_task-asrt_run-3_events.tsv",
+   "bytes": 106861,
+   "sha256": "2e6b3bf126b765e1f6b1246879034917b19f9cf5b404362ffb27c325a2152939",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-32_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-32/func/sub-32_task-asrt_run-1_events.tsv",
+   "bytes": 152651,
+   "sha256": "78033f38759b0748e133a84dbd0d55d2f88a5c2dc9d70d6ef1753951ebf2c5fd",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-32_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-32/func/sub-32_task-asrt_run-2_events.tsv",
+   "bytes": 106954,
+   "sha256": "cb89595694e1f43c72ddd2a0fa925d3a7d2cf70888945bf80ef70b5e53540dbe",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-32_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-32/func/sub-32_task-asrt_run-3_events.tsv",
+   "bytes": 107024,
+   "sha256": "9ebce02879fada343d02bdadcd2ab4bc8861b22d34825ae3404d938716e5eb13",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-33_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-33/func/sub-33_task-asrt_run-1_events.tsv",
+   "bytes": 152500,
+   "sha256": "f0c176169d2ea76b3e328c2f3497ec1cf1d5a4ea606e65864cac4a7aab5f6cb3",
+   "fetched_utc": "2026-11-09T10:59:23Z"
+  },
+  {
+   "file": "sub-33_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-33/func/sub-33_task-asrt_run-2_events.tsv",
+   "bytes": 106904,
+   "sha256": "eb9ab19c06291afb193a567517fe8ea8b2f1052180c1f0bc521c2e29de8211ad",
+   "fetched_utc": "2026-11-09T10:59:24Z"
+  },
+  {
+   "file": "sub-33_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-33/func/sub-33_task-asrt_run-3_events.tsv",
+   "bytes": 106841,
+   "sha256": "6ec91f97b1c3a3356dc95e5e1bc80eceb1bdce7bb0262d70954c09cba8fd0996",
+   "fetched_utc": "2026-11-09T10:59:24Z"
+  },
+  {
+   "file": "sub-34_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-34/func/sub-34_task-asrt_run-1_events.tsv",
+   "bytes": 152877,
+   "sha256": "feae979d3a288ea7c7a37f34e0d4cdfe5b1fba7191234fc00d3004225e4cd990",
+   "fetched_utc": "2026-11-09T10:59:24Z"
+  },
+  {
+   "file": "sub-34_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-34/func/sub-34_task-asrt_run-2_events.tsv",
+   "bytes": 106795,
+   "sha256": "66fea17b908c98e5c822f578808c47fd2c97fbf234220e5aacb26a4d1f4948f4",
+   "fetched_utc": "2026-11-09T10:59:24Z"
+  },
+  {
+   "file": "sub-34_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-34/func/sub-34_task-asrt_run-3_events.tsv",
+   "bytes": 106828,
+   "sha256": "16d35065a14c4b5d17386f5af0ff26c1187832ea29812bfc15c9ce038903f30c",
+   "fetched_utc": "2026-11-09T10:59:24Z"
+  },
+  {
+   "file": "sub-35_task-asrt_run-1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-35/func/sub-35_task-asrt_run-1_events.tsv",
+   "bytes": 152658,
+   "sha256": "25c6294345761b4827692f4f68e11945ff86b635207ed74ea96a5061a750b286",
+   "fetched_utc": "2026-11-09T10:59:25Z"
+  },
+  {
+   "file": "sub-35_task-asrt_run-2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-35/func/sub-35_task-asrt_run-2_events.tsv",
+   "bytes": 106373,
+   "sha256": "421e28a8af9d0d255f2a41d72f2356cfbf4a210c92e8d1c08f05eee370a7d745",
+   "fetched_utc": "2026-11-09T10:59:25Z"
+  },
+  {
+   "file": "sub-35_task-asrt_run-3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003401/sub-35/func/sub-35_task-asrt_run-3_events.tsv",
+   "bytes": 106567,
+   "sha256": "aa2dec32f5963ebef7745e9a3e90ced44bcfeb4a2bf26824b61a57f27fbe5b85",
+   "fetched_utc": "2026-11-09T10:59:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Park2022_NeuroImage.zip"
+}

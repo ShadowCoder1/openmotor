@@ -1,0 +1,122 @@
+{
+ "id": "Bootsma2021_FrontAgingNeurosci",
+ "module": "summary",
+ "rows": 3210,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 42942,
+ "zip_sha256": "3fe31a1f82b2477eab3e3e492e80f4c71fe82360f3c45fda8d5b7ff09b741c00",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "young participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Participants and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Participants and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young P-LD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young P-MD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young P-HD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older P-LD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older P-MD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older P-HD participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Bootsma et al. 2021, Frontiers in Aging Neuroscience, Table 1 (N per cell)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "3 time points per participant in behaviour",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EEG participants all in behaviour file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "row count",
+   "ok": true,
+   "detail": "3210"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mixed-model F tests were not re-computed; checks use the group sizes."
+ ],
+ "sources": [
+  {
+   "file": "behav.sav",
+   "url": "https://dataverse.nl/api/access/datafile/40196",
+   "bytes": 9748,
+   "sha256": "b65e0b5d6dcccb705fc3a863f5d20f9d8c606e4f8a2b101612cff98e4ffd0bc9",
+   "fetched_utc": "2026-11-09T17:09:01Z"
+  },
+  {
+   "file": "eeg.sav",
+   "url": "https://dataverse.nl/api/access/datafile/40195",
+   "bytes": 30877,
+   "sha256": "9c6be447eb41c8bee5c887cfdd8b89658958c515c6bf59a0f5ce50787c7a9eb6",
+   "fetched_utc": "2026-11-09T17:09:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bootsma2021_FrontAgingNeurosci.zip"
+}

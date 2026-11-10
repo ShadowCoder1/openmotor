@@ -1,0 +1,168 @@
+{
+ "id": "Lantagne2026_JMotBehav",
+ "module": "summary",
+ "rows": 4076,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 45997,
+ "zip_sha256": "f0d9d6c776106d294208a85f59e0400bcc0c7089a091f3d343b1e6b8fa6f91f6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "completely empty lines dropped",
+   "ok": true,
+   "detail": "107 lines, 96 kept"
+  },
+  {
+   "kind": "internal",
+   "what": "one row per participant and session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = non-empty cells",
+   "ok": true,
+   "detail": "4076"
+  },
+  {
+   "kind": "internal",
+   "what": "32 participants kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants analysed",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "concussed participants analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean days post injury at session 1",
+   "computed": 5.857142857142857,
+   "reported": 5.9,
+   "tol": 0.05,
+   "source": "Methods, Participants (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of days post injury at session 1",
+   "computed": 4.129763317061289,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Methods, Participants (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum days post injury at session 1",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Participants (preprint, range 0-17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum days post injury at session 1",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants (preprint, range 0-17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean SCAT symptom count at session 1",
+   "computed": 17.846153846153847,
+   "reported": 17.8,
+   "tol": 0.05,
+   "source": "Results, symptoms (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of SCAT symptom count at session 1",
+   "computed": 4.219916149367462,
+   "reported": 4.2,
+   "tol": 0.05,
+   "source": "Results, symptoms (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean SCAT symptom severity sum at session 1",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0.05,
+   "source": "Results, symptoms (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of SCAT symptom severity sum at session 1",
+   "computed": 26.16295090390226,
+   "reported": 26.2,
+   "tol": 0.05,
+   "source": "Results, symptoms (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example control: SD of target capture time (ms)",
+   "computed": 8.27,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Results, example subject figure (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example control: mean reach error (cm)",
+   "computed": 3.1710000000000003,
+   "reported": 3.2,
+   "tol": 0.05,
+   "source": "Results, example subject figure (preprint)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example control: SD of reach error (cm)",
+   "computed": 1.844,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Results, example subject figure (preprint)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 14 concussed participants split 7 and 7 at the median composite reaction-time score in the deposit, while the preprint describes a split of 9 (tau-) and 5 (tau+) around the cohort mean; the deposit's split is kept as given.",
+  "The preprint's example control subject reports a mean target capture time of 201 ms; the matching deposit row has 201.8 ms (the paper seems to truncate), so that number is not used as a check. The example subject was identified by its other values (SD 8 ms, reach error 3.2 +- 1.8 cm).",
+  "The published article could not be read (publisher page blocked); numbers were checked against the bioRxiv preprint of the same study."
+ ],
+ "sources": [
+  {
+   "file": "SupplementalTable2.csv",
+   "url": "https://ndownloader.figshare.com/files/64213102",
+   "bytes": 44868,
+   "sha256": "25d307d759c72f3b11a8466c9cdd5cc43bcf111eeb078c7605b559fd09112287",
+   "fetched_utc": "2026-11-09T14:35:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lantagne2026_JMotBehav.zip"
+}

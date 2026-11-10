@@ -1,0 +1,239 @@
+{
+ "id": "Zhou2022_JNeurophysiol",
+ "module": "summary",
+ "rows": 2946,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 5707191,
+ "zip_sha256": "d0737c7745cac0caf1d4bea064c9e5c33c9959f8ee7ee943585784ccfc088ae3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "FF: 20 participants in every array",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EVF: 20 participants in every array",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "FF: train point 1 = post_FF_train, train point 11 = late_train, washout point 1 = late_train, washout point 27 = end_Null_washout, reexposure points 1-2 = pre/post FF reexposure, pretrain point 2 = pre_FF_train",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EVF: train point 1 = post_FF_train, train point 11 = late_train, washout point 1 = late_train, washout point 27 = end_Null_washout, reexposure points 1-2 = pre/post FF reexposure, pretrain point 2 = pre_FF_train",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "FF: mean adaptation coefficient, baseline (mean of 8 error-clamp trials)",
+   "computed": 0.0012220584160272945,
+   "reported": 0.0012,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: SEM of that mean",
+   "computed": 0.0052536353291677785,
+   "reported": 0.0053,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: mean adaptation coefficient, pretraining (mean of 2 error-clamp trials)",
+   "computed": -0.01451331104905007,
+   "reported": -0.015,
+   "tol": 0.0005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: SEM of that mean",
+   "computed": 0.006554197931657857,
+   "reported": 0.0066,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: mean adaptation coefficient, early training",
+   "computed": 0.11798346740931014,
+   "reported": 0.12,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: SEM, early training",
+   "computed": 0.019407103204738076,
+   "reported": 0.019,
+   "tol": 0.0015,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: mean adaptation coefficient, mid training",
+   "computed": 0.5081317860463598,
+   "reported": 0.51,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: SEM, mid training",
+   "computed": 0.04134287218179707,
+   "reported": 0.041,
+   "tol": 0.0015,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: mean adaptation coefficient, late training",
+   "computed": 0.6267279666047975,
+   "reported": 0.63,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FF: SEM, late training",
+   "computed": 0.03359501628947525,
+   "reported": 0.033,
+   "tol": 0.0015,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: mean adaptation coefficient, baseline (mean of 8 error-clamp trials)",
+   "computed": 0.005636813923388746,
+   "reported": 0.0056,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: SEM of that mean",
+   "computed": 0.00508559653696812,
+   "reported": 0.0051,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: mean adaptation coefficient, pretraining (mean of 2 error-clamp trials)",
+   "computed": 0.0013286009760641892,
+   "reported": 0.0013,
+   "tol": 0.0005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: SEM of that mean",
+   "computed": 0.0070104863331542306,
+   "reported": 0.007,
+   "tol": 6e-05,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: mean adaptation coefficient, early training",
+   "computed": -0.027059439064566426,
+   "reported": -0.027,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: mean adaptation coefficient, mid training",
+   "computed": 0.6712208360012393,
+   "reported": 0.67,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: SEM, mid training",
+   "computed": 0.14146487000975824,
+   "reported": 0.14,
+   "tol": 0.0015,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EVF: mean adaptation coefficient, late training",
+   "computed": 0.8599461792666236,
+   "reported": 0.86,
+   "tol": 0.005,
+   "source": "Results, 'Motor Learning: Force-Field Perturbations versus Explicit Visual Feedback'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants (20 per group, 40 in all)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Experimental Paradigm",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 participants per group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every value finite, adaptation coefficients within (-5, 5)",
+   "ok": true,
+   "detail": "range -0.34 to 4.67"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper gives the EVF early-training SE as 0.093 and the late-training SE as 0.077; from the deposit they are 0.0093 (the paper's value is probably a typing slip) and 0.083 (17 of 20 participants have a late value), so only the means were checked for those."
+ ],
+ "sources": [
+  {
+   "file": "Savings_Control_Group.mat",
+   "url": "https://ndownloader.figshare.com/files/31614638",
+   "bytes": 2740371,
+   "sha256": "7be99bb180e675e93db8c0f3accacabb36d82baa1b6786cb6ec512639fd00012",
+   "fetched_utc": "2026-11-09T07:35:32Z"
+  },
+  {
+   "file": "Savings_Explicit_Group.mat",
+   "url": "https://ndownloader.figshare.com/files/31614641",
+   "bytes": 6030886,
+   "sha256": "d5d148f3f9bc18058c914f48feceaa7212fc55d8c724553cf29bbf45549203f3",
+   "fetched_utc": "2026-11-09T07:35:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhou2022_JNeurophysiol.zip"
+}

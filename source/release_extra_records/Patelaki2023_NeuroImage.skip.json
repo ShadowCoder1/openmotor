@@ -1,0 +1,7 @@
+{
+ "id": "Patelaki2023_NeuroImage",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Dryad download needs a token (401) with no Zenodo copy found, and the deposit is 226 GB (EEG plus motion capture, 5-11 GB per participant zip).",
+ "sources": []
+}

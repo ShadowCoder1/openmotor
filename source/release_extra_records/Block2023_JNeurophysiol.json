@@ -1,0 +1,118 @@
+{
+ "id": "Block2023_JNeurophysiol",
+ "module": "summary",
+ "rows": 3936,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 64668,
+ "zip_sha256": "527ea099f7bd44e8173fdd98731d1afe6170c9e99c5e0d2b0f4797c6fa4f0be9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in the Mismatch group",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 16)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Veridical group",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 16)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proprioceptive recalibration, Mismatch group mean (mm)",
+   "computed": 17.36837547324056,
+   "reported": 17.4,
+   "tol": 0.05,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "proprioceptive recalibration, Mismatch group SE (mm)",
+   "computed": 3.9996613983281617,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visual recalibration, Mismatch group mean (mm)",
+   "computed": 38.06407337770571,
+   "reported": 38.1,
+   "tol": 0.05,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visual recalibration, Mismatch group SE (mm)",
+   "computed": 6.140457299900897,
+   "reported": 6.1,
+   "tol": 0.05,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pre-calibration reach distance, Mismatch vs Veridical t(30)",
+   "computed": 0.2586313593806171,
+   "reported": 0.26,
+   "tol": 0.005,
+   "source": "Results, Reaching (t30 = 0.26)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "change in undershoot vs proprioceptive recalibration, paired t(15)",
+   "computed": 0.45975333497754683,
+   "reported": 0.46,
+   "tol": 0.005,
+   "source": "Results, Reaching (t15 = 0.46)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = values carried over",
+   "ok": true,
+   "detail": "3936"
+  },
+  {
+   "kind": "internal",
+   "what": "20 pre and 20 post reaches per person",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Age and sex are not in the deposit (paper: Mismatch 19.9 +/- 1.2 yr, 4 men; Veridical 20.5 +/- 1.8 yr, 6 men, of 16 each).",
+  "The paper's t(15) = -4.32 for change in undershoot vs total recalibration gives -4.33 from the file (computed as in the authors' script); not used as a check.",
+  "The deposit's 'perception' matrix and VR columns 3 and 4 are not documented and were left out."
+ ],
+ "sources": [
+  {
+   "file": "RPg_structure.mat",
+   "url": "https://osf.io/download/td526/",
+   "bytes": 35073,
+   "sha256": "3f3596b81359ade66f1ed6cb32a8ed2df704a260641ac4890d0e17ea009c5b42",
+   "fetched_utc": "2026-11-09T15:08:58Z"
+  },
+  {
+   "file": "RPg_final.m",
+   "url": "https://osf.io/download/32pdt/",
+   "bytes": 7534,
+   "sha256": "21605d9350db1b1c337475f58600b3fee81417ce7366f4f212d9a24519815871",
+   "fetched_utc": "2026-11-09T15:09:02Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Block2023_JNeurophysiol.zip"
+}

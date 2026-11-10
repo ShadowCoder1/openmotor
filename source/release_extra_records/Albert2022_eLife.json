@@ -1,0 +1,188 @@
+{
+ "id": "Albert2022_eLife",
+ "module": "reach90",
+ "rows": 32436,
+ "subjects": 193,
+ "persons": 193,
+ "zip_bytes": 456095,
+ "zip_sha256": "85a02c12193c6796f29104513b9b7a2122f05e1525f5189a838aef91c12c715a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 3 limit-PT matrix in figure8-supplement1 equals the one in figure3 (same participants)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_trials abrupt: participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 1, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_trials stepwise: participants",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 1, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2_epochs no_PT_limit: participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 2, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2_epochs limit_PT: participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 2, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_epochs no_PT_limit: participants",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Results, Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_epochs limit_PT: participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Results, Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_epochs decay_only: participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Figure 8 supplement 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4_epochs all: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 4, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp5_epochs gap_5min: participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 5, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp5_epochs gap_24h: participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods (Experiment 5, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per participant (4 learning periods of 66 trials)",
+   "computed": 264.0,
+   "reported": 264.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: epochs per participant (10 + 60 + 70 + 60)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 5: 5 min group has 9 and 24 h group 11 participants (total)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "eLife 11:e65361, Materials and methods, Experiment 5",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle finite and within +-90 degrees on every filled row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant column of the used matrices is kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 2 and 3 group sizes and the Experiment 4 and 5 counts agree with the Methods; the per-epoch values were not compared with the paper's reported means because the paper reports them only in figures."
+ ],
+ "sources": [
+  {
+   "file": "figure1.zip",
+   "url": "https://files.osf.io/v1/resources/mzs6a/providers/osfstorage/6213337248328a027c44f27b",
+   "bytes": 813096,
+   "sha256": "3f3f1b05be7fe68c68f984c1c38c0214e561692a9156abdba87b56ba77e1f578",
+   "fetched_utc": "2026-11-10T06:26:33Z"
+  },
+  {
+   "file": "figure3.zip",
+   "url": "https://files.osf.io/v1/resources/mzs6a/providers/osfstorage/621333c15e7bc204ebb8a7b9",
+   "bytes": 81267,
+   "sha256": "6e3369f8cb3ecb432b2ab73d4207838e616c3faa7b8e85012aebf7a5bab1394b",
+   "fetched_utc": "2026-11-10T06:26:38Z"
+  },
+  {
+   "file": "figure8.zip",
+   "url": "https://files.osf.io/v1/resources/mzs6a/providers/osfstorage/6213342c48328a028c44e51d",
+   "bytes": 449273,
+   "sha256": "e5642915443d116112513601881629c63913913662f802ea3af87c3b8dcfda93",
+   "fetched_utc": "2026-11-10T06:26:50Z"
+  },
+  {
+   "file": "figure8-supplement1.zip",
+   "url": "https://files.osf.io/v1/resources/mzs6a/providers/osfstorage/62133431d9b6cf049bb917e3",
+   "bytes": 35148,
+   "sha256": "51d9a7693e3a2b39ccbb9dcb2f86defd449cda01d3aa4cb8f3152097090d12e1",
+   "fetched_utc": "2026-11-10T06:26:56Z"
+  },
+  {
+   "file": "figure9.zip",
+   "url": "https://files.osf.io/v1/resources/mzs6a/providers/osfstorage/62133438d9b6cf0497b918fc",
+   "bytes": 42566,
+   "sha256": "964bf56bd7845be09d46abf3d00d6ae8c0a943ee23635f596123f14245fa6fd4",
+   "fetched_utc": "2026-11-10T06:27:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Albert2022_eLife.zip"
+}

@@ -1,0 +1,88 @@
+{
+ "id": "Reimann2018_FrontPhysiol",
+ "module": "balance_perturbation",
+ "rows": 4445,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 205604,
+ "zip_sha256": "20c5e4272f33e08bb83cbeddde70e7856927bc49a6509920f5bd2a18368c6bb7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (20 healthy young adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "steps, toward condition",
+   "computed": 2223.0,
+   "reported": 2225.0,
+   "tol": 4,
+   "source": "Results, Table 3 (N = 2,225)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "steps, away condition",
+   "computed": 2222.0,
+   "reported": 2224.0,
+   "tol": 4,
+   "source": "Results, Table 3 (N = 2,224)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "foot placement change, toward (mm)",
+   "computed": 4.382376627080522,
+   "reported": 4.3,
+   "tol": 0.6,
+   "source": "Results / Table 3 (4.3 mm; the paper reports mixed-model estimates, here raw means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "foot placement change, away (mm)",
+   "computed": 3.8723253969396945,
+   "reported": 4.0,
+   "tol": 0.6,
+   "source": "Results / Table 3 (4.0 mm; mixed-model estimate vs raw mean)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in the response columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trigger foot equals stance foot in every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "direction labels split the rows near evenly",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The table holds 4,445 first-step rows (2,223 toward, 2,222 away); the paper's Table 3 states N = 2,225 and 2,224 for the same step, 4 rows more. The paper's 4.3 and 4.0 mm are mixed-model estimates; the raw means here are within 0.5 mm. The 'group' column of the deposit says 'to be determined' for every row and is not used."
+ ],
+ "sources": [
+  {
+   "file": "VisionData.zip",
+   "url": "https://zenodo.org/records/4986147/files/VisionData.zip?download=1",
+   "bytes": 453454949,
+   "sha256": "55c2391d8af652c3397d833f7b3467f4f3a84ee07b7519508b0c01c41b97c6ed",
+   "fetched_utc": "2026-11-09T02:19:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Reimann2018_FrontPhysiol.zip"
+}

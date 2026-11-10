@@ -1,0 +1,91 @@
+{
+ "id": "Hahn2022_eLife",
+ "module": "summary",
+ "rows": 1125,
+ "subjects": 84,
+ "persons": 84,
+ "zip_bytes": 12681,
+ "zip_sha256": "ead98ac805df0ca2c684ea9ab6f0c6f550b8aeb7f84e3d73f4f01549d817a836",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "block matrices have 9 (adolescent) or 15 (adult) blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "adolescents",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results, first paragraph (n = 28)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Results, first paragraph (n = 41)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adolescent sleep-first",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Materials and methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adolescent wake-first",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Materials and methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adult sleep-first",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Materials and methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adult wake-first",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Materials and methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper text gives no performance means (only regression statistics), so published checks are the sample sizes. The meaning of 'pre' and 'post' is the authors' variable naming; the deposit readme does not define them further."
+ ],
+ "sources": [
+  {
+   "file": "hahn.zip",
+   "url": "https://zenodo.org/api/records/6115961/files/Slow_oscillation-spindle_coupling_strength_predicts_real-life_gross-motor_learning_in_adolescents_and_adults.zip/content",
+   "bytes": 2169704,
+   "sha256": "4431e1a6a66c0fcd65b33909cc19ccda8c77e703ccf1d671ea04d0c596261c7d",
+   "fetched_utc": "2026-11-09T16:54:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hahn2022_eLife.zip"
+}

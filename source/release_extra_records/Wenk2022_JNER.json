@@ -1,0 +1,182 @@
+{
+ "id": "Wenk2022_JNER",
+ "module": "reach_quality_3d",
+ "rows": 6605,
+ "subjects": 25,
+ "persons": 25,
+ "zip_bytes": 422487,
+ "zip_sha256": "0c000c0a4b677c3c554a123ac0b6b22efc690c4707835e80ba14c2f337f2a840",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "ARVR2D_elderlies_DataCatchBased.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1: rows grouped by participant, display blocks in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ARVR2D_patients_DataCatchBased.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2: rows grouped by participant, display blocks in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reaching movements in Experiment 1",
+   "computed": 5886.0,
+   "reported": 5886.0,
+   "tol": 0,
+   "source": "Methods, Statistical analyses (5886 reaching movements)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reaches without movement onset (speed never reached 0.2 m/s)",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Methods, Statistical analyses (280 did not reach the minimum velocity threshold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fruits per display, Experiment 1 (participant 3, complete)",
+   "computed": 102.0,
+   "reported": 102.0,
+   "tol": 0,
+   "source": "Methods, Reaching and cognitive tasks (102 fruits)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fruits per display, Experiment 2 (participant 1)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (48 fruits per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: every complete display condition has blocks of [6, 12, 12, 12, 18, 18, 18, 6] fruits",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Reaching and cognitive tasks / Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2: every complete display condition has blocks of [6, 6, 6, 12, 12, 6] fruits",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Reaching and cognitive tasks / Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants excluded by the authors that are female (deposit's incomplete conditions: numbers 1, 2, 11)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Statistical analyses (three excluded: two females, one male)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the three authors-excluded participants are exactly those missing part of a display condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 719 of 720 reaches shared (one reach missing in the AR condition of participant 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "onset missing only where the threshold was not reached (Exp 1: 280, Exp 2: 144)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "peak velocity time normalized = peak velocity time / ideal distance",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept: 5886 + 719",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subjects: 20 + 5",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports the table ages of the 20 older adults as 74.22 +/- 8.11 years; the ages printed in its Table 1 give 73.75 +/- 8.12, and the patients' Table 2 ages give 49.8 +/- 13.9 against 49.88 +/- 12.55 printed in the text, so these were not used as checks.",
+  "The paper says 5886 reaching movements were performed by 17 participants; the deposit's 5886 rows come from all 20 participants (17 with complete data). The 280 reaches without a movement onset also count all 20 (250 in the 17).",
+  "The paper's counts of extreme outliers removed per metric (for example 140 for normalized duration) were not reproduced with a Q1 - 3 IQR / Q3 + 3 IQR rule per participant or per participant and display, so no outlier flag is given."
+ ],
+ "sources": [
+  {
+   "file": "ARVR2D_elderlies_DataCatchBased.csv",
+   "url": "https://zenodo.org/api/records/6631771/files/ARVR2D_elderlies_DataCatchBased.csv/content",
+   "bytes": 1209491,
+   "sha256": "e91f756da5904f79eae2f3a6fe3669b190c42f36b02573841fa2b0f005bb94d9",
+   "fetched_utc": "2026-11-09T10:18:13Z"
+  },
+  {
+   "file": "ARVR2D_patients_DataCatchBased.csv",
+   "url": "https://zenodo.org/api/records/6631771/files/ARVR2D_patients_DataCatchBased.csv/content",
+   "bytes": 146262,
+   "sha256": "e06e47269c11914f111d07c7aa18c6dba73503fced29b31daec6ab1c732fe6ad",
+   "fetched_utc": "2026-11-09T10:18:21Z"
+  },
+  {
+   "file": "DataFrameDescription.rtf",
+   "url": "https://zenodo.org/api/records/6631771/files/DataFrameDescription.rtf/content",
+   "bytes": 125011,
+   "sha256": "a0582b3e75c280022bfdf3ea5da07c7ca792b4531b7999b2300361a21061a5e3",
+   "fetched_utc": "2026-11-09T10:18:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_JNER.zip"
+}

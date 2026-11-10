@@ -1,0 +1,312 @@
+{
+ "id": "Ogawa2023_SciRep",
+ "module": "timeseries",
+ "rows": 32,
+ "subjects": 32,
+ "persons": 16,
+ "zip_bytes": 356510613,
+ "zip_sha256": "0281869002b7a860aebc35d73c830f2e8c43c30f9d0cb5e497e7306a506cd228",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participant",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (each participant did two of four experiments)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participant",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiments 1 and 3",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participant",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiments 2 and 4",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participant",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per experiment (min)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participant",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "sampling interval is 1 ms in every file (paper: 1 kHz)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each recording is at least as long as the protocol (about 20 min)",
+   "ok": true,
+   "detail": "min 1314 s"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has two recordings",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports statistics of stride-wise peak braking and propulsive forces, which need stride detection from the vertical force; those numbers were not recomputed, so the checks are counts of participants and recordings."
+ ],
+ "sources": [
+  {
+   "file": "README.docx",
+   "url": "https://zenodo.org/api/records/6612540/files/README.docx/content",
+   "bytes": 13071,
+   "sha256": "a605743da3279e59434a012256d94d2030a2e7bcfafcfc5e2c6a14e1d3f2d843",
+   "fetched_utc": "2026-11-09T21:37:39Z"
+  },
+  {
+   "file": "1_subj1.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj1.txt/content",
+   "bytes": 63255946,
+   "sha256": "a7d26145bfe2e106f5d1ee5ae88b8484a3af2f603571d5382532190a12dec1ac",
+   "fetched_utc": "2026-11-09T21:39:29Z"
+  },
+  {
+   "file": "1_subj2.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj2.txt/content",
+   "bytes": 63030627,
+   "sha256": "c7c5fcf60cef0c0b7e393ffa411ce687745c4f0cfb5c352bba8631203e93f7df",
+   "fetched_utc": "2026-11-09T21:44:29Z"
+  },
+  {
+   "file": "1_subj3.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj3.txt/content",
+   "bytes": 63518600,
+   "sha256": "7e6bcb7a66e39dfcb777a8f5452695c38d3f27a6aa1c2795628131e0a9e13f75",
+   "fetched_utc": "2026-11-09T21:45:51Z"
+  },
+  {
+   "file": "1_subj4.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj4.txt/content",
+   "bytes": 62233683,
+   "sha256": "222bacdfc27afa910cb511cfbdcc80e8b04b4df8e20b261da54e610e63119a92",
+   "fetched_utc": "2026-11-09T21:46:30Z"
+  },
+  {
+   "file": "1_subj6.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj6.txt/content",
+   "bytes": 62867180,
+   "sha256": "37ff717fb1c413bbd2e3ad54428a2ca08e6178877a6fa78bebb7e530632f25af",
+   "fetched_utc": "2026-11-09T21:47:49Z"
+  },
+  {
+   "file": "1_subj7.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj7.txt/content",
+   "bytes": 62788341,
+   "sha256": "e9a8f8c1df0f7584791216bc03bb6d005daeeefff13d98b3528c22ef41ef803a",
+   "fetched_utc": "2026-11-09T21:49:13Z"
+  },
+  {
+   "file": "1_subj8.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj8.txt/content",
+   "bytes": 62196798,
+   "sha256": "1e141896f27fe8e13d71b7fa3d0309dcca9bff8258d85c86f0be3660fc3e75cd",
+   "fetched_utc": "2026-11-09T21:50:20Z"
+  },
+  {
+   "file": "2_subj9.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj9.txt/content",
+   "bytes": 62237308,
+   "sha256": "91477ed9fc99f46ac428229e22887793da14de3bb0a58e9d7e11021198d346a3",
+   "fetched_utc": "2026-11-09T21:50:45Z"
+  },
+  {
+   "file": "2_subj10.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj10.txt/content",
+   "bytes": 62434211,
+   "sha256": "86f7c8a165954198bd1965035d9a20bbac417959748f7903f5b10eb215665cf2",
+   "fetched_utc": "2026-11-09T21:51:16Z"
+  },
+  {
+   "file": "2_subj11.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj11.txt/content",
+   "bytes": 62593371,
+   "sha256": "dcab04148e1620a5104363ec54a70d28406f760119fe347a781a8553b0f2349e",
+   "fetched_utc": "2026-11-09T21:52:52Z"
+  },
+  {
+   "file": "1_subj5.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/1_subj5.txt/content",
+   "bytes": 62202794,
+   "sha256": "fa1dddf2478b6439a3bc48ea8564cf358588f6134bed7d36c1edceef16924d3b",
+   "fetched_utc": "2026-11-09T21:53:03Z"
+  },
+  {
+   "file": "2_subj12.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj12.txt/content",
+   "bytes": 63486535,
+   "sha256": "449542a1765aad65aefc25c1c0c2b4233cea270ea038afd5c28a67773fa8d9f3",
+   "fetched_utc": "2026-11-09T21:54:06Z"
+  },
+  {
+   "file": "2_subj13.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj13.txt/content",
+   "bytes": 62801383,
+   "sha256": "9dc1ed4e47d2b60f0e04fe71042f8a4170b155ecb433f31a5db49788e3ecad32",
+   "fetched_utc": "2026-11-09T21:55:06Z"
+  },
+  {
+   "file": "2_subj14.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj14.txt/content",
+   "bytes": 63124219,
+   "sha256": "d51ddf5244f56d46c4347dafb211d202ea59b50a94b67bb373d1fc58396f9551",
+   "fetched_utc": "2026-11-09T21:55:34Z"
+  },
+  {
+   "file": "2_subj15.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj15.txt/content",
+   "bytes": 63371367,
+   "sha256": "0dc066f57705e77d6bd513027c301d8dfe5341851425018939ab16cbcd868ad8",
+   "fetched_utc": "2026-11-09T22:16:37Z"
+  },
+  {
+   "file": "2_subj16.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/2_subj16.txt/content",
+   "bytes": 62387477,
+   "sha256": "63625fd23b2c637b6a0859f1199da789d1fb9600f0683f3109a403dcef5a470e",
+   "fetched_utc": "2026-11-09T22:17:34Z"
+  },
+  {
+   "file": "3_subj1.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj1.txt/content",
+   "bytes": 63223731,
+   "sha256": "32dcdb5ed58aee8eb0d563b6128a38343e0025aabc1e6c70185eb47d47273970",
+   "fetched_utc": "2026-11-09T22:18:20Z"
+  },
+  {
+   "file": "3_subj2.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj2.txt/content",
+   "bytes": 62228793,
+   "sha256": "5e12c83d71ca3f5bc1e776f45c469a4cb674b398fb7e2f0f543fabc92cbb9f43",
+   "fetched_utc": "2026-11-09T22:18:59Z"
+  },
+  {
+   "file": "3_subj3.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj3.txt/content",
+   "bytes": 61790718,
+   "sha256": "e638ca840bd8e30e85ebee55caff62c01cb888848bf6704b9b884c8aceb33356",
+   "fetched_utc": "2026-11-09T22:19:46Z"
+  },
+  {
+   "file": "3_subj4.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj4.txt/content",
+   "bytes": 61785270,
+   "sha256": "353a5a39c076ad76fd085adb2ce0acd28c121422526f0b400ef11c7b5e975822",
+   "fetched_utc": "2026-11-09T22:20:09Z"
+  },
+  {
+   "file": "3_subj5.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj5.txt/content",
+   "bytes": 61937050,
+   "sha256": "1a07048bda3167be7a7d6fae7548254b8b528eea0e6bcf4f423b8841c537fb54",
+   "fetched_utc": "2026-11-09T22:21:17Z"
+  },
+  {
+   "file": "3_subj6.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj6.txt/content",
+   "bytes": 62315028,
+   "sha256": "693e03157f2a3351706cde538563a33a270bffd709ee16da7a8ec7f3241c01b4",
+   "fetched_utc": "2026-11-09T22:22:51Z"
+  },
+  {
+   "file": "3_subj7.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj7.txt/content",
+   "bytes": 61750768,
+   "sha256": "9fe73f5dec33a01fe4cf13ed4b9006ca56e1a30becd176aedf9d4de0d5e48f20",
+   "fetched_utc": "2026-11-09T22:24:12Z"
+  },
+  {
+   "file": "3_subj8.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/3_subj8.txt/content",
+   "bytes": 61636403,
+   "sha256": "e688278a93fe42c4ac658962e9ae6807e4c7c092b89bae51702989fe6718c642",
+   "fetched_utc": "2026-11-09T22:24:28Z"
+  },
+  {
+   "file": "4_subj9.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj9.txt/content",
+   "bytes": 62857113,
+   "sha256": "f3cf237997bdd09ead44e31874ac01de86b2c025ab95be89b9151ad65c54b883",
+   "fetched_utc": "2026-11-09T22:24:37Z"
+  },
+  {
+   "file": "4_subj10.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj10.txt/content",
+   "bytes": 62217165,
+   "sha256": "03c8267ec1b63fbdcd23bf6b4443c57bd2fcb13593fc8c823d63a260bcaecaa9",
+   "fetched_utc": "2026-11-09T22:24:50Z"
+  },
+  {
+   "file": "4_subj11.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj11.txt/content",
+   "bytes": 62237283,
+   "sha256": "6e1075b7889f9409a299937efe17e6a9755e97414fb4d838b7100a6da9fb2c44",
+   "fetched_utc": "2026-11-09T22:25:53Z"
+  },
+  {
+   "file": "4_subj12.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj12.txt/content",
+   "bytes": 62500582,
+   "sha256": "56d42adee861232e464b21cdc8ca3a7f23ac4e3b6df4a1147c2aea07749906a9",
+   "fetched_utc": "2026-11-09T22:27:01Z"
+  },
+  {
+   "file": "4_subj13.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj13.txt/content",
+   "bytes": 62165794,
+   "sha256": "86c8b7ee90d70583a8e4f163323dc3f3822c26dd9eb294aa2887cdf976169a4d",
+   "fetched_utc": "2026-11-09T22:37:50Z"
+  },
+  {
+   "file": "4_subj14.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj14.txt/content",
+   "bytes": 62308812,
+   "sha256": "c10de6df0a52d28a4badf3c3d4519aed0096c3dd1f0c5d8a53e7911697dba9a5",
+   "fetched_utc": "2026-11-09T22:39:23Z"
+  },
+  {
+   "file": "4_subj15.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj15.txt/content",
+   "bytes": 62693984,
+   "sha256": "5ad80e1c678cab5a9bc493c44772cb19807ea351dae55bf2ce5159f23543893a",
+   "fetched_utc": "2026-11-09T22:39:49Z"
+  },
+  {
+   "file": "4_subj16.txt",
+   "url": "https://zenodo.org/api/records/6612540/files/4_subj16.txt/content",
+   "bytes": 61722574,
+   "sha256": "fd3b2eb0fabe80f42049bbcf25d6011ad65d8823876c4d3311a407ce1b2a6de3",
+   "fetched_utc": "2026-11-09T22:40:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ogawa2023_SciRep.zip"
+}

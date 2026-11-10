@@ -1,0 +1,157 @@
+{
+ "id": "Nagamine2023_ICPhS",
+ "module": "tongue_ultrasound",
+ "rows": 273,
+ "subjects": 29,
+ "persons": 29,
+ "zip_bytes": 236736,
+ "zip_sha256": "efa5a6fe9c608764ae13e1bfb2daa28eef5c11837d88ebf700a71573ce0313f6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "33 empty lines (no speaker, word or coordinates) are left out; 3003 lines = 273 tokens x 11 time points",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each token is one contiguous block of 11 lines",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "273 tokens; 271 not excluded; excluded flags are 2 tokens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "analysis table ICPhS_df_xy_pca.csv equals the non-excluded lines (2981 lines, same values)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "L1 Japanese speakers",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Nagamine 2023, Abstract and 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "L1 North American English speakers",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Nagamine 2023, Abstract and 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens for analysis",
+   "computed": 271.0,
+   "reported": 271.0,
+   "tol": 0,
+   "source": "Nagamine 2023, 2.3 Data collection (271 tokens)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "time points per token",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Nagamine 2023, 2.4 Data analysis (11 equidistant time points)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "variance explained by PC1 (%), PCA of the 22 coordinates of the converted rows",
+   "computed": 58.032301163950905,
+   "reported": 58.03,
+   "tol": 0.01,
+   "source": "Nagamine 2023, 3.1 (PC1: 58.03%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "variance explained by PC2 (%)",
+   "computed": 22.653004186839585,
+   "reported": 22.65,
+   "tol": 0.01,
+   "source": "Nagamine 2023, 3.1 (PC2: 22.65%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "variance explained by PC3 (%)",
+   "computed": 7.657176729774322,
+   "reported": 7.65,
+   "tol": 0.02,
+   "source": "Nagamine 2023, 3.1 (PC3: 7.65%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "variance explained by PC1-3 (%)",
+   "computed": 88.3424820805648,
+   "reported": 88.33,
+   "tol": 0.02,
+   "source": "Nagamine 2023, 3.1 (88.33%)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Participant counts, 271 tokens and the PCA shares (PC1 58.03 %, PC2 22.65 %, PC3 7.66 % here against 7.65 %) are reproduced by a PCA (centred, covariance matrix) of the 22 raw coordinates of the 271 tokens, as in the authors' script; the paper's text says the data were z-scored per speaker first, which gives different shares, so the script (no z-scoring) matches the paper.",
+  "The deposit has no licence on the OSF node; the paper itself is open access (CC BY 4.0, UCL Discovery)."
+ ],
+ "sources": [
+  {
+   "file": "ICPhS_df.csv",
+   "url": "https://osf.io/download/q5je2/",
+   "bytes": 662516,
+   "sha256": "0221515c60d792a0f23f64d21c4d77181e1cfe28eb2b42d496900a271b63b303",
+   "fetched_utc": "2026-11-08T22:56:48Z"
+  },
+  {
+   "file": "ICPhS_df_xy_pca.csv",
+   "url": "https://osf.io/download/47sa2/",
+   "bytes": 737554,
+   "sha256": "24a952231d55a0f8370110a3e59289897b8db90152f4f83cf333dd7194aae8c7",
+   "fetched_utc": "2026-11-08T22:56:50Z"
+  },
+  {
+   "file": "ICPhS_df_long_data_viz.csv",
+   "url": "https://osf.io/download/z826j/",
+   "bytes": 3976682,
+   "sha256": "e82a0dbbbeea6603a8af47433df45231bde4b5408b0549f8ca2779e5c9a6ef64",
+   "fetched_utc": "2026-11-08T22:56:53Z"
+  },
+  {
+   "file": "ICPhS_supplement.Rmd",
+   "url": "https://osf.io/download/qg7au/",
+   "bytes": 19218,
+   "sha256": "fd8c151934184878edaaa17caede81a5c68487ab0159feffdf42e6ae99582568",
+   "fetched_utc": "2026-11-08T22:56:57Z"
+  },
+  {
+   "file": "Japanese_spline.txt",
+   "url": "https://osf.io/download/64cb9ce92fe496279f61b340/",
+   "bytes": 381708,
+   "sha256": "e3590bf8da9a5b6add1a928cb11b9b6c44acfaa15f8b0d922dba3e8ca3ccaafb",
+   "fetched_utc": "2026-11-08T22:56:59Z"
+  },
+  {
+   "file": "spline_4ps8zx.txt",
+   "url": "https://osf.io/download/64cb9cdcc7ab292408d4e38e/",
+   "bytes": 26020,
+   "sha256": "a36a481a5180d24fe4f367adc4f859f48f2fecf286fdf40994d794434d86fab2",
+   "fetched_utc": "2026-11-08T22:57:02Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nagamine2023_ICPhS.zip"
+}

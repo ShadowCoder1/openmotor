@@ -1,0 +1,317 @@
+{
+ "id": "AlFawakhiri2024_JExpPsycholGen",
+ "module": "reach90",
+ "rows": 45486,
+ "subjects": 104,
+ "persons": 104,
+ "zip_bytes": 1526805,
+ "zip_sha256": "df79614b177b98dc7fe4afdf9f7cd3b41733656b6d5979ef091fc2999ea17ca4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every experiment has the number of participants of the deposit",
+   "ok": true,
+   "detail": "{'Exp2_online_cursor': 27, 'Exp3_online_endpoint': 27, 'Exp4b_online_endpoint_clamp': 30, 'Exp1_lab_cursor': 10, 'Exp4a_lab_endpoint_clamp': 10}"
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_lab_cursor: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2_online_cursor: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_online_endpoint: participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4a_lab_endpoint_clamp: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4b_online_endpoint_clamp: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows per participant: online 336 / 432 / 432; lab 480 and 699 (including instruction rows)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within (-180, 180]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_online_endpoint: overall success rate in the adaptation trials",
+   "computed": 0.414021164021164,
+   "reported": 0.414,
+   "tol": 0.0005,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 3, Results, Success rate",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_lab_cursor: overall success rate in the adaptation trials",
+   "computed": 0.9104166666666667,
+   "reported": 0.91,
+   "tol": 0.0005,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 1, Results, Success rate",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_lab_cursor: success rate on unmanipulated trials",
+   "computed": 93.68055555555556,
+   "reported": 93.7,
+   "tol": 0.05,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 1, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_lab_cursor: success rate on manipulated trials",
+   "computed": 88.40277777777777,
+   "reported": 88.4,
+   "tol": 0.05,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 1, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_online_endpoint: success rate lower on long visual distance trials by (points)",
+   "computed": 32.6278659611993,
+   "reported": 32.6,
+   "tol": 0.05,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 3, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3_online_endpoint: success rate lower on manipulated trials by (points)",
+   "computed": 7.716049382716051,
+   "reported": 7.7,
+   "tol": 0.05,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 3, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4a_lab_endpoint_clamp: success rate lower with the longer movement by (points)",
+   "computed": 27.1031746031746,
+   "reported": 27.0,
+   "tol": 0.5,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 4a, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4b_online_endpoint_clamp: success rate lower with the longer movement by (points)",
+   "computed": 29.940476190476197,
+   "reported": 30.0,
+   "tol": 0.5,
+   "source": "bioRxiv 2023.09.20.558709 (preprint of this paper), Results, Experiment 4b, Results",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Two preprint numbers for the online Experiment 2 did not reproduce and are not used as checks: the overall success rate in the adaptation trials (96.8% printed; 96.88% from the rows) and the drop in success on manipulated trials (2.1 points printed; 1.73 from the rows). The deposit has 15 adaptation trials per block where the preprint and the authors' script describe 12, so the paper probably analysed a subset the deposit does not identify.",
+  "The deposit's online Experiment 2 file has 15 adaptation and 6 test trials per mini-block (16 blocks, 336 trials); the preprint and the authors' script describe 12 adaptation trials per block. The rows are kept as shared.",
+  "The 3 tutorial trials of the online Experiments 3 and 4b are not in the files (trial_orig starts at 3).",
+  "The participant counts and success rates were checked against the preprint (the published JEP:General text was not reachable); the paper's other statistics (mixed models, BIC) were not recomputed because they depend on the authors' trial exclusions, which the deposit does not list. Participant ages and sexes are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "gain-online_e1.json",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/gain-online_e1.json",
+   "bytes": 93207124,
+   "sha256": "d5428ed37424e3f1d43e017ffd2d0dcf1aff2892a9545084ed1ef5ec73c27590",
+   "fetched_utc": "2026-11-10T01:43:26Z"
+  },
+  {
+   "file": "gain-online_e2.json",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/gain-online_e2.json",
+   "bytes": 101289843,
+   "sha256": "9dddf0fadbaa358cad91dfce696111b06f04e7f89339fde6e6b9bf02e24025c4",
+   "fetched_utc": "2026-11-10T01:43:34Z"
+  },
+  {
+   "file": "gain-online_e3.json",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/gain-online_e3.json",
+   "bytes": 102451520,
+   "sha256": "edffb92329784545879c2db113ee0705ca3074b4f0f28afd1ccbb49d247fce09",
+   "fetched_utc": "2026-11-10T01:43:49Z"
+  },
+  {
+   "file": "GainAdaptSub001.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub001.json.gz",
+   "bytes": 9563455,
+   "sha256": "2df2068623233e34fe39a8726f09ee002cb49a4d7357574e5344ec51d7f551f4",
+   "fetched_utc": "2026-11-10T01:43:55Z"
+  },
+  {
+   "file": "GainAdaptSub002.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub002.json.gz",
+   "bytes": 11102105,
+   "sha256": "f56225413898d18d54ec3574b128a3fe75fa1fad6c6ded4910ed373ba95f3519",
+   "fetched_utc": "2026-11-10T01:43:58Z"
+  },
+  {
+   "file": "GainAdaptSub003.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub003.json.gz",
+   "bytes": 8909634,
+   "sha256": "c63880190fb5fe87aa5319ca97c992109fec2e9e8beb8bb4df718f4696e1bdcb",
+   "fetched_utc": "2026-11-10T01:44:02Z"
+  },
+  {
+   "file": "GainAdaptSub004.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub004.json.gz",
+   "bytes": 10604000,
+   "sha256": "8a41c1318fa49205f115d5d184c112db2c59b08b0f71a545c98699d2777969fc",
+   "fetched_utc": "2026-11-10T01:44:06Z"
+  },
+  {
+   "file": "GainAdaptSub005.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub005.json.gz",
+   "bytes": 7790230,
+   "sha256": "29e2f75866ee4cdf10c330bda97877e7b933001ff5eff94c7b7c10d44339a6da",
+   "fetched_utc": "2026-11-10T01:44:10Z"
+  },
+  {
+   "file": "GainAdaptSub006.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub006.json.gz",
+   "bytes": 9551855,
+   "sha256": "5fca83679c3194491d9e116187202506990e83f1fa05b77f63de88be2bc1fed1",
+   "fetched_utc": "2026-11-10T01:44:15Z"
+  },
+  {
+   "file": "GainAdaptSub007.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub007.json.gz",
+   "bytes": 8281504,
+   "sha256": "ba3920c78096a703d1b1f9d36b0904fbaa5f405a8c3ac6abc303046451f2daf0",
+   "fetched_utc": "2026-11-10T01:44:19Z"
+  },
+  {
+   "file": "GainAdaptSub008.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub008.json.gz",
+   "bytes": 9012990,
+   "sha256": "8321e8b12689fd770d23d5a82732ee0772eecf0cbf0404342609c21510876907",
+   "fetched_utc": "2026-11-10T01:44:22Z"
+  },
+  {
+   "file": "GainAdaptSub009.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub009.json.gz",
+   "bytes": 9937465,
+   "sha256": "d3eb2b088e57d2c75250fcd4c180ffa1d7f1ceb27e5ea5c8586cb2225219ecd9",
+   "fetched_utc": "2026-11-10T01:44:26Z"
+  },
+  {
+   "file": "GainAdaptSub010.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub010.json.gz",
+   "bytes": 7968952,
+   "sha256": "a3ce76b6afdab23d9b2af81c882441f85ff5a27f585e4905e7921baf7d9b4841",
+   "fetched_utc": "2026-11-10T01:44:30Z"
+  },
+  {
+   "file": "GainAdaptSub101.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub101.json.gz",
+   "bytes": 12548242,
+   "sha256": "c724ea7f66b000a64532732f3f5c761880320e93eb6fb1613bb741e87a8a7b2d",
+   "fetched_utc": "2026-11-10T01:44:33Z"
+  },
+  {
+   "file": "GainAdaptSub102.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub102.json.gz",
+   "bytes": 12406827,
+   "sha256": "ee20c6de5b711fbe332b624958baa3e753328fbaf8124ff52c81039d3ea3d3f7",
+   "fetched_utc": "2026-11-10T01:44:37Z"
+  },
+  {
+   "file": "GainAdaptSub103.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub103.json.gz",
+   "bytes": 11512128,
+   "sha256": "f8abf4168440f946057ded5eef817ad80ba7f673e1809baa56c8e1a2a642df8d",
+   "fetched_utc": "2026-11-10T01:44:42Z"
+  },
+  {
+   "file": "GainAdaptSub104.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub104.json.gz",
+   "bytes": 12027910,
+   "sha256": "ea4b3789c10e5286120e784efd452d2bde071df1473bf7d2672cef89d6ba0704",
+   "fetched_utc": "2026-11-10T01:44:52Z"
+  },
+  {
+   "file": "GainAdaptSub105.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub105.json.gz",
+   "bytes": 13286039,
+   "sha256": "aa4f14a8a98f260c3f37b6c6befc12a93953e429df8401c9866a6cdd470977e9",
+   "fetched_utc": "2026-11-10T01:44:57Z"
+  },
+  {
+   "file": "GainAdaptSub106.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub106.json.gz",
+   "bytes": 11192611,
+   "sha256": "fb70701571207055f34004798f86bcb78b36b8865991a36e98ee742a094d873c",
+   "fetched_utc": "2026-11-10T01:45:01Z"
+  },
+  {
+   "file": "GainAdaptSub107.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub107.json.gz",
+   "bytes": 10772202,
+   "sha256": "5116e8f3e864868eb465dbb0acc10ec910db6ecc704b39e3c99bc10f5664fa9b",
+   "fetched_utc": "2026-11-10T01:45:05Z"
+  },
+  {
+   "file": "GainAdaptSub108.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub108.json.gz",
+   "bytes": 13235917,
+   "sha256": "b162f0b023b5b0b721558942c62d7a948b3d004eab9722afd81dac0da6f2fcf3",
+   "fetched_utc": "2026-11-10T01:45:09Z"
+  },
+  {
+   "file": "GainAdaptSub109.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub109.json.gz",
+   "bytes": 12144331,
+   "sha256": "1c4591e12ccfc8afb982d3dfe7fbc209ac18af7bd46c01c636e3102b4d4db95a",
+   "fetched_utc": "2026-11-10T01:45:13Z"
+  },
+  {
+   "file": "GainAdaptSub110.json.gz",
+   "url": "https://raw.githubusercontent.com/ilestz/FittsLaw_MSI/main/inlab/GainAdaptSub110.json.gz",
+   "bytes": 13038723,
+   "sha256": "159a792d8534c9ab034388792c5ad7707b3d5735204360a58fff6ee32c391ab9",
+   "fetched_utc": "2026-11-10T01:45:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/AlFawakhiri2024_JExpPsycholGen.zip"
+}

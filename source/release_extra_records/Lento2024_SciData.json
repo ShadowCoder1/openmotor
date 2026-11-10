@@ -1,0 +1,102 @@
+{
+ "id": "Lento2024_SciData",
+ "module": "timeseries",
+ "rows": 18048,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 691930691,
+ "zip_sha256": "97c69c65e90373de5131065026c9a2517e5cdeb42af08051fb23af7b71387eed",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "20 participants, 3 phases each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every reach has at least 1 sample",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample files all present",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median success rate, initial acquisition (%)",
+   "computed": 96.31983114783546,
+   "reported": 96.3,
+   "tol": 0.05,
+   "source": "Technical Validation (Fig. 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median success rate, RNP after pauses (%)",
+   "computed": 98.25,
+   "reported": 98.2,
+   "tol": 0.05,
+   "source": "Technical Validation (Fig. 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median movement time, initial acquisition (s)",
+   "computed": 1.611106824999966,
+   "reported": 1.61,
+   "tol": 0.005,
+   "source": "Technical Validation (Fig. 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median movement time, RNP after pauses (s)",
+   "computed": 1.303818087695312,
+   "reported": 1.3,
+   "tol": 0.005,
+   "source": "Technical Validation (Fig. 5)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "For the 'RNP after target pairs' phase the paper's median success rate (99.4 %) and median movement time (1.22 s) come out as 99.50 % and 1.229 s with the authors' own selection and metric code re-implemented; the other two phases reproduce, so those two numbers are not used as checks. 53 reaches have a single sample (the authors' validation rule needs two; they count as not validated). The paper's statement of 700 movements per participant (14,000 in all) is for the planned design; the rows here are counted after the authors' sample selection (see how), so the number of rows is not 14,000."
+ ],
+ "sources": [
+  {
+   "file": "DBAS22_DocOnline.zip",
+   "url": "https://zenodo.org/api/records/11202159/files/DBAS22_DocOnline.zip/content",
+   "bytes": 801437,
+   "sha256": "fdb34d3bc208af24365608d2dca06bd7cf9250eb09e628ea90b9841988ce45c0",
+   "fetched_utc": "2026-11-09T15:14:46Z"
+  },
+  {
+   "file": "DBAS22_DataOnline.zip",
+   "url": "https://zenodo.org/api/records/11202159/files/DBAS22_DataOnline.zip/content",
+   "bytes": 4733950731,
+   "sha256": "c8c061a12fef73a5dcb58d158664c2b6ab2415160210bcd518ce64a8e9f17e94",
+   "fetched_utc": "2026-11-10T01:19:33Z"
+  },
+  {
+   "file": "DBAS22_CodeOnline.zip",
+   "url": "https://zenodo.org/api/records/11202159/files/DBAS22_CodeOnline.zip/content",
+   "bytes": 33387258,
+   "sha256": "6c850bad65ea2a5ed26ad266833d119612787db4af6b58ed80b996599038c0e3",
+   "fetched_utc": "2026-11-10T01:21:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lento2024_SciData.zip"
+}

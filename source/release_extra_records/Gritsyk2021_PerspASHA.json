@@ -1,0 +1,181 @@
+{
+ "id": "Gritsyk2021_PerspASHA",
+ "module": "summary",
+ "rows": 745,
+ "subjects": 66,
+ "persons": 66,
+ "zip_bytes": 13671,
+ "zip_sha256": "0c0caf01816ed65b85cc7202593e8995a63647deb79635729ea16d16e44444b7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants of the original study who are in the data",
+   "computed": 65.0,
+   "reported": 65.0,
+   "tol": 0,
+   "source": "Gritsyk et al. 2021, Methods, Participants: 'all 65 participants who completed the original study'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with bite block data (completed the follow-up)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Gritsyk et al. 2021, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "follow-up participants in the visual-acoustic condition",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Gritsyk et al. 2021, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "follow-up participants in the ultrasound condition",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Gritsyk et al. 2021, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stereognosis model: stereognosis coefficient",
+   "computed": -0.16684508016363075,
+   "reported": -0.167,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stereognosis model: its SE",
+   "computed": 0.14186417260644366,
+   "reported": 0.142,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stereognosis model: p",
+   "computed": 0.2557663362521266,
+   "reported": 0.256,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stereognosis model: auditory coefficient",
+   "computed": 0.016155378823709286,
+   "reported": 0.016,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "phonetic awareness model: coefficient",
+   "computed": 0.010985284520537883,
+   "reported": 0.011,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "phonetic awareness model: SE",
+   "computed": 0.012587753235073898,
+   "reported": 0.013,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bite block model: coefficient",
+   "computed": -1.5818627814516326,
+   "reported": -1.582,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bite block model: SE",
+   "computed": 0.6050355122117139,
+   "reported": 0.605,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bite block model: p",
+   "computed": 0.018127943574595944,
+   "reported": 0.018,
+   "tol": 0.0005,
+   "source": "Gritsyk et al. 2021, Results, Inferential Statistics",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "change in ED equals post minus pre median ED",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "bite block ED_diff equals Bite_Block minus Baseline",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PAT in 33 participants, 5 parts each",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 of the paper (means and SDs) was not available as text; the regression coefficients, standard errors and p values of the three models were reproduced instead."
+ ],
+ "sources": [
+  {
+   "file": "YUS_full_results_with_outliers.csv",
+   "url": "https://osf.io/download/z59bv/",
+   "bytes": 20805,
+   "sha256": "8a532c85541076b7f49c26ec4bffbead6d876d25814a7dd82356e7c87a744ed2",
+   "fetched_utc": "2026-11-09T12:08:43Z"
+  },
+  {
+   "file": "YUS_bite_block_means.csv",
+   "url": "https://osf.io/download/yzbv2/",
+   "bytes": 1342,
+   "sha256": "2f6668f4f85d55916220e0e50f603250fd2ae6ee5ddc8fbd40ebf524923e6b70",
+   "fetched_utc": "2026-11-09T12:08:48Z"
+  },
+  {
+   "file": "YUS_PAT_output.csv",
+   "url": "https://osf.io/download/p2vqm/",
+   "bytes": 6102,
+   "sha256": "1e068f480cec8a22ea270174c6deaeda56b102238eaf94c8708c09b366c639f0",
+   "fetched_utc": "2026-11-09T12:08:54Z"
+  },
+  {
+   "file": "analysis.Rmd",
+   "url": "https://osf.io/download/7vd4a/",
+   "bytes": 16832,
+   "sha256": "9c9904957598a23fecdad87fbbb8b05e0f27d5cc6fbaebe104e53ddf35246425",
+   "fetched_utc": "2026-11-09T12:08:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gritsyk2021_PerspASHA.zip"
+}

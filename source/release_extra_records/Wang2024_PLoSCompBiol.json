@@ -1,0 +1,109 @@
+{
+ "id": "Wang2024_PLoSCompBiol",
+ "module": "reach90",
+ "rows": 45760,
+ "subjects": 143,
+ "persons": 143,
+ "zip_bytes": 660610,
+ "zip_sha256": "3c11c1afaeafec37f5d60477b7d629970d4450b0d587982566f456b406392bcd",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "low12: rows",
+   "ok": true,
+   "detail": "37 people raw, 37 kept"
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 zero-variance group, people",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Methods, Participants (final N, Experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "high12: rows",
+   "ok": true,
+   "detail": "39 people raw, 39 kept"
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 high-variance group, people",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Methods, Participants (final N, Experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "low30: rows",
+   "ok": true,
+   "detail": "30 people raw, 29 kept"
+  },
+  {
+   "kind": "internal",
+   "what": "high30: rows",
+   "ok": true,
+   "detail": "37 people raw, 34 kept"
+  },
+  {
+   "kind": "published",
+   "what": "trials per person (40 no-feedback + 40 veridical + 240 clamp)",
+   "computed": 320.0,
+   "reported": 320.0,
+   "tol": 0,
+   "source": "Methods, trial structure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 analysed people from the t-test degrees of freedom (t(61) -> 63 people)",
+   "computed": 61.0,
+   "reported": 61.0,
+   "tol": 0,
+   "source": "Results, Experiment 2, averaged hand angle",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 averaged hand angle, High minus Zero variance (t)",
+   "computed": 3.3634267436918015,
+   "reported": 3.4,
+   "tol": 0.5,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 averaged hand angle, High minus Zero variance (t)",
+   "computed": 0.23747841743501294,
+   "reported": 0.24,
+   "tol": 0.3,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation is negative in the file frame (late clamp mean below -10 deg)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports final N of 38 (zero) and 40 (high) for Experiment 2; the deposit holds 30 and 37 people (29 and 34 analysed, which agrees with the reported t(61)). Experiment 1 agrees (37 and 39 analysed). The paper's text also gives t(71) for Experiment 1 where 37 + 39 people give 74 df."
+ ],
+ "sources": [
+  {
+   "file": "ErrVar_share.zip",
+   "url": "https://osf.io/download/26dkp",
+   "bytes": 9148175,
+   "sha256": "72fd71f90c44b574786ebf6c0385b41758c662b3c9a7c62873b824a88d71016a",
+   "fetched_utc": "2026-11-09T09:55:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2024_PLoSCompBiol.zip"
+}

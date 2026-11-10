@@ -1,0 +1,56 @@
+{
+ "id": "Hosseini-Yazdi2025_JEB",
+ "module": "summary",
+ "rows": 7925,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 91187,
+ "zip_sha256": "0cd8e0080b5ca776003e92b8e25f62b1d0342cf3497dab8608fbcf850ff81056",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "210 rows, 10 subjects x 21 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract / Methods (N=10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking speeds (m/s) 0.8, 1.0, 1.2, 1.4",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty measure cell kept",
+   "ok": true,
+   "detail": "7925"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean leg length and mass in the deposit's subject table (about 0.92 m, 82 kg) differ from the paper's 0.926 +/- 0.033 m and 71.00 +/- 6.16 kg, so those were not used as checks.",
+  "Net metabolic rate at 1.2 m/s converted to W/kg with the deposit's leg lengths gives 2.701, 3.002 and 3.112 W/kg at amplitudes 0.019, 0.032 and 0.045 m, against 2.700, 3.006 and 3.115 in Table 3 of the paper (within 0.5%, but not within printed rounding), probably because of the mass and leg length differences; they are not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "repo.zip",
+   "url": "https://zenodo.org/api/records/14977254/files/kuo-lab/uneven-terrain-amplitude-v1.0.zip/content",
+   "bytes": 102885,
+   "sha256": "bff0212832fa7a8644d24b0351496feafb308962559343e2a62756409ce66dc2",
+   "fetched_utc": "2026-11-09T15:35:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hosseini-Yazdi2025_JEB.zip"
+}

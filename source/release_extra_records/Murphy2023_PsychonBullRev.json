@@ -1,0 +1,184 @@
+{
+ "id": "Murphy2023_PsychonBullRev",
+ "module": "speech",
+ "rows": 19801,
+ "subjects": 87,
+ "persons": 87,
+ "zip_bytes": 456814,
+ "zip_sha256": "0baaf5ab28fbb922f1b6c2861e2dca3015d3aa45fea15248eed36625594db304",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed (90 recruited, 3 removed for poor audio)",
+   "computed": 87.0,
+   "reported": 87.0,
+   "tol": 0,
+   "source": "Method, Participants (ninety recruited; three removed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants (45 recruited, 2 removed)",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Method, Participants (45 females; two female participants removed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants (45 recruited, 1 removed)",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Method, Participants (three removed, two of them female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (the paper's value is for the 90 recruited)",
+   "computed": 28.528735632183906,
+   "reported": 28.6,
+   "tol": 0.1,
+   "source": "Method, Participants (Mage = 28.6, SD = 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 5.9958107089203505,
+   "reported": 6.0,
+   "tol": 0.1,
+   "source": "Method, Participants (Mage = 28.6, SD = 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant (most)",
+   "computed": 248.0,
+   "reported": 248.0,
+   "tol": 0,
+   "source": "Method, Procedure (248 test trials in six blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Method, Procedure (six blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "canonical test trials (blocks of 42, 41 and 41)",
+   "computed": 124.0,
+   "reported": 124.0,
+   "tol": 0,
+   "source": "Method, Procedure (124 canonical test trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "canonical blocks with 41 trials",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Method, Procedure (two of the three canonical blocks had 41 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ambiguous test trials per participant (most)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "Method, Procedure (200 ambiguous test trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unambiguous test trials per participant (most)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Method, Procedure (48 unambiguous test trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = rows of the shared sheet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "type equals the sign of vot_dur",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "VOT z-scores have mean 0 and SD 1 within each participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "only 3 repeated (participant, trial) pairs",
+   "ok": true,
+   "detail": "3 rows repeat a trial number and a file name (kept)"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mean age (28.6, SD 6) describes the 90 recruited participants; the 87 analysed participants give 28.53 (SD 6.00).",
+  "Three pairs of rows share a participant, trial number and file name but have different F0 values; both rows of each pair are kept as shared. The paper's mixed-model results were not refitted."
+ ],
+ "sources": [
+  {
+   "file": "Repetition_Production_F0s_VOTs.xlsx",
+   "url": "https://osf.io/download/7nra4/",
+   "bytes": 2024431,
+   "sha256": "af8797ae5154110d91cb0e30caade896a32a4d198cf57c643a53f01502f1c40b",
+   "fetched_utc": "2026-11-08T21:31:54Z"
+  },
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/edmkq/",
+   "bytes": 3398,
+   "sha256": "d435e66d2d4298d2be59326c4ff2c74082eeff4dafd852900cc23e0fd05bbea4",
+   "fetched_utc": "2026-11-08T21:31:57Z"
+  },
+  {
+   "file": "Statistical_Analyses_Production_VOT_Analyses.Rmd",
+   "url": "https://osf.io/download/n67qb/",
+   "bytes": 4653,
+   "sha256": "1112d1b07d958cd438f94a9e281f2b90185fbcd453fba22183e62363b3cf5f1c",
+   "fetched_utc": "2026-11-08T21:31:59Z"
+  },
+  {
+   "file": "Statistical_Analyses_Production_by_Perceptual_Response.Rmd",
+   "url": "https://osf.io/download/h3mbz/",
+   "bytes": 4689,
+   "sha256": "e4df42a4742f52fd605c117fc100815ad95b25832fcdf0f4f614750686619364",
+   "fetched_utc": "2026-11-08T21:32:01Z"
+  },
+  {
+   "file": "Statistical_Analyses_Production_by_Test_Cue_F0.Rmd",
+   "url": "https://osf.io/download/62ruf/",
+   "bytes": 4192,
+   "sha256": "f385fb39b045eec48f5f902d60cf30062a589d1e3d24619e83e4f087a4d69d40",
+   "fetched_utc": "2026-11-08T21:32:04Z"
+  },
+  {
+   "file": "Statistical_Analyses_Perceptual_Categorization.Rmd",
+   "url": "https://osf.io/download/6pgje/",
+   "bytes": 4198,
+   "sha256": "5130cf855051b0e6c0beb43fd78bd0e3fc182f1129d6bc597984a7ccb073f3dc",
+   "fetched_utc": "2026-11-08T21:32:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Murphy2023_PsychonBullRev.zip"
+}

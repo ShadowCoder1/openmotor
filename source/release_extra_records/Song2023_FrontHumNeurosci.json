@@ -1,0 +1,259 @@
+{
+ "id": "Song2023_FrontHumNeurosci",
+ "module": "summary",
+ "rows": 5865,
+ "subjects": 23,
+ "persons": 23,
+ "zip_bytes": 89860,
+ "zip_sha256": "7a3b75e122d04a88002f42fc43cf0ba8c569a2a347897da8da1b97d03b7a5d18",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Subjects and ethics statement",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Subjects and ethics statement",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 22.869565217391305,
+   "reported": 22.9,
+   "tol": 0.05,
+   "source": "Methods, Subjects and ethics statement",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 1.7915038838941724,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Methods, Subjects and ethics statement",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "erasing trials per block",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Task description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per context repeated 5 times",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Task description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per session",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Task description",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "23 participants x 255 erasing trials",
+   "ok": true,
+   "detail": "5865"
+  },
+  {
+   "kind": "internal",
+   "what": "dots erased between 0 and 7",
+   "ok": true,
+   "detail": "(np.int64(0), np.int64(7))"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "ev_01.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-01/ses-01pre/beh/sub-01_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16774,
+   "sha256": "af67a2d26d5b3ab1e22ee14257170130c192e1772ab5f189d6b7725f9b08d8c4",
+   "fetched_utc": "2026-11-09T14:22:10Z"
+  },
+  {
+   "file": "ev_02.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-02/ses-01pre/beh/sub-02_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16777,
+   "sha256": "942cf0eeea57a9f64ab07b2bf530488691feffdee1c3a7d1e0e340ea7c55c6e7",
+   "fetched_utc": "2026-11-09T14:22:14Z"
+  },
+  {
+   "file": "ev_03.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-03/ses-01pre/beh/sub-03_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16802,
+   "sha256": "6596604bf0b99f8f24abababb9aa5abfcf3f919e62ba604d0d8f1ea07a3fde57",
+   "fetched_utc": "2026-11-09T14:22:17Z"
+  },
+  {
+   "file": "ev_04.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-04/ses-01pre/beh/sub-04_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16794,
+   "sha256": "bf65d5de065200690376c74eb695ba124ef61aecd0ee0b37645f6b0d89f9df4e",
+   "fetched_utc": "2026-11-09T14:22:21Z"
+  },
+  {
+   "file": "ev_05.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-05/ses-01pre/beh/sub-05_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16796,
+   "sha256": "63debbe4f9a00a299a99855d16ecb97594560bd81169c7de02a106289573ba9c",
+   "fetched_utc": "2026-11-09T14:22:24Z"
+  },
+  {
+   "file": "ev_06.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-06/ses-01pre/beh/sub-06_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16777,
+   "sha256": "5acc258e53641240cdbc4f1440d30c09714c016a7ae6ffa3eb4e7b8ffdb4ca03",
+   "fetched_utc": "2026-11-09T14:22:28Z"
+  },
+  {
+   "file": "ev_07.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-07/ses-01pre/beh/sub-07_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16801,
+   "sha256": "cc350d5e16c1d728f3486806e574ae8de72884d43804419b51b919730dfd30c5",
+   "fetched_utc": "2026-11-09T14:22:31Z"
+  },
+  {
+   "file": "ev_08.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-08/ses-01pre/beh/sub-08_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16789,
+   "sha256": "dcc1ad43f8c8326eaf5ec42faa5702ecbfacf7b79fee4d4e26d768b5c07054ca",
+   "fetched_utc": "2026-11-09T14:22:35Z"
+  },
+  {
+   "file": "ev_09.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-09/ses-01pre/beh/sub-09_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16786,
+   "sha256": "c30235ae74e0732ca547d0fdf2c3b507666eafb719ecf1ca132dd9c7c09eb4a1",
+   "fetched_utc": "2026-11-09T14:22:51Z"
+  },
+  {
+   "file": "ev_10.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-10/ses-01pre/beh/sub-10_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16820,
+   "sha256": "60d82ae79894b29054d61155224b393d81f2d176035befc3c40f7b0ca64b6c18",
+   "fetched_utc": "2026-11-09T14:22:54Z"
+  },
+  {
+   "file": "ev_11.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-11/ses-01pre/beh/sub-11_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16792,
+   "sha256": "a9d546dc1e6cc3836d89f9900e4ad15c47e4aca26515ef122e3780b259d58129",
+   "fetched_utc": "2026-11-09T14:22:58Z"
+  },
+  {
+   "file": "ev_12.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-12/ses-01pre/beh/sub-12_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16798,
+   "sha256": "48db620d5e23ff2ce551b7616b7702572829ec04071173ddb16908efaead51e1",
+   "fetched_utc": "2026-11-09T14:23:01Z"
+  },
+  {
+   "file": "ev_13.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-13/ses-01pre/beh/sub-13_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16789,
+   "sha256": "f7ede42535e2ae681bc03801d25db0745d603b1e913063a11ba54f46a84a7661",
+   "fetched_utc": "2026-11-09T14:23:04Z"
+  },
+  {
+   "file": "ev_14.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-14/ses-01pre/beh/sub-14_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16787,
+   "sha256": "035f6fc6dad0dee535b9dec374abc30e378ef6167b73f4b102e3b1e20a443beb",
+   "fetched_utc": "2026-11-09T14:23:08Z"
+  },
+  {
+   "file": "ev_15.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-15/ses-01pre/beh/sub-15_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16798,
+   "sha256": "9ad0ea270d47567cd233ff6cc38fe2b4bd67f9107cb1a732513a67f380132e96",
+   "fetched_utc": "2026-11-09T14:23:17Z"
+  },
+  {
+   "file": "ev_16.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-16/ses-01pre/beh/sub-16_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16787,
+   "sha256": "e18cbe04219aad6d0cedf09d7c3c066a2b2f8ee140de2d944792158adc1ca224",
+   "fetched_utc": "2026-11-09T14:23:21Z"
+  },
+  {
+   "file": "ev_17.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-17/ses-01pre/beh/sub-17_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16790,
+   "sha256": "68c8872406a4c0b2541c63a54cedaaaab648838be61aea449dbe5099095d4946",
+   "fetched_utc": "2026-11-09T14:23:26Z"
+  },
+  {
+   "file": "ev_18.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-18/ses-01pre/beh/sub-18_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16803,
+   "sha256": "4802a2e2157b999039cbabe9e4b631463e798e38b93890fcda6032d2370d7592",
+   "fetched_utc": "2026-11-09T14:23:31Z"
+  },
+  {
+   "file": "ev_19.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-19/ses-01pre/beh/sub-19_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16786,
+   "sha256": "30efa447f3fa1da522c9cda06e4a275ffaf411fa06a0196d90667c391a70eb97",
+   "fetched_utc": "2026-11-09T14:23:35Z"
+  },
+  {
+   "file": "ev_20.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-20/ses-01pre/beh/sub-20_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16775,
+   "sha256": "5b8875668c1ba36176663c9c1e8ca29b5d83b70c7d9cb0844ddb5152e0be9957",
+   "fetched_utc": "2026-11-09T14:23:39Z"
+  },
+  {
+   "file": "ev_21.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-21/ses-01pre/beh/sub-21_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16790,
+   "sha256": "b8b301d558003aa0ccb66c70e63638589ddf59e58e6d45b90effa8c17f2dd7a5",
+   "fetched_utc": "2026-11-09T14:23:42Z"
+  },
+  {
+   "file": "ev_22.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-22/ses-01pre/beh/sub-22_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16798,
+   "sha256": "2000f99d4b8eaa49e82b85a100ff0a2d23355af705a5eaf6c07cac886144a097",
+   "fetched_utc": "2026-11-09T14:23:59Z"
+  },
+  {
+   "file": "ev_23.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/sub-23/ses-01pre/beh/sub-23_ses-01pre_task-adaptation_events.tsv",
+   "bytes": 16807,
+   "sha256": "950229be5e3ee4e9b7c1862abba0f39fe68aed1ef011be9e4f2d3d25e0fc136a",
+   "fetched_utc": "2026-11-09T14:24:03Z"
+  },
+  {
+   "file": "participants.tsv",
+   "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004562/main/participants.tsv",
+   "bytes": 323,
+   "sha256": "88a96aac3265946a9eb1625900f21f8d9b24c037bbceed7620593201998f662a",
+   "fetched_utc": "2026-11-09T14:24:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Song2023_FrontHumNeurosci.zip"
+}

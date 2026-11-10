@@ -1,0 +1,132 @@
+{
+ "id": "Salomon2024_NatCommun",
+ "module": "timeseries",
+ "rows": 924,
+ "subjects": 100,
+ "persons": 100,
+ "zip_bytes": 322017273,
+ "zip_sha256": "7d785fcc48098b63cf50f12f629e41480e80f2025218514f2ba20693495da257",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "tDCS-FOG training series",
+   "computed": 833.0,
+   "reported": 833.0,
+   "tol": 0,
+   "source": "Methods, Datasets (tDCS FOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tDCS-FOG training patients",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Methods, Datasets (tDCS FOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DeFOG training series with three class labels",
+   "computed": 91.0,
+   "reported": 91.0,
+   "tol": 0,
+   "source": "Methods, Datasets (DeFOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DeFOG training patients",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Methods, Datasets (DeFOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tDCS-FOG sampling rate (Hz)",
+   "computed": 128.0,
+   "reported": 128.0,
+   "tol": 0,
+   "source": "Methods, Datasets (tDCS FOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DeFOG sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Datasets (DeFOG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training Start Hesitation events",
+   "computed": 107.0,
+   "reported": 107.0,
+   "tol": 0,
+   "source": "Table 6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training Start Hesitation time (min)",
+   "computed": 39.84546549999998,
+   "reported": 39.8,
+   "tol": 0.05,
+   "source": "Table 6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training Walking time (min)",
+   "computed": 43.49026633333327,
+   "reported": 43.5,
+   "tol": 0.05,
+   "source": "Table 6",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no person in both studies",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all samples kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every person has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "labels are 0/1 in the shared series",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 6 gives 1948 Turn and 395 Walking events in training; events.csv gives 2147 Turn and 415 Walking events for the same series (overlapping events are listed separately in the file), so those counts were not used as checks. Training Turn time is 315.8 min here and 316.4 min in the paper.",
+  "The 46 'notype' training series (Table 6: 1032 events of unspecified type, 83.2 min) are not included: their Event column has only under one minute of positive time in the shared files.",
+  "Table 4B demographics cover all 128 people including test-set participants and cannot be checked on the training rows alone."
+ ],
+ "sources": [
+  {
+   "file": "Competition Dataset.zip",
+   "url": "https://zenodo.org/api/records/12565292/files/Competition%20Dataset.zip/content",
+   "bytes": 1087656136,
+   "sha256": "e1c272b933770296f05a3a2f8fc1aaeb7dea177fcb6555afb20f9cc79ec4b161",
+   "fetched_utc": "2026-11-10T00:11:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Salomon2024_NatCommun.zip"
+}

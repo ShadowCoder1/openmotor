@@ -1,0 +1,144 @@
+{
+ "id": "Klein2020_PLoSComputBiol",
+ "module": "grasp_contacts",
+ "rows": 2754,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 99556,
+ "zip_sha256": "765f2d9fff76e0e52e5ac8981a166055539aa792a5b284dafbcd6081f112bfef",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 12 participants with 80 main and 6 practice grasps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 14 participants with 84 main and 6 practice grasps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: ShuffledTrials is a permutation of 1..28 and Conds group 7 repetitions per object",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants (12)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants (14)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants (14)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3, Participants; Stats_Results.txt",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 main grasps per participant (80)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (16 conditions x 5 repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 main grasps per participant (84)",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (36 conditions x 7 repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 main grasps per participant (28)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (4 objects x 7 repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 practice grasps per participant (5)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 males (5)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 participants (Stats_Results.txt)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 females (9)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 participants (Stats_Results.txt)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 mean age (25.1)",
+   "computed": 25.142857142857142,
+   "reported": 25.1,
+   "tol": 0.05,
+   "source": "Stats_Results.txt, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 youngest and oldest ages (19, 58)",
+   "computed": 5819.0,
+   "reported": 5819.0,
+   "tol": 0,
+   "source": "Stats_Results.txt, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 percentage error trials (6.9)",
+   "computed": 6.888361045130641,
+   "reported": 6.9,
+   "tol": 0.05,
+   "source": "Stats_Results.txt, Experiment 3 (error trials / all trials)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Participant IDs of the three experiments are coded separately (E1_, E2_, E3_ prefixes); the deposit does not say whether anyone took part in more than one experiment (the paper calls all participants naive).",
+  "In Experiments 1 and 2 the CSV has exactly the designed 80/84 test grasps plus 6 practice grasps per participant, although the paper reports 13.8% and 13.9% error trials: error trials were repeated and are not in the CSV. In Experiment 3 the error trials were repeated too; their hand-recorded locations (Error struct) are not converted."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Klein2020_PLoSComputBiol.zip"
+}

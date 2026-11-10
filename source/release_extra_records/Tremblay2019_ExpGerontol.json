@@ -1,0 +1,738 @@
+{
+ "id": "Tremblay2019_ExpGerontol",
+ "module": "summary",
+ "rows": 5865,
+ "subjects": 85,
+ "persons": 85,
+ "zip_bytes": 1016190,
+ "zip_sha256": "a311cd1503fd7cae04819b6014bc0dcfea9bf67deaeb1b5ef3c00aba2790b8e5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 85.0,
+   "reported": 85.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest participant (years)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract (20-93 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest participant (years)",
+   "computed": 93.0,
+   "reported": 93.0,
+   "tol": 0,
+   "source": "Abstract (20-93 years)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row per participant, condition and measure for every filled cell of the workbook",
+   "ok": true,
+   "detail": "5865 rows from 5865 cells"
+  },
+  {
+   "kind": "internal",
+   "what": "85 participants, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sex is coded 0 or 1 and age is a whole number of years",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C1: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C2: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C3: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C4: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C5: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "C6: sequence accuracy plus sequence errors = 1 and syllable accuracy plus syllable errors = 1 (within 0.002)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all proportions lie between 0 and 1; rates are positive; nPVI is between 0 and 100",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hearing thresholds (PTA) are all negative and fall with age as the deposit's sign convention implies (r about -0.7)",
+   "ok": true,
+   "detail": "r with age -0.73 (right), -0.77 (left)"
+  },
+  {
+   "kind": "internal",
+   "what": "abstract: rate stability declines with age, so the instability index nPVI correlates positively with age in at least 5 of the 6 conditions (raw correlations; the paper controls for cognition, hearing and depression)",
+   "ok": true,
+   "detail": "nPVI r = [-0.01, 0.21, 0.12, 0.19, 0.24, 0.49]"
+  },
+  {
+   "kind": "internal",
+   "what": "85 TextGrids read, each with a trial tier and a syllable tier",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "most TextGrids hold 72 labelled trials (24 stimuli x 3)",
+   "ok": true,
+   "detail": "75 of 85 have 72; others: [69, 71, 71, 71, 71, 71, 71, 71, 71, 71]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Most TextGrids hold the 72 labelled trials of the design (24 stimuli x 3 trials); 10 hold fewer (69, 71, 71, 71, 71, 71, 71, 71, 71, 71) and a few trial labels have typing slips (kept as they are)."
+ ],
+ "sources": [
+  {
+   "file": "Data.xlsx",
+   "url": "https://borealisdata.ca/api/access/datafile/79475",
+   "bytes": 84146,
+   "sha256": "b62733d5ebcf87c32ac43893939cc8ad620db808f7c7b2b5a5dd98a42be76b53",
+   "fetched_utc": "2026-11-08T22:12:50Z"
+  },
+  {
+   "file": "README.docx",
+   "url": "https://borealisdata.ca/api/access/datafile/79411",
+   "bytes": 16514,
+   "sha256": "e6d6a8a1213e723da5513bb0fdcacf03c1a5a4e69aa0fd1bc982c44c62de0ace",
+   "fetched_utc": "2026-11-08T22:12:52Z"
+  },
+  {
+   "file": "S07-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79412",
+   "bytes": 171391,
+   "sha256": "c9aaf8840ca2326a9513fa29328fa08e5f18d7a8a974005cf646dc3b83557af8",
+   "fetched_utc": "2026-11-08T22:14:34Z"
+  },
+  {
+   "file": "S10-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79424",
+   "bytes": 194540,
+   "sha256": "71e6b43fd8c649c818229810ae92894dfdc1e4fc50946bbea37c3c5acf85c457",
+   "fetched_utc": "2026-11-08T22:14:36Z"
+  },
+  {
+   "file": "S100-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79397",
+   "bytes": 100210,
+   "sha256": "bc222f466463cdc000bbab808f29da159e2a073b8fd93232cd0017f1a20e3fbd",
+   "fetched_utc": "2026-11-08T22:15:54Z"
+  },
+  {
+   "file": "S101-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79451",
+   "bytes": 127843,
+   "sha256": "b1382b847c7d2441c3da9cbb87f96349bf906ff51e788cb5b267dbf6dd4eb852",
+   "fetched_utc": "2026-11-08T22:15:55Z"
+  },
+  {
+   "file": "S102-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79489",
+   "bytes": 165719,
+   "sha256": "6cd863327acb5f5d229e9e1aefd3addf4733b1ea9208c8d444f23e2341ff4fe3",
+   "fetched_utc": "2026-11-08T22:15:56Z"
+  },
+  {
+   "file": "S103-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79507",
+   "bytes": 135205,
+   "sha256": "b394a2c44c31c38fa4a2f1a6bc6d481966d998b0166a1a3606f171a71544a6bb",
+   "fetched_utc": "2026-11-08T22:15:58Z"
+  },
+  {
+   "file": "S104-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79528",
+   "bytes": 108256,
+   "sha256": "5b83d2eec0c2ac59b813589402d6fae28439327c628b434f46570b2f3be2e318",
+   "fetched_utc": "2026-11-08T22:15:59Z"
+  },
+  {
+   "file": "S105-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79422",
+   "bytes": 107601,
+   "sha256": "cad88ebf0a869178c9a9c6d6f5f2060b84bbc59514eed3dfc9209c01ea88d47b",
+   "fetched_utc": "2026-11-08T22:16:00Z"
+  },
+  {
+   "file": "S106-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79444",
+   "bytes": 162240,
+   "sha256": "d7e857513e4c43fa56d31954a006b58ac51552d9eb1c474e19f1eb0fc951d224",
+   "fetched_utc": "2026-11-08T22:16:01Z"
+  },
+  {
+   "file": "S107-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79431",
+   "bytes": 92863,
+   "sha256": "9bdec692cdbced19db6762038ed661390c7acd9dc1195e7fcf809d34f869175e",
+   "fetched_utc": "2026-11-08T22:16:02Z"
+  },
+  {
+   "file": "S11-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79442",
+   "bytes": 145590,
+   "sha256": "e5db098ea2265b8c648b25440e3c595951619f0bd0ae17bc2543bc1b248fcd5d",
+   "fetched_utc": "2026-11-08T22:16:03Z"
+  },
+  {
+   "file": "S110-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79445",
+   "bytes": 144656,
+   "sha256": "a57d22ccc7f89d570b7faa5508d0f1d1339567c30000a8f642fd9b58463e0a99",
+   "fetched_utc": "2026-11-08T22:16:04Z"
+  },
+  {
+   "file": "S112-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79462",
+   "bytes": 110193,
+   "sha256": "47734fabf45876938da1d5f9cf5bdeca1ffbc30056bb1061517de40735910b91",
+   "fetched_utc": "2026-11-08T22:16:04Z"
+  },
+  {
+   "file": "S113-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79419",
+   "bytes": 146864,
+   "sha256": "0d351b1760171616f45aeef30257dc085d19611e8d2c27f7fd68b91b6a6441d5",
+   "fetched_utc": "2026-11-08T22:16:06Z"
+  },
+  {
+   "file": "S114-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79433",
+   "bytes": 151352,
+   "sha256": "8a5b91ec7a31c3b982bfadb2f58bb2a504a499d7c45bc2725a56612cb9af5de9",
+   "fetched_utc": "2026-11-08T22:16:07Z"
+  },
+  {
+   "file": "S115-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79483",
+   "bytes": 125238,
+   "sha256": "972dda67dec821e6157c9ee1791345a580229f030c4ae74b1293c9d767bf6d97",
+   "fetched_utc": "2026-11-08T22:16:08Z"
+  },
+  {
+   "file": "S116-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79513",
+   "bytes": 104720,
+   "sha256": "b1ec0e0d928f60035e9a89c63047e9a7df4dd23603b2bd74100f18ab0053ebb6",
+   "fetched_utc": "2026-11-08T22:16:09Z"
+  },
+  {
+   "file": "S117-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79450",
+   "bytes": 149855,
+   "sha256": "ad5bf56a7f618db0ad8662e9dcdfc1a7f01ca7b4b813d6ad403d644733946731",
+   "fetched_utc": "2026-11-08T22:16:10Z"
+  },
+  {
+   "file": "S118-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79379",
+   "bytes": 159203,
+   "sha256": "63e1153e51e4d5e88215e294af94c1f8385781d53f4569584433c3acd756f687",
+   "fetched_utc": "2026-11-08T22:16:11Z"
+  },
+  {
+   "file": "S121-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79456",
+   "bytes": 71719,
+   "sha256": "cacc5fccebd62af8e375ec0bc352fc3e96cb9b42987c885c2c84c4bcb7931d91",
+   "fetched_utc": "2026-11-08T22:16:12Z"
+  },
+  {
+   "file": "S122-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79426",
+   "bytes": 144518,
+   "sha256": "e05f2b28650415ed21931baf7a5b093b69b9fc9e52720c19bf8369ce96226500",
+   "fetched_utc": "2026-11-08T22:16:13Z"
+  },
+  {
+   "file": "S123-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79482",
+   "bytes": 111796,
+   "sha256": "72f560922caadc403ee47a943dcd13e1e9f78f9a29e3d6a67986085fe45a9a61",
+   "fetched_utc": "2026-11-08T22:16:14Z"
+  },
+  {
+   "file": "S124-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79400",
+   "bytes": 181550,
+   "sha256": "337a4403ecf58e17fa1316a494de919c75b7314d2ecd1696d0b370ee1addc46d",
+   "fetched_utc": "2026-11-08T22:16:15Z"
+  },
+  {
+   "file": "S125-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79534",
+   "bytes": 78055,
+   "sha256": "57324ea3a1457bad50fe9592f1fcf55690bac189809d10060370c781be98b618",
+   "fetched_utc": "2026-11-08T22:16:16Z"
+  },
+  {
+   "file": "S13-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79370",
+   "bytes": 208936,
+   "sha256": "9d21e026ffb3365ebffcfc8fec0b881a187b328f83ff242f218761b4b860f503",
+   "fetched_utc": "2026-11-08T22:16:16Z"
+  },
+  {
+   "file": "S15-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79478",
+   "bytes": 181196,
+   "sha256": "2fa91d7d9836f226ebd2b12d8a9aaa626fac59515c2519e22e0f2e2c5e927ef4",
+   "fetched_utc": "2026-11-08T22:16:18Z"
+  },
+  {
+   "file": "S16-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79512",
+   "bytes": 100672,
+   "sha256": "b6c4c694f89355ef569b4b868635339b8fc831057013762938648a1aa7b3e634",
+   "fetched_utc": "2026-11-08T22:16:18Z"
+  },
+  {
+   "file": "S17-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79463",
+   "bytes": 153712,
+   "sha256": "2dcb1c8cc0acde7179a028e467e08ff04ea7eea1737ae766db41b3f8e7322735",
+   "fetched_utc": "2026-11-08T22:16:19Z"
+  },
+  {
+   "file": "S18-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79464",
+   "bytes": 196098,
+   "sha256": "17fbda9733a88a9645920c8219c26a33312c9b22b7bd9a198445c329b45e9746",
+   "fetched_utc": "2026-11-08T22:16:20Z"
+  },
+  {
+   "file": "S19-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79506",
+   "bytes": 90565,
+   "sha256": "9bb4e98256fda2fd339fdfaaf1b5f490877b2fa426ee0dcf3694715f9329a7f4",
+   "fetched_utc": "2026-11-08T22:16:21Z"
+  },
+  {
+   "file": "S20-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79459",
+   "bytes": 171610,
+   "sha256": "483d9f773bd3b971977983dd22e92e1647acce43befafe4af93ebcf1b9ab5a7c",
+   "fetched_utc": "2026-11-08T22:16:22Z"
+  },
+  {
+   "file": "S21-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79496",
+   "bytes": 175491,
+   "sha256": "2a5d5f2935640f0afb6f513b02b542797f5816458a79363b70cf52eb74ae3064",
+   "fetched_utc": "2026-11-08T22:16:23Z"
+  },
+  {
+   "file": "S22-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79452",
+   "bytes": 224902,
+   "sha256": "225f5c343b84c590969bb5588bf52d42d3feb2d7dee3409b5f73864934029912",
+   "fetched_utc": "2026-11-08T22:16:24Z"
+  },
+  {
+   "file": "S25-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79402",
+   "bytes": 125316,
+   "sha256": "78e9664c45a2137fa89e99e263dab7f13011f0e0adb4b8f64f933e84c6e6b940",
+   "fetched_utc": "2026-11-08T22:16:25Z"
+  },
+  {
+   "file": "S27-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79518",
+   "bytes": 69640,
+   "sha256": "2b5ca5a257b957509a96a1e7325e70dc6d2667a6073f8f111b26ae3daf29174a",
+   "fetched_utc": "2026-11-08T22:16:26Z"
+  },
+  {
+   "file": "S29-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79467",
+   "bytes": 149042,
+   "sha256": "78912845bcebe7e65bade01c4711e883b516ca06a888a8b84ecbe1e3673e3045",
+   "fetched_utc": "2026-11-08T22:16:27Z"
+  },
+  {
+   "file": "S31-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79505",
+   "bytes": 156135,
+   "sha256": "732cc8a7afdda32a20fdf549a8422f21d778ed5bf8c790894bc6529cd3819e84",
+   "fetched_utc": "2026-11-08T22:16:28Z"
+  },
+  {
+   "file": "S32-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79457",
+   "bytes": 140989,
+   "sha256": "57fe51321e8d09101adada21ef0a75ad56757a81f9a29059930c83eedd603721",
+   "fetched_utc": "2026-11-08T22:16:29Z"
+  },
+  {
+   "file": "S34-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79481",
+   "bytes": 159102,
+   "sha256": "4c57a8f2f93522fa4fc51b632335577db1a8bcded0e2dbecb3686f9b3293e7c4",
+   "fetched_utc": "2026-11-08T22:16:30Z"
+  },
+  {
+   "file": "S35-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79384",
+   "bytes": 185068,
+   "sha256": "e38edbe7aea3c21d771631c769e405b0d5d53fd9d1824c0a76196904db1e5ee7",
+   "fetched_utc": "2026-11-08T22:16:30Z"
+  },
+  {
+   "file": "S36-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79531",
+   "bytes": 201330,
+   "sha256": "4316e49f2291f715c6032956aa545409216b43c16c756b3f3b94e7f8d9e9028c",
+   "fetched_utc": "2026-11-08T22:16:32Z"
+  },
+  {
+   "file": "S37-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79401",
+   "bytes": 189588,
+   "sha256": "7ea2ec08ef114ea986916293a6828a0660274b91bbbd6fb524680d76d42e6249",
+   "fetched_utc": "2026-11-08T22:16:33Z"
+  },
+  {
+   "file": "S38-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79383",
+   "bytes": 92636,
+   "sha256": "7da7c857eb69aaae23698c0b3dd9d8e33010346d7ebf79c481865e1c22208d4a",
+   "fetched_utc": "2026-11-08T22:16:33Z"
+  },
+  {
+   "file": "S39-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79369",
+   "bytes": 120706,
+   "sha256": "e99c413d7306cd8e56628e5a9c3e5dbfdfb00dbe6cc12645b41d64e8981836f2",
+   "fetched_utc": "2026-11-08T22:16:34Z"
+  },
+  {
+   "file": "S40-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79385",
+   "bytes": 110477,
+   "sha256": "bbeb268d1cc7424f2e09288bf1faaf67e7f0d7519676fd2ec5f7834144869335",
+   "fetched_utc": "2026-11-08T22:16:35Z"
+  },
+  {
+   "file": "S41-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79502",
+   "bytes": 180482,
+   "sha256": "8e6446bd10001b30f3f4c2567a6027a298bfb9f5247569d025449613a69b4797",
+   "fetched_utc": "2026-11-08T22:16:37Z"
+  },
+  {
+   "file": "S43-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79530",
+   "bytes": 197329,
+   "sha256": "25da24f9174ad2d6e0c182a59362a0203c38b6ffaab4e83d955eb7cb931a3e44",
+   "fetched_utc": "2026-11-08T22:16:38Z"
+  },
+  {
+   "file": "S44-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79466",
+   "bytes": 205769,
+   "sha256": "0ec88a2e35d8f7ce787d963c61f147950684c6c6cb5449e43b28a449d42a33c7",
+   "fetched_utc": "2026-11-08T22:16:39Z"
+  },
+  {
+   "file": "S45-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79517",
+   "bytes": 115883,
+   "sha256": "ab835d288dcd9f684dbfc06fe43a8179c35144748bd1d66d8f1718fb5d37b477",
+   "fetched_utc": "2026-11-08T22:16:40Z"
+  },
+  {
+   "file": "S46-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79416",
+   "bytes": 114115,
+   "sha256": "8e90835a67cea954c1ec5ddb4b8d22a8321f1d891642f6f7d7acb6296809d53f",
+   "fetched_utc": "2026-11-08T22:16:41Z"
+  },
+  {
+   "file": "S50-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79479",
+   "bytes": 172243,
+   "sha256": "e46f461c87e700654b79a0e438f415cc7a716f47fb6b4d84a44fa67c67809eb5",
+   "fetched_utc": "2026-11-08T22:16:42Z"
+  },
+  {
+   "file": "S51-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79473",
+   "bytes": 111255,
+   "sha256": "83eee765548f1fb4e7581b3e267395c7244dc0d1bdd57a3b2c6e7aa9770a8c24",
+   "fetched_utc": "2026-11-08T22:16:43Z"
+  },
+  {
+   "file": "S53-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79470",
+   "bytes": 128393,
+   "sha256": "15b4f01ae082fe0476742c29883098a14121d3f2cbb21f028224ea5e9d8817fc",
+   "fetched_utc": "2026-11-08T22:16:43Z"
+  },
+  {
+   "file": "S54-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79366",
+   "bytes": 118417,
+   "sha256": "a50243fcb6e24c1b4ba3ea938c18c14e36702ff272e026a79ae9cf90219d914e",
+   "fetched_utc": "2026-11-08T22:16:44Z"
+  },
+  {
+   "file": "S56-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79408",
+   "bytes": 75656,
+   "sha256": "e18cf691b0fa6eb05f44bde5661a86f950f2653464b8302bb3ba5728e7d309fe",
+   "fetched_utc": "2026-11-08T22:16:45Z"
+  },
+  {
+   "file": "S59-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79504",
+   "bytes": 190753,
+   "sha256": "ab50e9d49e073f61066e0140bc7dd91874940a03e9fb21090841a6dc39c048a7",
+   "fetched_utc": "2026-11-08T22:16:46Z"
+  },
+  {
+   "file": "S60-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79405",
+   "bytes": 173573,
+   "sha256": "f2c9e91cdc0e9dff70f4bf562e36d785d8286713195ba7796ef15be4cbf0c3e4",
+   "fetched_utc": "2026-11-08T22:16:47Z"
+  },
+  {
+   "file": "S61-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79418",
+   "bytes": 187346,
+   "sha256": "bf31933d12707f332bc448f251f719b885239e292c45745fbff378c47d60c6dc",
+   "fetched_utc": "2026-11-08T22:16:48Z"
+  },
+  {
+   "file": "S63-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79533",
+   "bytes": 157136,
+   "sha256": "57b6c2cbcc502257a34a1b2b54b626629c7c7ccfe07814b2c69de096ff7d3f98",
+   "fetched_utc": "2026-11-08T22:16:49Z"
+  },
+  {
+   "file": "S64-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79407",
+   "bytes": 175866,
+   "sha256": "f03f05b27d79209129f1366898895f084e1e2f850877da86bde61a7c5d9c25f1",
+   "fetched_utc": "2026-11-08T22:16:50Z"
+  },
+  {
+   "file": "S65-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79435",
+   "bytes": 150428,
+   "sha256": "c6f94f245a696a04a962e8cccef2c0fb18c1890b81b6f324a0c52db138431494",
+   "fetched_utc": "2026-11-08T22:16:50Z"
+  },
+  {
+   "file": "S66-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79485",
+   "bytes": 95729,
+   "sha256": "925b0be6ed6e810b66e70a18669505c7b271e7e71f991fa279e63ab37eb68260",
+   "fetched_utc": "2026-11-08T22:16:51Z"
+  },
+  {
+   "file": "S68-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79393",
+   "bytes": 183039,
+   "sha256": "237406471e421f77ca5ff37718ac8191c1e17dde79b391debd793599494d1ef7",
+   "fetched_utc": "2026-11-08T22:16:52Z"
+  },
+  {
+   "file": "S69-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79374",
+   "bytes": 214021,
+   "sha256": "7a0744000cc943fe55c36e078d1fbfcfd3c18834e9703c890ebfc5179b536572",
+   "fetched_utc": "2026-11-08T22:16:53Z"
+  },
+  {
+   "file": "S70-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79532",
+   "bytes": 156595,
+   "sha256": "6143c6cc446884d94e6f52a80817db272ca503079282b5bb3f537e5022cc057b",
+   "fetched_utc": "2026-11-08T22:16:54Z"
+  },
+  {
+   "file": "S71-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79425",
+   "bytes": 168637,
+   "sha256": "424a7626a6fc1d8b748d75f61f35d02dc51fccc78ff131a1586ef947e01c39a3",
+   "fetched_utc": "2026-11-08T22:16:55Z"
+  },
+  {
+   "file": "S72-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79437",
+   "bytes": 113130,
+   "sha256": "3cad0e55f7648c2bfde651a827e82c629f23a4e23770688f636eee661647888f",
+   "fetched_utc": "2026-11-08T22:16:56Z"
+  },
+  {
+   "file": "S74-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79486",
+   "bytes": 136727,
+   "sha256": "1fb2bc556e9c51cac5b8bfd47d5f099cec0b1290a5bc8bed3b5a97d16823f4f9",
+   "fetched_utc": "2026-11-08T22:16:57Z"
+  },
+  {
+   "file": "S75-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79503",
+   "bytes": 126532,
+   "sha256": "34d52544f61f2a10d214f319d58cf68591ed54790e25e3965d41064294ae6717",
+   "fetched_utc": "2026-11-08T22:16:58Z"
+  },
+  {
+   "file": "S76-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79403",
+   "bytes": 165195,
+   "sha256": "7a9c88d635fd8a31e2b79a05a5a62ce50b3c6b1e71162b42089ad5db2bd097bd",
+   "fetched_utc": "2026-11-08T22:16:59Z"
+  },
+  {
+   "file": "S78-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79474",
+   "bytes": 134262,
+   "sha256": "754a4d7a246461cdcf8c643c8143ec28abac28d176a6523eda59368b6696092e",
+   "fetched_utc": "2026-11-08T22:17:00Z"
+  },
+  {
+   "file": "S80-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79409",
+   "bytes": 157081,
+   "sha256": "2911c00a35b4f77ffaa5075a74ec82ab6bde57f042ac6f9eeff03363d7f4aea6",
+   "fetched_utc": "2026-11-08T22:17:01Z"
+  },
+  {
+   "file": "S81-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79386",
+   "bytes": 140679,
+   "sha256": "a479ba4f505a39c4eed33f8aae90dc6d763111659074bb438a14fd3e3d248186",
+   "fetched_utc": "2026-11-08T22:17:02Z"
+  },
+  {
+   "file": "S82-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79455",
+   "bytes": 169197,
+   "sha256": "70fe71423be6f1a6225afb02ac34ce53617d2e09f15e6c4e747b9b07694b59b9",
+   "fetched_utc": "2026-11-08T22:17:02Z"
+  },
+  {
+   "file": "S83-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79371",
+   "bytes": 157846,
+   "sha256": "facdee9d34f7ef8b53e0d816cb3b9a978e0115f216e72124e14c65efa6a7c423",
+   "fetched_utc": "2026-11-08T22:17:03Z"
+  },
+  {
+   "file": "S85-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79521",
+   "bytes": 133161,
+   "sha256": "d13a5bde84a245f1cfe08bd96a4630de74d75251570e2f237ee59e03b25360e4",
+   "fetched_utc": "2026-11-08T22:17:04Z"
+  },
+  {
+   "file": "S86-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79394",
+   "bytes": 93635,
+   "sha256": "c18844908ce1852fe19d41ccf5e0b93e383922d8bb8438795b77aa647fc9256e",
+   "fetched_utc": "2026-11-08T22:17:05Z"
+  },
+  {
+   "file": "S87-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79524",
+   "bytes": 175459,
+   "sha256": "c6c9e4b6cb821a8b29091c4e60508f5bac79e5648c333b8d3750db40420d009b",
+   "fetched_utc": "2026-11-08T22:17:06Z"
+  },
+  {
+   "file": "S90-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79454",
+   "bytes": 85046,
+   "sha256": "cf4c5861041a6474f0e21141762ca5fb4658454a95bc9d2cfabbe5ea5dc54308",
+   "fetched_utc": "2026-11-08T22:17:07Z"
+  },
+  {
+   "file": "S94-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79519",
+   "bytes": 97238,
+   "sha256": "13e8d31ec5922e7b390c1cc5be4cac6ce8b8b6693aca04013f8ff6c7f2776eed",
+   "fetched_utc": "2026-11-08T22:17:08Z"
+  },
+  {
+   "file": "S95-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79443",
+   "bytes": 169763,
+   "sha256": "64cbcd577dfdb78d450be026abc38b84883bfca6b93eefe0087155773cf4cede",
+   "fetched_utc": "2026-11-08T22:17:09Z"
+  },
+  {
+   "file": "S96-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79423",
+   "bytes": 110295,
+   "sha256": "b684ab51f52705eaf6aa6493a85a1b680b0330da5c20f71cfed76bc849014812",
+   "fetched_utc": "2026-11-08T22:17:10Z"
+  },
+  {
+   "file": "S97-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79372",
+   "bytes": 120421,
+   "sha256": "8bf4e9804231481dda6acd913aa2d8e7777313163534f9de821866cbee6c3934",
+   "fetched_utc": "2026-11-08T22:17:11Z"
+  },
+  {
+   "file": "S98-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79460",
+   "bytes": 135292,
+   "sha256": "a1b29e6966a25e60501e16c6b320f5c4f434f64f9475f027760a0c2c95994946",
+   "fetched_utc": "2026-11-08T22:17:12Z"
+  },
+  {
+   "file": "S99-DDK-C1-C6.TextGrid",
+   "url": "https://borealisdata.ca/api/access/datafile/79448",
+   "bytes": 157591,
+   "sha256": "ce9a3b04a9c2edc9ffc8eb23d2ee589b5d86cf9a757c5ee30a5136b55e418582",
+   "fetched_utc": "2026-11-08T22:17:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tremblay2019_ExpGerontol.zip"
+}

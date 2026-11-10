@@ -1,0 +1,251 @@
+{
+ "id": "Beach2024_NeurobiolLang",
+ "module": "summary",
+ "rows": 630,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 15099,
+ "zip_sha256": "8f16651cd5a1fac805d59d9cb7c147f51d667a6685046c2ce6fdb00e12978850",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with aphasia",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age-matched controls",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males among the people with aphasia",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males among the controls",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with aphasia: mean months post-stroke",
+   "computed": 107.66666666666667,
+   "reported": 108.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... SD",
+   "computed": 111.49418092865825,
+   "reported": 111.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... minimum",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... maximum",
+   "computed": 470.0,
+   "reported": 470.0,
+   "tol": 0,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "peripheral trials: mean initial distance from the median (mels)",
+   "computed": 62.15710531333333,
+   "reported": 62.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... mean distance at mid-utterance (mels)",
+   "computed": 42.44831685923334,
+   "reported": 42.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "centering of peripheral trials: mean (mels)",
+   "computed": 19.7087884541,
+   "reported": 20.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... SD",
+   "computed": 7.388216653059558,
+   "reported": 7.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... minimum",
+   "computed": 8.261025303,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... maximum",
+   "computed": 34.74033768,
+   "reported": 35.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "centering as a share of the initial dispersion: mean (%)",
+   "computed": 31.931331743333335,
+   "reported": 32.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... SD (%)",
+   "computed": 9.04511131868724,
+   "reported": 9.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... minimum (%)",
+   "computed": 13.664008599999999,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... maximum (%)",
+   "computed": 54.8115465,
+   "reported": 55.0,
+   "tol": 0.5,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of centering with initial variability of peripheral trials (all participants)",
+   "computed": 0.6456505469605684,
+   "reported": 0.65,
+   "tol": 0.005,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "centering, aphasia vs control: |t(28)|",
+   "computed": 0.7401848247668942,
+   "reported": 0.74,
+   "tol": 0.005,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial variability of all trials, aphasia vs control: |t(28)|",
+   "computed": 1.5922570971583179,
+   "reported": 1.59,
+   "tol": 0.005,
+   "source": "Beach, Tang, Kiran & Niziolek 2024, Neurobiology of Language 5:454, Results, variability",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "left_sis_all_mag = listen minus speak peak; falloff = center minus peripheral SIS (as the paper defines them)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "right_sis_all_mag = listen minus speak peak; falloff = center minus peripheral SIS (as the paper defines them)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pavg is the mean of the three repetition scores",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "centering_of_periphest_per = centering / initial distance of the peripheral trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row per participant and measure (30 x 21 = 630), no missing values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The group comparisons reproduce in size (centering |t(28)| = 0.74, initial variability |t(28)| = 1.59, as in the paper); their sign here is aphasia minus control. The paper's MEG statistics (mixed ANOVAs, lesion-brain correlations) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "data.csv",
+   "url": "https://osf.io/download/hwa92/",
+   "bytes": 11016,
+   "sha256": "b9a692e4085a5c78bcdccc43959d47f729817a894971ca951bf989ad9aef9c26",
+   "fetched_utc": "2026-11-08T20:40:02Z"
+  },
+  {
+   "file": "M100.mat",
+   "url": "https://osf.io/download/s8zn7/",
+   "bytes": 1022492,
+   "sha256": "47052595e5e0b434f1a82da84834b85ad1243e047fbbf88449a3369bb7125cc1",
+   "fetched_utc": "2026-11-08T20:40:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Beach2024_NeurobiolLang.zip"
+}

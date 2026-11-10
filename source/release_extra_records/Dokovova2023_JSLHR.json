@@ -1,0 +1,354 @@
+{
+ "id": "Dokovova2023_JSLHR",
+ "module": "tongue_ultrasound",
+ "rows": 3061,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 1027343,
+ "zip_sha256": "0b9941745b89c2f966bc8ab75393db1dd0479548181bb681fc7ce46fa487cafc",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "3061 rows, 60 children, 42 contour points per row, no missing coordinate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "child, age, sex, BPVS and DEAP values are constant within a child",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "x falls and y is not constant from point 1 to point 42 in the table (mean x 116 at point 1, 44 at point 42)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "typically developing children analysed",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (29 typically developing participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing children recorded (30 consented, one excluded)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (Thirty children ... consented)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing girls",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (15 girls, 14 boys)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing boys",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (15 girls, 14 boys)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD youngest age (months; 5;8)",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0.01,
+   "source": "Dokovova et al. 2023, Method, Participants (aged between 5;8 and 12;10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD oldest age (months; 12;10)",
+   "computed": 154.0,
+   "reported": 154.0,
+   "tol": 0.01,
+   "source": "Dokovova et al. 2023, Method, Participants (aged between 5;8 and 12;10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD mean age (months; 9;8 = 116)",
+   "computed": 115.48275862068965,
+   "reported": 116.0,
+   "tol": 1.0,
+   "source": "Dokovova et al. 2023, Method, Participants (M = 9;8; printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD SD of age (years; printed as 2)",
+   "computed": 2.068473275461206,
+   "reported": 2.0,
+   "tol": 0.1,
+   "source": "Dokovova et al. 2023, Method, Participants (SD = 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with speech sound disorders analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (a total of 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD boys",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (22 boys and eight girls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD girls",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (22 boys and eight girls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD oldest age (months; 12;11)",
+   "computed": 155.0,
+   "reported": 155.0,
+   "tol": 0.01,
+   "source": "Dokovova et al. 2023, Method, Participants (5;0-12;11)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD mean age (months; 8;2 = 98)",
+   "computed": 97.16666666666667,
+   "reported": 98.0,
+   "tol": 1.0,
+   "source": "Dokovova et al. 2023, Method, Participants (M = 8;2; printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD SD of age (years; printed as 2)",
+   "computed": 1.9116104388675084,
+   "reported": 2.0,
+   "tol": 0.1,
+   "source": "Dokovova et al. 2023, Method, Participants (SD = 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with articulation disorder (Appendix B)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with motor speech disorder (Appendix B)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with phonological disorder (Appendix B)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with residual speech sound errors (Appendix B)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with inconsistent phonological disorder (Appendix B)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with diagnostic process ongoing (Appendix B)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children reported with no report (Appendix B)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (diagnoses of the 30 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children with other, inconclusive diagnoses (Appendix B)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (the remaining children had inconclusive diagnoses)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD children with BPVS standard scores 72 and 76 (outside normal limits)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (two exceptions, 72 and 76)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD child with DEAP percentage consonants correct 91",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Participants (a 91 percentage consonants correct score)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD children whose sex, age and BPVS score equal Appendix A (of 29)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Appendix A",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSD children whose sex and age equal Appendix B (of 30)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Appendix B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of the six analysed phonemes, 29 TD and 30 SSD children (splines fitted)",
+   "computed": 1694.0,
+   "reported": 1694.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Spline fitting (1,694 tokens)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens with NINFL above 5 removed",
+   "computed": 74.0,
+   "reported": 74.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Extraction of NINFL and MCI (n = 74)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens with MCI above 6 removed (after the NINFL filter)",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Dokovova et al. 2023, Method, Extraction of NINFL and MCI (n = 39)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "1581 analysed tokens of the six phonemes remain after the authors' exclusions (1694 - 74 - 39)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every token left in the table belongs to one of the six analysed phonemes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each child's rows keep the authors' file order (trial counts from 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the table's months column disagrees with its own age_y and age_m for 3 children (all SSD)",
+   "ok": true,
+   "detail": "3 children"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The table's months column (the age used in the authors' models) disagrees with its own age_y and age_m columns, and with the ages in Appendix B of the paper, for 3 of the 30 children with speech sound disorders; age here comes from age_y and age_m, which match Appendix B for all 59 children. The paper's mean age for these children (8;2) is closer to the months column (8;1.7) than to Appendix B (8;1.2); both are within the month the checks allow.",
+  "The paper gives the BPVS standard scores of the typically developing children as mean 103, SD 14; the 29 scores of Appendix A, which equal the table, give mean 102.2 and SD 14.7.",
+  "The table's Diagnosis column is blank for 6 children and shows a dash for one whom Appendix B lists with an articulation disorder; participants.csv takes the diagnosis from Appendix B, which gives the paper's counts (16 articulation disorder ...). The table's recruited column also puts two children whose codes begin with LN under GR; it is not used.",
+  "The paper gives the age range of the children with speech sound disorders as 5;0 to 12;11; the youngest child in the table and in Appendix B is 5;2.",
+  "The paper says typically developing children produced each consonant once; the table has a second repetition (rep 2) for some of their tokens.",
+  "The paper's mixed-model estimates (Table 1) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "new_OSF_data.csv",
+   "url": "https://osf.io/download/xua9k/",
+   "bytes": 3067091,
+   "sha256": "a6668432ae037b21c8ac92336ef86a84018fc56d5701a4a6aad0235de5827a3e",
+   "fetched_utc": "2026-11-08T22:56:12Z"
+  },
+  {
+   "file": "preprint_OSF_data.csv",
+   "url": "https://osf.io/download/zvrmn/",
+   "bytes": 2321988,
+   "sha256": "ae2ed4e1fb869c9d6942b99593b713f3d7c40f9bf487337a106d8a4b1cfc3450",
+   "fetched_utc": "2026-11-08T22:56:17Z"
+  },
+  {
+   "file": "OSF_code_revision1.R",
+   "url": "https://osf.io/download/r7tqn/",
+   "bytes": 11833,
+   "sha256": "7b5ef512579a375904abd9705e6aa85c4ceda69e357fe39f0919db2766d57935",
+   "fetched_utc": "2026-11-08T22:56:21Z"
+  },
+  {
+   "file": "preprint_OSF_code.R",
+   "url": "https://osf.io/download/qys2z/",
+   "bytes": 9092,
+   "sha256": "57a9c9dec4c0e5ec945823bba38b1fa0a4710217ffae2cb7bf560eab22ec0073",
+   "fetched_utc": "2026-11-08T22:56:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Dokovova2023_JSLHR.zip"
+}

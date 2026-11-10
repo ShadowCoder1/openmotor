@@ -1,0 +1,147 @@
+{
+ "id": "Wang2020_SciRep",
+ "module": "hand_localization",
+ "rows": 16200,
+ "subjects": 47,
+ "persons": 47,
+ "zip_bytes": 454766,
+ "zip_sha256": "c487313bb4576f69c982adf78452cb6358dbf6f2f81ab6c17797933d264ea75b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "experiment 1: every participant has all 3 session files",
+   "ok": true,
+   "detail": "26 participants, 78 files"
+  },
+  {
+   "kind": "internal",
+   "what": "experiment 2: every participant has all 4 session files",
+   "ok": true,
+   "detail": "21 participants, 84 files"
+  },
+  {
+   "kind": "internal",
+   "what": "every match has a finite position",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each session shows 100 different target positions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 1",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "targets per session",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Visual-matching task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 sessions",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Experimental protocols",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 sessions",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Experimental protocols",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 mean localization error in session 1, cm",
+   "computed": 3.09752602229512,
+   "reported": 3.098,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (Fig. 1), matches flagged by the authors' outlier rule left out",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 mean localization error in session 2, cm",
+   "computed": 2.943502190056411,
+   "reported": 2.944,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (Fig. 1), matches flagged by the authors' outlier rule left out",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 mean localization error in session 3, cm",
+   "computed": 2.420239076033492,
+   "reported": 2.42,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (Fig. 1), matches flagged by the authors' outlier rule left out",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target workspace width in cm (48.76) from the extreme target columns plus one column step",
+   "computed": 48.7581,
+   "reported": 48.76,
+   "tol": 0.05,
+   "source": "Methods, Visual-matching task",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's session means (3.098, 2.944 and 2.420 cm) reproduce only after leaving out the matches whose squared error is above the session mean + 3 SD (the rule in the authors' properr3.m, which is not mentioned in the paper); those matches are marked excluded_by_authors. With all matches the means are 3.167, 3.014 and 2.470 cm.",
+  "The deposit's .mat files also hold raw stylus samples; the paper's trajectory-matching errors are not rebuilt here."
+ ],
+ "sources": [
+  {
+   "file": "data_exp1.zip",
+   "url": "https://osf.io/download/7bfta/",
+   "bytes": 20847162,
+   "sha256": "088354476df5d5e8f198110c70e89705f51cb96514f63fe732570bb4454c4794",
+   "fetched_utc": "2026-11-09T09:50:00Z"
+  },
+  {
+   "file": "data_exp2.zip",
+   "url": "https://osf.io/download/u89pb/",
+   "bytes": 13403532,
+   "sha256": "b23ca04113768fe18a8e4e68f43712482f0b2498b741f4678248e471c2e9729d",
+   "fetched_utc": "2026-11-09T09:50:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2020_SciRep.zip"
+}

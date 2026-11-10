@@ -1,0 +1,308 @@
+{
+ "id": "Hood2020_SciData",
+ "module": "timeseries",
+ "rows": 10166,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 313092581,
+ "zip_sha256": "dc58c37d16167fe15fb87ec4dc5e3be6ce0414d3d9d840a77103e959ab46dbb5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every stride of every speed and side is kept: one row per column of each raw array",
+   "ok": true,
+   "detail": "10166 strides"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' average curve equals the mean of the raw stride columns for every joint, variable, speed and side",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' stdev curve equals the sample SD of the raw stride columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no empty samples in the raw arrays",
+   "ok": true,
+   "detail": "0 NaN"
+  },
+  {
+   "kind": "internal",
+   "what": "equal numbers of ipsilateral and contralateral strides per speed",
+   "ok": true,
+   "detail": "5083 each"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, para 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "K3 participants (full community ambulators)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Background & Summary",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "K2 participants (limited community ambulators)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Background & Summary",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sum of ages, years (Table 1)",
+   "computed": 927.0,
+   "reported": 927.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sum of body masses, kg (Table 1)",
+   "computed": 1630.8,
+   "reported": 1630.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sum of heights, m (Table 1)",
+   "computed": 31.68,
+   "reported": 31.68,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a left-side amputation",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "K2 participants walked at 0.4-0.8 m/s and K3 at 0.6-1.4 m/s (all but one subject complete)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Abstract and Table 1 note",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TF02 walked 4 of the 5 speeds (could not walk the last speed, 0.8 m/s)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Table 1 note",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total walking speeds over subjects (17 x 5 + 4)",
+   "computed": 89.0,
+   "reported": 89.0,
+   "tol": 0,
+   "source": "Abstract and Table 1 note",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports no gait values, only participant and design numbers, so the published checks are the Table 1 participant data, the K-level split and the speed design. The deposit's README says a manuscript was still in revision when the data were posted; the paper is the Scientific Data article above."
+ ],
+ "sources": [
+  {
+   "file": "README.docx",
+   "url": "https://ndownloader.figshare.com/files/20554929",
+   "bytes": 14774,
+   "sha256": "c505d5eb3443bd77b18e15dc2cf161be7683d8f53b9fdc865c604cf9e3da2f73",
+   "fetched_utc": "2026-11-09T01:04:30Z"
+  },
+  {
+   "file": "SubjectInformation.xlsx",
+   "url": "https://ndownloader.figshare.com/files/21836562",
+   "bytes": 12888,
+   "sha256": "ddb86ab7669e8c2720b3a86ce253bf8df3311a3153ac8ed467866a1a62c63f14",
+   "fetched_utc": "2026-11-09T01:04:32Z"
+  },
+  {
+   "file": "TF01_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733325 (member TF01/Matlab Workspace/TF01_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 19688226,
+   "sha256": "dbafdcf3045744bcbd614157d93a0efa7201b430de6b90da9553ab3aeb068d10",
+   "fetched_utc": "2026-11-09T01:13:56Z"
+  },
+  {
+   "file": "TF06_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733364 (member TF06/Matlab Workspace/TF06_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 26162335,
+   "sha256": "12daed28a2b21742737070c08a7e9f95862c4be3ecbd323380c6f862f4bb3002",
+   "fetched_utc": "2026-11-09T01:14:30Z"
+  },
+  {
+   "file": "example_plotting_script.m",
+   "url": "https://ndownloader.figshare.com/files/18733448",
+   "bytes": 1170,
+   "sha256": "fac698a18ca23bb6314a81d731be6858888f61e9741b5acbbf7e2c68b6c7bddd",
+   "fetched_utc": "2026-11-09T01:15:06Z"
+  },
+  {
+   "file": "plot_eachspeed_comp_sides.m",
+   "url": "https://ndownloader.figshare.com/files/18733442",
+   "bytes": 2763,
+   "sha256": "ff9e7b96c0e34d56c7ec0d4105583002c3b83c2d12152010b91f7e77a627f92d",
+   "fetched_utc": "2026-11-09T01:15:09Z"
+  },
+  {
+   "file": "plot_allspeeds_pos_comp_sides.m",
+   "url": "https://ndownloader.figshare.com/files/18733451",
+   "bytes": 2965,
+   "sha256": "b2ada83b45ee4ef25620133913beddcbaf8c17e50c932f5d004217d99198cde6",
+   "fetched_utc": "2026-11-09T01:15:12Z"
+  },
+  {
+   "file": "TF02_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733412 (member TF02/Matlab Workspace/TF02_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 19232791,
+   "sha256": "5369c2c24c27b5c0a839b82b16621ae24154da87b35012ee0b6cfd2076c68c04",
+   "fetched_utc": "2026-11-09T01:16:18Z"
+  },
+  {
+   "file": "TF05_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733439 (member TF05/Matlab Workspace/TF05_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 29515417,
+   "sha256": "4a2b2b2037e86c04994edabd0422f571e6781d05c1174234edad801244c0fb56",
+   "fetched_utc": "2026-11-09T01:16:56Z"
+  },
+  {
+   "file": "TF07_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733337 (member TF07/Matlab Workspace/TF07_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 24036685,
+   "sha256": "b9c158e6ee271cb1ccdd4119d3fedb9c65675a5dd124e2c15d120065d8447225",
+   "fetched_utc": "2026-11-09T01:17:27Z"
+  },
+  {
+   "file": "TF08_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733370 (member TF08/Matlab Workspace/TF08_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 28036692,
+   "sha256": "5632b44aa6237ffafedd745d50c781fc7cc9d1945620c4839cb958a2d847f57d",
+   "fetched_utc": "2026-11-09T01:18:01Z"
+  },
+  {
+   "file": "TF09_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733367 (member TF09/Matlab Workspace/TF09_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 26225615,
+   "sha256": "443f82413bb796fbc11577d4a37e13210b6f3e885222a3f2afe60064943b8ae8",
+   "fetched_utc": "2026-11-09T01:18:36Z"
+  },
+  {
+   "file": "TF10_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733520 (member TF10/Matlab Workspace/TF10_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 25673639,
+   "sha256": "8060ae5a5e0e6afb4dca50a4c67863fd1bd7a4e9fa4226c19e528232b008301b",
+   "fetched_utc": "2026-11-09T01:19:14Z"
+  },
+  {
+   "file": "TF11_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733544 (member TF11/Matlab Workspace/TF11_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 25135016,
+   "sha256": "c1ba99a71a7186e4c0dfdddb8eabe18be6729b529bc77155af5f208864b63c43",
+   "fetched_utc": "2026-11-09T01:19:45Z"
+  },
+  {
+   "file": "TF12_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733559 (member TF12/Matlab Workspace/TF12_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 27303040,
+   "sha256": "826cb9390dc330103f2fe56453179b814fc1d341aaf10e4cb20e04ccb3d265d7",
+   "fetched_utc": "2026-11-09T01:20:27Z"
+  },
+  {
+   "file": "TF13_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733556 (member TF13/Matlab Workspace/TF13_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 26759986,
+   "sha256": "b57b718ef6ae8a92acc3450f382b74e5bfbece697d0be3aa915d02d6f3da3589",
+   "fetched_utc": "2026-11-09T01:21:13Z"
+  },
+  {
+   "file": "TF14_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733562 (member TF14/Matlab Workspace/TF14_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 28358103,
+   "sha256": "78a41d5b739490c5a492dbeb6ac55880d436fd7f04c92ec4ad892047541c8813",
+   "fetched_utc": "2026-11-09T01:21:50Z"
+  },
+  {
+   "file": "TF15_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733529 (member TF15/Matlab Workspace/TF15_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 30913592,
+   "sha256": "2dc176e2a9e5f3b6a1124c4d5ee2d164c70437222a6fed6a651f1762fa387ca9",
+   "fetched_utc": "2026-11-09T01:22:35Z"
+  },
+  {
+   "file": "TF16_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733532 (member TF16/Matlab Workspace/TF16_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 30671929,
+   "sha256": "f85dc67a3d9d64ec474fcca1b8c8eaefd35a647de3f135ef598d82c9ad2548b7",
+   "fetched_utc": "2026-11-09T01:23:16Z"
+  },
+  {
+   "file": "TF17_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733523 (member TF17/Matlab Workspace/TF17_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 28713597,
+   "sha256": "0da7af88c712b2d877d2d68a45238c216125ceaa292e30e22c3ecfb84cf8b465",
+   "fetched_utc": "2026-11-09T01:23:55Z"
+  },
+  {
+   "file": "TF18_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733526 (member TF18/Matlab Workspace/TF18_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 27577479,
+   "sha256": "3ec06169d70819fe42d9ddb3442efab3808567e1d87ffac80ad18370af784aa3",
+   "fetched_utc": "2026-11-09T01:24:30Z"
+  },
+  {
+   "file": "TF19_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733541 (member TF19/Matlab Workspace/TF19_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 28823872,
+   "sha256": "1755af02dee209d7d292388c862d72933cfe7ad5406653dabf756805af52e7e8",
+   "fetched_utc": "2026-11-09T01:25:10Z"
+  },
+  {
+   "file": "TF20_DATA.mat",
+   "url": "https://ndownloader.figshare.com/files/18733547 (member TF20/Matlab Workspace/TF20_DATA.mat of the zip, read with HTTP range requests)",
+   "bytes": 28976870,
+   "sha256": "a99fd98418d7c61c1d5ad81d4c6f38093fea3c2277f775e89f2f3bed941b600e",
+   "fetched_utc": "2026-11-09T01:25:49Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hood2020_SciData.zip"
+}

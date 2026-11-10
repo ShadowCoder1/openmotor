@@ -1,0 +1,949 @@
+{
+ "id": "Varghese2024_npjParkinsonsDis",
+ "module": "timeseries",
+ "rows": 10318,
+ "subjects": 469,
+ "persons": 469,
+ "zip_bytes": 548168999,
+ "zip_sha256": "bad2eb7ff6d693788d4bb41b5de152c3ea595bc286e1e806e661bdfa189c156c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the project ZIP matches the hash recorded when it was downloaded",
+   "ok": true,
+   "detail": "770751095 bytes"
+  },
+  {
+   "kind": "internal",
+   "what": "the ZIP holds the 12,689 files listed in SHA256SUMS.txt plus SHA256SUMS.txt itself, which is the file downloaded separately",
+   "ok": true,
+   "detail": "12690 files"
+  },
+  {
+   "kind": "internal",
+   "what": "every file except the time series matches SHA256SUMS.txt",
+   "ok": true,
+   "detail": "2371 files; mismatches []"
+  },
+  {
+   "kind": "internal",
+   "what": "patients, observations and questionnaires: one file per participant, numbered 1-469",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every time-series file matches SHA256SUMS.txt (10,318 files)",
+   "ok": true,
+   "detail": "10318 files"
+  },
+  {
+   "kind": "internal",
+   "what": "the observation files list exactly the time-series files of the ZIP",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 7 numeric columns (Time, 3 accelerometer, 3 gyroscope), no header line and no missing value",
+   "ok": true,
+   "detail": "{'hash_bad': 0, 'nonnum': 0, 'nonmono': 0, 'first_not0': 0, 'rows_ne_json': 0, 'bad_cols': 0, 'header': 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "the number of rows of every file is the one the observation file states for that step",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the time column starts at 0 and increases in every recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "steps 1a, 1b and 10 (Relaxed, RelaxedTask, Entrainment) have 2048 samples in every recording; the other eight 1024",
+   "ok": true,
+   "detail": "{'CrossArms': 1024, 'DrinkGlas': 1024, 'Entrainment': 2048, 'HoldWeight': 1024, 'LiftHold': 1024, 'PointFinger': 1024, 'Relaxed': 2048, 'RelaxedTask': 2048, 'StretchHold': 1024, 'TouchIndex': 1024, 'TouchNose': 1024}"
+  },
+  {
+   "kind": "internal",
+   "what": "median sampling interval of every recording is within 9.8-10.2 ms",
+   "ok": true,
+   "detail": "9.920-10.080 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "two recordings (left and right wrist) for each participant and step",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has the same watch model on both wrists",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 30 questionnaire items and their wording are identical for all participants",
+   "ok": true,
+   "detail": "30 items"
+  },
+  {
+   "kind": "internal",
+   "what": "accelerometer values at rest are far below 1 g (no gravity component)",
+   "ok": true,
+   "detail": "median of the per-recording median magnitude 0.0334 g"
+  },
+  {
+   "kind": "internal",
+   "what": "the age at diagnosis is 0 (unknown) for exactly 19 participants and equals the age for every healthy control",
+   "ok": true,
+   "detail": "19 zeros"
+  },
+  {
+   "kind": "published",
+   "what": "participants in the dataset",
+   "computed": 469.0,
+   "reported": 469.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Introduction and Methods, Study data (Table 3 total)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "measurement steps (participant x step)",
+   "computed": 5159.0,
+   "reported": 5159.0,
+   "tol": 0,
+   "source": "PhysioNet record abstract (5159 measurement steps of 469 individuals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "assessment steps per participant (minimum)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "assessment steps per participant (maximum)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "assessment steps that took 20 s",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "assessment steps that took 10 s",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smartwatches per participant (one on each wrist): recordings per participant and step",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (5159 measurement steps x 2 smartwatches)",
+   "computed": 10318.0,
+   "reported": 10318.0,
+   "tol": 0,
+   "source": "PhysioNet record abstract (5159 steps) and Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data (two watches)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples in a recording of a 10-s step (minimum)",
+   "computed": 1024.0,
+   "reported": 1024.0,
+   "tol": 0,
+   "source": "PhysioNet record, Data description (1024 data points per file)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples in a recording of a 10-s step (maximum)",
+   "computed": 1024.0,
+   "reported": 1024.0,
+   "tol": 0,
+   "source": "PhysioNet record, Data description (1024 data points per file)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling frequency (Hz): 1 / median sampling interval over all recordings",
+   "computed": 99.95958084369286,
+   "reported": 100.0,
+   "tol": 0.1,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "10-s time series per participant and wrist (20-s steps cut in two parts)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "10-s time series per participant and wrist (maximum)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "channels of time series per participant (14 x 2 arms x 2 sensors x 3 axes)",
+   "computed": 168.0,
+   "reported": 168.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "channels of time series per participant (maximum)",
+   "computed": 168.0,
+   "reported": 168.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Methods, Study data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: participants",
+   "computed": 276.0,
+   "reported": 276.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: men",
+   "computed": 195.0,
+   "reported": 195.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: women",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: age (years), mean",
+   "computed": 65.3586956521739,
+   "reported": 65.4,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: age (years), SD",
+   "computed": 9.639217080699746,
+   "reported": 9.6,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: height (cm), mean",
+   "computed": 175.71014492753622,
+   "reported": 175.71,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: height (cm), SD",
+   "computed": 9.772468115569819,
+   "reported": 9.77,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: weight (kg), mean",
+   "computed": 83.77536231884058,
+   "reported": 83.78,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: weight (kg), SD",
+   "computed": 18.09912830284357,
+   "reported": 18.1,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 58.257246376811594,
+   "reported": 58.26,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 10.61743600400199,
+   "reported": 10.62,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: participants",
+   "computed": 79.0,
+   "reported": 79.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: men",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: women",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: age (years), mean",
+   "computed": 62.949367088607595,
+   "reported": 62.9,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: age (years), SD",
+   "computed": 12.45391374400054,
+   "reported": 12.5,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: height (cm), mean",
+   "computed": 170.48101265822785,
+   "reported": 170.48,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: height (cm), SD",
+   "computed": 15.633511638172125,
+   "reported": 15.63,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: weight (kg), mean",
+   "computed": 78.74683544303798,
+   "reported": 78.75,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls: weight (kg), SD",
+   "computed": 16.718996070361968,
+   "reported": 16.72,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: participants",
+   "computed": 114.0,
+   "reported": 114.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: men",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: women",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: age (years), mean",
+   "computed": 62.42982456140351,
+   "reported": 62.4,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: age (years), SD",
+   "computed": 11.548259109689397,
+   "reported": 11.5,
+   "tol": 0.050000001,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: height (cm), mean",
+   "computed": 173.0438596491228,
+   "reported": 173.04,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: height (cm), SD",
+   "computed": 8.734420112737366,
+   "reported": 8.73,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: weight (kg), mean",
+   "computed": 79.54385964912281,
+   "reported": 79.54,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: weight (kg), SD",
+   "computed": 17.83609760826711,
+   "reported": 17.84,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 52.95614035087719,
+   "reported": 52.96,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "differential diagnoses: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 16.517296030437866,
+   "reported": 16.52,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: men",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: women",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: age (years), mean",
+   "computed": 66.0,
+   "reported": 66.0,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: age (years), SD",
+   "computed": 7.9642056370093455,
+   "reported": 7.96,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: height (cm), mean",
+   "computed": 168.46666666666667,
+   "reported": 168.47,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: height (cm), SD",
+   "computed": 8.096442487437365,
+   "reported": 8.1,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: weight (kg), mean",
+   "computed": 79.13333333333334,
+   "reported": 79.13,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: weight (kg), SD",
+   "computed": 18.635092343926466,
+   "reported": 18.64,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 62.6,
+   "reported": 62.6,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "atypical parkinsonism: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 8.209750300709516,
+   "reported": 8.21,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: men",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: women",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: age (years), mean",
+   "computed": 66.17857142857143,
+   "reported": 66.18,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: age (years), SD",
+   "computed": 10.839070519903897,
+   "reported": 10.84,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: height (cm), mean",
+   "computed": 173.35714285714286,
+   "reported": 173.36,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: height (cm), SD",
+   "computed": 9.60406659900353,
+   "reported": 9.6,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: weight (kg), mean",
+   "computed": 84.67857142857143,
+   "reported": 84.68,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: weight (kg), SD",
+   "computed": 21.876849883988342,
+   "reported": 21.88,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 46.964285714285715,
+   "reported": 46.96,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "essential tremor: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 22.888590304725327,
+   "reported": 22.89,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: men",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: women",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: age (years), mean",
+   "computed": 54.09090909090909,
+   "reported": 54.09,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: age (years), SD",
+   "computed": 7.917759095281258,
+   "reported": 7.92,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: height (cm), mean",
+   "computed": 178.36363636363637,
+   "reported": 178.36,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: height (cm), SD",
+   "computed": 10.688991788496493,
+   "reported": 10.69,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: weight (kg), mean",
+   "computed": 83.54545454545455,
+   "reported": 83.55,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: weight (kg), SD",
+   "computed": 16.18248211099667,
+   "reported": 16.18,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 43.81818181818182,
+   "reported": 43.82,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple sclerosis: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 13.044678469155013,
+   "reported": 13.04,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: participants",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: men",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: women",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: age (years), mean",
+   "computed": 61.31666666666667,
+   "reported": 61.32,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: age (years), SD",
+   "computed": 12.32262858083627,
+   "reported": 12.32,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: height (cm), mean",
+   "computed": 173.06666666666666,
+   "reported": 173.07,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: height (cm), SD",
+   "computed": 7.637700130067699,
+   "reported": 7.64,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: weight (kg), mean",
+   "computed": 76.51666666666667,
+   "reported": 76.52,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: weight (kg), SD",
+   "computed": 15.447551137905068,
+   "reported": 15.45,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), mean",
+   "computed": 55.016666666666666,
+   "reported": 55.02,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other differential diagnoses: age at diagnosis (years; unknown, 0 in the deposit, taken as the age), SD",
+   "computed": 13.318130457014473,
+   "reported": 13.32,
+   "tol": 0.0050000010000000004,
+   "source": "Varghese et al. 2024, npj Parkinsons Dis, Table 3",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 504 participants and 5,544 steps recorded originally (Introduction, Methods); the deposit holds the 469 participants and 5,159 steps of the analysis set (Table 3), so the 35 left out (2 with missing data, 33 of the youngest controls removed for age matching) are not here.",
+  "Table 3's age at diagnosis (Parkinson's disease 58.26, differential diagnoses 52.96, multiple sclerosis 43.82, other 55.02 years) is reproduced only when the deposit's 0 (unknown, 19 participants) is replaced by the participant's age, which the paper does not state; dropping the zeros instead gives 58.08, 52.23, 40.67 and 54.14. The deposit itself repeats the age for all healthy controls, for whom Table 3 shows no value. participants.csv leaves both empty.",
+  "The paper and the PhysioNet page name the Apple Watch Series 4 only; the deposit's observation files list the Series 3 for 135 of the 469 participants, and device and watch_model follow the observation files.",
+  "The PhysioNet description says each file holds 1024 samples (10.24 s); the three 20-s steps (1a, 1b, 10) have 2048 samples per file, as the paper's Table 4 durations imply.",
+  "The deposit gives one participant a height of 55 cm (an entry error); it is kept as shared, and Table 3's healthy-control height SD (15.63) is reproduced only with it."
+ ],
+ "sources": [
+  {
+   "file": "LICENSE.txt",
+   "url": "https://physionet.org/files/parkinsons-disease-smartwatch/1.0.0/LICENSE.txt",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "fetched_utc": "2026-11-08T20:58:14Z"
+  },
+  {
+   "file": "SHA256SUMS.txt",
+   "url": "https://physionet.org/files/parkinsons-disease-smartwatch/1.0.0/SHA256SUMS.txt",
+   "bytes": 1413776,
+   "sha256": "879a3f291682ab7e88aa3759492c8c6a8bf2be6d14a82477836fed20a7a866e9",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "pads-1.0.0.zip",
+   "url": "https://physionet.org/static/published-projects/parkinsons-disease-smartwatch/parkinsons-disease-smartwatch-1.0.0.zip",
+   "bytes": 770751095,
+   "sha256": "857ab5005f7246f2c51bd1de73506eeb9bb325fbebe9b40dc650fe1b1b874c0d",
+   "fetched_utc": "2026-11-08T21:23:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Varghese2024_npjParkinsonsDis.zip"
+}

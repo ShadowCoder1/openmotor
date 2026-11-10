@@ -1,0 +1,195 @@
+{
+ "id": "MacLean2021_PLoSOne",
+ "module": "timeseries",
+ "rows": 943,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 134468193,
+ "zip_sha256": "34ecc513fb2158bcc630b2e84a7303a70cd8bcf51c3fb741567a6127a1a09ca8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "12 participant files",
+   "ok": true,
+   "detail": "12"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Data collection (12 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gravity levels",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Data collection (4 simulated gravity levels)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking speeds",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Data collection (0.4, 0.8, 1.2 and 1.6 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "good trials per condition (most common count)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Data collection ('We recorded 4 good trials per condition')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG channels (muscles)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Data collection (8 muscles)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants without the 0.31 G, 1.6 m/s condition",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Results (two of twelve participants could not walk 1.6 m/s at 0.31 G)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "DeviceFrame advances by 1 (1 ms) every sample in every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has a recording for each gravity level",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper and the Figshare description list the third gravity level differently (0.45 G in the paper's text, 0.55 G and 45 percent support in the Figshare description); the 45 percent support figure is used."
+ ],
+ "sources": [
+  {
+   "file": "Eagle_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120254",
+   "bytes": 13436446,
+   "sha256": "12f685c4cd8343dbdfaa0631c3fddfac364b4234d5abc23251ad88d21338cda5",
+   "fetched_utc": "2026-11-09T13:33:11Z"
+  },
+  {
+   "file": "Eagle_All_Kin_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120341",
+   "bytes": 12121575,
+   "sha256": "bffedb5891c4dc4a1e77cd13ed81154cf0b3cff579c0b16fe7ec923ebbdebd67",
+   "fetched_utc": "2026-11-09T13:33:17Z"
+  },
+  {
+   "file": "Eagle_V3D_Imported.mat",
+   "url": "https://ndownloader.figshare.com/files/28120317",
+   "bytes": 3148581,
+   "sha256": "8dc1a615c0a362bdf94226b647c5bd2a4301b73966b52607c4dd1c5b23881ad4",
+   "fetched_utc": "2026-11-09T13:33:22Z"
+  },
+  {
+   "file": "Subject_1_TrialQS.mat",
+   "url": "https://ndownloader.figshare.com/files/36361386",
+   "bytes": 205042,
+   "sha256": "3af346d7aa305651d910b9b4d5b334b8e32a57452f21dc533f3938cedfb4a626",
+   "fetched_utc": "2026-11-09T13:33:27Z"
+  },
+  {
+   "file": "Flash_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120257",
+   "bytes": 14801619,
+   "sha256": "956fb36b551909f6b300cd9e503f358aa009f0db5596a6becf1bfc2390cf91ee",
+   "fetched_utc": "2026-11-09T13:45:50Z"
+  },
+  {
+   "file": "Ghost_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120263",
+   "bytes": 15181348,
+   "sha256": "5170c3e960925128e1517ac1457d9e71a47e6fe652db975c19b9568a8df0e1d8",
+   "fetched_utc": "2026-11-09T13:46:00Z"
+  },
+  {
+   "file": "Hippo_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120266",
+   "bytes": 15075517,
+   "sha256": "5eec9ea98642f7a3ad4df1fff4f700cc6e26cf47386f4ec36efba098c563465f",
+   "fetched_utc": "2026-11-09T13:46:05Z"
+  },
+  {
+   "file": "Raven_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120269",
+   "bytes": 14741833,
+   "sha256": "a21d56f435a405a499f70de6a70dbecf99f08a68193bec0e2f575514411e46b9",
+   "fetched_utc": "2026-11-09T13:46:11Z"
+  },
+  {
+   "file": "Spidr_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120272",
+   "bytes": 14200827,
+   "sha256": "8b782c1c234a85ce677498b92cf8f708ba54a39f2ba5ec72d849856ac0d6070c",
+   "fetched_utc": "2026-11-09T13:46:17Z"
+  },
+  {
+   "file": "Storm_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120275",
+   "bytes": 13770562,
+   "sha256": "439c5bc211233e30b05447467ac954a4817994a2728ca987e3638b30b2111713",
+   "fetched_utc": "2026-11-09T13:46:23Z"
+  },
+  {
+   "file": "Tiger_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120278",
+   "bytes": 15418879,
+   "sha256": "2c94227c34ee65dfe5c181795566eee8bc7017ab18edf110f95ca4c3b4607ec3",
+   "fetched_utc": "2026-11-09T13:46:30Z"
+  },
+  {
+   "file": "Vader_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120281",
+   "bytes": 15015556,
+   "sha256": "edc1365a5cb0aa0d8eb85b6b6057a2abefa709101ff04a8cfe924bf03af16a79",
+   "fetched_utc": "2026-11-09T13:46:37Z"
+  },
+  {
+   "file": "Viper_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120284",
+   "bytes": 13207514,
+   "sha256": "4c1d8ecaa1cead1db5b772f29e011114f8d3e890ad7d3d377283d780797172b1",
+   "fetched_utc": "2026-11-09T13:46:44Z"
+  },
+  {
+   "file": "Batmn_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120287",
+   "bytes": 17377903,
+   "sha256": "54cf2c74db5051ada5fc5eebe5188b21944239ef035fae7bab3899773cf4c54f",
+   "fetched_utc": "2026-11-09T13:46:51Z"
+  },
+  {
+   "file": "Deena_Raw_Data.mat",
+   "url": "https://ndownloader.figshare.com/files/28120290",
+   "bytes": 14931316,
+   "sha256": "152d91c073dfb4fc4b1ac5b49d303e1430b94bb22d804244e34871edc758aee9",
+   "fetched_utc": "2026-11-09T13:46:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/MacLean2021_PLoSOne.zip"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "Merk2022_eLife",
+ "module": "timeseries",
+ "rows": 73,
+ "subjects": 23,
+ "persons": 16,
+ "zip_bytes": 244946414,
+ "zip_sha256": "42eb8635ce6da1f00025756a0491ccacfa0506c40c9cf13b7e63525263f75a6f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "patients of Table 1 found in the deposit by UPDRS-III (off) and disease duration",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "patients of Table 1 whose recorded hemispheres (L, R or both) match the sessions in the deposit",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1, Hemisphere column",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate of the released signals (Hz)",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Methods (signals resampled to 1 kHz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the last four channels of every run are the movement channels in the same order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing samples in the released channels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cleaned channels are non-negative",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row and one sample file per run",
+   "ok": true,
+   "detail": "73 rows"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit has 16 participants (73 runs); the paper analyses 11 (Table 1) and does not say why five were left out, nor which sessions or movements were used. All 16 are released and no row is marked excluded; the 11 of Table 1 were matched by UPDRS-III and disease duration only to check the data.",
+  "The paper's count of 2,685 movements and its decoding results need movement detection and the brain signals, so they were not rebuilt; the published checks compare Table 1 and the sampling rate."
+ ],
+ "sources": [
+  {
+   "file": "bundle.zip",
+   "url": "https://dataverse.harvard.edu/api/access/datafiles/6177392,6177613,6177544,6177473,6177762,6177355,6177675,6177431,6177269,6177444,6177322,6177465,6177411,6177784,6177775,6177632,6177409,6177633,6177389,6177476,6177438,6177766,6177521,6177319,6177617,6177518,6177304,6177306,6177275,6177510,6177491,6177583,6177430,6177300,6177294,6177712,6177739,6177522,6177481,6177773,6177435,6177391,6177350,6177582,6177375,6177623,6177451,6177316,6177759,6177298,6177462,6177691,6177741,6177728,6177616,6177654,6177507,6177482,6177614,6177549,6177310,6177264,6177586,6177456,6177410,6177363,6177415,6177638,6177577,6177318,6177763,6177485,6177593,6177506,6177379,6177646,6177433,6177792,6177655,6177543,6177428,6177486,6177315,6177597,6177336,6177771,6177563,6177545,6177619,6177718,6177738,6177788,6177546,6177394,6177280,6177345,6177423,6177622,6177733,6177537,6177401,6177541,6177325,6177326,6177496,6177324,6177755,6177405,6177387,6177550,6177311,6177284,6177288,6177776,6177434,6177283,6177628,6177287,6177261,6177774,6177594,6177296,6177599,6177539,6177354,6177731,6177337,6177378,6177514,6177360,6177274,6177427,6177793,6177698,6177502,6177682,6177442,6177299,6177380,6177323,6177605,6177330,6177722,6177498,6177338,6177602,6177276,6177259,6177509,6177580,6177782,6177630,6177606,6177268,6177265,6177534,6177329,6177596,6177343,6177341,6177574,6177307,6177789,6177425,6177511,6177344,6177369,6177725,6177571,6177570,6177445,6177478,6177452,6177678,6177291,6177373,6177437,6177388,6177504,6177639,6177267,6177753,6177453,6177644,6177653,6177660,6177301,6177398,6177258,6177461,6177536,6177527,6177342,6177679,6177309,6177658,6177665,6177455,6177662,6177370,6177609,6177293,6177592,6177703,6177769,6177640,6177416,6177584,6177260,6177495,6177351,6177390,6177488,6177634,6177669,6177615,6177335,6177604,6177567,6177479?format=original",
+   "bytes": 1220058897,
+   "sha256": "81e16c724eee1a91fe9ffdc9ee1106db6580688a8bb5214ce3dc956385b0958f",
+   "fetched_utc": "2026-11-09T16:56:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Merk2022_eLife.zip"
+}

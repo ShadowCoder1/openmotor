@@ -1,0 +1,7 @@
+{
+ "id": "Noboa2025_SciRep",
+ "skipped": true,
+ "reason": "no trial-level data",
+ "details": "OSF project 4b58c (no license stated) holds only stimuli (3 mp3), a PDF of the tapping analysis script, a presentation script and neural_entr_sss.csv (EEG steady-state evoked potential amplitudes per participant, not movement); the folder Results/Behavioural data, where the finger-tapping files belong, is empty (0 files, also through the view-only link in the paper Data availability statement). Retry if the authors upload the tapping files (MIDI taps, 80/120/150 bpm metronome and music conditions, synchronization and continuation phases).",
+ "sources": []
+}

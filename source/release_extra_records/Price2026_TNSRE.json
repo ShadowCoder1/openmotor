@@ -1,0 +1,665 @@
+{
+ "id": "Price2026_TNSRE",
+ "module": "timeseries",
+ "rows": 72,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 287353047,
+ "zip_sha256": "e7fd7d3b9725625a6940f1b665683881c43369a36e82133972a5e301755d4a37",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-side perturbation",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "II.C Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-side perturbation",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "II.C Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other-sex participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: mean",
+   "computed": 24.666666666666668,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: SD",
+   "computed": 5.974694109071167,
+   "reported": 6.0,
+   "tol": 0.5,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height: mean (cm)",
+   "computed": 166.08333333333334,
+   "reported": 166.0,
+   "tol": 0.5,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height: SD (cm)",
+   "computed": 5.418123347254158,
+   "reported": 5.0,
+   "tol": 0.5,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight: mean (kg)",
+   "computed": 69.21608333333333,
+   "reported": 69.2,
+   "tol": 0.05,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight: SD (kg)",
+   "computed": 9.39385182948094,
+   "reported": 9.4,
+   "tol": 0.05,
+   "source": "II.A Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants walking at 1.0 m/s",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "II.C Experimental Protocol (all but one)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "renamed marker files (P02, P03, P14) match the length of the force file of the same block within 2 s (supports the block mapping)",
+   "ok": true,
+   "detail": "{'grf': {('P02', 'onlate_postearly'): 120.0, ('P02', 'postlate'): 60.0, ('P02', 'pre_onearly'): 120.0, ('P03', 'onlate_postearly'): 120.0, ('P03', 'postlate'): 60.0, ('P03', 'pre_onearly'): 120.0, ('P14', 'onlate_postearly'): 120.0, ('P14', 'postlate'): 60.0, ('P14', 'pre_onearly'): 120.0}, 'mocap': {('P02', 'onlate_postearly'): 120.0, ('P02', 'postlate'): 60.0, ('P02', 'pre_onearly'): 120.0, ('P03', 'onlate_postearly'): 120.0, ('P03', 'postlate'): 60.0, ('P03', 'pre_onearly'): 120.0, ('P14', 'onlate_postearly'): 120.0, ('P14', 'postlate'): 60.0, ('P14', 'pre_onearly'): 120.0}}"
+  },
+  {
+   "kind": "internal",
+   "what": "6 recordings per participant (3 blocks x mocap and grf)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Marker and force files of the same block differ in length for two blocks in the deposit: P08 postlate (markers 120 s, forces 60 s) and P12 pre_onearly (forces 110.4 s, markers 120 s); both are kept as shared. The paper's Table-free outcome measures (GRF impulse, push-off, braking, spatio-temporal asymmetries) come from the .mat file and were not recomputed; checks are participant counts and demographics. The article itself is licensed CC BY-NC-ND while the data deposit is CC BY 4.0; the data license is used."
+ ],
+ "sources": [
+  {
+   "file": "participant_info.csv",
+   "url": "https://ndownloader.figshare.com/files/61375336",
+   "bytes": 573,
+   "sha256": "959dbe9382f4ff3b68a406221e9de93a07c2dd7bb151350e79e9fe9b55873658",
+   "fetched_utc": "2026-11-09T21:46:30Z"
+  },
+  {
+   "file": "readme.txt",
+   "url": "https://ndownloader.figshare.com/files/61375339",
+   "bytes": 3145,
+   "sha256": "5a9b23c6e3f9255629cabfe1c0eadfa34dc70d920ae741224443c012fa0780c3",
+   "fetched_utc": "2026-11-09T21:46:40Z"
+  },
+  {
+   "file": "P15_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375369",
+   "bytes": 9811321,
+   "sha256": "da70cf32025ddcb3a81cd2dc3986da91f1c4f56b60fbd849924ed3f5d59d169a",
+   "fetched_utc": "2026-11-09T22:50:21Z"
+  },
+  {
+   "file": "P15_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375345",
+   "bytes": 4992800,
+   "sha256": "db4b1280e0290c76844472d08c4ae86ba34b6fe61c3fdc44857a2734915e917d",
+   "fetched_utc": "2026-11-09T22:50:28Z"
+  },
+  {
+   "file": "P15_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375375",
+   "bytes": 9808313,
+   "sha256": "83337a3f389801e56c81b5a1fd74adeaacb9171025994d3680463888496f6dce",
+   "fetched_utc": "2026-11-09T22:50:36Z"
+  },
+  {
+   "file": "P15_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375450",
+   "bytes": 13566367,
+   "sha256": "45d71d6c6a941fc02d0d808d0cf0bf24b1efc8f851882772f404ad5c2bb33836",
+   "fetched_utc": "2026-11-09T22:50:43Z"
+  },
+  {
+   "file": "P15_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375360",
+   "bytes": 6807933,
+   "sha256": "24ccb88270ab97a6a139f8af95bfd09bfe6fd7e4a9414d7f80058e01fbe42463",
+   "fetched_utc": "2026-11-09T22:51:04Z"
+  },
+  {
+   "file": "P15_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375453",
+   "bytes": 13646461,
+   "sha256": "b72de8d7808daf4c98c02296390eb1b5fbbba2f1fd268861d403556c76a8cceb",
+   "fetched_utc": "2026-11-09T22:51:13Z"
+  },
+  {
+   "file": "P14_mocap_base_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375381",
+   "bytes": 9951504,
+   "sha256": "5c6f3a9748bce687811203da770aee0df1cfa680ca92429eebcfad72fac8ea87",
+   "fetched_utc": "2026-11-09T22:51:22Z"
+  },
+  {
+   "file": "P14_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375384",
+   "bytes": 9936088,
+   "sha256": "fcddeeb4ff0c7376af98bf670582bf4991a9237f7176f01a030958e62ea8ef8c",
+   "fetched_utc": "2026-11-09T22:51:31Z"
+  },
+  {
+   "file": "P14_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375348",
+   "bytes": 4971145,
+   "sha256": "de87da8b4225f3570cc029f467db4376c3964be6ed1bed609b20955c52acafaa",
+   "fetched_utc": "2026-11-09T22:51:39Z"
+  },
+  {
+   "file": "P14_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375456",
+   "bytes": 13500489,
+   "sha256": "610149315ae66e6e2a477e3f066e2f37e42a751b4a8351a9d27c15ae88aeee14",
+   "fetched_utc": "2026-11-09T22:51:48Z"
+  },
+  {
+   "file": "P14_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375366",
+   "bytes": 6746348,
+   "sha256": "4c97c0267302a45c4e708d42eb63a5d507bd80b88fe9f39fe4b1622542fc54f5",
+   "fetched_utc": "2026-11-09T22:52:06Z"
+  },
+  {
+   "file": "P14_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375468",
+   "bytes": 13574382,
+   "sha256": "e775ea96d8b511c2769dab514d87cc411d6301949fef65de87a377f8efdd1f4b",
+   "fetched_utc": "2026-11-09T22:52:15Z"
+  },
+  {
+   "file": "P13_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375393",
+   "bytes": 9954645,
+   "sha256": "174733b2ba3b1485ace127de600decb9c894fd80ec6caf731e5a0349cf8df544",
+   "fetched_utc": "2026-11-09T22:52:24Z"
+  },
+  {
+   "file": "P13_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375351",
+   "bytes": 4976997,
+   "sha256": "bb1223b602eb25265c89d95331f0c39a0c73ee310004751049c38514e61e556f",
+   "fetched_utc": "2026-11-09T22:52:32Z"
+  },
+  {
+   "file": "P13_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375396",
+   "bytes": 9954825,
+   "sha256": "036abfb6ad0664bc77b68df1099fa2866c55ca7809fe7036e3616a639a1b16ff",
+   "fetched_utc": "2026-11-09T22:52:40Z"
+  },
+  {
+   "file": "P13_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375471",
+   "bytes": 13521278,
+   "sha256": "63bc9dc5b94a8c0b2401d8a7380fbbe7c03b2a06baabfcbd3186a739fc9456e7",
+   "fetched_utc": "2026-11-09T22:52:48Z"
+  },
+  {
+   "file": "P13_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375378",
+   "bytes": 6792955,
+   "sha256": "98ef5be4360878a755c0dfe0cfbaf9b11af20b1d1c7e0e64f218c84585434997",
+   "fetched_utc": "2026-11-09T22:52:56Z"
+  },
+  {
+   "file": "P12_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375408",
+   "bytes": 9943669,
+   "sha256": "8ac09632f475eae89b973a4929db18b8f97e6abea485f755133d0b86ccb8946c",
+   "fetched_utc": "2026-11-09T22:53:24Z"
+  },
+  {
+   "file": "P12_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375354",
+   "bytes": 4970716,
+   "sha256": "b4abc2f0dfe5280697850fd65b624f72b02eed3b394807afb5cb030017042af9",
+   "fetched_utc": "2026-11-09T22:53:32Z"
+  },
+  {
+   "file": "P12_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375411",
+   "bytes": 9955824,
+   "sha256": "d9efe019ebb8443dbb28d798e9454dcad23c3afa016444866501476a4a38ddd8",
+   "fetched_utc": "2026-11-09T22:53:40Z"
+  },
+  {
+   "file": "P12_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375483",
+   "bytes": 13394094,
+   "sha256": "7ef860c6a5582c7cdda3e0d8d4eb090c4c099ddbce26eb9f30e92326b139a7c1",
+   "fetched_utc": "2026-11-09T22:53:47Z"
+  },
+  {
+   "file": "P12_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375387",
+   "bytes": 6752783,
+   "sha256": "2ad945cdef9cb78e40cf768ee8b531775d6f6a36fc077190b049313ee6824b3f",
+   "fetched_utc": "2026-11-09T22:53:54Z"
+  },
+  {
+   "file": "P12_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375480",
+   "bytes": 12432034,
+   "sha256": "c4b3c1f70a30a6f9cf0d85a5f8abce3dfad651d1ace5053ee4a2f34393b7ed76",
+   "fetched_utc": "2026-11-09T22:54:04Z"
+  },
+  {
+   "file": "P11_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375342",
+   "bytes": 9743362,
+   "sha256": "5189916b7fc1f628212c830387a5cf86ecc40269b645a665d355137724d3f271",
+   "fetched_utc": "2026-11-09T22:54:22Z"
+  },
+  {
+   "file": "P11_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375357",
+   "bytes": 4963604,
+   "sha256": "810730416410850f5dd3f160023813ca18d4feab6794dd9f966b03ede351de74",
+   "fetched_utc": "2026-11-09T22:54:29Z"
+  },
+  {
+   "file": "P11_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375498",
+   "bytes": 13562182,
+   "sha256": "ad04ef30117248b801d3a5d4b17ea2bb48d8402fafb5a41a8cca7982166536b9",
+   "fetched_utc": "2026-11-09T22:54:44Z"
+  },
+  {
+   "file": "P11_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375399",
+   "bytes": 6779445,
+   "sha256": "b190ff25bd989e00e1e1811d77b2eaed8fb6ae3fac5c034a453fc096963437e7",
+   "fetched_utc": "2026-11-09T22:54:52Z"
+  },
+  {
+   "file": "P11_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375507",
+   "bytes": 13541857,
+   "sha256": "77f5ac479984143dbba0da1de58b8c3db942f82a7af40d854d9997bf2e43e696",
+   "fetched_utc": "2026-11-09T22:55:00Z"
+  },
+  {
+   "file": "P11_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375417",
+   "bytes": 9933570,
+   "sha256": "9a7fbee6db44a9c048200504bf162742cb47a3fd49ebf1c1e31348ba021d1f52",
+   "fetched_utc": "2026-11-09T23:04:48Z"
+  },
+  {
+   "file": "P13_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375477",
+   "bytes": 13545951,
+   "sha256": "fad78e262e018c392166cce39cf1cc94be5e58f59a3c55bc8a712b9f57804085",
+   "fetched_utc": "2026-11-09T23:05:06Z"
+  },
+  {
+   "file": "P10_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375420",
+   "bytes": 9884675,
+   "sha256": "5cf20bd0673dd260616b6e060b1d4b1de126875bb4c5cb6b90a5326b42003ebd",
+   "fetched_utc": "2026-11-09T23:05:13Z"
+  },
+  {
+   "file": "P10_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375363",
+   "bytes": 4945143,
+   "sha256": "76526f9688d0a19684a361459bb23c281a8c73933ac5cf32410319a9ac23fc1e",
+   "fetched_utc": "2026-11-09T23:05:20Z"
+  },
+  {
+   "file": "P10_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375441",
+   "bytes": 9916832,
+   "sha256": "629ef3551e271f5b82fbdfea97bedaa8859e4efb3c9d7ae99f71f9a416e29be7",
+   "fetched_utc": "2026-11-09T23:05:27Z"
+  },
+  {
+   "file": "P10_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375405",
+   "bytes": 6750654,
+   "sha256": "14d5a21ccdc3e4fee847fb810cc02eb93a960df861ab2a69cce844db9e416be4",
+   "fetched_utc": "2026-11-09T23:05:53Z"
+  },
+  {
+   "file": "P10_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375522",
+   "bytes": 13571881,
+   "sha256": "8877d7d8791e1b09ead29c5e2f88e6a0ecb47b711d6c2b6bcfb91cc3299eb258",
+   "fetched_utc": "2026-11-09T23:06:01Z"
+  },
+  {
+   "file": "P09_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375432",
+   "bytes": 9657378,
+   "sha256": "4e8b114ea1e435a829e0d78fb9be2825fac74b8ff4231a138ef4bd0090ecba6f",
+   "fetched_utc": "2026-11-09T23:06:08Z"
+  },
+  {
+   "file": "P09_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375372",
+   "bytes": 4688670,
+   "sha256": "888da121541a8d60bab7d3231545fa0005388c940f983ea37feb5802f531d3dc",
+   "fetched_utc": "2026-11-09T23:06:14Z"
+  },
+  {
+   "file": "P09_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375438",
+   "bytes": 9959450,
+   "sha256": "6a8b17cdf05ed7a0c60c60c9e5088bdb70c13b1196761b1e95d8bcdce8517ae5",
+   "fetched_utc": "2026-11-09T23:06:21Z"
+  },
+  {
+   "file": "P09_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375525",
+   "bytes": 13502606,
+   "sha256": "b02c2e55a84eb91c2143b5ed2adb8f1afcec06105f6bb3325f7d9d9ee5bb0b6d",
+   "fetched_utc": "2026-11-09T23:06:27Z"
+  },
+  {
+   "file": "P09_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375414",
+   "bytes": 6759274,
+   "sha256": "4e1f5dc97eeae406e234539d34e32344c50d0b277f310560a89df6c9e6f8a933",
+   "fetched_utc": "2026-11-09T23:06:34Z"
+  },
+  {
+   "file": "P09_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375528",
+   "bytes": 13551351,
+   "sha256": "51bb5740ea626e8440954ea10f9f85737e46854086b546eef606710afcbd29ad",
+   "fetched_utc": "2026-11-09T23:06:40Z"
+  },
+  {
+   "file": "P08_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375459",
+   "bytes": 9808513,
+   "sha256": "e638816046a5e45bfc25a07fa9c44fe2c95c0153c9a752d574e5674f9972973c",
+   "fetched_utc": "2026-11-09T23:06:56Z"
+  },
+  {
+   "file": "P08_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375447",
+   "bytes": 9854784,
+   "sha256": "2b6c4db5bdc4643d1fcbf230f9d3fc465482d1ede1fa6fddcda3b9e409f1b106",
+   "fetched_utc": "2026-11-09T23:07:03Z"
+  },
+  {
+   "file": "P08_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375444",
+   "bytes": 9659557,
+   "sha256": "6f4adbd6dd9aed7bf958d8c1283970e4246b50c67b8f1b417c70eda2fbc4512d",
+   "fetched_utc": "2026-11-09T23:07:10Z"
+  },
+  {
+   "file": "P08_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375531",
+   "bytes": 13401360,
+   "sha256": "30755ced66208bcb97c285b705c309c176101293576ca0b01a232ef6d5832803",
+   "fetched_utc": "2026-11-09T23:07:16Z"
+  },
+  {
+   "file": "P08_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375435",
+   "bytes": 6732566,
+   "sha256": "b27d7e5b1a1acc5abc9d9b573f9e052121bbb7cee4da852fb9c8ecd6ac61b177",
+   "fetched_utc": "2026-11-09T23:07:24Z"
+  },
+  {
+   "file": "P08_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375534",
+   "bytes": 13498302,
+   "sha256": "ce892cd2c56ceab1f8cfb60cc2f50573de29615158b013b78bff33e5531d008e",
+   "fetched_utc": "2026-11-09T23:07:31Z"
+  },
+  {
+   "file": "P07_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375489",
+   "bytes": 9938512,
+   "sha256": "ad7d29565488d92cbb17976aef949d2e21bbef12810ad298b7f91a11b10168dc",
+   "fetched_utc": "2026-11-09T23:07:38Z"
+  },
+  {
+   "file": "P07_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375390",
+   "bytes": 4966236,
+   "sha256": "1de1b95013baae89412dfd0a943a65092408bf070c821ee2d82d0d07a345f38c",
+   "fetched_utc": "2026-11-09T23:07:44Z"
+  },
+  {
+   "file": "P07_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375486",
+   "bytes": 9954247,
+   "sha256": "23f54e2d8ccdf97c5344d647f85f8a0c07312b18aa07c328fbc57bd884a6004e",
+   "fetched_utc": "2026-11-09T23:08:04Z"
+  },
+  {
+   "file": "P07_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375537",
+   "bytes": 13535220,
+   "sha256": "14567122f08d3b84248a4313d411e2816fc8067569edd8420d53b06a05a9ab1d",
+   "fetched_utc": "2026-11-09T23:08:11Z"
+  },
+  {
+   "file": "P07_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375429",
+   "bytes": 6735770,
+   "sha256": "14ed453633d5b158015e0a531d0a7ad2817e3852e51ca80861a46f56baa6ed4b",
+   "fetched_utc": "2026-11-09T23:08:17Z"
+  },
+  {
+   "file": "P07_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375540",
+   "bytes": 13582909,
+   "sha256": "420667595a14186b08cc24c758c23d3bdf812e46d8b42ef53d405f242142fe0d",
+   "fetched_utc": "2026-11-09T23:08:23Z"
+  },
+  {
+   "file": "P06_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375492",
+   "bytes": 9952487,
+   "sha256": "52aae3248351969d985da54d09b7c557e95ad14ce0f2377817db6d0b55c91df2",
+   "fetched_utc": "2026-11-09T23:08:31Z"
+  },
+  {
+   "file": "P06_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375402",
+   "bytes": 4974931,
+   "sha256": "32e7d629be9caf77b2d924dd812490e5780c6f4b48a9c70fa4fcecfd2ce63665",
+   "fetched_utc": "2026-11-09T23:08:37Z"
+  },
+  {
+   "file": "P06_mocap_pre_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375495",
+   "bytes": 9957629,
+   "sha256": "eb7167732ffb501138a1ca0ca876e0efdac291e4c3151931699d463e1f5f7c51",
+   "fetched_utc": "2026-11-09T23:08:44Z"
+  },
+  {
+   "file": "P06_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375543",
+   "bytes": 13548057,
+   "sha256": "cf0e4342d665aa77f5e899c9fff032a95a8125b0ee83d572f80da7b264d36399",
+   "fetched_utc": "2026-11-09T23:08:50Z"
+  },
+  {
+   "file": "P06_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375462",
+   "bytes": 6744226,
+   "sha256": "8c19b5f13e06b5dad7984c3e244f002ae88253b1c9def0d2166a881312fd3095",
+   "fetched_utc": "2026-11-09T23:09:23Z"
+  },
+  {
+   "file": "P06_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375546",
+   "bytes": 13517419,
+   "sha256": "f567144c57e43522971a7ddd8b5ffca5e23e89983b747e085e04380ba74e0f4e",
+   "fetched_utc": "2026-11-09T23:09:29Z"
+  },
+  {
+   "file": "P03_mocap_base_onearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375504",
+   "bytes": 9972014,
+   "sha256": "d13caff767f7185b9e731afa2356b91843a1c8b4e73a1d2b48f576e6f66ba7f0",
+   "fetched_utc": "2026-11-09T23:09:36Z"
+  },
+  {
+   "file": "P03_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375510",
+   "bytes": 9965972,
+   "sha256": "2f5c15e4dca017cc9b43bf4f64aebe4c4808a395c2a913e883777483087107e4",
+   "fetched_utc": "2026-11-09T23:09:43Z"
+  },
+  {
+   "file": "P03_mocap_postlate.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375423",
+   "bytes": 4982058,
+   "sha256": "9ec4daaf1afa018ba3a28e63a99538268b4b6dd37a28395cde9535e078415ded",
+   "fetched_utc": "2026-11-09T23:09:50Z"
+  },
+  {
+   "file": "P03_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375549",
+   "bytes": 13438399,
+   "sha256": "2631007687ab3bdb08c67dba2316943ef846f5cb57307360e355e9422a2661d9",
+   "fetched_utc": "2026-11-09T23:09:57Z"
+  },
+  {
+   "file": "P03_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375465",
+   "bytes": 6758664,
+   "sha256": "c45614d32f2c1536ffe34edc930ee86f5a62d929c819afd13266c9917c436183",
+   "fetched_utc": "2026-11-09T23:10:17Z"
+  },
+  {
+   "file": "P03_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375552",
+   "bytes": 13460663,
+   "sha256": "900e5a32ffa6b0ee91ea7c21b62b84da513ee12f455d836224c754b4f4b51393",
+   "fetched_utc": "2026-11-09T23:10:24Z"
+  },
+  {
+   "file": "P02_mocap_adapt_post_shoes.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375513",
+   "bytes": 9610825,
+   "sha256": "ef6ff591c3eed11809addb9a3b994b329098a72ae384f53d4f23d593e4607680",
+   "fetched_utc": "2026-11-09T23:10:32Z"
+  },
+  {
+   "file": "P02_mocap_baseline_adapt_shoes.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375519",
+   "bytes": 9949876,
+   "sha256": "9a310cda37c24f5d3ca476a243ad86ef3205269c1b53055a10f3fde20a18a976",
+   "fetched_utc": "2026-11-09T23:10:39Z"
+  },
+  {
+   "file": "P02_mocap_onlate_postearly.tsv",
+   "url": "https://ndownloader.figshare.com/files/61375426",
+   "bytes": 4828837,
+   "sha256": "52b10cb9f090c2faaa92fd7501d7193fe0f5f4f4484f8809541fac65a99be938",
+   "fetched_utc": "2026-11-09T23:10:45Z"
+  },
+  {
+   "file": "P02_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375555",
+   "bytes": 13334936,
+   "sha256": "bbdf450b569107dad1891842b2914b629f261b949fc26842b0e9c091ece89ffa",
+   "fetched_utc": "2026-11-09T23:10:53Z"
+  },
+  {
+   "file": "P02_grf_postlate.mot",
+   "url": "https://ndownloader.figshare.com/files/61375474",
+   "bytes": 6711092,
+   "sha256": "bf16f3fd72c74c3e8588d12de1bcc760e909e8e80ad5b2337014533cbb29aaf9",
+   "fetched_utc": "2026-11-09T23:11:02Z"
+  },
+  {
+   "file": "P02_grf_pre_onearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375558",
+   "bytes": 13447527,
+   "sha256": "e941c13e2a4df60746b15b343e521146323fce479474e2d8a2ad63872d262b44",
+   "fetched_utc": "2026-11-09T23:11:09Z"
+  },
+  {
+   "file": "P10_grf_onlate_postearly.mot",
+   "url": "https://ndownloader.figshare.com/files/61375516",
+   "bytes": 13474635,
+   "sha256": "04c9a26136e13b7268ff4d3fc5ea4ec90d7b0bfda41b3093854b691d274d58b7",
+   "fetched_utc": "2026-11-09T23:12:22Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Price2026_TNSRE.zip"
+}

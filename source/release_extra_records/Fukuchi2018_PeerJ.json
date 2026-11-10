@@ -1,0 +1,183 @@
+{
+ "id": "Fukuchi2018_PeerJ",
+ "module": "timeseries",
+ "rows": 4046,
+ "subjects": 51,
+ "persons": 51,
+ "zip_bytes": 672723022,
+ "zip_sha256": "75c5e86eb288d91d8704668e093480b49d461383f53dd3155c79627e6b0b2286",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "young adults",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, mean age (years)",
+   "computed": 27.583333333333332,
+   "reported": 27.6,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, SD of age (years)",
+   "computed": 4.392846622553007,
+   "reported": 4.4,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, mean height (cm)",
+   "computed": 171.08333333333334,
+   "reported": 171.1,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, SD of height (cm)",
+   "computed": 10.52391341769726,
+   "reported": 10.5,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, mean mass (kg)",
+   "computed": 68.39791666666667,
+   "reported": 68.4,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, SD of mass (kg)",
+   "computed": 12.226685703701616,
+   "reported": 12.2,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "marker sampling rate (Hz)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 1,
+   "source": "Methods, Data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ground reaction force sampling rate (Hz)",
+   "computed": 300.0300030002973,
+   "reported": 300.0,
+   "tol": 1,
+   "source": "Methods, Data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill recording length (s; last 30 s of each 90 s trial recorded)",
+   "computed": 29.993,
+   "reported": 30.0,
+   "tol": 0.1,
+   "source": "Methods, Treadmill trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill speed 1 relative to speed 5 (40% / 100% of Froude speed)",
+   "computed": 0.4007447697399201,
+   "reported": 0.4,
+   "tol": 0.03,
+   "source": "Methods (40-145% of Froude speed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill speed 8 relative to speed 5 (145% / 100%)",
+   "computed": 1.450483858973402,
+   "reported": 1.45,
+   "tol": 0.05,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overground slow speed relative to comfortable (30% slower)",
+   "computed": 0.7044353124011716,
+   "reported": 0.7,
+   "tol": 0.05,
+   "source": "Methods, Overground trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overground fast speed relative to comfortable (30% faster)",
+   "computed": 1.2628276395267808,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Methods, Overground trials",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every walking trial has a marker file and a force file",
+   "ok": true,
+   "detail": "2023 marker and 2023 force recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "51 participants kept",
+   "ok": true,
+   "detail": "51"
+  },
+  {
+   "kind": "internal",
+   "what": "all sample files written",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recording lengths between 0.5 and 300 s",
+   "ok": true,
+   "detail": "0.9-30.0 s"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes 42 volunteers (24 young, 18 older); the current figshare version (2) holds 51 (24 young, 27 older). The young group reproduces the paper's age, height and mass; the older-group numbers of the paper were not checked because the group has grown.",
+  "The paper counts 6,916 metadata rows; the deposit's WBDSinfo.csv now has 7,203 (more participants)."
+ ],
+ "sources": [
+  {
+   "file": "WBDSinfo.csv",
+   "url": "https://ndownloader.figshare.com/files/68504641",
+   "bytes": 640894,
+   "sha256": "1bd39bd02dae423c415bc8a8092bde47ea3af7b1b30046984534a278197808e3",
+   "fetched_utc": "2026-11-09T00:52:47Z"
+  },
+  {
+   "file": "WBDSascii.zip",
+   "url": "https://ndownloader.figshare.com/files/68194516",
+   "bytes": 686716664,
+   "sha256": "4939654308739a5ac020705869f599cca39ad7bb98628fbe43d5b59ec194774d",
+   "fetched_utc": "2026-11-09T00:53:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Fukuchi2018_PeerJ.zip"
+}

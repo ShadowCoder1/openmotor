@@ -1,0 +1,119 @@
+{
+ "id": "Braun2016_JVis",
+ "module": "timeseries",
+ "rows": 19915,
+ "subjects": 32,
+ "persons": 10,
+ "zip_bytes": 307174529,
+ "zip_sha256": "9ad1f819dfb1d31610f4d6f790ea8af70bf28b524c1a31cf6eed81e6e36e8044",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "trained observers",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "untrained (naive) observers",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target vertical components",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Paradigms (0, +-2, +-5, +-10 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Methods, Eye movement recording",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "samples spaced 1 ms in sampled files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial counts per paradigm and group",
+   "ok": true,
+   "detail": "{('step-ramp pursuit', 'trained'): 5727, ('step-ramp pursuit', 'untrained'): 3834, ('ramp with initial saccade', 'trained'): 6222, ('ramp with initial saccade', 'untrained'): 4132}"
+  },
+  {
+   "kind": "internal",
+   "what": "every .pos file kept: 5727 + 3834 + 6222 + 4132 recordings",
+   "ok": true,
+   "detail": "19915"
+  },
+  {
+   "kind": "internal",
+   "what": "untrained recordings: 12 observer folders per paradigm = 6 observers x 2 folders",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no untrained observer has more pursuit trials than the 5 blocks x 150 collected (750)",
+   "ok": true,
+   "detail": "[519, 613, 658, 670, 681, 693]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Per-trial target speeds, the trial order, and the trials the authors excluded (typically 10-20% of pursuit and 5-10% of ramp trials per the Methods) are not in the deposit, which holds accepted trials only: the untrained observers have 519-693 pursuit recordings against the 750 trials (5 blocks of 150) collected, so the exclusion rate cannot be checked."
+ ],
+ "sources": [
+  {
+   "file": "README.rtf",
+   "url": "https://zenodo.org/api/records/150311/files/README.rtf/content",
+   "bytes": 61916,
+   "sha256": "c072d96af4f021d3833edc68d66c208f4fc2a29cae0caf95b743d23de244bae7",
+   "fetched_utc": "2026-11-09T12:11:52Z"
+  },
+  {
+   "file": "PursuitTrained.zip",
+   "url": "https://zenodo.org/api/records/150311/files/PursuitTrained.zip/content",
+   "bytes": 104797999,
+   "sha256": "0feff7461ae0bd6d3fe9ac6fa78267c1d876c6395e397971ebe9efa173a43582",
+   "fetched_utc": "2026-11-09T12:13:04Z"
+  },
+  {
+   "file": "PursuitUntrained.zip",
+   "url": "https://zenodo.org/api/records/150311/files/PursuitUntrained.zip/content",
+   "bytes": 67500522,
+   "sha256": "247a501b6182f4e18f707da8bddd5ed22446be589348a82e9b1d99c62c2179a7",
+   "fetched_utc": "2026-11-09T12:14:13Z"
+  },
+  {
+   "file": "SaccTrained.zip",
+   "url": "https://zenodo.org/api/records/150311/files/SaccTrained.zip/content",
+   "bytes": 112618773,
+   "sha256": "dc32ada75f5192ba8d75a9d2edd223c69aab1b4304eae7a6609e2bc4e8853f63",
+   "fetched_utc": "2026-11-09T12:15:38Z"
+  },
+  {
+   "file": "SaccUntrained.zip",
+   "url": "https://zenodo.org/api/records/150311/files/SaccUntrained.zip/content",
+   "bytes": 80654385,
+   "sha256": "0408dbdf0ff211fc63eedc0af09c27e76d9a4867cd2dc9fdf95a5310a02126cf",
+   "fetched_utc": "2026-11-09T12:17:09Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Braun2016_JVis.zip"
+}

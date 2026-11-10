@@ -1,0 +1,152 @@
+{
+ "id": "Megardon2017_JNeurophysiol",
+ "module": "saccade",
+ "rows": 6190,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 159086,
+ "zip_sha256": "669729580df1df003461fa8cd47603716d1e54b0d14ba42c2f7aca8dd92ba7c2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows are in participant, session, trial order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every table row is found in the event store with the same trial code",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "time from fixation offset and intersaccadic interval equal the event-store timestamp differences",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "first saccade end from fixation offset (nonInterSacc) equals marker 2 minus marker 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has 2 sessions of 800 trials in the event store",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants left after excluding those who rejected more than 40% of trials",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (14 recruited, 3 excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions per participant",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Experimental procedure",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all 6190 rows of the authors' table kept, 14 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "intersaccadic interval at least 80 ms in every row (the authors' rejection rule)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "intersaccadic interval: long minus short S1 duration (ms)",
+   "computed": 266.8409154058677,
+   "reported": 267.0,
+   "tol": 0.5,
+   "source": "Results, intersaccadic interval",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intersaccadic interval: long minus short gap (ms)",
+   "computed": 30.91795349732132,
+   "reported": 31.0,
+   "tol": 0.5,
+   "source": "Results, intersaccadic interval",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "time from fixation offset to saccade 2: long minus short S1 (ms)",
+   "computed": 271.58565162478624,
+   "reported": 272.0,
+   "tol": 0.5,
+   "source": "Results, time from fixation offset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "deviation data points per participant and condition",
+   "computed": 125.31818181818181,
+   "reported": 125.0,
+   "tol": 0.5,
+   "source": "Methods, Participants/Data analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports a Gap effect of 301 ms on the time from fixation offset to saccade 2; the converted rows give 302.4 ms (300.1 ms from participant means), so this number is not used as a check.",
+  "The 3 excluded participants are identified here by applying the paper's 40% rule to the deposit's rejected flags; the paper does not list who they are."
+ ],
+ "sources": [
+  {
+   "file": "deviation-summary.csv",
+   "url": "https://osf.io/download/bg2yf/",
+   "bytes": 4157,
+   "sha256": "a513d07b2547cbbbff795f67b7aa818fa84ee2ca4b31b0af9f8dab2745692733",
+   "fetched_utc": "2026-11-09T12:06:22Z"
+  },
+  {
+   "file": "deviation-and-duration_all-participants.csv",
+   "url": "https://osf.io/download/a6hcn/",
+   "bytes": 483497,
+   "sha256": "b0727cc5fdb6fa58d0fb3a4a3ec9fd3065dd01397832d7d905f3a54709ef180f",
+   "fetched_utc": "2026-11-09T12:06:27Z"
+  },
+  {
+   "file": "saccade-sequences_all-participants.h5",
+   "url": "https://osf.io/download/bmfzh/",
+   "bytes": 50956820,
+   "sha256": "aaa34cca204cba0d3c3e464923333240123cae654d0a91674823b1fa2efe9715",
+   "fetched_utc": "2026-11-09T12:06:34Z"
+  },
+  {
+   "file": "raw-data_all-participants.h5",
+   "url": "https://osf.io/download/x7z9a/",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "fetched_utc": "2026-11-09T12:06:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Megardon2017_JNeurophysiol.zip"
+}

@@ -1,0 +1,786 @@
+{
+ "id": "Murphy2024_PsyArXiv",
+ "module": "speech",
+ "rows": 32318,
+ "subjects": 186,
+ "persons": 186,
+ "zip_bytes": 650136,
+ "zip_sha256": "ed579347cb71f5e80a8bc8e57de26de78db72db6ea1de6e5f41f477d713ebd01",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 17103 productions of 99 participants; the 7 participants the script excludes are in the file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: Trial.Number.x equals Trial.Number.y; blocks 1-2 are Deer/Tear, 3-4 Bear/Pear, 5-6 Beer/Pier, odd blocks Canonical (trials 1-30), even blocks Reverse (trials 31-60)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 15215 productions of 87 participants; Replication (Beer/Pier) blocks 5-6 and Mixed blocks 3-6, odd blocks Canonical (trials 1-30), even blocks Reverse (trials 31-60)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: age and sex constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: age and sex constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant identifiers shared by Experiments 1 and 2 (treated as the same person)",
+   "ok": true,
+   "detail": "0 shared"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants entering the analysis",
+   "computed": 92.0,
+   "reported": 92.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: females among them",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean age (years)",
+   "computed": 28.07608695652174,
+   "reported": 28.1,
+   "tol": 0.05,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SD of age (years)",
+   "computed": 4.849909244992443,
+   "reported": 4.8,
+   "tol": 0.06,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: distinct ambiguous Canonical trials per participant and condition (at most)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Procedure (24 Canonical and 24 Reverse trials for each condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: distinct ambiguous Reverse trials per participant and condition (at most)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Procedure (24 Canonical and 24 Reverse trials for each condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants entering the analysis",
+   "computed": 87.0,
+   "reported": 87.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: females among them",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean age (years)",
+   "computed": 31.264367816091955,
+   "reported": 31.3,
+   "tol": 0.05,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SD of age (years)",
+   "computed": 5.973701610635205,
+   "reported": 6.0,
+   "tol": 0.05,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "F0 is z-scored within participant over the shared productions: mean 0 and SD 1 for every participant",
+   "ok": true,
+   "detail": "max |mean| 0.0013, SD 0.997-1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "every row has a perceptual response and an exposure sequence label; f0_z within +-8",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), intercept: beta",
+   "computed": 0.008255250707494777,
+   "reported": 0.01,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), intercept: SE",
+   "computed": 0.007963850593312342,
+   "reported": 0.01,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), intercept: t",
+   "computed": 1.0365903542222576,
+   "reported": 1.03,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Test Stimulus F0: beta",
+   "computed": 0.6881091112150898,
+   "reported": 0.69,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Test Stimulus F0: SE",
+   "computed": 0.04481256509306142,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Test Stimulus F0: t",
+   "computed": 15.355271669588795,
+   "reported": 15.35,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Statistical Regularity: beta",
+   "computed": 0.016070999484490412,
+   "reported": 0.02,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Statistical Regularity: SE",
+   "computed": 0.025659660766298314,
+   "reported": 0.03,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Statistical Regularity: t",
+   "computed": 0.6263137938907689,
+   "reported": 0.63,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Phoneme Generalization: beta",
+   "computed": 0.1375979058679757,
+   "reported": 0.14,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Phoneme Generalization: SE",
+   "computed": 0.019509324777772848,
+   "reported": 0.02,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Phoneme Generalization: t",
+   "computed": 7.0529301980118895,
+   "reported": 7.05,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Dimension Generalization: beta",
+   "computed": 0.09949754028542163,
+   "reported": 0.1,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Dimension Generalization: SE",
+   "computed": 0.019492541125766632,
+   "reported": 0.02,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Dimension Generalization: t",
+   "computed": 5.104390425212374,
+   "reported": 5.1,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity: beta",
+   "computed": 0.16287734387582958,
+   "reported": 0.16,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity: SE",
+   "computed": 0.031855541852130645,
+   "reported": 0.03,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity: t",
+   "computed": 5.1129986936617,
+   "reported": 5.11,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Phoneme: beta",
+   "computed": 0.2559831110902099,
+   "reported": 0.26,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Phoneme: SE",
+   "computed": 0.03902359885394791,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Phoneme: t",
+   "computed": 6.559700248259208,
+   "reported": 6.56,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Dimension: beta",
+   "computed": 0.24113814513320989,
+   "reported": 0.24,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Dimension: SE",
+   "computed": 0.038987944482622286,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Dimension: t",
+   "computed": 6.1849412256316825,
+   "reported": 6.19,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Phoneme: beta",
+   "computed": -0.01831731055201691,
+   "reported": -0.02,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Phoneme: SE",
+   "computed": 0.039022474879456856,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Phoneme: t",
+   "computed": -0.4694041218195504,
+   "reported": -0.47,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Dimension: beta",
+   "computed": -0.05639529429610657,
+   "reported": -0.06,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Dimension: SE",
+   "computed": 0.038988450360965536,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), Regularity x Dimension: t",
+   "computed": -1.4464615488428958,
+   "reported": -1.45,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Phoneme: beta",
+   "computed": -0.4414164430065997,
+   "reported": -0.44,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Phoneme: SE",
+   "computed": 0.07803789882617303,
+   "reported": 0.08,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Phoneme: t",
+   "computed": -5.6564368037361055,
+   "reported": -5.65,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Dimension: beta",
+   "computed": -0.5253463962578612,
+   "reported": -0.53,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Dimension: SE",
+   "computed": 0.07797108674156708,
+   "reported": 0.08,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, speech production F0), F0 x Regularity x Dimension: t",
+   "computed": -6.737707760815322,
+   "reported": -6.74,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 2 (Experiment 1, speech production F0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "No Generalization condition: t of Test Stimulus F0 x Statistical Regularity",
+   "computed": 9.436417346095917,
+   "reported": 9.44,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Speech Production (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Phoneme Generalization condition: t of Test Stimulus F0 x Statistical Regularity",
+   "computed": 0.8719829458400353,
+   "reported": 0.87,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Speech Production (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Dimension Generalization condition: t of Test Stimulus F0 x Statistical Regularity",
+   "computed": -0.8230436191132213,
+   "reported": -0.82,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 1, Speech Production (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), intercept: beta",
+   "computed": -0.03307020856340472,
+   "reported": -0.03,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), intercept: SE",
+   "computed": 0.014089749247217334,
+   "reported": 0.01,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), intercept: t",
+   "computed": -2.347111221296997,
+   "reported": -2.34,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Statistical Regularity: beta",
+   "computed": -0.04120449221805259,
+   "reported": -0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Statistical Regularity: SE",
+   "computed": 0.030257511746501646,
+   "reported": 0.03,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Statistical Regularity: t",
+   "computed": -1.3617938105177017,
+   "reported": -1.36,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Test Stimulus F0: beta",
+   "computed": 0.6012176179414901,
+   "reported": 0.6,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Test Stimulus F0: SE",
+   "computed": 0.04409725328832491,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Test Stimulus F0: t",
+   "computed": 13.63390173103292,
+   "reported": 13.64,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Condition: beta",
+   "computed": -0.5776532140875962,
+   "reported": -0.58,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Condition: SE",
+   "computed": 0.03897386232246752,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Condition: t",
+   "computed": -14.821554233145443,
+   "reported": -14.81,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0: beta",
+   "computed": 0.2443425327258746,
+   "reported": 0.24,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0: SE",
+   "computed": 0.03680971508895704,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0: t",
+   "computed": 6.637990327699593,
+   "reported": 6.64,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x Condition: beta",
+   "computed": 0.1106887515802754,
+   "reported": 0.11,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x Condition: SE",
+   "computed": 0.03681344015956579,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x Condition: t",
+   "computed": 3.0067483804963957,
+   "reported": 3.01,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), F0 x Condition: beta",
+   "computed": -0.23590170874483357,
+   "reported": -0.24,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), F0 x Condition: SE",
+   "computed": 0.03681315226118526,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), F0 x Condition: t",
+   "computed": -6.408082281874068,
+   "reported": -6.41,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0 x Condition: beta",
+   "computed": 0.3400883985089795,
+   "reported": 0.34,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0 x Condition: SE",
+   "computed": 0.07362103196629712,
+   "reported": 0.07,
+   "tol": 0.0051,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, Mixed Response task productions), Regularity x F0 x Condition: t",
+   "computed": 4.619446229233355,
+   "reported": 4.62,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Table 4 (Experiment 2, Mixed Response task productions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Mixed: Match: t of Test Stimulus F0 x Statistical Regularity",
+   "computed": 8.127770826989014,
+   "reported": 8.18,
+   "tol": 0.06,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Speech Production (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Mixed: Syllable-Generalization: t of Test Stimulus F0 x Statistical Regularity",
+   "computed": 1.4366757478014254,
+   "reported": 1.44,
+   "tol": 0.03,
+   "source": "Murphy, Nozari & Holt 2024, PsyArXiv, Experiment 2, Speech Production (post-hoc tests)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 file: 99 participants; the paper reports 110 tested, 18 excluded and 92 analysed (the script excludes 7 of the 99), so 11 of the excluded participants are not in the file.",
+  "Experiment 2 file: 87 participants (the paper tested 95 and analysed 87); the other 8 are not in the file.",
+  "Experiment 1 has two pairs of rows with the same participant, condition and trial number (kept as shared), so one participant has 25 ambiguous Canonical rows in one condition although the design has 24 trials.",
+  "Tables 2 and 4 were refitted in Python (REML with the random-effect terms the authors name, Powell optimizer); coefficients, SEs and t agree with the printed values to the printed decimals (t within 0.03); p-values were not refitted. One exception: the Experiment 2 post-hoc t of Test Stimulus F0 x Statistical Regularity in the Mixed: Match condition refits to 8.13 where the paper prints 8.18 (the random-effect estimates of the two programs differ slightly)."
+ ],
+ "sources": [
+  {
+   "file": "GEN_production_processed_data.xlsx",
+   "url": "https://osf.io/download/kz5w8/",
+   "bytes": 1717069,
+   "sha256": "435d83e27fe02cd6c5c6fa7ead275c7558058a768725b0ecf83dc7e5fb6e1499",
+   "fetched_utc": "2026-11-08T21:53:14Z"
+  },
+  {
+   "file": "MIXEDGEN_production_processed_data.xlsx",
+   "url": "https://osf.io/download/skdb7/",
+   "bytes": 1068208,
+   "sha256": "c92b456ff0edaeefa4e87556dd7a352fda6f6cde381d989b7eb2ed12d0d2f5c5",
+   "fetched_utc": "2026-11-08T21:53:19Z"
+  },
+  {
+   "file": "Generalize_Experiment1.Rmd",
+   "url": "https://osf.io/download/nxa5j/",
+   "bytes": 6696,
+   "sha256": "5fd2b3741b6f9f2dcce8b2810640dd14544cd81d8e53e8c6157d22c2dbd30f31",
+   "fetched_utc": "2026-11-08T21:53:22Z"
+  },
+  {
+   "file": "Generalize_Experiment2.Rmd",
+   "url": "https://osf.io/download/9phj4/",
+   "bytes": 9299,
+   "sha256": "090df1485fc84306b0856272641246c393704f2134345cbbd334ee7b13269e8e",
+   "fetched_utc": "2026-11-08T21:53:26Z"
+  },
+  {
+   "file": "Production_Main.csv",
+   "url": "https://osf.io/download/vwjh4/",
+   "bytes": 1460,
+   "sha256": "9c5635a72479d52e5537ef86a5d39bc057b3c4457e9f9cdec02cf30b60682dff",
+   "fetched_utc": "2026-11-08T21:53:29Z"
+  },
+  {
+   "file": "Mixed_Production.csv",
+   "url": "https://osf.io/download/4zcvr/",
+   "bytes": 981,
+   "sha256": "d79b669e362353d101c75bf84f4133abbf57dd0a21dab4617ae1d32d5a61cd11",
+   "fetched_utc": "2026-11-08T21:53:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Murphy2024_PsyArXiv.zip"
+}

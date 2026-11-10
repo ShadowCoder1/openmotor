@@ -1,0 +1,175 @@
+{
+ "id": "Foray2025_eNeuro",
+ "module": "force_field_reaching",
+ "rows": 11280,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 207097,
+ "zip_sha256": "12a81ae0f392b70d7a9181614a5a57a6f6cee1fe1dd94671ba619bd9eb40c5ba",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Materials and Methods ('Sixty right-handed participants')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the 0N group",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results ('Each group consisted of 20 individuals')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the 3N group",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results ('Each group consisted of 20 individuals')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the 7N group",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results ('Each group consisted of 20 individuals')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation coefficient, 7N group, early training",
+   "computed": 0.07857397786636061,
+   "reported": 0.08,
+   "tol": 0.005,
+   "source": "Results, 'Added motor noise affects the initial rate of adaptation'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation coefficient, 0N group, middle training",
+   "computed": 0.6078041140560155,
+   "reported": 0.61,
+   "tol": 0.005,
+   "source": "Results, 'Added motor noise affects the initial rate of adaptation'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation coefficient, 0N group, late training",
+   "computed": 0.5955180925726925,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Results, 'Added motor noise affects the initial rate of adaptation'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation coefficient, 7N group, late training",
+   "computed": 0.24321217846931859,
+   "reported": 0.24,
+   "tol": 0.005,
+   "source": "Results, 'Added motor noise affects the initial rate of adaptation'",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "1 + 22 + 16 + 20 + 80 error-clamp and 50 null rows per participant: 188 rows each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "channel-trial adaptation coefficients lie between -1.5 and 2 (x100 in the file)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit shares the authors' summary workspace, not every participant's trials: the force-field training trials, noise-only trials, and the hand and force traces of the 59 other participants are not in it, so there are no hand angles or maximum perpendicular errors. Only the baseline null trials (50 per participant, in the task direction) and the error-clamp trials are included. The schedule of one participant is stored in the workspace, but the trials were randomly dispersed, so their position among the force-field trials of the others is unknown: trial counts only the rows in this file.",
+  "The paper's carrying capacities, learning rates and ANOVAs come from model fits and tests that were not recomputed here.",
+  "Paper metadata: the paper is Foray et al., eNeuro 12(1):ENEURO.0100-24.2024 (online November 2024, volume year 2025; CC BY-NC-SA 4.0 according to Crossref). The OSF deposit states no license.",
+  "Adaptation coefficients printed in the paper's Results did not match the means recomputed from the workspace within the printed rounding (0.005), so these checks were dropped: 0N early: computed 0.23, paper 0.24; 3N early: computed 0.18, paper 0.19; 3N middle: computed 0.43, paper 0.44; 7N middle: computed 0.22, paper 0.23; 3N late: computed 0.45, paper 0.44. The paper does not say how the early, middle and late training periods were averaged beyond the Figure 3 description; the calculation follows the authors' MATLAB code."
+ ],
+ "sources": [
+  {
+   "file": "READ_ME.txt",
+   "url": "https://osf.io/download/fapcu/",
+   "bytes": 990,
+   "sha256": "7790e7eb263cf020198432020df5b96d77c59fd154feeff0adca1aaf63b4bf42",
+   "fetched_utc": "2026-11-09T10:05:46Z"
+  },
+  {
+   "file": "MV_analysis_FINAL.m",
+   "url": "https://osf.io/download/68pdb/",
+   "bytes": 73843,
+   "sha256": "b8d98e2323a8a8f8bd72f8f7ef722cd0537b23497c23925e162451743ed247b8",
+   "fetched_utc": "2026-11-09T10:05:50Z"
+  },
+  {
+   "file": "MV_analysis_FINAL_workspace.mat",
+   "url": "https://osf.io/download/2drjn/",
+   "bytes": 447098440,
+   "sha256": "a3d7db0a175829159fd526f094d1e2df2a5efa86583867b7f4be3cdba39bb95c",
+   "fetched_utc": "2026-11-09T10:06:18Z"
+  },
+  {
+   "file": "Compute_Adaptation.m",
+   "url": "https://osf.io/download/54qc8/",
+   "bytes": 775,
+   "sha256": "8e6dcb90e1544043d3d566d06d511bb573e1986f8d765f915da381dd3843fb1c",
+   "fetched_utc": "2026-11-09T10:08:38Z"
+  },
+  {
+   "file": "Baseline_Comp.m",
+   "url": "https://osf.io/download/zbf2e/",
+   "bytes": 772,
+   "sha256": "46ee58bddade1b4bb5fca937e5351e6dc2a435fcd32436dd4b1f4bb8d037aca8",
+   "fetched_utc": "2026-11-09T10:08:43Z"
+  },
+  {
+   "file": "Variability.m",
+   "url": "https://osf.io/download/3skuf/",
+   "bytes": 1594,
+   "sha256": "0e63285d580213f578de1abd59c87ecbc55cf938480a2edff7808bc25f4c2047",
+   "fetched_utc": "2026-11-09T10:08:48Z"
+  },
+  {
+   "file": "pathLength.m",
+   "url": "https://osf.io/download/tqfvz/",
+   "bytes": 953,
+   "sha256": "0021d18a0b9b2d78fa4b01025a6544245684074aed20b0dd94840b2c825c25ad",
+   "fetched_utc": "2026-11-09T10:08:51Z"
+  },
+  {
+   "file": "Find_Ind.m",
+   "url": "https://osf.io/download/8g23u/",
+   "bytes": 632,
+   "sha256": "64d0518417991139041db263347bb20d9d614cff81bf853cb43d8a3dbfaad7b2",
+   "fetched_utc": "2026-11-09T10:08:55Z"
+  },
+  {
+   "file": "Is_Good_Trial.m",
+   "url": "https://osf.io/download/bxfj8/",
+   "bytes": 2065,
+   "sha256": "1e47ae451fede2afe7e2e600ce132f04cbdb3c5985b242044acd6ea2c385de3a",
+   "fetched_utc": "2026-11-09T10:09:00Z"
+  },
+  {
+   "file": "Force_Average.m",
+   "url": "https://osf.io/download/q3bf5/",
+   "bytes": 733,
+   "sha256": "b419e5c1ad6c89fbdbf65972428f4a0255d6a0a0dcf301dde90737fa144c7f03",
+   "fetched_utc": "2026-11-09T10:09:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Foray2025_eNeuro.zip"
+}

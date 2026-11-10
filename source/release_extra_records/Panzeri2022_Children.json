@@ -1,0 +1,148 @@
+{
+ "id": "Panzeri2022_Children",
+ "module": "timeseries",
+ "rows": 285,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 15668478,
+ "zip_sha256": "a3882bb7e8b4eda73858b1dc91934270c2e5abcb75794c63db24e6c4572bf33c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results, first sentence",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 13.149999999999999,
+   "reported": 13.13,
+   "tol": 0.05,
+   "source": "Abstract (computed from the one-decimal ages of Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "12 files all read; 7 cycle files x 2 sides, 5 continuous files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has both assessments",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cycle recordings have 101 samples and 119 channels",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's abstract gives a mean age of 13.13 years; the one-decimal ages of Table 1 average 13.15 (rounding of the ages).",
+  "The paper reports clinical scores (6MWT, GMFM) and describes gait curves only in figures; none of those numbers are in the deposit, so only participant counts, sex and age were checked."
+ ],
+ "sources": [
+  {
+   "file": "S1_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S1_T0.csv/content",
+   "bytes": 3228327,
+   "sha256": "4cb5822fca0b524b2177d3539a7acde6b4cbfab757962e69b03359ed136baa84",
+   "fetched_utc": "2026-11-09T21:31:17Z"
+  },
+  {
+   "file": "S1_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S1_T1.csv/content",
+   "bytes": 3782636,
+   "sha256": "ac7aa08f4640de63477bbc1901504eb460c19066d0c0f604396663aab30fee44",
+   "fetched_utc": "2026-11-09T21:32:52Z"
+  },
+  {
+   "file": "S2_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S2_T0.csv/content",
+   "bytes": 3098661,
+   "sha256": "7419ef8c135b125665e975cd13cf4f9c392e2e343dacf108bd04fd385548c78e",
+   "fetched_utc": "2026-11-09T21:33:01Z"
+  },
+  {
+   "file": "S2_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S2_T1.csv/content",
+   "bytes": 2936250,
+   "sha256": "64265ef56821a23235aaad4b9111e83ac5b58676619c3a1d067ab1525a79d4bc",
+   "fetched_utc": "2026-11-09T21:33:15Z"
+  },
+  {
+   "file": "S3_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S3_T0.csv/content",
+   "bytes": 4648264,
+   "sha256": "ebbab76351c9ad96301859211a2a8563e679b77058196fe27e295a4e2308f02d",
+   "fetched_utc": "2026-11-09T21:33:30Z"
+  },
+  {
+   "file": "S3_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S3_T1.csv/content",
+   "bytes": 3191235,
+   "sha256": "8c76e7dbd14d257bb95d92735c2dfb17190ec3e2eed6444f0ec23ad4b23e42aa",
+   "fetched_utc": "2026-11-09T21:33:38Z"
+  },
+  {
+   "file": "S4_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S4_T0.csv/content",
+   "bytes": 5896170,
+   "sha256": "34c0d7acace2359c600e450f43cfc23f15d26e9e41437c2006b3d5520dc31751",
+   "fetched_utc": "2026-11-09T21:33:50Z"
+  },
+  {
+   "file": "S4_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S4_T1.csv/content",
+   "bytes": 3636199,
+   "sha256": "6c255ecc4c8ad729ba42d2091af1c2b6213baf4ed187e3a08366fa736fe2e420",
+   "fetched_utc": "2026-11-09T21:33:59Z"
+  },
+  {
+   "file": "S5_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S5_T0.csv/content",
+   "bytes": 6388813,
+   "sha256": "ccc7b9a3fef764536e0689c0a245c88c75c618eb8d29157e51b23e736e94947d",
+   "fetched_utc": "2026-11-09T21:34:11Z"
+  },
+  {
+   "file": "S5_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S5_T1.csv/content",
+   "bytes": 5485731,
+   "sha256": "77ac6c1862d04332ccb9f82b119a684d9a1dbe47fd332bcc59d608c5ef318e83",
+   "fetched_utc": "2026-11-09T21:34:22Z"
+  },
+  {
+   "file": "S6_T0.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S6_T0.csv/content",
+   "bytes": 2944932,
+   "sha256": "8b89874a8af5ce175ed502773e2ea50a683f57385f9aa8ad87e99779d995b614",
+   "fetched_utc": "2026-11-09T21:34:46Z"
+  },
+  {
+   "file": "S6_T1.csv",
+   "url": "https://zenodo.org/api/records/5862254/files/S6_T1.csv/content",
+   "bytes": 5618637,
+   "sha256": "3e012131562d7119d01d80173da9cfcba08916b0839eaf5e1e6eb63e89061493",
+   "fetched_utc": "2026-11-09T21:34:56Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Panzeri2022_Children.zip"
+}

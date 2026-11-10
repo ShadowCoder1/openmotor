@@ -1,0 +1,7 @@
+{
+ "id": "Kumar2023_JEPHPP",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Trial-level baseline-subtracted hand deviation and RT for 50 people (4 groups LR/RL/RR/LL, 332 trials: baseline, rotation A, rotation B, error clamp) is shared, but the ReadMe gives no rotation size or direction, target angles or sign of hand deviation, and the paper (JEP:HPP 49(5):725-736, 10.1037/xhp0001124) is paywalled (not on PMC/Europe PMC, no preprint found), so these cannot be read or checked. Data suggest a roughly 30 deg rotation (hand deviation rises to about +26 in rotation A) but that is inference only. Retry if the paper text becomes available; the ReadMe group sizes (12/12/13/13) match the file.",
+ "sources": []
+}

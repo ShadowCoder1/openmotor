@@ -1,0 +1,7 @@
+{
+ "id": "Ribeiro2021_SLT",
+ "skipped": true,
+ "reason": "too large",
+ "details": "TaL corpus (ultrasuite.github.io/data/tal_corpus): TaL1 core 49 GB and TaL80 core 498 GB (even the sample folders are 2.1 GB and 8.2 GB), far over the 5 GB gate. The data are synchronised ultrasound tongue images, audio and lip video of 82 speakers, i.e. recordings with no per-trial numeric values to re-encode; no license is stated on the page (cite-and-link terms).",
+ "sources": []
+}

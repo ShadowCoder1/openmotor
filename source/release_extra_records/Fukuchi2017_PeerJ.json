@@ -1,0 +1,1802 @@
+{
+ "id": "Fukuchi2017_PeerJ",
+ "module": "timeseries",
+ "rows": 241,
+ "subjects": 39,
+ "persons": 39,
+ "zip_bytes": 168814434,
+ "zip_sha256": "2cc7ae784d8209cfde1a97f0f56fe165f0dc3aad76518cc99d3b3d2eed50ff7f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "marker sampling rate (Hz)",
+   "computed": 150.00166705564632,
+   "reported": 150.0,
+   "tol": 1,
+   "source": "Methods, Equipment (rate of acquisition of kinematics)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "markers per running marker file (most files)",
+   "ok": true,
+   "detail": "median 32.0 markers"
+  },
+  {
+   "kind": "published",
+   "what": "rows per force file",
+   "computed": 9000.0,
+   "reported": 9000.0,
+   "tol": 0,
+   "source": "Results, Raw data (9,000 rows and eight columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "columns per force file (time plus 7 channels)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Results, Raw data (eight columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "length of each running recording (s)",
+   "computed": 29.993,
+   "reported": 30.0,
+   "tol": 0.1,
+   "source": "Methods, Protocol step 6 (data recorded for 30 s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rows per processed file (101 gait-cycle points)",
+   "computed": 101.0,
+   "reported": 101.0,
+   "tol": 0,
+   "source": "Methods, Data processing (101 time points)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "columns per processed file (144 + gait-cycle percentage)",
+   "computed": 145.0,
+   "reported": 145.0,
+   "tol": 0,
+   "source": "Results, Processed data (101 rows and 145 columns)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "39 runners kept",
+   "ok": true,
+   "detail": "39"
+  },
+  {
+   "kind": "internal",
+   "what": "every runner has 3.5 m/s marker trajectories",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every marker recording has a force recording",
+   "ok": true,
+   "detail": "101 marker and 101 force recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "all sample files written",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ages plausible",
+   "ok": true,
+   "detail": "19.0-51.0"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes 28 runners (Subject numbers 1 to 28); the current figshare version holds 39, so the paper's participant count and demographic table do not apply to this release. Table 1 of the paper lists 48 markers, but 20 of them are anatomical markers removed after the standing calibration; the running files hold 32 markers (96 coordinate columns), so the table's marker count was not used as a check. The 2.5 and 4.5 m/s trials exist for only 31 of the 39 runners."
+ ],
+ "sources": [
+  {
+   "file": "RBDS001processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825024",
+   "bytes": 130438,
+   "sha256": "aa63c23379e26b0419ec5309d789c0507ff39ebf00d476f9a4570cfd481117c5",
+   "fetched_utc": "2026-11-09T19:19:05Z"
+  },
+  {
+   "file": "RBDS001runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802557",
+   "bytes": 401971,
+   "sha256": "5e4001c7533e956eaf3333312e2c2abe46d00ad46a1592ea6ba594e589a09fd2",
+   "fetched_utc": "2026-11-09T19:19:25Z"
+  },
+  {
+   "file": "RBDS001runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360135",
+   "bytes": 3435568,
+   "sha256": "f51268d246f12e30ef914a4c52bfc137277669a2b3a083d48479329c7c02f1c4",
+   "fetched_utc": "2026-11-09T19:21:19Z"
+  },
+  {
+   "file": "RBDS001runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360141",
+   "bytes": 3435336,
+   "sha256": "99a77d41a499014c1ce636c5c9b67562a5486f4ef1bca7d50487abd2837ae3bf",
+   "fetched_utc": "2026-11-09T19:21:23Z"
+  },
+  {
+   "file": "RBDS001runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360147",
+   "bytes": 3435382,
+   "sha256": "e7fd66edaaddb24b4918c0d96dfb5dd2a18267009b8fa24a937c463d17c5136a",
+   "fetched_utc": "2026-11-09T19:21:27Z"
+  },
+  {
+   "file": "RBDS002runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360156",
+   "bytes": 3435580,
+   "sha256": "2f00f4d3011b367436df7b3c9d230fedf0fca4ef25c15341ee7c7957eb741650",
+   "fetched_utc": "2026-11-09T19:21:32Z"
+  },
+  {
+   "file": "RBDS003runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360177",
+   "bytes": 3382863,
+   "sha256": "fccacce92af5f9e5c3137698628d1fcc6695bf81f9cecb61a33a07c066f3e238",
+   "fetched_utc": "2026-11-09T19:21:46Z"
+  },
+  {
+   "file": "RBDS002runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360168",
+   "bytes": 3415449,
+   "sha256": "126a59ab9e2c833c6a64fec5ed7b3ef9aa1302cd54abe73bd9a627e6e3ea991b",
+   "fetched_utc": "2026-11-09T19:21:46Z"
+  },
+  {
+   "file": "RBDS002runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360162",
+   "bytes": 3430307,
+   "sha256": "b09308053883837c400618f743e6bc605bf313e352067e2ead814572cf26511e",
+   "fetched_utc": "2026-11-09T19:21:46Z"
+  },
+  {
+   "file": "RBDS003runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360183",
+   "bytes": 3434508,
+   "sha256": "c9e4f7a564e61df5947eca911699e20ea906f59233c56ba9a57888d1450ff7d0",
+   "fetched_utc": "2026-11-09T19:21:51Z"
+  },
+  {
+   "file": "RBDS003runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360189",
+   "bytes": 3434204,
+   "sha256": "a1fb4df3d4e63280152d138332c16a909f6a5619e8508d23d30f20cd971c1881",
+   "fetched_utc": "2026-11-09T19:21:51Z"
+  },
+  {
+   "file": "RBDS004runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360198",
+   "bytes": 3435095,
+   "sha256": "456290ee2e24e55820ab6ebeba19b2e519c5d8f13ceb0b98854dfc06aa3f62f8",
+   "fetched_utc": "2026-11-09T19:21:51Z"
+  },
+  {
+   "file": "RBDS004runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360210",
+   "bytes": 3434414,
+   "sha256": "5107504c823c212ba862f9a9bfac1be575595ae98d5d46ce47cef65a63e9958d",
+   "fetched_utc": "2026-11-09T19:21:56Z"
+  },
+  {
+   "file": "RBDS005runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360219",
+   "bytes": 3435846,
+   "sha256": "c7c867961c818fe69f587432602d41fec19885157f112ffc2960972193da730f",
+   "fetched_utc": "2026-11-09T19:21:56Z"
+  },
+  {
+   "file": "RBDS005runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360231",
+   "bytes": 3382791,
+   "sha256": "eb94628f9e6d90319823980e5f872d19af049560f2b7c45f1d18f30a628006b9",
+   "fetched_utc": "2026-11-09T19:21:56Z"
+  },
+  {
+   "file": "RBDS005runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360225",
+   "bytes": 3435329,
+   "sha256": "5954c50abbf77a3f079b36ede5c7a62d29f9258570b7e7f586cb672505954d4a",
+   "fetched_utc": "2026-11-09T19:21:56Z"
+  },
+  {
+   "file": "RBDS006runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360240",
+   "bytes": 3435414,
+   "sha256": "4b71cd95dadea6db738dd45dce7c248f4d6e052b0cc185257c2d8d468870d3a1",
+   "fetched_utc": "2026-11-09T19:22:00Z"
+  },
+  {
+   "file": "RBDS006runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360246",
+   "bytes": 3435306,
+   "sha256": "d492c7f052c8f88d038eeb45727022574dccf838e32eb4169e396403c12f675f",
+   "fetched_utc": "2026-11-09T19:22:01Z"
+  },
+  {
+   "file": "RBDS006runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360252",
+   "bytes": 3396197,
+   "sha256": "86df09f59f6784ee80d035fb075ec2f39883006bcca7eec07e9771e207fea90c",
+   "fetched_utc": "2026-11-09T19:22:01Z"
+  },
+  {
+   "file": "RBDS007runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360261",
+   "bytes": 3435116,
+   "sha256": "1d3801bfd3dfe647eb0222dcfd22d546ed103270c829eddab081c52c9aebf38a",
+   "fetched_utc": "2026-11-09T19:22:01Z"
+  },
+  {
+   "file": "RBDS007runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360267",
+   "bytes": 3435712,
+   "sha256": "6142bdf8bc5e866c0db5cdb7bc73d1a65cfcf19499e9d2b6398d2481ee3f595d",
+   "fetched_utc": "2026-11-09T19:22:05Z"
+  },
+  {
+   "file": "RBDS007runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360273",
+   "bytes": 3435480,
+   "sha256": "343f060a3cf615247adb7f4d69616c9bcefd6367bb596f60431a78b2e918ea5d",
+   "fetched_utc": "2026-11-09T19:22:05Z"
+  },
+  {
+   "file": "RBDS008runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360282",
+   "bytes": 3435477,
+   "sha256": "a8f20c9406555eaa2a5e36e00d72c82867f6a851052ccf0a8ba85584ffd6103e",
+   "fetched_utc": "2026-11-09T19:22:05Z"
+  },
+  {
+   "file": "RBDS008runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360288",
+   "bytes": 3434402,
+   "sha256": "5d9c84cbe56efb08df042fd8d6d442e3d9c16bc854dedcb806da4c7a60e0bfef",
+   "fetched_utc": "2026-11-09T19:22:06Z"
+  },
+  {
+   "file": "RBDS008runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360294",
+   "bytes": 3426898,
+   "sha256": "fa22ce80d5bfc9cb7dd78ebe7f726b5a0a48ef31436c66994d73ed6b696fe871",
+   "fetched_utc": "2026-11-09T19:22:09Z"
+  },
+  {
+   "file": "RBDS009runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360309",
+   "bytes": 3435114,
+   "sha256": "906e6ec1b3dac55fd48394f6724902451e1bbe9bb11535b14a4a483331f04734",
+   "fetched_utc": "2026-11-09T19:22:09Z"
+  },
+  {
+   "file": "RBDS009runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360303",
+   "bytes": 3435544,
+   "sha256": "e62f9423e4027904e3d40fc7515ddb1a317630dfbe7093c3ff387c6b549b1b42",
+   "fetched_utc": "2026-11-09T19:22:10Z"
+  },
+  {
+   "file": "RBDS009runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360315",
+   "bytes": 3431609,
+   "sha256": "2f6946bed4142e5641eef5f15dcaf40d524780b32f2d4405ce867af80f88ef15",
+   "fetched_utc": "2026-11-09T19:22:10Z"
+  },
+  {
+   "file": "RBDS010runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360324",
+   "bytes": 3381734,
+   "sha256": "77b33e31edbcea238fa99b22768692bd702bb218180fb906c6ed0360732a86b9",
+   "fetched_utc": "2026-11-09T19:22:13Z"
+  },
+  {
+   "file": "RBDS010runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360330",
+   "bytes": 3382908,
+   "sha256": "58a145c9b3af55646647d5be1a5520a85fd8ca994247ba5c4c9fadb685ff8c3c",
+   "fetched_utc": "2026-11-09T19:22:14Z"
+  },
+  {
+   "file": "RBDS010runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360336",
+   "bytes": 3382996,
+   "sha256": "69499c97eef7040fc3ed51efdbfdc9b600529a72f66efd70f18abc82e0740e1e",
+   "fetched_utc": "2026-11-09T19:22:14Z"
+  },
+  {
+   "file": "RBDS011runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360345",
+   "bytes": 3435436,
+   "sha256": "12cc627af8171b17877d0176f83039977d7b02916ccbcfb7b43c403eb4e795b6",
+   "fetched_utc": "2026-11-09T19:22:14Z"
+  },
+  {
+   "file": "RBDS011runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360351",
+   "bytes": 3435232,
+   "sha256": "cb1430fb1710f2586d17a1d5f9e1aa93bd03c005d6b4d59effe3ada041e09530",
+   "fetched_utc": "2026-11-09T19:22:19Z"
+  },
+  {
+   "file": "RBDS011runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360357",
+   "bytes": 3435041,
+   "sha256": "76ccad57f02561bde35a460fb8a6b93d19fc45b8049c8bd4b791c173ff7d47c8",
+   "fetched_utc": "2026-11-09T19:22:19Z"
+  },
+  {
+   "file": "RBDS012runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360366",
+   "bytes": 3435651,
+   "sha256": "55cd2f97eba6887421f511d6f55bbadd524e688babf29f5959269647c3a61daf",
+   "fetched_utc": "2026-11-09T19:22:20Z"
+  },
+  {
+   "file": "RBDS012runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360372",
+   "bytes": 3435414,
+   "sha256": "47e7b9a78fdc257e75445d1ec1e522c1b73452800b07cc91842710dacf772954",
+   "fetched_utc": "2026-11-09T19:22:20Z"
+  },
+  {
+   "file": "RBDS012runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360378",
+   "bytes": 3435537,
+   "sha256": "bc0c6ac9a6120a91de8bbc3295b1807101581191f033c4ab47af9be54e417b41",
+   "fetched_utc": "2026-11-09T19:22:25Z"
+  },
+  {
+   "file": "RBDS013runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360387",
+   "bytes": 3435165,
+   "sha256": "c7dd20844818aa875ba64ba91565f485193dc21f13daa0841535dab9b3fa7f10",
+   "fetched_utc": "2026-11-09T19:22:25Z"
+  },
+  {
+   "file": "RBDS013runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360393",
+   "bytes": 3435408,
+   "sha256": "580b202385222a26536f9f46ac946fb8bbdb0a96e247bc3e2547060d8401297e",
+   "fetched_utc": "2026-11-09T19:22:25Z"
+  },
+  {
+   "file": "RBDS013runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360399",
+   "bytes": 3434819,
+   "sha256": "38c876faf303fda69b40d88aff76d839ceb601a688fbf7e3cfe3b2df8eb82df7",
+   "fetched_utc": "2026-11-09T19:22:26Z"
+  },
+  {
+   "file": "RBDS014runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360408",
+   "bytes": 3433704,
+   "sha256": "0ef182cdc715c9e1cc34f12935992834f204cea44e51401d00c7e2770c63c338",
+   "fetched_utc": "2026-11-09T19:22:30Z"
+  },
+  {
+   "file": "RBDS014runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360414",
+   "bytes": 3434420,
+   "sha256": "dc303e55d9696c5a0ed92d929c8d8caef68452fe4b67a18d179e77457a214a84",
+   "fetched_utc": "2026-11-09T19:22:30Z"
+  },
+  {
+   "file": "RBDS014runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360420",
+   "bytes": 3381631,
+   "sha256": "3da2a0338d5dee4128d0f0c4b35800d3fed7a7f2ae1688b6ae58996f1625ae7c",
+   "fetched_utc": "2026-11-09T19:22:30Z"
+  },
+  {
+   "file": "RBDS015runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360435",
+   "bytes": 3435282,
+   "sha256": "a54902222d947440335d3cd0cd4ac0182f06c3ce8bce64e5b8ec974624ea38e1",
+   "fetched_utc": "2026-11-09T19:22:34Z"
+  },
+  {
+   "file": "RBDS016runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360450",
+   "bytes": 3424375,
+   "sha256": "8eab68124e0e3acffd1acda36ef553abd242cadbe153c464d33d56624719172b",
+   "fetched_utc": "2026-11-09T19:22:35Z"
+  },
+  {
+   "file": "RBDS015runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360441",
+   "bytes": 3435401,
+   "sha256": "bf81c14eb879d97990188732b9b7d3fc433a68556f0e77c661eec7c56c4c63e9",
+   "fetched_utc": "2026-11-09T19:22:35Z"
+  },
+  {
+   "file": "RBDS016runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360456",
+   "bytes": 3426108,
+   "sha256": "a835308dcb778c8449f91f3456ccf0d4f3c0d0f099785965968e01fa34f685b5",
+   "fetched_utc": "2026-11-09T19:22:35Z"
+  },
+  {
+   "file": "RBDS016runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360462",
+   "bytes": 3431755,
+   "sha256": "5cb8ecae589e4f1f4e5a8450a6bb359eebf3a49f2d529f539d044f2d344bc9d4",
+   "fetched_utc": "2026-11-09T19:22:42Z"
+  },
+  {
+   "file": "RBDS017runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360483",
+   "bytes": 3435338,
+   "sha256": "bc9b9d9928ac8c596f8e4be00ccf1245c60e30119e20fc752851710ffcde40ba",
+   "fetched_utc": "2026-11-09T19:22:51Z"
+  },
+  {
+   "file": "RBDS018runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360492",
+   "bytes": 3435385,
+   "sha256": "852a1ddc53514d133e58fffae06eafeb6142c47b3efc404717285bae43920c4b",
+   "fetched_utc": "2026-11-09T19:22:54Z"
+  },
+  {
+   "file": "RBDS018runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360498",
+   "bytes": 3435292,
+   "sha256": "f302de1ae756cf69837bcee9de777bef3f8670783773cba4d3fd0f7f02b9dd80",
+   "fetched_utc": "2026-11-09T19:22:54Z"
+  },
+  {
+   "file": "RBDS018runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360504",
+   "bytes": 3435485,
+   "sha256": "53f6c9da929cf36a37559657b301e28a50339342e30fe1d3e82f9b6f4a4f3e2b",
+   "fetched_utc": "2026-11-09T19:22:55Z"
+  },
+  {
+   "file": "RBDS019runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360513",
+   "bytes": 3435482,
+   "sha256": "c2200844a148e4cf7fcbd7028cb0a0b19d01575cf66db680cc1786944051f799",
+   "fetched_utc": "2026-11-09T19:22:56Z"
+  },
+  {
+   "file": "RBDS019runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360525",
+   "bytes": 3428896,
+   "sha256": "cd409f7d5d217f8e4583f9ccc10829c5417501578b7b977631a97685375556bb",
+   "fetched_utc": "2026-11-09T19:22:58Z"
+  },
+  {
+   "file": "RBDS019runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360519",
+   "bytes": 3432621,
+   "sha256": "4dfde76a10c2c9e2315abc340972b8bc6eda9101bf9baaffd53d28a449ea378e",
+   "fetched_utc": "2026-11-09T19:22:58Z"
+  },
+  {
+   "file": "RBDS020runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360534",
+   "bytes": 3435282,
+   "sha256": "8e11c3a90987d8963431b34d89f81cc9911aa4fb27fc5b25fe4da2a9031f32d5",
+   "fetched_utc": "2026-11-09T19:22:59Z"
+  },
+  {
+   "file": "RBDS020runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360540",
+   "bytes": 3435684,
+   "sha256": "1aa6f4e37be59ca7da952f396a89282687610047f88bb0ebc0ee548b9321fa76",
+   "fetched_utc": "2026-11-09T19:23:00Z"
+  },
+  {
+   "file": "RBDS021runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360555",
+   "bytes": 3430847,
+   "sha256": "38108ae05d52370405934d79cb70883948ae9398c609ef4eb2c023ccc36b4b9f",
+   "fetched_utc": "2026-11-09T19:23:03Z"
+  },
+  {
+   "file": "RBDS021runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360561",
+   "bytes": 3432149,
+   "sha256": "13f348a98d30441bae8f5ea41f9ff635a045a40d3edb2334339adfbbda3e3945",
+   "fetched_utc": "2026-11-09T19:23:03Z"
+  },
+  {
+   "file": "RBDS021runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360567",
+   "bytes": 3434352,
+   "sha256": "1be47c35f86cdea813ba2a346fc1a55b96432eb2babd128305b69323f25d73ae",
+   "fetched_utc": "2026-11-09T19:23:04Z"
+  },
+  {
+   "file": "RBDS022runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360582",
+   "bytes": 3435364,
+   "sha256": "b7d591ca69dfe32ce8f815c1c06c9abf8466f5e56d9f45252d625bc9ec00b67b",
+   "fetched_utc": "2026-11-09T19:23:07Z"
+  },
+  {
+   "file": "RBDS022runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360576",
+   "bytes": 3435112,
+   "sha256": "0a29c3a00caaf7dd785a4261bcdbd226910d14cafeb61d38408ec5d8d6994be0",
+   "fetched_utc": "2026-11-09T19:23:07Z"
+  },
+  {
+   "file": "RBDS022runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360588",
+   "bytes": 3435419,
+   "sha256": "07e4b6791627fffbe76feacb020f6f686132bc7a767f370aae3ef78e59edbdb1",
+   "fetched_utc": "2026-11-09T19:23:08Z"
+  },
+  {
+   "file": "RBDS023runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360597",
+   "bytes": 3432668,
+   "sha256": "0b15e9fc88b9928aebea008376ba086dc28a29acb1794e56a9001727b25704be",
+   "fetched_utc": "2026-11-09T19:23:08Z"
+  },
+  {
+   "file": "RBDS023runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360603",
+   "bytes": 3435167,
+   "sha256": "0a08888c4dec9110332de1819a841dc93fdfab8abd79dacd510313513b5a2036",
+   "fetched_utc": "2026-11-09T19:23:11Z"
+  },
+  {
+   "file": "RBDS023runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360609",
+   "bytes": 3434397,
+   "sha256": "e938f521fb661aa3ecbcef745d7ef51b67444094514674609471a4736c96fd28",
+   "fetched_utc": "2026-11-09T19:23:11Z"
+  },
+  {
+   "file": "RBDS024runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360618",
+   "bytes": 3435073,
+   "sha256": "5d2d0f0fbb35c35e04d357f84a03eee655837df66630499a44cbc87b6f0a8e0e",
+   "fetched_utc": "2026-11-09T19:23:12Z"
+  },
+  {
+   "file": "RBDS024runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360624",
+   "bytes": 3434987,
+   "sha256": "e56749f0a163be465fd6a62ebb69cb4f01ce582c66f22d479277d3e69913b7be",
+   "fetched_utc": "2026-11-09T19:23:13Z"
+  },
+  {
+   "file": "RBDS025runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360639",
+   "bytes": 3435956,
+   "sha256": "7bc5a797ab759eece5df3a171b493641f77af63f7e736e3254a2220e0d0de787",
+   "fetched_utc": "2026-11-09T19:23:15Z"
+  },
+  {
+   "file": "RBDS024runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360630",
+   "bytes": 3382329,
+   "sha256": "a86f593f2921ecebd80fdf66d1d1a24fcf9dc22ae74a5b8a29eeca796d69df4e",
+   "fetched_utc": "2026-11-09T19:23:15Z"
+  },
+  {
+   "file": "RBDS025runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360645",
+   "bytes": 3435706,
+   "sha256": "6a811a903238457ae88b6e6d317310a3613f544042c42576f1ec5ec49db73dda",
+   "fetched_utc": "2026-11-09T19:23:16Z"
+  },
+  {
+   "file": "RBDS025runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360651",
+   "bytes": 3435541,
+   "sha256": "bbcc84ce68e3e604e28eb80ec45e6a96b59a4493cd41d4172ba53969b4061885",
+   "fetched_utc": "2026-11-09T19:23:17Z"
+  },
+  {
+   "file": "RBDS026runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360666",
+   "bytes": 3435631,
+   "sha256": "c7bf2bd2f22bc0b3f14713821a57b63600c5bd51d3881333a027a1eaa61ce584",
+   "fetched_utc": "2026-11-09T19:23:19Z"
+  },
+  {
+   "file": "RBDS026runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360660",
+   "bytes": 3435899,
+   "sha256": "eabdf5dceae174d6a2b29c008a15df7dc6c6aa87f50b51ce56a5d1ff0c7dc2a0",
+   "fetched_utc": "2026-11-09T19:23:19Z"
+  },
+  {
+   "file": "RBDS026runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360672",
+   "bytes": 3434873,
+   "sha256": "e0d90a8e4369a3d5056b9e50ca98bbc2996e5f824b1617a5ec4f192b9e9f08b1",
+   "fetched_utc": "2026-11-09T19:23:20Z"
+  },
+  {
+   "file": "RBDS027runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360681",
+   "bytes": 3435641,
+   "sha256": "23a0557f76443d30fd538d2ec4897f1db6c1cba8b279f28845447bcd016729e2",
+   "fetched_utc": "2026-11-09T19:23:21Z"
+  },
+  {
+   "file": "RBDS027runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360687",
+   "bytes": 3429010,
+   "sha256": "ece922b4c93e018203678d66e8b04b9fc27520a0b683acc3d13d909103e75b0b",
+   "fetched_utc": "2026-11-09T19:23:23Z"
+  },
+  {
+   "file": "RBDS027runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360693",
+   "bytes": 3413540,
+   "sha256": "71aea6a2876d87cbfe969628d465927fe59acd7bada82c47d878445aec2f3a25",
+   "fetched_utc": "2026-11-09T19:23:23Z"
+  },
+  {
+   "file": "RBDS028runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360702",
+   "bytes": 3433081,
+   "sha256": "2483b64ab7f154e95660315a669a2541e5e269deb6dac96a1cac710333b9dfcc",
+   "fetched_utc": "2026-11-09T19:23:24Z"
+  },
+  {
+   "file": "RBDS028runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360708",
+   "bytes": 3433877,
+   "sha256": "f14e4f571f9d7ae67faf6ee50a9dbf28c72b35a9e0362c1bf703855682afcf20",
+   "fetched_utc": "2026-11-09T19:23:26Z"
+  },
+  {
+   "file": "RBDS028runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360714",
+   "bytes": 3434695,
+   "sha256": "2d69a9632e8433707afe90cf50658ce9668c1451b4edf9537ec6b71ce91d33fe",
+   "fetched_utc": "2026-11-09T19:23:28Z"
+  },
+  {
+   "file": "RBDS023runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802497",
+   "bytes": 404338,
+   "sha256": "1ad0f94d84e7f6342d2a4689685e707bdd1a3c4f5b9cebd9ae33e6e671ef0413",
+   "fetched_utc": "2026-11-09T19:23:28Z"
+  },
+  {
+   "file": "RBDS023runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802500",
+   "bytes": 395089,
+   "sha256": "aa8f2d2c4ca18f8510299cc8af9cf5c168fc04cfef9b8068f2a17f363bff97c4",
+   "fetched_utc": "2026-11-09T19:23:28Z"
+  },
+  {
+   "file": "RBDS023runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802503",
+   "bytes": 389726,
+   "sha256": "6496f0602f742e6fc83d3b70fb96c097bdc82c3e11d5854d1f41974cedf6c9c3",
+   "fetched_utc": "2026-11-09T19:23:30Z"
+  },
+  {
+   "file": "RBDS024runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802509",
+   "bytes": 389587,
+   "sha256": "edcfdd97de2cbb4af9965fdb87a6d776b6b8d51910f61d955bc8188526a154b7",
+   "fetched_utc": "2026-11-09T19:23:32Z"
+  },
+  {
+   "file": "RBDS024runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802512",
+   "bytes": 389275,
+   "sha256": "bae034067576d632ddefe9c58113082db2633434619ba77fb598e582a5c9d590",
+   "fetched_utc": "2026-11-09T19:23:32Z"
+  },
+  {
+   "file": "RBDS024runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802506",
+   "bytes": 399431,
+   "sha256": "8ed89c376468cc4eddf3c7d240dc92d3db0f67e9d47c7932fe0511bcadeb3770",
+   "fetched_utc": "2026-11-09T19:23:33Z"
+  },
+  {
+   "file": "RBDS025runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802515",
+   "bytes": 408133,
+   "sha256": "85cf190e3ef88de1bc4b1edb3250401e4c38fb2021cc8bf8e43f643e7b7fcf32",
+   "fetched_utc": "2026-11-09T19:23:34Z"
+  },
+  {
+   "file": "RBDS025runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802518",
+   "bytes": 394954,
+   "sha256": "470a3c41806530f540091ab1823b046ba429d3b98e85badc54a4f97f7bf528e3",
+   "fetched_utc": "2026-11-09T19:23:36Z"
+  },
+  {
+   "file": "RBDS025runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802521",
+   "bytes": 389164,
+   "sha256": "52ef488bc3e04da90b8c3add8f05c546d1eee569f47cacd6959488e8630b6299",
+   "fetched_utc": "2026-11-09T19:23:36Z"
+  },
+  {
+   "file": "RBDS026runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802527",
+   "bytes": 390346,
+   "sha256": "094153148d76c8c6bd7dc0d726cc8c926a4b5251042b1568ca0a10815e9220dc",
+   "fetched_utc": "2026-11-09T19:23:38Z"
+  },
+  {
+   "file": "RBDS026runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802530",
+   "bytes": 374751,
+   "sha256": "2804357291d3fdeff8994c27a25f30d88501b9143d1a496fe20e8382c8a6e67b",
+   "fetched_utc": "2026-11-09T19:23:40Z"
+  },
+  {
+   "file": "RBDS027runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802533",
+   "bytes": 405400,
+   "sha256": "80a44086e4ca5579dbfe9700c9842d843395b2dd09c7d38e382411b87cdb905b",
+   "fetched_utc": "2026-11-09T19:23:40Z"
+  },
+  {
+   "file": "RBDS027runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802536",
+   "bytes": 394361,
+   "sha256": "eeb5890467a34da5e77be8749275ddb5f2eb76913841569a9b88c49b6e646d64",
+   "fetched_utc": "2026-11-09T19:23:40Z"
+  },
+  {
+   "file": "RBDS027runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802539",
+   "bytes": 385500,
+   "sha256": "9a1772e36b2eeae6a5e7641b2fac06773826306f1f2fc251a5fbb294f0cbcdce",
+   "fetched_utc": "2026-11-09T19:23:42Z"
+  },
+  {
+   "file": "RBDS028runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802542",
+   "bytes": 411306,
+   "sha256": "f49f735094e1c54f3f5ff39d4d46c74ba0cc284cf89b808fddb8240410420bf0",
+   "fetched_utc": "2026-11-09T19:23:59Z"
+  },
+  {
+   "file": "RBDS028runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802545",
+   "bytes": 399903,
+   "sha256": "e14020b328e27f2f036df2699b4d225e16804ff7281e22dc12a213e84056454c",
+   "fetched_utc": "2026-11-09T19:24:00Z"
+  },
+  {
+   "file": "RBDS028runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802548",
+   "bytes": 395383,
+   "sha256": "cf7c57ed863996cfc4e7736565c2422cc3c10b3dc9258d60d11ade85d73fae6b",
+   "fetched_utc": "2026-11-09T19:24:00Z"
+  },
+  {
+   "file": "RBDS002runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802560",
+   "bytes": 426375,
+   "sha256": "c1bb191b000a61ecff9973cda90c18340fedbfd06430e9b0c65251727d6b6669",
+   "fetched_utc": "2026-11-09T19:24:02Z"
+  },
+  {
+   "file": "RBDS002runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802563",
+   "bytes": 402481,
+   "sha256": "3b31132701738c72085c20d43220fa989f61f4c1ce25a337b0771e084cb293ad",
+   "fetched_utc": "2026-11-09T19:24:06Z"
+  },
+  {
+   "file": "RBDS002runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802566",
+   "bytes": 396505,
+   "sha256": "807a86d6e1d5f2e9c51b21e216eed42829e03818e5d2bd0b214b919badc5c939",
+   "fetched_utc": "2026-11-09T19:24:07Z"
+  },
+  {
+   "file": "RBDS003runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802572",
+   "bytes": 387192,
+   "sha256": "75f7c384a4ce9a761fa1b05328713053cacd8fbc1af1c311cbbc59217331c475",
+   "fetched_utc": "2026-11-09T19:24:09Z"
+  },
+  {
+   "file": "RBDS003runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802575",
+   "bytes": 388631,
+   "sha256": "4b34bc58460c01f61c5ad1606c77997aa6bb1777845bd6f3901d4cd89d3f30d8",
+   "fetched_utc": "2026-11-09T19:24:10Z"
+  },
+  {
+   "file": "RBDS004runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802578",
+   "bytes": 408315,
+   "sha256": "3084c336f1cd7c1584f5b258c22ce7822d0ebc7157d446098105bfdf349e4137",
+   "fetched_utc": "2026-11-09T19:24:10Z"
+  },
+  {
+   "file": "RBDS004runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802581",
+   "bytes": 391055,
+   "sha256": "680e4e676a25e7d8f73d20706dab16078bb837a326cd99594decffc2b2aece9f",
+   "fetched_utc": "2026-11-09T19:24:11Z"
+  },
+  {
+   "file": "RBDS004runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802584",
+   "bytes": 384074,
+   "sha256": "4facb91abb91b87d0208bf446be29e989d730d8050a6b979986760733023ca0d",
+   "fetched_utc": "2026-11-09T19:24:13Z"
+  },
+  {
+   "file": "RBDS005runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802587",
+   "bytes": 417399,
+   "sha256": "c60bed3e38d6c33cab256a727f7df6a0cf91726479f0350758a8820cd51975fe",
+   "fetched_utc": "2026-11-09T19:24:14Z"
+  },
+  {
+   "file": "RBDS005runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802593",
+   "bytes": 393797,
+   "sha256": "19f644b0c74642a01eb96f850064c20f644273241aef6784ce45d5d6fb8f2875",
+   "fetched_utc": "2026-11-09T19:24:15Z"
+  },
+  {
+   "file": "RBDS006runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802596",
+   "bytes": 425878,
+   "sha256": "365aa98c44892a2386eb1ed7c4f8300d096e259e056cb64ed1c9f245bed65610",
+   "fetched_utc": "2026-11-09T19:24:17Z"
+  },
+  {
+   "file": "RBDS006runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802599",
+   "bytes": 410890,
+   "sha256": "19285d2db74d8c5b588ddf70d91ed21a4ac2de2ff8192ce1ac50ef50633238a1",
+   "fetched_utc": "2026-11-09T19:24:18Z"
+  },
+  {
+   "file": "RBDS006runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802602",
+   "bytes": 403103,
+   "sha256": "3dd3f4b4fc5677a717ad4489c06eb7490a8f5c97a7e6df0ca8f43b0754aedd0c",
+   "fetched_utc": "2026-11-09T19:24:18Z"
+  },
+  {
+   "file": "RBDS007runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802605",
+   "bytes": 401684,
+   "sha256": "f308acee02b3c7da80fa022f860a14d92d0e9dccfcd68f1c0a48b9ba3dafb3f9",
+   "fetched_utc": "2026-11-09T19:24:19Z"
+  },
+  {
+   "file": "RBDS007runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802608",
+   "bytes": 391732,
+   "sha256": "5e4e75818624031b6b6808a63981e2270244385d13549fa4d64a5ab5f7ca269c",
+   "fetched_utc": "2026-11-09T19:24:21Z"
+  },
+  {
+   "file": "RBDS007runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802611",
+   "bytes": 388987,
+   "sha256": "8f78e6964a882a459ed40f6bc27a4bee389bb871564496e08fb0e70409e4b23d",
+   "fetched_utc": "2026-11-09T19:24:22Z"
+  },
+  {
+   "file": "RBDS008runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802617",
+   "bytes": 405771,
+   "sha256": "eef0af93c90b64f8788c434dee705577add30483418100c836757043c4cbdcb7",
+   "fetched_utc": "2026-11-09T19:24:26Z"
+  },
+  {
+   "file": "RBDS009runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802623",
+   "bytes": 390364,
+   "sha256": "4d456f3af31ba6c2d79d83a340ff28f5fd303f1621408827e406064be219c314",
+   "fetched_utc": "2026-11-09T19:24:28Z"
+  },
+  {
+   "file": "RBDS009runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802626",
+   "bytes": 386646,
+   "sha256": "5c348775e1a984c1aa3b8fa08f0f5528c613c3de0f38daf72fd793cc64b7e04e",
+   "fetched_utc": "2026-11-09T19:24:28Z"
+  },
+  {
+   "file": "RBDS009runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802629",
+   "bytes": 386351,
+   "sha256": "a53642e6224a378a48b1ed63b2297da3125289402733f433f1e40047b09518cd",
+   "fetched_utc": "2026-11-09T19:24:30Z"
+  },
+  {
+   "file": "RBDS010runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802632",
+   "bytes": 410185,
+   "sha256": "693d938bb5aa12a0a635adb916cdfc1febd0a6361279a73052c8f9877cb12ceb",
+   "fetched_utc": "2026-11-09T19:24:32Z"
+  },
+  {
+   "file": "RBDS010runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802635",
+   "bytes": 393220,
+   "sha256": "6d6dd53a4944428ae4c90402dde3973bdfdb68685b6b9f824f8f34338f8215c1",
+   "fetched_utc": "2026-11-09T19:24:32Z"
+  },
+  {
+   "file": "RBDS010runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802638",
+   "bytes": 383532,
+   "sha256": "8f18448ba321204fc6c10d8ba141427e82de961df8236bf4d64ba27bd8db8bb8",
+   "fetched_utc": "2026-11-09T19:24:32Z"
+  },
+  {
+   "file": "RBDS011runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802641",
+   "bytes": 407799,
+   "sha256": "e499f79186b631c19d5f32f3e7f25bdffd0a28748ecf06604195decc23728959",
+   "fetched_utc": "2026-11-09T19:24:34Z"
+  },
+  {
+   "file": "RBDS011runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802644",
+   "bytes": 391863,
+   "sha256": "f0cbe19b8987bd7877ae6def84c1c64d4abb6047c02d85b8e1172c3e95c6da21",
+   "fetched_utc": "2026-11-09T19:24:36Z"
+  },
+  {
+   "file": "RBDS011runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802647",
+   "bytes": 388718,
+   "sha256": "310ae862136d1b6bee1c4d034032134b05078119d43cbc4a88ba21feea577c44",
+   "fetched_utc": "2026-11-09T19:24:36Z"
+  },
+  {
+   "file": "RBDS012runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802653",
+   "bytes": 399105,
+   "sha256": "590955177be2d3e89133b39ed9581f5697f1cbfe8eb8da1d54c2cf068c125fb2",
+   "fetched_utc": "2026-11-09T19:24:38Z"
+  },
+  {
+   "file": "RBDS012runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802656",
+   "bytes": 394516,
+   "sha256": "7098a98366564e5c1905fc8d25da44d1e44e8e648c1cb4a92122412535723ad8",
+   "fetched_utc": "2026-11-09T19:24:41Z"
+  },
+  {
+   "file": "RBDS013runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802665",
+   "bytes": 366471,
+   "sha256": "ab775e0ceaf422dd2a098dc93d95da602c6760de75a71e8aef5c807b4b974a67",
+   "fetched_utc": "2026-11-09T19:24:42Z"
+  },
+  {
+   "file": "RBDS014runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802668",
+   "bytes": 420552,
+   "sha256": "017b0293c7c3ce341d95ea31a8646da0e2ea65eed75e939252d09540fdba2a3b",
+   "fetched_utc": "2026-11-09T19:24:44Z"
+  },
+  {
+   "file": "RBDS014runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802674",
+   "bytes": 398587,
+   "sha256": "9c7c9ea514ac2a97ffc8c4c9bf9c611d0f42c192152027dfdab73aa1986f45be",
+   "fetched_utc": "2026-11-09T19:24:45Z"
+  },
+  {
+   "file": "RBDS015runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802677",
+   "bytes": 411777,
+   "sha256": "ff1a624cd298f0241ba0070753bd38398fee050d30c85a4a34291ad930da22de",
+   "fetched_utc": "2026-11-09T19:24:46Z"
+  },
+  {
+   "file": "RBDS015runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802680",
+   "bytes": 400281,
+   "sha256": "f8349b73197537fcd4f0cd8c36027a57f325c9a477f68faf052f04c1c2b4fd15",
+   "fetched_utc": "2026-11-09T19:24:48Z"
+  },
+  {
+   "file": "RBDS016runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802686",
+   "bytes": 414073,
+   "sha256": "77d1ea5142482428925ec14aa6d31eeb8213661dd3f303ab7905e8dc16f3033a",
+   "fetched_utc": "2026-11-09T19:24:49Z"
+  },
+  {
+   "file": "RBDS015runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802683",
+   "bytes": 394152,
+   "sha256": "a0973242a8518d0e1e7aec57ea030f29f732cf50ebcc8b24dbec7c49babfb70d",
+   "fetched_utc": "2026-11-09T19:24:49Z"
+  },
+  {
+   "file": "RBDS016runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802689",
+   "bytes": 394281,
+   "sha256": "80a2ae5cc7efc93c02ea5685e2be28d2b41dc7a3892d1c3fbb8d1793dc44c83d",
+   "fetched_utc": "2026-11-09T19:24:51Z"
+  },
+  {
+   "file": "RBDS016runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802692",
+   "bytes": 388812,
+   "sha256": "f5de1d0515321e7f7694fe5a9e1722daa1a88c020e454196a2cc5461cd8b59a3",
+   "fetched_utc": "2026-11-09T19:24:52Z"
+  },
+  {
+   "file": "RBDS017runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802695",
+   "bytes": 397739,
+   "sha256": "b9b08737fb4dee9e91c4af97254fb187b40104d3480f142b9154e30e121ad95e",
+   "fetched_utc": "2026-11-09T19:24:53Z"
+  },
+  {
+   "file": "RBDS017runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802698",
+   "bytes": 387796,
+   "sha256": "92a71e90f352b8b3bbfbe72c983209967be53b7f1799d5ebf5f96debdb2e4bd4",
+   "fetched_utc": "2026-11-09T19:25:07Z"
+  },
+  {
+   "file": "RBDS017runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802701",
+   "bytes": 380746,
+   "sha256": "4a6ec9769d89f3cd5b4c00e22860e39cdb2ef8ccf409487424da27b4ac053e67",
+   "fetched_utc": "2026-11-09T19:25:08Z"
+  },
+  {
+   "file": "RBDS018runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802704",
+   "bytes": 413604,
+   "sha256": "135067bc06a82bc899d53793641f38e2367fe45d74f3a072e006c262039f52da",
+   "fetched_utc": "2026-11-09T19:25:10Z"
+  },
+  {
+   "file": "RBDS018runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802707",
+   "bytes": 393496,
+   "sha256": "8313a22ffaa5bd7d559fe239014892a2eac75795d76b05f58726d64753cd6891",
+   "fetched_utc": "2026-11-09T19:25:10Z"
+  },
+  {
+   "file": "RBDS018runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802710",
+   "bytes": 383244,
+   "sha256": "bb4d2c2362c5a3da9bc451f0ac5d9aa318a8eb79bc3b78bf98671d71f504a02c",
+   "fetched_utc": "2026-11-09T19:25:10Z"
+  },
+  {
+   "file": "RBDS019runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802713",
+   "bytes": 391354,
+   "sha256": "7d672ec7509699a473572751cc02bf5cc753ad2a7066e8a7a517ce1db0ecf4d0",
+   "fetched_utc": "2026-11-09T19:25:12Z"
+  },
+  {
+   "file": "RBDS019runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802716",
+   "bytes": 381948,
+   "sha256": "d3136d7ca51cf4a53d61a07a09e357dd025575f252107c2d988a7398c4d2b069",
+   "fetched_utc": "2026-11-09T19:25:14Z"
+  },
+  {
+   "file": "RBDS019runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802719",
+   "bytes": 379313,
+   "sha256": "284d3fcb5f63a95d5fa2649ab43071752e82cdfaed1cc5c9018ab757528c1a46",
+   "fetched_utc": "2026-11-09T19:25:14Z"
+  },
+  {
+   "file": "RBDS020runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802722",
+   "bytes": 413378,
+   "sha256": "ea530b56ed14ff3c18314db37ceed53b57ecd3ebbfddd5a030365add6962cbf4",
+   "fetched_utc": "2026-11-09T19:25:15Z"
+  },
+  {
+   "file": "RBDS020runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802725",
+   "bytes": 398575,
+   "sha256": "f03d8a144a1ec24b8fc4149e4b085a838105dbe46993278884b65b156b49dbbd",
+   "fetched_utc": "2026-11-09T19:25:16Z"
+  },
+  {
+   "file": "RBDS020runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802728",
+   "bytes": 393099,
+   "sha256": "c8144f909bce8fd07d51f46622d2f944ee23f413da2ab7536aec48a3dd6b3279",
+   "fetched_utc": "2026-11-09T19:25:18Z"
+  },
+  {
+   "file": "RBDS021runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802731",
+   "bytes": 408048,
+   "sha256": "3143bbc30a633214df9ef4db6bb4d8bd81b5e63f41edead7b4049d2e8b83d383",
+   "fetched_utc": "2026-11-09T19:25:18Z"
+  },
+  {
+   "file": "RBDS021runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802734",
+   "bytes": 397491,
+   "sha256": "55965f16bfd1b316c2b63f290c6ef5fe068edec9821b1d699864619aa7654daf",
+   "fetched_utc": "2026-11-09T19:25:18Z"
+  },
+  {
+   "file": "RBDS021runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802737",
+   "bytes": 390981,
+   "sha256": "358b2bd265b955834f804876884b1faae017c95f4e28c864e93a0a046c66f164",
+   "fetched_utc": "2026-11-09T19:25:20Z"
+  },
+  {
+   "file": "RBDS022runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802740",
+   "bytes": 421674,
+   "sha256": "89d8be4c94f4200e9b2a336d477f6c1cf7a34e95c6ed5ded455c4654c6c7becb",
+   "fetched_utc": "2026-11-09T19:25:22Z"
+  },
+  {
+   "file": "RBDS022runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802743",
+   "bytes": 408442,
+   "sha256": "37a2e9d8650c359eb277a877b720a112c5e72f209a486a40189e04c757c39af2",
+   "fetched_utc": "2026-11-09T19:25:23Z"
+  },
+  {
+   "file": "RBDS022runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802746",
+   "bytes": 397854,
+   "sha256": "f9066219a4b7d72085b0e32e57828a66da9831abb6ee4e42f1fe4ca7adac3291",
+   "fetched_utc": "2026-11-09T19:25:23Z"
+  },
+  {
+   "file": "RBDS004processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824949",
+   "bytes": 131097,
+   "sha256": "bccd20cbdaeb6e3139732bdf69ecd7c943d0adc8175da5dd374a3338fcbb0fda",
+   "fetched_utc": "2026-11-09T19:25:24Z"
+  },
+  {
+   "file": "RBDS005processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824952",
+   "bytes": 130837,
+   "sha256": "1dce073c7a7c885804a632845c7aec6c1f494e0b684dfb1a97543271eb1f34e8",
+   "fetched_utc": "2026-11-09T19:25:26Z"
+  },
+  {
+   "file": "RBDS006processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824955",
+   "bytes": 130114,
+   "sha256": "0756d44ea4467ae90dd7f45bc09d761fbb7165f29620b643fcf2e52d58df9c3e",
+   "fetched_utc": "2026-11-09T19:25:26Z"
+  },
+  {
+   "file": "RBDS007processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824958",
+   "bytes": 130474,
+   "sha256": "3303bf9abdde98dd5433021dc4c1ed567a67b14a0f24337f12208fffaa72148b",
+   "fetched_utc": "2026-11-09T19:25:27Z"
+  },
+  {
+   "file": "RBDS008processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824961",
+   "bytes": 130303,
+   "sha256": "042d3a00e6e887c43e55f13252adbb05f8a254b35dd6a8314ee470141cc1292f",
+   "fetched_utc": "2026-11-09T19:25:28Z"
+  },
+  {
+   "file": "RBDS009processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824964",
+   "bytes": 129758,
+   "sha256": "90203cc6409ca2cefb92d0079cc40e205f44d28529408466f86f902b92ac6725",
+   "fetched_utc": "2026-11-09T19:25:30Z"
+  },
+  {
+   "file": "RBDS010processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824967",
+   "bytes": 129978,
+   "sha256": "8d1c72884c71471f426c8da069a56403de2e4fad24367146b0d2ea6246b15710",
+   "fetched_utc": "2026-11-09T19:25:30Z"
+  },
+  {
+   "file": "RBDS011processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824970",
+   "bytes": 129854,
+   "sha256": "6bcaa9e2f1dc47af54125d1e8875890b6a9cd0bf8150ff8fb089cb9ba663fb41",
+   "fetched_utc": "2026-11-09T19:25:31Z"
+  },
+  {
+   "file": "RBDS012processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824973",
+   "bytes": 130160,
+   "sha256": "232f279554f71e38ac295fa84050a682c60f5ea9f9db69e17c2d33279e752ff2",
+   "fetched_utc": "2026-11-09T19:25:32Z"
+  },
+  {
+   "file": "RBDS013processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824976",
+   "bytes": 129578,
+   "sha256": "7cc904f585fca324faac81681e68d3e29707315267bb6c08b002a975984ee668",
+   "fetched_utc": "2026-11-09T19:25:33Z"
+  },
+  {
+   "file": "RBDS014processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824979",
+   "bytes": 130233,
+   "sha256": "bdd28e1317254a0fbdfe8b80976352d7d5e9d2bcba14998772aa6241e0da1cd5",
+   "fetched_utc": "2026-11-09T19:25:34Z"
+  },
+  {
+   "file": "RBDS015processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824982",
+   "bytes": 131105,
+   "sha256": "0ba39fee32c23f67be9f5c01f267a8adf47adeb79f3a73f4d9c690090e6d2867",
+   "fetched_utc": "2026-11-09T19:25:34Z"
+  },
+  {
+   "file": "RBDS016processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824985",
+   "bytes": 130306,
+   "sha256": "4eb24820b8f967e672f2f8bba17ff9f0dac905a5386034aef5ce1f18f3dc5a38",
+   "fetched_utc": "2026-11-09T19:25:35Z"
+  },
+  {
+   "file": "RBDS017processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824988",
+   "bytes": 130072,
+   "sha256": "dc3e779d50c18806657e991217376061ac6243ca5ceb77a86c7bef5b4e28741a",
+   "fetched_utc": "2026-11-09T19:25:38Z"
+  },
+  {
+   "file": "RBDS018processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824991",
+   "bytes": 129093,
+   "sha256": "f2c1a4985aaf1d0eb529f5e0e94832feb60b11e1f34a6ac76ec277b903cc0fa5",
+   "fetched_utc": "2026-11-09T19:25:38Z"
+  },
+  {
+   "file": "RBDS019processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824994",
+   "bytes": 129324,
+   "sha256": "4019266c775ef840c5484a463f4447dbbc2c35d920574c67f23f609adcd93796",
+   "fetched_utc": "2026-11-09T19:25:40Z"
+  },
+  {
+   "file": "RBDS020processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7824997",
+   "bytes": 129567,
+   "sha256": "d714afcabee254ad7e416ba07eab075a7b922194bb284842bf6b5cae67bdca25",
+   "fetched_utc": "2026-11-09T19:25:42Z"
+  },
+  {
+   "file": "RBDS021processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825000",
+   "bytes": 129282,
+   "sha256": "187054d27a6d60a7b18934d0738489f79cece8f419c4525dffedcb962611456e",
+   "fetched_utc": "2026-11-09T19:25:44Z"
+  },
+  {
+   "file": "RBDS022processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825003",
+   "bytes": 129871,
+   "sha256": "b2e62139a486c3e8a200cf9e87f4ab00636dfe7341ff048843d715e6c5ec25ad",
+   "fetched_utc": "2026-11-09T19:25:45Z"
+  },
+  {
+   "file": "RBDS023processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825006",
+   "bytes": 130109,
+   "sha256": "7940dd98c21fcb11e9b16934e8bc72449504ed8107c56f38328f0646433202c7",
+   "fetched_utc": "2026-11-09T19:25:47Z"
+  },
+  {
+   "file": "RBDS024processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825009",
+   "bytes": 130227,
+   "sha256": "4f14e01385db309125083cae17660a8e6947f28159f16236aa56aa13be1b7f0f",
+   "fetched_utc": "2026-11-09T19:25:49Z"
+  },
+  {
+   "file": "RBDS025processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825012",
+   "bytes": 129502,
+   "sha256": "9a5acf04e573aa768875cf97a7e7766e5bef4a26dd5a7cd1d380c308e1e4ca3c",
+   "fetched_utc": "2026-11-09T19:25:51Z"
+  },
+  {
+   "file": "RBDS026processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825015",
+   "bytes": 129848,
+   "sha256": "50f80d6a786368aaa4a927ebecd4f88fa510f46be2de536af3096c33ee5cc56b",
+   "fetched_utc": "2026-11-09T19:25:51Z"
+  },
+  {
+   "file": "RBDS027processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825018",
+   "bytes": 129545,
+   "sha256": "8758ccf4bf71dccae1be883deff9a619bc6a18c3c8ab3ca191a70a1497da58c6",
+   "fetched_utc": "2026-11-09T19:25:52Z"
+  },
+  {
+   "file": "RBDS028processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825021",
+   "bytes": 129516,
+   "sha256": "39ef19ecc0f4d452bf9dcde53b10f05cd04af421561900afbc10dafbfc8f24a8",
+   "fetched_utc": "2026-11-09T19:25:53Z"
+  },
+  {
+   "file": "RBDS002processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825027",
+   "bytes": 130005,
+   "sha256": "cc870ec7f99290b06a645d2d89e66082533e85c1fdea4934992976290c8ffd60",
+   "fetched_utc": "2026-11-09T19:25:55Z"
+  },
+  {
+   "file": "RBDS003processed.txt",
+   "url": "https://ndownloader.figshare.com/files/7825030",
+   "bytes": 130231,
+   "sha256": "3815d591dbd31bd830fdb32f99f0e51516493d4b465bbadcf8322db88a26cd03",
+   "fetched_utc": "2026-11-09T19:25:55Z"
+  },
+  {
+   "file": "RBDS029processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452677",
+   "bytes": 130359,
+   "sha256": "df2b3ba114b4c15543807e7d9d224b44cfc28025d3bf21aee9e89915b3f187b2",
+   "fetched_utc": "2026-11-09T19:25:56Z"
+  },
+  {
+   "file": "RBDS029runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452683",
+   "bytes": 478349,
+   "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+   "fetched_utc": "2026-11-09T19:25:57Z"
+  },
+  {
+   "file": "RBDS029runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452686",
+   "bytes": 3941119,
+   "sha256": "5eaee6988e3a09380871f5c3b605e791bfe3cab20079972c3066bdec1b436bdb",
+   "fetched_utc": "2026-11-09T19:25:59Z"
+  },
+  {
+   "file": "RBDS029runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452692",
+   "bytes": 478349,
+   "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+   "fetched_utc": "2026-11-09T19:25:59Z"
+  },
+  {
+   "file": "RBDS029runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452695",
+   "bytes": 3941119,
+   "sha256": "5eaee6988e3a09380871f5c3b605e791bfe3cab20079972c3066bdec1b436bdb",
+   "fetched_utc": "2026-11-09T19:26:01Z"
+  },
+  {
+   "file": "RBDS030processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452713",
+   "bytes": 131461,
+   "sha256": "189ea90194676be17e6e78b92bbe48c11bf613bdf3cb948e70246be675eed7c2",
+   "fetched_utc": "2026-11-09T19:26:18Z"
+  },
+  {
+   "file": "RBDS004runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360204",
+   "bytes": 3435581,
+   "sha256": "1bfc16ad6c8b382ce85f4c6bd0a7fa47e2dcce3ed9c0292e73959c6d94b822e4",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS008runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802620",
+   "bytes": 398242,
+   "sha256": "dc2e8ebe6d6786c1087392e1c55315ac633449399e57ee6b13ab4929f581f5cc",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS012runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802650",
+   "bytes": 403800,
+   "sha256": "6917016c97655941ab7593ce774b8510a12addad6baa21b7b478be867d34ef28",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS013runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802659",
+   "bytes": 384675,
+   "sha256": "81c9c7deeff3d7d14de81db290207d06922c53869539af3c6c470f130a33a9e5",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS014runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802671",
+   "bytes": 401141,
+   "sha256": "24dd89fa7b4775cc15828c2ba3623d82b25f2e608d2efd45b98cf23cc15ece36",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS015runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360429",
+   "bytes": 3435216,
+   "sha256": "4e4f79bdf1f8c3697611d2bca150bc37a88710d6ac33d16b6129ae757ffe149a",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS020runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360546",
+   "bytes": 3435258,
+   "sha256": "fafcef1eb7fc237ec533da6ad6d199713e39e499065c69992b64b2838d70cfad",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS026runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802524",
+   "bytes": 413806,
+   "sha256": "82de9ba72e09bbaa24a4246d1bf5566137f7e2329931aed20e4a040d397cc330",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS029runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452704",
+   "bytes": 3941119,
+   "sha256": "5eaee6988e3a09380871f5c3b605e791bfe3cab20079972c3066bdec1b436bdb",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452719",
+   "bytes": 481332,
+   "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452722",
+   "bytes": 4054334,
+   "sha256": "918d0b509d597248dc13dfa6e7ee6aa1849f87b2f6d88d2d2027e359635ee8da",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452728",
+   "bytes": 481332,
+   "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452731",
+   "bytes": 4054334,
+   "sha256": "918d0b509d597248dc13dfa6e7ee6aa1849f87b2f6d88d2d2027e359635ee8da",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452737",
+   "bytes": 481332,
+   "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS030runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452740",
+   "bytes": 4054334,
+   "sha256": "918d0b509d597248dc13dfa6e7ee6aa1849f87b2f6d88d2d2027e359635ee8da",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS031processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452749",
+   "bytes": 44000,
+   "sha256": "cfe5fe7ea09209b366a9f296a91ce4620dbd404ed4a1d59d31ddcd824e41d59a",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS031runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452755",
+   "bytes": 478016,
+   "sha256": "c275752329a4c31c47a8d66904bb5ef0f17ad0eff92f038483a522b7ae9b2b4d",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS031runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452758",
+   "bytes": 3936670,
+   "sha256": "b28a624449b998b35128edce3508034bd353b79674ba6192f71f47a902adbfbe",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452767",
+   "bytes": 131240,
+   "sha256": "958e584130b5c9c679b8370682568a5a41354b81927cd342b49a0dc2ce3499a3",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452773",
+   "bytes": 491078,
+   "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452776",
+   "bytes": 4021735,
+   "sha256": "fe8fa25972722c6ec952228ba44f3f2f6f6fca2ecdc42ec1f3ae4d3fb81a0b70",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452782",
+   "bytes": 491078,
+   "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452785",
+   "bytes": 4021735,
+   "sha256": "fe8fa25972722c6ec952228ba44f3f2f6f6fca2ecdc42ec1f3ae4d3fb81a0b70",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452791",
+   "bytes": 491078,
+   "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS032runT45markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452794",
+   "bytes": 4021735,
+   "sha256": "fe8fa25972722c6ec952228ba44f3f2f6f6fca2ecdc42ec1f3ae4d3fb81a0b70",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS033processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452803",
+   "bytes": 43785,
+   "sha256": "bb803ef348847de18b54726cf2cd3148b8ab2c893697003f7e1dd18a20e6f821",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS033runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452809",
+   "bytes": 489083,
+   "sha256": "18bd4cc98a94aab0f41408a59acc956fe00556ad13bdb873ff436853a37c6984",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS033runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452812",
+   "bytes": 4423973,
+   "sha256": "0dfc8d21a4fbdf6346703ee40dbcfa1c5fd3192d67e1fa45dcc0ce1331625ea5",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS034processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452821",
+   "bytes": 43888,
+   "sha256": "0eed3e4e6ae5da6df03b78eddbba9fbaf79df054c5064062b07d52199a638a08",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS034runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452827",
+   "bytes": 484906,
+   "sha256": "072002f40abc4f57b62e1231a15a067bb7b77c853a8e1b6e17ffdac8dbf1e643",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS034runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452830",
+   "bytes": 4033406,
+   "sha256": "075ae3838b4c2a8a8640cb27077c582e27d5c96d29e69728aaed8a7abd573448",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS035processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452839",
+   "bytes": 43562,
+   "sha256": "cc2918bfa28d63310d58bcf0f0e07b7cd7806d24bf035c945f3d38c81a5fce5c",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS035runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452845",
+   "bytes": 481613,
+   "sha256": "40879ff566dde5f2436fbbb6b4ed304d8485f4e849ea00cc3daf308f33b80330",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS035runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452848",
+   "bytes": 3888758,
+   "sha256": "73b82e99cb19c3e5569cb09f35799d0ddf26d07cac75e786c415af8b42796529",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS036processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452857",
+   "bytes": 49984,
+   "sha256": "47c1edd962e69c79bc3d0d7bae630a5968368001b3bdaf69045f9d3d7fc903bc",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS036runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452866",
+   "bytes": 480714,
+   "sha256": "898881139f2e2d043bde45d609d1275fceaf8a39445db18fffb6670fa032d9b5",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS036runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452869",
+   "bytes": 4526003,
+   "sha256": "494c4889c11493853f825e5caf31bdd737a7584ba5b1f1c7ff361e45169ff102",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS037processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452878",
+   "bytes": 50138,
+   "sha256": "e5f831cd31fe343abe35fad23ff60f926506a890a1fadc875e03657317029743",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS037runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452884",
+   "bytes": 212468,
+   "sha256": "760f5dad86acc2e3fc3a612f715b552c26674238d76e68234e66daf046e4afab",
+   "fetched_utc": "2026-11-09T19:28:18Z"
+  },
+  {
+   "file": "RBDS037runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452887",
+   "bytes": 1632062,
+   "sha256": "bf99f011c6a3cc01e1bd8d1be1e11e941260a5dc68b86d9256138d5ff4b42872",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS038processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452896",
+   "bytes": 50168,
+   "sha256": "01713e134f2ac1cf69430bdc1e0187770f6500d051785bef4c5532ea48c66cd4",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS038runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452902",
+   "bytes": 479423,
+   "sha256": "4f3d1b6804932447cc1cbc696d02c97dc304ac1f20d82d9e874f14fc1c584e5d",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS038runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452905",
+   "bytes": 3721616,
+   "sha256": "ad4a0afec19082122c376dfb0f51030257bef7db0ea5a5805bdd9fd0a18e4a98",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS039processed.txt",
+   "url": "https://ndownloader.figshare.com/files/39452914",
+   "bytes": 49726,
+   "sha256": "101fab26a91e4cbabd0bbc71f7e9aa8451930a24e606e18bf466a0ed5f0ff515",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS039runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452920",
+   "bytes": 478796,
+   "sha256": "88c3c86a518f8b876a8992a107d904d52d1ddaa85c0cb8d1cefdb0653a69c0d0",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS039runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/39452923",
+   "bytes": 3696228,
+   "sha256": "9dd8eacbbcb652642acf56a06953e34be03613bf31d9c6e732051f328bef625b",
+   "fetched_utc": "2026-11-09T19:28:19Z"
+  },
+  {
+   "file": "RBDS017runT25markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360471",
+   "bytes": 3434109,
+   "sha256": "93560148e173789cbd85aa5dcdf85bc1376a897f0ff46619648c73621a404158",
+   "fetched_utc": "2026-11-09T19:28:24Z"
+  },
+  {
+   "file": "RBDS017runT35markers.txt",
+   "url": "https://ndownloader.figshare.com/files/7360477",
+   "bytes": 3435837,
+   "sha256": "3367f052dbe4b811f4ec892dc8aad4362f19946ee6adf696b20459f5bc913420",
+   "fetched_utc": "2026-11-09T19:28:27Z"
+  },
+  {
+   "file": "RBDS001runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802551",
+   "bytes": 408864,
+   "sha256": "aeba42cd0d3e73f890a525c6d3802acb4cefada05998864a678eb643e28bf88a",
+   "fetched_utc": "2026-11-09T19:28:32Z"
+  },
+  {
+   "file": "RBDS001runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802554",
+   "bytes": 397567,
+   "sha256": "c072ece5802c8bfd3d1e1cf3c301aae7ce67d48474252edc44789185ddeb728e",
+   "fetched_utc": "2026-11-09T19:28:37Z"
+  },
+  {
+   "file": "RBDS003runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802569",
+   "bytes": 395754,
+   "sha256": "07676a015cfa2b7c336ad4a13fe50027c8fa9769698ea916e85cdc0da61ac273",
+   "fetched_utc": "2026-11-09T19:28:41Z"
+  },
+  {
+   "file": "RBDS005runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802590",
+   "bytes": 402292,
+   "sha256": "83ad6c4eec6c5f8cd6fa185ba86cdbbf8496d4c6b7dd67b20152064f47ca81f8",
+   "fetched_utc": "2026-11-09T19:28:45Z"
+  },
+  {
+   "file": "RBDS008runT25forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802614",
+   "bytes": 424153,
+   "sha256": "ef498da45e95f2907436966254791fafd70b60c3b254c4aaa46b14f15da6f32e",
+   "fetched_utc": "2026-11-09T19:28:51Z"
+  },
+  {
+   "file": "RBDS013runT35forces.txt",
+   "url": "https://ndownloader.figshare.com/files/7802662",
+   "bytes": 371231,
+   "sha256": "f1cc3c971f8833a488d2429ec1ebc67c2537a3f9ec7961026edbb368db671359",
+   "fetched_utc": "2026-11-09T19:28:57Z"
+  },
+  {
+   "file": "RBDS029runT45forces.txt",
+   "url": "https://ndownloader.figshare.com/files/39452701",
+   "bytes": 478349,
+   "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+   "fetched_utc": "2026-11-09T19:29:01Z"
+  },
+  {
+   "file": "RBDSinfo.txt",
+   "url": "https://ndownloader.figshare.com/files/39452932",
+   "bytes": 142235,
+   "sha256": "7f73e42d12592c5f6149f1adbb78bc3dd12d60d5e17ee5d5d6d44f0dd8349121",
+   "fetched_utc": "2026-11-09T19:30:21Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Fukuchi2017_PeerJ.zip"
+}

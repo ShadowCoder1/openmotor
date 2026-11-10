@@ -1,0 +1,200 @@
+{
+ "id": "Mostafa2019_PLoSOne",
+ "module": "reach90",
+ "rows": 17078,
+ "subjects": 111,
+ "persons": 45,
+ "zip_bytes": 745092,
+ "zip_sha256": "7bc0a7099d7d65c3a9209f18b0a9effa36dd246f9d0803ac64187e92ba5cd381",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Lx: hand angle = atan2(y, x) of the hand position, tap angle = atan2 of the tap, taperror = tap - hand on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Lc: hand angle = atan2(y, x) of the hand position, tap angle = atan2 of the tap, taperror = tap - hand on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Lo: hand angle = atan2(y, x) of the hand position, tap angle = atan2 of the tap, taperror = tap - hand on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Nx: endpoint_angle = atan2(y, x) of the endpoint minus the target angle (mod 360) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Nc: endpoint_angle = atan2(y, x) of the endpoint minus the target angle (mod 360) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "localization hand positions lie on the 10 cm arc (9.9 to 10.1 cm)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no-cursor reaches after rotation end counter-clockwise of the aligned ones (median shift > 0 deg) in both groups, as expected after a clockwise cursor rotation",
+   "ok": true,
+   "detail": "exposure 5.7, classic 6.0 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "the 3 lowest attention-task performers in the rotated session are exp015, exp007, exp018 (0.51, 0.52, 0.54); the next is 0.68",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "exposure group, participants analysed (25 recruited, 1 not following instructions, 3 low attention performance)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "classic group, participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exposure group, mean age of the analysed participants (years)",
+   "computed": 20.095238095238095,
+   "reported": 20.1,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exposure group, SD of age (years)",
+   "computed": 2.3854719010032777,
+   "reported": 2.3,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exposure group, number of women among the analysed participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exposure group, localization trials left after removal (16800 - 1024 = 15776; the paper's counts are 4 times the rows)",
+   "computed": 15776.0,
+   "reported": 15776.0,
+   "tol": 0,
+   "source": "Methods, Data exclusions (1024 / 16800 removed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "classic group, localization trials left after removal (8400 - 220 = 8180; 4 times the delayed-localization rows)",
+   "computed": 8180.0,
+   "reported": 8180.0,
+   "tol": 0,
+   "source": "Methods, Data exclusions (220 / 8400 removed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "classic group, no-cursor reaches left after removal (3969 - 1)",
+   "computed": 3968.0,
+   "reported": 3968.0,
+   "tol": 0,
+   "source": "Methods, Data exclusions (1 / 3969 removed); 21 participants x 9 blocks x 21 reaches = 3969",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept (17078 = 4491 + 4512 + 2045 + 2062 + 3968)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within (-180, 180]; 6 exposure reaches ended on the far side of home (|angle| > 90 deg) and are kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit already leaves out the trials the authors removed from localization (about 6 % exposure, 2 % classic). Their counts, 4 times the rows, agree with the paper. For the no-cursor reaches of the exposure group the deposit has 3946 rows for the 21 analysed participants, fewer than the 3982 the paper's counts imply (3984 - 2); one participant is missing three blocks. The classic no-cursor count matches (3969 - 1 = 3968).",
+  "Six exposure no-cursor reaches (all of analysed participants) end on the far side of home (|angle| greater than 90 deg after wrapping); the paper does not say whether they were removed, so they are kept and not flagged."
+ ],
+ "sources": [
+  {
+   "file": "localization_classic.csv",
+   "url": "https://osf.io/download/upw49/",
+   "bytes": 158148,
+   "sha256": "9c34858702c1206ecea6db46666276ab9ad8a9883fcc0eb7e378a8bdff55bf77",
+   "fetched_utc": "2026-11-09T08:13:57Z"
+  },
+  {
+   "file": "localization_online.csv",
+   "url": "https://osf.io/download/wjcgk/",
+   "bytes": 159629,
+   "sha256": "b8e3a2eb4cc8c273adf17dca64440388d1a6518ba32283d8ae3b1987341fdb6e",
+   "fetched_utc": "2026-11-09T08:14:07Z"
+  },
+  {
+   "file": "localization_exposure.csv",
+   "url": "https://osf.io/download/ysduw/",
+   "bytes": 353137,
+   "sha256": "0824cbfb724930b8715fee1f39f0703f40b7cddd2306cb5d156bde577caf9c8a",
+   "fetched_utc": "2026-11-09T08:14:14Z"
+  },
+  {
+   "file": "nocursor_exposure.csv",
+   "url": "https://osf.io/download/9s6au/",
+   "bytes": 190151,
+   "sha256": "6bbaecbb9df080a6c57cc8c2fbcc4b2b8cd426d1e139fbaa1089c9ad4e607fa3",
+   "fetched_utc": "2026-11-09T08:14:17Z"
+  },
+  {
+   "file": "nocursor_classic.csv",
+   "url": "https://osf.io/download/8hm7f/",
+   "bytes": 167009,
+   "sha256": "1a548d984e943ed5c4f857d278d4f6d3d48e8879bd46048c0100f5f7b5106e68",
+   "fetched_utc": "2026-11-09T08:14:20Z"
+  },
+  {
+   "file": "participants_exposure.csv",
+   "url": "https://osf.io/download/7sn4b/",
+   "bytes": 372,
+   "sha256": "c193af71048b5947100ce18e6a91026875940c4bc9494943e2df38d0ced14392",
+   "fetched_utc": "2026-11-09T08:14:24Z"
+  },
+  {
+   "file": "blinkdetect_exposure.csv",
+   "url": "https://osf.io/download/yrpkm/",
+   "bytes": 1075,
+   "sha256": "3156c06692f5b8159abfd597e5fefc60a7a13591186b44782abc0436acb7f074",
+   "fetched_utc": "2026-11-09T08:14:27Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mostafa2019_PLoSOne.zip"
+}

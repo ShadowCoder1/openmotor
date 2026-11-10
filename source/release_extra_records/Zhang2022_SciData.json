@@ -1,0 +1,535 @@
+{
+ "id": "Zhang2022_SciData",
+ "module": "timeseries",
+ "rows": 56,
+ "subjects": 13,
+ "persons": 12,
+ "zip_bytes": 553553884,
+ "zip_sha256": "ad6ca258d404ab7e1215bfd4444e8c3e29431e629af15cedd77568763102a89f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Data Records: 12 PD patients",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiments (subject sequences)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Data Records: 13 valid experiments (patient 08 twice)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 01 experiment 1",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 02 experiment 1",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 04 experiment 1",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 05 experiment 1",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 06 experiment 1",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 08 experiment 2",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 10 experiment 1",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG events, patient 12 experiment 1",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Supplemental Table 1 (sum of the duration bins)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Data description: aligned to 500 Hz",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every task file kept",
+   "ok": true,
+   "detail": "56 56 56"
+  },
+  {
+   "kind": "internal",
+   "what": "labels only 0/1",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 3 h 42 min 3 s of valid data (13323 s), 88 min 19 s of FoG (5299 s) and 334 FoG events; the 56 task files hold 12422 s (3 h 27 min), 5316 s of FoG and 324 episodes (episodes counted as runs of label 1), so those totals are not used as checks. Per patient, the supplement's Table 1 counts agree for patients 01, 02, 04, 05, 06, 08 (second experiment), 10 and 12 (used as checks) but not for 03 (51 runs against 42), 07 (30 against 33), 08 first experiment (23 against 25), 09 (38 against 39) and 11 (51 against 55); the cause is not known. The deposit has additional task 5 and 6 files for patients 04, 08 (first experiment) and 09 that the paper does not describe; they are kept."
+ ],
+ "sources": [
+  {
+   "file": "README.docx",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/afcde674-2cc5-4b0b-aeb6-5e8ae6857b66/file_downloaded",
+   "bytes": 21505,
+   "sha256": "9ebd727bab06fe344a47540746593c0026a216225ae548e560e87374b23dc85f",
+   "fetched_utc": "2026-11-09T21:16:03Z"
+  },
+  {
+   "file": "DataProcessing.py.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/cd016553-516a-48b3-9e0b-1ef3282741d9/file_downloaded",
+   "bytes": 31044,
+   "sha256": "39b0e11824896ac6008d1fc5a6664d47a16c6796fdb8382a15553739e2fce027",
+   "fetched_utc": "2026-11-09T21:16:07Z"
+  },
+  {
+   "file": "62f675ea_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/603fb8d4-8262-40bf-82b4-c524ea7a25e9/file_downloaded",
+   "bytes": 5848362,
+   "sha256": "0f133e7cdd79332a2332f56ebb8be566ebcfaa69a8753df0f7b6b8ad2e5c4877",
+   "fetched_utc": "2026-11-09T21:27:01Z"
+  },
+  {
+   "file": "62f675ea_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/afbb27af-ab9b-4059-8255-101a0c85859c/file_downloaded",
+   "bytes": 5310743,
+   "sha256": "78e3ac713683a15cd148cce46997fc2cdca888042b74b01e42c941436e3b55c4",
+   "fetched_utc": "2026-11-09T21:28:14Z"
+  },
+  {
+   "file": "62f675ea_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/87718bb1-bc31-48d5-8ece-4b515e158455/file_downloaded",
+   "bytes": 6109105,
+   "sha256": "c39ad8b233ea426dc009da4cd27b6ac30fb62e338a62972dbfc91a5a40e4510f",
+   "fetched_utc": "2026-11-09T21:28:57Z"
+  },
+  {
+   "file": "a93bf780_task_5.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/6ca41844-0c12-45de-a45b-5b74aac51d5a/file_downloaded",
+   "bytes": 6840499,
+   "sha256": "e73c368a98bd0e4d843320e8db1809518870c6f4537f1e6f78230b3b9c1c53c7",
+   "fetched_utc": "2026-11-09T21:29:36Z"
+  },
+  {
+   "file": "7eec735d_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/6962039f-b9f4-4c5a-a0b7-3e7925677f80/file_downloaded",
+   "bytes": 7122633,
+   "sha256": "7bfadbd7d4ed633887e0f3bc908cbd1bdade9c06ae0e2951e2217d14f3ba89f2",
+   "fetched_utc": "2026-11-09T21:29:56Z"
+  },
+  {
+   "file": "40c510ef_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/bd8d870b-85cd-4ceb-bde8-8fd53668d528/file_downloaded",
+   "bytes": 7418464,
+   "sha256": "629bebb0a4517ca4b57a1bee275e8b6e187ac9a6c9d8583cdec3dbd21e2586cc",
+   "fetched_utc": "2026-11-09T21:30:07Z"
+  },
+  {
+   "file": "a93bf780_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/48fe0c95-9020-47dc-a57d-7c9c06ef8806/file_downloaded",
+   "bytes": 7681717,
+   "sha256": "b6d0f01f88c74e49f1053ca33cdf40d59f84886d5f1b40bbc8c4faaabc5d75ac",
+   "fetched_utc": "2026-11-09T21:30:21Z"
+  },
+  {
+   "file": "7eec735d_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/116a89d6-fd9c-4ef9-bd8c-0b8cb59ef0ba/file_downloaded",
+   "bytes": 7947317,
+   "sha256": "943cc2b2d369809b5c3ce95662efa93234135b65b69b2e49f528eafdb8653573",
+   "fetched_utc": "2026-11-09T21:30:44Z"
+  },
+  {
+   "file": "f5efaabd_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/704dba11-1626-4a51-a245-8b2c1ebde1b6/file_downloaded",
+   "bytes": 8404872,
+   "sha256": "14b559f42703c3c34810831a0544e14b9c2a1cbd068e7c22517b81e0e43e07c7",
+   "fetched_utc": "2026-11-09T21:31:11Z"
+  },
+  {
+   "file": "40c510ef_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/de688418-a910-4e7c-a2b4-cd7c1c670171/file_downloaded",
+   "bytes": 8822725,
+   "sha256": "ccdb50c9d4440eb2f498781ac1c5dc1b8b0371f1f8157524cf3393711fdcf1be",
+   "fetched_utc": "2026-11-09T21:31:29Z"
+  },
+  {
+   "file": "f5efaabd_task_6.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/4d6a2fcd-b74e-46d2-a4ee-5ae24839ee4d/file_downloaded",
+   "bytes": 9075880,
+   "sha256": "1cd947dc7b0da772b735620b18710d026b9ac17f5062b1dc281a98cce20c1037",
+   "fetched_utc": "2026-11-09T21:31:45Z"
+  },
+  {
+   "file": "dbd3b055_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/f0625261-237a-4446-959d-60181fceb6e8/file_downloaded",
+   "bytes": 9303956,
+   "sha256": "3468adcad92023b65bcf72189e845e0a980a56498187a10ea5e556ca871dfcb5",
+   "fetched_utc": "2026-11-09T21:32:01Z"
+  },
+  {
+   "file": "f5efaabd_task_5.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/60442a86-dc3e-47c4-874a-8344e1e2f04d/file_downloaded",
+   "bytes": 9485789,
+   "sha256": "257c9e2528eba67ff9b75eec42f7034f63dcb4ffc65c2ca7118317ba7855f678",
+   "fetched_utc": "2026-11-09T21:32:24Z"
+  },
+  {
+   "file": "dbd3b055_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d3339ce0-cc65-49ec-acdc-c1f64a4580a9/file_downloaded",
+   "bytes": 9970861,
+   "sha256": "7867f583d04851ca9243de87908825a09594b78421841980fb6096cd97a0cc6c",
+   "fetched_utc": "2026-11-09T21:32:37Z"
+  },
+  {
+   "file": "40c510ef_task_5.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d23d556a-ae8d-4d2e-be58-ea5e33133453/file_downloaded",
+   "bytes": 10176322,
+   "sha256": "963b9696db3cd31053bc1ab69681f7d22ebb7fadaa7a6f7ea12956358c296e8c",
+   "fetched_utc": "2026-11-09T21:32:58Z"
+  },
+  {
+   "file": "16b4d544_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/f07cbacd-624d-421f-a950-24211d3558b6/file_downloaded",
+   "bytes": 11220181,
+   "sha256": "cd6e18fdb0282cebf411700730343199d8a99e11e65ad740aaa12b64df8fb1e5",
+   "fetched_utc": "2026-11-09T21:33:09Z"
+  },
+  {
+   "file": "a93bf780_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/435cf781-eb25-4ecc-aae0-9814ca3ab5c6/file_downloaded",
+   "bytes": 13671799,
+   "sha256": "6ee359bb5d592c037e8a9629778ee6e11323ce70aee18a2782274abd61902512",
+   "fetched_utc": "2026-11-09T21:33:32Z"
+  },
+  {
+   "file": "9eff1ca4_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d20568ee-fd31-4884-8283-16a3d5342ec2/file_downloaded",
+   "bytes": 13816652,
+   "sha256": "3ae3a9297cc3cc02390bcf5e6c218b599f65be6fbe5fb5ed2897ec2954030b07",
+   "fetched_utc": "2026-11-09T21:33:48Z"
+  },
+  {
+   "file": "9eff1ca4_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/83d77f64-5c5e-4d1a-a5b5-7bcf4cc873c5/file_downloaded",
+   "bytes": 14322888,
+   "sha256": "8c12838d76a6e32b2f8e09833d2cc35913ff10b6760f784652262b2482f9ea1e",
+   "fetched_utc": "2026-11-09T21:33:58Z"
+  },
+  {
+   "file": "e52e83cd_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/c1adc8c2-eb32-4d4b-87e8-0c6612c03089/file_downloaded",
+   "bytes": 17185225,
+   "sha256": "bd8b8d9d03b98efdbdf11aa0b5b403e07e7a7fff9185c6ebd3bc75c49c82b154",
+   "fetched_utc": "2026-11-09T21:34:23Z"
+  },
+  {
+   "file": "dca7446d_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/b6c624e0-8790-45c3-a368-a7e21f1d6907/file_downloaded",
+   "bytes": 18341748,
+   "sha256": "47ee73be7b9c87d32a051380b25c0a7dd71a7b5e954d316ad912521899b9fcb8",
+   "fetched_utc": "2026-11-09T21:34:46Z"
+  },
+  {
+   "file": "dca7446d_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/a512284d-6a1b-467f-b60b-d22a32879b2d/file_downloaded",
+   "bytes": 18411539,
+   "sha256": "352cfe01e7390ee85f16ccf5fb4ce67e766b330a0685e88a3f617daa798396d4",
+   "fetched_utc": "2026-11-09T21:34:57Z"
+  },
+  {
+   "file": "16b4d544_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d85e96ab-cd2e-4ce2-94ef-1cb13fd1aa75/file_downloaded",
+   "bytes": 19656517,
+   "sha256": "03113c77c0ebbba882ba592951bf5dd8c0298dc22407181fec56f794ae832401",
+   "fetched_utc": "2026-11-09T21:35:22Z"
+  },
+  {
+   "file": "e52e83cd_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/568a6f03-14ea-4777-9cc3-1dcf2427dcf2/file_downloaded",
+   "bytes": 21408884,
+   "sha256": "060c2d980478a972f864ca2ca8555a8f19e400ba6df4f6b41779d35b73dcf403",
+   "fetched_utc": "2026-11-09T21:35:51Z"
+  },
+  {
+   "file": "c8d8a762_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/0929ab08-1f9e-4618-aed1-5e816b628e22/file_downloaded",
+   "bytes": 21585878,
+   "sha256": "0d9008ebd3efc48fbf01d478faebd642b20623129bc905db4f2880cf464826fc",
+   "fetched_utc": "2026-11-09T21:36:06Z"
+  },
+  {
+   "file": "76aa9ec5_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/f78ee9d1-6927-4e49-b502-9780cb8171b0/file_downloaded",
+   "bytes": 24288324,
+   "sha256": "b5c1680c3ab97e33490997407ef6efca17588187b70faf1a5817e29919aa6f15",
+   "fetched_utc": "2026-11-09T21:36:23Z"
+  },
+  {
+   "file": "76aa9ec5_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/dad88979-42f8-4a7f-9950-ed3291d93b27/file_downloaded",
+   "bytes": 24462227,
+   "sha256": "f4def926feb11ca605127837aa592c147715a181733bf6afbc31461e6d824020",
+   "fetched_utc": "2026-11-09T21:36:39Z"
+  },
+  {
+   "file": "c8d8a762_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/159ecd96-a98b-43ca-be44-fe18c2ae58b7/file_downloaded",
+   "bytes": 25139344,
+   "sha256": "8b62ca3dadfc614b54f18ffb08afb9b9fef03227d1c1f77f141df4098cc7cb80",
+   "fetched_utc": "2026-11-09T21:37:01Z"
+  },
+  {
+   "file": "88b11fc8_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/cf8a278b-9693-4f07-b387-b9df4b1d0d91/file_downloaded",
+   "bytes": 28940252,
+   "sha256": "4bd265da48bdc4481c72b61ec945d8d05d38580499ef19ca3c1b6d48bc2d69a9",
+   "fetched_utc": "2026-11-09T21:37:16Z"
+  },
+  {
+   "file": "88b11fc8_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/030b89f2-caa8-4a40-86dc-c04d6c292329/file_downloaded",
+   "bytes": 29313822,
+   "sha256": "89fbbac9a3bbf657f9e0e632dbbc0ef8f1b61f4a76ddc045e749a10544ef6cef",
+   "fetched_utc": "2026-11-09T21:37:32Z"
+  },
+  {
+   "file": "40c510ef_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/6d1f4319-dbf6-4e23-b565-f46934d04454/file_downloaded",
+   "bytes": 51275852,
+   "sha256": "97dc4e3f759554bed1b1cd236e462e336eab3464b7157ba8e8d2c1d117e4278a",
+   "fetched_utc": "2026-11-09T21:37:49Z"
+  },
+  {
+   "file": "7eec735d_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d3c7ce85-abb9-44ba-bdd3-15636d2df373/file_downloaded",
+   "bytes": 65739260,
+   "sha256": "f6c459066d467a62bdff4ac17d495943cb80f5461fdc95a81a21aa771377e065",
+   "fetched_utc": "2026-11-09T21:38:35Z"
+  },
+  {
+   "file": "7eec735d_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/37f46544-77dc-47b0-b316-bc9b5b52ff32/file_downloaded",
+   "bytes": 66600685,
+   "sha256": "b057200971a3f31e304d7f988eef0faed00894b4361fa0d76ecd6b506639b16d",
+   "fetched_utc": "2026-11-09T21:39:04Z"
+  },
+  {
+   "file": "62f675ea_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/78cf681a-6174-490b-bf9a-82b81aad2bd9/file_downloaded",
+   "bytes": 67684543,
+   "sha256": "eec2e4fae422b8e80f4bf2859ec9fe9e1a171f1a5700f8b5caa9655755df4e98",
+   "fetched_utc": "2026-11-09T21:39:31Z"
+  },
+  {
+   "file": "f5efaabd_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/63c1f0c8-1b67-4be3-a528-ea40c2845c7f/file_downloaded",
+   "bytes": 72186273,
+   "sha256": "29ab4fbfe4baa2fec9f0357febfad4df074ccd8e377a7e6d934f0d0de85abefe",
+   "fetched_utc": "2026-11-09T21:39:51Z"
+  },
+  {
+   "file": "9eff1ca4_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/485f13bb-8f13-4bab-974b-e6d2ed426072/file_downloaded",
+   "bytes": 79281697,
+   "sha256": "a8f13113a2d3b1beac6d9d6de77f6c714ca81ac97b6a86d0035c34389c9e65c9",
+   "fetched_utc": "2026-11-09T21:40:26Z"
+  },
+  {
+   "file": "9eff1ca4_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/a8f7aac0-446e-4e9b-bfba-31fc97b5f6ac/file_downloaded",
+   "bytes": 81607745,
+   "sha256": "0f82c598c7f8b58c200de794d0d331c16f74d62e19594f6daec1c7f35fbacedb",
+   "fetched_utc": "2026-11-09T21:40:45Z"
+  },
+  {
+   "file": "f5efaabd_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/d9c25fca-dc8a-4628-b173-f9b6e1c32512/file_downloaded",
+   "bytes": 87200823,
+   "sha256": "9263c4eff4701a508567b751cc6cc943f6132a46c031d80472394f2f4cd3ae16",
+   "fetched_utc": "2026-11-09T21:41:17Z"
+  },
+  {
+   "file": "40c510ef_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/f7616c49-a660-4e6a-ac92-c33fa812b5ca/file_downloaded",
+   "bytes": 98762085,
+   "sha256": "9cdc6283d0f4d40d8545970ed39e43da391d5a9f14aa0d90091c66a0816e2674",
+   "fetched_utc": "2026-11-09T21:41:37Z"
+  },
+  {
+   "file": "a93bf780_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/0faf1ce8-d9cb-4a56-95f1-fdf1f9f429eb/file_downloaded",
+   "bytes": 100729984,
+   "sha256": "73e1cef4192e2868c61ce246df37d4fc79c1651ceba59e4e6a3b346c22d384ac",
+   "fetched_utc": "2026-11-09T21:42:10Z"
+  },
+  {
+   "file": "16b4d544_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/a065b19d-6325-4313-a46e-5b695595451f/file_downloaded",
+   "bytes": 102648273,
+   "sha256": "e3ac83e551a264ec87220634b665c03fac4a9cfb3d935fef7ff7017f2d2862fc",
+   "fetched_utc": "2026-11-09T21:42:50Z"
+  },
+  {
+   "file": "f5efaabd_task_3.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/74c8c678-9a55-4fc4-99ee-8c8f2f3fc967/file_downloaded",
+   "bytes": 103017012,
+   "sha256": "f5160fbdc83f88026c3935e47f2c9d7ac20ce718c622eb165229dbeca33736f9",
+   "fetched_utc": "2026-11-09T21:43:14Z"
+  },
+  {
+   "file": "16b4d544_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/13630cc8-a83c-421f-bf9b-31a69ca651e9/file_downloaded",
+   "bytes": 103188759,
+   "sha256": "dfc26db09be959a912f3e096b4617a3c8d809c18708a10253b9025898ea95f7c",
+   "fetched_utc": "2026-11-09T21:44:10Z"
+  },
+  {
+   "file": "dbd3b055_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/f69c7f15-360c-4d52-a259-2a92c68b0ebc/file_downloaded",
+   "bytes": 107012732,
+   "sha256": "2e1972a04e514a9dcb38f9267f15493337461e214ceef93167d560b5644fd9f3",
+   "fetched_utc": "2026-11-09T21:44:45Z"
+  },
+  {
+   "file": "dbd3b055_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/41e3e770-b06e-4759-875e-662173b062f3/file_downloaded",
+   "bytes": 115633485,
+   "sha256": "9582be16502080a589575fa1665cb75541c7e9b0b4d955baa1b53118b163c856",
+   "fetched_utc": "2026-11-09T21:45:24Z"
+  },
+  {
+   "file": "a93bf780_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/404cff03-0fc0-451f-aaf3-53ac64ee9bfd/file_downloaded",
+   "bytes": 119747616,
+   "sha256": "7bf257b2538205cf42b05dc0cf22cdbafdc08d4717425f2df761c567df4a429a",
+   "fetched_utc": "2026-11-09T21:46:03Z"
+  },
+  {
+   "file": "c8d8a762_task_4.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/13e3ae75-2c84-4f52-bf73-bfb167cea140/file_downloaded",
+   "bytes": 120530998,
+   "sha256": "4e40ec5fe24c5c89a87d218211d8b9954ed1e8b8f79816e0bf87fc5553292fe7",
+   "fetched_utc": "2026-11-09T21:46:36Z"
+  },
+  {
+   "file": "dca7446d_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/65196196-a11b-49be-88c6-080eed7b1ce5/file_downloaded",
+   "bytes": 127898805,
+   "sha256": "5ca46b3cd3b8556a3f0535eaa579a841688d06bcd0b748f72be8dec6be74b0e5",
+   "fetched_utc": "2026-11-09T21:46:58Z"
+  },
+  {
+   "file": "dca7446d_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/603bf1a9-77c9-47e5-8aee-0c24641346ee/file_downloaded",
+   "bytes": 132967745,
+   "sha256": "deedff678ed734c1a0791a23ebdb255bbc04302e244f36c7e5bee218fa61e6cb",
+   "fetched_utc": "2026-11-09T21:47:36Z"
+  },
+  {
+   "file": "e52e83cd_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/0a8e263b-21bb-4c20-9d2d-b32e20d2bca2/file_downloaded",
+   "bytes": 147714110,
+   "sha256": "38195c002ddb3707e01e2800044551ace61ffd95cf633db0b159fd95dd47e618",
+   "fetched_utc": "2026-11-09T21:48:33Z"
+  },
+  {
+   "file": "c8d8a762_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/9cf1c34e-bff4-47da-8975-bdae3a12321b/file_downloaded",
+   "bytes": 168484384,
+   "sha256": "549dc81ac29f876b54cac76348579fb208986294441302f973f104e14b2c6c4f",
+   "fetched_utc": "2026-11-09T21:49:39Z"
+  },
+  {
+   "file": "e52e83cd_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/2c36010b-c059-46c6-962a-d7e5c8803668/file_downloaded",
+   "bytes": 191609488,
+   "sha256": "cd1fa837018c5978c688a336c6f74c11cc02617f212ec6939436f2330e877ff3",
+   "fetched_utc": "2026-11-09T21:50:28Z"
+  },
+  {
+   "file": "76aa9ec5_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/1f1a6fef-8e9d-41b6-8c93-cc18b9f7bfea/file_downloaded",
+   "bytes": 203463291,
+   "sha256": "754c242798b8dd1fa1b2eb70b73220d59513b073808a657ec8950b9896a19ad5",
+   "fetched_utc": "2026-11-09T21:51:12Z"
+  },
+  {
+   "file": "88b11fc8_task_2.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/8fd7354f-8cde-44d8-88a1-9e51114d68e0/file_downloaded",
+   "bytes": 236456387,
+   "sha256": "e5fb657d74b844b2686bc1b2b308392227d183f641287bc0ca0ceb2b51960605",
+   "fetched_utc": "2026-11-09T21:52:35Z"
+  },
+  {
+   "file": "88b11fc8_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/798f9d37-ca4a-432b-ac23-06004ed56da8/file_downloaded",
+   "bytes": 294998419,
+   "sha256": "9f067c438f17bd153da92d1e448f732e776cde3afdaaf99b7b30f203bad83056",
+   "fetched_utc": "2026-11-09T21:53:38Z"
+  },
+  {
+   "file": "76aa9ec5_task_1.txt",
+   "url": "https://data.mendeley.com/public-files/datasets/r8gmbtv7w2/files/219b11d3-7976-4d55-aac8-b74c8bf8b14b/file_downloaded",
+   "bytes": 414539675,
+   "sha256": "ac804e894ea7e720961153daba798cbb1c484954cad324c47edac425072f7dc7",
+   "fetched_utc": "2026-11-09T21:55:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhang2022_SciData.zip"
+}

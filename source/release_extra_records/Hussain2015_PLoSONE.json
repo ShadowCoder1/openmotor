@@ -1,0 +1,244 @@
+{
+ "id": "Hussain2015_PLoSONE",
+ "module": "timeseries",
+ "rows": 7800,
+ "subjects": 26,
+ "persons": 26,
+ "zip_bytes": 166932747,
+ "zip_sha256": "f659cf92a597c88fccf9e5be5009e1beed79a61f7a4a62087f0096c8172f220b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods: 26 subjects; ANOVA df 1,24",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "caffeine group size (6 M + 8 F)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Table 1 sex counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "placebo group size (6 M + 6 F)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Table 1 sex counts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in caffeine group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in placebo group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, caffeine group",
+   "computed": 22.857142857142858,
+   "reported": 22.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean weekly caffeine intake (mg), caffeine group",
+   "computed": 160.78571428571428,
+   "reported": 160.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean sleep quality, caffeine group",
+   "computed": 4.071428571428571,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean sleep duration (h), caffeine group",
+   "computed": 7.214285714285714,
+   "reported": 7.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, placebo group",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean weekly caffeine intake (mg), placebo group",
+   "computed": 97.5,
+   "reported": 97.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean sleep quality, placebo group",
+   "computed": 4.083333333333333,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean sleep duration (h), placebo group",
+   "computed": 7.25,
+   "reported": 7.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per day (5 blocks x 30)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0,
+   "source": "Methods: 5 blocks of 30 trials per day",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial duration (s): tracking window samples / 1000 Hz",
+   "computed": 4.4,
+   "reported": 4.4,
+   "tol": 0,
+   "source": "Methods: 4.4 s trials, force sampled at 1000 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "peak of the target waveform (N)",
+   "computed": 1.022,
+   "reported": 1.02,
+   "tol": 0.005,
+   "source": "Methods: peak waveform height 12.5 cm = 1.02 N",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "block mean RMSE (trial RMSE to the waveform over 4400 samples, authors' removed trials left out) equals the deposit's processed block means in 259 of 260 participant blocks (the exception, participant 30 day 1 block 1, differs by 4e-4; see README)",
+   "ok": true,
+   "detail": "1 differ: [(30, 1, 1)]; max 3.88e-04"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' clock steps 1 ms between samples except at one jump within the first few samples of most 6000-sample windows (the window grid is the authors' fixed one)",
+   "ok": true,
+   "detail": "6729 jumps in 7800 windows, 6729 within the first 20 samples"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings = 26 participants x 300 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 trials flagged as removed by the authors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "samples: 26 x 10 blocks x 180001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the only missing samples are 5990 placeholders (a dot) in one trial the authors list for removal (last trial of a block), left empty",
+   "ok": true,
+   "detail": "5990"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's exponential learning rates, R2 (0.94 day 1, 0.64 day 2) and ANOVA results are on 15 bins of 10 trials per day. Refitting a + b exp(-c n) to the block-trial RMSE did not give the deposited fit parameters or R2, so no learning-rate number is used as a check.",
+  "The authors' removal list names 'Subject 3: Day 2 Block 6 Trial 26'; there is no block 6, and the deposited block means reproduce only if that trial is removed from block 5, so it is read as block 5.",
+  "For one participant-block (participant 30, day 1, block 1) the deposited block mean RMSE (0.28482) is not reproduced from the raw force with the authors' removal list (0.28521); the other 259 block means match to 1e-6. No trial pair or single extra trial explains it, so nothing was changed.",
+  "In the authors' files the clock jumps (tens to thousands of ms) within the first few samples of most 6000-sample windows (6729 of 7800), so the window grid starts a few samples before the true trial start; time_s here is sample number / 1000 within the window, and trial_info lists the jump position.",
+  "The paper reports one data point removed as an outlier for the learning-rate analysis; the authors' deposited list of 16 removed trials is a different (data collection error) list and is what excluded_by_authors marks."
+ ],
+ "sources": [
+  {
+   "file": "AnalyzeTracking_new.m",
+   "url": "https://zenodo.org/api/records/5008266/files/AnalyzeTracking_new.m/content",
+   "bytes": 18410,
+   "sha256": "603664b28b713c38991201811a0f3c87af8d8df8b666bdb48866bd8a30eb3721",
+   "fetched_utc": "2026-11-09T19:28:41Z"
+  },
+  {
+   "file": "Hussain_Cole2015_processeddata.xlsx",
+   "url": "https://zenodo.org/api/records/5008266/files/Hussain%26Cole2015_processeddata.xlsx/content",
+   "bytes": 20881,
+   "sha256": "d004cb74ea28d66d9cc3341f0821f8ef75bc9d8d5f3734742c415b294e3ed2d6",
+   "fetched_utc": "2026-11-09T19:28:46Z"
+  },
+  {
+   "file": "Hussain_Cole2015_listoftrialstoremove.docx",
+   "url": "https://zenodo.org/api/records/5008266/files/Hussain%26Cole2015_listoftrialstoremove.docx/content",
+   "bytes": 11553,
+   "sha256": "b60006c494edc085a7dacbc90185ca3d01b90f810bec4625e08501b82449a68d",
+   "fetched_utc": "2026-11-09T19:28:52Z"
+  },
+  {
+   "file": "Hussain_Cole2015_exponentialfits.xlsx",
+   "url": "https://zenodo.org/api/records/5008266/files/Hussain%26Cole2015_exponentialfits.xlsx/content",
+   "bytes": 11479,
+   "sha256": "ce125fd77d4bbf5f29752478339214cc3ebac4236c5a6e58c0eacbd4361b5cd4",
+   "fetched_utc": "2026-11-09T19:28:57Z"
+  },
+  {
+   "file": "Hussain_Cole2015_complexwaveform.xlsx",
+   "url": "https://zenodo.org/api/records/5008266/files/Hussain%26Cole2015_complexwaveform.xlsx/content",
+   "bytes": 131342,
+   "sha256": "41515658a376a590249381ce6698376d8115c0528447813f30d5483f4fb2e7d9",
+   "fetched_utc": "2026-11-09T19:29:01Z"
+  },
+  {
+   "file": "raw.zip",
+   "url": "https://zenodo.org/api/records/5008266/files/Hussain%26Cole2015%20All%20Raw%20Data.zip/content",
+   "bytes": 1305492541,
+   "sha256": "b6f65ee445a3eea362ce96fcbfb64aa65f9f74245101e704298b0fd97d102683",
+   "fetched_utc": "2026-11-09T19:34:08Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hussain2015_PLoSONE.zip"
+}

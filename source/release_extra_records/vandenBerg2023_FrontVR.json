@@ -1,0 +1,125 @@
+{
+ "id": "vandenBerg2023_FrontVR",
+ "module": "timeseries",
+ "rows": 36,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 10522010,
+ "zip_sha256": "31d91487ca641f53ceb9d1d5f192202a70715987d0326f0a8c4a82cc2dcd41b3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants (two female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (12 participants x 3 conditions)",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Methods, within-subject design with three conditions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean distance to target, avatar, first trial (m)",
+   "computed": 0.04115825797316258,
+   "reported": 0.041,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean distance to target, feet, first trial (m)",
+   "computed": 0.03166969146702972,
+   "reported": 0.032,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean distance to target, feet, second trial (m)",
+   "computed": 0.034157768121774734,
+   "reported": 0.034,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean distance to target, none, second trial (m)",
+   "computed": 0.07010145171802362,
+   "reported": 0.07,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean distance to target, none, third trial (m)",
+   "computed": 0.06380343593532384,
+   "reported": 0.064,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of distance to target, avatar, first trial (m)",
+   "computed": 0.023151745099946563,
+   "reported": 0.023,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all six trackers share one time vector in every session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each recording has 15 or 16 distances",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one recording per condition",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 cells avatar second trial (0.029 in the paper, 0.028 here), avatar third (0.036, 0.039), feet third (0.034, 0.033) and none first (0.140, 0.136) do not reproduce from the authors' shared distance sheet; the paper also reports 240 steps in total although 12 x 3 x 16 would be 576, and the shared sheet has about 63-64 values per cell. Only the cells that agree are used as checks.",
+  "The deposit script mentions 22 participant codes; data for 12 were shared."
+ ],
+ "sources": [
+  {
+   "file": "data.rar",
+   "url": "https://zenodo.org/api/records/7927396/files/data.rar/content",
+   "bytes": 11539931,
+   "sha256": "cfd13832799739d38fe372c74bb963f85dd231314e834fcf11c2e314b1308007",
+   "fetched_utc": "2026-11-09T14:25:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/vandenBerg2023_FrontVR.zip"
+}

@@ -1,0 +1,117 @@
+{
+ "id": "Burroni2025_JASAEL",
+ "module": "articulography",
+ "rows": 2880,
+ "subjects": 7,
+ "persons": 7,
+ "zip_bytes": 65906876,
+ "zip_sha256": "f2c73018c914104a8ba2436ea9cf6c616d758442a7230c360fa11732f4da286b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the first 1260 rows are the three NDI Wave speakers and the rest the four AG501 speakers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "tokens analysed (21 words x 2 x 10 repetitions x 7 speakers = 2940, minus 60 excluded)",
+   "computed": 2880.0,
+   "reported": 2880.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.1 and 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded tokens (30 pairs)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers recorded on the NDI Wave (S1-S3)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers recorded on the Carstens AG501 (S4-S7)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson correlation of target consonant acoustic duration and plateau duration",
+   "computed": 0.8374724184062879,
+   "reported": 0.84,
+   "tol": 0.005,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Results 3.1 (r = 0.84, values outside the 1st-99th percentile dropped, Methods 2.4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson correlation of time to target (V1 onset to consonant target) and preceding vowel duration",
+   "computed": 0.6984496554819368,
+   "reported": 0.7,
+   "tol": 0.005,
+   "source": "Burroni et al. 2025 (JASA Express Letters 5(1):015201), Results 3.3 (r = 0.70)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "equal numbers of singleton and geminate tokens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "closing and opening durations are not negative; the authors' own negative plateaus (target after release) are few and kept",
+   "ok": true,
+   "detail": "17 negative plateau durations"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mixed-effects results (MATLAB fitlme with by-speaker and by-word slopes) were not refitted; the checks are counts and two Pearson correlations (r = 0.84 and 0.70 as printed) computed after the 1st-99th percentile trimming the paper describes.",
+  "17 tokens have a negative plateau duration (a target landmark after the release landmark; 33 are not positive, 16 of them exactly 0) and 2 have a negative movement amplitude; they are the authors' values and are kept.",
+  "The OSF project states no license (the article itself is CC BY 4.0). The authors' COns, CTarg, CRel and COff columns hold implausible values for the four AG501 speakers (negative, up to -19) and are not carried. The paper says tongue tip height was measured; the deposit's TT_Z trace was identical to the vertical component of the tongue tip in all AG501 rows."
+ ],
+ "sources": [
+  {
+   "file": "Combined.tar.gz",
+   "url": "https://osf.io/download/3qpkr/",
+   "bytes": 341639119,
+   "sha256": "d10991ba955e00fd3299af62bc3e3b645f9be4de66352d7776318c4d7a846036",
+   "fetched_utc": "2026-11-09T19:31:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Burroni2025_JASAEL.zip"
+}

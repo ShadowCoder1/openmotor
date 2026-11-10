@@ -1,0 +1,676 @@
+{
+ "id": "Mayes2021_DevNeuropsychol",
+ "module": "choice_rt",
+ "rows": 35332,
+ "subjects": 158,
+ "persons": 79,
+ "zip_bytes": 439202,
+ "zip_sha256": "a2b14a821ae2a5eff0c4352467423562aa888297dab6fe1edbd24355ab90b555",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "CRT_alldata.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SST_data.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CRTmetrics.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SSTmetrics.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SSTStudyBackgroundMeasuresData.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the three files list the same 79 participants, each once in the background file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the recruitment label (CON/DCD) agrees across files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CRT: 144 trials per participant, 52 left, 52 right and 40 fixation-only trials, one run",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CRT: trials numbered 1-144 in file order within each participant, participants contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CRT: RT is 0 exactly when no key was pressed (every correct arrow trial has RT > 0)",
+   "ok": true,
+   "detail": "43 arrow trials with RT 0 (omissions), 10 fixation trials with a key press"
+  },
+  {
+   "kind": "internal",
+   "what": "CRT: key presses on fixation-only trials per participant against the authors' FalseAlarms",
+   "ok": true,
+   "detail": "equal for 58 of 79 participants; 10 presses here, 36 false alarms in CRTmetrics.csv, which the authors counted from their raw files"
+  },
+  {
+   "kind": "internal",
+   "what": "CRT: arrow trials with RT 0 per participant equal the authors' Omissions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SST: SSD is Inf on every go trial and finite on every stop trial; trials numbered from 1 within each run",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SST: R is NR exactly when RT is missing; RT 0 occurs only with codes r1 and r2",
+   "ok": true,
+   "detail": "575 rows with RT 0, 181 rows with no code but an RT"
+  },
+  {
+   "kind": "internal",
+   "what": "SST: the authors' per-run stop accuracy (SSTmetrics.csv) = share of stop trials with code NR or RT 0, on all 155 runs (so RT 0 marks a trial without a valid response)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SST: the authors' per-run median and mean go RT = median and mean RT of go trials with RT > 0 (the deposit rounds RTs to 0.01 ms)",
+   "ok": true,
+   "detail": "median 154/155, mean 154/155 runs within 0.01 ms; largest differences 0.00 and 0.00 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "SST: the authors' per-run go accuracy = share of go trials with code r1 or r2 and RT > 0",
+   "ok": true,
+   "detail": "145 of 155 runs exact; the others differ by at most 1.56 points"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial of both files kept, in the files' order (CRT file, then SST file)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost: 79 persons, each with a CRT and an SST sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: RT 0.1-1200 ms, SSD 10-1100 ms",
+   "ok": true,
+   "detail": "RT 0.11-1183.9 ms; 26 RTs below 100 ms (anticipations, kept)"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors share",
+   "ok": true,
+   "detail": "CRT 3275 of 11376 rows (fixation-only trials and RTs below 250 ms); SST 3230 of 23956 rows (RTs below 250 ms, the five runs the authors set aside and runs with stop accuracy outside 40-60%)"
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 79.0,
+   "reported": 79.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited at the University of Surrey (participant codes without the Goldsmiths suffix _G)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Participants (Surrey N = 40, Goldsmiths N = 39)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD: participants in the final sample",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD: women",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD: mean age, years",
+   "computed": 25.935952380952376,
+   "reported": 25.93,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD: SD of age, years",
+   "computed": 8.022507685172556,
+   "reported": 8.02,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD: participants in the final sample",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD: women",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD: mean age, years",
+   "computed": 22.37930769230769,
+   "reported": 22.37,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD: SD of age, years",
+   "computed": 2.3669001311354974,
+   "reported": 2.36,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pDCD: participants in the final sample",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pDCD: women",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pDCD: mean age, years",
+   "computed": 30.56375,
+   "reported": 30.56,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pDCD: SD of age, years",
+   "computed": 11.23062947182095,
+   "reported": 11.23,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD+pDCD: mean age, years",
+   "computed": 26.894862068965516,
+   "reported": 26.89,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD+pDCD: SD of age, years",
+   "computed": 9.334224651112615,
+   "reported": 9.33,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT: participants analysed (71 minus 1 TD with low accuracy and 2 slow outliers)",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT accuracy, DCD+pDCD mean (%)",
+   "computed": 97.15099715099714,
+   "reported": 97.15,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT accuracy, TD mean (%)",
+   "computed": 98.07692307692308,
+   "reported": 98.08,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT median RT, TD median of participants' medians (s)",
+   "computed": 0.370206596606295,
+   "reported": 0.37,
+   "tol": 0.005,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT median RT, DCD median of participants' medians (s)",
+   "computed": 0.39591264059777875,
+   "reported": 0.4,
+   "tol": 0.005,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT median RT, Wilcoxon W, TD vs DCD",
+   "computed": 154.0,
+   "reported": 154.0,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT accuracy, Wilcoxon W, TD vs DCD",
+   "computed": 362.5,
+   "reported": 362.5,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT commission errors, Wilcoxon W, TD vs DCD",
+   "computed": 164.5,
+   "reported": 164.5,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT omission errors, Wilcoxon W, TD vs DCD",
+   "computed": 142.5,
+   "reported": 142.5,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT median RT, Wilcoxon W, TD vs DCD+pDCD",
+   "computed": 412.0,
+   "reported": 412.0,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CRT omission errors, Wilcoxon W, TD vs DCD+pDCD",
+   "computed": 440.0,
+   "reported": 440.0,
+   "tol": 0.01,
+   "source": "Results, CRT results (and Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST: TD participants retained",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST: DCD participants retained",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST: DCD+pDCD participants retained",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, TD mean over runs (%)",
+   "computed": 50.3968253968254,
+   "reported": 50.39,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, DCD mean over runs (%)",
+   "computed": 49.11616161616161,
+   "reported": 49.11,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, DCD SD over runs (%)",
+   "computed": 3.0169961960053064,
+   "reported": 3.01,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, DCD+pDCD mean over runs (%)",
+   "computed": 50.520833333333336,
+   "reported": 50.52,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, DCD+pDCD SD over runs (%)",
+   "computed": 3.562652215191549,
+   "reported": 3.56,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST median go RT, TD mean over runs (s)",
+   "computed": 0.39652087301587313,
+   "reported": 0.4,
+   "tol": 0.005,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST median go RT, DCD mean over runs (s)",
+   "computed": 0.4530368181818181,
+   "reported": 0.45,
+   "tol": 0.005,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST median go RT, DCD+pDCD mean over runs (s)",
+   "computed": 0.4751835416666667,
+   "reported": 0.48,
+   "tol": 0.005,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, Wilcoxon W, TD vs DCD (runs as units, as in the authors' script)",
+   "computed": 838.0,
+   "reported": 838.0,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SST stop accuracy, Wilcoxon W, TD vs DCD+pDCD (runs as units, as in the authors' script)",
+   "computed": 1510.5,
+   "reported": 1510.5,
+   "tol": 0.01,
+   "source": "Results, SST results and Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MABC-2 percentile, TD mean",
+   "computed": 55.523809523809526,
+   "reported": 55.52,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MABC-2 percentile, DCD mean",
+   "computed": 3.207692307692308,
+   "reported": 3.2,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MABC-2 percentile, DCD+pDCD mean",
+   "computed": 7.9206896551724135,
+   "reported": 7.92,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ADC total, TD mean",
+   "computed": 24.825,
+   "reported": 24.82,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ADC total, DCD mean",
+   "computed": 78.46153846153847,
+   "reported": 78.46,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ADC total, DCD+pDCD mean",
+   "computed": 54.93103448275862,
+   "reported": 54.93,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FSIQ, TD mean",
+   "computed": 105.88095238095238,
+   "reported": 105.88,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FSIQ, DCD mean",
+   "computed": 96.92307692307692,
+   "reported": 96.92,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FSIQ, DCD+pDCD mean",
+   "computed": 99.65517241379311,
+   "reported": 99.65,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VCI, TD mean",
+   "computed": 101.95238095238095,
+   "reported": 101.95,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VCI, DCD mean",
+   "computed": 99.46153846153847,
+   "reported": 99.46,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VCI, DCD+pDCD mean",
+   "computed": 98.62068965517241,
+   "reported": 98.62,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PRI, TD mean",
+   "computed": 108.80952380952381,
+   "reported": 108.8,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PRI, DCD mean",
+   "computed": 94.76923076923077,
+   "reported": 94.76,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PRI, DCD+pDCD mean",
+   "computed": 100.55172413793103,
+   "reported": 100.55,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "SST go accuracy (Table 2: TD 98.09, DCD 97.83, DCD+pDCD 97.70) comes out at 97.56, 97.50 and 97.36 from these rows. The authors' own per-run go accuracy in SSTmetrics.csv equals the rows' on 145 of 155 runs and the other 10 differ by at most 1.56 points; the cause of the gap to Table 2 was not found.",
+  "The Wilcoxon W of the SST median go RT comparisons (95.5 for TD vs DCD and 694.5 for TD vs DCD+pDCD in the paper) was not reproduced (333 and 586 here, runs as units); the means of the same measure do reproduce.",
+  "CRTmetrics.csv counts 36 false alarms (key presses on fixation-only trials) in total, but CRT_alldata.csv records an RT on only 10 fixation trials (equal for 58 of 79 participants), so the false alarms cannot be recovered from the trial file."
+ ],
+ "sources": [
+  {
+   "file": "SSTmetrics.csv",
+   "url": "https://osf.io/download/ct8mh/",
+   "bytes": 17952,
+   "sha256": "4ca9bf5e8c719de1467b97d9326edb6def580bbb89531fa027b400835693cfd7",
+   "fetched_utc": "2026-11-08T19:52:24Z"
+  },
+  {
+   "file": "CRT_alldata.csv",
+   "url": "https://osf.io/download/enwpz/",
+   "bytes": 400708,
+   "sha256": "1385811b809a07fbcddb3e4d4d9fdda3610bd5093b3cec1c69b5ebf4f276c6ac",
+   "fetched_utc": "2026-11-08T19:52:29Z"
+  },
+  {
+   "file": "CRTmetrics.csv",
+   "url": "https://osf.io/download/jurb6/",
+   "bytes": 45568,
+   "sha256": "822921a56c34d58de55259db5f2135370b93016d80eddc56c03aa9ddd92527c8",
+   "fetched_utc": "2026-11-08T19:52:33Z"
+  },
+  {
+   "file": "SST_data.csv",
+   "url": "https://osf.io/download/cqzr5/",
+   "bytes": 997354,
+   "sha256": "02aad423e18b52344d0e04bd21c2ec418dca325b531860b4f870d0aeb099996d",
+   "fetched_utc": "2026-11-08T19:52:37Z"
+  },
+  {
+   "file": "SSTStudyBackgroundMeasuresData.xlsx",
+   "url": "https://osf.io/download/2m4uy/",
+   "bytes": 21256,
+   "sha256": "91d83614324f9d5e729f8bb2ad58b7d36e91681210402893d1ac5ad16cb96abc",
+   "fetched_utc": "2026-11-08T19:52:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mayes2021_DevNeuropsychol.zip"
+}

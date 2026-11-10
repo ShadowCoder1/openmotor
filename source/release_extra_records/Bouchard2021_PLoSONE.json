@@ -1,0 +1,295 @@
+{
+ "id": "Bouchard2021_PLoSONE",
+ "module": "summary",
+ "rows": 1138,
+ "subjects": 59,
+ "persons": 59,
+ "zip_bytes": 20509,
+ "zip_sha256": "5c883624389a621d20bfc7273b43d54102b4aaff9fc79b120b23e1ec690e51ec",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed (60 recruited, 1 removed as an outlier)",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed group size",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed group size",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group size",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: cursor error at the end of aligned reach training, mean (deg right of target)",
+   "computed": 1.7178191330223942,
+   "reported": 1.72,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: cursor error at the end of aligned reach training, SD",
+   "computed": 2.1634473181274547,
+   "reported": 2.16,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: cursor error at the end of aligned reach training, mean (deg right of target)",
+   "computed": 0.9610627090475672,
+   "reported": 0.96,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: cursor error at the end of aligned reach training, SD",
+   "computed": 1.973611318773417,
+   "reported": 1.97,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: cursor error at the end of aligned reach training, mean (deg right of target)",
+   "computed": 1.1646761186158492,
+   "reported": 1.16,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: cursor error at the end of aligned reach training, SD",
+   "computed": 2.7508487927960843,
+   "reported": 2.75,
+   "tol": 0.0051,
+   "source": "Results, Reach performance in reach training trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: right-hand cursor error, first bin, mean",
+   "computed": 5.279856250263159,
+   "reported": 5.27,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: right-hand cursor error, first bin, SD",
+   "computed": 7.470121957728765,
+   "reported": 7.47,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: right-hand cursor error, last bin, mean",
+   "computed": 1.9273254344977815,
+   "reported": 1.92,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: right-hand cursor error, last bin, SD",
+   "computed": 4.847928292628818,
+   "reported": 4.84,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: right-hand cursor error, first bin, mean",
+   "computed": 19.074434470297223,
+   "reported": 19.07,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: right-hand cursor error, first bin, SD",
+   "computed": 12.160361552229157,
+   "reported": 12.16,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: right-hand cursor error, last bin, mean",
+   "computed": 9.290067804052985,
+   "reported": 9.29,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: right-hand cursor error, last bin, SD",
+   "computed": 7.22192223358637,
+   "reported": 7.22,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: right-hand cursor error, first bin, mean",
+   "computed": 14.437356492995594,
+   "reported": 14.43,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: right-hand cursor error, first bin, SD",
+   "computed": 8.62623116274275,
+   "reported": 8.62,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: right-hand cursor error, last bin, mean",
+   "computed": 8.067857790503245,
+   "reported": 8.07,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: right-hand cursor error, last bin, SD",
+   "computed": 7.5314294021216455,
+   "reported": 7.53,
+   "tol": 0.0101,
+   "source": "Results, Reach performance in reach training trials (paper truncates to 2 decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: implicit index, left hand, PDP Time 2, mean",
+   "computed": 11.33919299926972,
+   "reported": 11.34,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Non-Instructed: implicit index, left hand, PDP Time 2, SD",
+   "computed": 6.971278484284345,
+   "reported": 6.97,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: implicit index, left hand, PDP Time 2, mean",
+   "computed": 5.354285657040177,
+   "reported": 5.35,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed: implicit index, left hand, PDP Time 2, SD",
+   "computed": 3.863867889041699,
+   "reported": 3.86,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: implicit index, left hand, PDP Time 2, mean",
+   "computed": 6.324162046507222,
+   "reported": 6.32,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: implicit index, left hand, PDP Time 2, SD",
+   "computed": 6.742102990788764,
+   "reported": 6.74,
+   "tol": 0.0051,
+   "source": "Results, PDP trials",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Control has exclusion trials only (8 PDP values), others 16",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all values finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "value range within +-90 deg",
+   "ok": true,
+   "detail": "67.15199068119114"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Day 1 rotated-training numbers (e.g. first bin 0.72 / 26.47 / 25.86 deg for Instructed / Non-Instructed / Control) were not used as checks: the workbook's Day 1 bins plus the 40 deg rotation give 1.0 / 27.4 / 13.0 deg, and the Control group in particular does not reproduce. The workbook may differ from the SPSS data behind the paper; the Day 2 and the process dissociation numbers reproduce."
+ ],
+ "sources": [
+  {
+   "file": "Bouchard_data.xlsx",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/4279538?format=original",
+   "bytes": 35787,
+   "sha256": "4d80de3e8305cf37dc4d5c6e20e505ef335d239ad616a81968622846ab3a118d",
+   "fetched_utc": "2026-11-09T13:17:35Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bouchard2021_PLoSONE.zip"
+}

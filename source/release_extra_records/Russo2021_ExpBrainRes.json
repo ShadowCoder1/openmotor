@@ -1,0 +1,83 @@
+{
+ "id": "Russo2021_ExpBrainRes",
+ "module": "summary",
+ "rows": 333,
+ "subjects": 37,
+ "persons": 37,
+ "zip_bytes": 5914,
+ "zip_sha256": "68b48fb5b1f26263f902d8f30395eb65e817cb622879bf4870afd25f7ee7d359",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "control group, mean correct sequences in B1",
+   "computed": 41.27777777777778,
+   "reported": 41.3,
+   "tol": 0.05,
+   "source": "Results, Online learning (B1 = 41.3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group, mean correct sequences in B5",
+   "computed": 50.166666666666664,
+   "reported": 50.2,
+   "tol": 0.05,
+   "source": "Results, Online learning (B5 = 50.2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroke patients",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right brain damage patients",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Participants (10 right-sided)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left brain damage patients",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Participants (nine left-sided)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Participants (eighteen healthy subjects)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "9 values per participant",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "Raw data.xlsx",
+   "url": "https://osf.io/download/ycfk7/",
+   "bytes": 10553,
+   "sha256": "2dade7fe01065c165d61c0482d0afdf1ca97100a64cf1462d5ffd0d4bae4d93f",
+   "fetched_utc": "2026-11-09T15:21:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Russo2021_ExpBrainRes.zip"
+}

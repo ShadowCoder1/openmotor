@@ -1,0 +1,564 @@
+{
+ "id": "Wood2024_JNeurophysiol",
+ "module": "walking",
+ "rows": 30932,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 1639010,
+ "zip_sha256": "c412db6652add18285dfa69eba4d28cfdf27d43c4c42f3d632f497c236d251bc",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "36 participants with stroke or control tables in the deposit; 35 are in the authors' analysis (demo_table) and the stroke participant who is not is marked subject_excluded_by_authors",
+   "ok": true,
+   "detail": "36 participants, 35 analysed"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride the deposit shares is kept (30,932 rows) in phase order base, practice, adaptation, washout",
+   "ok": true,
+   "detail": "30932"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_asymmetry = (fast - slow) / (fast + slow) of the real-time step lengths on every stride that has it",
+   "ok": true,
+   "detail": "max abs diff 4.44e-16"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_asymmetry_kinematic = (fast - slow) / (fast + slow) of the kinematic step lengths",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "fast leg: 25 left, 11 right",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "feedback strides occur only in the practice and adaptation phases",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "epoch table of the deposit has 35 participants x the authors' epochs",
+   "ok": true,
+   "detail": "['end_adapt', 'end_feedback', 'init_wsh', 'no_feedback']"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' five-stride epochs (epoch5_data.txt) are reproduced from the stride rows",
+   "ok": true,
+   "detail": "epochs matched ['end_adapt', 'end_feedback', 'init_wsh', 'no_feedback'], max diff 4.66e-15"
+  },
+  {
+   "kind": "internal",
+   "what": "percent of strides removed as outliers per participant equals the deposit's removed_strides.txt",
+   "ok": true,
+   "detail": "max diff 4.66e-15"
+  },
+  {
+   "kind": "published",
+   "what": "people with stroke analysed (17 of 21 recruited)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Results, first paragraph; Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls (18)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroke age, mean (64.5)",
+   "computed": 64.52941176470588,
+   "reported": 64.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroke age, SD (10.2)",
+   "computed": 10.16807286964216,
+   "reported": 10.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control age, mean (64.8)",
+   "computed": 64.83333333333333,
+   "reported": 64.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control age, SD (9.6)",
+   "computed": 9.648224463294666,
+   "reported": 9.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women with stroke (8)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among controls (9)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "time since stroke, months, mean (71.0)",
+   "computed": 71.0,
+   "reported": 71.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "time since stroke, months, SD (49.1)",
+   "computed": 49.145193050795925,
+   "reported": 49.1,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lower-extremity Fugl-Meyer, mean (25.41)",
+   "computed": 25.41176470588235,
+   "reported": 25.41,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lower-extremity Fugl-Meyer, SD (6.27)",
+   "computed": 6.265568844181387,
+   "reported": 6.27,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest overground walking speed, stroke, mean (1.29)",
+   "computed": 1.290588235294118,
+   "reported": 1.29,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest overground walking speed, stroke, SD (0.38)",
+   "computed": 0.38445530605382616,
+   "reported": 0.38,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest overground walking speed, control, mean (1.81)",
+   "computed": 1.8099999999999998,
+   "reported": 1.81,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fast treadmill belt speed, stroke, mean (0.94)",
+   "computed": 0.9356964557170514,
+   "reported": 0.94,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fast treadmill belt speed, stroke, SD (0.12)",
+   "computed": 0.12309541085732556,
+   "reported": 0.12,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fast treadmill belt speed, control, mean (1.00)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fast belt speed in the released adaptation rows, stroke mean (0.94)",
+   "computed": 0.9356964557170514,
+   "reported": 0.94,
+   "tol": 0.005,
+   "source": "Results, Experimental Design paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max % removed, control (2.32)",
+   "computed": 2.319236016371078,
+   "reported": 2.32,
+   "tol": 0.005,
+   "source": "Methods, Data Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max % removed, stroke (0.39)",
+   "computed": 0.3875968992248062,
+   "reported": 0.39,
+   "tol": 0.005,
+   "source": "Methods, Data Analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Group differences in the Adaptation Index that the paper reports as Bayesian posterior means (Feedback On group difference (0.23), End Adaptation group difference (0.17), Implicit Aftereffect group difference (0.10), group x time interaction (0.09)) were recomputed as differences of raw group means and came out 0.269, 0.179, 0.066, 0.138; they are not used as checks.",
+  "The mean percentage of strides removed as outliers comes out 0.149 (stroke) and 0.907 (control) from the shared tables and from the deposit's own removed_strides.txt, against 0.14 and 0.92 in the paper (the maximum values, 0.39 and 2.32, do reproduce).",
+  "Handedness, race and the other clinical-sheet fields are not released; sex comes from the clinical spreadsheet."
+ ],
+ "sources": [
+  {
+   "file": "event_table_SSV001.mat",
+   "url": "https://osf.io/download/fjgc6/",
+   "bytes": 12811,
+   "sha256": "898824171e8b04a15fd0ac43fd598fdcda9952a4b1b102ea98261cfbeb94a6c1",
+   "fetched_utc": "2026-11-09T22:27:02Z"
+  },
+  {
+   "file": "demo_table.txt",
+   "url": "https://osf.io/download/668596399c98c702891b41c8/",
+   "bytes": 3996,
+   "sha256": "81409902790ba7886731eda54b6c40aed9a6a748a1ca53666d7b55d4fe9348fc",
+   "fetched_utc": "2026-11-09T22:27:17Z"
+  },
+  {
+   "file": "removed_strides.txt",
+   "url": "https://osf.io/download/456hv/",
+   "bytes": 1041,
+   "sha256": "51647572ebd739a4400b45b89e867c882eb3b85901e7a261d651c4c3c2ab39e7",
+   "fetched_utc": "2026-11-09T22:27:21Z"
+  },
+  {
+   "file": "adapt_length_data.txt",
+   "url": "https://osf.io/download/a7qbz/",
+   "bytes": 689,
+   "sha256": "fbb27bc0f689002523d5cda8f3de3ac521ab0e06b2b3e8e71cd7e9604781175f",
+   "fetched_utc": "2026-11-09T22:27:26Z"
+  },
+  {
+   "file": "epoch5_data.txt",
+   "url": "https://osf.io/download/26nbx/",
+   "bytes": 6185,
+   "sha256": "fb39451bdcd34528dbc9fbb34303036809fc53a1c7b6356db961e7686cf7f0f0",
+   "fetched_utc": "2026-11-09T22:27:32Z"
+  },
+  {
+   "file": "epoch5_SAI_data.txt",
+   "url": "https://osf.io/download/678jr/",
+   "bytes": 6146,
+   "sha256": "da47c9461fd7f2cf623e04bbfc195622bfa6e94b64c1aca08f5e85627cd75b36",
+   "fetched_utc": "2026-11-09T22:29:39Z"
+  },
+  {
+   "file": "subject_table_SSV001.mat",
+   "url": "https://osf.io/download/ufh8v/",
+   "bytes": 56036,
+   "sha256": "ccf25168face71d8a139b179c8d25085b4e3c9453d20c2d4d15465e3a2797446",
+   "fetched_utc": "2026-11-09T22:29:49Z"
+  },
+  {
+   "file": "subject_table_SSV002.mat",
+   "url": "https://osf.io/download/668599c71960ff02a358e68b/",
+   "bytes": 72796,
+   "sha256": "7d64660bc21180503a85e98d2ab83bcfae04e4ca9a7d8a996e863ff5d9b8d182",
+   "fetched_utc": "2026-11-09T22:29:54Z"
+  },
+  {
+   "file": "subject_table_SSV006.mat",
+   "url": "https://osf.io/download/z6rux/",
+   "bytes": 64228,
+   "sha256": "a8cf32ce0c686b0f35b3d532155450d938e4fbdab3cf349ca13bb7eab980b163",
+   "fetched_utc": "2026-11-09T22:29:59Z"
+  },
+  {
+   "file": "subject_table_SSV007.mat",
+   "url": "https://osf.io/download/66859ab9a5387a029da3cdfc/",
+   "bytes": 84105,
+   "sha256": "2b1d41567317a871685c8dc89f0179aa164c709d55d32fafceb45e8620143bfc",
+   "fetched_utc": "2026-11-09T22:30:04Z"
+  },
+  {
+   "file": "subject_table_SSV009.mat",
+   "url": "https://osf.io/download/xnkmz/",
+   "bytes": 61227,
+   "sha256": "713ea2ddd49b6f3a7933bcbe512ff44f171a61db1e3bdf5fcd0c275eb7a2f960",
+   "fetched_utc": "2026-11-09T22:30:09Z"
+  },
+  {
+   "file": "subject_table_SSV011.mat",
+   "url": "https://osf.io/download/66859ca29c98c7028f1b425d/",
+   "bytes": 78104,
+   "sha256": "84e62c79d28d6599058fc1e55cf39918aebbea8a65584f2656c8458a57c5ab1a",
+   "fetched_utc": "2026-11-09T22:30:14Z"
+  },
+  {
+   "file": "subject_table_SSV012.mat",
+   "url": "https://osf.io/download/66859cdf1783be029a9a2481/",
+   "bytes": 63677,
+   "sha256": "8a833cb499d46870f5d258887f1423e6a206966349d5ef19a75075ad2ede68b9",
+   "fetched_utc": "2026-11-09T22:30:19Z"
+  },
+  {
+   "file": "subject_table_SSV013.mat",
+   "url": "https://osf.io/download/45vhu/",
+   "bytes": 66694,
+   "sha256": "833ccd434df7f03be83ae5f39c938db1d97e8b4d49a568f1587b129f5a2563c8",
+   "fetched_utc": "2026-11-09T22:30:23Z"
+  },
+  {
+   "file": "subject_table_SSV014.mat",
+   "url": "https://osf.io/download/66859e27ede75d0228693929/",
+   "bytes": 60010,
+   "sha256": "d9b5af5d11629a57052005ba5aefce2a402c7e28be6eb509519b5ad1a72776dc",
+   "fetched_utc": "2026-11-09T22:30:28Z"
+  },
+  {
+   "file": "subject_table_SSV015.mat",
+   "url": "https://osf.io/download/mz3g9/",
+   "bytes": 69932,
+   "sha256": "255a153172d25d90c389daa02b83303329f8d0f3023668b3723d79d548fab0c2",
+   "fetched_utc": "2026-11-09T22:30:32Z"
+  },
+  {
+   "file": "subject_table_SSV016.mat",
+   "url": "https://osf.io/download/66859eee1783be029a9a26eb/",
+   "bytes": 77045,
+   "sha256": "868022b09fb2db5a294ff5f9b148888b39c6e1eb051f1c826f070fe9586eed33",
+   "fetched_utc": "2026-11-09T22:30:38Z"
+  },
+  {
+   "file": "subject_table_SSV017.mat",
+   "url": "https://osf.io/download/66859f9da5387a02a7a3d751/",
+   "bytes": 71123,
+   "sha256": "71a17cde7fe28172d658c5eb2964803c5b6c7649e528ef84174a9a0f940980f1",
+   "fetched_utc": "2026-11-09T22:30:42Z"
+  },
+  {
+   "file": "subject_table_SSV018.mat",
+   "url": "https://osf.io/download/6685a00ba5387a02a6a3d0a5/",
+   "bytes": 54302,
+   "sha256": "45cc3c48ee84f7c04b17c5881204d8c6b041d61e3852ec628ec59d3c3280e1cb",
+   "fetched_utc": "2026-11-09T22:30:46Z"
+  },
+  {
+   "file": "subject_table_SSV019.mat",
+   "url": "https://osf.io/download/6685a09fede75d02206941df/",
+   "bytes": 79104,
+   "sha256": "f6f91ed41516741ef58c77ea19166528ec25fabc9b50c0fa7d7ec2a4e3eb96e3",
+   "fetched_utc": "2026-11-09T22:30:51Z"
+  },
+  {
+   "file": "subject_table_SSV021.mat",
+   "url": "https://osf.io/download/6685a165a5387a02a3a3d0f6/",
+   "bytes": 68295,
+   "sha256": "f318ff90268e2550f22c799ea841735b73355574fa141b4ea9db55acea7cb498",
+   "fetched_utc": "2026-11-09T22:31:09Z"
+  },
+  {
+   "file": "subject_table_SSV022.mat",
+   "url": "https://osf.io/download/6685a1d4a5387a02a6a3d1d9/",
+   "bytes": 66453,
+   "sha256": "616ce0d0ad50877a31c064ec34b0170bdf122d95eedebad9dcd7bc8ebfa496cb",
+   "fetched_utc": "2026-11-09T22:31:14Z"
+  },
+  {
+   "file": "subject_table_SSV025.mat",
+   "url": "https://osf.io/download/6685a52fede75d02206943f2/",
+   "bytes": 61736,
+   "sha256": "31fe80d1cf4d02d5f3951e4d4926e7bacbb2ab44b73a6ecb4ca117902d5fd419",
+   "fetched_utc": "2026-11-09T22:31:18Z"
+  },
+  {
+   "file": "subject_table_SSV026.mat",
+   "url": "https://osf.io/download/rh8y5/",
+   "bytes": 65319,
+   "sha256": "8bf058ad978992de55e7d80b6313061cfb992a7be6097ee47db35618a5afbc66",
+   "fetched_utc": "2026-11-09T22:31:23Z"
+  },
+  {
+   "file": "subject_table_SSVH001.mat",
+   "url": "https://osf.io/download/6685a6779c98c7028e1b4703/",
+   "bytes": 72728,
+   "sha256": "a1efd5c22546ed768353a3b311552b620e0bb10ea15855f6f06423c9d7e55759",
+   "fetched_utc": "2026-11-09T22:31:27Z"
+  },
+  {
+   "file": "subject_table_SSVH002.mat",
+   "url": "https://osf.io/download/pqnfk/",
+   "bytes": 61009,
+   "sha256": "7938854c9b0e8b764856552a5e795d3faa072a34410d75ebd4eda262b1c14ef4",
+   "fetched_utc": "2026-11-09T22:31:31Z"
+  },
+  {
+   "file": "subject_table_SSVH003.mat",
+   "url": "https://osf.io/download/6685a7841783be029a9a2e0e/",
+   "bytes": 60997,
+   "sha256": "eb5f1bdcbbc3328fb45b985cfac94153aa93c2068c8802d13956b74d24ad15c6",
+   "fetched_utc": "2026-11-09T22:31:35Z"
+  },
+  {
+   "file": "subject_table_SSVH004.mat",
+   "url": "https://osf.io/download/6685a7fb9c98c702891b4993/",
+   "bytes": 65978,
+   "sha256": "77d32d10c7c3e8a6781ce2743c60927ca49e428b13fbaf997b0f4687d94988d4",
+   "fetched_utc": "2026-11-09T22:31:41Z"
+  },
+  {
+   "file": "subject_table_SSVH005.mat",
+   "url": "https://osf.io/download/948dt/",
+   "bytes": 69791,
+   "sha256": "011fe15ca79ac89280f9a2a381a957c02f9cf7c22886cff9b066c572bce3a494",
+   "fetched_utc": "2026-11-09T22:31:46Z"
+  },
+  {
+   "file": "subject_table_SSVH006.mat",
+   "url": "https://osf.io/download/s9ez7/",
+   "bytes": 63638,
+   "sha256": "f12ff79a6eb5faaa23a6c27cb7eba9b6ad0f6cf12757294a56f37f6856c67381",
+   "fetched_utc": "2026-11-09T22:31:50Z"
+  },
+  {
+   "file": "subject_table_SSVH007.mat",
+   "url": "https://osf.io/download/6685a9b1a5387a02a6a3d6b6/",
+   "bytes": 68941,
+   "sha256": "cfc8c3dc917449fd3c2d75aca253bd5f3e5fc7ad109d84e70ad5633cc46cedcc",
+   "fetched_utc": "2026-11-09T22:31:54Z"
+  },
+  {
+   "file": "subject_table_SSVH008.mat",
+   "url": "https://osf.io/download/6685aa031960ff02a958dee5/",
+   "bytes": 66957,
+   "sha256": "baf58061efc3529c9cfdc550aeb2e9bb28ee4ce066db734efb196c1ef33798b6",
+   "fetched_utc": "2026-11-09T22:31:59Z"
+  },
+  {
+   "file": "subject_table_SSVH009.mat",
+   "url": "https://osf.io/download/6685aa699c98c7029a1b3f36/",
+   "bytes": 61150,
+   "sha256": "9de49e639e6d34431576e0f6466e035f4d096ed437f3c7f89e98c2d2622dd851",
+   "fetched_utc": "2026-11-09T22:32:20Z"
+  },
+  {
+   "file": "subject_table_SSVH010.mat",
+   "url": "https://osf.io/download/6685aab5ede75d022c693d9e/",
+   "bytes": 112366,
+   "sha256": "575442ec6053df48ca466dba56f374d7118573ccbce206c3f9330024fc55364a",
+   "fetched_utc": "2026-11-09T22:32:24Z"
+  },
+  {
+   "file": "subject_table_SSVH011.mat",
+   "url": "https://osf.io/download/6685ab169c98c702991b3f52/",
+   "bytes": 73858,
+   "sha256": "5815f5f25e34ddb71202a28650250ad39c7615b85cee2df296edb3e5066a7b8e",
+   "fetched_utc": "2026-11-09T22:32:29Z"
+  },
+  {
+   "file": "subject_table_SSVH012.mat",
+   "url": "https://osf.io/download/zd62y/",
+   "bytes": 72063,
+   "sha256": "fa6043ec35488237fa7ce35b24d03bc86e8c4838c5a4f51b8132baf44f2547b3",
+   "fetched_utc": "2026-11-09T22:32:34Z"
+  },
+  {
+   "file": "subject_table_SSVH013.mat",
+   "url": "https://osf.io/download/b7dwv/",
+   "bytes": 63300,
+   "sha256": "cf1f6d3cf97caab0ea2032f8ce9a81b962b07b969985a7877390dd91a14eba24",
+   "fetched_utc": "2026-11-09T22:32:38Z"
+  },
+  {
+   "file": "subject_table_SSVH014.mat",
+   "url": "https://osf.io/download/6685ac031783be02949a274c/",
+   "bytes": 58682,
+   "sha256": "3670e854d25803fab41d73e8ea2dd1b86645123edad9a6f5989d45685b85f724",
+   "fetched_utc": "2026-11-09T22:32:42Z"
+  },
+  {
+   "file": "subject_table_SSVH015.mat",
+   "url": "https://osf.io/download/ayt4z/",
+   "bytes": 60429,
+   "sha256": "114d8a4f8ed1ac403a7d44a0cfd4034adbb96a1148fe584ec7d20e9cc73b7252",
+   "fetched_utc": "2026-11-09T22:32:46Z"
+  },
+  {
+   "file": "subject_table_SSVH016.mat",
+   "url": "https://osf.io/download/aur8w/",
+   "bytes": 73644,
+   "sha256": "8f1a08bbc164c308e85d3389d911a71c12d8244427345302672b7b5c7bd8825a",
+   "fetched_utc": "2026-11-09T22:32:51Z"
+  },
+  {
+   "file": "subject_table_SSVH017.mat",
+   "url": "https://osf.io/download/6685ad2ba5387a029da3d3cc/",
+   "bytes": 62219,
+   "sha256": "3ff494065ce4bd2dbf70ce9d5b5cf9e62d9fa9c25ed831d5bd58c3833a971094",
+   "fetched_utc": "2026-11-09T22:32:55Z"
+  },
+  {
+   "file": "subject_table_SSVH018.mat",
+   "url": "https://osf.io/download/wmxr3/",
+   "bytes": 72332,
+   "sha256": "76983af4b0bc7cd2b4d792dfb6206368158a91ec33935e8f8feb3658fae4b787",
+   "fetched_utc": "2026-11-09T22:32:59Z"
+  },
+  {
+   "file": "SSV_Cog_and_Physical_Testing.xlsx",
+   "url": "https://osf.io/download/668597291783be029a9a1e91/",
+   "bytes": 51733,
+   "sha256": "c34c5cf70780c537b05bb630d5aefd3181d1161689892e3b2821eade3a3aca12",
+   "fetched_utc": "2026-11-09T22:35:33Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wood2024_JNeurophysiol.zip"
+}

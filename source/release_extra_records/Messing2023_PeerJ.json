@@ -1,0 +1,221 @@
+{
+ "id": "Messing2023_PeerJ",
+ "module": "summary",
+ "rows": 2067,
+ "subjects": 159,
+ "persons": 159,
+ "zip_bytes": 18594,
+ "zip_sha256": "28799c65c718e627ab753e82b28bb84e11b53b3af5d760592a8ffb90a97027d9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants completing all tasks",
+   "computed": 159.0,
+   "reported": 159.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Participants (159 completed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 158.0,
+   "reported": 158.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Participants / Table 1 (n = 158)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among analysed",
+   "computed": 111.0,
+   "reported": 111.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Table 1 (111 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men among analysed",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Table 1 (47 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among all 159",
+   "computed": 112.0,
+   "reported": 112.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Participants (112 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, all 159 (years)",
+   "computed": 35.41509433962264,
+   "reported": 35.42,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Participants (M = 35.42)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, analysed (years)",
+   "computed": 35.41139240506329,
+   "reported": 35.41,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, analysed",
+   "computed": 14.536634917915398,
+   "reported": 14.54,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Participants (aged 18 to 78)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum age",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Messing & Apthorp 2023, Participants (aged 18 to 78)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dominant hand score, mean",
+   "computed": 66.37784810126583,
+   "reported": 66.38,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dominant hand score, SD",
+   "computed": 9.745452138205478,
+   "reported": 9.75,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-dominant hand score, mean",
+   "computed": 61.07341772151898,
+   "reported": 61.07,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-dominant hand score, SD",
+   "computed": 8.322645170838653,
+   "reported": 8.32,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AQ-10 score, mean",
+   "computed": 3.0822784810126582,
+   "reported": 3.08,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AQ-10 score, SD",
+   "computed": 1.8162928222678971,
+   "reported": 1.82,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dominant hand score, men, mean",
+   "computed": 70.90638297872339,
+   "reported": 70.91,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dominant hand score, women, mean",
+   "computed": 64.46036036036035,
+   "reported": 64.46,
+   "tol": 0.005,
+   "source": "Messing & Apthorp 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one excluded participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "13 rows per participant",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's text gives the non-dominant hand SD as 9.75, the same as the dominant hand; its Table 1 gives 8.32, which the rows reproduce, so Table 1 is the check.",
+  "The deposit holds 159 rows with 158 unique Qualtrics codes (one code appears twice); both rows are kept as two participants, as the authors' count of 159 does."
+ ],
+ "sources": [
+  {
+   "file": "FTT_AQ_data.csv",
+   "url": "https://osf.io/download/kgp67/",
+   "bytes": 12454,
+   "sha256": "a72799a924c7bb4c3ff1ee0a6b537aba4d90378d0b6f3887516f1239b6f214b8",
+   "fetched_utc": "2026-11-09T13:48:21Z"
+  },
+  {
+   "file": "Import_Match_Inquisit_Qualtrics.R",
+   "url": "https://osf.io/download/q89e7/",
+   "bytes": 1466,
+   "sha256": "c10f4ecf2326f04c97e54037d831645824e2d352a3f3c316fbc7885d96244488",
+   "fetched_utc": "2026-11-09T13:48:26Z"
+  },
+  {
+   "file": "Reproducible_Results.Rmd",
+   "url": "https://osf.io/download/3uemf/",
+   "bytes": 12225,
+   "sha256": "ecb563f80ea4dbd7552228dec182acff26eef8c631093181114caed0c9773a2d",
+   "fetched_utc": "2026-11-09T13:48:29Z"
+  },
+  {
+   "file": "fingertapping.iqx",
+   "url": "https://osf.io/download/q9gst/",
+   "bytes": 47803,
+   "sha256": "a818825ac2875d97485f113d7052473e27d7d1bf6b1d9dee596dd970aff24ca5",
+   "fetched_utc": "2026-11-09T13:48:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Messing2023_PeerJ.zip"
+}

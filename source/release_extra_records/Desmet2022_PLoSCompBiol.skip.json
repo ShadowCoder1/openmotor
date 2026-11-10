@@ -1,0 +1,7 @@
+{
+ "id": "Desmet2022_PLoSCompBiol",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad download needs a token (about 0.7 MB of .mat step data; Zenodo 7045551 holds only the authors' MATLAB code, MIT license, no data)",
+ "sources": []
+}

@@ -1,0 +1,99 @@
+{
+ "id": "Luciw2014_SciData",
+ "module": "grasp_lift",
+ "rows": 3528,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 401243,
+ "zip_sha256": "47b1d02f3fdce6624fd6ba927dff637379727e6a7eadeffd047a2dc7fbc6981f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "294 lifts for each of 12 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "9 series per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "lift numbers run 1..n within each series",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants (12)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lifts per weight or friction series (34)",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lifts per mixed series (28)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mixed series per participant (2)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "friction series per participant (2)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean unexpected changes per mixed series (11)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0.5,
+   "source": "Methods, Experimental paradigm (11 unexpected changes)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean weight changes per weight series (12)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0.5,
+   "source": "Methods, Experimental paradigm (12 unpredictable weight changes)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper counts 328 lifts per participant (3,936 in all). The deposit's table has 294 lifts per participant: 5 weight series and 2 friction series of 34 lifts and 2 mixed series of 28 lifts, one 34-lift series fewer than the paper's six weight series, two friction series and two mixed series (the practice series and the friction-estimation lifts are not in the table either). The converted file therefore has 3,528 rows.",
+  "Zenodo-style checks do not apply; the collection DOI is 10.6084/m9.figshare.c.988376 (Figshare, CC0, one article per participant)."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Luciw2014_SciData.zip"
+}

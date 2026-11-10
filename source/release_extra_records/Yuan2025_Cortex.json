@@ -1,0 +1,263 @@
+{
+ "id": "Yuan2025_Cortex",
+ "module": "speech",
+ "rows": 40050,
+ "subjects": 89,
+ "persons": 89,
+ "zip_bytes": 1222326,
+ "zip_sha256": "205c0a98178c21002064af4d8de91afb3c43c2422f251ed238a51cd1c9a741d1",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "89 participants with production files; the 90th in the authors' table (one sham participant) has none",
+   "ok": true,
+   "detail": "89 of 90"
+  },
+  {
+   "kind": "internal",
+   "what": "450 utterances per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group sizes 30 / 30 / 29 (anodal M1 / anodal cerebellum / sham)",
+   "ok": true,
+   "detail": "{'M1': 30, 'cerebellum': 30, 'sham': 29}"
+  },
+  {
+   "kind": "internal",
+   "what": "baseline F1 recomputed from the rows equals the authors' per-participant baseline in tDCS_data.sav (< 1e-4 mel)",
+   "ok": true,
+   "detail": "4.99e-05"
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation F1 change recomputed equals the authors' adapt_F1_change (< 1e-4 mel)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shift is 110 mel exactly on trials 166-390 and zero elsewhere",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "formants in plausible range (F1 100-2000 Hz, F2 300-4000 Hz) on utterances the authors kept; removed values are scoring errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: baseline F1 mean (mel)",
+   "computed": 783.8448133987271,
+   "reported": 783.84,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: baseline F1 SD",
+   "computed": 75.15849787856588,
+   "reported": 75.16,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: baseline F2 mean (mel)",
+   "computed": 1458.8042941449382,
+   "reported": 1458.8,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: baseline F2 SD",
+   "computed": 60.37411666141537,
+   "reported": 60.37,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: age mean",
+   "computed": 23.533333333333335,
+   "reported": 23.53,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: age SD",
+   "computed": 8.165247354968255,
+   "reported": 8.17,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: baseline F1 mean (mel)",
+   "computed": 767.5933806467767,
+   "reported": 767.59,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: baseline F1 SD",
+   "computed": 59.22496307573001,
+   "reported": 59.22,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: baseline F2 mean (mel)",
+   "computed": 1456.056102277576,
+   "reported": 1456.06,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: baseline F2 SD",
+   "computed": 47.85520131304947,
+   "reported": 47.86,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: age mean",
+   "computed": 21.466666666666665,
+   "reported": 21.47,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: age SD",
+   "computed": 4.890055590498018,
+   "reported": 4.89,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total with demographics (men)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handers",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, all 90 participants, mean",
+   "computed": 22.122222222222224,
+   "reported": 22.12,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: % of F1 shift at the end of adaptation",
+   "computed": 34.28008141575713,
+   "reported": 34.28,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 group: % of F1 shift at the start of after-effect",
+   "computed": 16.54101101502062,
+   "reported": 16.54,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: % of F1 shift at the end of adaptation",
+   "computed": 37.59027706053322,
+   "reported": 37.59,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cerebellum group: % of F1 shift at the start of after-effect",
+   "computed": 18.308898832563706,
+   "reported": 18.31,
+   "tol": 0.005,
+   "source": "Yuan et al. 2025 (preprint, OSF preprints r7mey), Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One of the 90 participants in the authors' table (a sham participant) has no production file in the deposit, so the sham group has 29 participants here (30 in the paper); the sham columns of Table 1 are therefore not checked."
+ ],
+ "sources": [
+  {
+   "file": "Data.zip",
+   "url": "https://osf.io/download/yvg5r/",
+   "bytes": 7984945,
+   "sha256": "6f06f00ec440e5f2a9845d386dac2a8cdd8f57b8c4950f698b110235826582ba",
+   "fetched_utc": "2026-11-09T11:40:33Z"
+  },
+  {
+   "file": "analysis_code.zip",
+   "url": "https://osf.io/download/7rh9u/",
+   "bytes": 754122,
+   "sha256": "9d6fb5b9935b31028202f7a7342bce577097120f49469dca4ff6db94efab5333",
+   "fetched_utc": "2026-11-09T11:42:21Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Yuan2025_Cortex.zip"
+}

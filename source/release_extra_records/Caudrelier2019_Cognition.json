@@ -1,0 +1,76 @@
+{
+ "id": "Caudrelier2019_Cognition",
+ "module": "speech",
+ "rows": 11650,
+ "subjects": 70,
+ "persons": 70,
+ "zip_bytes": 309602,
+ "zip_sha256": "60bfa4dcbdd9fc5ccfaadbd748a597a689a121ca92fe94c63151d9cffb8f5754",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "file has the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "children aged 4-5 years",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "abstract (PubMed): 29 preschoolers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children aged 7-8 years",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "abstract (PubMed): 24 schoolchildren",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "abstract (PubMed): 17 adults",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all rows kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f2mf1_change = 100 x (f2mf1_norm - 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Adapted constant within participant",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text could not be read (publisher and repository blocked automated access), so only the participant counts from the abstract are checked."
+ ],
+ "sources": [
+  {
+   "file": "Formants_data_Cognition.csv",
+   "url": "https://zenodo.org/api/records/2645764/files/Formants_data_Cognition.csv/content",
+   "bytes": 884876,
+   "sha256": "a991a4d69d0bd7e859ff47e7f4918e9764784dac13738bed280438309a352481",
+   "fetched_utc": "2026-11-09T12:06:56Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Caudrelier2019_Cognition.zip"
+}

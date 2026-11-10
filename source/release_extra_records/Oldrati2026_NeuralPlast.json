@@ -1,0 +1,155 @@
+{
+ "id": "Oldrati2026_NeuralPlast",
+ "module": "touch_precision",
+ "rows": 53242,
+ "subjects": 96,
+ "persons": 96,
+ "zip_bytes": 613921,
+ "zip_sha256": "cf0168f7930d4a10ba5d9fc0189bb6005129c0dffa6f5344f34511d21183ff09",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "53242 rows, 9 columns, no empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "96 participants, each in exactly one group and with one sex; every participant's rows for a stimulation condition are contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all rows are valid trials; PE 0 to 0.862, RT 0 to 997",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Abstract and Methods (96 healthy adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tACS participants",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tVNS participants",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the tACS group",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the tVNS group",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean precision error, tACS, near targets",
+   "computed": 0.11275573028707069,
+   "reported": 0.11,
+   "tol": 0.006,
+   "source": "Results, descriptive values of PE by distance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean precision error, tACS, far targets",
+   "computed": 0.14682875,
+   "reported": 0.15,
+   "tol": 0.006,
+   "source": "Results, descriptive values of PE by distance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean precision error, tVNS, near targets",
+   "computed": 0.1095076803723817,
+   "reported": 0.11,
+   "tol": 0.006,
+   "source": "Results, descriptive values of PE by distance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean precision error, tVNS, far targets",
+   "computed": 0.1377050712078969,
+   "reported": 0.14,
+   "tol": 0.006,
+   "source": "Results, descriptive values of PE by distance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tACS participants with data in both conditions",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, exclusions (one tACS participant had sham data only)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean reaction time (ms) of the tACS group (mean of participant means)",
+   "computed": 293.774811650648,
+   "reported": 293.76,
+   "tol": 0.05,
+   "source": "Results, descriptive values of RT by group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean reaction time (ms) of the tVNS group (mean of participant means)",
+   "computed": 349.0593836565333,
+   "reported": 349.06,
+   "tol": 0.05,
+   "source": "Results, descriptive values of RT by group",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "NIBS_sexdiff.csv",
+   "url": "https://zenodo.org/records/17417281/files/NIBS_sexdiff.csv?download=1",
+   "bytes": 2212024,
+   "sha256": "871d8a3b738c8b4b5949cd302ce1266dd0a7f4e9377f6802182d610da9a0ab51",
+   "fetched_utc": "2026-11-09T05:06:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Oldrati2026_NeuralPlast.zip"
+}

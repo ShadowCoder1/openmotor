@@ -1,0 +1,7 @@
+{
+ "id": "Debats2023_JNeurophysiol",
+ "skipped": true,
+ "reason": "no number to check against",
+ "details": "CC0 GitHub deposit of 10 small per-participant spreadsheets (18 participants in Exp1, 19 in Exp2 by row count; bias errors and slopes per discrepancy, EQ/NE condition, pre/post) is well documented by Notes.txt and convertible as summary, but the paper (J Neurophysiol 2023) has no open full text (not in PMC, publisher 403, Bielefeld repository bot-blocked, preprint has no full text in Europe PMC) so no published value could be reproduced; retry if the PDF is supplied. Raw files were removed from the PC.",
+ "sources": []
+}

@@ -1,0 +1,275 @@
+{
+ "id": "Gonzalez-Rubio2019_FrontHumNeurosci",
+ "module": "walking",
+ "rows": 28427,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 958486,
+ "zip_sha256": "c9c25879503ef69a602b17c75cc96c31fdcf8367da0a9b1010733a35359bd5a2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "21 participants, 7 in each of the 3 groups (paper, Methods)",
+   "ok": true,
+   "detail": "{'StepTimeStudy': 7, 'StepTimeStudyControl': 7, 'AlphaFeedback': 7}"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant walked TM base, familiarization, adaptation, TM post, each within -1/+6 strides of the planned 150/150/600/450",
+   "ok": true,
+   "detail": "TM base 150-155; familiarization 150-156; adaptation 599-603; TM post 450-453"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride the deposit shares is kept, in its order: 28,427 rows; recording numbers never decrease and stride start times increase within each recording",
+   "ok": true,
+   "detail": "28427 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "parameter labels are matched by name (the 21 parameter tables do not share one column order or size)",
+   "ok": true,
+   "detail": "3 distinct label lists, sizes [187, 467]"
+  },
+  {
+   "kind": "internal",
+   "what": "the deposit fills only bad, good, trial and the paper's six measures; every other parameter (step lengths, step times, step-length asymmetry) is empty for every stride",
+   "ok": true,
+   "detail": "Serror, Sgoal, Sout, Terror, Tgoal, Tout, bad, good, trial"
+  },
+  {
+   "kind": "internal",
+   "what": "condition notes give 0.75 m/s for the tied blocks and a 2:1 belt ratio for adaptation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = the deposit's bad-stride flag (getResults.m calls removeBadStrides before every epoch)",
+   "ok": true,
+   "detail": "152 strides (0.53%)"
+  },
+  {
+   "kind": "internal",
+   "what": "fast leg = self-reported dominant leg (paper, Methods 2.1): right for 20, left for 1",
+   "ok": true,
+   "detail": "{'right': 20, 'left': 1}"
+  },
+  {
+   "kind": "internal",
+   "what": "signs: step_time_asymmetry = stance_time_asymmetry - double_support_asymmetry_s / stride time on every pair of consecutive good strides (so Tout is positive when the fast leg's step lasts longer)",
+   "ok": true,
+   "detail": "n=28176, median |diff| 0.00016, 95th percentile 0.00129"
+  },
+  {
+   "kind": "internal",
+   "what": "stance_time_asymmetry is positive early in adaptation (the slow foot stays on the slow belt longer)",
+   "ok": true,
+   "detail": "first 5 good adaptation strides: 0.142"
+  },
+  {
+   "kind": "internal",
+   "what": "99.5% of good strides lie within +-0.5 on each of the six measures (a few outliers kept as shared)",
+   "ok": true,
+   "detail": "{'step_position_asymmetry': 0.332, 'step_time_asymmetry': 0.275, 'leg_orientation_asymmetry': 0.379, 'double_support_asymmetry_s': 0.117, 'range_of_motion_asymmetry': 0.279, 'stance_time_asymmetry': 0.26}"
+  },
+  {
+   "kind": "internal",
+   "what": "ages 18-40 and sex F or M for everyone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of women (13 women, 8 men)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, para 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, years (24.69 +- 4)",
+   "computed": 24.686507936507933,
+   "reported": 24.69,
+   "tol": 0.005,
+   "source": "Methods, para 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Sout steady state vs 0, control",
+   "computed": 0.0004125756053583336,
+   "reported": 0.0004,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 1 (Figure 2A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Tout steady state vs 0, spatial feedback",
+   "computed": 0.00037532910510571134,
+   "reported": 0.0004,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 1 (Figure 2A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Sout after-effect vs 0, control",
+   "computed": 0.0003262459306894072,
+   "reported": 0.0003,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 1 (Figure 2B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Sout after-effect vs 0, spatial feedback",
+   "computed": 0.016382331270282137,
+   "reported": 0.0164,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 1 (Figure 2B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Tout after-effect vs 0, spatial feedback",
+   "computed": 0.10227487978794174,
+   "reported": 0.1023,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 1 (Figure 2B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, SA after-effect vs 0, control",
+   "computed": 0.0009043988254348319,
+   "reported": 0.0009,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 2 (Figure 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, SA after-effect vs 0, spatial feedback",
+   "computed": 0.05416962383406768,
+   "reported": 0.0542,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 2 (Figure 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, TA after-effect vs 0, control",
+   "computed": 0.004402833646086541,
+   "reported": 0.0044,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 2 (Figure 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, TA after-effect vs 0, spatial feedback",
+   "computed": 0.0007404647694309468,
+   "reported": 0.0007,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 2 (Figure 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, SA group effect, control vs spatial feedback",
+   "computed": 0.009058814081251951,
+   "reported": 0.0091,
+   "tol": 5e-05,
+   "source": "Results 3.1, para 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Sout group effect, control vs temporal feedback",
+   "computed": 0.00045365145742261087,
+   "reported": 0.0005,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Sout after-effect vs 0, temporal feedback",
+   "computed": 0.0020946988608659726,
+   "reported": 0.0021,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 1 (Figure 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, Tout after-effect vs 0, temporal feedback",
+   "computed": 0.855048234542264,
+   "reported": 0.855,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 1 (Figure 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, SA group effect, control vs temporal feedback",
+   "computed": 0.0028732783059864093,
+   "reported": 0.0029,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, SA after-effect vs 0, temporal feedback",
+   "computed": 0.008003902927651423,
+   "reported": 0.008,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 2 (Figure 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, TA after-effect vs 0, temporal feedback",
+   "computed": 0.0008767723952332684,
+   "reported": 0.0009,
+   "tol": 5e-05,
+   "source": "Results 3.2, para 2 (Figure 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p-value, TnA group effect, control vs temporal feedback",
+   "computed": 0.0029982845319617988,
+   "reported": 0.003,
+   "tol": 5e-05,
+   "source": "Results 3.3 (Figure 6A)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Three p-values in the Results come out close but not equal from the shared strides: 0.0499 (paper 0.0481), 0.4322 (paper 0.4235) and 0.0101 (paper 0.0092); the other 17 match to 4 decimals."
+ ],
+ "sources": [
+  {
+   "file": "StudyData.mat",
+   "url": "https://ndownloader.figshare.com/files/20305134",
+   "bytes": 1733030,
+   "sha256": "b28a49974a89f65794bdb3d1a554cda3a50ef1eeccf1992c1cb00f56979567bc",
+   "fetched_utc": "2026-11-08T18:14:35Z"
+  },
+  {
+   "file": "README_osf.txt",
+   "url": "https://osf.io/download/wvhnk/",
+   "bytes": 2129,
+   "sha256": "ab87489d2564ad037f6101987eb8ce9a96a963ae060a3f45ae5d5634e12a7774",
+   "fetched_utc": "2026-11-08T18:14:37Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Gonzalez-Rubio2019_FrontHumNeurosci.zip"
+}

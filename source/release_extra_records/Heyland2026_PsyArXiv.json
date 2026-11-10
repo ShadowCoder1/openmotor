@@ -1,0 +1,1211 @@
+{
+ "id": "Heyland2026_PsyArXiv",
+ "module": "speech",
+ "rows": 27000,
+ "subjects": 45,
+ "persons": 45,
+ "zip_bytes": 1173216,
+ "zip_sha256": "92a3a9ac57ea0cb78eb9b1758f4ab0b074a2a44ca7a18c80235c4f05d56fb1ac",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "presentation-order arrays are permutations in every participant and block (sentences within language 1-30, transfer 1-60)",
+   "ok": true,
+   "detail": "{'sent': 630, 'sent_bad': 0, 'tr': 135, 'tr_bad': 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "zero-filled blocks (not recorded): none",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "23 participants in Experiment 1 and 22 in Experiment 2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "600 rows per participant (7 sentence blocks x 60 + 3 transfer blocks x 60)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "formants within plausible mel range where present (F1 100-1500, F2 600-2200)",
+   "ok": true,
+   "detail": "F1 338-1015, F2 792-1824"
+  },
+  {
+   "kind": "published",
+   "what": "participants in the final sample (Experiment 1)",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the final sample (Experiment 2)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the final sample",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F1 change (mel), mean",
+   "computed": 16.491941345966183,
+   "reported": 16.49,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F1 change (mel), SD",
+   "computed": 11.404589103901907,
+   "reported": 11.4,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F1 change (mel), mean",
+   "computed": -16.080097248169977,
+   "reported": -16.08,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F1 change (mel), SD",
+   "computed": 12.301318682760547,
+   "reported": 12.3,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F2 change (mel), mean",
+   "computed": -16.720747351311655,
+   "reported": -16.72,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F2 change (mel), mean",
+   "computed": 16.504270878641254,
+   "reported": 16.5,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F1 change (mel), mean",
+   "computed": 11.471107079090054,
+   "reported": 11.47,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F1 change (mel), mean",
+   "computed": -15.71440204272164,
+   "reported": -15.71,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F2 change (mel), mean",
+   "computed": -18.804533001136132,
+   "reported": -18.8,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F2 change (mel), SD",
+   "computed": 15.816918007388683,
+   "reported": 15.82,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F2 change (mel), mean",
+   "computed": 10.59600675985099,
+   "reported": 10.6,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: direct adaptation English, mean",
+   "computed": 23.48491739928296,
+   "reported": 23.48,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: direct adaptation English, SD",
+   "computed": 15.514615955329695,
+   "reported": 15.51,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: direct adaptation French, mean",
+   "computed": 23.040627663147028,
+   "reported": 23.04,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: direct adaptation French, SD",
+   "computed": 12.238461348309453,
+   "reported": 12.24,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: after-effect English, mean",
+   "computed": 15.365646266547424,
+   "reported": 15.37,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: after-effect French, mean",
+   "computed": 13.33858781837712,
+   "reported": 13.34,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: direct adaptation English, mean",
+   "computed": 21.408110405491165,
+   "reported": 21.41,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: direct adaptation English, SD",
+   "computed": 18.20567751081666,
+   "reported": 18.21,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: direct adaptation French, mean",
+   "computed": 18.60426848008934,
+   "reported": 18.6,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: direct adaptation French, SD",
+   "computed": 16.463872086049548,
+   "reported": 16.46,
+   "tol": 0.005,
+   "source": "Heyland et al. 2026 preprint (PsyArXiv y6bqg v2), Results",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Five of the sixteen standard deviations of the sentence-level F1/F2 changes differ from the preprint by 0.01-0.07 mel (Experiment 1 English F2 18.65 vs 18.58 and French F2 11.50 vs 11.53; Experiment 2 English F1 14.64 vs 14.57, French F1 14.53 vs 14.54 and French F2 14.13 vs 14.08); all sixteen means and the other eleven SDs match, so these are not used as checks.",
+  "The checks use the preprint's numbers (PsyArXiv y6bqg, version 2); the title on the OSF project differs slightly ('Linguistic Context and the Generalization of Second Language Speech Motor Plans').",
+  "Age, sex and handedness were not shared per participant in a labelled form: the files hold a 1/2 sex code whose labels are not documented, kept in participants.csv as sex_code."
+ ],
+ "sources": [
+  {
+   "file": "P05_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/hdeyp/",
+   "bytes": 4971950,
+   "sha256": "2c1f21bede26e9833ee2f3150db3f2f7b512db8c791fe9b5178b5a58a9b00e08",
+   "fetched_utc": "2026-11-09T11:58:00Z"
+  },
+  {
+   "file": "P19_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c69e643f76b80044470c/",
+   "bytes": 5309574,
+   "sha256": "4a24967cdb0c47b6a7e313c0991babdbbb70568354d7689e9f6e4c7f385dfdd7",
+   "fetched_utc": "2026-11-09T11:58:06Z"
+  },
+  {
+   "file": "P22_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/ufqp4/",
+   "bytes": 5254658,
+   "sha256": "78592d8e9e7d3d1b21bc2e3f1e1cf9509f32bc47df6e0d57532184b9f1b79c1b",
+   "fetched_utc": "2026-11-09T11:58:11Z"
+  },
+  {
+   "file": "P11_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/vs54y/",
+   "bytes": 5380087,
+   "sha256": "1c45bf4176205479146367a5e04c796dbafb184ed4c3aba0b3ad459a353ef1b2",
+   "fetched_utc": "2026-11-09T11:58:18Z"
+  },
+  {
+   "file": "P02_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/ngt84/",
+   "bytes": 5804152,
+   "sha256": "43e6d919ebdfe64cd384810e9a85a6c6ba063413361949e403e7fa4cd879c735",
+   "fetched_utc": "2026-11-09T11:58:33Z"
+  },
+  {
+   "file": "P21_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/nukrx/",
+   "bytes": 6151882,
+   "sha256": "78da46f17900b76d7e049b9ef9ea9c1fb35791f0b3de7f4ff641e0076bcf31e1",
+   "fetched_utc": "2026-11-09T11:58:38Z"
+  },
+  {
+   "file": "P11_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/t9wjm/",
+   "bytes": 6277757,
+   "sha256": "51bdb227ebceb02c22d4c48ee95e502c0ec34634983a1affddaa56e58d8963c7",
+   "fetched_utc": "2026-11-09T11:58:43Z"
+  },
+  {
+   "file": "P04_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/aznjt/",
+   "bytes": 6319494,
+   "sha256": "7044e62f3360f7a10939b7bdaf95d7c5d245114b2b7ed8e519e87663c5a70228",
+   "fetched_utc": "2026-11-09T11:58:48Z"
+  },
+  {
+   "file": "P03_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/3g2vu/",
+   "bytes": 6410746,
+   "sha256": "bc487204df67c35ae4c7c3cec41e4b82056b0a1cba4e9bc53d8d0bac742aff12",
+   "fetched_utc": "2026-11-09T11:58:53Z"
+  },
+  {
+   "file": "P14_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/kge7j/",
+   "bytes": 6480074,
+   "sha256": "793724393462c905091a5f5ed0468ce7fa6fa95d24a823d39306d2a1caacc4ed",
+   "fetched_utc": "2026-11-09T11:59:03Z"
+  },
+  {
+   "file": "P04_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/vdm47/",
+   "bytes": 6560162,
+   "sha256": "86ae8ba5277a8c0233955ac63abf040256be1394206bc7218a37e91b89b96dde",
+   "fetched_utc": "2026-11-09T11:59:04Z"
+  },
+  {
+   "file": "P07_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/s4chu/",
+   "bytes": 6687884,
+   "sha256": "8bcd4408206f57779ef5ccf1f68aa667e9a90bcf6bb9a23c3eade80262da4134",
+   "fetched_utc": "2026-11-09T11:59:04Z"
+  },
+  {
+   "file": "P07_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/tjxhf/",
+   "bytes": 6652955,
+   "sha256": "56804ed98efc7a3d5c097a19de1e79e94d45727e6bb7cb6a62ee085333c8c7dd",
+   "fetched_utc": "2026-11-09T11:59:05Z"
+  },
+  {
+   "file": "P14_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/ptwjz/",
+   "bytes": 6789993,
+   "sha256": "2749919262dbe2096260459fa451d9d726c009dd14b49cf794969c9cfd598293",
+   "fetched_utc": "2026-11-09T11:59:10Z"
+  },
+  {
+   "file": "P12_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c70f5120710544fbc623/",
+   "bytes": 6836313,
+   "sha256": "37787f4bfccbe753ec6f9fc23e2a8c508d922aa2b49863e9e25ba71901b8739e",
+   "fetched_utc": "2026-11-09T11:59:10Z"
+  },
+  {
+   "file": "P19_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/w4ha7/",
+   "bytes": 7090107,
+   "sha256": "81fbdd6a08b0ec48f5ecf0285313ba560c2670ad7de0a02638e32ddd3bf83f35",
+   "fetched_utc": "2026-11-09T11:59:11Z"
+  },
+  {
+   "file": "P15_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/yjeub/",
+   "bytes": 6951865,
+   "sha256": "475015b5ebfc0912aa1663d4823a2717e1b349d638e6da63609a3ce7c0d9a1f9",
+   "fetched_utc": "2026-11-09T11:59:15Z"
+  },
+  {
+   "file": "P22_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/kzmhn/",
+   "bytes": 7118325,
+   "sha256": "712136265adf432ab7c15336e91085498281295590cbad1d30d7cf3f9b472207",
+   "fetched_utc": "2026-11-09T11:59:16Z"
+  },
+  {
+   "file": "P10_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c7265244faffdc135b8b/",
+   "bytes": 7136398,
+   "sha256": "ae944a7179da05a5ea11e062d5590da5928a102372e96dbef4cd532e48b64527",
+   "fetched_utc": "2026-11-09T11:59:18Z"
+  },
+  {
+   "file": "P21_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c72bb38f15aa65fbc616/",
+   "bytes": 7255058,
+   "sha256": "c635f96c261c88cda56457f08d21dedf236b119744fa750561e89b9b7495654e",
+   "fetched_utc": "2026-11-09T11:59:21Z"
+  },
+  {
+   "file": "P20_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c73a7e710c03dac6893d/",
+   "bytes": 7394357,
+   "sha256": "485f3fb7169c367c02b0533c50ef664b3302636b385fa2036d59f321e7d3882c",
+   "fetched_utc": "2026-11-09T11:59:21Z"
+  },
+  {
+   "file": "P17_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/g752j/",
+   "bytes": 7029214,
+   "sha256": "5e838617240e7744339280239fec3ca619e89d6e9245b361d07fa632e40e042e",
+   "fetched_utc": "2026-11-09T11:59:22Z"
+  },
+  {
+   "file": "P13_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c73b241e19897d4447ee/",
+   "bytes": 7452460,
+   "sha256": "9af3e56960665e192e97557e3f0f9b005c0444a96e713ddb7bdcde7e3de26f1c",
+   "fetched_utc": "2026-11-09T11:59:23Z"
+  },
+  {
+   "file": "P13_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c74e1b5ebca0a1c68b74/",
+   "bytes": 7668181,
+   "sha256": "5cc4e983bd2c4150f7ed78386c258426d0ad80520e98282b524fcabdcd8633ca",
+   "fetched_utc": "2026-11-09T11:59:25Z"
+  },
+  {
+   "file": "P10_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c7430be1d1fda4c6897e/",
+   "bytes": 7520045,
+   "sha256": "36ff623d57f39a25ba1e9c941564ba4780306d959d7b3dbc6e81403989294751",
+   "fetched_utc": "2026-11-09T11:59:26Z"
+  },
+  {
+   "file": "P02_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c7511b5ebca0a1c68b76/",
+   "bytes": 7714530,
+   "sha256": "f4ac9ff4d407a9fdc8562bd0d659cda20e2a1ecec449520496665d3125958aa4",
+   "fetched_utc": "2026-11-09T11:59:26Z"
+  },
+  {
+   "file": "P20_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c75b8fc38e2029444756/",
+   "bytes": 7883899,
+   "sha256": "e817d45af362a5b57aa91dd1dd0df4dde8c7aa727d0e69d72feea80ac1e92ec4",
+   "fetched_utc": "2026-11-09T11:59:40Z"
+  },
+  {
+   "file": "P01_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c780643f76b800444760/",
+   "bytes": 8508752,
+   "sha256": "8e52dd32dea2eac9091b5a6e265f788adf49b000c891dcf817a549844d805b79",
+   "fetched_utc": "2026-11-09T11:59:44Z"
+  },
+  {
+   "file": "P06_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c75b0be1d1fda4c6898f/",
+   "bytes": 7858027,
+   "sha256": "b434b64d9cba5a7ca48a5255d757fe8c7a1c0ad2d0991420a7537b2ea3108dc6",
+   "fetched_utc": "2026-11-09T11:59:45Z"
+  },
+  {
+   "file": "P12_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c7952e8fdcea5a135b97/",
+   "bytes": 8617905,
+   "sha256": "d6f456fae625fcf2cc1e832bc72b1323eabac16d05a2e0d009a8ef7e2e4ba6ad",
+   "fetched_utc": "2026-11-09T11:59:45Z"
+  },
+  {
+   "file": "P05_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6mur5/",
+   "bytes": 8673816,
+   "sha256": "6e1c13317407ec4e9897edbce91c5023df6a41a59da63b24dea84646dc56e38f",
+   "fetched_utc": "2026-11-09T11:59:49Z"
+  },
+  {
+   "file": "P17_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c7b28fc38e202944476e/",
+   "bytes": 9018164,
+   "sha256": "30d09dd7ba2b6ef47c1308de63d0b21f817cc4cdc37f6c794f3ec8333cd5d930",
+   "fetched_utc": "2026-11-09T11:59:50Z"
+  },
+  {
+   "file": "P19_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c7c723bc6e87f14447ba/",
+   "bytes": 9319724,
+   "sha256": "310d53b2710bd8e8a2026ed37cb5d28f74746238fb39a11856acdf8eca11245f",
+   "fetched_utc": "2026-11-09T11:59:51Z"
+  },
+  {
+   "file": "P05_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c7b9b04859d3f9c68aa8/",
+   "bytes": 9094652,
+   "sha256": "e816963bdf82808007a00485a9487cfec61b34773caa8bce9ae8b3165dd81813",
+   "fetched_utc": "2026-11-09T11:59:51Z"
+  },
+  {
+   "file": "P01_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c7c823bc6e87f14447bc/",
+   "bytes": 9349036,
+   "sha256": "800861c355ec83bef7dcd9ace73a476da150d8d7ff98104a4ca343320dc493c6",
+   "fetched_utc": "2026-11-09T11:59:54Z"
+  },
+  {
+   "file": "P11_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c7dc8fc38e2029444779/",
+   "bytes": 9632169,
+   "sha256": "76a716d02b2d2f148b492d95f85c341898cca2b24555b37af111b3de0170f1e4",
+   "fetched_utc": "2026-11-09T11:59:54Z"
+  },
+  {
+   "file": "P22_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c7e0cd22b75a68135baf/",
+   "bytes": 9711238,
+   "sha256": "7be621d20e7740868840df6eea541b01aa180a4de3f51812be19013af946ac02",
+   "fetched_utc": "2026-11-09T11:59:55Z"
+  },
+  {
+   "file": "P16_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c7ed5244faffdc135bcb/",
+   "bytes": 9779490,
+   "sha256": "b6d162cf19c7e6ed5f1c61fea4dcc4b8ae59e34a292730068df24775608723c8",
+   "fetched_utc": "2026-11-09T11:59:57Z"
+  },
+  {
+   "file": "P05_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c7f40be1d1fda4c689e2/",
+   "bytes": 9884927,
+   "sha256": "c0a0cbd4024a7768a1d95c2d500102de14586741e33a2077ae4abff49bb7dd65",
+   "fetched_utc": "2026-11-09T11:59:59Z"
+  },
+  {
+   "file": "P08_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c7f4241e19897d44480a/",
+   "bytes": 9980525,
+   "sha256": "e711b8ceb57115bc46ba834163010e507b0d86c1dcc4a98bfa5b650589ac294f",
+   "fetched_utc": "2026-11-09T11:59:59Z"
+  },
+  {
+   "file": "P23_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c7ffcd22b75a68135bb7/",
+   "bytes": 10207143,
+   "sha256": "b56b27155e2923a822d45c9fb0b3abc40c40cf217d930d843d2085da46f133cf",
+   "fetched_utc": "2026-11-09T12:00:00Z"
+  },
+  {
+   "file": "P22_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c805cd22b75a68135bb9/",
+   "bytes": 10147345,
+   "sha256": "6244b10c7f8802748de67c9f7e8127911c73a5b03936d3bcf971cea4f163d5d6",
+   "fetched_utc": "2026-11-09T12:00:02Z"
+  },
+  {
+   "file": "P21_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/jmpw3/",
+   "bytes": 10171068,
+   "sha256": "3c9b8089aebb27858943ea613efd84c9b129e3d17f287d1201bd914339cc1619",
+   "fetched_utc": "2026-11-09T12:00:04Z"
+  },
+  {
+   "file": "P21_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/9qx65/",
+   "bytes": 10256877,
+   "sha256": "418de9164cd70b9831cfd43ff7857e6d7a77f99c6d0585cb0e3009018e74d6b8",
+   "fetched_utc": "2026-11-09T12:00:05Z"
+  },
+  {
+   "file": "P19_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c80e0be1d1fda4c68a0e/",
+   "bytes": 10259152,
+   "sha256": "f571b636d6b3fe86e8b998156626477eb5f8730a569eb3536dd582ab92be7787",
+   "fetched_utc": "2026-11-09T12:00:05Z"
+  },
+  {
+   "file": "P04_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8117e710c03dac68973/",
+   "bytes": 10458881,
+   "sha256": "775165ccf968cd7354bbe32783606a15d3c220cd0d43a551ab089e8ce19d6648",
+   "fetched_utc": "2026-11-09T12:00:07Z"
+  },
+  {
+   "file": "P16_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8140be1d1fda4c68a10/",
+   "bytes": 10394914,
+   "sha256": "3fd30de4e2bf13c3615ea9f7266b6561fc115c12cdb51695c3914b2ab8d53581",
+   "fetched_utc": "2026-11-09T12:00:09Z"
+  },
+  {
+   "file": "P14_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8368fc38e20294447aa/",
+   "bytes": 10894173,
+   "sha256": "3263471158267fcd143c7afe65d6725a280c21167f765f07622c4d314bb1767c",
+   "fetched_utc": "2026-11-09T12:00:10Z"
+  },
+  {
+   "file": "P11_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c82023bc6e87f14447ec/",
+   "bytes": 10672915,
+   "sha256": "4672f7ca3bdb050617fbe05b4a7fed9ca1c96f71344bdb170b5ec8e7c9b9051f",
+   "fetched_utc": "2026-11-09T12:00:10Z"
+  },
+  {
+   "file": "P12_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c842241e19897d444828/",
+   "bytes": 11048734,
+   "sha256": "8623d8ebde0b5f27147d373a4c4d73d31f0feeae995df2406412128f5d06ec16",
+   "fetched_utc": "2026-11-09T12:00:13Z"
+  },
+  {
+   "file": "P16_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c84623bc6e87f14447fe/",
+   "bytes": 11120621,
+   "sha256": "bc4e0f7d6b861f22eeed652657631d6746dff744b2126901604994a4eaf5d9e7",
+   "fetched_utc": "2026-11-09T12:00:16Z"
+  },
+  {
+   "file": "P04_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c84f7e710c03dac68994/",
+   "bytes": 11291858,
+   "sha256": "397a2889baa7116a4636a37ac48b22d5d7539e22d67e63fc6d412ece474e0561",
+   "fetched_utc": "2026-11-09T12:00:17Z"
+  },
+  {
+   "file": "P03_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c8521fec4998dec68910/",
+   "bytes": 11333983,
+   "sha256": "8c4406fc0617b1c6c0855bade8335172a9843aea27516c24c1c6bed471a63edc",
+   "fetched_utc": "2026-11-09T12:00:18Z"
+  },
+  {
+   "file": "P02_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c856d59e2f64f3135c53/",
+   "bytes": 11470601,
+   "sha256": "ead6a4fec3a36f70af478beb872a258df341edb259a2f35f30c87cb96106714b",
+   "fetched_utc": "2026-11-09T12:00:21Z"
+  },
+  {
+   "file": "P14_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8580be1d1fda4c68a2a/",
+   "bytes": 11385202,
+   "sha256": "97e6781687dc95cb5f4c4522db4bc59319d28b00ddf4de34fa4bf1930ae8d2de",
+   "fetched_utc": "2026-11-09T12:00:24Z"
+  },
+  {
+   "file": "P07_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8622e8fdcea5a135cdc/",
+   "bytes": 11642037,
+   "sha256": "237e203b88f2051780fb5e90ee98249891c47b8446bcbf7c9ece38f7da3e74f3",
+   "fetched_utc": "2026-11-09T12:00:24Z"
+  },
+  {
+   "file": "P07_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c86323bc6e87f1444811/",
+   "bytes": 11651948,
+   "sha256": "4baeae3d6314ecf3d9e1e5e33fa115ee78d5e653ca9b305293eb8b3aca807da5",
+   "fetched_utc": "2026-11-09T12:00:25Z"
+  },
+  {
+   "file": "P16_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c86b5244faffdc135c1d/",
+   "bytes": 11730115,
+   "sha256": "541576e61bd25a44e17dda83fae5114fc8a05a665c1cb51f1bbe66b11c3f3c95",
+   "fetched_utc": "2026-11-09T12:00:29Z"
+  },
+  {
+   "file": "P19_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/ayj8h/",
+   "bytes": 11687593,
+   "sha256": "695e6dbcbac4a0ebd53003135cc16511141b0487f72f5aa9904a66fed59d29b2",
+   "fetched_utc": "2026-11-09T12:00:31Z"
+  },
+  {
+   "file": "P20_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c87123bc6e87f1444815/",
+   "bytes": 11799359,
+   "sha256": "a045037ba1d7b40ac3a896da08b53e78e545d4c01a26e61673a618b78e49b79b",
+   "fetched_utc": "2026-11-09T12:00:32Z"
+  },
+  {
+   "file": "P15_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c871d59e2f64f3135c5a/",
+   "bytes": 11808203,
+   "sha256": "ad8a37211f3f165be72e9a2207d8b629e6e7ac1e582be14a4974ecd9f914a728",
+   "fetched_utc": "2026-11-09T12:00:32Z"
+  },
+  {
+   "file": "P22_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8790be1d1fda4c68a36/",
+   "bytes": 12042486,
+   "sha256": "3c28e1766bf889cd579badd98d51e3d57f06c31f2a31714b64f2a50871be0c2d",
+   "fetched_utc": "2026-11-09T12:00:34Z"
+  },
+  {
+   "file": "P13_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c883d59e2f64f3135c5e/",
+   "bytes": 12160567,
+   "sha256": "0eef1feec5566f6eb3cae0b6c06de034ea0afb314922d82825779c6520f058a3",
+   "fetched_utc": "2026-11-09T12:00:36Z"
+  },
+  {
+   "file": "P05_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c887cd22b75a68135bd7/",
+   "bytes": 12376533,
+   "sha256": "4e6b0450f50508e95c5da81d51d3e4e4e59c83d946378d148e418f51fce9e5bd",
+   "fetched_utc": "2026-11-09T12:00:37Z"
+  },
+  {
+   "file": "P07_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c88c1fec4998dec68928/",
+   "bytes": 12435609,
+   "sha256": "e3db33d3fb93f935c9b18b106d1ad275c86f75512a1aa3c48fceb9249c56938d",
+   "fetched_utc": "2026-11-09T12:00:37Z"
+  },
+  {
+   "file": "P21_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c89ad59e2f64f3135c6e/",
+   "bytes": 12574124,
+   "sha256": "5f494170a1d75f77399e436d89bd76097a03f36bcefc9346a694bb4c5c9f9714",
+   "fetched_utc": "2026-11-09T12:00:42Z"
+  },
+  {
+   "file": "P21_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c88dd59e2f64f3135c6a/",
+   "bytes": 12391167,
+   "sha256": "3682310b4fde8d6961c587c5643e704b77c999eff194b616a1d74977d4b4fed5",
+   "fetched_utc": "2026-11-09T12:00:42Z"
+  },
+  {
+   "file": "P14_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8968fc38e20294447d9/",
+   "bytes": 12591056,
+   "sha256": "ec80bcb4bae0e94120679cb96be9ab017bbdb4aa43a4de4fb0af2f83dde88e2f",
+   "fetched_utc": "2026-11-09T12:00:42Z"
+  },
+  {
+   "file": "P10_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c89dcd22b75a68135bdf/",
+   "bytes": 12698196,
+   "sha256": "ba1cef626e74fd569463ef5e62e849d936fd4260c2c7bbbd58beedda794cc56e",
+   "fetched_utc": "2026-11-09T12:00:44Z"
+  },
+  {
+   "file": "P04_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c89fd59e2f64f3135c70/",
+   "bytes": 12773902,
+   "sha256": "f2858e536b19a732879528fbc6ed5a58eda3ec74451549c198e06291e1df2045",
+   "fetched_utc": "2026-11-09T12:00:47Z"
+  },
+  {
+   "file": "P16_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c8a01fec4998dec68935/",
+   "bytes": 5825578,
+   "sha256": "45f3465e8a58c79aaeb2c4a3e990a7a5acc5eed49f1a71f2a985d6c8369657ed",
+   "fetched_utc": "2026-11-09T12:00:47Z"
+  },
+  {
+   "file": "P19_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c89d1fec4998dec68930/",
+   "bytes": 12653345,
+   "sha256": "cd843405162b4d7842a20f8f42cf3d34af8e2fc88aa5efd8acce1fa1435a5438",
+   "fetched_utc": "2026-11-09T12:00:49Z"
+  },
+  {
+   "file": "P15_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8a0b04859d3f9c68ac3/",
+   "bytes": 12736738,
+   "sha256": "5c42fc531ea81b6affb448dc296fafe3673a617ba124e2ae9d3f758bb2f0087a",
+   "fetched_utc": "2026-11-09T12:00:50Z"
+  },
+  {
+   "file": "P06_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8a50be1d1fda4c68a3e/",
+   "bytes": 12865059,
+   "sha256": "765aa9029dfc3f629c6908e8aa6e05384741a579ab3366b5c8f8a5c3ab32963c",
+   "fetched_utc": "2026-11-09T12:00:55Z"
+  },
+  {
+   "file": "P08_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8a57e710c03dac689a2/",
+   "bytes": 12804710,
+   "sha256": "aceaec27c1d1d3e90d13d672b713da2d31b4d955ec156d7a5704cf95d0417aa8",
+   "fetched_utc": "2026-11-09T12:00:55Z"
+  },
+  {
+   "file": "P12_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8a90be1d1fda4c68a41/",
+   "bytes": 12904648,
+   "sha256": "813b36040ff418c67b0a7b2bb7753e157efceafd45b9b0a778ca617f37b2c627",
+   "fetched_utc": "2026-11-09T12:00:56Z"
+  },
+  {
+   "file": "P04_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8aa23bc6e87f1444820/",
+   "bytes": 13186184,
+   "sha256": "f37e216989616ba181a9df4a29f9569efcfe36a3bd567d1b20066d8c276fb403",
+   "fetched_utc": "2026-11-09T12:00:58Z"
+  },
+  {
+   "file": "P08_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c8accd22b75a68135bed/",
+   "bytes": 5383131,
+   "sha256": "6c07a9afd1d78a4ba202fad6d7ce1f947c4bcbcb84c478dc25650316d3dad491",
+   "fetched_utc": "2026-11-09T12:01:02Z"
+  },
+  {
+   "file": "P07_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8ad241e19897d44487c/",
+   "bytes": 13031146,
+   "sha256": "2c6e030c9d5e21d73fd814c3e2dda85a9de7a2c5ff705109495ed96b7d4e8bb0",
+   "fetched_utc": "2026-11-09T12:01:02Z"
+  },
+  {
+   "file": "P20_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8b88fc38e202944490e/",
+   "bytes": 13321364,
+   "sha256": "45a3011ed4a01902f049d7594197ba8712b36210dc85f1fd00302a68aff8b08d",
+   "fetched_utc": "2026-11-09T12:01:03Z"
+  },
+  {
+   "file": "P20_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8c7241e19897d444880/",
+   "bytes": 13704178,
+   "sha256": "14e72a370f7ef499fcfb7f79cb06ad5cc953cdfb0a82ca9ef5cfc33eadfb9ec4",
+   "fetched_utc": "2026-11-09T12:01:08Z"
+  },
+  {
+   "file": "P16_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c8c9643f76b800444808/",
+   "bytes": 6779802,
+   "sha256": "d009fb0f667291ef2745051677566d932745002d79daf342a2069a95a444ef59",
+   "fetched_utc": "2026-11-09T12:01:08Z"
+  },
+  {
+   "file": "P01_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8c8b04859d3f9c68acc/",
+   "bytes": 13664676,
+   "sha256": "686e991e8f1c480d78e24d4805004af2092a9191294e65a93b4b1a43e6fad614",
+   "fetched_utc": "2026-11-09T12:01:10Z"
+  },
+  {
+   "file": "P14_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8d9d59e2f64f3135c9b/",
+   "bytes": 14171979,
+   "sha256": "38ecf0aa84ca4899d728bfb61b862c6d59ea0b0d0e167a658e4d8785807da94b",
+   "fetched_utc": "2026-11-09T12:01:14Z"
+  },
+  {
+   "file": "P18_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8cf8fc38e202944492a/",
+   "bytes": 13838842,
+   "sha256": "e4b1f0ab6aa10763211c05d9f72ae0c3017546158a84515f9b3834bdb718cf2e",
+   "fetched_utc": "2026-11-09T12:01:15Z"
+  },
+  {
+   "file": "P15_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8c6d59e2f64f3135c87/",
+   "bytes": 13628730,
+   "sha256": "bed4944eac04360b5fdf817da5981970e9d3781c9d1ce2e4eee3aa186ab2fd63",
+   "fetched_utc": "2026-11-09T12:01:15Z"
+  },
+  {
+   "file": "P01_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8df8fc38e2029444940/",
+   "bytes": 14343545,
+   "sha256": "c7fe1c7df46fe4b083ae0f2c2ce1023f4dc75d9054e599692001fdec3778756c",
+   "fetched_utc": "2026-11-09T12:01:16Z"
+  },
+  {
+   "file": "P22_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8df8fc38e2029444942/",
+   "bytes": 14362872,
+   "sha256": "20097b8ccfc23b1f508f23445642d6c83dfe1c0b027f51c4b133ab50792ba933",
+   "fetched_utc": "2026-11-09T12:01:19Z"
+  },
+  {
+   "file": "P12_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8e57e710c03dac689c7/",
+   "bytes": 14517517,
+   "sha256": "669f81e8c42350c0e19d31f9acf401cea4875b1003711244bb2357dcfb4501df",
+   "fetched_utc": "2026-11-09T12:01:20Z"
+  },
+  {
+   "file": "P06_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c8eb643f76b80044480f/",
+   "bytes": 14615567,
+   "sha256": "a9a81ad20e8340c369fad62c38bdf8214a3a570f7d0fffcca82c0613f5b1b4e1",
+   "fetched_utc": "2026-11-09T12:01:21Z"
+  },
+  {
+   "file": "P06_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8e4d59e2f64f3135c9f/",
+   "bytes": 14547271,
+   "sha256": "c3abcaf5aba221eec77f88e766c810b2dc0a39b864644c6e216f6ade4dacd390",
+   "fetched_utc": "2026-11-09T12:01:22Z"
+  },
+  {
+   "file": "P05_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8edd59e2f64f3135ca2/",
+   "bytes": 14838083,
+   "sha256": "87712cc533c018e5777413b4ccaa7cd83aa1e526b69f045ab5c4f9887703e689",
+   "fetched_utc": "2026-11-09T12:01:25Z"
+  },
+  {
+   "file": "P08_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8f0d59e2f64f3135ca4/",
+   "bytes": 14817136,
+   "sha256": "161b89520387f6e289dc2825adeaf772160081586694bb1002052882b85f43f9",
+   "fetched_utc": "2026-11-09T12:01:25Z"
+  },
+  {
+   "file": "P10_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8f51fec4998dec68a78/",
+   "bytes": 14983656,
+   "sha256": "ea795c1563371d72eebe00702d6352a43f4a7fc1d7263a1edebc26ae4b28a60c",
+   "fetched_utc": "2026-11-09T12:01:26Z"
+  },
+  {
+   "file": "P01_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c8fb5244faffdc135c50/",
+   "bytes": 15124175,
+   "sha256": "e65529b7810cad3110b1dec3fed4c6a99700c54380bd24facf7af8d347e8d5da",
+   "fetched_utc": "2026-11-09T12:01:29Z"
+  },
+  {
+   "file": "P09_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c9011fec4998dec68a8b/",
+   "bytes": 7571973,
+   "sha256": "f776bd8e1010966ccaae61f1e47a49eafe7a16aa7641ce12d8220f973d8df797",
+   "fetched_utc": "2026-11-09T12:01:31Z"
+  },
+  {
+   "file": "P02_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c905643f76b80044481e/",
+   "bytes": 15539514,
+   "sha256": "03b1a4ddabb8883342b393fa6ee5dda55483789a8bbc9db0ff043860a704c2ce",
+   "fetched_utc": "2026-11-09T12:01:32Z"
+  },
+  {
+   "file": "P15_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/ywrbd/",
+   "bytes": 7190638,
+   "sha256": "da2aa93f2aa587087d05595cad8f51cbbf0ce41ca05a47f2219a269b06e2a596",
+   "fetched_utc": "2026-11-09T12:01:32Z"
+  },
+  {
+   "file": "P09_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c90b5244faffdc135c84/",
+   "bytes": 9018740,
+   "sha256": "92bd8cf8ab4335260cdd6bac8104ba0e5af0b2ae212dd1790e53302048821bb7",
+   "fetched_utc": "2026-11-09T12:01:49Z"
+  },
+  {
+   "file": "P06_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c90c0be1d1fda4c68a79/",
+   "bytes": 9158096,
+   "sha256": "0660e2bb3f4f004dce63aac8be9e1a4266d64781d82af6864fdacc221d45ec32",
+   "fetched_utc": "2026-11-09T12:01:50Z"
+  },
+  {
+   "file": "P17_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c90e1fec4998dec68ab1/",
+   "bytes": 15910740,
+   "sha256": "827d449483ff97b2b805e3af996e4429df64ca287249d6182b2aa31d4681aa2e",
+   "fetched_utc": "2026-11-09T12:01:51Z"
+  },
+  {
+   "file": "P17_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c915a8c3b427804446b4/",
+   "bytes": 11166492,
+   "sha256": "d6aadf0ae2bcc25391e9708138ecdbf2b0d1beb8c5bb50d2b4a11033f9a4b38e",
+   "fetched_utc": "2026-11-09T12:01:53Z"
+  },
+  {
+   "file": "P23_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c916d59e2f64f3135cc9/",
+   "bytes": 16440561,
+   "sha256": "9d9b150c09da185988e460d5611720954732520c50af756a6a3110272bcfd8c3",
+   "fetched_utc": "2026-11-09T12:01:54Z"
+  },
+  {
+   "file": "P01_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9190be1d1fda4c68a80/",
+   "bytes": 10794830,
+   "sha256": "c87142367c845492988c33b4eae67f9330d9979b5a7a894527f27aaa2f14038e",
+   "fetched_utc": "2026-11-09T12:01:55Z"
+  },
+  {
+   "file": "P18_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c92637c29fd1cbc688c5/",
+   "bytes": 9795958,
+   "sha256": "3c08d1e93f644434c0072eed2692b090a2052d7c4770b3e63aa714431ea7b854",
+   "fetched_utc": "2026-11-09T12:01:58Z"
+  },
+  {
+   "file": "P02_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c927b04859d3f9c68aff/",
+   "bytes": 9780360,
+   "sha256": "d219f9307a3a60f5279082340d82d03d3d6b2aa1f3b2f4680c25ff58113924a8",
+   "fetched_utc": "2026-11-09T12:01:59Z"
+  },
+  {
+   "file": "P08_TRANSFER_E1.mat",
+   "url": "https://osf.io/download/6a67c92da8c3b427804446d2/",
+   "bytes": 8447999,
+   "sha256": "1c80e545ec890742aa42015a2a197952b96ab9d1d6a75ca9818bd806a4184265",
+   "fetched_utc": "2026-11-09T12:02:00Z"
+  },
+  {
+   "file": "P03_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c9325244faffdc135c90/",
+   "bytes": 11684001,
+   "sha256": "5ff07b0b28f3677e76e773dcc3758572ed03b9af3f35068f73047c9cfc6d2cc2",
+   "fetched_utc": "2026-11-09T12:02:03Z"
+  },
+  {
+   "file": "P06_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c932b04859d3f9c68b01/",
+   "bytes": 17392977,
+   "sha256": "fb9eb1845a2f00b75f915faa985d78b7d91a75f035345d40afae3d687a6d2929",
+   "fetched_utc": "2026-11-09T12:02:04Z"
+  },
+  {
+   "file": "P11_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c934643f76b80044482e/",
+   "bytes": 12339682,
+   "sha256": "1c38649110069af4cb95bdc9afff0141cf0aa99787960d7853a59ac15ed8cd3d",
+   "fetched_utc": "2026-11-09T12:02:05Z"
+  },
+  {
+   "file": "P20_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c91b1fec4998dec68ab7/",
+   "bytes": 16426481,
+   "sha256": "be9677b54e7aedee4c3db32bd862e2ef3a6c43126ca4ab38f57ef4897d088315",
+   "fetched_utc": "2026-11-09T12:02:07Z"
+  },
+  {
+   "file": "P11_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9370917d9f14d135b24/",
+   "bytes": 12348791,
+   "sha256": "bbf9c35493ac31dde9a23c6981167fc373442ebdcff8017924e4e9983acdbd88",
+   "fetched_utc": "2026-11-09T12:02:10Z"
+  },
+  {
+   "file": "P18_TRANSFER_E2.mat",
+   "url": "https://osf.io/download/6a67c937cd22b75a68135c33/",
+   "bytes": 8373307,
+   "sha256": "abe3f8e3af58efb76422d06bf26b520cfb22dbbe7b8db655d1634a574170a8f4",
+   "fetched_utc": "2026-11-09T12:02:11Z"
+  },
+  {
+   "file": "P03_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c93e7263b4d929c688d1/",
+   "bytes": 11791046,
+   "sha256": "7cbf64d16b5ead29cb61dd2884319f4f624a2155e4019ddcf9775615703d3320",
+   "fetched_utc": "2026-11-09T12:02:12Z"
+  },
+  {
+   "file": "P08_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9440be1d1fda4c68a8e/",
+   "bytes": 11121354,
+   "sha256": "7f5558b78a174eca2b600f6f9675261b088fbb975aa771f12041ceeb73bbf4ae",
+   "fetched_utc": "2026-11-09T12:02:15Z"
+  },
+  {
+   "file": "P12_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9485244faffdc135c95/",
+   "bytes": 18821894,
+   "sha256": "b3940e8983bee5c5ceb01b0f720a5b1e84addb24978cf5fb35592f9a873299a6",
+   "fetched_utc": "2026-11-09T12:02:18Z"
+  },
+  {
+   "file": "P13_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c94e7e710c03dac68a12/",
+   "bytes": 12948767,
+   "sha256": "fbaad470e5a9e6037413f0ad251208469fa65529c4edd94b43e00cc87248e995",
+   "fetched_utc": "2026-11-09T12:02:19Z"
+  },
+  {
+   "file": "P13_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9518fc38e2029444992/",
+   "bytes": 13224495,
+   "sha256": "ae8f6339f07d6392f5578957e6723fa6d8f7fb81e114cec304cf768193dcf67a",
+   "fetched_utc": "2026-11-09T12:02:22Z"
+  },
+  {
+   "file": "P23_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c94937c29fd1cbc688e6/",
+   "bytes": 19471289,
+   "sha256": "65552fe03575db5600a9827b2fbf6605c33ba2b014d0b47176fa2d714ab9dcd5",
+   "fetched_utc": "2026-11-09T12:02:22Z"
+  },
+  {
+   "file": "P03_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c95337c29fd1cbc688e9/",
+   "bytes": 19670117,
+   "sha256": "feddf30bd061181d9b39ef15c5124acf6fa04776fa046b69d20f2159dcac2b4f",
+   "fetched_utc": "2026-11-09T12:02:25Z"
+  },
+  {
+   "file": "P10_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c953e5239d1aa94446ce/",
+   "bytes": 12317123,
+   "sha256": "736b4d3aa528865c1b1e3706b8ac1b25c82898cde742f9401c3dd89934f6b8b3",
+   "fetched_utc": "2026-11-09T12:02:25Z"
+  },
+  {
+   "file": "P02_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9551fec4998dec68ad4/",
+   "bytes": 12891713,
+   "sha256": "2544d0db94cc2b191acc011f4edf95a1fb6871c69ac06c14fae4986637669820",
+   "fetched_utc": "2026-11-09T12:02:27Z"
+  },
+  {
+   "file": "P17_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c959a8c3b427804446e5/",
+   "bytes": 12729432,
+   "sha256": "567717d58f15930e24cba1baaf5e9af95a15d81931d9e2bc28918d1efed45f49",
+   "fetched_utc": "2026-11-09T12:02:27Z"
+  },
+  {
+   "file": "P18_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c95efc5eb5fc5b4446bd/",
+   "bytes": 14078613,
+   "sha256": "28b6c0c5671d49266675a7c51193621f94bc087dceb5b404d1d330924370283b",
+   "fetched_utc": "2026-11-09T12:02:30Z"
+  },
+  {
+   "file": "P10_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/cx8pw/",
+   "bytes": 12292450,
+   "sha256": "dfe4d28b3a9bf1b2037796b30c444643356297e46d99079d93621eb3c223246e",
+   "fetched_utc": "2026-11-09T12:02:31Z"
+  },
+  {
+   "file": "P09_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c9617e710c03dac68a1c/",
+   "bytes": 14502967,
+   "sha256": "94faadc1770e25c80c2db6c6f952297438affe9a332532f907e9c9609fcf3845",
+   "fetched_utc": "2026-11-09T12:02:32Z"
+  },
+  {
+   "file": "P13_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c96429c402f4d24446ba/",
+   "bytes": 15437038,
+   "sha256": "cd5a55fef6420eae285201a08515dc5e4a356679bb33aa08cc40b2c33e409c78",
+   "fetched_utc": "2026-11-09T12:02:32Z"
+  },
+  {
+   "file": "P09_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c96663bceb9354135b3d/",
+   "bytes": 12947611,
+   "sha256": "9265ce86336bc11f792f464c9ee5e46bae558af3a9a0095ac3216d88204ac396",
+   "fetched_utc": "2026-11-09T12:02:36Z"
+  },
+  {
+   "file": "P09_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9698fc38e2029444996/",
+   "bytes": 13845914,
+   "sha256": "4b36df748fadd70d4309f02fbd52890606d7cae9ffbe225795191f3bab2ec79b",
+   "fetched_utc": "2026-11-09T12:02:37Z"
+  },
+  {
+   "file": "P15_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c96b1fec4998dec68adb/",
+   "bytes": 13676230,
+   "sha256": "1f50dbccf14e2c6c8abac9ae212af5527c938ec093b200436f316c7b4c5e54a2",
+   "fetched_utc": "2026-11-09T12:02:38Z"
+  },
+  {
+   "file": "P18_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c9677263b4d929c688d8/",
+   "bytes": 15010849,
+   "sha256": "6624fa89e1a4b7003b83f4b0cb6cd5789d819485e996e95ff7869f80ddd88005",
+   "fetched_utc": "2026-11-09T12:02:40Z"
+  },
+  {
+   "file": "P09_FRE_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6a67c96d23bc6e87f1444895/",
+   "bytes": 16124315,
+   "sha256": "18c927cea3c7a82e19c2043df0bd11d85d79153869b9fb523353174f4635d32f",
+   "fetched_utc": "2026-11-09T12:02:41Z"
+  },
+  {
+   "file": "P17_ENG_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c96d8fc38e2029444998/",
+   "bytes": 16179120,
+   "sha256": "601e17b2ce48aa90779d5704b7cb91686d7026db7df05d8ce16978d36942f5d8",
+   "fetched_utc": "2026-11-09T12:02:42Z"
+  },
+  {
+   "file": "P03_ENG_SENTENCES_E2.mat",
+   "url": "https://osf.io/download/6cf94/",
+   "bytes": 17828268,
+   "sha256": "82afb97ce3a9f7dc1fe13ead60350df75ea6713155eb89ca9a7a771437ca27f0",
+   "fetched_utc": "2026-11-09T12:02:44Z"
+  },
+  {
+   "file": "P18_FRE_SENTENCES_E1.mat",
+   "url": "https://osf.io/download/6a67c96f0be1d1fda4c68a90/",
+   "bytes": 19438803,
+   "sha256": "04566d159266f583e9f23e3685e063c8c6103a7ce47a5ec0304cd1158c6ccb3f",
+   "fetched_utc": "2026-11-09T12:02:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Heyland2026_PsyArXiv.zip"
+}

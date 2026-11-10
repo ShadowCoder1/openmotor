@@ -1,0 +1,67 @@
+{
+ "id": "Hausdorff1996_JApplPhysiol",
+ "module": "walking",
+ "rows": 143655,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 880597,
+ "zip_sha256": "0e3f3e3a967a1b04a922fc2b5ec5fcf77927bb146148b2b3ab8d425c9c5309c7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "subjects",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "PhysioNet database page / paper abstract (ten healthy subjects)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "files per subject (3 free + 3 metronome paces)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "PhysioNet database page / paper abstract, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each walk has at least 1000 strides",
+   "ok": true,
+   "detail": "1210-3822 strides"
+  },
+  {
+   "kind": "internal",
+   "what": "stride times positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every line of every file kept",
+   "ok": true,
+   "detail": "143655 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "free walking is long-range correlated (alpha > 0.7) and metronome walking is less so (abstract)",
+   "ok": true,
+   "detail": "{'norm': 0.91, 'slow': 0.99, 'fast': 0.97, 'metnrm': 0.41, 'metslw': 0.35, 'metfst': 0.4}"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit shares no per-subject ages, no time column and no metronome rates, so the paper's DFA exponents were not used as checks; the checks are the subject and file counts and the direction of the effect."
+ ],
+ "sources": [
+  {
+   "file": "umwdb.zip",
+   "url": "https://physionet.org/static/published-projects/umwdb/unconstrained-and-metronomic-walking-1.0.0.zip",
+   "bytes": 1203366,
+   "sha256": "996a16f3c8ec2f709132482ad36eef184bb7b54992fed00c67f971888f889db4",
+   "fetched_utc": "2026-11-09T01:03:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hausdorff1996_JApplPhysiol.zip"
+}

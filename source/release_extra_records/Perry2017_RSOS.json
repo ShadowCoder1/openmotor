@@ -1,0 +1,236 @@
+{
+ "id": "Perry2017_RSOS",
+ "module": "timeseries",
+ "rows": 88,
+ "subjects": 8,
+ "persons": 8,
+ "zip_bytes": 138998417,
+ "zip_sha256": "12f9ee5e98a5564d02f8355156210079b43c5f0a3c7518cd136920b605d9fc53",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "subject 1: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15] vs [2, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 1: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 2: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16] vs [2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 2: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 3: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13] vs [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 3: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 4: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15] vs [2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 4: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 5: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 4, 6, 9, 10, 12, 14, 15, 17, 18] vs [2, 4, 6, 9, 10, 12, 14, 15, 17, 18]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 5: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 6: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 18, 19] vs [3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 18, 19]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 6: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 7: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[2, 3, 6, 7, 12, 13, 16, 17] vs [2, 3, 6, 7, 12, 13, 16, 17]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 7: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 8: the cells that hold data are exactly the authors' walking trials",
+   "ok": true,
+   "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] vs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+  },
+  {
+   "kind": "internal",
+   "what": "subject 8: standing trials are empty cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "8 participants; 88 walking recordings kept (every walking trial that has data)",
+   "ok": true,
+   "detail": "88"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 36 finite channels of metres below 5 m in size and about 40-150 s of data",
+   "ok": true,
+   "detail": "49.97-142.37 s"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men (five male, three female)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (26.5 years)",
+   "computed": 26.5,
+   "reported": 26.5,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (3.25 years)",
+   "computed": 3.251373336211726,
+   "reported": 3.25,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height (1.72 m)",
+   "computed": 1.724025,
+   "reported": 1.72,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of height (0.11 m)",
+   "computed": 0.11313493523853964,
+   "reported": 0.11,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass (70.3 kg)",
+   "computed": 70.306875,
+   "reported": 70.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass (9.85 kg)",
+   "computed": 9.84851705207439,
+   "reported": 9.85,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "prescribed-width trials used (75 of 80)",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "Methods, Experimental protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "self-selected trials used (13 of 16)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Experimental protocol",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "prescribed widths are 5, 12, 19, 26 and 33 cm",
+   "ok": true,
+   "detail": "[5, 12, 19, 26, 33]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says 12 trials per participant of 1-2 minutes and 75 + 13 trials used; the deposit holds 88 walking trials, 11 per participant on average (8 to 12), matching those counts. The paper reports 210 +- 50 steps per trial; counting the forward-most points of the two heel markers in the 88 trials gives 217 +- 31, so that number did not reproduce (the paper's step counts probably come from the authors' own analysis of mid-stances, after removing spurious ones, which this deposit's code does but we did not rerun); it is not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "README_for_DataAndCode_PerryAndSrinivasanAug2017.txt",
+   "url": "https://zenodo.org/api/records/4960676/files/README_for_DataAndCode_PerryAndSrinivasanAug2017.txt/content",
+   "bytes": 2345,
+   "sha256": "110ce7e0dd650afd99939ee8808ad5f3996830a14dc53a878195f9cdbbedec69",
+   "fetched_utc": "2026-11-09T01:47:38Z"
+  },
+  {
+   "file": "DataAndCode_PerryAndSrinivasanAug2017.zip",
+   "url": "https://zenodo.org/api/records/4960676/files/DataAndCode_PerryAndSrinivasanAug2017.zip/content",
+   "bytes": 266001005,
+   "sha256": "cd84ac29c464635b20d187b54cfc1fba0dec3d4902e2bdf74716a79c0f1dd103",
+   "fetched_utc": "2026-11-09T01:48:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Perry2017_RSOS.zip"
+}

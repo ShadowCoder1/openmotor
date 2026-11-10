@@ -1,0 +1,113 @@
+{
+ "id": "Hagen2025_BrainCommun",
+ "module": "summary",
+ "rows": 672,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 13480,
+ "zip_sha256": "5d03a0d346bca97fd92142229288057787b6ab35c4818a38da1f1727a9ba440d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "96 participant-visits x 7 windows = 672 rows",
+   "ok": true,
+   "detail": "672"
+  },
+  {
+   "kind": "internal",
+   "what": "every value present",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "people with MS analysed",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls analysed",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MS mean age",
+   "computed": 53.53446682683417,
+   "reported": 53.5,
+   "tol": 0.05,
+   "source": "Results, Participants (53.5 +- 10.7)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MS age SD",
+   "computed": 10.665352562253698,
+   "reported": 10.7,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HC mean age",
+   "computed": 53.757697511470646,
+   "reported": 53.8,
+   "tol": 0.05,
+   "source": "Results, Participants (53.8 +- 14.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HC age SD",
+   "computed": 14.034540615857225,
+   "reported": 14.0,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MS women",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Results, Participants (19/9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HC women",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Results, Participants (12/8)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one TENS on and one TENS off visit",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "RepositoryData.xlsx",
+   "url": "https://osf.io/download/4wxpq/",
+   "bytes": 202023,
+   "sha256": "2c2d84b3167b32ecf0344cf0fd29805111d98424157544b50e58a7159463a915",
+   "fetched_utc": "2026-11-09T02:23:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hagen2025_BrainCommun.zip"
+}

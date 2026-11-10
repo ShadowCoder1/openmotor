@@ -1,0 +1,730 @@
+{
+ "id": "Shamei2023_SciRep",
+ "module": "speech",
+ "rows": 799,
+ "subjects": 4,
+ "persons": 4,
+ "zip_bytes": 121568,
+ "zip_sha256": "514b274d03274c9eaa1539f577ff450bc132fefb0e131bd9afd30b577abb4fed",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every row of space_vowels.csv kept, in the file's order",
+   "ok": true,
+   "detail": "799 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "4 participants, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "midF1 and midF2 are the means of the 35, 50 and 65% values on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "dur equals end minus beg on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "vowel time (beg) increases within each participant and recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1_hz and f2_hz present on every row and in range",
+   "ok": true,
+   "detail": "F1 290-864, F2 847-2413"
+  },
+  {
+   "kind": "internal",
+   "what": "personal names in the word columns are masked",
+   "ok": true,
+   "detail": "21 words replaced by [name]"
+  },
+  {
+   "kind": "internal",
+   "what": "height and backness classes are constant within each vowel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "astronauts",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Materials and methods (four captains)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel tokens, preflight",
+   "computed": 378.0,
+   "reported": 378.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (sum of Total Pre)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel tokens, postflight",
+   "computed": 421.0,
+   "reported": 421.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (sum of Total Post)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u0251/, preflight",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u0251/, postflight",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u00e6/, preflight",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u00e6/, postflight",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u028c/, preflight",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u028c/, postflight",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /a/, preflight",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /a/, postflight",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u025b/, preflight",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u025b/, postflight",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /e/, preflight",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /e/, postflight",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u026a/, preflight",
+   "computed": 69.0,
+   "reported": 69.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /\u026a/, postflight",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /i/, preflight",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /i/, postflight",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /o/, preflight",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /o/, postflight",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /u/, preflight",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of /u/, postflight",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 1 (counts sorted), preflight",
+   "computed": 69.0,
+   "reported": 69.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Pre columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 1 (counts sorted), postflight",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Post columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 2 (counts sorted), preflight",
+   "computed": 95.0,
+   "reported": 95.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Pre columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 2 (counts sorted), postflight",
+   "computed": 141.0,
+   "reported": 141.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Post columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 3 (counts sorted), preflight",
+   "computed": 99.0,
+   "reported": 99.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Pre columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 3 (counts sorted), postflight",
+   "computed": 95.0,
+   "reported": 95.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Post columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 4 (counts sorted), preflight",
+   "computed": 115.0,
+   "reported": 115.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Pre columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens of speaker 4 (counts sorted), postflight",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Shamei et al. 2023, Sci Rep, Table 1 (Post columns)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /a/, postflight",
+   "computed": 741.872765466242,
+   "reported": 741.8727655,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /a/, postflight",
+   "computed": 1283.917727825855,
+   "reported": 1283.917728,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /e/, postflight",
+   "computed": 570.6694423244702,
+   "reported": 570.6694423,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /e/, postflight",
+   "computed": 1527.5327842041438,
+   "reported": 1527.532784,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /i/, postflight",
+   "computed": 512.947961604507,
+   "reported": 512.9479616,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /i/, postflight",
+   "computed": 1583.894451625616,
+   "reported": 1583.894452,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /o/, postflight",
+   "computed": 632.7574753026386,
+   "reported": 632.7574753,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /o/, postflight",
+   "computed": 1103.063361358711,
+   "reported": 1103.063361,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /u/, postflight",
+   "computed": 498.5511820009928,
+   "reported": 498.551182,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /u/, postflight",
+   "computed": 1260.1365554040283,
+   "reported": 1260.136555,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u00e6/, postflight",
+   "computed": 748.4297599994815,
+   "reported": 748.42976,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u00e6/, postflight",
+   "computed": 1421.923648306284,
+   "reported": 1421.923648,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u0251/, postflight",
+   "computed": 754.0881461606928,
+   "reported": 754.0881462,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u0251/, postflight",
+   "computed": 1147.6916231492137,
+   "reported": 1147.691623,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u025b/, postflight",
+   "computed": 662.1362493656977,
+   "reported": 662.1362494,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u025b/, postflight",
+   "computed": 1414.6144295483032,
+   "reported": 1414.61443,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u026a/, postflight",
+   "computed": 562.6664057171495,
+   "reported": 562.6664057,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u026a/, postflight",
+   "computed": 1418.3395038915082,
+   "reported": 1418.339504,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u028c/, postflight",
+   "computed": 683.1198119752711,
+   "reported": 683.119812,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u028c/, postflight",
+   "computed": 1231.6154710272979,
+   "reported": 1231.615471,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /a/, preflight",
+   "computed": 697.0339672549821,
+   "reported": 697.0339673,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /a/, preflight",
+   "computed": 1237.8366398976084,
+   "reported": 1237.83664,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /e/, preflight",
+   "computed": 532.5479655258689,
+   "reported": 532.5479655,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /e/, preflight",
+   "computed": 1516.7977500642899,
+   "reported": 1516.79775,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /i/, preflight",
+   "computed": 438.9443836753396,
+   "reported": 438.9443837,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /i/, preflight",
+   "computed": 1624.6632078976236,
+   "reported": 1624.663208,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /o/, preflight",
+   "computed": 575.6422561814285,
+   "reported": 575.6422562,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /o/, preflight",
+   "computed": 1044.2961785994175,
+   "reported": 1044.296179,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /u/, preflight",
+   "computed": 474.6210999067314,
+   "reported": 474.6210999,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /u/, preflight",
+   "computed": 1297.2724757708631,
+   "reported": 1297.272476,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u00e6/, preflight",
+   "computed": 710.0283250535377,
+   "reported": 710.0283251,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u00e6/, preflight",
+   "computed": 1397.4790172666164,
+   "reported": 1397.479017,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u0251/, preflight",
+   "computed": 709.2641797065769,
+   "reported": 709.2641797,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u0251/, preflight",
+   "computed": 1054.1092927946931,
+   "reported": 1054.109293,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u025b/, preflight",
+   "computed": 622.8308333962594,
+   "reported": 622.8308334,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u025b/, preflight",
+   "computed": 1352.639127374044,
+   "reported": 1352.639127,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u026a/, preflight",
+   "computed": 513.5429967681595,
+   "reported": 513.5429968,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u026a/, preflight",
+   "computed": 1426.8781567251708,
+   "reported": 1426.878157,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F1 of /\u028c/, preflight",
+   "computed": 637.2412175336239,
+   "reported": 637.2412175,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mel F2 of /\u028c/, preflight",
+   "computed": 1179.3049045771731,
+   "reported": 1179.304905,
+   "tol": 0.001,
+   "source": "authors' deposit file GroupMean2.csv",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the 20 vowel x condition cells of GroupMean2.csv are all reproduced (mel = 1000 log2(1 + f / 1000))",
+   "ok": true,
+   "detail": "largest difference 4.52e-07 mel"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "space_vowels.csv",
+   "url": "https://osf.io/download/8rvm9/",
+   "bytes": 267543,
+   "sha256": "11b19763d0b43377b218abdc70ddf41dafdb6b454a6252ef6c813233b67f6bab",
+   "fetched_utc": "2026-11-08T22:44:44Z"
+  },
+  {
+   "file": "GroupMean2.csv",
+   "url": "https://osf.io/download/87pu9/",
+   "bytes": 941,
+   "sha256": "a56de2de1ae219ea37c7eca494f50a1350d8073f32303843b92fb0a6ff066b30",
+   "fetched_utc": "2026-11-08T22:44:46Z"
+  },
+  {
+   "file": "space_analysis_sci_rep.Rmd",
+   "url": "https://osf.io/download/3t54u/",
+   "bytes": 23079,
+   "sha256": "79f33f7e3d0507963b46ca4d3e00177e7e03a154fea3b5edebad2641b5c31339",
+   "fetched_utc": "2026-11-08T22:44:49Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Shamei2023_SciRep.zip"
+}

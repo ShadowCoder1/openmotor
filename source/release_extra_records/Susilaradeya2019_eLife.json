@@ -1,0 +1,181 @@
+{
+ "id": "Susilaradeya2019_eLife",
+ "module": "timeseries",
+ "rows": 1712,
+ "subjects": 16,
+ "persons": 8,
+ "zip_bytes": 29040910,
+ "zip_sha256": "0a94fd824ae18eb510f8c60cd65666a00f784d6bd2936838c5422397fd22071f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in Experiment 1",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Materials and methods, Subjects (eight subjects in each experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Materials and methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 trials per subject",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Materials and methods, Human tracking task (70 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 delay conditions",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Materials and methods (0, 100, 200, 300, 400 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 trials per condition",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Materials and methods (14 of each condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 trials per subject",
+   "computed": 144.0,
+   "reported": 144.0,
+   "tol": 0,
+   "source": "Materials and methods (144 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 conditions",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Materials and methods (6 perturbation frequencies x 2 delays)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 trials per condition",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Materials and methods (12 trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target rotation (rotations/s)",
+   "computed": 0.1999955540139588,
+   "reported": 0.2,
+   "tol": 0.01,
+   "source": "Materials and methods (f_target = 0.2 rotations per second)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target radius (% of target radius)",
+   "computed": 100.00414881828583,
+   "reported": 100.0,
+   "tol": 1,
+   "source": "Materials and methods (r_target = 100%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Materials and methods (50 samples/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "length of analysis window available per trial (s, at least 10)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Figure 1 legend (10 s window beginning 5 s after trial start)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has a samples file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "delays are 0-400 ms",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes 20 s trials; the deposit holds 512 samples (10.24 s) per trial, so full trials are not available. The deposit's comments say 12 trials per Experiment 1 condition and 14 are present, matching the paper's 14.",
+  "Person codes link the same-numbered subject of the two files; this is an assumption."
+ ],
+ "sources": [
+  {
+   "file": "Experiment1.mat",
+   "url": "https://zenodo.org/api/records/4948727/files/Experiment1.mat/content",
+   "bytes": 8188766,
+   "sha256": "0e78c2045cc4cf675e7e8eb4944b7bbb43a970846f8b278db214774167b6574e",
+   "fetched_utc": "2026-11-09T22:30:37Z"
+  },
+  {
+   "file": "Experiment2.mat",
+   "url": "https://zenodo.org/api/records/4948727/files/Experiment2.mat/content",
+   "bytes": 26824644,
+   "sha256": "c8dd3ab73fb5376ec56ed150c21e80766e20eac55a93a451c4d0fb35862b42c4",
+   "fetched_utc": "2026-11-09T22:31:16Z"
+  },
+  {
+   "file": "analyse1.m",
+   "url": "https://zenodo.org/api/records/4948727/files/analyse1.m/content",
+   "bytes": 1542,
+   "sha256": "28bc7408bc28f571029967d3b0d2580e3fd821094e2713d5f04db1be733a58a3",
+   "fetched_utc": "2026-11-09T22:31:20Z"
+  },
+  {
+   "file": "analyse2.m",
+   "url": "https://zenodo.org/api/records/4948727/files/analyse2.m/content",
+   "bytes": 4188,
+   "sha256": "93df03718d5d4e8a8274e7aba340d1652dc78385f37ca0e52aaca464cd00f03e",
+   "fetched_utc": "2026-11-09T22:31:23Z"
+  },
+  {
+   "file": "analyse3.m",
+   "url": "https://zenodo.org/api/records/4948727/files/analyse3.m/content",
+   "bytes": 4230,
+   "sha256": "d72733b0c84882f0db11daa57db54104d74598b3321fdabd480a111dbb9b06bd",
+   "fetched_utc": "2026-11-09T22:31:27Z"
+  },
+  {
+   "file": "analyse4.m",
+   "url": "https://zenodo.org/api/records/4948727/files/analyse4.m/content",
+   "bytes": 5131,
+   "sha256": "5d29db251659cf94261c12ded4e3051bb2ad9f95ae915bd13b5665c4ee79b536",
+   "fetched_utc": "2026-11-09T22:31:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Susilaradeya2019_eLife.zip"
+}

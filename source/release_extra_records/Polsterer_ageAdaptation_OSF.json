@@ -1,0 +1,205 @@
+{
+ "id": "Polsterer_ageAdaptation_OSF",
+ "module": "speech",
+ "rows": 7222,
+ "subjects": 67,
+ "persons": 67,
+ "zip_bytes": 160121,
+ "zip_sha256": "5cdb94c6c6717927ebce2a88767be243b576db2d349ebc3571739e1a12d9d547",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants who passed the hearing screening",
+   "computed": 66.0,
+   "reported": 66.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, length(unique(par$participant))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials with an F1 change value (n of the model m0)",
+   "computed": 7087.0,
+   "reported": 7087.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, summary(m0): n = 7087",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, range(dat$age)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, range(dat$age)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct ages",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, length(unique(dat$age))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, table(par$sex)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, table(par$sex)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean of the participants' hold-phase F1 change (%)",
+   "computed": 1.298030472113298,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, describe(datRM$hold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of the hold-phase means",
+   "computed": 7.715012603076825,
+   "reported": 7.72,
+   "tol": 0.005,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, describe(datRM$hold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median of the hold-phase means",
+   "computed": 0.29495089692050275,
+   "reported": 0.29,
+   "tol": 0.005,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, describe(datRM$hold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum hold-phase mean",
+   "computed": -12.943869818089581,
+   "reported": -12.94,
+   "tol": 0.005,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, describe(datRM$hold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum hold-phase mean",
+   "computed": 29.487818611185805,
+   "reported": 29.49,
+   "tol": 0.005,
+   "source": "the deposit's rendered analysis report AuditoryMotorAdaptationAcrossAge_public.html, describe(datRM$hold)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants removed as hold-phase outliers (hold mean 16 or more)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "the deposit's analysis script analysis.Rmd, model criticism: 'three outliers above 2 sd'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in a full session (24 baseline + 30 ramp + 30 hold + 24 after-effect)",
+   "computed": 108.0,
+   "reported": 108.0,
+   "tol": 0,
+   "source": "the deposit's analysis script analysis.Rmd, section Validate response types",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "phases cover trials 1-24, 25-54, 55-84, 85-108",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "67 participants and 7222 rows (7221 raw trials plus one trial only in the analysis table)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "raw F1 between 250 and 900 Hz",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's analysis script says 79 participants and ages 16-82, but the shared files and the script's own rendered output have 66 participants aged 16-75 (a 67th failed the hearing screening); the shared data are a subset, and the numbers checked here are those printed in the rendered output.",
+  "27 trials have raw F1 but no F1 change value in the authors' analysis table; they are marked excluded_by_authors, and one trial present only in the analysis table has no raw F1."
+ ],
+ "sources": [
+  {
+   "file": "dat_shared.Rdata",
+   "url": "https://osf.io/download/6a393338e046c141eb28e4cb/",
+   "bytes": 62494,
+   "sha256": "e5960610eba3dc3a3489cfac87ed64c37c9f8e2bb49c3cea04750899592645dd",
+   "fetched_utc": "2026-11-09T12:07:44Z"
+  },
+  {
+   "file": "datRM_shared.Rdata",
+   "url": "https://osf.io/download/6a3933389364850dd528e4ee/",
+   "bytes": 2774,
+   "sha256": "aa6548d56c026c9506d5f68014cbd3a1a7cebaafc542c713a1b90c758dff59ce",
+   "fetched_utc": "2026-11-09T12:07:50Z"
+  },
+  {
+   "file": "participants_shared.xlsx",
+   "url": "https://osf.io/download/6a3933399364850dd528e4f1/",
+   "bytes": 15580,
+   "sha256": "523df8482f2ad4f724fb5857b8fca610770861c1b7547d6525cdf3655ac64c13",
+   "fetched_utc": "2026-11-09T12:07:59Z"
+  },
+  {
+   "file": "analysis.Rmd",
+   "url": "https://osf.io/download/6a393238315a583e40253b3b/",
+   "bytes": 26857,
+   "sha256": "461c7565d5496e72eac8f5fda708630f247e1a5cc3bae338ff8dd26d46aff04c",
+   "fetched_utc": "2026-11-09T12:08:11Z"
+  },
+  {
+   "file": "data_raw_shared.xlsx",
+   "url": "https://osf.io/download/6a39354bb3ce5573f5253d03/",
+   "bytes": 297820,
+   "sha256": "441be189f46ce43435679718ad8682cdf6d6f0c049d16200fe03a31f6a8c2f5e",
+   "fetched_utc": "2026-11-09T12:09:35Z"
+  },
+  {
+   "file": "public.html",
+   "url": "https://osf.io/download/6a393225b2c980ddd8253ac8/",
+   "bytes": 1708117,
+   "sha256": "d4278f6a12cefaee2438d4f9105e073de7dc5d7ad7b973537bf9a652b65ba74e",
+   "fetched_utc": "2026-11-09T12:11:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Polsterer_ageAdaptation_OSF.zip"
+}

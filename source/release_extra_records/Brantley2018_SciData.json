@@ -1,0 +1,126 @@
+{
+ "id": "Brantley2018_SciData",
+ "module": "timeseries",
+ "rows": 217,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 520470623,
+ "zip_sha256": "7fecaed1e6e381c9c8cbc036983f5bd98656dc19b003be71f85e911dae2762d3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IMUs per participant",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Instrumentation & Data Collection (17 wireless IMUs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "joints per kinematics file",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Table 5 (kin.setup.jointlabel: 22 x 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "kinematics files with a sampling rate other than 30 or 60 Hz",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods (recorded at either 30 or 60 Hz); Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG channels per recording (6 muscles x 2 legs)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods (six sites bilaterally); Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG original sampling rate (Hz)",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Methods (recorded at 1000 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "kinematics files per participant (blocks of trials; paper: approximately ten)",
+   "computed": 10.4,
+   "reported": 10.0,
+   "tol": 0.5,
+   "source": "Methods, Experimental Protocol (ten blocks of two trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gait-course completions per participant (mean)",
+   "computed": 20.5,
+   "reported": 20.0,
+   "tol": 0.5,
+   "source": "Methods, Experimental Protocol (an average of twenty trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every kinematics file has 22 x 3 joint angles + 3 x 3 positions = 75 channels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 10 participants have both kinds of file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline recordings (T00) exist only as EMG",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EMG has no NaN",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample counts add up",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "row count = JSON count",
+   "ok": true,
+   "detail": "217"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "EMG is downsampled to 500 Hz (original 1000 Hz).",
+  "The paper says the subjects completed 'an average of twenty trials in approximately ten blocks'; the check uses the numTrials field (course completions per file, 1 or 2) summed over a participant's kinematics files."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Brantley2018_SciData.zip"
+}

@@ -1,0 +1,359 @@
+{
+ "id": "Danion2026_eNeuro",
+ "module": "summary",
+ "rows": 16994,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 174707,
+ "zip_sha256": "888d03b223922be58798ce2938e476dcfcd020be04ccccfa345f8d936fd759a3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "EXP1_S1: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S2: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S3: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S4: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S5: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S6: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S7: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S8: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S9: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S10: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S11: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S12: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S13: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S14: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S15: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S16: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S17: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S18: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S19: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S20: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S21: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S22: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S23: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1_S24: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP1: 24 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S1: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S2: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S3: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S4: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S5: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S6: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S7: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S8: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S9: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S10: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S11: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S12: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S13: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S14: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S15: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S16: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S17: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S18: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S19: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S20: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S21: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S22: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S23: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2_S24: block means equal the authors' condition columns (block 1-4 = ['STATIC-NOCUE', 'STATIC-CUE', 'MOVE-NOCUE', 'MOVE-CUE'])",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "EXP2: 24 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty cell kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: precue benefit on reaction time, hand at rest (ms)",
+   "computed": 43.70687313165761,
+   "reported": 44.0,
+   "tol": 0.5,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: precue benefit while the same hand moves (ms)",
+   "computed": 16.441839676394277,
+   "reported": 16.0,
+   "tol": 0.5,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in experiment 2",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Abstract (13 females + 11 males)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The abstract's experiment 2 precue benefit while the other hand moves (37 ms) did not reproduce: the mean of the participants' condition-mean differences from the released trials is 38.1 ms (not checked; the authors may have excluded a participant or used a different average).",
+  "The paper's abstract gives 13 females and 11 males in experiment 2; the Participants sheet lists a different split (12 females, 11 males, 1 non-binary), so sex counts were not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "data.xlsx",
+   "url": "https://osf.io/download/var2z/",
+   "bytes": 191682,
+   "sha256": "169dcd9c972136f67b7c6b00cb332a4dbae81118e4c6610edb79d578b2f53be9",
+   "fetched_utc": "2026-11-09T14:40:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Danion2026_eNeuro.zip"
+}

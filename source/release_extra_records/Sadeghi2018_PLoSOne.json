@@ -1,0 +1,183 @@
+{
+ "id": "Sadeghi2018_PLoSOne",
+ "module": "force_field_reaching",
+ "rows": 37300,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 519967,
+ "zip_sha256": "b6a6e465b517a975d0ee3a88ad698a9e2a00143e19ddf0e2b33ebab3feff2d06",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows = 746 trials x 10 participants x 5 groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "channel trials carry a force compensation and no MPE; other trials the reverse",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants (5 groups of 10)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "groups",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants (G1 to G5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Probe1: Out-Return pairs (158 trials)",
+   "computed": 79.0,
+   "reported": 79.0,
+   "tol": 0,
+   "source": "Methods, Phases (Probe1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Probe1: Out exposure trials",
+   "computed": 65.0,
+   "reported": 65.0,
+   "tol": 0,
+   "source": "Methods, Phases (Probe1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Probe1: Out channel trials",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Phases (Probe1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Probe1: Return trials that are channel trials",
+   "computed": 79.0,
+   "reported": 79.0,
+   "tol": 0,
+   "source": "Methods, Phases (Probe1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Training (G1): exposure pairs",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Methods, Phases (Training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Training (G1): Out-Return pairs with a channel trial (20 interspersed channel pairs)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Phases (Training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Training (G5): exposure on Return trials only",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Methods, Phases (G5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Training (G5): exposure trials on Out",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Phases (G5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Washout after Probe1: null pairs",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Phases (washout of 30 null pairs and 2 channel pairs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Washout after Probe1: trials (64)",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Methods, Phases (washout of 30 null pairs and 2 channel pairs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Probe2, G3: Out trials are channel trials",
+   "computed": 79.0,
+   "reported": 79.0,
+   "tol": 0,
+   "source": "Methods, Phases (Probe2: G3 channel)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded after the rest break before Probe2 (all 14 trials)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Rest breaks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded after the first rest break",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Rest breaks (10 trials after each break)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "force compensation values between -150 and 250 percent",
+   "ok": true,
+   "detail": "-107 to 197"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "pone.0207482.s001.mat",
+   "url": "https://ndownloader.figshare.com/files/13688372",
+   "bytes": 312278,
+   "sha256": "9734217d369ffe585e965e4c3ed212aaa932b77c03e7f2160b1ad786092ee4ef",
+   "fetched_utc": "2026-11-09T07:39:37Z"
+  },
+  {
+   "file": "pone.0207482.s002.m",
+   "url": "https://ndownloader.figshare.com/files/13688375",
+   "bytes": 1028,
+   "sha256": "f5d5bea973d9848eea2f0b336cd0f6a3a5c58e046333ebd5fd68181b4ccad18d",
+   "fetched_utc": "2026-11-09T07:39:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sadeghi2018_PLoSOne.zip"
+}

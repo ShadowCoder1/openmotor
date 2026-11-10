@@ -1,0 +1,181 @@
+{
+ "id": "Gonzalez-Rubio2026_SciRep",
+ "module": "perception",
+ "rows": 13059,
+ "subjects": 39,
+ "persons": 39,
+ "zip_bytes": 192158,
+ "zip_sha256": "8ff24ef93d2cec3627293d9b63c5289ba363ba5cbe7b682f5cfa807891c171c7",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each participant walked at the reference code 0 and at the testing code of the group the authors' code assigns by participant number (1-13 comfortable = 2, 14-26 slow = 1, 27-39 fast = 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has exactly one of leftResponse and rightResponse (the table holds answered trials only; noResponse is 0 on every row)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the choice columns agree with initialResponse except on the null trials of the one participant whose responses the authors reversed",
+   "ok": true,
+   "detail": "48 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "every row of Data.csv kept, in order: 13,059 answered trials of 39 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimuli are 0, +-25, +-50, +-100, +-150, +-200, +-300 mm/s",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "38 participants have six blocks that alternate the two speeds (one participant's four block labels mix them, as in the deposit)",
+   "ok": true,
+   "detail": "{56: 192, 55: 32, 54: 4, 111: 1, 70: 1, 97: 1, 53: 1}"
+  },
+  {
+   "kind": "internal",
+   "what": "reaction times between -0.7 and 11 s (6 slightly negative: answers before the start cue, kept by the authors, whose DDM fits allow a negative non-decision time)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "JND tables: 13 participants per group; Weber-fraction JNDs = mm/s JNDs / mean speed within 2%",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Comfortable group",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Slow group",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Fast group",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean reference-speed JND as a Weber fraction, % (authors' per-participant estimates)",
+   "computed": 4.806583905968625,
+   "reported": 4.807,
+   "tol": 0.0005,
+   "source": "Results, first section (Fig. 2B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t-test p, DDM JND, reference vs slow speed (reported p < 0.001)",
+   "computed": 0.0003031735011897357,
+   "reported": 0.0,
+   "tol": 0.001,
+   "source": "Results, DDM section (Fig. 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t-test p, DDM JND, reference vs fast speed",
+   "computed": 0.001976089401645486,
+   "reported": 0.002,
+   "tol": 0.0005,
+   "source": "Results, DDM section (Fig. 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t-test p, DDM JND, reference vs comfortable speed",
+   "computed": 0.02112486993194059,
+   "reported": 0.021,
+   "tol": 0.0005,
+   "source": "Results, DDM section (Fig. 4B)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 37 non-response trials cannot be counted: the shared table holds answered trials only (13,059, 8 fewer than the 13,104 planned minus 37), and one participant's block labels give 4 blocks instead of 6, so the paper's 234 blocks are not reproduced by counting labels.",
+  "The mixed-effects JNDs in JND_Choices.mat give reference 50.469 +- 3.061 mm/s (paper 50.478 +- 3.057) and testing slow 38.149 +- 4.577; comfortable 52.904 +- 4.333; fast 76.903 +- 8.773 mm/s (paper slow 37.941 +- 4.657, comfortable 53.594 +- 4.346, fast 77.588 +- 8.760), and paired t-test p-values slow 0.0109, comfortable 0.9495, fast 0.0001 (paper 0.010, 0.385, < 0.001): close to the paper except the comfortable test, so the deposited estimates seem to come from a slightly different fit than the one reported; the paper's own mixed-model fit is not re-run here."
+ ],
+ "sources": [
+  {
+   "file": "Data.csv",
+   "url": "https://osf.io/download/nm78j/",
+   "bytes": 484284,
+   "sha256": "848e8d9791379f2d6b5ed1e271ff0e5b0951b58ae63c1eba85a36a7a1c19f928",
+   "fetched_utc": "2026-11-08T19:54:32Z"
+  },
+  {
+   "file": "JND_Choices.mat",
+   "url": "https://osf.io/download/ja4de/",
+   "bytes": 2918,
+   "sha256": "906966102dbecff03e881827b171eca52ebca9cbfc1cd5917c064123071f8a74",
+   "fetched_utc": "2026-11-08T19:54:34Z"
+  },
+  {
+   "file": "READ_ME.txt",
+   "url": "https://osf.io/download/s7hab/",
+   "bytes": 1259,
+   "sha256": "ca40d5f081b4b86a1bfeb8fe09a895dbc56e278c253072a8789d496c93dc4a09",
+   "fetched_utc": "2026-11-08T19:54:37Z"
+  },
+  {
+   "file": "group1_JND_pertSize.csv",
+   "url": "https://osf.io/download/6a286ab456a62ce4478782bc/",
+   "bytes": 514,
+   "sha256": "18ac8c53d0b2fd6eb31021132cdd5d6ef0e4cfa8f2b52f1baf3cf018e061dff8",
+   "fetched_utc": "2026-11-08T19:54:40Z"
+  },
+  {
+   "file": "group2_JND_pertSize.csv",
+   "url": "https://osf.io/download/6a286ab499c08e870e1b4c43/",
+   "bytes": 510,
+   "sha256": "5ce7ec9b6e70930eb2180da396e194c41d2edb1d04759a13b9843eefd557fce5",
+   "fetched_utc": "2026-11-08T19:54:42Z"
+  },
+  {
+   "file": "group3_JND_pertSize.csv",
+   "url": "https://osf.io/download/6a286ab474704246e71b4d54/",
+   "bytes": 515,
+   "sha256": "0b12233cb071a468b3db8f039db35df82fefac226280f3b1f5f005aee4bcdb68",
+   "fetched_utc": "2026-11-08T19:54:45Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Gonzalez-Rubio2026_SciRep.zip"
+}

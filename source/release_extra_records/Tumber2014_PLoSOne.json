@@ -1,0 +1,77 @@
+{
+ "id": "Tumber2014_PLoSOne",
+ "module": "summary",
+ "rows": 753,
+ "subjects": 54,
+ "persons": 54,
+ "zip_bytes": 11951,
+ "zip_sha256": "549711678a5da57d60c97d2bf92cf30947695cf82440754141b3bc420dc4b135",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with behavioural data",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Tumber et al. 2014, Methods, Data analysis (54 remaining participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy of X placement, highest load (%)",
+   "computed": 78.16027592592594,
+   "reported": 78.2,
+   "tol": 0.05,
+   "source": "Tumber et al. 2014, Discussion (78.2% of the time)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy of white letter identification, highest load (%)",
+   "computed": 87.51007547169812,
+   "reported": 87.5,
+   "tol": 0.05,
+   "source": "Tumber et al. 2014, Discussion (87.5% of the time)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 4 magnitudes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one participant has no white-letter value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "block order groups",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the white-letter analysis left out one participant who did not answer as instructed; the shared file marks that participant's white-letter values with a dot, which are left out here; that participant keeps every other measure."
+ ],
+ "sources": [
+  {
+   "file": "ERP.xlsx",
+   "url": "https://borealisdata.ca/api/access/datafile/8898",
+   "bytes": 28964,
+   "sha256": "36111c65767a2922d331abefb84c8ad42561e8825f48119a0ee861aad1e93f75",
+   "fetched_utc": "2026-11-09T15:29:05Z"
+  },
+  {
+   "file": "Vocal_Behavioural.xlsx",
+   "url": "https://borealisdata.ca/api/access/datafile/8897",
+   "bytes": 16877,
+   "sha256": "9d1203da5d9ba484eb66ab69420ab831897e9ca73e7a5b7270431252aefab25b",
+   "fetched_utc": "2026-11-09T15:29:09Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tumber2014_PLoSOne.zip"
+}

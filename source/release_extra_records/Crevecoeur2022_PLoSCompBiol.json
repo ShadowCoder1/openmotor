@@ -1,0 +1,116 @@
+{
+ "id": "Crevecoeur2022_PLoSCompBiol",
+ "module": "timeseries",
+ "rows": 15449,
+ "subjects": 47,
+ "persons": 47,
+ "zip_bytes": 519152897,
+ "zip_sha256": "3d505b4efeeec8b527fe47ec7c41ec36e928c8b226f3ec06577e66ecd499053e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in experiment 1",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (18 in Experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in experiment 2",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (14 in Experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in experiment 3",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants (15 in Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants (47)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row per stored trial, 1200 samples each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3, block 1: catch trials per participant (median)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (one heavy-only block of 50 force-field and 10 catch trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1, washout block: trials per participant (median)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (30 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1, final block without background force: trials per participant (median)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (30 trials)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "A trial counted as a catch trial has the background load but no field, as in the paper; the deposit does not say which trials the authors left out, and some blocks have 1-6 fewer trials than the 60 of the Methods.",
+  "The Zenodo record is a copy of the Dryad deposit (same DOI, CC0); its readme says the files are in *.m format, but they are MATLAB .mat files. The Zenodo page lists no related paper; the paper is Crevecoeur F, Mathew J, Lefevre P (2022), PLoS Comput Biol 18(10):e1009966 (DOI checked on Crossref)."
+ ],
+ "sources": [
+  {
+   "file": "data_experiment3.zip",
+   "url": "https://zenodo.org/records/7223372/files/data_experiment3.zip?download=1",
+   "bytes": 141917373,
+   "sha256": "e99d30c034a0f098137a3635917bef009c12645a347dc8bc07b4eb60efb6dcf5",
+   "fetched_utc": "2026-11-09T07:20:42Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/records/7223372/files/README.md?download=1",
+   "bytes": 2625,
+   "sha256": "c645cecd73cf6fc3e691109a8ad44c2c7eb3d074d4caa72a534bb61869c46462",
+   "fetched_utc": "2026-11-09T07:36:20Z"
+  },
+  {
+   "file": "data_experiment2.zip",
+   "url": "https://zenodo.org/records/7223372/files/data_experiment2.zip?download=1",
+   "bytes": 250161003,
+   "sha256": "1d6563f6d0fea36e3f0cdeee16e439efac4bf69592ea25b3f80e04e8fbe07b8a",
+   "fetched_utc": "2026-11-09T07:39:44Z"
+  },
+  {
+   "file": "data_experiment1.zip",
+   "url": "https://zenodo.org/records/7223372/files/data_experiment1.zip?download=1",
+   "bytes": 434078963,
+   "sha256": "be44447883763a2d7183912ad38885cdbb232ac6ecfe7a26fc4d5950f7dc9eaa",
+   "fetched_utc": "2026-11-09T07:41:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Crevecoeur2022_PLoSCompBiol.zip"
+}

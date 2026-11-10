@@ -1,0 +1,2655 @@
+{
+ "id": "Peterson2021_DataBrief",
+ "module": "timeseries",
+ "rows": 120,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 797931367,
+ "zip_sha256": "67d44cff5a372360770d883ca131e223c0dbf6b857c5c18c86ceed70f895e384",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Abstract/Sec. 2: 30 healthy young adults",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Sec. 2: 15 females, 15 males",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Sec. 2: 15 females, 15 males",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 22.5,
+   "reported": 22.5,
+   "tol": 0.05,
+   "source": "Sec. 2: 22.5 +/- 4.8 years",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 4.833432420704487,
+   "reported": 4.8,
+   "tol": 0.05,
+   "source": "Sec. 2: 22.5 +/- 4.8 years",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions per participant",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Sec. 2.1: four 10 min sessions",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every session has at least one perturbation event",
+   "ok": true,
+   "detail": "min 30, max 151"
+  },
+  {
+   "kind": "published",
+   "what": "total channels in the recordings (EEG + non-EEG)",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "Specifications table: 149 total channels",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-EEG channels released",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Sec. 1: neck EMG 2 + EOG 3 + leg EMG 8 + motion capture 6 + pull force 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 256.0,
+   "reported": 256.0,
+   "tol": 0,
+   "source": "Sec. 2.1 and Fig. 1: synchronised at 256 Hz",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all recordings 21 channels with the expected labels and a samples file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "session durations positive and under 12 minutes",
+   "ok": true,
+   "detail": "min 139 s, max 688 s"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says every session had 150 perturbations (75 per direction); 80 of the 120 recordings have a different number in the events files (or more: counts range from 30 to 151; the deposit does not say why), and the direction split is therefore not always 75/75. All events in the deposit are kept.",
+  "The paper says each session lasted 10 min; recordings run 2.3 to 11.5 min (median 10.3 min), the shortest probably stopped early; durations are therefore not used as a check.",
+  "The EEG (128 channels) was not released, and neither were the 3 'good channel' lists, ICA matrices or dipole fits in the .set files.",
+  "The deposit labels sessions ses-01 to ses-04 by perturbation type and posture (pull stand, pull walk, rotate stand, rotate walk); the paper says the standing session always preceded the walking session of the same perturbation and half of the participants started with rotations, so session numbers are labels, not the order performed.",
+  "Values were rounded to 3 significant digits and time_s to 0.1 ms to keep the ZIP under 1 GB; sampling rate was not reduced."
+ ],
+ "sources": [
+  {
+   "file": "s001_2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-02/eeg/sub-001_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3743120,
+   "sha256": "db019a421c22a731d0b85c061966683f87ec075f1e5d256e6be7318469aca0b2",
+   "fetched_utc": "2026-11-10T11:18:44Z"
+  },
+  {
+   "file": "s001_2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-02/eeg/sub-001_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 98158220,
+   "sha256": "7be1d68dc5eda7c89b045545548e430e6c1494df59cd8ae06a2d5357a309826a",
+   "fetched_utc": "2026-11-10T11:18:50Z"
+  },
+  {
+   "file": "p001_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-01/eeg/sub-001_ses-01_task-pullstand_eeg.set",
+   "bytes": 3696264,
+   "sha256": "120715ff385aaa09c14fabd2b8dea6ecf687498420aa6098244fc560ad7261dd",
+   "fetched_utc": "2026-11-10T13:47:55Z"
+  },
+  {
+   "file": "p001_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-01/eeg/sub-001_ses-01_task-pullstand_events.tsv",
+   "bytes": 9881,
+   "sha256": "87bf927cb8cf11d83fc4489c28948a6920e428d4312f18522bf1c122db8e1128",
+   "fetched_utc": "2026-11-10T13:47:56Z"
+  },
+  {
+   "file": "p001_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-01/eeg/sub-001_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94666256,
+   "sha256": "dc10eb8810d84cd2ae736f03a7075c259e530f7a24c62b0e55f0d40ab7b6e0ba",
+   "fetched_utc": "2026-11-10T13:48:00Z"
+  },
+  {
+   "file": "p001_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-02/eeg/sub-001_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3743120,
+   "sha256": "db019a421c22a731d0b85c061966683f87ec075f1e5d256e6be7318469aca0b2",
+   "fetched_utc": "2026-11-10T13:48:10Z"
+  },
+  {
+   "file": "p001_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-02/eeg/sub-001_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9905,
+   "sha256": "c95d22e214e3042d9f0409753e305de6ab76da0711fe5ecb2147dd35ef187214",
+   "fetched_utc": "2026-11-10T13:48:10Z"
+  },
+  {
+   "file": "p001_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-02/eeg/sub-001_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 98158220,
+   "sha256": "7be1d68dc5eda7c89b045545548e430e6c1494df59cd8ae06a2d5357a309826a",
+   "fetched_utc": "2026-11-10T13:48:17Z"
+  },
+  {
+   "file": "p001_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-03/eeg/sub-001_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3776768,
+   "sha256": "9418e56487ea42ded77699b35c8ba9f7038004cc0820e3aed90c278e0f3f1518",
+   "fetched_utc": "2026-11-10T13:48:28Z"
+  },
+  {
+   "file": "p001_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-03/eeg/sub-001_ses-03_task-rotatestand_events.tsv",
+   "bytes": 10010,
+   "sha256": "86055a2175045d45794eaf89fb3f6c5778cceffd4c320e8a267526676cfab660",
+   "fetched_utc": "2026-11-10T13:48:28Z"
+  },
+  {
+   "file": "p001_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-03/eeg/sub-001_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 100593476,
+   "sha256": "1b9ff6ab4c0e770d5d9f774fc4525490cb5275f840e480821b9df17eafea4623",
+   "fetched_utc": "2026-11-10T13:48:31Z"
+  },
+  {
+   "file": "p001_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-04/eeg/sub-001_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3749576,
+   "sha256": "d7a1a16a36e76f7e659d7e6ccec7d56835bf6950a884c544b85f4b07c16da7e5",
+   "fetched_utc": "2026-11-10T13:48:42Z"
+  },
+  {
+   "file": "p001_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-04/eeg/sub-001_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9998,
+   "sha256": "8edda35e4bfe9bb34447c6c7660760eac556e02ea8ef3260aa74e510d8ac6887",
+   "fetched_utc": "2026-11-10T13:48:42Z"
+  },
+  {
+   "file": "p001_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-001/ses-04/eeg/sub-001_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 98567672,
+   "sha256": "d7c32f511fe5a83f312c7a34ac1a5c4915953d26ab50cb4b10c6adfefa7bf4d8",
+   "fetched_utc": "2026-11-10T13:48:46Z"
+  },
+  {
+   "file": "p002_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-01/eeg/sub-002_ses-01_task-pullstand_eeg.set",
+   "bytes": 3757504,
+   "sha256": "f240943236b3da70f675bf71671ae7b2d4db8deaeaea26c6eb0efa443c71d128",
+   "fetched_utc": "2026-11-10T13:48:57Z"
+  },
+  {
+   "file": "p002_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-01/eeg/sub-002_ses-01_task-pullstand_events.tsv",
+   "bytes": 9895,
+   "sha256": "3a568c3ede2aac91cb0eb4e88bf4af82028a1c806baa2472d11e429d1a9d3b99",
+   "fetched_utc": "2026-11-10T13:48:57Z"
+  },
+  {
+   "file": "p002_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-01/eeg/sub-002_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 97169456,
+   "sha256": "0411d3f93ef8cc2e5696d21dbaa67b14b2ee17d996356fc0410b98c2be5495c6",
+   "fetched_utc": "2026-11-10T13:49:02Z"
+  },
+  {
+   "file": "p002_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-02/eeg/sub-002_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3747512,
+   "sha256": "4934a69d7c78955f5edddcf643c552f96371f63d524334af4e4201aaf09cae9c",
+   "fetched_utc": "2026-11-10T13:49:13Z"
+  },
+  {
+   "file": "p002_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-02/eeg/sub-002_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9947,
+   "sha256": "62384e9e1aa5a7f6a28f4fb7f5693d5ee912020daf3d08c866b5bf6187cdbb45",
+   "fetched_utc": "2026-11-10T13:49:13Z"
+  },
+  {
+   "file": "p002_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-02/eeg/sub-002_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 96407768,
+   "sha256": "735a0b6381d4b5e55016fa36cedc791136cc3a4defdf2faa7de5269f3e3ccc6c",
+   "fetched_utc": "2026-11-10T13:49:16Z"
+  },
+  {
+   "file": "p002_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-03/eeg/sub-002_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3760144,
+   "sha256": "7bf6922d9bc749921fce2da3210db019dd664f025688667ff1cf0bb02b381c86",
+   "fetched_utc": "2026-11-10T13:49:27Z"
+  },
+  {
+   "file": "p002_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-03/eeg/sub-002_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9995,
+   "sha256": "95df2f80308f47df80fcd932e3a7e31759392ab6008e1fc3a04404a1903528b0",
+   "fetched_utc": "2026-11-10T13:49:27Z"
+  },
+  {
+   "file": "p002_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-03/eeg/sub-002_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 97296404,
+   "sha256": "daed1187724e7170f3f9a2a9b01a503f7fe3abdfd7bde9a94e5da7464afbf7fa",
+   "fetched_utc": "2026-11-10T13:49:30Z"
+  },
+  {
+   "file": "p002_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-04/eeg/sub-002_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3793488,
+   "sha256": "5a57c99fe53094526ff024e0ffce56848504acde328936aba67228fa4087e1bc",
+   "fetched_utc": "2026-11-10T13:49:41Z"
+  },
+  {
+   "file": "p002_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-04/eeg/sub-002_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 10003,
+   "sha256": "d92fb6bcc4f7e964fe4e35c5ab7d06ea47b1389094133735a237bdfb6341a87f",
+   "fetched_utc": "2026-11-10T13:49:41Z"
+  },
+  {
+   "file": "p002_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-002/ses-04/eeg/sub-002_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 99780532,
+   "sha256": "31ab6138c2c67b0b4f923399260830099c31962fd6fcd0a2379770a0e3bffe3a",
+   "fetched_utc": "2026-11-10T13:49:44Z"
+  },
+  {
+   "file": "p003_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-01/eeg/sub-003_ses-01_task-pullstand_eeg.set",
+   "bytes": 3693792,
+   "sha256": "17a8e899e56fdcca37704fbb86b3094bf3a5d40c41987c547ad17fcc887f8556",
+   "fetched_utc": "2026-11-10T13:49:56Z"
+  },
+  {
+   "file": "p003_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-01/eeg/sub-003_ses-01_task-pullstand_events.tsv",
+   "bytes": 9873,
+   "sha256": "bec535d583213103d5e28233251a47c267dc99938997b1d513df342318bf708c",
+   "fetched_utc": "2026-11-10T13:49:56Z"
+  },
+  {
+   "file": "p003_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-01/eeg/sub-003_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 95379668,
+   "sha256": "3353ee6ca17eb05288398c56d85ac8810040a16a1f59f14faad464fa2e9850b8",
+   "fetched_utc": "2026-11-10T13:50:00Z"
+  },
+  {
+   "file": "p003_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-02/eeg/sub-003_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3684080,
+   "sha256": "eebc91a197040fa5634018a1205a52c63ff8ad5aa5bbb4063d38114f9e17e10a",
+   "fetched_utc": "2026-11-10T13:50:11Z"
+  },
+  {
+   "file": "p003_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-02/eeg/sub-003_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9881,
+   "sha256": "668d7ebfb4f856350d2aa29839dc645804d2e35e1eb2a683cf75c619347bcf4e",
+   "fetched_utc": "2026-11-10T13:50:11Z"
+  },
+  {
+   "file": "p003_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-02/eeg/sub-003_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 94656720,
+   "sha256": "03aec2ebab3803b00f947dbeefa4dee2dfb1b1bb8cfdc54865f1e3009eecd4d2",
+   "fetched_utc": "2026-11-10T13:50:19Z"
+  },
+  {
+   "file": "p003_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-03/eeg/sub-003_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3699744,
+   "sha256": "fb0eeec5976e9bc2badc3567cb8dff46acb8373f2773eae38b8fc6cb083ae358",
+   "fetched_utc": "2026-11-10T13:50:29Z"
+  },
+  {
+   "file": "p003_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-03/eeg/sub-003_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9988,
+   "sha256": "b0fc46a11ea032c53509a3d22135f9122fec4ecf39087addbdb726d3bd67790b",
+   "fetched_utc": "2026-11-10T13:50:29Z"
+  },
+  {
+   "file": "p003_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-03/eeg/sub-003_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95752168,
+   "sha256": "4e72e15714fe422f677ac7f300632431eaf60bc4799fa87635f36d1be6b8063e",
+   "fetched_utc": "2026-11-10T13:50:33Z"
+  },
+  {
+   "file": "p003_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-04/eeg/sub-003_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3706296,
+   "sha256": "1a80439418f563920eeaeeceb7ea991acdfefdc2dcc2db1235431f69d53daa01",
+   "fetched_utc": "2026-11-10T13:50:43Z"
+  },
+  {
+   "file": "p003_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-04/eeg/sub-003_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9980,
+   "sha256": "afaa75b6fb02767b587513d7a9a18333abf0d8d35201f13d0eb7c5ef703fc06d",
+   "fetched_utc": "2026-11-10T13:50:44Z"
+  },
+  {
+   "file": "p003_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-003/ses-04/eeg/sub-003_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 96240292,
+   "sha256": "790872ab95d58d9c3bb3992fc273a7f2ee9fff0119d235e895b934adb8a3094d",
+   "fetched_utc": "2026-11-10T13:50:49Z"
+  },
+  {
+   "file": "p004_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-01/eeg/sub-004_ses-01_task-pullstand_eeg.set",
+   "bytes": 3639544,
+   "sha256": "fb955958918e5bdaf3ec9b094afc2478228bd6cf34fdbbc3b9e01db2c91675be",
+   "fetched_utc": "2026-11-10T13:50:59Z"
+  },
+  {
+   "file": "p004_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-01/eeg/sub-004_ses-01_task-pullstand_events.tsv",
+   "bytes": 9867,
+   "sha256": "8c173cdab327443e585358573b0d18e10082f0cadc9a4ad193348fbc3f7a65bb",
+   "fetched_utc": "2026-11-10T13:50:59Z"
+  },
+  {
+   "file": "p004_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-01/eeg/sub-004_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93324660,
+   "sha256": "90e5563bb25a1b0a06acdefc15e379e6b4514ef56d311e72e9229d24daad5468",
+   "fetched_utc": "2026-11-10T13:51:03Z"
+  },
+  {
+   "file": "p004_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-02/eeg/sub-004_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3637464,
+   "sha256": "82555215ac54edb24dd3c4a51ed40063e9d28da79876c671c21d6a3e5d90e359",
+   "fetched_utc": "2026-11-10T13:51:13Z"
+  },
+  {
+   "file": "p004_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-02/eeg/sub-004_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9675,
+   "sha256": "7232cbc01385403db77313d9c492adc9effc91348122935681e147d9dd4215c6",
+   "fetched_utc": "2026-11-10T13:51:13Z"
+  },
+  {
+   "file": "p004_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-02/eeg/sub-004_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93227512,
+   "sha256": "67cac9d404b95aae64534694caf2cb40b99ab8e1125da7e0fc775743b8001e84",
+   "fetched_utc": "2026-11-10T13:51:20Z"
+  },
+  {
+   "file": "p004_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-03/eeg/sub-004_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3658248,
+   "sha256": "2afabb067dd441eda7f9e62066b38ca44a6c787cee2bac30b547ab36f2874f37",
+   "fetched_utc": "2026-11-10T13:51:30Z"
+  },
+  {
+   "file": "p004_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-03/eeg/sub-004_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9978,
+   "sha256": "1cb19e7823c3e6c22ce315ecab175955e7b54f17b9923edfbfa9de8de968a81d",
+   "fetched_utc": "2026-11-10T13:51:30Z"
+  },
+  {
+   "file": "p004_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-03/eeg/sub-004_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94647184,
+   "sha256": "63268020a3600e03430d342a0483293ec0cde3f68f7dfd8ce23963ffd69bced9",
+   "fetched_utc": "2026-11-10T13:51:34Z"
+  },
+  {
+   "file": "p004_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-04/eeg/sub-004_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3668864,
+   "sha256": "372301e6f77cf80f04f8fa7536a53028df832a03795e5fe97cb01ec9d1b1a7c4",
+   "fetched_utc": "2026-11-10T13:51:47Z"
+  },
+  {
+   "file": "p004_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-04/eeg/sub-004_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "96b2d12f22bd2557158a679f252406dddda5b38b59ba058f9f06e199f7c7b8b9",
+   "fetched_utc": "2026-11-10T13:51:47Z"
+  },
+  {
+   "file": "p004_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-004/ses-04/eeg/sub-004_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 95438076,
+   "sha256": "30aa34a54c157891639f6f50c26c1bdf43e377a40422c73f133069ae2f525e5e",
+   "fetched_utc": "2026-11-10T13:51:52Z"
+  },
+  {
+   "file": "p005_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-01/eeg/sub-005_ses-01_task-pullstand_eeg.set",
+   "bytes": 3681224,
+   "sha256": "7077fec6f6c0094d433c7dad9dc604e4678d9ab41fcccebbeeee902687e8e83d",
+   "fetched_utc": "2026-11-10T13:52:06Z"
+  },
+  {
+   "file": "p005_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-01/eeg/sub-005_ses-01_task-pullstand_events.tsv",
+   "bytes": 9874,
+   "sha256": "10de076dac780e881e57f7a6cfb1ba85fa5ea3889870fbcddecc1830a2d282db",
+   "fetched_utc": "2026-11-10T13:52:06Z"
+  },
+  {
+   "file": "p005_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-01/eeg/sub-005_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94666852,
+   "sha256": "09423c6f4e8f984358d28a14852474caee65078e889dff10a2604bb29c3b1c27",
+   "fetched_utc": "2026-11-10T13:52:11Z"
+  },
+  {
+   "file": "p005_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-02/eeg/sub-005_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3722632,
+   "sha256": "a0c0742786e261b07338552d4c83a52e7f320673a540f2fc1a8e5460d271aded",
+   "fetched_utc": "2026-11-10T13:52:25Z"
+  },
+  {
+   "file": "p005_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-02/eeg/sub-005_ses-02_task-pullwalk_events.tsv",
+   "bytes": 8963,
+   "sha256": "d5d1d03507d6842b9ecac43eef0c86056c3c20e26fce7c7128dfd1e209b6a947",
+   "fetched_utc": "2026-11-10T13:52:25Z"
+  },
+  {
+   "file": "p005_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-02/eeg/sub-005_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 98021140,
+   "sha256": "1708ee4da31c83cde63196f2f0587a047263ee87a6173cfb083221be7457f51d",
+   "fetched_utc": "2026-11-10T13:52:30Z"
+  },
+  {
+   "file": "p005_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-03/eeg/sub-005_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3761968,
+   "sha256": "98b7d2635caf942684cd6d1e7e10b5c1929c4ff1baa33e7c7396a5982bc90b3e",
+   "fetched_utc": "2026-11-10T13:52:44Z"
+  },
+  {
+   "file": "p005_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-03/eeg/sub-005_ses-03_task-rotatestand_events.tsv",
+   "bytes": 10012,
+   "sha256": "63ab430eb595a4b337777b5d5878c7303479703a0db4f1c8f3979309d306de8e",
+   "fetched_utc": "2026-11-10T13:52:44Z"
+  },
+  {
+   "file": "p005_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-03/eeg/sub-005_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 100612548,
+   "sha256": "4778f26344081f07ba5808a816fa3676bfab9568f497394bd65a9922535f2cf9",
+   "fetched_utc": "2026-11-10T13:52:50Z"
+  },
+  {
+   "file": "p005_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-04/eeg/sub-005_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3684912,
+   "sha256": "a639a3c10dbc67dadf55a04693a499e8d0e6f2436fa202e6d42491b14630d6d5",
+   "fetched_utc": "2026-11-10T13:53:03Z"
+  },
+  {
+   "file": "p005_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-04/eeg/sub-005_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9983,
+   "sha256": "e5f40ff2759ec974e7e3254b8ad63154ac00d05203de2b391b8c6f0fb0e90ccd",
+   "fetched_utc": "2026-11-10T13:53:03Z"
+  },
+  {
+   "file": "p005_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-005/ses-04/eeg/sub-005_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94871876,
+   "sha256": "b286ec0086492df83cdc33b39c0a57015d118db3fc9071c71659040645cbcbd5",
+   "fetched_utc": "2026-11-10T13:53:06Z"
+  },
+  {
+   "file": "p006_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-01/eeg/sub-006_ses-01_task-pullstand_eeg.set",
+   "bytes": 3672176,
+   "sha256": "3fbeb6abb73771e3a08b771613992de3f29910d8b050309ffde4f5437e523721",
+   "fetched_utc": "2026-11-10T13:53:19Z"
+  },
+  {
+   "file": "p006_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-01/eeg/sub-006_ses-01_task-pullstand_events.tsv",
+   "bytes": 9881,
+   "sha256": "99b57a733967f6b421e445338a1775a1da2a57ede3f2c2bd22efa30fb3be9bb4",
+   "fetched_utc": "2026-11-10T13:53:19Z"
+  },
+  {
+   "file": "p006_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-01/eeg/sub-006_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94147736,
+   "sha256": "3b78848df1510e2a5f5bdd558be4457c7cb35a93b91871c7938af46990a9834e",
+   "fetched_utc": "2026-11-10T13:53:22Z"
+  },
+  {
+   "file": "p006_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-02/eeg/sub-006_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3679496,
+   "sha256": "f4888bd5ea7d8b8aac1aa5884b05aae977ce3391a580c0605b868ea650b1ab18",
+   "fetched_utc": "2026-11-10T13:53:36Z"
+  },
+  {
+   "file": "p006_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-02/eeg/sub-006_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9886,
+   "sha256": "3ae51ee716d32bef1d35d83956b798fb7db36c24f801596fdb6c5e8d7282b1bc",
+   "fetched_utc": "2026-11-10T13:53:36Z"
+  },
+  {
+   "file": "p006_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-02/eeg/sub-006_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 94694864,
+   "sha256": "fd94de7943ca8f1a9702916b6e57329a9f1edc53094e23bc85a1cebd8c085854",
+   "fetched_utc": "2026-11-10T13:53:39Z"
+  },
+  {
+   "file": "p006_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-03/eeg/sub-006_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3679536,
+   "sha256": "d4af434c5e0c281701dd9ea7cb4fd52ea4cddc9f3fc3e97a41d465e7ff3cffa8",
+   "fetched_utc": "2026-11-10T13:53:52Z"
+  },
+  {
+   "file": "p006_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-03/eeg/sub-006_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9985,
+   "sha256": "43292b4dae341a215534eddaa19be694f61aa253eb41d39ccbbcc930fb4a15e8",
+   "fetched_utc": "2026-11-10T13:53:52Z"
+  },
+  {
+   "file": "p006_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-03/eeg/sub-006_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94626324,
+   "sha256": "22ebc8f632d8fced8b9ffe481eb7463def5b711c30747b96bdf3cd6a35fea944",
+   "fetched_utc": "2026-11-10T13:53:55Z"
+  },
+  {
+   "file": "p006_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-04/eeg/sub-006_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3685176,
+   "sha256": "b3bca066404c0419528bec751e8a3660ee73b633669f1e6fd008880719386aee",
+   "fetched_utc": "2026-11-10T13:54:10Z"
+  },
+  {
+   "file": "p006_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-04/eeg/sub-006_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9990,
+   "sha256": "463c1c726074f73b36aeca9363f7e8f89a709262bf543b620321399fd1437dba",
+   "fetched_utc": "2026-11-10T13:54:10Z"
+  },
+  {
+   "file": "p006_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-006/ses-04/eeg/sub-006_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 95046504,
+   "sha256": "dc2aec2f8be3993cb6423f75f011dce82378b0ff4865686035f45e8a878ea36e",
+   "fetched_utc": "2026-11-10T13:54:13Z"
+  },
+  {
+   "file": "p007_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-01/eeg/sub-007_ses-01_task-pullstand_eeg.set",
+   "bytes": 3746976,
+   "sha256": "8169baa6a5b3615c603d0d66fae13a2915938384549274f0081764f0b7162a80",
+   "fetched_utc": "2026-11-10T13:54:27Z"
+  },
+  {
+   "file": "p007_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-01/eeg/sub-007_ses-01_task-pullstand_events.tsv",
+   "bytes": 9886,
+   "sha256": "689f312abb941568cc82a046d76950c4dc776e8f5c5bad942d4e890d51a68696",
+   "fetched_utc": "2026-11-10T13:54:27Z"
+  },
+  {
+   "file": "p007_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-01/eeg/sub-007_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 96857152,
+   "sha256": "b67ce14d9a6c00fd2bb622b08f316ece3eb5be17725728a5e7e716e8206ff0d1",
+   "fetched_utc": "2026-11-10T13:54:31Z"
+  },
+  {
+   "file": "p007_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-02/eeg/sub-007_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3724504,
+   "sha256": "124557387d488eec6a5818b10b8fe4b813f2018e8bb06931e4f8f9bff8e40e71",
+   "fetched_utc": "2026-11-10T13:54:58Z"
+  },
+  {
+   "file": "p007_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-02/eeg/sub-007_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9888,
+   "sha256": "3877e3f77a5aa9590dcc401dee414014a0b198510ca798faa475c5d47f9dc87a",
+   "fetched_utc": "2026-11-10T13:54:58Z"
+  },
+  {
+   "file": "p007_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-02/eeg/sub-007_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 95183584,
+   "sha256": "3a683276e33e4132a1121204a79003af605e518279614f6798da3f26f88b69b9",
+   "fetched_utc": "2026-11-10T13:55:03Z"
+  },
+  {
+   "file": "p007_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-03/eeg/sub-007_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3730728,
+   "sha256": "4a522f77d1bbb053f0056dd1b4af8340a9a79552edf6d1f2a50ac92a6020aa92",
+   "fetched_utc": "2026-11-10T13:55:17Z"
+  },
+  {
+   "file": "p007_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-03/eeg/sub-007_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9981,
+   "sha256": "16d9062eb50167a9f08d6c37c0fd44abf13f80c2f43ad9f33ed6088fc7338bc1",
+   "fetched_utc": "2026-11-10T13:55:17Z"
+  },
+  {
+   "file": "p007_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-03/eeg/sub-007_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95575752,
+   "sha256": "2c247b2a9ac3c64137313befb8bbba60c2905c822f921f2699bd68921dee45a9",
+   "fetched_utc": "2026-11-10T13:55:22Z"
+  },
+  {
+   "file": "p007_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-04/eeg/sub-007_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3756720,
+   "sha256": "b23653ca65b945e1b2696759db16b5375b4de864b3fbb2bbfdd44f482abd5464",
+   "fetched_utc": "2026-11-10T13:55:36Z"
+  },
+  {
+   "file": "p007_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-04/eeg/sub-007_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9985,
+   "sha256": "912ed816ae53918d342b2841cd90986a3adfb4f0329fe4a657856fcaa7146145",
+   "fetched_utc": "2026-11-10T13:55:36Z"
+  },
+  {
+   "file": "p007_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-007/ses-04/eeg/sub-007_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 97512156,
+   "sha256": "3136495ecc22a7595a2df33044f09c8ec763a7f3c7b222620fe549a5d5650f06",
+   "fetched_utc": "2026-11-10T13:55:40Z"
+  },
+  {
+   "file": "p008_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-01/eeg/sub-008_ses-01_task-pullstand_eeg.set",
+   "bytes": 3696712,
+   "sha256": "df455e19d78443476f98140591732f738e77873cc0d1259dc1a753e5bc51410c",
+   "fetched_utc": "2026-11-10T13:55:54Z"
+  },
+  {
+   "file": "p008_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-01/eeg/sub-008_ses-01_task-pullstand_events.tsv",
+   "bytes": 9874,
+   "sha256": "8e87a2f4e49f2f782a01faac5e2ae18e59c848e8d8bd1b39330bb372965ef795",
+   "fetched_utc": "2026-11-10T13:55:55Z"
+  },
+  {
+   "file": "p008_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-01/eeg/sub-008_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 95242588,
+   "sha256": "df0067aeeb9f53e6c16eb6732b58a53aa67e9148e4ed60359316e068378fa5e6",
+   "fetched_utc": "2026-11-10T13:55:59Z"
+  },
+  {
+   "file": "p008_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-02/eeg/sub-008_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3699064,
+   "sha256": "1d981f042beb983d672d29273d4152aeffd83218b566b2a94169db20576a2ae3",
+   "fetched_utc": "2026-11-10T13:56:13Z"
+  },
+  {
+   "file": "p008_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-02/eeg/sub-008_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9884,
+   "sha256": "fbe597353c2ca9783bbf2fd421edb217ff144fb622c8cc9f726142cebef36be6",
+   "fetched_utc": "2026-11-10T13:56:13Z"
+  },
+  {
+   "file": "p008_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-02/eeg/sub-008_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 95419600,
+   "sha256": "28abc1f9af67b275540a18811ecc4570b1c8afb80a75e7bf48de07d0d97580c1",
+   "fetched_utc": "2026-11-10T13:56:17Z"
+  },
+  {
+   "file": "p008_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-03/eeg/sub-008_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3722464,
+   "sha256": "620a62a49a0aede015645997ee762f4f536976caeb64a60621e28111dc612d38",
+   "fetched_utc": "2026-11-10T13:56:31Z"
+  },
+  {
+   "file": "p008_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-03/eeg/sub-008_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9990,
+   "sha256": "dd82623e2693b3043b2b51270518ec93d0597362cf1d56cd0eb69318c811bfe6",
+   "fetched_utc": "2026-11-10T13:56:32Z"
+  },
+  {
+   "file": "p008_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-03/eeg/sub-008_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 97091380,
+   "sha256": "4a1930351ea286fa7046e430d1007be96ea603381f6293f8714893ece7636d02",
+   "fetched_utc": "2026-11-10T13:56:35Z"
+  },
+  {
+   "file": "p008_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-04/eeg/sub-008_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3692256,
+   "sha256": "55eebc92ef836cd9bdd6a4092c582328615934aec038f64286a80ba8ea5b5a95",
+   "fetched_utc": "2026-11-10T13:56:49Z"
+  },
+  {
+   "file": "p008_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-04/eeg/sub-008_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9988,
+   "sha256": "47dc2134555a445c19e9112972d69f66f9bfa489b97cf02a80dba6537470ca92",
+   "fetched_utc": "2026-11-10T13:56:49Z"
+  },
+  {
+   "file": "p008_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-008/ses-04/eeg/sub-008_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94840884,
+   "sha256": "6020461680f5cbf12a77f566c6f4f0e0c5a717a3d37c173c07f9fddfb99acec8",
+   "fetched_utc": "2026-11-10T13:56:53Z"
+  },
+  {
+   "file": "p009_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-01/eeg/sub-009_ses-01_task-pullstand_eeg.set",
+   "bytes": 3690832,
+   "sha256": "07b5f0e260763147d6fb59fdd4d00d84bf9c606a4ce8a18241625e3f618a5efb",
+   "fetched_utc": "2026-11-10T13:57:07Z"
+  },
+  {
+   "file": "p009_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-01/eeg/sub-009_ses-01_task-pullstand_events.tsv",
+   "bytes": 9878,
+   "sha256": "94c2e5753f892fe52214ce19e4bc27a635fade21cbe9675eb78edde8a14b402d",
+   "fetched_utc": "2026-11-10T13:57:07Z"
+  },
+  {
+   "file": "p009_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-01/eeg/sub-009_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94920152,
+   "sha256": "65c140a76cb19e4fbe0345e61e3280ecb73c126c95c5ec472c4eca3fb1a04fbb",
+   "fetched_utc": "2026-11-10T13:57:14Z"
+  },
+  {
+   "file": "p009_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-02/eeg/sub-009_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3673760,
+   "sha256": "0feda698569bf18a5b1d0d29a0d53d755cfdf13c897773364d37134323f09212",
+   "fetched_utc": "2026-11-10T13:57:27Z"
+  },
+  {
+   "file": "p009_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-02/eeg/sub-009_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9879,
+   "sha256": "8ee8b67bb6f8f03ee8b55b80ed80632c3d931dcb554a8d34e7b092d3cdcb0105",
+   "fetched_utc": "2026-11-10T13:57:28Z"
+  },
+  {
+   "file": "p009_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-02/eeg/sub-009_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93649480,
+   "sha256": "90db9ff1dd9b20adcf725878cf52809f999a383217f8668b94e91f2b91922772",
+   "fetched_utc": "2026-11-10T13:57:31Z"
+  },
+  {
+   "file": "p009_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-03/eeg/sub-009_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3720920,
+   "sha256": "cfa7e9e6307e8eb78d49f8d9874bd81229eb065cccc32497141314d6bba95beb",
+   "fetched_utc": "2026-11-10T13:57:45Z"
+  },
+  {
+   "file": "p009_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-03/eeg/sub-009_ses-03_task-rotatestand_events.tsv",
+   "bytes": 10004,
+   "sha256": "5a552add0775d67f191d5985ec3572b671ae6d4e82c8849d756eee9e58217471",
+   "fetched_utc": "2026-11-10T13:57:45Z"
+  },
+  {
+   "file": "p009_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-03/eeg/sub-009_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 97091380,
+   "sha256": "b9f56d0f3950be70d84b5027d852eef9e1f9cfbdf63fbefd5f60e70deedd5612",
+   "fetched_utc": "2026-11-10T13:57:48Z"
+  },
+  {
+   "file": "p009_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-04/eeg/sub-009_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3685992,
+   "sha256": "685c3dd6a0992e77cb4191ce9edfa2a9f4d2d1726c9a01b06d60a5487673354c",
+   "fetched_utc": "2026-11-10T13:58:03Z"
+  },
+  {
+   "file": "p009_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-04/eeg/sub-009_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9981,
+   "sha256": "3947c8d0a5078ea0846c3ef2c80c5d0b694055585c58fb3fb0f5e3025b6d60b1",
+   "fetched_utc": "2026-11-10T13:58:03Z"
+  },
+  {
+   "file": "p009_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-009/ses-04/eeg/sub-009_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94489244,
+   "sha256": "c0371171d1a895574f1d750d0f795e3297790ad586a8c55fa0fb18088f202084",
+   "fetched_utc": "2026-11-10T13:58:06Z"
+  },
+  {
+   "file": "p010_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-01/eeg/sub-010_ses-01_task-pullstand_eeg.set",
+   "bytes": 3656272,
+   "sha256": "354c71db9bc651551d8cd196455e04c309cec91ff58f868a443c751cf8badeba",
+   "fetched_utc": "2026-11-10T13:58:21Z"
+  },
+  {
+   "file": "p010_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-01/eeg/sub-010_ses-01_task-pullstand_events.tsv",
+   "bytes": 9878,
+   "sha256": "42f6df9c8221316dd5910ff839ee43fdabdf9603536353884079e3cc96cac09d",
+   "fetched_utc": "2026-11-10T13:58:21Z"
+  },
+  {
+   "file": "p010_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-01/eeg/sub-010_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93590476,
+   "sha256": "c88e83435d2aefa5b79820f5c3b5f3538c366a078e7654a434250a6e38b98716",
+   "fetched_utc": "2026-11-10T13:58:24Z"
+  },
+  {
+   "file": "p010_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-02/eeg/sub-010_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3685392,
+   "sha256": "b7984fb7f139369ac42cde4f45a4f2adbd51a696901523c9b2379b63ee83c693",
+   "fetched_utc": "2026-11-10T13:58:39Z"
+  },
+  {
+   "file": "p010_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-02/eeg/sub-010_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9901,
+   "sha256": "70203cdf9c27495295c771a395477129dbd2f19382ca347f0761b61e7b673d97",
+   "fetched_utc": "2026-11-10T13:58:39Z"
+  },
+  {
+   "file": "p010_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-02/eeg/sub-010_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 95761704,
+   "sha256": "7b1e448e83da84b163ea9a6d2b4b2ecdc373a5370fb2035d84d2f87ad074118b",
+   "fetched_utc": "2026-11-10T13:58:42Z"
+  },
+  {
+   "file": "p010_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-03/eeg/sub-010_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3679904,
+   "sha256": "efd8486478eda4a43edac27412d3202dc0cd7650182651ad356ed186b6919c99",
+   "fetched_utc": "2026-11-10T13:58:57Z"
+  },
+  {
+   "file": "p010_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-03/eeg/sub-010_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9985,
+   "sha256": "79959ad9879c4e4950c865760a9eb7a32bcdadb3cab867ee5a13975422ec247e",
+   "fetched_utc": "2026-11-10T13:58:57Z"
+  },
+  {
+   "file": "p010_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-03/eeg/sub-010_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95281328,
+   "sha256": "2e2edb7039ef3ddcd74d77d2e767d76607b5b0dfe0bd780e50cff70707ab7366",
+   "fetched_utc": "2026-11-10T13:59:01Z"
+  },
+  {
+   "file": "p010_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-04/eeg/sub-010_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3676224,
+   "sha256": "cba315f1a628db4dd1c86de2408c77356549572fe7da950915b3aec9f2160b5d",
+   "fetched_utc": "2026-11-10T13:59:14Z"
+  },
+  {
+   "file": "p010_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-04/eeg/sub-010_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9988,
+   "sha256": "188dedaba6fcda5e84afbc1544f4dd6c23afaff6cbc8c2339cfafde8efd559df",
+   "fetched_utc": "2026-11-10T13:59:14Z"
+  },
+  {
+   "file": "p010_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-010/ses-04/eeg/sub-010_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 95007168,
+   "sha256": "0f09adc77d69a847b32a706376738a2c01fcc6f00359dd4da9910a5db0aa176b",
+   "fetched_utc": "2026-11-10T13:59:19Z"
+  },
+  {
+   "file": "p011_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-01/eeg/sub-011_ses-01_task-pullstand_eeg.set",
+   "bytes": 3712080,
+   "sha256": "716d8009fcef4a2741095d0bdf6b4370bb33022a583c52aa5e500920d84ffaba",
+   "fetched_utc": "2026-11-10T13:59:33Z"
+  },
+  {
+   "file": "p011_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-01/eeg/sub-011_ses-01_task-pullstand_events.tsv",
+   "bytes": 9874,
+   "sha256": "a7ef6f244c96c9189cb1fbf42392935d5309ee9b5a883b27c7f612c78eccf25b",
+   "fetched_utc": "2026-11-10T13:59:33Z"
+  },
+  {
+   "file": "p011_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-01/eeg/sub-011_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 95556680,
+   "sha256": "f7960e66cfb4fd1b075c28e165c53774c886f38365138539fece15585562bf96",
+   "fetched_utc": "2026-11-10T13:59:38Z"
+  },
+  {
+   "file": "p011_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-02/eeg/sub-011_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3684496,
+   "sha256": "86c858c8c8ed3664f453fb093e9b6abab8c0c1a34b6d4e7c1e040387f9e09ae9",
+   "fetched_utc": "2026-11-10T13:59:52Z"
+  },
+  {
+   "file": "p011_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-02/eeg/sub-011_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9812,
+   "sha256": "bd26c9fcbc2b8ff2c053d8789b71ba4a7b114c8b164a5b966fbb6157ca0204ee",
+   "fetched_utc": "2026-11-10T13:59:52Z"
+  },
+  {
+   "file": "p011_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-02/eeg/sub-011_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93522532,
+   "sha256": "db1d33cc360ebf3726ca55931fdff3cf9ad55b5df904ac16bd527cac5385ab8c",
+   "fetched_utc": "2026-11-10T13:59:55Z"
+  },
+  {
+   "file": "p011_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-03/eeg/sub-011_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3701864,
+   "sha256": "978e46240a7d49ef17b5378284331f7bf61667e68190b86ab4ab64b1ccb8bc80",
+   "fetched_utc": "2026-11-10T14:00:10Z"
+  },
+  {
+   "file": "p011_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-03/eeg/sub-011_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9988,
+   "sha256": "4f0e1d152e3a946d2adeb14d70f8b110507b8f0473814e5135bdf483bd8b7310",
+   "fetched_utc": "2026-11-10T14:00:11Z"
+  },
+  {
+   "file": "p011_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-03/eeg/sub-011_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94725856,
+   "sha256": "8ea728c34a87c962847fa3467e18e707476bd4d0457cf7298e8c0f1756b28a04",
+   "fetched_utc": "2026-11-10T14:00:15Z"
+  },
+  {
+   "file": "p011_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-04/eeg/sub-011_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3778776,
+   "sha256": "5d0e527fb4207ded94ef98a343520c7c3baf51a145dbc0e525668b30c4916ad8",
+   "fetched_utc": "2026-11-10T14:00:29Z"
+  },
+  {
+   "file": "p011_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-04/eeg/sub-011_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 10002,
+   "sha256": "0881066f1d79457321a4b939f4f42f3a80631f6b77f211476c07876543652dd8",
+   "fetched_utc": "2026-11-10T14:00:29Z"
+  },
+  {
+   "file": "p011_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-011/ses-04/eeg/sub-011_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 100455800,
+   "sha256": "074942cc9ff6132c651cdb5794e1464651401e4b47714d01e456c70ef6f31128",
+   "fetched_utc": "2026-11-10T14:00:33Z"
+  },
+  {
+   "file": "p012_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-01/eeg/sub-012_ses-01_task-pullstand_eeg.set",
+   "bytes": 3742768,
+   "sha256": "680001298cdc03d1a9b17f704028be17ba87f35ca7aaf0bceab002cdcc659a9d",
+   "fetched_utc": "2026-11-10T14:00:47Z"
+  },
+  {
+   "file": "p012_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-01/eeg/sub-012_ses-01_task-pullstand_events.tsv",
+   "bytes": 9890,
+   "sha256": "610b849b7ab0cd289c2514b0c3a9a72c3b9bec2478b848c36786d41e4f5990a4",
+   "fetched_utc": "2026-11-10T14:00:47Z"
+  },
+  {
+   "file": "p012_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-01/eeg/sub-012_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 96885760,
+   "sha256": "01f6de3abb9675650e60e1a399e73d434e46c2d4363c6556d3458adbc6e6aeb0",
+   "fetched_utc": "2026-11-10T14:00:54Z"
+  },
+  {
+   "file": "p012_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-02/eeg/sub-012_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3750912,
+   "sha256": "7e2a96197aab98926aed619b0d7f6643f13c907a01c992421c8401cafeaf517d",
+   "fetched_utc": "2026-11-10T14:01:08Z"
+  },
+  {
+   "file": "p012_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-02/eeg/sub-012_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9902,
+   "sha256": "20c5dfe4be45f55eed6fa3d9816ee5a0c11ad63b1477ec92039674f6028072b8",
+   "fetched_utc": "2026-11-10T14:01:08Z"
+  },
+  {
+   "file": "p012_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-02/eeg/sub-012_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 97493680,
+   "sha256": "76e47b99a41018cbbefc3217f61cc147dc22aa756d95c0751e85a4bfffeac049",
+   "fetched_utc": "2026-11-10T14:01:12Z"
+  },
+  {
+   "file": "p012_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-03/eeg/sub-012_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3718648,
+   "sha256": "129fa1872b99807c1122d4d821c4e7686965ccba7a8ca25d408855b7f69ac2c9",
+   "fetched_utc": "2026-11-10T14:01:26Z"
+  },
+  {
+   "file": "p012_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-03/eeg/sub-012_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9989,
+   "sha256": "c250963ebb977e4c33fe544794e8cdf1afa6359e1a6fa30a51339c7a6415cf95",
+   "fetched_utc": "2026-11-10T14:01:26Z"
+  },
+  {
+   "file": "p012_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-03/eeg/sub-012_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95018492,
+   "sha256": "03ad7d834a27a59db95f386d030e9a6b6234267e35e902b0062ba5268fc12d10",
+   "fetched_utc": "2026-11-10T14:01:44Z"
+  },
+  {
+   "file": "p012_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-04/eeg/sub-012_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3723504,
+   "sha256": "1f368e72034fa72d993d4f02a105d58181c04696ce5fea02b771af52ee9dff93",
+   "fetched_utc": "2026-11-10T14:01:57Z"
+  },
+  {
+   "file": "p012_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-04/eeg/sub-012_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9987,
+   "sha256": "661393c05edeb926c7b1f400aa6fa454789d146a1d3cfa14ada7dc603020c03b",
+   "fetched_utc": "2026-11-10T14:01:57Z"
+  },
+  {
+   "file": "p012_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-012/ses-04/eeg/sub-012_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 95380264,
+   "sha256": "8f8b874f5129b2c494e87c756232275af995c94658a7e1cf4235a525532a0832",
+   "fetched_utc": "2026-11-10T14:02:00Z"
+  },
+  {
+   "file": "p013_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-01/eeg/sub-013_ses-01_task-pullstand_eeg.set",
+   "bytes": 3667632,
+   "sha256": "b1a39b058c177cb3180bc4e912e35108110fba8cc51a080ede386aede93473a9",
+   "fetched_utc": "2026-11-10T14:02:14Z"
+  },
+  {
+   "file": "p013_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-01/eeg/sub-013_ses-01_task-pullstand_events.tsv",
+   "bytes": 9808,
+   "sha256": "982393f5a51a4842e9414e219cf23434e1e8983436f61c0f5c31b619d055b375",
+   "fetched_utc": "2026-11-10T14:02:15Z"
+  },
+  {
+   "file": "p013_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-01/eeg/sub-013_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94089924,
+   "sha256": "86896e6130aac2107cac6b7de28091626fe58b0d09dc8c3a69ead8019e5930b8",
+   "fetched_utc": "2026-11-10T14:02:20Z"
+  },
+  {
+   "file": "p013_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-02/eeg/sub-013_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3701992,
+   "sha256": "fab9854abcc83b4ab0d1fbdba90f027d11440cdb5f3a09a47195469050e6c6c9",
+   "fetched_utc": "2026-11-10T14:02:34Z"
+  },
+  {
+   "file": "p013_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-02/eeg/sub-013_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9889,
+   "sha256": "4ce7cc053052f623354221adf34bd90d2d2af373400d22c9a7f551e45279a1d7",
+   "fetched_utc": "2026-11-10T14:02:34Z"
+  },
+  {
+   "file": "p013_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-02/eeg/sub-013_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 96631864,
+   "sha256": "d63d797695c56eb031d00111283c6738e3c47ed1a7aa9c10c863729cd6897f8a",
+   "fetched_utc": "2026-11-10T14:02:37Z"
+  },
+  {
+   "file": "p013_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-03/eeg/sub-013_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3697448,
+   "sha256": "34e8c0d6ad2c1457120c0302eb5497d7d33002120bda272f60c290b61948d956",
+   "fetched_utc": "2026-11-10T14:02:51Z"
+  },
+  {
+   "file": "p013_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-03/eeg/sub-013_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9990,
+   "sha256": "5d0735bd97f7745bc5bbe75e0b3a614df28e534323fffbe48aedd50d28642f53",
+   "fetched_utc": "2026-11-10T14:02:52Z"
+  },
+  {
+   "file": "p013_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-03/eeg/sub-013_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 96221220,
+   "sha256": "9e3fd2093df6cfca91115abbba470ec73c5c9dd9d1eccf37a56e16d328f9ba46",
+   "fetched_utc": "2026-11-10T14:02:55Z"
+  },
+  {
+   "file": "p013_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-04/eeg/sub-013_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3673024,
+   "sha256": "b18dea176ed09d7c4027bbc3b714a4f7a61e24aa02729740fa7eeaa2e1ea1080",
+   "fetched_utc": "2026-11-10T14:03:07Z"
+  },
+  {
+   "file": "p013_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-04/eeg/sub-013_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9978,
+   "sha256": "85ff11e4c4e8f708570e8b3810e9f079670a7f944a6f408490e05601b0bb4956",
+   "fetched_utc": "2026-11-10T14:03:08Z"
+  },
+  {
+   "file": "p013_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-013/ses-04/eeg/sub-013_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94401632,
+   "sha256": "7429b49f4b356a8f630d84a7656109ad542651e2e0f57335c90c3bcd1842bbc5",
+   "fetched_utc": "2026-11-10T14:03:13Z"
+  },
+  {
+   "file": "p014_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-01/eeg/sub-014_ses-01_task-pullstand_eeg.set",
+   "bytes": 3627352,
+   "sha256": "43ba856106c4f377286b6bbdfba958b904ed2d4b933cf0841aa1486f35a98334",
+   "fetched_utc": "2026-11-10T14:03:26Z"
+  },
+  {
+   "file": "p014_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-01/eeg/sub-014_ses-01_task-pullstand_events.tsv",
+   "bytes": 9863,
+   "sha256": "706c80588399ab3694a78e48996b3691a20e2512ca8db3c34a847c2b9c3d6f98",
+   "fetched_utc": "2026-11-10T14:03:26Z"
+  },
+  {
+   "file": "p014_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-01/eeg/sub-014_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 92945604,
+   "sha256": "4cf129d39077cec47d189a58dda8882d4199da30c389fb5aa70004bf1c9346d3",
+   "fetched_utc": "2026-11-10T14:03:31Z"
+  },
+  {
+   "file": "p014_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-02/eeg/sub-014_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3633752,
+   "sha256": "a8bbb87cb54767baa45a3793ddaad6e45a0bb4f729191f81f9d2b6d2fe0970c1",
+   "fetched_utc": "2026-11-10T14:03:44Z"
+  },
+  {
+   "file": "p014_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-02/eeg/sub-014_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9879,
+   "sha256": "cbf61068a69ed2e9dcc691a833510c07434175f79ac1f53fd2232a5d32a1121d",
+   "fetched_utc": "2026-11-10T14:03:44Z"
+  },
+  {
+   "file": "p014_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-02/eeg/sub-014_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93424192,
+   "sha256": "8ee4044916d69addca05af0de9f6a9a0fc3a85da0e9c19c70e568f9f479c5a28",
+   "fetched_utc": "2026-11-10T14:03:48Z"
+  },
+  {
+   "file": "p014_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-03/eeg/sub-014_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3655472,
+   "sha256": "6a68cf74221c26e6aea93558a0f00b1151c72ccbc7b45838e203f2f119945ac0",
+   "fetched_utc": "2026-11-10T14:04:01Z"
+  },
+  {
+   "file": "p014_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-03/eeg/sub-014_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9984,
+   "sha256": "c1055abab4fdb4f7c2f227fe160a4f156f171d6328228ff25d93a81888dff83e",
+   "fetched_utc": "2026-11-10T14:04:01Z"
+  },
+  {
+   "file": "p014_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-03/eeg/sub-014_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94970216,
+   "sha256": "bba825baad0f9b37626d48463fa2eb41b62bb68578abd201793a91c08e287210",
+   "fetched_utc": "2026-11-10T14:04:14Z"
+  },
+  {
+   "file": "p014_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-04/eeg/sub-014_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3644704,
+   "sha256": "523eefb9d749463b8a822fc2901a43b946eb8b3b0cc6e0a409948f5a51f29d87",
+   "fetched_utc": "2026-11-10T14:04:27Z"
+  },
+  {
+   "file": "p014_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-04/eeg/sub-014_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9978,
+   "sha256": "2a4d652840c3936b898cead680a71463fe8cdc80af95f023034df9107b6937cf",
+   "fetched_utc": "2026-11-10T14:04:27Z"
+  },
+  {
+   "file": "p014_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-014/ses-04/eeg/sub-014_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94168000,
+   "sha256": "c48c21354831e2437d66f658a55d1a8fa5ae600a883373b54d26a52c77946fdd",
+   "fetched_utc": "2026-11-10T14:04:32Z"
+  },
+  {
+   "file": "p015_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-01/eeg/sub-015_ses-01_task-pullstand_eeg.set",
+   "bytes": 3649608,
+   "sha256": "58c33d4d695ecd51d7294b7a720aab99a65bff548ce6ddb24b7c12bea0fa146e",
+   "fetched_utc": "2026-11-10T14:04:45Z"
+  },
+  {
+   "file": "p015_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-01/eeg/sub-015_ses-01_task-pullstand_events.tsv",
+   "bytes": 9861,
+   "sha256": "cc3593a47e68ef78a128133f06d16e688dd61e49e10893165a888861e91ab011",
+   "fetched_utc": "2026-11-10T14:04:45Z"
+  },
+  {
+   "file": "p015_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-01/eeg/sub-015_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93423596,
+   "sha256": "9aa42e2fa7e138ea1986718f2bd5ec3f40228bb78742ef8f1dcbf0eee6aaeee5",
+   "fetched_utc": "2026-11-10T14:04:48Z"
+  },
+  {
+   "file": "p015_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-02/eeg/sub-015_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3698568,
+   "sha256": "f8ebca3add143d44f9fd30cb81cad317c92b330faebbef417ad66c04f4943984",
+   "fetched_utc": "2026-11-10T14:05:02Z"
+  },
+  {
+   "file": "p015_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-02/eeg/sub-015_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9896,
+   "sha256": "7e98f2df469b97417844320e89375bfebec3c781f00e59131dad3ec3f12bf83a",
+   "fetched_utc": "2026-11-10T14:05:02Z"
+  },
+  {
+   "file": "p015_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-02/eeg/sub-015_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 97071712,
+   "sha256": "753c6e050208c9e97089dc34fe69a976f32a28c92001eff3c2ddfd9df0f1f7f7",
+   "fetched_utc": "2026-11-10T14:05:17Z"
+  },
+  {
+   "file": "p015_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-03/eeg/sub-015_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3661720,
+   "sha256": "f204bef305d5b3039244217c8e0d4f3ceb4b59a1f33c6e6fcabbc734155193d7",
+   "fetched_utc": "2026-11-10T14:05:30Z"
+  },
+  {
+   "file": "p015_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-03/eeg/sub-015_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9983,
+   "sha256": "6bc80ab3f506e5e1ebc8021709a294b0e9e618266d5872ee4f4f7fcc13a9f9ac",
+   "fetched_utc": "2026-11-10T14:05:30Z"
+  },
+  {
+   "file": "p015_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-03/eeg/sub-015_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94255016,
+   "sha256": "7711939da39aae8767dab69e43584d9a33d01e9493dce10578e8080a075c8bb4",
+   "fetched_utc": "2026-11-10T14:05:36Z"
+  },
+  {
+   "file": "p015_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-04/eeg/sub-015_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3664864,
+   "sha256": "9732801e18595d6ec678e2eb0196df49f4192bc0bd4a1287db19754335f7e88d",
+   "fetched_utc": "2026-11-10T14:05:48Z"
+  },
+  {
+   "file": "p015_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-04/eeg/sub-015_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "d519a571570b9764af689cef490a64f41b11e50f737b4b85cf27d14884783fb5",
+   "fetched_utc": "2026-11-10T14:05:48Z"
+  },
+  {
+   "file": "p015_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-015/ses-04/eeg/sub-015_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94489244,
+   "sha256": "863463311465de0a9656703c3dac38494fdd344a0fc08fead885e8f69dec2a0c",
+   "fetched_utc": "2026-11-10T14:05:52Z"
+  },
+  {
+   "file": "p016_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-01/eeg/sub-016_ses-01_task-pullstand_eeg.set",
+   "bytes": 3635440,
+   "sha256": "d6a4be5c2d043ef1c83055dadeb53392f002ea11b9026a2b4a31d00d5904d299",
+   "fetched_utc": "2026-11-10T14:06:06Z"
+  },
+  {
+   "file": "p016_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-01/eeg/sub-016_ses-01_task-pullstand_events.tsv",
+   "bytes": 9870,
+   "sha256": "ab801860ecfc74a5960e693b9dff62c14785c6ae16c8e2dbc9b3f43091b20cfd",
+   "fetched_utc": "2026-11-10T14:06:06Z"
+  },
+  {
+   "file": "p016_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-01/eeg/sub-016_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 92896732,
+   "sha256": "102e54a9d01e896a98cae715ac113bf84134be4b2c5d8646eb83a1dc55dd99c7",
+   "fetched_utc": "2026-11-10T14:06:09Z"
+  },
+  {
+   "file": "p016_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-02/eeg/sub-016_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3636208,
+   "sha256": "e980d88937c047747fed1e2463aa19826484243363aad2d8042d335d6b4b5d66",
+   "fetched_utc": "2026-11-10T14:06:22Z"
+  },
+  {
+   "file": "p016_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-02/eeg/sub-016_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9678,
+   "sha256": "946cb9aac0f06658133272e65cf52b4e37c03dbcd94715e6b7a20075051b894b",
+   "fetched_utc": "2026-11-10T14:06:22Z"
+  },
+  {
+   "file": "p016_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-02/eeg/sub-016_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93012356,
+   "sha256": "d4aa3b54750ebe0351abd035e4d254c379552def114eb96dc45856209a043428",
+   "fetched_utc": "2026-11-10T14:06:26Z"
+  },
+  {
+   "file": "p016_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-03/eeg/sub-016_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3654104,
+   "sha256": "61ba87abdba101478b7fb06a64e4bf7498bdc49a252d14d4548dde20f0397d73",
+   "fetched_utc": "2026-11-10T14:06:38Z"
+  },
+  {
+   "file": "p016_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-03/eeg/sub-016_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9988,
+   "sha256": "fa7338068e6b8f338a98935fb15f384d3b440ce5ec8f68c64587c1bacacee7c9",
+   "fetched_utc": "2026-11-10T14:06:39Z"
+  },
+  {
+   "file": "p016_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-03/eeg/sub-016_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94216872,
+   "sha256": "999fef29b307d2d959709a25f379b8c34d01c9fd500759dd4fe6f2f70f2166c4",
+   "fetched_utc": "2026-11-10T14:06:42Z"
+  },
+  {
+   "file": "p016_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-04/eeg/sub-016_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3667488,
+   "sha256": "c04431909c35afb1f498434377f6df8db2c693b6258920f8753e94c28877d512",
+   "fetched_utc": "2026-11-10T14:06:54Z"
+  },
+  {
+   "file": "p016_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-04/eeg/sub-016_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9985,
+   "sha256": "3ecf05ebb1ef6ffc9b95f7513dbd9fda850834fa6fd2c0219caf7d3d546dfe01",
+   "fetched_utc": "2026-11-10T14:06:54Z"
+  },
+  {
+   "file": "p016_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-016/ses-04/eeg/sub-016_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 95213980,
+   "sha256": "50edb00e6b7511a8a095efabb246e043af7feaeee3460f0759f6b98068033c0f",
+   "fetched_utc": "2026-11-10T14:06:58Z"
+  },
+  {
+   "file": "p017_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-01/eeg/sub-017_ses-01_task-pullstand_eeg.set",
+   "bytes": 3643560,
+   "sha256": "23d4bd80388d97942e97669ee31809af8ff79c838dd196e21937befc053b243a",
+   "fetched_utc": "2026-11-10T14:07:10Z"
+  },
+  {
+   "file": "p017_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-01/eeg/sub-017_ses-01_task-pullstand_events.tsv",
+   "bytes": 9877,
+   "sha256": "f5250aedc14718c96357aeaa80c6e3f288635d6cef6b00dd8740bfa62dd531a6",
+   "fetched_utc": "2026-11-10T14:07:10Z"
+  },
+  {
+   "file": "p017_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-01/eeg/sub-017_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93101756,
+   "sha256": "b3f9fea6b598ff1a2da0797b9c54ad22cf57c8eefbf2f30b639d97f922def9b1",
+   "fetched_utc": "2026-11-10T14:07:15Z"
+  },
+  {
+   "file": "p017_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-02/eeg/sub-017_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3642640,
+   "sha256": "e9216a1006e04f39cae70417c1d5f68a4d080f0c80a20ebc06fac6b09be19fd7",
+   "fetched_utc": "2026-11-10T14:07:26Z"
+  },
+  {
+   "file": "p017_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-02/eeg/sub-017_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9623,
+   "sha256": "448836e21cdec34aff72bed348c294ff686d49a0b4773be4035d1827669bc546",
+   "fetched_utc": "2026-11-10T14:07:27Z"
+  },
+  {
+   "file": "p017_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-02/eeg/sub-017_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93111888,
+   "sha256": "1785ef7bc32ad98d91b5cf6c77c8a95afafc00f42fe8b8acead2d1b664e3f42f",
+   "fetched_utc": "2026-11-10T14:07:31Z"
+  },
+  {
+   "file": "p017_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-03/eeg/sub-017_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3671400,
+   "sha256": "0179592757225c9a12a52c2bd81918300a60ff5480e6f7f4b94225551b300f28",
+   "fetched_utc": "2026-11-10T14:07:43Z"
+  },
+  {
+   "file": "p017_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-03/eeg/sub-017_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9987,
+   "sha256": "61d6ddba317c55beeabd953d315730f40fb7896e24d8d3e57113de5d4b550cc0",
+   "fetched_utc": "2026-11-10T14:07:43Z"
+  },
+  {
+   "file": "p017_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-03/eeg/sub-017_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95106104,
+   "sha256": "e38e35491ab33b827ab8d8cd4fccd03fb203db01f20fcc85e9188a21e24672ca",
+   "fetched_utc": "2026-11-10T14:07:48Z"
+  },
+  {
+   "file": "p017_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-04/eeg/sub-017_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3656032,
+   "sha256": "0823652e31a6af9aa64e5cc0aa7dea783aa4d167601e381d01cdbbcddceaf353",
+   "fetched_utc": "2026-11-10T14:07:59Z"
+  },
+  {
+   "file": "p017_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-04/eeg/sub-017_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9983,
+   "sha256": "b300f81777f095d2ddb59c70c652a8993db8e15b02ffce5f5a82cdef9e9660f5",
+   "fetched_utc": "2026-11-10T14:07:59Z"
+  },
+  {
+   "file": "p017_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-017/ses-04/eeg/sub-017_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 93961188,
+   "sha256": "55a9c5a524f263e31f1e6b2eedfad93aca8e44e10191a77a787bd438baddb45a",
+   "fetched_utc": "2026-11-10T14:08:02Z"
+  },
+  {
+   "file": "p018_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-01/eeg/sub-018_ses-01_task-pullstand_eeg.set",
+   "bytes": 3652488,
+   "sha256": "1a7e737100f0aefb93b0ee06ca30e064b5d5a0c63594bd3b5ca90889646e43d5",
+   "fetched_utc": "2026-11-10T14:08:14Z"
+  },
+  {
+   "file": "p018_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-01/eeg/sub-018_ses-01_task-pullstand_events.tsv",
+   "bytes": 9880,
+   "sha256": "a2fe926db737dd259e740f1579721eb434c26310751952aa57346293522348fc",
+   "fetched_utc": "2026-11-10T14:08:14Z"
+  },
+  {
+   "file": "p018_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-01/eeg/sub-018_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93257908,
+   "sha256": "4a81d3513ed9b27a71ac74d4bf4570682f4405c79c2e75a92e6ef453f84c3f0f",
+   "fetched_utc": "2026-11-10T14:08:18Z"
+  },
+  {
+   "file": "p018_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-02/eeg/sub-018_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3809200,
+   "sha256": "c99617cc78449050b406c8d163c09e8aa4eb57856403ba91421a33313ae1a103",
+   "fetched_utc": "2026-11-10T14:08:30Z"
+  },
+  {
+   "file": "p018_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-02/eeg/sub-018_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9979,
+   "sha256": "a3f0673de81b4f27c8728f807b6fdfc919dcff3dce24f81f1ec2a40d9ce777a0",
+   "fetched_utc": "2026-11-10T14:08:30Z"
+  },
+  {
+   "file": "p018_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-02/eeg/sub-018_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 104916264,
+   "sha256": "6e5f66da3e88313c2b7d171df0c6a9bb3c87ae77295b3edb3c08daa6cc77eec6",
+   "fetched_utc": "2026-11-10T14:08:35Z"
+  },
+  {
+   "file": "p018_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-03/eeg/sub-018_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3670888,
+   "sha256": "ca5dbd21c08aa9dc77c396c51266f577ae5b3b0ccacd5aee1333abfe10bc07b1",
+   "fetched_utc": "2026-11-10T14:08:47Z"
+  },
+  {
+   "file": "p018_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-03/eeg/sub-018_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9986,
+   "sha256": "84dd9d6f3d7e9d3e5ed101d172380736bdd342585dea12966b14a9d891ba279b",
+   "fetched_utc": "2026-11-10T14:08:48Z"
+  },
+  {
+   "file": "p018_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-03/eeg/sub-018_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94558380,
+   "sha256": "3fbb3b975b237e98d33affaddbcdca8ce9c6c165b7db51b0e7203a592cde6c8a",
+   "fetched_utc": "2026-11-10T14:08:51Z"
+  },
+  {
+   "file": "p018_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-04/eeg/sub-018_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3666416,
+   "sha256": "29887a7c4611ba9f25d032c0c32994b550763a9876ccc7494a10c11e7dcfde37",
+   "fetched_utc": "2026-11-10T14:09:03Z"
+  },
+  {
+   "file": "p018_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-04/eeg/sub-018_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9980,
+   "sha256": "41e10bb856cfb44ec05a6658d3fe696c06d07b8448b272e7279667e8ca21f0fb",
+   "fetched_utc": "2026-11-10T14:09:03Z"
+  },
+  {
+   "file": "p018_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-018/ses-04/eeg/sub-018_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94225216,
+   "sha256": "8e9de4002119d0e44dcbd6012176883340f75a6f199941401b25066bdb703492",
+   "fetched_utc": "2026-11-10T14:09:07Z"
+  },
+  {
+   "file": "p019_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-01/eeg/sub-019_ses-01_task-pullstand_eeg.set",
+   "bytes": 3628032,
+   "sha256": "143282533c5423bf7776c5a88a8233bd10ca6a64f46910f467440d37c6eab29d",
+   "fetched_utc": "2026-11-10T14:09:18Z"
+  },
+  {
+   "file": "p019_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-01/eeg/sub-019_ses-01_task-pullstand_events.tsv",
+   "bytes": 9808,
+   "sha256": "fcb19ed7a8b07b8eda28cfb316a92eee86ea1a2c79d8b27e8e9bb158e0050a0a",
+   "fetched_utc": "2026-11-10T14:09:18Z"
+  },
+  {
+   "file": "p019_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-01/eeg/sub-019_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 92769188,
+   "sha256": "3ba82d4a90fbe914e99575a4448e76fa25049f7bfd5c50581175bc15f5789ca5",
+   "fetched_utc": "2026-11-10T14:09:24Z"
+  },
+  {
+   "file": "p019_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-02/eeg/sub-019_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3633912,
+   "sha256": "e3c8cd72fac4597764085f2e8c16572ea90d51dd5e7343a3b40c6d73286d457c",
+   "fetched_utc": "2026-11-10T14:09:35Z"
+  },
+  {
+   "file": "p019_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-02/eeg/sub-019_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9878,
+   "sha256": "9b12b9a8554a380c49b40e0e3beef2a4607856727b185f4964e617a9e5d250e5",
+   "fetched_utc": "2026-11-10T14:09:35Z"
+  },
+  {
+   "file": "p019_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-02/eeg/sub-019_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93189964,
+   "sha256": "00bc2e9d2d902bbac03fe152f38b1e02bcafebb38ed748f21f19e75dc77d995f",
+   "fetched_utc": "2026-11-10T14:09:41Z"
+  },
+  {
+   "file": "p019_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-03/eeg/sub-019_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3642608,
+   "sha256": "62d192bade7a2fbf5d6ae06fe2d85358040bce899d2b35bd585e6c3f3d473b82",
+   "fetched_utc": "2026-11-10T14:09:52Z"
+  },
+  {
+   "file": "p019_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-03/eeg/sub-019_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9986,
+   "sha256": "89fa09e86e4f7466716741b3fdadd5bf3031cf2fe7cdccb49364ba9630f8ba60",
+   "fetched_utc": "2026-11-10T14:09:52Z"
+  },
+  {
+   "file": "p019_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-03/eeg/sub-019_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 93766296,
+   "sha256": "4bf81be4f3a0eb42bd3226af41573145b279b94be3e60122d6ed25d4875e1bf1",
+   "fetched_utc": "2026-11-10T14:09:56Z"
+  },
+  {
+   "file": "p019_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-04/eeg/sub-019_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3692872,
+   "sha256": "aba8e50cd059dc4c0112b455599576a95930eba34c86b4f7488a78de1d695cc0",
+   "fetched_utc": "2026-11-10T14:10:06Z"
+  },
+  {
+   "file": "p019_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-04/eeg/sub-019_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9994,
+   "sha256": "94b7c235954aa3c9df3a753df9976d1141998fd2e14c90ed9c6342ee6a226f4b",
+   "fetched_utc": "2026-11-10T14:10:06Z"
+  },
+  {
+   "file": "p019_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-019/ses-04/eeg/sub-019_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 97510964,
+   "sha256": "9d02d717b7dc90383cf6b21c3c7a59fe22e0ad026338609267b97cf46ded74cf",
+   "fetched_utc": "2026-11-10T14:10:09Z"
+  },
+  {
+   "file": "p020_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-01/eeg/sub-020_ses-01_task-pullstand_eeg.set",
+   "bytes": 3637688,
+   "sha256": "8a531b6e897b5bb01be76073618d3634204920c80d4566377b8f22ec040a4c43",
+   "fetched_utc": "2026-11-10T14:10:20Z"
+  },
+  {
+   "file": "p020_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-01/eeg/sub-020_ses-01_task-pullstand_events.tsv",
+   "bytes": 9753,
+   "sha256": "399bc24fdad856d459fa60f485cd11a10030e7c7575fb9f93c90282ee3cda492",
+   "fetched_utc": "2026-11-10T14:10:20Z"
+  },
+  {
+   "file": "p020_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-01/eeg/sub-020_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93140496,
+   "sha256": "3c92e076091a878b7a1bd5f95df1c1172fe9fd18d3346229e773050485a8f6e4",
+   "fetched_utc": "2026-11-10T14:10:23Z"
+  },
+  {
+   "file": "p020_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-02/eeg/sub-020_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3633768,
+   "sha256": "89047b86825023f73d5ec8fe2d6e5acea7abd5e5bc1210cadb98fcb993f66d5f",
+   "fetched_utc": "2026-11-10T14:10:34Z"
+  },
+  {
+   "file": "p020_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-02/eeg/sub-020_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9237,
+   "sha256": "c5a49de21909d16b3d3e9e44c54e1549241806efbc2dec8b5df24c0877e7a08b",
+   "fetched_utc": "2026-11-10T14:10:34Z"
+  },
+  {
+   "file": "p020_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-02/eeg/sub-020_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93003416,
+   "sha256": "b47b5d7a060569ebc7c3877a8a22f8becff15b8551d25d7e6adc1b3a55b3ed51",
+   "fetched_utc": "2026-11-10T14:10:38Z"
+  },
+  {
+   "file": "p020_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-03/eeg/sub-020_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3649376,
+   "sha256": "92fd7cd277dd2106921711a710d67bd95c9be1b32974430491993c036d783c7b",
+   "fetched_utc": "2026-11-10T14:10:49Z"
+  },
+  {
+   "file": "p020_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-03/eeg/sub-020_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9975,
+   "sha256": "2769ea2bfe629d249f5f99763d4ec1013deaaf1fdd288fdf73c60d60ed640b56",
+   "fetched_utc": "2026-11-10T14:10:49Z"
+  },
+  {
+   "file": "p020_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-03/eeg/sub-020_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 93903376,
+   "sha256": "f3dfb7ef78576b13a83357983bffdf8558ab69fa7f5a70a9790e276713a6d77c",
+   "fetched_utc": "2026-11-10T14:10:53Z"
+  },
+  {
+   "file": "p020_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-04/eeg/sub-020_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3647528,
+   "sha256": "14f82aa07b98449afccc7652172948f3e2f7ce7f146fb1c7d61b19128949ecba",
+   "fetched_utc": "2026-11-10T14:11:04Z"
+  },
+  {
+   "file": "p020_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-04/eeg/sub-020_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "1c5d23122abdb65e8c30e0e7387630c00bece3ff50effbd153aacae7a463a1f8",
+   "fetched_utc": "2026-11-10T14:11:04Z"
+  },
+  {
+   "file": "p020_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-020/ses-04/eeg/sub-020_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 93765700,
+   "sha256": "acdde0525508d55402266d0b5365d3766bbe2dd8336c19421dfc27c8ad259e1e",
+   "fetched_utc": "2026-11-10T14:11:07Z"
+  },
+  {
+   "file": "p021_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-01/eeg/sub-021_ses-01_task-pullstand_eeg.set",
+   "bytes": 3645832,
+   "sha256": "e9faa452bd1f3c6d7bffddf92fe70ee501ca691866178cdd2ea157b58c5cd619",
+   "fetched_utc": "2026-11-10T14:11:18Z"
+  },
+  {
+   "file": "p021_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-01/eeg/sub-021_ses-01_task-pullstand_events.tsv",
+   "bytes": 9870,
+   "sha256": "b5e94fc5bd5818cdcecdbfdd122e83ee71e7206ad1f454636eff69b282f0be33",
+   "fetched_utc": "2026-11-10T14:11:18Z"
+  },
+  {
+   "file": "p021_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-01/eeg/sub-021_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93111888,
+   "sha256": "b659b68018b68674278365d33b3b4826457c129927d9119e138b742304765db5",
+   "fetched_utc": "2026-11-10T14:11:24Z"
+  },
+  {
+   "file": "p021_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-02/eeg/sub-021_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3659840,
+   "sha256": "a6ba41e43d72964f7584d30620e094f6a2c9fe95b0a53bf1d7fbc023f687c44e",
+   "fetched_utc": "2026-11-10T14:11:34Z"
+  },
+  {
+   "file": "p021_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-02/eeg/sub-021_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9806,
+   "sha256": "98bc71d81f32db48f9c0afc931433aaab534291760afd796ef9030aa23e384be",
+   "fetched_utc": "2026-11-10T14:11:35Z"
+  },
+  {
+   "file": "p021_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-02/eeg/sub-021_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 94176940,
+   "sha256": "f5b044c5e47e70256e7761296c7b82d5f3f741fa04a41bbdca269e4054ba8c89",
+   "fetched_utc": "2026-11-10T14:11:39Z"
+  },
+  {
+   "file": "p021_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-03/eeg/sub-021_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3671712,
+   "sha256": "9eac4c107afbd0a2d8900f5141cb52c2abf877191fdebc7f1caae167041966bd",
+   "fetched_utc": "2026-11-10T14:11:49Z"
+  },
+  {
+   "file": "p021_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-03/eeg/sub-021_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9983,
+   "sha256": "d63adb8830b34d2c13b0ab2dd9c97bef8e1cd120bf09c87a889a613884261836",
+   "fetched_utc": "2026-11-10T14:11:49Z"
+  },
+  {
+   "file": "p021_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-03/eeg/sub-021_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94970216,
+   "sha256": "34980e0f59091e7d5b68c019a003e206cb89ef2b2d20a9366b4a35acdf4cf48d",
+   "fetched_utc": "2026-11-10T14:11:54Z"
+  },
+  {
+   "file": "p021_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-04/eeg/sub-021_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3706208,
+   "sha256": "a6c1af08e6c345cba3902bc1c8050687721e948c9a6f48f5c5d61b11150edfbf",
+   "fetched_utc": "2026-11-10T14:12:04Z"
+  },
+  {
+   "file": "p021_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-04/eeg/sub-021_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "1d96508cd96014f3c726dba8187de11b81842daeaa4fe4e99f664ef458cce248",
+   "fetched_utc": "2026-11-10T14:12:04Z"
+  },
+  {
+   "file": "p021_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-021/ses-04/eeg/sub-021_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 97540168,
+   "sha256": "7539ab0778298b73a6e87805e2420ee5e93208283f68fb127320b7386ba54693",
+   "fetched_utc": "2026-11-10T14:12:08Z"
+  },
+  {
+   "file": "p022_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-01/eeg/sub-022_ses-01_task-pullstand_eeg.set",
+   "bytes": 3636744,
+   "sha256": "dcfbbe1a2ecc33fb538d23b09801be3b6c7f826961813c6ca854c5c41805cf50",
+   "fetched_utc": "2026-11-10T14:12:19Z"
+  },
+  {
+   "file": "p022_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-01/eeg/sub-022_ses-01_task-pullstand_events.tsv",
+   "bytes": 9873,
+   "sha256": "0400f67fb79292625d8c6a8ab04b339725f9d6d73263734e7bae6cdc79e6a275",
+   "fetched_utc": "2026-11-10T14:12:19Z"
+  },
+  {
+   "file": "p022_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-01/eeg/sub-022_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 92885408,
+   "sha256": "b6350af8e1b9ad82a4b166ed54b9e282dfd50fd0969b72546ffdf27a2d65eaeb",
+   "fetched_utc": "2026-11-10T14:12:24Z"
+  },
+  {
+   "file": "p022_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-02/eeg/sub-022_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3639880,
+   "sha256": "89d9049932a26daa4f98f17db30e4da2ce549ab6a75bb8ea0550313e8d42a717",
+   "fetched_utc": "2026-11-10T14:12:34Z"
+  },
+  {
+   "file": "p022_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-02/eeg/sub-022_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9866,
+   "sha256": "bd6afe90c2beb8e60035fa8caac7cc25bedce8f18b67d47ab83350bf1280e40a",
+   "fetched_utc": "2026-11-10T14:12:34Z"
+  },
+  {
+   "file": "p022_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-02/eeg/sub-022_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93120828,
+   "sha256": "bca58cfc4bc9c6bcc24ab6a5cfa2844673d7a724448dde811a7e4accf827eef0",
+   "fetched_utc": "2026-11-10T14:12:38Z"
+  },
+  {
+   "file": "p022_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-03/eeg/sub-022_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3652128,
+   "sha256": "9f1621f01eee0dcc4e186772de85d5a695292d6d1d108079c458b419be9d4551",
+   "fetched_utc": "2026-11-10T14:12:49Z"
+  },
+  {
+   "file": "p022_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-03/eeg/sub-022_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9985,
+   "sha256": "bb548fc17cf90f4aaa3798d7e989e846de1a42ce319cf279b5e3c9e820846dab",
+   "fetched_utc": "2026-11-10T14:12:49Z"
+  },
+  {
+   "file": "p022_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-03/eeg/sub-022_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 93961784,
+   "sha256": "4ed003dedce407ee26eeac220d2414b06d1dd9f019861efd1b21bb2414dc9cf0",
+   "fetched_utc": "2026-11-10T14:12:53Z"
+  },
+  {
+   "file": "p022_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-04/eeg/sub-022_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3654760,
+   "sha256": "154e969e942ae99de1933f20781e6ba78ae42757de94310b2abfe4fd1f4878ec",
+   "fetched_utc": "2026-11-10T14:13:03Z"
+  },
+  {
+   "file": "p022_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-04/eeg/sub-022_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9980,
+   "sha256": "9d10673acac74cdec41c2a7542bf4f9b05ee3413c7bb0f0c24b27aa32ea72ded",
+   "fetched_utc": "2026-11-10T14:13:03Z"
+  },
+  {
+   "file": "p022_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-022/ses-04/eeg/sub-022_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94157868,
+   "sha256": "c2f226f1457c118cc401e8a1e649e4bb569f9fdc555b6529d5aac89e4745dfef",
+   "fetched_utc": "2026-11-10T14:13:08Z"
+  },
+  {
+   "file": "p023_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-01/eeg/sub-023_ses-01_task-pullstand_eeg.set",
+   "bytes": 3647824,
+   "sha256": "2f94366587ab4099887e354c851ce1c57c83b033fff89da6a5fc38ee392260ce",
+   "fetched_utc": "2026-11-10T14:13:17Z"
+  },
+  {
+   "file": "p023_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-01/eeg/sub-023_ses-01_task-pullstand_events.tsv",
+   "bytes": 9861,
+   "sha256": "6ecbebf6e9560a96994caf9cd18ac377a0e52bd96ecc9dfb8427700ab9ff297c",
+   "fetched_utc": "2026-11-10T14:13:18Z"
+  },
+  {
+   "file": "p023_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-01/eeg/sub-023_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93306780,
+   "sha256": "f90616cf1d0020bd2cf249194de9fbea25c881a63932f92cc40a12645f0945cb",
+   "fetched_utc": "2026-11-10T14:13:22Z"
+  },
+  {
+   "file": "p023_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-02/eeg/sub-023_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3670512,
+   "sha256": "65da92867626aa039c2256266b04d0dedaa91d68257fad222ff7c075aa5f28dd",
+   "fetched_utc": "2026-11-10T14:13:32Z"
+  },
+  {
+   "file": "p023_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-02/eeg/sub-023_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9814,
+   "sha256": "dd9a6c5556e1ef97c6cd3104e99e8818f171a9802c72666d278a2cf7ca4ac755",
+   "fetched_utc": "2026-11-10T14:13:32Z"
+  },
+  {
+   "file": "p023_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-02/eeg/sub-023_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 95017896,
+   "sha256": "4edb4164ac3b49c5b547fa309da8179c1c171054c184fd797cc55ecae3585289",
+   "fetched_utc": "2026-11-10T14:13:36Z"
+  },
+  {
+   "file": "p023_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-03/eeg/sub-023_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3680152,
+   "sha256": "20b4a74a7abc92d32132801b48cd9d92d1a4c0147b91f50cde65115e188bb85f",
+   "fetched_utc": "2026-11-10T14:13:47Z"
+  },
+  {
+   "file": "p023_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-03/eeg/sub-023_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9983,
+   "sha256": "21a670e6826d274e5961c97fefffdd0aa4063aec326194010905c5244fad87af",
+   "fetched_utc": "2026-11-10T14:13:47Z"
+  },
+  {
+   "file": "p023_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-03/eeg/sub-023_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 95644888,
+   "sha256": "c3ccb581a4259c1cee4a6972a27b6fdadb8eba99e1e24ae6f5e6b32e12fcd45d",
+   "fetched_utc": "2026-11-10T14:13:51Z"
+  },
+  {
+   "file": "p023_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-04/eeg/sub-023_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3663608,
+   "sha256": "e48f9358a9b28021a6201b4c54a77472804571661757f8037f6f7315ee0dfbd1",
+   "fetched_utc": "2026-11-10T14:14:01Z"
+  },
+  {
+   "file": "p023_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-04/eeg/sub-023_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "bc4a89580bd4ed5ba3828be3e87043bec410f533947003f3f7f0570c35668d0d",
+   "fetched_utc": "2026-11-10T14:14:01Z"
+  },
+  {
+   "file": "p023_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-023/ses-04/eeg/sub-023_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94412360,
+   "sha256": "af7f13cafe44a62f3f9a32a6afb5f1f7935a846bb47448e344394de4b6137a30",
+   "fetched_utc": "2026-11-10T14:14:05Z"
+  },
+  {
+   "file": "p024_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-01/eeg/sub-024_ses-01_task-pullstand_eeg.set",
+   "bytes": 3638328,
+   "sha256": "b9269727e9aaff3b75257063b31b56aab3aa8521747cb9c1c86228f8523f5799",
+   "fetched_utc": "2026-11-10T14:14:15Z"
+  },
+  {
+   "file": "p024_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-01/eeg/sub-024_ses-01_task-pullstand_events.tsv",
+   "bytes": 9873,
+   "sha256": "21223b0e0dd8d3f5191adbb626bffd7f8f5de8a44a5f67db5bc96c9dfa17ebac",
+   "fetched_utc": "2026-11-10T14:14:15Z"
+  },
+  {
+   "file": "p024_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-01/eeg/sub-024_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93012952,
+   "sha256": "09a39bb034c16a5aa74edb4ee72e8adac8538464f500c5dd505dae592c56bf97",
+   "fetched_utc": "2026-11-10T14:14:18Z"
+  },
+  {
+   "file": "p024_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-02/eeg/sub-024_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3646968,
+   "sha256": "1b70cfdf9d353497b3180cbd074d094e647f83f560256f8239eb858afc6c9056",
+   "fetched_utc": "2026-11-10T14:14:28Z"
+  },
+  {
+   "file": "p024_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-02/eeg/sub-024_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9884,
+   "sha256": "66a2e727024ff3ef70fc15585d1552e6fbc7c681f521d6cbf5c5e05ad983a0fa",
+   "fetched_utc": "2026-11-10T14:14:28Z"
+  },
+  {
+   "file": "p024_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-02/eeg/sub-024_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93658420,
+   "sha256": "5dba963e784861ba5fc3cdbc55ed0edf2081f096289b7f7bca722553738f62b4",
+   "fetched_utc": "2026-11-10T14:14:31Z"
+  },
+  {
+   "file": "p024_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-03/eeg/sub-024_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3692040,
+   "sha256": "37b751c4b6f3261f444b4da265f7cf5ee03b00fe7c6b0929bb8973fdba1d9762",
+   "fetched_utc": "2026-11-10T14:14:42Z"
+  },
+  {
+   "file": "p024_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-03/eeg/sub-024_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9990,
+   "sha256": "62f88ba0ee882c521fbe25e487c3bd4e0f6f0f98f8ee72c5ee814e17cc4e796d",
+   "fetched_utc": "2026-11-10T14:14:42Z"
+  },
+  {
+   "file": "p024_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-03/eeg/sub-024_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 96944764,
+   "sha256": "c669ad2a5d82a9b332e91db836a91a1ccad3cfee503336bfcc5e698a76b5b55f",
+   "fetched_utc": "2026-11-10T14:14:46Z"
+  },
+  {
+   "file": "p024_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-04/eeg/sub-024_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3656872,
+   "sha256": "bf56f4ae34863194313161c23bb95b931a976049f5d0c7e8ade9f6e0c78eac12",
+   "fetched_utc": "2026-11-10T14:14:56Z"
+  },
+  {
+   "file": "p024_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-04/eeg/sub-024_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9982,
+   "sha256": "f8d122a06827131cf3c64f03ea65556628cf1e7c2636e1705bf40c9afe004db8",
+   "fetched_utc": "2026-11-10T14:14:56Z"
+  },
+  {
+   "file": "p024_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-024/ses-04/eeg/sub-024_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94324748,
+   "sha256": "9f973f22fcf92015bd4cf368b8038e9d2fd2c83c13a7b53db832ea006eb879a0",
+   "fetched_utc": "2026-11-10T14:15:03Z"
+  },
+  {
+   "file": "p025_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-01/eeg/sub-025_ses-01_task-pullstand_eeg.set",
+   "bytes": 3596496,
+   "sha256": "7b1ff7a6a6100fe6a7cf1c08b8f99e3996fb41f050c6b53997a5469a974d7c87",
+   "fetched_utc": "2026-11-10T14:15:13Z"
+  },
+  {
+   "file": "p025_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-01/eeg/sub-025_ses-01_task-pullstand_events.tsv",
+   "bytes": 9817,
+   "sha256": "28a30338439c4a7ffea31b1337dd8c4e77c196353d3a24e913968c9fc6922a07",
+   "fetched_utc": "2026-11-10T14:15:13Z"
+  },
+  {
+   "file": "p025_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-01/eeg/sub-025_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93053480,
+   "sha256": "0b3f004a75be3a1751d8c4fd9a5f7958cb10238cf1368b5ea3372945a4ad8fee",
+   "fetched_utc": "2026-11-10T14:15:19Z"
+  },
+  {
+   "file": "p025_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-02/eeg/sub-025_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3663544,
+   "sha256": "e4c0792890949f27413d67ef643772ff1c533893ddc56c4d7289faec761ac2a0",
+   "fetched_utc": "2026-11-10T14:15:29Z"
+  },
+  {
+   "file": "p025_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-02/eeg/sub-025_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9837,
+   "sha256": "6e807798fb98f38da2e2634fb65b6bcaffb772da23cf5e86b25816579e20f164",
+   "fetched_utc": "2026-11-10T14:15:29Z"
+  },
+  {
+   "file": "p025_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-02/eeg/sub-025_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 98050940,
+   "sha256": "dd51658dad1101fd72be289962c320fb835c95b77f4a9dc2469055e54fc157f5",
+   "fetched_utc": "2026-11-10T14:15:33Z"
+  },
+  {
+   "file": "p025_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-03/eeg/sub-025_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3289768,
+   "sha256": "6aaf2638e02f4dea3c859512dca0e4ff754c337aca41999f4e535b5ff063e08a",
+   "fetched_utc": "2026-11-10T14:15:44Z"
+  },
+  {
+   "file": "p025_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-03/eeg/sub-025_ses-03_task-rotatestand_events.tsv",
+   "bytes": 7427,
+   "sha256": "e28554edfa70eca77d4a108424bd833a02073708225e206b320ab462272e18be",
+   "fetched_utc": "2026-11-10T14:15:44Z"
+  },
+  {
+   "file": "p025_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-03/eeg/sub-025_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 70860824,
+   "sha256": "ec85ba0f26d804626ea9ca31584dfc7f3026b9630ce9da7225764bfdc712f34f",
+   "fetched_utc": "2026-11-10T14:15:48Z"
+  },
+  {
+   "file": "p025_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-04/eeg/sub-025_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3617496,
+   "sha256": "928936bda81a4c7ed9c49684743ab574e8198dabad15ba312970c0c5f491a6b9",
+   "fetched_utc": "2026-11-10T14:15:56Z"
+  },
+  {
+   "file": "p025_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-04/eeg/sub-025_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9979,
+   "sha256": "aa82762fe22c16d20522681fca567684e5f8b9653c0373c65775d93196d5c3ec",
+   "fetched_utc": "2026-11-10T14:15:56Z"
+  },
+  {
+   "file": "p025_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-025/ses-04/eeg/sub-025_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94529176,
+   "sha256": "fd51c3139437920d8277b471c6224b5ca30a87fa3ed9c1cf8d04f16c84352979",
+   "fetched_utc": "2026-11-10T14:16:02Z"
+  },
+  {
+   "file": "p026_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-01/eeg/sub-026_ses-01_task-pullstand_eeg.set",
+   "bytes": 3660720,
+   "sha256": "419cd6d768349c6717262ce631ebe29da5c719622d0e2c6d75d95b3ffeffe7e9",
+   "fetched_utc": "2026-11-10T14:16:12Z"
+  },
+  {
+   "file": "p026_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-01/eeg/sub-026_ses-01_task-pullstand_events.tsv",
+   "bytes": 9928,
+   "sha256": "d22bb35c199e9070566074e3ab5ade10ccd17572fc0b4abe748dbedead29788c",
+   "fetched_utc": "2026-11-10T14:16:12Z"
+  },
+  {
+   "file": "p026_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-01/eeg/sub-026_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93796096,
+   "sha256": "29ad134a9cdba0d988e968d768a135ae9a5a9dae5cf9e610d27f82c87b6605d6",
+   "fetched_utc": "2026-11-10T14:16:16Z"
+  },
+  {
+   "file": "p026_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-02/eeg/sub-026_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3649664,
+   "sha256": "3eb0124b2942151737b8fddc6d88168279464232696f2eb7fe409e6952dfe69a",
+   "fetched_utc": "2026-11-10T14:16:26Z"
+  },
+  {
+   "file": "p026_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-02/eeg/sub-026_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9869,
+   "sha256": "a3973eff84f02ff38f1638f2b48d38dce4eb7a30573abdcb36ddce1766290f67",
+   "fetched_utc": "2026-11-10T14:16:27Z"
+  },
+  {
+   "file": "p026_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-02/eeg/sub-026_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 92993880,
+   "sha256": "364c02a0b19ba6f6c8d701e66683cac0794048dd702426eee290cef72a0bf093",
+   "fetched_utc": "2026-11-10T14:16:30Z"
+  },
+  {
+   "file": "p026_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-03/eeg/sub-026_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3665088,
+   "sha256": "8e9351efeead0e5808623fdb25303ea7420290d09b0d161f60b926bbae4be052",
+   "fetched_utc": "2026-11-10T14:16:41Z"
+  },
+  {
+   "file": "p026_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-03/eeg/sub-026_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9979,
+   "sha256": "26deed1c415f94357a3c6df48876ea40fc6dcd897d8740a1aa5474dc00ba38b4",
+   "fetched_utc": "2026-11-10T14:16:41Z"
+  },
+  {
+   "file": "p026_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-03/eeg/sub-026_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94070256,
+   "sha256": "428ebf47f100cb3ec70f55316e80fb13908ff8c55adf630ae710300a8e140e01",
+   "fetched_utc": "2026-11-10T14:16:45Z"
+  },
+  {
+   "file": "p026_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-04/eeg/sub-026_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3668480,
+   "sha256": "d583e27af1ee8aed8882cc1041e363ec15b6faf20ec65181659adcd43de9e59a",
+   "fetched_utc": "2026-11-10T14:16:55Z"
+  },
+  {
+   "file": "p026_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-04/eeg/sub-026_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9975,
+   "sha256": "ffaea3f6c7a99c2fed3dff3cd1c92fd4f13addffa14536f71cc00897972d051a",
+   "fetched_utc": "2026-11-10T14:16:55Z"
+  },
+  {
+   "file": "p026_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-026/ses-04/eeg/sub-026_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94322960,
+   "sha256": "be2e17c7d521ea777e55688e1aade31b623daad9db6e952ab8c1ba68042b2284",
+   "fetched_utc": "2026-11-10T14:16:59Z"
+  },
+  {
+   "file": "p027_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-01/eeg/sub-027_ses-01_task-pullstand_eeg.set",
+   "bytes": 3671112,
+   "sha256": "dee8f70e7b3fd9f8f50a390aafde226b95da05625f42a564ba57b901d58409d1",
+   "fetched_utc": "2026-11-10T14:17:09Z"
+  },
+  {
+   "file": "p027_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-01/eeg/sub-027_ses-01_task-pullstand_events.tsv",
+   "bytes": 9869,
+   "sha256": "9eca7bc385e56a2ccff9b7bc833109037ffa7ded53153bb571883abdc93fb345",
+   "fetched_utc": "2026-11-10T14:17:10Z"
+  },
+  {
+   "file": "p027_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-01/eeg/sub-027_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 94246672,
+   "sha256": "68a1dd2be1453336bd93aa826b36cef5f1ed2280890a55083cfd30c6bf12f166",
+   "fetched_utc": "2026-11-10T14:17:14Z"
+  },
+  {
+   "file": "p027_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-02/eeg/sub-027_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3654816,
+   "sha256": "9aa24d19f1cdd409c9f48c37cb4e40c4e0380f054c3e9f026894708067f7f8a7",
+   "fetched_utc": "2026-11-10T14:17:25Z"
+  },
+  {
+   "file": "p027_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-02/eeg/sub-027_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9812,
+   "sha256": "67a008b55f1488e0d937f82f4b9e7bd713e62dc900b0dab8b00ec8cd03b78942",
+   "fetched_utc": "2026-11-10T14:17:25Z"
+  },
+  {
+   "file": "p027_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-02/eeg/sub-027_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93052884,
+   "sha256": "85c756d214ae4a92f6d564c50fee7730a49a06d84f6ec92a46d71adeda9b23d3",
+   "fetched_utc": "2026-11-10T14:17:29Z"
+  },
+  {
+   "file": "p027_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-03/eeg/sub-027_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3668904,
+   "sha256": "a709c2aeda0f67406a1f900e5cfb401da2d3c8cb01e03170d109e5d530b05a7b",
+   "fetched_utc": "2026-11-10T14:17:39Z"
+  },
+  {
+   "file": "p027_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-03/eeg/sub-027_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9985,
+   "sha256": "b51c74de8484bcf54b1d500a64b0839851954d1abbd68c1dfc9c9194649b3b10",
+   "fetched_utc": "2026-11-10T14:17:39Z"
+  },
+  {
+   "file": "p027_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-03/eeg/sub-027_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94011252,
+   "sha256": "2a8d401e39a85bfa20618642b68c119073d6b8b92db40b83c95f0b4e3e04d129",
+   "fetched_utc": "2026-11-10T14:17:43Z"
+  },
+  {
+   "file": "p027_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-04/eeg/sub-027_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3668632,
+   "sha256": "a0d86f0f8d1215be7cee393975310e82b13171f698030c5bcc13d510afe506d0",
+   "fetched_utc": "2026-11-10T14:17:53Z"
+  },
+  {
+   "file": "p027_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-04/eeg/sub-027_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9988,
+   "sha256": "52fbf67e061c2b506d376efbdcb8b98aa68e96c9aa06d1bb56dd143f92c5fb31",
+   "fetched_utc": "2026-11-10T14:17:53Z"
+  },
+  {
+   "file": "p027_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-027/ses-04/eeg/sub-027_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 93990988,
+   "sha256": "1a3a981d3c7d1eb39b7e0ec82f3718486877fb400d3f8368f16f6fd2faec8fcc",
+   "fetched_utc": "2026-11-10T14:17:57Z"
+  },
+  {
+   "file": "p028_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-01/eeg/sub-028_ses-01_task-pullstand_eeg.set",
+   "bytes": 3525016,
+   "sha256": "d317961263b5f5ad200b03490613beda0f9ef2f3a1b8cfd50257d6d58c2e0a10",
+   "fetched_utc": "2026-11-10T14:18:07Z"
+  },
+  {
+   "file": "p028_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-01/eeg/sub-028_ses-01_task-pullstand_events.tsv",
+   "bytes": 9791,
+   "sha256": "c8d09a57cd46067cb7a8e3c692b8007828693c267e4984b2918ed2ab25c5e450",
+   "fetched_utc": "2026-11-10T14:18:07Z"
+  },
+  {
+   "file": "p028_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-01/eeg/sub-028_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 92964676,
+   "sha256": "ad89ab2f3cbb1f0ac004ee4c1b5d33c6edcaeb15e0cafca29d651253d2bd1bc8",
+   "fetched_utc": "2026-11-10T14:18:10Z"
+  },
+  {
+   "file": "p028_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-02/eeg/sub-028_ses-02_task-pullwalk_eeg.set",
+   "bytes": 2531976,
+   "sha256": "c329f9308b6e587ebac141a27581fa4b07ee5ca5af951f37622e51f82989159f",
+   "fetched_utc": "2026-11-10T14:18:21Z"
+  },
+  {
+   "file": "p028_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-02/eeg/sub-028_ses-02_task-pullwalk_events.tsv",
+   "bytes": 1989,
+   "sha256": "f15c028aa13d2887689ed83f00aa0b6cf28020c2d53c9148da0e37d5faca0465",
+   "fetched_utc": "2026-11-10T14:18:21Z"
+  },
+  {
+   "file": "p028_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-02/eeg/sub-028_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 21253360,
+   "sha256": "cac9ef233b146e6bfe4be8fa557a864c425c9b1c322048091ed46c0fd25d94ee",
+   "fetched_utc": "2026-11-10T14:18:22Z"
+  },
+  {
+   "file": "p028_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-03/eeg/sub-028_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3531856,
+   "sha256": "826b71b4185c2e22744a107c284ae46edf4764114c5749f15760126172005529",
+   "fetched_utc": "2026-11-10T14:18:25Z"
+  },
+  {
+   "file": "p028_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-03/eeg/sub-028_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9981,
+   "sha256": "a9e6b388cf4c66d9cbbea3bb204395031224e498c4840f71d726cd98c63b57b9",
+   "fetched_utc": "2026-11-10T14:18:25Z"
+  },
+  {
+   "file": "p028_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-03/eeg/sub-028_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 93383664,
+   "sha256": "1386bcc38b11f12cba113fc7182b4f387996d4864a70128ce31285dc9fbe6895",
+   "fetched_utc": "2026-11-10T14:18:28Z"
+  },
+  {
+   "file": "p028_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-04/eeg/sub-028_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3584760,
+   "sha256": "8a7d765b3ffa1696e9e31c09add28fe7b16ea83ca4c5aa18fcd335c61a906757",
+   "fetched_utc": "2026-11-10T14:18:38Z"
+  },
+  {
+   "file": "p028_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-04/eeg/sub-028_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9996,
+   "sha256": "6e4e1f186293e1319af2f223c75a2d5fff343bbb6c25a9e0c640f0387c3fa7f9",
+   "fetched_utc": "2026-11-10T14:18:38Z"
+  },
+  {
+   "file": "p028_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-028/ses-04/eeg/sub-028_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 97325012,
+   "sha256": "d0b34b1cb140bf2162b7a79ee70cac0f6de3830aa0904722f607354e30a12b8b",
+   "fetched_utc": "2026-11-10T14:18:41Z"
+  },
+  {
+   "file": "p029_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-01/eeg/sub-029_ses-01_task-pullstand_eeg.set",
+   "bytes": 3638736,
+   "sha256": "5da5bcca5229189be55a50c2b7776a584be8227535d9fd42e0b5df51288baab2",
+   "fetched_utc": "2026-11-10T14:18:52Z"
+  },
+  {
+   "file": "p029_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-01/eeg/sub-029_ses-01_task-pullstand_events.tsv",
+   "bytes": 9858,
+   "sha256": "840e3ad23f242afb13e5105b8630a59c4a32d09cc3a2518a90787beb97909b67",
+   "fetched_utc": "2026-11-10T14:18:52Z"
+  },
+  {
+   "file": "p029_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-01/eeg/sub-029_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93033812,
+   "sha256": "8befd3dffda4ad4d9f97e1745ff759faf6a30b5c81961ba31ebc180450210253",
+   "fetched_utc": "2026-11-10T14:18:57Z"
+  },
+  {
+   "file": "p029_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-02/eeg/sub-029_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3638288,
+   "sha256": "57b42efa1b5bff1ee29145990a9a396890e5cab83f6abd6dd41d3f139f6c5cd5",
+   "fetched_utc": "2026-11-10T14:19:07Z"
+  },
+  {
+   "file": "p029_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-02/eeg/sub-029_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9867,
+   "sha256": "293c57188336540b1ee83c4287f8211fced53d2cfc459f5408def30c525d0916",
+   "fetched_utc": "2026-11-10T14:19:08Z"
+  },
+  {
+   "file": "p029_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-02/eeg/sub-029_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 93002224,
+   "sha256": "2bb0bd043edd4e5f757c557183317b4ce86718efaa043c5219d7436566a67015",
+   "fetched_utc": "2026-11-10T14:19:11Z"
+  },
+  {
+   "file": "p029_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-03/eeg/sub-029_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3660144,
+   "sha256": "a5ebc1ba695dd1c5e9eb3bcbd95ab505870a5f9616be71409f2393222ea10421",
+   "fetched_utc": "2026-11-10T14:19:22Z"
+  },
+  {
+   "file": "p029_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-03/eeg/sub-029_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9978,
+   "sha256": "19662aba50d35721f20108ac3ca066f166077898ee460fa4f337e851acd9b068",
+   "fetched_utc": "2026-11-10T14:19:22Z"
+  },
+  {
+   "file": "p029_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-03/eeg/sub-029_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94558380,
+   "sha256": "be4cfd54011c14332e4e320e1ee367b3dc0649f9c6e5845a7113e51cc67500c4",
+   "fetched_utc": "2026-11-10T14:19:25Z"
+  },
+  {
+   "file": "p029_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-04/eeg/sub-029_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3658824,
+   "sha256": "0d3763b1992ff925870ae424ff4fd8379a960c45f9801b2f74e65169e92ae942",
+   "fetched_utc": "2026-11-10T14:19:36Z"
+  },
+  {
+   "file": "p029_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-04/eeg/sub-029_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9974,
+   "sha256": "acea20887bcfacc28ca31b2697121c05faa037898c723c829cf36844d46bcfdc",
+   "fetched_utc": "2026-11-10T14:19:36Z"
+  },
+  {
+   "file": "p029_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-029/ses-04/eeg/sub-029_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 94460040,
+   "sha256": "c055275d8b164975b343dfcc6e21b86604357428166a67ff6c471a1d49f9444a",
+   "fetched_utc": "2026-11-10T14:19:42Z"
+  },
+  {
+   "file": "p030_s1.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-01/eeg/sub-030_ses-01_task-pullstand_eeg.set",
+   "bytes": 3636728,
+   "sha256": "6a2067aa9761b30427b5a562ace53e79a644c6dea050694f38fbf3fdd4206635",
+   "fetched_utc": "2026-11-10T14:19:52Z"
+  },
+  {
+   "file": "p030_s1_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-01/eeg/sub-030_ses-01_task-pullstand_events.tsv",
+   "bytes": 9807,
+   "sha256": "f45937edb88c5a7392ffb173a7b312d8e6714ac27d97abbdb118cc9ec1c0eee4",
+   "fetched_utc": "2026-11-10T14:19:52Z"
+  },
+  {
+   "file": "p030_s1.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-01/eeg/sub-030_ses-01_task-pullstand_eeg.fdt",
+   "bytes": 93052884,
+   "sha256": "4c4c8b96054d811afba045cc71dbf18a65b84797d649b49751e662f0bdc7f8da",
+   "fetched_utc": "2026-11-10T14:19:57Z"
+  },
+  {
+   "file": "p030_s2.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-02/eeg/sub-030_ses-02_task-pullwalk_eeg.set",
+   "bytes": 3635664,
+   "sha256": "b3314007f1c7ff05f9b04ab58678eb93c51c291d367d5f138e09e71196c22a60",
+   "fetched_utc": "2026-11-10T14:20:07Z"
+  },
+  {
+   "file": "p030_s2_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-02/eeg/sub-030_ses-02_task-pullwalk_events.tsv",
+   "bytes": 9873,
+   "sha256": "b1e79deed2b2eec2d09ab98aedcc198c52bf6724bcc511f284432f267156c7bb",
+   "fetched_utc": "2026-11-10T14:20:07Z"
+  },
+  {
+   "file": "p030_s2.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-02/eeg/sub-030_ses-02_task-pullwalk_eeg.fdt",
+   "bytes": 92955140,
+   "sha256": "8a5cff04faabcb8a5b9e785b369d0c51c2be9bc6d208ad016e02b1bf6e82d10b",
+   "fetched_utc": "2026-11-10T14:20:12Z"
+  },
+  {
+   "file": "p030_s3.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-03/eeg/sub-030_ses-03_task-rotatestand_eeg.set",
+   "bytes": 3658016,
+   "sha256": "71c465b0712beb749bb5af7d435ce952cbf38b3db00ebbf80fb8aff7a1bd1fba",
+   "fetched_utc": "2026-11-10T14:20:22Z"
+  },
+  {
+   "file": "p030_s3_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-03/eeg/sub-030_ses-03_task-rotatestand_events.tsv",
+   "bytes": 9988,
+   "sha256": "62baf20da5e7076f4f51301eda22774a119535b5d2f20943c67ab67ccb712c02",
+   "fetched_utc": "2026-11-10T14:20:22Z"
+  },
+  {
+   "file": "p030_s3.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-03/eeg/sub-030_ses-03_task-rotatestand_eeg.fdt",
+   "bytes": 94548844,
+   "sha256": "63010ca920af932a6efdabf742c8e48ba161387f0fcc35ac2db18204ca1975d4",
+   "fetched_utc": "2026-11-10T14:20:26Z"
+  },
+  {
+   "file": "p030_s4.set",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-04/eeg/sub-030_ses-04_task-rotatewalk_eeg.set",
+   "bytes": 3650136,
+   "sha256": "a182e106cfa7658a75c9d08a94ef565b073d25736b2ae02ab2f0bd04da469dfd",
+   "fetched_utc": "2026-11-10T14:20:36Z"
+  },
+  {
+   "file": "p030_s4_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-04/eeg/sub-030_ses-04_task-rotatewalk_events.tsv",
+   "bytes": 9981,
+   "sha256": "34d8fb2c9866a3fb042647b220cb5ae6d211780feae05653893ec166c09b2d31",
+   "fetched_utc": "2026-11-10T14:20:36Z"
+  },
+  {
+   "file": "p030_s4.fdt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds003739/sub-030/ses-04/eeg/sub-030_ses-04_task-rotatewalk_eeg.fdt",
+   "bytes": 93961784,
+   "sha256": "08e3bac1d99979dafe56f3fc417d3f0e3f7517d214b97d297a9e5e8a104dfa2d",
+   "fetched_utc": "2026-11-10T14:20:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Peterson2021_DataBrief.zip"
+}

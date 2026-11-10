@@ -1,0 +1,212 @@
+{
+ "id": "Russo2020_PPCR",
+ "module": "summary",
+ "rows": 1848,
+ "subjects": 33,
+ "persons": 33,
+ "zip_bytes": 15454,
+ "zip_sha256": "c96737baf1a02e5106b6f149440e0337a25b203ec628da88cb7dbf3b67409c9f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "three sheets as listed",
+   "ok": true,
+   "detail": "['Trained_Corrette', 'Trained_Totali', 'Untrained_corrette e totali']"
+  },
+  {
+   "kind": "internal",
+   "what": "33 participants in every column",
+   "ok": true,
+   "detail": "{33}"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": "0 missing"
+  },
+  {
+   "kind": "internal",
+   "what": "values are non-negative whole numbers",
+   "ok": true,
+   "detail": "range 10.0-72.0"
+  },
+  {
+   "kind": "internal",
+   "what": "cells where correct exceeds total are listed in the README (not changed)",
+   "ok": true,
+   "detail": "[('PM', 'FU24', 1)]"
+  },
+  {
+   "kind": "internal",
+   "what": "33 x 4 conditions x 7 time points x 2 measures = 1848 rows",
+   "ok": true,
+   "detail": "1848"
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants (Thirty-three healthy individuals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences in B1, mean over the four conditions",
+   "computed": 34.583333333333336,
+   "reported": 34.6,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of Blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences in B2, mean over the four conditions",
+   "computed": 35.371212121212125,
+   "reported": 35.4,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of Blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences in B3, mean over the four conditions",
+   "computed": 36.196969696969695,
+   "reported": 36.2,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of Blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences in B4, mean over the four conditions",
+   "computed": 36.765151515151516,
+   "reported": 36.8,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of Blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences in B5, mean over the four conditions",
+   "computed": 37.03787878787879,
+   "reported": 37.0,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of Blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences over the 5 training blocks, PMC tDCS",
+   "computed": 36.00606060606061,
+   "reported": 36.0,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of tDCS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences over the 5 training blocks, sham tDCS",
+   "computed": 35.27878787878788,
+   "reported": 35.3,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of tDCS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences over the 5 training blocks, PPC tDCS",
+   "computed": 34.36969696969697,
+   "reported": 34.4,
+   "tol": 0.05,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of tDCS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences over the 5 training blocks, M1 tDCS (printed as 38, integer)",
+   "computed": 38.30909090909091,
+   "reported": 38.0,
+   "tol": 0.5,
+   "source": "Results, Primary outcome: online learning, Correct sequences (main effect of tDCS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences, untrained sequence, sham tDCS (printed as 28, integer)",
+   "computed": 28.060606060606062,
+   "reported": 28.0,
+   "tol": 0.5,
+   "source": "Results, Secondary outcome: generalization, Correct sequences",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total sequences, untrained sequence, M1 tDCS (printed as 40, integer)",
+   "computed": 40.06060606060606,
+   "reported": 40.0,
+   "tol": 0.5,
+   "source": "Results, Secondary outcome: generalization, Total sequences",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct sequences, untrained sequence, PMC tDCS",
+   "computed": 37.333333333333336,
+   "reported": 37.3,
+   "tol": 0.05,
+   "source": "Results, Secondary outcome: generalization, Correct sequences",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total sequences, untrained sequence, PMC tDCS",
+   "computed": 43.57575757575758,
+   "reported": 43.6,
+   "tol": 0.05,
+   "source": "Results, Secondary outcome: generalization, Total sequences",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total sequences, untrained sequence, PPC tDCS",
+   "computed": 37.666666666666664,
+   "reported": 37.7,
+   "tol": 0.05,
+   "source": "Results, Secondary outcome: generalization, Total sequences",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total sequences, untrained sequence, sham tDCS",
+   "computed": 37.42424242424242,
+   "reported": 37.4,
+   "tol": 0.05,
+   "source": "Results, Secondary outcome: generalization, Total sequences",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Several published means do not reproduce from the rows and are not used as checks: untrained-sequence correct sequences under PPC (rows 28.21, paper 28.3) and M1 (rows 29.97, paper 30.2); FU24 correct sequences averaged over conditions (rows 40.69, paper 40.6) and total sequences (rows 46.45, paper 46.4). The reason is not known; the deposit is dated 22.06.2020 and may differ slightly from the data analysed.",
+  "In some cells a participant's count of correct sequences is larger than the total number of sequences performed, which cannot be true; values are released as the authors shared them (cells and participant counts: [('PM', 'FU24', 1)])."
+ ],
+ "sources": [
+  {
+   "file": "db.xlsx",
+   "url": "https://zenodo.org/api/records/5856257/files/Database_22.06.2020.xlsx/content",
+   "bytes": 20621,
+   "sha256": "2c87ac1f666140e49428e3e285b4f6e208511c202e086dd84f7b477ed9c20689",
+   "fetched_utc": "2026-11-09T15:19:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Russo2020_PPCR.zip"
+}

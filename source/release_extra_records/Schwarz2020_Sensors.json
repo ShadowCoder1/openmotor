@@ -1,0 +1,118 @@
+{
+ "id": "Schwarz2020_Sensors",
+ "module": "timeseries",
+ "rows": 116,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 355984427,
+ "zip_sha256": "674c461c819b274b0f5a4ff7b6386fc9e76c29ce7ec2b71250afa9bd1ea39041",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "gyroscope magnitudes are plausible for rad/s",
+   "ok": true,
+   "detail": "40.10245765747279"
+  },
+  {
+   "kind": "internal",
+   "what": "ten participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject 2 has only two block weights per arm (as in the paper)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "blocks x 12 movements, nine analysed participants, affected arm (324)",
+   "computed": 324.0,
+   "reported": 324.0,
+   "tol": 0,
+   "source": "Results, 36 trials per participant and arm (324 data sets); 27 blocks per arm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks x 12 movements, nine analysed participants, non-affected arm (324)",
+   "computed": 324.0,
+   "reported": 324.0,
+   "tol": 0,
+   "source": "Results, 36 trials per participant and arm (324 data sets); 27 blocks per arm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited (10)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (9)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Abstract/Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (60.8)",
+   "computed": 60.8,
+   "reported": 60.8,
+   "tol": 0.05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (11.4)",
+   "computed": 11.399805066559496,
+   "reported": 11.4,
+   "tol": 0.05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "affected arm has longer movements in most participants (confirms the side assignment)",
+   "ok": true,
+   "detail": "1.0"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings",
+   "ok": true,
+   "detail": "116"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Most recordings have 13 intervals (one synchronisation movement and 12 movements); exceptions: [('Subject2/Left/ARAT_BL.mat', 12), ('Subject2/Right/ARAT_BH.mat', 12), ('Subject4/Right/ARAT_BW.mat', 12), ('Subject7/Right/ARAT_BL.mat', 14), ('Subject7/Right/ARAT_BH.mat', 14), ('Subject8/Left/ARAT_BW.mat', 12), ('Subject9/Right/ARAT_BW.mat', 14)] (file, number of intervals). Participant 2 has no BW recordings. The per-movement force records (m1-m4, rep1-3) match the lengths of the marked intervals (in the order above, or any interval) in 683 of 696 cases.",
+  "Zenodo lists the record as 'Kinematics of reach-to-grasp and displacement after stroke' with no related paper; the matching paper (data link in its text and references) is Schwarz et al. 2020, Sensors 20(17):4770, doi 10.3390/s20174770 (Crossref checked). The OpenMotor listing has this right.",
+  "The paper says 324 motion data sets; that is the count for one arm (9 participants x 36 movements), and the deposit holds 324 for each arm."
+ ],
+ "sources": [
+  {
+   "file": "readme_Data.pdf",
+   "url": "https://zenodo.org/records/3930752/files/readme_Data.pdf?download=1",
+   "bytes": 119460,
+   "sha256": "6ada105443a00270cbe30a0d3f5b1352034ae3c81a0f2590f328b8cf721fbd11",
+   "fetched_utc": "2026-11-09T06:41:59Z"
+  },
+  {
+   "file": "Data.zip",
+   "url": "https://zenodo.org/records/3930752/files/Data.zip?download=1",
+   "bytes": 983287413,
+   "sha256": "88748fdeb1d38863ebe9f47c1cb570a41ed5aabd27249058bc6b642b099c44c4",
+   "fetched_utc": "2026-11-09T06:51:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schwarz2020_Sensors.zip"
+}

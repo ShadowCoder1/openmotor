@@ -1,0 +1,77 @@
+{
+ "id": "Mehta2025_SciRep",
+ "module": "timeseries",
+ "rows": 24636,
+ "subjects": 44,
+ "persons": 44,
+ "zip_bytes": 85972559,
+ "zip_sha256": "cecd25247f08b1a0bc5d0b39f1dc3e6828aa03eee3b94328a2142720fb29d92a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed in the learning task",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Results (42 participants analysed for the learning task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "success rate, baseline (% of trials with absolute error below 1.25 units)",
+   "computed": 14.983713355048861,
+   "reported": 14.98,
+   "tol": 0.005,
+   "source": "Results, Learning task (14.98% pre-test, 66.31% post-test, 56.39% transfer)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "success rate, test (% of trials with absolute error below 1.25 units)",
+   "computed": 66.31259484066769,
+   "reported": 66.31,
+   "tol": 0.005,
+   "source": "Results, Learning task (14.98% pre-test, 66.31% post-test, 56.39% transfer)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "success rate, transfer (% of trials with absolute error below 1.25 units)",
+   "computed": 56.390977443609025,
+   "reported": 56.39,
+   "tol": 0.005,
+   "source": "Results, Learning task (14.98% pre-test, 66.31% post-test, 56.39% transfer)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "hit equals absolute error <= 1.25 (the authors' definition) on every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "560 planned trials per participant: 16 pre, 512 practice (4 x 128), 16 post, 16 transfer; a few trials lost to recording problems",
+   "ok": true,
+   "detail": "min 559, max 560"
+  },
+  {
+   "kind": "internal",
+   "what": "44 participants with data, 6 participants without (3, 10, 21: no data; 40 left-handed; 23, 46 excluded by authors)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has a samples file",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper recruited 47 right-handed participants (mean age 22.45, SD 3.39, 28 females); the deposit has trial data for 44, so the participant table cannot reproduce those numbers and they are not used as checks. The success rates are computed over all non-outlier trials of the 42 analysed participants; the deposit's data were not re-filtered otherwise. Trials the authors removed by hand when building bapdata (7 trials in 5 participants) are kept here."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mehta2025_SciRep.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "SimonMartinez2023_ReGraD",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Zenodo 8363126 (CC BY 4.0) holds 172 raw OptiTrack Motive exports (csv.zip 0.83 GB, about 16 GB unpacked, 120 Hz, 77k frames, 140-460 unlabeled markers each, almost none named), plus trial-order text files and a demographics table; the .tak files are 18.9 GB. Marker identities (thumb, index, hand, nasion, pegs) are not given, there are no per-trial measures, trial boundaries exist only as wall-clock stamps, and the linked paper (AMBER protocol, BMC Ophthalmol 2023, doi 10.1186/s12886-023-02944-y, PMC10190050) has no results, so nothing could be decoded or checked beyond trial counts (20 trials in each of 4 depth categories per eye condition). Retry would need the authors segmentation/labeling code.",
+ "sources": []
+}

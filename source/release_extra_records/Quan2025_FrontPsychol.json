@@ -1,0 +1,255 @@
+{
+ "id": "Quan2025_FrontPsychol",
+ "module": "keypress",
+ "rows": 79200,
+ "subjects": 110,
+ "persons": 110,
+ "zip_bytes": 847004,
+ "zip_sha256": "8c623596cda44b67d84aae418326ad6a53c12db293af2ea16904f82a4081772e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's rows are contiguous and in session order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "110 participants x 10 sessions x 72 trials = 79,200 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group, reward flag, choice flag and sequence are constant within a participant, and the flags follow the group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial without an RT is an incorrect trial (a missed response)",
+   "ok": true,
+   "detail": "125 trials without RT"
+  },
+  {
+   "kind": "internal",
+   "what": "RTs lie between 0 and the 1000 ms response window",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sheet 2 has the same 110 participants and groups as sheet 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order, with the trial count per participant 1..720",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group reward_choice",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group reward_no-choice",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group no-reward_choice",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group no-reward_no-choice",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, all 110 participants: mean (years)",
+   "computed": 20.054545454545455,
+   "reported": 20.05,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, all 110 participants: SD (years)",
+   "computed": 2.321958852081355,
+   "reported": 2.32,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group reward_choice: mean (years)",
+   "computed": 20.26923076923077,
+   "reported": 20.27,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group reward_choice: SD (years)",
+   "computed": 2.4747960288911455,
+   "reported": 2.48,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group reward_no-choice: mean (years)",
+   "computed": 19.703703703703702,
+   "reported": 19.7,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group reward_no-choice: SD (years)",
+   "computed": 1.7718919661201524,
+   "reported": 1.77,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group no-reward_choice: mean (years)",
+   "computed": 20.428571428571427,
+   "reported": 20.43,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group no-reward_choice: SD (years)",
+   "computed": 2.9113897843110044,
+   "reported": 2.91,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, group no-reward_no-choice: SD (years)",
+   "computed": 2.0189984348193426,
+   "reported": 2.02,
+   "tol": 0.01,
+   "source": "Quan et al. 2025, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "questionnaire satisfaction (item 4), group reward_choice: mean",
+   "computed": 5.538461538461538,
+   "reported": 5.54,
+   "tol": 0.006,
+   "source": "Quan et al. 2025, Results (questionnaire)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "questionnaire satisfaction (item 4), group reward_no-choice: mean",
+   "computed": 4.888888888888889,
+   "reported": 4.89,
+   "tol": 0.006,
+   "source": "Quan et al. 2025, Results (questionnaire)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "questionnaire nervousness (item 5), group reward_choice: mean",
+   "computed": 2.8461538461538463,
+   "reported": 2.85,
+   "tol": 0.006,
+   "source": "Quan et al. 2025, Results (questionnaire)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "questionnaire nervousness (item 5), group reward_no-choice: mean",
+   "computed": 3.814814814814815,
+   "reported": 3.81,
+   "tol": 0.006,
+   "source": "Quan et al. 2025, Results (questionnaire)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session (12-element sequence x 6 repetitions)",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Methods (task and sessions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions per participant (s1, S2-S6, s7, r8, s9, s10)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Quan et al. 2025, Methods (task and sessions)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Group age: the paper prints a mean of 20.05 for the no-reward/no-choice group; the deposit gives 19.83 (its SD of 2.02 matches, and 20.05 is the paper's mean for all participants, so it is probably a copy slip). The other three group means match.",
+  "The paper reports a mean error rate of 2.5% (SD 2.2); counting every incorrect trial (wrong key or miss) in the deposit gives 3.5% (SD 1.7 across participants), and leaving out the random session gives 3.3%.",
+  "The paper reports that 96.1% of trials remained after removing RTs beyond 3 SD of each participant's mean (correct trials); the deposit gives 98.5% of correct trials (95.1% of all trials) with a per-participant mean and SD, so the exact rule is unknown."
+ ],
+ "sources": [
+  {
+   "file": "quan_workbook.xlsx",
+   "url": "https://osf.io/download/ks38e/",
+   "bytes": 3530491,
+   "sha256": "7f5d91872ffb776355e45f0846907d49965759e9892ebe6a03f462b02bb8f0f2",
+   "fetched_utc": "2026-11-08T21:28:00Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Quan2025_FrontPsychol.zip"
+}

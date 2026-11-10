@@ -1,0 +1,176 @@
+{
+ "id": "Holmberg2025_IEEETNSRE",
+ "module": "timeseries",
+ "rows": 1843,
+ "subjects": 173,
+ "persons": 173,
+ "zip_bytes": 275256254,
+ "zip_sha256": "b9914eb69fc9f06e04c2bc7d4148a17a4a6d953e5bba51dd2ffe8dfe6946fa18",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "infants",
+   "computed": 173.0,
+   "reported": 173.0,
+   "tol": 0,
+   "source": "II-B Subject Selection and Video Segmentation (173 infants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "video segments",
+   "computed": 1843.0,
+   "reported": 1843.0,
+   "tol": 0,
+   "source": "II-B (1843 video segments)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "segments of typically developing infants (outcome 0 or 1)",
+   "computed": 1692.0,
+   "reported": 1692.0,
+   "tol": 0,
+   "source": "II-B (1692 segments from typically developing infants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "segments of infants with MNI",
+   "computed": 151.0,
+   "reported": 151.0,
+   "tol": 0,
+   "source": "II-B (151 segments from the infants with MNI)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "infants with MNI",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "II-B (14 infants with MNI)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing infants",
+   "computed": 159.0,
+   "reported": 159.0,
+   "tol": 0,
+   "source": "II-B (159 infants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing infants, mean corrected age (days)",
+   "computed": 91.49685534591195,
+   "reported": 91.5,
+   "tol": 0.05,
+   "source": "II-B (mean 91.5 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing infants, SD of corrected age (days)",
+   "computed": 20.996043694183356,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "II-B (SD 21 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MNI infants, mean corrected age (days)",
+   "computed": 86.64285714285714,
+   "reported": 86.6,
+   "tol": 0.05,
+   "source": "II-B (mean 86.6 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MNI infants, SD of corrected age (days)",
+   "computed": 30.388781186122323,
+   "reported": 30.4,
+   "tol": 0.05,
+   "source": "II-B (SD 30.4 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing infants, oldest corrected age (days)",
+   "computed": 158.0,
+   "reported": 158.0,
+   "tol": 0,
+   "source": "II-B (range up to 158 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MNI infants, youngest and oldest corrected age (days)",
+   "computed": 177.0,
+   "reported": 177.0,
+   "tol": 0,
+   "source": "II-B (range 34-143 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples per segment (600 steps = 20 s)",
+   "computed": 600.0,
+   "reported": 600.0,
+   "tol": 0,
+   "source": "II-B (600 time steps)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "landmarks per skeleton",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "II-A (18 anatomical landmarks)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every segment has 600 x 54 finite values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "segment file ages and outcomes agree with metadata/combined.csv",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "every infant with files is in the metadata; 3 metadata infants have no segment",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "metadata/combined.csv lists 176 infants (122 typical, 40 weak impairment, 14 MNI); the 173 with segments are the paper's cohort. The paper's age statistics (typical 91.5 +/- 21 days, MNI 86.6 +/- 30.4 days) reproduce from the 173 infants with segments."
+ ],
+ "sources": [
+  {
+   "file": "metadata.zip",
+   "url": "https://zenodo.org/api/records/14269867/files/metadata.zip/content",
+   "bytes": 1077,
+   "sha256": "5a52394b08aad278ca1c6dfb36f1d0fd7ef41b74990554decea4c55dc6733e13",
+   "fetched_utc": "2026-11-10T06:29:17Z"
+  },
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/14269867/files/data.zip/content",
+   "bytes": 2529612717,
+   "sha256": "b9a6184b5d1081d3126b272b08bb8447f38d6d57a303d1a8740e0997984b1bc1",
+   "fetched_utc": "2026-11-10T06:40:11Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Holmberg2025_IEEETNSRE.zip"
+}

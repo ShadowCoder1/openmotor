@@ -1,0 +1,7 @@
+{
+ "id": "Zeng_dynamicVowel_OSF",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The OSF project (rcz4n, no license set) holds only data.zip with 14 CSV files and no readme, wiki, code or paper (the preprint \"Sensorimotor adaptation is temporally structured in a dynamic vowel\" could not be found), so the units of F1, F2 and MagPerturb, which formants were shifted and the role of the Pre and Post words can only be guessed from column names and the lab's other papers, and there is no published number to check against. The raw table is data/Formants_All.csv (1,234,709 samples of F1 and F2 per trial at about 3 ms, 32 speakers in Upshift and Downshift groups, 12,757 trials, word time trained in Baseline, Ramp, Hold and Washout, words Tim, Tom, team, tum and time in Pre and Post, shift of +-125 reached in steps of 4.31); the other 13 files are downsampled copies, jackknife and resampling outputs, and benchmark F1 tracks from three earlier studies. Retry as a timeseries or speech conversion once the preprint or a readme gives the units, the perturbation definition and the exclusions.",
+ "sources": []
+}

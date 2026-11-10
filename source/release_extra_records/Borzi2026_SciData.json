@@ -1,0 +1,345 @@
+{
+ "id": "Borzi2026_SciData",
+ "module": "timeseries",
+ "rows": 106,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 39180533,
+ "zip_sha256": "f5eb16a2d12b60ce0c6a003b6ef1d535f00187f8bcff999b0bb97495129a56f4",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Abstract / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples in sensor_data.csv",
+   "computed": 329027.0,
+   "reported": 329027.0,
+   "tol": 0,
+   "source": "Data Records, Sensor data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FoG episodes annotated",
+   "computed": 101.0,
+   "reported": 101.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensor channels",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Data Records, Sensor data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean recording time per participant (min)",
+   "computed": 4.1543813131313145,
+   "reported": 4.2,
+   "tol": 0.05,
+   "source": "Data Overview, Fig 4a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of recording time per participant (min)",
+   "computed": 1.7563950192475777,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Data Overview, Fig 4a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shuffling: events",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shuffling: median duration (s)",
+   "computed": 2.4,
+   "reported": 2.4,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shuffling: min duration (s)",
+   "computed": 0.6,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shuffling: max duration (s)",
+   "computed": 9.9,
+   "reported": 9.9,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trembling: events",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trembling: mean duration (s)",
+   "computed": 5.823333333333333,
+   "reported": 5.82,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trembling: median duration (s)",
+   "computed": 4.9,
+   "reported": 4.9,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trembling: min duration (s)",
+   "computed": 0.2,
+   "reported": 0.2,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trembling: max duration (s)",
+   "computed": 24.1,
+   "reported": 24.1,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "akinesia: events",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "akinesia: mean duration (s)",
+   "computed": 19.979729729729733,
+   "reported": 19.98,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "akinesia: median duration (s)",
+   "computed": 12.4,
+   "reported": 12.4,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "akinesia: min duration (s)",
+   "computed": 1.8,
+   "reported": 1.8,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "akinesia: max duration (s)",
+   "computed": 108.68333333333334,
+   "reported": 108.68,
+   "tol": 0.005,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration: mean",
+   "computed": 10.095238095238095,
+   "reported": 10.1,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration: SD",
+   "computed": 6.788996699842782,
+   "reported": 6.8,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Hoehn and Yahr: mean",
+   "computed": 2.738095238095238,
+   "reported": 2.7,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Hoehn and Yahr: SD",
+   "computed": 0.8458582567287444,
+   "reported": 0.8,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FOG-Q: mean",
+   "computed": 18.272727272727273,
+   "reported": 18.3,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FOG-Q: SD",
+   "computed": 5.382350506024014,
+   "reported": 5.4,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MoCA: mean",
+   "computed": 21.333333333333332,
+   "reported": 21.3,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MoCA: SD",
+   "computed": 3.9285281382896233,
+   "reported": 3.9,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PDQ-8: mean",
+   "computed": 14.363636363636363,
+   "reported": 14.4,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PDQ-8: SD",
+   "computed": 6.862912435662217,
+   "reported": 6.9,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS-III: SD",
+   "computed": 14.636800563508775,
+   "reported": 14.6,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: SD",
+   "computed": 9.276068916596865,
+   "reported": 9.3,
+   "tol": 0.05,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "106 recordings",
+   "ok": true,
+   "detail": "106"
+  },
+  {
+   "kind": "internal",
+   "what": "sample times are 1/60 s apart",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no sample lost",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 3 reports 13 men and 9 women; the deposit's clinical file has 12 M and 10 F. Mean age 70.9, UPDRS-III 38.9 and FES-I 36.9 (and the SD of FES-I, 26.9) are printed in the paper more than 0.05 away from what the deposit's clinical file gives (70.96, 38.96, 36.95, SD 26.95), so those numbers are not used as checks. The mean duration of shuffling episodes is 3.03 s here against 3.02 s in Table 9."
+ ],
+ "sources": [
+  {
+   "file": "clinical_data.csv",
+   "url": "https://zenodo.org/api/records/17838806/files/clinical_data.csv/content",
+   "bytes": 698,
+   "sha256": "91aa90f70e25d33d395077d21f2291de202809fecae0ff680f1522f942f5ead5",
+   "fetched_utc": "2026-11-09T20:34:00Z"
+  },
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/17838806/files/README.txt/content",
+   "bytes": 4734,
+   "sha256": "f05cbd9d64169a2cd6a1afc56c2bb9813eec5e21e3f8a02ffcb11b874d3daf2b",
+   "fetched_utc": "2026-11-09T20:34:04Z"
+  },
+  {
+   "file": "sensor_data.csv",
+   "url": "https://zenodo.org/api/records/17838806/files/sensor_data.csv/content",
+   "bytes": 119629580,
+   "sha256": "888875133fef386affddd0a5864f122d527d8d7bc588a69905cc0871bef53477",
+   "fetched_utc": "2026-11-09T20:35:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Borzi2026_SciData.zip"
+}

@@ -1,0 +1,182 @@
+{
+ "id": "Santuz2022_PLoSOne",
+ "module": "walking",
+ "rows": 27238,
+ "subjects": 260,
+ "persons": 260,
+ "zip_bytes": 398175,
+ "zip_sha256": "5b2ced50ef0109dfe2ab9ee73143d9762571667b3999ba59ee7d11b12cd492f2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every metadata line has its two trials and every trial a metadata line",
+   "ok": true,
+   "detail": "260 participant x locomotion"
+  },
+  {
+   "kind": "published",
+   "what": "total trials in the data set (Zenodo description: 520 trials)",
+   "computed": 520.0,
+   "reported": 520.0,
+   "tol": 0,
+   "source": "Zenodo record 6655815, description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant x group entries (70 + 70 + 120 = 260; the paper's 215 counts the runners who also walked once, and the deposit's codes do not identify them)",
+   "computed": 260.0,
+   "reported": 260.0,
+   "tol": 0,
+   "source": "Methods, Participants (G1 70, G2 70, G3 120)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G1 young walking: participants",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G1: women",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G2 older walking: participants",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G2: women",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G3 young running: participants",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "G3: women",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults (65-84 yr): participants",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest young participant (20 yr)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (20 to 43 yr)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest young participant (43 yr)",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Methods, Participants (20 to 43 yr)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants' age range starts at 65",
+   "computed": 65.0,
+   "reported": 65.0,
+   "tol": 0,
+   "source": "Methods, Participants (65 to 84 yr)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants' age range ends at 84",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Methods, Participants (65 to 84 yr)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has at least 35 gait cycles (smallest trial 36)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "touchdowns increase within each trial and stance times are positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stance shorter than the stride on all but a handful of cycles (kept as shared)",
+   "ok": true,
+   "detail": "8 cycles"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper counts 215 participants because some took part in two groups; the deposit does not identify them, so this file has 260 person codes (70 + 70 + 120).",
+  "A few cycles (see the check list) have a stance time longer than the next touchdown interval; they are kept as the authors shared them.",
+  "The deposit's cycle-time files hold all cycles (35 to 93 per trial); the paper analysed the first 30 per trial."
+ ],
+ "sources": [
+  {
+   "file": "metadata.dat",
+   "url": "https://zenodo.org/api/records/6655815/files/metadata.dat/content",
+   "bytes": 11281,
+   "sha256": "e4cba84d5b524d951fb472c17e697da9047acc19bd86a59b6a3d6e88d2bd707b",
+   "fetched_utc": "2026-11-09T00:21:59Z"
+  },
+  {
+   "file": "CYCLE_TIMES.RData",
+   "url": "https://zenodo.org/api/records/6655815/files/CYCLE_TIMES.RData/content",
+   "bytes": 125022,
+   "sha256": "ccbb73f77da1184acdb5665a5e304e10f36889a08bdd2083de25a66b7893792f",
+   "fetched_utc": "2026-11-09T00:22:19Z"
+  },
+  {
+   "file": "muscle_synergies.R",
+   "url": "https://zenodo.org/api/records/6655815/files/muscle_synergies.R/content",
+   "bytes": 80695,
+   "sha256": "5042a872c7f2e22391c1b21a33ed9b8666835294fc99058bff68826f66b43b77",
+   "fetched_utc": "2026-11-09T00:22:27Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Santuz2022_PLoSOne.zip"
+}

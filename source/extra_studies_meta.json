@@ -1,0 +1,4418 @@
+{
+ "VelazquezVargas2024_PLoSCompBiol": {
+  "_unit": "keypress",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Grid-navigation task: participants learn a key-to-direction mapping to move a cursor (de novo mapping); one CSV of key presses per participant per experiment, plus model-fitting outputs. OSF description names the preprint title \"Learning generalizable visuomotor mappings for de novo skills\". The pap"
+ },
+ "VelazquezVargas2025_CompBrainBehav": {
+  "_unit": "keypress",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Knight-move mapping learned with key presses on a grid; trial/keypress-level CSVs for two experiments plus model code (A* planning simulations)."
+ },
+ "Poh2026_TopCognSci": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Raw per-participant session zips (pre-test, rotation, post-test) for Experiment 1 (16 participants visible) and a folder for Experiment 2; preprint was \"Top-down effects in motor generalization\" (bioRxiv 2021, 10.1101/2021.02.09.430542). Contents of the zips not inspected (30-50 MB each). OSF licens"
+ },
+ "AlFawakhiri2023_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "README says the data_ files hold trial-wise data, one per figure (replications of Kim et al. 2019 and Tsay et al. target-jump designs, plus a sound/target-size experiment). No license file in the repository."
+ },
+ "AlFawakhiri2024_JExpPsycholGen": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Cursor-gain manipulation dissociating physical from visual movement distance; three online experiments (pooled JSON) plus an in-lab experiment with one gzipped JSON per participant (about 20 participants). No license file. Repository is under the ACT Lab member account ilestz."
+ },
+ "AlFawakhiri2023_bioRxiv": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "other",
+  "_notes": "Online Pong-like paddle game with difficulty titrated to target error rates; README says data were collected in two batches of 100 participants. Not a reaching-adaptation task; included as McDougle lab motor-skill data."
+ },
+ "Evans2025_bioRxiv_implicit": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Slicing reaches on a Wacom tablet with sinusoidally varying error-clamped feedback; two sessions per participant with direction and arc-confidence reports. README gives n = 20 NYU participants. Per-participant folders are named by initials (not reproduced here). No license file."
+ },
+ "Evans2025_bioRxiv_explicit": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "20 deg rotation during the central 50 trials of each block, with arc-size confidence judgments; README gives n = 16. Folders named by participant initials (not reproduced here). No license file."
+ },
+ "Forano2020_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "vBOT dual adaptation to opposing curl fields with lead-in contextual cues; per-trial kinematics/force data for two experiments with a readme. Seen via the Dryad record and its Zenodo mirror (zenodo 4552826, CC0)."
+ },
+ "Crevecoeur2022_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "KINARM endpoint robot; three experiments testing whether a force cue allows dual adaptation to opposing fields. Seen via the Zenodo mirror of the Dryad record (zenodo 7223372, CC0); zip contents not opened."
+ },
+ "Mathew2021_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Zip of processed MATLAB matrices (participants x trials, e.g. 8 x 1500) for baseline, adaptation and feedback-response trials plus figure scripts."
+ },
+ "Ikegami2021_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "ReadMe: per-participant baseline and adaptation lateral deviation and target error for six force-field conditions across three experiments, plus resampled hand trajectories and model simulations. Seen via the Zenodo mirror (zenodo 4725997, CC0)."
+ },
+ "Roth2023_ProcRSocB": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "KINARM reaching to a target line with reinforcement feedback; one pickle per participant (about 18-19 per experiment). Also archived on Dryad (10.5061/dryad.ngf1vhj10, CC0; Zenodo mirror 8339536) which links back to this repository. GitHub repo has no license file."
+ },
+ "Korka2024_EurJNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Raw EEG and reach kinematics for two experiments (strategy learning vs instructed strategy). Distinct from the Korka et al. 2023 Cortex deposit already listed."
+ },
+ "Makino2026_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Zenodo title is \"Visuomotor learning is determined by the tonic component of feedback responses\" (earlier title of the eLife reviewed preprint); processed data for Experiments 1-3 plus figure-8 data and analysis scripts. Unit assumed per trial from description (processed data per experiment); zips n"
+ },
+ "vanderKooij2015_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, primary article 10.1371/journal.pone.0117901. Zip not opened."
+ },
+ "Genewein2014_ProcRSocB": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, primary article 10.1098/rspb.2013.2952. Zip not opened."
+ },
+ "Haith2015_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, 104 MB, primary article 10.1371/journal.pcbi.1004171. Reaching under forced-response timing with two potential targets; not adaptation but core Haith/Krakauer reaching data."
+ },
+ "Hosseini2017_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Seen via the Zenodo mirror of the Dryad record (zenodo 4931545, CC0). The PLoS figshare supplement holds only figures."
+ },
+ "Joiner2017_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Maurice Smith lab data; seen via the Zenodo mirror of the Dryad record (zenodo 4991069, CC0)."
+ },
+ "Sadeghi2018_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "The .m file documents a MATLAB table with TrialNumber, Out/Return, Field (null/force field/channel) and Adaptation and KinematicError matrices of trials x subjects x groups."
+ },
+ "Werner2019_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "s003 holds mean movement direction per participant for each episode (baseline, adaptation, transfer); s004 holds awareness-test order per participant. Episode means, not single trials."
+ },
+ "Lantagne2026_JMotBehav": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "One row per participant per session (107 rows): reach error, capture time, reaction time, fitted adaptation coefficients and cognitive test scores, for concussed and control groups across three sessions."
+ },
+ "Zhou2022_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Figshare item by Zhou & Joiner titled \"Adaptation of limb dynamics based solely on explicit visual feedback demonstrates savings, but is less stable\" (KINARM data in MATLAB structures). Link to the JNP paper is by title match; JNP full text could not be read to confirm the data statement."
+ },
+ "Franklin2025_bioRxiv": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Two experiments of extended force-field learning; summary .mat plus full trajectory traces (5.3 GB) and plotting code. Figshare lists authors D. Franklin, P. Nietschmann, S. Franklin."
+ },
+ "Seegelke2026_bioRxiv_imagery": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Preprocessed trial data for three experiments (A054/A061/A069 are experiment codes) plus participant info sheets; code in a companion Zenodo record (10.5281/zenodo.22252677)."
+ },
+ "Seegelke2026_bioRxiv_history": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "28 files: preprocessed trial data and participant info per experiment; code in companion record 10.5281/zenodo.22257655."
+ },
+ "Chen2026_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF license field: CC-BY Attribution-NonCommercial 4.0 International. The paper also cites osf.io/4ur6x, which returned 404 (private or removed)."
+ },
+ "Hillman2025_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "README: \"This is the data for manuscript Linking Motor Working Memory to Explicit and Implicit Motor Learning\". The paper itself cites a figure-only repo (hhillman231/SuppMaterial_LinkingMWMtoMotorLearning) and zenodo 10206635 (which belongs to the 2024 Psychol Sci repo); this public repo holds the "
+ },
+ "Hillman2024_PsycholSci": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Zenodo archive of GitHub repo hhillman231/Dissociable_Codes_in_MWM (GitHub license GPL-3.0; Zenodo record CC BY 4.0). README: preprocessed trial-level data with anonymised ids, column dictionary for each experiment (set size, hand switch, recalled target, reach endpoints)."
+ },
+ "Sharma2026_bioRxiv": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Analysis-ready datasets for internally-monitored and externally-cued timing experiments; data/README.md describes columns. Unit assumed trial-level from file sizes and LME use."
+ },
+ "Trach2025_NatHumBehav": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Keypress stimulus-response learning with forced-response timing (not reaching); compiled trial data after exclusions for six experiments plus a baseline RT task. Included because it is a McDougle-lab action-learning dataset. No license file."
+ },
+ "Gale2022_PNAS": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "README: N = 32, 45 deg rotation with an MRI-compatible force sensor on two consecutive days (120 baseline, 320 learning, 120 washout trials); per-trial response time and angular error are in the *_events.tsv files. dataset_description License: CC0. Different dataset from Areshenkoff et al. 2024 (ds0"
+ },
+ "Nick2024_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Dryad API: CC0-1.0, 111 files, primary article 10.7554/eLife.91928. Behavioural CSV plus per-participant regional fMRI time series; raw imaging on OpenNeuro ds005230 (task-RLbaseline / task-RLlearning)."
+ },
+ "DeComite2022_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, primary article eNeuro 2022 (preprint 10.1101/2021.07.25.453678); the 2023 PLoS Comput Biol modelling paper points to the same deposit."
+ },
+ "Mehler2017_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Trial data and trajectories with a PDF data dictionary."
+ },
+ "Mostafa2019_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Trial-level localization and no-cursor reach data for exposure and classic-training groups; analysis code linked from GitHub."
+ },
+ "Wong2022_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Cleaned trial data for three KINARM experiments; task code on GitHub (CML-lab/KINARM_GBYK_*)."
+ },
+ "Wong2017_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "About 258 .mat files of per-session block data (folders named by date and initials, not reproduced here) plus analysis code; 750 MB repository."
+ },
+ "Gabriel2024_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Parent project vpfz5 with components 79s38 (data and code) and m76g4 (videos); OSF license CC-By Attribution 4.0 International."
+ },
+ "Tsay2022_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Seven trial-level CSVs (one per experiment). Not among the Tsay datasets already listed. No license file."
+ },
+ "Cesonis2020_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Kinematics and forces for point-to-point reaches with lateral cursor jumps, plus OFC model code."
+ },
+ "Cesonis2022_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Behavioural data for two movement conditions with target jumps plus OFC models; zip not opened."
+ },
+ "Sadaphal2022_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Columns: experiment, group, subject_id, block, trial_number, trial_type, baseline_subtracted_hand_deviation, RT (+ aiming_report in experiment 2)."
+ },
+ "Matsuda2024_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Figshare item \"projection task\": 79 small text files (dataset and analysis code). Distinct from the Matsuda & Abe 2023 Exp Brain Res deposit already listed."
+ },
+ "Heald2021_Nature": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, 41 files, 4.7 GB, one .mat per participant per experiment (COIN model paper); model code at zenodo 5512855 / github.com/jamesheald/COIN."
+ },
+ "Kashefi2024_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Dryad API: CC0-1.0, 51 files, 7.6 GB; one .mat per participant per session. Not adaptation but multi-target arm reaching sequences."
+ },
+ "Chu2014_F1000Res": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Eight CSVs, each with Trial and Target columns and one column per participant (Subject 1-10) plus model fits."
+ },
+ "Yeo2015_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Matrices of 1080 trials x 24 participants for force compensation (channel trials) and maximum perpendicular error, plus condition order per participant."
+ },
+ "Orschiedt2023_PLoSCompBiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "30 figure-level CSVs (e.g. one row per participant of velocity profiles, per-participant bar-chart values); not raw trials."
+ },
+ "Zhang2024_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Own experiments plus re-analysed Tsay et al. data (Tsay_report.csv, Tsay_STL.csv); README describes columns. Model code at github.com/ZhaoranZhang/PEAmodel."
+ },
+ "Nardi2025_npjSciLearn": {
+  "_unit": "trial",
+  "_src": [
+   "eye",
+   "reach"
+  ],
+  "_agent_task": "other",
+  "_notes": "Real-world pool shots in embodied VR with error-only or reward-only feedback; trial-by-trial CSVs."
+ },
+ "Nardi2026_iScience": {
+  "_unit": "trial",
+  "_src": [
+   "eye",
+   "reach"
+  ],
+  "_agent_task": "other",
+  "_notes": "Follow-up to Nardi et al. 2025 with gradual visual perturbations of the cue-ball direction."
+ },
+ "Sullivan2026_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Raw KINARM data for two dyadic reaching experiments; analysis code at github.com/CashabackLab/Involuntary-Visuomotor-HHI-Analysis-Code (MIT)."
+ },
+ "Yokoi2022_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Trial tables and pupil time series (perturbed/unperturbed) for two experiments; linked from the paper (figshare 20742091 holds only the supplementary PDF). No license file."
+ },
+ "Healy2023_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "README: all processed data, model-fitting and figure scripts; trajectories are averaged per individual for younger and older groups. No license file."
+ },
+ "Hadjiosif2024_PNAS": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "README: \"Data and code for the upcoming PNAS paper\". Contents of the .mat files not opened; unit assumed trial-level from size. No license file."
+ },
+ "Hadjiosif2025_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Repository description: \"Data/code for Tiny visual latencies can profoundly impair implicit sensorimotor learning\"; also mirrored at github.com/harvardmotorlab/Latency. One revision file is a Git LFS pointer. No license file."
+ },
+ "Roth2024_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "About 98 dill-pickled per-participant objects (Parkinson's and control groups, reaching and gait tasks); README explains loading via Exploration_Subject.from_pickle. No license file."
+ },
+ "Park2024_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Finger-joint data-glove mapping to a 2D cursor learned de novo in the scanner; per-participant behavioural .mat files (codes GL03...; about 24-28 participants). Companion repo github.com/AndyJHKim/GL_sensorimotor holds summary xlsx for the Commun Biol paper. No license file."
+ },
+ "Will2025_EurJNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Three Zenodo records share the title \"Post-movement beta-rebound reflects strategic re-aiming during motor adaptation, but not re-aiming accuracy\": 14671785 (60 per-session performance files), 14673450 and 14674428 (90 EEG files each). Per-session files per participant (s01-s25, days 1-2). A later r"
+ },
+ "Hill2025_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Mendeley API: \"Developmental Reinforcement Motor Learning Dataset\", CC BY 4.0. Readme: data for all four experiments in 1_data (AllData_1.mat is trial-by-trial), plus noise-model, value-model and simulation scripts."
+ },
+ "Makino2023_CommunBiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Processed per-experiment matrices (aftereffects, feedback responses, waveforms) and figure scripts; Zenodo resource type \"publication\". Unit not confirmed beyond file names."
+ },
+ "Huang2018_FrontPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "One row per participant with adaptation and aftereffect measures; a second table shows the full sample before exclusions."
+ },
+ "Debats2023_JNeurophysiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Small per-experiment spreadsheets of participant-level bias and slope estimates; repository license CC0-1.0."
+ },
+ "Chen2017_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Single archive with an information sheet; zip not opened."
+ },
+ "Modchalingam2019_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant learning curves, aftereffects and localization estimates (small CSVs); analysis notebook linked from GitHub. The paper also cites osf.io/y53c2 (404)."
+ },
+ "Wang2019_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "SPSS files of per-participant cycle means (one file with per-trial values)."
+ },
+ "Gastrock2020_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF description: data, analysis scripts and R markdown explaining the data; localization file is trial-level, learning curves per participant."
+ },
+ "Albert2022_eLife": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF description: \"Data sets and analysis code to accompany Competition between parallel sensorimotor learning systems\". One zip per figure, combining new experiments and re-analysed data from several labs; contents not opened, unit assumed per participant."
+ },
+ "Smeets2023_ExpBrainRes": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Prism adaptation of tapping movements followed by manual size indication; raw individual data zip plus compiled output. OSF license CC-By Attribution 4.0 International. A linked Box add-on returned 404."
+ },
+ "Brookes2020_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant summary and curve-fit values for two experiments."
+ },
+ "Wijeyaratnam2022_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant planning and control measures for people with MS and controls; not an adaptation study. Other Wijeyaratnam & Cressman deposits were previously classed summary-only."
+ },
+ "Binetti2026_iScience": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF project \"TimeInAction\"; trial-level behavioural CSV plus split EEG archive."
+ },
+ "Fassbender2025_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-participant folders for toddlers and adults pulling drawers with unexpected resistance; OSF license field \"No license\"."
+ },
+ "Albert2020_eLife": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Figure-source spreadsheets (human arm and finger experiments; the paper also includes monkey recordings). Granularity per figure not checked."
+ },
+ "LopezMoliner2019_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Arm-movement interception data plus button-press and eye data and simulations."
+ },
+ "Wali2023_SciRep": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant recalibration values used for ANOVAs, with JASP outputs."
+ },
+ "Block2023_JNeurophysiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "RPg is a 2-element struct array (groups) with fields VR, perception, Vel5DisPre, Vel5DisPost, VRtbyt (trial-by-trial recalibration), calc, stats."
+ },
+ "Hsiao2024_ExpBrainRes": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "CSg_structure is a 3-element struct array (groups) with fields data and perception."
+ },
+ "Wang2020_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF project \"Hand localization map\" (description: data and scripts for \"Hand localization map is subject-specific and improved without performance feedback\", the preprint title); zips not opened."
+ },
+ "Li2023_FrontAgingNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "OSF description: subjectX.mat holds gaze samples, cursor and target position and saccade counts; info.mat lists the 52 participants (29 older, 23 young per abstract). Archive not opened."
+ },
+ "Codol2023_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant .mat files for cursor-jump, target-jump, reflex and reaction-time experiments. OSF license CC-By Attribution 4.0 International."
+ },
+ "Codol2020_JNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF title matches the paper; trial data stored under code/data. OSF license CC-By Attribution 4.0 International. Shares R_Trial/RP_Trial file names with the 2023 eLife deposit."
+ },
+ "Wang2024_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Single zip; not opened. Not among the Wang/Tsay/Avraham deposits already listed."
+ },
+ "Wong2024_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Raw and extracted data for three experiments plus model; task code on GitHub (CML-lab/KINARM_*_Sensory_Integration)."
+ },
+ "Leow2024_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Two-session (drug/placebo) data; SPSS files appear to be per-trial or per-cycle tables (not opened)."
+ },
+ "Foray2025_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF description: force-field adaptation on KinArm with added noise at 0, 3 or 7 N. Data held in MATLAB workspaces."
+ },
+ "Hadjiosif2025_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Parsed data and analysis scripts for two experiments in people with chronic stroke and controls."
+ },
+ "Varghese2023_PNAS": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Files served through the OSF GitHub add-on; main CSV holds reach-level data for stroke and control participants."
+ },
+ "Mehta2025_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "neuro",
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Zenodo: \"Raw Data Set and Analysis Codes\"; arm joint angles drive a virtual paddle (new synergy must be learned), after an adaptive reaching screening task. Zip not opened."
+ },
+ "Mirdamadi2025_JNeurosci": {
+  "_unit": "summary per participant",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-participant recalibration and TMS (SAI) measures for two experiments."
+ },
+ "Fassold2023_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "reach"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "One output .mat per participant (file names use initials, not reproduced) plus model simulation outputs and experiment code. Not an adaptation task."
+ },
+ "Gonzalez-Rubio2026_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Per-trial belt-speed difference, binary choice and reaction time for 39 young adults in 3 speed groups (n=13 each), two sessions each. README present. Same data and code mirrored at github.com/PittSMLlab/Gonzalez-Rubioetal.-2026-WeberPerception. Paper DOI from the paper's own data statement."
+ },
+ "Gonzalez-Rubio2025_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "39 participant folders (WP02...) with per-block CSVs: pertSize (mm/s stimulus), reactionTime, initialResponse; Dataset.csv compiles all participants. OSF project https://osf.io/9zh5b/ points to this GitHub repo through the OSF GitHub add-on. No license file in repo. n participants in paper not check"
+ },
+ "Mariscal2025_JNeurophysiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Files sit in the child component 'Parameter Published' (osf.io/shf5g): one labTools adaptData .mat of stride-by-stride kinematic parameters per participant, 4 groups (young/old x slow/fast) of 8 = 32 files seen. No README; needs PittSMLlab/labTools to read the objects."
+ },
+ "Sombric2021_FrontAgingNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Single 235 MB labTools group object (stride-level parameters per subject, by the lab's standard format). Data statement in the paper cites osf.io/yrca5. No README."
+ },
+ "Sombric2020_JNER": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OSF project titled 'Sombric et al., 2020 --Stroke Incline'; the paper's availability statement cites osf.io/vm597. One labTools group .mat; no README."
+ },
+ "Gonzalez-Rubio2019_FrontHumNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "README: group object with 3 groups x 7 subjects; each subject's data is an n-strides x 187 parameter matrix with labels and descriptions. Same file also on Figshare (10.6084/m9.figshare.8145962, CC BY 4.0)."
+ },
+ "Sombric2017_FrontAgingNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Project described as the completed project for the Sombric et al. 2017 paper. Zip contents not opened; companion code at github.com/csombric/Sombric2017."
+ },
+ "Sombric2019_SciRep": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Code at github.com/PittSMLlab/Sombric2019Perception points to this OSF project. No README on OSF."
+ },
+ "Iturralde2019_eNeuro": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Figshare 'Subject data' item in project 'Corrective muscle activity reveals subject-specific sensorimotor recalibration'; stride-level EMG and kinematic parameters for healthy participants. Code at github.com/PittSMLlab/splitbelt-EMG-adaptation (its README warns a different share link is dead; this "
+ },
+ "Rossi2021_FrontAgingNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Step length, double support and limb excursion asymmetry per stride for young (21+-2 y) and late middle-aged (56+-6 y) adults with/without a 2-back task, plus raw 2-back button presses and reaction times. Same files mirrored on Zenodo 5655845 (CC0); scripts at Zenodo 5573289."
+ },
+ "Rossi2024_npjSciLearn": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "README names ShortPreferred.mat, LongPreferred.mat, ShortSlow.mat, SwitchSlow.mat, SwitchControl.mat (3 experiments); per-stride SLA and joint angles, 100 Hz time series, per-pass overground speed, Trials table one row per trial. Mirrored on Zenodo 12522690 (CC0). Participant count not stated on the"
+ },
+ "Rossi2026_eLife": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Landing page: 110 participants on a split-belt treadmill; README lists RampDown.mat, RampUpAndDown.mat, ShortAscend.mat, MediumAscend.mat, LongAscend.mat, ShortDescend.mat, MediumDescend.mat, SmallAbrupt.mat, SmallGradual.mat; per-stride SLA/stride time/motor output, 1000 Hz speed-match time series,"
+ },
+ "Seethapathi2024_NatCommun": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "README: DatNoNoiseProtocol.mat (8), DatNoiseProtocol.mat (8), DatTABProtocol.mat (9); heelPosStore cell per participant with fore-aft heel position of each leg at 100 Hz; demographics in a separate Excel file; NaNs from occlusion."
+ },
+ "Jin2026_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Raw Qualisys .mat exports (ankle markers only) for 15 non-disabled adults plus COSMED K5 metabolics. Zenodo copy 16970717 (CC BY 4.0) splits it into 'Raw mats from QTM part 1-3.zip' (5.6 GB each) and Processed_data.zip (366 MB). Code at github.com/ingraham-research/Split-belt-paper-2025."
+ },
+ "Ogawa2023_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "33 files, ~2 GB; one raw text file per participant per experimental group (prefix 1-4). Contents not opened. Zenodo mirror 6612540."
+ },
+ "Golyski2022_JRSocInterface": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Kinematics, kinetics and joint mechanical powers during walking with unilateral belt accelerations in early or late stance. Paper matched by title (Zenodo record lists no related identifier). Zip not opened."
+ },
+ "Hos2022_JBiomech": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "'Data and analysis for' the paper: foot placement model R^2, step width, stride frequency, toe-out on single vs split-belt treadmill with/without LesSchuh. Zip contents not opened."
+ },
+ "Wade2022_Biomechanics": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "One spreadsheet: PRE and POST scores per participant (cognition, gait speed and other mobility-disability dimensions) for control, treadmill and split-belt training groups. Outcome-level, no time series."
+ },
+ "Hill2019_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Zenodo archive of GitHub repo halleysfifthinc/EffectsArmswingGaitAsymmetryStability.jl (MIT). 15 subjects x 6 conditions (normal/held/active arm swing x symmetric/asymmetric walking); each .mat has gait events, force plates, foot/trunk/shoulder/hip kinematics in Visual3D units. Same data reused by t"
+ },
+ "Jacobsen2023_JPhysiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait",
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "BIDS dataset doi:10.18112/openneuro.ds004475; 30 subject folders; README: abrupt and gradual split-belt paradigm, 2:1 belt ratio. Checked through the OpenNeuroDatasets GitHub mirror; gait events in events.tsv, separate kinematic files not seen."
+ },
+ "Brinkerhoff2023_PLoSOne": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Two companion Figshare items: step length asymmetry per stride (group HE/LE, id, trial, sla, RPE) and fast/slow leg positive/negative mechanical work rates per stride; adaptation trials only. Paper link inferred from the R script name and matching PLoS ONE figures; items carry no related-DOI field."
+ },
+ "Herrick2025_PLoSOne": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "23 healthy adults in 2 groups (kinematic constraint only, n=11; constraint plus asymmetric loading, n=12) on an instrumented treadmill; tables of per-step asymmetry indices plus example GRF, with analysis scripts."
+ },
+ "Herrick2025_limbspeed": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Per-trial reports of which limb felt faster at randomized interlimb speed differences (0-30%) with vision occluded; kids 6-12, young 18-34 (also +-10% body weight), middle-aged 35-59, older adults. Only a preprint found in Crossref so far."
+ },
+ "Price2026_TNSRE": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "75 files, 0.9 GB: per-participant marker (.tsv) and GRF (.mot) for pre / early-late perturbation / post phases plus a summary outcome .mat; readme present."
+ },
+ "Price2026_JNeurophysiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "137 files, 3.1 GB: GRF, marker, lower-limb sEMG and insole data before, during and after a unilateral surface-stiffness change on the AdjuSST treadmill. Figshare title says 'treadmill walking'; paper title verified in Crossref."
+ },
+ "Vielemeyer2023_RSOS": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "10 volunteers, 8 conditions (2 speeds x 2 postures x 2 mass distributions) imitating the humanoid robot LOLA; force plates and kinematics per walkway trial. Paper matched by title/authors (item has no related-DOI field). A sibling item 'Human walk with altered center of pressure' (figshare 23294780,"
+ },
+ "Shida2023_FrontNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "26 people with PD walking barefoot overground ON and OFF medication; raw c3d plus processed per-gait-cycle csv and metadata."
+ },
+ "Moreira2021_SciData": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Data split over Figshare items 13169237 (MAT) and 13169240 (ASCII); Scientific Data metadata record 13169348 links the paper. Zip not opened."
+ },
+ "Angelidou2025_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "20 able-bodied adults at 4 surface stiffness levels x 3 speeds on the Variable Stiffness Treadmill 2; 60 GB total, one large .mat per subject. Figshare states license only as 'CC BY'."
+ },
+ "Bacek2024_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "University of Melbourne Figshare: 21 neurotypical young adults with and without a locked left knee; raw MAT (this item, 58 GB), segmented MAT (10.26188/24270064) and CSV (10.26188/24296032) versions."
+ },
+ "vanMierlo2023_JBiomech": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "4TU.ResearchData (Figshare-based). 10 healthy participants on a treadmill receiving linear or angular momentum perturbations at right toe-off; processed results used for the paper (3 MB zip, contents not opened)."
+ },
+ "Fukuchi2018_PeerJ": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "24 young and 27 older adults walking overground and on a treadmill at a range of speeds; raw and processed pelvis/lower-limb kinematics and kinetics, metadata csv."
+ },
+ "Fukuchi2017_PeerJ": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Running (not walking) dataset: 39 runners at 2.5/3.5/4.5 m/s; 428 per-subject files; metadata with demographics, strike pattern, strength. Task field set to walking for lack of a running category."
+ },
+ "Santos2016_PeerJ": {
+  "_unit": "trial",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Force-platform forces, moments and COP of 163 subjects standing 60 s in 4 vision/surface conditions, plus subject info and clinical balance scores."
+ },
+ "Schreiber2019_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "50 injury-free adults walking on a level walkway at 5 speed bands (0-0.4 m/s up to self-selected and faster); marker, force plate and EMG data in c3d."
+ },
+ "Lencioni2019_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Figshare collection of 54 items: one SubjectX.mat per participant (50 healthy, aged 6-72) plus All_Subjects.zip, demographics and code."
+ },
+ "Reznick2021_SciData": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Collection of 5 items; 10 able-bodied adults across inclines, speeds, running, accelerations, stairs and transitions. Normalized.mat holds stride-normalized data; streaming dataset has continuous time series."
+ },
+ "Hood2020_SciData": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Item 10308443 in the collection: 24 files, 13 GB; 18 transfemoral amputees on an instrumented treadmill at 5 speeds each, ankle/knee/hip kinetics and kinematics of both limbs in a MATLAB structure."
+ },
+ "dosSantos2017_PeerJ": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "27 young and 22 older adults, 12 x 60 s standing trials each; 1813 per-trial files (angles, GRF, markers) plus metadata, 7.4 GB."
+ },
+ "Horst2019_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "57 healthy young adults, 1142 overground gait recordings named S{id}_{trial}_{static/gait}; checked via the Mendeley Data public API."
+ },
+ "Moore2015_PeerJ": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Unperturbed and pseudo-randomly perturbed treadmill walking with full marker, force and treadmill data; commanded perturbation signals in Zenodo 16064 (CC0). Formats per the paper (not opened)."
+ },
+ "Camargo2021_JBiomech": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "This is Part 1 of 3 on Mendeley Data (subjects AB06-AB14); the other parts and a Dropbox mirror are linked from epic.gatech.edu/opensource-biomechanics-camargo-et-al. Parts 2-3 not checked."
+ },
+ "Hausdorff1997_JApplPhysiol": {
+  "_unit": "stride",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Stride-interval time series for 5 young, 5 old and 5 older adults with PD. Paper attribution follows the PhysioNet database lineage (page itself lists no original publication); DOI 10.13026/C2C889."
+ },
+ "Hausdorff2000_JApplPhysiol": {
+  "_unit": "stride",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "PD (15), HD (20), ALS (13), controls (16); per-stride timing (.ts) and raw left/right foot-switch force signals (.let/.rit). Original publication named on the PhysioNet page."
+ },
+ "Hausdorff1999_JApplPhysiol": {
+  "_unit": "stride",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "50 healthy children aged 40-163 months; each file = time and stride interval columns; file name encodes subject id and age in months."
+ },
+ "Hausdorff1996_JApplPhysiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "10 young men walking ~1 h on an oval path at slow/normal/fast speed, free and metronome-paced; per-stride intervals. Paper attribution follows the PhysioNet database lineage (no original publication listed on the page)."
+ },
+ "Priplata2003_Lancet": {
+  "_unit": "trial",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Postural sway of 15 young and 12 elderly adults, each file one 30 s trial, with and without sub-sensory insole noise. Original publication named on the PhysioNet page."
+ },
+ "Yogev2005_EurJNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "93 PD and 73 age-matched controls, ~2 min of level walking with 8 sensors under each foot (100 Hz VGRF); 313 files from three sub-studies (Ga, Ju, Si prefixes). The two DOIs are cited on the PhysioNet page; the 2007 paper's DOI was taken from that page and not separately checked in Crossref."
+ },
+ "Weiss2013_NNR": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "3-day 3D trunk accelerometer recordings of 71 community-dwelling older adults (fallers and non-fallers) plus short lab walks; 22 GB."
+ },
+ "Wayne2013_ContempClinTrials": {
+  "_unit": "stride",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Gait (single and dual task) and EMG from an RCT of 60 Tai Chi-naive adults aged 50-79 (baseline, 3 and 6 months) plus an expert Tai Chi comparison group; 2.4 GB. Design paper named as the original publication."
+ },
+ "DiNardo2021_BSPC": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "~5 min of continuous walking per subject, 31 young adults, lower-limb sEMG with basographic foot-switch signals; 448 MB."
+ },
+ "vanderZee2022_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Collection of 4 items, 10 healthy adults across many speed/step-length/step-frequency/step-width conditions; companion code at github.com/kuo-lab/human-walking-biomechanics."
+ },
+ "Carlisle2023_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "800 per-trial IMU .mat files (subject x 10 distances x section x trial) for walks of different short distances; repo LICENSE is CC BY 4.0."
+ },
+ "Hosseini-Yazdi2025_JEB": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Zenodo archive of github.com/kuo-lab/uneven-terrain-amplitude: kinematics, COM work and net metabolic rate for 10 young adults at 4 speeds x 4 terrain amplitudes. Granularity of the CSV rows (per condition or per step) not opened."
+ },
+ "Seethapathi2015_BiolLett": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Sacral marker motion for constant- and oscillating-speed trials plus per-subject metabolic data and preferred speeds; 11 files, 120 MB."
+ },
+ "Wang2014_BiolLett": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Hundreds of steady-state steps per subject used to fit the foot placement model; zip not opened."
+ },
+ "Perry2017_RSOS": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Data and code for normal vs wide-step treadmill walking; zip not opened."
+ },
+ "Sansare2022_FrontHumNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "39 files, 34 GB, one zip per participant (CP and control) with treadmill walking under visual-scene perturbations. Dryad title 'Neuromotor control of walking balance in individuals with cerebral palsy'."
+ },
+ "Dingwell2010_PLoSCompBiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Stride length / stride time series for young and older healthy adults with READMEs in CSV and MAT versions."
+ },
+ "Browne2017_RSOS": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "One 41 MB workbook of subject data from push-off biofeedback walking trials; sheet structure not opened."
+ },
+ "Patelaki2023_NeuroImage": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Older-adult deposit (39 files, 226 GB); young-adult companion deposit doi:10.5061/dryad.mgqnk9947 (36 files, 178 GB, CC0, also tied to Cereb Cortex 10.1093/cercor/bhac227). One zip per participant."
+ },
+ "Killeen2017_RSOS": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Spreadsheet of arm swing measures per participant and condition with README; granularity not opened."
+ },
+ "Antos2022_JEB": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Small table of per-participant, per-condition energy and preference values with README."
+ },
+ "Kang2026_bioRxiv": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Zenodo record 'invLocAd: Code and data for Safety prioritization shapes locomotor adaptation and performance' (isSupplementTo the preprint, whose Crossref title differs). Exact walking paradigm not confirmed from the record; data zip not opened. Published 2026-11-03."
+ },
+ "vanLeeuwen2020_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Kinematics, GRF and EMG during treadmill walking at normal and slow speed, unconstrained vs imposed foot placement and ankle-moment constraints (LesSchuh). Has part 10.5281/zenodo.4292211."
+ },
+ "Wang2020_JNeurosciMethods": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Long-duration standing under random pulse perturbations of the treadmill/platform, motion and force data with experiment description PDF."
+ },
+ "Payne2020_GaitPosture": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Checked via the Zenodo mirror (record 3898501) of the Dryad deposit; perturbation-evoked cortical and muscle responses during standing balance perturbations."
+ },
+ "Willaert2024_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "20 children with CP and 20 typically developing children; 4 perturbation levels x 8 trials; raw C3D, processed IK/BK/EMG per child; 50 files, 9 GB."
+ },
+ "Reimann2018_FrontPhysiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Checked via the Zenodo mirror (record 4986147). Walking with visual-scene tilt perturbations; zip not opened."
+ },
+ "Funato2016_PLoSCompBiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Responses of step timing to brief belt speed-up/slow-down perturbations at different gait phases; one README per zip."
+ },
+ "Nuckols2020_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Single summary MATLAB structure (joint-level mechanics per subject and condition, per the structure info file); no raw time series."
+ },
+ "Kucuktabak2026_SciRobot": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "One 20.8 GB step-normalized .mat for the stroke participants with a detailed README."
+ },
+ "Abarca2025_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "15 unilateral transtibial amputees and 30 able-bodied adults, 50 supervised trials each over 5 tasks; Figshare states license as 'CC BY'. Archive not opened."
+ },
+ "Nasiri2025_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "EMG, kinematics and GRF of non-disabled young adults walking in an Indego exoskeleton; experiment 1 subjects 1-9, experiment 2 subjects 10-12."
+ },
+ "Hybart2023_PeerJ": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "EMG and Dephy ExoBoot controller data indoors on a treadmill and outdoors overground; metabolic data in companion item 22572841. Paper match by author/topic (item has no related-DOI field)."
+ },
+ "Ferber2024_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Figshare+ deposit; 25-60 s walking and/or running trials with 3D marker positions plus demographics and derived variables."
+ },
+ "Symeonidou2023_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Pre/post training values per participant (on-beam balancing, single-leg stance, tandem stance, walking margin of stability) for unperturbed-vision and visual-occlusion groups. Cited in the paper's data statement."
+ },
+ "MacLean2021_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Collection of 8 items: 12 subjects walking overground at 4 speeds x 4 gravity levels (+ ankle-weight condition); raw GRF/EMG, V3D kinematics/kinetics, per-trial quasi-stiffness. Also used by the 2022 quasi-stiffness paper (PMC9362947)."
+ },
+ "Peterson2021_DataBrief": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait",
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OpenNeuro 'Perturbed beam-walking task' doi:10.18112/openneuro.ds003739.v1.0.2, 30 subject folders; checked via the OpenNeuroDatasets GitHub mirror. Code archive on Zenodo 5701797."
+ },
+ "Desmet2022_PLoSCompBiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Step-by-step foot placement data for young (YH) and older (OH) healthy adults during steady-state walking and cued lateral lane-change maneuvers; detailed README; code on Zenodo 7045551."
+ },
+ "Dingwell2019_PLoSCompBiol": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Step-to-step lateral foot placement series for able-bodied adults and people with transtibial amputation, CSV and MAT versions with READMEs."
+ },
+ "Hanada2024_DataBrief": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Raw per-subject folders for 49 subjects (836 GB total) plus a separate gait-event item (heel strikes/toe offs from treadmill force plates indoors and foot IMUs outdoors)."
+ },
+ "Liu2025_ImagingNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait",
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Older-adult dataset ds006095 (71 subject folders, doi:10.18112/openneuro.ds006095.v1.0.0) plus young-adult dataset ds004625 (32 subject folders, doi:10.18112/openneuro.ds004625.v1.0.2); both CC0 and both cited in the paper. Young-adult data also used in Liu et al. 2024 (PMC11845229)."
+ },
+ "Boebinger2024_PLoSCompBiol": {
+  "_unit": "trial",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "OpenNeuro doi:10.18112/openneuro.ds004785.v1.0.1, 17 subject folders; checked via the GitHub mirror. Paper matched by dataset title and author list."
+ },
+ "Morris2026_JNeurophysiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OpenNeuro 'Visual Occlusions with Treadmill Walking Speeds EEG', doi:10.18112/openneuro.ds007222.v1.0.0, 15 subject folders. Paper matched by authors and topic (dataset has no reference field)."
+ },
+ "Kim2025_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "clinical",
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OSF project named after the paper and cited in its data statement; one 715 KB zip (contents not opened). Abstract: 15 people with early PD and 20 age-matched controls repeatedly stepping over two virtual obstacles on a treadmill to a target foot clearance, Day 1 learning and Day 2 retention."
+ },
+ "Wood2024_JNeurophysiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OSF project with CC BY 4.0 license; data/ has 47 participant folders (stroke and control, SSV###) each with marker data exports per phase (acclimation, baseline, adaptation, de-adaptation) and gait-event tables, plus group/individual analysis code. Cited in the paper's data statement."
+ },
+ "Jain2025_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Data in child component 'Data Files' (osf.io/8wjku). Data_Table.csv may be per perturbation; not opened, so granularity recorded conservatively. Treadmill-belt perturbations per the paper's figure caption (figshare item 30669826)."
+ },
+ "Liu2024_RSOS": {
+  "_unit": "stride",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Data in child component 'Data' (osf.io/8gwy2): foot placement versus CoM state per step for unperturbed and perturbed walking, plus model coefficients and demographics."
+ },
+ "Liu2020_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "gait"
+  ],
+  "_agent_task": "walking",
+  "_notes": "OSF data component cited in the paper (OSF.IO/2QRU2): one folder per subject with raw baseline and step-length-asymmetry trial .mat files plus a stride-level file; several GB per subject."
+ },
+ "Beach2024_bioRxiv": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF API listing checked. Group-level per-speaker vowel tables (suffix _41 = 41 speakers) plus an example speaker folder with per-trial expt.mat and dataVals; listener transcription data included. Also a linked GitHub add-on. No readme seen at top level."
+ },
+ "Zeng_dynamicVowel_OSF": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF project created 2024-12 with a single data.zip; contents not opened (not downloaded). No paper DOI found via Crossref; treat as data ahead of publication. Unit of data assumed per-trial from the lab's usual format, not confirmed."
+ },
+ "Murphy2026_JASAEL": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-trial formant metrics table plus demographics; result tables and manuscript PDF also on the project. License CC0 stated on the OSF node."
+ },
+ "Parrell2026_PLoSBiol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Two per-trial stat tables (one per experiment) with the analysis script."
+ },
+ "Cheng2026_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Combines two cohorts (vsaGen2, vsaRetention) with per-trial JND staircase tables, bite block and pure-tone tasks, hearing and age. Age range includes older adults (same cohort as the healthy-aging study)."
+ },
+ "Hantzsch2022_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Two large merged formant-track matrices (per trial, 131 speakers per the filename) for perturbed and following trials. Files are large; no readme seen. OSF node created 2026 though paper is 2022."
+ },
+ "Cheng2026_JSLHR": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "43 speakers aged 18-73 (abstract). Per-trial vowel-space table with age and hearing tables."
+ },
+ "Zeng2026_JExpPsycholLMC": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Readme present. R data frames per experiment phase."
+ },
+ "Karlin2025_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Three experiments (Mandarin lexical tone, English pitch matching, English listening). OSF DOI 10.17605/OSF.IO/V7ZAF. Experiment code (Audapter) included."
+ },
+ "Parrell2024_JNeurophysiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Small per-participant x vowel x phase tables plus a ~1 GB raw_data.zip (per-trial audio/formant data, not opened). OSF DOI 10.17605/OSF.IO/78Z93."
+ },
+ "Krakauer2024_JSLHR": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-participant folders with per-trial formant data for each condition and session; Experiment 1 (random perturbation, compensation) in attentionComp_EXP1/. Linked GitHub repo blab-lab/attentionAAF (MIT) holds code."
+ },
+ "Zeng2025_JExpPsycholGen": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Three experiments; per-trial F1, F0 and intensity tables; readme present."
+ },
+ "Tang2022_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-participant acoustic data folders (20+ speakers listed at depth 2) for four experiments; OSF DOI 10.17605/OSF.IO/STJC9. Preprint title 'Variability is actively regulated in speech'."
+ },
+ "Beach2024_NeurobiolLang": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Small per-participant table (behavioural centering and lesion measures, inferred from size) plus an M100 MEG response file. Summary level only; check columns before use."
+ },
+ "Beach2024_CognNeuropsychol": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-utterance formant trajectories for an original and a replication sample, aligned three ways. File types inside folders not listed (one level checked)."
+ },
+ "Cheng2021_FrontHumNeurosci": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token production formants and centering tables plus acuity results."
+ },
+ "Tang2021_Cortex": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-participant per-session MATLAB files (Audapter output, large). Filenames carry participant code, group and session; no readme seen."
+ },
+ "Cheng2024_JSLHR": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Articulatory coordination for non-native onset clusters: an electromagnetic articulography study'; matched to the JSLHR paper by authors and topic. Per-token EMA gesture timing measures, not raw sensor traces."
+ },
+ "Cheng_clusterLearning_OSF": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One large per-token master sheet plus analysis script. No paper DOI found."
+ },
+ "Cheng2021_JSLHR": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token accuracy/acoustic coding of practised and untrained clusters."
+ },
+ "Kim2025_CommunPsychol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'When sensorimotor learning depends on total time in the environment rather than amount of practice'. Readme present; trial-by-trial adaptation and de-adaptation matrices with model code."
+ },
+ "Wang2023_bioRxiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One zip per participant (F = female, M = male); contents not opened. Description links the bioRxiv DOI."
+ },
+ "Kitchen2022_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Same participants did speech auditory-motor and reaching visuomotor adaptation; trial-by-trial data for both with readmes. Also useful as a reaching dataset."
+ },
+ "Kim2021_EurJNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Trial-by-trial normalized formant change per word, with key readme; adults who stutter and controls."
+ },
+ "Kim_variability_OSF2026": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One outcome table per test word. Created 2026-07; no paper DOI found yet. Lab affiliation inferred from contributors (Kim, Ambike)."
+ },
+ "Heyland2026_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One MATLAB file per participant per experiment (E1, E2). OSF title 'Linguistic Context and the Generalization of Second Language Speech Motor Plans'."
+ },
+ "Yuan2025_Cortex": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data component of project https://osf.io/3hjz9/ (CC BY 4.0). Zip contents not opened; unit assumed per trial."
+ },
+ "Lametti2025_Cognition": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One small MATLAB file per participant (per-trial formants) plus a Data/ folder for later experiments."
+ },
+ "Lametti2025_PsychonBullRev": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Hand movement adaptation tied to spoken words; one file per participant per experiment."
+ },
+ "Bradshaw2024_PsychonBullRev": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data component of OSF project https://osf.io/h26ur/ ('Vocal convergence and Adaptation during Synchronous Speech'), which also holds a data dictionary PDF. Paper matched by authors and title."
+ },
+ "Shiller2024_JExpPsycholGen": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Two site workbooks (Montreal, Wolfville). Small files, likely per-participant per-phase values; check sheets."
+ },
+ "Klaus2019_JASA": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "'Data and Scripts' component of OSF project https://osf.io/47xqz/ ('Perceptual training in a visual biofeedback matching task'); paper matched by the four contributors and topic."
+ },
+ "Gritsyk2021_PerspASHA": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-participant acuity and bite-block summary values; analysis scripts and manuscript folders also present."
+ },
+ "Ayala2023_JSLHR": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "'Scripts and Data' component of OSF project https://osf.io/bkasm/ (MOSAIC). Per-child summary and per-child x vowel bite-block means."
+ },
+ "Barbier2020_JASA": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Acoustic (vowels and /p t k s/) and kinematic measures across adaptation phases ('comp1-4'); description states data and code for the statistical analyses."
+ },
+ "Miller2026_NeurobiolLang": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "learning.zip presumably per-trial learning data (not opened); clinical and neuroimaging summary tables per participant. OSF title 'Speech Motor Sequence Learning in PPA'."
+ },
+ "Murphy2023_PsychonBullRev": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README present. Production changes after passive listening; borderline for motor scope (production adaptation driven by perceptual exposure)."
+ },
+ "Murphy2025_PsyArXiv": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data folder contents not listed (one level checked). Borderline for motor scope."
+ },
+ "Murphy2024_PsyArXiv": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Generalization of Statistical Learning in Speech Perception and Speech Production'; matched to preprint by the PDF filename on the node. Borderline for motor scope."
+ },
+ "Eads2026_FoliaPhoniatr": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Trial-level AAF response table plus per-child acuity summary."
+ },
+ "Zhang_tongueObstruction_OSF": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-subject CSV files (subject numbers up to at least 55) and a combined production table. Companion node https://osf.io/742ec/ ('bite block FPCA') reuses productionFullTable.csv. No paper found."
+ },
+ "Railo2025_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Inattentional deafness of pitch shifts in auditory feedback during vocalization'. One MATLAB data file plus analysis code."
+ },
+ "Acosta2026_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README present; first-level response time courses per condition (up/down/none perturbation, F0 and F1) and session."
+ },
+ "Oschkinat2026_LangSpeech": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data folder Perturbation_data/ not opened (two levels checked)."
+ },
+ "Schiller2026_JVoice": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Two anonymised study tables. Parent project https://osf.io/agse3/ notes a corrected CPPS extraction script for Study 2."
+ },
+ "Heyne2025_DataBrief": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Files are served through the project's OneDrive add-on (listed via the OSF API), not osfstorage; wiki pages describe methods and folder structure. Large modern sample of neurotypical adults per the description."
+ },
+ "Lazzari2024_BrainSci": {
+  "_unit": "keypress",
+  "_src": [
+   "hand",
+   "speech"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "README present. Raw tap data zipped; people who stutter vs controls."
+ },
+ "Nault2022_FrontHumNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Raw per-trial data for two experiments in one workbook."
+ },
+ "Hilger2023_ResSquare": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Single 27 KB table (likely per participant x condition response magnitudes). Related later paper: Hilger et al. 2025 Lang Cogn Neurosci 40(10):1350 (10.1080/23273798.2025.2541696)."
+ },
+ "Goddard2023_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-trial production (formant) and perception (3AFC, AXB) data."
+ },
+ "Franken2022_AttenPerceptPsychophys": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data subfolder not opened (two levels checked). Unit assumed per trial."
+ },
+ "Franken2019_JASA": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Accepted manuscript PDF also on the node."
+ },
+ "Rao2026_PNAS": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Many small per-phase CSVs with one value per participant (F1/F2 at baseline, asymptote, retention, relearning). No trial-level series seen."
+ },
+ "Thorburn2025_PsyArXiv": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Three experiments each with data/, analysis/, stimuli/; README present. Borderline for motor scope (production shifts after perceptual exposure)."
+ },
+ "Wang2024_LangSpeech": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Durations workbook likely per utterance; STI workbooks per participant x rate condition."
+ },
+ "Buchwald2019_Cortex": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'tDCS timing and speech motor learning'; paper PDF on node (2019buchwaldetal.pdf)."
+ },
+ "Tachibana2025_OSFPreprints": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Effect of pitch-shift feedback for adults who stutter'; matched to the preprint by author and topic. Small tables (per participant x condition)."
+ },
+ "EcheverriaAltuna2026_CurrBiol": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "other",
+  "_notes": "Behavioural and MEG data folders; file types inside not listed (two levels checked). Behavioural task is manual/speech response selection; check before listing."
+ },
+ "Franke2025_JPhonetics": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token EMA gesture measures and time-normalised lip aperture / tongue back trajectories (gamm_data file)."
+ },
+ "Wiltshire2024_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Variability measures per participant x condition (from rtMRI)."
+ },
+ "Wiltshire2021_JSLHR": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README present; one per-participant x item variability table."
+ },
+ "VanThorre2026_JFluencyDisord": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data folder not opened (two levels checked); unit and format unconfirmed. Weakest motor link in this list (covert speech)."
+ },
+ "Muecke2026_SpeechProsody": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Raw and smoothed 3D head-sensor trajectories per target word."
+ },
+ "Doty2026_JSLHR": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "'Data and analysis scripts' component of OSF project https://osf.io/jbvhn/ ('Altered Formant Feedback Simulating a Change in Effective Vocal Tract Length', Doty et al.). Matched to the JSLHR paper by first author, Shiller and topic; ASHA figshare supplement 34701528 carries the same short title."
+ },
+ "Bradshaw2025_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "'Data' component of OSF project https://osf.io/3xj5e/ ('Speech motor learning with cochlear-implant simulated speech'), which also holds a data dictionary PDF."
+ },
+ "Narayanan2014_JASA": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Zenodo API checked: single 8.5 GB zip, open access, CC BY 4.0. The SAIL page says the database moved to Zenodo in May 2026. Five male and five female speakers per the description."
+ },
+ "Lim2021_SciData": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Figshare API checked; ~676 GB total. A video-only zip (2.6 GB) is the practical entry point."
+ },
+ "Wrench2000_MOCHA": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Apache directory listing loaded. Two fully checked speakers plus maps0 and seven more speakers in unchecked/. No DOI for the source paper."
+ },
+ "Rudzicz2012_LangResourEval": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Download page loaded with four direct archive links (female/male dysarthric, female/male controls); license text on the page. Participant count from the paper (8 dysarthric, 7 controls)."
+ },
+ "Eshky2018_Interspeech": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Public read-only rsync server ultrasuite-rsync.inf.ed.ac.uk::ultrasuite listed directly; datasets UXTD (typically developing), UXSSD and UPX (speech sound disorder), Cleft, UX2020. License stated on the UltraSuite home page."
+ },
+ "Ribeiro2021_SLT": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "rsync module ultrasuite-rsync.inf.ed.ac.uk::tal-corpus listed (TaL1: one professional speaker over six sessions; TaL80: 81 speakers)."
+ },
+ "Westbury1994_XRMB_TTIC": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README read; file sizes from HTTP HEAD. Post-processed frames (7-frame windows, missing pellets reconstructed) with speaker and phone labels, split train/tune/test for machine learning; not the original per-utterance pellet files. The original UW distribution has no public download page."
+ },
+ "Kuberski2019_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README read: subject/syllable/rate/trial/sensor/coord tree, tongue tip and body sensors, 8 metronome rates (30-570 bpm), 4 trials, with movement onset/offset tags. Six subjects."
+ },
+ "Kuberski2019_Phonetica": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Same format as the power-law deposit (separate record and subset)."
+ },
+ "Bocquelet2016_PLoSComputBiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "One male French speaker. Zip contents not opened."
+ },
+ "Badin_PB2007_Zenodo": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Single speaker. The paper listed is one that used PB2007; the record itself does not name a primary citation in the metadata excerpt seen."
+ },
+ "Belyk2019_ProcRSocB": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Checked via the Zenodo mirror of the Dryad record (zenodo 5026872), CC0."
+ },
+ "Belyk2018_RSocOpenSci": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Dryad API file listing checked; xaa-xad look like a split archive (likely audio). Unit assumed per trial."
+ },
+ "Lammert2018_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README read: per-subject 41x41 phoneme-pair matrices of distance, width and movement time (5 syllable-position categories). Checked via Zenodo mirror 4959487."
+ },
+ "Blanco2021_FrontPsychol_630144": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Description lists per-participant folders inside the archive (not opened)."
+ },
+ "Bennett2018_JIPA": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Checked via Zenodo mirror 4934835 of the UC Dryad record. Phonetic rather than motor-learning focus, but full articulatory imaging."
+ },
+ "Belz2022_LangSpeech": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token acoustic and articulatory (EMA) measures for monosyllables and disyllables."
+ },
+ "Sepulveda2021_ultrasound_Figshare": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Figshare API checked. Description: concurrent ultrasound videos of tongue contour and audio of 30 short sentences. Related article is an IEEE paper (ieeexplore document 8730224) whose DOI was not resolved here."
+ },
+ "Jeon2026_silentSpeech_Figshare": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "No accompanying paper found; recorded for silent speech interface work. Articulatory muscle activity rather than kinematics."
+ },
+ "Tumber2014_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Borealis (Canadian Dataverse) API checked; files unrestricted. Small workbooks, likely per participant x condition compensation magnitudes."
+ },
+ "Tremblay2019_ExpGerontol": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Borealis API: 172 unrestricted files; per-participant DDK recordings with TextGrid segmentations plus a summary workbook and README."
+ },
+ "Tremblay2023_JSLHR": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Borealis dataset title 'Speech and voice production in healthy older adults with or without amateur singing experience'; matched to the JSLHR paper by author and title."
+ },
+ "Caudrelier2019_Cognition": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Description: formant values for each speaker and each trial of the experiment."
+ },
+ "Shamei2023_SciRep": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Gravitational change and speech'; paper DAS points here. Per-token formant values."
+ },
+ "Demirel2025_NeurobiolLang": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Paper DAS: F1 and F2 values for each participant across all phases."
+ },
+ "Rowe2025_NeurobiolLang": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "OSF node titled 'Planning and Motor Subtypes in AWS'; the paper's full text links osf.io/jvdea and the zip is named Data_NOL2025. Zip not opened; unit assumed per trial."
+ },
+ "Li2026_FrontHumNeurosci": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README present. Node is the 'Data' component cited in the paper DAS."
+ },
+ "Myers2024_OpenMind": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data folder contents not listed (one level). Borderline motor scope (imitation skill)."
+ },
+ "Polsterer_ageAdaptation_OSF": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Description: statistical analysis for the study of the same name. Raw shared workbook assumed per trial; no paper DOI found."
+ },
+ "Kartushina2025_JASA": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token formant distances across training and retention days."
+ },
+ "Jang2025_Data": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Data descriptor; three trisyllabic nonce words varying stress location."
+ },
+ "Li2026_PsyArXiv_posture": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "ReadMe present. Links speech motor output to posture (balance) perturbation."
+ },
+ "Borders2024_JSLHR": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "other",
+  "_notes": "README present; Data/ folder not opened. Respiratory/laryngeal motor learning rather than speech."
+ },
+ "Borders2025_Cerebellum": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "other",
+  "_notes": "Raw per-attempt cough measures (inferred from file naming)."
+ },
+ "Gussow2023_JExpPsycholGen": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Parallel speech and finger sequence tasks."
+ },
+ "Dokovova2023_JSLHR": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-token tongue-shape metrics."
+ },
+ "Kappert2019_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-group data folders with a data manual; contents of group folders not listed."
+ },
+ "Nagamine2023_ICPhS": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-speaker spline exports (anonymised codes) plus combined tables. No DOI for the proceedings paper."
+ },
+ "Cairney2025_PilotFeasibilityStud": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Per-item transcription accuracy across therapy sessions (inferred from the 1.4 MB PCC file)."
+ },
+ "Trujillo2021_SciRep": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "OSF title 'Multimodal Lombard Effect'; matched to the paper by contributor and title."
+ },
+ "Lo2025_SpeechCommun": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Nasalance time series and acoustic measures per token."
+ },
+ "Burroni2025_JASAEL": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Raw EMA archives from two systems; description gives the citation."
+ },
+ "Burroni2026_LabPhon": {
+  "_unit": "continuous time series",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Description: all data and analysis scripts for the paper. Zip not opened."
+ },
+ "Burroni_ItalianLength_OSF": {
+  "_unit": "utterance",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Description: all data and scripts to replicate analyses; zip not opened."
+ },
+ "Smith2023_ICPhS": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Small summary table; low priority."
+ },
+ "Guenzel2026_JSLHR": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "README present. Results files hold per-participant synchronization measures for speech and tapping; whether raw audio/tap times are inside the analysis subfolders was not checked."
+ },
+ "Barchet2024_CommunPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Synchronization values per participant x rate; perception data per trial."
+ },
+ "Zhu2024_PsychonBullRev": {
+  "_unit": "summary per participant",
+  "_src": [
+   "speech"
+  ],
+  "_agent_task": "speech",
+  "_notes": "Small per-participant PLV tables (60 participants implied by filenames)."
+ },
+ "Matsuo2024_MusicSci": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Dryad deposit mirrored on Zenodo record 8335982 (26 small CSVs, 0.3 MB). README: raw bar-length time series per participant x trial (synchronization phase negative index, continuation positive), plus summary ratio files. Crossref also has the PsyArXiv preprint 10.31234/osf.io/e32fv. N not stated in "
+ },
+ "Tomassini2018_ProcRSocB": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "README: one subj#-block#.mat per subject and block; each trial holds the raw 1 kHz tapping-button voltage, sound and LED channels, stimulus latency relative to taps, SOA and the perceptual response. Zenodo mirror 5003924."
+ },
+ "Hammerschmidt2023_PsycholRes": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "One row per tapping session (participant x day x time of day) with SMT and covariates; variable list included. N = 36 from paper methods."
+ },
+ "Hammerschmidt2021_FrontPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Large online SMT study: 5,966 took part, 3,576 analysed after exclusions (paper). Raw and cleaned tables with variable lists; ages span childhood to old age."
+ },
+ "Hammerschmidt2020_MusicPercept": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Cleaned per-participant x condition table with codebook; 15 musicians + 15 non-musicians analysed (34 tested). Small file, likely condition means rather than tap times."
+ },
+ "Laventure2016_PLoSBiol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Opened the workbook: one row per participant with per-trial (T1..T30+) sequence speed and accuracy columns by group, plus spindle and sleep-stage sheets. 76 participants in behavioural analyses. Zenodo mirror 5013749."
+ },
+ "VanRoy2025_JNeurosci": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Opened the workbook: demographics/UPDRS per participant, then per-participant x block (12 blocks) mean sequence duration, cumulative total, micro-online and micro-offline gains. 42 drug-naive unilateral PD + 30 controls. Block-level, not keypress-level."
+ },
+ "VanRoy2024_CommunPsychol": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical",
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "README: raw per-participant text files from two experiments by age group (children, adolescents, young, older adults) plus subject-level source data and scripts. 224 initiated, 7 excluded."
+ },
+ "MaceiraElvira2022_SciAdv": {
+  "_unit": "keypress",
+  "_src": [
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single 9.8 MB zip intended to reproduce the chunking analyses with code at 10.5281/zenodo.6490843. Young, middle-aged and older adults across two cohorts (52 + 61). Archive contents not opened."
+ },
+ "Gann2023_BrainStimul": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "README: per-subject raw MSL text logs with each cue, response and timestamp, plus .mat summaries; individual-subject figure source data; MEP raw data."
+ },
+ "Haikalis2023_NeurosciLett": {
+  "_unit": "trial",
+  "_src": [
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Long-format: participant x trial number with total trial time (s), group (active/sham/no tDCS), age, sex. 28 control, 20 active, 20 sham."
+ },
+ "Caramiaux2018_PLoSONE": {
+  "_unit": "keypress",
+  "_src": [
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single 8.8 GB zip, not opened; novices learning piano sequences under tempo-variability schedules. Licence is no-derivatives (CC BY-ND 4.0)."
+ },
+ "Delhaye2024_SciAdv": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Dryad deposit (Zenodo mirror 5213702) for the grip-force/friction study; one 1.7 GB zip, not opened. Dryad record lists the bioRxiv preprint 10.1101/2021.07.20.452911; published version is Sci Adv 2024."
+ },
+ "Mace2017_RSocOpenSci": {
+  "_unit": "trial",
+  "_src": [
+   "eye",
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Zip not opened. 34 + 32 healthy adults (ages 17-77) tracking targets with an instrumented handgrip. Zenodo mirror 5024391."
+ },
+ "Klein2021_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Zenodo record says it holds experimental and analysis scripts with raw and processed data. Zip not opened."
+ },
+ "Klein2020_PLoSComputBiol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "One 36 GB zip of raw and processed data with Matlab scripts. Several experiments (12 participants in Exp 1, 14 in Exp 2, more later), so no single N given."
+ },
+ "Lepori2025_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Raw recordings plus MATLAB pipeline (Scripts_Pipeline.txt explains folders). The record links the bioRxiv preprint 10.1101/2024.12.20.627508; published version found via Crossref."
+ },
+ "Maiello2021_FrontNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Raw and processed data plus scripts in one 5.2 GB zip. Three experiments of about 25 participants each, per the paper."
+ },
+ "Maiello2019_iPerception": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Opened the zip listing. It holds trial-level grasp data from Paulun et al. 2016, reanalysed, plus parsing and analysis scripts."
+ },
+ "EbnerKarestinos2018_PLoSONE": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical",
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Opened the files: per-child x hand mean GF/LF dynamic and temporal variables (about 100 rows) plus example GF/LF time series per group. 25 UCP + 25 typically developing children."
+ },
+ "EbnerKarestinos2016_PLoSONE": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Opened the zip listing: per-participant kinematic/dynamic and temporal variable tables plus figure traces."
+ },
+ "Voudouris2016_PLoSONE": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye",
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "README columns: time (ms), gaze position, index and thumb positions (deg and Cartesian) per sample, across 7 experiments. 14 participants in total."
+ },
+ "Bishop2026_FrontPsychol": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "MIDI drum-hit onsets per dyad and trial plus body motion. 25 pairs, 1 excluded. Drumming is arm/hand rather than finger tapping."
+ },
+ "Schwarz2020_Sensors": {
+  "_unit": "trial",
+  "_src": [
+   "clinical",
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Readme: Clean Data / Subject1-10 / Left-Right / ARAT_BL, ARAT_BW, ARAT_BH, s2s, with glove force and IMU (arm, sternum, shoulder) data. 10 chronic stroke subjects, 9 analysed."
+ },
+ "Hussain2015_PLoSONE": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye",
+   "hand"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Raw tracking recordings plus the target waveform (6,000 samples), trial-removal list, processed data and analysis script. Zenodo mirror 5008266."
+ },
+ "Thomas2016_PLoSONE": {
+  "_unit": "trial",
+  "_src": [
+   "hand",
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Opened the workbook: Acquisition, Retention and Tracking Saturation sheets in long format (Subject, Time, Group, Block, Score), one row per trial. 36 subjects."
+ },
+ "Mattei2024_Sensors": {
+  "_unit": "continuous time series",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Hand kinematics from two orthogonal Leap Motion controllers synced with 32-channel EEG. The paper cites an earlier version (record 12804784); this is the current version."
+ },
+ "Paulun2019_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Description file: one row per lift with subject, object, materials at finger and thumb, heaviness ratings and peak torque (N.mm). Four experiments (Exp 1: 49 analysed, Exp 2: 24)."
+ },
+ "Endo2012_LNCS": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "CogLaboration project Experiment 6 (Zenodo record 5003465): force-sensor object transfers between pairs, all subjects in one analysis CSV. Record DOI 10.15146/R3RW23."
+ },
+ "Feit2016_CHI": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Keylogs, finger-marker motion capture, eye tracking and video from 30 typists of mixed skill. Non-commercial licence."
+ },
+ "VanWaes2019_JORS": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Sub-dataset (English, ages 21-25) of the Inputlog Copy Task corpus: d/k tapping, sentence copy and word-combination copy measures. Zip not opened; the paper describes the task, not this specific deposit."
+ },
+ "Papadopoulos2020_SciRep": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Virtual-keyboard press/release timestamps and accelerometry. SData = 22 clinically assessed (8 HC/14 PD); GData = 157 self-reported (131 HC/26 PD). Zip not opened."
+ },
+ "Toffoli2026_PLOSDigitHealth": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical",
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "One row per child per task x allograph: grade, sex, BVSCO-3 z-score and many pen kinematic indicators. 'More than 700' students (paper); exact N not given."
+ },
+ "Branscheidt2019_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Public OSF project 'Motor learning under fatigue' with three small .mat files; the paper says the full data set is here. 121 participants recruited across experiments (38 in Exp 1, 20 in Exp 2). No licence on the OSF node."
+ },
+ "Pinsard2019_eLife": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Behavioural CSV of the MVPA task plus group statistical maps. The paper links a view-only URL, but the node is public. 18 analysed of 26 who completed."
+ },
+ "Ariani2022_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Repo data folder has group finger-force time series (100 ms bins) for all participants, one participant's raw .dat, plus fMRI-derived ROI data. GPL-3.0 is the repo licence."
+ },
+ "Cousins2016_PLoSBiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Opened the workbook: per-subject (~26 rows) mean RT and accuracy for cued vs uncued sequences, early/late, learn vs retest, plus explicit recall. Figshare lists the licence as Apache 2.0."
+ },
+ "Dhakal2018_CHI": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Keystroke-by-keystroke logs for every participant plus a metadata file. Terms are set on the Aalto page, not as a standard licence."
+ },
+ "Palin2019_MobileHCI": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Raw keystroke tables (participants, test_sections, log_data, keystrokes, sentences) plus processed tables. The page says only that data are 'openly available', with no licence. Its BibTeX DOI is a placeholder; the real DOI is from Crossref."
+ },
+ "Jacoby2024_NatHumBehav": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Raw tapping reproductions for 39 participant groups in 15 countries, plus figure data, code, instructions and stimuli. Total N not taken from the paper (group sizes vary)."
+ },
+ "Gupta2022_npjSciLearn": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "One RT file per break/practice-duration group (2-3 MB each, response-level). The project also has stimuli and analysis components. 37+39+42+44 participants."
+ },
+ "Hamel2024_BrainStimul": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Opened the workbook: sheets for left/right M1 motor preparation and sequence learning, one row per trial (participant, block, initiating finger, TMS pulse type, RT, MT, accuracy, CSE, SICI). 20 participant IDs per sheet."
+ },
+ "Humiston2018_NeurobiolLearnMem": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "MST scores for both studies in one SPSS file plus EEG with sleep scores, manuals and task code. 18 immediate + 17 delayed test after exclusions."
+ },
+ "Urry2018_BrJPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single small CSV, so per-participant learning scores rather than trials. 43 younger + 35 older adults."
+ },
+ "Ali2025_PsycholRes": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Per-participant summaries (error-lag RTs, sequence-specific learning, recognition) with R analysis code. No trial-level RT file."
+ },
+ "Russo2021_ExpBrainRes": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single small workbook described as raw data. 19 stroke patients + 18 controls."
+ },
+ "Quan2025_FrontPsychol": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single 3.5 MB workbook, large enough to be trial-level but not opened. 119 recruited, 110 analysed in four groups."
+ },
+ "Farkas2023_BehavResMethods": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "One 40 MB master CSV of ASRT keypress trials for 180 subjects plus R code."
+ },
+ "Rybicki2021_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Per-subject x run .mat files plus collated RT.mat and scripts (paper links it through tiny.cc/58oxsz). 28 autistic adults plus a matched control group."
+ },
+ "Russo2020_PPCR": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Single small analysis database, likely one row per participant x session."
+ },
+ "AngladaTort2022_BehavResMethods": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Experiment 1 is hardware timing validation; Experiments 2-3 hold raw online tapping data. 226 participants gave valid tapping data in Exp 3 (727 began)."
+ },
+ "Tomassini2022_iScience": {
+  "_unit": "continuous time series",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Finger kinematics per couple and trial for the real-partner, hand-prone, arm, virtual-partner and control experiments. 60 participants (30 couples) in the main experiment, 80 across experiments."
+ },
+ "Jacoby2021_PhilTransRSocB": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Per-drummer audio and extracted stroke onsets from three Malian jembe/dundun ensembles (3 players each). Unit is a drum stroke onset."
+ },
+ "Guerin2021_FrontPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Two small workbooks (one per study) of per-participant x condition timing measures. 25 participants per study."
+ },
+ "Messing2023_PeerJ": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Per-participant tap counts and AQ scores with Inquisit task code. Code is mirrored on GitHub (deborah-apthorp/FTT_Autism_Reproducible_Results). Ages 18-78."
+ },
+ "KligerAmrani2020_DataBrief": {
+  "_unit": "trial",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Tap-time data for spontaneous tapping and synchronization-continuation across sessions plus MATLAB analysis code and readme."
+ },
+ "Vishne2021_NatCommun": {
+  "_unit": "keypress",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Raw tap data plus analysis and simulation outputs and scripts. 47 controls, 32 dyslexia, 30 autism."
+ },
+ "Mudarris2025_FrontNeurosci": {
+  "_unit": "summary per participant",
+  "_src": [
+   "hand"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Analysis-ready long datasets (per participant x condition) for the mixed-model and GAM analyses, plus R code. 50 tested, 45 in tapping analyses. Raw tap times not seen."
+ },
+ "Zvoncakova2026_DiaGraMo": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical",
+   "hand"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Wacom Cintiq 16 pen signals for 16 tasks from 276 Czech children aged 8-12 (161 with dysgraphia), plus cognitive scores. The record names both papers as using these data; zip not opened."
+ },
+ "Tyralla2023_ProcRSocB": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Dryad deposit mirrored on Zenodo record 7626001 (cc-zero). README: mymat_rawData has trial x subject matrices of saccade landing positions and localization clicks per experiment (3) and session (short/medium/long). Analysis code is a separate Zenodo software record 7505402 (MIT)."
+ },
+ "Souto2016_FrontHumNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "One adaptation CSV and one perception CSV per subject; zip has exp1 (19 subject IDs) and exp2 (14 subject IDs) folders with READMEs."
+ },
+ "Wagner2023_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Trial-level eye movement/behaviour table plus per-trial saccade position traces; MATLAB analysis code and README included."
+ },
+ "Wolf2019_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "One zip per experiment with trial tables, time-course files, column-description PDFs and README.txt."
+ },
+ "Masselink2025_PLoSComputBiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye",
+   "neuro"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "readme.pdf: data.mat holds, per subject and session, 530 trials of saccade amplitudes and pre-/post-saccadic localizations (x,y), target position and trial type; adaptation phase trials 166-365 (3 deg inward step); grand means also included. Distinct from the known Masselink & Lappe 2021 eLife depos"
+ },
+ "Valsecchi2020_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Three subfolders (Exp1, Exp2 adjustment, Exp2 saccade adaptation), 12 subject files each, with a data format description per folder. n=12 is per folder as counted from file names."
+ },
+ "Schutz2015_FrontHumNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Per-subject per-condition CSVs across 4 experiments (38 unique subject IDs in file names; subjects overlap across experiments)."
+ },
+ "Schutz2014_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "One CSV per subject per experiment, 8 experiments with 9-11 subjects each (40 unique subject IDs in file names)."
+ },
+ "Huang2017_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "27 senior and 25 young adults (abstract). Eye data plus per-participant executive-control scores with column descriptions."
+ },
+ "Masselink2023_PLoSComputBiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Eight cerebellar patients and eight controls (abstract). Data in one mat file plus model-fitting code; unit of data assumed trial-wise learning curves (readme.pdf not opened)."
+ },
+ "Nachmani2020_eNeuro": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Dryad deposit mirrored on Zenodo record 3902832 (cc-zero). Raw and saccade-labelled eye traces; very large (~17 GB total). n=16 inferred from S1-S16 labelled sets."
+ },
+ "Danion2021_Cortex": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Record description: DATAmain has one sheet per variable with an individual value for each trial (eye and hand tracking error, lags, pursuit gain), N=62; additional .dat files and Perl scripts for saccade and lag analyses."
+ },
+ "Mathew2020_SciRep": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Individual data from two cohorts, one sheet per figure (per-participant values, not raw traces)."
+ },
+ "Goettker2019_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "48 zip entries: per-participant mat files for an interception (hand) task and a perceptual task with eye data. File names carry participant initials."
+ },
+ "Goettker2019_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "55k zip entries: one eye-position file per trial per session, organised by contrast condition; no README seen in the listing."
+ },
+ "Voudouris2016_VisRes": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "8272 zip entries organised by experiment, subject and condition."
+ },
+ "Voudouris2018_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Zenodo record typed 'publication' but holds the data: one file per trial per subject and condition (gaze plus digit kinematics)."
+ },
+ "Lento2024_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Abstract: 20 healthy participants performing 14,000 single pick-and-place movements in VR, with gaze, head and arm tracking. Licence on Zenodo is Apache 2.0."
+ },
+ "Klar2023_TOCHI": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Mid-air VR pointing in the ISO multidirectional task (cursor vs virtual pad, ID vs ergonomic conditions); IK subset lists users U1-U6. Used by user-in-the-box / sim-mpc packages."
+ },
+ "Hirota2022_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Per-subject Excel files (optic-disc position by template matching and VOG eye position) plus examination videos; about 23 subjects in the zip listing."
+ },
+ "Schutz2015_VisRes": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Per-subject folders with a trial table and one eye-trace CSV per trial (7433 zip entries)."
+ },
+ "Maiello2018_ExpBrainRes": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Raw EyeLink files and processed mat per subject and experiment, analysis and experiment scripts. Visual tracking of self-generated vs external target motion in depth."
+ },
+ "Chen2016_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "4059 zip entries: eye and finger (CMS20 ultrasound tracker) recordings with experiment scripts; see 'data description.txt'."
+ },
+ "Billino2016_eNeuro": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "110 genotyped healthy adults (abstract); one row per participant of pursuit measures."
+ },
+ "Susilaradeya2019_eLife": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye",
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Dryad deposit mirrored on Zenodo record 4948727 (cc-zero); one mat per experiment with analysis scripts. Wrist/finger tracking of moving targets."
+ },
+ "Braun2016_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "README: four folders (pursuit trained = 4 highly trained observers, pursuit untrained, saccade trained, saccade untrained); per observer and target direction, one 4-column file per trial (time, gaze x, gaze y, time from pursuit onset) plus a mat file of oculometric proportions."
+ },
+ "Tarrit2023_FrontIntegrNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Raw EyeLink .edf files for all typically developing and ASD participants (Figshare description). Zip contents not listed."
+ },
+ "Pogson2019_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Tidy table, one row per observation (head impulse), 80 normal subjects aged 16-84 (abstract)."
+ },
+ "Martel2025_JNeurophysiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Recherche Data Gouv (Dataverse). README: one row per participant (106, 11 experiments) with baseline and late-learning median saccade angles per intra-saccadic-step direction, bootstrap and KS statistics. No trial-level data."
+ },
+ "Moraes2026_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF project 'Independent visuomotor functions' (Moraes & Fooken), 19 per-participant mat files of ~340 MB each. Paper match is by title/topic; OSF node lists no article DOI. Unit assumed trial-level kinematics and gaze."
+ },
+ "Gerharz2025_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Raw experimental data and code in one 3.5 GB zip (not listed); unit assumed trial-level gaze and hand data."
+ },
+ "Crowe2023_ExpBrainRes": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Main and replication experiment data plus MATLAB analysis code and readme."
+ },
+ "Crowe2023_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Data zip not listed; unit assumed trial-level hand data."
+ },
+ "Schroeger2022_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "OSF project titled 'Kappa effects modulate prediction and interception'; Europe PMC links osf.io/675j4 to this paper. Trial tables per experiment plus fitted brms models."
+ },
+ "Reid2018_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Raw motion-capture zips per TMS site plus per-subject analysed mat files and MATLAB code. Paper match by OSF title/description (TMS of SPOC and mIPS during interception)."
+ },
+ "Reid2018_JExpPsycholHPP": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-subject trial-info and analysed mat files across several experiment folders."
+ },
+ "Camara2018_ExpBrainRes": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "README: 13 participants in Exp 1 and 9 in Exp 2 (may overlap); per trial an eye file, a finger trajectory file (x,y,z) and a trial-info file; 271/260 trials per participant; per-participant summary log."
+ },
+ "Megardon2017_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Data in OSF component grh62; Europe PMC links osf.io/t96t2 to this paper. Raw and per-saccade trajectory data for all participants plus extraction scripts."
+ },
+ "Klanke2026_JVis": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "Three OSF projects cited by the paper (Europe PMC): mhfke (SPCS, licence field 'No license'), hcf9a (SPC2) and qbpkz (SPVS); each holds one CSV per participant-session and the shared analysis Rmd."
+ },
+ "Coudiere2024_JNeurophysiol": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Single 465 MB zip (contents not listed); 28 participants tracked a target simultaneously with eyes and hand (abstract). Unit assumed raw traces from the size."
+ },
+ "Coudiere2026_JNeurophysiol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Small spreadsheet of per-participant (per-condition) values used for statistics."
+ },
+ "Coudiere2026_Neuroscience": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "OSF title 'New insights into altered manual tracking in elders' (young vs older adults); paper match by authors and topic, no DOI on the node."
+ },
+ "Coudiere2026_HumFactors": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Data used for statistics and figures (node description)."
+ },
+ "Coudiere2025_ExpBrainRes": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Data used for statistics and figures (node description)."
+ },
+ "Danion2025_IntJIndErgon": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Large-sample visuomotor skill scores from a pilot selection battery, one row per candidate."
+ },
+ "Danion2026_eNeuro": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Data used for statistics and figures (node description). Abstract: Exp 1 24 and Exp 2 24 participants; reaches initiated while the same or other hand produced rhythmic movement."
+ },
+ "Navarro2020_PLoSOne": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Europe PMC links osf.io/sbg65 to this paper. Readme: per subject, eye-tracker sample files and simulator logs (steering-wheel angle in column 9) for manual and automated driving, with a sync table."
+ },
+ "You2026_CognPsychol": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Processed tracking features (lag, RMSE, gain) and statistics tables per experiment, plus model-fitting code; no raw cursor traces seen. Paper match by OSF title, no DOI on node; lab affiliation not verified."
+ },
+ "Stafford2014_PsycholSci": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "README: data_by_cookie.json is the raw data behind all results; first bytes show one object per anonymous browser cookie mapping attempt number to [score, date, hour]. 854,064 players of the Axon game (rapid perception, decision, motor responding). Repo licence MIT (covers code; data not separately "
+ },
+ "Thompson2013_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "UCI Machine Learning Repository dataset 272 (SkillCraft1 Master Table). 3,395 rows of per-player game measures (APM, hotkey use, PAC latencies) with league rank, age, hours. OpenML mirror lists a different licence; UCI page states CC BY 4.0. SFU later noted some players may have submitted multiple g"
+ },
+ "Haar2021_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Figshare description: task performance (success, angular error of the target ball) and full-body joint movement of 10 subjects over 300 repeated trials of the same pool shot."
+ },
+ "Chou2025_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "other",
+  "_notes": "Dryad record (CC0, DataCite-checked) derives from Zenodo 14818398 (Apache 2.0) and GitHub DEPhantom/TTSWING. README: 90,000+ strokes from 93 elite players, per-stroke features from 9-axis racket sensors in three modes (air swing, full-power stroke, stable hitting); demographics binned into tiers."
+ },
+ "Sun2026_iScience": {
+  "_unit": "trial",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "other",
+  "_notes": "156 players assigned to model-based feedback vs standard coaching; workbook of fused video/pose/IMU/ball-trajectory features and shot outcomes. Unit assumed per shot from file size (workbook not opened)."
+ },
+ "Hiyama2026_GolfPressure": {
+  "_unit": "summary per participant",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-participant preprocessed fNIRS (IDs up to 20, some missing) plus a small putting performance workbook; motor data are putting outcomes only. Paper match by title and authors."
+ },
+ "Valk2019_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Optotrak recordings of a rhythmic Fitts task. The deposit title ('During rhythmic pointing, joint-angles are temporary linked in different synergies...') differs from the published title; matched by first author, year and journal named in the file. Archive contents not listed (RAR)."
+ },
+ "Gianferrara2021_PLoSOne": {
+  "_unit": "keypress",
+  "_src": [
+   "eye"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "CMU KiltHub (Figshare). Human and model game event logs, game scores and analysis spreadsheets, README inside the zip; companion software at doi:10.1184/R1/13836224. Event logs assumed keypress-level from description."
+ },
+ "Salomon2024_NatCommun": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Zenodo API access_right open. Lower-back accelerometer recordings with expert FOG annotations (the Kaggle 'Parkinson's Freezing of Gait Prediction' tDCS-FOG and DeFOG sets) plus 24/7 daily-living recordings. Participant count not stated in the record or abstract."
+ },
+ "Thenaisie2022_SciTranslMed": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Very large (~50 GB). Kinematics, EMG and STN recordings during walking and dynamometer leg tasks in DBS patients; README present."
+ },
+ "BlondiauxPirson2023_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "20 ET patients and 20 age-matched controls. Single 6.2 GB archive; code in a companion record (10.5281/zenodo.8307950)."
+ },
+ "BlondiauxPirson2024_JNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "24 ET patients and 28 controls; upper-limb postural perturbation task with hand kinematics and EMG. ReadMe present."
+ },
+ "Skaramagkas2021_Signals": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Accelerometer arm-tremor recordings from ET, PD and no-tremor volunteers; readme describes structure. Participant count not stated in the record."
+ },
+ "Zaidi2023_PeerJ": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "245 files: one Excel workbook per subject x task x visit plus MATLAB analysis code. 15 mild and 14 severe stroke survivors (control data also referenced). Paper matched by title/authors; record does not link it."
+ },
+ "Schwarz2020_ADLkinematics": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "20 chronic stroke + 5 healthy, 30 daily-living tasks, one .mvnx per trial (NCT03135093). The record cites no paper; papers matched by authors and task set, so the paper link is an inference."
+ },
+ "Papaleo2015_MBEC": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Only 2 patients x 5 forward/backward movements before and after treatment (raw data behind Fig 6). Metadata txt present."
+ },
+ "Haberfehlner2023_FrontRobotAI": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "other",
+  "_notes": "2D landmark trajectories from 188 videos of 34 children/young adults at rest (lying, sitting) at three trial time points, with DIS scores. Raw videos not shared."
+ },
+ "FernandezGonzalez2026_SciData": {
+  "_unit": "stride",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "22 CP, 12 ITW, 25 typically developing children; raw files, joint angles, sEMG and segmented gait cycles."
+ },
+ "Borzi2026_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "60 Hz acc+gyro at 4 positions with frame-level FoG labels, FoG subtype (shuffling/trembling/akinesia), activity and task codes."
+ },
+ "Grouvel2024_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "10 bilateral, 10 unilateral vestibulopathy, 10 controls; 35-marker CGM1.0 trajectories and joint kinematics in C3D. Paper matched by authors; record cites no DOI."
+ },
+ "BonnefoyMazure2023_ITW": {
+  "_unit": "stride",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "29 ITW patients (two sessions) and 21 controls. Only a conference abstract found as the paper (matched by author list)."
+ },
+ "Massoud_CPgait_Zenodo": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Sheets 'Patient before', 'Patient after', 'normal children': knee/ankle/hip kinematic parameters per limb. 10 spastic CP (pre/post multilevel surgery) + 12 typically developing. Sheets contain a patient-name column (not reproduced here). Record cites no paper; the Sci Rep paper by the same authors a"
+ },
+ "Giancardo2016_SciRep": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "PhysioNet open access, 7.6 MB. Two cohorts (early PD vs controls; PD on/off medication). Ground-truth CSVs carry UPDRS-III and diagnosis."
+ },
+ "Adams2017_PLoSOne": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "'Over 200' participants with and without PD typing on their own computers for weeks to months; user files give diagnosis, age, medication. n is approximate."
+ },
+ "Beuter2001_ThalamusRelatSyst": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Index-finger tremor velocity before and 15-60 min after DBS off, high/low amplitude groups."
+ },
+ "Varghese2024_npjParkinsonsDis": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "PhysioNet open access (no credential), 1.5 GB. PD, differential diagnoses and healthy controls doing 11 short tasks with a watch on each wrist."
+ },
+ "MaudsleyBarton2023_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "90 people doing 11 clinical balance movements, with clinical labels and sway metrics; very large (~193 GB)."
+ },
+ "MicoAmigo2023_JNeuroengRehabil": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Only 2.5 h of real-world data from one participant per cohort (6 people). The full technical validation data are not in this record."
+ },
+ "Voisard2025_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "1356 gait trials from 260 participants, ~11 h of 4-IMU signals with gait event annotations and metadata."
+ },
+ "Warmerdam2022_Data": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Synchronized IMU + optical marker data, ~15 GB in RAR parts; demographics and clinical scores in Excel."
+ },
+ "Viglialoro2025_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "14 Nordic walking + 10 adapted physical activity; static trial + 3 walking trials per session, raw and processed."
+ },
+ "VanCriekinge2023_SciData": {
+  "_unit": "stride",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Figshare collection of 13 items; 138 adults aged 21-86 and 50 stroke survivors. A PDF-only copy also sits on Newcastle's repository (10.25405/ncl.34492662)."
+ },
+ "Noy2025_JNeuroengRehabil": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "31 PD, 29 age-matched and 30 young controls; raw stylus x-y-time per trial plus processed .mat. Data link taken from the paper's availability statement."
+ },
+ "Lucchetti2025_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "10 post-stroke (62-82 y) and 10 healthy (24-73 y); one .mat per subject as separate figshare articles inside the collection."
+ },
+ "Leveridge2026_JNeuroengRehabil": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "15 PD+FOG, 14 PD-FOG, 17 controls; raw segment angles plus analysis pipeline (OSF DOI 10.17605/OSF.IO/YDB4Z)."
+ },
+ "RibeiroDeSouza2022_FrontNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "35 PD patients with FOG doing 2-min alternating 360-degree turns; per-trial IMU text files and videos."
+ },
+ "ODay2022_JNeuroengRehabil": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "De-identified IMU walking data from seven subjects with frame-level FOG labels plus training code. License is the repo's code license (BSD-3-Clause)."
+ },
+ "DelgadoTeran2025_Sensors": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "4TU.ResearchData, 43 files; preprocessed windows with FOG labels (all activities, and walking/turning only). 24 recorded, 21 with FOG. Data are windowed tensors, not raw streams."
+ },
+ "Zhang2022_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "12 PD patients, 3 h 42 min of labelled multimodal walking data; folders per subject plus OFF sessions and filtered data."
+ },
+ "London2021_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Per-subject zips of reach kinematics and STN recordings during DBS surgery; code at github.com/dlondon12/InterruptedReachClustMass. Subject count not checked (file list shows Sub01-Sub08+)."
+ },
+ "Clark2015_PLoSOne": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "23 MB workbook suggests trial-level RTs; young (M 24 y) and older (M 66.5 y) adults. n not checked."
+ },
+ "Waterman2015_ProcRSocB": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "87 children aged 6-11; one row per child (drawing accuracy measures plus handwriting/reading scores)."
+ },
+ "Hickman2026_JNeurodevDisord": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "31 autistic, 32 PD, 31 controls; large MATLAB base-data files plus processing scripts. No license on the OSF project."
+ },
+ "Pickering2020_ExpBrainRes": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Per-participant condition means exported for JASP, not raw force traces."
+ },
+ "Karekal2025_eNeuro": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Behavioural CSVs per participant x session (about 23-24 per group folder) plus EEG components. Participant count not confirmed."
+ },
+ "Boebinger2026_eNeuro": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Single 2.1 GB archive of data and code; contents not listed by OSF. n not confirmed."
+ },
+ "Brissenden2023_MovDisord": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "125 raw files (trial tables plus movement trajectories per session) in the 'Raw Data' component; task and analysis code in sibling components. 11 de novo PD."
+ },
+ "Wood2026_npjParkinsonsDis": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Data folder (12 items) with individual data; n not confirmed."
+ },
+ "Sporn2026_Brain": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "40 chronic stroke survivors and 30 age-matched controls; trial-level table used for brms models."
+ },
+ "Robles2023_Neuropsychologia": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Kinarm reaching parameters per patient per visit (12 patients, 4 time points); no raw trajectories."
+ },
+ "Mendonca2025_SciRep": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "10 cerebellar ataxia and 20 controls; per-participant RMS features, no raw IMU streams."
+ },
+ "vanderLinden2023_Sensors": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "860 tremor trials from 16 ET and 25 PD patients under different DBS settings; raw accelerometry in Finger/Wrist folders."
+ },
+ "Stewart2022_EurJNeurosci": {
+  "_unit": "summary per participant",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Joystick reaction/movement time summaries per participant and session with codebooks; paper matched by title (OSF title is the project title)."
+ },
+ "Martel2023_Autism": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Kinematic variables in one text table (likely per trial) with R scripts; group sizes not confirmed."
+ },
+ "Mayes2021_DevNeuropsychol": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "13 DCD, 16 probable DCD and 42 typically developing adults; trial-level RT files plus per-participant metrics."
+ },
+ "Adams2018_bioRxiv_handtremor": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "'Over 500' Tappy users (larger superset of the PhysioNet Tappy set); multi-part zip. n approximate."
+ },
+ "McKay2019_MethodsX": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "155 folders (per participant x test/retest, WinDaq and Excel exports). n not stated on the record."
+ },
+ "Isenkul2014_ICEHTM": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "UCI Machine Learning Repository dataset 395; 62 PD and 15 controls; 129 files of x, y, z, pressure, grip angle, timestamp. Conference paper has no DOI."
+ },
+ "Bachlin2010_IEEETITB": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "UCI Machine Learning Repository dataset 245 (20.5 MB zip, 29 files); UCI page does not state n, 10 patients per the paper."
+ },
+ "Pereira2016_HandPD": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Direct downloads, no registration. HandPD 92 people (18 healthy, 74 PD; images + features); NewHandPD 66 (35 healthy, 31 PD) adds pen-sensor signals. Page asks for citation, states no license."
+ },
+ "Holmberg2025_IEEETNSRE": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-segment 3D and 2D joint streams (18 joints, 600 time steps) with corrected age and outcome labels; paper matched by creators and topic, record cites none."
+ },
+ "Kulvicius2023_CommunMed": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "other",
+  "_notes": "Pressure-mat recordings of young infants with GMA labels and code; n not checked."
+ },
+ "Kulvicius2025_CommunMed": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "other",
+  "_notes": "51 typically developing infants recorded with multiple sensors during the fidgety-movement period."
+ },
+ "VanRoy2026_HumBrainMapp": {
+  "_unit": "keypress",
+  "_src": [
+   "clinical",
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "22 children (7-11 y) and 23 adults; subject folders hold raw behavioural data plus first-level fMRI results."
+ },
+ "Santuz2022_PLoSOne": {
+  "_unit": "stride",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "215 participants (young and older, both sexes); raw EMG and gait-cycle timings."
+ },
+ "Panzeri2022_Children": {
+  "_unit": "continuous time series",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "6 hemiparetic children/adolescents (20 GRAIL sessions), one CSV per patient per assessment; the paper describes the same 6 subjects. Record itself cites no paper."
+ },
+ "Zhou2024_EMBC": {
+  "_unit": "stride",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "walking",
+  "_notes": "10 early-rehabilitation stroke patients, raw IMU and derived gait features across sessions."
+ },
+ "Sigcha2023_FrontNeurol_Monipar": {
+  "_unit": "trial",
+  "_src": [
+   "clinical"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "21 PD and 7 controls, eight exercises once a week; paper matched by creators/title."
+ },
+ "Berlot2020_eLife": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Behaviour lives in BIDS events.tsv per run: is_error, points, movement_time (s), sequence_num, sequence_type (trained/untrained), repetition; 4 sessions x 8 runs per participant. Imaging totals ~183 GB but events files are tiny and downloadable alone."
+ },
+ "Song2023_FrontHumNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Joystick line-erasing task under rotation +90, rotation -90 and mirror contexts; per-trial number of erased dots, block type, direction. Raw task .mat files in derivatives; README points to GitHub YJ-0000/Multi-context_Representation_during_VisuomotorAdaptation for more behaviour. Sub-16 excluded."
+ },
+ "Park2022_NeuroImage": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "ASRT keypress task in the scanner, 3 runs. events.tsv columns include event (stimulus), firstRESP, firstRT (ms), firstACC, TrialType (practice/pattern/random), block indices. README is a placeholder; paper link from Crossref title match to dataset authors."
+ },
+ "Bonstrup2019_CurrBiol": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Non-dominant hand typed 4-1-3-2-4 over 36 x 10 s practice trials, retests ~24 h and later. events.tsv has every KeyDown with time, keypress_id, finger_label, target_sequence, trial_number, so keypress-level skill curves are recoverable without MEG. Paper link inferred from dataset authors and design"
+ },
+ "Tirou2026_NatCommun": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Events coded as MEG triggers (correct/incorrect responses per side, stimulus onsets); RTs derivable from onset differences using meg_triggers.xlsx. No ready-made behaviour table. Very large MEG files (~240 GB total)."
+ },
+ "Gramann2021_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "BIDS-Motion 'spot rotation' dataset: whole-body turning in VR vs joystick turning. Motion capture (PhaseSpace full body, HTC Vive head) as BIDS motion.tsv, separate from the EEG, so kinematics are usable alone. Also a BIDS example dataset."
+ },
+ "Liu2025_ImagingNeurosci_young": {
+  "_unit": "stride",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Two 3-min trials per terrain (flat, low/med/high) and speed (0.25-1.0 m/s); events.tsv lists heel strikes and toe offs; IMU acceleration and GRF inside the .set. Paper link via Crossref (same author team and design); deposit lists no paper. Walking."
+ },
+ "Wagner2016_JNeurosci": {
+  "_unit": "stride",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Participants stepped in time to a tone sequence with occasional tempo shifts; events.tsv holds heel-strike markers (left/right) and cue tones per condition, so step-cue asynchrony and step-rate adaptation are recoverable. License field literally 'Creative commons' (version not stated). 20 subject fo"
+ },
+ "Cai2026_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Leap Motion palm trajectories (time, x_mm, y_mm, z_mm, hand) and controlled-ball trajectories per run and hand, alongside EEG. Paper found via Crossref title match; deposit lists none."
+ },
+ "Zhou2026_ActaPsychol": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "32 pairs (64 people). Per-trial table: pair, participant, block, trial, condition, part performed, tone sequence, joint agency rating, mean and SD synchronization performance. Raw keystroke times in EEG events. Timing domain."
+ },
+ "Singh2023_JNNP": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "94 PD + 45 controls press the spacebar when 3 s or 7 s has elapsed; events.tsv has stimulus (S) and response (R) markers, so produced intervals per trial are recoverable; participants.tsv has MoCA, UPDRS. Dataset cites the medRxiv preprint 10.1101/2022.07.26.22278079, published as the JNNP paper. Ti"
+ },
+ "Oldrati2026_NeuralPlast": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Single 2.2 MB CSV; size implies trial-level rows but the header could not be read (Zenodo file downloads returned 403 rate-limit). Task type to be confirmed from the paper. Brain stimulation + motor learning."
+ },
+ "Schmitter2022_FrontHumNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Small zip of behavioural data; inner file layout not inspected (Zenodo download rate-limited). Actively generated button presses with delayed feedback; delay-detection judgments."
+ },
+ "Wessel2023_NatNeurosci": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Description says data/Behav/young_exp1/raw holds raw keypress log files plus stimulation order, with notebooks producing per-block CSVs; young and older cohorts. Everything is inside one 124 GB zip, so behaviour is not separately downloadable."
+ },
+ "Forte2025_PLoSOne": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "TMS study of real-world motor skill learning: raw MEP data (data_input.csv) and pot shape measures per participant/session; training vs control groups. Behavioural outcome is coarse (pot measures)."
+ },
+ "Foerster2020_Cortex": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Checked via Zenodo mirror 4937820. Trial-level reaction times for moving/using novel tools, plus success data. DOI and venue verified via Crossref."
+ },
+ "Maurer2022_Neuroscience": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Behaviour is small (performance and release-velocity mean/SD per participant/block); EEG in a separate zip. Task described as throwing from the lab's prior work; confirm in paper."
+ },
+ "Wagner2021_SciRep": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "eye movements",
+  "_notes": "One zip per experiment with README and PDF column descriptions. Eye movements (other agent's domain). DOI verified via Crossref."
+ },
+ "Taylor2022_JMLD": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Zenodo snapshot of GitHub repo keithlohse/taylor_2022_CI_sequential_effects; sequential-effects analysis implies trial-level data. License shown only as 'other-open'."
+ },
+ "Blanco2021_FrontPsychol_554201": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Archive holds participants_raw_Sound_Motion.mat (all participants' raw motion and sound features) and wav files, plus an SPSS-preparation script."
+ },
+ "SimonMartinez2023_ReGraD": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Kinematics of reaching/grasping at different depths, mono vs binocular, healthy controls vs people with stereovision deficits; code at github.com/lorafanda/REGRAD. The linked paper is the AMBER trial protocol (isDocumentedBy), not a results paper. Clinical domain."
+ },
+ "Ozen2021_FrontNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-participant kinematic data frames as Python pickles (about 1 GB each; pickles execute code on load, so open with care) plus questionnaire CSV."
+ },
+ "Ozen2022_JNER": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "43 files: per-participant pickled kinematic data frames plus questionnaires/population CSVs. DOI verified via Crossref."
+ },
+ "GarzasVillar2025_JNER": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "45 files: per-participant kinematic CSVs in RAR archives plus questionnaire CSVs."
+ },
+ "Wenk2022_TNSRE": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-lap motor performance metrics and gaze ratios (lap = trial), plus questionnaires."
+ },
+ "Wenk2022_JNER": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Catch-level (trial) movement metrics for healthy older adults (Exp 1) and brain-injured patients (Exp 2). Clinical/reaching."
+ },
+ "PenalverAndres2021_FrontNeurosci": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Kinematics zipped separately from EEG (Obstacle and Horizon tasks), so behaviour downloads alone; 36 participants per description. DOI verified via Crossref."
+ },
+ "vandenBerg2023_FrontVR": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Pilot-study deposit matching the published title; an earlier record (zenodo 7336864, no license stated) has condition orders, target locations and distances. Stepping/walking domain."
+ },
+ "Hahn2022_eLife": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Checked via Zenodo mirror 6115961; 2 MB zip, so likely per-participant juggling performance per block and derived EEG measures, not raw EEG."
+ },
+ "Sadeghi2024_eLife": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Checked via Zenodo mirror 10972722. Human and monkey kinematics in one 4 GB archive (human part only for OpenMotor)."
+ },
+ "Luciw2014_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "One figshare article per participant (e.g. 'Participant 6 ... 328 grasp-and-lift trials'), 3,936 trials total, with EEG, EMG, 3D position and grip/load forces per trial."
+ },
+ "Brantley2018_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "360 files; kinematics, EMG and EEG are separate .mat files per trial, so kinematics download alone. Walking domain."
+ },
+ "Stieger2021_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "599 files. Per-session .mat holds EEG plus per-trial BCI behaviour (target, result, online success and cursor positions per the README). Behaviour is brain-driven cursor control rather than limb movement; included under the BCI cursor-control brief."
+ },
+ "Malesevic2021_SciData": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Figshare collection with one article per subject (~7 GB .mat each); EMG with gesture labels, no kinematics (isometric). 20 able-bodied volunteers per the abstract (Europe PMC)."
+ },
+ "Sivakumar2024_emg2qwerty": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "1,135 HDF5 session files from 108 users (346 h): left/right 16-ch sEMG, prompted text, keylogger keystrokes with timestamps. Data on fb-ctrl-oss S3, linked from the repo. Authors/title verified via DataCite (arXiv DOI)."
+ },
+ "Salter2024_emg2pose": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "25,253 HDF5 files of time-aligned 2 kHz sEMG and hand joint angles, 193 participants, 370 h, 29 movement stages. Authors/title verified via DataCite (arXiv DOI)."
+ },
+ "Kaifosh2025_Nature": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "README: sEMG from 100 participants in each of three tasks (discrete_gestures, handwriting, wrist); a 3-users-per-task subset is available. Dataset and code CC BY-NC 4.0. Participant count 300 = 3 x 100 (overlap across tasks not stated)."
+ },
+ "Atzori2014_Ninapro": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Ten databases (DB1 27 intact; DB2 40; DB3 11 amputees; DB4-DB9; DB10 MeganePro 30 intact + 15 amputees). Per-subject zips download directly, no login. No license on the page; page source has a commented-out 'Creative Commons Attribution No Derivatives 4.0' line. Each DB has its own paper."
+ },
+ "Miller2019_NatHumBehav": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Stanford Digital Repository, world-downloadable (23 files). Motor sub-datasets include data-glove finger positions and joystick/mouse cursor trajectories synchronized to ECoG; other sub-datasets are perceptual. Stanford Stacks file URLs."
+ },
+ "Jiang2021_Hyser": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "20 subjects x 2 days; force datasets pair HD-sEMG with measured finger forces, so force trajectories are usable as behaviour."
+ },
+ "Pradhan2022_GRABMyo": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "EMG with gesture labels only (no kinematics)."
+ },
+ "Miranda2018_SciRep": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "Vicon hand-marker trajectories (time, x, y, z) for 14 tasks per subject. No neural signals; general-sweep find."
+ },
+ "Averta2021_GigaScience": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "22 files, one archive per center; healthy and post-stroke upper-limb kinematics with EMG and some fMRI. Strong clinical/arm find."
+ },
+ "Merk2022_eLife": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "537-file BIDS iEEG set; grip-force traces are recorded as channels alongside ECoG/LFP (to confirm in channels.tsv). Clinical."
+ },
+ "Crouch2021_KTsEMG": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "typing/handwriting",
+  "_notes": "88 files: per-run 2 kHz EMG CSV plus keystroke log with timestamps. Paper verified via DataCite (arXiv DOI)."
+ },
+ "Cognolato2020_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Same data as Ninapro DB10 (30 intact + 15 amputees per Ninapro). Companion records MDS4 (doi:10.7910/DVN/F9R33N) etc."
+ },
+ "Zhang2026_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "DataverseNL, 1,245 files; 5 hand movements, 5 finger gestures, 4 functional grips with EMG + IMU. DOI verified via Crossref."
+ },
+ "DiasDaSilva_MindWandering": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "DataverseNL. Behaviour/questionnaire deposit; EEG for the same project at doi:10.34894/5UTXXE (CC-BY-NC-ND-4.0, EEGLAB .set/.fdt). Paper (EEG deposit's citation) verified via Crossref; the tracking-accuracy paper was listed as submitted."
+ },
+ "Bootsma2021_FrontAgingNeurosci": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "DataverseNL; small SPSS files, so per-participant learning scores and EEG measures. Task type assumed from the paper abstract style; confirm."
+ },
+ "Menon2025_Bioengineering": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Borealis; 32 per-participant/condition .mat files (~1 MB each). Clinical + brain stimulation."
+ },
+ "LeBlanc2026_Borealis": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Borealis; 'final processed dataset' plus R preprocessing of 3D position into grip aperture and hand position (11 files; data file name not in the first 8 listed). Preprint DOI from Crossref search."
+ },
+ "McDermott2019_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "36 files, one kinematic/choice text file per participant plus analysis."
+ },
+ "McKay2021_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "posture/balance",
+  "_notes": "Dataverse title 'PD Sensorimotor Feedback' cites the bioRxiv title; published version found by Crossref. Balance/clinical domain, not neuro core."
+ },
+ "McEllin2018_Cognition": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "144 files: raw per-participant .mat plus aggregated SPSS tables for Exp 1-4. Task wording from memory of the paper; confirm."
+ },
+ "Camara2020_bioRxiv": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Raw behavioural + EEG zip with R analysis notebooks (exp.Rmd = behaviour). Published version of the preprint not found."
+ },
+ "Kobler2020_NeuroImage": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "15 participant folders; hand and gaze positions are expected as channels in the EEGLAB files (not opened). Paper match by title/authors; Kobler 2020 NeuroImage DOI from Crossref search."
+ },
+ "Muralidharan2021_JCognNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Data and scripts for two experiments as multi-part zips (~25 GB total); behaviour and EEG mixed in the archives."
+ },
+ "Puri2021_NeuroImageRep": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Behaviour and neurophysiology folders not opened; supplementary CSVs are small (per participant). Granularity of main behaviour to confirm."
+ },
+ "vanPolanen2022_JNeurophysiol": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "Raw force data per stimulation condition (zips) plus processed per-trial table and MEPs. TMS + grasping."
+ },
+ "Chan2022_PsyArXiv": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Stepping-sequence trial data plus MVN motion-capture summaries; general sweep (whole-body sequence learning)."
+ },
+ "Hsu2025_ImagingNeurosci": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Registered report: preregistration, task code, raw behaviour (finger tapping task) and MEP data."
+ },
+ "Watanabe2025_Cortex": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "tracking",
+  "_notes": "Raw force and EMG for participants #1-16 (n inferred from zip names)."
+ },
+ "Gastrock2026_DiscovNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Behaviour (160 MB zip) separate from EEG folder; experiment and analysis code included per description. Not in the known list (other Henriques/'t Hart OSF projects are)."
+ },
+ "Warlop2025_ResDevDisabil": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "Small kinematic table (9 KB) = per-child summary values; task program included. Clinical (DCD)."
+ },
+ "Georgiev2026_bioRxiv_MEG": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Paper match via Crossref title/author search (OSF project title differs). Sub-folder contents not listed."
+ },
+ "Georgiev2026_bioRxiv_CMC": {
+  "_unit": "continuous time series",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Preprocessed per-participant mats (whether raw force traces are kept is unclear); paper match by title/authors."
+ },
+ "Lomele2026_SciData": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "grasping",
+  "_notes": "14 per-subject .mat files of raw data; scripts in companion OSF project g6yta."
+ },
+ "Yadav2025_bioRxiv": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "other",
+  "_notes": "Per-block skill scores per participant, figure-oriented. known.tsv has an ext_Yadav2025 request-only entry; check whether that is the same study before listing twice."
+ },
+ "Grundmann2025_CABN": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "OSF project 'Neural correlates of human habit formation studied with motor sequence learning'; per-participant behavioural .mat files (named Pilot3xx) plus group fMRI t-maps. The CABN paper is the behavioural companion; fMRI paper may be separate."
+ },
+ "Firouzi2024_FrontNeurosci": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Trial-wise SRT data with codebook; component of OSF project rztbc."
+ },
+ "Firouzi2023_EJN": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Trial-wise SRT data with codebook; component of OSF project rztbc."
+ },
+ "Hagen2025_BrainCommun": {
+  "_unit": "stride",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "walking",
+  "_notes": "Single 200 KB workbook; stride-level vs summary not confirmed. Walking/clinical (outside neuro core)."
+ },
+ "Noboa2025_SciRep": {
+  "_unit": "keypress",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Behavioural tapping folder not opened (OSF rate limit); file granularity to confirm. Timing domain."
+ },
+ "Apsvalka2018_NeuralPlast": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "sequence/skill",
+  "_notes": "Data component of OSF project 6eybw. Raw CSV is 12 KB, so per participant x condition. A script named familiariseOA.m may indicate an older-adult arm; confirm in paper."
+ },
+ "Ofner2017_PLoSOne": {
+  "_unit": "trial",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "reaching",
+  "_notes": "BNCI Horizon 2020 database entry 001-2017: 15 participants, separate movement-execution (ME) and imagery (MI) archives; 'movement data' channels recorded with EEG. Only the ME files carry real movement."
+ },
+ "Furuya2025_SciRobot": {
+  "_unit": "summary per participant",
+  "_src": [
+   "neuro"
+  ],
+  "_agent_task": "finger/hand",
+  "_notes": "Dryad API listing; 4.6 MB zip of data and code (granularity not opened). Hand/finger domain, not found by that search."
+ }
+}

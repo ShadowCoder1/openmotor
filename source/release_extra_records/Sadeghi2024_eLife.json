@@ -1,0 +1,148 @@
+{
+ "id": "Sadeghi2024_eLife",
+ "module": "timeseries",
+ "rows": 13575,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 483533951,
+ "zip_sha256": "b3fd98072c09f2a2b42b19833d38ee094ecc651cdcc5ee84010876685c1b7e59",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants and ethics statement (18 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the position-control group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (n = 6 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the velocity-control group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (n = 6 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the no-instruction group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods (18 participants in three groups; 6 + 6 instructed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 250.00321869225726,
+   "reported": 250.0,
+   "tol": 1,
+   "source": "Methods, Critical stability task (250 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "days (sessions) of the main experiment",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (three consecutive days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reaction-time trials per participant and day",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (15 reaction time trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tracking trials per participant and day",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (10 tracking trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Block 1 CST trials per participant (day 1)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods (Block 1: 30 CST trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Block 3 CST trials per participant and day (3 levels x 20)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods (Block 3: 20 trials at each of 3 difficulty levels)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration of a successful CST trial (s, median)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0.01,
+   "source": "Methods (balance for 6 s for the trial to be successful)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Block 2 (ramp) has 120-200 trials per participant and day in most cases (paper: approximately 120-200)",
+   "ok": true,
+   "detail": "min 103, median 148.5, max 222"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one instruction group (instruction_type is -1 on trials where it does not apply)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "13,575 trials, 18 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has a samples file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "successful CST trials stay inside |cursor| < 100 and failed ones leave it (workspace +-100 in the cursor's unit)",
+   "ok": true,
+   "detail": "success max 99.99, failure min 100.00"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says lambda started at 2.5 in the first Block 1 trial; the deposit's first day-1 dynamic CST trial of every participant (lowest trialNumber) has lambda = 2.0.",
+  "The paper says the three blocks were repeated on each day; the deposit has the Block 1 (dynamic) staircase trials on day 1 only (30 trials per participant) and Blocks 2 and 3 on all three days.",
+  "The deposit has no demographics, so age and sex are empty. The 18 participants all took part in the study; the number per group is not stated for the no-instruction group, which is inferred as 18 - 12 = 6."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sadeghi2024_eLife.zip"
+}

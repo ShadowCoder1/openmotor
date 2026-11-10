@@ -1,0 +1,362 @@
+{
+ "id": "VanRoy2026_HumBrainMapp",
+ "module": "keypress",
+ "rows": 69687,
+ "subjects": 45,
+ "persons": 45,
+ "zip_bytes": 1450560,
+ "zip_sha256": "3042bd6bc44116f7489089a9f7bc92a95b3c7665bb8ab869276c4d0fde53df05",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "FiguresTables_SourceData.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Table 1 source data lists 45 participants (22 children, 23 adults)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "45 participants with a log; 1,439 analysed blocks of 48 key presses (32 each, except one child's training 2: 9)",
+   "ok": true,
+   "detail": "1439 blocks"
+  },
+  {
+   "kind": "internal",
+   "what": "every analysed block has 48 key presses and the analysed rows number 69,072",
+   "ok": true,
+   "detail": "69072 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept as logged but not analysed by the authors: 3 blocks of aborted run attempts (2 + 1, 48 key presses each) and 471 key presses during the 20 s rests",
+   "ok": true,
+   "detail": "excluded blocks 3, rest presses 471"
+  },
+  {
+   "kind": "internal",
+   "what": "every key press logged during a rest lies within 0 to 20.1 s of that rest's start",
+   "ok": true,
+   "detail": "0.001 to 18.550 s"
+  },
+  {
+   "kind": "internal",
+   "what": "key codes are 1-4 only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "median transition time per block (s): equal to the authors' source data (Figure S4) for every block of every participant",
+   "ok": true,
+   "detail": "45 of 45 participants equal"
+  },
+  {
+   "kind": "internal",
+   "what": "% correct transitions per block: equal to the authors' source data (Figure S4) for every block of every participant",
+   "ok": true,
+   "detail": "45 of 45 participants equal"
+  },
+  {
+   "kind": "internal",
+   "what": "normalised transition time (divided by the first block of training 1): equal to the authors' source data (Figure 3)",
+   "ok": true,
+   "detail": "45 of 45 participants equal"
+  },
+  {
+   "kind": "internal",
+   "what": "normalised accuracy (divided by the first block of training 1): equal to the authors' source data (Figure 3)",
+   "ok": true,
+   "detail": "45 of 45 participants equal"
+  },
+  {
+   "kind": "published",
+   "what": "children: participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: female participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: male participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: non-binary or gender-fluid participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: mean age (years)",
+   "computed": 9.496227272727273,
+   "reported": 9.5,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: SD of age (years)",
+   "computed": 1.2581032561082985,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: female participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: male participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: non-binary or gender-fluid participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: mean age (years)",
+   "computed": 23.380434782608695,
+   "reported": 23.4,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: SD of age (years)",
+   "computed": 3.269644418060373,
+   "reported": 3.3,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: mean offline period between training and retest (h)",
+   "computed": 5.107839760101014,
+   "reported": 5.1,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: SD of the offline period (h)",
+   "computed": 0.6680253008690213,
+   "reported": 0.7,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children: mean sleep duration the night before training (h)",
+   "computed": 9.84469696969697,
+   "reported": 9.83,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: mean offline period between training and retest (h)",
+   "computed": 5.137958816425121,
+   "reported": 5.1,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: SD of the offline period (h)",
+   "computed": 0.3845862867899769,
+   "reported": 0.4,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults: mean sleep duration the night before training (h)",
+   "computed": 8.326086956521738,
+   "reported": 8.3,
+   "tol": 0.05,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in speed, children vs adults: t(43)",
+   "computed": 2.0591364735862743,
+   "reported": 2.059,
+   "tol": 0.0005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in speed: one-tailed p",
+   "computed": 0.022784974036313552,
+   "reported": 0.023,
+   "tol": 0.0005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in speed: Hedges' g",
+   "computed": 0.6032944098576218,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in accuracy, children vs adults: Welch t",
+   "computed": 2.5271948248084684,
+   "reported": 2.527,
+   "tol": 0.0005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in accuracy: Welch df",
+   "computed": 28.684790913314174,
+   "reported": 28.685,
+   "tol": 0.0005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "macro-offline change in accuracy: Hedges' g (Welch-test version: square root of the mean of the two variances, correction with the Welch df)",
+   "computed": 0.7392216866610709,
+   "reported": 0.74,
+   "tol": 0.005,
+   "source": "Results 3.2.3, macro-offline changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group effect F on normalised transition time, training 1 (10 blocks): F(1, 43), n = 45",
+   "computed": 8.846893891795688,
+   "reported": 8.85,
+   "tol": 0.005,
+   "source": "Results 3.2.1, normalised transition time",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "degrees of freedom of the training 1 (10 blocks) group effect = (1, 43)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "group effect F on normalised transition time, training 2 (10 blocks): F(1, 42), n = 44",
+   "computed": 4.101660259480229,
+   "reported": 4.1,
+   "tol": 0.005,
+   "source": "Results 3.2.1, normalised transition time",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "degrees of freedom of the training 2 (10 blocks) group effect = (1, 42)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "group effect F on normalised transition time, retest (10 blocks): F(1, 43), n = 45",
+   "computed": 0.02577659762688587,
+   "reported": 0.03,
+   "tol": 0.005,
+   "source": "Results 3.2.1, normalised transition time",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "degrees of freedom of the retest (10 blocks) group effect = (1, 43)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One child has 9 instead of 10 blocks in Training 2 (the run was quit after block 9); the authors have no value for it either, and the paper's Training 2 statistics use 21 children.",
+  "The macro-offline changes computed from these rows as the paper describes them (mean of the 2 test blocks minus mean of the first 2 retest blocks, each divided by the first block of training 1) differ from the values in the authors' Figure 5 source data (largest difference 0.80 in speed, 0.087 in accuracy), so the macro-offline statistics checked here (t, df, Hedges' g) are computed from the authors' source-data values.",
+  "The paper's text does not describe the restarted runs or the key presses made during rests; both are in the logs and are flagged here."
+ ],
+ "sources": [
+  {
+   "file": "FiguresTables_SourceData.xlsx",
+   "url": "https://zenodo.org/api/records/16891677/files/FiguresTables_SourceData.xlsx/content",
+   "bytes": 218624,
+   "sha256": "40153992abb607c2c906c1a5aeb21ecc3d3f9dc24ad6b00d6f009c85a6ae57fc",
+   "fetched_utc": "2026-11-08T20:29:54Z"
+  },
+  {
+   "file": "Behavior members of data_subjfolders.zip (one .txt log and one .mat file per participant, plus the .txt/.mat familiarization files of one participant; 92 members)",
+   "url": "https://zenodo.org/api/records/16891677/files/data_subjfolders.zip/content",
+   "bytes": 5825340,
+   "sha256": "21cc63ce9514a7d7ae3a7731f000036522215db002b67cf795ff0b878b82c998",
+   "fetched_utc": "2026-11-08T20:34:53Z",
+   "note": "archive is 5,468,421,997 bytes (over the 5 GB gate); only the Behavior members were read, with HTTP range requests, each CRC32-checked; sha256 here is of the newline-joined member sha256 digests in member-name order; per-member records are in raw_extra/<id>/SOURCES.json on the PC"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2026_HumBrainMapp.zip"
+}

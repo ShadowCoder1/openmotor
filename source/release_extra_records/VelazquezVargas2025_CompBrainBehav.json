@@ -1,0 +1,370 @@
+{
+ "id": "VelazquezVargas2025_CompBrainBehav",
+ "module": "navigation",
+ "rows": 37500,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 1927099,
+ "zip_sha256": "53a66aecc17e06cee20327ce92e9f835022fb9d5c1a30925da5ef5bdee86d23a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "E1_data_full.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_subjectInfo_full.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_data_mapping.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_subjectInfo_mapping.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_horizon.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_subjectsInfo_horizon.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_data_full.csv: every participant of the data file is in the subject info, once, and 25 of them",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_data_mapping.csv: every participant of the data file is in the subject info, once, and 25 of them",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_horizon.csv: every participant of the data file is in the subject info, once, and 25 of them",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant's keys make one fixed move (presses that did not hit a wall)",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "every key's move is one of the eight chess-knight moves",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "a press that hit a wall never moved the cursor",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "feedback type 0 whenever the cursor did not end on the target, and when it did only after the 10 s limit (late arrivals score 0)",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "feedback type 1 or 2 only when the cursor ended on the target, apart from trials logged at exactly 10000 ms",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "the subject info's game points equal the last cumulative points of the trial file, for every participant whose trial 500 is present",
+   "ok": true,
+   "detail": "0 exceptions"
+  },
+  {
+   "kind": "internal",
+   "what": "four Experiment 2 participants have an empty row for trial 500 (kept, values empty)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants in the Full group",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants in the Mapping group",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: participants",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: male participants",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: female participants",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: non-binary participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: mean age (years; the paper's decimals look truncated, so one unit of the last digit is allowed)",
+   "computed": 19.64,
+   "reported": 19.6,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: SD of age (years; same allowance)",
+   "computed": 1.5302358058879757,
+   "reported": 1.5,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per participant (all 500)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials per participant (all 500)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Mapping group: trials with targets 1 move away (every participant)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Full group: trials with targets 3 moves away (every participant)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: every participant has 125 trials of each horizon (1-4 moves, the authors' min moves), 124 for the four whose trial 500 is empty",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: unique target locations per horizon (8 for each of the four horizons)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: unique target locations in total",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Full group: unique target locations (20 clover targets)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, trials 1-200: Welch t of mean points per participant, Mapping vs Full",
+   "computed": 8.0625332487379,
+   "reported": 8.06,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (mean points per participant, Mapping vs Full, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, trials 1-200: Welch degrees of freedom",
+   "computed": 47.98684797736341,
+   "reported": 47.98,
+   "tol": 0.02,
+   "source": "Results, Experiment 1 (mean points per participant, Mapping vs Full, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, trials 201-500: Welch t of mean points per participant, Mapping vs Full",
+   "computed": 0.3703415733017245,
+   "reported": 0.37,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (mean points per participant, Mapping vs Full, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, trials 201-500: Welch degrees of freedom",
+   "computed": 41.568079469664205,
+   "reported": 41.56,
+   "tol": 0.02,
+   "source": "Results, Experiment 1 (mean points per participant, Mapping vs Full, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, trials 201-500: p value",
+   "computed": 0.7130084574046195,
+   "reported": 0.71,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (mean points per participant, Mapping vs Full, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Full group, first 200 trials: median number of key presses per trial",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Results, Experiment 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean age of the 75 participants is 19.640 years (SD 1.530) here, printed as 19.6 (1.5) in the paper; the paper's decimals look truncated rather than rounded, so the checks allow one unit of the last digit.",
+  "For the four Experiment 2 participants whose trial 500 is empty, the subject info's game points are lower than the trial file's last cumulative points, by 10245 to 32435 points; for the other 71 participants they are equal.",
+  "The paper's Welch t-test of key presses per trial in the first 200 trials (Mapping vs Full, t(35.42) = -14.75) is not reproduced by the participants' mean number of key presses (t = -9.475, 24 degrees of freedom); the measure behind it is not stated.",
+  "646 trials are logged as arrivals after the 10 s limit with feedback type 0 and 0 points, and 10 trials logged at exactly 10000 ms have points although the logged cells do not end on the target; both are kept as logged."
+ ],
+ "sources": [
+  {
+   "file": "E2_subjectsInfo_horizon.csv",
+   "url": "https://osf.io/download/4gep2/",
+   "bytes": 2324,
+   "sha256": "b57e390b21fa9a7f25bbf93b0061cc3b1eb83afe7d03cb2fbb7ce5bff583e6ec",
+   "fetched_utc": "2026-11-08T20:26:42Z"
+  },
+  {
+   "file": "E2_data_horizon.csv",
+   "url": "https://osf.io/download/cn8w2/",
+   "bytes": 4007387,
+   "sha256": "216533f20e8618ea04d3d4d22463c1bb5de2bad0fd1729e6a9f14e5c4168a2bf",
+   "fetched_utc": "2026-11-08T20:26:44Z"
+  },
+  {
+   "file": "E1_subjectInfo_mapping.csv",
+   "url": "https://osf.io/download/6wzc2/",
+   "bytes": 2493,
+   "sha256": "f60e99ce59bc21ca0978db7c389de0765dc1f4840dfd26bff53151fdebea31d4",
+   "fetched_utc": "2026-11-08T20:26:47Z"
+  },
+  {
+   "file": "E1_subjectInfo_full.csv",
+   "url": "https://osf.io/download/btvdj/",
+   "bytes": 2365,
+   "sha256": "e8ca3c7cb1fc9493f50a2612a42f29e546ad4ef465131c1ff9f4e267bda86ba3",
+   "fetched_utc": "2026-11-08T20:26:50Z"
+  },
+  {
+   "file": "E1_data_mapping.csv",
+   "url": "https://osf.io/download/trf83/",
+   "bytes": 2281936,
+   "sha256": "cfad3b7c66dd4b5451cb29f4039e8e883139f863d4124cda5105c4a435fa77f0",
+   "fetched_utc": "2026-11-08T20:26:53Z"
+  },
+  {
+   "file": "E1_data_full.csv",
+   "url": "https://osf.io/download/renmk/",
+   "bytes": 3421161,
+   "sha256": "d637601f56d91af886b1762bdbac43c44f897fffa7199bc53fb1e79daae37f74",
+   "fetched_utc": "2026-11-08T20:26:56Z"
+  },
+  {
+   "file": "E1_Clicks_per_subject.csv",
+   "url": "https://osf.io/download/fexqr/",
+   "bytes": 228,
+   "sha256": "913166a7d10b362227ca71f9d7936a62eb069c1ca01c3556e9f2aeb88db69398",
+   "fetched_utc": "2026-11-08T20:26:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VelazquezVargas2025_CompBrainBehav.zip"
+}

@@ -1,0 +1,135 @@
+{
+ "id": "Nuckols2020_PLoSOne",
+ "module": "timeseries",
+ "rows": 78,
+ "subjects": 8,
+ "persons": 8,
+ "zip_bytes": 566602,
+ "zip_sha256": "eff5b23a04eca99170544c3829bc3daca01ab5056000f0a19ee2cab2345840c6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "8 participants x 10 gait/grade conditions minus empty ones",
+   "ok": true,
+   "detail": "78 rows, empty: [(2, 'run', 'up5'), (7, 'walk', 'up10')]"
+  },
+  {
+   "kind": "internal",
+   "what": "each samples file 101 x 13",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "level walking average positive limb power (W/kg)",
+   "computed": 1.0245174125644818,
+   "reported": 1.02,
+   "tol": 0.005,
+   "source": "Results, Positive power",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "level running average positive limb power (W/kg)",
+   "computed": 3.663119338296303,
+   "reported": 3.66,
+   "tol": 0.005,
+   "source": "Results, Positive power",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "8.53 deg walking positive limb power (W/kg)",
+   "computed": 2.6011658215285234,
+   "reported": 2.6,
+   "tol": 0.005,
+   "source": "Results, Positive power",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "level walking ANK share of positive power (%)",
+   "computed": 44.02963403037469,
+   "reported": 44.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "level walking KNEE share of positive power (%)",
+   "computed": 19.00213531132887,
+   "reported": 19.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "level walking HIP share of positive power (%)",
+   "computed": 36.96823065829644,
+   "reported": 37.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "8.53 deg walking ANK share of positive power (%)",
+   "computed": 28.501578735286166,
+   "reported": 29.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "8.53 deg walking KNEE share of positive power (%)",
+   "computed": 19.1782988749578,
+   "reported": 19.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "8.53 deg walking HIP share of positive power (%)",
+   "computed": 52.32012238975603,
+   "reported": 52.0,
+   "tol": 0.5,
+   "source": "Table 2",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors left 2 participant-condition entries empty (all NaN); no row was written for them: [(2, 'run', 'up5'), (7, 'walk', 'up10')] (participant number in array order, gait, grade).",
+  "Age, sex and mass are given only as group means in the paper, so the participant columns are empty."
+ ],
+ "sources": [
+  {
+   "file": "Nuckols_PLoS_MatStructureInfo.txt",
+   "url": "https://zenodo.org/records/3986714/files/Nuckols_PLoS_MatStructureInfo.txt?download=1",
+   "bytes": 726,
+   "sha256": "75b6b5adca05e6059812ec027b6bc85b292c3c28008cf496a89b9ab2ca2405a2",
+   "fetched_utc": "2026-11-09T15:41:04Z"
+  },
+  {
+   "file": "Nuckols_PLoS_UpDown_Summary_Repo.mat",
+   "url": "https://zenodo.org/records/3986714/files/Nuckols_PLoS_UpDown_Summary_Repo.mat?download=1",
+   "bytes": 954745,
+   "sha256": "a86aff7ae852a6a7c67f1cb0dd58e17be65bb99f933cbff448e538adf800489b",
+   "fetched_utc": "2026-11-09T15:41:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nuckols2020_PLoSOne.zip"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "Lammert2018_PLoSOne",
+ "module": "summary",
+ "rows": 20490,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 172984,
+ "zip_sha256": "4ee7cca5971a1f8f198868d039286c8a318f56424d8ca92b350fa0ff64f141ef",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Lammert et al. 2018, Methods (Data) (10 speakers of American English)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female speakers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Lammert et al. 2018, Methods (Data) (five male and five female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable-position categories",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Lammert et al. 2018, Methods (Data) (five categories of interest)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every task has movement time, distance and width",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "movement times positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "41 phonemes in the README",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 of the paper (number of data points and the MT-ID correlation per speaker and category) does not reproduce from the shared matrices: for example speaker M2 has 175, 105, 29, 25 and 349 tasks with nonzero MT against 183, 127, 33, 40 and 384 data points in the table, so those numbers are not used as checks. The shared matrices appear to be per-pair values and the cause of the difference is not known."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/4959487/files/README_for_complexity_mats_plos.txt/content",
+   "bytes": 2060,
+   "sha256": "04e45e83968e9729150940ff24414581b82b8b85dd0f11031447ec816a1fe1ac",
+   "fetched_utc": "2026-11-09T15:30:48Z"
+  },
+  {
+   "file": "c.zip",
+   "url": "https://zenodo.org/api/records/4959487/files/complexity_mats_plos.zip/content",
+   "bytes": 92413,
+   "sha256": "7ea86ed35cc772f83d119885129ad1768975f2c6f4e5394a0e4475e9bd4a0af7",
+   "fetched_utc": "2026-11-09T15:30:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lammert2018_PLoSOne.zip"
+}

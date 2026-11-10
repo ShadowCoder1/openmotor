@@ -1,0 +1,7 @@
+{
+ "id": "Sansare2022_FrontHumNeurosci",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad download needs a token (API returns 401 on file download) and no Zenodo/Figshare/OSF copy of 10.5061/dryad.1ns1rn8x2 was found; 34 GB in 39 zips, one per participant. Retry if a token or mirror becomes available.",
+ "sources": []
+}

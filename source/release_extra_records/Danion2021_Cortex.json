@@ -1,0 +1,251 @@
+{
+ "id": "Danion2021_Cortex",
+ "module": "summary",
+ "rows": 17360,
+ "subjects": 62,
+ "persons": 62,
+ "zip_bytes": 189760,
+ "zip_sha256": "e94d7ff6833c7021561958bf91d2754bd4bce28fe5e65aee7ffeda82fbdd2f61",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Danion et al. 2021, Cortex 134:30, Abstract and 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials (10 for each of the 62 participants)",
+   "computed": 620.0,
+   "reported": 620.0,
+   "tol": 0,
+   "source": "Danion et al. 2021, Cortex 134:30, 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_distance_x",
+   "computed": 0.8379325016451613,
+   "reported": 0.84,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_distance_y",
+   "computed": 0.991797931951613,
+   "reported": 0.99,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean hand_target_distance_x",
+   "computed": 1.0462731345967742,
+   "reported": 1.05,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean hand_target_distance_y",
+   "computed": 1.210146093048387,
+   "reported": 1.21,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_residual_distance_x",
+   "computed": 0.6512767335806452,
+   "reported": 0.65,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_residual_distance_y",
+   "computed": 0.7579975689193549,
+   "reported": 0.76,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean hand_target_residual_distance_x",
+   "computed": 0.8501238183548386,
+   "reported": 0.85,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean hand_target_residual_distance_y",
+   "computed": 0.9910759411290322,
+   "reported": 0.99,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_pursuit_gain_x",
+   "computed": 0.7737513744838711,
+   "reported": 0.77,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_pursuit_gain_y",
+   "computed": 0.7142570287258065,
+   "reported": 0.71,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_hand_error_correlation_x",
+   "computed": 0.6009047158790323,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_hand_error_correlation_y",
+   "computed": 0.6153953827048387,
+   "reported": 0.62,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_cursor_distance_normal",
+   "computed": 1.5371270009516127,
+   "reported": 1.54,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_cursor_distance_switched",
+   "computed": 1.6546883073870966,
+   "reported": 1.65,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean cursor_target_distance_loop1",
+   "computed": 1.8224030031290326,
+   "reported": 1.82,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean cursor_target_distance_loop2",
+   "computed": 1.6963011397903225,
+   "reported": 1.7,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_distance_loop1",
+   "computed": 1.410108902467742,
+   "reported": 1.41,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean eye_target_distance_loop2",
+   "computed": 1.4368444019032256,
+   "reported": 1.44,
+   "tol": 0.005,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye lag: vertical minus horizontal (ms)",
+   "computed": 8.025806451612901,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand lag: vertical minus horizontal (ms)",
+   "computed": 5.975806451612904,
+   "reported": 6.0,
+   "tol": 0.5,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "relative eye distance excess, vertical over horizontal (%)",
+   "computed": 18.362508913827646,
+   "reported": 18.0,
+   "tol": 0.5,
+   "source": "Danion et al. 2021, Cortex 134:30, Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "620 trials x 28 measures, no missing values",
+   "ok": true,
+   "detail": "17360 values"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has a target pattern 1-5",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit labels the fourth block of the HAND-TARGET, EYE-TARGET and EYE-CURSOR sheets 'DIST on Y axis (ms)'; it is read here as the lag on the y axis (unit ms, third and fourth blocks being x and y lag)."
+ ],
+ "sources": [
+  {
+   "file": "DATAmain.xlsx",
+   "url": "https://zenodo.org/api/records/4074990/files/DATAmain.xlsx/content",
+   "bytes": 195899,
+   "sha256": "0b1ac57d70907dc448f7f093cb63617b4f08ac7892c7950f8e215cc0cae7c51d",
+   "fetched_utc": "2026-11-09T12:38:56Z"
+  },
+  {
+   "file": "pattern.txt",
+   "url": "https://zenodo.org/api/records/4074990/files/pattern.txt/content",
+   "bytes": 12391,
+   "sha256": "83e6b24a67a6922ac2aba8047c4d5845fe23364711ae6d6a17c6e13012d03662",
+   "fetched_utc": "2026-11-09T12:39:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Danion2021_Cortex.zip"
+}

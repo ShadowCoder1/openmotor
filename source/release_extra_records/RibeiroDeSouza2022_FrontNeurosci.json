@@ -1,0 +1,354 @@
+{
+ "id": "RibeiroDeSouza2022_FrontNeurosci",
+ "module": "timeseries",
+ "rows": 106,
+ "subjects": 35,
+ "persons": 35,
+ "zip_bytes": 42628792,
+ "zip_sha256": "0050ea21ffbbdd9de8fa0b38fe1167179008636d58421c8ed243aef1e531dae8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "metadata holds 35 patients",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "106 recordings: 71 turning and 35 standing",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "patients",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (16 females and 19 males)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest patient (years)",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Methods, Participants (ages 44 to 84)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest patient (years)",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lightest patient (kg)",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants (47.0 to 100.0 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "heaviest patient (kg)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest patient (m)",
+   "computed": 1.46,
+   "reported": 1.46,
+   "tol": 0.005,
+   "source": "Methods, Participants (1.46 to 1.89 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tallest patient (m)",
+   "computed": 1.89,
+   "reported": 1.89,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration mean (years)",
+   "computed": 8.042857142857143,
+   "reported": 8.04,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration SD (years)",
+   "computed": 4.095139566269615,
+   "reported": 4.1,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "levodopa equivalent mean (mg/day)",
+   "computed": 675.2142857142857,
+   "reported": 675.21,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "levodopa equivalent SD (mg/day)",
+   "computed": 277.34850888034583,
+   "reported": 277.35,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 mmse mean",
+   "computed": 26.62857142857143,
+   "reported": 26.63,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 mmse SD",
+   "computed": 2.723381486808096,
+   "reported": 2.72,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hoehn_yahr mean",
+   "computed": 2.914285714285714,
+   "reported": 2.91,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hoehn_yahr SD",
+   "computed": 0.5070925528371101,
+   "reported": 0.51,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 updrs2 mean",
+   "computed": 8.542857142857143,
+   "reported": 8.54,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 updrs2 SD",
+   "computed": 3.7756406323793517,
+   "reported": 3.78,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 updrs3 mean",
+   "computed": 31.82857142857143,
+   "reported": 31.83,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 updrs3 SD",
+   "computed": 14.985258863071978,
+   "reported": 14.99,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hads_a mean",
+   "computed": 9.8,
+   "reported": 9.8,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hads_a SD",
+   "computed": 5.256928201682714,
+   "reported": 5.26,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hads_d mean",
+   "computed": 8.6,
+   "reported": 8.6,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 hads_d SD",
+   "computed": 5.191622210491687,
+   "reported": 5.19,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 minibest mean",
+   "computed": 18.37142857142857,
+   "reported": 18.37,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 minibest SD",
+   "computed": 6.860310892825375,
+   "reported": 6.86,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 fes_i mean",
+   "computed": 33.94285714285714,
+   "reported": 33.94,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 fes_i SD",
+   "computed": 11.578232256474816,
+   "reported": 11.58,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 tug_s SD",
+   "computed": 7.294158569958394,
+   "reported": 7.29,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session 1 tug_dualtask_s mean",
+   "computed": 18.87142857142857,
+   "reported": 18.87,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total time in freezing, all recordings (s)",
+   "computed": 1611.984375,
+   "reported": 1611.0,
+   "tol": 1.0,
+   "source": "Results, 'Participants spent a total of 1,611 s in FoG' (printed to the whole second; the flags give 1611.98 s)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "freezing time from the flag matches the authors' per-session total in PDFEinfo.csv to 0.01 s",
+   "ok": true,
+   "detail": "71"
+  },
+  {
+   "kind": "internal",
+   "what": "71 turning recordings carry the freezing flag; 173 episodes in all (as the metadata's episode counts)",
+   "ok": true,
+   "detail": "173"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording is 128 Hz",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the data are CC0 while the Figshare record says CC BY 4.0; the record's CC BY 4.0 is used here.",
+  "The paper reports 3.0 (SD 2.9) freezing episodes on average and 36% of patients with none; the flags and the metadata's episode counts give 3.09 (SD 3.88) in session 1 with 37% of patients having none, so these were not used as checks.",
+  "Table 1 gives session 1 NFoG-Q as 17.72 (SD 5.63); the metadata gives 15.46 (7.03). Table 1's session 2 and 3 means also differ from the metadata (23 and 13 patients have scores): for example UPDRS-III 27.81 vs 28.26 and 24.43 vs 24.62. The session 1 TUG mean is 14.445 here vs 14.44 printed, and the dual-task TUG SD is 13.355 vs 13.36. Only the session 1 values that match within the printed rounding are used as checks.",
+  "The metadata column 'sessions #' sums to 77, but clinical scores and IMU files exist for 71 sessions (35 + 23 + 13); the 71 are released.",
+  "The paper's total freezing time of 1,611 s is printed to the whole second; the flags sum to 1611.98 s."
+ ],
+ "sources": [
+  {
+   "file": "PDFEinfo.csv",
+   "url": "https://ndownloader.figshare.com/files/31544582",
+   "bytes": 12303,
+   "sha256": "46da06231a2f82e5ef06544264d696865317d6972ac0e9f996d06cb200dd1647",
+   "fetched_utc": "2026-11-09T13:16:07Z"
+  },
+  {
+   "file": "IMU.zip",
+   "url": "https://ndownloader.figshare.com/files/33413717",
+   "bytes": 159910531,
+   "sha256": "cea4246e3d1991aedf772f250dc928e6bd5a55bfdce2a944bf02a1a51eadf7ab",
+   "fetched_utc": "2026-11-09T13:16:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/RibeiroDeSouza2022_FrontNeurosci.zip"
+}

@@ -1,0 +1,279 @@
+{
+ "id": "Schroeger2022_SciRep",
+ "module": "screen_interception",
+ "rows": 17231,
+ "subjects": 190,
+ "persons": 190,
+ "zip_bytes": 473164,
+ "zip_sha256": "1ba5bf8a4a3671dfc10b0a77de6ed2e692d03b7d812d77836cfd10b49f38f5e2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Exp 1: temp_error_biased equals response time minus interval on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 participants analysed",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 trials after outlier exclusion",
+   "computed": 6311.0,
+   "reported": 6311.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 right-handed participants",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 left-handed participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 female participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 male participants",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 mean age, years",
+   "computed": 25.105263157894736,
+   "reported": 25.1,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 minimum age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 maximum age",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 trials before outlier exclusion",
+   "computed": 6361.0,
+   "reported": 6361.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 outlier trials excluded",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: temp_error_biased equals response time minus interval on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 participants analysed",
+   "computed": 53.0,
+   "reported": 53.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trials after outlier exclusion",
+   "computed": 6199.0,
+   "reported": 6199.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 right-handed participants",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 left-handed participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 female participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 male participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 diverse participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean age, years",
+   "computed": 25.634615384615383,
+   "reported": 25.6,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 minimum age",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 maximum age",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trials before outlier exclusion",
+   "computed": 6239.0,
+   "reported": 6239.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 outlier trials excluded",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Rows with no session code (62 in Experiment 1, 52 in Experiment 2; no click recorded) cannot be attributed to a participant and are not included.",
+  "Practice trials (10 per participant) are kept and marked excluded_by_authors."
+ ],
+ "sources": [
+  {
+   "file": "Exp_1.csv",
+   "url": "https://osf.io/download/c4r3u/",
+   "bytes": 2978538,
+   "sha256": "663a553b29569ab518bf3aeae382d3cc73a8032cdbb3bed7ccb3183d5fce35ce",
+   "fetched_utc": "2026-11-09T10:14:52Z"
+  },
+  {
+   "file": "Exp_2.csv",
+   "url": "https://osf.io/download/ugfet/",
+   "bytes": 2522445,
+   "sha256": "948743f5d9217c1f2edf1eed35cf30c8ee558026e4773f05c8b0c43aef900965",
+   "fetched_utc": "2026-11-09T10:14:59Z"
+  },
+  {
+   "file": "Exp_1.Rmd",
+   "url": "https://osf.io/download/hwxcn/",
+   "bytes": 11330,
+   "sha256": "fd514731aedb4fdd500e06019683fe82fde5c92db330a2079bf74b2c53fbdd9e",
+   "fetched_utc": "2026-11-09T10:15:05Z"
+  },
+  {
+   "file": "Exp_2.Rmd",
+   "url": "https://osf.io/download/chs72/",
+   "bytes": 17684,
+   "sha256": "2d71580221382a95997fc9583785cfddb157b9efd467d0401f9fe4be25f5001e",
+   "fetched_utc": "2026-11-09T10:15:24Z"
+  },
+  {
+   "file": "Supp.Rmd",
+   "url": "https://osf.io/download/w8rgm/",
+   "bytes": 22027,
+   "sha256": "a122358b31a334cc377c60b3b215e6e01fcca312bc97bbd44c5f91f0b94f9932",
+   "fetched_utc": "2026-11-09T10:15:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schroeger2022_SciRep.zip"
+}

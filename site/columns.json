@@ -1,0 +1,582 @@
+[
+ {
+  "section": "Identification",
+  "columns": [
+   {
+    "name": "dataset",
+    "type": "text",
+    "values": "",
+    "description": "Dataset name. Most studies have one dataset; a few have two."
+   },
+   {
+    "name": "experiment",
+    "type": "text",
+    "values": "",
+    "description": "Experiment within the dataset, usually one design or one source file. Labels follow the authors' files, not always the paper's experiment numbers."
+   },
+   {
+    "name": "study",
+    "type": "text",
+    "values": "",
+    "description": "Study name: first author, year and journal of the paper."
+   },
+   {
+    "name": "subject",
+    "type": "text",
+    "values": "",
+    "description": "One sequence of trials from one participant, coded within this dataset."
+   },
+   {
+    "name": "person",
+    "type": "text",
+    "values": "",
+    "description": "One participant, coded within this dataset. A person can have more than one sequence, for example two runs."
+   },
+   {
+    "name": "id_type",
+    "type": "category",
+    "values": "prolific, mturk, uuid, lab, unknown",
+    "description": "Kind of identifier the authors used for participants. The identifiers themselves are not included."
+   },
+   {
+    "name": "person_link",
+    "type": "category",
+    "values": "verified, assumed_unique, unknown",
+    "description": "How sure it is that one person code is one human: verified (platform identifier or documented link), assumed_unique, or unknown (the same human may appear under more than one code)."
+   },
+   {
+    "name": "group",
+    "type": "text",
+    "values": "",
+    "description": "Between-participant condition, in the authors' naming. Empty for single-group experiments."
+   },
+   {
+    "name": "prior_exposure",
+    "type": "category",
+    "values": "false, true, unknown",
+    "description": "true if the participant had done an earlier perturbation experiment, including another study in OpenMotor; false if the paper excluded such participants; otherwise unknown."
+   },
+   {
+    "name": "subject_excluded_by_authors",
+    "type": "true/false",
+    "values": "",
+    "description": "The original analysis excluded this whole sequence."
+   },
+   {
+    "name": "subject_exclusion_reason",
+    "type": "text",
+    "values": "",
+    "description": "Why the authors excluded the sequence. Empty unless excluded."
+   },
+   {
+    "name": "learner",
+    "type": "true/false",
+    "values": "",
+    "description": "The paper's learner classification, for papers that make one. Empty otherwise."
+   }
+  ]
+ },
+ {
+  "section": "Participant",
+  "columns": [
+   {
+    "name": "age",
+    "type": "number",
+    "values": "years",
+    "description": "Age in years."
+   },
+   {
+    "name": "sex",
+    "type": "category",
+    "values": "F, M, other",
+    "description": "Sex or gender as reported."
+   },
+   {
+    "name": "handedness",
+    "type": "category",
+    "values": "right, left, ambi",
+    "description": "Handedness."
+   },
+   {
+    "name": "visual_acuity_logmar",
+    "type": "number",
+    "values": "logMAR",
+    "description": "Visual acuity."
+   },
+   {
+    "name": "medication_state",
+    "type": "category",
+    "values": "on, off, unmedicated",
+    "description": "Medication state at testing, for clinical groups."
+   },
+   {
+    "name": "device",
+    "type": "category",
+    "values": "mouse, trackpad, touchscreen, tablet, robot, kinarm, other, mouse_or_trackpad, unknown",
+    "description": "Input device. tablet means a digitizing tablet; mouse_or_trackpad when the paper does not say which."
+   },
+   {
+    "name": "setting",
+    "type": "category",
+    "values": "online, lab",
+    "description": "Tested online or in the lab."
+   },
+   {
+    "name": "population",
+    "type": "category",
+    "values": "healthy, parkinsons, cerebellar_degeneration, low_vision, deafferented, unknown",
+    "description": "Sample population. Healthy older adults count as healthy."
+   }
+  ]
+ },
+ {
+  "section": "Trial order and timing",
+  "columns": [
+   {
+    "name": "trial",
+    "type": "integer",
+    "values": "",
+    "description": "Trial number within the sequence, from 0, counting every trial in order across sessions, including practice, no-feedback, probe and placeholder trials."
+   },
+   {
+    "name": "trial_orig",
+    "type": "number",
+    "values": "",
+    "description": "The authors' own trial number. It may restart at a new session, and is empty when the authors' files are ordered by position only."
+   },
+   {
+    "name": "session",
+    "type": "integer",
+    "values": "",
+    "description": "Visit number within the sequence, from 0."
+   },
+   {
+    "name": "block",
+    "type": "text",
+    "values": "",
+    "description": "The authors' block label."
+   },
+   {
+    "name": "phase",
+    "type": "category",
+    "values": "practice, baseline, learning, aftereffect, washout, relearning, probe, transfer, other",
+    "description": "Standardized phase of the block."
+   },
+   {
+    "name": "trial_kind",
+    "type": "category",
+    "values": "reach, proprio_probe, aim_report_only, other, demo, missing",
+    "description": "reach; proprio_probe (the hand was moved passively, no reach); aim_report_only; demo (an instructed demonstration reach); missing (a placeholder row for a gap in the authors' trial numbers, with no data); other."
+   },
+   {
+    "name": "break_before",
+    "type": "true/false",
+    "values": "",
+    "description": "A documented pause came before this trial: the first trial, a new session, a rest break or an instruction screen."
+   },
+   {
+    "name": "time_s",
+    "type": "number",
+    "values": "seconds",
+    "description": "Target onset time since the first trial of the sequence."
+   },
+   {
+    "name": "gap_before_s",
+    "type": "number",
+    "values": "seconds",
+    "description": "Time from the end of the previous trial to this trial's target onset."
+   }
+  ]
+ },
+ {
+  "section": "Target",
+  "columns": [
+   {
+    "name": "target_angle",
+    "type": "number",
+    "values": "degrees, 0 to 360",
+    "description": "Direction of the target, the instructed goal of the movement. 0 points right and angles increase counter-clockwise."
+   },
+   {
+    "name": "target_id",
+    "type": "integer",
+    "values": "",
+    "description": "Target location within the experiment, one per direction and distance."
+   },
+   {
+    "name": "stimulus_angle",
+    "type": "number",
+    "values": "degrees",
+    "description": "Direction of the displayed stimulus when it differs from the goal, for example when people reach opposite the stimulus."
+   },
+   {
+    "name": "target_size_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Angular radius of the target at the target distance."
+   },
+   {
+    "name": "target_distance_norm",
+    "type": "number",
+    "values": "",
+    "description": "Target distance divided by the largest target distance in the experiment."
+   },
+   {
+    "name": "target_visible_during_move",
+    "type": "true/false",
+    "values": "",
+    "description": "False if the target disappeared when the movement started."
+   },
+   {
+    "name": "display_scale",
+    "type": "number",
+    "values": "",
+    "description": "Display size relative to the experiment's reference display (1 = reference)."
+   },
+   {
+    "name": "target_event",
+    "type": "category",
+    "values": "none, jump, flicker",
+    "description": "What the target did after movement onset."
+   },
+   {
+    "name": "target_jump",
+    "type": "number",
+    "values": "degrees",
+    "description": "How far the target jumped after movement onset; 0 for none and flicker."
+   },
+   {
+    "name": "jump_time_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Time of the target event after movement onset."
+   },
+   {
+    "name": "probe_kind",
+    "type": "category",
+    "values": "none, active_post_reach, passive_robot, passive_experimenter",
+    "description": "Proprioceptive probe: active_post_reach (felt hand reported after the participant's own reach), or passive_robot and passive_experimenter (the hand was moved for them)."
+   },
+   {
+    "name": "probe_location_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "On passive probes, where the hand was moved to."
+   }
+  ]
+ },
+ {
+  "section": "Instructions and cues",
+  "columns": [
+   {
+    "name": "instr_goal",
+    "type": "category",
+    "values": "cursor_to_target, hand_to_target, hand_to_angle",
+    "description": "What participants were told to bring to the target: the cursor, the hand, or the hand at an instructed angle."
+   },
+   {
+    "name": "goal_angle_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Instructed hand direction relative to the target, when instr_goal is hand_to_angle."
+   },
+   {
+    "name": "instr_strategy",
+    "type": "category",
+    "values": "allowed, forbidden, maintain, remove, given_with_angle, unspecified",
+    "description": "Instruction about aiming: allowed; forbidden (for example, ignore the cursor); maintain; remove (stop aiming and reach straight to the target); given_with_angle (told where to aim); unspecified."
+   },
+   {
+    "name": "strategy_angle_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Instructed aiming direction relative to the target, when instr_strategy is given_with_angle."
+   },
+   {
+    "name": "instr_disclosure",
+    "type": "category",
+    "values": "none, exists, exact",
+    "description": "What participants were told about the perturbation: nothing, that there is one, or exactly what it is."
+   },
+   {
+    "name": "instr_report",
+    "type": "category",
+    "values": "none, aim_pre, hand_post, hand_passive",
+    "description": "Report collected on the trial: an aim report, the felt hand position after a reach, or after a passive movement."
+   },
+   {
+    "name": "aim_report_timing",
+    "type": "category",
+    "values": "pre, post",
+    "description": "Whether the aim report came before or after the reach."
+   },
+   {
+    "name": "cue_elements",
+    "type": "text",
+    "values": "",
+    "description": "Contextual cues present before the movement, joined with | (for example light|tone or target_color:red)."
+   },
+   {
+    "name": "cue_onset_to_go_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Time from cue onset to the go signal."
+   },
+   {
+    "name": "prep_time_lo_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Lower bound of a forced preparation-time window."
+   },
+   {
+    "name": "prep_time_hi_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Upper bound of a forced preparation-time window."
+   },
+   {
+    "name": "target_to_go_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Time from target onset to the go signal."
+   },
+   {
+    "name": "fb_cued",
+    "type": "true/false",
+    "values": "",
+    "description": "Participants knew before moving whether a cursor would be shown, from a blocked design or an explicit cue."
+   }
+  ]
+ },
+ {
+  "section": "Movement",
+  "columns": [
+   {
+    "name": "hand_used",
+    "type": "category",
+    "values": "right, left",
+    "description": "Hand that moved, or that was moved on passive probes."
+   },
+   {
+    "name": "hand_angle",
+    "type": "number",
+    "values": "degrees",
+    "description": "Direction of the hand relative to the target, counter-clockwise positive, from the earliest reliable measure the authors recorded (see hand_measure)."
+   },
+   {
+    "name": "hand_angle_fb",
+    "type": "number",
+    "values": "degrees",
+    "description": "Hand direction that determined the cursor, for example the endpoint at the target distance."
+   },
+   {
+    "name": "hand_measure",
+    "type": "category",
+    "values": "endpoint, peak_velocity, fixed_distance, initial_direction, other",
+    "description": "How hand_angle was measured. Constant within an experiment."
+   },
+   {
+    "name": "hand_extent",
+    "type": "number",
+    "values": "",
+    "description": "Movement extent in units of the target distance."
+   },
+   {
+    "name": "rt_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Reaction time."
+   },
+   {
+    "name": "mt_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Movement time."
+   },
+   {
+    "name": "aim_report",
+    "type": "number",
+    "values": "degrees",
+    "description": "Reported aiming direction relative to the target."
+   },
+   {
+    "name": "hand_report",
+    "type": "number",
+    "values": "degrees",
+    "description": "Reported felt hand position relative to the target. On passive probes, the proprioceptive error."
+   },
+   {
+    "name": "excluded_by_authors",
+    "type": "true/false",
+    "values": "",
+    "description": "The original analysis excluded this trial. Also true on placeholder rows."
+   }
+  ]
+ },
+ {
+  "section": "Feedback",
+  "columns": [
+   {
+    "name": "fb_visible",
+    "type": "category",
+    "values": "none, online, endpoint, unknown",
+    "description": "What was shown: no cursor, a cursor during the movement, or the cursor only at or after the end of the movement (including delayed feedback)."
+   },
+   {
+    "name": "fb_mode",
+    "type": "category",
+    "values": "none, veridical, rotated, clamped, mirror, gain, other, unknown",
+    "description": "How the cursor related to the hand."
+   },
+   {
+    "name": "fb_form",
+    "type": "category",
+    "values": "cursor, cloud, blur, multi_cursor, none",
+    "description": "Form of the feedback."
+   },
+   {
+    "name": "online_cursor",
+    "type": "category",
+    "values": "none, veridical, perturbed",
+    "description": "What the cursor did during the movement."
+   },
+   {
+    "name": "fb_endpoint_transform_only",
+    "type": "true/false",
+    "values": "",
+    "description": "A veridical cursor during the movement was followed by a transformed endpoint."
+   },
+   {
+    "name": "rotation",
+    "type": "number",
+    "values": "degrees",
+    "description": "Visuomotor rotation in force: cursor = hand_angle_fb + rotation. 0 on veridical trials."
+   },
+   {
+    "name": "clamp",
+    "type": "number",
+    "values": "degrees",
+    "description": "Cursor direction relative to the target on error-clamp trials, 0 degree clamps included."
+   },
+   {
+    "name": "mirror_axis_deg",
+    "type": "number",
+    "values": "degrees, 0 to 180",
+    "description": "Mirror axis on mirror trials."
+   },
+   {
+    "name": "gain",
+    "type": "number",
+    "values": "",
+    "description": "Extent gain on gain trials: cursor extent = gain x hand extent."
+   },
+   {
+    "name": "translation_xy",
+    "type": "text",
+    "values": "",
+    "description": "Endpoint shift dx,dy in units of the target distance, on other-mapping trials."
+   },
+   {
+    "name": "fb_spread_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Spread of a cloud or blurred cursor at the target distance."
+   },
+   {
+    "name": "n_cursors",
+    "type": "integer",
+    "values": "",
+    "description": "Number of cursors, when more than one was shown."
+   },
+   {
+    "name": "cursor_error",
+    "type": "number",
+    "values": "degrees",
+    "description": "Where the cursor ended up relative to the original target, as the participant saw it. Empty when no cursor was shown."
+   },
+   {
+    "name": "cursor_extent_error",
+    "type": "number",
+    "values": "",
+    "description": "Cursor extent minus the target distance, in target-distance units."
+   },
+   {
+    "name": "fb_delay_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "Delay of the feedback after the end of the movement; 0 if immediate."
+   },
+   {
+    "name": "fb_duration_ms",
+    "type": "number",
+    "values": "ms",
+    "description": "How long the feedback stayed on screen."
+   }
+  ]
+ },
+ {
+  "section": "Outcomes",
+  "columns": [
+   {
+    "name": "outcome_channels",
+    "type": "text",
+    "values": "",
+    "description": "Outcome signals shown on the trial, joined with | (cursor, hit_color, points, reward_tone, symbolic_error)."
+   },
+   {
+    "name": "reward",
+    "type": "number",
+    "values": "1 or 0",
+    "description": "Reward delivered on the trial. Empty if the task had none."
+   },
+   {
+    "name": "score",
+    "type": "number",
+    "values": "",
+    "description": "Number shown to the participant: points, or a signed error."
+   },
+   {
+    "name": "score_max",
+    "type": "number",
+    "values": "",
+    "description": "Maximum possible score."
+   },
+   {
+    "name": "reward_space",
+    "type": "category",
+    "values": "cursor, hand",
+    "description": "Whether the reward rule was applied to the cursor or to the hand."
+   },
+   {
+    "name": "reward_center_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Center of the rewarded zone relative to the target."
+   },
+   {
+    "name": "reward_halfwidth_deg",
+    "type": "number",
+    "values": "degrees",
+    "description": "Half-width of the rewarded zone."
+   },
+   {
+    "name": "hit",
+    "type": "number",
+    "values": "1 or 0",
+    "description": "The cursor hit the target."
+   },
+   {
+    "name": "speed_warning",
+    "type": "number",
+    "values": "1 or 0",
+    "description": "A too-slow or too-fast message was shown."
+   },
+   {
+    "name": "other_warning",
+    "type": "number",
+    "values": "1 or 0",
+    "description": "Another warning was shown, for example too far."
+   }
+  ]
+ }
+]

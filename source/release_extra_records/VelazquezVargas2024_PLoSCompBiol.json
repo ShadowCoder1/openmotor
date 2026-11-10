@@ -1,0 +1,548 @@
+{
+ "id": "VelazquezVargas2024_PLoSCompBiol",
+ "module": "navigation",
+ "rows": 48291,
+ "subjects": 137,
+ "persons": 137,
+ "zip_bytes": 1728348,
+ "zip_sha256": "945f48545e3a6299445e6ce232c8f4d01c0333141e52f8ab729a5d7b6f2b0bc8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "E1_data_Generalization_SONA.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_subjectsInfo_Generalization_SONA.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_Generalization_single.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_subjectsInfo_Generalization_single.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_Generalization_multiple.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_subjectsInfo_Generalization_multiple.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E3_data_Generalization_forget_1STD_2h.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E3_subjectsInfo_Generalization_forget_1STD_2h.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E4_subjects_data_stochastic.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E4_subjects_info_stochastic.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1_data_Generalization_SONA.csv: every participant of the data file is in the subject info, once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_Generalization_single.csv: every participant of the data file is in the subject info, once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E2_data_Generalization_multiple.csv: every participant of the data file is in the subject info, once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E3_data_Generalization_forget_1STD_2h.csv: every participant of the data file is in the subject info, once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E4_subjects_data_stochastic.csv: every participant of the data file is in the subject info, once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant's moves follow one key-to-move mapping (Experiments 1-3, presses that did not hit a wall)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "a press that hit a wall never moved the cursor",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "feedback type 0 exactly when the cursor did not end on the target",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4: about a fifth of the training presses that did not hit a wall moved the cursor away from the key's usual move (stochastic mapping, probability 0.2; the share is a little above 0.2 because intended wall hits are left out), and none did in the generalization trials",
+   "ok": true,
+   "detail": "training 0.236, generalization 0.000"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Single group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, Multiple group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, Single group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, Multiple group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, Single group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, Multiple group: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants and experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: participants",
+   "computed": 112.0,
+   "reported": 112.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: male participants",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: female participants",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: non-binary participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: undisclosed participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: mean age (years; the paper's values look truncated, so one unit of the last digit is allowed)",
+   "computed": 19.982142857142858,
+   "reported": 19.9,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all experiments: SD of age (years; same allowance)",
+   "computed": 1.4703198331793024,
+   "reported": 1.4,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per analysed participant (minimum and maximum equal)",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (Exp 3: 80 + 20 + 1000 + 20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials per analysed participant (minimum and maximum equal)",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (Exp 3: 80 + 20 + 1000 + 20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials per analysed participant (minimum and maximum equal)",
+   "computed": 1120.0,
+   "reported": 1120.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (Exp 3: 80 + 20 + 1000 + 20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: trials per analysed participant (minimum and maximum equal)",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (Exp 3: 80 + 20 + 1000 + 20)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: all participants have the same number of trials in each block (80 multiple-pair training, then generalization 1 of 20 trials)",
+   "ok": true,
+   "detail": "blocks {'generalization 1': 20, 'generalization 2': 30, 'multiple training': 80, 'single training': 990}; generalization-2 trials with the Single training pair: 10"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiments 1, 2 and 4: the Single group trained on 1 start-target pair and the Multiple group on 4; Experiments 1 and 2 have 20 new-pair trials per participant",
+   "ok": true,
+   "detail": "pairs [np.int64(1), np.int64(4), np.int64(5)], new-pair trials [np.int64(20)]"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, Single group: participants who named all three keys' moves correctly",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Results, Experiment 4 (explicit test of the mapping)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, Multiple group: participants who named all three keys' moves correctly",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, Experiment 4 (explicit test of the mapping)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, last training bin (trials 251-260): Welch t",
+   "computed": -0.50562058296023,
+   "reported": -0.5,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, last training bin (trials 251-260): Welch degrees of freedom",
+   "computed": 29.06729692820762,
+   "reported": 29.06,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, last training bin (trials 251-260): p value",
+   "computed": 0.6169359846057682,
+   "reported": 0.61,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, first generalization bin (first 10 generalization trials): Welch t",
+   "computed": -5.105073560858459,
+   "reported": -5.1,
+   "tol": 0.1,
+   "source": "Results, Experiment 1 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, first generalization bin (first 10 generalization trials): Welch degrees of freedom",
+   "computed": 29.99284617792151,
+   "reported": 29.99,
+   "tol": 0.01,
+   "source": "Results, Experiment 1 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, last training bin (trials 251-260): Welch t",
+   "computed": -0.19894179151603064,
+   "reported": -0.19,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, last training bin (trials 251-260): Welch degrees of freedom",
+   "computed": 29.998120431604605,
+   "reported": 29.99,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, last training bin (trials 251-260): p value",
+   "computed": 0.8436505370631212,
+   "reported": 0.84,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, first generalization bin (first 10 generalization trials): Welch t",
+   "computed": -4.812265031857879,
+   "reported": -4.81,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, first generalization bin (first 10 generalization trials): Welch degrees of freedom",
+   "computed": 22.686408971559924,
+   "reported": 22.68,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (proportion of optimal arrivals, Single vs Multiple, Welch t-test; the paper's decimals look truncated)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean age of the 112 analysed participants is 19.982 years (SD 1.470) here, printed as 19.9 (1.4) in the paper; the paper's decimals look truncated rather than rounded (for example t = -0.199 is printed -0.19 for Experiment 2), so the checks allow one unit of the last digit.",
+  "The paper's text gives no exclusion criteria. Participants marked as excluded here are those with 'experiment finished' = 0 in the subject info, plus one Experiment 1 participant whose 'first attempt' = 0; this reproduces the paper's group sizes (16 and 16 in Experiments 1, 2 and 4; 16 in Experiment 3) and every statistic checked."
+ ],
+ "sources": [
+  {
+   "file": "E1_directions.csv",
+   "url": "https://osf.io/download/64d274e0c7ab2944edd4e02e/",
+   "bytes": 48,
+   "sha256": "e48e67956a6dc283ad378c1f2d4f36ee6bc984f166f325a5dcaf04a3725f92e9",
+   "fetched_utc": "2026-11-08T20:25:22Z"
+  },
+  {
+   "file": "E1_data_Generalization_SONA.csv",
+   "url": "https://osf.io/download/64d27505a2be6b5bf6314724/",
+   "bytes": 2905582,
+   "sha256": "c8005f73c7e9d5f23e8942ca7241c00eb95eb7c253490ad733bf4c11932d387e",
+   "fetched_utc": "2026-11-08T20:25:25Z"
+  },
+  {
+   "file": "E1_map.csv",
+   "url": "https://osf.io/download/64d2754aa2be6b5bfb3148c7/",
+   "bytes": 10,
+   "sha256": "1116254c733df51957f3dd26d694f63ba25923cfa2229cd157646b4432e6b528",
+   "fetched_utc": "2026-11-08T20:25:27Z"
+  },
+  {
+   "file": "E1_s_condition.csv",
+   "url": "https://osf.io/download/64d2755d2fe496499561b354/",
+   "bytes": 68,
+   "sha256": "d672f2231888fd0b77a9fd80b1dceb3f5a9c33d252e750435a3eb3de6ff702a6",
+   "fetched_utc": "2026-11-08T20:25:31Z"
+  },
+  {
+   "file": "E1_subjectsInfo_Generalization_SONA.csv",
+   "url": "https://osf.io/download/64d27560c7ab2944e9d4df97/",
+   "bytes": 3605,
+   "sha256": "2a2496ce939333b0594b4e6c1421f455f59261709ce92ad3ced5a7eef909542b",
+   "fetched_utc": "2026-11-08T20:25:38Z"
+  },
+  {
+   "file": "E2_cheb_matrix.csv",
+   "url": "https://osf.io/download/64e11d10a9601a0c869c9502/",
+   "bytes": 981,
+   "sha256": "9854f32100587fa89668c41560686c39712839964b1d46c71da2eb6e98685e7f",
+   "fetched_utc": "2026-11-08T20:25:42Z"
+  },
+  {
+   "file": "E2_data_Generalization_multiple.csv",
+   "url": "https://osf.io/download/64e11d1062e5ee0d053ab76b/",
+   "bytes": 1020605,
+   "sha256": "1af09dcefd1c74a85b8a9bc7f75557f4452e6c9bf083da900b2dd604dd2cc33f",
+   "fetched_utc": "2026-11-08T20:25:45Z"
+  },
+  {
+   "file": "E2_data_Generalization_single.csv",
+   "url": "https://osf.io/download/64e11d1157125e0bfdcc13d8/",
+   "bytes": 942489,
+   "sha256": "4cb7ba98240e5ea76c64abf32088cad1ad097610ffdab2991c275bb1c3528856",
+   "fetched_utc": "2026-11-08T20:25:49Z"
+  },
+  {
+   "file": "E2_directions.csv",
+   "url": "https://osf.io/download/64e11d11b11c860f79073e97/",
+   "bytes": 48,
+   "sha256": "e48e67956a6dc283ad378c1f2d4f36ee6bc984f166f325a5dcaf04a3725f92e9",
+   "fetched_utc": "2026-11-08T20:25:52Z"
+  },
+  {
+   "file": "E2_E2maps.csv",
+   "url": "https://osf.io/download/64e11d2b3fc43d0f71e58e55/",
+   "bytes": 207,
+   "sha256": "59dccf3838adc05851e17a6b097654878c109c087db8bdefa7ae813b25a67406",
+   "fetched_utc": "2026-11-08T20:25:55Z"
+  },
+  {
+   "file": "E2_E2s_condition.csv",
+   "url": "https://osf.io/download/64e11d2ea9601a0c829c94e3/",
+   "bytes": 68,
+   "sha256": "3462862845dfb0038579fe20e698167aca4548954be80a3b4a1a31c417a03151",
+   "fetched_utc": "2026-11-08T20:25:59Z"
+  },
+  {
+   "file": "E2_optimal_matrix.csv",
+   "url": "https://osf.io/download/64e11d4ab11c860f7a073ed8/",
+   "bytes": 1181,
+   "sha256": "0c74f9e29f78e367fe68c6296d651e671bd8eff7974cc34bb764edff619cec23",
+   "fetched_utc": "2026-11-08T20:26:02Z"
+  },
+  {
+   "file": "E2_subjectsInfo_Generalization_multiple.csv",
+   "url": "https://osf.io/download/64e11d4c3fc43d0f72e58ede/",
+   "bytes": 1229,
+   "sha256": "7d5f52bde24b7bd5f9a2c8c46b55e279ee089a07298338fbe757bb9db470d7e4",
+   "fetched_utc": "2026-11-08T20:26:06Z"
+  },
+  {
+   "file": "E2_subjectsInfo_Generalization_single.csv",
+   "url": "https://osf.io/download/64e11d4c57125e0bfdcc13f5/",
+   "bytes": 1169,
+   "sha256": "4fe2fcadecac7fecfd87c109dce3ca9545c5aa533697d27a85449fd9acc1d87c",
+   "fetched_utc": "2026-11-08T20:26:09Z"
+  },
+  {
+   "file": "E3_subjectsInfo_Generalization_forget_1STD_2h.csv",
+   "url": "https://osf.io/download/fejcq/",
+   "bytes": 1169,
+   "sha256": "97487434fe17d2adf906dd0c5590037d279644e6ba9eb83f10f6f876ab132b68",
+   "fetched_utc": "2026-11-08T20:26:13Z"
+  },
+  {
+   "file": "E3_data_Generalization_forget_1STD_2h.csv",
+   "url": "https://osf.io/download/qdtz3/",
+   "bytes": 3878414,
+   "sha256": "9a6468735474c5c3cc5d101246c4893e254de558e37abedb75875fc18366f910",
+   "fetched_utc": "2026-11-08T20:26:22Z"
+  },
+  {
+   "file": "E4_subjects_info_stochastic.csv",
+   "url": "https://osf.io/download/4zywm/",
+   "bytes": 2847,
+   "sha256": "e955f818d353c7452ae6ac3134d4d9ed2f8dadf2f6b2278683f22b74e0b26848",
+   "fetched_utc": "2026-11-08T20:26:26Z"
+  },
+  {
+   "file": "E4_subjects_data_stochastic.csv",
+   "url": "https://osf.io/download/5m6g9/",
+   "bytes": 5441949,
+   "sha256": "ffb345d61f464a62826543a0a02b376b1ea0206408ef126e831db2cb69efbaf0",
+   "fetched_utc": "2026-11-08T20:26:29Z"
+  },
+  {
+   "file": "E1_optimal_matrix.csv",
+   "url": "https://osf.io/download/64d2755da2be6b5bf6314739/",
+   "bytes": 1181,
+   "sha256": "0c74f9e29f78e367fe68c6296d651e671bd8eff7974cc34bb764edff619cec23",
+   "fetched_utc": "2026-11-08T20:26:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VelazquezVargas2024_PLoSCompBiol.zip"
+}

@@ -1,0 +1,92 @@
+{
+ "id": "Cousins2016_PLoSBiol",
+ "module": "summary",
+ "rows": 2110,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 25468,
+ "zip_sha256": "668a39b1426177c52fb56480d693816b35dcf7eda112cbb6e77c201f30d6e40c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Materials & Methods, Participants (remaining twenty-two)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Materials & Methods, Participants (22, 14 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age",
+   "computed": 23.5,
+   "reported": 23.5,
+   "tol": 0.05,
+   "source": "Materials & Methods, Participants (mean age = 23.5 y)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age",
+   "computed": 4.251050290390432,
+   "reported": 4.3,
+   "tol": 0.05,
+   "source": "Materials & Methods, Participants (SD 4.3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late-block RT improvement, cued sequence, ms",
+   "computed": 49.99220070259507,
+   "reported": 50.0,
+   "tol": 0.05,
+   "source": "Table 1 (Late, Sequence, Improvement, cued)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late-block RT improvement, uncued sequence, ms",
+   "computed": 46.76159427786265,
+   "reported": 46.8,
+   "tol": 0.05,
+   "source": "Table 1 (Late, Sequence, Improvement, uncued)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late-block RT improvement, cued random, ms",
+   "computed": 29.275564515078887,
+   "reported": 29.3,
+   "tol": 0.05,
+   "source": "Table 1 (Late, Random, Improvement, cued)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant in every sheet used except participant 1 who has no error rates in the deposit",
+   "ok": true,
+   "detail": "[('error_rate', 1)]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "S1_Data.xlsx",
+   "url": "https://ndownloader.figshare.com/files/4819276",
+   "bytes": 77868,
+   "sha256": "d43971c748da3d6e68359cfb3ec502490769a1765f540cdfafde5959905bae65",
+   "fetched_utc": "2026-11-09T15:15:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cousins2016_PLoSBiol.zip"
+}

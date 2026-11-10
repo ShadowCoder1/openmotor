@@ -1,0 +1,2058 @@
+{
+ "id": "Tomassini2022_iScience",
+ "module": "timeseries",
+ "rows": 1020,
+ "subjects": 80,
+ "persons": 80,
+ "zip_bytes": 775455807,
+ "zip_sha256": "d5233bf13cbc93572d0fe1d66db5ffa5b1724791c922205afa2bfe53ca83d257",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "couples in the main experiment",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Participants (thirty couples, main experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the main experiment",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Participants (30 couples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Kinematic data recording (300 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant and condition",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Data collection (two trials per couple and condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant and condition (max)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per participant",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Setup and procedure (solo, in-phase, anti-phase)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest trial (s, 2.5 min)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0.5,
+   "source": "Tomassini et al. 2022, Data collection (2.5 min trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every main-experiment participant has 6 recordings (3 conditions x 2 trials)",
+   "ok": true,
+   "detail": "360 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "trial durations",
+   "ok": true,
+   "detail": "[150.0, 152.0]"
+  },
+  {
+   "kind": "published",
+   "what": "participants in all experiments (80 = 40 couples)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Participants (eighty participants formed 40 couples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "couples in the control experiment",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Participants (10 couples in the control experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "couples in the hand-prone task",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Setup and procedure (secondary tasks, 10 couples each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "couples in the arm task",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Setup and procedure (secondary tasks, 10 couples each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "couples in the virtual-partner task",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Setup and procedure (Virtual partner, 10 couples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-prone trials per participant and condition",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Data collection (two trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "arm trials per participant and condition",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Data collection (three trials of 1.5 min in the Arm task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "arm trial duration (s, 1.5 min)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0.5,
+   "source": "Tomassini et al. 2022, Data collection (1.5 min trials in the Arm task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "arm task conditions per participant (solo, dyad in-phase)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Secondary tasks (only solo and dyad-in-phase tested in Arm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "virtual-partner trials per participant and tracked-dot condition",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Setup and procedure (2 trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control trial duration (s, 2.5 min)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0.5,
+   "source": "Tomassini et al. 2022, Data collection (2.5 min trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control couples at 0.25 Hz",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Control experiment (paces 0.25, 0.5, 0.75 Hz in all 10 couples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control couples at 0.5 Hz",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Control experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control couples at 0.75 Hz",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Control experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control couples at 1 Hz",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Tomassini et al. 2022, Control experiment (five couples also tested at 1 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "control: median spectral peak of the finger position rises with the pace label (labels read as 0.25, 0.5, 0.75, 1 Hz)",
+   "ok": true,
+   "detail": "0.25 Hz: 0.27, 0.5 Hz: 0.52, 0.75 Hz: 0.94, 1 Hz: 1.27"
+  },
+  {
+   "kind": "internal",
+   "what": "control: peak at the two slowest paces is close to the instructed pace",
+   "ok": true,
+   "detail": "0.27, 0.52 Hz"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings in the main experiment kept as before",
+   "ok": true,
+   "detail": "360"
+  },
+  {
+   "kind": "internal",
+   "what": "all persons",
+   "ok": true,
+   "detail": "80 persons, 1020 recordings"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's spectral, phase-locking and submovement statistics were not recomputed. Where the main text gives only designs (not measured values), the published checks reproduce counts, trial structure and instructed paces; the control experiment's pace labels are checked against the finger-signal spectra as internal checks only."
+ ],
+ "sources": [
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C02_NP.mat",
+   "url": "https://osf.io/download/6040bd00035cf70411c8283d/",
+   "bytes": 2084739,
+   "sha256": "2e9a1374d89a9bd170bed58169dec7f24a0ec2ad4850e932355a7848480899d9",
+   "fetched_utc": "2026-11-10T07:57:38Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C03_NP.mat",
+   "url": "https://osf.io/download/6040bd0044157503fd586ab9/",
+   "bytes": 2082075,
+   "sha256": "522c2b3948c949896dc2f1b35e4822def19783b9411d5b49f3025fb00778af1b",
+   "fetched_utc": "2026-11-10T07:57:39Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C01_NP.mat",
+   "url": "https://osf.io/download/6040bcff67386c03eb61d178/",
+   "bytes": 2126246,
+   "sha256": "4bea24d5f2b911428be42363f1fd22667af01b7d32989fe2db90b07000815c13",
+   "fetched_utc": "2026-11-10T07:57:39Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C04_NP.mat",
+   "url": "https://osf.io/download/6040bd0067386c03ec61feb7/",
+   "bytes": 2086759,
+   "sha256": "e527e48de25af2ba256f392aff230c9687cbfea6cf1d20e740e915d06b330e69",
+   "fetched_utc": "2026-11-10T07:57:39Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C09_NP.mat",
+   "url": "https://osf.io/download/6040bd0444157503f857fc70/",
+   "bytes": 2101386,
+   "sha256": "3b001cde331048e09373cd2222729319f4a21376583d3bf240b18ab870c629d0",
+   "fetched_utc": "2026-11-10T07:57:56Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C06_NP.mat",
+   "url": "https://osf.io/download/6040bd05441575040457f965/",
+   "bytes": 2117208,
+   "sha256": "49cab634132823cbd3fb2223250b63a2dd36228a73923a13c088553db820cd8d",
+   "fetched_utc": "2026-11-10T07:57:56Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C08_NP.mat",
+   "url": "https://osf.io/download/6040bd0344157503fc582e7b/",
+   "bytes": 2116114,
+   "sha256": "78c9f0191d42828bc686b908a3594a1c0a67f8892eb0c27716f384780afb4f5c",
+   "fetched_utc": "2026-11-10T07:57:56Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C05_NP.mat",
+   "url": "https://osf.io/download/6040bd0067386c03e861b42d/",
+   "bytes": 2102873,
+   "sha256": "b13b2cec3e588fe7c03d14068b9b16d781013b966a10f1b397f9fe5f8e1faec6",
+   "fetched_utc": "2026-11-10T07:57:56Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C10_NP.mat",
+   "url": "https://osf.io/download/6040bd05035cf70411c82849/",
+   "bytes": 2084466,
+   "sha256": "e4a7fc3144255016bf5db5c3dff367b890de82daf1e2a296bf41c466e9101076",
+   "fetched_utc": "2026-11-10T07:58:02Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C07_NP.mat",
+   "url": "https://osf.io/download/6040bd05035cf7041bc8904e/",
+   "bytes": 2101246,
+   "sha256": "f28fa8f585c86a9ccbc9cdb58a48651058f598b748d6da92da04a4e67975bcf7",
+   "fetched_utc": "2026-11-10T07:58:02Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C12_NP.mat",
+   "url": "https://osf.io/download/6040bd074415750405580f84/",
+   "bytes": 2102573,
+   "sha256": "26a3737445b8aca7f3fcef29131bd7c71126c07e763ad7d865f30d484fb4db97",
+   "fetched_utc": "2026-11-10T07:58:02Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C11_NP.mat",
+   "url": "https://osf.io/download/6040bd0a035cf7041ac858fc/",
+   "bytes": 2096274,
+   "sha256": "795b56a124095d11c3c07a7bc6105c939d5124946467bb408fc0da5ce1186329",
+   "fetched_utc": "2026-11-10T07:58:02Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C13_NP.mat",
+   "url": "https://osf.io/download/6040bd0a035cf70416c82501/",
+   "bytes": 2111037,
+   "sha256": "9df32c2604b5ea56332bc4dea16fb33d580e0e80222cd59a83f149615a1c77d3",
+   "fetched_utc": "2026-11-10T07:58:08Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C16_NP.mat",
+   "url": "https://osf.io/download/6040bd0c4415750405580f9f/",
+   "bytes": 2102587,
+   "sha256": "c2f96c8f033ad832a3bec731ff376d0e8bd5f67fb0b22b0209262f964cdf1102",
+   "fetched_utc": "2026-11-10T07:58:09Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C14_NP.mat",
+   "url": "https://osf.io/download/6040bd0a44157503fc582e83/",
+   "bytes": 2101027,
+   "sha256": "729f72c0a781cff259e288b7d33e541a3e32aae321f0ba6427d9a657b087906e",
+   "fetched_utc": "2026-11-10T07:58:09Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C15_NP.mat",
+   "url": "https://osf.io/download/6040bd0b035cf7041ac85904/",
+   "bytes": 2096099,
+   "sha256": "b7f305b0979944d929c7b2af6f2e4754dcf3ed48292fc38e3abe8d6407c92f09",
+   "fetched_utc": "2026-11-10T07:58:09Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C17_NP.mat",
+   "url": "https://osf.io/download/6040bd0e035cf70415c80e0b/",
+   "bytes": 2116120,
+   "sha256": "415ff4a718399672fea52465040c060e16bdae4cb3b92a6138c282ccd89a85da",
+   "fetched_utc": "2026-11-10T07:58:17Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C19_NP.mat",
+   "url": "https://osf.io/download/6040bd10035cf7041ac85914/",
+   "bytes": 2146214,
+   "sha256": "19f0cec11ff8f9a767e45ef574ca7eb7250063c926fc69a57f4b588cce92c2dd",
+   "fetched_utc": "2026-11-10T07:58:17Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C20_NP.mat",
+   "url": "https://osf.io/download/6040bd0f4415750405580fb8/",
+   "bytes": 2125535,
+   "sha256": "852975e8884c628d5b9233102bf532a0277419e868a7a27e16e58b77a763c158",
+   "fetched_utc": "2026-11-10T07:58:17Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C21_NP.mat",
+   "url": "https://osf.io/download/6040bd10035cf70411c8285b/",
+   "bytes": 6231463,
+   "sha256": "8dcfb3a7f0091a3b0ed3ffa06f29581d471855219cfe9970f9a7adecaa5c32af",
+   "fetched_utc": "2026-11-10T07:58:18Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C22_NP.mat",
+   "url": "https://osf.io/download/6040bd1367386c03f06235b1/",
+   "bytes": 6256855,
+   "sha256": "ca5d1b8ed2a95d8617494e919e25959858bf5633f5857cfb60b7931a4ad3f2ed",
+   "fetched_utc": "2026-11-10T07:58:23Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C26_NP.mat",
+   "url": "https://osf.io/download/6040bd1567386c03eb61d19d/",
+   "bytes": 6198928,
+   "sha256": "02def45af84c09d9708b68cf76f069a379dd32711ceaebc1dac6be25c90e100c",
+   "fetched_utc": "2026-11-10T07:58:25Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C18_NP.mat",
+   "url": "https://osf.io/download/6040bd104415750405580fc1/",
+   "bytes": 2097548,
+   "sha256": "832da9e577f612215fe6887002d1f57f821cfc1dc1ec74ac3995da15b3ed288b",
+   "fetched_utc": "2026-11-10T07:58:25Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C23_NP.mat",
+   "url": "https://osf.io/download/6040bd1567386c03ef6206dd/",
+   "bytes": 6222200,
+   "sha256": "e2b09d74a39d4cefe4d30a23acff37124d15122e9f896096ab42b7fe59be48e7",
+   "fetched_utc": "2026-11-10T07:58:25Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C24_NP.mat",
+   "url": "https://osf.io/download/6040bd16035cf7041bc8909f/",
+   "bytes": 6257692,
+   "sha256": "a39e5e0ab6d96ad6dcd83fbccc1c6069eba59d7d9ac89771e95db034a720918e",
+   "fetched_utc": "2026-11-10T07:58:31Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C27_NP.mat",
+   "url": "https://osf.io/download/6040bd1767386c03e761a788/",
+   "bytes": 6288590,
+   "sha256": "685200a5b37be1283e03697fadd916c57bf065793bd75ea7a7b366ed3930929b",
+   "fetched_utc": "2026-11-10T07:58:31Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C25_NP.mat",
+   "url": "https://osf.io/download/6040bd1667386c03ec61fef5/",
+   "bytes": 6298460,
+   "sha256": "b935cbd0609a668bc664263540739a92d6342e231c76458b59b872b1072325ca",
+   "fetched_utc": "2026-11-10T07:58:31Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C29_NP.mat",
+   "url": "https://osf.io/download/6040bd1a67386c03ef6206ea/",
+   "bytes": 6245363,
+   "sha256": "f15cb282515574c07be6dd33c7dd64bfa831c204b6b4eae7b707a73625167dbe",
+   "fetched_utc": "2026-11-10T07:58:31Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C28_NP.mat",
+   "url": "https://osf.io/download/6040bd1c035cf7041ac85934/",
+   "bytes": 6155536,
+   "sha256": "7b7c52b27b8159b3429aa1c3a0ef5c5bf5efeedb57e2d34316347a080c76ebf8",
+   "fetched_utc": "2026-11-10T07:58:37Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C02_P.mat",
+   "url": "https://osf.io/download/6040bd9a441575040f57d02b/",
+   "bytes": 2047390,
+   "sha256": "1dce7d23d4ed7ee7ccd7ae12455a4b814afcd0ae277004b17d753bdc75eb61a7",
+   "fetched_utc": "2026-11-10T07:58:38Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C03_P.mat",
+   "url": "https://osf.io/download/6040bd9a441575040b57d05f/",
+   "bytes": 2081314,
+   "sha256": "62a067bd361cd77f268c8331f8f601e008bce7112bf57710e88e453d91592b13",
+   "fetched_utc": "2026-11-10T07:58:38Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__antiphase__C30_NP.mat",
+   "url": "https://osf.io/download/6040bd1a4415750405580ff8/",
+   "bytes": 5981067,
+   "sha256": "85411d32b4e7eaab5804092f11c780ea17dee8384d4a86d62b2feb36f15c502e",
+   "fetched_utc": "2026-11-10T07:58:38Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C05_P.mat",
+   "url": "https://osf.io/download/6040bd9c67386c03e861b4bd/",
+   "bytes": 2067351,
+   "sha256": "db2c49055cb7600eb5e99207ebd579427ed096d9696dd22114810d64925f396f",
+   "fetched_utc": "2026-11-10T07:58:44Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C04_P.mat",
+   "url": "https://osf.io/download/6040bd9b67386c03fb6199a9/",
+   "bytes": 2059953,
+   "sha256": "627ec4e52c792f19750c4500a25db5ace5cdd8c00a03c928806f20c6dd6b8434",
+   "fetched_utc": "2026-11-10T07:58:45Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C07_P.mat",
+   "url": "https://osf.io/download/6040bd9f441575040f57d042/",
+   "bytes": 2102664,
+   "sha256": "35a83e9a93cce61b32db831afdb05be69ac3ff0752913c4bce3b1fd19d945e40",
+   "fetched_utc": "2026-11-10T07:58:45Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C01_P.mat",
+   "url": "https://osf.io/download/rw8bp/",
+   "bytes": 2109172,
+   "sha256": "d3bf9a734afbced2174aae69777bb896bdf717fcd790d3727df253f15e81505e",
+   "fetched_utc": "2026-11-10T07:58:45Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C06_P.mat",
+   "url": "https://osf.io/download/6040bda1035cf70416c825e9/",
+   "bytes": 2127756,
+   "sha256": "5b22a3d67ce024ae206f90b87c00f736ec261f3166e1abf1a258585692af8bef",
+   "fetched_utc": "2026-11-10T07:59:08Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C10_P.mat",
+   "url": "https://osf.io/download/6040bda2035cf70425c7f2c5/",
+   "bytes": 2053329,
+   "sha256": "8b25b56023e4c1cde96a0fac12d0bf4c96b0de5fc49138440e36920a9ae7a320",
+   "fetched_utc": "2026-11-10T07:59:08Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C08_P.mat",
+   "url": "https://osf.io/download/6040bda0035cf70424c7f264/",
+   "bytes": 2117024,
+   "sha256": "643d09a278845f82c4da1928ffd8694ca5cced313e7448eb252682c601c9fe5d",
+   "fetched_utc": "2026-11-10T07:59:08Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C09_P.mat",
+   "url": "https://osf.io/download/6040bda3035cf70425c7f2ca/",
+   "bytes": 2083100,
+   "sha256": "c9b50fa055e38d5252f10e82eece42fd7abdb941774b843a4eebb494fa8e33a8",
+   "fetched_utc": "2026-11-10T07:59:08Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C11_P.mat",
+   "url": "https://osf.io/download/6040bda8441575040f57d06f/",
+   "bytes": 2066562,
+   "sha256": "d76df1e430f9e26935488f4f02e360ece9be34952c4fe1962c0f081ef32aa6b5",
+   "fetched_utc": "2026-11-10T07:59:14Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C15_P.mat",
+   "url": "https://osf.io/download/6040bda7035cf7041ac85a54/",
+   "bytes": 2064902,
+   "sha256": "eb3474ac2a97d49ab1f5cff087cbe79ff673c90068f152f0d6fb5bf09852bb1f",
+   "fetched_utc": "2026-11-10T07:59:15Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C12_P.mat",
+   "url": "https://osf.io/download/6040bda6441575040c57d0f5/",
+   "bytes": 2051224,
+   "sha256": "2b35b72d865c10a1e0557b6409b27b5d5256e3ceef755d8362008c6a7c5dd132",
+   "fetched_utc": "2026-11-10T07:59:15Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C13_P.mat",
+   "url": "https://osf.io/download/6040bda867386c03fb6199ed/",
+   "bytes": 2053809,
+   "sha256": "99162cb4f41223e582c632088660caba0b0c27067a2ee774f7e4922bce7bb1f2",
+   "fetched_utc": "2026-11-10T07:59:15Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C14_P.mat",
+   "url": "https://osf.io/download/6040bda9441575040457fb72/",
+   "bytes": 2038814,
+   "sha256": "4d45bea3c069e2719917144bb4ad6bcc92f31e6943a0359770d2691fad24f7b2",
+   "fetched_utc": "2026-11-10T07:59:21Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C16_P.mat",
+   "url": "https://osf.io/download/6040bdac035cf70424c7f28e/",
+   "bytes": 2084777,
+   "sha256": "eb67a430ebdc92da8c5b34b56fb6ef661d115f4597fcfd4a83d1b10213fbb227",
+   "fetched_utc": "2026-11-10T07:59:21Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C17_P.mat",
+   "url": "https://osf.io/download/6040bdad035cf70421c7f2f0/",
+   "bytes": 2082267,
+   "sha256": "145270772508d6cc628b48d8a522ca18790e204898388ebf732409e45396647b",
+   "fetched_utc": "2026-11-10T07:59:22Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C18_P.mat",
+   "url": "https://osf.io/download/6040bdad035cf7041ac85a5f/",
+   "bytes": 2104800,
+   "sha256": "f0ca54f7fc2b60d7e00aef3ef1e60c08c06a60351b5f45f912542e97d2ceadd5",
+   "fetched_utc": "2026-11-10T07:59:23Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C20_P.mat",
+   "url": "https://osf.io/download/6040bdae035cf7041ac85a63/",
+   "bytes": 2094200,
+   "sha256": "7a37e5007729f1b5bc44b5813442ce94c4b5a378c5a00d9ffa941c20b18c6069",
+   "fetched_utc": "2026-11-10T07:59:27Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C19_P.mat",
+   "url": "https://osf.io/download/6040bdae441575041057d0a6/",
+   "bytes": 2112239,
+   "sha256": "d20acaa37cdd4fecc09758d491817c174a68759730fa6dfaa89aee1ae87a94f4",
+   "fetched_utc": "2026-11-10T07:59:28Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C22_P.mat",
+   "url": "https://osf.io/download/6040bdb3035cf70425c7f31e/",
+   "bytes": 6565191,
+   "sha256": "0ef8176729402f1471dfcabf47cd978261f3c3b7bb63a4d526b2431d60b43e9b",
+   "fetched_utc": "2026-11-10T07:59:29Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C21_P.mat",
+   "url": "https://osf.io/download/6040bdb2441575040457fb7d/",
+   "bytes": 6509321,
+   "sha256": "9ce370dc40e5f57bacd3c525fbbaa216ecb0ff4a4e77adc71a9de4fd7e4a0f8b",
+   "fetched_utc": "2026-11-10T07:59:30Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C23_P.mat",
+   "url": "https://osf.io/download/6040bdb4441575041457d010/",
+   "bytes": 6537942,
+   "sha256": "5bbacecd9173afd83c4cf414eecf5f2013029a464b5569a3a75ee57f16a361a3",
+   "fetched_utc": "2026-11-10T07:59:34Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C25_P.mat",
+   "url": "https://osf.io/download/6040bdb5035cf70421c7f307/",
+   "bytes": 6583891,
+   "sha256": "e7e1f300791208144fbd62ad54f11e8d1718a0f1281eac6898facfd1bfe090ef",
+   "fetched_utc": "2026-11-10T07:59:36Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C24_P.mat",
+   "url": "https://osf.io/download/6040bdb4035cf70420c7f27d/",
+   "bytes": 6722357,
+   "sha256": "083c054385316a3442f28065495d5451dc75b157faecae598939df722da5123d",
+   "fetched_utc": "2026-11-10T07:59:36Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C26_P.mat",
+   "url": "https://osf.io/download/6040bdb8441575041457d02b/",
+   "bytes": 6495739,
+   "sha256": "5c4e2e514d6105655d9da6aee1f5c343ddc95094e7e158c91ec56f03a4172c25",
+   "fetched_utc": "2026-11-10T07:59:37Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C28_P.mat",
+   "url": "https://osf.io/download/6040bdb867386c03ec62003b/",
+   "bytes": 6480598,
+   "sha256": "83fdad5527ef0f07c0978a95ca40a0f18ce953ca7393ee05d8ed47e3e406a3f7",
+   "fetched_utc": "2026-11-10T07:59:41Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C27_P.mat",
+   "url": "https://osf.io/download/6040bdb9441575041057d0c6/",
+   "bytes": 6650127,
+   "sha256": "8d92e548919090c046137cee72e7702c1d361c332a864ecf2dafef0a41f62769",
+   "fetched_utc": "2026-11-10T07:59:43Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C29_P.mat",
+   "url": "https://osf.io/download/6040bdba441575040c57d119/",
+   "bytes": 6593110,
+   "sha256": "ebba850b5b9717a9997173eb9ad1ea98efbe102e991cbb5e7f2a09b275852e62",
+   "fetched_utc": "2026-11-10T07:59:44Z"
+  },
+  {
+   "file": "RealPartner__Main__dyad__inphase__C30_P.mat",
+   "url": "https://osf.io/download/6040bdba035cf70416c825fc/",
+   "bytes": 6274135,
+   "sha256": "6217fa8cb49fde3f64d9c39604d8823b135aabb536bb69b95e6b98970ee95983",
+   "fetched_utc": "2026-11-10T07:59:45Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C01_A.mat",
+   "url": "https://osf.io/download/rhdnb/",
+   "bytes": 2015478,
+   "sha256": "d72d519a4d0a50f71c627e97ab0760e928ab2bb3a7f448df985ee5a73fc4103d",
+   "fetched_utc": "2026-11-10T07:59:48Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C01_B.mat",
+   "url": "https://osf.io/download/p9t2b/",
+   "bytes": 2000218,
+   "sha256": "7badfd7f3286c09180ab567cd3a3e7dd341b4ce93a91666418cd5b07e1df47d9",
+   "fetched_utc": "2026-11-10T07:59:49Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C02_B.mat",
+   "url": "https://osf.io/download/abnv5/",
+   "bytes": 1945976,
+   "sha256": "07caf38bbda1ae017bd1bf83cda1f264a7c25f438f3f149ac2fa83c8e3f2fe47",
+   "fetched_utc": "2026-11-10T07:59:51Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C02_A.mat",
+   "url": "https://osf.io/download/6040bf9467386c03f0623ae2/",
+   "bytes": 1945187,
+   "sha256": "7b65d137cbff9e32dd96a448529907836008cf110bc9f748ff754d44f37aa0bd",
+   "fetched_utc": "2026-11-10T07:59:51Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C04_A.mat",
+   "url": "https://osf.io/download/6040bf9767386c03fa619ea6/",
+   "bytes": 1985324,
+   "sha256": "bf5594f79d8ba36c54cc4180226c47cd1b5ebccdcb67178eb77b2da7f60e2906",
+   "fetched_utc": "2026-11-10T07:59:55Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C05_B.mat",
+   "url": "https://osf.io/download/vbxz7/",
+   "bytes": 1965349,
+   "sha256": "a6fe41ad9d6f19ba9b984ef7763f5a85a05bf2db7d874596825982ee235c4694",
+   "fetched_utc": "2026-11-10T07:59:57Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C04_B.mat",
+   "url": "https://osf.io/download/8zp3u/",
+   "bytes": 1950436,
+   "sha256": "1d53ed38f4243dec2e4702c957dcb5fd4a3dcc07469f5b431048abdf9e61f658",
+   "fetched_utc": "2026-11-10T07:59:57Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C05_A.mat",
+   "url": "https://osf.io/download/6040bf9a035cf70421c7f556/",
+   "bytes": 2010464,
+   "sha256": "1166da0a50f2987d487242a21690c9851ea5fa4bfa0c48d14b0fca398fded529",
+   "fetched_utc": "2026-11-10T08:00:16Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C03_B.mat",
+   "url": "https://osf.io/download/crej6/",
+   "bytes": 1982573,
+   "sha256": "8c6d97134f2fb4a63df4858ce365b61c879bd460f41d9b3f9fb02a4e3aad554a",
+   "fetched_utc": "2026-11-10T08:00:16Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C06_A.mat",
+   "url": "https://osf.io/download/6040bf9c035cf70415c80f5d/",
+   "bytes": 1937973,
+   "sha256": "b438f003d3f77e459ddc2be6ca9704adbaf77eec56a3b3b06f445f26cd2d3265",
+   "fetched_utc": "2026-11-10T08:00:21Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C06_B.mat",
+   "url": "https://osf.io/download/86b7g/",
+   "bytes": 2040266,
+   "sha256": "a02e5f68533175e36aacd079bb15169b7a3941bdeb8fee4bb68d1d00eb5fe417",
+   "fetched_utc": "2026-11-10T08:00:21Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C07_A.mat",
+   "url": "https://osf.io/download/6040bf9f035cf70416c826ca/",
+   "bytes": 1953463,
+   "sha256": "2251e47b972b3bb0f85647c3a8d938a206bc40726d0bbddc3a724836c9bc3eb1",
+   "fetched_utc": "2026-11-10T08:00:25Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C08_A.mat",
+   "url": "https://osf.io/download/6040bf9f67386c03fa619ec7/",
+   "bytes": 2001484,
+   "sha256": "351f1fea95c0ea2a47e8d50188d322a67bf58d953c50aa4c5c286c10c916bef0",
+   "fetched_utc": "2026-11-10T08:00:26Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C07_B.mat",
+   "url": "https://osf.io/download/bhd64/",
+   "bytes": 1969887,
+   "sha256": "f9bcca91815e29eb28f58ff58c3f3cd5a4ee67a2caa02d9c932fdf8d3afd348a",
+   "fetched_utc": "2026-11-10T08:00:28Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C08_B.mat",
+   "url": "https://osf.io/download/xd7e8/",
+   "bytes": 1967211,
+   "sha256": "9212d4c046d11520f2d86768ef35a06a1ac63ddcad336e99091de02497c5ccc0",
+   "fetched_utc": "2026-11-10T08:00:28Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C09_B.mat",
+   "url": "https://osf.io/download/c2ebx/",
+   "bytes": 1967521,
+   "sha256": "e0d78bc83ac9c375eb23e3df397678c4423d58a57caa30b0545f6c2d61a35426",
+   "fetched_utc": "2026-11-10T08:00:33Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C09_A.mat",
+   "url": "https://osf.io/download/6040bfa3035cf70424c7f764/",
+   "bytes": 1997778,
+   "sha256": "8a15b6b0ea16605ad5b4464c528a028721768380e56ac2231ec6dce0c2461424",
+   "fetched_utc": "2026-11-10T08:00:34Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C11_A.mat",
+   "url": "https://osf.io/download/6040bfa5441575041057d373/",
+   "bytes": 2031703,
+   "sha256": "c38d6bd63bab235c2069e1347c6ed42dfc549055ebb52112e35f9ea32cc54f60",
+   "fetched_utc": "2026-11-10T08:00:36Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C10_A.mat",
+   "url": "https://osf.io/download/6040bfa6035cf70421c7f56b/",
+   "bytes": 1956215,
+   "sha256": "43fdc41eb072dc8aebb4838a36efea65b3b4d4e2476d6f9adf6a7044ae7a2474",
+   "fetched_utc": "2026-11-10T08:00:36Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C10_B.mat",
+   "url": "https://osf.io/download/hqrtn/",
+   "bytes": 1963877,
+   "sha256": "e37a2ec34ee64c2af00c73d1b958272f3c237c3fba21c2466cce24d337a0880c",
+   "fetched_utc": "2026-11-10T08:00:41Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C12_B.mat",
+   "url": "https://osf.io/download/uq7w2/",
+   "bytes": 2036483,
+   "sha256": "0f45fc241f328b4f01fa83ca2d6f87c62f57b61f3a2416a974853bb3337391b1",
+   "fetched_utc": "2026-11-10T08:00:43Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C11_B.mat",
+   "url": "https://osf.io/download/rc93n/",
+   "bytes": 1998787,
+   "sha256": "3c4ca2c7c895da1029f59ffe05c40f0c806671d15de38c7783716ed0622384e4",
+   "fetched_utc": "2026-11-10T08:00:43Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C12_A.mat",
+   "url": "https://osf.io/download/6040bfa9035cf70420c7f3d1/",
+   "bytes": 2039924,
+   "sha256": "da0cda4471e7fa4b0d6589e9c600449833b3a3e37958f0ea7c51dac48cda5252",
+   "fetched_utc": "2026-11-10T08:00:44Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C13_A.mat",
+   "url": "https://osf.io/download/6040bfa967386c03fb61a19b/",
+   "bytes": 1994792,
+   "sha256": "de18df51fb4d51ed5eee531da670304a7133fe38f5149c0d0c19aad1af2d1f6e",
+   "fetched_utc": "2026-11-10T08:00:49Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C13_B.mat",
+   "url": "https://osf.io/download/gpkdy/",
+   "bytes": 1950615,
+   "sha256": "0d68bbe60d04c6684c3ebaf085d73753ed60eca0fd9733c06ff74c9866fdda28",
+   "fetched_utc": "2026-11-10T08:00:50Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C15_B.mat",
+   "url": "https://osf.io/download/wrb7a/",
+   "bytes": 2019397,
+   "sha256": "baecddb39bfb63005afb257bbae47206eca1fae25951825f2514ef6a07d605d1",
+   "fetched_utc": "2026-11-10T08:00:51Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C14_A.mat",
+   "url": "https://osf.io/download/6040bfad441575041357d626/",
+   "bytes": 1944156,
+   "sha256": "2618fe2011a679ce3148b189a2a2e99153139460d91dbfbc7ff8f50440083265",
+   "fetched_utc": "2026-11-10T08:00:52Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C15_A.mat",
+   "url": "https://osf.io/download/6040bfad035cf70424c7f778/",
+   "bytes": 1934243,
+   "sha256": "1759f3b126657f7d526f6c9e1868534ad3c808ce8d28ed491e42a0c1a0600c7f",
+   "fetched_utc": "2026-11-10T08:00:59Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C14_B.mat",
+   "url": "https://osf.io/download/jmtrf/",
+   "bytes": 2036021,
+   "sha256": "02fee10126b8fa539e942ea0fb1213622c9fcc76b478334117feebcbae039937",
+   "fetched_utc": "2026-11-10T08:01:01Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C16_A.mat",
+   "url": "https://osf.io/download/6040bfb067386c03f0623b31/",
+   "bytes": 2000154,
+   "sha256": "c4c95bc48dcba1a94a0b4c2515117f2452bf48d2aa833b8406698a0908e80ffa",
+   "fetched_utc": "2026-11-10T08:01:02Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C17_A.mat",
+   "url": "https://osf.io/download/6040bfb167386c03fb61a1c4/",
+   "bytes": 2030749,
+   "sha256": "9854d4f66171ee79c981c0a3ac477c8bd5c0cf114ba4d61e6ff7d289d60316fc",
+   "fetched_utc": "2026-11-10T08:01:02Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C18_A.mat",
+   "url": "https://osf.io/download/6040bfb3035cf7041ac85b88/",
+   "bytes": 2017805,
+   "sha256": "3ed05ade9b4b61efe38b34fc5b38f71948a86086dc0dbafab7e81c91ca3881b2",
+   "fetched_utc": "2026-11-10T08:01:07Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C16_B.mat",
+   "url": "https://osf.io/download/9d46w/",
+   "bytes": 1994524,
+   "sha256": "507e0c46f298650f1d4af51e894f7031f5a63d5ab50e9b59eb3b56ab3acda379",
+   "fetched_utc": "2026-11-10T08:01:08Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C18_B.mat",
+   "url": "https://osf.io/download/f658b/",
+   "bytes": 1997428,
+   "sha256": "44f8a3223b6275b7dad872a89f6dded294c13e21c806b5d96ab5acb03eb6b040",
+   "fetched_utc": "2026-11-10T08:01:09Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C17_B.mat",
+   "url": "https://osf.io/download/3jc46/",
+   "bytes": 2049754,
+   "sha256": "ee99cf2b76125cad448b4b841f7edfa6753d7507accd7a21656e54ef00f69f38",
+   "fetched_utc": "2026-11-10T08:01:09Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C19_A.mat",
+   "url": "https://osf.io/download/6040bfb667386c03f0623b41/",
+   "bytes": 1984837,
+   "sha256": "95d5e4be59773422ff515264f49cbac89bcd5a5d593cfe41e24ca67ae13b0d18",
+   "fetched_utc": "2026-11-10T08:01:26Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C19_B.mat",
+   "url": "https://osf.io/download/6qn5p/",
+   "bytes": 2052246,
+   "sha256": "8ebf3535dbbe05471e337dc14eb3a02ffed4128554777f799f2a390c2b534594",
+   "fetched_utc": "2026-11-10T08:01:30Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C20_A.mat",
+   "url": "https://osf.io/download/6040bfb8441575041357d64d/",
+   "bytes": 1970855,
+   "sha256": "921eb66dba7b6181b94864e8601db912e589ac4fb8c07a6be32dd3e7c5de90d7",
+   "fetched_utc": "2026-11-10T08:01:30Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C21_solo.mat",
+   "url": "https://osf.io/download/6040bfb9441575041357d651/",
+   "bytes": 6353120,
+   "sha256": "63a70029cc8c3f312376ad93e9c9758cf3928745110551b9f1816c449fa13a9d",
+   "fetched_utc": "2026-11-10T08:01:38Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C22_solo.mat",
+   "url": "https://osf.io/download/6040bfbb441575040558125e/",
+   "bytes": 6226783,
+   "sha256": "d5dbf2fe453ff7d6b69cabd8d5af3976ec73d996d00210cf59aa1a4fe85b7d60",
+   "fetched_utc": "2026-11-10T08:01:38Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C23_solo.mat",
+   "url": "https://osf.io/download/6040bfbd441575041057d395/",
+   "bytes": 6265169,
+   "sha256": "dc28664e88f69f93032502ea1d643cc67d61f38f11c40cc7cf03b3963601b7d8",
+   "fetched_utc": "2026-11-10T08:01:41Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C25_solo.mat",
+   "url": "https://osf.io/download/6040bfbe67386c03fb61a1fb/",
+   "bytes": 6383414,
+   "sha256": "c0e4fd62df508d095e65fb932ee90cba8be52e515bf067d6a53ed7785f3257a9",
+   "fetched_utc": "2026-11-10T08:01:41Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C24_solo.mat",
+   "url": "https://osf.io/download/6040bfbe035cf70415c80f6f/",
+   "bytes": 6298713,
+   "sha256": "28f3c8994301ecd47163c111b42b0867e75d3dc822a476e4274ae09682fe7e55",
+   "fetched_utc": "2026-11-10T08:01:45Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C26_solo.mat",
+   "url": "https://osf.io/download/6040bfbe441575040f57d1cc/",
+   "bytes": 6337430,
+   "sha256": "e621a5c1e7a970eb42f550a75451a522567b931f82c370745ad5e317fec89f8b",
+   "fetched_utc": "2026-11-10T08:01:48Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C28_solo.mat",
+   "url": "https://osf.io/download/6040bfc1035cf70421c7f599/",
+   "bytes": 6309610,
+   "sha256": "28f54f75147ceb45c424264667d30f664ee4a74a117534439784628e10a3547a",
+   "fetched_utc": "2026-11-10T08:01:50Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C27_solo.mat",
+   "url": "https://osf.io/download/6040bfbe035cf70421c7f58f/",
+   "bytes": 6290531,
+   "sha256": "759c3edc1781d86134be6539035ead1a50c8ec44864f433c07849905e47cd30e",
+   "fetched_utc": "2026-11-10T08:01:51Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C29_solo.mat",
+   "url": "https://osf.io/download/6040bfc2035cf70424c7f7c1/",
+   "bytes": 6312840,
+   "sha256": "446b99628fb81b32c0a19f4f44ada74c5caefea4454cb5a50ce4da1d7b7037a2",
+   "fetched_utc": "2026-11-10T08:01:55Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C30_solo.mat",
+   "url": "https://osf.io/download/6040bfc367386c03fb61a212/",
+   "bytes": 6203884,
+   "sha256": "4da62cc273ebb7d43266d48f0733067a6ab4a17814294b14a1b99a01f6bb0829",
+   "fetched_utc": "2026-11-10T08:01:56Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C15_NP.mat",
+   "url": "https://osf.io/download/6040c1a7441575041457e3e3/",
+   "bytes": 2082291,
+   "sha256": "18c02f30f33fb06389d0caa2f51dc86764660fc7061eff2a90cd7c5952c54719",
+   "fetched_utc": "2026-11-10T08:01:59Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C14_NP.mat",
+   "url": "https://osf.io/download/6040c1a6035cf70425c80172/",
+   "bytes": 2075804,
+   "sha256": "5002dcb1e137027ce027085ab8123b18eacc9a7144240fde8d6a88f6dfae7194",
+   "fetched_utc": "2026-11-10T08:01:59Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C13_NP.mat",
+   "url": "https://osf.io/download/6040c1a867386c03fb61a948/",
+   "bytes": 2100896,
+   "sha256": "37fa9f10427b97d7f06575ad4146b540533b4855c572bd88b67b6fd6833a9b2b",
+   "fetched_utc": "2026-11-10T08:02:02Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C12_NP.mat",
+   "url": "https://osf.io/download/6040c1a8441575041457e3ec/",
+   "bytes": 2047760,
+   "sha256": "0c0fb5616e79c6aa9470cb084f113bdf2c14dc184b0969cd983c214760e7c0d1",
+   "fetched_utc": "2026-11-10T08:02:05Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C16_NP.mat",
+   "url": "https://osf.io/download/6040c1ab441575041357dbbf/",
+   "bytes": 2096591,
+   "sha256": "c9d484fc71b33ffbe14573a70bee3ff64aa933dce3cc75d89d9da4b10ce23cc5",
+   "fetched_utc": "2026-11-10T08:02:06Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C17_NP.mat",
+   "url": "https://osf.io/download/6040c1ac67386c03fa61a422/",
+   "bytes": 2085255,
+   "sha256": "b9bf15a7884faad09cbb43dc925aa56f329c4606c2ac3348df9cbb3eb30b036a",
+   "fetched_utc": "2026-11-10T08:02:09Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C18_NP.mat",
+   "url": "https://osf.io/download/6040c1ae67386c03ef620bcd/",
+   "bytes": 2067064,
+   "sha256": "59f13b038a2026ae290c339dd027845f46190b7e7dfcd086230e0c537012938e",
+   "fetched_utc": "2026-11-10T08:02:10Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C19_NP.mat",
+   "url": "https://osf.io/download/6040c1ae035cf70424c7fbf9/",
+   "bytes": 2070668,
+   "sha256": "409caa13c157095092a4718fa135b9427cc508b59c8afb4e6e8645f1839bace1",
+   "fetched_utc": "2026-11-10T08:02:13Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__antiphase__C20_NP.mat",
+   "url": "https://osf.io/download/6040c1ae441575041057d5ca/",
+   "bytes": 2062613,
+   "sha256": "414a130f7aa5d376ea1a2b6df53a959effcda6e900955bb616276704cdbaa3d3",
+   "fetched_utc": "2026-11-10T08:02:14Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C12_P.mat",
+   "url": "https://osf.io/download/6040c1cc441575041357dc15/",
+   "bytes": 2063450,
+   "sha256": "597f2fcae87ce5a589f5f1dbaab3494456d7bb409ec19f44aa9376908d087c26",
+   "fetched_utc": "2026-11-10T08:02:17Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C13_P.mat",
+   "url": "https://osf.io/download/6040c1cf441575041357dc20/",
+   "bytes": 2054383,
+   "sha256": "122b422288c7d9abc2172b0fc73fe0db604986c3796c46d7178a25a3e7c8b608",
+   "fetched_utc": "2026-11-10T08:02:18Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C11_P.mat",
+   "url": "https://osf.io/download/6040c1cf441575040c57d1a1/",
+   "bytes": 2037036,
+   "sha256": "37470390e7cd4ba63328fa99626a7d645793ba9df37eb1e27b8941b5bd93945e",
+   "fetched_utc": "2026-11-10T08:02:31Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C15_P.mat",
+   "url": "https://osf.io/download/6040c1cf035cf70420c7f515/",
+   "bytes": 2058982,
+   "sha256": "326a0bd3dbe3ad45441bac8f2a07ad9d7131681865dcac477faaf58172a0c1e1",
+   "fetched_utc": "2026-11-10T08:02:32Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C14_P.mat",
+   "url": "https://osf.io/download/6040c1d067386c03fb61a9da/",
+   "bytes": 2031949,
+   "sha256": "d231ce234a6f51bd33976acbb08869173a23f7bf187b1da5cca3295876bdcff4",
+   "fetched_utc": "2026-11-10T08:02:34Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C16_P.mat",
+   "url": "https://osf.io/download/6040c1d3035cf7041bc89464/",
+   "bytes": 2092578,
+   "sha256": "28fed3deb2c85de8eea8a1601f1375b326215900d1e99b2def78600fd13141ae",
+   "fetched_utc": "2026-11-10T08:02:36Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C18_P.mat",
+   "url": "https://osf.io/download/6040c1d4035cf70425c80230/",
+   "bytes": 2032672,
+   "sha256": "ceb89e9d093568bb848c4298b4d3593928e70ae107f0af3b7afb38647a23c482",
+   "fetched_utc": "2026-11-10T08:02:41Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C19_P.mat",
+   "url": "https://osf.io/download/6040c1d467386c03fb61a9ec/",
+   "bytes": 2087968,
+   "sha256": "7a8054546c5bab7d377cdf09fdbf2179247771526dda9a06c2b158f3e0fec19c",
+   "fetched_utc": "2026-11-10T08:02:42Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C20_P.mat",
+   "url": "https://osf.io/download/6040c1d5035cf70421c7f819/",
+   "bytes": 2042898,
+   "sha256": "506bc0d1aa077dcfb5b5e748b46d287a9d2ad8fa873ce6394d81fc7600cb3df7",
+   "fetched_utc": "2026-11-10T08:02:45Z"
+  },
+  {
+   "file": "RealPartner__HandProne__dyad__inphase__C17_P.mat",
+   "url": "https://osf.io/download/6040c1d567386c03fb61a9f1/",
+   "bytes": 2098358,
+   "sha256": "6cae1293a906a0093b72172698f524b3d654a95bb30dbc499a3484c2b3f97e34",
+   "fetched_utc": "2026-11-10T08:02:47Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C13_A.mat",
+   "url": "https://osf.io/download/6040c1ee035cf70425c80291/",
+   "bytes": 1975150,
+   "sha256": "51a4780d23200b8c596451c6363408c53adfb840d1c8199f4d83e9422b17e633",
+   "fetched_utc": "2026-11-10T08:02:51Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C12_A.mat",
+   "url": "https://osf.io/download/6040c1ee441575041457e52c/",
+   "bytes": 1945773,
+   "sha256": "c639733eb225d651a0092d4772118f9ab329ce7d789dcb05d782041510051f26",
+   "fetched_utc": "2026-11-10T08:02:52Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C11_B.mat",
+   "url": "https://osf.io/download/yz264/",
+   "bytes": 1986971,
+   "sha256": "bdc96cc7c56d723c15e9c38c5444f488bb069daecc68b7d592757644dd21fbdc",
+   "fetched_utc": "2026-11-10T08:02:55Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C12_B.mat",
+   "url": "https://osf.io/download/y9sqx/",
+   "bytes": 1940616,
+   "sha256": "6d4f2bd10d9bf90dd46639e52b07f9a4f14ba9278cf5886d48e57c95f0dcd3eb",
+   "fetched_utc": "2026-11-10T08:02:57Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C11_A.mat",
+   "url": "https://osf.io/download/6040c1f0035cf70425c80298/",
+   "bytes": 2002931,
+   "sha256": "0753531707494fedf4bc0ab8080ce554afcd9c559816a0b6513f3a92e26a3965",
+   "fetched_utc": "2026-11-10T08:02:58Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C14_B.mat",
+   "url": "https://osf.io/download/xe3tr/",
+   "bytes": 1995785,
+   "sha256": "db7f26ccffef208dffc06cf59d697e4a7e1e344925f3d10a4c2d5d7e6435f1dd",
+   "fetched_utc": "2026-11-10T08:02:59Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C14_A.mat",
+   "url": "https://osf.io/download/6040c1f3441575041457e544/",
+   "bytes": 1966336,
+   "sha256": "f976fc666ec5a819ac31b775fb77f4adcbb04af5e797cf9c5322eb692235ae0f",
+   "fetched_utc": "2026-11-10T08:03:01Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C13_B.mat",
+   "url": "https://osf.io/download/v2pyg/",
+   "bytes": 1934021,
+   "sha256": "7ea94c8c0cbc40d3e0d0097ebe493de5a15de5f478155fcce85ee904c1127969",
+   "fetched_utc": "2026-11-10T08:03:04Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C15_B.mat",
+   "url": "https://osf.io/download/48z2s/",
+   "bytes": 1988052,
+   "sha256": "cde2f348669878de5e8f56bf5090c4755727c81c0e0aff882bbf6312a0173c1e",
+   "fetched_utc": "2026-11-10T08:03:04Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C15_A.mat",
+   "url": "https://osf.io/download/6040c1f6035cf70425c802b0/",
+   "bytes": 1955814,
+   "sha256": "a83029f84c18d9306d04b6229584ba772b339f3d02c0946a9ac86579680b1c70",
+   "fetched_utc": "2026-11-10T08:03:06Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C17_A.mat",
+   "url": "https://osf.io/download/6040c1f767386c03fb61aa49/",
+   "bytes": 1995075,
+   "sha256": "657cb61467041f3fc0e6699ae4fd2b5688903ef2fdfccc73de1b5bcf21d2d5c8",
+   "fetched_utc": "2026-11-10T08:03:09Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C16_A.mat",
+   "url": "https://osf.io/download/6040c1f8441575041457e569/",
+   "bytes": 2066457,
+   "sha256": "cdeca351c7c5d80641e05ee5495d07e08589e9f1993d43fd80c00a1f9e3e93dc",
+   "fetched_utc": "2026-11-10T08:03:11Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C16_B.mat",
+   "url": "https://osf.io/download/vudxe/",
+   "bytes": 2052176,
+   "sha256": "aef89fbd9404e93b406ced523968ef44e7bb7d0078e505ea187f43be8cad788c",
+   "fetched_utc": "2026-11-10T08:03:12Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C17_B.mat",
+   "url": "https://osf.io/download/cs7wz/",
+   "bytes": 1966014,
+   "sha256": "4b15cbcc27945583ef2f3253daeb2d7fc8658aaa9ce42f8bc8b46e8b8a28a384",
+   "fetched_utc": "2026-11-10T08:03:16Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C19_A.mat",
+   "url": "https://osf.io/download/6040c1fd035cf70425c802c8/",
+   "bytes": 1891433,
+   "sha256": "5b78ca317054ad8a4348629821ca4b5a3aa549b5f7afeb24bc14696bee7460bc",
+   "fetched_utc": "2026-11-10T08:03:18Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C18_B.mat",
+   "url": "https://osf.io/download/3zxj8/",
+   "bytes": 1968638,
+   "sha256": "faf12eb07d0499ec6d3f92db89623cb66dcbf52ea92e741106dd6d0d40a6d4c3",
+   "fetched_utc": "2026-11-10T08:03:19Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C20_A.mat",
+   "url": "https://osf.io/download/6040c1fd035cf70420c7f52e/",
+   "bytes": 1937972,
+   "sha256": "2bf4d2ef43d66cd68425f383c047ca0ccf09b847614be7595fb3a1cb12086040",
+   "fetched_utc": "2026-11-10T08:03:19Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C19_B.mat",
+   "url": "https://osf.io/download/e5hs9/",
+   "bytes": 1983656,
+   "sha256": "3e1df5c46d58c2e5e2520359f466f3ae4378d4d2da1a507fa5082339545fd607",
+   "fetched_utc": "2026-11-10T08:03:24Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C20_B.mat",
+   "url": "https://osf.io/download/9nbx6/",
+   "bytes": 1973984,
+   "sha256": "42d455ce014764f5a91825c110236b33e5a86e50e2aac303e1c2fa8f0982c2f2",
+   "fetched_utc": "2026-11-10T08:03:52Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C02_P.mat",
+   "url": "https://osf.io/download/6040c264441575041357ddc6/",
+   "bytes": 1885568,
+   "sha256": "a92f7575470661daf4a18ec5fbe98c9322e5eaf101b629852d4a5b8915e115e3",
+   "fetched_utc": "2026-11-10T08:03:53Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C05_P.mat",
+   "url": "https://osf.io/download/6040c264441575041457e736/",
+   "bytes": 1898209,
+   "sha256": "434dcf5c825f07fb2f5488645717a497a4a6d788afdc8522952032fc2c4a2283",
+   "fetched_utc": "2026-11-10T08:03:54Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C01_P.mat",
+   "url": "https://osf.io/download/ga8vx/",
+   "bytes": 1915533,
+   "sha256": "3f874fcb88be7977fdd3c748fa0c5ff179c3f995c33678e22de4713cc575deb4",
+   "fetched_utc": "2026-11-10T08:03:58Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C04_P.mat",
+   "url": "https://osf.io/download/6040c265441575041357ddcc/",
+   "bytes": 1885062,
+   "sha256": "dc57d3edafe657b9c55041aadfc47fc32319f8bcea5b8fb28b572b108348211b",
+   "fetched_utc": "2026-11-10T08:04:05Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C03_P.mat",
+   "url": "https://osf.io/download/6040c265035cf70425c80424/",
+   "bytes": 1885615,
+   "sha256": "eb9bf627fb2dc1818770d179820c22d629202b05d2c1539109b7f76b84de03ed",
+   "fetched_utc": "2026-11-10T08:04:06Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C06_P.mat",
+   "url": "https://osf.io/download/6040c26867386c03f0623f43/",
+   "bytes": 1928295,
+   "sha256": "eb3f603e8d7c1b93ade06398b31184289dd9b5b758ebd5469afca76fb6806b94",
+   "fetched_utc": "2026-11-10T08:04:06Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C09_P.mat",
+   "url": "https://osf.io/download/6040c26b035cf70424c7fd74/",
+   "bytes": 1908906,
+   "sha256": "202d82530638c4d4ec1765427720885c0689adc7084ac0c6d1e5ee43212823fa",
+   "fetched_utc": "2026-11-10T08:04:10Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C08_P.mat",
+   "url": "https://osf.io/download/6040c26b67386c03fa61a5d1/",
+   "bytes": 1888870,
+   "sha256": "52fc7179a59085f5a115df9d007c89affef2e13e5dd72248b9ca4c3fa2530962",
+   "fetched_utc": "2026-11-10T08:04:13Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C10_P.mat",
+   "url": "https://osf.io/download/6040c26b67386c03ef620c40/",
+   "bytes": 1899745,
+   "sha256": "146f4795eb657ed22f9ff61bc31b9e2cbc3133dd5b83c025c4fccfd3ba25df50",
+   "fetched_utc": "2026-11-10T08:04:14Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__dyad__inphase__C07_P.mat",
+   "url": "https://osf.io/download/6040c26b035cf70425c80440/",
+   "bytes": 1904674,
+   "sha256": "1eb357d3a78f12a88ef1e61cfff28d079b0c9017440bc185f2bce92658f2f050",
+   "fetched_utc": "2026-11-10T08:04:14Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C01_A.mat",
+   "url": "https://osf.io/download/6040c292035cf70421c7f8d8/",
+   "bytes": 1915797,
+   "sha256": "9b0ac1795f6d5a326b2cd3d981a53a6ef5d881d11625e6be5636075d8528e46a",
+   "fetched_utc": "2026-11-10T08:04:18Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C01_B.mat",
+   "url": "https://osf.io/download/qmwpt/",
+   "bytes": 1877339,
+   "sha256": "2accc95a2f7d2366af1f5461bc9ccb4916bf982d130c99690e3fd4d035c3d769",
+   "fetched_utc": "2026-11-10T08:04:20Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C03_A.mat",
+   "url": "https://osf.io/download/6040c29367386c03fb61ac79/",
+   "bytes": 1853960,
+   "sha256": "6cfb5e58a2cfa2e5fb8b5abf6ead10b93119dc9c7081037469115b65667fc139",
+   "fetched_utc": "2026-11-10T08:04:21Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C02_B.mat",
+   "url": "https://osf.io/download/7fxd6/",
+   "bytes": 1865891,
+   "sha256": "7f26fc009f41504ca83f71194bcbe17583c40133cc754efdfd67798d9b42e38a",
+   "fetched_utc": "2026-11-10T08:04:21Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C05_A.mat",
+   "url": "https://osf.io/download/6040c298441575041357de53/",
+   "bytes": 1902080,
+   "sha256": "9165bdc7c56898b5c5ae6351a75a770b1160ec79617fdec37997123f674473bf",
+   "fetched_utc": "2026-11-10T08:04:26Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C02_A.mat",
+   "url": "https://osf.io/download/6040c293035cf70424c7fdd0/",
+   "bytes": 1874876,
+   "sha256": "0eb54dce768255947c131aa6aa506262a990de33ebe14a4a273435c8260355ff",
+   "fetched_utc": "2026-11-10T08:04:27Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C03_B.mat",
+   "url": "https://osf.io/download/d5cxt/",
+   "bytes": 1854555,
+   "sha256": "ce1dfe139bedcf55920c5039ecaa11d29686c1f26778f8874fc190d85eb1b3fe",
+   "fetched_utc": "2026-11-10T08:04:28Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C04_B.mat",
+   "url": "https://osf.io/download/nqug4/",
+   "bytes": 1871388,
+   "sha256": "13ed357189662653a53cd5df9ec9219ae2477e30160df550c1f86d72a78f7686",
+   "fetched_utc": "2026-11-10T08:04:28Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C05_B.mat",
+   "url": "https://osf.io/download/mdz9w/",
+   "bytes": 1906561,
+   "sha256": "a792d2a18e59d63f4e857825af452e4066f394aa3a599909854b01e78ec9411c",
+   "fetched_utc": "2026-11-10T08:04:46Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C04_A.mat",
+   "url": "https://osf.io/download/6040c299035cf70425c804fb/",
+   "bytes": 1841722,
+   "sha256": "ae5adbc265e2ded554cac0a90f885e1fc9f058976ddf574e6a88b1025c0ebda1",
+   "fetched_utc": "2026-11-10T08:04:46Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C06_A.mat",
+   "url": "https://osf.io/download/6040c29d441575041457e848/",
+   "bytes": 1857466,
+   "sha256": "329fa87966f0f3708106b5262e8885869c828d48af9e9c496b375d9c7b2822a2",
+   "fetched_utc": "2026-11-10T08:04:48Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C06_B.mat",
+   "url": "https://osf.io/download/u6nec/",
+   "bytes": 1931030,
+   "sha256": "a0500f8daa6173d2d60032df73d7120a4d4d4175ed099f1e7a1dbcfdc54a6de1",
+   "fetched_utc": "2026-11-10T08:04:48Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C07_B.mat",
+   "url": "https://osf.io/download/6vbn9/",
+   "bytes": 1882893,
+   "sha256": "8c60e3191c2bccc52e8b82f3ef889930725ee58f2e9e9ee9233f42b69d5a1560",
+   "fetched_utc": "2026-11-10T08:04:54Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C07_A.mat",
+   "url": "https://osf.io/download/6040c29d67386c03ef620c5d/",
+   "bytes": 1906681,
+   "sha256": "7861c22dda0afca6051e180787fb2ad8516a0f5b9260ce797513e8cac037abce",
+   "fetched_utc": "2026-11-10T08:04:55Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C08_B.mat",
+   "url": "https://osf.io/download/dgcfm/",
+   "bytes": 1886287,
+   "sha256": "3335bcde5694ce842545c31cbe57d90371af7a7d42643702deb8c475db65d174",
+   "fetched_utc": "2026-11-10T08:04:55Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C08_A.mat",
+   "url": "https://osf.io/download/6040c29e035cf70424c7fdf6/",
+   "bytes": 1879697,
+   "sha256": "1bd0120739aa267853ae07bf1e5ebfedf486c699600c0f72085ee6d4d738f438",
+   "fetched_utc": "2026-11-10T08:04:55Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C09_A.mat",
+   "url": "https://osf.io/download/6040c2a1441575041357de7d/",
+   "bytes": 1892551,
+   "sha256": "1441d328076e4a3e4007b8b25bffa35440c00716e19148fff049c0fab70588bb",
+   "fetched_utc": "2026-11-10T08:05:00Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C10_B.mat",
+   "url": "https://osf.io/download/w5p7z/",
+   "bytes": 1886726,
+   "sha256": "72293c137368e5c08054c64cebdc7387a123d239712c5c95669ef9b9bedbbc9d",
+   "fetched_utc": "2026-11-10T08:05:01Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C10_A.mat",
+   "url": "https://osf.io/download/6040c2a2441575041457e86e/",
+   "bytes": 1908717,
+   "sha256": "2b5e1b22c85ae50f3b5ac2fa50df7769aff63a4db119787da9d8d78450e67964",
+   "fetched_utc": "2026-11-10T08:05:02Z"
+  },
+  {
+   "file": "RealPartner__Arm__horizontal__solo__C09_B.mat",
+   "url": "https://osf.io/download/5f2ux/",
+   "bytes": 1849959,
+   "sha256": "78df225d528b64038aeac3170a5cc5199b634d8c1ad7509fbca04398cb2ae5c2",
+   "fetched_utc": "2026-11-10T08:05:02Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C05_P.mat",
+   "url": "https://osf.io/download/6040c2cc67386c03ec620218/",
+   "bytes": 1845355,
+   "sha256": "457bc0948b72b4856b862266d63b001b2bc83becddc03e1627acbb9acfd3700c",
+   "fetched_utc": "2026-11-10T08:05:07Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C03_P.mat",
+   "url": "https://osf.io/download/6040c2ce441575041457e946/",
+   "bytes": 1849523,
+   "sha256": "1c1a398889720b032d2aa17023000520bd9a2be53a100569c602dcc673a4f2de",
+   "fetched_utc": "2026-11-10T08:05:08Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C02_P.mat",
+   "url": "https://osf.io/download/6040c2ce67386c03fb61ad52/",
+   "bytes": 1841793,
+   "sha256": "da52c9571978b24b2034bef615bb47d64c41f0fe6cd4e92c7b364d62b4194da5",
+   "fetched_utc": "2026-11-10T08:05:08Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C04_P.mat",
+   "url": "https://osf.io/download/6040c2cc67386c03fb61ad42/",
+   "bytes": 1826908,
+   "sha256": "4e4cfcc93325c994974509e7a0dd02640c1ad6ea37debf22636e10a8aaad4087",
+   "fetched_utc": "2026-11-10T08:05:09Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C01_P.mat",
+   "url": "https://osf.io/download/6040c2ce035cf7041bc894e9/",
+   "bytes": 1891730,
+   "sha256": "7553e53f9c3ed16890a8a7b1110e0a7b8fefb7364b91daf7a1722cfccd510cec",
+   "fetched_utc": "2026-11-10T08:05:22Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C07_P.mat",
+   "url": "https://osf.io/download/6040c2d1441575041457e95a/",
+   "bytes": 1877179,
+   "sha256": "61c2191f37fba06d0b015ca515efbc997c039b159d5d075e6da60b084c023293",
+   "fetched_utc": "2026-11-10T08:05:22Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C06_P.mat",
+   "url": "https://osf.io/download/6040c2d267386c03fb61ad61/",
+   "bytes": 1877719,
+   "sha256": "d5068628a7bb03e03dc1bcb32aaf4c025db3ae578568d1c56ba3ec0eb71c51c2",
+   "fetched_utc": "2026-11-10T08:05:23Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C09_P.mat",
+   "url": "https://osf.io/download/6040c2d2441575041057d723/",
+   "bytes": 1854052,
+   "sha256": "b865c9dd12de04e67c8d387a3c46b72f0e8af21d6d76d87a6cea5cb262f924d8",
+   "fetched_utc": "2026-11-10T08:05:24Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C10_P.mat",
+   "url": "https://osf.io/download/6040c2d267386c03fa61a6d6/",
+   "bytes": 1841035,
+   "sha256": "a8e9935126129405ea18832ccfd1c83c6c75b996f9bc3417fdb8d36feb0765e5",
+   "fetched_utc": "2026-11-10T08:05:31Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__dyad__inphase__C08_P.mat",
+   "url": "https://osf.io/download/6040c2d267386c03ef620c8c/",
+   "bytes": 1861478,
+   "sha256": "bcbcb51d03181a4d7ac660e41823dcda29aaca696c04d2801a2c64bc894d9f39",
+   "fetched_utc": "2026-11-10T08:05:31Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C02_B.mat",
+   "url": "https://osf.io/download/esu3g/",
+   "bytes": 1840033,
+   "sha256": "2baa3b8ae9488fa05bd7547839dd50991c183f49de8855ff2b7e5938ce7abdb5",
+   "fetched_utc": "2026-11-10T08:05:32Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C02_A.mat",
+   "url": "https://osf.io/download/6040c2fc035cf7041bc8950f/",
+   "bytes": 1784607,
+   "sha256": "7554828a1df5dd2bf0dcb7a52103e1797ec73de8d8e2f9c5a4312dee9c24cbf7",
+   "fetched_utc": "2026-11-10T08:05:41Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C03_A.mat",
+   "url": "https://osf.io/download/6040c2fc441575041057d763/",
+   "bytes": 1828694,
+   "sha256": "90c4a9171276da1f8a9ffb846a5d27c1e94e281a162eaca30cd71c81f480472a",
+   "fetched_utc": "2026-11-10T08:05:45Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C01_B.mat",
+   "url": "https://osf.io/download/bd9cj/",
+   "bytes": 1855669,
+   "sha256": "85d927c8d68c187c397cdb796b425e915c612720ed28da8469b9c31ecdc4d7b3",
+   "fetched_utc": "2026-11-10T08:05:46Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C01_A.mat",
+   "url": "https://osf.io/download/6040c2fc67386c03f0624017/",
+   "bytes": 1894099,
+   "sha256": "6e30a831e24f3e6b694560d2cf604b321dbf109eca4c88340e98aa19aba4bc09",
+   "fetched_utc": "2026-11-10T08:05:46Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C03_B.mat",
+   "url": "https://osf.io/download/d2y3c/",
+   "bytes": 1828923,
+   "sha256": "afc4de474356c38f423a1c7ed5a516b2dd14fdc2b2c8d3d067cf667aab52c98a",
+   "fetched_utc": "2026-11-10T08:05:48Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C04_A.mat",
+   "url": "https://osf.io/download/6040c302035cf7041bc89518/",
+   "bytes": 1769192,
+   "sha256": "01b16432ec4a1c3aeac02f88b63bd965ed3ef47fc62b9473c1ad2dd71b10a012",
+   "fetched_utc": "2026-11-10T08:05:52Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C06_A.mat",
+   "url": "https://osf.io/download/6040c30367386c03fb61ae08/",
+   "bytes": 1800858,
+   "sha256": "d86fd477ca4375b1a9b6b0492cc8fcd5f5d3aee13619ef44fdfc69a6653691a4",
+   "fetched_utc": "2026-11-10T08:05:52Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C05_B.mat",
+   "url": "https://osf.io/download/8n4dp/",
+   "bytes": 1846108,
+   "sha256": "bbdc8e44c15187c3e41f490a04d0f79ff9fb48c8f85b78f585662bb9e90fd819",
+   "fetched_utc": "2026-11-10T08:05:52Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C05_A.mat",
+   "url": "https://osf.io/download/6040c303035cf7041bc8951c/",
+   "bytes": 1874488,
+   "sha256": "2e423a284fbb123e266926bf7ad77addbbdeef19cf1b599007d060e07a7df530",
+   "fetched_utc": "2026-11-10T08:05:54Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C07_A.mat",
+   "url": "https://osf.io/download/6040c30867386c03f0624027/",
+   "bytes": 1897550,
+   "sha256": "4482a174d24f96d58d93abc49fb68d231a6c00921971b56a3cd88623dadbb451",
+   "fetched_utc": "2026-11-10T08:05:59Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C04_B.mat",
+   "url": "https://osf.io/download/k687a/",
+   "bytes": 1836250,
+   "sha256": "c9f9321b3447c6eb65af56368f8c18e59265d0bb2a26390916cb00c128226c19",
+   "fetched_utc": "2026-11-10T08:05:59Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C06_B.mat",
+   "url": "https://osf.io/download/nj9st/",
+   "bytes": 1869946,
+   "sha256": "25a5a604a2f98bd5c5636db919a0e694d181aef58f725cfd5a24abf9cee10a9a",
+   "fetched_utc": "2026-11-10T08:06:00Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C07_B.mat",
+   "url": "https://osf.io/download/dbvj7/",
+   "bytes": 1879675,
+   "sha256": "1a5b5f47c79d8ac319e48f4ac4b38c94661ceff86a1dc0bd8458fc6f862f7cfa",
+   "fetched_utc": "2026-11-10T08:06:02Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C08_B.mat",
+   "url": "https://osf.io/download/ugs2p/",
+   "bytes": 1840732,
+   "sha256": "7d8e644e2d707799f671627888fa2b30a3efcad674958829865132af941fa370",
+   "fetched_utc": "2026-11-10T08:06:06Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C09_A.mat",
+   "url": "https://osf.io/download/x8mdn/",
+   "bytes": 1833580,
+   "sha256": "631cf3a65c9f8632e7855dc9d954c5354a18b70173bb828d1e9e4927048d0a83",
+   "fetched_utc": "2026-11-10T08:06:07Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C08_A.mat",
+   "url": "https://osf.io/download/6040c309441575041057d77a/",
+   "bytes": 1843709,
+   "sha256": "27b6f7fb3f7a5a34d084985285caeee55a377d7654d3e69462d1a4b00023a970",
+   "fetched_utc": "2026-11-10T08:06:07Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C09_B.mat",
+   "url": "https://osf.io/download/3qhcp/",
+   "bytes": 1827827,
+   "sha256": "ca9defc5d6baf0323075ef5b95977f5ea370c40c73380aa085858f98e5cb2918",
+   "fetched_utc": "2026-11-10T08:06:09Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C10_A.mat",
+   "url": "https://osf.io/download/36nax/",
+   "bytes": 1893930,
+   "sha256": "5b096355c84e26b1827fe06fca649fbec79d39de31760baefa1d981c925f2bda",
+   "fetched_utc": "2026-11-10T08:06:13Z"
+  },
+  {
+   "file": "RealPartner__Arm__vertical__solo__C10_B.mat",
+   "url": "https://osf.io/download/xfbdt/",
+   "bytes": 1846007,
+   "sha256": "dcf3e365a605c5a4b9bec32f2bc9927c566cfd343d46118053babfc7666a91c4",
+   "fetched_utc": "2026-11-10T08:06:14Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C22_solo_NP.mat",
+   "url": "https://osf.io/download/6040bead035cf70425c7f6b6/",
+   "bytes": 6731164,
+   "sha256": "c965811e48e9448d2c7e03382789849fee400e2db5b0966ae59218524f26e4d5",
+   "fetched_utc": "2026-11-10T08:06:14Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C23_solo_NP.mat",
+   "url": "https://osf.io/download/6040bead441575041057d244/",
+   "bytes": 6796025,
+   "sha256": "85dcb2b9c478d2eef1e0c60bd07efa0925a3e320ebe0b2ef79f19316f6b310fb",
+   "fetched_utc": "2026-11-10T08:06:16Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C25_solo_NP.mat",
+   "url": "https://osf.io/download/6040beae035cf70425c7f6bf/",
+   "bytes": 6857283,
+   "sha256": "8d1da5f7add4d5efd005d46d3c373de5efb2cab51cf738396147f3e53701cf91",
+   "fetched_utc": "2026-11-10T08:06:20Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C24_solo_NP.mat",
+   "url": "https://osf.io/download/6040beae67386c03eb61d2a9/",
+   "bytes": 6867895,
+   "sha256": "7643c18f9f31944066ad4481624bf0584bb5e20a162c266fc0aff38111d0b6ac",
+   "fetched_utc": "2026-11-10T08:06:21Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C21_solo_NP.mat",
+   "url": "https://osf.io/download/6040beae441575041357d32e/",
+   "bytes": 6881830,
+   "sha256": "98acbb1d43b3fbf9610eb8b721c8b04a31328bb44251bd802e1804e347a50f41",
+   "fetched_utc": "2026-11-10T08:06:21Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C27_solo_NP.mat",
+   "url": "https://osf.io/download/a9yp3/",
+   "bytes": 6807304,
+   "sha256": "c8d5f3a2749368bab845365d1977a3c3ff5b4dc61d505e12cd1adde718d3cd1a",
+   "fetched_utc": "2026-11-10T08:06:23Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C26_solo_NP.mat",
+   "url": "https://osf.io/download/6040beb167386c03fa619c79/",
+   "bytes": 6820808,
+   "sha256": "ba2b4eb150d0f49f9c7e9ee80fb693ca4e2cd502365f61abec7b1fae8809df1a",
+   "fetched_utc": "2026-11-10T08:06:27Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C29_solo_NP.mat",
+   "url": "https://osf.io/download/6040beb267386c03fb619df3/",
+   "bytes": 6796164,
+   "sha256": "ea665694692b64c88d016402c5405aeba76667cf7b2c5a002840c0c05d93ada8",
+   "fetched_utc": "2026-11-10T08:06:28Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C28_solo_NP.mat",
+   "url": "https://osf.io/download/6040beb367386c03fa619c80/",
+   "bytes": 6870974,
+   "sha256": "77cb22478ee8f53b6f922e5d02fc965831f7c6e77a18726a3babd424cbf51c44",
+   "fetched_utc": "2026-11-10T08:06:29Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_antiphase__C30_solo_NP.mat",
+   "url": "https://osf.io/download/6040beb3441575041457d535/",
+   "bytes": 6739196,
+   "sha256": "71d54aeab8d19ca80f2840955c700b9050e3c233f7dc03703a589acca9dfbea3",
+   "fetched_utc": "2026-11-10T08:06:33Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C21_solo_P.mat",
+   "url": "https://osf.io/download/6040bed8441575041457d60c/",
+   "bytes": 6496101,
+   "sha256": "8d54d4d11f2bcf6987e949a99d8a64aafd2dfd6f5673882f6bf47f1d4ffaabe5",
+   "fetched_utc": "2026-11-10T08:06:38Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C22_solo_P.mat",
+   "url": "https://osf.io/download/6040beda035cf70424c7f587/",
+   "bytes": 6372604,
+   "sha256": "c20e80133e6baf133697a3db6011d177f6dcedcdbd5f3c21349bb897e47202c4",
+   "fetched_utc": "2026-11-10T08:06:40Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C23_solo_P.mat",
+   "url": "https://osf.io/download/6040beda441575041457d61a/",
+   "bytes": 6386500,
+   "sha256": "3b97f392203fb3ad61784967103906dcb0b98679b75c54c1c44749c5168e034d",
+   "fetched_utc": "2026-11-10T08:06:55Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C25_solo_P.mat",
+   "url": "https://osf.io/download/6040beda67386c03fa619ced/",
+   "bytes": 6554958,
+   "sha256": "9cf444edbcc33c1d7b37521fa6f4162c658effc05f1a65d705d5762341e4a15f",
+   "fetched_utc": "2026-11-10T08:06:58Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C24_solo_P.mat",
+   "url": "https://osf.io/download/6040bedb035cf70424c7f58d/",
+   "bytes": 6462455,
+   "sha256": "a8d1168fc3e29dfb5166860cd7e98a37a30c5357faf8d57048ec03d11e3dafb3",
+   "fetched_utc": "2026-11-10T08:07:00Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C26_solo_P.mat",
+   "url": "https://osf.io/download/6040bedd035cf7041bc892de/",
+   "bytes": 6499126,
+   "sha256": "ca7f372a183ccfe02fe6898a45f386c962ce4b3b4edbdab9e86f5db8849820df",
+   "fetched_utc": "2026-11-10T08:07:00Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C27_solo_P.mat",
+   "url": "https://osf.io/download/6040bedf441575041457d63b/",
+   "bytes": 6463078,
+   "sha256": "4d61ac2b5359d468eb0c2f841b7adb8f88e48f3dcd5f70ed6cf339a74ad3fdf0",
+   "fetched_utc": "2026-11-10T08:07:03Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C30_solo_P.mat",
+   "url": "https://osf.io/download/6040bee0035cf70425c7f790/",
+   "bytes": 6326018,
+   "sha256": "a94a8c2cf25082b43ae16c51fe44db79ed9cf6f9e37a5d3dd10f7265527c8ea8",
+   "fetched_utc": "2026-11-10T08:07:06Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C29_solo_P.mat",
+   "url": "https://osf.io/download/6040bee067386c03fa619d00/",
+   "bytes": 6444765,
+   "sha256": "fe821e3632fcfa6e99d32578308346985ddf2d8ce7b7f30242592410e2d1cad7",
+   "fetched_utc": "2026-11-10T08:07:07Z"
+  },
+  {
+   "file": "VirtualPartner__DOTsolo_inphase__C28_solo_P.mat",
+   "url": "https://osf.io/download/6040bee0441575041457d644/",
+   "bytes": 6256041,
+   "sha256": "a5fc19e9e2016d4c04385dac20602883039bfbabd86ab145f8cdcc287c5fe99f",
+   "fetched_utc": "2026-11-10T08:07:08Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C21_NP_NP.mat",
+   "url": "https://osf.io/download/61fa6505b63ee30c37f36dbe/",
+   "bytes": 6536582,
+   "sha256": "8e8b9bd0cd5830e5b03f1e5328bb5833fee5d1ea6de9ae11c6a70b67a90f9672",
+   "fetched_utc": "2026-11-10T08:07:10Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C22_NP_NP.mat",
+   "url": "https://osf.io/download/61fa6505026ee608c8b50493/",
+   "bytes": 6473608,
+   "sha256": "7affd01de740e134c7c4697ec0716299c5a0e3c3029113630bc9cdca1c6add31",
+   "fetched_utc": "2026-11-10T08:07:13Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C25_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650679e2720bcd20e3ff/",
+   "bytes": 6550273,
+   "sha256": "395d62e1091a8801bda12d8f58985583ddb2e48f647fc60aa4c52d160f578744",
+   "fetched_utc": "2026-11-10T08:07:14Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C23_NP_NP.mat",
+   "url": "https://osf.io/download/61fa65062082b807884df349/",
+   "bytes": 6472978,
+   "sha256": "eaf8cf78e762646511ee0a3a885ad1296cbc2f1a7342907a8e2c7367650b3cbc",
+   "fetched_utc": "2026-11-10T08:07:15Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C24_NP_NP.mat",
+   "url": "https://osf.io/download/61fa65062082b807974e02c4/",
+   "bytes": 6420268,
+   "sha256": "208bd88c431f4e57795b74636a38847f230cf4a667b8a2bc6158bc587ac0d91d",
+   "fetched_utc": "2026-11-10T08:07:17Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C27_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650ab63ee30c37f36ddb/",
+   "bytes": 6434752,
+   "sha256": "10070b1ccb5a2d2877304d5b54bc7e8503cae9362fa2061be734c58d953bfcbf",
+   "fetched_utc": "2026-11-10T08:07:20Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C26_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650b026ee608b9b51546/",
+   "bytes": 6517913,
+   "sha256": "2174711fe49250e03a2cb2809a82415b2268c7ed5392717bc9d659a28b9fe7fb",
+   "fetched_utc": "2026-11-10T08:07:21Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C28_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650bb63ee30c37f36de2/",
+   "bytes": 6501377,
+   "sha256": "649a4978ec54768bd3f4ee274b34b4d8aee07a63edadac7c39ec8072d8b9678b",
+   "fetched_utc": "2026-11-10T08:07:23Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C29_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650b102f9207a0b1958d/",
+   "bytes": 6468639,
+   "sha256": "8e33da92e973248f6ce5992cdd1f6f59c6c744f7cc663ce57dddab4217b44fa7",
+   "fetched_utc": "2026-11-10T08:07:24Z"
+  },
+  {
+   "file": "VirtualPartner__DOTantiphase_antiphase__C30_NP_NP.mat",
+   "url": "https://osf.io/download/61fa650b026ee608c1b511b6/",
+   "bytes": 6421965,
+   "sha256": "59b9731df9fc53a4975a19d8b48b1e35439769a1002ae74e868360c69daa61db",
+   "fetched_utc": "2026-11-10T08:07:28Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C24_P_P.mat",
+   "url": "https://osf.io/download/61fa652f2082b8079b4de896/",
+   "bytes": 6846809,
+   "sha256": "acabc6d9dc181ade39d352ddd6aa4bbd3c6a15f2664563008406dc350296bb51",
+   "fetched_utc": "2026-11-10T08:07:30Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C21_P_P.mat",
+   "url": "https://osf.io/download/61fa65322082b8079b4de8a2/",
+   "bytes": 6887326,
+   "sha256": "c1cae7026d80b8d21c969f99e2e797a0acc0573e643f667a6d7824f2afc28c20",
+   "fetched_utc": "2026-11-10T08:07:31Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C25_P_P.mat",
+   "url": "https://osf.io/download/61fa6532b63ee30c2ef36cb5/",
+   "bytes": 6889231,
+   "sha256": "92023129685c2301dd431546ff4781e874eb29ab7e2786aa98277de2f8ccfd11",
+   "fetched_utc": "2026-11-10T08:07:33Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C23_P_P.mat",
+   "url": "https://osf.io/download/61fa6532102f92079db18abd/",
+   "bytes": 6841710,
+   "sha256": "989bc4ad58c8adbeb5941020683025d8efa2de11c6744be1cb27378e5dc5e4d4",
+   "fetched_utc": "2026-11-10T08:07:36Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C22_P_P.mat",
+   "url": "https://osf.io/download/61fa6532b63ee30c37f36e97/",
+   "bytes": 6808209,
+   "sha256": "6e237a7c330f163b1ebbe20ec742142247db140d05dbba836b7379ca5e9c12c5",
+   "fetched_utc": "2026-11-10T08:07:38Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C26_P_P.mat",
+   "url": "https://osf.io/download/61fa6533102f9207a4b18037/",
+   "bytes": 6853367,
+   "sha256": "e908e701d92d31aed1ba1798d2ce2d01ff0157dd999159bd142894fb16fe6ce8",
+   "fetched_utc": "2026-11-10T08:07:39Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C27_P_P.mat",
+   "url": "https://osf.io/download/61fa6536026ee608c8b50560/",
+   "bytes": 6846492,
+   "sha256": "03b5fa25025877f237c6227745e8c97a91077d1e571a4f65342fe8ea2d77c0c7",
+   "fetched_utc": "2026-11-10T08:07:40Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C28_P_P.mat",
+   "url": "https://osf.io/download/61fa6537026ee608bfb5135b/",
+   "bytes": 6850416,
+   "sha256": "2ad6f24cbefc09926a4e2ad0b8c49782b56816db7a1682ab9737bb72fca0863e",
+   "fetched_utc": "2026-11-10T08:07:43Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C29_P_P.mat",
+   "url": "https://osf.io/download/61fa653779e2720bc820ec86/",
+   "bytes": 6849875,
+   "sha256": "d31ea59479846f236fdaa0e2dee7a536ba647ad239360ff2b0714b99f22ab6a5",
+   "fetched_utc": "2026-11-10T08:07:47Z"
+  },
+  {
+   "file": "VirtualPartner__DOTinphase_inphase__C30_P_P.mat",
+   "url": "https://osf.io/download/61fa6537b63ee30c2ef36cba/",
+   "bytes": 6687090,
+   "sha256": "5658c6c74f309564db1886c32ec22d7a201d90adfda6caab59d1bce2d3f2f114",
+   "fetched_utc": "2026-11-10T08:08:01Z"
+  },
+  {
+   "file": "Control__C02.mat",
+   "url": "https://osf.io/download/61fa6375026ee608c8b4fe75/",
+   "bytes": 2248285,
+   "sha256": "c3c1db75dfc64f17d4d413cda8bba7d67b9ed8ecf80c9d1ad5c8302e037db517",
+   "fetched_utc": "2026-11-10T08:08:02Z"
+  },
+  {
+   "file": "Control__C01.mat",
+   "url": "https://osf.io/download/n8bhc/",
+   "bytes": 2241442,
+   "sha256": "d426b8a13ad2089464dd57cb237758b2365ce2e02f4b395fee49c2190f1fbd7f",
+   "fetched_utc": "2026-11-10T08:08:05Z"
+  },
+  {
+   "file": "Control__C05.mat",
+   "url": "https://osf.io/download/61fa6375102f9207a4b17be6/",
+   "bytes": 1727708,
+   "sha256": "fbce96b5e49c27ed9e69c5da869701e0e2686d35a5cd08a2c8b1f2f02d417462",
+   "fetched_utc": "2026-11-10T08:08:05Z"
+  },
+  {
+   "file": "Control__C04.mat",
+   "url": "https://osf.io/download/61fa6375b63ee30c37f367d3/",
+   "bytes": 2291941,
+   "sha256": "5d8a2d02cfc7092d8ea8ad06fdf0c8c43dcecd21d1b67e32be5b76b21cba7eed",
+   "fetched_utc": "2026-11-10T08:08:07Z"
+  },
+  {
+   "file": "Control__C03.mat",
+   "url": "https://osf.io/download/61fa63762082b807974dfde9/",
+   "bytes": 2226889,
+   "sha256": "08e19df78bb895e8a6c99e9bc5b9194116eb9024c7c9b147a5acd839761c268b",
+   "fetched_utc": "2026-11-10T08:08:10Z"
+  },
+  {
+   "file": "Control__C07.mat",
+   "url": "https://osf.io/download/61fa63782082b807974dfdf8/",
+   "bytes": 1691498,
+   "sha256": "5e6ae2854eceb9fe1ca40ee668ac2229f7bd805463bb7ed432019d82b15142e8",
+   "fetched_utc": "2026-11-10T08:08:11Z"
+  },
+  {
+   "file": "Control__C06.mat",
+   "url": "https://osf.io/download/61fa63782082b807974dfdf6/",
+   "bytes": 1695617,
+   "sha256": "cdffb7c0eb44f1a16391d52176d960fd02aa0c3725132423afa91e35fb707c89",
+   "fetched_utc": "2026-11-10T08:08:12Z"
+  },
+  {
+   "file": "Control__C09.mat",
+   "url": "https://osf.io/download/61fa637879e2720bc720e442/",
+   "bytes": 1713684,
+   "sha256": "7b8a72792cde0ef4eca3925c03dd6519ad9b58a0cc215da58fc462cd7d04a363",
+   "fetched_utc": "2026-11-10T08:08:14Z"
+  },
+  {
+   "file": "Control__C08.mat",
+   "url": "https://osf.io/download/61fa6379102f9207a4b17bf4/",
+   "bytes": 1694010,
+   "sha256": "8fc1a4690fa58764841ef7933a1514f83837ec70433328a8c44efc655267ed3f",
+   "fetched_utc": "2026-11-10T08:08:17Z"
+  },
+  {
+   "file": "Control__C10.mat",
+   "url": "https://osf.io/download/61fa6379026ee608c8b4fe92/",
+   "bytes": 2237296,
+   "sha256": "0187840cd06066c27b842eb550c01672728c02cd6adff88233df1579f745b315",
+   "fetched_utc": "2026-11-10T08:08:20Z"
+  },
+  {
+   "file": "RealPartner__HandProne__solo__C18_A.mat",
+   "url": "https://osf.io/download/6040c1f9441575041057d61f/",
+   "bytes": 1959887,
+   "sha256": "30fa1b1173ca49c7748c76baa0456fe7416ca88c94706260845e8f0ca4439765",
+   "fetched_utc": "2026-11-10T08:08:40Z"
+  },
+  {
+   "file": "RealPartner__Main__solo__C20_B.mat",
+   "url": "https://osf.io/download/s5vea/",
+   "bytes": 1988520,
+   "sha256": "4d05865c34bd48fa0e52354ec5ed8a27290c7afd52598f21d945133a5e38dd34",
+   "fetched_utc": "2026-11-10T08:09:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tomassini2022_iScience.zip"
+}

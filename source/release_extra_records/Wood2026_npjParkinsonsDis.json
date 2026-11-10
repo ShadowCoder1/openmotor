@@ -1,0 +1,191 @@
+{
+ "id": "Wood2026_npjParkinsonsDis",
+ "module": "effort_reward_tasks",
+ "rows": 31497,
+ "subjects": 431,
+ "persons": 76,
+ "zip_bytes": 620712,
+ "zip_sha256": "5614a740960a9b7f01a5856cb0f0bbb39a053126e55cc27130eaf33b3f937f69",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "force_matching.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reward_utility.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "effort_reward.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "demographics.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants with Parkinson's disease",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (PD-001 to PD-037)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants with an ON session",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (ON values)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants with an OFF session",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (OFF values)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants with both sessions (complete)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (rows with both ON and OFF)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants who are female",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (sex)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants who are left-handed",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Supplementary table 1 (handedness)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of PD participants",
+   "computed": 71.02702702702703,
+   "reported": 71.02702702702703,
+   "tol": 0.005,
+   "source": "Supplementary table 1 (ages, mean computed from the table)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "39 controls, each with one session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "force_matching: same people and sessions as demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reward_utility: same people and sessions as demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "effort_reward: same people and sessions as demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reward utility: 135 trials per session; effort-reward 125; is_valid 0 only when no target was reached",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "force matching goals 20/40/60/80 % MVC (and 50 on 6 trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the three files kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The article's full text could not be read (the publisher page gave the abstract only), so the checks use the supplementary table of participants with PD; the controls' count (39) and the three tasks' trial numbers are internal checks only.",
+  "The deposit's README is titled 'Perception of effort but not reward value is impaired in people with Parkinson's disease'; the published paper has the title given above. The article carries a CC BY-NC-ND 4.0 licence on Crossref; the OSF data deposit is licensed CC BY-NC 4.0, which is what applies here.",
+  "Participant IDs in the deposit are numbered one higher than in the supplementary table; the ages and sexes line up, so this does not affect the checks."
+ ],
+ "sources": [
+  {
+   "file": "demographics.csv",
+   "url": "https://osf.io/download/5ed37/",
+   "bytes": 15076,
+   "sha256": "190f535c20f5be54400c3eae88344af6701444660411eca0cbc6022dea602c43",
+   "fetched_utc": "2026-11-09T10:22:19Z"
+  },
+  {
+   "file": "effort_reward.csv",
+   "url": "https://osf.io/download/8rj6f/",
+   "bytes": 686123,
+   "sha256": "22509172051057214a18c786457c447f15946a5ad9a79ef599ab7b8e20f411e7",
+   "fetched_utc": "2026-11-09T10:22:25Z"
+  },
+  {
+   "file": "force_matching.csv",
+   "url": "https://osf.io/download/sa8pk/",
+   "bytes": 496018,
+   "sha256": "cc29a34e144e242424cffa0f89919a437cb04d5fde51a255960a6c3683797ecd",
+   "fetched_utc": "2026-11-09T10:22:30Z"
+  },
+  {
+   "file": "README.docx",
+   "url": "https://osf.io/download/ugrjs/",
+   "bytes": 35427,
+   "sha256": "0964eaf9eea7fb26d255fdd9fe2f27218f4208c322da8af5a121b0b44421bee6",
+   "fetched_utc": "2026-11-09T10:22:34Z"
+  },
+  {
+   "file": "reward_utility.csv",
+   "url": "https://osf.io/download/sr6wt/",
+   "bytes": 2018521,
+   "sha256": "7d35d41ac74fe4d6a6a6de2494dddffaaa30cb9f1c72f11511b99b791fb95727",
+   "fetched_utc": "2026-11-09T10:22:38Z"
+  },
+  {
+   "file": "supp.docx",
+   "url": "https://osf.io/download/tm8hx/",
+   "bytes": 7081131,
+   "sha256": "6daf1979b3f34c4b800e11de1300274ddc13135f1641e0e223fd0068cbc295a7",
+   "fetched_utc": "2026-11-09T10:24:57Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wood2026_npjParkinsonsDis.zip"
+}

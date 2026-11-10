@@ -1,0 +1,147 @@
+{
+ "id": "Palin2019_MobileHCI",
+ "module": "keypress",
+ "rows": 39933036,
+ "subjects": 37606,
+ "persons": 37606,
+ "zip_bytes": 600895767,
+ "zip_sha256": "09ddaaf69211440de06ededb604648482324a7a469a916f6d4a8ea2b7b40b2d0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "keystroke rows read",
+   "ok": true,
+   "detail": "79066238 keystrokes, 274178 participants, 1811874 test sections"
+  },
+  {
+   "kind": "published",
+   "what": "participants left after the authors' pre-processing (236 more than the paper: 0.6 percent; see differences)",
+   "computed": 37606.0,
+   "reported": 37370.0,
+   "tol": 250,
+   "source": "Abstract and 'Participants' section: 37,370 voluntary participants left in the database after pre-processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean words per minute of participants (full sample)",
+   "computed": 36.13300558324349,
+   "reported": 36.17,
+   "tol": 0.05,
+   "source": "Results, 'Performance Measures' and Table 3 (36.17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of participants' words per minute",
+   "computed": 13.22101894215444,
+   "reported": 13.22,
+   "tol": 0.01,
+   "source": "Results, 'Performance Measures' and Table 3 (SD 13.22)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean uncorrected error rate of participants (%)",
+   "computed": 2.3381480912945283,
+   "reported": 2.34,
+   "tol": 0.01,
+   "source": "Results, 'Uncorrected error rate' and Table 3 (2.34)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of uncorrected error rate",
+   "computed": 2.082168988099791,
+   "reported": 2.08,
+   "tol": 0.01,
+   "source": "Results, 'Uncorrected error rate' and Table 3 (SD 2.08)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of participants (years)",
+   "computed": 24.15678349199596,
+   "reported": 24.1,
+   "tol": 0.1,
+   "source": "Table 1, full sample (24.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 8.862638038366509,
+   "reported": 8.8,
+   "tol": 0.1,
+   "source": "Table 1, full sample (8.8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent female",
+   "computed": 64.62798489602723,
+   "reported": 65.0,
+   "tol": 1,
+   "source": "Table 1, full sample: gender 65/31 % f/m",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent male",
+   "computed": 30.75041216827102,
+   "reported": 31.0,
+   "tol": 1,
+   "source": "Table 1, full sample: gender 65/31 % f/m",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows of valid participants",
+   "ok": true,
+   "detail": "39933036 key presses of 37606 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "every valid participant has at least 15 valid sections",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Running the authors' own cleaning queries on the deposited raw dump leaves 37606 participants, 236 (0.6 percent) more than the 37,370 in the paper; the mean words per minute is 36.13 here against 36.17 and the mean age 24.16 against 24.1 (the dump probably holds participants who finished after the paper's extract). Error-rate mean and SD, the WPM SD and the gender split reproduce.",
+  "The deposit's readme gives no consent-limit columns; the study page does not state a license.",
+  "The BibTeX DOI on the project page (10.475/123_4) is a template placeholder; the paper's real DOI is 10.1145/3338286.3340120."
+ ],
+ "sources": [
+  {
+   "file": "sql_preproc_code.txt",
+   "url": "https://userinterfaces.aalto.fi/typing37k/resources/sql_preproc_code.txt",
+   "bytes": 17037,
+   "sha256": "9080b87886a62b649851cd6a5b34cadc65622d6fee6477246bfae9167f1b6a50",
+   "fetched_utc": "2026-11-09T00:05:16Z"
+  },
+  {
+   "file": "source_code.zip",
+   "url": "https://userinterfaces.aalto.fi/typing37k/resources/source_code.zip",
+   "bytes": 55341482,
+   "sha256": "fe1bffcfc0788a37155a0c79305b0bdc93d37d771b77e37d1499dd353f4e21ed",
+   "fetched_utc": "2026-11-09T00:05:22Z"
+  },
+  {
+   "file": "sentences_content.sql",
+   "url": "https://userinterfaces.aalto.fi/typing37k/resources/sentences_content.sql",
+   "bytes": 96065,
+   "sha256": "8c111657a49b82f6e677deb49a917ee0a0399b9fd45091cfccb2c6d78a7ec30b",
+   "fetched_utc": "2026-11-09T00:05:24Z"
+  },
+  {
+   "file": "raw_typing_data.zip",
+   "url": "https://userinterfaces.aalto.fi/typing37k/data/raw_typing_data.zip",
+   "bytes": 4891887814,
+   "sha256": "051e10f2a2471e73c7af31f89ddd3981f675256d0658f626ad3e334f6bdbe58b",
+   "fetched_utc": "2026-11-09T00:28:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Palin2019_MobileHCI.zip"
+}

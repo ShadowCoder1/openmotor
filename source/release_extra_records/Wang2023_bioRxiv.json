@@ -1,0 +1,293 @@
+{
+ "id": "Wang2023_bioRxiv",
+ "module": "speech",
+ "rows": 17035,
+ "subjects": 156,
+ "persons": 26,
+ "zip_bytes": 321732,
+ "zip_sha256": "e0aa0f4401c448ef0db211464ec18dd674eca080c54d80de9a1c8cef9018ac3a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "mean JND, Speaking (cents), 22 analysed participants",
+   "computed": 130.77254204410815,
+   "reported": 130.77,
+   "tol": 0.005,
+   "source": "Wang, Ali & Max 2024, PLOS ONE 19(4):e0301514, Results, JND (sensitivity)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of JND, Speaking (cents)",
+   "computed": 30.290747994666305,
+   "reported": 30.29,
+   "tol": 0.005,
+   "source": "Wang, Ali & Max 2024, PLOS ONE 19(4):e0301514, Results, JND (sensitivity)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean JND, Listening (cents), 22 analysed participants",
+   "computed": 123.90706767711146,
+   "reported": 123.91,
+   "tol": 0.005,
+   "source": "Wang, Ali & Max 2024, PLOS ONE 19(4):e0301514, Results, JND (sensitivity)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of JND, Listening (cents)",
+   "computed": 37.59029047660831,
+   "reported": 37.59,
+   "tol": 0.005,
+   "source": "Wang, Ali & Max 2024, PLOS ONE 19(4):e0301514, Results, JND (sensitivity)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Wang et al. 2024, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed after the authors' exclusion rules",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Wang et al. 2024, Methods, Exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Wang et al. 2024, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per task",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Wang et al. 2024, Methods (110 trials per task)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has all six tasks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shift levels 0-10 only",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mean key-press times (423.88, 388.08, 360.22 ms) and their SDs came out slightly different from the recorded times (423.86, 387.97, 360.26 ms; SD 87.44 for Reading against 87.73), so they were not used as checks; the paper's definition of the response time (and its handling of missing responses) is not given.",
+  "The mean JND for Reading is 117.33 cents here against 117.32 in the paper (a 0.008 difference, more than printed rounding), so it was not used as a check.",
+  "The article is the PLOS ONE version (2024, CC BY 4.0); the listed bioRxiv preprint (doi 10.1101/2023.10.11.561423) has the same title. The OSF data have no license of their own."
+ ],
+ "sources": [
+  {
+   "file": "F05.zip",
+   "url": "https://osf.io/download/5nds3/",
+   "bytes": 2116438,
+   "sha256": "7817194c895d571388df19084092ad52ee5b2c5728e79da2a39d05c5922ae945",
+   "fetched_utc": "2026-11-09T11:30:24Z"
+  },
+  {
+   "file": "F03.zip",
+   "url": "https://osf.io/download/4db8t/",
+   "bytes": 2333698,
+   "sha256": "3683c3d0fbf83e8695d1f73624185821d09c1afb29de00ac7088f2ba9a62adbe",
+   "fetched_utc": "2026-11-09T11:30:36Z"
+  },
+  {
+   "file": "F06.zip",
+   "url": "https://osf.io/download/kemyx/",
+   "bytes": 1399578,
+   "sha256": "7a71124a9aa97996cc264e7074d2e2cd69b111237a904cb150b436a5d9ff380b",
+   "fetched_utc": "2026-11-09T11:30:40Z"
+  },
+  {
+   "file": "F07.zip",
+   "url": "https://osf.io/download/a7tmz/",
+   "bytes": 1434284,
+   "sha256": "a524b1efcc6fd18413749c245b6ba03d799b02263abfef5a3ddb5c39b71a3d55",
+   "fetched_utc": "2026-11-09T11:30:44Z"
+  },
+  {
+   "file": "F08.zip",
+   "url": "https://osf.io/download/54fbu/",
+   "bytes": 1478863,
+   "sha256": "b823828024dc1949fafae97f56683edbf59e26ce011987ae81b3f3c0f95739c0",
+   "fetched_utc": "2026-11-09T11:30:48Z"
+  },
+  {
+   "file": "F09.zip",
+   "url": "https://osf.io/download/mu6kp/",
+   "bytes": 1461571,
+   "sha256": "425144e7bdfa9ae1edeaab81af4d0b180bf92db35101720cefa2bbb21e80bd07",
+   "fetched_utc": "2026-11-09T11:30:52Z"
+  },
+  {
+   "file": "F04.zip",
+   "url": "https://osf.io/download/by76u/",
+   "bytes": 2193389,
+   "sha256": "524e235a65e2198d228f6a7f9519d13effa64bcb7cb7c76a312026fa94fe58cd",
+   "fetched_utc": "2026-11-09T11:30:58Z"
+  },
+  {
+   "file": "F02.zip",
+   "url": "https://osf.io/download/q92y7/",
+   "bytes": 2143800,
+   "sha256": "46456212abcfcd8d395de97f338208fc64124758de705baa048c08dbd500e3c3",
+   "fetched_utc": "2026-11-09T11:31:04Z"
+  },
+  {
+   "file": "F01.zip",
+   "url": "https://osf.io/download/46xbz/",
+   "bytes": 1429702,
+   "sha256": "b8710823a547a9a2aa01c9d88f14382e51845fe4573381927abf34f7257143df",
+   "fetched_utc": "2026-11-09T11:31:21Z"
+  },
+  {
+   "file": "F11.zip",
+   "url": "https://osf.io/download/9xarj/",
+   "bytes": 1440476,
+   "sha256": "0b53546f5b97d4fbea7180bd292d473b39e878267d56906f096773c96416d6d6",
+   "fetched_utc": "2026-11-09T11:31:25Z"
+  },
+  {
+   "file": "F14.zip",
+   "url": "https://osf.io/download/2rdsh/",
+   "bytes": 1426539,
+   "sha256": "9c6285da1e4fd7c0f6f5da92132f07b00a7db8cc0c001c60438d60ba34ad21db",
+   "fetched_utc": "2026-11-09T11:31:31Z"
+  },
+  {
+   "file": "F13.zip",
+   "url": "https://osf.io/download/ep2xw/",
+   "bytes": 1443873,
+   "sha256": "93851c1eed79a61956a610335c5fd7c40159219b831141f44f3222f307adf08a",
+   "fetched_utc": "2026-11-09T11:31:36Z"
+  },
+  {
+   "file": "F16.zip",
+   "url": "https://osf.io/download/y6xq8/",
+   "bytes": 1423788,
+   "sha256": "94eff6edb36ba2adfaa2233699f5e0fa0a9e612a9389485878214e4dbc6ab1a0",
+   "fetched_utc": "2026-11-09T11:31:43Z"
+  },
+  {
+   "file": "M01.zip",
+   "url": "https://osf.io/download/b693k/",
+   "bytes": 1427239,
+   "sha256": "7c3c95e6d0a3b9b2d1da1a13d8880557db013ff9b3ff09f4c68709191f99640f",
+   "fetched_utc": "2026-11-09T11:31:48Z"
+  },
+  {
+   "file": "M02.zip",
+   "url": "https://osf.io/download/w8kqp/",
+   "bytes": 1437384,
+   "sha256": "04e5dbe0f66fa8b0e8b8d5ac1b6c9cfd8f890859bce469cbb89eb47f09839ca2",
+   "fetched_utc": "2026-11-09T11:31:53Z"
+  },
+  {
+   "file": "F10.zip",
+   "url": "https://osf.io/download/9athj/",
+   "bytes": 1438045,
+   "sha256": "108ee93941cb48be2698357e5d42e721c338a405466cd576f38231d99c20b085",
+   "fetched_utc": "2026-11-09T11:31:57Z"
+  },
+  {
+   "file": "F12.zip",
+   "url": "https://osf.io/download/uc9mj/",
+   "bytes": 522829,
+   "sha256": "6a95c10a619dce71d8ae6c1a92e9dca63f432eb004a57d9f9bcb4ea79c8072ca",
+   "fetched_utc": "2026-11-09T11:32:02Z"
+  },
+  {
+   "file": "M05.zip",
+   "url": "https://osf.io/download/kxz72/",
+   "bytes": 1425317,
+   "sha256": "47a4cea69db31e344efa0410dfb9b76c3b31c38678e86b6f4d8a76fd94937577",
+   "fetched_utc": "2026-11-09T11:32:07Z"
+  },
+  {
+   "file": "M04.zip",
+   "url": "https://osf.io/download/jb5rk/",
+   "bytes": 1426707,
+   "sha256": "27f338b64a09007f6f86943b2319525781d38b940f406b99bd91f14f11821b50",
+   "fetched_utc": "2026-11-09T11:32:13Z"
+  },
+  {
+   "file": "F15.zip",
+   "url": "https://osf.io/download/zr7tc/",
+   "bytes": 1462726,
+   "sha256": "9372693da160ebd7c712d40e9a9bf3f5cce65cc67a937bc14efd0ea97c9eed35",
+   "fetched_utc": "2026-11-09T11:32:30Z"
+  },
+  {
+   "file": "FilesOrganization.txt",
+   "url": "https://osf.io/download/5e23v/",
+   "bytes": 1003,
+   "sha256": "271f4216a1bb5b9fbbe7d40a2cd94d8913d8f5e84edc4cf58aaccc59676754a2",
+   "fetched_utc": "2026-11-09T11:32:34Z"
+  },
+  {
+   "file": "M06.zip",
+   "url": "https://osf.io/download/x32a5/",
+   "bytes": 2150741,
+   "sha256": "5d101e53fa7b632844794598acd0665d17f042df8c68b53e19101f27ed0c22c9",
+   "fetched_utc": "2026-11-09T11:32:41Z"
+  },
+  {
+   "file": "M07.zip",
+   "url": "https://osf.io/download/e3vnm/",
+   "bytes": 1446660,
+   "sha256": "b9e4cf23d892a65a06bb196caa59ed4c6ef03f2c0804366631b52cd7658915c8",
+   "fetched_utc": "2026-11-09T11:32:48Z"
+  },
+  {
+   "file": "M08.zip",
+   "url": "https://osf.io/download/5rvs8/",
+   "bytes": 1452475,
+   "sha256": "680148b3d5e28761ffe3bd40eeafcebdba102299aa778f0675bd516a3e1e231a",
+   "fetched_utc": "2026-11-09T11:32:53Z"
+  },
+  {
+   "file": "M10.zip",
+   "url": "https://osf.io/download/rmb7x/",
+   "bytes": 1432367,
+   "sha256": "b015f5148ec46e8be8b4f377aa0468d103698e71fe6eaaaae36ff86449bf8d27",
+   "fetched_utc": "2026-11-09T11:33:00Z"
+  },
+  {
+   "file": "M03.zip",
+   "url": "https://osf.io/download/cvqjd/",
+   "bytes": 317102,
+   "sha256": "618d5b580f592d2b89c701e64979ee29d5edc1eac15686896cdaf2c4dfd13569",
+   "fetched_utc": "2026-11-09T11:33:04Z"
+  },
+  {
+   "file": "M09.zip",
+   "url": "https://osf.io/download/uem9z/",
+   "bytes": 1437276,
+   "sha256": "c93fe4e95bb2ec368eccf26aaf4d7daba93538299669a5bda3024767c200b039",
+   "fetched_utc": "2026-11-09T11:33:08Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2023_bioRxiv.zip"
+}

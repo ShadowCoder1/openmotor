@@ -1,0 +1,96 @@
+{
+ "id": "Goettker2019_SciRep",
+ "module": "timeseries",
+ "rows": 11088,
+ "subjects": 22,
+ "persons": 11,
+ "zip_bytes": 70548543,
+ "zip_sha256": "33ab87a139f2f5f1f28587871521563a0fab2c1f1816988415f78eb8a52dcaa6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (11)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has two blocks of each task",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant and task (2 blocks of 252)",
+   "computed": 504.0,
+   "reported": 504.0,
+   "tol": 0,
+   "source": "Methods, Trial counts (252 trials per block, 2 blocks; 504 per task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per block (2 TX x 3 durations x 3 velocities x 2 directions x 7 repetitions)",
+   "computed": 252.0,
+   "reported": 252.0,
+   "tol": 0,
+   "source": "Methods, Design (252 trials per block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per block (each repeated 7 times)",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Methods, Design (2 x 3 x 3 x 2 conditions, 7 repetitions each)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each condition appears 7 times per block in every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "gaze sampling interval (ms)",
+   "computed": 2.0000000000000018,
+   "reported": 2.0,
+   "tol": 0.01,
+   "source": "Methods, Apparatus (Eyelink II at 500 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "interception trials: hit plus miss equals all but the trials with no recorded success flag",
+   "ok": true,
+   "detail": "4718 hits, 824 misses"
+  },
+  {
+   "kind": "internal",
+   "what": "one row per trial: 11 participants x 2 tasks x 504 trials",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analysed 10 of the 11 judgment participants (one had incomplete tracking) and removed trials with anticipatory pursuit, blinks, large position errors or taps more than 3 cm from the target (4951 of 5554 interception trials, 4729 of 5040 judgment trials kept); the deposit has no per-trial exclusion flags and does not say which participant was dropped, so all 5544 trials per task are rows and excluded_by_authors is False throughout.",
+  "The paper gives 5554 interception trials, which is not a multiple of 504; the deposit has 11 x 504 = 5544.",
+  "The paper reports 502 taps missed online of which 141 were recovered offline; the deposit has 489 interception trials with no tap recorded."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/2566255/files/Sacc_Intercept.zip/content",
+   "bytes": 82048987,
+   "sha256": "4cb2434b6b06c8c483a36858161cc09ef364d927771cb70c72a96201e99b7344",
+   "fetched_utc": "2026-11-09T08:30:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Goettker2019_SciRep.zip"
+}

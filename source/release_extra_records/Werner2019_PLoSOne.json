@@ -1,0 +1,113 @@
+{
+ "id": "Werner2019_PLoSOne",
+ "module": "summary",
+ "rows": 2304,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 30090,
+ "zip_sha256": "6a6986b70b7a2804efc28449ce460862989a1be130bbacadc557fcbb28286bfe",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "48 participants x 48 episodes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "awareness-order file has the same 48 rows and the same group labels in the same order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 2304 episode values present",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "final adaptation mean direction, group G30 (deg)",
+   "computed": -25.493549873333333,
+   "reported": -25.5,
+   "tol": 0.05,
+   "source": "Results, Adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final adaptation mean direction, group S30 (deg)",
+   "computed": -24.490650865000003,
+   "reported": -24.5,
+   "tol": 0.05,
+   "source": "Results, Adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final adaptation mean direction, group G75 (deg)",
+   "computed": -51.5423133225,
+   "reported": -51.5,
+   "tol": 0.05,
+   "source": "Results, Adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final adaptation mean direction, group S75 (deg)",
+   "computed": -70.25040903666667,
+   "reported": -70.3,
+   "tol": 0.05,
+   "source": "Results, Adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation episodes",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "episodes in total",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Statistics (48 episodes modelled)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper does not say whether the printed +/- values of final adaptation are SD or SE; only the means are checked."
+ ],
+ "sources": [
+  {
+   "file": "s003.csv",
+   "url": "https://ndownloader.figshare.com/files/17517170",
+   "bytes": 30483,
+   "sha256": "e5eb06ccea073bbf4d28466a5fece0242edb624cd9120e036b6986bc9a6f4989",
+   "fetched_utc": "2026-11-09T14:33:47Z"
+  },
+  {
+   "file": "s004.csv",
+   "url": "https://ndownloader.figshare.com/files/17517173",
+   "bytes": 2883,
+   "sha256": "05030ef946fab94c8501b7291772b5fe3a035794a2d95f9c6b82619adea10a6e",
+   "fetched_utc": "2026-11-09T14:34:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Werner2019_PLoSOne.zip"
+}

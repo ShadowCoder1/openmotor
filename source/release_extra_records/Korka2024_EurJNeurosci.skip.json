@@ -1,0 +1,7 @@
+{
+ "id": "Korka2024_EurJNeurosci",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Zenodo 10.5281/zenodo.11493481 (CC BY 4.0, matches extra_studies.json; Eur J Neurosci 60(6):5362-5380, 2024, doi 10.1111/ejn.16476). Kinematics zips hold, per participant, a header-less 60 Hz tablet sample stream (performance_VisMot_*: 12 unlabeled tab-separated columns, blank line between rows) and Presentation logs (VisMotLrn_3blocks.log, no trial table). The only documentation is a one-line readme about excluded participants; there is no codebook for the columns, no trial segmentation, target positions or rotation schedule, and no authors code, so per-trial hand angles and conditions would have to be reverse engineered. Exp 1 kinematics is a 1.06 GB zip plus EEG zips (not needed).",
+ "sources": []
+}

@@ -1,0 +1,112 @@
+{
+ "id": "Nachmani2020_eNeuro",
+ "module": "saccade",
+ "rows": 75000,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 607093567,
+ "zip_sha256": "1227929246a5af0f61ccf8901346adee5b41737b096ec28c769a0ce0cfa084d3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Sampling plan: 15 participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with 100 distinct blocks",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Sampling plan: 10 sessions of 10 blocks each, 100 blocks per participant",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct trials in the deposit",
+   "computed": 75000.0,
+   "reported": 75000.0,
+   "tol": 0,
+   "source": "Methods, Sampling plan: 5000 trials per participant, 75,000 in all",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per block",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Sampling plan: blocks of 50 trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with 5 clear-target sessions (alternating clear and blurred)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Experimental procedure: ten alternating sessions of clear and blurred target",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct first-ramp speeds (10, 20, 30 deg/s)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Experimental procedure: VS 10/20/30 deg/s",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest second target step (deg)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experimental procedure: PS -20 to 20 deg",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all velocity steps within -50 to 50 deg/s (1 = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Experimental procedure: VS uniform from -50 to 50 deg/s",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row has a series file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "condition constant within runs of ten block labels (sessions)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "flagged-bad share of trials is a few percent",
+   "ok": true,
+   "detail": "0.034"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says about 23% of the 75,000 trials were discarded (about 58,000 kept). The deposit's own manual good/bad label (param column 25) marks 3.4% of rows, and that is what excluded_by_authors holds. The rest of the 23% comes from further criteria of the authors' analysis code (blinks, saccades at the step, double saccades, saccades to the first ramp); the deposit's flag columns for those criteria are kept in trial_info, but no combination of them was fitted to the 23%, so the share is not reproduced here.",
+  "17 block files (850 trials) sit in the archive folder of one participant but carry the number of another participant inside (and in their file names): 7 blocks in folder 8 are labelled 13 and 10 blocks in folder 15 are labelled 16. Participants 8 and 15 would otherwise lack exactly those blocks and participants 13 and 16 would have those block labels twice, so the folder is taken as the true participant; this is inferred, not stated by the authors.",
+  "README of the deposit lists param column 25 as 'good or bad (0 or 1)'; the authors' extraction code stores good = 0, bad = 1, which is how it is read here.",
+  "Column 29 ('trigger time less than 50 ms' in the README) is computed as trigger time < 80 ms in the authors' code; it is kept as flag_trigger_time_short. The README of the deposit marks column 33 'not used'; it is kept as flag_col33_not_used.",
+  "Sessions are not labelled in the deposit. The block labels run 10 to 109; the condition (clear or blurred) is constant within each run of ten labels and alternates between runs, so session = (block label - 10) // 10 + 1 is inferred from that, and the order of blocks in time is assumed to follow the labels.",
+  "Rows with no saccade after the second target step (smooth trials) have empty saccade columns; the deposit stores zeros there."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nachmani2020_eNeuro.zip"
+}

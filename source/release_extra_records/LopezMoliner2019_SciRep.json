@@ -1,0 +1,136 @@
+{
+ "id": "LopezMoliner2019_SciRep",
+ "module": "interception_timing",
+ "rows": 5400,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 294596,
+ "zip_sha256": "4578242b8ac08fd9aa5b119eba5aa4b21fe27e3c9614ff14aa500c75de1e4d9b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows are in order within each participant (trial number counts 1..360)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target starting distance = target speed x 0.8 s on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the arm-movement data frame is kept, in order (5,400)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the arm-movement experiment",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (360)",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions per participant (4 sessions of 90 trials)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session (90)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of target speeds (20, 25 and 30 cm/s)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "slowest target speed, cm/s",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest target speed, cm/s",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "time for the target to reach the interception zone, s (xinit / speed)",
+   "computed": 0.8,
+   "reported": 0.8,
+   "tol": 1e-09,
+   "source": "Methods, Arm-movement experiment",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "trials with no temporal error are under 2% of rows (the paper: under 2% missed the zone)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Whether the sign of tErr in the deposit follows the paper's definition (crossing time minus target time) was not verified; the hit flag does not equal 'absolute temporal error under 20 ms' on 26% of rows.",
+  "The paper reports 3 left-handed participants of 15; the deposit's target-direction signs split 13 and 2 and are not linked to handedness, so handedness is empty."
+ ],
+ "sources": [
+  {
+   "file": "eye_KR_KP.RData",
+   "url": "https://osf.io/download/9cwm6/",
+   "bytes": 381762,
+   "sha256": "9f835f59beae5b06c5935f7603571decaf41810ab5db8151a67ff94fb008708a",
+   "fetched_utc": "2026-11-09T09:53:40Z"
+  },
+  {
+   "file": "button_data.RData",
+   "url": "https://osf.io/download/5kcx6/",
+   "bytes": 45760,
+   "sha256": "1be0c855960f99c71a787d4e1ffaeba61b7a440eb264ad9ce373bff6a73fe8a7",
+   "fetched_utc": "2026-11-09T09:53:45Z"
+  },
+  {
+   "file": "arm_movt_data.RData",
+   "url": "https://osf.io/download/z6849/",
+   "bytes": 162728834,
+   "sha256": "b0640732dd776b9dc65878bb152400972195fd2be75ad0846b4bae37e7769778",
+   "fetched_utc": "2026-11-09T09:54:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/LopezMoliner2019_SciRep.zip"
+}

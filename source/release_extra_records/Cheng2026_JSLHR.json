@@ -1,0 +1,850 @@
+{
+ "id": "Cheng2026_JSLHR",
+ "module": "speech",
+ "rows": 21930,
+ "subjects": 43,
+ "persons": 43,
+ "zip_bytes": 573770,
+ "zip_sha256": "857fe8eed850a558ec19a4bea3e4ab4adbf3c172c902f05a178405d0023b1b9e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "43 participants x 510 trials, trials 1-510 in order, participants in blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "phases in the order of the paper's table, at trials 1-90, 91-130, 131-170, 171-450 and 451-510",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "repetitions per word and participant: 15, 10, 10, 70 and 10 in the five phases; trained words in the three middle phases, untrained words in the two noise-only phases",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 and F2 are missing together on 409 trials; vowel duration is also missing on all but one of them",
+   "ok": true,
+   "detail": "1 trial has a duration but no formants"
+  },
+  {
+   "kind": "internal",
+   "what": "the four center coordinates are constant within a participant and never missing",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 within 250-1300",
+   "ok": true,
+   "detail": "303.572-1265.283"
+  },
+  {
+   "kind": "internal",
+   "what": "F2 within 700-2000",
+   "ok": true,
+   "detail": "774.431-1948.347"
+  },
+  {
+   "kind": "internal",
+   "what": "vowel_dur within 0.01-1.0",
+   "ok": true,
+   "detail": "0.017-0.762"
+  },
+  {
+   "kind": "internal",
+   "what": "vowel codes match the words: at baseline /i/ has the lowest F1 and highest F2 of the trained words, /\u0251/ and /\u00e6/ the highest F1, /u/ and /\u0251/ the lowest F2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant is in the age table and in the hearing table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the hearing table has one left and one right ear row per listener",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = no formants or trial 1-30",
+   "ok": true,
+   "detail": "1671 rows marked"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: youngest (years)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: oldest (years)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: mean age (years)",
+   "computed": 21.25,
+   "reported": 21.2,
+   "tol": 0.050001000000000004,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: SD of age (years)",
+   "computed": 2.9097537123726926,
+   "reported": 2.91,
+   "tol": 0.005001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: females",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger: males",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: youngest (years)",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: oldest (years)",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: mean age (years)",
+   "computed": 41.53846153846154,
+   "reported": 41.5,
+   "tol": 0.050001000000000004,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: SD of age (years)",
+   "computed": 7.81681291208662,
+   "reported": 7.82,
+   "tol": 0.005001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: females",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle aged: males",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: youngest (years)",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: oldest (years)",
+   "computed": 73.0,
+   "reported": 73.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: mean age (years)",
+   "computed": 65.0,
+   "reported": 65.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: SD of age (years)",
+   "computed": 5.068758002934022,
+   "reported": 5.07,
+   "tol": 0.005001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: females",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older: males",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall age range, youngest (years)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall age range, oldest (years)",
+   "computed": 73.0,
+   "reported": 73.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the baselineGeneralize phase",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the baselineTrain phase",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the ramp phase",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the train phase",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the generalization phase",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "discarded trials, % of all trials (the paper's 1.8 is 1.865 here; see differences)",
+   "computed": 1.8650250797993615,
+   "reported": 1.8,
+   "tol": 0.1,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "discarded trials, lowest % across participants",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "discarded trials, highest % across participants (6)",
+   "computed": 6.078431372549019,
+   "reported": 6.0,
+   "tol": 0.5,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Method (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "early adaptation (hold, first 10 repetitions): mean AVS change (%)",
+   "computed": 4.009430008649706,
+   "reported": 4.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "early adaptation (hold, first 10 repetitions): SE (%)",
+   "computed": 0.8634188243999056,
+   "reported": 0.9,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "early adaptation (hold, first 10 repetitions): t(42)",
+   "computed": 4.643667586743137,
+   "reported": 4.64,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late adaptation (last 10 repetitions of the hold): mean AVS change (%)",
+   "computed": 5.359070617223716,
+   "reported": 5.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late adaptation (last 10 repetitions of the hold): SE (%)",
+   "computed": 1.0348182654070077,
+   "reported": 1.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late adaptation (last 10 repetitions of the hold): t(42)",
+   "computed": 5.178755339340596,
+   "reported": 5.18,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization to the untrained words: mean AVS change (%)",
+   "computed": 7.497913578896465,
+   "reported": 7.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization to the untrained words: SE (%)",
+   "computed": 1.3350557644940804,
+   "reported": 1.3,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization to the untrained words: t(42)",
+   "computed": 5.616180071502707,
+   "reported": 5.62,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Sensorimotor adaptation / Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman correlation of adaptation with generalization",
+   "computed": 0.44608879492600423,
+   "reported": 0.45,
+   "tol": 0.005001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /i/: distance to the center, change (%)",
+   "computed": 4.521739251062118,
+   "reported": 5.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /i/: SE (%)",
+   "computed": 1.063825481453045,
+   "reported": 1.1,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /i/: t(42)",
+   "computed": 4.250452099423319,
+   "reported": 4.25,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u00e6/: distance to the center, change (%)",
+   "computed": 9.648212636917354,
+   "reported": 10.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u00e6/: SE (%)",
+   "computed": 1.892218497291435,
+   "reported": 1.9,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u00e6/: t(42)",
+   "computed": 5.098889293560985,
+   "reported": 5.09,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u0251/: distance to the center, change (%)",
+   "computed": 3.6349040000712485,
+   "reported": 4.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u0251/: SE (%)",
+   "computed": 1.2224482703097042,
+   "reported": 1.2,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /\u0251/: t(42)",
+   "computed": 2.973462426471719,
+   "reported": 2.97,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /u/: distance to the center, change (%)",
+   "computed": 2.207422780595092,
+   "reported": 2.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /u/: SE (%)",
+   "computed": 2.757639909226168,
+   "reported": 2.7,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial learning, /u/: t(42)",
+   "computed": 0.8004753532938699,
+   "reported": 0.8,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific initial learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /i/: distance to the center, change (%)",
+   "computed": 5.297285266582907,
+   "reported": 5.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /i/: SE (%)",
+   "computed": 1.3120831681458844,
+   "reported": 1.3,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /i/: t(42)",
+   "computed": 4.037309063318406,
+   "reported": 4.04,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u00e6/: distance to the center, change (%)",
+   "computed": 13.00700406765607,
+   "reported": 13.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u00e6/: SE (%)",
+   "computed": 1.7014032803936379,
+   "reported": 1.7,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u00e6/: t(42)",
+   "computed": 7.64486833753298,
+   "reported": 7.64,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u0251/: distance to the center, change (%)",
+   "computed": 8.362043430482657,
+   "reported": 8.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u0251/: SE (%)",
+   "computed": 1.4222296506411385,
+   "reported": 1.4,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /\u0251/: t(42)",
+   "computed": 5.8795310776378935,
+   "reported": 5.88,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /u/: distance to the center, change (%) (sign taken from the reported t)",
+   "computed": -0.9277307619340425,
+   "reported": -0.9,
+   "tol": 0.050001000000000004,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /u/: SE (%)",
+   "computed": 2.9457421967055013,
+   "reported": 3.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximal adaptation, /u/: t(42)",
+   "computed": -0.31493956360865877,
+   "reported": -0.31,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific maximal adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u026a/: distance to the center, change (%)",
+   "computed": 9.473164203254814,
+   "reported": 9.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u026a/: SE (%)",
+   "computed": 2.1360005184466226,
+   "reported": 2.1,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u026a/: t(42)",
+   "computed": 4.435000891359354,
+   "reported": 4.44,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /e\u026a/: distance to the center, change (%)",
+   "computed": 6.961220590284634,
+   "reported": 7.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /e\u026a/: SE (%)",
+   "computed": 1.9955420863645374,
+   "reported": 2.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /e\u026a/: t(42)",
+   "computed": 3.488385756356825,
+   "reported": 3.49,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u025b/: distance to the center, change (%)",
+   "computed": 13.625862184667636,
+   "reported": 14.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u025b/: SE (%)",
+   "computed": 2.473663052064903,
+   "reported": 2.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u025b/: t(42)",
+   "computed": 5.508374381584985,
+   "reported": 5.51,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u028c/: distance to the center, change (%)",
+   "computed": 11.057778814601482,
+   "reported": 11.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u028c/: SE (%)",
+   "computed": 1.4571273142766992,
+   "reported": 1.5,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /\u028c/: t(42)",
+   "computed": 7.588752682253049,
+   "reported": 7.59,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /o\u028a/: distance to the center, change (%)",
+   "computed": 5.196043582695253,
+   "reported": 5.0,
+   "tol": 0.500001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /o\u028a/: SE (%)",
+   "computed": 2.109033560578389,
+   "reported": 2.1,
+   "tol": 0.100001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization, /o\u028a/: t(42)",
+   "computed": 2.4637083448166046,
+   "reported": 2.46,
+   "tol": 0.010001,
+   "source": "Cheng, Niziolek & Parrell 2026, J Speech Lang Hear Res, Results, Vowel-specific generalization",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Discarded trials: the paper gives 1.8% in total; the table has 409 of 21,930 trials without formants, 1.865%.",
+  "The paper's text says the first 25 trials of the generalization baseline were excluded; the authors' code drops trials 1-30, which is what excluded_by_authors marks (dropping 30 reproduces the paper's generalization t = 5.62, dropping 25 gives 5.65).",
+  "Many mean changes in % are printed as whole percents (for example 7.0% for generalization, where the rows give 7.5% with the paper's own SE of 1.3 and t of 5.62), so those means are checked to half a percentage point; the t statistics and SEs agree to the printed decimals, a few of them truncated rather than rounded (t = 5.0989 is printed 5.09, SE = 2.76 is printed 2.7).",
+  "Vowel /u/, maximal adaptation: the change is -0.93% here, with the paper's t of -0.31; the sign of the paper's mean was taken from that t."
+ ],
+ "sources": [
+  {
+   "file": "subject_age.csv",
+   "url": "https://osf.io/download/qesg8/",
+   "bytes": 909,
+   "sha256": "9e98087a3f476ae68f32e14d7454085ff3974ea9f2ed89aaaa8b203068ecd81d",
+   "fetched_utc": "2026-11-08T19:42:22Z"
+  },
+  {
+   "file": "vsaGen2vowelspaceTable_50_100_window2025-02-19.csv",
+   "url": "https://osf.io/download/fbewy/",
+   "bytes": 3022602,
+   "sha256": "d3b6811db612856f014ed80a23e60977841dce1c95e3bdcced546090563d716f",
+   "fetched_utc": "2026-11-08T19:42:25Z"
+  },
+  {
+   "file": "hearingdata.csv",
+   "url": "https://osf.io/download/eugbc/",
+   "bytes": 2604,
+   "sha256": "9042b0ae968b4555b47fc7c622bdb5a76ba2ea216315a05bcaa25bebc10df09d",
+   "fetched_utc": "2026-11-08T19:42:28Z"
+  },
+  {
+   "file": "vowel_space_adapt_generalization_analysis.Rmd",
+   "url": "https://osf.io/download/v2egm/",
+   "bytes": 57715,
+   "sha256": "702cecf91f6c54f320bf265a2c79bbe26423038080432c672379cc68becdbe04",
+   "fetched_utc": "2026-11-08T19:42:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng2026_JSLHR.zip"
+}

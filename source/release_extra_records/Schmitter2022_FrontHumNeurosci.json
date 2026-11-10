@@ -1,0 +1,226 @@
+{
+ "id": "Schmitter2022_FrontHumNeurosci",
+ "module": "perception",
+ "rows": 33792,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 518542,
+ "zip_sha256": "a8becda3e6fe37058f33b130c52032f0456f3e3da55d64372b941207a3e61cde",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "data.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 13: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 18: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 8: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 16: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 17: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 1: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 15: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 3: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 21: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 9: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 19: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 2: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 5: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 14: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 20: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 6: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 7: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 22: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 4: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 10: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 11: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 12: the four stimulation conditions each form one block of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant (4 stimulations x 8 conditions x 8 pairs x 6 delay levels)",
+   "computed": 1536.0,
+   "reported": 1536.0,
+   "tol": 0,
+   "source": "Methods, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay levels",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent of trials with no button press",
+   "computed": 0.8315577651515151,
+   "reported": 0.8,
+   "tol": 0.1,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent of trials with a button press but no response",
+   "computed": 1.426373106060606,
+   "reported": 1.4,
+   "tol": 0.1,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "48 test trials per participant, stimulation and condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "response times between 0 and 1.5 s (within the 1500 ms response window), apart from one -0.1 ms value",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes the outcome as the proportion of detected delays and psychometric thresholds; thresholds are not recomputed here. The paper reports no reaction times."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/records/6861087/files/data_cerebellar_tDCS_temporal_recalibration.zip?download=1",
+   "bytes": 399992,
+   "sha256": "82a23365707e856cc800049e6f64eef9d4a899bb791d4ad618d213e3ffcb6f4e",
+   "fetched_utc": "2026-11-09T03:35:14Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schmitter2022_FrontHumNeurosci.zip"
+}

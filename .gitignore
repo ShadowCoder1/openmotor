@@ -1,0 +1,31 @@
+# Allowlist: only the site's source, its build tools and the GitHub workflows are in the repository.
+/*
+!/.gitignore
+!/.github/
+!/README.md
+!/source/
+!/site/
+!/tools/
+# never: data files, raw downloads, local-only notes and backups
+/source/release/*.zip
+/source/release_extra/
+/source/bundle/
+/source/*_before_*.json
+/source/author_permission_email.md
+/source/lockbox_exposure_note.md
+/source/std_batches.json
+/source/github/
+/site/template_v*.html
+**/__pycache__/
+**/*.bak
+**/.DS_Store
+/tools/pc_export_release.py
+/tools/pc_extract_counts.py
+/tools/release_meta.py
+/tools/build_catalog.py
+/tools/apps_script_submit.gs
+/tools/std/pc.py
+/tools/std/upload.py
+/tools/std/AGENT_BRIEF.md
+/tools/std/RUN_RULES.md
+/tools/std/status.py

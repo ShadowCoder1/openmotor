@@ -1,0 +1,93 @@
+{
+ "id": "Hsiao2024_ExpBrainRes",
+ "module": "summary",
+ "rows": 1416,
+ "subjects": 54,
+ "persons": 54,
+ "zip_bytes": 20816,
+ "zip_sha256": "a7cd0bd1db281d7ff780c0fc7ba6fce735c0cc9cf99a28d22f69d90255dda9f5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in group 1",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "OSF wiki 'Data Structure': N=18 participants per group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group 2",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "OSF wiki 'Data Structure': N=18 participants per group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group 3",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "OSF wiki 'Data Structure': N=18 participants per group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "OSF wiki 'Data Structure': 3 groups of 18",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "raw matrices have 18 rows and 7 columns in every group and block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sex coded 0/1 only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "total = visual + proprioceptive recalibration within 0.01 mm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Group 3 mean block-2 total recalibration is the lowest of the three groups (abstract: Group 3 recalibrated significantly less)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text was not accessible, so no numbers from the paper's results were reproduced; the checks are the group sizes stated in the deposit's wiki plus internal checks, and the direction of the group difference stated in the abstract.",
+  "Which block is baseline, mismatch and washout is inferred from CSg_Final.m (block 2 is analysed for recalibration, blocks 1 and 3 for variance and weighting)."
+ ],
+ "sources": [
+  {
+   "file": "CSg_structure.mat",
+   "url": "https://osf.io/download/wmx2p/",
+   "bytes": 10574,
+   "sha256": "2280c02ba807f206e783e245da5252e3465bacec1698553c7b1c5f84c872da72",
+   "fetched_utc": "2026-11-09T15:09:06Z"
+  },
+  {
+   "file": "CSg_Final.m",
+   "url": "https://osf.io/download/bcwgu/",
+   "bytes": 9303,
+   "sha256": "87eba29b2c7cf50d6497172c37b8497f1f26245803f1cb78c3dec9a7b6ece5b1",
+   "fetched_utc": "2026-11-09T15:09:11Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hsiao2024_ExpBrainRes.zip"
+}

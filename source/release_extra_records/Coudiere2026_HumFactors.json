@@ -1,0 +1,62 @@
+{
+ "id": "Coudiere2026_HumFactors",
+ "module": "summary",
+ "rows": 5040,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 54438,
+ "zip_sha256": "497482f0d0a4a0867019a9cf13439c4efc6c49bcafdb86f3820a71bc0a555a31",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Abstract (Europe PMC record of the paper)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years, printed as 22)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0.5,
+   "source": "Abstract (Europe PMC record of the paper)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 6 tables x 28 persons x 30 trials",
+   "ok": true,
+   "detail": "5040"
+  },
+  {
+   "kind": "internal",
+   "what": "few empty cells (left empty as in the deposit)",
+   "ok": true,
+   "detail": "8"
+  },
+  {
+   "kind": "internal",
+   "what": "tracking errors positive, lags finite",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "8 cells are empty in the deposit and stay empty here.",
+  "The sheet contains derived tables and per-participant means that are not released; the paper's statistics were not re-computed. Checks use the abstract's sample size and mean age."
+ ],
+ "sources": [
+  {
+   "file": "DUAL.xlsx",
+   "url": "https://osf.io/download/y9tqj/",
+   "bytes": 110670,
+   "sha256": "61815b740a45136442f67670e432b9328ed57bb534e49c5929983597dc2a6315",
+   "fetched_utc": "2026-11-09T17:01:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Coudiere2026_HumFactors.zip"
+}

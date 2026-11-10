@@ -1,0 +1,286 @@
+{
+ "id": "Park2024_SciRep",
+ "module": "timeseries",
+ "rows": 21895,
+ "subjects": 26,
+ "persons": 26,
+ "zip_bytes": 212013377,
+ "zip_sha256": "a7abb3cf4b864a4494442386920ed019add6ff42158b4bac52dfe852204b1c09",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants who completed all sessions",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the deposit (26 volunteers, 2 incomplete)",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cursor-off blocks, late vs early, paired t (blocks 2,4..24 vs 26,..48)",
+   "computed": 4.369128191196515,
+   "reported": 4.37,
+   "tol": 0.05,
+   "source": "Results, Behavioral performance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "two-way RM ANOVA, learning stage F(1,23)",
+   "computed": 70.97748123035322,
+   "reported": 70.98,
+   "tol": 0.5,
+   "source": "Results, Behavioral performance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "two-way RM ANOVA, feedback condition F(1,23)",
+   "computed": 227.09447228548257,
+   "reported": 227.1,
+   "tol": 1.0,
+   "source": "Results, Behavioral performance",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "two-way RM ANOVA, interaction F(1,23)",
+   "computed": 101.82182305044309,
+   "reported": 101.8,
+   "tol": 0.5,
+   "source": "Results, Behavioral performance",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant of the 24 has 870 trials (6 runs x 145: a lead-in trial and 144 trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hits recomputed from the cursor, the target cell (x = (column-3)*80 px, y = (3-row)*80 px) and a +-40 px box equal the authors' cnt_hit for every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "two incomplete participants (4 runs and 3 runs of the 6) are kept and marked excluded",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit has no license file or data dictionary; variable meanings follow the authors' script and the paper. The paper's success-rate statistics are reproduced from proportion_on_target of the 24 complete participants."
+ ],
+ "sources": [
+  {
+   "file": "GL03-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL03-fmri.mat",
+   "bytes": 5852216,
+   "sha256": "7d5400a9d2b93bc536a7c53f82686c220998134756a1d93b39f2a1087698b349",
+   "fetched_utc": "2026-11-09T03:48:39Z"
+  },
+  {
+   "file": "GL03-Cali.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL03-Cali.mat",
+   "bytes": 637386,
+   "sha256": "6e46b14364e1c014cbdbcc58dca7b3383ba3c000428445072f9b095db2648a14",
+   "fetched_utc": "2026-11-09T03:48:41Z"
+  },
+  {
+   "file": "GL05-PreTrain.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL05-PreTrain.mat",
+   "bytes": 90563,
+   "sha256": "99acd2b18285fff576fd2ae926e196d74482a49010710ed169c9f442f6ef22fd",
+   "fetched_utc": "2026-11-09T03:48:44Z"
+  },
+  {
+   "file": "GL04-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL04-fmri.mat",
+   "bytes": 6995474,
+   "sha256": "e25a7a3eac069ee5beb873debc25213225fd98b1071de4cafde034979142044f",
+   "fetched_utc": "2026-11-09T03:51:15Z"
+  },
+  {
+   "file": "GL05-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL05-fmri.mat",
+   "bytes": 7272173,
+   "sha256": "6d3e4d922e547755e56a7945ddbebe1668efc1d446c2db46c16d1701ab044fdd",
+   "fetched_utc": "2026-11-09T03:51:31Z"
+  },
+  {
+   "file": "GL06-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL06-fmri.mat",
+   "bytes": 7616573,
+   "sha256": "7b9bcbeab98f32871023cd8adff5ab29364fc9260c4f783af98e1045651a8e69",
+   "fetched_utc": "2026-11-09T03:51:34Z"
+  },
+  {
+   "file": "GL07-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL07-fmri.mat",
+   "bytes": 7929059,
+   "sha256": "2b9941140ebff5228920c624b6f278e35115900bc6797810f7a3e3b6fc36fa9c",
+   "fetched_utc": "2026-11-09T03:51:37Z"
+  },
+  {
+   "file": "GL08-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL08-fmri.mat",
+   "bytes": 7511895,
+   "sha256": "727ea6247894ed1241abb65eb4bd9f3af5afa2c8c3f3bad169a4ca4c72a3a954",
+   "fetched_utc": "2026-11-09T03:51:40Z"
+  },
+  {
+   "file": "GL09-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL09-fmri.mat",
+   "bytes": 7345660,
+   "sha256": "ec6757c8f2cce8f5bf4c0683f545f0e03ced9a1bc6b2d2d467cced4e7002267a",
+   "fetched_utc": "2026-11-09T03:51:43Z"
+  },
+  {
+   "file": "GL10-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL10-fmri.mat",
+   "bytes": 7223571,
+   "sha256": "85a4f30e6b05af13db107c50f3f8a71827289cb9f84438e08d346b0a2b4721b5",
+   "fetched_utc": "2026-11-09T03:51:46Z"
+  },
+  {
+   "file": "GL11-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL11-fmri.mat",
+   "bytes": 6920892,
+   "sha256": "d304c0b608e5dc1d488ac27f8c823f50b2ffbf2b6728558cdc147c7b32700b3a",
+   "fetched_utc": "2026-11-09T03:51:49Z"
+  },
+  {
+   "file": "GL12-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL12-fmri.mat",
+   "bytes": 7809834,
+   "sha256": "8140ff29f3dbc993e3441b55a2516d733e76fdfb0d1f185b4c73cbf984da1050",
+   "fetched_utc": "2026-11-09T03:51:51Z"
+  },
+  {
+   "file": "GL13-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL13-fmri.mat",
+   "bytes": 6082980,
+   "sha256": "2d13ba0c775ca031ee35eaf67bd92572b80c196d9c7da98109f6a248d126cee0",
+   "fetched_utc": "2026-11-09T03:51:54Z"
+  },
+  {
+   "file": "GL14-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL14-fmri.mat",
+   "bytes": 6051441,
+   "sha256": "842d7ba314bdb7fe5c726a708f0482bbc1fa52439bcf6879fcb9ea4aa941f1d8",
+   "fetched_utc": "2026-11-09T03:51:57Z"
+  },
+  {
+   "file": "GL15-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL15-fmri.mat",
+   "bytes": 8129947,
+   "sha256": "d42e88de98d8ee88a7289d6db6990058f859fde4d89c339bc08e1df79bd14704",
+   "fetched_utc": "2026-11-09T03:52:00Z"
+  },
+  {
+   "file": "GL16-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL16-fmri.mat",
+   "bytes": 7177723,
+   "sha256": "de16adcddb152102bea20725619d37a985f18fca17dfb44ee85c823ac46a5448",
+   "fetched_utc": "2026-11-09T03:52:03Z"
+  },
+  {
+   "file": "GL17-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL17-fmri.mat",
+   "bytes": 7593944,
+   "sha256": "6c5b1a4683f78794f0a24967e26eb2c73dabf9af9dd595f91a4aca90887ca75d",
+   "fetched_utc": "2026-11-09T03:52:06Z"
+  },
+  {
+   "file": "GL18-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL18-fmri.mat",
+   "bytes": 6279797,
+   "sha256": "565b2918dc4e446eb5b0f15f708b42fbc22954aa06ba47fae041180847b89e75",
+   "fetched_utc": "2026-11-09T03:52:10Z"
+  },
+  {
+   "file": "GL19-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL19-fmri.mat",
+   "bytes": 7963031,
+   "sha256": "4cbbfa37f90c75fbc36317525b7592d73401d38b751431131e86e19d74846661",
+   "fetched_utc": "2026-11-09T03:52:13Z"
+  },
+  {
+   "file": "GL20-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL20-fmri.mat",
+   "bytes": 6983453,
+   "sha256": "5d586f15dda3694bbaed27314709bd56be9e72bf60613973b77bb9d966b15704",
+   "fetched_utc": "2026-11-09T03:52:15Z"
+  },
+  {
+   "file": "GL21-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL21-fmri.mat",
+   "bytes": 7826022,
+   "sha256": "b2869116f229db1224d83804610cfb84a09f727e5d917a5ccda6f115d254849e",
+   "fetched_utc": "2026-11-09T03:52:18Z"
+  },
+  {
+   "file": "GL22-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL22-fmri.mat",
+   "bytes": 6999797,
+   "sha256": "440265a99976df3dc5ec51db3a1a47778aac17f6aa818ed420fdfe96c952e211",
+   "fetched_utc": "2026-11-09T03:52:21Z"
+  },
+  {
+   "file": "GL23-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL23-fmri.mat",
+   "bytes": 5099863,
+   "sha256": "45e7c8afd372b0a71b8ece378d45f8e6f6b68f24c5be502994abda3bcb254e2e",
+   "fetched_utc": "2026-11-09T03:52:23Z"
+  },
+  {
+   "file": "GL24-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL24-fmri.mat",
+   "bytes": 6610348,
+   "sha256": "36bf8d96a61d5ce7d347983d7d771a64b6da6bc741af47b9e41199b1bab49434",
+   "fetched_utc": "2026-11-09T03:52:33Z"
+  },
+  {
+   "file": "GL25-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL25-fmri.mat",
+   "bytes": 7119734,
+   "sha256": "25f12ddd6b848240368d4d55ccc2dab262de9b29974ed592aa1fedf6c9eac16c",
+   "fetched_utc": "2026-11-09T03:52:36Z"
+  },
+  {
+   "file": "GL26-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL26-fmri.mat",
+   "bytes": 7651547,
+   "sha256": "b4d6846a75628b09f3e0ca58236f8183261fe44c4787c243b1d9473d3d97e7cb",
+   "fetched_utc": "2026-11-09T03:52:39Z"
+  },
+  {
+   "file": "GL27-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL27-fmri.mat",
+   "bytes": 7988284,
+   "sha256": "f751bcf49a704881f6c6ac8644ce4e5ccf85864cb8c0afd9a3d23130968100c4",
+   "fetched_utc": "2026-11-09T03:52:42Z"
+  },
+  {
+   "file": "GL29-fmri.mat",
+   "url": "https://raw.githubusercontent.com/psb629/GloveProject_GL/main/behav_data/GL29-fmri.mat",
+   "bytes": 7786313,
+   "sha256": "6905776e02f173f54fea2aea6f30f00352384b016ebd1f85e78f884cbd2ac964",
+   "fetched_utc": "2026-11-09T03:52:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Park2024_SciRep.zip"
+}

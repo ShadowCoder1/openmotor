@@ -1,0 +1,266 @@
+{
+ "id": "Schutz2015_FrontHumNeurosci",
+ "module": "saccade",
+ "rows": 46512,
+ "subjects": 67,
+ "persons": 38,
+ "zip_bytes": 1345024,
+ "zip_sha256": "26e8af90fa73d35295d19af676137c8d4675f88b32dde8f891f3b3d95d2c980b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "experiment files have 54 data columns, baseline files 32",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every experiment file has 700 trials (100 pre-adaptation, 300 adaptation, 300 post-adaptation)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers run 1-700 in order inside every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial type follows position: 1-100 pre, 101-400 adaptation, 401-700 post",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline files: 29 participants, every trial row kept",
+   "ok": true,
+   "detail": "29 participants, 5912 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the black square is at the array centre (position 4) in every pre- and post-adaptation trial and at position 2 (above) or 6 (below) in every adaptation trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' 'vertical target position' column is 0 or the same signed 1.52 deg offset as the black square's position",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target step: end minus start of the array position is 9 deg in every trial (direction-normalised frame)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "gain equals horizontal amplitude divided by 9 deg",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: number of observers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: number of observers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "observers with data (all experiments)",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Methods, Observers (38 students)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "observers in the fixation baseline",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Design (fixation baseline n = 29)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "black square above the array centre exactly when -(trial direction x adaptation direction) is +1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 easy: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 0.8649390657937888,
+   "reported": 0.87,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 easy: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": -1.0330789326632266,
+   "reported": -1.03,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 difficult: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 1.0886110335262562,
+   "reported": 1.06,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1 difficult: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": -1.0610920758362972,
+   "reported": -1.07,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 valid: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 1.0535272754712002,
+   "reported": 1.02,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 valid: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": -0.8995313660961362,
+   "reported": -0.86,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 random: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 1.0569937826542692,
+   "reported": 1.08,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2 random: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": -1.0674549548819163,
+   "reported": -1.04,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 target_selection: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 1.2840315561503464,
+   "reported": 1.25,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 target_selection: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": -1.1466989078117533,
+   "reported": -1.16,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4 no_instruction: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 0.5015350563216687,
+   "reported": 0.5,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4 no_instruction: mean vertical amplitude, downward adaptation, last 50 adaptation trials (deg)",
+   "computed": 0.11461792103790544,
+   "reported": 0.09,
+   "tol": 0.05,
+   "source": "Results, Vertical amplitude at the end of adaptation (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent of adaptation-experiment trials excluded",
+   "computed": 9.916256157635473,
+   "reported": 9.5,
+   "tol": 0.6,
+   "source": "Methods, Eye-movement recording (about 9.5 %)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept: 40600 experiment rows and 5912 baseline rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: latency -1500 to 2100 ms, |horizontal amplitude| < 40 deg, |vertical amplitude| < 25 deg",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": null,
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/579835/files/SchutzSouto_FrontHumNeurosci_2015.zip/content",
+   "bytes": 1465704,
+   "sha256": "de1783720597bf6116aaac5e2e8d654318e7827b603f22511b14f599b63349dd",
+   "fetched_utc": "2026-11-09T08:29:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schutz2015_FrontHumNeurosci.zip"
+}

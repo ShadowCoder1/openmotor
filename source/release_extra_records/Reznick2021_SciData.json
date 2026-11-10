@@ -1,0 +1,113 @@
+{
+ "id": "Reznick2021_SciData",
+ "module": "walking",
+ "rows": 8252,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 10192930,
+ "zip_sha256": "fbdfaf6ccc01712521d5f3912a41741766d2136958d8965c76157543417d28be",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "10 participants, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every stride has a duration between 0.3 and 10 s (the longest are start-from-rest acceleration strides)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "curve table has one row per stride",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "curve values are finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 30.4,
+   "reported": 30.4,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 14.87413863052244,
+   "reported": 14.9,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass (kg)",
+   "computed": 74.62999992370605,
+   "reported": 74.6,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass (kg)",
+   "computed": 9.678434044539848,
+   "reported": 9.7,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height (m)",
+   "computed": 1.7278000000000002,
+   "reported": 1.73,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's standard deviations (age 14.9, mass 9.7) are population SDs (divided by n), which is how they were reproduced.",
+  "The data paper's Usage Notes say AB04 performed 59 strides walking at 1.0 m/s on the -10 degree slope; the deposit holds 53 strides for that task (and 59 for 1.2 m/s at -10 degrees), so that number was not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "Normalized.mat",
+   "url": "https://ndownloader.figshare.com/files/28998063",
+   "bytes": 1532987696,
+   "sha256": "c83cad34fca5748dd565c212a335658c2e7ea0a5be1b162c6b7d70b010c03dae",
+   "fetched_utc": "2026-11-10T01:01:02Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Reznick2021_SciData.zip"
+}

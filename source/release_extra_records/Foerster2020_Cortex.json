@@ -1,0 +1,107 @@
+{
+ "id": "Foerster2020_Cortex",
+ "module": "vr_tool_manipulation",
+ "rows": 10392,
+ "subjects": 39,
+ "persons": 39,
+ "zip_bytes": 260266,
+ "zip_sha256": "6d6f528d3c6b4325979f45ca9ed9de028dea3453d594502de0908e0b8a79b0c7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "novel tools per participant (6 meshes, each with its own manipulation)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Borghi (2020), J Cogn 3(1), describing this study: 'six novel 3D tools' (the full text of the paper itself was not reachable)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct labels (pseudo-words)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Abstract: labelled and unlabelled tools; three labels (SNI, UNT, LUM); which tool carries which label differs between participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "10,392 rows kept; 39 participant codes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RT differences reproduce from the other columns (< 0.5 ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reach onset <= grasp <= action end on at least 97% of rows",
+   "ok": true,
+   "detail": "268 rows violate the order"
+  },
+  {
+   "kind": "internal",
+   "what": "the participants of the success tables are 38 of the trial table's 39, with 2 excluded in both authors' scripts (6 and 34)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "success percentage = successes / (successes + failures)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' analysed sample after excluding subjects 6 and 34",
+   "ok": true,
+   "detail": "37 participants in the reaction-time analysis"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text of the paper could not be read when this file was made (publisher and repository pages refused automated access), so no result statistic of the paper was reproduced; the published checks are the tool design (six tools, three labelled) reported in a secondary description of the study. Paper title, venue and DOI were checked against Crossref."
+ ],
+ "sources": [
+  {
+   "file": "ReactionTimes_dataset.csv",
+   "url": "https://zenodo.org/api/records/4937820/files/ReactionTimes_dataset.csv/content",
+   "bytes": 2098941,
+   "sha256": "710af0d6c1c3381bc9a04f33f68af155e1871a850cb921a6c04a1e6803cd2d50",
+   "fetched_utc": "2026-11-09T07:04:04Z"
+  },
+  {
+   "file": "SuccessTask_Move_dataset.csv",
+   "url": "https://zenodo.org/api/records/4937820/files/SuccessTask_Move_dataset.csv/content",
+   "bytes": 6796,
+   "sha256": "6516951bb1c3713ba4303c662f0e82ba932e759b262d1e9846ebb591d8a264ec",
+   "fetched_utc": "2026-11-09T07:04:15Z"
+  },
+  {
+   "file": "SuccessTask_Use_dataset.csv",
+   "url": "https://zenodo.org/api/records/4937820/files/SuccessTask_Use_dataset.csv/content",
+   "bytes": 6918,
+   "sha256": "c4db89fb547276cce82d5285b8b6411f3ecac7d5aade3758138bc34a59de950a",
+   "fetched_utc": "2026-11-09T07:04:20Z"
+  },
+  {
+   "file": "SuccessTask_script.R",
+   "url": "https://zenodo.org/api/records/4937820/files/SuccessTask_script.R/content",
+   "bytes": 13633,
+   "sha256": "4eb4d57b77794beae2611286991aa5d470e363f7b493b2a4fcacc7e564a383a8",
+   "fetched_utc": "2026-11-09T07:04:25Z"
+  },
+  {
+   "file": "ReactionTimes_script.R",
+   "url": "https://zenodo.org/api/records/4937820/files/ReactionTimes_script.R/content",
+   "bytes": 15309,
+   "sha256": "0df5bc2268a600da87d7a9d126a6e31c31c45c7031a762f2d8f8e97d2d3c9baa",
+   "fetched_utc": "2026-11-09T07:04:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Foerster2020_Cortex.zip"
+}

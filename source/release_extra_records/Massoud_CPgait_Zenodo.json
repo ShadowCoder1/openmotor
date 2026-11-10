@@ -1,0 +1,47 @@
+{
+ "id": "Massoud_CPgait_Zenodo",
+ "module": "summary",
+ "rows": 1160,
+ "subjects": 19,
+ "persons": 19,
+ "zip_bytes": 13019,
+ "zip_sha256": "b69d7397bb7a3bafad1f516963b990a0bc401c59f0b1606224e30a3dada0cc25",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children with cerebral palsy",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "CP rows = 10 children x 2 limbs x 2 sessions x 20 values",
+   "ok": true,
+   "detail": "800"
+  },
+  {
+   "kind": "internal",
+   "what": "typically developing rows = 9 children x 2 limbs x 20 values",
+   "ok": true,
+   "detail": "360"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes 12 typically developing children (and 10 in its tables); the spreadsheet has 9, which is what is released.",
+  "Sheet title cells say 'after surgery' on both patient sheets; the sheet names are used."
+ ],
+ "sources": [
+  {
+   "file": "Data.xlsx",
+   "url": "https://zenodo.org/api/records/12793487/files/Data.xlsx/content",
+   "bytes": 134354,
+   "sha256": "6068942eb83647cedf6e03d27e5aaadef5f6eeee82f3d2bad9c2639858295ce0",
+   "fetched_utc": "2026-11-09T15:35:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Massoud_CPgait_Zenodo.zip"
+}

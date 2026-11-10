@@ -1,0 +1,338 @@
+{
+ "id": "Forano2020_PLoSCompBiol",
+ "module": "force_field_reaching",
+ "rows": 29630,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 657953,
+ "zip_sha256": "e329ff77ce0ebdea642c48017e71a017976b5c4a31f7d61029eb5e42235298cf",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "DualAdaptation_exp1.mat matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "DualAdaptation_exp2.mat matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 1: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 2: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 3: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 4: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 5: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 6: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 7: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 8: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 9: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 participant 10: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 1: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 2: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 3: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 4: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 5: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 6: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 7: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 8: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 9: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 participant 10: one field code per cue in adaptation, different for the two cues",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial index runs 1..N without gaps for each participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, experiment 1",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 10 per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp1: pre-exposure trials per participant (10 blocks of 16)",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp1: adaptation trials per participant",
+   "computed": 752.0,
+   "reported": 752.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp1: error-clamp trials per participant",
+   "computed": 320.0,
+   "reported": 320.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp1: de-adaptation trials, mean",
+   "computed": 211.2,
+   "reported": 211.0,
+   "tol": 1.0,
+   "source": "Methods, Experimental paradigm (mean +- SE)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp1: de-adaptation trials, SE",
+   "computed": 29.77127623883277,
+   "reported": 30.0,
+   "tol": 3.0,
+   "source": "Methods, Experimental paradigm (mean +- SE)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "exp1: de-adaptation lasts 64 to 400 trials (4 to 25 blocks)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1: 16-trial blocks with 8 trials per cue (except the last, partial block of de-adaptation in Exp 2, where the criterion ended the phase mid-block)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "exp1: adaptation blocks",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, experiment 2",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 10 per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp2: pre-exposure trials per participant (10 blocks of 16)",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp2: adaptation trials per participant",
+   "computed": 960.0,
+   "reported": 960.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp2: error-clamp trials per participant",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp2: de-adaptation trials, mean",
+   "computed": 239.8,
+   "reported": 240.0,
+   "tol": 1.0,
+   "source": "Methods, Experimental paradigm (mean +- SE)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exp2: de-adaptation trials, SE",
+   "computed": 25.983242462958483,
+   "reported": 26.0,
+   "tol": 3.0,
+   "source": "Methods, Experimental paradigm (mean +- SE)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "exp2: de-adaptation lasts 64 to 320 trials (4 to 20 blocks)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2: 16-trial blocks with 8 trials per cue (except the last, partial block of de-adaptation in Exp 2, where the criterion ended the phase mid-block)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "exp2: adaptation blocks",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial of every participant kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "error-clamp phase is channel trials only; pre-exposure has no field trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each trial has exactly one of MPE and force compensation",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Zenodo and Dryad records list CC0, while the deposit's own readme states CC BY 4.0; the stricter readme license is used here."
+ ],
+ "sources": [
+  {
+   "file": "DualAdaptation_exp1.mat",
+   "url": "https://zenodo.org/api/records/4552826/files/DualAdaptation_exp1.mat/content",
+   "bytes": 136973532,
+   "sha256": "626b1c116f0a17782fd4ff0992face41f9806cd3e04fe990794ca2299a66b988",
+   "fetched_utc": "2026-11-09T05:47:22Z"
+  },
+  {
+   "file": "DualAdaptation_exp2.mat",
+   "url": "https://zenodo.org/api/records/4552826/files/DualAdaptation_exp2.mat/content",
+   "bytes": 98669613,
+   "sha256": "a52bf86a0ceb06998a4e84513d83969b1e75b376c964457053326f9ec94a8b64",
+   "fetched_utc": "2026-11-09T05:48:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Forano2020_PLoSCompBiol.zip"
+}

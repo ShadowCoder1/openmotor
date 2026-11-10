@@ -1,0 +1,161 @@
+{
+ "id": "Kumar2020_PNAS",
+ "module": "summary",
+ "rows": 604,
+ "subjects": 324,
+ "persons": 324,
+ "zip_bytes": 15091,
+ "zip_sha256": "601cdf73927f776e53606189e6fe60fe2da2b55a59175f5690891211b05f364c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Exp1 early learning, arm effect F(1,56)",
+   "computed": 0.986092819896335,
+   "reported": 0.9861,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 early learning, trial set effect F(3,56)",
+   "computed": 1.2873865001750284,
+   "reported": 1.2874,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 early learning, arm x trial set F(3,56)",
+   "computed": 0.8275762379081254,
+   "reported": 0.8276,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 end of learning, arm effect F(1,56)",
+   "computed": 0.07779801106951718,
+   "reported": 0.0778,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 end of learning, trial set effect F(3,56)",
+   "computed": 0.00958086693067022,
+   "reported": 0.0096,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 end of learning, arm x trial set F(3,56)",
+   "computed": 0.250771642513738,
+   "reported": 0.2508,
+   "tol": 5e-05,
+   "source": "Results, Naive Learning Was Not Different between Arms or Learning Trial Sets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 participants",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Results / Methods, Experiment 1: n = 64",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 participants learning with the left arm",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1: n = 32 per arm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Right arm generalization: block x trial set F(3,56)",
+   "computed": 5.912694633572216,
+   "reported": 5.9127,
+   "tol": 5e-05,
+   "source": "Results, Generalization Was Asymmetric and Scaled with Number of Learning Trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 group sizes (left PPC real, left sham, right PPC real, right sham)",
+   "computed": 17171515.0,
+   "reported": 17171515.0,
+   "tol": 0,
+   "source": "Fig 4 legend: P3 n = 17 real, 17 sham; P4 n = 15 real, 15 sham",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 first eight learning trials, group effect F(3,60)",
+   "computed": 0.3895264747748917,
+   "reported": 0.3895,
+   "tol": 5e-05,
+   "source": "Results, PPC Disruption Impeded Learning Based on the Slow Process",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 end of learning, group effect F(3,60)",
+   "computed": 7.832594069876134,
+   "reported": 7.8326,
+   "tol": 5e-05,
+   "source": "Results, PPC Disruption Impeded Learning Based on the Slow Process",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 real and sham PPC groups (12 each) and M1 group (12), naive group (8)",
+   "computed": 13328.0,
+   "reported": 13328.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 and Control Experiment: real n = 12, sham n = 12, M1 n = 12, naive n = 8",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1 has 8 participants in each of 8 cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 4F early mean over 25 trials correlates with Fig 4C/4D first-8 mean for every group (same participant order)",
+   "ok": true,
+   "detail": "Left PPC: 0.68, Left Sham: 0.63, Right PPC: 0.74, Right Sham: 0.78"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's left-arm generalization statistics (block F(1,56) = 0.0196, trial set F(3,56) = 0.6076, interaction F(3,56) = 1.5716) did not reproduce from the Fig 2A sheet with a 2 x 4 between-participant ANOVA (here 0.0919, 0.4237 and 1.3435), although the right-arm interaction from the Fig 2B sheet (F = 5.9127) and the Experiment 1 and 2 statistics do; the cause is not known (possibly a different trial window or a different analysis for the left arm), so the Fig 2A values are given as they are in the sheet.",
+  "The paper's trial-by-trial learning curves, model parameters and permutation tests are not rebuilt: the deposit holds only group means across trials and per-participant means. Windows for Exp3 early and late learning and for Fig 2 are not stated in the sheets."
+ ],
+ "sources": [
+  {
+   "file": "Kumar_et_al_2020_data.xlsx",
+   "url": "https://ndownloader.figshare.com/files/22879838",
+   "bytes": 104348,
+   "sha256": "1fd80f54b4257b89b887a23e0f06e9959e05627c568e4b100304407e6e025c49",
+   "fetched_utc": "2026-11-09T10:38:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kumar2020_PNAS.zip"
+}

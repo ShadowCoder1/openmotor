@@ -1,0 +1,7 @@
+{
+ "id": "Reid2018_JExpPsycholHPP",
+ "skipped": true,
+ "reason": "no number to check against",
+ "details": "Retried 2026-11-09: the accepted manuscript (pure.qub.ac.uk/files/124685150, also core.ac.uk/download/74408075.pdf) still answers HTTP 403 to WebFetch and to a plain download on the PC, Europe PMC has no full text (not in PMC, not open access) and the abstract has no numbers, so no published check can be made. Per-trial MAT files for Experiments 1-5 are on the PC in raw_extra (analysed data; condition codes only inferable from the authors code). Retry when the paper text can be obtained by a person (for example pasted into the scratchpad) or from another open copy.",
+ "sources": []
+}

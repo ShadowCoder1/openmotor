@@ -1,0 +1,468 @@
+{
+ "id": "MaceiraElvira2022_SciAdv",
+ "module": "keypress",
+ "rows": 1036797,
+ "subjects": 114,
+ "persons": 114,
+ "zip_bytes": 15477572,
+ "zip_sha256": "80c55b11e36c4a1dbc2fb6e354f8615349ae5d268687cbcba47c61be225ce217",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "zenodo6490799.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's rows are contiguous in the authors' file",
+   "ok": true,
+   "detail": "114 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "age and age group are constant within each participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant of the stimulation list has key presses; one participant with key presses is not in the list (the participant the authors excluded, Methods: one middle-aged participant with arthritis)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimulation code 1 = verum and 2 = placebo (sham): every participant in the authors' SICI file labelled Verum has code 1 and every one labelled Sham has code 2",
+   "ok": true,
+   "detail": "{(1, 'Verum'): 26, (2, 'Sham'): 27}"
+  },
+  {
+   "kind": "internal",
+   "what": "participant codes of the two experiments differ in one digit (used only to place the excluded participant)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the behavioral file and the stimulation list agree on age for all but 3 participants and on age group for all but 1",
+   "ok": true,
+   "detail": "3 ages, 1 age group"
+  },
+  {
+   "kind": "internal",
+   "what": "block type and catch flag are constant within each block label (participant, day, block type, block number)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "days run 1, 2, 3, 4, 5, 10, (20), 60 in file order for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each training day has seven blocks (day 1 after one baseline block) with one catch block, at block 4, 3, 5, 3 and 4 on days 1-5; each follow-up day has three blocks (Methods, Motor task); one participant has no catch block on days 1 and 2",
+   "ok": true,
+   "detail": "{(True, True): 844, (True, False): 2}"
+  },
+  {
+   "kind": "internal",
+   "what": "visits: every participant has days 1-5 and 10, all but one day 60, and 49 participants also day 20 (not reported in the paper)",
+   "ok": true,
+   "detail": "Counter({(1, 2, 3, 4, 5, 10, 60): 64, (1, 2, 3, 4, 5, 10, 20, 60): 49, (1, 2, 3, 4, 5, 10): 1})"
+  },
+  {
+   "kind": "internal",
+   "what": "block labels in more than one run of rows",
+   "ok": true,
+   "detail": "43 of 4932 labels; 4977 runs"
+  },
+  {
+   "kind": "internal",
+   "what": "time is in units of 0.1 ms: the last press of 99% of block runs falls 83-91 s after the block start (90-s blocks, Methods)",
+   "ok": true,
+   "detail": "median 89.77 s, max 99.88 s over 4931 runs"
+  },
+  {
+   "kind": "internal",
+   "what": "answer -1 rows (placeholders) are always errors, never two in a row, and the next row repeats their interval",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "placeholders inside a block split the interval between the presses around them evenly (within 1 unit)",
+   "ok": true,
+   "detail": "2449 of 2449 inside a block; 2471 placeholders in all"
+  },
+  {
+   "kind": "internal",
+   "what": "deltaTime = time minus the previous press's time (= time at a block's first press), except next to placeholders",
+   "ok": true,
+   "detail": "0 other rows (block restarts, a clock jump)"
+  },
+  {
+   "kind": "internal",
+   "what": "time decreases within a run on a few rows (kept as the authors' values)",
+   "ok": true,
+   "detail": "6 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "day 1 catch blocks use 'Catch block 1' of the key file (its elements fit the authors' error flags best)",
+   "ok": true,
+   "detail": "1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "day 2 catch blocks use 'Catch block 2' of the key file (its elements fit the authors' error flags best)",
+   "ok": true,
+   "detail": "1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "day 3 catch blocks use 'Catch block 3' of the key file (its elements fit the authors' error flags best)",
+   "ok": true,
+   "detail": "0.997"
+  },
+  {
+   "kind": "internal",
+   "what": "day 4 catch blocks use 'Catch block 4' of the key file (its elements fit the authors' error flags best)",
+   "ok": true,
+   "detail": "1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "day 5 catch blocks use 'Catch block 5' of the key file (its elements fit the authors' error flags best)",
+   "ok": true,
+   "detail": "1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "in complete nine-press sequences and the cut-off last sequence of a block, the authors' error flag = (key pressed != the sequence element at that position) on at least 99.9% of presses; elsewhere (sequences with an extra press) the authors aligned presses to elements themselves, so no element is given",
+   "ok": true,
+   "detail": "0.99973 of 1014713 presses (22084 presses without an element)"
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order; trial counts each participant's rows from 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: keys pressed 2-5 or the placeholder -1; intervals 0-35 s apart from one clock jump; times 0-100 s into the block",
+   "ok": true,
+   "detail": "interval -12002.5 to 34470.8 ms; time 60.4-99880.5 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors rows: the excluded participant and the day-20 visits",
+   "ok": true,
+   "detail": "38904 of 1036797 rows (3.8%)"
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (113 volunteers, after excluding one)",
+   "computed": 113.0,
+   "reported": 113.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants the authors excluded",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young participants, both experiments",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young mean age, both experiments (the paper's value matches the rows truncated to one decimal; tolerance one unit of the last digit)",
+   "computed": 24.585365853658537,
+   "reported": 24.5,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle-aged participants, both experiments",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "middle-aged mean age, both experiments (the paper's value matches the rows truncated to one decimal; tolerance one unit of the last digit)",
+   "computed": 57.76470588235294,
+   "reported": 57.7,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants, both experiments",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older mean age, both experiments (the paper's value matches the rows truncated to one decimal; tolerance one unit of the last digit)",
+   "computed": 72.34210526315789,
+   "reported": 72.3,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 61.0,
+   "reported": 61.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 young participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 young mean age (tolerance one unit of the last digit)",
+   "computed": 24.727272727272727,
+   "reported": 24.7,
+   "tol": 0.1,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 middle-aged participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 middle-aged mean age (tolerance one unit of the last digit)",
+   "computed": 57.4,
+   "reported": 57.4,
+   "tol": 0.1,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 older participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 older mean age (tolerance one unit of the last digit)",
+   "computed": 74.06666666666666,
+   "reported": 74.1,
+   "tol": 0.1,
+   "source": "Results, 'Age-related behavioral differences in the execution and practice of a sequence-tapping task'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 young participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 young mean age (tolerance one unit of the last digit)",
+   "computed": 24.42105263157895,
+   "reported": 24.4,
+   "tol": 0.1,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 middle-aged participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 middle-aged mean age (tolerance one unit of the last digit)",
+   "computed": 58.05263157894737,
+   "reported": 58.0,
+   "tol": 0.1,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 older participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 older mean age (tolerance one unit of the last digit)",
+   "computed": 71.21739130434783,
+   "reported": 71.2,
+   "tol": 0.1,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 young participants with verum stimulation",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 middle-aged participants with verum stimulation",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 older participants with verum stimulation",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 young participants with placebo stimulation",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 middle-aged participants with placebo stimulation",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 older participants with placebo stimulation",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results, 'Motor training in combination with atDCS in an aging population'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per training day (six training blocks and one catch block)",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Motor task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per follow-up day",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Motor task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elements per sequence",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Motor task (a nine-digit sequence)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean ages of the two experiments pooled: the rows give 24.59 (young) and 57.76 (middle-aged) years, printed as 24.5 and 57.7 (truncated); the per-experiment means round to the printed values.",
+  "The behavioral file's age column differs from the stimulation list for three participants (by 1, 1 and 7 years) and its age group for one participant aged 65-66; the paper's numbers follow the list's ages and the behavioral file's groups, as here."
+ ],
+ "sources": [
+  {
+   "file": "zenodo6490799.zip",
+   "url": "https://zenodo.org/api/records/6490799/files/10.5281zenodo.6490799.zip/content",
+   "bytes": 9788292,
+   "sha256": "80dd7c5fc1e60b3cd4a9eadeca417df72eb4d4bae91fee417de6b601ed9ffa3e",
+   "fetched_utc": "2026-11-08T19:42:49Z"
+  },
+  {
+   "file": "code_zenodo6490843.zip",
+   "url": "https://zenodo.org/api/records/6490843/files/10.5281zenodo_6490843.zip/content",
+   "bytes": 16176739,
+   "sha256": "47eecb6d9a4fd97fdd322d09affccab0cfe424271433fcf3e473b8fc8d0e550d",
+   "fetched_utc": "2026-11-08T19:46:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/MaceiraElvira2022_SciAdv.zip"
+}

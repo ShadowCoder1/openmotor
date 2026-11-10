@@ -1,0 +1,546 @@
+{
+ "id": "Sombric2020_JNER",
+ "module": "walking",
+ "rows": 85374,
+ "subjects": 48,
+ "persons": 36,
+ "zip_bytes": 5067106,
+ "zip_sha256": "541d8afdddc13918639957a7d2581141fa520baaf5882f88ea5c7895c7809d01",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "48 stride sequences: 8 per young group and 12 stroke survivors with a flat and an incline session; the two sessions of each stroke survivor are paired by their order, which is Table 1's in both files (the stride counts below match Table 1 row by row, and sex agrees with Table 1 in both sessions)",
+   "ok": true,
+   "detail": "48 subjects, 36 persons"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride the deposit shares is kept, in its order, and lies in one of the authors' conditions",
+   "ok": true,
+   "detail": "85374 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "on >= 99% of strides, step_length_asymmetry = (step_length_fast - step_length_slow) / (sum) on every stride (labTools stepLengthAsym; positive when the fast, non-paretic or dominant leg takes the longer step)",
+   "ok": true,
+   "detail": "99.87% of strides within 1e-6, 108 strides differ (max 0.022); the deposit's values are kept"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_fast = leading_position_fast - trailing_position_slow on every stride (both at the fast heel strike)",
+   "ok": true,
+   "detail": "max |diff| 1e-08 m"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_slow = leading_position_slow - trailing_position_fast exactly for the young adults (X_fast at the closing slow heel strike), but not for the stroke files, whose labTools version took X_fast at the opening slow heel strike (median difference about 1 cm)",
+   "ok": true,
+   "detail": "young max 1e-08 m; stroke median 0.013 m"
+  },
+  {
+   "kind": "internal",
+   "what": "on the treadmill, feet land in front of the hip (leading > 0) and trail behind it (trailing < 0) on >= 99% of good strides",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "peak propulsion between 0 and 0.6 body weights on >= 99% of values (forces divided by 9.81 x body mass in computeForceParameters.m)",
+   "ok": true,
+   "detail": "100.00% of values; 2 values above 0.6 (max 10.11) are kept as shared"
+  },
+  {
+   "kind": "internal",
+   "what": "the deposit's affected side agrees with Table 1 wherever it is filled (the other entries are 'X' or missing), so fast_leg is the non-paretic side from Table 1",
+   "ok": true,
+   "detail": "12 of 12 agree"
+  },
+  {
+   "kind": "internal",
+   "what": "the incline-session condition notes give the Table 1 slope (5 or 8.5 deg) for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = labTools 'bad' flag (missing or disordered gait events, stride time out of range); getForceResults.m calls removeBadStrides before every outcome",
+   "ok": true,
+   "detail": "1685 strides (1.97%)"
+  },
+  {
+   "kind": "published",
+   "what": "P1 flat session: adaptation strides",
+   "computed": 907.0,
+   "reported": 907.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P1 flat session: post-adaptation strides",
+   "computed": 605.0,
+   "reported": 605.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P2 flat session: adaptation strides",
+   "computed": 867.0,
+   "reported": 867.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P2 flat session: post-adaptation strides",
+   "computed": 642.0,
+   "reported": 642.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P3 flat session: adaptation strides",
+   "computed": 617.0,
+   "reported": 617.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P3 flat session: post-adaptation strides",
+   "computed": 307.0,
+   "reported": 307.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P4 flat session: adaptation strides",
+   "computed": 901.0,
+   "reported": 901.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P4 flat session: post-adaptation strides",
+   "computed": 625.0,
+   "reported": 625.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P5 flat session: adaptation strides",
+   "computed": 606.0,
+   "reported": 606.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P5 flat session: post-adaptation strides",
+   "computed": 599.0,
+   "reported": 599.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P6 flat session: adaptation strides",
+   "computed": 907.0,
+   "reported": 907.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P6 flat session: post-adaptation strides",
+   "computed": 600.0,
+   "reported": 600.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P7 flat session: adaptation strides",
+   "computed": 589.0,
+   "reported": 589.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P7 flat session: post-adaptation strides",
+   "computed": 598.0,
+   "reported": 598.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P8 flat session: adaptation strides",
+   "computed": 905.0,
+   "reported": 905.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P8 flat session: post-adaptation strides",
+   "computed": 600.0,
+   "reported": 600.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P9 flat session: adaptation strides",
+   "computed": 903.0,
+   "reported": 903.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P9 flat session: post-adaptation strides",
+   "computed": 603.0,
+   "reported": 603.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P10 flat session: adaptation strides",
+   "computed": 908.0,
+   "reported": 908.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P10 flat session: post-adaptation strides",
+   "computed": 602.0,
+   "reported": 602.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P11 flat session: adaptation strides",
+   "computed": 913.0,
+   "reported": 913.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P11 flat session: post-adaptation strides",
+   "computed": 552.0,
+   "reported": 552.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P12 flat session: adaptation strides",
+   "computed": 931.0,
+   "reported": 931.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P12 flat session: post-adaptation strides",
+   "computed": 303.0,
+   "reported": 303.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P1 incline session: adaptation strides",
+   "computed": 609.0,
+   "reported": 609.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P1 incline session: post-adaptation strides",
+   "computed": 303.0,
+   "reported": 303.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P2 incline session: adaptation strides",
+   "computed": 301.0,
+   "reported": 301.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P2 incline session: post-adaptation strides",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P3 incline session: adaptation strides",
+   "computed": 368.0,
+   "reported": 368.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P3 incline session: post-adaptation strides",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P4 incline session: adaptation strides",
+   "computed": 406.0,
+   "reported": 406.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P4 incline session: post-adaptation strides",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P5 incline session: adaptation strides",
+   "computed": 452.0,
+   "reported": 452.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P5 incline session: post-adaptation strides",
+   "computed": 302.0,
+   "reported": 302.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P7 incline session: adaptation strides",
+   "computed": 605.0,
+   "reported": 605.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P7 incline session: post-adaptation strides",
+   "computed": 302.0,
+   "reported": 302.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P8 incline session: adaptation strides",
+   "computed": 608.0,
+   "reported": 608.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P8 incline session: post-adaptation strides",
+   "computed": 306.0,
+   "reported": 306.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P9 incline session: adaptation strides",
+   "computed": 602.0,
+   "reported": 602.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P9 incline session: post-adaptation strides",
+   "computed": 302.0,
+   "reported": 302.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P10 incline session: adaptation strides",
+   "computed": 519.0,
+   "reported": 519.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P10 incline session: post-adaptation strides",
+   "computed": 299.0,
+   "reported": 299.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P11 incline session: adaptation strides",
+   "computed": 497.0,
+   "reported": 497.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P11 incline session: post-adaptation strides",
+   "computed": 306.0,
+   "reported": 306.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P12 incline session: adaptation strides",
+   "computed": 450.0,
+   "reported": 450.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "P12 incline session: post-adaptation strides",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of women among the 12 stroke survivors",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 1 (the Methods text says 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, step length asymmetry in late adaptation, flat vs incline (t(11) = -3.68)",
+   "computed": -3.6466151153033626,
+   "reported": -3.68,
+   "tol": 0.05,
+   "source": "Results, Fig. 2c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, step length asymmetry deltaAdapt (late minus early adaptation), flat vs incline (t(11) = 0.33)",
+   "computed": 0.33011754428787277,
+   "reported": 0.33,
+   "tol": 0.02,
+   "source": "Results, Fig. 2d",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, non-paretic peak propulsion deltaAdapt, flat vs incline (t(11) = 0.1)",
+   "computed": 0.10179429892032452,
+   "reported": 0.1,
+   "tol": 0.02,
+   "source": "Results, Fig. 5d",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, paretic peak propulsion deltaAdapt, flat vs incline (t(10) = -1.04)",
+   "computed": -1.03580096912235,
+   "reported": -1.04,
+   "tol": 0.02,
+   "source": "Results, Fig. 5d",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 lists 597 adaptation and 300 post-adaptation strides for P6 in the incline session; the deposit has 611 and 305. The other 46 stride counts in Table 1 match exactly.",
+  "The deposit's ages differ from Table 1 for three sessions: 64 for P2 and 80 for P11 in the flat session (Table 1: 55 and 75) and 22 for P9 in the incline session (Table 1: 52); they are kept as shared. The Methods text says 4 women, Table 1 and the deposit 5.",
+  "With the authors' epochs the paired t-values for baseline step length asymmetry (0.69, paper 1.08) and for after-effects (-2.12, paper -3.21) do not reproduce, nor do the propulsion t-values of Fig. 5 (their stroke-specific results function is not in the public code)."
+ ],
+ "sources": [
+  {
+   "file": "StudyData.mat",
+   "url": "https://osf.io/download/thwdq/",
+   "bytes": 5681458,
+   "sha256": "4b1a0c3d011602432dd2b5ae652588079ad21a9342b43c42e56f7f5759f42130",
+   "fetched_utc": "2026-11-08T19:44:19Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sombric2020_JNER.zip"
+}

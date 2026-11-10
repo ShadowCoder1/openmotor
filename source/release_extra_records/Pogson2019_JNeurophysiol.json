@@ -1,0 +1,149 @@
+{
+ "id": "Pogson2019_JNeurophysiol",
+ "module": "head_impulse",
+ "rows": 13860,
+ "subjects": 474,
+ "persons": 80,
+ "zip_bytes": 744210,
+ "zip_sha256": "62baa02aaf8617d8c8f57e08e21de8bdaad69cb59495b866c18af100452eba47",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "13860 rows, 80 participants, 6 canals, 12408 head impulses",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "head and VOR values are identical on all rows of one impulse",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "saccade number 0 rows have no saccade values; rows with a saccade number >= 1 start 50 ms or later, number -1 earlier",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant sex, decade and age group are constant within a participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "velocity category agrees with the head peak velocity",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "normal subjects in the study",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, RL canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.9737507791262137,
+   "reported": 0.98,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, RA canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.9261080427440633,
+   "reported": 0.91,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, LP canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.8004692425925926,
+   "reported": 0.79,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, LL canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.9272394264950167,
+   "reported": 0.95,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, LA canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.8691650527363185,
+   "reported": 0.86,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean VOR gain, RP canal impulses (MacDougall 2013 algorithm)",
+   "computed": 0.7583221447828257,
+   "reported": 0.76,
+   "tol": 0.025,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly (>60 y) minus younger mean gain, left posterior canal",
+   "computed": -0.08167721895329472,
+   "reported": -0.09,
+   "tol": 0.02,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly (>60 y) minus younger mean gain, left anterior canal",
+   "computed": 0.084698418117647,
+   "reported": 0.09,
+   "tol": 0.02,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit was re-edited in June 2026 (all five VOR gain values added), and its numbers do not reproduce all of the paper: mean gains for the six canals agree within 0.025 of the abstract, but refixation saccades here average 0.95 deg amplitude, 57.1 deg/s peak velocity and 303 ms latency against 1.11 deg, 63.9 deg/s and 262 ms in the abstract, and 53% of impulses have a saccade here against 40.2% (per-participant mean) in the abstract. The paper's exact saccade selection is not stated in the deposit and was not tested further."
+ ],
+ "sources": [
+  {
+   "file": "DataSheet.csv",
+   "url": "https://ndownloader.figshare.com/files/65892030",
+   "bytes": 2426947,
+   "sha256": "24aff5237c94e01062af8043ce2d0cac93c37e226b80a556dfd04109ecc41645",
+   "fetched_utc": "2026-11-09T03:33:47Z"
+  },
+  {
+   "file": "DatasheetLegend.txt",
+   "url": "https://ndownloader.figshare.com/files/65892027",
+   "bytes": 2354,
+   "sha256": "189a3b4150f7ab6aa60a3ab0b758eb4696a50e231675fd3ff07ebd87928130e9",
+   "fetched_utc": "2026-11-09T03:33:57Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Pogson2019_JNeurophysiol.zip"
+}

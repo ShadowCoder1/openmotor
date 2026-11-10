@@ -1,0 +1,7 @@
+{
+ "id": "Malesevic2021_SciData",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Figshare collection 5090861 has one MATLAB file per subject (20 subjects); a single file (subject 5) is 7.0 GB and the set is about 140 GB of high-density sEMG, over the 5 GB limit. License CC0 as listed.",
+ "sources": []
+}

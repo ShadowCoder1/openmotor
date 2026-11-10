@@ -1,0 +1,231 @@
+{
+ "id": "Seethapathi2015_BiolLett",
+ "module": "timeseries",
+ "rows": 103,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 44751469,
+ "zip_sha256": "44d7491e7d8e4d5e635e53eb3fc8346a0646d2ea76320e04afdc5e15332ac948",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (Expt 1)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean (years)",
+   "computed": 23.25,
+   "reported": 23.25,
+   "tol": 0.005,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD (years)",
+   "computed": 2.0816659994661326,
+   "reported": 2.1,
+   "tol": 0.05,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height mean (cm)",
+   "computed": 177.08125,
+   "reported": 177.08,
+   "tol": 0.005,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height SD (cm)",
+   "computed": 7.358824068196403,
+   "reported": 7.4,
+   "tol": 0.05,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass SD (kg)",
+   "computed": 12.942231646821966,
+   "reported": 12.94,
+   "tol": 0.005,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with oscillating trials at both speeds",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with oscillating trials at 1.12 m/s only",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subjects with oscillating trials at 1.56 m/s only",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods (a)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in preferred-speed experiment",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (b)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distances in preferred-speed experiment",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (b)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "time runs at 10 ms per sample (exceptions listed in README)",
+   "ok": true,
+   "detail": "[('6', 1, 63995, 641.97)]"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = recordings with data",
+   "ok": true,
+   "detail": "103"
+  },
+  {
+   "kind": "internal",
+   "what": "all samples kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's mass column averages 76.01 kg, the paper prints 75.99 kg; the paper's value is not checked.",
+  "One recording (constant 1.12 m/s trial of the participant coded S0006) has a time column that runs 2 s past its sample count x 10 ms, and about 6900 samples with missing positions; both are kept as shared."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/4959123/files/README.txt/content",
+   "bytes": 810,
+   "sha256": "3d5303b235a8ca2951654d4b9388c903c900cbd5ac33905ec702d71b0513876f",
+   "fetched_utc": "2026-11-09T21:31:54Z"
+  },
+  {
+   "file": "MetabolicData_AllSubjects.txt",
+   "url": "https://zenodo.org/api/records/4959123/files/MetabolicData_AllSubjects.txt/content",
+   "bytes": 4026,
+   "sha256": "ec37e20469c6eaf6f44818fa89f86a59fec131805072b4f5380d096c00b11936",
+   "fetched_utc": "2026-11-09T21:31:59Z"
+  },
+  {
+   "file": "Dat_PreferredWalkingSpeeds.txt",
+   "url": "https://zenodo.org/api/records/4959123/files/Dat_PreferredWalkingSpeeds.txt/content",
+   "bytes": 10463,
+   "sha256": "d2fad4d8f53d57ff9d9199e549e460bf9cd5db1ecd5ed53cdb5f9371ef6d4b07",
+   "fetched_utc": "2026-11-09T21:32:14Z"
+  },
+  {
+   "file": "ConstantSpeedTrial1_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/ConstantSpeedTrial1_SacralMotion.csv/content",
+   "bytes": 15137343,
+   "sha256": "ebede8d918a1cf03f05c854fc492f20c3de91ab39917968417822e3a26314e82",
+   "fetched_utc": "2026-11-09T21:32:45Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial1_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial1_SacralMotion.csv/content",
+   "bytes": 16200203,
+   "sha256": "ce06cd75c7e6eef4aee42c9d508060b4a9af321a28c1248e6353afdc906f89d4",
+   "fetched_utc": "2026-11-09T21:33:02Z"
+  },
+  {
+   "file": "ConstantSpeedTrial2_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/ConstantSpeedTrial2_SacralMotion.csv/content",
+   "bytes": 14622518,
+   "sha256": "6a6b0b1b9f5460d4792a60d7c83edd8340fe85cc7c94c1c85703c95b4afeae45",
+   "fetched_utc": "2026-11-09T21:33:46Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial2_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial2_SacralMotion.csv/content",
+   "bytes": 16102626,
+   "sha256": "37624ee6f3c643c5dd7aeab9cbf3df2e4b24054eda730efb4ef71606eab4aa40",
+   "fetched_utc": "2026-11-09T21:34:07Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial3_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial3_SacralMotion.csv/content",
+   "bytes": 15579174,
+   "sha256": "33a6086983a4e317a96da92a49c3b861162be87a58c3351c85d15d9e1d06dea0",
+   "fetched_utc": "2026-11-09T21:34:29Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial4_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial4_SacralMotion.csv/content",
+   "bytes": 14270052,
+   "sha256": "8253a502fe6247fd8deb70589d879ed81c298e68056e1153820fcd52c67abfd9",
+   "fetched_utc": "2026-11-09T21:34:56Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial5_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial5_SacralMotion.csv/content",
+   "bytes": 13878811,
+   "sha256": "4ba09a7be32d166b44eabc40570a2ffc6267c6e7c22d1f2d27f15674aced5c4c",
+   "fetched_utc": "2026-11-09T21:35:16Z"
+  },
+  {
+   "file": "OscillatingSpeedTrial6_SacralMotion.csv",
+   "url": "https://zenodo.org/api/records/4959123/files/OscillatingSpeedTrial6_SacralMotion.csv/content",
+   "bytes": 14312045,
+   "sha256": "855494fb1d50a5d9be396e5bbcbf08b813c88f8d974ed41dfd85de50ea6f12cb",
+   "fetched_utc": "2026-11-09T21:35:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Seethapathi2015_BiolLett.zip"
+}

@@ -1,0 +1,86 @@
+{
+ "id": "VanWaes2019_JORS",
+ "module": "summary",
+ "rows": 156138,
+ "subjects": 491,
+ "persons": 433,
+ "zip_bytes": 2093212,
+ "zip_sha256": "a50cb71e5612841e6a55063ef02bfa02025048d66f2bda96c3126f8eeabd2812",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "491 tests, one row per test in every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "46 subset files besides session.csv",
+   "ok": true,
+   "detail": "45"
+  },
+  {
+   "kind": "internal",
+   "what": "persons with more than one test",
+   "ok": true,
+   "detail": "55 tests flagged repetition (of which 51 share a participant key with another test in this subset), 433 persons"
+  },
+  {
+   "kind": "internal",
+   "what": "score = cpm x correctness / 100 (to rounding)",
+   "ok": true,
+   "detail": "max deviation 0.000"
+  },
+  {
+   "kind": "published",
+   "what": "largest gap between cpm and 60000 / mean inter-key interval over all 45 subsets x 491 tests (cpm is rounded to whole numbers)",
+   "computed": 0.8915662650601917,
+   "reported": 0.0,
+   "tol": 1.0,
+   "source": "Copy task analysis ('cpm' ... specifically 60 000 (ms)/mean IKI (ms))",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "about 500 tests, English, ages 21-25 (Zenodo description)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every test has the same number of rows",
+   "ok": true,
+   "detail": "318"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 491 x (3 + 45 x 7)",
+   "ok": true,
+   "detail": "156138"
+  },
+  {
+   "kind": "internal",
+   "what": "one participants row per person",
+   "ok": true,
+   "detail": "433"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "sub.zip",
+   "url": "https://zenodo.org/api/records/5803401/files/sub-dataset_EN_21-25year.zip/content",
+   "bytes": 336637,
+   "sha256": "94dddf22e00761843ea2d2c3f26ee59fce71e3932c94fd6f43e39638d894f90d",
+   "fetched_utc": "2026-11-09T00:02:55Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanWaes2019_JORS.zip"
+}

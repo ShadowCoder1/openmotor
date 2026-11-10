@@ -1,0 +1,118 @@
+{
+ "id": "Hill2025_eLife",
+ "module": "reward_swipe",
+ "rows": 57750,
+ "subjects": 385,
+ "persons": 385,
+ "zip_bytes": 636058,
+ "zip_sha256": "d563f8b205b32905fa4d314ac460173c2e45edee9eea6d0c0ee41501829bb9ca",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in all four tasks",
+   "computed": 385.0,
+   "reported": 385.0,
+   "tol": 0,
+   "source": "Introduction and Methods (participants); expected values read from the paper",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children aged 3-17",
+   "computed": 298.0,
+   "reported": 298.0,
+   "tol": 0,
+   "source": "Introduction and Methods (participants); expected values read from the paper",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults",
+   "computed": 87.0,
+   "reported": 87.0,
+   "tol": 0,
+   "source": "Introduction and Methods (participants); expected values read from the paper",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "continuous probabilistic task: children",
+   "computed": 111.0,
+   "reported": 111.0,
+   "tol": 0,
+   "source": "Results, continuous probabilistic task (F(1,109) implies 111)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "continuous probabilistic task: adults",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Results, participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "discrete probabilistic task: children",
+   "computed": 106.0,
+   "reported": 106.0,
+   "tol": 0,
+   "source": "Results, discrete probabilistic task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "discrete probabilistic task: adults",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Results, discrete probabilistic task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (20+100+10+10+10)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0,
+   "source": "Methods, trial structure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age range lower bound is 3 years (youngest participant, years)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, participants (3-17 year-olds)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "success clamp always rewarded, fail clamp never",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row per trial, no missing values in endpoints",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Block boundaries (baseline 1-20, learning 21-120, clamps, single target) are taken from the authors' Readme; target_x_gu in the discrete learning block is the single value the authors store (the correct button), not the seven targets' positions."
+ ],
+ "sources": [
+  {
+   "file": "AllData_1.mat",
+   "url": "https://data.mendeley.com/public-files/datasets/g9z67hkyz5/files/c8b965f5-2d96-40f5-a181-617ca4835c64/file_downloaded",
+   "bytes": 799849,
+   "sha256": "dd795f84fac1db43ff937cde0d8ab3f197d92d7c97ce2c145eef1d8baad4cf52",
+   "fetched_utc": "2026-11-09T09:36:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hill2025_eLife.zip"
+}

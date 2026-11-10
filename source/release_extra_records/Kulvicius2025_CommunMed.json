@@ -1,0 +1,82 @@
+{
+ "id": "Kulvicius2025_CommunMed",
+ "module": "timeseries",
+ "rows": 3467,
+ "subjects": 45,
+ "persons": 45,
+ "zip_bytes": 220312065,
+ "zip_sha256": "55bf5dfdf015e1113ea87edf8f0a1337c5e3db9654b46574f969905ebba59122",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "skeleton and IMU snippets all 5 s long",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ages within 20 to 130 days",
+   "ok": true,
+   "detail": "26-115"
+  },
+  {
+   "kind": "published",
+   "what": "infants",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "deposit README, Skeleton data (45 infants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "skeleton snippets",
+   "computed": 1784.0,
+   "reported": 1784.0,
+   "tol": 0,
+   "source": "deposit README, Skeleton data (1784 files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IMU snippets",
+   "computed": 1683.0,
+   "reported": 1683.0,
+   "tol": 0,
+   "source": "deposit README, IMU data (1683 files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "skeleton rows per snippet (5 s at 50 Hz)",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "deposit README, Skeleton data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IMU rows per snippet (5 s at 60 Hz)",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "deposit README, IMU data",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The pressure-mat recordings of the same deposit (500 frames x 32 x 32 values per snippet) were left out for size."
+ ],
+ "sources": [
+  {
+   "file": "sensor_data.zip",
+   "url": "https://zenodo.org/api/records/14046527/files/sensor_data.zip/content",
+   "bytes": 400890027,
+   "sha256": "1db788b093eaf421edfc73d715c76210f92a18c446cf726cde33e7da2a73a67b",
+   "fetched_utc": "2026-11-10T00:51:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kulvicius2025_CommunMed.zip"
+}

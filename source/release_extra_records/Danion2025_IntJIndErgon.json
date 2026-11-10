@@ -1,0 +1,89 @@
+{
+ "id": "Danion2025_IntJIndErgon",
+ "module": "summary",
+ "rows": 102568,
+ "subjects": 1578,
+ "persons": 1578,
+ "zip_bytes": 993674,
+ "zip_sha256": "828786d575b8dfd73a483b08a1d8f31ecb5cdc7ee042ba43f4e96766ce841171",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "candidates",
+   "computed": 1578.0,
+   "reported": 1578.0,
+   "tol": 0,
+   "source": "Title and abstract (1578 candidates)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "sex is M or F for every candidate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "both sheets list the same candidates, sexes and ages, and the arithmetic sheet too",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "per-trial rows: 4 trials per candidate, condition and measure",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rudder tracking_error: authors' 4-trial averages equal the mean of the trial values (max abs diff < 1e-3)",
+   "ok": true,
+   "detail": "5.68e-14 over 4734"
+  },
+  {
+   "kind": "internal",
+   "what": "rudder tracking_lag: authors' 4-trial averages equal the mean of the trial values (max abs diff < 1e-3)",
+   "ok": true,
+   "detail": "0 over 4733"
+  },
+  {
+   "kind": "internal",
+   "what": "stick tracking_error: authors' 4-trial averages equal the mean of the trial values (max abs diff < 1e-3)",
+   "ok": true,
+   "detail": "2.84e-14 over 4734"
+  },
+  {
+   "kind": "internal",
+   "what": "stick tracking_lag: authors' 4-trial averages equal the mean of the trial values (max abs diff < 1e-3)",
+   "ok": true,
+   "detail": "0 over 4733"
+  },
+  {
+   "kind": "internal",
+   "what": "arithmetic sheet: authors' mean equals mean of 4 responses",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Only the number of candidates (1578) could be checked against the paper: its full text could not be read (publisher and HAL refuse automated access)."
+ ],
+ "sources": [
+  {
+   "file": "data.xlsx",
+   "url": "https://osf.io/download/ugpwd/",
+   "bytes": 1134701,
+   "sha256": "0e646f183d385e7fa7d23b7073998dd0d57824ae6666ef7c6f69023f7fae79cb",
+   "fetched_utc": "2026-11-09T15:19:35Z"
+  },
+  {
+   "file": "laterality.docx",
+   "url": "https://osf.io/download/eg74q/",
+   "bytes": 15093,
+   "sha256": "d72f6bb1aa2dea2da41473f5e0b28df1c0b2737710a5ce50d718f914e7d0c149",
+   "fetched_utc": "2026-11-09T15:19:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Danion2025_IntJIndErgon.zip"
+}

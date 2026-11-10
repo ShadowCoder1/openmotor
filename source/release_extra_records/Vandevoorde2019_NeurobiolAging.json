@@ -1,0 +1,294 @@
+{
+ "id": "Vandevoorde2019_NeurobiolAging",
+ "module": "reach90",
+ "rows": 116644,
+ "subjects": 205,
+ "persons": 143,
+ "zip_bytes": 2279859,
+ "zip_sha256": "1d3c50e013de1246d2dab23b19bf1d0a9252084b7722be314ee9709944937e65",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "E1a: participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1a: young participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1a: older participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E3: participants",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E3: young participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E3: older participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1b: participants",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1b: young participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1b: older participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E4: participants",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E4: young participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E4: older participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods 2.7 and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young participants in the analysed sample (E1a, E3, E1b)",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Methods 2.1, Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants in the analysed sample (E1a, E3, E1b)",
+   "computed": 71.0,
+   "reported": 71.0,
+   "tol": 0,
+   "source": "Methods 2.1, Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in E4",
+   "computed": 540.0,
+   "reported": 540.0,
+   "tol": 0,
+   "source": "Methods 2.6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in the clamped-feedback block of E4 (40 cycles of 9)",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "Methods 2.6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials of one E1b adaptation (learning) block",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials of the E1a learning block",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "uncued trials per adaptation block in E1b",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "uncued trials per adaptation block in E1a",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1a: age effect on final adaptation level, F(1,37) (additive model of age and rotation direction)",
+   "computed": 22.943031393444667,
+   "reported": 22.9,
+   "tol": 0.051,
+   "source": "Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E3: age effect on final adaptation level, F(1,38)",
+   "computed": 8.706699886324362,
+   "reported": 8.7,
+   "tol": 0.051,
+   "source": "Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1a: error df of that ANOVA",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E3: error df of that ANOVA",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Results 3.1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "row count = sum of subjects x trials",
+   "ok": true,
+   "detail": "116644"
+  },
+  {
+   "kind": "internal",
+   "what": "E1b and E4 hold the same people in the same order (age group at each index)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "fewer than 0.5 percent of hand angles lie beyond +-60 deg (the paper says such reaches were removed)",
+   "ok": true,
+   "detail": "285 of 100372"
+  },
+  {
+   "kind": "internal",
+   "what": "E1a: uncued trials show less compensation than cued trials (cue positions are right)",
+   "ok": true,
+   "detail": "uncued 3.6, cued 22.1"
+  },
+  {
+   "kind": "internal",
+   "what": "E1b: uncued trials show less compensation than cued trials (cue positions are right)",
+   "ok": true,
+   "detail": "uncued 2.3, cued 21.8"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 62 people of E1b are also E1 participants of Vandevoorde2020_JNeurophysiol (identical hand angles in trials 261-622); that release also has their dual-task baseline reaches. Drop one of the two when pooling datasets. ",
+  "The E1b ANOVA (F(1,58) = 2.49 in the paper) is not used as a check: it has 58 error df, so the authors analysed 61 of the 62 people, and the exclusion is not documented. The paper gives mean ages (22.75 and 66.88 y) but the deposit only has young or older, so these cannot be checked.",
+  "The paper says reaches with angular errors above 60 deg were removed before processing, but 285 hand angles (0.2 percent) in the deposit lie beyond 60 deg (up to 270 deg); they are kept as shared."
+ ],
+ "sources": [
+  {
+   "file": "SubjectsDataE1b.mat",
+   "url": "https://osf.io/download/wpkz9/",
+   "bytes": 30608444,
+   "sha256": "d909156623c965569e08b2beca8da132b663deadd092897e721976e3e811b0f4",
+   "fetched_utc": "2026-11-09T13:46:23Z"
+  },
+  {
+   "file": "SubjectsDataE1a.mat",
+   "url": "https://osf.io/download/ck2sa/",
+   "bytes": 17803356,
+   "sha256": "6a14dc98c32e948a2f3c344f6d115e285bb83e487bbc2309c9419c5266ecca9a",
+   "fetched_utc": "2026-11-09T13:49:54Z"
+  },
+  {
+   "file": "SubjectsDataE3.mat",
+   "url": "https://osf.io/download/5e1485847545840203fa26b9/",
+   "bytes": 22098100,
+   "sha256": "6405d37267add5d9f80fd9a4316d435afd039e24d6df012b0e51c42790cc5c36",
+   "fetched_utc": "2026-11-09T13:50:00Z"
+  },
+  {
+   "file": "SubjectsDataE4.mat",
+   "url": "https://osf.io/download/3d5aj/",
+   "bytes": 27800400,
+   "sha256": "4b4b99dfc6ace31c1305c5fca29f72ae50f969d5c3c33c3fa16daf5450d797c8",
+   "fetched_utc": "2026-11-09T13:50:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Vandevoorde2019_NeurobiolAging.zip"
+}

@@ -1,0 +1,126 @@
+{
+ "id": "Railo2025_PsyArXiv",
+ "module": "speech",
+ "rows": 4160,
+ "subjects": 80,
+ "persons": 80,
+ "zip_bytes": 968414,
+ "zip_sha256": "918f67720a49f7973fcece4728d52b44e4ab6c8cce223bf01927c274216fc84a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "one track per table row and 52 trials for each of 80 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "time axis is -1000 to 1000 ms in 195 samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants after exclusions",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants given the unexpected pitch shift",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shifted participants who did not notice it (inattentional deafness)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants given no shift",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "no-shift participants who correctly reported nothing unusual",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "% correct rejections",
+   "computed": 87.8048780487805,
+   "reported": 87.8,
+   "tol": 0.05,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of confidence in the 75 cent trials reported as not noticed",
+   "computed": 0.600245047998781,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Inattention condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visual task accuracy, Divided attention (%)",
+   "computed": 80.19999999999999,
+   "reported": 80.2,
+   "tol": 0.05,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Results, Visual task accuracy",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "% of vocalization samples beyond +-75 cents of baseline (analysed participants)",
+   "computed": 2.5623931623931626,
+   "reported": 2.6,
+   "tol": 0.05,
+   "source": "Railo et al., PsyArXiv 3m6tx v2, Methods, Data preprocessing",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Not reproduced: the paper's mean confidence of 'not noticed' reports (-2.11 with a shift, -1.85 without) came out as -2.12 and -1.89 here, and the Inattention visual-task accuracy of 87.5% as 87.6%; the deposit has 80 participants (one participant of the 82 had technical problems) and no age or sex.",
+  "ost_data (constant 1, undocumented) is not carried."
+ ],
+ "sources": [
+  {
+   "file": "InattentionExp_data.mat",
+   "url": "https://osf.io/download/ga4qs/",
+   "bytes": 4406862,
+   "sha256": "acc426d5b1f67dd2b8f35ee3b2f3b8cb22516ccbbe1a6818216466e64118b984",
+   "fetched_utc": "2026-11-09T11:52:43Z"
+  },
+  {
+   "file": "Collect_and_analyze_v2.m",
+   "url": "https://osf.io/download/jaheu/",
+   "bytes": 58067,
+   "sha256": "9a881f3c8f30b1290550b45c2aac3e33bfdb73e9e778348910be4f4042922086",
+   "fetched_utc": "2026-11-09T11:52:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Railo2025_PsyArXiv.zip"
+}

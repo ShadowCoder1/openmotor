@@ -1,0 +1,6725 @@
+{
+ "Abekawa2022_CurrBiol": {
+  "catalog_study": "Abekawa2022_CurrBiol",
+  "rows": 6967,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "unknown"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "fixation"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Areshenkoff2024_PLoSBiol": {
+  "catalog_study": "Areshenkoff2024_PLoSBiol",
+  "rows": 15200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "left",
+   "right"
+  ],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 499,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Arrighi2016_PLoSOne": {
+  "catalog_study": "Arrighi2016_PLoSOne",
+  "rows": 1475,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Avraham2021_PLoSBiol": {
+  "catalog_study": "Avraham2021_PLoSBiol",
+  "rows": 109440,
+  "setting": [
+   "lab",
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad",
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "demo",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "message",
+   "target_color"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Avraham2022_eLife": {
+  "catalog_study": "Avraham2022_eLife",
+  "rows": 135000,
+  "setting": [
+   "lab",
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad",
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden"
+  ],
+  "instr_disclosure": [
+   "exact"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "light",
+   "tone"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Avraham2025_eNeuro": {
+  "catalog_study": "Avraham2025_eNeuro",
+  "rows": 220752,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Ayala2021_PLoSONE": {
+  "catalog_study": "Ayala2021_PLoSONE",
+  "rows": 112752,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "given_with_angle",
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "arrow",
+   "box"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Bansal2023_ExpBrainRes": {
+  "catalog_study": "Bansal2023_ExpBrainRes",
+  "rows": 50592,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "cerebellar_degeneration",
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 108,
+  "age_median": 19.5,
+  "group_age_median": {
+   "older45": 65.0,
+   "young30": 19.0,
+   "young45": 19.0,
+   "young60": 19.0
+  },
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Barzi2026_ExpBrainRes": {
+  "catalog_study": "Barzi2026_ExpBrainRes",
+  "rows": 18600,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy",
+   "unknown"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Berland2025_JNeurophysiol": {
+  "catalog_study": "Berland2025_JNeurophysiol",
+  "rows": 6930,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "left",
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 33,
+  "age_median": 24.0,
+  "group_age_median": {
+   "adapt0_wash1": 25.0,
+   "adapt1_wash1": 24.0
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Bromberg2019_eNeuro": {
+  "catalog_study": "Bromberg2019_eNeuro",
+  "rows": 51672,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 6838,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Brudner2016_JNeurophysiol": {
+  "catalog_study": "Brudner2016_JNeurophysiol",
+  "rows": 11520,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "unknown"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Buggeln2026_PLoSComputBiol": {
+  "catalog_study": "Buggeln2026_PLoSComputBiol",
+  "rows": 74150,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "reward_tone"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Casasnovas2024_JNeurophysiol": {
+  "catalog_study": "Casasnovas2024_JNeurophysiol",
+  "rows": 26057,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cloud",
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Cesanek2024_NatHumBehav_dual": {
+  "catalog_study": "Cesanek2024_NatHumBehav",
+  "rows": 1300,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "control_point",
+   "target_color"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Cesanek2024_NatHumBehav_sr": {
+  "catalog_study": "Cesanek2024_NatHumBehav",
+  "rows": 1200,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Chen2024_bioRxiv": {
+  "catalog_study": "Chen2024_bioRxiv",
+  "rows": 94350,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "points",
+   "symbolic_error"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": true,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Cipleu2026_NeurorehabilNeuralRepair": {
+  "catalog_study": "McDougleCipleu_provisional",
+  "rows": 7360,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "unknown"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Cisneros2026_NatHumBehav": {
+  "catalog_study": "Cisneros2026_NatHumBehav",
+  "rows": 34800,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "prolific"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Clayton2024_PLoSONE": {
+  "catalog_study": "Clayton2024_PLoSONE",
+  "rows": 11970,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "mouse"
+  ],
+  "population": [
+   "healthy",
+   "unknown"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 107,
+  "age_median": 13.0,
+  "group_age_median": {
+   "Kids": 9.0,
+   "LifeSpan": 37.0,
+   "YorkCircle": 63.5
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Codol2018_SciRep": {
+  "catalog_study": "Codol2018_SciRep",
+  "rows": 64755,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color",
+   "reward_tone"
+  ],
+  "cue_elements": [
+   "tone"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": true,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Cook2026_InfantChildDev": {
+  "catalog_study": "Cook2026_InfantChildDev",
+  "rows": 10140,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "mouse"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 78,
+  "age_median": 10.445,
+  "group_age_median": {
+   "adult": 27.47,
+   "older_child": 9.95,
+   "younger_child": 7.76
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Crossley2023_BlockedUncertainty": {
+  "catalog_study": "Crossley2023_BlockedUncertainty",
+  "rows": 12000,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cloud",
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "DAmario2024_bioRxiv": {
+  "catalog_study": "DAmario2024_bioRxiv",
+  "rows": 141040,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "aim_report_only",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 458,
+  "age_median": 19.0,
+  "group_age_median": {
+   "aiming_every_trial": 19.0,
+   "continuous": 20.0,
+   "cursor_jump": 20.0,
+   "delay_before_feedback": 20.0,
+   "delay_before_next_trial": 20.0,
+   "rot15": 19.0,
+   "rot30": 19.0,
+   "rot45": 19.0,
+   "rot60": 19.0,
+   "terminal": 20.0
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 8748,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Ding2026_npjSciLearn": {
+  "catalog_study": "Ding2026_npjSciLearn",
+  "rows": 73920,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "prolific"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "target_color"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Goldschmidt2016_Joystick": {
+  "catalog_study": "Goldschmidt2016_Joystick",
+  "rows": 13200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "unknown"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "given_with_angle",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Guo2023_SciRep": {
+  "catalog_study": "Guo2023_SciRep",
+  "rows": 47040,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "touchscreen"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Hadjiosif2023_PLoSBiol": {
+  "catalog_study": "Hadjiosif2023_PLoSBiol",
+  "rows": 122080,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Henriques2026_DiscovNeurosci": {
+  "catalog_study": "Henriques2026_DiscovNeurosci",
+  "rows": 81600,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "hand_passive",
+   "hand_post",
+   "none"
+  ],
+  "probe_kind": [
+   "active_post_reach",
+   "none",
+   "passive_robot"
+  ],
+  "trial_kind": [
+   "missing",
+   "proprio_probe",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "given_with_angle",
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 85,
+  "age_median": 20.0,
+  "group_age_median": {
+   "control": 19.5,
+   "control60": 22.0,
+   "instructed": 21.0,
+   "instructed60": 20.5
+  },
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 24443,
+  "rt": false
+ },
+ "Hewitson2023_JNeurophysiol": {
+  "catalog_study": "Hewitson2023_JNeurophysiol",
+  "rows": 11280,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "unknown"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 9664,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Hewitson2023_PLoSComputBiol": {
+  "catalog_study": "Hewitson2023_PLoSComputBiol",
+  "rows": 33600,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cloud",
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Holland2018_JNeurophysiol": {
+  "catalog_study": "Holland2018_JNeurophysiol",
+  "rows": 45600,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [],
+  "age_known": 60,
+  "age_median": 19.0,
+  "group_age_median": {
+   "15deg": 19.0,
+   "25deg": 19.0,
+   "control_task": 21.0,
+   "dual_task": 21.0
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Holland2019_JNeurosci": {
+  "catalog_study": "Holland2019_JNeurosci",
+  "rows": 81070,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Hulst2024_bioRxiv": {
+  "catalog_study": "Hulst2024_bioRxiv",
+  "rows": 73920,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "cerebellar_degeneration",
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Johnson2017_PLoSOne": {
+  "catalog_study": "Johnson2017_PLoSOne",
+  "rows": 7200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint"
+  ],
+  "fb_form": [
+   "cursor",
+   "multi_cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 2,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": true,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Kim2015_PLoSOne": {
+  "catalog_study": "Kim2015_PLoSOne",
+  "rows": 13050,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "target_color"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Kim2018_CommunBiol": {
+  "catalog_study": "Kim2018_CommunBiol",
+  "rows": 89040,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Kim2019_eLife": {
+  "catalog_study": "Kim2019_eLife",
+  "rows": 138880,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "target_line"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Kim2025_ProcRSocB": {
+  "catalog_study": "Kim2025_ProcRSocB",
+  "rows": 29920,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "jump",
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "King2025_bioRxiv": {
+  "catalog_study": "King2025_bioRxiv",
+  "rows": 55296,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "points"
+  ],
+  "cue_elements": [
+   "surface",
+   "tool",
+   "tool_color"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Kobayashi2024_eLife": {
+  "catalog_study": "Kobayashi2024_eLife",
+  "rows": 7680,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Korka2023_Cortex": {
+  "catalog_study": "Korka2023_Cortex",
+  "rows": 32400,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "forbidden"
+  ],
+  "instr_disclosure": [
+   "exact"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 2,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Kunavar2023_PLoSONE": {
+  "catalog_study": "Kunavar2023_PLoSONE",
+  "rows": 1280,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "cue"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "LangHodge2023_PLOSONE": {
+  "catalog_study": "LangHodge2023_PLOSONE",
+  "rows": 2185,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Li2021_FrontAgingNeurosci": {
+  "catalog_study": "Li2021_FrontAgingNeurosci",
+  "rows": 14400,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 120,
+  "age_median": 65.0,
+  "group_age_median": {
+   "older_55_59": 58.125,
+   "older_60_64": 62.958333499999995,
+   "older_65_69": 67.541667,
+   "older_70_74": 72.33333350000001,
+   "older_75plus": 77.875,
+   "young": 20.708333500000002
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Liddy2026_eNeuro": {
+  "catalog_study": "Liddy2026_eNeuro",
+  "rows": 26208,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Luo2025_bioRxiv": {
+  "catalog_study": "Luo2025_bioRxiv",
+  "rows": 25200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Maresch2022_eNeuro": {
+  "catalog_study": "Maresch2022_eNeuro",
+  "rows": 31200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Matsuda2023_ExpBrainRes": {
+  "catalog_study": "Matsuda2023_ExpBrainRes",
+  "rows": 11700,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "unknown"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "MillerMills2026_EJN": {
+  "catalog_study": "MillerMills2026_EJN",
+  "rows": 13520,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Modchalingam2023_SciRep": {
+  "catalog_study": "Modchalingam2023_SciRep",
+  "rows": 42246,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Morehead2017_JCogNeurosci": {
+  "catalog_study": "Morehead2017_JCogNeurosci",
+  "rows": 38720,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "cerebellar_degeneration",
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Moskowitz2020_PLoSCompBiol": {
+  "catalog_study": "Moskowitz2020_PLoSCompBiol",
+  "rows": 6426,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Nakano2024_bioRxiv": {
+  "catalog_study": "Nakano2024_bioRxiv",
+  "rows": 13125,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse",
+   "mouse_or_trackpad",
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 3,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Nettekoven2022_BrainStimul": {
+  "catalog_study": "Nettekoven2022_BrainStimul",
+  "rows": 28080,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Niyogi2026_bioRxiv": {
+  "catalog_study": "Niyogi2025_provisional",
+  "rows": 16000,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 100,
+  "age_median": 26.0,
+  "group_age_median": {
+   "Rotation CCW": 27.0,
+   "Rotation CW": 25.5
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Nyamsuren2026_bioRxiv": {
+  "catalog_study": "Nyamsuren2026_bioRxiv",
+  "rows": 175248,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "left",
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "demo",
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "prolific",
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "OBryan2025_bioRxiv": {
+  "catalog_study": "OBryan2025_bioRxiv",
+  "rows": 36424,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Padmanabhan2026_JNeurophysiol": {
+  "catalog_study": "Padmanabhan2026_JNeurophysiol",
+  "rows": 44000,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "prolific"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Petitet2021_NeuroImage": {
+  "catalog_study": "Petitet2021_NeuroImage",
+  "rows": 49262,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "touchscreen"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "other",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 33,
+  "age_median": 67.829452,
+  "group_age_median": {
+   "older_men": 67.6326485
+  },
+  "sessions_max": 3,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Ruttle2016_PLoSONE": {
+  "catalog_study": "Ruttle2016_PLoSONE",
+  "rows": 44280,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "hand_passive",
+   "none"
+  ],
+  "probe_kind": [
+   "none",
+   "passive_robot"
+  ],
+  "trial_kind": [
+   "missing",
+   "proprio_probe",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 7317,
+  "rt": false
+ },
+ "Ruttle2021_SciRep": {
+  "catalog_study": "Ruttle2021_SciRep",
+  "rows": 37888,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Ruttle2022_JNeurophysiol": {
+  "catalog_study": "Ruttle2022_JNeurophysiol",
+  "rows": 55296,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "hand_passive",
+   "none"
+  ],
+  "probe_kind": [
+   "none",
+   "passive_robot"
+  ],
+  "trial_kind": [
+   "other",
+   "proprio_probe",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 27239,
+  "rt": false
+ },
+ "Senna2022_eLife": {
+  "catalog_study": "Senna2022_eLife",
+  "rows": 8208,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy",
+   "low_vision"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 59,
+  "age_median": 13.31,
+  "group_age_median": {
+   "cataract_treated": 12.975000000000001,
+   "sighted_blur": 13.422123500000001,
+   "sighted_normal": 12.569863
+  },
+  "sessions_max": 2,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Sharma2026_PLoSCompBiol": {
+  "catalog_study": "Sharma2026_PLoSCompBiol",
+  "rows": 87000,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 29,
+  "age_median": 21.0,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Shingane2025_JNeurophysiol": {
+  "catalog_study": "Shingane2025_JNeurophysiol",
+  "rows": 9000,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "target_shape"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": true,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Slade2026_ExpBrainRes": {
+  "catalog_study": "Slade2026_ExpBrainRes",
+  "rows": 24960,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "touchscreen"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "left",
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Spang2017_iPerception": {
+  "catalog_study": "Spang2017_iPerception",
+  "rows": 7200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Stroh2024_JDeafStudDeafEduc": {
+  "catalog_study": "Stroh2024_JDeafStudDeafEduc",
+  "rows": 79464,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Sugiyama2024_PNAS": {
+  "catalog_study": "Sugiyama2024_PNAS",
+  "rows": 8944,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 15,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Szarka2025_PLoSONE": {
+  "catalog_study": "Szarka2025_PLoSONE",
+  "rows": 7200,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Takada2025_PsyArXiv": {
+  "catalog_study": "Takada2025_PsyArXiv",
+  "rows": 4440,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Todorov2025_bioRxiv": {
+  "catalog_study": "Todorov2025_bioRxiv",
+  "rows": 15360,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "other"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2020_JNeurophysiol": {
+  "catalog_study": "Tsay2020_JNeurophysiol",
+  "rows": 14720,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "hand_post",
+   "none"
+  ],
+  "probe_kind": [
+   "active_post_reach",
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 9280,
+  "rt": true
+ },
+ "Tsay2021_JNeurophysiol_proprioception": {
+  "catalog_study": "Tsay2021_JNeurophysiol_proprioception",
+  "rows": 52968,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "hand_passive",
+   "none"
+  ],
+  "probe_kind": [
+   "none",
+   "passive_experimenter"
+  ],
+  "trial_kind": [
+   "proprio_probe",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 17400,
+  "rt": true
+ },
+ "Tsay2021_JNeurophysiol_uncertainty": {
+  "catalog_study": "Tsay2021_JNeurophysiol_uncertainty",
+  "rows": 135420,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cloud",
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2021_NBDT": {
+  "catalog_study": "Tsay2021_NBDT",
+  "rows": 46944,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "demo",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "mturk",
+   "unknown"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2022_BrainCommun": {
+  "catalog_study": "Tsay2022_BrainCommun",
+  "rows": 10560,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy",
+   "parkinsons"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [
+   "on"
+  ],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Tsay2022_Cerebellum": {
+  "catalog_study": "McDougleCipleu_provisional",
+  "rows": 5120,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "cerebellar_degeneration",
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2023_JCognNeurosci": {
+  "catalog_study": "Tsay2023_JCognNeurosci",
+  "rows": 17550,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse",
+   "mouse_or_trackpad",
+   "trackpad"
+  ],
+  "population": [
+   "healthy",
+   "low_vision"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 20,
+  "age_median": 56.0,
+  "group_age_median": {
+   "LV": 56.0
+  },
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2023_ProcRSocB": {
+  "catalog_study": "Tsay2023_ProcRSocB",
+  "rows": 124200,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "unknown",
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2024_JCogNeurosci": {
+  "catalog_study": "Tsay2024_JCogNeurosci",
+  "rows": 28800,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "multi_cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": true,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Tsay2024_JNeurophysiol": {
+  "catalog_study": "Tsay2024_JNeurophysiol",
+  "rows": 29040,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "deafferented",
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "hand_post",
+   "none"
+  ],
+  "probe_kind": [
+   "active_post_reach",
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 2600,
+  "rt": true
+ },
+ "Tsay2024_NatHumBehav": {
+  "catalog_study": "Tsay2024_NatHumBehav",
+  "rows": 347520,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "unknown"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "VelazquezVargas2024_JNeurophysiol": {
+  "catalog_study": "VelazquezVargas2024_JNeurophysiol",
+  "rows": 20325,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "reward_tone"
+  ],
+  "cue_elements": [
+   "target_color",
+   "text"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2022_BrainSci": {
+  "catalog_study": "Wang2022_BrainSci",
+  "rows": 124640,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 1,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2024_CurrBiol": {
+  "catalog_study": "Wang2024_CurrBiol",
+  "rows": 224640,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2024_eLife": {
+  "catalog_study": "Wang2024_eLife",
+  "rows": 152512,
+  "setting": [
+   "lab",
+   "online"
+  ],
+  "device": [
+   "mouse",
+   "other",
+   "tablet",
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab",
+   "uuid"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 290,
+  "age_median": 21.0,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2025_JNeurosci": {
+  "catalog_study": "Wang2025_JNeurosci",
+  "rows": 110320,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2025_SciAdv": {
+  "catalog_study": "Wang2025_SciAdv",
+  "rows": 77760,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Wang2026_PLoSBiol": {
+  "catalog_study": "Wang2026_PLoSBiol",
+  "rows": 82532,
+  "setting": [
+   "lab",
+   "online"
+  ],
+  "device": [
+   "tablet",
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "allowed",
+   "forbidden",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": true,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Warburton2025_JNeurosci": {
+  "catalog_study": "Warburton2025_JNeurosci",
+  "rows": 213851,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse",
+   "trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "other",
+   "reach"
+  ],
+  "fb_visible": [
+   "online"
+  ],
+  "fb_form": [
+   "cursor"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [
+   "view"
+  ],
+  "age_known": 273,
+  "age_median": 35.0,
+  "group_age_median": {
+   "inverted_look_probe": 31.0,
+   "look": 36.0,
+   "look_probe": 34.5,
+   "look_trained": 37.0,
+   "point": 32.5,
+   "point_trained": 34.5
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Will2024_JNeurophysiol": {
+  "catalog_study": "Will2024_JNeurophysiol",
+  "rows": 55003,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "kinarm"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "hand_post",
+   "none"
+  ],
+  "probe_kind": [
+   "active_post_reach",
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "given_with_angle",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [
+   "symbol",
+   "text"
+  ],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 9851,
+  "rt": false
+ },
+ "Wilterson2021_eNeuro": {
+  "catalog_study": "Wilterson2021_eNeuro",
+  "rows": 96768,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 4,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": true,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 91352,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "Xu2023_JBBS": {
+  "catalog_study": "Xu2023_JBBS",
+  "rows": 5670,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "touchscreen"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none",
+   "online",
+   "unknown"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "forbidden",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": true,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "Zhu2023_PLoSComputBiol": {
+  "catalog_study": "Zhu2023_PLoSComputBiol",
+  "rows": 69498,
+  "setting": [
+   "online"
+  ],
+  "device": [
+   "mouse_or_trackpad"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "other",
+   "reach"
+  ],
+  "fb_visible": [
+   "endpoint",
+   "none"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "hit_color"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ },
+ "tHart2016_PLoSOne": {
+  "catalog_study": "tHart2016_PLoSOne",
+  "rows": 11235,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "robot"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "missing",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "tHart2024_eNeuro": {
+  "catalog_study": "tHart2024_eNeuro",
+  "rows": 19008,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [
+   "right"
+  ],
+  "instr_report": [
+   "aim_pre",
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "given_with_angle",
+   "maintain",
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exact",
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor"
+  ],
+  "cue_elements": [],
+  "age_known": 71,
+  "age_median": 19.0,
+  "group_age_median": {
+   "aiming": 19.0,
+   "control": 19.0,
+   "instructed": 19.0
+  },
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 4608,
+  "hand_reports": 0,
+  "rt": false
+ },
+ "vanMastrigt2023_ExpBrainRes": {
+  "catalog_study": "vanMastrigt2023_ExpBrainRes",
+  "rows": 68680,
+  "setting": [
+   "lab"
+  ],
+  "device": [
+   "tablet"
+  ],
+  "population": [
+   "healthy"
+  ],
+  "hand_used": [],
+  "instr_report": [
+   "none"
+  ],
+  "probe_kind": [
+   "none"
+  ],
+  "trial_kind": [
+   "demo",
+   "reach"
+  ],
+  "fb_visible": [
+   "none",
+   "online"
+  ],
+  "fb_form": [
+   "cursor",
+   "none"
+  ],
+  "target_event": [
+   "none"
+  ],
+  "instr_strategy": [
+   "remove",
+   "unspecified"
+  ],
+  "instr_disclosure": [
+   "exists",
+   "none"
+  ],
+  "medication_state": [],
+  "id_type": [
+   "lab"
+  ],
+  "instr_goal": [
+   "cursor_to_target",
+   "hand_to_target"
+  ],
+  "outcome_channels": [
+   "cursor",
+   "reward_tone"
+  ],
+  "cue_elements": [],
+  "age_known": 0,
+  "age_median": null,
+  "group_age_median": {},
+  "sessions_max": 0,
+  "forced_prep": false,
+  "fb_delay": false,
+  "mirror": false,
+  "gain": false,
+  "multi_cursor": false,
+  "aim_reports": 0,
+  "hand_reports": 0,
+  "rt": true
+ }
+}

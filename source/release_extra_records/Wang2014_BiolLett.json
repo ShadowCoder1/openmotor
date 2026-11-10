@@ -1,0 +1,98 @@
+{
+ "id": "Wang2014_BiolLett",
+ "module": "timeseries",
+ "rows": 30,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 31410389,
+ "zip_sha256": "fa50a75bc0eb99f69e876c61da8a5aa022f6a5770c0b6572059ab2b8d7082221",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "10 participants x 3 trials = 30 recordings, each with the 9 named columns and no missing value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every sample step is 0.01 s (README, 100 Hz) and every trial lasts about 5 minutes except one shorter trial",
+   "ok": true,
+   "detail": "134.2-306.46 s"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (10 participants x 3 speeds)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial length, median over recordings (5 min = 300 s)",
+   "computed": 299.92,
+   "reported": 300.0,
+   "tol": 1,
+   "source": "Methods (5 minutes at each speed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods / README",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strides per trial, mean (about 265; heel-marker forward peaks, left foot)",
+   "computed": 265.6,
+   "reported": 265.0,
+   "tol": 4,
+   "source": "Methods, data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strides per trial, SD (36)",
+   "computed": 36.460275974516854,
+   "reported": 36.0,
+   "tol": 4,
+   "source": "Methods, data collection",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says about 265 strides per speed (SD 36); counting heel-marker forward peaks gives a mean close to that and a similar SD. One recording (participant 9, trial 1) is only 134 s long."
+ ],
+ "sources": [
+  {
+   "file": "README_for_WangSrinivasanBiologyLetters_DryadDataUpload.txt",
+   "url": "https://zenodo.org/api/records/4999877/files/README_for_WangSrinivasanBiologyLetters_DryadDataUpload.txt/content",
+   "bytes": 1395,
+   "sha256": "9525c213d2d256ce537336f5f03bdb691a9aa5c34e49e92d0d30ca2523b5147a",
+   "fetched_utc": "2026-11-09T01:41:15Z"
+  },
+  {
+   "file": "WangSrinivasanBiologyLetters_DryadDataUpload.zip",
+   "url": "https://zenodo.org/api/records/4999877/files/WangSrinivasanBiologyLetters_DryadDataUpload.zip/content",
+   "bytes": 33046853,
+   "sha256": "d285bc3d53786934012fce82e23c12f24d4466ff093dd8d40ae1790aa235a3cf",
+   "fetched_utc": "2026-11-09T01:41:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2014_BiolLett.zip"
+}

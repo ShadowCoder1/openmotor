@@ -1,0 +1,551 @@
+{
+ "id": "DiNardo2021_BSPC",
+ "module": "timeseries",
+ "rows": 31,
+ "subjects": 31,
+ "persons": 31,
+ "zip_bytes": 424468766,
+ "zip_sha256": "4621b704ceaafb75a244b725377bf6e367213cd79351ca44ea920d2e258c60bc",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each .dat file size matches the header (samples x channels)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "first sample and checksum of every channel match the WFDB header",
+   "ok": true,
+   "detail": "init 31/31, checksum 31/31"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 14 channels at 2000 Hz",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "header units: two headers label sEMG in mV and the others uV; signal size checked",
+   "ok": true,
+   "detail": "unit labels {\"[('baso', 'V'), ('gonio', 'deg'), ('semg', 'uV')]\": 29, \"[('baso', 'mV'), ('gonio', 'mV'), ('semg', 'mV')]\": 2}; mean sEMG SD per recording (uV, with header gain) min 17.0 max 37.4; S01 34.2"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "PhysioNet semg v1.0.1 description: 31 subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 2000.0,
+   "reported": 2000.0,
+   "tol": 0,
+   "source": "PhysioNet description / Methods: 2 kHz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sEMG muscles per leg",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet description: five muscles per leg (GL, TA, RF, Ham, VL)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with 10 sEMG channels (5 per leg)",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "PhysioNet description: ten muscles in total, five per leg",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings last around 5 minutes (mean duration, min)",
+   "computed": 4.298481451612903,
+   "reported": 5.0,
+   "tol": 1.0,
+   "source": "PhysioNet description: 'around 5 minutes' (tolerance 1 min for 'around')",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The PhysioNet page says 20 years < age < 30 years, but Subject_info.csv lists ages 21 to 29: 0 participant(s) are at the edge of the stated range.",
+  "Foot-switch values converted with the header's gain (2 per V) range from about -2000 to 30000, which cannot be volts; they are kept as the header gives them and flagged in channel_units.",
+  "The v1.0.1 headers of two participants (the two replaced in that version) give the units as mV where all others say uV (sEMG), V and deg; their signal amplitude matches the others, so values are treated as uV. The paper itself (paywalled) could not be read; the published checks use the PhysioNet description, which the authors wrote for the same dataset."
+ ],
+ "sources": [
+  {
+   "file": "Subject_info.csv",
+   "url": "https://physionet.org/files/semg/1.0.1/Subject_info.csv",
+   "bytes": 833,
+   "sha256": "3076c0c3d076fc176664788321494dedf4e501eb2b5fec91e811f730ed444cc7",
+   "fetched_utc": "2026-11-09T20:33:58Z"
+  },
+  {
+   "file": "LICENSE.txt",
+   "url": "https://physionet.org/files/semg/1.0.1/LICENSE.txt",
+   "bytes": 20402,
+   "sha256": "86c0ad300f6d380591298bc03652e30b81f65954bbf22435812bcfd46812ab06",
+   "fetched_utc": "2026-11-09T20:34:02Z"
+  },
+  {
+   "file": "SHA256SUMS.txt",
+   "url": "https://physionet.org/files/semg/1.0.1/SHA256SUMS.txt",
+   "bytes": 4742,
+   "sha256": "3f662005d82543bb2c6369ccf6137174d1be39e8dbdab230ba035f5f2c470aba",
+   "fetched_utc": "2026-11-09T20:34:05Z"
+  },
+  {
+   "file": "RECORDS",
+   "url": "https://physionet.org/files/semg/1.0.1/RECORDS",
+   "bytes": 115,
+   "sha256": "3fa7f21e9d564a3dae89c35e9e2a40ab2b9c1b34145851504802dbc36a702e25",
+   "fetched_utc": "2026-11-09T20:34:08Z"
+  },
+  {
+   "file": "S01.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S01.hea",
+   "bytes": 858,
+   "sha256": "0c97b8e6f5b085e8f9d7e917c3dfbecd60211c7f23f2032c7e4a378ef15e7b14",
+   "fetched_utc": "2026-11-09T20:34:12Z"
+  },
+  {
+   "file": "S01.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S01.dat",
+   "bytes": 17108028,
+   "sha256": "a6b5427db79f7675e68c8c4b0378cb38ffc519b464f315df590e0bbaeb3b135b",
+   "fetched_utc": "2026-11-09T20:34:15Z"
+  },
+  {
+   "file": "S2.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S2.hea",
+   "bytes": 844,
+   "sha256": "8e9cb8e4a8d283c5395060ad9b0810bef308fd0cd4ab823a75708112c249bbb3",
+   "fetched_utc": "2026-11-09T20:34:19Z"
+  },
+  {
+   "file": "S2.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S2.dat",
+   "bytes": 17771628,
+   "sha256": "af2ee7cd1bf3d3234bd16fb981d7a24b79d0d65aa6492a4faea57533c9821ccb",
+   "fetched_utc": "2026-11-09T20:34:23Z"
+  },
+  {
+   "file": "S3.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S3.hea",
+   "bytes": 850,
+   "sha256": "e4dff8e957b481ed23179138d99a4dcdf340747b22486bbd6d5247b860fa46e0",
+   "fetched_utc": "2026-11-09T20:34:26Z"
+  },
+  {
+   "file": "S3.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S3.dat",
+   "bytes": 15869308,
+   "sha256": "4deb9063d35b4bc0efb5663799b8a027ed537877c770560959827b3650a73d56",
+   "fetched_utc": "2026-11-09T20:34:30Z"
+  },
+  {
+   "file": "S4.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S4.hea",
+   "bytes": 841,
+   "sha256": "e5e836ca334c57b1fd158b17276ccc9d13029f8cdab11f1217d9ded249a3b094",
+   "fetched_utc": "2026-11-09T20:34:33Z"
+  },
+  {
+   "file": "S4.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S4.dat",
+   "bytes": 15027068,
+   "sha256": "f09feedd7fda29cebfce59742f85ff050773e13a2ee6fcf8e9f86d9978d5a8ba",
+   "fetched_utc": "2026-11-09T20:34:37Z"
+  },
+  {
+   "file": "S5.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S5.hea",
+   "bytes": 857,
+   "sha256": "7e4101c979ba031d76ca21cbd1a7922fa2e8394ddace090338823abc9bd00379",
+   "fetched_utc": "2026-11-09T20:34:40Z"
+  },
+  {
+   "file": "S5.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S5.dat",
+   "bytes": 17900988,
+   "sha256": "e09f2f9711c798cd7259a9bfdc6c18ac7ef9629248e2a488cd90ffdae1ac3d24",
+   "fetched_utc": "2026-11-09T20:34:46Z"
+  },
+  {
+   "file": "S6.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S6.hea",
+   "bytes": 850,
+   "sha256": "e47da0b85efcab977ea2c4fc61adbd391c03467bb83d0d453702ae674ec6bf3b",
+   "fetched_utc": "2026-11-09T20:34:50Z"
+  },
+  {
+   "file": "S6.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S6.dat",
+   "bytes": 17361148,
+   "sha256": "36e4008e8ad9937ab7f53cfe93dbabfb2c57336d09c91293a4cf49f8d5f67281",
+   "fetched_utc": "2026-11-09T20:34:55Z"
+  },
+  {
+   "file": "S7.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S7.hea",
+   "bytes": 847,
+   "sha256": "88fb65fa0926bc872a5febb9e2690d47a0693dcb74d78328233a5540c23d8bd6",
+   "fetched_utc": "2026-11-09T20:34:58Z"
+  },
+  {
+   "file": "S7.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S7.dat",
+   "bytes": 17328108,
+   "sha256": "a6460263d1e3bc6103df90fee918cfec1e7dae3b23f6cd9699acc82d97e5e9ed",
+   "fetched_utc": "2026-11-09T20:35:02Z"
+  },
+  {
+   "file": "S8.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S8.hea",
+   "bytes": 836,
+   "sha256": "c7df8700c591b8f29a4fc98b85fa731a134abe4133c45b2012d7e299d9430157",
+   "fetched_utc": "2026-11-09T20:35:06Z"
+  },
+  {
+   "file": "S8.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S8.dat",
+   "bytes": 14214508,
+   "sha256": "1395bd557215d67d82725504c37afbd42d15874d49a16e9f524af4446c070be4",
+   "fetched_utc": "2026-11-09T20:35:10Z"
+  },
+  {
+   "file": "S9.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S9.hea",
+   "bytes": 857,
+   "sha256": "0216d20d9b7ce1d4a65893e751b1411203fb6453812bb3d28a704da9f281ddbe",
+   "fetched_utc": "2026-11-09T20:35:14Z"
+  },
+  {
+   "file": "S9.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S9.dat",
+   "bytes": 14296268,
+   "sha256": "fd5a17038335217640a8cc3bc95ce0194f4adf9472ee483cdde01291b44dd858",
+   "fetched_utc": "2026-11-09T20:35:18Z"
+  },
+  {
+   "file": "S10.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S10.hea",
+   "bytes": 873,
+   "sha256": "1e32f2bbe2e3265c71cdaa48d023a9c4fa465a1311436b2a02f306ff4e505263",
+   "fetched_utc": "2026-11-09T20:35:21Z"
+  },
+  {
+   "file": "S10.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S10.dat",
+   "bytes": 14024668,
+   "sha256": "5d6ca2478d6f1e692fa329d1d5a5b2cd311cd9f02f0a0cef0d259befbf676d48",
+   "fetched_utc": "2026-11-09T20:35:25Z"
+  },
+  {
+   "file": "S11.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S11.hea",
+   "bytes": 863,
+   "sha256": "1f4d6de684dc84ad30a6df8c572803db6d7398beba8ded5c91a933698f10c2f1",
+   "fetched_utc": "2026-11-09T20:35:28Z"
+  },
+  {
+   "file": "S11.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S11.dat",
+   "bytes": 14526988,
+   "sha256": "edaa5c8d1263d3b0bb39a0df3cba3f648a58416e7ebfe53e2ff1a5039148cf1a",
+   "fetched_utc": "2026-11-09T20:35:32Z"
+  },
+  {
+   "file": "S12.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S12.hea",
+   "bytes": 864,
+   "sha256": "a4969ff6a109b62fa1b59419389067986cdddfc91283a51a31837baebb0e75fc",
+   "fetched_utc": "2026-11-09T20:35:35Z"
+  },
+  {
+   "file": "S12.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S12.dat",
+   "bytes": 17288908,
+   "sha256": "4264309c7ae1938e2dd4f171f9162ee857a2366064f1ae5e36fc9b2dcfe4154c",
+   "fetched_utc": "2026-11-09T20:35:39Z"
+  },
+  {
+   "file": "S13.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S13.hea",
+   "bytes": 862,
+   "sha256": "7db1dd10fd1718af5835d853f0009547ff32f8e8380acab6bf7e1b98d26de415",
+   "fetched_utc": "2026-11-09T20:35:43Z"
+  },
+  {
+   "file": "S13.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S13.dat",
+   "bytes": 13731228,
+   "sha256": "5f94940d865a7c67fd3181156e8acb539d7f934ddfa71620d639e0abb9121c5c",
+   "fetched_utc": "2026-11-09T20:35:48Z"
+  },
+  {
+   "file": "S14.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S14.hea",
+   "bytes": 869,
+   "sha256": "2f7d4f87375107f2c7043e295db534085a2013d65abd044549933f4e881a7d47",
+   "fetched_utc": "2026-11-09T20:35:51Z"
+  },
+  {
+   "file": "S14.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S14.dat",
+   "bytes": 17508988,
+   "sha256": "3183e884b5b499e6731033dc9e533049d1aa199a373fa58b5f6efd4e75aec810",
+   "fetched_utc": "2026-11-09T20:35:55Z"
+  },
+  {
+   "file": "S15.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S15.hea",
+   "bytes": 857,
+   "sha256": "eb80bea7222c1ca8bab496a45113d225f000dcd3bd32061abe90c32d215e4985",
+   "fetched_utc": "2026-11-09T20:35:58Z"
+  },
+  {
+   "file": "S15.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S15.dat",
+   "bytes": 10435068,
+   "sha256": "75e860a5dc442793ae0c54cbc81220f02623d0cb83aa0a80965fc8bcd3a5f758",
+   "fetched_utc": "2026-11-09T20:36:03Z"
+  },
+  {
+   "file": "S16.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S16.hea",
+   "bytes": 873,
+   "sha256": "740d2735c6df0eebc1b8184fb0bdbcd79794319383be846fb0a56805f2fe346f",
+   "fetched_utc": "2026-11-09T20:36:06Z"
+  },
+  {
+   "file": "S16.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S16.dat",
+   "bytes": 14342188,
+   "sha256": "1154d54e68a748fa23528c9d1f000d9822b06ad3de43e2ce7782552759644d38",
+   "fetched_utc": "2026-11-09T20:36:10Z"
+  },
+  {
+   "file": "S17.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S17.hea",
+   "bytes": 859,
+   "sha256": "f41be20d07621e8538e19cb58f54c146ebab43935a4871b4153b30d39fa4a105",
+   "fetched_utc": "2026-11-09T20:36:14Z"
+  },
+  {
+   "file": "S17.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S17.dat",
+   "bytes": 17394748,
+   "sha256": "198349f1cb3b3b3f91bbec5c59cec91868e34bbba4cbfbe273040f137a62b804",
+   "fetched_utc": "2026-11-09T20:36:18Z"
+  },
+  {
+   "file": "S18.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S18.hea",
+   "bytes": 859,
+   "sha256": "57c05a057db6c7e49e15914a69bd457a0f18b1443528e3ef950a58b9552d0fc2",
+   "fetched_utc": "2026-11-09T20:36:22Z"
+  },
+  {
+   "file": "S18.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S18.dat",
+   "bytes": 7911708,
+   "sha256": "aa2a2f5e0a87845f44fa1f97d4589d49c80b099e354168f8b3a885b4e9f88067",
+   "fetched_utc": "2026-11-09T20:36:27Z"
+  },
+  {
+   "file": "S19.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S19.hea",
+   "bytes": 857,
+   "sha256": "3367545588d244f7a5cf01ccf59ff02f7406a4ef2a94ca48e09ec530f27b89b1",
+   "fetched_utc": "2026-11-09T20:36:30Z"
+  },
+  {
+   "file": "S19.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S19.dat",
+   "bytes": 10406508,
+   "sha256": "96537223eed6a98792c22404f191d309ab8bba9f61b9edfad68a3082b650d306",
+   "fetched_utc": "2026-11-09T20:36:35Z"
+  },
+  {
+   "file": "S20.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S20.hea",
+   "bytes": 873,
+   "sha256": "1e331ca918d2133309078b9110f19e55879dd8169094c47b991905aa3e86fae3",
+   "fetched_utc": "2026-11-09T20:36:38Z"
+  },
+  {
+   "file": "S20.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S20.dat",
+   "bytes": 17480428,
+   "sha256": "6d3fcca79212bc28c077ec106b454c279064a253fb04d1ca9c58c80caa0b8616",
+   "fetched_utc": "2026-11-09T20:36:42Z"
+  },
+  {
+   "file": "S21.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S21.hea",
+   "bytes": 870,
+   "sha256": "9ea78beb679b3425f73ab2b46c396e4ae521df35003dddd6fd3754e7d5ff357a",
+   "fetched_utc": "2026-11-09T20:36:45Z"
+  },
+  {
+   "file": "S21.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S21.dat",
+   "bytes": 16915948,
+   "sha256": "71f9bb9348b3dc20c482e3922382873413fc7b6ab88dfc09973dd701dd602dfb",
+   "fetched_utc": "2026-11-09T20:36:49Z"
+  },
+  {
+   "file": "S22.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S22.hea",
+   "bytes": 862,
+   "sha256": "26192e1058ab513b74a68fecc50ac84b0cd1b2ec33411ab97a515a8c87add94a",
+   "fetched_utc": "2026-11-09T20:36:53Z"
+  },
+  {
+   "file": "S22.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S22.dat",
+   "bytes": 6793388,
+   "sha256": "8454980578500fe925d476483de3a19702b2c23d748df4eec90d1eca5919762e",
+   "fetched_utc": "2026-11-09T20:36:57Z"
+  },
+  {
+   "file": "S23.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S23.hea",
+   "bytes": 862,
+   "sha256": "a681885e16a5ca4d9c9b80a085d022fdaba04b486a22cc0fd44560eb3c65b759",
+   "fetched_utc": "2026-11-09T20:37:00Z"
+  },
+  {
+   "file": "S23.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S23.dat",
+   "bytes": 13767628,
+   "sha256": "7c1225dd2320996c22671079e02719972fb30da93955b3e57a331089d818fd76",
+   "fetched_utc": "2026-11-09T20:37:04Z"
+  },
+  {
+   "file": "S24.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S24.hea",
+   "bytes": 864,
+   "sha256": "f12aedacf1cc7e4da9f8492be5f4185980bb4bb6be65c4a1b71e42bb5dc12c6f",
+   "fetched_utc": "2026-11-09T20:37:08Z"
+  },
+  {
+   "file": "S24.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S24.dat",
+   "bytes": 14246428,
+   "sha256": "8ef225abf8ed4dcd4331e81b9584ad9078bd500af9485eb8b5b50bc2eaa6a4cd",
+   "fetched_utc": "2026-11-09T20:37:12Z"
+  },
+  {
+   "file": "S25.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S25.hea",
+   "bytes": 862,
+   "sha256": "82414d369914bf18f5d569230cce1c6689ae69737ae77d42406d1e8e46e88d9c",
+   "fetched_utc": "2026-11-09T20:37:42Z"
+  },
+  {
+   "file": "S25.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S25.dat",
+   "bytes": 10438988,
+   "sha256": "33ca51515bfe3561120e3ce60ed3cb1fa1404fd8f23948469fbbefbbd0269d20",
+   "fetched_utc": "2026-11-09T20:37:45Z"
+  },
+  {
+   "file": "S26.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S26.hea",
+   "bytes": 864,
+   "sha256": "c1f6f293617c4e7723fd48e46749ec84ec23abf56537947b216a43781128781f",
+   "fetched_utc": "2026-11-09T20:37:49Z"
+  },
+  {
+   "file": "S26.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S26.dat",
+   "bytes": 14309708,
+   "sha256": "f0ec2c2385077417f0d0fce465279d69d2a1063ddc31c4324257b912b8e63ac8",
+   "fetched_utc": "2026-11-09T20:37:57Z"
+  },
+  {
+   "file": "S27.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S27.hea",
+   "bytes": 861,
+   "sha256": "ea6b999ad178b4045f6159249e88627ad86dcef15e2c85d755191e8c12a66aef",
+   "fetched_utc": "2026-11-09T20:38:01Z"
+  },
+  {
+   "file": "S27.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S27.dat",
+   "bytes": 13749148,
+   "sha256": "30b73e6dd940696916c05f9b302a77a81e31bae296728946d6531a4e45ce997f",
+   "fetched_utc": "2026-11-09T20:38:05Z"
+  },
+  {
+   "file": "S28.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S28.hea",
+   "bytes": 862,
+   "sha256": "81be167900402cf4e39c10a4f91e04cb8fb3a6eff40ba6119b50050c6d423ff0",
+   "fetched_utc": "2026-11-09T20:38:09Z"
+  },
+  {
+   "file": "S28.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S28.dat",
+   "bytes": 13731228,
+   "sha256": "5f94940d865a7c67fd3181156e8acb539d7f934ddfa71620d639e0abb9121c5c",
+   "fetched_utc": "2026-11-09T20:38:17Z"
+  },
+  {
+   "file": "S29.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S29.hea",
+   "bytes": 861,
+   "sha256": "87a2d263c35a2f51770aaef8ba9958909176414d8f08eb3a11c402ae3b64effb",
+   "fetched_utc": "2026-11-09T20:38:21Z"
+  },
+  {
+   "file": "S29.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S29.dat",
+   "bytes": 17525788,
+   "sha256": "ec8500195dbb6eb954c3cb0e997e803044a8001f79fb2bb477943b345e4799e9",
+   "fetched_utc": "2026-11-09T20:38:27Z"
+  },
+  {
+   "file": "S30.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S30.hea",
+   "bytes": 858,
+   "sha256": "44bfe743898121298936dfbfc53af6762a9b04c6de86fc2b9c05e3aa158d69e0",
+   "fetched_utc": "2026-11-09T20:38:31Z"
+  },
+  {
+   "file": "S30.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S30.dat",
+   "bytes": 13749708,
+   "sha256": "d61a59baea2dbe2012a824ec62d448bb6c7aaeecfcfdd50d647dd00bac14553e",
+   "fetched_utc": "2026-11-09T20:38:35Z"
+  },
+  {
+   "file": "S31.hea",
+   "url": "https://physionet.org/files/semg/1.0.1/S31.hea",
+   "bytes": 865,
+   "sha256": "f93a41d0c941b919e1fc6010d98c91afed36cc95d1026b422f8449cce85f33c0",
+   "fetched_utc": "2026-11-09T20:38:39Z"
+  },
+  {
+   "file": "S31.dat",
+   "url": "https://physionet.org/files/semg/1.0.1/S31.dat",
+   "bytes": 10573388,
+   "sha256": "14f16e81e8259d68215fdf1709e01a4750d9f9caf9acdbb038a85dff2a4247d1",
+   "fetched_utc": "2026-11-09T20:38:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/DiNardo2021_BSPC.zip"
+}

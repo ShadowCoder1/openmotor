@@ -1,0 +1,7 @@
+{
+ "id": "McEllin2018_Cognition",
+ "skipped": true,
+ "reason": "not motor behaviour",
+ "details": "Participants were observers who judged whether another person's movement was instrumental or carried an informative intention. The raw .mat files hold only the observer's RT and choice per trial plus the stimulus properties (sequence, movement type, ascent/descent or height/duration); no movement of the participants was recorded. The deposit has 144 files with CC0 license.",
+ "sources": []
+}

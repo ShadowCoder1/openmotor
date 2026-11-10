@@ -1,0 +1,188 @@
+{
+ "id": "Voudouris2016_PLoSONE",
+ "module": "timeseries",
+ "rows": 3212,
+ "subjects": 54,
+ "persons": 14,
+ "zip_bytes": 27944489,
+ "zip_sha256": "af661bcda37a1566e21a01072222963e1e78f606e9baac267f116a9d2047e109",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants in Experiment 1",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 3",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 4",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 5",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 7",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods (Participants) of each experiment",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 1",
+   "computed": 528.0,
+   "reported": 528.0,
+   "tol": 0,
+   "source": "Results of Experiment 1 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 2",
+   "computed": 462.0,
+   "reported": 462.0,
+   "tol": 0,
+   "source": "Results of Experiment 2 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 3",
+   "computed": 528.0,
+   "reported": 528.0,
+   "tol": 0,
+   "source": "Results of Experiment 3 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 4",
+   "computed": 352.0,
+   "reported": 352.0,
+   "tol": 0,
+   "source": "Results of Experiment 4 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 5",
+   "computed": 352.0,
+   "reported": 352.0,
+   "tol": 0,
+   "source": "Results of Experiment 5 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials recorded in Experiment 7",
+   "computed": 462.0,
+   "reported": 462.0,
+   "tol": 0,
+   "source": "Results of Experiment 7 (trials before discarding)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the whole study",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (P1-P14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "replications of each condition (all subject x condition cells)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Methods, Procedure (each condition 22 times)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling interval of the recordings (ms)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (Optotrak at 100 Hz; gaze resampled to 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every subject has trials 1..N matching its stimlist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all replication counts are 22",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row and one sample file per recording",
+   "ok": true,
+   "detail": "3212 rows"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit has no exclusion flags; the paper discarded some trials (66, 40, 41, 28, 36, 77 and 56 in Experiments 1-7) for equipment failure or uncertain contact times, but which ones is not in the deposit, so excluded_by_authors is False in every row.",
+  "Experiment 6 has 8 participant folders and 528 recordings in the deposit; the paper reports 7 participants (P5-P7, P9, P11, P13, P14) and 462 trials. The extra folder is labelled with a number the paper does not list for Experiment 6. It is released as in the deposit and no Experiment 6 count was used as a check.",
+  "One recording starts with a row stamped 2210 ms followed by rows from 20 ms; it is kept as shared.",
+  "The paper's gaze biases and contact asynchronies are computed from event detection (thresholds, contact times) that the deposit does not provide, so they were not rebuilt; the published checks are counts of participants and trials, replications and the sampling rate."
+ ],
+ "sources": [
+  {
+   "file": "AllData.zip",
+   "url": "https://zenodo.org/api/records/4970099/files/All%20data.zip/content",
+   "bytes": 27292214,
+   "sha256": "48b7542b041a9f9deab42f2f72d174f3696416c8771289575a50bcea843080e2",
+   "fetched_utc": "2026-11-09T16:44:32Z"
+  },
+  {
+   "file": "README.rtf",
+   "url": "https://zenodo.org/api/records/4970099/files/README_for_All%20data.rtf/content",
+   "bytes": 2999,
+   "sha256": "b5f83df4d65305ad465e3fbcf70119a701426b4d501bc81746911b6272c2f5f4",
+   "fetched_utc": "2026-11-09T16:44:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Voudouris2016_PLoSONE.zip"
+}

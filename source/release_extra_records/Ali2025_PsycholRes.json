@@ -1,0 +1,244 @@
+{
+ "id": "Ali2025_PsycholRes",
+ "module": "keypress",
+ "rows": 86400,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 823372,
+ "zip_sha256": "6c3cb7ba1b43e74adac7f83d1624361b33c2f488255aa612f893b51e7c035957",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "30 participants x 16 blocks x 180 trials = 86400 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants are contiguous and rows are in trial order within a participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "block = 1 + position // 180 on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial counts from 1 to 180 within each block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimulus 1-4 map one to one to keys v, b, n, m",
+   "ok": true,
+   "detail": "{1: ['v'], 2: ['b'], 3: ['n'], 4: ['m']}"
+  },
+  {
+   "kind": "internal",
+   "what": "response_accuracy == (response_key == correct_key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blocks 1-15 are the target sequence, block 16 the interference sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one target sequence (121342314324) and one interference sequence (124313214234) for everyone",
+   "ok": true,
+   "detail": "{'121342314324'} {'124313214234'}"
+  },
+  {
+   "kind": "internal",
+   "what": "every block is 15 repetitions of its 12-element sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' sequence_pos = trial position mod 12 in blocks 1-15, empty in block 16",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' blk_seq_cycle = repetition within block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rt range",
+   "ok": true,
+   "detail": "1-5699 ms; 0 rows <= 0"
+  },
+  {
+   "kind": "internal",
+   "what": "errors: 3.98% of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "correct trials excluded by the IQR rule",
+   "ok": true,
+   "detail": "2966 of 82961; bounds -4.5, 599.5 ms"
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Abstract (Thirty participants, 14 females, Mage = 21.9 +/- 1.8 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of female participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Abstract (Thirty participants, 14 females, Mage = 21.9 +/- 1.8 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 21.866666666666667,
+   "reported": 21.9,
+   "tol": 0.05,
+   "source": "Abstract (Thirty participants, 14 females, Mage = 21.9 +/- 1.8 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 1.8332810859848758,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Abstract (Thirty participants, 14 females, Mage = 21.9 +/- 1.8 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean percent error per participant and block (%)",
+   "computed": 3.9803240740740744,
+   "reported": 3.98,
+   "tol": 0.005,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the percent error chunk (3.98)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of percent error per participant and block (%)",
+   "computed": 3.157220149280719,
+   "reported": 3.16,
+   "tol": 0.005,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the percent error chunk (3.16)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correct trials left after the 1.5 IQR RT outlier rule",
+   "computed": 79995.0,
+   "reported": 79995.0,
+   "tol": 0,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the outlier chunk (nrow(d.rt2) = 79995)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "upper RT outlier bound (ms)",
+   "computed": 599.5,
+   "reported": 599.5,
+   "tol": 0.05,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the outlier chunk (Upper = 599.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT of retained correct trials (ms)",
+   "computed": 293.1388961810113,
+   "reported": 293.0,
+   "tol": 0.5,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the RT table chunk (293, printed to 3 digits)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of RT of retained correct trials (ms)",
+   "computed": 110.53674694185865,
+   "reported": 111.0,
+   "tol": 0.5,
+   "source": "authors' analysis document (deposit, 'Analysis and visualisation code.pdf'), output of the RT table chunk (111, printed to 3 digits)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "srtt.csv",
+   "url": "https://osf.io/download/bwusm/",
+   "bytes": 6558709,
+   "sha256": "37b4b8fa7ee8b95c50dc27338ca7d06e211146d4a65a9854eb25120098aa81eb",
+   "fetched_utc": "2026-11-09T15:18:51Z"
+  },
+  {
+   "file": "errorlag.csv",
+   "url": "https://osf.io/download/66f50fe98d8a6d215a9e8b48/",
+   "bytes": 58905,
+   "sha256": "a41646b5c768ae116ef85fb8839ae64cc2e319e58b8171cc65999f81e2e06a99",
+   "fetched_utc": "2026-11-09T15:18:59Z"
+  },
+  {
+   "file": "recognition.csv",
+   "url": "https://osf.io/download/ejp8d/",
+   "bytes": 29873,
+   "sha256": "dce4e1e07a0d1e0033811fabed9152d349f15f159980d3d01db6c8d202ec387e",
+   "fetched_utc": "2026-11-09T15:19:08Z"
+  },
+  {
+   "file": "improvesummary.csv",
+   "url": "https://osf.io/download/66f50feb095bd8a6ccf42c2f/",
+   "bytes": 3983,
+   "sha256": "00bf4313b8b25d66d1ceede59494900f83cc9986a363ce76dd82a06e645a9bfa",
+   "fetched_utc": "2026-11-09T15:19:24Z"
+  },
+  {
+   "file": "seqspecificsummary.csv",
+   "url": "https://osf.io/download/jhr39/",
+   "bytes": 2569,
+   "sha256": "3a421f365d7167578a5d5759e745d58ee2b652f956c4998911eebff580db4972",
+   "fetched_utc": "2026-11-09T15:19:36Z"
+  },
+  {
+   "file": "lagsummary.csv",
+   "url": "https://osf.io/download/66f50fecd758b150db3cbf1e/",
+   "bytes": 941,
+   "sha256": "a09a9671c747288b33454d315ad9318ebe87f4b0afb761bafc654ce81c902be7",
+   "fetched_utc": "2026-11-09T15:19:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ali2025_PsycholRes.zip"
+}

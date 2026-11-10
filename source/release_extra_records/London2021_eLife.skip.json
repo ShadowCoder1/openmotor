@@ -1,0 +1,7 @@
+{
+ "id": "London2021_eLife",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "processed_data.mat (CC0, v7.3 HDF5, 13 blocks of 8 subjects, 121-159 trials each with Leap Motion hand traces and 8 task events) codes trial type (1/4/5) and result (1-4) and side as numbers with no key in the deposit, the paper or the authors code repo (cluster-mass statistics only); only the Impromptu Turn type could be inferred (targ_chg event) and result codes are guesses. Retry if the authors give the key. Raw file removed from the PC. Note: the deposit also holds raw electrophysiology and the paper is eLife 10:e64893, doi 10.7554/elife.64893 (checked), license CC0 matches.",
+ "sources": []
+}

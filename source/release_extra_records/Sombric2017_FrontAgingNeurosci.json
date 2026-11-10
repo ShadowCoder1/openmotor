@@ -1,0 +1,165 @@
+{
+ "id": "Sombric2017_FrontAgingNeurosci",
+ "module": "walking",
+ "rows": 82700,
+ "subjects": 38,
+ "persons": 22,
+ "zip_bytes": 6014066,
+ "zip_sha256": "f41fbae8b9eea878b9ba589652e080a9d5f0135c4826b3b814d5441e08164cb6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "38 sessions: 22 first visits (11 young, 11 older) and 16 second visits (8 + 8); second-visit files OG2<n> pair with first-visit files OG<n>",
+   "ok": true,
+   "detail": "{(1, 'older'): 11, (1, 'young'): 11, (2, 'older'): 8, (2, 'young'): 8}"
+  },
+  {
+   "kind": "internal",
+   "what": "treadmill strides from TreadmillData, overground strides from OvergroundData, each in recording order",
+   "ok": true,
+   "detail": "82700 rows; 14398 overground"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_asymmetry = (step_length_fast - step_length_slow) / sum on >= 98% of strides",
+   "ok": true,
+   "detail": "100.00% of 82700"
+  },
+  {
+   "kind": "internal",
+   "what": "the three contributions add up to step_length_asymmetry on >= 98% of strides",
+   "ok": true,
+   "detail": "100.00% of 82700"
+  },
+  {
+   "kind": "internal",
+   "what": "step_time_asymmetry (Tout) = (step_time_fast - step_time_slow) / stride_time on >= 98% of strides",
+   "ok": true,
+   "detail": "100.00% of 82700"
+  },
+  {
+   "kind": "published",
+   "what": "visit 1, young adults: number",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 1, young adults: women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 1, older adults: number",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 1, older adults: women",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 1, older adults: SD of age",
+   "computed": 2.766684921443975,
+   "reported": 2.8,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 2, young adults: number",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 2, young adults: women",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 2, older adults: number",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 2, older adults: women",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visit 2, older adults: SD of age",
+   "computed": 2.4748737341529163,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "visit 1, young adults: mean age: 24.73 here, 25.4 in the paper",
+  "visit 1, young adults: SD of age: 5.66 here, 5.5 in the paper",
+  "visit 1, older adults: mean age: 76.64 here, 77.2 in the paper",
+  "visit 2, young adults: mean age: 26.38 here, 27.0 in the paper",
+  "visit 2, young adults: SD of age: 5.80 here, 5.7 in the paper",
+  "visit 2, older adults: mean age: 76.12 here, 76.6 in the paper",
+  "No outcome statistic was checked: the overground measures need the authors' position-by-position bias removal, which the deposit does not document."
+ ],
+ "sources": [
+  {
+   "file": "FinalCogScores.mat",
+   "url": "https://osf.io/download/b9c4m/",
+   "bytes": 2145,
+   "sha256": "d82081f8814bd8fa5cb7a2ccfc21efb60185ca48a5a480c0f31b064e315ada5b",
+   "fetched_utc": "2026-11-08T19:44:21Z"
+  },
+  {
+   "file": "TreadmillData.zip",
+   "url": "https://osf.io/download/6x7bn/",
+   "bytes": 39367947,
+   "sha256": "a365207088dab8c5b91f3fe7e0013cf76ee42070cc9296b0798b5a8da540adae",
+   "fetched_utc": "2026-11-08T19:44:27Z"
+  },
+  {
+   "file": "OvergroundData.zip",
+   "url": "https://osf.io/download/7bcge/",
+   "bytes": 64061189,
+   "sha256": "a4a0532aa9f662d5ef1ce71f4510b9b5b6b652190aed8d32bd1d0d153ae1c708",
+   "fetched_utc": "2026-11-08T19:44:32Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sombric2017_FrontAgingNeurosci.zip"
+}

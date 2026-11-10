@@ -1,0 +1,7 @@
+{
+ "id": "Nick2024_eLife",
+ "skipped": true,
+ "reason": "Dryad download needs a token",
+ "details": "Behavioural CSVs are only on Dryad (doi 10.5061/dryad.7sqv9s512; file download returns HTTP 401); no Zenodo copy found, and the OpenNeuro ds005230 copy has raw imaging only, no behavioural events.",
+ "sources": []
+}

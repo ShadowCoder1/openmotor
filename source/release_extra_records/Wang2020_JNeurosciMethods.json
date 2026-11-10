@@ -1,0 +1,136 @@
+{
+ "id": "Wang2020_JNeurosciMethods",
+ "module": "timeseries",
+ "rows": 24,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 222143774,
+ "zip_sha256": "27ca62dd09b6de0fd3d43d813f75193883d3b2236136f4afb61254dbf4f08b35",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "mass of participant 3, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 79.04650356778797,
+   "reported": 79.12,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass of participant 4, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 63.04638124362895,
+   "reported": 63.1,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass of participant 5, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 70.49207951070336,
+   "reported": 70.56,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass of participant 6, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 58.185122324159025,
+   "reported": 58.24,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass of participant 7, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 68.67726299694189,
+   "reported": 68.75,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass of participant 8, kg (documentation Table I vs median vertical force of quiet trial 4)",
+   "computed": 60.30690112130478,
+   "reported": 60.33,
+   "tol": 0.3,
+   "source": "dataset documentation: Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the processed data (final protocol, participants 3-8)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "dataset documentation: Protocol (the identification used the last six participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (4 trials of 6 participants)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "dataset documentation: Protocol (four trials per participant)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers per recording (27 body + 5 treadmill)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "dataset documentation: Equipment (32 markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "motion capture sampling rate, Hz",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "dataset documentation: Equipment (100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill sway range in perturbed trials (peak to peak), m",
+   "computed": 0.10081169999999998,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "dataset documentation: Perturbation Signal (square pulses between -5 and +5 cm)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "quiet trials show no treadmill sway (range under 5 mm)",
+   "ok": true,
+   "detail": "0.0008206000000000324"
+  },
+  {
+   "kind": "internal",
+   "what": "24 sample files, same length for markers and joint data",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The vertical force of the first (quiet standing) trial of participant 3 is about zero in the deposit (force-plate data missing), so the mass check uses each participant's last trial. The deposit's documentation is a thesis chapter, not the 2020 paper, which only cites the data."
+ ],
+ "sources": [
+  {
+   "file": "Processed_Data.zip",
+   "url": "https://zenodo.org/api/records/3819630/files/Processed_Data.zip/content",
+   "bytes": 263624803,
+   "sha256": "029bff1660cf2b62eac304dc76493fc0650728576f50e1b1b8d46f3373490043",
+   "fetched_utc": "2026-11-09T08:43:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2020_JNeurosciMethods.zip"
+}

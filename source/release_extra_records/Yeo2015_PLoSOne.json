@@ -1,0 +1,106 @@
+{
+ "id": "Yeo2015_PLoSOne",
+ "module": "force_field_reaching",
+ "rows": 25920,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 346682,
+ "zip_sha256": "9997638348dda49969247e9d7e36472b36f5ede322761da18962f26c7b088110",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every trial has exactly one of MPE and force compensation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "channel trials: 4 per block of 20 (216 per participant), never two in a row in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants ('Twenty-four naive subjects')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 1080.0,
+   "reported": 1080.0,
+   "tol": 0,
+   "source": "Methods ('a total of 1080 trials ... 360 per condition')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per condition order (each of the 6 orders)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods ('four subjects each experienced one of the 6 possible orders')",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "six distinct condition orders, each used by 4 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "phase sizes 60 / 200 / 100 per condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "early-exposure force compensation of the hand-orientation condition (blocks 4-6, a window chosen by us) lies in the paper's 20-25% range (Results, Learning); the paper gives a range, not a value",
+   "ok": true,
+   "detail": "21.7%"
+  },
+  {
+   "kind": "internal",
+   "what": "early-exposure force compensation of the other two conditions below 10%",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MPE is small before exposure and large at the start of exposure",
+   "ok": true,
+   "detail": "0.73 vs 2.97"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "order.csv",
+   "url": "https://ndownloader.figshare.com/files/3322334",
+   "bytes": 96,
+   "sha256": "b0faf2c63c9afaeb8eb1318de07ae6ad9dec5ccf88f89766a12cc5356beace1f",
+   "fetched_utc": "2026-11-09T05:04:58Z"
+  },
+  {
+   "file": "fcom.csv",
+   "url": "https://ndownloader.figshare.com/files/3322319",
+   "bytes": 120619,
+   "sha256": "227f5fbcb9f5e808c8d9ee6cc4bc77f3d894890a4a5264b8e2209fabdb84ab61",
+   "fetched_utc": "2026-11-09T05:05:13Z"
+  },
+  {
+   "file": "mpe.csv",
+   "url": "https://ndownloader.figshare.com/files/3322328",
+   "bytes": 171850,
+   "sha256": "363157af57b227c81bfb36e8bf1d3ab83be8e56a79d72d8b20e7ff3aacb268ea",
+   "fetched_utc": "2026-11-09T05:05:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Yeo2015_PLoSOne.zip"
+}

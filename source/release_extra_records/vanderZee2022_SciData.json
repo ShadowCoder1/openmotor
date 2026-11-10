@@ -1,0 +1,325 @@
+{
+ "id": "vanderZee2022_SciData",
+ "module": "timeseries",
+ "rows": 677,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 1225076310,
+ "zip_sha256": "09d22a069bfbe87e643b50377fc4de414c0f305741b03f0fb5727721355059d7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract (N = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct experimental trial conditions",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Abstract / Table 2 (33 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 1: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 2: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 3: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 4: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 5: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 6: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 7: trials with a raw C3D file",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 8: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 9: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 10: trials with a raw C3D file",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 1 (# Raw files)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total raw C3D trials (10 x 33 minus one missing file)",
+   "computed": 329.0,
+   "reported": 329.0,
+   "tol": 0,
+   "source": "Table 1; Missing data (one C3D file missing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force plate sampling rate (Hz)",
+   "computed": 1200.0,
+   "reported": 1200.0,
+   "tol": 0,
+   "source": "Instrumentation and data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "motion capture sampling rate (Hz)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Instrumentation and data collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typical trial length (s)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Experimental protocol / Abstract (60 s per trial)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers per participant 1 trial (Table 3 rows minus 2 virtual Helen Hayes points)",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Table 3 (37 rows, HHL and HHR virtual)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers of participant 9 (upper-body acromion, elbow and wrist markers absent)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Missing data (subject 9 lacks acromion, elbow epicondyle and wrist markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean (years)",
+   "computed": 23.5,
+   "reported": 23.5,
+   "tol": 0.05,
+   "source": "Participants (23.5 +- 2.5); Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD (years)",
+   "computed": 2.5055493963954847,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Participants; Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "body mass mean (kg)",
+   "computed": 73.5,
+   "reported": 73.5,
+   "tol": 0.05,
+   "source": "Participants (73.5 +- 15 kg); Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "body mass SD (kg)",
+   "computed": 15.04962162684202,
+   "reported": 15.0,
+   "tol": 0.5,
+   "source": "Participants; Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height mean (m)",
+   "computed": 1.7579999999999998,
+   "reported": 1.76,
+   "tol": 0.005,
+   "source": "Participants (1.76 +- 0.11 m); Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height SD (m)",
+   "computed": 0.10982814858779247,
+   "reported": 0.11,
+   "tol": 0.005,
+   "source": "Participants; Table 1 values",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speeds 0.7 to 2.0 m/s: lowest",
+   "computed": 0.7,
+   "reported": 0.7,
+   "tol": 0,
+   "source": "Abstract (0.7-2.0 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speeds 0.7 to 2.0 m/s: highest",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Abstract (0.7-2.0 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step widths range from 0 to 0.4 m: highest",
+   "computed": 0.4,
+   "reported": 0.4,
+   "tol": 0,
+   "source": "Abstract (0-0.4 m)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one participant-trial without usable markers (participant 6 trial 31, forces only)",
+   "ok": true,
+   "detail": "[(6, 31)]"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings without force channels listed",
+   "ok": true,
+   "detail": "[(3, 0), (10, 21)]"
+  },
+  {
+   "kind": "internal",
+   "what": "shortened trials listed",
+   "ok": true,
+   "detail": "[(3, 1, 5023), (6, 21, 652), (10, 27, 1753)]"
+  },
+  {
+   "kind": "internal",
+   "what": "participant 6 trial 21 stopped early (less than 60 s)",
+   "ok": true,
+   "detail": "[(3, 1, 5023), (6, 21, 652), (10, 27, 1753)]"
+  },
+  {
+   "kind": "internal",
+   "what": "participant 7 trial 24 has no file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "340 C3D files read",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every C3D file gives one marker or no-marker stream",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "number of calibration sets",
+   "ok": true,
+   "detail": "2"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 1 lists 33 raw files for participant 8; the deposit has 34 files for participant 8 (a repeat file for trial 28 as well). The paper's inverse-dynamics outlier comment (participant 10) applies to Level 2/3 data, not to these raw files, so participant 10 is kept.",
+  "The deposit's license is CC0 1.0; the data descriptor article itself is CC BY 4.0.",
+  "Body mass from the force plates is not compared with Table 1 because the plates were not tared (see how this file was made)."
+ ],
+ "sources": [
+  {
+   "file": "trial_look_up.xlsx",
+   "url": "https://ndownloader.figshare.com/files/35016340",
+   "bytes": 11177,
+   "sha256": "23ab2ad774ff874593d85c95c9bbf2b394ec646f34c4d24ed91085392b890d08",
+   "fetched_utc": "2026-11-10T05:18:12Z"
+  },
+  {
+   "file": "level1_c3d.zip",
+   "url": "https://ndownloader.figshare.com/files/35020438",
+   "bytes": 1068577264,
+   "sha256": "df678415c82fc03ccab305e2b0650bcb476a17139b2e279ba3e16c6b580e063d",
+   "fetched_utc": "2026-11-10T05:19:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/vanderZee2022_SciData.zip"
+}

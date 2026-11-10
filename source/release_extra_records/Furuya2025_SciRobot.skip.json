@@ -1,0 +1,7 @@
+{
+ "id": "Furuya2025_SciRobot",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad download needs a token. Searched for a copy on Zenodo, Figshare and OSF: none found (the paper is Science Robotics 10(98):eadn3802, doi 10.1126/scirobotics.adn3802; deposit doi 10.5061/dryad.70rxwdc6h, CC0).",
+ "sources": []
+}

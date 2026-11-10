@@ -1,0 +1,151 @@
+{
+ "id": "Payne2020_GaitPosture",
+ "module": "timeseries",
+ "rows": 1924,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 262814819,
+ "zip_sha256": "8abfa3ecdcf9625349e3ff3519c990956f119cb77dad0c1fddd394b371d06d0a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract / Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, years",
+   "computed": 25.6,
+   "reported": 26.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (26 years, SD 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, years",
+   "computed": 5.335087430842802,
+   "reported": 5.0,
+   "tol": 0.5,
+   "source": "Methods: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height, cm",
+   "computed": 167.94500000000002,
+   "reported": 168.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (168 cm, SD 8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of height, cm",
+   "computed": 7.821392728314203,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Methods: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest participant, cm",
+   "computed": 155.8,
+   "reported": 156.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (range 156-185 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tallest participant, cm",
+   "computed": 184.6,
+   "reported": 185.0,
+   "tol": 0.5,
+   "source": "Methods: Participants (range 156-185 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean cortical N1 amplitude (magnitude of the Cz minimum 100-200 ms in each participant's average), microvolt",
+   "computed": 54.145219885923055,
+   "reported": 54.0,
+   "tol": 0.5,
+   "source": "Results (54 +/- 18 microvolt)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of N1 amplitude, microvolt",
+   "computed": 18.035256567235972,
+   "reported": 18.0,
+   "tol": 0.5,
+   "source": "Results (54 +/- 18 microvolt)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a centre-of-mass value (one excluded for a missing marker)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods: CoM position and trunk angle (N=19)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with exactly 48 perturbations",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods: Perturbations (48 each); one participant has 50 rows in the deposit",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small perturbations per participant (one third of 48), participant with 48",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods: Perturbations (evenly divided)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all 962 trials kept, one epoch row each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has 2501 epoch samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "beam distances between 0 and 1",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Peak trunk angle is empty for two participants in the deposit (paper: one participant excluded for a missing marker, N=19 for CoM and trunk angle); peak CoM is empty for one."
+ ],
+ "sources": [
+  {
+   "file": "dryad_combined_with_beta.mat",
+   "url": "https://zenodo.org/api/records/3898501/files/dryad_combined_with_beta.mat/content",
+   "bytes": 368578172,
+   "sha256": "402b89954556de0edfe47dea5b25ce53fb60b945ad4f43561a3dda4a5de09d26",
+   "fetched_utc": "2026-11-09T06:06:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Payne2020_GaitPosture.zip"
+}

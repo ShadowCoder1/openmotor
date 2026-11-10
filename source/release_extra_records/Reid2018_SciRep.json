@@ -1,0 +1,486 @@
+{
+ "id": "Reid2018_SciRep",
+ "module": "screen_interception",
+ "rows": 15672,
+ "subjects": 49,
+ "persons": 25,
+ "zip_bytes": 1037694,
+ "zip_sha256": "b2063530abbfbd49e77f263168e969ba388f69cf45b266d35f75624cc290ede5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each session has trial rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target final y has the two zones (above/below 512 px)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the study",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the SPOC analyses (25 minus the 5-pulse participant)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the mIPS analyses",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rTMS/control conditions per session (No TMS, Cz, left, right)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target trajectory types (up/down x initial zone x final zone = 8 combinations)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Target Trajectories",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repetitions per trajectory and TMS condition in a session (2 blocks x 5), median",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "session length: trials per session after the practice blocks (4 conditions x 2 blocks x 40), median",
+   "computed": 320.0,
+   "reported": 320.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "participants with both sessions: the paper reports 23 (Methods, Subjects); computed from the deposit 24.",
+  "The authors' analysis excluded the SPOC session of one participant (5 pulses given); that is marked, not removed."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/x2h8s/",
+   "bytes": 1908,
+   "sha256": "8d850289dd186bb52065edd0d96c77346c85633b7157f5cdc849d411b0cbb4ec",
+   "fetched_utc": "2026-11-09T10:17:22Z"
+  },
+  {
+   "file": "DataAnalyses.m",
+   "url": "https://osf.io/download/yv7xg/",
+   "bytes": 19183,
+   "sha256": "4ac3767d35b3b2340142614256d5f1c88229bbd4684032978c75766d877d1d29",
+   "fetched_utc": "2026-11-09T10:17:49Z"
+  },
+  {
+   "file": "CodeSessions.m",
+   "url": "https://osf.io/download/y6xja/",
+   "bytes": 14075,
+   "sha256": "e6e040b5a737bbd139fe91270bc17c6afab0e612664ecffaa4986e53e07e7219",
+   "fetched_utc": "2026-11-09T10:19:25Z"
+  },
+  {
+   "file": "PlotsAndStats.m",
+   "url": "https://osf.io/download/vtny6/",
+   "bytes": 76863,
+   "sha256": "d13718fc4f0f8d8b76104bcd8447d489cfbc98e037e63e440bd0fb97664a5e01",
+   "fetched_utc": "2026-11-09T10:19:29Z"
+  },
+  {
+   "file": "x",
+   "url": "https://osf.io/download/pek2x/",
+   "bytes": 70611,
+   "sha256": "1f8fa077adcd97b0d1a2422a4fd0443ffe62bb72346fbc7ef3383556ff26b68d",
+   "fetched_utc": "2026-11-09T10:19:36Z"
+  },
+  {
+   "file": "MergeData.m",
+   "url": "https://osf.io/download/59d4a151594d9002b1c8df1b/",
+   "bytes": 4068,
+   "sha256": "5d4310f8becd415fe0d08e2e55a8b5dfad0d5329e52f81b000d38e10b6d4e44d",
+   "fetched_utc": "2026-11-09T10:19:41Z"
+  },
+  {
+   "file": "Data_mIPS_S14.mat",
+   "url": "https://osf.io/download/59cba60c594d900253eb2417/",
+   "bytes": 9533690,
+   "sha256": "1c1a387d638d719de577cee12ffb94c91a5250c743a8939f7e3e32a291c0936d",
+   "fetched_utc": "2026-11-09T10:29:25Z"
+  },
+  {
+   "file": "Data_mIPS_S16.mat",
+   "url": "https://osf.io/download/59cba60d9ad5a1025fb5b860/",
+   "bytes": 9917486,
+   "sha256": "977b4a7c4549253c3251e473e3303423d67f73bba7fe376e04bb597ff69cd33a",
+   "fetched_utc": "2026-11-09T10:29:32Z"
+  },
+  {
+   "file": "Data_mIPS_S15.mat",
+   "url": "https://osf.io/download/59cba610594d900252ec9b7e/",
+   "bytes": 9883310,
+   "sha256": "5f573629496a592f38528b0fbb513c514380d10c918e353fa941d5ac6d95a7d8",
+   "fetched_utc": "2026-11-09T10:29:36Z"
+  },
+  {
+   "file": "Data_mIPS_S19.mat",
+   "url": "https://osf.io/download/59cba611b83f69025a6a6fb9/",
+   "bytes": 9927831,
+   "sha256": "d16b7f96e4a6d77f5e367ecf78a8fe76ce8b608f8be40d043833979eb1199176",
+   "fetched_utc": "2026-11-09T10:29:40Z"
+  },
+  {
+   "file": "Data_mIPS_S13.mat",
+   "url": "https://osf.io/download/59cba6136c613b025be37fc4/",
+   "bytes": 9646878,
+   "sha256": "04d83ee11b5bd7407a28b0c13ee6794cc8c9ac49e55be15a168c00b74ed0b77e",
+   "fetched_utc": "2026-11-09T10:29:46Z"
+  },
+  {
+   "file": "Data_mIPS_S20.mat",
+   "url": "https://osf.io/download/59cba6146c613b025de47c22/",
+   "bytes": 9896184,
+   "sha256": "b518bb2f07131d1fbd581627dd6f5d4864bdeb90ebb86899d31b150b7d44ea17",
+   "fetched_utc": "2026-11-09T10:29:53Z"
+  },
+  {
+   "file": "Data_mIPS_S18.mat",
+   "url": "https://osf.io/download/59cba6156c613b025ce3b319/",
+   "bytes": 9549578,
+   "sha256": "a90f99ed905c8be842fad4102904f9c6abdb37e1010fa48e003015dcfbaff41d",
+   "fetched_utc": "2026-11-09T10:30:01Z"
+  },
+  {
+   "file": "Data_mIPS_S17.mat",
+   "url": "https://osf.io/download/59cba616b83f69025c6ad074/",
+   "bytes": 9535317,
+   "sha256": "6e543920cb00564eb2b0b287889834a85821c9e32ceeebd5e90226e850e1ccec",
+   "fetched_utc": "2026-11-09T10:30:05Z"
+  },
+  {
+   "file": "Data_mIPS_S21.mat",
+   "url": "https://osf.io/download/59cba6196c613b025ae36605/",
+   "bytes": 9866167,
+   "sha256": "f5cc913e8fd0c5409f1b8524c903fa68b334e8ff7f57628fd26201f97db43dd4",
+   "fetched_utc": "2026-11-09T10:30:20Z"
+  },
+  {
+   "file": "Data_mIPS_S22.mat",
+   "url": "https://osf.io/download/59cba61b594d900253eb241f/",
+   "bytes": 9903839,
+   "sha256": "945ded80aa1a169cfed558e53f38311ee0ed632c7468268875766b8499cb5989",
+   "fetched_utc": "2026-11-09T10:30:25Z"
+  },
+  {
+   "file": "Data_mIPS_S25.mat",
+   "url": "https://osf.io/download/59cba61c9ad5a1025fb5b86a/",
+   "bytes": 9719208,
+   "sha256": "2ab89c35bd87bf0aa113af6f72c6715562208e532a35e892e980aaa6b6470d90",
+   "fetched_utc": "2026-11-09T10:30:29Z"
+  },
+  {
+   "file": "Data_mIPS_S23.mat",
+   "url": "https://osf.io/download/59cba620594d900252ec9b95/",
+   "bytes": 9903510,
+   "sha256": "bd9f45619ad714ca87313b9418980114728ac35b2a6f67795cd9102a7f0d3421",
+   "fetched_utc": "2026-11-09T10:30:34Z"
+  },
+  {
+   "file": "Data_mIPS_S24.mat",
+   "url": "https://osf.io/download/59cba622594d900252ec9b99/",
+   "bytes": 9838405,
+   "sha256": "c4df1f9a1a4b48014a612c60be90a5e307db633107b0ca57f858e5527264ee18",
+   "fetched_utc": "2026-11-09T10:30:41Z"
+  },
+  {
+   "file": "Data_SPOC_S3.mat",
+   "url": "https://osf.io/download/59cba622594d900252ec9ba0/",
+   "bytes": 9548380,
+   "sha256": "c4ab1f7a0867d75a4feca1f7892a1370217edc0167ac1fc7e6f5d719cb8b22dc",
+   "fetched_utc": "2026-11-09T10:30:54Z"
+  },
+  {
+   "file": "Data_SPOC_S2.mat",
+   "url": "https://osf.io/download/59cba6259ad5a1025eb64cbe/",
+   "bytes": 9700265,
+   "sha256": "8bfce2621bdcf00f8e003b72c6ae29d7015f38f5627f6683f86c400e9f0cd77b",
+   "fetched_utc": "2026-11-09T10:31:03Z"
+  },
+  {
+   "file": "Data_SPOC_S7.mat",
+   "url": "https://osf.io/download/59cba6269ad5a10260b759b8/",
+   "bytes": 9717354,
+   "sha256": "b1b8ee90687ee610cf9f8f4b3db23b7167a2e912fce4d2361410d05d92335a99",
+   "fetched_utc": "2026-11-09T10:31:11Z"
+  },
+  {
+   "file": "Data_SPOC_S5.mat",
+   "url": "https://osf.io/download/abp6h/",
+   "bytes": 9812432,
+   "sha256": "40b754a086152fbe82682f42a3d219469c3c3fd5ae94497e5f12fc8b0aa1958b",
+   "fetched_utc": "2026-11-09T10:31:35Z"
+  },
+  {
+   "file": "Data_SPOC_S6.mat",
+   "url": "https://osf.io/download/59cba629b83f69025a6a6fc9/",
+   "bytes": 9731556,
+   "sha256": "b55a58bdcee48ce3154531b1be9562c26ce45d2f569f886f859499312d10b8db",
+   "fetched_utc": "2026-11-09T10:31:40Z"
+  },
+  {
+   "file": "Data_SPOC_S8.mat",
+   "url": "https://osf.io/download/7wncv/",
+   "bytes": 9859763,
+   "sha256": "a22c27fd6c2b3c120dcbe610ab5f8e95d087698ed2646cc736afaa9b604a50be",
+   "fetched_utc": "2026-11-09T10:31:45Z"
+  },
+  {
+   "file": "Data_SPOC_S10.mat",
+   "url": "https://osf.io/download/59cba62c9ad5a1025db553f1/",
+   "bytes": 9621012,
+   "sha256": "04f6a305ba31bff91b81c9916da355fb27669eab5d3021cf2d0a82f8b8f043e8",
+   "fetched_utc": "2026-11-09T10:31:49Z"
+  },
+  {
+   "file": "Data_SPOC_S4.mat",
+   "url": "https://osf.io/download/59cba62e6c613b025ce3b32c/",
+   "bytes": 9781677,
+   "sha256": "181656d1bedc31e1392c130917a4728e346a183d0d629739579309aac0ef67ac",
+   "fetched_utc": "2026-11-09T10:31:54Z"
+  },
+  {
+   "file": "Data_SPOC_S9.mat",
+   "url": "https://osf.io/download/59cba62e594d900251eb83e6/",
+   "bytes": 9583274,
+   "sha256": "cc311ef870035cbf93de18ece9620d75021d06d55ec922cf3d1b1eda25ae5f4e",
+   "fetched_utc": "2026-11-09T10:32:00Z"
+  },
+  {
+   "file": "Data_SPOC_S12.mat",
+   "url": "https://osf.io/download/59cba6319ad5a10260b759c5/",
+   "bytes": 9856099,
+   "sha256": "26024753b5b2dc0a803de47d8e4cd2dd51f52e3180e9733d0ac8902a4e57c90c",
+   "fetched_utc": "2026-11-09T10:32:06Z"
+  },
+  {
+   "file": "Data_SPOC_S13.mat",
+   "url": "https://osf.io/download/59cba633594d900252ec9bb7/",
+   "bytes": 9572129,
+   "sha256": "5778a56d9acf8cb06a6f4ae60f7ee413fd9ac3cfb0f6b9570836fc6c4e159d7f",
+   "fetched_utc": "2026-11-09T10:32:10Z"
+  },
+  {
+   "file": "Data_SPOC_S16.mat",
+   "url": "https://osf.io/download/59cba636594d900251eb83ea/",
+   "bytes": 9916330,
+   "sha256": "e1403d5c32d34fd22fe1e22d542a95eb146ebc025fbf0c545edb818ab2c5653b",
+   "fetched_utc": "2026-11-09T10:32:15Z"
+  },
+  {
+   "file": "Data_SPOC_S14.mat",
+   "url": "https://osf.io/download/59cba637594d900253eb2429/",
+   "bytes": 9554583,
+   "sha256": "061b14ee58f76331d97c22d929eda1b2bdddf3e2e0dabd9e299a76c10859a3a9",
+   "fetched_utc": "2026-11-09T10:32:22Z"
+  },
+  {
+   "file": "Data_SPOC_S15.mat",
+   "url": "https://osf.io/download/59cba6389ad5a1025fb5b87e/",
+   "bytes": 9940495,
+   "sha256": "28c5a65d6b3ed91ea65a7b8740bb8a9e678c54660511f1ddf9b961d163bacb80",
+   "fetched_utc": "2026-11-09T10:32:28Z"
+  },
+  {
+   "file": "Data_SPOC_S17.mat",
+   "url": "https://osf.io/download/59cba63e9ad5a1025eb64cce/",
+   "bytes": 9574412,
+   "sha256": "4029e75653bda3ebab7dc0733cdfdf4fb7e031245ac11f3b50e37c219d066973",
+   "fetched_utc": "2026-11-09T10:32:35Z"
+  },
+  {
+   "file": "Data_SPOC_S11.mat",
+   "url": "https://osf.io/download/59cba63e6c613b025ce3b335/",
+   "bytes": 9572891,
+   "sha256": "165619ebe5f484ab4e921e6a937532bc9326bd9ea2fdae1e2945e6b05cfd8184",
+   "fetched_utc": "2026-11-09T10:32:42Z"
+  },
+  {
+   "file": "Data_SPOC_S19.mat",
+   "url": "https://osf.io/download/59cba6406c613b025de47c43/",
+   "bytes": 9954368,
+   "sha256": "114ffa1d5baffbe9d1802a93b9a2876ae04653e003505f50eb40c13c1706c16d",
+   "fetched_utc": "2026-11-09T10:32:48Z"
+  },
+  {
+   "file": "Data_SPOC_S22.mat",
+   "url": "https://osf.io/download/59cba6436c613b025de47c4c/",
+   "bytes": 9895885,
+   "sha256": "d5a116c36f30274c9f0dc67620defbcfde5287aa014cd167c758920039e97b7d",
+   "fetched_utc": "2026-11-09T10:32:54Z"
+  },
+  {
+   "file": "Data_SPOC_S21.mat",
+   "url": "https://osf.io/download/59cba644594d900250eae9a2/",
+   "bytes": 9907580,
+   "sha256": "792c970fb2534736615cdb3a5062630dc392286bbab99241763690d3723d3288",
+   "fetched_utc": "2026-11-09T10:32:57Z"
+  },
+  {
+   "file": "Data_SPOC_S18.mat",
+   "url": "https://osf.io/download/59cba645594d900253eb2433/",
+   "bytes": 9690184,
+   "sha256": "8a73c00b671f5ed47790b3d723ac2a0cead06c11001497989ef7304169ab8f2f",
+   "fetched_utc": "2026-11-09T10:33:02Z"
+  },
+  {
+   "file": "Data_SPOC_S20.mat",
+   "url": "https://osf.io/download/59cba6469ad5a1025db55403/",
+   "bytes": 10206862,
+   "sha256": "aa434a403624356c504e953d1df12f3b0afdb3cfcba1f25296cc9d1ed61e3e29",
+   "fetched_utc": "2026-11-09T10:33:07Z"
+  },
+  {
+   "file": "Data_Merged.mat",
+   "url": "https://osf.io/download/pek2x/",
+   "bytes": 70611,
+   "sha256": "1f8fa077adcd97b0d1a2422a4fd0443ffe62bb72346fbc7ef3383556ff26b68d",
+   "fetched_utc": "2026-11-09T10:33:11Z"
+  },
+  {
+   "file": "Data_SPOC_S23.mat",
+   "url": "https://osf.io/download/59cba64b594d900250eae9a9/",
+   "bytes": 9864660,
+   "sha256": "e0470af138d8c585520064ac1ecdcd5ff9309015ace802ac05ce1aa2d31e9e30",
+   "fetched_utc": "2026-11-09T10:33:15Z"
+  },
+  {
+   "file": "Data_SPOC_S25.mat",
+   "url": "https://osf.io/download/59cba64e6c613b025be37fdf/",
+   "bytes": 9777741,
+   "sha256": "ddb775283b505cd2973db110fcd7bfd61716855e2b3f43cc1f58c84e85ff8a60",
+   "fetched_utc": "2026-11-09T10:33:20Z"
+  },
+  {
+   "file": "Data_SPOC_S24.mat",
+   "url": "https://osf.io/download/jyrpg/",
+   "bytes": 9872488,
+   "sha256": "bf34006d5511617135122bc1ad66a2e6ac0e30c0764516f76e22f81eed3f1b1e",
+   "fetched_utc": "2026-11-09T10:33:24Z"
+  },
+  {
+   "file": "Data_mIPS_S2.mat",
+   "url": "https://osf.io/download/59cba651594d900252ec9bcc/",
+   "bytes": 9640443,
+   "sha256": "8178d69d74c892762617ee31356d3b9f6c29f8a9ceb12b60b6105fe3b63894d7",
+   "fetched_utc": "2026-11-09T10:33:30Z"
+  },
+  {
+   "file": "Data_mIPS_S4.mat",
+   "url": "https://osf.io/download/59cba6566c613b025de47c5f/",
+   "bytes": 9858693,
+   "sha256": "0469f44745d764ecc09a9820fb1dcc4dcf67a1981c63d3f56c99b4dd34a13841",
+   "fetched_utc": "2026-11-09T10:33:36Z"
+  },
+  {
+   "file": "Data_mIPS_S1.mat",
+   "url": "https://osf.io/download/59cba6566c613b025de47c63/",
+   "bytes": 9694916,
+   "sha256": "1bd5024b63ae460d00b2702ac296f3472211abaf72d5239e7fd27ff39cfe9846",
+   "fetched_utc": "2026-11-09T10:33:42Z"
+  },
+  {
+   "file": "Data_mIPS_S6.mat",
+   "url": "https://osf.io/download/59cba6576c613b025de47c6c/",
+   "bytes": 9811018,
+   "sha256": "b1fc4df04165b17c51ed65566a25b1da312d64b4aa189c86ebf6c79196a3945b",
+   "fetched_utc": "2026-11-09T10:33:48Z"
+  },
+  {
+   "file": "Data_mIPS_S3.mat",
+   "url": "https://osf.io/download/59cba658b83f69025b6a2fad/",
+   "bytes": 9522732,
+   "sha256": "98416a64c73094f8fa05ee3594199454431a43e2d00fd88ab8eb178d015da7d8",
+   "fetched_utc": "2026-11-09T10:33:54Z"
+  },
+  {
+   "file": "Data_mIPS_S8.mat",
+   "url": "https://osf.io/download/59cba65c594d900251eb8403/",
+   "bytes": 9863560,
+   "sha256": "ef9481d9bafecf9e9f0b012261e7447b0765be4388c3d17471ac48f9c51b582b",
+   "fetched_utc": "2026-11-09T10:34:01Z"
+  },
+  {
+   "file": "Data_mIPS_S11.mat",
+   "url": "https://osf.io/download/2vzxm/",
+   "bytes": 9641696,
+   "sha256": "2c675f15cd6e92adccb97235f0b7904fb6505d8053365afcb308db6e1f21888c",
+   "fetched_utc": "2026-11-09T10:34:07Z"
+  },
+  {
+   "file": "Data_mIPS_S9.mat",
+   "url": "https://osf.io/download/59cba65fb83f69025d6c01fd/",
+   "bytes": 9770954,
+   "sha256": "b3a94cb235c4647c4eaa37008f4d491de965eea4be5859fbc0aa8ac1449057e5",
+   "fetched_utc": "2026-11-09T10:34:12Z"
+  },
+  {
+   "file": "Data_mIPS_S7.mat",
+   "url": "https://osf.io/download/59cba6609ad5a1025db55418/",
+   "bytes": 9766060,
+   "sha256": "ba3bba6ed7e4f84469aef12b664afb158fc0401aaef5eff8161e700198c03b4c",
+   "fetched_utc": "2026-11-09T10:34:17Z"
+  },
+  {
+   "file": "Data_mIPS_S10.mat",
+   "url": "https://osf.io/download/59cba6629ad5a1025fb5b89f/",
+   "bytes": 9595265,
+   "sha256": "2b41cb156206dc81d01beb4de8b28e366d089ab7c984a3ac71174fa0b2e1114e",
+   "fetched_utc": "2026-11-09T10:34:22Z"
+  },
+  {
+   "file": "Data_mIPS_S12.mat",
+   "url": "https://osf.io/download/59cba6649ad5a1025eb64cec/",
+   "bytes": 9859032,
+   "sha256": "bde7faccce6733f4fa23e68685852dbc53a33a025b48f670280892ddca932960",
+   "fetched_utc": "2026-11-09T10:34:27Z"
+  },
+  {
+   "file": "Data_SPOC_S1.mat",
+   "url": "https://osf.io/download/59cba622594d900252ec9b9d/",
+   "bytes": 9575108,
+   "sha256": "2b082474ef4c23665ebc4b6795ca2333f74ba743d4c9f1908e7043cae1fde55e",
+   "fetched_utc": "2026-11-09T10:34:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Reid2018_SciRep.zip"
+}

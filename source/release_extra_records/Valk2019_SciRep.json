@@ -1,0 +1,103 @@
+{
+ "id": "Valk2019_SciRep",
+ "module": "timeseries",
+ "rows": 479,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 502086242,
+ "zip_sha256": "9038e9b5e4fd205ce96e5bfdb16bc68cf3e5f33e7c621f97aeca82d9f3b62bc3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (twenty participants recruited)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique conditions",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (24 unique conditions)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has 23-24 of the conditions (one trial missing for one participant)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "distinct target distances",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Experimental set-up (5, 10, 20, 30 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct IDs",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Experimental set-up (ID 3.5-6 in steps of 0.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate Hz",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Experimental set-up (100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one sampling rate in all files",
+   "ok": true,
+   "detail": "{100.0}"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 480 sheet rows minus duplicates",
+   "ok": true,
+   "detail": "479 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "median stylus excursion within 12 mm of the nominal target distance (targets have width, so a little more than the distance is expected)",
+   "ok": true,
+   "detail": "{5: 56.0, 10: 107.0, 20: 208.0, 30: 306.0}"
+  },
+  {
+   "kind": "internal",
+   "what": "marker-lost share below 5%",
+   "ok": true,
+   "detail": "0.0949%"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analysed 18 participants (two excluded for failed data acquisition, not identified); the deposit holds 20.",
+  "The sheet lists two trials for one Optotrak file of one participant (trial 5, 3.5 / 5 cm, and trial 4, 4 / 20 cm, both file 4); the stylus excursion in the file (about 20 cm) matches trial 4, so trial 5 has no recording and is left out.",
+  "Two Optotrak files (one for each of two participants) are not in the sheet (the participant's trial numbers skip them); they are not released.",
+  "The paper's end-effector and joint-angle measures (NL, AD ratio and others) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "data.rar",
+   "url": "https://ndownloader.figshare.com/files/15482963",
+   "bytes": 1320490575,
+   "sha256": "69fc117e07121e2a43320b6a24cf04ffc41d28069a142ae8b44a79b2b52f2320",
+   "fetched_utc": "2026-11-09T17:26:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Valk2019_SciRep.zip"
+}

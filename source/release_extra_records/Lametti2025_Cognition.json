@@ -1,0 +1,932 @@
+{
+ "id": "Lametti2025_Cognition",
+ "module": "speech",
+ "rows": 45900,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 1169438,
+ "zip_sha256": "e8727e144b54578dcf9f488e48ece52c5a56eef100ce32d50794119d9f2262ed",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "zeros in the shared arrays are exactly whole S1 sentence blocks (60 sentences) of 7 participants: not recorded, emptied",
+   "ok": true,
+   "detail": "7"
+  },
+  {
+   "kind": "internal",
+   "what": "75 participants, 15 in each of 5 experiments",
+   "ok": true,
+   "detail": "{1: 15, 2: 15, 3: 15, 4: 15, 5: 15}"
+  },
+  {
+   "kind": "internal",
+   "what": "sentence rows: 60 sentences x 7 blocks per participant; word rows: 96 x 2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "formants in plausible mel range (F1 100-1500, F2 600-2200) where present",
+   "ok": true,
+   "detail": "F1 123-1224, F2 829-1961"
+  },
+  {
+   "kind": "internal",
+   "what": "in every experiment the group mean change in English F1 (S6-S2) opposes the English F1 shift in force",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: women",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: men",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: women",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: men",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: women",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: men",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "preprint Methods, Experiments 1-3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in all five experiments",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in all five experiments",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in all experiments",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0,
+   "source": "preprint Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F1 change (mel), SD",
+   "computed": 18.103766182785968,
+   "reported": 18.1,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F1 change (mel), mean",
+   "computed": -16.99390595793279,
+   "reported": -16.99,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F1 change (mel), SD",
+   "computed": 17.046046945674714,
+   "reported": 17.05,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F2 change (mel), mean",
+   "computed": -19.235867035426494,
+   "reported": -19.24,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English adapt F2 change (mel), SD",
+   "computed": 16.632228547751904,
+   "reported": 16.63,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F2 change (mel), mean",
+   "computed": 14.218959174876883,
+   "reported": 14.22,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French adapt F2 change (mel), SD",
+   "computed": 21.092898955245687,
+   "reported": 21.09,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English transfer F1 change (mel), mean",
+   "computed": 8.974359222540008,
+   "reported": 8.97,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French transfer F1 change (mel), mean",
+   "computed": -2.61766850144681,
+   "reported": -2.62,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French transfer F1 change (mel), SD",
+   "computed": 22.438095945981658,
+   "reported": 22.44,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English transfer F2 change (mel), mean",
+   "computed": -3.4692168247698154,
+   "reported": -3.47,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: English transfer F2 change (mel), SD",
+   "computed": 15.305830705633468,
+   "reported": 15.31,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French transfer F2 change (mel), mean",
+   "computed": 2.86583466430194,
+   "reported": 2.87,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: French transfer F2 change (mel), SD",
+   "computed": 13.646924900782118,
+   "reported": 13.65,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F1 change (mel), mean",
+   "computed": -16.40273932211786,
+   "reported": -16.4,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F1 change (mel), SD",
+   "computed": 19.60627341542761,
+   "reported": 19.61,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F1 change (mel), mean",
+   "computed": 15.331965975287767,
+   "reported": 15.33,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F1 change (mel), SD",
+   "computed": 24.097190194175703,
+   "reported": 24.1,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English adapt F2 change (mel), SD",
+   "computed": 17.948300128880756,
+   "reported": 17.95,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F2 change (mel), mean",
+   "computed": -15.30555969340586,
+   "reported": -15.31,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French adapt F2 change (mel), SD",
+   "computed": 17.238139049966975,
+   "reported": 17.24,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English transfer F1 change (mel), mean",
+   "computed": -6.5530511366369755,
+   "reported": -6.55,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English transfer F1 change (mel), SD",
+   "computed": 21.91240677211765,
+   "reported": 21.91,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French transfer F1 change (mel), mean",
+   "computed": -2.2209120775480584,
+   "reported": -2.22,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French transfer F1 change (mel), SD",
+   "computed": 14.981221554683449,
+   "reported": 14.98,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English transfer F2 change (mel), mean",
+   "computed": 6.532872783543462,
+   "reported": 6.53,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: English transfer F2 change (mel), SD",
+   "computed": 11.617228568134147,
+   "reported": 11.62,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French transfer F2 change (mel), mean",
+   "computed": 5.924754548476164,
+   "reported": 5.92,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: French transfer F2 change (mel), SD",
+   "computed": 17.139043895817554,
+   "reported": 17.14,
+   "tol": 0.005,
+   "source": "Lametti et al. (preprint PsyArXiv 56zwg), Results",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The published numbers used for checking are those of the authors' preprint (PsyArXiv 56zwg, 2023); the journal version (Cognition 2025) could not be read here and may differ.",
+  "Three preprint values are the computed ones cut rather than rounded, so they are not used as checks: Experiment 1 English sentence F1 change mean 17.956 (printed 17.95), Experiment 1 English transfer F1 SD 20.976 (printed 20.97), Experiment 2 English sentence F2 change mean 20.577 (printed 20.57).",
+  "Sex: the files give 14 women and 1 man in Experiment 4 and 12 women and 3 men in Experiment 5; the preprint text says 13 and 2 in each (60 women and 15 men in all five experiments, which the files reproduce). The mean age in the files is 22.48 years (preprint: 22.89), so one or two files may be assigned to a different experiment, or ages differ.",
+  "Seven participants have no S1 (first baseline) data: the arrays hold zeros for the whole block, which are emptied here (S1 is used only in Experiment 5's new-sentence after-effect measure)."
+ ],
+ "sources": [
+  {
+   "file": "EX1_P04.mat",
+   "url": "https://osf.io/download/6cnm3/",
+   "bytes": 22604,
+   "sha256": "5d7e7e4c4fbec00c13edd4b6efcc8c63d7093b15d38f9b7165f91b64d8bad026",
+   "fetched_utc": "2026-11-09T11:45:42Z"
+  },
+  {
+   "file": "EX1_P01.mat",
+   "url": "https://osf.io/download/tpvq5/",
+   "bytes": 21050,
+   "sha256": "1780ec57fd87c9e45f31764cd3fe061aee4acf5a9febdef2920a0b7627e96ecf",
+   "fetched_utc": "2026-11-09T11:46:15Z"
+  },
+  {
+   "file": "EX1_P02.mat",
+   "url": "https://osf.io/download/4zp5e/",
+   "bytes": 21047,
+   "sha256": "8c26103f29de66459a7cd36fc869b95f90ff0068f2b853bc88245f178e173d9b",
+   "fetched_utc": "2026-11-09T11:46:20Z"
+  },
+  {
+   "file": "data_analysis.m",
+   "url": "https://osf.io/download/ajfcx/",
+   "bytes": 14248,
+   "sha256": "e23e47bcc2e1ce628c8bc16828c2bbe2c60dca9424494952b4200c2c5daa7a89",
+   "fetched_utc": "2026-11-09T11:46:26Z"
+  },
+  {
+   "file": "EX1_P03.mat",
+   "url": "https://osf.io/download/e48n3/",
+   "bytes": 21001,
+   "sha256": "2d3e91661ea3a8dc817291673d1ac742f916412e1d2894e3f905f48c1f00a602",
+   "fetched_utc": "2026-11-09T11:46:31Z"
+  },
+  {
+   "file": "EX1_P08.mat",
+   "url": "https://osf.io/download/qx4cw/",
+   "bytes": 22602,
+   "sha256": "d38a6cd4ff40295648e67fa83f395b1a07c46ffa6727b4505834e78350d37932",
+   "fetched_utc": "2026-11-09T11:46:35Z"
+  },
+  {
+   "file": "EX1_P09.mat",
+   "url": "https://osf.io/download/as3z7/",
+   "bytes": 22749,
+   "sha256": "bafd67c049c3aca1e55ceca35d18dcfdb99cb6d79cfe9e37c35f5506f05f2a79",
+   "fetched_utc": "2026-11-09T11:46:40Z"
+  },
+  {
+   "file": "EX1_P05.mat",
+   "url": "https://osf.io/download/hqkuc/",
+   "bytes": 22846,
+   "sha256": "df42cc5634c7aa7fb338df33fc8a023119882d6eedd38b5b975d68a88a87df42",
+   "fetched_utc": "2026-11-09T11:47:00Z"
+  },
+  {
+   "file": "EX1_P07.mat",
+   "url": "https://osf.io/download/sxctj/",
+   "bytes": 22579,
+   "sha256": "cecaabb603e0116bbb728b4889df5edbd114a1feaccccd5f292c654813242d03",
+   "fetched_utc": "2026-11-09T11:47:04Z"
+  },
+  {
+   "file": "EX1_P06.mat",
+   "url": "https://osf.io/download/k7v4p/",
+   "bytes": 22809,
+   "sha256": "ae0a5a18885a1dc802b2c63b6734224659e06361a5d1ccee7f5c0111d9007a0d",
+   "fetched_utc": "2026-11-09T11:47:09Z"
+  },
+  {
+   "file": "EX1_P10.mat",
+   "url": "https://osf.io/download/239zn/",
+   "bytes": 22740,
+   "sha256": "015205b1091871a8b619910ab50bb20ef460fab007f2599403140ddf48d0c3d8",
+   "fetched_utc": "2026-11-09T11:47:13Z"
+  },
+  {
+   "file": "EX1_P14.mat",
+   "url": "https://osf.io/download/v8ryt/",
+   "bytes": 22671,
+   "sha256": "1df69754b46063e2f2465e805d40e1cfc5ed260d5083b8c4e3f6b5351b9e17c3",
+   "fetched_utc": "2026-11-09T11:47:17Z"
+  },
+  {
+   "file": "EX1_P11.mat",
+   "url": "https://osf.io/download/7bdty/",
+   "bytes": 22640,
+   "sha256": "ed8ee8fa85065ca82362ff4428a7c6dc66a2184d36c44f0e866b73d586fae3cf",
+   "fetched_utc": "2026-11-09T11:47:21Z"
+  },
+  {
+   "file": "EX1_P12.mat",
+   "url": "https://osf.io/download/tmcgh/",
+   "bytes": 22759,
+   "sha256": "2bfa256fbb1cf36c44ebd7a4918f7c543dd20d70a640a83dac750335bdd561b2",
+   "fetched_utc": "2026-11-09T11:47:25Z"
+  },
+  {
+   "file": "EX1_P13.mat",
+   "url": "https://osf.io/download/qvg7j/",
+   "bytes": 22724,
+   "sha256": "2c35ff0e5845e71984ae6f611b17837c30b1e4b034b81e2034c69d1c05644dc4",
+   "fetched_utc": "2026-11-09T11:47:30Z"
+  },
+  {
+   "file": "EX2_P01.mat",
+   "url": "https://osf.io/download/s7gzh/",
+   "bytes": 20857,
+   "sha256": "88111381a4bbc274220fb9c8a729e5406cea45b48ee3dd6e5478ff3a3243490f",
+   "fetched_utc": "2026-11-09T11:47:37Z"
+  },
+  {
+   "file": "EX1_P15.mat",
+   "url": "https://osf.io/download/s5q9h/",
+   "bytes": 22763,
+   "sha256": "06f35d6f1ed277f93afc56655061643f3354c0b1afcd59c146a6bb89066e6102",
+   "fetched_utc": "2026-11-09T11:47:42Z"
+  },
+  {
+   "file": "EX2_P02.mat",
+   "url": "https://osf.io/download/sf5ng/",
+   "bytes": 21054,
+   "sha256": "ac65fb3238d105ee889c1b26142c0f33fd21275cbcac6f76ec01834c2abb96ed",
+   "fetched_utc": "2026-11-09T11:47:46Z"
+  },
+  {
+   "file": "EX2_P03.mat",
+   "url": "https://osf.io/download/znc7y/",
+   "bytes": 21017,
+   "sha256": "e8034ab228169104f7c444173dcb7b3c363da259d0f032e6f82f5c14818b395d",
+   "fetched_utc": "2026-11-09T11:48:03Z"
+  },
+  {
+   "file": "EX2_P05.mat",
+   "url": "https://osf.io/download/b82hv/",
+   "bytes": 22864,
+   "sha256": "56c6c30eb10e6fd89600cff0f044df646770f022ecc059dd4a7f689a9bc691f8",
+   "fetched_utc": "2026-11-09T11:48:09Z"
+  },
+  {
+   "file": "EX2_P06.mat",
+   "url": "https://osf.io/download/ug6dh/",
+   "bytes": 22746,
+   "sha256": "6bc0dac34c3582460dba3654e309c49d4d32ea7311546f4955f17781be2fd95b",
+   "fetched_utc": "2026-11-09T11:48:14Z"
+  },
+  {
+   "file": "EX2_P04.mat",
+   "url": "https://osf.io/download/euwrz/",
+   "bytes": 21056,
+   "sha256": "d00dd8261d1fbc41992fded7ef2bd03efd679f3d5dba3500fd311cb9de495321",
+   "fetched_utc": "2026-11-09T11:48:19Z"
+  },
+  {
+   "file": "EX2_P07.mat",
+   "url": "https://osf.io/download/8ehzn/",
+   "bytes": 22789,
+   "sha256": "07e4a79b599f1f150267a4a44cb8508c34b75dd5d431335545de1848ff9e4efd",
+   "fetched_utc": "2026-11-09T11:48:24Z"
+  },
+  {
+   "file": "EX2_P10.mat",
+   "url": "https://osf.io/download/5ytmd/",
+   "bytes": 22848,
+   "sha256": "bfdd286f11b33ca41da92b48c663de0eecf5077abe5bf0b6fa76f5f86daf06b8",
+   "fetched_utc": "2026-11-09T11:48:27Z"
+  },
+  {
+   "file": "EX2_P09.mat",
+   "url": "https://osf.io/download/y9m6x/",
+   "bytes": 22758,
+   "sha256": "b14624d0fa526c2c9ec1287f369bb70ae2a620087343b8a90e4a0025cf64cf77",
+   "fetched_utc": "2026-11-09T11:48:33Z"
+  },
+  {
+   "file": "EX2_P11.mat",
+   "url": "https://osf.io/download/dxejm/",
+   "bytes": 22778,
+   "sha256": "d42bbfd258d074f7fb62d6ae176765e4005e6787eba5ce5d7100ae0cbef4a447",
+   "fetched_utc": "2026-11-09T11:49:43Z"
+  },
+  {
+   "file": "EX2_P12.mat",
+   "url": "https://osf.io/download/wbyp3/",
+   "bytes": 22742,
+   "sha256": "4a3f0b8623947cca168ff3e5729627c5da1f396af4948cd72068013bc7d15721",
+   "fetched_utc": "2026-11-09T11:49:57Z"
+  },
+  {
+   "file": "EX2_P13.mat",
+   "url": "https://osf.io/download/e59tb/",
+   "bytes": 22667,
+   "sha256": "6a55298751c5c6a96a74397a866a1d2af5b0df25c5db52bdf932a4d5b1f0f29e",
+   "fetched_utc": "2026-11-09T11:50:02Z"
+  },
+  {
+   "file": "EX2_P14.mat",
+   "url": "https://osf.io/download/au93c/",
+   "bytes": 22509,
+   "sha256": "298dabb92c13a14541fc539ee80f760c5419d5229f54781fc514a5f95d6d0cdc",
+   "fetched_utc": "2026-11-09T11:50:07Z"
+  },
+  {
+   "file": "EX2_P15.mat",
+   "url": "https://osf.io/download/es529/",
+   "bytes": 22764,
+   "sha256": "0a94186f55d8ea28625d1581a47d5ca27c7a6a7ba4c5a73fad431e50212054ec",
+   "fetched_utc": "2026-11-09T11:50:20Z"
+  },
+  {
+   "file": "EX3_P01.mat",
+   "url": "https://osf.io/download/phrme/",
+   "bytes": 22790,
+   "sha256": "c883fdc03fdd4a50f6ad329acdef467eb54dbda096a3e0f08092b05a973235f1",
+   "fetched_utc": "2026-11-09T11:50:24Z"
+  },
+  {
+   "file": "EX3_P02.mat",
+   "url": "https://osf.io/download/svuhj/",
+   "bytes": 22786,
+   "sha256": "40129cb0fb400bfa7d74e5e1b5bafc5b24ce2e8b1fbcabca28051bec295dce1f",
+   "fetched_utc": "2026-11-09T11:50:28Z"
+  },
+  {
+   "file": "EX3_P07.mat",
+   "url": "https://osf.io/download/zwbty/",
+   "bytes": 22825,
+   "sha256": "e2bf5a5562cc912c402d4e55227a256db179b966a373e1a2218975a54bd5c157",
+   "fetched_utc": "2026-11-09T11:50:31Z"
+  },
+  {
+   "file": "EX3_P04.mat",
+   "url": "https://osf.io/download/mq6k8/",
+   "bytes": 22763,
+   "sha256": "05b7328e8c085f6f16a82ab54ef6adf92f67452adf62f1c12d80761f82a3e324",
+   "fetched_utc": "2026-11-09T11:50:35Z"
+  },
+  {
+   "file": "EX3_P03.mat",
+   "url": "https://osf.io/download/vumzr/",
+   "bytes": 22667,
+   "sha256": "28839d10d71176ad979b13b8f7cf3e3c868b06e2fc5ec2f4fcad9c80fe4afe01",
+   "fetched_utc": "2026-11-09T11:50:40Z"
+  },
+  {
+   "file": "EX3_P05.mat",
+   "url": "https://osf.io/download/z7auw/",
+   "bytes": 22743,
+   "sha256": "f256df4a64f7387d419117ea7ebdae4fa06c997b314bb23c46bfe512413e97f1",
+   "fetched_utc": "2026-11-09T11:50:46Z"
+  },
+  {
+   "file": "EX3_P06.mat",
+   "url": "https://osf.io/download/r8n4g/",
+   "bytes": 22825,
+   "sha256": "a3092cb1237fc483f8102f82488d12654da83fea0609f1f4ec0a19fccf62a14e",
+   "fetched_utc": "2026-11-09T11:50:51Z"
+  },
+  {
+   "file": "EX3_P10.mat",
+   "url": "https://osf.io/download/5ghty/",
+   "bytes": 22851,
+   "sha256": "a64c4a96218591969374e2506d76d6f26e68177ee8fb2bc15c7db1a3fabbbbf3",
+   "fetched_utc": "2026-11-09T11:50:55Z"
+  },
+  {
+   "file": "EX3_P09.mat",
+   "url": "https://osf.io/download/ng53c/",
+   "bytes": 22887,
+   "sha256": "2c081c23e2c35b7997396e4a4db9e7af4d0e8036f03f78f512536d44c5c79621",
+   "fetched_utc": "2026-11-09T11:50:59Z"
+  },
+  {
+   "file": "EX3_P11.mat",
+   "url": "https://osf.io/download/q6pzw/",
+   "bytes": 22838,
+   "sha256": "c8bcbfde2d423b10d81b8a818a9a8f2c03e1515da2a227ef1450293580508915",
+   "fetched_utc": "2026-11-09T11:51:03Z"
+  },
+  {
+   "file": "EX3_P08.mat",
+   "url": "https://osf.io/download/2s6hj/",
+   "bytes": 22799,
+   "sha256": "495eaaf6617e34bf6982d24da5a210cf0a22cf9389abd8a9ee110371ad942a1b",
+   "fetched_utc": "2026-11-09T11:51:07Z"
+  },
+  {
+   "file": "EX3_P13.mat",
+   "url": "https://osf.io/download/49tmp/",
+   "bytes": 22833,
+   "sha256": "51b226f9226de8b6a3913075f0fa625277fa22c832ba22c2bf83b6ea2e2d65fb",
+   "fetched_utc": "2026-11-09T11:51:12Z"
+  },
+  {
+   "file": "EX4_P01.mat",
+   "url": "https://osf.io/download/cd4ym/",
+   "bytes": 22805,
+   "sha256": "be8cc37805d1747e2d4e0a1e41d9099e86985c8aa12f2a9bc817abc023b8a03a",
+   "fetched_utc": "2026-11-09T11:51:31Z"
+  },
+  {
+   "file": "EX4_P03.mat",
+   "url": "https://osf.io/download/6mvf7/",
+   "bytes": 22827,
+   "sha256": "23e899a00e086e3eba61104cfa841ba85587b98cdf61bb7a46a4aba9ad400db6",
+   "fetched_utc": "2026-11-09T11:51:35Z"
+  },
+  {
+   "file": "EX3_P15.mat",
+   "url": "https://osf.io/download/bq8my/",
+   "bytes": 22857,
+   "sha256": "0e87b1eb437b0701f4ada26d275d7d53235dac246a80daa22eba35df4d984000",
+   "fetched_utc": "2026-11-09T11:51:39Z"
+  },
+  {
+   "file": "EX3_P14.mat",
+   "url": "https://osf.io/download/4cpq6/",
+   "bytes": 22775,
+   "sha256": "acbf984d4f87f651eda79f1b8412eb132d805b513b280af8cc8fa0fbe858ac71",
+   "fetched_utc": "2026-11-09T11:51:43Z"
+  },
+  {
+   "file": "EX4_P02.mat",
+   "url": "https://osf.io/download/5se3j/",
+   "bytes": 22696,
+   "sha256": "f04fe4447820891237236c5d25fcb9faa33964a539b13c438efadd2a8852f689",
+   "fetched_utc": "2026-11-09T11:51:48Z"
+  },
+  {
+   "file": "EX4_P04.mat",
+   "url": "https://osf.io/download/7b4wd/",
+   "bytes": 22799,
+   "sha256": "1b2f0115fee888266405238968e42d0c3475d0dd43752111bd71d711aea58e88",
+   "fetched_utc": "2026-11-09T11:51:52Z"
+  },
+  {
+   "file": "EX4_P05.mat",
+   "url": "https://osf.io/download/2suqx/",
+   "bytes": 22813,
+   "sha256": "a0bfad3d16e51bf19127b5836ffeffd4c466f7545c5c6fb706f99c73dcaa5fcf",
+   "fetched_utc": "2026-11-09T11:51:58Z"
+  },
+  {
+   "file": "EX4_P06.mat",
+   "url": "https://osf.io/download/e67js/",
+   "bytes": 22806,
+   "sha256": "7217623686201f2af3c21fbdb69170b45ad4d3934c2520b182738a1e9663c0cb",
+   "fetched_utc": "2026-11-09T11:52:04Z"
+  },
+  {
+   "file": "EX4_P09.mat",
+   "url": "https://osf.io/download/583wc/",
+   "bytes": 22780,
+   "sha256": "74ce9ed854f7e0264d2f1be33a76b16eb9370617306b734a26483024545d1edc",
+   "fetched_utc": "2026-11-09T11:52:09Z"
+  },
+  {
+   "file": "EX4_P07.mat",
+   "url": "https://osf.io/download/g6jze/",
+   "bytes": 22714,
+   "sha256": "2a12d8703ec5a5cb33f961940529eb55076518d62f08403a71c80f79ebd228e9",
+   "fetched_utc": "2026-11-09T11:52:13Z"
+  },
+  {
+   "file": "EX4_P08.mat",
+   "url": "https://osf.io/download/zhaqg/",
+   "bytes": 22805,
+   "sha256": "c3e3e64b2a04330f7e0adf3a16df9613a547bd8f17f5f3123113660219923636",
+   "fetched_utc": "2026-11-09T11:52:17Z"
+  },
+  {
+   "file": "EX4_P11.mat",
+   "url": "https://osf.io/download/7t4ar/",
+   "bytes": 22317,
+   "sha256": "e4418b92ffbbd0910e55af0ef881446a7428e42b2797955f262c96158807d325",
+   "fetched_utc": "2026-11-09T11:52:21Z"
+  },
+  {
+   "file": "EX4_P12.mat",
+   "url": "https://osf.io/download/e49b5/",
+   "bytes": 22765,
+   "sha256": "cb880f9181075cf8924a9ba62f516b06eb98a6f6040581d6ad19168bbff59b36",
+   "fetched_utc": "2026-11-09T11:52:25Z"
+  },
+  {
+   "file": "EX4_P10.mat",
+   "url": "https://osf.io/download/jbvp9/",
+   "bytes": 22607,
+   "sha256": "f4955a935bda74bedefee2a425acf9622274e775619b8890e8d20eb590974403",
+   "fetched_utc": "2026-11-09T11:52:36Z"
+  },
+  {
+   "file": "EX4_P13.mat",
+   "url": "https://osf.io/download/kvm36/",
+   "bytes": 22789,
+   "sha256": "c5acddc458fa7e8fa936eda28ff52269d16664b02b102d6d22f313a563ae7e9b",
+   "fetched_utc": "2026-11-09T11:52:42Z"
+  },
+  {
+   "file": "EX4_P14.mat",
+   "url": "https://osf.io/download/cz4ng/",
+   "bytes": 22537,
+   "sha256": "99f457412408e47c91b8d6f2433562a77f17cf736e5113c15a88c0669e69ab33",
+   "fetched_utc": "2026-11-09T11:52:48Z"
+  },
+  {
+   "file": "EX4_P15.mat",
+   "url": "https://osf.io/download/gryhq/",
+   "bytes": 22780,
+   "sha256": "ebada35b4506a6dc1d9b6a7b5fff6cf057cdca3523589db588660fb96a094592",
+   "fetched_utc": "2026-11-09T11:52:53Z"
+  },
+  {
+   "file": "EX5_P01.mat",
+   "url": "https://osf.io/download/v6xdk/",
+   "bytes": 22958,
+   "sha256": "1705086a2aa1b5bbb6bf1544f5b00bbd5ac0987c23873f82d0d13241ac5021e5",
+   "fetched_utc": "2026-11-09T11:52:56Z"
+  },
+  {
+   "file": "EX5_P02.mat",
+   "url": "https://osf.io/download/k9yxr/",
+   "bytes": 22921,
+   "sha256": "f8a27bed7ddb159dc804155dc3f9dfbebe998ebdac55cc66241b2b7f7a9dba7e",
+   "fetched_utc": "2026-11-09T11:53:00Z"
+  },
+  {
+   "file": "EX5_P03.mat",
+   "url": "https://osf.io/download/97ecq/",
+   "bytes": 23024,
+   "sha256": "172c9e1736530035d76048dc8548473676b5f995254753c8266d225b20e4ecbe",
+   "fetched_utc": "2026-11-09T11:53:04Z"
+  },
+  {
+   "file": "EX5_P04.mat",
+   "url": "https://osf.io/download/6660513a0f8c8008f63c91a1/",
+   "bytes": 22957,
+   "sha256": "8d6933077524de1c0e057d64a62bae994c5613cb677af76b41022b03f5d684b4",
+   "fetched_utc": "2026-11-09T11:53:08Z"
+  },
+  {
+   "file": "EX5_P05.mat",
+   "url": "https://osf.io/download/7wer8/",
+   "bytes": 22996,
+   "sha256": "e8e15ac0fd26b932045fd7e8b91514e6c7eae220e5face66727beaeb4b0df3fd",
+   "fetched_utc": "2026-11-09T11:53:14Z"
+  },
+  {
+   "file": "EX5_P06.mat",
+   "url": "https://osf.io/download/b6udw/",
+   "bytes": 22898,
+   "sha256": "526e5ef427ea3ba84c1b67e65311cd1eacbdf0e63a7ba134e9fc616ddcddaa1f",
+   "fetched_utc": "2026-11-09T11:53:20Z"
+  },
+  {
+   "file": "EX5_P07.mat",
+   "url": "https://osf.io/download/3hpmn/",
+   "bytes": 22971,
+   "sha256": "ebc21076d894b3b29dbcf95b8749ab6bc0aed2105c937e483ed973e67e2165ba",
+   "fetched_utc": "2026-11-09T11:53:25Z"
+  },
+  {
+   "file": "EX5_P09.mat",
+   "url": "https://osf.io/download/xn2ge/",
+   "bytes": 22976,
+   "sha256": "4931e6dec531461f2a6c867be30cff6ba349c27cb96fdb68d7f8b54e0ec7b951",
+   "fetched_utc": "2026-11-09T11:53:33Z"
+  },
+  {
+   "file": "EX5_P10.mat",
+   "url": "https://osf.io/download/gm89v/",
+   "bytes": 22967,
+   "sha256": "1b917bdec447b4ea590fea7ee389de779d6d827e2e7fc1e5f12c2134a28f3641",
+   "fetched_utc": "2026-11-09T11:53:51Z"
+  },
+  {
+   "file": "EX5_P11.mat",
+   "url": "https://osf.io/download/gbw27/",
+   "bytes": 22942,
+   "sha256": "cfa59ef2f79e9bc5cf96d7fa4a40931f6581298130744aa67e7574e34415b15c",
+   "fetched_utc": "2026-11-09T11:53:57Z"
+  },
+  {
+   "file": "EX5_P12.mat",
+   "url": "https://osf.io/download/s8gb7/",
+   "bytes": 22943,
+   "sha256": "2db1bff7dedfdb8122f15bd9a39a31364747186211e8fc0b02589abd4bca1a72",
+   "fetched_utc": "2026-11-09T11:54:02Z"
+  },
+  {
+   "file": "EX5_P13.mat",
+   "url": "https://osf.io/download/58jmu/",
+   "bytes": 22848,
+   "sha256": "8232dd5f30ce59774929b7393c2c903b5f7d93cfcf45ac5bab27ceae4c47e244",
+   "fetched_utc": "2026-11-09T11:54:07Z"
+  },
+  {
+   "file": "EX5_P14.mat",
+   "url": "https://osf.io/download/hzpbn/",
+   "bytes": 22908,
+   "sha256": "d3f3aff2810ddcc3e1cb1f75740bbc513003888c5f121b6fc624cd6f58831360",
+   "fetched_utc": "2026-11-09T11:54:12Z"
+  },
+  {
+   "file": "EX5_P15.mat",
+   "url": "https://osf.io/download/tn3ur/",
+   "bytes": 22927,
+   "sha256": "cb2b7d70bd391a1a4ea0f1d279f39fa07775430a2e00a3632528d998c91648bb",
+   "fetched_utc": "2026-11-09T11:54:16Z"
+  },
+  {
+   "file": "all_compensation_data_2024.xlsx",
+   "url": "https://osf.io/download/8gkzd/",
+   "bytes": 19783,
+   "sha256": "5a9e55b9d1fd2dda9ae3020dbae15eeab022046a9c1acdc8775942baaf943c3e",
+   "fetched_utc": "2026-11-09T11:54:20Z"
+  },
+  {
+   "file": "EX3_P12.mat",
+   "url": "https://osf.io/download/64dfa2c062e5ee04e03ab78a/",
+   "bytes": 22775,
+   "sha256": "15422dd834f71f87cdaec4147d3060ff3c679ecf6c6baab84e4fb8c2e791e42f",
+   "fetched_utc": "2026-11-09T11:55:09Z"
+  },
+  {
+   "file": "EX5_P08.mat",
+   "url": "https://osf.io/download/nse34/",
+   "bytes": 22998,
+   "sha256": "dda607a5ee0295b560861d887020f112924c48a3b1b11b5de379ce06d0deaf04",
+   "fetched_utc": "2026-11-09T11:55:16Z"
+  },
+  {
+   "file": "EX2_P08.mat",
+   "url": "https://osf.io/download/9wub4/",
+   "bytes": 22822,
+   "sha256": "338cd4da8c76bc627138eb7addd68965c3f531017799a853059ab531d750b23b",
+   "fetched_utc": "2026-11-09T11:55:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lametti2025_Cognition.zip"
+}

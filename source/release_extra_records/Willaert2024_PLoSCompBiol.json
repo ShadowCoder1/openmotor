@@ -1,0 +1,198 @@
+{
+ "id": "Willaert2024_PLoSCompBiol",
+ "module": "timeseries",
+ "rows": 441,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 642493279,
+ "zip_sha256": "0f9be3d305ff8e0610d3db02ff2e5c02d7b14e67345fa3721c529690d355c37f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children with cerebral palsy",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results / Methods: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing children",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results / Methods: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD children completing all four levels",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results (all TD children completed all levels)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with CP who performed only level 1",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Results (four children with CP did not perform levels 2-4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CP mean length, cm",
+   "computed": 153.46,
+   "reported": 153.0,
+   "tol": 0.6,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CP SD of length, cm",
+   "computed": 15.72228990955198,
+   "reported": 16.0,
+   "tol": 0.6,
+   "source": "Table 1 (SD matches the population formula, as in the deposit's own demographics sheet)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CP mean weight, kg",
+   "computed": 46.65,
+   "reported": 46.7,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CP SD of weight, kg",
+   "computed": 16.688394170800258,
+   "reported": 16.7,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD mean length, cm",
+   "computed": 156.215,
+   "reported": 156.0,
+   "tol": 0.6,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD SD of length, cm",
+   "computed": 16.21145505499121,
+   "reported": 16.0,
+   "tol": 0.6,
+   "source": "Table 1 (SD matches the population formula, as in the deposit's own demographics sheet)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD mean weight, kg",
+   "computed": 43.78999999999999,
+   "reported": 43.8,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD SD of weight, kg",
+   "computed": 12.80936766589202,
+   "reported": 12.8,
+   "tol": 0.1,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recorded levels with all 8 perturbation onsets (of 147 levels with files; the other 5 have 4-7, e.g. stopped after stepping)",
+   "computed": 142.0,
+   "reported": 142.0,
+   "tol": 0,
+   "source": "Methods (8 perturbations per level); count taken from the deposit's onset workbooks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median time between perturbations, s",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0.2,
+   "source": "Methods (12 s between perturbations)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IK sampling interval, s",
+   "computed": 0.01,
+   "reported": 0.01,
+   "tol": 0,
+   "source": "Methods (Vicon at 100 Hz); time column checked below",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "CoM speed is higher in the 0.5 s after a platform onset than before it (onsets are 100 Hz sample numbers)",
+   "ok": true,
+   "detail": "281/294"
+  },
+  {
+   "kind": "internal",
+   "what": "one IK, CoM and EMG recording per child and level",
+   "ok": true,
+   "detail": "441 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "IK and CoM files have the same length except one level whose CoM file in the deposit is shorter (5224 of 10002 rows)",
+   "ok": true,
+   "detail": "1"
+  },
+  {
+   "kind": "internal",
+   "what": "EMG has 10x as many samples as IK (1000 vs 100 Hz) within 15 samples, except two levels whose EMG length differs in the deposit",
+   "ok": true,
+   "detail": "2"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Five levels have fewer than 8 perturbation onsets in the onset workbook (4-7); one level (a TD child, level 3) has a centre-of-mass file with 5224 rows instead of about 10000 and two levels have an EMG recording 2.8 s shorter or 0.6 s longer than 10 times the kinematics length; all are kept as shared. The paper says one child with CP did not perform levels 3-4, but the deposit has one CP child with levels 1-3 and four with level 1 only, and none with levels 1-2 only."
+ ],
+ "sources": [
+  {
+   "file": "4.Demografie.xlsx",
+   "url": "https://zenodo.org/api/records/8220096/files/4.Demografie.xlsx/content",
+   "bytes": 11763,
+   "sha256": "47181940eb6d34a1832a97fadfc1b27e63a6408f66d12e2d313d2647efdfda0f",
+   "fetched_utc": "2026-11-09T05:54:58Z"
+  },
+  {
+   "file": "CCI.xlsx",
+   "url": "https://zenodo.org/api/records/8220096/files/CCI.xlsx/content",
+   "bytes": 21966,
+   "sha256": "2e6035bf22845a0c443ea64e2685ab2cc4e8d765d33ca7adf4b3653db23f77e9",
+   "fetched_utc": "2026-11-09T05:55:10Z"
+  },
+  {
+   "file": "Zones_CoM.xlsx",
+   "url": "https://zenodo.org/api/records/8220096/files/Zones_CoM.xlsx/content",
+   "bytes": 35545,
+   "sha256": "368e59f0da918947cf7eb3d7fc11c6898d365ce1fb4a640e13e5cea5b6dcdaff",
+   "fetched_utc": "2026-11-09T05:55:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Willaert2024_PLoSCompBiol.zip"
+}

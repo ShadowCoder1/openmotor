@@ -1,0 +1,7 @@
+{
+ "id": "Gerharz2025_JNeurophysiol",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The 3.5 GB OSF deposit (OSF vjk45, no license stated) holds per-trial Eyelink sample arrays as MATLAB matrices with 9 unnamed columns, raw Optotrak .dat files, and processed hand tables (MATLAB table objects with 30 variables) whose condition codes (InterceptShape 0/1 for disk or arc, Path 1-8, InterceptPosition 1-5, Feedback) and variable meanings are defined nowhere: the deposit has no readme and no analysis code, and the paper only describes the design in words (4 path parameter sets, mirrored, in no stated order). Which trials are disk versus arc, and which path each trial used, cannot be verified, so the rows could not be released with trustworthy condition labels. Could be retried if the authors supply the codebook or analysis scripts.",
+ "sources": []
+}

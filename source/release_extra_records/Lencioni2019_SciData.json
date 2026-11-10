@@ -1,0 +1,171 @@
+{
+ "id": "Lencioni2019_SciData",
+ "module": "timeseries",
+ "rows": 1615,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 239230208,
+ "zip_sha256": "2e2b27015cbebf6b6a80507f520b487480591030c72b78201aaf117b16bf4348",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods (Participants): age range 6-72 years",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Methods (Participants): age range 6-72 years",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest body mass (kg)",
+   "computed": 18.151368,
+   "reported": 18.2,
+   "tol": 0.05,
+   "source": "Methods (Participants): 18.2-110 kg",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest body mass (kg)",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0.05,
+   "source": "Methods (Participants): 18.2-110 kg",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest body height (cm)",
+   "computed": 116.601233,
+   "reported": 116.6,
+   "tol": 0.05,
+   "source": "Methods (Participants): 116.6-187.5 cm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest body height (cm)",
+   "computed": 187.540692,
+   "reported": 187.5,
+   "tol": 0.05,
+   "source": "Methods (Participants): 116.6-187.5 cm",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strides in the dataset",
+   "computed": 1615.0,
+   "reported": 1615.0,
+   "tol": 0,
+   "source": "Technical Validation (1615 strides)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young subjects (6-17 years)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Comparison with published reference dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young subjects, mean age",
+   "computed": 10.857142857142858,
+   "reported": 10.9,
+   "tol": 0.05,
+   "source": "Comparison with published reference dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young subjects, SD of age",
+   "computed": 3.166791977470486,
+   "reported": 3.2,
+   "tol": 0.05,
+   "source": "Comparison with published reference dataset",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "only the stride files with 84 instead of 87 marker rows are unnamed (subjects 33 and 40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "five task types",
+   "ok": true,
+   "detail": "['HeelWalking', 'StepDown', 'StepUp', 'ToeWalking', 'Walking']"
+  },
+  {
+   "kind": "internal",
+   "what": "curves have 101 points in every row",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports that 0.6% of the recorded frames were missing data after gap filling; counting empty marker values in the shared files gives 0.21% of values (and 4.4% of frames with at least one empty value), so the figure was not reproduced and is not used as a check.",
+  "The paper says 35 locomotor trials were recorded per participant; the deposit holds between 11 and 68 strides per participant (1,615 in all, as the paper states), because each trial can contribute more than one stride.",
+  "2 strides (of two participants) have 84 marker rows instead of 87 (three coordinates of one marker are absent); the deposit does not say which marker, so their marker columns are named row1..row84 instead of the marker names.",
+  "The paper's Data Records section says the files are CC BY 4.0, but the Figshare records of the deposit state CC0; the Figshare license is used (both allow sharing a converted copy).",
+  "The deposit stores the units of the ground reaction channels in the paper's Table 1 only (N, mm, Nm); the files carry no unit labels."
+ ],
+ "sources": [
+  {
+   "file": "All_Subjects.zip",
+   "url": "https://ndownloader.figshare.com/files/17544215",
+   "bytes": 257131754,
+   "sha256": "27bc45fde839e7fedb0951d37d3f2097ab64cf5c0e1d2ca6d3f85b3b5543b4d7",
+   "fetched_utc": "2026-11-09T12:46:15Z"
+  },
+  {
+   "file": "Demo_Anthro.xlsx",
+   "url": "https://ndownloader.figshare.com/files/15086387",
+   "bytes": 12211,
+   "sha256": "412d88ed04e3782766db77fc54e222f5148659d81921ad46873e3fe7bf2f4a83",
+   "fetched_utc": "2026-11-09T12:46:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lencioni2019_SciData.zip"
+}

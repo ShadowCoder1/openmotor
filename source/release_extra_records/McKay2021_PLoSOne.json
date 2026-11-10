@@ -1,0 +1,246 @@
+{
+ "id": "McKay2021_PLoSOne",
+ "module": "timeseries",
+ "rows": 1612,
+ "subjects": 68,
+ "persons": 68,
+ "zip_bytes": 103991069,
+ "zip_sha256": "335926c50eefc7395c400162b3e7d9b752d4df94c0ea473d66cd44bd626899ef",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Results: Participants (N = 44 PD)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults without PD",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Results: Participants (N = 18 Non-PD)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results: Participants (6 young, 4 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female young adults",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Results: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age of young adults, mean",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "Results: Participants (21 +/- 2 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age of young adults, SD",
+   "computed": 1.7888543819998317,
+   "reported": 2.0,
+   "tol": 0.5,
+   "source": "Results: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD duration, mean years",
+   "computed": 7.375,
+   "reported": 7.4,
+   "tol": 0.1,
+   "source": "Results: Participants (7.4 +/- 4.8 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD duration, SD years",
+   "computed": 4.851857711826878,
+   "reported": 4.8,
+   "tol": 0.1,
+   "source": "Results: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of young adults, mean kg",
+   "computed": 60.68333333333334,
+   "reported": 61.0,
+   "tol": 0.6,
+   "source": "Results: Participants (61 +/- 12 vs 77 +/- 14 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of older adults, mean kg",
+   "computed": 76.48020322580648,
+   "reported": 77.0,
+   "tol": 0.6,
+   "source": "Results: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of young adults, SD kg",
+   "computed": 11.545287638974905,
+   "reported": 12.0,
+   "tol": 0.6,
+   "source": "Results: Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TA-TA stabilizing delay, mean ms (62 older adults)",
+   "computed": 129.39543417741936,
+   "reported": 129.0,
+   "tol": 1,
+   "source": "Results: delays (129 +/- 20 ms, N = 62)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TA-TA stabilizing delay, SD ms",
+   "computed": 19.76169469563679,
+   "reported": 20.0,
+   "tol": 1,
+   "source": "Results: delays",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MG-MG stabilizing delay, mean ms",
+   "computed": 143.07883408064518,
+   "reported": 143.0,
+   "tol": 1,
+   "source": "Results: delays (143 +/- 19 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MG-TA destabilizing delay, mean ms",
+   "computed": 183.0858571129032,
+   "reported": 183.0,
+   "tol": 1,
+   "source": "Results: delays (183 +/- 21 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults, delay lambda, mean ms",
+   "computed": 129.39543417741936,
+   "reported": 129.0,
+   "tol": 1,
+   "source": "Results: age effect (129 vs 151 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, delay lambda, mean ms",
+   "computed": 151.29673866666664,
+   "reported": 151.0,
+   "tol": 1,
+   "source": "Results: age effect (129 vs 151 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults, delay lambda', mean ms",
+   "computed": 136.41376516666668,
+   "reported": 136.0,
+   "tol": 1,
+   "source": "Results: age effect (183 vs 136 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "k_a' of PD relative to Non-PD, percent",
+   "computed": 94.56149261641013,
+   "reported": 95.0,
+   "tol": 6,
+   "source": "Results: TA antagonist gain (+95%, model-based; group means here)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with PD who fell in the previous 6 months, percent",
+   "computed": 46.51162790697674,
+   "reported": 47.0,
+   "tol": 1.5,
+   "source": "Results: falls (47% vs 12%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD falls per 6 months, maximum",
+   "computed": 180.0,
+   "reported": 180.0,
+   "tol": 0,
+   "source": "Results: fall frequency (maximum 180)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row per table row of the deposit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 68 participants have rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each sample file has 1620 samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows per participant at most 24 (6 directions x 2 muscles x 2 legs)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 12% of non-PD older adults with a previous fall; the deposit gives 3 of 18 (17%). The PD value (47%) reproduces when the one person without a recorded fall count is left out.",
+  "The paper reports k_a' as a model-based percent difference (+95%); the ratio of group means here is within a few points of it."
+ ],
+ "sources": [
+  {
+   "file": "S1.tab",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/4279490",
+   "bytes": 34523,
+   "sha256": "70ca752093305334425227e4c58353542698a5dc388424a30e1cf94cce7be4a8",
+   "fetched_utc": "2026-11-09T08:29:19Z"
+  },
+  {
+   "file": "S2.mat",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/4279491?format=original",
+   "bytes": 68775382,
+   "sha256": "9cd0a6f6d58774edfcbc5b288976c56ef209ecdb03c4eed411080f7dd1ccc238",
+   "fetched_utc": "2026-11-09T08:30:22Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/McKay2021_PLoSOne.zip"
+}

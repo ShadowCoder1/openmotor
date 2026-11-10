@@ -1,0 +1,117 @@
+{
+ "id": "Bishop2026_FrontPsychol",
+ "module": "tapping",
+ "rows": 94751,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 1954663,
+ "zip_sha256": "6a1521c342af45cc66fcbb34911d0ef7c58578cc0e6efc3b8ba47ae627b2a2ce",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "MIDI.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "P1, P2 and the metronome cover the same 24 dyads (25 pairs recruited, one excluded by the authors, dyad 10)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "P1: noise type, pitch, visual contact and stimulus group are constant within each trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "P2: noise type, pitch, visual contact and stimulus group are constant within each trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimulus group (1-3) is constant within each dyad",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "strikes less than 200 ms after the player's previous strike (stick bounces, discarded by the authors)",
+   "ok": true,
+   "detail": "9966 of 94751 strikes"
+  },
+  {
+   "kind": "published",
+   "what": "dyads in the analysis (25 pairs, 1 excluded)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants (Zenodo record description)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants (two players per dyad, 24 dyads)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants (25 pairs, 1 pair excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per complete dyad (12 experimental trials plus the baseline)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "median time from first to last strike of a trial is within the authors' 110-s window (not a published match: players may not strike through the whole window)",
+   "ok": true,
+   "detail": "105.1 s"
+  },
+  {
+   "kind": "internal",
+   "what": "complete dyads (all 13 trials) in the deposit",
+   "ok": true,
+   "detail": "18 of 24"
+  },
+  {
+   "kind": "internal",
+   "what": "trial windows: every dyad-trial lasts at most 110 s from first to last strike",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "12 distinct visual x noise x pitch conditions in the complete dyads' experimental trials",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "MIDI.zip",
+   "url": "https://zenodo.org/api/records/13376172/files/MIDI.zip/content",
+   "bytes": 700910,
+   "sha256": "bce303779f462041423e9f82730589900489b3955b45f65085cf222563365f3f",
+   "fetched_utc": "2026-11-08T19:43:06Z"
+  },
+  {
+   "file": "Rhythms.zip",
+   "url": "https://zenodo.org/api/records/13376172/files/Rhythms.zip/content",
+   "bytes": 71976,
+   "sha256": "f39616f17f7df7669bee4a6b9d64fd81763af9ae2c176dba4b8eb66cd3b82d01",
+   "fetched_utc": "2026-11-08T19:43:19Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bishop2026_FrontPsychol.zip"
+}

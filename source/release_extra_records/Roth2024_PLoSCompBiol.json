@@ -1,0 +1,809 @@
+{
+ "id": "Roth2024_PLoSCompBiol",
+ "module": "reach90",
+ "rows": 54900,
+ "subjects": 94,
+ "persons": 94,
+ "zip_bytes": 1269028,
+ "zip_sha256": "133420f07224dc17c34539d697fc80846aef406050507da1a671bff024e7025d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every reach's position matches the authors' u_pos and v_pos exactly (asserted while building)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sequence lengths: 500 (Exp 1), 750 (Exp 2) or 450 (Exp 3: 50+100+50+100+50+100)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in Exp1_reinforcement_vs_error",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Results (thirty-six young, neurotypical participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Exp2_reinforcement_error_combined",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Results (thirty-six young, neurotypical participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 (N = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age-matched control participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 (N = 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: participants with larger lag-1 autocorrelation of extent in Reinforcement than Error (%)",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0.01,
+   "source": "Results, Experiment 1, group behaviour (theta-hat = 75.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: Reinforcement > Error (%)",
+   "computed": 80.55555555555556,
+   "reported": 80.56,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (theta-hat = 80.56)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: Combined > Error (%)",
+   "computed": 58.333333333333336,
+   "reported": 58.33,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (theta-hat = 58.33)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: Reinforcement > Combined (%)",
+   "computed": 75.0,
+   "reported": 75.0,
+   "tol": 0.01,
+   "source": "Results, Experiment 2 (theta-hat = 75.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: Reinforcement, controls vs Parkinson's lag-1 autocorrelation of extent, theta-hat (%, larger of the two directions)",
+   "computed": 68.33333333333333,
+   "reported": 68.33,
+   "tol": 0.01,
+   "source": "Results, Experiment 3, group behaviour (theta-hat = 68.33, 62.5, 51.67)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: Error, controls vs Parkinson's lag-1 autocorrelation of extent, theta-hat (%, larger of the two directions)",
+   "computed": 62.5,
+   "reported": 62.5,
+   "tol": 0.01,
+   "source": "Results, Experiment 3, group behaviour (theta-hat = 68.33, 62.5, 51.67)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: Combined, controls vs Parkinson's lag-1 autocorrelation of extent, theta-hat (%, larger of the two directions)",
+   "computed": 51.666666666666664,
+   "reported": 51.67,
+   "tol": 0.01,
+   "source": "Results, Experiment 3, group behaviour (theta-hat = 68.33, 62.5, 51.67)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "lag-1 autocorrelation from the rows equals the authors' stored v_pos autocorrelation",
+   "ok": true,
+   "detail": "max diff 8.88e-16"
+  },
+  {
+   "kind": "internal",
+   "what": "unparsable reaches (no HAND_STEADY event)",
+   "ok": true,
+   "detail": "2"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' repository has no license file; the same data may also be on Dryad. 'none stated' is recorded.",
+  "The deposit's Washout list is a copy of the Baseline list in every Experiment 2 and 3 participant and in some Experiment 1 participants (identical positions), so those washout reaches cannot be recovered and are placeholder rows (trial_kind missing).",
+  "Experiment 3 probability-of-superiority values (68.33, 62.5, 51.67) were reproduced for control > Parkinson's in the Reinforcement and Error conditions; for the Combined condition the converted rows give 48.33, i.e. 51.67 in the opposite direction (the paper does not state the direction for that value), so the larger of the two directions is compared.",
+  "Order of the three conditions in Experiments 2 and 3 is inferred: the authors' Condition_Order for those experiments uses numeric condition codes (1, 2, 7) and the data are keyed by name; the codes were read as 1 Reinforcement, 2 Error, 7 Combined (code 1 is Reinforcement in the same lab's Roth 2023 deposit; 2 and 7 follow the order of the condition names). Reach values do not depend on this reading, only which block came when."
+ ],
+ "sources": [
+  {
+   "file": "E1_s1.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_1.pkl",
+   "bytes": 513079,
+   "sha256": "3378452025d0bd9cf300c20cfdd8c3267d23a20905d223922cd89cb6317ded83",
+   "fetched_utc": "2026-11-09T09:41:51Z"
+  },
+  {
+   "file": "E2_s1.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_1.pkl",
+   "bytes": 604751,
+   "sha256": "6b5e2ef4138a096756d863035d3e97729281d5265f879ee982f9e893d74907e6",
+   "fetched_utc": "2026-11-09T09:41:54Z"
+  },
+  {
+   "file": "PD_s1.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_1.pkl",
+   "bytes": 339664,
+   "sha256": "4136e9ac6811f4a5db84926094ff02c22c56402a620c028a431d345af305942b",
+   "fetched_utc": "2026-11-09T09:41:56Z"
+  },
+  {
+   "file": "C_s1.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_1.pkl",
+   "bytes": 337169,
+   "sha256": "189110b646fbe22e19a5de6fd0a3427d8be87466e8e54a4b7020349fd5596376",
+   "fetched_utc": "2026-11-09T09:41:59Z"
+  },
+  {
+   "file": "nb.ipynb",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Reaching_Models.ipynb",
+   "bytes": 3581,
+   "sha256": "5caf06b31b7d8bab9004a08cc6bbf8146139e1f4e9d4dc30e721be60922bfa8c",
+   "fetched_utc": "2026-11-09T09:42:01Z"
+  },
+  {
+   "file": "E1_s2.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_2.pkl",
+   "bytes": 513913,
+   "sha256": "8b7eb5dfb9725744e41025fc4335455c9ca821968fcbe4f7fb0f214282b5a1c6",
+   "fetched_utc": "2026-11-09T09:43:35Z"
+  },
+  {
+   "file": "E2_s2.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_2.pkl",
+   "bytes": 607140,
+   "sha256": "609b32525fa058a30d80015d9fc5bbf5eba4a826b65ea282d0e94d6447f6fffa",
+   "fetched_utc": "2026-11-09T09:43:38Z"
+  },
+  {
+   "file": "E1_s3.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_3.pkl",
+   "bytes": 509370,
+   "sha256": "c2cd27d73d7827427c5a4f40680d07ea947f8730d70edc9d5d71ed268e841c70",
+   "fetched_utc": "2026-11-09T09:43:40Z"
+  },
+  {
+   "file": "E2_s3.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_3.pkl",
+   "bytes": 599166,
+   "sha256": "2c8ae57dcbf2f0d0146ac34f8af1e05542378a2ba825d3f0d83247f386795f3f",
+   "fetched_utc": "2026-11-09T09:43:43Z"
+  },
+  {
+   "file": "E1_s4.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_4.pkl",
+   "bytes": 509500,
+   "sha256": "b76ccf188a6fc8d27f00930c10c50e4957d2b348856cd98df4e2d9c4311c1b7f",
+   "fetched_utc": "2026-11-09T09:43:45Z"
+  },
+  {
+   "file": "E2_s4.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_4.pkl",
+   "bytes": 600822,
+   "sha256": "d20ad6abbb126001aef2820fae20280b057033e59ca01c70868b137c01e6a32c",
+   "fetched_utc": "2026-11-09T09:43:49Z"
+  },
+  {
+   "file": "E1_s5.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_5.pkl",
+   "bytes": 508455,
+   "sha256": "f63848212bafc74fc2f6d889291c51da3c355849f1cc447e62820b323419ca66",
+   "fetched_utc": "2026-11-09T09:43:52Z"
+  },
+  {
+   "file": "E2_s5.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_5.pkl",
+   "bytes": 610735,
+   "sha256": "7604e8b7aff703f941b59c381c3c18a8bbba992d0a03a46246a00c52ecbd2973",
+   "fetched_utc": "2026-11-09T09:43:56Z"
+  },
+  {
+   "file": "E1_s6.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_6.pkl",
+   "bytes": 509634,
+   "sha256": "b7f0fac598fa2f02180f984775b38ab5aa7a6fb24c5824a14f12a128beda266a",
+   "fetched_utc": "2026-11-09T09:43:59Z"
+  },
+  {
+   "file": "E2_s6.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_6.pkl",
+   "bytes": 608065,
+   "sha256": "907c8ca6a153be7054e2d712cf4ec32c277759224d0a897b4f4ee4a7eb895ff2",
+   "fetched_utc": "2026-11-09T09:44:11Z"
+  },
+  {
+   "file": "E1_s7.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_7.pkl",
+   "bytes": 513418,
+   "sha256": "47ca3ae7fcff28e5dded9b9c6e43806c94e7b3ced5d699e9777d69e77084e3e0",
+   "fetched_utc": "2026-11-09T09:44:16Z"
+  },
+  {
+   "file": "E2_s7.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_7.pkl",
+   "bytes": 604290,
+   "sha256": "aeee54c6b8f3d4fd8a66559700a81be902cee1b61a56ef7074a14697e09fcd6d",
+   "fetched_utc": "2026-11-09T09:44:21Z"
+  },
+  {
+   "file": "E1_s8.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_8.pkl",
+   "bytes": 517278,
+   "sha256": "1ea941c99641c50e159f934d8075958950d1547e56724b634a93eb256ee922f5",
+   "fetched_utc": "2026-11-09T09:44:26Z"
+  },
+  {
+   "file": "E2_s8.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_8.pkl",
+   "bytes": 598600,
+   "sha256": "d00b195d975394197cb199a898ff6b6552ef2ef6c13d991d6872cede41fac708",
+   "fetched_utc": "2026-11-09T09:44:31Z"
+  },
+  {
+   "file": "E1_s9.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_9.pkl",
+   "bytes": 508942,
+   "sha256": "f2b15c3eaf709c7ac51171bb80cc8fb70463d80299f59c49301148a6baa6094f",
+   "fetched_utc": "2026-11-09T09:44:35Z"
+  },
+  {
+   "file": "E2_s9.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_9.pkl",
+   "bytes": 601384,
+   "sha256": "2ed0f988a57eb4270b449dcf7cea817db373e9139ac2b275403e35e362cb10ec",
+   "fetched_utc": "2026-11-09T09:44:39Z"
+  },
+  {
+   "file": "E1_s10.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_10.pkl",
+   "bytes": 518264,
+   "sha256": "ae0a56d3a3749a98349294983b23d1e9034ada8711176f012b455bdc74613c46",
+   "fetched_utc": "2026-11-09T09:44:42Z"
+  },
+  {
+   "file": "E2_s10.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_10.pkl",
+   "bytes": 607141,
+   "sha256": "de7448d79e1fbe8f0becfc5740852f70adc8e8fcde1a050455fbbc6fbd2556a7",
+   "fetched_utc": "2026-11-09T09:44:45Z"
+  },
+  {
+   "file": "E1_s11.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_11.pkl",
+   "bytes": 506488,
+   "sha256": "a95ec5d8540ba0f956c5d5750a4830cff43a4d629687d0256e490191724fc0b8",
+   "fetched_utc": "2026-11-09T09:44:47Z"
+  },
+  {
+   "file": "E2_s11.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_11.pkl",
+   "bytes": 606574,
+   "sha256": "2818c022a7e766df502d7b9e62f75462163c77ecdb2478b1c654f8a2a384c2ba",
+   "fetched_utc": "2026-11-09T09:44:50Z"
+  },
+  {
+   "file": "E1_s12.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_12.pkl",
+   "bytes": 522031,
+   "sha256": "15f840bf97c2ca4b42176506c3940c763a500fa3eba49dc9ad2f84ab8a06a869",
+   "fetched_utc": "2026-11-09T09:44:52Z"
+  },
+  {
+   "file": "E2_s12.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_12.pkl",
+   "bytes": 604348,
+   "sha256": "f384b6484881c3deb5e1ce361b0e8efc0cb6744e78307135c45c3e8241555ec5",
+   "fetched_utc": "2026-11-09T09:44:55Z"
+  },
+  {
+   "file": "E1_s13.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_13.pkl",
+   "bytes": 508879,
+   "sha256": "659d4fb9fb9f4889c2ba172f8244bed3cc327d3283ba3f6fc39af17d8c0c69cf",
+   "fetched_utc": "2026-11-09T09:44:58Z"
+  },
+  {
+   "file": "E2_s13.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_13.pkl",
+   "bytes": 606632,
+   "sha256": "29bddd0b872f8d41e6b59783df679e79edcf7123174e41dff470c71285e83157",
+   "fetched_utc": "2026-11-09T09:45:00Z"
+  },
+  {
+   "file": "E1_s14.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_14.pkl",
+   "bytes": 512932,
+   "sha256": "97c6bdfddc2259552c5440c2ee90aab2f5c7dee9cb2b2eae0afaa78ab32a30fc",
+   "fetched_utc": "2026-11-09T09:45:04Z"
+  },
+  {
+   "file": "E2_s14.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_14.pkl",
+   "bytes": 598476,
+   "sha256": "f94d057fa5513cee14a71a58df43ef9ee8168a55081f3ae8d49f56a2f91526e4",
+   "fetched_utc": "2026-11-09T09:45:07Z"
+  },
+  {
+   "file": "E1_s15.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_15.pkl",
+   "bytes": 506150,
+   "sha256": "d93606f4f69cc04db0c26ee51744ea23d1a182189a86ee09f58a01e459ea874e",
+   "fetched_utc": "2026-11-09T09:45:24Z"
+  },
+  {
+   "file": "E2_s15.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_15.pkl",
+   "bytes": 603446,
+   "sha256": "cb9116dc495b8fc5b614a1ef0628a9b99127a68c8c4f325996209b6e7f4dcd65",
+   "fetched_utc": "2026-11-09T09:45:27Z"
+  },
+  {
+   "file": "E1_s16.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_16.pkl",
+   "bytes": 508941,
+   "sha256": "17febccd9f0d0df4fe5e63539d9244b9dc1f536e983e696efeca64dc3f4b48be",
+   "fetched_utc": "2026-11-09T09:45:30Z"
+  },
+  {
+   "file": "E2_s16.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_16.pkl",
+   "bytes": 604631,
+   "sha256": "faf18fcb349ade28e40f2d28fb2b77af4840ae77dd380e171a4c4e82bab3604c",
+   "fetched_utc": "2026-11-09T09:45:33Z"
+  },
+  {
+   "file": "E1_s17.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_17.pkl",
+   "bytes": 514333,
+   "sha256": "7257b392fe17de565b580a0a197b45641d0d4d2480f137bc12ed7c2ff4968809",
+   "fetched_utc": "2026-11-09T09:45:36Z"
+  },
+  {
+   "file": "E2_s17.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_17.pkl",
+   "bytes": 599343,
+   "sha256": "f30a46a1011656fe7c4543a45f3eb33bbaacd779cbf9eae57d73dfdfa58e3aeb",
+   "fetched_utc": "2026-11-09T09:45:39Z"
+  },
+  {
+   "file": "E1_s18.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_18.pkl",
+   "bytes": 507188,
+   "sha256": "7779e31d2c5ec8075565503ca6075c1ec512da193f08104044fb65dac0c03ee4",
+   "fetched_utc": "2026-11-09T09:45:42Z"
+  },
+  {
+   "file": "E2_s18.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_18.pkl",
+   "bytes": 603215,
+   "sha256": "682c25a23af8c7bd826ba92bde23ee0c6c1fb864f88ca21c24ad5550cf939f38",
+   "fetched_utc": "2026-11-09T09:45:44Z"
+  },
+  {
+   "file": "E1_s19.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_19.pkl",
+   "bytes": 514743,
+   "sha256": "425a3fddb5d3bfbd832359dbc56cc27189ef9c65a28f662b037dc4707528806a",
+   "fetched_utc": "2026-11-09T09:45:47Z"
+  },
+  {
+   "file": "E2_s19.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_19.pkl",
+   "bytes": 601207,
+   "sha256": "f4289c29cc58577a1708d536d9f2a6d7fc278678a18f794e1357ba94fae77534",
+   "fetched_utc": "2026-11-09T09:45:49Z"
+  },
+  {
+   "file": "E1_s20.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_20.pkl",
+   "bytes": 511958,
+   "sha256": "7a9a8a78b90c66bc2a6b6ef5f882d07839400da359662979c577372cf1cdc8fd",
+   "fetched_utc": "2026-11-09T09:45:52Z"
+  },
+  {
+   "file": "E2_s20.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_20.pkl",
+   "bytes": 602990,
+   "sha256": "4c817dd4eaa620b312bd22d7962867faf7f3c875ae441028e8f6d5b1571d767c",
+   "fetched_utc": "2026-11-09T09:45:54Z"
+  },
+  {
+   "file": "E1_s21.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_21.pkl",
+   "bytes": 510059,
+   "sha256": "b28f49bfc5c134627f4d8f63ff0405ce3a01847342111481c90aafeeeb71ef55",
+   "fetched_utc": "2026-11-09T09:45:57Z"
+  },
+  {
+   "file": "E2_s21.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_21.pkl",
+   "bytes": 596605,
+   "sha256": "d28fd203fb9b11c283d9c1e3b1496a9e774354badc8c5ff8e8aa5de3ac975e5f",
+   "fetched_utc": "2026-11-09T09:45:59Z"
+  },
+  {
+   "file": "E1_s22.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_22.pkl",
+   "bytes": 516515,
+   "sha256": "9b286662acbc39a5c52598f0e0d185ae2037f8eacb16b793773d2e74613a8cad",
+   "fetched_utc": "2026-11-09T09:46:03Z"
+  },
+  {
+   "file": "E2_s22.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_22.pkl",
+   "bytes": 605094,
+   "sha256": "7dfe1cbf689f4eeb57e61bb3c87c3368953d203565924a20ca043f0311068281",
+   "fetched_utc": "2026-11-09T09:46:07Z"
+  },
+  {
+   "file": "E1_s23.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_23.pkl",
+   "bytes": 506559,
+   "sha256": "257380e78f4ffcf9f1ffd7a6693f009ccd137be159a1260a146ff0a7678d77b9",
+   "fetched_utc": "2026-11-09T09:46:10Z"
+  },
+  {
+   "file": "E2_s23.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_23.pkl",
+   "bytes": 708633,
+   "sha256": "d555da6f15701834799beff60466c5cff8ede544939e17518083bf3b900068d7",
+   "fetched_utc": "2026-11-09T09:46:14Z"
+  },
+  {
+   "file": "E1_s24.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_24.pkl",
+   "bytes": 511749,
+   "sha256": "b0bc1c742361c31df5067551a7c27e2dc7eb2cb1639f998a357014e4a0bfc7d4",
+   "fetched_utc": "2026-11-09T09:46:32Z"
+  },
+  {
+   "file": "E2_s24.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_24.pkl",
+   "bytes": 710250,
+   "sha256": "7733348a6eab260da548c0591765ee1cf3a5d05641dd12bd60f0dbce889f38f3",
+   "fetched_utc": "2026-11-09T09:46:36Z"
+  },
+  {
+   "file": "E1_s25.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_25.pkl",
+   "bytes": 511249,
+   "sha256": "0698659b8c9c6c5d85a21f832f218eb54b0c7b4be64acf394e54a4727f7c80aa",
+   "fetched_utc": "2026-11-09T09:46:39Z"
+  },
+  {
+   "file": "E2_s25.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_25.pkl",
+   "bytes": 712413,
+   "sha256": "784a50d3553750ba462410d630cb97dea2797c8bb35e260b78e841aaf1326de1",
+   "fetched_utc": "2026-11-09T09:46:42Z"
+  },
+  {
+   "file": "E1_s26.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_26.pkl",
+   "bytes": 513777,
+   "sha256": "14e764de512271c63779138338fa1038a1e83ec16d222e4109f29861c186fabb",
+   "fetched_utc": "2026-11-09T09:46:45Z"
+  },
+  {
+   "file": "E2_s26.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_26.pkl",
+   "bytes": 669521,
+   "sha256": "43d288c658e038a1bcd948bfd2f52c88fcb8d1cfe44983758719951cda3f4567",
+   "fetched_utc": "2026-11-09T09:46:47Z"
+  },
+  {
+   "file": "E1_s27.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_27.pkl",
+   "bytes": 511395,
+   "sha256": "a6f40dde4cefbbc2535d16a460aa1af226606b13a1f8038ee51de4c1dce5cbfa",
+   "fetched_utc": "2026-11-09T09:46:50Z"
+  },
+  {
+   "file": "E2_s27.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_27.pkl",
+   "bytes": 673524,
+   "sha256": "582551ba12b27de771f525fcb304b9b8983de2e777b0c40d0f5881823c293029",
+   "fetched_utc": "2026-11-09T09:46:52Z"
+  },
+  {
+   "file": "E1_s28.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_28.pkl",
+   "bytes": 513348,
+   "sha256": "fcd26384e5ee995eb53f0871ea104f9e9f5ee0401facc542bfe1ea163c612b88",
+   "fetched_utc": "2026-11-09T09:46:55Z"
+  },
+  {
+   "file": "E2_s28.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_28.pkl",
+   "bytes": 676388,
+   "sha256": "b860d70cfd6c4ef6fe552b5867cd29111bdd19b7fc33e57c0acae915d54846a9",
+   "fetched_utc": "2026-11-09T09:46:57Z"
+  },
+  {
+   "file": "E1_s29.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_29.pkl",
+   "bytes": 512852,
+   "sha256": "73052619176d4621b355d88e0ae8ee20f143dceb68a1ae1eb20a91a3c7496ccb",
+   "fetched_utc": "2026-11-09T09:46:59Z"
+  },
+  {
+   "file": "E2_s29.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_29.pkl",
+   "bytes": 668471,
+   "sha256": "9d561740dc4b086ecdbd37251ea23c60f684878ca821b073be07f9eec4890226",
+   "fetched_utc": "2026-11-09T09:47:02Z"
+  },
+  {
+   "file": "E1_s30.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_30.pkl",
+   "bytes": 514757,
+   "sha256": "de4b83ed28d61651536fe957c80e6a6d60f8c3edf8931c8a6ba336ff1309473b",
+   "fetched_utc": "2026-11-09T09:47:04Z"
+  },
+  {
+   "file": "E2_s30.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_30.pkl",
+   "bytes": 665752,
+   "sha256": "055dd71056c0261090aeb174c4fe00a820213e49404d70b56255baafd91db391",
+   "fetched_utc": "2026-11-09T09:47:07Z"
+  },
+  {
+   "file": "E1_s31.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_31.pkl",
+   "bytes": 516377,
+   "sha256": "715a2be45ed5584886704107f9f27f5af17ee20010c759f1d2bd97ac38d7515a",
+   "fetched_utc": "2026-11-09T09:47:09Z"
+  },
+  {
+   "file": "E2_s31.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_31.pkl",
+   "bytes": 669253,
+   "sha256": "85c96105b211cf6b787cc8384cd0eef2049cfdfaef58ae6825b0c29409196394",
+   "fetched_utc": "2026-11-09T09:47:12Z"
+  },
+  {
+   "file": "E1_s32.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_32.pkl",
+   "bytes": 509005,
+   "sha256": "ddd4b514cc66af9b3b6902dfda4e24d664ba0c32c8dd7bb6b86a31075b05fbcd",
+   "fetched_utc": "2026-11-09T09:47:14Z"
+  },
+  {
+   "file": "E2_s32.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_32.pkl",
+   "bytes": 672681,
+   "sha256": "fa14c1aa65a9ef77fe9d77ec50e04357786275c1a87b81681d182dbbeed2c09d",
+   "fetched_utc": "2026-11-09T09:47:18Z"
+  },
+  {
+   "file": "E1_s33.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_33.pkl",
+   "bytes": 510693,
+   "sha256": "2de3a5c6650ac4e525abfd01e3f0ddffc4c374dfb20e5f04f778a75109c2d6a4",
+   "fetched_utc": "2026-11-09T09:47:22Z"
+  },
+  {
+   "file": "E2_s33.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_33.pkl",
+   "bytes": 672881,
+   "sha256": "104e67b9e67c8a2a10c9fe69242c9b2c933df89a1fe4eaaa81bfbb103c32a501",
+   "fetched_utc": "2026-11-09T09:47:39Z"
+  },
+  {
+   "file": "E1_s34.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_34.pkl",
+   "bytes": 509234,
+   "sha256": "3884570d45f3e18c8f205900212232f4e4df4a0c2bb11a7a848ec3973c713617",
+   "fetched_utc": "2026-11-09T09:47:42Z"
+  },
+  {
+   "file": "E2_s34.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_34.pkl",
+   "bytes": 669664,
+   "sha256": "093ddee7b4eb735159242c81e336041c046bf4a480678c98d91a8a3f6e4ea4b1",
+   "fetched_utc": "2026-11-09T09:47:45Z"
+  },
+  {
+   "file": "E1_s35.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_35.pkl",
+   "bytes": 513080,
+   "sha256": "5c5b813c51eb10bd41de992a0b098f86a9a50b55893a728d55268b47b7b4a168",
+   "fetched_utc": "2026-11-09T09:47:49Z"
+  },
+  {
+   "file": "E2_s35.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_35.pkl",
+   "bytes": 677996,
+   "sha256": "733255414ae246d5c0ea7215759e29cd194ac90b26d0473bc358125d01bbcfc4",
+   "fetched_utc": "2026-11-09T09:47:53Z"
+  },
+  {
+   "file": "E1_s36.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E1_Data/Reward_Error_Subject_36.pkl",
+   "bytes": 510624,
+   "sha256": "e1d80d03ebaa5422cd266a6289a8788c538d73c0eda135d7845752097784a6b7",
+   "fetched_utc": "2026-11-09T09:47:56Z"
+  },
+  {
+   "file": "E2_s36.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/E2_Data/Reward_Error_Combined_Subject_36.pkl",
+   "bytes": 672670,
+   "sha256": "e6b6c861536c9747f8df66900411822c4fd1d6aad35af7427ed5559cb21b7325",
+   "fetched_utc": "2026-11-09T09:48:00Z"
+  },
+  {
+   "file": "PD_s2.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_2.pkl",
+   "bytes": 397894,
+   "sha256": "b1dbe75510d6d282a3914bd5ca470c4199f1b98c6e4eeea3a491dc2f87b2cc41",
+   "fetched_utc": "2026-11-09T09:48:03Z"
+  },
+  {
+   "file": "PD_s3.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_3.pkl",
+   "bytes": 370721,
+   "sha256": "ca1afd95c6b161fbcabb971627976be7080fbc0ab436beab16c892cd238d3e7f",
+   "fetched_utc": "2026-11-09T09:48:05Z"
+  },
+  {
+   "file": "PD_s4.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_4.pkl",
+   "bytes": 374366,
+   "sha256": "73e3993221e3823a3e7b2ae975166ae2d175c9d7ca349086db489722a308b7a1",
+   "fetched_utc": "2026-11-09T09:48:07Z"
+  },
+  {
+   "file": "PD_s5.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_5.pkl",
+   "bytes": 393268,
+   "sha256": "6165a18ea1b84ee2835780dc90225a98a5e378f10b5835dd1d1ae395b8080f1a",
+   "fetched_utc": "2026-11-09T09:48:10Z"
+  },
+  {
+   "file": "PD_s6.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_6.pkl",
+   "bytes": 398940,
+   "sha256": "7a81ef2a7756f9d40f7d44f79020c87f4f29844203ac3a650105eab636829e0b",
+   "fetched_utc": "2026-11-09T09:48:13Z"
+  },
+  {
+   "file": "PD_s7.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_7.pkl",
+   "bytes": 390952,
+   "sha256": "d9b993ac8a9b3e79cac1a9b08ea1c3fe80e8e20b9a7cfeceff685806f5769364",
+   "fetched_utc": "2026-11-09T09:48:15Z"
+  },
+  {
+   "file": "PD_s8.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_8.pkl",
+   "bytes": 397124,
+   "sha256": "23939b3d46912d416fabb4441773395de906e413ad8573a956a5edd3a699f5a3",
+   "fetched_utc": "2026-11-09T09:48:18Z"
+  },
+  {
+   "file": "PD_s9.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_9.pkl",
+   "bytes": 396708,
+   "sha256": "a99e6eec7d72fe72993c317a77d26ef3e3a997f32dd78b7ca49bb1853225a841",
+   "fetched_utc": "2026-11-09T09:48:20Z"
+  },
+  {
+   "file": "PD_s10.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/PD_Data/PD_Subject_10.pkl",
+   "bytes": 398325,
+   "sha256": "c63ecc020ef31be2a48bd80cd954b854df24f48223efcc3d178e5a075bae9847",
+   "fetched_utc": "2026-11-09T09:48:22Z"
+  },
+  {
+   "file": "C_s2.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_2.pkl",
+   "bytes": 395466,
+   "sha256": "f74c76566ec37b5fea50cd07ea3bdd58097a8249bb649b392a6555a4354eaa86",
+   "fetched_utc": "2026-11-09T09:48:25Z"
+  },
+  {
+   "file": "C_s3.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_3.pkl",
+   "bytes": 391665,
+   "sha256": "2cd567754525639e29a4468928bda0baffe3d25c71a6db93bf11ea8aa8461681",
+   "fetched_utc": "2026-11-09T09:48:27Z"
+  },
+  {
+   "file": "C_s4.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_4.pkl",
+   "bytes": 400426,
+   "sha256": "fbe7a3cacb244058648d6ec6bb975ab77a23bc1e80295a32be8384f2c8f54265",
+   "fetched_utc": "2026-11-09T09:48:30Z"
+  },
+  {
+   "file": "C_s5.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_5.pkl",
+   "bytes": 396926,
+   "sha256": "d9dd2d9f7d91ce5ee217431add162548acc4d8e207880912a654cf54021a8a4a",
+   "fetched_utc": "2026-11-09T09:48:32Z"
+  },
+  {
+   "file": "C_s6.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_6.pkl",
+   "bytes": 395117,
+   "sha256": "eaaa1f0d33ce1647348b18cc1851fd46df0b31596ec312e4bd6143dc001c4544",
+   "fetched_utc": "2026-11-09T09:48:49Z"
+  },
+  {
+   "file": "C_s7.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_7.pkl",
+   "bytes": 394901,
+   "sha256": "2103832002f21a25358d8475aafc550c1f9623587d296da15d3feb5187c37ce6",
+   "fetched_utc": "2026-11-09T09:48:51Z"
+  },
+  {
+   "file": "C_s8.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_8.pkl",
+   "bytes": 397636,
+   "sha256": "849a2128f78d28581b4e26148225acff375e64fa606026f2c2c723a5e2e8bc08",
+   "fetched_utc": "2026-11-09T09:48:54Z"
+  },
+  {
+   "file": "C_s9.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_9.pkl",
+   "bytes": 397144,
+   "sha256": "959f919292a0d5921ff587113d1ac5e30ce37146aab2d85352a79205525c23a0",
+   "fetched_utc": "2026-11-09T09:48:57Z"
+  },
+  {
+   "file": "C_s10.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_10.pkl",
+   "bytes": 394205,
+   "sha256": "1b738cf2f701d3b522bd86049443bd3bb17bd64f660e59e535920d38500641bd",
+   "fetched_utc": "2026-11-09T09:49:01Z"
+  },
+  {
+   "file": "C_s11.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_11.pkl",
+   "bytes": 396299,
+   "sha256": "b9774351bd5a2ad4d397453d84a85ab1cfd2d0d334499706002e97cb558c116d",
+   "fetched_utc": "2026-11-09T09:49:12Z"
+  },
+  {
+   "file": "C_s12.pkl",
+   "url": "https://raw.githubusercontent.com/Cashaback-Lab-Group/Roles_and_Interplay_of_Reinforcement_and_Error/HEAD/Control_Data/PD_Control_Subject_12.pkl",
+   "bytes": 397358,
+   "sha256": "b258f3d99b73d70cbb427d8a3fec5bb99e857dbf15d3c2ea9ee21a9fe3983daf",
+   "fetched_utc": "2026-11-09T09:49:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Roth2024_PLoSCompBiol.zip"
+}

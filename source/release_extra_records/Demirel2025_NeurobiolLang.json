@@ -1,0 +1,241 @@
+{
+ "id": "Demirel2025_NeurobiolLang",
+ "module": "speech",
+ "rows": 30195,
+ "subjects": 61,
+ "persons": 61,
+ "zip_bytes": 542326,
+ "zip_sha256": "4b3e8134a7c7cd63a0eb092d686f06da444b0d817c21ccd7a656b03b7a8543d2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the three files list the same participants in the same order and groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "495 trials per participant, 61 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the TGP tACS group",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the sham group",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the TGP tACS group",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the sham group",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with after-effect data in the TGP group",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Demirel et al. 2025, Results and Table 1 (one block lost)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 baseline F2 SD, TGP tACS",
+   "computed": 105.54994758617,
+   "reported": 105.5,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F1 (trials 241-270) mean, TGP tACS",
+   "computed": 713.1070229058618,
+   "reported": 713.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F1 (trials 241-270) SD, TGP tACS",
+   "computed": 81.34691969384444,
+   "reported": 81.3,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 start of after-effect F1 (trials 271-285) mean, TGP tACS",
+   "computed": 720.0336525301642,
+   "reported": 720.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 start of after-effect F1 (trials 271-285) SD, TGP tACS",
+   "computed": 81.31683917053572,
+   "reported": 81.3,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 start of after-effect F2 (trials 271-285) SD, TGP tACS",
+   "computed": 103.53239375654479,
+   "reported": 103.5,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 baseline F1 mean, sham tACS",
+   "computed": 767.3240292248003,
+   "reported": 767.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 baseline F1 SD, sham tACS",
+   "computed": 73.01483340897607,
+   "reported": 73.0,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 baseline F2 SD, sham tACS",
+   "computed": 81.61970269032403,
+   "reported": 81.6,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F1 (trials 241-270) mean, sham tACS",
+   "computed": 736.4654502288469,
+   "reported": 736.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F1 (trials 241-270) SD, sham tACS",
+   "computed": 71.70054484472445,
+   "reported": 71.7,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F2 (trials 241-270) mean, sham tACS",
+   "computed": 1433.4641508299587,
+   "reported": 1433.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 end of learning F2 (trials 241-270) SD, sham tACS",
+   "computed": 85.20131867986781,
+   "reported": 85.2,
+   "tol": 0.05,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1 start of after-effect F2 (trials 271-285) mean, sham tACS",
+   "computed": 1435.3607716709678,
+   "reported": 1435.0,
+   "tol": 0.5,
+   "source": "Demirel et al. 2025, Results and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "authors' summary adapt_F1 equals the mean of trials 241-270 (per participant)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 61 x 495 rows kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 gives 10 of its 24 group means and SDs one unit (or 0.1) below the value computed here, as if cut instead of rounded; they are not used as checks: baseline F1 mean, TGP tACS: 747.62 here, 747 printed; baseline F1 SD, TGP tACS: 86.86 here, 86.8 printed; baseline F2 mean, TGP tACS: 1468.63 here, 1468 printed; end of learning F2 (trials 241-270) mean, TGP tACS: 1480.52 here, 1480 printed; end of learning F2 (trials 241-270) SD, TGP tACS: 100.79 here, 100.7 printed; start of after-effect F2 (trials 271-285) mean, TGP tACS: 1478.52 here, 1478 printed; baseline F2 mean, sham tACS: 1427.52 here, 1427 printed; start of after-effect F1 (trials 271-285) mean, sham tACS: 750.68 here, 750 printed; start of after-effect F1 (trials 271-285) SD, sham tACS: 68.87 here, 68.8 printed; start of after-effect F2 (trials 271-285) SD, sham tACS: 82.89 here, 82.8 printed"
+ ],
+ "sources": [
+  {
+   "file": "Production_OSF.csv",
+   "url": "https://osf.io/download/kec2t/",
+   "bytes": 12542,
+   "sha256": "94afeb10d8d03bf26cabaca08a4b4eea57383e99afe1035169e2c8c0b31f08de",
+   "fetched_utc": "2026-11-09T12:10:02Z"
+  },
+  {
+   "file": "all_F1_trials.csv",
+   "url": "https://osf.io/download/yxd2v/",
+   "bytes": 359455,
+   "sha256": "0e5bf9fc52753995cee6ce9d37b1b1292d0781b02183d6d92c49cff5f774821b",
+   "fetched_utc": "2026-11-09T12:10:06Z"
+  },
+  {
+   "file": "all_F2_trials.csv",
+   "url": "https://osf.io/download/rnm85/",
+   "bytes": 359297,
+   "sha256": "5c875587b36e1eec23e9f674ec111c7d595a62d287674f1ed6f0c53a141ecae2",
+   "fetched_utc": "2026-11-09T12:10:11Z"
+  },
+  {
+   "file": "experiment_code.m",
+   "url": "https://osf.io/download/dnw39/",
+   "bytes": 8037,
+   "sha256": "61febb41d87e4a544cc05b0f95908af8aad2fbd280f0a9d05295db2e605f770a",
+   "fetched_utc": "2026-11-09T12:10:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Demirel2025_NeurobiolLang.zip"
+}

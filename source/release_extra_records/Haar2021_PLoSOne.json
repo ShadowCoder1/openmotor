@@ -1,0 +1,88 @@
+{
+ "id": "Haar2021_PLoSOne",
+ "module": "game",
+ "rows": 3000,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 54233788,
+ "zip_sha256": "62d5d4c8806f52f06d224f2a4fcef9147f5c9b3c609433dc1085545a9d35b663",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "shapes: 10 x 300 outcomes, 10 x 61 x 300 x 54 velocities",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "success is 0/1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "315 shots have no angular error in the deposit",
+   "ok": true,
+   "detail": "315"
+  },
+  {
+   "kind": "internal",
+   "what": "samples file only for shots with velocity values",
+   "ok": true,
+   "detail": "3000 files, 0 empty"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (10 right-handed volunteers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Methods (300 repeated trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in blocks of 25 (12 blocks)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods (6 sets of 50, each two blocks of 25)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "joint angles x degrees of freedom: 3 per joint",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods (3 DoF joint angles, Xsens)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports that mean directional error fell by 8.3 +/- 2.47 degrees and success rose by 6.2 +/- 1.78 percent over the session. Taking block 1 (shots 1-25) against block 12 (shots 276-300) of the deposit, absolute error falls by 8.44 degrees (SD of the paired differences 8.02) and success rises by 6.4 points (SEM 2.17). The authors do not say which blocks or which averaging they used, so these were not used as checks.",
+  "The paper describes angular error as an absolute difference, but the deposit's vrBallErr has negative values (883 of 2,685), so it is kept as the authors shared it (signed; the sign convention is not stated). 315 shots have no error value and are kept empty.",
+  "The deposit's jointVelocity has 61 frames per shot, described by the authors as 60 Hz data around the peak velocity; time_s is given as -0.5 to +0.5 s relative to that peak (inferred from 61 frames at 60 Hz). Units of velocity are not stated anywhere; they are left unspecified. 7,374 values are missing (NaN) and are written empty.",
+  "Age (24 +/- 2 years) and sex (4 women, 6 men) are given only as group figures in the paper, not per participant, so age and sex are empty."
+ ],
+ "sources": [
+  {
+   "file": "poolVRdata.mat",
+   "url": "https://ndownloader.figshare.com/files/26011067",
+   "bytes": 72430642,
+   "sha256": "fd07120813e35d85e8860536be87edeec90852c03e4f90693bc8f5fabc381863",
+   "fetched_utc": "2026-11-09T12:24:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Haar2021_PLoSOne.zip"
+}

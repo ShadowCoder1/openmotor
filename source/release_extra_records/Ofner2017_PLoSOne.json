@@ -1,0 +1,324 @@
+{
+ "id": "Ofner2017_PLoSOne",
+ "module": "timeseries",
+ "rows": 6300,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 91809321,
+ "zip_sha256": "ba6fca48c3b4d65669b2aa9934b85cd32636b1d19adc40683765433c512ce5e8",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "runs per participant (min over participants)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (10 runs per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "runs per participant (max over participants)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (10 runs per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (min)",
+   "computed": 420.0,
+   "reported": 420.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (10 runs x 42 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (max)",
+   "computed": 420.0,
+   "reported": 420.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (10 runs x 42 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class elbow flexion (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class elbow flexion (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class elbow extension (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class elbow extension (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class forearm supination (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class forearm supination (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class forearm pronation (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class forearm pronation (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class hand close (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class hand close (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class hand open (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class hand open (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class rest (min over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant of class rest (max over participants)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Paradigm (60 trials per class)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cue after the cross (s)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Fig 2 caption: cross at second 0, cue at second 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "elbow angle changes in opposite directions for flexion and extension",
+   "ok": true,
+   "detail": "27.1 vs -18.2"
+  },
+  {
+   "kind": "internal",
+   "what": "forearm angle changes in opposite directions for supination and pronation",
+   "ok": true,
+   "detail": "-24.6 vs 7.8"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has one cue and a samples file",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The files do not state units for the movement channels. Glove sensors lie between 0 and 1 (normalised), angle channels are presumably degrees and positions presumably mm; the channel_units column therefore says unknown.",
+  "Cue codes (1536 elbow flexion, 1537 elbow extension, 1538 forearm supination, 1539 forearm pronation, 1540 hand close, 1541 hand open, 1542 rest) follow the BNCI Horizon 2020 data set description; the direction of the elbow and forearm sensors was checked against the cue (see the checks).",
+  "The authors' detected movement onsets and artefact marks were not part of the files, so excluded_by_authors is empty. Participant 1 was not right-handed (handedness left empty); the paper gives no age or sex per participant.",
+  "Channel labels are as in the files; some are truncated or misspelt there (ShoulderAdductio = shoulder adduction, ShoulderFlexionE = shoulder flexion/extension, litte_* = little finger)."
+ ],
+ "sources": [
+  {
+   "file": "S01_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S01_ME.zip",
+   "bytes": 360223993,
+   "sha256": "615711e01063b35bacde76b8843692b24dbe63e5686663a994b4c0e3f9ebcb48",
+   "fetched_utc": "2026-11-10T09:01:56Z"
+  },
+  {
+   "file": "S02_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S02_ME.zip",
+   "bytes": 387021912,
+   "sha256": "43d55d4a8ef5f9773ad880f1069b4475dce85bace28782e8ad7fb189759dc9d8",
+   "fetched_utc": "2026-11-10T09:54:49Z"
+  },
+  {
+   "file": "S03_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S03_ME.zip",
+   "bytes": 399593008,
+   "sha256": "005acfb53b465bc10e3450b4632e04afcbe677c237725b1fa0eba17c03abf0ea",
+   "fetched_utc": "2026-11-10T09:56:49Z"
+  },
+  {
+   "file": "S04_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S04_ME.zip",
+   "bytes": 365696181,
+   "sha256": "4c026cd9d453fca8399838d50fe098dcabdec1576c402af9c908124bab502451",
+   "fetched_utc": "2026-11-10T09:57:46Z"
+  },
+  {
+   "file": "S05_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S05_ME.zip",
+   "bytes": 390238064,
+   "sha256": "fb02af41e889246b313242e5aade9e9ffafb681c6d8f28dce50ec1f2b3bda0a3",
+   "fetched_utc": "2026-11-10T09:59:05Z"
+  },
+  {
+   "file": "S06_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S06_ME.zip",
+   "bytes": 384949940,
+   "sha256": "06ff80e0b678c184b17659f769eebf0cb05adfe761f7663d94b42cff2c2e5d98",
+   "fetched_utc": "2026-11-10T10:00:49Z"
+  },
+  {
+   "file": "S07_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S07_ME.zip",
+   "bytes": 397238292,
+   "sha256": "4144befdbb8ca442f3bbcff564971ea465d07d0547d4f5a826bf2034cf8bebd7",
+   "fetched_utc": "2026-11-10T10:01:57Z"
+  },
+  {
+   "file": "S08_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S08_ME.zip",
+   "bytes": 376679123,
+   "sha256": "de66fb5e9852791f8c601bdfab6c3f87adb208dc40041f94e6236f3d2f0ad7f0",
+   "fetched_utc": "2026-11-10T10:03:55Z"
+  },
+  {
+   "file": "S09_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S09_ME.zip",
+   "bytes": 380628644,
+   "sha256": "434b01544b0ce02d777a0f832ae7888c7404cf695e6584e31dc4a95dc335cd84",
+   "fetched_utc": "2026-11-10T10:05:35Z"
+  },
+  {
+   "file": "S10_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S10_ME.zip",
+   "bytes": 413831419,
+   "sha256": "cf2f8b91295e5e5035b6b3e296efca7c9ce93af63df72ec9a0cf60292c6704eb",
+   "fetched_utc": "2026-11-10T10:07:05Z"
+  },
+  {
+   "file": "S11_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S11_ME.zip",
+   "bytes": 403774472,
+   "sha256": "bb431a8825d30b98ab2a1adf9b5416733b94d00d21aec2ba5e765c6556eded7f",
+   "fetched_utc": "2026-11-10T10:07:56Z"
+  },
+  {
+   "file": "S12_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S12_ME.zip",
+   "bytes": 400875226,
+   "sha256": "0b0cb6e7ddbfd5d994079a6d867939ef72595ac9217c898f76e2a64a59a7753b",
+   "fetched_utc": "2026-11-10T10:09:25Z"
+  },
+  {
+   "file": "S13_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S13_ME.zip",
+   "bytes": 405701608,
+   "sha256": "577fab34bab9c5ebf5fe69b6c47aa05bcd691c3076bc7d9160200b317a0ff00f",
+   "fetched_utc": "2026-11-10T10:10:24Z"
+  },
+  {
+   "file": "S14_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S14_ME.zip",
+   "bytes": 375688687,
+   "sha256": "7fcd72cbb1968ef77ff0815c6624564419b9acafbdf254989a82dfd3ae536df1",
+   "fetched_utc": "2026-11-10T10:11:16Z"
+  },
+  {
+   "file": "S15_ME.zip",
+   "url": "https://lampx.tugraz.at/~bci/database/001-2017/S15_ME.zip",
+   "bytes": 386284090,
+   "sha256": "de25a88e1c3f06f747d8cff26288e43db578b1b0b1e7f0256995199c45d48a14",
+   "fetched_utc": "2026-11-10T10:13:00Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ofner2017_PLoSOne.zip"
+}

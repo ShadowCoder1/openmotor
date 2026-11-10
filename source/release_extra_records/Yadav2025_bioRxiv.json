@@ -1,0 +1,64 @@
+{
+ "id": "Yadav2025_bioRxiv",
+ "module": "summary",
+ "rows": 1302,
+ "subjects": 31,
+ "persons": 31,
+ "zip_bytes": 16325,
+ "zip_sha256": "c6d25f00ec7c91b8ee7f3714dca544cd02181d56e4eed7a5ada1d98a0d90d65c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "1302 rows, none missing",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 training and 20 transfer bins per participant, 2 retention bins",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "bioRxiv abstract/Methods, Participants (31 right-handed adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cM1 group size (Trained M1)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants (cM1 n = 15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "iM1 group size (Untrained M1)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (iM1 n = 16)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Total Error and the bin size are not described in the deposit or the abstract; no mean or SD could be checked, so published checks are counts."
+ ],
+ "sources": [
+  {
+   "file": "fig2.xlsx",
+   "url": "https://osf.io/download/7k32d/",
+   "bytes": 45112,
+   "sha256": "a0cfa5c92cdbe8f1109e159b8a894ab8d704c7445f9d9c636db3cdf5dbc0f128",
+   "fetched_utc": "2026-11-09T16:59:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Yadav2025_bioRxiv.zip"
+}

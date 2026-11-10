@@ -1,0 +1,7 @@
+{
+ "id": "Will2025_EurJNeurosci",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Zenodo 14671785 holds 60 raw per-session kinematics logs (30 participants x 2 days, 13.7 GB in total, about 230 MB each), headerless tab-separated sample streams at about 1 kHz with no column documentation and no per-trial measures; the EEG files (records 14673450, 14674428) and v4 (figure only) add nothing at trial level. Record title is the preprint title (Post-movement beta-rebound reflects strategic re-aiming during motor adaptation, but not re-aiming accuracy); published as Will, Korka, Stenner (2025) Involvement of Perimovement Neural Beta-Oscillations in Strategic Aiming for Motor Adaptation, Eur J Neurosci 62(6), doi 10.1111/ejn.70260 (Crossref); license CC BY 4.0 as listed.",
+ "sources": []
+}

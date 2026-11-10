@@ -1,0 +1,140 @@
+{
+ "id": "Smeets2023_ExpBrainRes",
+ "module": "timeseries",
+ "rows": 2542,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 47778193,
+ "zip_sha256": "efc3b9979813a2c4854af329bc77e949ff96cf1d3af7bece506452339d00f185",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (twelve volunteers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "size scaling: mean difference between large and small target (cm)",
+   "computed": 2.5022126898623225,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Results (2.5 +- 0.7 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "size scaling: SD across participants (cm)",
+   "computed": 0.6949628589851393,
+   "reported": 0.7,
+   "tol": 0.05,
+   "source": "Results (2.5 +- 0.7 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aftereffect mean (cm)",
+   "computed": -0.1112765547154728,
+   "reported": -0.1,
+   "tol": 0.05,
+   "source": "Results (-0.1 +- 0.2 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aftereffect SD (cm)",
+   "computed": 0.22842102061083178,
+   "reported": 0.2,
+   "tol": 0.05,
+   "source": "Results (-0.1 +- 0.2 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recording frequency (Hz)",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Setup and procedure (250 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "size-indication trials per phase (2 sizes x 3 positions x 5)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Setup and procedure (30 size indication trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 30 pre-adaptation recordings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has two post-adaptation blocks of 30 recordings (29 for one participant with a missing trial)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "2542 recordings = every ndf file outside the authors' 'Foute data' (bad data) folders",
+   "ok": true,
+   "detail": "2542"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 750 samples and a samples file",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "For participants 5, 9, 10 and 12 the number of recordings differs from the planned 210 (participant 10 has 23 extra recordings in the first adaptation phase, participant 12 has 209), and the authors' Verwerk_raw.m uses participant-specific start files for the post-adaptation blocks; this conversion follows those. In the authors' script the 30th slot of participant 9's first post-adaptation block is not reset and so carries a trial of the previous participant; here that block has the 29 real recordings, so participant 9's aftereffect is -0.004 cm here against 0.008 cm in the authors' compiled Output1.mat (all other participants agree to 3 decimals). As a result the one-sample t of the aftereffect is -1.688 here (one-sided p 0.940) against t(11) = -1.668 (p = 0.938) in the paper; these two are therefore not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "readndf.m",
+   "url": "https://osf.io/download/tvcd3/",
+   "bytes": 1891,
+   "sha256": "c9dc7fb4e554cd9272a61d35cf693b480a1f0fb07fab5bc3891593c0d7262d41",
+   "fetched_utc": "2026-11-10T03:02:47Z"
+  },
+  {
+   "file": "Individual_raw.zip",
+   "url": "https://osf.io/download/69g4u/",
+   "bytes": 38785562,
+   "sha256": "55e6c1bd6840afaa10e943bca5ffc4892bf8e828c29ad754d6976be3c2e8ce13",
+   "fetched_utc": "2026-11-10T03:03:12Z"
+  },
+  {
+   "file": "Verwerk_raw.m",
+   "url": "https://osf.io/download/mv6au/",
+   "bytes": 9023,
+   "sha256": "51176317df5744443408c7681cfc8a2ceab19b010dab9b7dee9826928308345c",
+   "fetched_utc": "2026-11-10T03:03:19Z"
+  },
+  {
+   "file": "Output1.mat",
+   "url": "https://osf.io/download/kwh2v/",
+   "bytes": 2673,
+   "sha256": "8270f12af538dbddb239b8e2d65c746f1556a31c0ec05dfb7e442142a17e99d2",
+   "fetched_utc": "2026-11-10T03:03:25Z"
+  },
+  {
+   "file": "Verwerk_2nd.m",
+   "url": "https://osf.io/download/5ugx2/",
+   "bytes": 3285,
+   "sha256": "3dffa5a2217c42f0d3a273421d20b6eedc9e0fcee8716bb144aa510821f5bdb5",
+   "fetched_utc": "2026-11-10T03:03:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Smeets2023_ExpBrainRes.zip"
+}

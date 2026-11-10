@@ -1,0 +1,393 @@
+{
+ "id": "Jacobsen2023_JPhysiol",
+ "module": "walking",
+ "rows": 77559,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 3649201,
+ "zip_sha256": "fc511c48e895bca59560d2ea8fddd195881db30b21dab1d288a440d401659bf4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "30 participants, each with strides",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row per right heel strike pair: rows = RHS - 1 - gaps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "typical stride time 0.7-1.6 s",
+   "ok": true,
+   "detail": "median 1.238"
+  },
+  {
+   "kind": "internal",
+   "what": "step times add up to the stride time",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "share of strides with a regular RHS-LTO-LHS-RTO event order is above 95%",
+   "ok": true,
+   "detail": "656 irregular of 77559; gaps 10; strides outside any block 353"
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "PeerJ 2024, Results: Participant demographics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "PeerJ 2024, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "PeerJ 2024, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 22.766666666666666,
+   "reported": 22.8,
+   "tol": 0.05,
+   "source": "PeerJ 2024, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 2.608782690535335,
+   "reported": 2.6,
+   "tol": 0.05,
+   "source": "PeerJ 2024, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "PeerJ 2024, Results (range 19-29)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "PeerJ 2024, Results (range 19-29)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean SB1 duration (min)",
+   "computed": 15.150822482638889,
+   "reported": 15.0,
+   "tol": 0.5,
+   "source": "PeerJ 2024, Methods: abrupt adaptation: 2:1 for the entire 15-min period (tolerance = the printed whole minutes +-0.5 min)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean P1 duration (min)",
+   "computed": 10.35675998263889,
+   "reported": 10.0,
+   "tol": 0.5,
+   "source": "PeerJ 2024, Methods: post-adaptation #1: 10 minutes (tolerance = the printed whole minutes +-0.5 min)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean P2 duration (min)",
+   "computed": 5.154842664930555,
+   "reported": 5.0,
+   "tol": 0.5,
+   "source": "PeerJ 2024, Methods: post-adaptation #2: 5 min (tolerance = the printed whole minutes +-0.5 min)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean SB2 duration (min): 5 min ramp + 2 min at 2:1",
+   "computed": 7.202899305555556,
+   "reported": 7.0,
+   "tol": 0.5,
+   "source": "PeerJ 2024, Methods: gradual adaptation (tolerance +-0.5 min)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit has 30 of the 33 participants recruited; the three discarded by the authors are not in it. The paper's step length asymmetry could not be reproduced because the deposit holds no motion capture.",
+  "The paper's exact belt speeds during the gradual ramp were measured from ankle markers (not shared); the speeds here are the protocol's nominal values. Published checks use the PeerJ paper (same dataset, open access); the J Physiol paper's full text was not available."
+ ],
+ "sources": [
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/participants.tsv",
+   "bytes": 666,
+   "sha256": "926c9bb2e1aea8c2341e5f122ce45a595b80062edb117ff2363f7ac2b3afd51d",
+   "fetched_utc": "2026-11-09T20:25:29Z"
+  },
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/README",
+   "bytes": 244,
+   "sha256": "a0d7c3051a29b6d6f2ea4db310d9bda6a7d3d072f38ea53013c27562bff7c275",
+   "fetched_utc": "2026-11-09T20:25:33Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/dataset_description.json",
+   "bytes": 930,
+   "sha256": "1dde6842b585ac828852eadea52359543b0bdeddbbea54307514c226e4c4c767",
+   "fetched_utc": "2026-11-09T20:25:36Z"
+  },
+  {
+   "file": "CHANGES",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/CHANGES",
+   "bytes": 149,
+   "sha256": "4dbe3f233a8ff427025840dd5e2f3c1cea976097e4e218573d6a4bb44bcdfdfb",
+   "fetched_utc": "2026-11-09T20:25:40Z"
+  },
+  {
+   "file": "data_dictionary.xlsx",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sourcedata/data_dictionary.xlsx",
+   "bytes": 9355,
+   "sha256": "61d1c6a023b0a187b133f3e9e5ccff9e9c2dd396d00d5af68d510cb6ed5089ef",
+   "fetched_utc": "2026-11-09T20:25:44Z"
+  },
+  {
+   "file": "sub-S18_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S18/eeg/sub-S18_task-task_events.tsv",
+   "bytes": 467114,
+   "sha256": "167fc213d503507e1e2ae8cc9d532b654ab36377ede538db2bed57b34d722808",
+   "fetched_utc": "2026-11-09T20:25:47Z"
+  },
+  {
+   "file": "sub-S19_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S19/eeg/sub-S19_task-task_events.tsv",
+   "bytes": 333556,
+   "sha256": "571e931b76f7b685b6b869e96b791b82bfbbdd75c94e5e5a12a75928907a422c",
+   "fetched_utc": "2026-11-09T20:25:51Z"
+  },
+  {
+   "file": "sub-S20_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S20/eeg/sub-S20_task-task_events.tsv",
+   "bytes": 358678,
+   "sha256": "8febc4af834d5dcf09bd55927d7ad97cca664a30313d62df80dc9ce17569e7b4",
+   "fetched_utc": "2026-11-09T20:25:54Z"
+  },
+  {
+   "file": "sub-S21_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S21/eeg/sub-S21_task-task_events.tsv",
+   "bytes": 390248,
+   "sha256": "04683b84866802a09b320e00922696e1f0e71e1548dd86ad4f1e74be7dbc27d0",
+   "fetched_utc": "2026-11-09T20:25:58Z"
+  },
+  {
+   "file": "sub-S22_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S22/eeg/sub-S22_task-task_events.tsv",
+   "bytes": 351727,
+   "sha256": "46f56f5b02263e1c06278f0e137a683b4f087632b51381090b2807c07aa1861d",
+   "fetched_utc": "2026-11-09T20:26:02Z"
+  },
+  {
+   "file": "sub-S23_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S23/eeg/sub-S23_task-task_events.tsv",
+   "bytes": 461887,
+   "sha256": "4bb7e131c3b7aed3e5db4e8b9a9e00a67d93c3c511d6eede9c84cfa32e4b2c06",
+   "fetched_utc": "2026-11-09T20:26:06Z"
+  },
+  {
+   "file": "sub-S24_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S24/eeg/sub-S24_task-task_events.tsv",
+   "bytes": 370979,
+   "sha256": "44178ce6433ce90a7c0e671bad73b4fe8c11ef21e978c3092fb7e651701c0185",
+   "fetched_utc": "2026-11-09T20:26:10Z"
+  },
+  {
+   "file": "sub-S25_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S25/eeg/sub-S25_task-task_events.tsv",
+   "bytes": 391962,
+   "sha256": "faac5d49ee31997d83ba7019a5635ab7f5ed3bcc0dc48db01efbbfbfeb2cbd5e",
+   "fetched_utc": "2026-11-09T20:26:14Z"
+  },
+  {
+   "file": "sub-S26_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S26/eeg/sub-S26_task-task_events.tsv",
+   "bytes": 384174,
+   "sha256": "f1938b8d570c6b8f5a55cd909d2f89ff1bd28e4db439fa16a0ac9652f46fd470",
+   "fetched_utc": "2026-11-09T20:26:18Z"
+  },
+  {
+   "file": "sub-S27_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S27/eeg/sub-S27_task-task_events.tsv",
+   "bytes": 483620,
+   "sha256": "40475e82c09324e96438e08e8eec1068a40035dae7041609a3a32146f508ead4",
+   "fetched_utc": "2026-11-09T20:26:21Z"
+  },
+  {
+   "file": "sub-S28_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S28/eeg/sub-S28_task-task_events.tsv",
+   "bytes": 362896,
+   "sha256": "efdc11a64631fb5bcb6349575eb8fa4fe2ba391b6f00d5cb3a4ba183a5a619f2",
+   "fetched_utc": "2026-11-09T20:26:25Z"
+  },
+  {
+   "file": "sub-S29_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S29/eeg/sub-S29_task-task_events.tsv",
+   "bytes": 401067,
+   "sha256": "2dbc2628eb5bfd30e2ea6d82f6a923253cacb0bb8a1f8049ae469991cc8e358b",
+   "fetched_utc": "2026-11-09T20:26:28Z"
+  },
+  {
+   "file": "sub-S30_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S30/eeg/sub-S30_task-task_events.tsv",
+   "bytes": 356922,
+   "sha256": "97d3760fe31903f5e84df0eaac35204f66dc759f8ac8b9b2403528d6c5fa6551",
+   "fetched_utc": "2026-11-09T20:26:32Z"
+  },
+  {
+   "file": "sub-S31_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S31/eeg/sub-S31_task-task_events.tsv",
+   "bytes": 373349,
+   "sha256": "9fe603fa5a26b96af3e1bc7dc7d96c0638ca42d8cbec0126271ddf176e37e8dc",
+   "fetched_utc": "2026-11-09T20:26:35Z"
+  },
+  {
+   "file": "sub-S32_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S32/eeg/sub-S32_task-task_events.tsv",
+   "bytes": 508090,
+   "sha256": "8042a99e4c7760a48f1ca07d6c8471ecceeb46accb1c015c05452ffad322a571",
+   "fetched_utc": "2026-11-09T20:26:39Z"
+  },
+  {
+   "file": "sub-S33_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S33/eeg/sub-S33_task-task_events.tsv",
+   "bytes": 374122,
+   "sha256": "5e69d47f6c0f6037b47420af9b94b25fa5bd5c55ec0fbf024bdfe4cdaaf9309c",
+   "fetched_utc": "2026-11-09T20:26:42Z"
+  },
+  {
+   "file": "sub-S34_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S34/eeg/sub-S34_task-task_events.tsv",
+   "bytes": 359546,
+   "sha256": "380839df48cfb0637a0663ac53e3a4f8e97bb975f5d49b6287ef8e1e654fe34f",
+   "fetched_utc": "2026-11-09T20:26:46Z"
+  },
+  {
+   "file": "sub-S35_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S35/eeg/sub-S35_task-task_events.tsv",
+   "bytes": 351203,
+   "sha256": "718ceee9e34bee4f1026ebe18f62a88b972e5c68711ad97c98e74f837d0ac859",
+   "fetched_utc": "2026-11-09T20:26:49Z"
+  },
+  {
+   "file": "sub-S36_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S36/eeg/sub-S36_task-task_events.tsv",
+   "bytes": 339922,
+   "sha256": "1ffb5a6bbe2a2c7c2ef25bfc23486d215561d7a3c741b7af74beae0177e435a7",
+   "fetched_utc": "2026-11-09T20:26:54Z"
+  },
+  {
+   "file": "sub-S37_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S37/eeg/sub-S37_task-task_events.tsv",
+   "bytes": 367761,
+   "sha256": "8806b9e3f8319916e9675e3438f446ce4d82384b3cc9386f3f0ba2b91df2e8be",
+   "fetched_utc": "2026-11-09T20:26:57Z"
+  },
+  {
+   "file": "sub-S38_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S38/eeg/sub-S38_task-task_events.tsv",
+   "bytes": 374174,
+   "sha256": "369d4c41130a97ba530dedf261971e2f580a8ca10209476b326d627eb853bdfb",
+   "fetched_utc": "2026-11-09T20:27:01Z"
+  },
+  {
+   "file": "sub-S39_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S39/eeg/sub-S39_task-task_events.tsv",
+   "bytes": 514743,
+   "sha256": "e2ddc96fedb149a5f46a1ce8ccc00b4b5ad3625790b7cfd1305308d64c7b73c7",
+   "fetched_utc": "2026-11-09T20:27:05Z"
+  },
+  {
+   "file": "sub-S40_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S40/eeg/sub-S40_task-task_events.tsv",
+   "bytes": 377955,
+   "sha256": "26dffcbb6a9cc70e26c7370b202189628f099d74c0815db1c56bf2a4f63402a2",
+   "fetched_utc": "2026-11-09T20:27:09Z"
+  },
+  {
+   "file": "sub-S41_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S41/eeg/sub-S41_task-task_events.tsv",
+   "bytes": 373696,
+   "sha256": "4bab69f07b4d7e21177747119e1174ef235871027e33f0d00c97f443dd19c2b6",
+   "fetched_utc": "2026-11-09T20:27:12Z"
+  },
+  {
+   "file": "sub-S42_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S42/eeg/sub-S42_task-task_events.tsv",
+   "bytes": 380487,
+   "sha256": "ee4ced10a43e566f733cc7b88f1d50e87255912beb99201a8a2fe4ba34e30752",
+   "fetched_utc": "2026-11-09T20:27:16Z"
+  },
+  {
+   "file": "sub-S43_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S43/eeg/sub-S43_task-task_events.tsv",
+   "bytes": 457233,
+   "sha256": "49e208d6c75f114b325163021e277b8ad8e7d354a474b2a3deaebd0686ec8dbb",
+   "fetched_utc": "2026-11-09T20:27:19Z"
+  },
+  {
+   "file": "sub-S44_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S44/eeg/sub-S44_task-task_events.tsv",
+   "bytes": 381205,
+   "sha256": "c9b67e25f341c4cc4c693a0da2dfa33793e4360a141df603005b6855ef297de2",
+   "fetched_utc": "2026-11-09T20:27:23Z"
+  },
+  {
+   "file": "sub-S46_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S46/eeg/sub-S46_task-task_events.tsv",
+   "bytes": 484221,
+   "sha256": "9358d6ae5834635381ee49a3718fef68785050245c0253fd04f8f00e4dc79413",
+   "fetched_utc": "2026-11-09T20:27:27Z"
+  },
+  {
+   "file": "sub-S47_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S47/eeg/sub-S47_task-task_events.tsv",
+   "bytes": 523939,
+   "sha256": "deff5695d4ed0e01fe46f4cb9ef7ce9a74ca0e82c114bb510f24d4e95a8115b1",
+   "fetched_utc": "2026-11-09T20:27:31Z"
+  },
+  {
+   "file": "sub-S48_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004475/sub-S48/eeg/sub-S48_task-task_events.tsv",
+   "bytes": 357760,
+   "sha256": "20cbafa63e90ae513e79044b58cce853edb32c94dcc7056c149f48e522a0ba5f",
+   "fetched_utc": "2026-11-09T20:27:35Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jacobsen2023_JPhysiol.zip"
+}

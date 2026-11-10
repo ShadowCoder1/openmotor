@@ -1,0 +1,7 @@
+{
+ "id": "Papadopoulos2020_SciRep",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Zenodo 4311175 ships one 6.5 GB data.zip (accelerometer plus typing pickles; cannot fetch typing alone). The typing part is also only per-session hold/flight-time histograms (10 ms bins), not key presses; files are Python pickles.",
+ "sources": []
+}

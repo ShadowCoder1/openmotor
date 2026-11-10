@@ -1,0 +1,431 @@
+{
+ "id": "Mudarris2025_FrontNeurosci",
+ "module": "summary",
+ "rows": 1335,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 18723,
+ "zip_sha256": "eed7d17be869afa2d3344d60726b679e5923918821dcfac3972bc185a7b8e226",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants tested",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Participants (50)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the tapping analyses",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Participants (45 analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 1 (12 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 1 (38 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, 50 participants (years)",
+   "computed": 22.22,
+   "reported": 22.22,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Participants (M = 22.22)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 4.047120417465904,
+   "reported": 4.05,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 1 (SD 4.05)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tap_cv values, metronome, single task",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 2 (n)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tap_cv values, music, single task",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 2 (n)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV SD, metronome, single task",
+   "computed": 0.06717353973170809,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV mean, music, single task",
+   "computed": 0.05149424371082759,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV SD, music, single task",
+   "computed": 0.03196800382374535,
+   "reported": 0.03,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV mean, metronome, dual task",
+   "computed": 0.07025230729479677,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV SD, metronome, dual task",
+   "computed": 0.04710618069591182,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV mean, music, dual task",
+   "computed": 0.0621665939442637,
+   "reported": 0.06,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CV SD, music, dual task",
+   "computed": 0.04760809446044352,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force mean, metronome, single task",
+   "computed": 64.71755612437089,
+   "reported": 64.72,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force mean, music, single task",
+   "computed": 65.35991707060683,
+   "reported": 65.36,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force SD, music, single task",
+   "computed": 30.775598659881958,
+   "reported": 30.78,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force mean, metronome, dual task",
+   "computed": 67.04253933968481,
+   "reported": 67.04,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force SD, metronome, dual task",
+   "computed": 30.51839356447632,
+   "reported": 30.52,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force mean, music, dual task",
+   "computed": 66.15539731673431,
+   "reported": 66.16,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force SD, music, dual task",
+   "computed": 32.376845759993905,
+   "reported": 32.38,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force dual task cost mean, metronome",
+   "computed": -2.324983215313913,
+   "reported": -2.3,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force dual task cost SD, metronome",
+   "computed": 14.695532371511264,
+   "reported": 14.7,
+   "tol": 0.005,
+   "source": "Mudarris et al. 2025, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ravlt_trial5_minus_delayed: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ravlt_trial5_minus_delayed: mean",
+   "computed": 1.02,
+   "reported": 1.0,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ravlt_trial5_minus_delayed: SD",
+   "computed": 1.5451041837932842,
+   "reported": 1.5,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroop_interference: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroop_interference: mean",
+   "computed": 32.19,
+   "reported": 32.2,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroop_interference: SD",
+   "computed": 12.564076583981938,
+   "reported": 12.6,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tmt_b_minus_a: n",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tmt_b_minus_a: mean",
+   "computed": 21.897959183673468,
+   "reported": 21.9,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "d2_corrected_hit_rate: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "d2_corrected_hit_rate: mean",
+   "computed": 224.56,
+   "reported": 224.6,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grooved_pegboard_time: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grooved_pegboard_time: mean",
+   "computed": 59.28,
+   "reported": 59.3,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "box_and_blocks: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "box_and_blocks: mean",
+   "computed": 65.22,
+   "reported": 65.2,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "box_and_blocks: SD",
+   "computed": 9.07404911530342,
+   "reported": 9.1,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gmsi_musical_training: n",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gmsi_musical_training: mean",
+   "computed": 23.3,
+   "reported": 23.3,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gmsi_musical_training: SD",
+   "computed": 10.568049653052721,
+   "reported": 10.6,
+   "tol": 0.05,
+   "source": "Mudarris et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "tap_cv of trial 1 equals CV_ST of the other file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "five participants without tapping data",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Five printed numbers did not reproduce and are not used as checks: the single task CV mean with the metronome (rows 0.0647, Table 2 0.07), the single task force SD with the metronome (30.515 against 30.52), and the SDs of the Trail Making B minus A (16.44 against 16.5), d2 (42.35 against 42.4) and Grooved Pegboard (8.35 against 8.4) scores in Table 3. The cause is not known (the authors may have computed them on a slightly different set of rows).",
+  "The paper's text gives mean age 22.22 (SD 4.04) and its Table 1 22.20 (SD 4.05); the rows give 22.22 and 4.047, so the mean is checked against the text and the SD against Table 1.",
+  "The paper's Table 3 lists a minimum Trail Making B minus A of -5 s; the rows contain the same value, as shared by the authors."
+ ],
+ "sources": [
+  {
+   "file": "mlm.csv",
+   "url": "https://osf.io/download/8exgv/",
+   "bytes": 18564,
+   "sha256": "7970bbf2ab7afd429ea433e0aacbbe89944bcd2010561e12bdb0ac5ba0763022",
+   "fetched_utc": "2026-11-09T13:48:49Z"
+  },
+  {
+   "file": "gams.csv",
+   "url": "https://osf.io/download/27phg/",
+   "bytes": 15524,
+   "sha256": "4a316464c1fc9b113ff711655cfe43cab87440389a4fef35a4b768f4d23985ef",
+   "fetched_utc": "2026-11-09T13:48:55Z"
+  },
+  {
+   "file": "mlm.R",
+   "url": "https://osf.io/download/kqcxf/",
+   "bytes": 17761,
+   "sha256": "ebe8e97a890928fded46e523a7a6bbcc81f779c8714710bff780a991dd99c16c",
+   "fetched_utc": "2026-11-09T13:49:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mudarris2025_FrontNeurosci.zip"
+}

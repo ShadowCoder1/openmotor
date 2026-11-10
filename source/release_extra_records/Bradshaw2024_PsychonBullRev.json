@@ -1,0 +1,215 @@
+{
+ "id": "Bradshaw2024_PsychonBullRev",
+ "module": "speech",
+ "rows": 10850,
+ "subjects": 31,
+ "persons": 31,
+ "zip_bytes": 215073,
+ "zip_sha256": "d63bd26ec6939e1dac1eb36c4c65c944c7e07009519348bf4250b2ee6b4cbf0b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "350 trials for each of 31 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blocks 1-2 hold formants, blocks 3-7 hold compensation, blocks 6-7 hold change from baseline",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each block holds every sentence once per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Trial_number runs 1-50 within each block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, Congruent group",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, Incongruent group",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (total)",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (50 sentences x 7 blocks)",
+   "computed": 350.0,
+   "reported": 350.0,
+   "tol": 0,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent group: mean baseline F1 (block 1, mel)",
+   "computed": 623.8905875,
+   "reported": 623.89,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Stimuli",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent group: mean baseline F2 (block 1, mel)",
+   "computed": 1368.312375,
+   "reported": 1368.31,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Stimuli",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Incongruent group: mean baseline F1 (block 1, mel)",
+   "computed": 593.6253066666667,
+   "reported": 593.63,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Stimuli",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Incongruent group: mean baseline F2 (block 1, mel)",
+   "computed": 1339.0636000000002,
+   "reported": 1339.06,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Methods, Stimuli",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent: one-sample t of block 2 to block 6 change in F1 (n=16)",
+   "computed": -4.728112761389856,
+   "reported": -4.73,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Results, Adaptation responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent: one-sample t of block 2 to block 6 change in F2 (n=16)",
+   "computed": 5.759549756637741,
+   "reported": 5.76,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Results, Adaptation responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Incongruent: one-sample t of block 2 to block 6 change in F2 (n=15)",
+   "computed": 2.5332525520878266,
+   "reported": 2.53,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Results, Adaptation responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent: mean block 1 to block 2 change in F1 (paper: mixed-model beta, mel)",
+   "computed": -7.552375,
+   "reported": -7.55,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Results, Convergence responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Congruent: mean block 1 to block 2 change in F2 (paper: mixed-model beta, mel)",
+   "computed": 10.506125000000003,
+   "reported": 10.51,
+   "tol": 0.0051,
+   "source": "Bradshaw et al., Psychon Bull Rev 32(1):306-316, Results, Convergence responses",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The shared files hold block-wise formants only for blocks 1 and 2; raw formants of blocks 3-7 are not in the deposit. One sentence of one participant has no value in block 7 (NA in the authors' file) and is left empty."
+ ],
+ "sources": [
+  {
+   "file": "Participants_list.csv",
+   "url": "https://osf.io/download/n6a8f/",
+   "bytes": 237,
+   "sha256": "c4557641c4d8f1d179eae756a7ad34b96257129eca65bff8a14db0f6686071af",
+   "fetched_utc": "2026-11-09T11:44:11Z"
+  },
+  {
+   "file": "Adaptation_data.zip",
+   "url": "https://osf.io/download/3g9az/",
+   "bytes": 35265,
+   "sha256": "2c151af49d0ecce2ee2e2af6eeffcfc334546f23d8c42a787d28a3be117121df",
+   "fetched_utc": "2026-11-09T11:44:26Z"
+  },
+  {
+   "file": "After-effect_data.zip",
+   "url": "https://osf.io/download/j2z54/",
+   "bytes": 35102,
+   "sha256": "a86d4e0e890899baac649461d6a97bef12d14d826afa803e45874ab92b4bad3a",
+   "fetched_utc": "2026-11-09T11:44:31Z"
+  },
+  {
+   "file": "Convergence_data.zip",
+   "url": "https://osf.io/download/nkmq7/",
+   "bytes": 43761,
+   "sha256": "ebd2caa31588052a9abf1c3dc923b58b10355009ee479cd1dd330b237f3b9e63",
+   "fetched_utc": "2026-11-09T11:44:35Z"
+  },
+  {
+   "file": "Vector_of_compensation.zip",
+   "url": "https://osf.io/download/t3xdb/",
+   "bytes": 116355,
+   "sha256": "d36a61b7ff93a01ac31206192237face1c865592bc516fe9a600512bc0316615",
+   "fetched_utc": "2026-11-09T11:44:39Z"
+  },
+  {
+   "file": "Adaptation_B2_Baseline.csv",
+   "url": "https://osf.io/download/x52yd/",
+   "bytes": 68023,
+   "sha256": "c5fc6fd5d3c71ef7f69a5c538a52c4db803ade45f6754380cbb9e6140e3b9c04",
+   "fetched_utc": "2026-11-09T11:44:43Z"
+  },
+  {
+   "file": "canadian_acc_F1+F2-_formants.csv",
+   "url": "https://osf.io/download/4y86n/",
+   "bytes": 682,
+   "sha256": "8962a8439ff5d909169e51924fffa0d88fda31f74f1f57806d9cadf9eb8e6390",
+   "fetched_utc": "2026-11-09T11:44:48Z"
+  },
+  {
+   "file": "canadian_acc_F1-F2+_formants.csv",
+   "url": "https://osf.io/download/njwkd/",
+   "bytes": 687,
+   "sha256": "f6caf08b68ec3d558446e5b614765900c8b2e2d872bd4f40963a14462820ee0d",
+   "fetched_utc": "2026-11-09T11:44:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bradshaw2024_PsychonBullRev.zip"
+}

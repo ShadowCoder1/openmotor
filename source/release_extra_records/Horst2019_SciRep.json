@@ -1,0 +1,211 @@
+{
+ "id": "Horst2019_SciRep",
+ "module": "timeseries",
+ "rows": 2502,
+ "subjects": 57,
+ "persons": 57,
+ "zip_bytes": 350045198,
+ "zip_sha256": "a800268276009ae6c615abd2a6caeb778c2f5aa4fdb7fe378c0b217d6bf4fc78",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Methods, Subjects (fifty-seven subjects)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Subjects (29 female, 28 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Subjects (29 female, 28 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 23.12280701754386,
+   "reported": 23.1,
+   "tol": 0.05,
+   "source": "Methods, Subjects (23.1 +- 2.7 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 2.726000310754859,
+   "reported": 2.7,
+   "tol": 0.05,
+   "source": "Methods, Subjects (23.1 +- 2.7 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body size (m)",
+   "computed": 1.7443859649122808,
+   "reported": 1.74,
+   "tol": 0.005,
+   "source": "Methods, Subjects (1.74 +- 0.10 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body size (m)",
+   "computed": 0.10205071470071789,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Methods, Subjects (1.74 +- 0.10 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass (kg)",
+   "computed": 67.93421052631578,
+   "reported": 67.9,
+   "tol": 0.05,
+   "source": "Methods, Subjects (67.9 +- 11.3 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass (kg)",
+   "computed": 11.256498749511074,
+   "reported": 11.3,
+   "tol": 0.05,
+   "source": "Methods, Subjects (67.9 +- 11.3 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "gait recordings",
+   "computed": 1142.0,
+   "reported": 1142.0,
+   "tol": 0,
+   "source": "Mendeley Data description (raw data for each of the 1142 gait recordings)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers in the static trials",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Methods (full-body marker set of 62 retro reflective markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "marker sampling rate (Hz)",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Methods (sampling frequency of 250 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force plate sampling rate (Hz)",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Methods (frequency of 1000 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "only the two force files of one static recording have a corrupted line, and every other file has all samples its header announces",
+   "ok": true,
+   "detail": "[('S23_0001_Static P1', 1, ['5930\\t5.93000\\t5931\\t5.93100\\t5932\\t5.93200\\t5933\\t5.93300\\t5934\\t5.9']), ('S23_0001_Static P2', 1, ['5930\\t5.93000\\t5931\\t5.93100\\t5932\\t5.93200\\t5933\\t5.93300\\t5934\\t5.9'])]; [('S23_0001_Static', 'P1', 1445, 1516), ('S23_0001_Static', 'P2', 1445, 1516)]"
+  },
+  {
+   "kind": "internal",
+   "what": "every subject in subject_info has recordings and vice versa",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "marker frame counts match the file headers, marker time steps are 4 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "gait files carry one marker count, static files another",
+   "ok": true,
+   "detail": "{54} / {62}"
+  },
+  {
+   "kind": "internal",
+   "what": "force plates are two Kistler 9287CA",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "peak vertical force of a gait recording is 0.8-1.6 body weights in 95% of recordings (supports the N unit)",
+   "ok": true,
+   "detail": "median 1.25, share 1.000"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says 20 gait trials per participant; the deposit has between 18 and 21 gait recordings per participant (1,142 in all, 17 participants with a count other than 20).",
+  "The marker files of the gait trials hold 54 of the 62 markers: the static trials also carry the knee and ankle (lateral and medial) markers, which the authors removed for walking.",
+  "1094 of 69115800 marker coordinate cells (0.00%) are 0 or empty (marker not tracked), as exported.",
+  "In the static recording of one participant both force plate files end with a corrupted line that holds only sample numbers and times for the last 71 samples (no values); it is left out, so these two files have 1445 of the 1516 samples their headers announce.",
+  "One participant has no body size in subject_info.csv; it is left empty.",
+  "Units of the force files (N, Nm, mm) are not written in the deposit's text files; they follow the export's usual units and the check above (peak vertical force near body weight)."
+ ],
+ "sources": [
+  {
+   "file": "c3d.zip",
+   "url": "https://data.mendeley.com/public-files/datasets/svx74xcrjr/files/f7375fa7-f90a-4f5e-9f4f-3534a5ae942e/file_downloaded",
+   "bytes": 339700887,
+   "sha256": "48abc1755ae3d7765b29222493ddeabe7e34adde56d11c782a93dd036f391eae",
+   "fetched_utc": "2026-11-09T12:35:30Z"
+  },
+  {
+   "file": "subject_info.csv",
+   "url": "https://data.mendeley.com/public-files/datasets/svx74xcrjr/files/03ea470d-3ecb-40c6-95c3-0aefc7431a58/file_downloaded",
+   "bytes": 1226,
+   "sha256": "9553f2fad7daedc7490fdcfea1b093b0bccb0c3d5fe2cf26bbf1f99fb87f15de",
+   "fetched_utc": "2026-11-09T12:35:33Z"
+  },
+  {
+   "file": "markers_tsv.zip",
+   "url": "https://data.mendeley.com/public-files/datasets/svx74xcrjr/files/df3e9b01-7252-433f-98a3-bdceff24ad8d/file_downloaded",
+   "bytes": 253833995,
+   "sha256": "46c732ac205b3092ecc0b46f203ba8c8a70aff20cfd00e9901a217eabf6e3824",
+   "fetched_utc": "2026-11-09T12:39:16Z"
+  },
+  {
+   "file": "f1_tsv.zip",
+   "url": "https://data.mendeley.com/public-files/datasets/svx74xcrjr/files/62a4ed19-a769-4f82-ae53-7ac6fd52fc28/file_downloaded",
+   "bytes": 61578184,
+   "sha256": "59dc6a231e808c0a73f03c08cf0d1a7a19a44467a6ac305d3888694a54f5c1d3",
+   "fetched_utc": "2026-11-09T12:39:30Z"
+  },
+  {
+   "file": "f2_tsv.zip",
+   "url": "https://data.mendeley.com/public-files/datasets/svx74xcrjr/files/9def563d-1aa0-43be-8c8a-16f36fbbcb39/file_downloaded",
+   "bytes": 62901362,
+   "sha256": "f139e02c8ebca7d95fbe3adac04d9c26cfb586b697a4954699559f2542b4428c",
+   "fetched_utc": "2026-11-09T12:39:56Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Horst2019_SciRep.zip"
+}

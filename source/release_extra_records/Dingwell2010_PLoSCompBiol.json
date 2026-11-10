@@ -1,0 +1,148 @@
+{
+ "id": "Dingwell2010_PLoSCompBiol",
+ "module": "walking",
+ "rows": 95060,
+ "subjects": 34,
+ "persons": 34,
+ "zip_bytes": 2189778,
+ "zip_sha256": "94ef0383874381352e313a2e9a45fc2ebfabf415709081417b77078ec2a6cec7",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "17 young and 17 older participants (README)",
+   "ok": true,
+   "detail": "{'OH': 17, 'YH': 17}"
+  },
+  {
+   "kind": "internal",
+   "what": "every row has a finite length, time, speed and displacement and no 9999 is left",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stride speed = stride length / stride time (README Col 3) on every stride, to 1e-6",
+   "ok": true,
+   "detail": "max |diff| 1.51e-09"
+  },
+  {
+   "kind": "internal",
+   "what": "mean stride speed rises from SPD1 to SPD5 in both groups (SPD1 = 80% of preferred, SPD5 = 120%)",
+   "ok": true,
+   "detail": "{'OH': {1: 1.004, 2: 1.116, 3: 1.227, 4: 1.347, 5: 1.471}, 'YH': {1: 0.973, 2: 1.082, 3: 1.215, 4: 1.323, 5: 1.439}}"
+  },
+  {
+   "kind": "internal",
+   "what": "missing/discarded trials (a single row of 9999) are not rows: 6 trials",
+   "ok": true,
+   "detail": "334 kept + 6 missing = 340"
+  },
+  {
+   "kind": "published",
+   "what": "young participants",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young trials collected (17 x 10 = 170)",
+   "computed": 170.0,
+   "reported": 170.0,
+   "tol": 0,
+   "source": "Methods, Experimental protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young trials retained (4 of 170 discarded: 166)",
+   "computed": 166.0,
+   "reported": 166.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young trials discarded as % of 170 (2.35%)",
+   "computed": 2.3529411764705883,
+   "reported": 2.35,
+   "tol": 0.005,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young mean strides per trial (272)",
+   "computed": 271.7168674698795,
+   "reported": 272.0,
+   "tol": 0.5,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young SD of strides per trial (25)",
+   "computed": 24.859568339103795,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young fewest strides in a trial (213)",
+   "computed": 213.0,
+   "reported": 213.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young most strides in a trial (334)",
+   "computed": 334.0,
+   "reported": 334.0,
+   "tol": 0,
+   "source": "Methods, Data analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 272 +- 25 strides per trial (range 213-334) describes the 17 young participants, which the young rows reproduce. The older group was recorded in the same study but belongs to the deposit's other papers; its trial counts are not published in this paper."
+ ],
+ "sources": [
+  {
+   "file": "README_for_Young_Healthy_CSV_Files.txt",
+   "url": "https://zenodo.org/api/records/5015731/files/README_for_Young_Healthy_CSV_Files.txt/content",
+   "bytes": 4460,
+   "sha256": "bb891bfc72ce05fe8ca8294ec16e4b0f6d91f65ca9072ba6517cd24faf6dbc47",
+   "fetched_utc": "2026-11-09T01:36:33Z"
+  },
+  {
+   "file": "README_for_Older_Healthy_CSV_Files.txt",
+   "url": "https://zenodo.org/api/records/5015731/files/README_for_Older_Healthy_CSV_Files.txt/content",
+   "bytes": 4460,
+   "sha256": "bb891bfc72ce05fe8ca8294ec16e4b0f6d91f65ca9072ba6517cd24faf6dbc47",
+   "fetched_utc": "2026-11-09T01:36:39Z"
+  },
+  {
+   "file": "Young_Healthy_CSV_Files.zip",
+   "url": "https://zenodo.org/api/records/5015731/files/Young_Healthy_CSV_Files.zip/content",
+   "bytes": 852495,
+   "sha256": "75dd7d0821d03cefa652cb8870069af92fa9b73ea86c10bfc737f19152cd5b56",
+   "fetched_utc": "2026-11-09T01:36:48Z"
+  },
+  {
+   "file": "Older_Healthy_CSV_Files.zip",
+   "url": "https://zenodo.org/api/records/5015731/files/Older_Healthy_CSV_Files.zip/content",
+   "bytes": 948249,
+   "sha256": "de508f5fefd4591b06e058f6b6e045e99ae036822786fa9d3250aeec9eda81cf",
+   "fetched_utc": "2026-11-09T01:36:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Dingwell2010_PLoSCompBiol.zip"
+}

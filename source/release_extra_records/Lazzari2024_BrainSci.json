@@ -1,0 +1,194 @@
+{
+ "id": "Lazzari2024_BrainSci",
+ "module": "tapping",
+ "rows": 85405,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 1666444,
+ "zip_sha256": "bad803508963c521ffd24f981859fbd8034a03df097f974d7d8bc8fe1efa0721",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Tapping Data.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "spontaneus_results.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "files read: 24 participants, 1152 + 384 + 24 trial files",
+   "ok": true,
+   "detail": "{'SCT with DAF': 1152, 'SCT without feedback': 384, 'Spontaneus tapping': 24}"
+  },
+  {
+   "kind": "internal",
+   "what": "every logged feedback sound belongs to a tap 0 or the configured delay earlier (delayed trials: undelayed taps first, then the delay); 218 taps of the feedback trials have no logged feedback sound, and 1 logged feedback sound has no tap record",
+   "ok": true,
+   "detail": "{}"
+  },
+  {
+   "kind": "internal",
+   "what": "every metronome interval is the configured 600 ms (clicks of every trial)",
+   "ok": true,
+   "detail": "min 600, median 600.0, max 600 ms over 36252 intervals"
+  },
+  {
+   "kind": "internal",
+   "what": "no frames were reported missed by the pad",
+   "ok": true,
+   "detail": "0 missed frames"
+  },
+  {
+   "kind": "published",
+   "what": "participants who stutter",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Results / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who do not stutter",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Results / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SCT without feedback: trials per participant (all 24 have 16)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Synchronization-continuation task, 16 trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SCT with delayed auditory feedback: trials per participant (all 24 have 48 = 2 instructions x 24)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, SCT with DAF: 24 trials per instruction",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per instruction at 0 ms delay, summed over the 24 participants (8 per participant)",
+   "computed": 192.0,
+   "reported": 192.0,
+   "tol": 0,
+   "source": "Methods, SCT with DAF (8 trials at 0 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per instruction at each other delay (50, 100, 200, 300 ms), summed over participants (4 per participant)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Methods, SCT with DAF (4 trials per delay)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every instruction x delay cell has the paper's count",
+   "ok": true,
+   "detail": "{('tap', 200): 96, ('tap', 100): 96, ('tap', 0): 192, ('tap', 300): 96, ('tap', 50): 96, ('sound', 50): 96, ('sound', 0): 192, ('sound', 100): 96, ('sound', 200): 96, ('sound', 300): 96}"
+  },
+  {
+   "kind": "published",
+   "what": "metronome clicks per SCT trial (24)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, SCT (24 metronome clicks per trial)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spontaneous tapping: percentage of inter-tap intervals removed (under 100 ms or over 1.5 x the trial median; mean over participants)",
+   "computed": 5.931416766034473,
+   "reported": 5.93,
+   "tol": 0.005,
+   "source": "Methods, Data analysis (5.93% of ITIs)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "per participant, the share of spontaneous inter-tap intervals flagged excluded equals the authors' percentage_excluded (spontaneus_results.xlsx)",
+   "ok": true,
+   "detail": "max difference 7.11e-15"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Spontaneous tapping group means do not reproduce from the rows: the mean inter-tap interval is 601.70 ms for PWS and 594.68 ms for PNS here against 616.05 and 597.47 in the paper, because the authors' spreadsheet values (which give the paper's numbers) differ from a recomputation from the tap times: dropping the last tap and using population SDs reproduces the authors' mean for 10 of the 24 participants, not for the others."
+ ],
+ "sources": [
+  {
+   "file": "Tapping Data.zip",
+   "url": "https://osf.io/download/jg4dh/",
+   "bytes": 1882695,
+   "sha256": "bcf83db801019798f980bca6c02b604e4a0ce5e2b19e982c00c1b9d9977f99a0",
+   "fetched_utc": "2026-11-08T20:58:30Z"
+  },
+  {
+   "file": "Two taps.zip",
+   "url": "https://osf.io/download/gd597/",
+   "bytes": 68312,
+   "sha256": "d21f6f15bb75cd1742c6be047b09087ce37843cf4be6fb45d66c03b518ab1593",
+   "fetched_utc": "2026-11-08T20:58:30Z"
+  },
+  {
+   "file": "spontaneus_results.xlsx",
+   "url": "https://osf.io/download/epx8v/",
+   "bytes": 6949,
+   "sha256": "468c9a760daf3826fe05f8307e27ba66721e4d00fad794362dcca088ff7ca866",
+   "fetched_utc": "2026-11-08T20:58:31Z"
+  },
+  {
+   "file": "TapSound_circular_results.xlsx",
+   "url": "https://osf.io/download/kw3hp/",
+   "bytes": 188337,
+   "sha256": "71cc1e751916b5885f60fb09c3a11ed91690ce72b9d120e92227dff25a07a5b5",
+   "fetched_utc": "2026-11-08T20:58:33Z"
+  },
+  {
+   "file": "SAF_circular.xlsx",
+   "url": "https://osf.io/download/r6s25/",
+   "bytes": 62968,
+   "sha256": "95031f6be13d381a31d9738aa11310891c79cbb09a5a019fea2cd955fd5dbe9b",
+   "fetched_utc": "2026-11-08T20:58:34Z"
+  },
+  {
+   "file": "README.docx",
+   "url": "https://osf.io/download/wnuzv/",
+   "bytes": 16683,
+   "sha256": "c05be79950a4657e7107220b86efa993da2858332cd18f2385fd05b09855b72a",
+   "fetched_utc": "2026-11-08T20:58:35Z"
+  },
+  {
+   "file": "Delay detection task - syllables2.xlsx",
+   "url": "https://osf.io/download/hv8un/",
+   "bytes": 15516,
+   "sha256": "06c89acab0e44d8d2880349232f0c8eeec3c2704ef047fb55c3cf58e59070a62",
+   "fetched_utc": "2026-11-08T20:58:36Z"
+  },
+  {
+   "file": "Stutterers_analyses.R",
+   "url": "https://osf.io/download/tn5eb/",
+   "bytes": 31541,
+   "sha256": "053b2c6cbba6a0810091ae8ab2bed0192e5b307ea38bf98373cf8ea6c8b86bdc",
+   "fetched_utc": "2026-11-08T20:58:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lazzari2024_BrainSci.zip"
+}

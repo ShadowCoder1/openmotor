@@ -1,0 +1,715 @@
+{
+ "id": "Muralidharan2021_JCognNeurosci",
+ "module": "cued_second_movement",
+ "rows": 14940,
+ "subjects": 26,
+ "persons": 26,
+ "zip_bytes": 265766,
+ "zip_sha256": "470c399bf15b05158e995793414fa15055318c2426f207ad28d5f5366a0ca0ae",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Experiment 1: Participants (11)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per participant, 14 blocks x 30 (all but one participant)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Experiment 1: Flex and Move Task (14 blocks of 30 trials, one participant 10 blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: the one participant with 10 blocks has 300 trials",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Experiment 1: Flex and Move Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: secondary-movement trials (20%) per full participant",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Experiment 1: 20% of 420 trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: RT removed by the IQR rule, % of secondary trials (mean)",
+   "computed": 4.069264069264069,
+   "reported": 4.1,
+   "tol": 0.25,
+   "source": "Experiment 1: Data Analysis (4.1 +/- 0.8%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean button-press RT, right hand (ms)",
+   "computed": 587.593631426015,
+   "reported": 588.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 1 (588 +/- 41 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean button-press RT, left hand (ms)",
+   "computed": 568.9115453551294,
+   "reported": 569.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 1 (569 +/- 39 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: RT difference right - left (ms)",
+   "computed": 18.682086070885557,
+   "reported": 19.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 1 (19 +/- 6 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SEM of the RT difference (ms)",
+   "computed": 6.180424728884151,
+   "reported": 6.0,
+   "tol": 0.6,
+   "source": "Results, Experiment 1 (+/- 6 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: paired t of right vs left RT",
+   "computed": 3.022783528707181,
+   "reported": 3.02,
+   "tol": 0.1,
+   "source": "Results, Experiment 1 (t[10] = 3.02)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: EMG onset of the secondary press, right hand (ms)",
+   "computed": 441.1854785601777,
+   "reported": 441.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 1 (right = 441 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: EMG onset of the secondary press, left hand (ms)",
+   "computed": 440.7044724814947,
+   "reported": 441.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 1 (left = 441 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Experiment 2: Participants (15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Main task trials per participant (20 blocks x 30)",
+   "computed": 600.0,
+   "reported": 600.0,
+   "tol": 0,
+   "source": "Experiment 2: Press/Ready and Move Tasks (600)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: every participant has 600 Main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Main task secondary movements per participant",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Experiment 2 (120 trials, 60 Right and 60 Left)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Main task right-hand secondary movements",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Experiment 2 (60 Right)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Control task trials per participant (4 blocks x 24)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Experiment 2 (total of 96 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Control task right-hand movements",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Experiment 2 (48 Right and 48 Left)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Main: movement onset, right hand (ms)",
+   "computed": 446.2986331280514,
+   "reported": 446.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (Onset 446 +/- 16 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Main: movement onset, left hand (ms)",
+   "computed": 409.8624737644094,
+   "reported": 410.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (Onset 410 +/- 12 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Main: movement end, right hand (ms)",
+   "computed": 538.8796738002434,
+   "reported": 539.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (End 539 +/- 19 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Main: movement end, left hand (ms)",
+   "computed": 512.7782482789174,
+   "reported": 513.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (End 513 +/- 16 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Main: onset difference right - left (ms)",
+   "computed": 36.43615936364194,
+   "reported": 36.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (Main Right-Left 36 +/- 8 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Control: onset difference right - left (ms)",
+   "computed": 15.67562893086836,
+   "reported": 16.0,
+   "tol": 1.5,
+   "source": "Results, Experiment 2 (Control Right-Left 16 +/- 6 ms)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "per-participant Main-task movement-end means match, within 1 ms, the authors' n_15_press_and_move_behavior file (left, right)",
+   "ok": true,
+   "detail": "max diff 6.40e-04"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 and 2 rows kept: 10 x 420 + 300 + 15 x 696",
+   "ok": true,
+   "detail": "14940"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Per-participant movement-end means recomputed from the rows differ from the means in the authors' n_15_press_and_move_behavior file by up to 0.64 ms (the deposit does not say which trials its means use); group means and differences match the paper to within about 1 ms.",
+  "Experiment 1 outlier removal is recomputed here from the authors' rule in analyse_BEH.m; the deposit stores no outlier flags for Experiment 1."
+ ],
+ "sources": [
+  {
+   "file": "E1_s5__s5_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s5/s5_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21417,
+   "sha256": "0e8a74b99f3595e8c9ef597268efbbbecf20eacce0d54604c8a0722f4e64e2da",
+   "fetched_utc": "2026-11-09T07:20:47Z"
+  },
+  {
+   "file": "E1_s5__s5_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s5/s5_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 12240,
+   "sha256": "c2f1c29a02c2095def29ad5ae8103c1c91b1651a252db74ead5aa3bcc54b3993",
+   "fetched_utc": "2026-11-09T07:20:49Z"
+  },
+  {
+   "file": "E1_s2__s2_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s2/s2_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 23067,
+   "sha256": "ecb6f89ee09fc59f3785dc14096b549af275b8d7ad499a24497f1bae847066db",
+   "fetched_utc": "2026-11-09T07:20:50Z"
+  },
+  {
+   "file": "E1_s2__s2_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s2/s2_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 58596944,
+   "sha256": "8a92ed94d026bb826ef0db7fdda026a7f25ea01530249a03a9a68b4383a9cc82",
+   "fetched_utc": "2026-11-09T07:20:55Z"
+  },
+  {
+   "file": "E1_s2__s2_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s2/s2_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 13462,
+   "sha256": "64b2821a19dbad00cedb355051ec7ef66deb37617ac2e5ce2ecaddf57d39fe79",
+   "fetched_utc": "2026-11-09T07:20:57Z"
+  },
+  {
+   "file": "E1_s3__s3_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s3/s3_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 22213,
+   "sha256": "c64de322585a34d444720a99d08436f1c810337bdb1e639e8e286f900f4b95af",
+   "fetched_utc": "2026-11-09T07:20:59Z"
+  },
+  {
+   "file": "E1_s3__s3_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s3/s3_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 13150,
+   "sha256": "494218cb61e8e1fdabda6601700578e37b2dd05411105ea1410aaeeb5e3eb168",
+   "fetched_utc": "2026-11-09T07:21:00Z"
+  },
+  {
+   "file": "E1_s4__s4_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s4/s4_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 22028,
+   "sha256": "6d43a9dd6995aed45d54945ef7fcc85e796433f704dc9aaf2eb78d60a0af83fe",
+   "fetched_utc": "2026-11-09T07:21:02Z"
+  },
+  {
+   "file": "E1_s4__s4_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s4/s4_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 12722,
+   "sha256": "e1a3cf8ea759bfca62a744342c298b1c0a6faa7a4f5938e4f3c6b08cbf10d721",
+   "fetched_utc": "2026-11-09T07:21:05Z"
+  },
+  {
+   "file": "E1_s10__s10_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s10/s10_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21038,
+   "sha256": "1bc15d69fe7e18a638e86a4df3ce37d8de906f51ce651479f45d6de18982a537",
+   "fetched_utc": "2026-11-09T07:21:06Z"
+  },
+  {
+   "file": "E1_s10__s10_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s10/s10_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 11727,
+   "sha256": "e029c8b7a0769869cff8a6d41a5f9ed9ebe2de8c9f05534c406c13c02c34d737",
+   "fetched_utc": "2026-11-09T07:21:07Z"
+  },
+  {
+   "file": "E1_s11__s11_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s11/s11_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 11616,
+   "sha256": "1a3ef65dbd3972fe02d08a8d5b350b271bb15e7d0626a8f582f78f81a20aec5d",
+   "fetched_utc": "2026-11-09T07:21:10Z"
+  },
+  {
+   "file": "E1_s11__s11_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s11/s11_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 20797,
+   "sha256": "dd49c76e3d50a0434a208ae54716c2946b74305d467d8f29417627ec47ca9da0",
+   "fetched_utc": "2026-11-09T07:21:12Z"
+  },
+  {
+   "file": "E1_s8__s8_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s8/s8_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21482,
+   "sha256": "524d8d75b4fd5f188c4aa8765e9511eb01621befd3e4ecd51584ed3cad2148fa",
+   "fetched_utc": "2026-11-09T07:21:14Z"
+  },
+  {
+   "file": "E1_s8__s8_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s8/s8_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 11924,
+   "sha256": "0507d795a66195f1909477b68c619ea5de8aaff14f6847161dd2f90cb82f0fb6",
+   "fetched_utc": "2026-11-09T07:21:15Z"
+  },
+  {
+   "file": "E1_s1__s1_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s1/s1_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 16491,
+   "sha256": "fa4b2c55e2e2154b9d73e66b6aa062c12823d97317b818e41701d7263232623d",
+   "fetched_utc": "2026-11-09T07:21:17Z"
+  },
+  {
+   "file": "E1_s1__s1_behav_block10.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s1/s1_behav_block10.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 9684,
+   "sha256": "f908ae6fa724955fe51ce6250832f396b90533ca76941ff8faaf036323b7ada4",
+   "fetched_utc": "2026-11-09T07:21:19Z"
+  },
+  {
+   "file": "E1_s6__s6_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s6/s6_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21617,
+   "sha256": "16226e60009514b0e83e9de5a1e60ede9745c86765af3a6ff38ee184ed5c959d",
+   "fetched_utc": "2026-11-09T07:21:20Z"
+  },
+  {
+   "file": "E1_s6__s6_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s6/s6_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 12315,
+   "sha256": "47a856dfda6cc1a352959b7875b702f4610aff9bc44b59cb82e2e987ee94f5a6",
+   "fetched_utc": "2026-11-09T07:21:23Z"
+  },
+  {
+   "file": "E1_s7__s7_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s7/s7_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21636,
+   "sha256": "1ade5a3ac9eddfa7d6f236e77110fabf6c553f656b0970a0ad7adcf2dfc5a58a",
+   "fetched_utc": "2026-11-09T07:21:24Z"
+  },
+  {
+   "file": "E1_s7__s7_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s7/s7_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 12245,
+   "sha256": "25d841c06bd01d7a4b2230c7642fd5a1ebf43be45b8055d629616a7955335562",
+   "fetched_utc": "2026-11-09T07:21:25Z"
+  },
+  {
+   "file": "E1_s9__s9_behav_block_EEG.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s9/s9_behav_block_EEG.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 21396,
+   "sha256": "856eca443d7e58be85049995c82880b4f9e75af9c879583ac883f3aa1d4b1d01",
+   "fetched_utc": "2026-11-09T07:21:27Z"
+  },
+  {
+   "file": "E1_s9__s9_behav_block14.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s9/s9_behav_block14.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 11763,
+   "sha256": "39ec580330875458c57703fbb81c373f245636b5c60e568c1a609bce0bba463d",
+   "fetched_utc": "2026-11-09T07:21:28Z"
+  },
+  {
+   "file": "E2_s34__s34_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s34/s34_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 28276,
+   "sha256": "4891636e0b77359ff3b2e2da5a72093fbda839e884e7a9d7e762067086919a2a",
+   "fetched_utc": "2026-11-09T07:21:30Z"
+  },
+  {
+   "file": "E2_s34__s34_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s34/s34_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6170,
+   "sha256": "fa4b722029c2bc939ed4144ef879a50af4a2169af1e57ac3f22995b89b22d0f3",
+   "fetched_utc": "2026-11-09T07:21:32Z"
+  },
+  {
+   "file": "E2_s33__s33_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s33/s33_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 29493,
+   "sha256": "70383fca8af8071b823e7261d85e6934757d8ef26641f93250daac193e6110bf",
+   "fetched_utc": "2026-11-09T07:21:33Z"
+  },
+  {
+   "file": "E2_s33__s33_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s33/s33_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6382,
+   "sha256": "fe15cb834b7c361757abbe88668dfc196fff90e3a0568662ab3b30431f0066bf",
+   "fetched_utc": "2026-11-09T07:21:35Z"
+  },
+  {
+   "file": "E2_s32__s32_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s32/s32_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 29573,
+   "sha256": "4db4c3d3a5b9bcc309c08077732714336e2a7eb7916950b1ad04b28ec58928f3",
+   "fetched_utc": "2026-11-09T07:21:36Z"
+  },
+  {
+   "file": "E2_s32__s32_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s32/s32_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6344,
+   "sha256": "2816e43c600d71dfbae5bf9cd4a5e8618f4e64c29832cdcb030fe79310230629",
+   "fetched_utc": "2026-11-09T07:21:39Z"
+  },
+  {
+   "file": "E2_s35__s35_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s35/s35_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6090,
+   "sha256": "855cce5fcff72c4b345a617916916caf75c7672e6a618a6b8435d2cf595530f7",
+   "fetched_utc": "2026-11-09T07:21:41Z"
+  },
+  {
+   "file": "E2_s35__s35_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s35/s35_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 28001,
+   "sha256": "0c700e9ca50a1cde4645fadbf063facccf5d8f3777eb207fb4441c5f4049834f",
+   "fetched_utc": "2026-11-09T07:21:43Z"
+  },
+  {
+   "file": "E2_s44__s44_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s44/s44_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 26767,
+   "sha256": "c4056f9c0f2f6f18e859cc9976db6b51f8bbd4f0a500deb44b620ba05f88760b",
+   "fetched_utc": "2026-11-09T07:21:44Z"
+  },
+  {
+   "file": "E2_s44__s44_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s44/s44_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5953,
+   "sha256": "ef816a1d226c8a492f806b3d6d1f74b28f007edb8e53a5e6a2d854b87b0386d8",
+   "fetched_utc": "2026-11-09T07:21:46Z"
+  },
+  {
+   "file": "E2_s43__s43_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s43/s43_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5964,
+   "sha256": "52dd0f6bec79370db8c2abca1e069542a08f7840d5bcf2c0b698d1178bca617a",
+   "fetched_utc": "2026-11-09T07:21:47Z"
+  },
+  {
+   "file": "E2_s43__s43_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s43/s43_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27360,
+   "sha256": "023eb76c110b5625ac732d5069a312b2d07faf09e7bfa9225efdcb6d068b299b",
+   "fetched_utc": "2026-11-09T07:21:49Z"
+  },
+  {
+   "file": "E2_s28__s28_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s28/s28_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 26791,
+   "sha256": "f99eb9e64fe4859d402cf89fa51894be3ba7c81b6eafcc2dc0226d4e8f89173d",
+   "fetched_utc": "2026-11-09T07:21:51Z"
+  },
+  {
+   "file": "E2_s28__s28_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s28/s28_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5960,
+   "sha256": "ccf4d7169aaa0c8f59e8681375590722cdb63b4e54b1d8e09a058d6aaa62c8f2",
+   "fetched_utc": "2026-11-09T07:21:52Z"
+  },
+  {
+   "file": "E2_s28__s28_behav_block20.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s28/s28_behav_block20.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5626035,
+   "sha256": "5f3787ee81f45b62a1e87f2de6e39cd47759dcbb55a9d7efdb40f9a1cd117067",
+   "fetched_utc": "2026-11-09T07:21:54Z"
+  },
+  {
+   "file": "E2_s45__s45_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s45/s45_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5921,
+   "sha256": "d3e0aabcb22a3afb1c095526e2d193d43602a5b64c5afdc276db7558200ed18c",
+   "fetched_utc": "2026-11-09T07:21:56Z"
+  },
+  {
+   "file": "E2_s45__s45_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s45/s45_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27025,
+   "sha256": "a38e67dea0b54007707f3d9f783c902af39894dfd01a7de88718a657358e7293",
+   "fetched_utc": "2026-11-09T07:21:57Z"
+  },
+  {
+   "file": "E2_s39__s39_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s39/s39_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27754,
+   "sha256": "2375dfe4f8d37db841b52ed733b3839dcfe1589a775c8eb927343914b7f9ea34",
+   "fetched_utc": "2026-11-09T07:21:58Z"
+  },
+  {
+   "file": "E2_s39__s39_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s39/s39_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6201,
+   "sha256": "fd9fc3bb6b6b8255ad0424df8c00aca4c857621b1cdcef7456f2f6aa4f93586a",
+   "fetched_utc": "2026-11-09T07:22:01Z"
+  },
+  {
+   "file": "E2_s30__s30_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s30/s30_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27106,
+   "sha256": "cb583077df4a40f38bdf120ab365a0bf565b2c7448f3125695321f6ba027e491",
+   "fetched_utc": "2026-11-09T07:22:03Z"
+  },
+  {
+   "file": "E2_s30__s30_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s30/s30_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5912,
+   "sha256": "983484605fcf848eba3fd98edb308362ab0d48210ab3e4ef5f1e4a786aaeedc4",
+   "fetched_utc": "2026-11-09T07:22:05Z"
+  },
+  {
+   "file": "E2_s37__s37_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s37/s37_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27997,
+   "sha256": "77ef82b5fa6cab3accc9435425e29775cbe684e59d7cac618590ae300a9b81b6",
+   "fetched_utc": "2026-11-09T07:22:06Z"
+  },
+  {
+   "file": "E2_s37__s37_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s37/s37_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6143,
+   "sha256": "1a2668df4c1f979e86b9c8abe77d23205e4fe52f82bfcd6d0df3d493ed3039ce",
+   "fetched_utc": "2026-11-09T07:22:08Z"
+  },
+  {
+   "file": "E2_s31__s31_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s31/s31_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 32062,
+   "sha256": "aa5612178a5290ca68c89caff43559f0a31fb4dbf4b0b241c786512168c725ac",
+   "fetched_utc": "2026-11-09T07:22:11Z"
+  },
+  {
+   "file": "E2_s31__s31_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s31/s31_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6701,
+   "sha256": "8183aafae4405f35c8bc032001816382f6e666d6c86e99faaa3545d297b7e47e",
+   "fetched_utc": "2026-11-09T07:22:13Z"
+  },
+  {
+   "file": "E2_s38__s38_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s38/s38_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6098,
+   "sha256": "adb530954c17c93448802c4f4087ef9a5382b11bcad0f32674f14881becea44b",
+   "fetched_utc": "2026-11-09T07:22:14Z"
+  },
+  {
+   "file": "E2_s38__s38_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s38/s38_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 28216,
+   "sha256": "207c4e66fb3a71179126aa72e12785d55253b62bcce00c959afa7d7bd14cb86e",
+   "fetched_utc": "2026-11-09T07:22:16Z"
+  },
+  {
+   "file": "E2_n_15_press_and_move_behavior.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/n_15_press_and_move_behavior.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 178099,
+   "sha256": "e272c7bbd89369abbbe9b8fddc52e790604f0ed81d48b997301e94ac5d4e4172",
+   "fetched_utc": "2026-11-09T07:22:18Z"
+  },
+  {
+   "file": "E2_s40__s40_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s40/s40_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 5988,
+   "sha256": "3c86f3a7783242fb83eeee32e029d6b3bad78bca6a4461dde9bf7d89c0af92db",
+   "fetched_utc": "2026-11-09T07:22:19Z"
+  },
+  {
+   "file": "E2_s40__s40_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s40/s40_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27369,
+   "sha256": "11144c05c9cca4efc4c5ec612e8f217eeb158bbfe6b47c32e636160556653cce",
+   "fetched_utc": "2026-11-09T07:22:21Z"
+  },
+  {
+   "file": "E2_n_15_ready_and_move_behavior.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/n_15_ready_and_move_behavior.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 171963,
+   "sha256": "9fac2d5af949509fa5c8947e6976e225507bd061ce0a01593d61cbe3d893fd8b",
+   "fetched_utc": "2026-11-09T07:22:22Z"
+  },
+  {
+   "file": "E2_s41__s41_behav_baseline_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s41/s41_behav_baseline_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 6037,
+   "sha256": "bb8f49e31d1259fcbdf73f06752d36683dec82e67b6de8fddb81cea1d99d4998",
+   "fetched_utc": "2026-11-09T07:22:23Z"
+  },
+  {
+   "file": "E2_s41__s41_behav_block_EEG.mat",
+   "url": "https://osf.io/download/p3scm/ (member Expt2_Data_scripts/BEH/s41/s41_behav_block_EEG.mat of the split archive Expt2_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 27414,
+   "sha256": "d5a9378b3916089b3e07a2723615e7a37cc3a043573ac8a01956b31277c9e98e",
+   "fetched_utc": "2026-11-09T07:22:25Z"
+  },
+  {
+   "file": "E1_s5__s5_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s5/s5_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 66212354,
+   "sha256": "b2cfdca8154fbbb4a0232a6dfe90f2f415cfb7b4b2eb82f14b6cea8d41dde52e",
+   "fetched_utc": "2026-11-09T07:26:06Z"
+  },
+  {
+   "file": "E1_s3__s3_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s3/s3_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 66215022,
+   "sha256": "20b772ad7e9030ccdf8aaeee57b57e376aaf466b3f265a7cc50dad181c968a84",
+   "fetched_utc": "2026-11-09T07:26:12Z"
+  },
+  {
+   "file": "E1_s4__s4_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s4/s4_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 60901694,
+   "sha256": "3c3f16e2cf2e2fe9144ec9b1074365a358bd56419182c1f918a6dd78578d062c",
+   "fetched_utc": "2026-11-09T07:26:19Z"
+  },
+  {
+   "file": "E1_s10__s10_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s10/s10_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 64971970,
+   "sha256": "0aa4d5a2be0d88d9c57b70c2e4f0ca716095ce000ed9d22904f74bdb01b1c0dd",
+   "fetched_utc": "2026-11-09T07:26:26Z"
+  },
+  {
+   "file": "E1_s11__s11_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s11/s11_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 60248696,
+   "sha256": "09702e33d1e311a9050ca593f678b6d870d0b7245122eb0428c94f46f30eab0e",
+   "fetched_utc": "2026-11-09T07:26:31Z"
+  },
+  {
+   "file": "E1_s8__s8_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s8/s8_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 53608901,
+   "sha256": "b5959bef69b786f4bca1b9e1bc19edd59fa5d0e1ce68364a884f80a3d9f89d18",
+   "fetched_utc": "2026-11-09T07:26:36Z"
+  },
+  {
+   "file": "E1_s1__s1_behav_block10_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s1/s1_behav_block10_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 49299313,
+   "sha256": "99ac118fc2aa280b7486f644bb1aacf1941d19965af93887e5a13c4333d90968",
+   "fetched_utc": "2026-11-09T07:26:42Z"
+  },
+  {
+   "file": "E1_s6__s6_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s6/s6_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 64750091,
+   "sha256": "5221570f99b198b8af2fd68cc6dbc9c85215be5d697a47a4c62fcb2805b401ad",
+   "fetched_utc": "2026-11-09T07:26:48Z"
+  },
+  {
+   "file": "E1_s7__s7_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s7/s7_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 53541563,
+   "sha256": "6723bfc16c349351418c3d79cf816c9edc0855bce5f4e051cc64bcb2566ab4c7",
+   "fetched_utc": "2026-11-09T07:26:52Z"
+  },
+  {
+   "file": "E1_s9__s9_behav_block14_EMG_times.mat",
+   "url": "https://osf.io/download/6ms2k/ (member Expt1_Data_scripts/BEH/s9/s9_behav_block14_EMG_times.mat of the split archive Expt1_Data_scripts_split, read by HTTP range requests)",
+   "bytes": 63591479,
+   "sha256": "c9ca4fbc56b5a3485a1447c188a179f863026c0c3e8732399341c135c138aab3",
+   "fetched_utc": "2026-11-09T07:26:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Muralidharan2021_JCognNeurosci.zip"
+}

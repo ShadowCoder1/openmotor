@@ -1,0 +1,77 @@
+{
+ "id": "Watanabe2025_Cortex",
+ "module": "timeseries",
+ "rows": 160,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 494255252,
+ "zip_sha256": "c1e6ca950f52c6e7a670b2139984a70820190b8456b7cce27396fee27f8a85b3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "conditioning-stimulation sites",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Abstract (M1, PMd, PMv, SMA, DLPFC)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visual gain levels",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "OSF README (VA0.05 and VA3.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "columns per recording file",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "OSF README (Force, EMG right, EMG left, Test, Conditioning)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every file header matches the README column order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 participants x 10 recordings (2 gains x 5 sites)",
+   "ok": true,
+   "detail": "(160, 16)"
+  },
+  {
+   "kind": "internal",
+   "what": "test stimulation pulses found in every recording",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "24 cells in the text files are not numbers (a time-like string such as 12:00.0, which looks like a spreadsheet export artefact); they are left empty in the sample files. Published results (MEP amplitudes, force error) were computed in LabChart and are not reproduced here: the paper full text was not accessible, so the checks are design counts from the abstract and README."
+ ],
+ "sources": [
+  {
+   "file": "r1-10.zip",
+   "url": "https://osf.io/download/579ks/",
+   "bytes": 224612868,
+   "sha256": "a4a2bd966a9821fb414a1db5ca8a476d7bf083a627f472bed81c477add9f01df",
+   "fetched_utc": "2026-11-10T00:52:06Z"
+  },
+  {
+   "file": "r11-16.zip",
+   "url": "https://osf.io/download/gyb2z/",
+   "bytes": 130872111,
+   "sha256": "9c7dae42b36f2e627c2ba8894402bb4284a3579f8e5ca80b17e4013d925914ea",
+   "fetched_utc": "2026-11-10T00:52:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Watanabe2025_Cortex.zip"
+}

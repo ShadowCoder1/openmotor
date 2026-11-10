@@ -1,0 +1,149 @@
+{
+ "id": "Belyk2018_RSocOpenSci",
+ "module": "pitch_matching",
+ "rows": 15300,
+ "subjects": 34,
+ "persons": 34,
+ "zip_bytes": 341058,
+ "zip_sha256": "5d988070e49ec772483a473c5a2fbb829cc20dffa16ec854fe4647cd43775506",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with recordings",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Belyk et al. 2018, 2.2.1 Participants (thirty-four recruited)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "melodies per participant and condition",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Belyk et al. 2018, 2.1 and 2.2.3 (45 melodies per task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "melodies per participant and condition (max)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Belyk et al. 2018, 2.1 and 2.2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "notes per melody",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Belyk et al. 2018, 2.1 (five-note melodies)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest sung target (Hz), male range A2",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0.5,
+   "source": "Belyk et al. 2018, 2.1 (A2-A3 for males)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest sung target (Hz), female range A4",
+   "computed": 440.0,
+   "reported": 440.0,
+   "tol": 0.5,
+   "source": "Belyk et al. 2018, 2.1 (A3-A4 for females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest whistled target (Hz), A5",
+   "computed": 880.0,
+   "reported": 880.0,
+   "tol": 0.5,
+   "source": "Belyk et al. 2018, 2.1 (A5-A6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest whistled target (Hz), A6",
+   "computed": 1760.0,
+   "reported": 1760.0,
+   "tol": 0.5,
+   "source": "Belyk et al. 2018, 2.1 (A5-A6)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the register read from the note names agrees with the participant's sex in meta.mat.csv",
+   "ok": true,
+   "detail": "33 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "15300 note rows: 34 participants x 2 conditions x 45 melodies x 5 notes",
+   "ok": true,
+   "detail": "15300"
+  },
+  {
+   "kind": "internal",
+   "what": "measured pitch present for most notes",
+   "ok": true,
+   "detail": "0.965"
+  },
+  {
+   "kind": "internal",
+   "what": "signed sung errors have a flat median, whistled errors a sharp median, as the paper says (small tendency)",
+   "ok": true,
+   "detail": "-38.1, 46.3"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 11,433 analysed notes and 28 analysed participants cannot be reproduced because the deposit does not identify the excluded melodies, notes and participants."
+ ],
+ "sources": [
+  {
+   "file": "Experiment.zip",
+   "url": "https://zenodo.org/api/records/5001716/files/Experiment.zip/content",
+   "bytes": 177606828,
+   "sha256": "0974afd2f25cd0f374866107d8db1461d480b4d8eb558361f265986fe8a96ad9",
+   "fetched_utc": "2026-11-09T12:16:54Z"
+  },
+  {
+   "file": "xad",
+   "url": "https://zenodo.org/api/records/5001716/files/xad/content",
+   "bytes": 130147191,
+   "sha256": "9cbccffdea4c76895d308c3006cd0a6d0d8abe69cf240c1a0b6b28441f909aaa",
+   "fetched_utc": "2026-11-09T12:18:20Z"
+  },
+  {
+   "file": "xaa",
+   "url": "https://zenodo.org/api/records/5001716/files/xaa/content",
+   "bytes": 1047527424,
+   "sha256": "8c9511b7bcecbe49fd1b77d3b3bd6c20361b18b44d2f48469138f7ce0b9894b1",
+   "fetched_utc": "2026-11-09T12:23:44Z"
+  },
+  {
+   "file": "xab",
+   "url": "https://zenodo.org/api/records/5001716/files/xab/content",
+   "bytes": 1047527424,
+   "sha256": "b5f7ed2929e6386a190bfc1aba477b3580eb7c95179ec1adc1cea26ac15f65dc",
+   "fetched_utc": "2026-11-09T12:29:50Z"
+  },
+  {
+   "file": "xac",
+   "url": "https://zenodo.org/api/records/5001716/files/xac/content",
+   "bytes": 1047527424,
+   "sha256": "09d4a93f80ddd8a4255323d9d55b0a80bfd678b79612ffc5bde4190eba658d2d",
+   "fetched_utc": "2026-11-09T12:34:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Belyk2018_RSocOpenSci.zip"
+}

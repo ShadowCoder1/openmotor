@@ -1,0 +1,7 @@
+{
+ "id": "Lim2021_SciData",
+ "skipped": true,
+ "reason": "no trial-level data",
+ "details": "The deposit is 8 files (676 GB): MRI video and volume zips plus three small files (a subject table of sex, age, height, weight and languages, a metafile of file names and 1-5 image-quality ratings, and a stimulus slide deck). The speech movements exist only as real-time MRI video and 3D images (2D video alone is a 2.5 GB zip), so there are no per-trial or per-recording movement values to re-encode without image analysis.",
+ "sources": []
+}

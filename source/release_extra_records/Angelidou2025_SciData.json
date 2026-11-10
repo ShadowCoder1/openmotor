@@ -1,0 +1,196 @@
+{
+ "id": "Angelidou2025_SciData",
+ "module": "walking",
+ "rows": 44857,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 3206279,
+ "zip_sha256": "e39397be8623bfe9785b6ffa06db80804d74fcb29644c180044f0aa2af8dab5e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "number of participants (files with data)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of men",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants (10 males and 10 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, years (27.1 +- 4.5)",
+   "computed": 27.05,
+   "reported": 27.1,
+   "tol": 0.050000001,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, years",
+   "computed": 4.465953072089457,
+   "reported": 4.5,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height, cm (172.4 +- 6.8)",
+   "computed": 172.39999999999998,
+   "reported": 172.4,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed0p8 stiff25 (README: not 150)",
+   "computed": 148.0,
+   "reported": 148.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed1p0 stiff80 (README: not 150)",
+   "computed": 148.0,
+   "reported": 148.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed0p8 stiff40 (README: not 150)",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed0p8 stiff80 (README: not 150)",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed1p0 stiff25 (README: not 150)",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed0p6 stiff40 (README: not 150)",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 gait cycles at speed1p0 stiff40 (README: not 150)",
+   "computed": 154.0,
+   "reported": 154.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SUB01 conditions with exactly 150 cycles",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "deposit README, Known Dataset Limitations (7 of 12 differ)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per participant (3 speeds x 4 stiffness levels)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experimental Procedure",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every condition has 150 cycles within +-10 except the few listed under Known differences (README: 'always less than +-10')",
+   "ok": true,
+   "detail": "5 conditions off by 10 or more: [((6, 'speed0p6', 'stiff25'), 135), ((6, 'speed0p6', 'stiff40'), 135), ((6, 'speed0p8', 'stiff1000'), 124), ((6, 'speed0p8', 'stiff40'), 139), ((6, 'speed1p0', 'stiff1000'), 122)]"
+  },
+  {
+   "kind": "internal",
+   "what": "all but those conditions: 90% of the 240 conditions hold 148-152 cycles",
+   "ok": true,
+   "detail": "0.925"
+  },
+  {
+   "kind": "internal",
+   "what": "240 conditions (20 people x 12)",
+   "ok": true,
+   "detail": "240"
+  },
+  {
+   "kind": "internal",
+   "what": "trial durations 12-20 min (paper: approximately 12-20 minutes), min/max s",
+   "ok": true,
+   "detail": "755-1235"
+  },
+  {
+   "kind": "internal",
+   "what": "stance is 55-80 % of stride on all strides (authors' left heel strike and toe-off times)",
+   "ok": true,
+   "detail": "0.1-99.9 percentiles 0.650-0.784"
+  },
+  {
+   "kind": "internal",
+   "what": "right-leg event times in the deposit are identical to the left-leg ones in all 60 trials (so only left-leg timing is released)",
+   "ok": true,
+   "detail": "60"
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost",
+   "ok": true,
+   "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The README says conditions differ from 150 gait cycles by less than 10, but one participant (the sixth file) has 135, 135, 139 and 124 and 122 cycles in five conditions (the rigid block 124 and 122 after the 150 warm-up cycles); all other conditions are within 9 of 150. All cycles are kept.",
+  "The Methods give mean body mass 68.4 +- 12.2 kg and height SD 6.8 cm, but the paper's own Table 1 (used here for age, sex and the participants file) averages 72.0 +- 10.5 kg and 172.4 +- 6.7 cm; mean age (27.05, printed 27.1) and mean height (172.4) agree, so mass is not used as a check.",
+  "The deposit's README (and the figshare description) lists the speeds as 0.8, 1 and 1.2 m/s, but the files hold speed0p6, speed0p8 and speed1p0, matching the paper's 0.6, 0.8 and 1.0 m/s; the paper's values are used.",
+  "The right-leg gait-event lists in the deposit are copies of the left-leg ones, so right-leg timing is not released."
+ ],
+ "sources": [
+  {
+   "file": "SUB01.mat",
+   "url": "https://ndownloader.figshare.com/files/51346451",
+   "bytes": 3226522868,
+   "sha256": "e40d52ae44b3566e4cdcd989886e0f1cc83226502edbd5f575cddbff79c89c8b",
+   "fetched_utc": "2026-11-10T13:01:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Angelidou2025_SciData.zip"
+}

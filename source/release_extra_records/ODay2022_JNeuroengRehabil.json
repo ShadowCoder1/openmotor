@@ -1,0 +1,319 @@
+{
+ "id": "ODay2022_JNeuroengRehabil",
+ "module": "timeseries",
+ "rows": 60,
+ "subjects": 7,
+ "persons": 7,
+ "zip_bytes": 140386984,
+ "zip_sha256": "168d5145f89818c54a154e3cf165fc3a3c7d3964120330709fce2bc849c9e6d2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each walk's 11-sensor file holds the 6-sensor file's columns and values unchanged",
+   "ok": true,
+   "detail": "20/20"
+  },
+  {
+   "kind": "internal",
+   "what": "every walk is a 128 Hz recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique walks",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Results, IMU walking data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 1: number of walks",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 1: % time FOG, mean across walks",
+   "computed": 19.81849895713762,
+   "reported": 19.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 1: % time FOG, SD across walks",
+   "computed": 13.517796438255465,
+   "reported": 13.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 1: FOG events per walk, mean",
+   "computed": 4.428571428571429,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 2: number of walks",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 2: % time FOG, mean across walks",
+   "computed": 12.342045990513387,
+   "reported": 12.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 2: % time FOG, SD across walks",
+   "computed": 24.966261012530445,
+   "reported": 25.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 2: FOG events per walk, mean",
+   "computed": 1.8,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 3: number of walks",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 3: % time FOG, mean across walks",
+   "computed": 23.714484530575664,
+   "reported": 23.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 3: FOG events per walk, mean",
+   "computed": 4.222222222222222,
+   "reported": 4.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 4: number of walks",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 4: % time FOG, mean across walks",
+   "computed": 53.70988416681865,
+   "reported": 53.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 4: % time FOG, SD across walks",
+   "computed": 19.759881723139316,
+   "reported": 19.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 4: FOG events per walk, mean",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 5: number of walks",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 5: % time FOG, mean across walks",
+   "computed": 9.865857109871058,
+   "reported": 9.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 5: % time FOG, SD across walks",
+   "computed": 11.271518487749749,
+   "reported": 11.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 5: FOG events per walk, mean",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 6: number of walks",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 6: % time FOG, mean across walks",
+   "computed": 5.329501280794672,
+   "reported": 5.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 6: % time FOG, SD across walks",
+   "computed": 5.834656715632538,
+   "reported": 5.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 6: FOG events per walk, mean",
+   "computed": 1.3571428571428572,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 7: number of walks",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 7: % time FOG, mean across walks",
+   "computed": 28.28748081229437,
+   "reported": 28.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 7: % time FOG, SD across walks",
+   "computed": 19.805864435409987,
+   "reported": 19.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant 7: FOG events per walk, mean",
+   "computed": 4.8,
+   "reported": 4.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FOG events in all walks",
+   "computed": 211.0,
+   "reported": 211.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "% time FOG, mean across all 60 walks",
+   "computed": 19.706832141192198,
+   "reported": 19.7,
+   "tol": 0.05,
+   "source": "Table 1, Total",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "participant 3 SD of % time FOG across walks: 11.155 computed from the labels, 11.1 printed in Table 1",
+  "total walking time: 85.7 min from the rows (rows x sampling interval), 88.8 min in the paper",
+  "% of time freezing in the full dataset: 25.6 from the rows (walk-duration-weighted), 23.9 in the paper",
+  "The listing says the licence is BSD; the repository's BSD 3-Clause licence is the only licence stated and covers the whole repository including the data."
+ ],
+ "sources": [
+  {
+   "file": "repo.zip",
+   "url": "https://codeload.github.com/stanfordnmbl/imu-fog-detection/zip/refs/heads/main",
+   "bytes": 512541762,
+   "sha256": "9ad03d0a9ab6c0a24d1645e7c3607f5440cdc5443a4022c8d87ff53dd2509f8d",
+   "fetched_utc": "2026-11-09T14:19:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/ODay2022_JNeuroengRehabil.zip"
+}

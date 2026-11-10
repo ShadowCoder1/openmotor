@@ -1,0 +1,145 @@
+{
+ "id": "Laventure2016_PLoSBiol",
+ "module": "keypress",
+ "rows": 2432,
+ "subjects": 76,
+ "persons": 76,
+ "zip_bytes": 36451,
+ "zip_sha256": "853fe0cee3befd88112a7c6571e7a283409d8ba30390ad2c3662b093210e25c0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "76 rows in each of the three sheets, no missing values in the block columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "error sheet lists the groups in the GPI sheet's order; speed sheet is sorted by group with the same group sizes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pairing of the speed sheet with the GPI sheet: GPI = exp(-inter-key time) x exp(-errors/80) (Methods, GPI formula) reproduces the GPI of at least 90% of the 76 x 32 cells within the rounding of the GPI columns, and none is off by more than 0.01 (the rest differ by up to 0.0055, at the rounding edge)",
+   "ok": true,
+   "detail": "134 of 2432 cells beyond rounding, largest difference 0.0055"
+  },
+  {
+   "kind": "internal",
+   "what": "a shifted pairing (each speed row given to the neighbouring participant) fails that formula for most cells",
+   "ok": true,
+   "detail": "0.03 of cells within rounding"
+  },
+  {
+   "kind": "internal",
+   "what": "every cell kept: 76 participants x 32 blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the behavioural analyses",
+   "computed": 76.0,
+   "reported": 76.0,
+   "tol": 0,
+   "source": "Results, MSL Consolidation (76 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cond-NREM2 participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Table 1, 'All subjects' n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cond-REM participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Table 1, 'All subjects' n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "NoCond participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Table 1, 'All subjects' n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the PSG subset",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Table 1, 'PSG subset (n = 64)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cond-NREM2 participants in the PSG subset",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Table 1, PSG subset n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cond-REM participants in the PSG subset",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Table 1, PSG subset n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "NoCond participants in the PSG subset",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Table 1, PSG subset n",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training blocks per participant",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods / Results (24 training blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "retest blocks per participant",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods / Results (8 retest blocks)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1's offline gains (mean GPI of the first four retest blocks minus the last four training blocks: .042, .021, .012) were not used as checks: the plain group means from these blocks are .037, .022 and .015, and means adjusted for the two covariate columns are .041, .021 and .012, one unit of the third decimal off for the first group. The covariates' meaning (olfactory threshold, cueing duration) is not documented in the workbook, so they were left out of the release."
+ ],
+ "sources": [
+  {
+   "file": "Data_S1.xlsx",
+   "url": "https://zenodo.org/api/records/5013749/files/Data%20S1.xlsx/content",
+   "bytes": 491679,
+   "sha256": "d566fd46e1f4e43ffa9cc426d5f65abe02a2278acfbb662e5cfb7056ba0423f1",
+   "fetched_utc": "2026-11-09T11:16:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Laventure2016_PLoSBiol.zip"
+}

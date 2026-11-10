@@ -1,0 +1,665 @@
+{
+ "id": "Urry2018_BrJPsychol",
+ "module": "summary",
+ "rows": 702,
+ "subjects": 78,
+ "persons": 78,
+ "zip_bytes": 14923,
+ "zip_sha256": "da3c12124d8196596c4825939938795af13fe9d66b15aa06ed6212fd9c340fb6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "one row per participant in the deposit, all 78 kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has all nine learning scores",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "released rows = 78 participants x 9 measures",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants, younger",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, older",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, younger",
+   "computed": 22.558139534883722,
+   "reported": 22.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD, younger",
+   "computed": 3.4661789417537165,
+   "reported": 3.47,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, older",
+   "computed": 70.85714285714286,
+   "reported": 70.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD, older",
+   "computed": 5.012589193238168,
+   "reported": 5.01,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Education (years) mean, younger",
+   "computed": 14.395348837209303,
+   "reported": 14.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Education (years) SD, younger",
+   "computed": 2.5554753064903504,
+   "reported": 2.56,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Education (years) mean, older",
+   "computed": 15.685714285714285,
+   "reported": 15.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Education (years) SD, older",
+   "computed": 3.7477163915190412,
+   "reported": 3.75,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SMMSE mean, younger",
+   "computed": 29.25581395348837,
+   "reported": 29.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SMMSE SD, younger",
+   "computed": 0.9535153819473434,
+   "reported": 0.95,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SMMSE mean, older",
+   "computed": 29.2,
+   "reported": 29.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SMMSE SD, older",
+   "computed": 0.8677218312746247,
+   "reported": 0.87,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Word Meanings mean, younger",
+   "computed": 19.275,
+   "reported": 19.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Word Meanings SD, younger",
+   "computed": 3.948303757831021,
+   "reported": 3.95,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Word Meanings mean, older",
+   "computed": 25.428571428571427,
+   "reported": 25.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Word Meanings SD, older",
+   "computed": 4.906692394281594,
+   "reported": 4.91,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "APM mean, younger",
+   "computed": 6.6976744186046515,
+   "reported": 6.7,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "APM SD, younger",
+   "computed": 3.0747426041782844,
+   "reported": 3.07,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "APM mean, older",
+   "computed": 4.057142857142857,
+   "reported": 4.06,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "APM SD, older",
+   "computed": 2.4607848717175482,
+   "reported": 2.46,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Dot Matrix mean, younger",
+   "computed": 38.093023255813954,
+   "reported": 38.1,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Dot Matrix SD, younger",
+   "computed": 9.591201209561993,
+   "reported": 9.59,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Dot Matrix mean, older",
+   "computed": 22.17142857142857,
+   "reported": 22.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Dot Matrix SD, older",
+   "computed": 9.745242321212933,
+   "reported": 9.75,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Symbol Digit mean, younger",
+   "computed": 92.62790697674419,
+   "reported": 92.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Symbol Digit SD, younger",
+   "computed": 16.50255861231965,
+   "reported": 16.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Symbol Digit mean, older",
+   "computed": 54.21875,
+   "reported": 54.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Symbol Digit SD, older",
+   "computed": 7.276716624873452,
+   "reported": 7.28,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IT (ms) mean, younger",
+   "computed": 54.191219512195126,
+   "reported": 54.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IT (ms) SD, younger",
+   "computed": 29.583561752696543,
+   "reported": 29.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IT (ms) mean, older",
+   "computed": 83.91090909090909,
+   "reported": 83.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IT (ms) SD, older",
+   "computed": 23.272583704280173,
+   "reported": 23.3,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_RatioRT with Age",
+   "computed": -0.278899045630123,
+   "reported": -0.28,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_RatioRT with APM",
+   "computed": 0.29613166731532076,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_RatioRT with Dot Matrix",
+   "computed": 0.377306317278727,
+   "reported": 0.38,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_RatioRT with Symbol Digit",
+   "computed": 0.30070146513849205,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_RatioRT with IT",
+   "computed": -0.18933508120998704,
+   "reported": -0.19,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_RatioRT with Age",
+   "computed": -0.3709101211898706,
+   "reported": -0.37,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_RatioRT with APM",
+   "computed": 0.21034051729933445,
+   "reported": 0.21,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_RatioRT with Dot Matrix",
+   "computed": 0.33199366173985717,
+   "reported": 0.33,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_RatioRT with Symbol Digit",
+   "computed": 0.36660729909552325,
+   "reported": 0.37,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_RatioRT with IT",
+   "computed": -0.22915863607087733,
+   "reported": -0.23,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_SequenceLearning with Age",
+   "computed": -0.010603489483913434,
+   "reported": -0.01,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_SequenceLearning with APM",
+   "computed": 0.11021089646554309,
+   "reported": 0.11,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_SequenceLearning with Dot Matrix",
+   "computed": 0.20591372380154294,
+   "reported": 0.21,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_SequenceLearning with Symbol Digit",
+   "computed": 0.042174772736020154,
+   "reported": 0.04,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of SRTT_SequenceLearning with IT",
+   "computed": -0.005543486971177302,
+   "reported": -0.01,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_TotalLearning with Age",
+   "computed": -0.18141303118393154,
+   "reported": -0.18,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_TotalLearning with APM",
+   "computed": 0.010402105964085402,
+   "reported": 0.01,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_TotalLearning with Dot Matrix",
+   "computed": 0.18500954697383118,
+   "reported": 0.19,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_TotalLearning with Symbol Digit",
+   "computed": 0.050403824047360254,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_TotalLearning with IT",
+   "computed": -0.15790190452968997,
+   "reported": -0.16,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_MeanErrorScore with Age",
+   "computed": 0.5707574073077895,
+   "reported": 0.57,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_MeanErrorScore with APM",
+   "computed": -0.46713483458824084,
+   "reported": -0.47,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_MeanErrorScore with Dot Matrix",
+   "computed": -0.5708042044308018,
+   "reported": -0.57,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_MeanErrorScore with Symbol Digit",
+   "computed": -0.5625355410040659,
+   "reported": -0.56,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_MeanErrorScore with IT",
+   "computed": 0.3748696270183903,
+   "reported": 0.37,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_GenerationScore with Age",
+   "computed": 0.5974486889682485,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_GenerationScore with APM",
+   "computed": -0.4443726571515487,
+   "reported": -0.44,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_GenerationScore with Dot Matrix",
+   "computed": -0.5935784429711348,
+   "reported": -0.59,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_GenerationScore with Symbol Digit",
+   "computed": -0.5729463611354004,
+   "reported": -0.57,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_GenerationScore with IT",
+   "computed": 0.35076990932901414,
+   "reported": 0.35,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_SpeedAccuracyTradeoff with Age",
+   "computed": -0.592698699413243,
+   "reported": -0.59,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_SpeedAccuracyTradeoff with APM",
+   "computed": 0.5479506501558191,
+   "reported": 0.55,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_SpeedAccuracyTradeoff with Dot Matrix",
+   "computed": 0.6123566117028582,
+   "reported": 0.61,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_SpeedAccuracyTradeoff with Symbol Digit",
+   "computed": 0.6543064472983957,
+   "reported": 0.65,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of PSLT_SpeedAccuracyTradeoff with IT",
+   "computed": -0.3948649655140972,
+   "reported": -0.39,
+   "tol": 0.005,
+   "source": "Table 4 / Table 5",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Sex: the paper reports 19 women and 24 men (younger) and 12 women and 23 men (older); the deposit's Gender column has F = 24 and M = 19 (younger), F = 23 and M = 12 (older), the reverse. The deposit's labels are kept; the F/M coding is probably swapped in the deposit or the paper, so do not rely on sex.",
+  "participants with inspection time, younger: the paper reports 42 (Table 1, note b (n = 42; the deposit has 41)); computed from the deposit 41."
+ ],
+ "sources": [
+  {
+   "file": "data.csv",
+   "url": "https://osf.io/download/np5r8/",
+   "bytes": 11453,
+   "sha256": "3b1d1920034aee1f56361b4abe63ad2d4eba2a6fb82c195241eca57cfb6c4e6b",
+   "fetched_utc": "2026-11-09T11:26:49Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Urry2018_BrJPsychol.zip"
+}

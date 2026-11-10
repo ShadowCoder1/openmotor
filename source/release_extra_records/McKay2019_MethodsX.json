@@ -1,0 +1,96 @@
+{
+ "id": "McKay2019_MethodsX",
+ "module": "timeseries",
+ "rows": 575,
+ "subjects": 29,
+ "persons": 29,
+ "zip_bytes": 50168730,
+ "zip_sha256": "b6e7122ad0c7d856cd040588ca5d40eae90dcfb6dde4c37ee938d170b9c58351",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with Parkinson's disease",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "MethodsX 2022 (10.1016/j.mex.2022.101739), Rationale: 20 patients with PD",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with multiple system atrophy",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "MethodsX 2022, Rationale: one patient with MSA",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy age- and sex-matched participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "MethodsX 2022, Rationale: eight healthy individuals",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "items (tasks) recorded",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "MethodsX 2022, Rationale: 12 tasks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "channels per recording (4 accelerometers x x, y, z)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "MethodsX 2019, Figure 10 / recording procedure: twelve lines",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every sampling interval 0.0125 s",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rest tremor (3 min) recordings: share at least 180 s listed",
+   "ok": true,
+   "detail": "94 of 98"
+  },
+  {
+   "kind": "internal",
+   "what": "test sessions for all 29 people",
+   "ok": true,
+   "detail": "29"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 2019 paper says test-retest was done on eight people with PD and three healthy people; the deposit has retest sessions for 10 people with PD (one with two) and 8 healthy people, and the 2022 MethodsX paper (20 PD, 1 MSA, 8 healthy) matches the deposit's key, so those counts are the ones checked.",
+  "A few workbooks lack some items (participant 15 retest has 4 items, participant 14 test 7, and some single sheets are missing); nothing was filled in."
+ ],
+ "sources": [
+  {
+   "file": "correction.docx",
+   "url": "https://data.mendeley.com/public-files/datasets/xs8nycxg9v/files/939575e8-6e53-40bd-bea0-38c32b1de49b/file_downloaded",
+   "bytes": 8177,
+   "sha256": "54b1422e25ca31b8d74135e731dadfd57c59c94b3f59c203e6c872f1e2b5cffe",
+   "fetched_utc": "2026-11-10T05:27:47Z"
+  },
+  {
+   "file": "mendeley_v4.zip",
+   "url": "https://data.mendeley.com/public-api/zip/xs8nycxg9v/download/4",
+   "bytes": 1455270057,
+   "sha256": "6dcfbe98e791dd7e54aeb99c9cc6b69a706571c38619b7133ce8cbf2aa8a9c67",
+   "fetched_utc": "2026-11-10T06:21:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/McKay2019_MethodsX.zip"
+}

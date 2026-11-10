@@ -1,0 +1,254 @@
+{
+ "id": "Parrell2024_JNeurophysiol",
+ "module": "summary",
+ "rows": 2520,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 59251,
+ "zip_sha256": "3d7e7d559097d49c6ae7985049d664a770483c21e3564a9f48b5b9f9a25f1220",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 2 AVS values, 9 vowels, 18 vowel x phase distances and 18 clear-speech rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = every non-missing value the authors shared (42 AVS + 189 mag + 189 ang + 105 + 105 regressors + 378 distances + 4 x 378 clear-speech values)",
+   "ok": true,
+   "detail": "2520 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "mag of datatable_vowels equals End minus Base of datatable_vowels_byphase for every participant and vowel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "regressors are missing exactly for the 4 trained vowels (84 rows) and present for the 5 untrained (105)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "angles lie in [-pi/2, 3pi/2] (radians)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "AVS increase at the end of exposure (mean over participants, %)",
+   "computed": 6.085536556503546,
+   "reported": 6.1,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, Fig 2B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the end of exposure: standard error (%)",
+   "computed": 1.7650334621846415,
+   "reported": 1.7,
+   "tol": 0.1,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, Fig 2B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the end of exposure: t(20) against 0",
+   "computed": 60.10398036601408,
+   "reported": 60.1,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the end of exposure: Hedges' g",
+   "computed": 12.616637283872654,
+   "reported": 12.62,
+   "tol": 0.005,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS increase at the generalization phase (mean over participants, %)",
+   "computed": 7.316367825681813,
+   "reported": 7.3,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, Fig 2B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the generalization phase: standard error (%)",
+   "computed": 1.6970542929829469,
+   "reported": 1.7,
+   "tol": 0.1,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, Fig 2B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the generalization phase: t(20) against 0",
+   "computed": 63.23685003444978,
+   "reported": 63.2,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AVS at the generalization phase: Hedges' g",
+   "computed": 13.274268941935851,
+   "reported": 13.27,
+   "tol": 0.005,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman correlation of AVS at the end of exposure and in the generalization phase",
+   "computed": 0.535064935064935,
+   "reported": 0.54,
+   "tol": 0.005,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, Fig 2D",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean increase of the distance from the vowel-space center (mels)",
+   "computed": 19.62396059578729,
+   "reported": 19.6,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, paragraph 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... its standard error over the 189 participant x vowel values (mels)",
+   "computed": 2.5793999246942985,
+   "reported": 2.6,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, paragraph 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intensity at baseline (arbitrary units)",
+   "computed": 11.369995362821903,
+   "reported": 11.4,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, clear-speech paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intensity at the end of exposure / generalization (arbitrary units)",
+   "computed": 14.759032685063367,
+   "reported": 14.8,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, clear-speech paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization model: slope of mag on the distance-weighted trained-vowel magnitude",
+   "computed": 28.251099555210118,
+   "reported": 28.3,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, last paragraph before Fig 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... its t value",
+   "computed": 4.725431471486264,
+   "reported": 4.7,
+   "tol": 0.05,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, last paragraph before Fig 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... adjusted R squared",
+   "computed": 0.17018872741762325,
+   "reported": 0.17,
+   "tol": 0.005,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, last paragraph before Fig 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "circular correlation of the untrained vowels' angle with the distance-weighted trained-vowel angle",
+   "computed": 0.3194358881993881,
+   "reported": 0.32,
+   "tol": 0.005,
+   "source": "Parrell, Niziolek & Chen 2024, J Neurophysiol 132:1437, Results, last paragraph before Fig 4",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The standard error of the AVS increase at the end of exposure is 1.77% here (paper 1.7%, perhaps truncated); the other AVS numbers (means, SE of the generalization phase, t, Hedges' g) match.",
+  "The Spearman correlation of the two AVS values reproduces (rho = 0.535, paper 0.54) but its P is 0.012 here (t approximation) against 0.014 in the paper (probably the exact or Edgeworth test of R).",
+  "The paper's standard deviations after the intensity means (2.5 and 3.2 arbitrary units) are not reproduced from these tables (0.7 and 0.9 over the 189 participant x vowel values, 1.7 and 2.1 over participants); the means (11.4 and 14.8) are. The mixed-model and repeated-measures statistics (F and P values) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "datatable_AVS.txt",
+   "url": "https://osf.io/download/fqty2/",
+   "bytes": 1053,
+   "sha256": "24ca89ee6d632b2e7aec219a66765dec20745b92aa73b9bade13f096cc7a33b5",
+   "fetched_utc": "2026-11-08T20:40:15Z"
+  },
+  {
+   "file": "datatable_clearSpeech.txt",
+   "url": "https://osf.io/download/3bkeq/",
+   "bytes": 29981,
+   "sha256": "026dbdd6dd617f7438e1941b684da857f8eef7db7406bfe6d68889f0943363d3",
+   "fetched_utc": "2026-11-08T20:40:18Z"
+  },
+  {
+   "file": "datatable_vowels_byphase.txt",
+   "url": "https://osf.io/download/9deyb/",
+   "bytes": 10987,
+   "sha256": "b3a1f93b6db46cb3e9a1d9c48e769ca424019643d15313c0bab5aa6bdb1f70b2",
+   "fetched_utc": "2026-11-08T20:40:21Z"
+  },
+  {
+   "file": "datatable_vowels.txt",
+   "url": "https://osf.io/download/j27k5/",
+   "bytes": 12568,
+   "sha256": "8628ba2f2bc27d613a29a21bdbd63881212771d3b996924727ebb7d034386046",
+   "fetched_utc": "2026-11-08T20:40:33Z"
+  },
+  {
+   "file": "processedData_25-75.mat",
+   "url": "https://osf.io/download/afh9k/",
+   "bytes": 56073,
+   "sha256": "e8b9a388005655fbfb508b31e3c42d5176e410b99b9270cb16f7c4dd71ae4ac3",
+   "fetched_utc": "2026-11-08T20:40:36Z"
+  },
+  {
+   "file": "raw_data.zip",
+   "url": "https://osf.io/download/hru8n/",
+   "bytes": 987423041,
+   "sha256": "468f5e28b830e2f14bc9f3c1addb1c3424322865c23c99177793444d26a39ad8",
+   "fetched_utc": "2026-11-08T20:41:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Parrell2024_JNeurophysiol.zip"
+}

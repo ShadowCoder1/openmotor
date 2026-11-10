@@ -1,0 +1,362 @@
+{
+ "id": "Wagner2023_JNeurophysiol",
+ "module": "saccade",
+ "rows": 70350,
+ "subjects": 54,
+ "persons": 54,
+ "zip_bytes": 4878565,
+ "zip_sha256": "6a1d317f9e1365d1a87ea20b48351ef16811c60268ef0d60e5d6b754a79bf696",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "file is 2 experiments x 4 conditions x 48 participant numbers x 350 trials",
+   "ok": true,
+   "detail": "134400 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "participant-by-condition blocks the README calls never recorded are empty and are left out",
+   "ok": true,
+   "detail": "183 empty blocks, 64050 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "recorded sessions: 201 participant-by-condition blocks of 350 trials",
+   "ok": true,
+   "detail": "201 sessions, 70350 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' trial number equals the row position within each session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trials with no recorded data inside recorded sessions are all flagged excluded by the authors",
+   "ok": true,
+   "detail": "139 such trials kept as placeholder rows"
+  },
+  {
+   "kind": "internal",
+   "what": "trial type follows position: 1-50 baseline, 51-250 adaptation, 251-350 retention",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants with data: 26 small-target (paper: 26 recorded), 28 large-target (paper: 29 recorded; the one excluded for data quality has no data in the deposit)",
+   "ok": true,
+   "detail": "{1: 26, 2: 28}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants in the analysis: 24 per experiment (Methods, Participants)",
+   "ok": true,
+   "detail": "{1: 24, 2: 24}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants excluded for missing sessions: 2 small-target, 4 large-target (Methods: opted out)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "adapDir.csv gives +2 deg (discriminate-1st conditions) or -2 deg (discriminate-2nd conditions) in every recorded session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "eye movement target 10 deg straight up from the fixation cross in every trial with data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "candidates 2 deg left and right of the target in every adaptation trial (first at +2 on the recoded axis), second candidate 349-351 ms after saccade detection",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "amplitudes equal end minus start positions; latency and duration equal timestamp differences",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "retinal error equals landing x minus the task-relevant candidate's x, in every trial with a saccade",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blink, no-primary-saccade and no-response adaptation trials are all flagged excluded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: latency 1-1500 ms, duration > 0, peak velocity > 0, |horizontal amplitude| < 13 deg",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared for a recorded session is kept, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pert_value matches the logged task-relevant candidate offset on every adaptation row with data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "time_s increases within every session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": 1.0799323263678606,
+   "reported": 1.08,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": 0.7229364732656606,
+   "reported": 0.72,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st: mean % of trials excluded per participant",
+   "computed": 11.952380952380954,
+   "reported": 11.95,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": 0.5055240990755819,
+   "reported": 0.51,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": 0.5740318960226244,
+   "reported": 0.57,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd: mean % of trials excluded per participant",
+   "computed": 10.761904761904761,
+   "reported": 10.76,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st-no-2nd: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": 1.0521581613628797,
+   "reported": 1.05,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st-no-2nd: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": 0.7830765365730681,
+   "reported": 0.78,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-1st-no-2nd: mean % of trials excluded per participant",
+   "computed": 9.80952380952381,
+   "reported": 9.81,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd-no-1st: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": -0.7087945438042471,
+   "reported": -0.71,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd-no-1st: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": -0.2750226955579951,
+   "reported": -0.28,
+   "tol": 0.005,
+   "source": "Results, 'Obligatory Use of Early Postsaccadic Error Signals in the Small-Target Experiment', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "small-target, discriminate-2nd-no-1st: mean % of trials excluded per participant",
+   "computed": 13.63095238095238,
+   "reported": 13.63,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": 1.4646422126229357,
+   "reported": 1.46,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": 0.4998007338421933,
+   "reported": 0.5,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st: mean % of trials excluded per participant",
+   "computed": 10.345238095238095,
+   "reported": 10.35,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": -0.3782835770886583,
+   "reported": -0.38,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": -0.08531978407287875,
+   "reported": -0.09,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd: mean % of trials excluded per participant",
+   "computed": 11.071428571428571,
+   "reported": 11.07,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st-no-2nd: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": 1.4517596126075205,
+   "reported": 1.45,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st-no-2nd: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": 0.5657522420464023,
+   "reported": 0.57,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-1st-no-2nd: mean % of trials excluded per participant",
+   "computed": 12.511904761904765,
+   "reported": 12.51,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd-no-1st: mean baseline-corrected horizontal primary saccade amplitude, last adaptation block (deg)",
+   "computed": -1.0433055967492635,
+   "reported": -1.04,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd-no-1st: mean baseline-corrected horizontal primary saccade amplitude, first retention block (deg)",
+   "computed": -0.48550807950311325,
+   "reported": -0.49,
+   "tol": 0.005,
+   "source": "Results, 'Eye Movement Target Properties Modulate Prioritization of Error Signals', Fig. 2E-H",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "large-target, discriminate-2nd-no-1st: mean % of trials excluded per participant",
+   "computed": 10.04761904761905,
+   "reported": 10.05,
+   "tol": 0.005,
+   "source": "Methods, 'Data exclusion'",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The large-target experiment has 28 recorded participants here against 29 in the paper: one participant the authors excluded has no data in the deposit. The 24 + 24 analysed participants match."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/7128739/files/data.zip/content",
+   "bytes": 64072471,
+   "sha256": "75fc261a1eb4a621ebc002efc1e73f03aa6fa79adcc9e89562fb0449ae23256b",
+   "fetched_utc": "2026-11-08T18:15:25Z"
+  },
+  {
+   "file": "analysis.zip",
+   "url": "https://zenodo.org/api/records/7128739/files/analysis.zip/content",
+   "bytes": 67216596,
+   "sha256": "854f7e3b60432faf7cb888eabd4528b0c25840cf8416ff6100a40e0c5358607b",
+   "fetched_utc": "2026-11-08T19:00:44Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Wagner2023_JNeurophysiol.zip"
+}

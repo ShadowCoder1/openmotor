@@ -1,0 +1,370 @@
+{
+ "id": "Sigcha2023_FrontNeurol_Monipar",
+ "module": "timeseries",
+ "rows": 174,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 49679074,
+ "zip_sha256": "5f3c3af87b2dd93de3080cbaceabe0ef8643bf2b7800910b701a2995ec02c0bd",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Supervised: tremor label array has the shape of the raw array",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_1: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_2: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_3: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "6 vs 6"
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_4: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_5: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "SUPERVISED_6: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "Remote: tremor label array has the shape of the raw array",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_1: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "5 vs 5"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_2: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "6 vs 6"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_3: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "6 vs 6"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_4: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "7 vs 7"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_5: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "3 vs 3"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_6: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "4 vs 4"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_7: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "2 vs 2"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_8: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "4 vs 4"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_9: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "5 vs 5"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_10: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "2 vs 2"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_11: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "7 vs 7"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_12: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "7 vs 7"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_13: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "3 vs 3"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_14: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "3 vs 3"
+  },
+  {
+   "kind": "internal",
+   "what": "REMOTE_15: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL1: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL2: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "9 vs 9"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL3: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL4: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL5: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "6 vs 6"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL6: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "9 vs 9"
+  },
+  {
+   "kind": "internal",
+   "what": "HEALTHY_CTRL7: recordings equal the table's weekly tests",
+   "ok": true,
+   "detail": "8 vs 8"
+  },
+  {
+   "kind": "published",
+   "what": "recordings, Remote",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Table 5, collected trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings, Supervised",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Table 5, collected trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings, Control",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0,
+   "source": "Table 5, collected trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings, all",
+   "computed": 174.0,
+   "reported": 174.0,
+   "tol": 0,
+   "source": "Results, collected trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "hours recorded, Remote: 8.20 h from the time stamps (paper Table 5: 9.1 h)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hours recorded, Supervised: 5.25 h from the time stamps (paper Table 5: 5.8 h)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hours recorded, Healthy control: 6.84 h from the time stamps (paper Table 5: 7.1 h)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Remote",
+   "computed": 63.6,
+   "reported": 63.6,
+   "tol": 0.15,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Supervised",
+   "computed": 64.16666666666667,
+   "reported": 64.2,
+   "tol": 0.15,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Healthy control",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0.15,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in Remote",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in Healthy control",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has about 7 minutes of samples",
+   "ok": true,
+   "detail": "20400-23503"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 5 gives 9.1 h (Remote), 5.8 h (Supervised) and 7.1 h (Control), about 7.6 minutes per recording; the shared recordings last 6.8 minutes on average by their time stamps (8.2, 5.2 and 6.8 h), so the hour totals do not reproduce (about 10 percent less). The numbers of recordings and participants, mean ages and sex counts do reproduce."
+ ],
+ "sources": [
+  {
+   "file": "Monipar_README.txt",
+   "url": "https://zenodo.org/records/8104853/files/Monipar_README.txt?download=1",
+   "bytes": 2078,
+   "sha256": "c404717387093ece802ea26b315a008b5c342a4f7494f64f2e458548b8327e17",
+   "fetched_utc": "2026-11-09T03:35:03Z"
+  },
+  {
+   "file": "MONIPAR_SUBJECTS_DATA.xlsx",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR%20SUBJECTS%20DATA.xlsx?download=1",
+   "bytes": 13574,
+   "sha256": "016f395cdec00233c08082989588bafaf89954f441ddce1d13eb977638b0a87f",
+   "fetched_utc": "2026-11-09T03:35:08Z"
+  },
+  {
+   "file": "MONIPAR_HEALTHYCONTROL.mat",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR_HEALTHYCONTROL.mat?download=1",
+   "bytes": 11158508,
+   "sha256": "15bdafb6dbf14be8ecd73ea791bd0f9e86656180308769ccb4e8653bff5fc274",
+   "fetched_utc": "2026-11-09T03:36:24Z"
+  },
+  {
+   "file": "MONIPAR_PD_REMOTE.mat",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR_PD_REMOTE.mat?download=1",
+   "bytes": 14960473,
+   "sha256": "0c14055b78ee5afc6ce1f84d4f02becf1257e53249bec068381e61c84db60c39",
+   "fetched_utc": "2026-11-09T03:36:35Z"
+  },
+  {
+   "file": "MONIPAR_PD_SUPERVISED.mat",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR_PD_SUPERVISED.mat?download=1",
+   "bytes": 9191156,
+   "sha256": "fcdadd24c0fd90764fc686ef90adda500f5b1388ca638054d8423917fc6c31c0",
+   "fetched_utc": "2026-11-09T03:36:57Z"
+  },
+  {
+   "file": "MONIPAR_PD_REMOTE_TREMOR_LABEL.mat",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR_PD_REMOTE_TREMOR_LABEL.mat?download=1",
+   "bytes": 21348,
+   "sha256": "dbff6da26cdae65018619df02041a1a61d35a93c8589035d7969a1fed71abb9d",
+   "fetched_utc": "2026-11-09T03:37:15Z"
+  },
+  {
+   "file": "MONIPAR_PD_SUPERVISED_TREMOR_LABEL.mat",
+   "url": "https://zenodo.org/records/8104853/files/MONIPAR_PD_SUPERVISED_TREMOR_LABEL.mat?download=1",
+   "bytes": 14586,
+   "sha256": "da45fa859bf2a2bb95217a23f4a2033c04ea55cba42a26043457ff6271970b38",
+   "fetched_utc": "2026-11-09T03:37:22Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sigcha2023_FrontNeurol_Monipar.zip"
+}

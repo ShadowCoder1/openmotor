@@ -1,0 +1,807 @@
+{
+ "id": "Makino2026_eLife",
+ "module": "timeseries",
+ "rows": 1462,
+ "subjects": 33,
+ "persons": 33,
+ "zip_bytes": 16159483,
+ "zip_sha256": "aefa3f2410210254d1079e0112e6cf5ab09d101b48850a97bc5f4a00f431a624",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "exp1.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 10 participant files",
+   "ok": true,
+   "detail": "10"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 1 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 1: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 1: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 2 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 2: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 2: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 3 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 3: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 3: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 4 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 4: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 4: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 5 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 5: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 5: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 6 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 6: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 6: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 7 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 7: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 7: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 8 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 8: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 8: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 9 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 9: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 9: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 10 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 10: condition labels are exactly 4..12",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1 file 10: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 12 participant files",
+   "ok": true,
+   "detail": "12"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 1 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 1: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 1: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 2 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 2: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 2: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 3 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 3: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 3: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 4 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 4: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 4: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 5 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 5: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 5: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 6 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 6: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 6: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 7 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 7: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 7: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 8 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 8: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 8: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 9 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 9: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 9: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 10 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 10: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 10: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 11 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 11: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 11: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 12 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 12: condition labels are exactly 4..15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 file 12: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: 11 participant files",
+   "ok": true,
+   "detail": "11"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 1 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 1: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 1: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 2 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 2: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 2: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 3 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 3: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 3: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 4 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 4: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 4: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 5 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 5: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 5: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 6 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 6: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 6: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 7 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 7: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 7: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 8 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 8: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 8: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 9 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 9: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 9: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 10 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 10: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 10: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 11 subject number equals its file number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 11: condition labels are exactly 4..17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3 file 11: array shapes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods: Experiment 1 (10), Experiment 2 (12), Experiment 3 (12 recruited, one excluded, 11 analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants analysed",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods: Experiment 1 (10), Experiment 2 (12), Experiment 3 (12 recruited, one excluded, 11 analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants analysed",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods: Experiment 1 (10), Experiment 2 (12), Experiment 3 (12 recruited, one excluded, 11 analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed in total",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Results (N = 33)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 number of cursor-shift condition types",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 number of cursor-shift condition types",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 number of cursor-shift condition types",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 trial sets (cycles) per condition, most complete participant",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (26 cycles, one trial set per condition per cycle)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 trial sets (cycles) per condition, most complete participant",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (18 cycles, one trial set per condition per cycle)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 trial sets (cycles) per condition, most complete participant",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (18 cycles, one trial set per condition per cycle)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "trial-set count per condition never exceeds the planned cycles",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 mean ROC onset of the feedback response after cursor shift (ms, all shifts and participants)",
+   "computed": 155.88823461185373,
+   "reported": 155.9,
+   "tol": 1.0,
+   "source": "Results, Experiment 1 (155.9 +/- 13.9 ms)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 ROC onset across shift locations: 10 participants x 4",
+   "ok": true,
+   "detail": "(10, 4)"
+  },
+  {
+   "kind": "internal",
+   "what": "every waveform finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = recordings with a samples file each",
+   "ok": true,
+   "detail": "1462 rows, 1462 files"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Zenodo record is titled 'Visuomotor learning is determined by the tonic component of feedback responses' (an earlier title of the preprint); Crossref lists the preprint under the title above, posted 2026-06-29.",
+  "The ROC onset of the paper is computed from waveforms that the authors derive from these data; here the mean of the authors' per-participant onset values (onsetROC_ms) is compared with the paper's 155.9 ms."
+ ],
+ "sources": [
+  {
+   "file": "exp1.zip",
+   "url": "https://zenodo.org/api/records/18297833/files/exp1.zip/content",
+   "bytes": 3177836,
+   "sha256": "05a12b1cbaacc11fa0f8bf7edeee151fda65a258490a2ca4f9ba727ed95bed86",
+   "fetched_utc": "2026-11-09T07:34:27Z"
+  },
+  {
+   "file": "exp2.zip",
+   "url": "https://zenodo.org/api/records/18297833/files/exp2.zip/content",
+   "bytes": 6612563,
+   "sha256": "d5e12e888f07afc74d9dfc5139407be8be44a00b1a178d758e0489dde859f9e6",
+   "fetched_utc": "2026-11-09T07:34:41Z"
+  },
+  {
+   "file": "exp3.zip",
+   "url": "https://zenodo.org/api/records/18297833/files/exp3.zip/content",
+   "bytes": 22619633,
+   "sha256": "eef04e2ea24ad6e3c90289c2c28db7092e3805926ddb4fb4822e8fc60c0ba993",
+   "fetched_utc": "2026-11-09T07:35:12Z"
+  },
+  {
+   "file": "programs.zip",
+   "url": "https://zenodo.org/api/records/18297833/files/programs.zip/content",
+   "bytes": 17411,
+   "sha256": "26ab9f095a0dc2eb5ae88a5dd5bf798e7904391349492bc1430413d8cb6f39d3",
+   "fetched_utc": "2026-11-09T07:35:31Z"
+  },
+  {
+   "file": "readme.rtf",
+   "url": "https://zenodo.org/api/records/18297833/files/readme.rtf/content",
+   "bytes": 829,
+   "sha256": "0b94d67c2922c428a8acb31a96c2ec063aa4281305923733f53dd0c3e91749da",
+   "fetched_utc": "2026-11-09T07:35:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Makino2026_eLife.zip"
+}

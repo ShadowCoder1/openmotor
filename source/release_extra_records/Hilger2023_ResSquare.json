@@ -1,0 +1,92 @@
+{
+ "id": "Hilger2023_ResSquare",
+ "module": "summary",
+ "rows": 1149,
+ "subjects": 49,
+ "persons": 49,
+ "zip_bytes": 15535,
+ "zip_sha256": "48b17f24b4fd7ace346058f56aa669255cd2810a9e9314ca0383f90649cb1998",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (group df F(1, 47) plus the two groups)",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, response magnitude by task and group (F(1, 47))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean absolute response magnitude, corrective focus (cents)",
+   "computed": 136.70914690164363,
+   "reported": 136.71,
+   "tol": 0.01,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, section c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean absolute response magnitude, new information focus (cents)",
+   "computed": 102.81156110794872,
+   "reported": 102.81,
+   "tol": 0.01,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, section c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ataxia, corrective focus (cents)",
+   "computed": 146.97812944936248,
+   "reported": 146.98,
+   "tol": 0.01,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, section c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ataxia, new focus (cents)",
+   "computed": 115.8851736646988,
+   "reported": 115.89,
+   "tol": 0.01,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, section c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control, new focus (cents)",
+   "computed": 93.12308037392857,
+   "reported": 93.12,
+   "tol": 0.01,
+   "source": "Hilger, Cole & Larson 2023 preprint, Results, section c",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "signed and absolute magnitude agree",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 383 and latency within 0.05-0.30 s",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The file holds 21 ataxia and 28 control participants (49, matching the F(1, 47) degrees of freedom) while the Methods text reports 22 and 29.",
+  "Control group, corrective focus: file 129.10 cents, paper 129.89; group means over both focus types: file 131.15 (ataxia) and 110.79 (control), paper 123.24 and 106.41 (the paper's group values appear to be model-based). The sustained-vowel task is not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "Hilger_Cole_Larson_Data.csv",
+   "url": "https://osf.io/download/xz2y5/",
+   "bytes": 27096,
+   "sha256": "679d66eef222bc6d373f8f6dff595a42be4131bd766c6378a3f1cb16f9d5f8d1",
+   "fetched_utc": "2026-11-09T15:22:48Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hilger2023_ResSquare.zip"
+}

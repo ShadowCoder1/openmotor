@@ -1,0 +1,7 @@
+{
+ "id": "Abarca2025_SciData",
+ "skipped": true,
+ "reason": "too large",
+ "details": "The deposit is one 6.4 GB RAR archive (PARTICIPANTS DATA CODE.rar, Figshare file 57016133) holding all 45 participants with raw .hpf/.XSN files; the data needed exceed the 5 GB limit and there is no separate smaller table of processed values.",
+ "sources": []
+}

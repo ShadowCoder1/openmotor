@@ -1,0 +1,347 @@
+{
+ "id": "Voisard2025_SciData",
+ "module": "timeseries",
+ "rows": 1356,
+ "subjects": 260,
+ "persons": 260,
+ "zip_bytes": 736971663,
+ "zip_sha256": "312e0bc70a06eb16efcc5d4c541ce1bfb35b6eceb15e2afacac450dc68269ff4",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 260.0,
+   "reported": 260.0,
+   "tol": 0,
+   "source": "Abstract / Background (260 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials",
+   "computed": 1356.0,
+   "reported": 1356.0,
+   "tol": 0,
+   "source": "Abstract (1356 gait trials) and Data Records (7 files for each of the 1356 experiments)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HS participants",
+   "computed": 73.0,
+   "reported": 73.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HS trials",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HOA participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "HOA trials",
+   "computed": 74.0,
+   "reported": 74.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "KOA participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "KOA trials",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ACL participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ACL trials",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CVA participants",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CVA trials",
+   "computed": 128.0,
+   "reported": 128.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD trials",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CIPN participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CIPN trials",
+   "computed": 98.0,
+   "reported": 98.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RIL participants",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RIL trials",
+   "computed": 398.0,
+   "reported": 398.0,
+   "tol": 0,
+   "source": "Technical Validation, Tables 6-8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants, males",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods Participants / Table 6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants, females",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods Participants / Table 6",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "orthopedic participants, males",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods Participants (21 males)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "neurological participants, males",
+   "computed": 92.0,
+   "reported": 92.0,
+   "tol": 0,
+   "source": "Methods Participants (92 males, 51 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "neurological participants, females",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Methods Participants (92 males, 51 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy trials per participant, median",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 6 (5 [1, 29])",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy trials per participant, maximum",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Table 6 (5 [1, 29])",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings with Technoconcept sensors",
+   "computed": 787.0,
+   "reported": 787.0,
+   "tol": 0,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings with XSens sensors",
+   "computed": 569.0,
+   "reported": 569.0,
+   "tol": 0,
+   "source": "Table 9",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visits with a TUG measurement",
+   "computed": 127.0,
+   "reported": 127.0,
+   "tol": 0,
+   "source": "Technical Validation (conducted during 127 visits (39%))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants right-handed",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Table 6 (Laterality R/L 68/5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants left-handed",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 6 (Laterality R/L 68/5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods (sampling rate of 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "visits without a visual gait assessment",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Technical Validation (visual gait assessment not documented in 13 cases)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has a sample file with 37 columns (time_s + 36 channels)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "event samples lie inside the recording and toe-off precedes heel strike",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PacketCounter equals the row index (within 1e-6) wherever it is present",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "total samples",
+   "ok": true,
+   "detail": "4071547 samples = 11.31 h"
+  },
+  {
+   "kind": "internal",
+   "what": "missing sample cells are left empty",
+   "ok": true,
+   "detail": "124425 empty cells"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 331 visits; counting distinct (participant, session number) pairs in the metadata gives 335, so that number is not used as a check (how the paper counted visits is not stated).",
+  "Table 10 gives a mean stride time of 1.12 s (SD 0.09) for healthy participants; the mean over healthy trials of the mean time between consecutive heel strikes of the same leg in the authors' gait events is 1.154 s, so it is not used as a check (the paper computes it with its own earlier method).",
+  "Table 6-8 give age, height, weight and BMI as mean (SD) without saying whether they are per participant or per trial; they are not used as checks.",
+  "The deposit's processed files hold empty cells where a sensor had no data at the end of a recording (124425 empty cells in all); they are kept empty.",
+  "The deposit's four raw sensor files per trial (acceleration, angular velocity and magnetic field of each sensor before the authors' centring and filtering, about 1.9 GB of text) are not included, to keep the download small."
+ ],
+ "sources": [
+  {
+   "file": "dataset.zip",
+   "url": "https://ndownloader.figshare.com/files/53704514",
+   "bytes": 2188374385,
+   "sha256": "03930b06b18e6007be04346315f4c2079a84ed27e9188ad1a8e68ef5d4d50205",
+   "fetched_utc": "2026-11-09T12:39:27Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Voisard2025_SciData.zip"
+}

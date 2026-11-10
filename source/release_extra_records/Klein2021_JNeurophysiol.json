@@ -1,0 +1,109 @@
+{
+ "id": "Klein2021_JNeurophysiol",
+ "module": "timeseries",
+ "rows": 2310,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 76336588,
+ "zip_sha256": "197c3dac9ed708bbd87d54d8d98a3d2c897f3d3d58f58f1cfe5ac0ffa6e7a4f4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "ages equal the authors' Parsed_Data ages",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "100 grasps and 10 NGA grasps per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ShuffledTrials is a permutation of 1..100 for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each of the 10 conditions has 10 grasps per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "row count",
+   "ok": true,
+   "detail": "2310"
+  },
+  {
+   "kind": "published",
+   "what": "participants (21)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Results, Participants (Stats_Results.txt: N = 21)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, years (24.4)",
+   "computed": 24.428571428571427,
+   "reported": 24.4,
+   "tol": 0.05,
+   "source": "Methods, Participants (deposit Stats_Results.txt)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age (18)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age (35)",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females (16)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handed (21)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' clockwise/counterclockwise grip classification and the mean NGA of 66 deg need their contact-detection routine (MSI.m) with resampling; it was not re-run, so these published numbers were not reproduced here. The participant counts and demographics were."
+ ],
+ "sources": [
+  {
+   "file": "Data_and_Analyses.zip",
+   "url": "https://zenodo.org/records/4534892/files/Data_and_Analyses.zip?download=1",
+   "bytes": 111109564,
+   "sha256": "b76991c43d8119a26f9fd92403189a77c3085b7249e6f1ed40bf5785710c3ef8",
+   "fetched_utc": "2026-11-09T06:41:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Klein2021_JNeurophysiol.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Papaleo2015_MBEC",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The 21 CSVs (semicolon-separated, decimal commas, 40+ unlabeled columns such as acc1, e, h, h_1, q1-q4, s, l, ord) come with only a Dublin Core metadata file that does not define them, and the paper (Springer, paywalled; not in PMC) could not be read. The metadata calls the task five forward/backward movements while the abstract describes circle drawing, and the files hold robot/IMU kinematics with no target or hand-direction values, so they do not fit reach90.",
+ "sources": []
+}

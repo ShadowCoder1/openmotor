@@ -1,0 +1,300 @@
+{
+ "id": "Humiston2018_NeurobiolLearnMem",
+ "module": "summary",
+ "rows": 2544,
+ "subjects": 49,
+ "persons": 49,
+ "zip_bytes": 39646,
+ "zip_sha256": "24724a7aef1b705819fdfb06457a40f4327d586bcb8d7966ab8a6869ee28cd33",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Study 1 participants analysed",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Humiston & Wamsley 2018, Participants / Table 1 (n = 18)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 participants analysed",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Humiston & Wamsley 2018, Participants / Table 1 (n = 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 men",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Humiston & Wamsley 2018, Participants (7 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 men",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Humiston & Wamsley 2018, Participants (4 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 mean age",
+   "computed": 20.5,
+   "reported": 20.5,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Participants / Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 SD age",
+   "computed": 1.0981267472114393,
+   "reported": 1.1,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Participants / Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 mean age",
+   "computed": 19.294117647058822,
+   "reported": 19.29,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Participants / Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 SD age",
+   "computed": 1.3117119482928092,
+   "reported": 1.31,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Participants / Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: rest raw change mean",
+   "computed": 6.592592592592593,
+   "reported": 6.6,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: rest raw change SD",
+   "computed": 2.454276128403589,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: distractor raw change mean",
+   "computed": 4.62962962962963,
+   "reported": 4.6,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: distractor raw change SD",
+   "computed": 3.434330502230029,
+   "reported": 3.4,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: rest percent change mean (%)",
+   "computed": 31.26893557779339,
+   "reported": 31.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: distractor percent change mean (%)",
+   "computed": 22.312852302261085,
+   "reported": 22.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: rest percent change SD (%)",
+   "computed": 13.820188981525725,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: distractor percent change SD (%)",
+   "computed": 16.644364862419632,
+   "reported": 17.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: rest raw change mean",
+   "computed": 1.3137254901960778,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: rest raw change SD",
+   "computed": 2.9856848000902914,
+   "reported": 3.0,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: distractor raw change mean",
+   "computed": 1.4156862745098044,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: distractor raw change SD",
+   "computed": 2.452609654561251,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: rest percent change mean (%)",
+   "computed": 7.677623113622759,
+   "reported": 7.7,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: distractor percent change mean (%)",
+   "computed": 7.40777561755929,
+   "reported": 7.4,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: rest percent change SD (%)",
+   "computed": 14.190643207456462,
+   "reported": 14.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "4hr delay: distractor percent change SD (%)",
+   "computed": 12.566708591497983,
+   "reported": 13.0,
+   "tol": 0.5,
+   "source": "Humiston & Wamsley 2018, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: paired t, rest vs distractor raw change",
+   "computed": 2.2773112496854053,
+   "reported": 2.28,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Results (t(17) = 2.28)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "immediate: paired t, rest vs distractor percent change",
+   "computed": 2.1650018169201024,
+   "reported": 2.17,
+   "tol": 0.005,
+   "source": "Humiston & Wamsley 2018, Results (t(17) = 2.17)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rest raw change = first 3 test minus last 3 training trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "snood raw change = first 3 test minus last 3 training trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "49 participants, 14 excluded by the authors' criteria",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's delayed-group paired t of rest against distractor raw change, t(16) = .13, gives 0.125 here (it would round to .12), so it is not used as a check.",
+  "The paper's text and Table 1 give 17 participants in the delayed group and Table 2 gives 18; the data have 17 (the Table 1 value is used).",
+  "Epworth sleepiness, baseline MST (pre_interval) and EEG numbers of Table 2 are not carried, so they were not checked."
+ ],
+ "sources": [
+  {
+   "file": "combined.sav",
+   "url": "https://osf.io/download/vr8dy/",
+   "bytes": 106560,
+   "sha256": "cb5fff4009606051228ce174a6bf4bcb4cc2b48a8e1786eca578a786f6e4724f",
+   "fetched_utc": "2026-11-09T13:49:08Z"
+  },
+  {
+   "file": "syntax.sps",
+   "url": "https://osf.io/download/qrk6s/",
+   "bytes": 5097,
+   "sha256": "38f77e5b3fb618f147ccf9da83537653c7c14c52a678ded9249d6c0147fc6eaf",
+   "fetched_utc": "2026-11-09T13:49:23Z"
+  },
+  {
+   "file": "excl.sps",
+   "url": "https://osf.io/download/rp528/",
+   "bytes": 1141,
+   "sha256": "c9ad39593a57083afe5a6a45982d221316cc010cd00dab0d219d70aac9324d56",
+   "fetched_utc": "2026-11-09T13:49:28Z"
+  },
+  {
+   "file": "manual1.docx",
+   "url": "https://osf.io/download/hpvba/",
+   "bytes": 132504,
+   "sha256": "0fdf8f30ab0b7c2f0bccfbc2ccc202752dbe5a56231d908d00d91a1eeaba9215",
+   "fetched_utc": "2026-11-09T13:49:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Humiston2018_NeurobiolLearnMem.zip"
+}

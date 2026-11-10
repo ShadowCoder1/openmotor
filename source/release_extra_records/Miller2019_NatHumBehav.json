@@ -1,0 +1,78 @@
+{
+ "id": "Miller2019_NatHumBehav",
+ "module": "timeseries",
+ "rows": 9,
+ "subjects": 9,
+ "persons": 9,
+ "zip_bytes": 11228289,
+ "zip_sha256": "f6cf78f4d856852045169a6e8f572de8abec78d81a0c917d20c7aed05d737ae6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "patients in the finger flexion experiment",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Miller 2019 / Miller 2012: nine patients (deposit readme subject table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct finger codes of the cue",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "readme: cue codes 1-5 = thumb to little finger",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "digits recorded by the glove (columns of flex)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "readme: flex has five columns thumb-index-middle-ring-little",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "cue codes are 0-5 only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stim codes outside the readme list are -1 and -2 only",
+   "ok": true,
+   "detail": "[np.int64(-2), np.int64(-1), np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5)]"
+  },
+  {
+   "kind": "internal",
+   "what": "one sample file per patient",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recording lengths plausible (over 2 minutes)",
+   "ok": true,
+   "detail": "[610.0, 610.0, 610.0, 466.0, 610.0, 179.0, 610.0, 445.0, 530.0]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The stim variable also holds the codes -1 (about a quarter of the samples in most patients) and -2 (a few patients, few samples), which the readme does not define; they are kept as shared. The cue of one patient is 1 (thumb) for almost the whole session and 0 otherwise, unlike the other patients' cycling cues (the deposit gives no explanation).",
+  "Published statistics of the library paper concern ECoG analyses and were not reproduced; the checks are the participant count and the code lists of the readme.",
+  "The deposit's other task zips (for example motor_basic, gestures, joystick_track, mouse_track) and the BCI Competition IV version of the finger flexion data were not converted."
+ ],
+ "sources": [
+  {
+   "file": "fingerflex.zip",
+   "url": "https://stacks.stanford.edu/file/druid:zk881ps0522/fingerflex.zip",
+   "bytes": 580522436,
+   "sha256": "2b08a9ce941a881feff8f35ee2224436a9ac1ca15bd744a80725067f7cd590bb",
+   "fetched_utc": "2026-11-09T16:45:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Miller2019_NatHumBehav.zip"
+}

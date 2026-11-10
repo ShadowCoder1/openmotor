@@ -1,0 +1,137 @@
+{
+ "id": "Kim2025_CommunPsychol",
+ "module": "speech",
+ "rows": 5490,
+ "subjects": 61,
+ "persons": 61,
+ "zip_bytes": 257074,
+ "zip_sha256": "eb2b03708bf7553db357096b1d6f92e8b8c70a67300112aac446ad1a5bee42e5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every participant column of the adaptation file pairs with exactly one de-adaptation column",
+   "ok": true,
+   "detail": "56 analysed + 5 followers"
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (after replacing followers)",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "followers replaced",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with Int adaptation schedule",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Fig. 2 legend (n = 28 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with NonInt adaptation schedule",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Fig. 2 legend (n = 28 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group ('Int', 'Int')",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Methods, Participants (n = 14 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group ('Int', 'NonInt')",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Methods, Participants (n = 14 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group ('NonInt', 'Int')",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Methods, Participants (n = 14 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group ('NonInt', 'NonInt')",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Kim et al. 2025, Commun Psychol 3:127 (Results; Methods, Participants), Methods, Participants (n = 14 per group)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "90 epochs for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "de-adaptation offset constant across epochs (reference change only)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in the cents columns",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Group tests (F(1,54) = 4.922 for the last three adaptation epochs; F(1,52) = 4.060 for de-adaptation; AdaptPractice F = 0.928) come from mixed models with the three words as repeated measures; the word-averaged epoch rows give F = 3.82, 3.83 and 0.933 with a plain two-way ANOVA on participant means, so these were not used as checks.",
+  "The paper says the first 6 baseline trials of each word were discarded but the normalization uses trials 6-18; the first baseline epochs are kept here as the authors shared them.",
+  "Participants' ages and sexes are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "AdaptBlock_Data_OSF.mat",
+   "url": "https://osf.io/download/25avq/",
+   "bytes": 233247,
+   "sha256": "5a1acb62f5a3d6cd696be792784ddc6992d9efc690f7e81f740d409028504fbf",
+   "fetched_utc": "2026-11-09T11:24:10Z"
+  },
+  {
+   "file": "DeAdaptBlock_Data_OSF.mat",
+   "url": "https://osf.io/download/zy3wg/",
+   "bytes": 233111,
+   "sha256": "151c70dd0a81f01db38169b9b6cadcb52e4870cc268a72d846acd1fb73081f06",
+   "fetched_utc": "2026-11-09T11:24:14Z"
+  },
+  {
+   "file": "readme.txt",
+   "url": "https://osf.io/download/5an7y/",
+   "bytes": 862,
+   "sha256": "bedc262686b47a100d6d68a996499c02d66c56dfc2dc3a062b60522eb5a93298",
+   "fetched_utc": "2026-11-09T11:24:19Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kim2025_CommunPsychol.zip"
+}

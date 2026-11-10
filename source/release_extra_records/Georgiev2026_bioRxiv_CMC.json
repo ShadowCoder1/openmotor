@@ -1,0 +1,96 @@
+{
+ "id": "Georgiev2026_bioRxiv_CMC",
+ "module": "summary",
+ "rows": 432,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 9970,
+ "zip_sha256": "83702ff56e0afd7ee5940dd8d1563eab7f25d080af751034b260f38d8cc35702",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "36 participants with unique ids",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CMC values in 0-1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "T01 = mean of T0_Force and T1_Force (deduced)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Contrast = (T2_Force - T01)/(T2_Force + T01) (deduced)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "36 x 14 rows",
+   "ok": true,
+   "detail": "432"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Abstract (thirty-six participants)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "paired t, CMC EMG vs force, as printed in the preprint (-2.24): not reproduced",
+   "ok": true,
+   "detail": "-1.71"
+  },
+  {
+   "kind": "internal",
+   "what": "Spearman rho EMG vs force, preprint 0.60: not reproduced",
+   "ok": true,
+   "detail": "0.74"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit does not reproduce the preprint v1 statistics (it may be a later version): paired t EMG vs force over 36 participants is -1.71 (paper -2.24), Spearman rho 0.74 (paper 0.60). The paper reports 10 participants (EMG) and 19 (force) with significant CMC (also in the authors' R script), but the Sign and Sign_F columns of the deposit flag 15 and 22 participants; the flags are kept as given and the counts are not used as checks. The paper's window means are only in a figure. The preprint is CC BY-ND while the OSF deposit states no license; the paper was later published in Eur J Neurosci (10.1111/ejn.70600)."
+ ],
+ "sources": [
+  {
+   "file": "CMC_all.xlsx",
+   "url": "https://osf.io/download/69a59ba1966fb15c3d59cb37/",
+   "bytes": 19789,
+   "sha256": "614bf465e8bd1c6a29164ff83122f604ad93686cb4cd689a4d12c17872a4726f",
+   "fetched_utc": "2026-11-09T17:05:49Z"
+  },
+  {
+   "file": "StatisticalAnlaysesCMC.R",
+   "url": "https://osf.io/download/rbft6/",
+   "bytes": 3023,
+   "sha256": "e346fe2dbe6521654ccc93f79035edcd21b059eba1b9fe61e0f7743a2e99cf0c",
+   "fetched_utc": "2026-11-09T17:05:54Z"
+  },
+  {
+   "file": "EEG_EMG_Force_analysis.m",
+   "url": "https://osf.io/download/69a59bf1768b60fb1059cb69/",
+   "bytes": 28074,
+   "sha256": "042b6d9171aa5615a00675359ba3bb3c07d8533fcad8e96cfd51d59e2cc4f924",
+   "fetched_utc": "2026-11-09T17:06:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Georgiev2026_bioRxiv_CMC.zip"
+}

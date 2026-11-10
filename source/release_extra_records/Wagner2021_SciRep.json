@@ -1,0 +1,168 @@
+{
+ "id": "Wagner2021_SciRep",
+ "module": "saccade",
+ "rows": 179749,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 3813448,
+ "zip_sha256": "f6469a44d902a10e70aa42ec67cebaff6f981dd77db9cc6410f569bde8a3df13",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "memory-task: 200 trials per participant and condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "memory-task: every gaze shift belongs to a trial row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "saccade-only: 200 trials per participant and condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "saccade-only: every gaze shift belongs to a trial row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all trial rows and gaze-shift rows kept",
+   "ok": true,
+   "detail": "179749"
+  },
+  {
+   "kind": "published",
+   "what": "memory-task: participants analysed",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, delayed-selection: mean % of valid trials",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, immediate-error: mean % of valid trials",
+   "computed": 91.04166666666667,
+   "reported": 91.04,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, delayed-error: mean % of valid trials",
+   "computed": 89.79166666666667,
+   "reported": 89.79,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, delayed-selection: proportion correct",
+   "computed": 0.7472616555895194,
+   "reported": 0.75,
+   "tol": 0.005,
+   "source": "Results, Trial-by-trial changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, immediate-error: proportion correct",
+   "computed": 0.8086338507358409,
+   "reported": 0.81,
+   "tol": 0.005,
+   "source": "Results, Trial-by-trial changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "memory-task, delayed-error: proportion correct",
+   "computed": 0.877526275730804,
+   "reported": 0.88,
+   "tol": 0.005,
+   "source": "Results, Trial-by-trial changes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade-only: participants analysed",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade-only, delayed-selection: mean % of valid trials",
+   "computed": 86.54166666666667,
+   "reported": 86.54,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade-only, immediate-error: mean % of valid trials",
+   "computed": 88.29166666666667,
+   "reported": 88.29,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade-only, delayed-error: mean % of valid trials",
+   "computed": 89.29166666666667,
+   "reported": 89.29,
+   "tol": 0.005,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade-only: participants recorded with data",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants (19 recruited; 2 opted out after session 1 and have no data)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "1_memory-task.zip",
+   "url": "https://zenodo.org/api/records/4618049/files/1_memory-task.zip/content",
+   "bytes": 2339944,
+   "sha256": "f2473751e455bdcf4e094a51785dcd655ba102c0b5ec99ec64a47136f9c079e1",
+   "fetched_utc": "2026-11-09T13:33:03Z"
+  },
+  {
+   "file": "2_saccade-only.zip",
+   "url": "https://zenodo.org/api/records/4618049/files/2_saccade-only.zip/content",
+   "bytes": 2809578,
+   "sha256": "d20f934409b5dffc705a6c04ae79a6868398a481dd4c8ac22bac9bf6401ffc7a",
+   "fetched_utc": "2026-11-09T13:33:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wagner2021_SciRep.zip"
+}

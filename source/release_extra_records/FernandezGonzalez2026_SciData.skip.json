@@ -1,0 +1,7 @@
+{
+ "id": "FernandezGonzalez2026_SciData",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Deposit is CC BY 4.0 (the article is CC BY-NC-ND 4.0). The full DATASET.zip is 7.7 GB (over the 5 GB gate); only the 76 MB ANALYSIS.zip (per-session xlsx of 101-sample time-normalised joint angles and 4-channel sEMG per stride, 18 of 22 CP and 11 of 12 ITW children, 25 TD) is small enough, but the article text could not be read (publisher page served only the abstract), so the session codes T0/T1/T2/C0/TX, sampling rate, segmentation and sEMG processing/units are undocumented; file names also carry acquisition dates.",
+ "sources": []
+}

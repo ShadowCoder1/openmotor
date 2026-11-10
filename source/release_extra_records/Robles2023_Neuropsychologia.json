@@ -1,0 +1,68 @@
+{
+ "id": "Robles2023_Neuropsychologia",
+ "module": "summary",
+ "rows": 370,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 9150,
+ "zip_sha256": "ac8f2f53fe99d770a3c48c8abbfa06e6c05a74b5c2e6d01d7236c72153b05803",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "six blocks x 8 columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "12 patients and each block repeats the same ID",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty cell kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "patients with cerebellar stroke",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "assessment time periods",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Abstract (baseline, 6, 12 and 24 weeks)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's impaired-patient counts (for example 9 of 12 on the Purdue Pegboard) depend on a cut-off the deposit does not state, so they were not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "supp.csv",
+   "url": "https://osf.io/download/zry7u/",
+   "bytes": 14363,
+   "sha256": "7757bfa10d4b7027907c039369d934bd10e8bf4a18c87dbf0b18e44b60fe5101",
+   "fetched_utc": "2026-11-09T14:35:50Z"
+  },
+  {
+   "file": "codebook.pdf",
+   "url": "https://osf.io/download/23xsr/",
+   "bytes": 108479,
+   "sha256": "fc97fb32e0892d1661cdc730ed39fa17ae88e2bea4dafcb39e0257b221f1e545",
+   "fetched_utc": "2026-11-09T14:35:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Robles2023_Neuropsychologia.zip"
+}

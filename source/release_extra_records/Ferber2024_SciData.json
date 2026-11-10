@@ -1,0 +1,69 @@
+{
+ "id": "Ferber2024_SciData",
+ "module": "walking",
+ "rows": 2088,
+ "subjects": 1686,
+ "persons": 1686,
+ "zip_bytes": 39175,
+ "zip_sha256": "41bef0a69a2ad7a0feeb7272bf61404eaaa337c6abeed4357f20d31eb623efc9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "2088 walking recordings, 1686 people",
+   "ok": true,
+   "detail": "2088, 1686"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has a walking speed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings of one person are numbered 1..k",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "people with walking data (396 walking only + 1290 both)",
+   "computed": 1686.0,
+   "reported": 1686.0,
+   "tol": 0,
+   "source": "Data Records: 396 subjects have only walking data, 112 only running, 1290 both",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean walking speed lies within the Table 1 group means 1.11-1.30 m/s (1 = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Table 1: group mean speeds 1.11 to 1.30 m/s",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports group means only (Table 1), so the one overall check is that the mean speed lies in their range; the paper's own abstract-level count of people with walking data (1,686) is reproduced exactly.",
+  "The article text is CC BY-NC-ND 4.0 but the Figshare+ record and the README state CC BY 4.0 for the data, which is the licence used here."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://ndownloader.figshare.com/files/43420746",
+   "bytes": 11153,
+   "sha256": "9f9d9c079e2aafa682fbd33e652358fc2eeb837e7a20a449f03da3c90c9d1552",
+   "fetched_utc": "2026-11-09T02:23:52Z"
+  },
+  {
+   "file": "walk_data_meta.csv",
+   "url": "https://ndownloader.figshare.com/files/42922405",
+   "bytes": 395637,
+   "sha256": "62673b7bc007cfb0914d747e63b07d4bb9b4fbd284415c6d7928e543a9eff6d7",
+   "fetched_utc": "2026-11-09T02:23:55Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ferber2024_SciData.zip"
+}

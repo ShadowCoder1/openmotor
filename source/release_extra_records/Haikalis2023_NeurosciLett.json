@@ -1,0 +1,204 @@
+{
+ "id": "Haikalis2023_NeurosciLett",
+ "module": "game",
+ "rows": 2040,
+ "subjects": 68,
+ "persons": 68,
+ "zip_bytes": 22048,
+ "zip_sha256": "79cc2e571cc58822b259a2002fd1191117f81d125845a696b9b37e9da7385d17",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "AllGroups has 2040 rows, 68 participants x 30 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has trials 1..30 in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TDCSGroupsOnly trials are identical to the same trials in AllGroups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Age constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Sex constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "AssignGrp constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RASex constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "2 trials have no time in the deposit and are kept empty",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Abstract / Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Ctrl",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Active",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Sham",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age Ctrl",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age Ctrl",
+   "computed": 3.5901098714230026,
+   "reported": 3.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age Sham",
+   "computed": 21.25,
+   "reported": 21.25,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age Sham",
+   "computed": 3.945350361334746,
+   "reported": 3.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age Active",
+   "computed": 23.5,
+   "reported": 23.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age Active",
+   "computed": 4.547989723637883,
+   "reported": 4.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "belief drop pre to post (points)",
+   "computed": -1.225,
+   "reported": -1.23,
+   "tol": 0.005,
+   "source": "Results, belief change (t(39) = 3.44)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in belief analysis (df 39 + 1)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Results, belief change t(39)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "sex counts match Table 1 (35 F)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Methods text says 29 participants were female, but its Table 1 counts add to 35 female and 33 male; the deposit has 35 female and 33 male, which matches the table. Not used as a check.",
+  "The Methods give age for all participants as 22.3 +/- 4.14 years; the 68 participants in the deposit give 21.81 +/- 4.09 (the three group means and SDs in Table 1 do reproduce). Not used as a check.",
+  "Two of the 2,040 trials have no trial time in the deposit and are kept with an empty duration_s.",
+  "The paper does not state the unit of trial time in its Methods; seconds is taken from its belief-model section and the deposit README (Total trial time in seconds)."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/8011365/files/README.txt/content",
+   "bytes": 1544,
+   "sha256": "43db16e51b21e8d5046fbc5166f44a94b79e52f5faed02e2b756b6b8d63f1404",
+   "fetched_utc": "2026-11-09T12:21:26Z"
+  },
+  {
+   "file": "AllGroups.csv",
+   "url": "https://zenodo.org/api/records/8011365/files/AllGroups.csv/content",
+   "bytes": 75403,
+   "sha256": "61397bcd5269d34de403f3372e0db80617986e09d8d26503722b3aa3708c63b1",
+   "fetched_utc": "2026-11-09T12:21:30Z"
+  },
+  {
+   "file": "TDCSGroupsOnly.csv",
+   "url": "https://zenodo.org/api/records/8011365/files/TDCSGroupsOnly.csv/content",
+   "bytes": 73253,
+   "sha256": "169bca129a41b417ff4ee919aa074c41faf35d078a86c7716e669983c90fde57",
+   "fetched_utc": "2026-11-09T12:21:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Haikalis2023_NeurosciLett.zip"
+}

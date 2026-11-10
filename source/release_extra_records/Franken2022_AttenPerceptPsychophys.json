@@ -1,0 +1,221 @@
+{
+ "id": "Franken2022_AttenPerceptPsychophys",
+ "module": "speech",
+ "rows": 9240,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 311000,
+ "zip_sha256": "e2fa78f95c92f38b9e7b3b2b2f5ae74c6f75f6b492f6317e8b818ab4af25322a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: every pretest and posttest production row has its response, with the same shift and vowel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: every pretest and posttest production row has its response, with the same shift and vowel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "330 rows per participant (trials 11-340), 14 participants per experiment",
+   "ok": true,
+   "detail": "{1: 14, 2: 14}"
+  },
+  {
+   "kind": "internal",
+   "what": "blocks hold 90, 120 and 120 trials per participant (the paper's 100, 120, 120 less the first 10)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exposure shift is the constant +500 (Experiment 1) / -500 (Experiment 2) cents on every exposure trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pretest and posttest shifts are 0, 30, 60, 100, 150 cents up or down",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: female participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: male participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: female participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: male participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exposure block: trials per participant",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "posttest block: trials per participant",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SD of age (years; one age missing)",
+   "computed": 1.9381460874790262,
+   "reported": 1.9,
+   "tol": 0.05,
+   "source": "Franken et al. 2022 (accepted manuscript, OSF qzf2g), Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Age: the questionnaire gives a mean age of 20.6 years (SD 1.9, one age missing) in Experiment 1 and 21.2 (SD 1.3) in Experiment 2; the paper reports 20.7 (SD 1.9) and 21 (SD 1.46).",
+  "Outlier rule: the paper states that pitch values more than 3 SD from the participant's mean were removed; the authors' analysis code removes rows with |z| >= 2.5, which is what excluded_by_authors marks.",
+  "Table 4 (pitch change between experiments, model estimates): plain participant means from these rows give 55.4 (exposure minus pretest) and -70.0 (posttest minus exposure) cents against the reported 55.72 and -69.82; the paper's values come from a mixed model with random slopes, so they are not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "exp2_production.csv",
+   "url": "https://osf.io/download/zfj38/",
+   "bytes": 573205,
+   "sha256": "308a4b8963af0a5168c3d93602cc3f491d5afc4a7c8bbaabfac1c08ecc019462",
+   "fetched_utc": "2026-11-09T11:50:41Z"
+  },
+  {
+   "file": "exp1_thresholds2.csv",
+   "url": "https://osf.io/download/t8wum/",
+   "bytes": 5550,
+   "sha256": "de011f79bc056cb6e18ff1ed9b49ac341b3594ccae5e628134ab882499d7c885",
+   "fetched_utc": "2026-11-09T11:50:46Z"
+  },
+  {
+   "file": "exp2_responses.csv",
+   "url": "https://osf.io/download/v2bf7/",
+   "bytes": 167084,
+   "sha256": "9847fa3d2e3e9b86af9b6da3352ce657fbdbcd4c1363ebc23a923bdcbb277d91",
+   "fetched_utc": "2026-11-09T11:50:52Z"
+  },
+  {
+   "file": "exp1_responses.csv",
+   "url": "https://osf.io/download/qvr3h/",
+   "bytes": 167084,
+   "sha256": "b74e327ef6091343bb7091142630f2218410d03cd3fda42bcf5f3525ea2d6055",
+   "fetched_utc": "2026-11-09T11:50:56Z"
+  },
+  {
+   "file": "exp1_production.csv",
+   "url": "https://osf.io/download/u7nsp/",
+   "bytes": 566981,
+   "sha256": "93fa3c16ab8f1bffc1f6035e934564e0c463799118823763b635b52e71e8d023",
+   "fetched_utc": "2026-11-09T11:50:59Z"
+  },
+  {
+   "file": "exp2_thresholds2.csv",
+   "url": "https://osf.io/download/hjbnt/",
+   "bytes": 5569,
+   "sha256": "8fc5533b70412a6649e355aa27792b905045acb2fe224d0b0efdc472cadf8946",
+   "fetched_utc": "2026-11-09T11:51:03Z"
+  },
+  {
+   "file": "exp3_responses.csv",
+   "url": "https://osf.io/download/d8k4s/",
+   "bytes": 167084,
+   "sha256": "ff72fa99dbe97e300c854e9b018e66cd942ab59626551b4f0b6c14910951d444",
+   "fetched_utc": "2026-11-09T11:51:07Z"
+  },
+  {
+   "file": "exp3_thresholds2.csv",
+   "url": "https://osf.io/download/pqfmh/",
+   "bytes": 5591,
+   "sha256": "8ba77033687b60038711157fffc3f1ba3e4c5c7c63f74b78305c1ac6a6902375",
+   "fetched_utc": "2026-11-09T11:51:11Z"
+  },
+  {
+   "file": "exp4_responses.csv",
+   "url": "https://osf.io/download/kytvp/",
+   "bytes": 167084,
+   "sha256": "aefabb3563a0ae1cb91e642f0f9d57db3a5c9a131ce28fdf1113c8c1e7067bb5",
+   "fetched_utc": "2026-11-09T11:51:16Z"
+  },
+  {
+   "file": "exp4_thresholds2.csv",
+   "url": "https://osf.io/download/ct3af/",
+   "bytes": 5580,
+   "sha256": "12c50828f39cfe1b727f795a97b9786dd222906b284e02b81759bd5e926c67da",
+   "fetched_utc": "2026-11-09T11:51:31Z"
+  },
+  {
+   "file": "questionnaire.csv",
+   "url": "https://osf.io/download/612fcf1daf610c017fdfcbec/",
+   "bytes": 4276,
+   "sha256": "850effa5073d182e05b4e7971707d633ee70c67108e8fb9496d0460b79244bd7",
+   "fetched_utc": "2026-11-09T11:51:36Z"
+  },
+  {
+   "file": "Supplementary.pdf",
+   "url": "https://osf.io/download/yagd3/",
+   "bytes": 164044,
+   "sha256": "ababf4aaf1ed197b4eafad12b5284a2e09336d4c7084eb2c4caba7ac00682cae",
+   "fetched_utc": "2026-11-09T11:51:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Franken2022_AttenPerceptPsychophys.zip"
+}

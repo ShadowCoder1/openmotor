@@ -1,0 +1,204 @@
+{
+ "id": "Hsu2025_ImagingNeurosci",
+ "module": "keypress",
+ "rows": 482237,
+ "subjects": 129,
+ "persons": 129,
+ "zip_bytes": 8135568,
+ "zip_sha256": "9109260134e52fea39ff1d517a630bb551732be1c0103bc96ae5b68bdb3f9972",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "BehavioralData.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "demographics.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tdcs_groups.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tdcs_groups.csv: 120 analysed participants, 40 in each of the three groups (Methods: N = 40 per group)",
+   "ok": true,
+   "detail": "Counter({1: 40, 2: 40, 3: 40})"
+  },
+  {
+   "kind": "internal",
+   "what": "129 participants, each with the four task files (session 1 sequence 1; session 2 sequences 1, 2, 3)",
+   "ok": true,
+   "detail": "516 files; not read: [('Subject10_10_S2.mat', 17200)]"
+  },
+  {
+   "kind": "internal",
+   "what": "every analysed participant (tdcs_groups.csv) has behaviour files; the others are the 9 the paper replaced",
+   "ok": true,
+   "detail": "9 not analysed"
+  },
+  {
+   "kind": "internal",
+   "what": "all files with a key log read with the expected sequence, non-decreasing time stamps and trials shorter than 10.6 s",
+   "ok": true,
+   "detail": "{}; 1 files without a key log [(69, (2, 2))]; 79 trials without a key press (trial 1 missing in 64 files: the authors note a task-script bug); 1 presses of other keys ['space'] (subject, section, trial: [(59, (1, 1), 6, 'space')])"
+  },
+  {
+   "kind": "internal",
+   "what": "482237 key presses read",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Imaging Neuroscience 2025, Abstract (120 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited participants who have demographic data",
+   "computed": 130.0,
+   "reported": 130.0,
+   "tol": 0,
+   "source": "Imaging Neuroscience 2025, Methods (a total of 130 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of women among the 130",
+   "computed": 73.0,
+   "reported": 73.0,
+   "tol": 0,
+   "source": "Imaging Neuroscience 2025, Methods (73 female and 57 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the 130 (years)",
+   "computed": 23.338461538461537,
+   "reported": 23.3,
+   "tol": 0.05,
+   "source": "Imaging Neuroscience 2025, Methods (23.3 +- 5.86 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age of the 130 (years)",
+   "computed": 5.862181838646935,
+   "reported": 5.86,
+   "tol": 0.01,
+   "source": "Imaging Neuroscience 2025, Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean typing speed (WPM)",
+   "computed": 33.461944968131576,
+   "reported": 33.5,
+   "tol": 0.05,
+   "source": "Imaging Neuroscience 2025, Results 4.2.2 (33.5 +- 1.1 WPM)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SEM of typing speed (WPM)",
+   "computed": 1.1289111277621686,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Imaging Neuroscience 2025, Results 4.2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of typing speed with overall performance (mean NCS over the 36 trials of L:S1 + tDCS)",
+   "computed": 0.5687437252044528,
+   "reported": 0.569,
+   "tol": 0.01,
+   "source": "Imaging Neuroscience 2025, Results 4.2.2, r(118) = 0.569",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's correlations of typing speed with baseline performance (r = .369) and performance gain (r = .421; Figure 11b-c) were not reproduced because the paper does not define the windows: with the first trial the baseline correlation is 0.20, with the mean of the first 10 trials 0.56; the gain (mean of the last 10 trials minus the first trial) gives 0.41, minus the mean of the first 10 trials 0.11. The correlation with overall performance (mean NCS over the 36 trials, r = .569) reproduces.",
+  "Subject 69 has no key log in its R:S2 file (the authors' get_FTT.m treats a missing log as missing data), and one press is of the space bar instead of one of the four keys (subject 59, session 1, trial 6); it is kept, with correct = False.",
+  "The deposit's stray file Subject10_10_S2.mat (17 kB, session number 10) was not converted; each participant has exactly the four standard files without it.",
+  "The Figure 2 legend of the paper writes R:S1 for the repeat of the first task, while the Methods text (and the file naming) give L:S1."
+ ],
+ "sources": [
+  {
+   "file": "BehavioralData.zip",
+   "url": "https://osf.io/download/rtzqv/",
+   "bytes": 8281894,
+   "sha256": "9d59f93d5f76099f07a6cda622e1d0da0824ea4a8326f13eaa6462ec9fa1fbef",
+   "fetched_utc": "2026-11-08T21:13:12Z"
+  },
+  {
+   "file": "demographics.csv",
+   "url": "https://osf.io/download/s473e/",
+   "bytes": 1195,
+   "sha256": "41aeaff5910cebd9c32f2b7c14ffe8bd2f18cb122e9ee28fd387a5b241afd71a",
+   "fetched_utc": "2026-11-08T21:13:12Z"
+  },
+  {
+   "file": "tdcs_groups.csv",
+   "url": "https://osf.io/download/br9zx/",
+   "bytes": 2438,
+   "sha256": "2e3993193148237deaf74a7002492c0c148e2eacc58390faa666e53ef1ba8b6c",
+   "fetched_utc": "2026-11-08T21:13:13Z"
+  },
+  {
+   "file": "readme_combinedData.txt",
+   "url": "https://osf.io/download/rbsmw/",
+   "bytes": 4421,
+   "sha256": "ffae5eba374e1f9b58c2bf56ef6902d660535d860fe7c4a097beb825cb22a01b",
+   "fetched_utc": "2026-11-08T21:13:13Z"
+  },
+  {
+   "file": "FTT.zip",
+   "url": "https://osf.io/download/nspfz/",
+   "bytes": 206180,
+   "sha256": "2740d4f6eefbf4991fa9528140d463f9a625ba85f1eb94966b6783b194b615a6",
+   "fetched_utc": "2026-11-08T21:13:15Z"
+  },
+  {
+   "file": "Analysis.zip",
+   "url": "https://osf.io/download/hrd4t/",
+   "bytes": 23005,
+   "sha256": "4c138e2da2ae7acb43962d48a993e8042235b655bc1b90208d1e045243c5cd45",
+   "fetched_utc": "2026-11-08T21:13:15Z"
+  },
+  {
+   "file": "Processing.zip",
+   "url": "https://osf.io/download/qens9/",
+   "bytes": 18718,
+   "sha256": "9f5bf0bda5ce04fff6a657cc7e39f9ef34b43801e5dae48edf093cb9fede1b07",
+   "fetched_utc": "2026-11-08T21:13:16Z"
+  },
+  {
+   "file": "TMStrials.csv",
+   "url": "https://osf.io/download/vp834/",
+   "bytes": 5173,
+   "sha256": "0ef4bf5af4ae9750eb0c0af01d67fd2d792bd52d9557b400167e24a904e0267c",
+   "fetched_utc": "2026-11-08T21:13:17Z"
+  },
+  {
+   "file": "groupnames.mat",
+   "url": "https://osf.io/download/42z9r/",
+   "bytes": 487,
+   "sha256": "f9450764ecffd5e08629fc5a1e7ba6f86d5a4c84a180e22d01ceb9a6978136f4",
+   "fetched_utc": "2026-11-08T21:13:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hsu2025_ImagingNeurosci.zip"
+}

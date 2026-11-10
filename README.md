@@ -12,12 +12,16 @@ Browse and download: https://physicalintelligencelab.github.io/openmotor/
 ## Files
 
 - Dataset ZIPs (one per dataset, linked from the site) are attached to this repository's Releases: the first release's
-  reaching datasets under "OpenMotor data, version frozen 4 November 2026", the other tasks under "Standardized datasets". Each holds the trial table as CSV, a README (citation, lab, license,
-  original deposit) and `columns.csv`.
-- `catalog.csv`: every study with its paper, lab, number of participants, license, tags, and a link to the
-  authors' original data and its file format.
-- `columns.csv`: what each of the 90 columns means.
-- `SHA256SUMS.txt`: checksums of the data files.
+  reaching datasets under "OpenMotor data, version frozen 4 November 2026", the other tasks under "Standardized datasets".
+  Each holds the data as CSV, a README (citation, lab, license, original deposit, how the file was made, the published
+  numbers it was checked against) and `columns.csv`.
+- On the site: [catalog.csv](https://physicalintelligencelab.github.io/openmotor/catalog.csv) (every study with its paper,
+  lab, participants, license, tags and a link to the authors' original data),
+  [columns.csv](https://physicalintelligencelab.github.io/openmotor/columns.csv) (the 90 reaching columns) and
+  [SHA256SUMS.txt](https://physicalintelligencelab.github.io/openmotor/SHA256SUMS.txt).
+- This repository: `source/` (the study list and one record per standardized dataset), `site/` (the page),
+  `tools/build_page.py` (builds the site; GitHub Actions runs it on every change) and `tools/std/` (the standardization
+  library, the task formats in `modules/` and one converter per dataset in `convert/`).
 
 ## Licenses
 

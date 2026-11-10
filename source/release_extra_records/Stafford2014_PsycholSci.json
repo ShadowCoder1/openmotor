@@ -1,0 +1,205 @@
+{
+ "id": "Stafford2014_PsycholSci",
+ "module": "game",
+ "rows": 3099705,
+ "subjects": 854064,
+ "persons": 854064,
+ "zip_bytes": 35503839,
+ "zip_sha256": "f9e8dd565d4f6c2b4d88059a0cd4b7beeb79d6bc50c7ad11aad8e8294d6d4ba5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "data_by_cookie.json matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "LICENSE matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every play kept: one row per (cookie, attempt), 3,099,705 rows",
+   "ok": true,
+   "detail": "3099705 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "attempt keys are 5-digit numbers, unique within a cookie; every value is [score, YYYYMMDD, hour] integers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every cookie has at least one play",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: scores positive, hours 0-23, 60 distinct dates",
+   "ok": true,
+   "detail": "scores 176-3872849"
+  },
+  {
+   "kind": "internal",
+   "what": "attempt numbers: most cookies have 1..n, some lack attempts (as the paper says: 'first play (or second play where this data was missing)')",
+   "ok": true,
+   "detail": "17734 cookies whose attempts are not exactly 1..n; 8067 lack attempt 1"
+  },
+  {
+   "kind": "published",
+   "what": "players (browser cookies)",
+   "computed": 854064.0,
+   "reported": 854064.0,
+   "tol": 0,
+   "source": "Abstract and Method (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players with more than 9 plays",
+   "computed": 45672.0,
+   "reported": 45672.0,
+   "tol": 0,
+   "source": "Results, Practice amount (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players with more than 14 plays",
+   "computed": 21575.0,
+   "reported": 21575.0,
+   "tol": 0,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "first date of play (YYYYMMDD)",
+   "computed": 20120314.0,
+   "reported": 20120314.0,
+   "tol": 0,
+   "source": "Method, '14th of March' 2012 (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "last date of play (YYYYMMDD)",
+   "computed": 20120513.0,
+   "reported": 20120513.0,
+   "tol": 0,
+   "source": "Method, '13th of May 2012' (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resters vs goers: degrees of freedom of the t test",
+   "computed": 20354.0,
+   "reported": 20354.0,
+   "tol": 0,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resters vs goers: t",
+   "computed": 6.218791130363209,
+   "reported": 6.219,
+   "tol": 0.0005,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "goers: mean of best score on plays 11-15",
+   "computed": 44049.76233025689,
+   "reported": 44050.0,
+   "tol": 0.5,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resters: mean of best score on plays 11-15",
+   "computed": 47263.60358744395,
+   "reported": 47264.0,
+   "tol": 0.5,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "goers: SD",
+   "computed": 26881.534172443266,
+   "reported": 26882.0,
+   "tol": 0.5,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resters: SD",
+   "computed": 29460.75538547708,
+   "reported": 29461.0,
+   "tol": 0.5,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cohen's d (pooled as in the authors' script)",
+   "computed": 0.11396338716011012,
+   "reported": 0.11,
+   "tol": 0.005,
+   "source": "Results, Practice spacing (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "explore/exploit correlation with the pairing the paper's text describes (variance of plays 1-5 with mean of plays 6-10)",
+   "ok": true,
+   "detail": "r = 0.638"
+  },
+  {
+   "kind": "published",
+   "what": "explore/exploit: Pearson r of percentile ranks, paired as in the deposited sup_ee_observed.py (score variance on plays 6-10, mean score on plays 1-5)",
+   "computed": 0.5923910390230626,
+   "reported": 0.59,
+   "tol": 0.005,
+   "source": "Results, Exploration versus exploitation (final submitted version in the deposit (stafford_and_dewar_revision.pdf))",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "most common number of plays per cookie",
+   "ok": true,
+   "detail": "2 plays (234991 cookies; 230295 with 1 play); most plays by one cookie 1329"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the modal number of plays is 1; in the deposit it is 2 (234991 cookies against 230295 with one play).",
+  "The paper says some played up to 1000 times; the most plays by one cookie is 1329.",
+  "The paper's explore/exploit r = .59 is reproduced (0.592) with the pairing of the deposited script (variance of plays 6-10 with mean of plays 1-5); the pairing the paper's text describes and the bootstrap script uses (variance of plays 1-5 with mean of plays 6-10) gives r = 0.638."
+ ],
+ "sources": [
+  {
+   "file": "data_by_cookie.json",
+   "url": "https://raw.githubusercontent.com/tomstafford/axongame/master/data_by_cookie.json",
+   "bytes": 185523121,
+   "sha256": "0901ce85f8967be7ff4622faf25ff415b4541259ad2dc3b30ef9f29b324046bd",
+   "fetched_utc": "2026-11-08T19:43:16Z"
+  },
+  {
+   "file": "LICENSE",
+   "url": "https://raw.githubusercontent.com/tomstafford/axongame/master/LICENSE",
+   "bytes": 1079,
+   "sha256": "d61bc03f99e4bfc95af51023ac2d78181246edb0b881f6223fb9bd003c968788",
+   "fetched_utc": "2026-11-08T20:02:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Stafford2014_PsycholSci.zip"
+}

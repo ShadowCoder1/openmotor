@@ -1,0 +1,1034 @@
+{
+ "id": "Zaidi2023_PeerJ",
+ "module": "timeseries",
+ "rows": 110,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 78944872,
+ "zip_sha256": "da5ba2b03661efa96dad4b426a002b5d1e7fda7bafcb59950e4519ad2905b84b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with mild impairment",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Tables 1 and 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with severe impairment",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants and Tables 1 and 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, mild group (years)",
+   "computed": 61.8,
+   "reported": 61.8,
+   "tol": 0.05,
+   "source": "Results, group comparison (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, mild group",
+   "computed": 9.806703246832168,
+   "reported": 9.8,
+   "tol": 0.05,
+   "source": "Results, group comparison (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, severe group (years)",
+   "computed": 62.142857142857146,
+   "reported": 62.14,
+   "tol": 0.01,
+   "source": "Results, group comparison (Table 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, severe group",
+   "computed": 9.330323952304392,
+   "reported": 9.3,
+   "tol": 0.05,
+   "source": "Results, group comparison (Table 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean time since stroke, severe (months)",
+   "computed": 62.07142857142857,
+   "reported": 62.0,
+   "tol": 0.5,
+   "source": "Results, group comparison (Table 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean maximum reach, mild (cm)",
+   "computed": 35.56,
+   "reported": 35.58,
+   "tol": 0.03,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean maximum reach, severe (cm)",
+   "computed": 16.864285714285714,
+   "reported": 16.86,
+   "tol": 0.01,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of maximum reach, severe (cm)",
+   "computed": 12.02897828916981,
+   "reported": 12.0,
+   "tol": 0.05,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "severe group: right paretic arms",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mild group: paretic arm is the dominant arm",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "severe group: paretic arm is the dominant arm",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Results, group comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the mild group",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the severe group",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the two sheets of the deposit agree on paretic and dominant side for all participants except S42 and S47, where 'Further Data' (used) and 'Input' differ",
+   "ok": true,
+   "detail": "['S42', 'S47']"
+  },
+  {
+   "kind": "internal",
+   "what": "every one of the 29 stroke participants has recordings, and all are sampled at 300 Hz",
+   "ok": true,
+   "detail": "110 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "frame numbers are consecutive within every stroke-participant recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings: 2 control + stroke recordings; 4 per participant except where the deposit lacks the second set",
+   "ok": true,
+   "detail": "[2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "For two participants (S42 and S47 in the deposit) the deposit's two spreadsheets disagree on the paretic and dominant side; the 'Further Data' sheet (the one that also holds time since stroke) was used.",
+  "The paper reports a mean time since stroke of 39 months for the mild group; the deposit gives 41.9 (the paper's Table 1 lists 8 months for the participant whom the deposit lists at 51). The paper reports 7 right and 8 left paretic arms in the mild group; the deposit's 'Further Data' sheet gives 8 right. The severe-group values and all other group numbers reproduce.",
+  "The Zenodo record 7587404 is titled 'Informing upper extremity rehabilitation through endpoint kinematics of the functional reaching movement after stroke' (Jan 2023, CC BY 4.0, with the same participants); the PeerJ paper's own data statement points to a later record, 10.5281/zenodo.7968664 (May 2023, 'Upper extremity kinematics: Development of a quantitative measure of impairment severity and dissimilarity after stroke', CC BY 4.0). The PeerJ paper is cited here because the groups, ages and reach capacities match it.",
+  "One file header in S53 states 166895 frames but the sheet holds 45158 rows; the rows present are converted."
+ ],
+ "sources": [
+  {
+   "file": "DataProcessing.m",
+   "url": "https://zenodo.org/records/7587404/files/DataProcessing.m",
+   "bytes": 24640,
+   "sha256": "76aab5e9bf8768277c1582c12e3d5e85438218d7be54b6567cecd710e1efeb52",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "Input to DataProcessing.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/Input%20to%20DataProcessing.xlsx",
+   "bytes": 17614,
+   "sha256": "9e72db6af3d0f348a0ce6019a1b4295fbd4223128dd4a0ff0c673086d839b99c",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "Reach3D.m",
+   "url": "https://zenodo.org/records/7587404/files/Reach3D.m",
+   "bytes": 13577,
+   "sha256": "a1f5118c1ecff397605f3e327900d9862f1ca127b225602e79a1378f7a71c2cb",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S00_L.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S00_L.xlsx",
+   "bytes": 1279086,
+   "sha256": "d95bdd6b863af7825276dfb3c4ccd6099e7720a0a28dd416bb2f6f59765d18e3",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S00_R.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S00_R.xlsx",
+   "bytes": 1463535,
+   "sha256": "2a5d7c000a3cea740f7f14f735fb16bf319cd7dfffafaefefe5658857d855a4d",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S00_SRT.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S00_SRT.xlsx",
+   "bytes": 434187,
+   "sha256": "77c89c4f500f5ecc0dcaf07988ea985606aa636819328854a4f8c3daedd35164",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S01_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S01_SRT_NP1.xlsx",
+   "bytes": 2068433,
+   "sha256": "ce29b4ade54593504b111eb409d2e422ea3886a217b01b099ba6e73e63d2ecca",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S01_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S01_SRT_NP2.xlsx",
+   "bytes": 2061684,
+   "sha256": "6c0cfcdb83a747b95ae41816f001510b800efb0f8a63ad7b35032f7ccc221406",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S01_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S01_SRT_P1.xlsx",
+   "bytes": 2183251,
+   "sha256": "cea1b40c546e50614e6df95645cd8b13de72f575c06f8d446a103417525f77c7",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S01_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S01_SRT_P2.xlsx",
+   "bytes": 2270742,
+   "sha256": "a8d2c5b2611e8b97d339543f7e9f1bafc9d1372343d32f01da1faac32aea321f",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_NP1.xlsx",
+   "bytes": 1545160,
+   "sha256": "33b20232e17d6ff3041d20ff923e886db1fe619253390c73e54ad6a4f5dcffc0",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_NP2.xlsx",
+   "bytes": 2466876,
+   "sha256": "4283e54cac7baa196bc05f56f7a1ca1e273f3b7bb09b9ef863bdef18c6696ed6",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_P1.xls",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_P1.xls",
+   "bytes": 361984,
+   "sha256": "3141866a409fc31b8840a8944a50f1a68bb53c27cf6ec988e57df85c432be428",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_P1_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_P1_Original.xlsx",
+   "bytes": 1443342,
+   "sha256": "2324bb9f70da5c5688e62be6e4d423f50a110bb7417477404d590866e03376cc",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_P2.xls",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_P2.xls",
+   "bytes": 477184,
+   "sha256": "822c829b484096f4a2cf6cf32d412bb08760010af6897973673018d103e3e295",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S02_SRT_P2_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S02_SRT_P2_Original.xlsx",
+   "bytes": 1351507,
+   "sha256": "1d67c4954f88ec6c00da39905bffd163335cdc21e47ce64b1caf0ea8ba5498a6",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_NP1.xlsx",
+   "bytes": 1497219,
+   "sha256": "65b6a16422d987372f0db7a82447f61b9481fa3426ae17c7cd023e1cd21a8b8a",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_NP2.xlsx",
+   "bytes": 1913732,
+   "sha256": "d58cab59b39484fa4bd80133e5cd69744e264d6bc2709b7e9aadfd6cb02cfc04",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_P1.xls",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_P1.xls",
+   "bytes": 338432,
+   "sha256": "96c9ab36208281bc505b24cce98a4dd7e0b34f562c5bc545c554cec04787bf65",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_P1_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_P1_Original.xlsx",
+   "bytes": 2280106,
+   "sha256": "495e17a790f53f8ffa2cd5752a725cf9cd3f36b0ee701f0cab47fdaff82cf270",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_P2.xls",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_P2.xls",
+   "bytes": 418304,
+   "sha256": "bc567eb69d347985089f169de7011fe061b179316313a42badf1021c236eded4",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S04_SRT_P2_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S04_SRT_P2_Original.xlsx",
+   "bytes": 1525221,
+   "sha256": "738f9e69090a5dab800c76d1bd02e7e64b45018c1c37a2d5e80673c34e7aa5a1",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_NP1.xlsx",
+   "bytes": 2333023,
+   "sha256": "1ae6a1412cdd080496d4a810f9bdd2de48d541c59075729f69c9927453ae1e26",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_NP2.xlsx",
+   "bytes": 5491360,
+   "sha256": "03a3af67f45de1ce18353212a8ab438b0e462084944547b1c2320aa54d86e168",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_P1.xls",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_P1.xls",
+   "bytes": 296960,
+   "sha256": "26e1db861357a54e237ba6a113dd1c8e06a641b00ad7043bc597ada12e91263e",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_P1_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_P1_Original.xlsx",
+   "bytes": 2342873,
+   "sha256": "57299332ee546bfc627bfcede7d20fa5424db6fc14f9f9d4dbbd8c2d7ce1f7f5",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_P2.xls",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_P2.xls",
+   "bytes": 317440,
+   "sha256": "6e5b542ddeda96227308bf27ba71d268bd5c0109c5367ac5eed4f8f5d4361e19",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S05_SRT_P2_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S05_SRT_P2_Original.xlsx",
+   "bytes": 1371043,
+   "sha256": "da84decced912df67ec27f822f1928fdf76319090466f47a5c5f509ce5ad1530",
+   "fetched_utc": "2026-11-09T05:22:55Z"
+  },
+  {
+   "file": "S06_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_NP1.xlsx",
+   "bytes": 118518,
+   "sha256": "d6e8ffb6b31af0404aceeadbd447fdf1acf0f10215b822cd23edbd8ea790dcf2",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S06_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_NP2.xlsx",
+   "bytes": 1609485,
+   "sha256": "1a832cf1805f67694f1f3745247c4d0e72ecdeacb7cd072593f6998a7a12fab7",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S06_SRT_P1.xls",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_P1.xls",
+   "bytes": 422400,
+   "sha256": "8c65449729ffbc9704da3cf9b832c05827e3b021058752b07c9b5d7b0df60c71",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S06_SRT_P1_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_P1_Original.xlsx",
+   "bytes": 1610044,
+   "sha256": "7ff64374bd596a8d1d2b2f75dcb3ded9671cf562882400f46a3ed8e8724d8171",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S06_SRT_P2.xls",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_P2.xls",
+   "bytes": 390656,
+   "sha256": "83a7d226f757c5ae782498985e146c46292a6704a60bba50ea6611353d69479e",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S06_SRT_P2_Original.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S06_SRT_P2_Original.xlsx",
+   "bytes": 2310541,
+   "sha256": "27730f679102435a52be45ef4e974a36e692643d4c55bf04433264b7d140261a",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S08_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S08_SRT_NP1.xlsx",
+   "bytes": 1622153,
+   "sha256": "9773dc5a0bcc07c47e931b0387afe5451afca9c9cc4db8b541f304861b5dfcd6",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S08_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S08_SRT_NP2.xlsx",
+   "bytes": 1576946,
+   "sha256": "f24770f59e380d5cc1e6fba6ed50a969b251db49d2ada4bb0587a0840f5d16f9",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S08_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S08_SRT_P1.xlsx",
+   "bytes": 1139027,
+   "sha256": "c9d065c1710a0089c879a7a9435c335fb9efcff493d3d493d53cbea9309694a1",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S08_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S08_SRT_P2.xlsx",
+   "bytes": 1695817,
+   "sha256": "a3c4bf72eff4bf417c504a10983d224ab46ee1aa791b6f3557d2c97faafa305a",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S12_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S12_SRT_NP1.xlsx",
+   "bytes": 1914203,
+   "sha256": "f267c6599fef39ef988a894f232ac170086926a4d354d0e491f81a5536f055bc",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S12_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S12_SRT_NP2.xlsx",
+   "bytes": 1836389,
+   "sha256": "d2dd8bbc378235aac8f9a13476bd7cc91b2533d936d314e90ed416430bdefef4",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S12_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S12_SRT_P1.xlsx",
+   "bytes": 1909124,
+   "sha256": "19f2d6e2b2cc9eed861fff49c36dc05a7a7c7d28db01647ab3dc043000c369a0",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S12_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S12_SRT_P2.xlsx",
+   "bytes": 1818030,
+   "sha256": "c62da1f0f8c5311d2b60d129ce752a52c252354e1ae2af5384c0f84e3e2fcebe",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S16_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S16_SRT_NP1.xlsx",
+   "bytes": 1546831,
+   "sha256": "7b45b5bd1864c5f88808985aedba940ed11409d113983c2cbc20ebce4fe2d066",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S16_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S16_SRT_NP2.xlsx",
+   "bytes": 1552858,
+   "sha256": "78ea430c53cf4fff832d29de3cd7ac99a0319c735331b6e04078678bcbe04546",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S16_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S16_SRT_P1.xlsx",
+   "bytes": 1188739,
+   "sha256": "8ffe83b5c9e56ba731c9e67c4442d22ae6075480e52f0e4367ca2f8cc72ca8c8",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S16_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S16_SRT_P2.xlsx",
+   "bytes": 1905431,
+   "sha256": "cd9ed4715d72778576e11dd4a7f3769b4fe736182fdee9865c09a08e32fb3572",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S17_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S17_SRT_NP1.xlsx",
+   "bytes": 1206157,
+   "sha256": "ca8da7cea0601b60077690d025c5a6d41dd93f04c2cfee55700ca7e3217cd342",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S17_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S17_SRT_NP2.xlsx",
+   "bytes": 1116625,
+   "sha256": "22c714f4df40e376728ae394e1f17439fc7974678164950706bc80269fc1a6ce",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S17_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S17_SRT_P1.xlsx",
+   "bytes": 1438161,
+   "sha256": "38a822e4d20b983f5d2cd627300a0a00df82b3fb374391b0fc6647b4761e8197",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S17_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S17_SRT_P2.xlsx",
+   "bytes": 1874639,
+   "sha256": "bb3bd5d99dc0c256f7ec47b95b2ffa9fe5efc4a3936ecfd6d4ee7cdda0ff3a4f",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S18_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S18_SRT_NP1.xlsx",
+   "bytes": 1523957,
+   "sha256": "597b185f25cf5a03c8391aefeff9aa7810829118e9388e17ef5bbbd6f4985548",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S18_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S18_SRT_NP2.xlsx",
+   "bytes": 1071317,
+   "sha256": "0975e9bcd8afacd94e2fafb535856af3777d1ca3bd211d967084ec2e8c343887",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S18_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S18_SRT_P1.xlsx",
+   "bytes": 1612643,
+   "sha256": "8c1d13470e720bc7ad3b86e3b78d9e1ef2646fd43240fee2976ff6cf12bb2390",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S18_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S18_SRT_P2.xlsx",
+   "bytes": 2199959,
+   "sha256": "c5be05840da674af967e7b4454fa0ecb9dd47bc6be1851ddad5a154d8241b3c6",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S21_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S21_SRT_NP1.xlsx",
+   "bytes": 1600564,
+   "sha256": "39161fa2e65dea5857a986e50bfada1910d07a1b960899ebaa9a2dd728fdb600",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S21_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S21_SRT_NP2.xlsx",
+   "bytes": 1459722,
+   "sha256": "c34a4693e9ec0875f4907be179ff4962eaa59637a901b20cb3eb3e8a7261b927",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S21_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S21_SRT_P1.xlsx",
+   "bytes": 2257820,
+   "sha256": "b188829f1f348b4c44a62d2dbd1e0b88c97157ec830af61f5e33301ee94a151b",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S21_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S21_SRT_P2.xlsx",
+   "bytes": 1670704,
+   "sha256": "c3df8397f2a2fdd15b8961d8b67e7650935601726fac06d8608ac87c1e90b98b",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S24_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S24_SRT_NP1.xlsx",
+   "bytes": 1452855,
+   "sha256": "5be0899b2a0b8a9baa3a64371dcf0a89f4230624eaca01f4879a6a213f681db5",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S24_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S24_SRT_NP2.xlsx",
+   "bytes": 1498755,
+   "sha256": "e35afba435527a9c6c54f6a57264fabc86b4594e0a0d3ec39ec91df5ab1aa672",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S24_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S24_SRT_P1.xlsx",
+   "bytes": 1450916,
+   "sha256": "defa19ac5e36b9116d6de955e33fe7703bb27c0866995cd9d9a3fb6e9b1288a9",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S24_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S24_SRT_P2.xlsx",
+   "bytes": 1400687,
+   "sha256": "559772447ae080bf3bee728d67d09a039654199d7c0d45b3853c73bc7ac60fce",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S27_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S27_SRT_NP1.xlsx",
+   "bytes": 2511825,
+   "sha256": "962d5277e0ff1a225cff44a530ca0cda309f547219daf355d700d47b5098755c",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S27_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S27_SRT_P1.xlsx",
+   "bytes": 3364408,
+   "sha256": "b5da660eefc5bc9dd8442ac76a5e553057fe2258b48ccd8cf1fb4eba8c634134",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S28_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S28_SRT_NP1.xlsx",
+   "bytes": 1661854,
+   "sha256": "20777d07ee832c438a38938df43a14a701a2aae7b3c93a9301a319d89dfa57fe",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S28_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S28_SRT_NP2.xlsx",
+   "bytes": 1484836,
+   "sha256": "7c9ab5ce89bd925c20ad80124b5eba17053c992d749fa7959d228d7edea12dec",
+   "fetched_utc": "2026-11-09T05:22:56Z"
+  },
+  {
+   "file": "S28_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S28_SRT_P1.xlsx",
+   "bytes": 1527173,
+   "sha256": "a0f03f7cdda5203b71e3741d06aed02a15afa75357dc02e15293f3607451de92",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S28_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S28_SRT_P2.xlsx",
+   "bytes": 1611161,
+   "sha256": "8315ee1e8c42dccb5be8ab5133e19d52edd66b0f60e5b2188e67f6e5ebf5bb47",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S29_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S29_SRT_NP1.xlsx",
+   "bytes": 1486752,
+   "sha256": "d9395574d9aaa75dda6fccbb8b97cfebfc9a619f54b227ef86427e096a5ec2cb",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S29_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S29_SRT_NP2.xlsx",
+   "bytes": 1504172,
+   "sha256": "2b8dfe95158920dce873b53ec0447ea811d4a67f1fe4d73b0d22137d35ac9f35",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S29_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S29_SRT_P1.xlsx",
+   "bytes": 1919685,
+   "sha256": "0742663d40ef4bc0ed8701f9bab73e09a5c10f54c0fb82b23e8ed5748352ea8e",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S29_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S29_SRT_P2.xlsx",
+   "bytes": 1664359,
+   "sha256": "015e95f929af45a1ee68ccdba716e201fba960e16ca205c5b7454ba9e9e816a5",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S30_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S30_SRT_NP1.xlsx",
+   "bytes": 1827259,
+   "sha256": "d3720d0cc305cce310268c64cf63a444cc84aa32130848654ca0f35d0896450b",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S30_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S30_SRT_NP2.xlsx",
+   "bytes": 1659890,
+   "sha256": "ec0b5affc337aafa53c1d72102b7dee2d565a8c1f22387792a12fbab057e627c",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S30_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S30_SRT_P1.xlsx",
+   "bytes": 3194873,
+   "sha256": "7acd7d67c439164bf50b6c5daf9493833d9be69af499cc95c4473d29f5d8a700",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S30_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S30_SRT_P2.xlsx",
+   "bytes": 1904737,
+   "sha256": "2b87b8082d8e6bf9bd31ccd1f9037fea4a4e6efb27802538fca09d4fc76d47a0",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S31_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S31_SRT_NP1.xlsx",
+   "bytes": 1522899,
+   "sha256": "68837ba0b6815f83b4301af3f90641dc0b510e0f6e5c9d542c9e97f9a9f13796",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S31_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S31_SRT_NP2.xlsx",
+   "bytes": 1545543,
+   "sha256": "2704af817e1acbc85186a1fa6fdf3ad57077e1025eb6d9ae9a7e01142d633cfc",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S31_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S31_SRT_P1.xlsx",
+   "bytes": 1736862,
+   "sha256": "91f693aa79ea952d8ba7ee10bb089fa4692038ec33c774ce038f75563e6b2ad3",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S31_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S31_SRT_P2.xlsx",
+   "bytes": 2374940,
+   "sha256": "1f6f465e4f27b995f53bf2342cf5f21532802f278d294d30a8377cf252c7a077",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S33_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S33_SRT_NP1.xlsx",
+   "bytes": 1756486,
+   "sha256": "8cc5aee630fb77ed23e7d57e146e8c7e89be76b2eb58e1f6ae13893d28813cb0",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S33_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S33_SRT_NP2.xlsx",
+   "bytes": 1749069,
+   "sha256": "e66b54224434c8797b74ce1410aa6bba3dc8b92b38e43d1186f87b31f4e75df4",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S33_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S33_SRT_P1.xlsx",
+   "bytes": 1697629,
+   "sha256": "e101c2636e86c13cf5fcc95f4c3a01db0ccd68cd11d16eb27d8d95d3acfe8673",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S33_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S33_SRT_P2.xlsx",
+   "bytes": 1672648,
+   "sha256": "dab9533157476105cdb922f7d1756b50c041f31e9236a114407e0583fa292d63",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S34_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S34_SRT_NP1.xlsx",
+   "bytes": 1540685,
+   "sha256": "53225c75f0a24c64b0b65f25c608bf0689e59e68ff64b0659ce85d42e8658e8a",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S34_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S34_SRT_NP2.xlsx",
+   "bytes": 1594349,
+   "sha256": "18c6d032e554432079e84c75f9ad9d584f05b2f0ca4882453537fe844368b993",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S34_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S34_SRT_P1.xlsx",
+   "bytes": 1771796,
+   "sha256": "1974776023d6a6605af86f14d7a557778e10d0784322cff225e129f7ded40b4f",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S34_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S34_SRT_P2.xlsx",
+   "bytes": 1603310,
+   "sha256": "ae71209577315b6966457578abc915c0acf597a3ebbfe7dd49cea7ed0465ec65",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S36_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S36_SRT_NP1.xlsx",
+   "bytes": 1506815,
+   "sha256": "5bc56c95d4f31ca5339890006c4214cb9bf87cc290f0406abb61c1c8401f0b21",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S36_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S36_SRT_NP2.xlsx",
+   "bytes": 1502250,
+   "sha256": "9c3838be50f3a78c93334d2ae9a0158ef3219379a986d55e3de3697e0573b078",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S36_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S36_SRT_P1.xlsx",
+   "bytes": 1617538,
+   "sha256": "dbd01dc4af0e3397f8ac51666ff9e3071a3ba3ada6a84114fa1d210a0b58447a",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S36_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S36_SRT_P2.xlsx",
+   "bytes": 1581764,
+   "sha256": "2c51f764aa86104724aadf15a7232008a8de7a4ec21cb952c60970922f6e9ef7",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S38_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S38_SRT_NP1.xlsx",
+   "bytes": 1530589,
+   "sha256": "fa92e7468062764c845c0c31c59327542a938b7153b058e6509eaed0d089f4f2",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S38_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S38_SRT_NP2.xlsx",
+   "bytes": 1468867,
+   "sha256": "2ebe90faca937b2a87e8086e917bb814f673a4b2a91fa69a176d1db61e15fe27",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S38_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S38_SRT_P1.xlsx",
+   "bytes": 1649298,
+   "sha256": "867be3abfd5556c13571688d382ce953dc6f09f3bf851011d4f8ee4ea453e08f",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S38_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S38_SRT_P2.xlsx",
+   "bytes": 1637475,
+   "sha256": "45bf05f3d85118c1f74c155c0f0c161d81e21fe81af38d62507728d0a8ac41dd",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S40_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S40_SRT_NP1.xlsx",
+   "bytes": 3278151,
+   "sha256": "5993eccc1e7b5e8042e8314320b06ed2fef03b51949271fb5ad825cd4d64f7f2",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S40_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S40_SRT_P1.xlsx",
+   "bytes": 3583486,
+   "sha256": "dc8ed214b522901908a42e2d45cdeabb2c12254ee8b88e79915c779b47cca53b",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S41_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S41_SRT_NP1.xlsx",
+   "bytes": 3341580,
+   "sha256": "f3c42fb7d464dd5decffae49a0bf92b10aee2d389a71a1bedbce73df88956c0f",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S41_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S41_SRT_P1.xlsx",
+   "bytes": 3418867,
+   "sha256": "5d4e854a0bd01c36268955d178d17a370462b1416a5d9205214adaffe24b469f",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S42_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S42_SRT_NP1.xlsx",
+   "bytes": 3410155,
+   "sha256": "41a1c0451b65d07292b3cf732724f0eaef82288ef843c7e2abbac095eca784ad",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S42_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S42_SRT_P1.xlsx",
+   "bytes": 3332097,
+   "sha256": "b9fc7187cd33f5c398bd1a7bbedc42150e52bdad99ae031d0690cede5a301815",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S46_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S46_SRT_NP1.xlsx",
+   "bytes": 1563862,
+   "sha256": "db7d35029d0a22bc06f76251b2e7ce3c9695344f2b2640ec981c9edad93d4525",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S46_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S46_SRT_NP2.xlsx",
+   "bytes": 1515993,
+   "sha256": "4ddf896659f1957c52ae981514b183d8dd743c18eac6e24041cb22ccea642dae",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S46_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S46_SRT_P1.xlsx",
+   "bytes": 1998507,
+   "sha256": "5cc32ff9b011d06f1b160201da29ee1329000fcf05bc33f225f88bbacd5b0258",
+   "fetched_utc": "2026-11-09T05:22:57Z"
+  },
+  {
+   "file": "S46_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S46_SRT_P2.xlsx",
+   "bytes": 2168389,
+   "sha256": "e665e71c55a0c20bebd111d649b241dc209d9a263b00c360e04ab2e16a3dc983",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S47_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S47_SRT_NP1.xlsx",
+   "bytes": 92062,
+   "sha256": "1f4bd2e06bc3bb379802a5dd5784a4ba4066616b62d905ecf92a4deaa24060b5",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S47_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S47_SRT_NP2.xlsx",
+   "bytes": 72367,
+   "sha256": "75dfb7fbd0d0e230b4ca05b82991af0c1bbff4ba40018525a252c09db773dd45",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S47_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S47_SRT_P1.xlsx",
+   "bytes": 1543664,
+   "sha256": "fb568099182567eae624c3a0bf1a88a21504d810c0c25dfabff9abd04f679ba7",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S47_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S47_SRT_P2.xlsx",
+   "bytes": 1548126,
+   "sha256": "5f4450d10f30d68e208e1d7f9f2ea24738f75dda7f84973e282abfa5c41f2981",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S48_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S48_SRT_NP1.xlsx",
+   "bytes": 1674414,
+   "sha256": "234fd1fc04618a64121097d6fea348e641ae3bd3c5018eb1d3b0ac4002af9fe5",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S48_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S48_SRT_NP2.xlsx",
+   "bytes": 1473031,
+   "sha256": "a7bfbd0f75e53d58701a5cc7eaae9fb3cb5b3bcdd221d99a8941ec58e1cd70ee",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S48_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S48_SRT_P1.xlsx",
+   "bytes": 1723039,
+   "sha256": "27b5cb1ec6d40740a633214f216becb5e6fb6c67e89faf427f3d5a536f52063a",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S48_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S48_SRT_P2.xlsx",
+   "bytes": 1610057,
+   "sha256": "7823ad485e2da9a34fd7ae549d1c4ed8a3676479daf013900084820c372d98de",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S51_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S51_SRT_NP1.xlsx",
+   "bytes": 1826205,
+   "sha256": "b8aa8671e2a960b91d399ea99a5d1c59093e89e5a46f5ccc3f3e82c3454b7e33",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S51_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S51_SRT_NP2.xlsx",
+   "bytes": 1661959,
+   "sha256": "94e8bf2aef50329eccb0abedd35015a1c7dfcfe58237c89518c83f048be2b70f",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S51_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S51_SRT_P1.xlsx",
+   "bytes": 2203983,
+   "sha256": "ba26ce4bd6bb189ef33ec9cf0bcc70472ac7d63c68a27717825fd38765bdbf67",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S51_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S51_SRT_P2.xlsx",
+   "bytes": 2032625,
+   "sha256": "b432b426e7dbb2ff5d3c681c900f03e45c86673384ade339d60dddb76083a4b1",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S53_SRT_NP1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S53_SRT_NP1.xlsx",
+   "bytes": 1654035,
+   "sha256": "c6271014d6163fceae152d5ce453159893031939a8a3722fe33586f8d5724328",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S53_SRT_NP2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S53_SRT_NP2.xlsx",
+   "bytes": 1631627,
+   "sha256": "451264a2ac433bd7418e8fd90e062f11ea03a419305d2d1add2c1aa21a235223",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S53_SRT_P1.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S53_SRT_P1.xlsx",
+   "bytes": 2393372,
+   "sha256": "933a419f53abf1b41e3e428c8e54eefe96cfabf42450844976ec4674e1c41bde",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  },
+  {
+   "file": "S53_SRT_P2.xlsx",
+   "url": "https://zenodo.org/records/7587404/files/S53_SRT_P2.xlsx",
+   "bytes": 3010043,
+   "sha256": "028d0fae585c10ba4f3172d8ec0ff3de3f0c67e3e027f14a97a30fce45110d49",
+   "fetched_utc": "2026-11-09T05:22:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zaidi2023_PeerJ.zip"
+}

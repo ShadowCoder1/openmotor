@@ -1,0 +1,117 @@
+{
+ "id": "Killeen2017_RSOS",
+ "module": "summary",
+ "rows": 37375,
+ "subjects": 121,
+ "persons": 121,
+ "zip_bytes": 767386,
+ "zip_sha256": "541f995a639e370d616574933727ac82a2cb4bf8478b67921cd570e0b9095f8f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "363 rows, 121 participants x 3 conditions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "volunteers after medical screening (145 - 24)",
+   "computed": 121.0,
+   "reported": 121.0,
+   "tol": 0,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded for baseline arm swing asymmetry (8 + 28)",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "included aged 18-39",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Results / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "included aged 60-80",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Results / Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age 18-39 (years)",
+   "computed": 28.64516129032258,
+   "reported": 28.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age 60-80 (years)",
+   "computed": 67.79310344827586,
+   "reported": 67.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age 18-39 (years)",
+   "computed": 4.854883363492709,
+   "reported": 4.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age 60-80 (years)",
+   "computed": 4.522793940102793,
+   "reported": 4.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty numeric cell kept",
+   "ok": true,
+   "detail": "37375"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper includes 83 participants (23 aged 40-59); the spreadsheet has 85 unflagged participants (25 aged 40-59) because the 2 participants with unusable data (Results) are not marked.",
+  "Mean baseline ASI of the whole cohort is 6.16 in the paper; the spreadsheet gives 6.09 for the 121 participants (not used as a check)."
+ ],
+ "sources": [
+  {
+   "file": "final_for_dryad.xls",
+   "url": "https://zenodo.org/api/records/4977170/files/final_for_dryad.xls/content",
+   "bytes": 745472,
+   "sha256": "741e8b787acd6a7883284f86700bd5d1ceeca6b3a03800bd5da3c09fbf488958",
+   "fetched_utc": "2026-11-09T15:35:49Z"
+  },
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/4977170/files/README_for_final_for_dryad.txt/content",
+   "bytes": 3531,
+   "sha256": "537f1138f9019c7012ff7257bdd94ded6c5b82d0f2c8118e013949e8a2b1a9e7",
+   "fetched_utc": "2026-11-09T15:35:57Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Killeen2017_RSOS.zip"
+}

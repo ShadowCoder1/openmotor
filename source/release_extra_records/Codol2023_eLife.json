@@ -1,0 +1,739 @@
+{
+ "id": "Codol2023_eLife",
+ "module": "feedback_perturbed_reach_reward",
+ "rows": 18824,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 237766,
+ "zip_sha256": "0dfedc9f5c1827238e17c8b0585a41461fb9d262113c6df0ea40140d10eac5d9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every file's performance measure is movement time (MT)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant files read: 16 In-Out, 15 cursor jump, 14 target jump, 13 target selection, 17 reaction time",
+   "ok": true,
+   "detail": "{'cjump': 15, 'reflx': 16, 'rtime': 17, 'tarsw': 13, 'tjump': 14}"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing movement times",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon W of the reward effect on movement time, In-Out target (SLR contrast)",
+   "computed": 136.0,
+   "reported": 136.0,
+   "tol": 0.01,
+   "source": "Results (Wilcoxon signed-rank W as printed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon W of the reward effect on movement time, In-Out target (LLR contrast)",
+   "computed": 131.0,
+   "reported": 131.0,
+   "tol": 0.01,
+   "source": "Results (Wilcoxon signed-rank W as printed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon W of the reward effect on movement time, Proprioception-cued RT",
+   "computed": 153.0,
+   "reported": 153.0,
+   "tol": 0.01,
+   "source": "Results (Wilcoxon signed-rank W as printed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon W of the reward effect on movement time, Cursor jump",
+   "computed": 108.0,
+   "reported": 108.0,
+   "tol": 0.01,
+   "source": "Results (Wilcoxon signed-rank W as printed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon W of the reward effect on movement time, Target jump",
+   "computed": 103.0,
+   "reported": 103.0,
+   "tol": 0.01,
+   "source": "Results (Wilcoxon signed-rank W as printed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, In-Out target (SLR and LLR)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Cursor jump",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Target jump",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Proprioception-cued reaction time",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant, proprioception-cued RT (27 epochs of 4)",
+   "computed": 108.0,
+   "reported": 108.0,
+   "tol": 0,
+   "source": "Methods, Proprioception-cued RT",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant, In-Out target",
+   "computed": 336.0,
+   "reported": 336.0,
+   "tol": 0,
+   "source": "Methods, In-Out Target",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant, target selection",
+   "computed": 224.0,
+   "reported": 224.0,
+   "tol": 0,
+   "source": "Methods, Target Selection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum return g for rewarded trials in the cursor jump experiment, cents",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Reward",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum return g for rewarded trials in the In-Out experiment, cents",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Reward",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Wilcoxon W of the reward effect on movement time, Target selection: 84 here, 92 in the paper",
+  "Target selection: the paper has 14 participants, the deposit 13 files",
+  "cursor and target jump: the paper has 312 trials per participant, the deposit files hold 300",
+  "The paper's choice reaction-time experiment (60 participants) re-analyses Codol et al. 2020 and is not part of this release."
+ ],
+ "sources": [
+  {
+   "file": "RP_Trial.mat",
+   "url": "https://osf.io/download/6qdfp/",
+   "bytes": 266702,
+   "sha256": "ad03ae395bbf53d8b43837652a9deb89d49a30ac2e720e1f66dc4f20cd4f74f9",
+   "fetched_utc": "2026-11-09T09:54:13Z"
+  },
+  {
+   "file": "R_Trial.mat",
+   "url": "https://osf.io/download/yga2u/",
+   "bytes": 199553,
+   "sha256": "c2ca4e2d6f8413322a61928178ef659d73e2efb3182a88e7d6e1208261885735",
+   "fetched_utc": "2026-11-09T09:54:20Z"
+  },
+  {
+   "file": "full_analysis.m",
+   "url": "https://osf.io/download/y7qcv/",
+   "bytes": 8949,
+   "sha256": "21d5fb1e49e03ced936de01875224cadf36c6ff46d1ebb5528243ea73b7562ca",
+   "fetched_utc": "2026-11-09T09:54:24Z"
+  },
+  {
+   "file": "loadData.m",
+   "url": "https://osf.io/download/7q2hy/",
+   "bytes": 694,
+   "sha256": "877bc561f9f840061d20eb0a7a0d2727939ef2ae9e541ec876807651ffcd537d",
+   "fetched_utc": "2026-11-09T09:54:40Z"
+  },
+  {
+   "file": "loadChoiceRT.m",
+   "url": "https://osf.io/download/63b4a4d00b719806517c2a2a/",
+   "bytes": 665,
+   "sha256": "9bc9074d7c8060203c88c6682149a72f2e15e101266c2d07c6d66459747c80b1",
+   "fetched_utc": "2026-11-09T09:54:45Z"
+  },
+  {
+   "file": "computePerformance.m",
+   "url": "https://osf.io/download/63b4a4d8c8da8606bfdf2722/",
+   "bytes": 706,
+   "sha256": "36f3dc0d8c080c3094cedbbc3c692aacb8477550f59d5ffb72f8ab77bab73e1a",
+   "fetched_utc": "2026-11-09T09:54:50Z"
+  },
+  {
+   "file": "wilcoxon.m",
+   "url": "https://osf.io/download/63b4a4d3c8da8606fedf17ee/",
+   "bytes": 555,
+   "sha256": "f53028b64daa374a221792ab21267fb51a052c582f85033ab05b06823727cace",
+   "fetched_utc": "2026-11-09T09:59:29Z"
+  },
+  {
+   "file": "cjump_7.mat",
+   "url": "https://osf.io/download/63b4a5673312f1073d6890a3/",
+   "bytes": 106157744,
+   "sha256": "8d589412268bf293c8d7389ce1aaa576642e40deb69a1c1b1e62730a65efeafd",
+   "fetched_utc": "2026-11-09T10:00:28Z"
+  },
+  {
+   "file": "cjump_6.mat",
+   "url": "https://osf.io/download/63b4a5c3e48ccc092e4fc808/",
+   "bytes": 112728018,
+   "sha256": "d83fdaea4750616e6242e597f76cd0d8cf6d925b01565f5f93302a6176ae5e27",
+   "fetched_utc": "2026-11-09T10:00:55Z"
+  },
+  {
+   "file": "cjump_8.mat",
+   "url": "https://osf.io/download/63b4a6200b719806507c2af9/",
+   "bytes": 103971124,
+   "sha256": "5459cc6426c2a743cde3ef47c86699c357509e3eec0ed50ec5ffc8524a865db9",
+   "fetched_utc": "2026-11-09T10:01:18Z"
+  },
+  {
+   "file": "cjump_12.mat",
+   "url": "https://osf.io/download/63b4a6850b7198064b7c3b74/",
+   "bytes": 96232054,
+   "sha256": "b0abf02370c6679148f881d8583635568e31e95341e59d3adf945278d07c7524",
+   "fetched_utc": "2026-11-09T10:01:37Z"
+  },
+  {
+   "file": "cjump_13.mat",
+   "url": "https://osf.io/download/63b4a6e6202f170839a6c224/",
+   "bytes": 100186596,
+   "sha256": "9746a9ac5f7e04703fb0e5a395ee53b08497159e2c4c3ba0ff94df1152ce0eb5",
+   "fetched_utc": "2026-11-09T10:01:59Z"
+  },
+  {
+   "file": "cjump_14.mat",
+   "url": "https://osf.io/download/63b4a757202f170839a6c279/",
+   "bytes": 112702181,
+   "sha256": "45d2372f1b14705734aa443ea1e7b46b856ef1e90a7e33cbfd02f53017b2329d",
+   "fetched_utc": "2026-11-09T10:02:16Z"
+  },
+  {
+   "file": "cjump_15.mat",
+   "url": "https://osf.io/download/63b4a7c7c8da8606fedf1c97/",
+   "bytes": 114972923,
+   "sha256": "bc8fac815847b953306480e53a35437106dec6cc4740b40ffa989cd620deba91",
+   "fetched_utc": "2026-11-09T10:02:33Z"
+  },
+  {
+   "file": "cjump_1.mat",
+   "url": "https://osf.io/download/63b4a8210b719806517c2f6b/",
+   "bytes": 85308656,
+   "sha256": "50ca40c31c15473ee008697df6f83ac1c2d76e823cfa3d16c63f08b6d44aa148",
+   "fetched_utc": "2026-11-09T10:03:03Z"
+  },
+  {
+   "file": "cjump_2.mat",
+   "url": "https://osf.io/download/63b4a8843312f1073d6895e9/",
+   "bytes": 102777958,
+   "sha256": "866ae6228bce98214cb7f14db0acb08821d1574adc6f1a279f9a4edc7a37d99d",
+   "fetched_utc": "2026-11-09T10:03:27Z"
+  },
+  {
+   "file": "cjump_3.mat",
+   "url": "https://osf.io/download/63b4a8fbc8da8606fedf1e84/",
+   "bytes": 113873337,
+   "sha256": "5e6534833e4b6c00942fb83ddbb9f999f63cbd10ce1392dac8bb9d23ba5753b4",
+   "fetched_utc": "2026-11-09T10:03:48Z"
+  },
+  {
+   "file": "cjump_4.mat",
+   "url": "https://osf.io/download/63b4a98d202f170840a6bca9/",
+   "bytes": 139841885,
+   "sha256": "9458e479fd457cad50de21ebd516b2e1ab6ae41694341568ad840ddc96940317",
+   "fetched_utc": "2026-11-09T10:04:20Z"
+  },
+  {
+   "file": "cjump_5.mat",
+   "url": "https://osf.io/download/63b4a9fa3312f1073d68982a/",
+   "bytes": 107195657,
+   "sha256": "4d804cf461bea22485602c1367c199e580a87dbde904a79380203392eede609b",
+   "fetched_utc": "2026-11-09T10:04:41Z"
+  },
+  {
+   "file": "cjump_11.mat",
+   "url": "https://osf.io/download/63b5ba1f3312f107f368874a/",
+   "bytes": 114303764,
+   "sha256": "294f40a7543f35983f47135c2e82566771e461d5887b6cdc09c64630bb47c914",
+   "fetched_utc": "2026-11-09T10:04:57Z"
+  },
+  {
+   "file": "cjump_9.mat",
+   "url": "https://osf.io/download/63b5ba4fc8da8607aadf21b9/",
+   "bytes": 93460928,
+   "sha256": "7a36c2ae3f98cf90f92257e485dc301166829b57f6c13a91ab1e0ae04a3ba71b",
+   "fetched_utc": "2026-11-09T10:05:22Z"
+  },
+  {
+   "file": "cjump_10.mat",
+   "url": "https://osf.io/download/63b5ba880b7198071b7c45a9/",
+   "bytes": 106759289,
+   "sha256": "6383ac2506c2758899db2ddce08b1bbd90199ed9fa2366ea69e5b7040d322fdd",
+   "fetched_utc": "2026-11-09T10:05:42Z"
+  },
+  {
+   "file": "reflx_8.mat",
+   "url": "https://osf.io/download/63b4c261c8da8606f1df3678/",
+   "bytes": 168890414,
+   "sha256": "e9beb29b4beaf690ec739651c0b17a8d334475b27e90be24ca480ad1d96d9cee",
+   "fetched_utc": "2026-11-09T10:06:16Z"
+  },
+  {
+   "file": "reflx_10.mat",
+   "url": "https://osf.io/download/esn9f/",
+   "bytes": 176435167,
+   "sha256": "d866e964e3c079def5f82283b8f08e45049b4571475bc8b070f67cfbdae7351e",
+   "fetched_utc": "2026-11-09T10:06:44Z"
+  },
+  {
+   "file": "reflx_11.mat",
+   "url": "https://osf.io/download/63b4c35d0b719806567c3791/",
+   "bytes": 177674676,
+   "sha256": "7b28faac7c04c646b9c0907c4d6d7aeecb331d05a686bbfb7b2d67fb83aa24b2",
+   "fetched_utc": "2026-11-09T10:07:11Z"
+  },
+  {
+   "file": "reflx_14.mat",
+   "url": "https://osf.io/download/63b4c410202f170855a6b26a/",
+   "bytes": 181531385,
+   "sha256": "29d46273c0e8f92703821be9e86a012a19cd783c22b7c4aac7c3ba94622f3315",
+   "fetched_utc": "2026-11-09T10:07:46Z"
+  },
+  {
+   "file": "reflx_15.mat",
+   "url": "https://osf.io/download/63b4c4ed3312f107446895a5/",
+   "bytes": 249097619,
+   "sha256": "5fe0d47bc6130c5ab4e9430cd8faa5f74da577f10e73ed5bab288eb0193da6d0",
+   "fetched_utc": "2026-11-09T10:08:22Z"
+  },
+  {
+   "file": "reflx_16.mat",
+   "url": "https://osf.io/download/63b4c5880b7198064b7c4ce9/",
+   "bytes": 174944948,
+   "sha256": "47f5d0324c8353ffac33abb3d662b78e727b3ad6450ac7a9b328565e2d2630fd",
+   "fetched_utc": "2026-11-09T10:08:54Z"
+  },
+  {
+   "file": "reflx_2.mat",
+   "url": "https://osf.io/download/63b4c6e2202f170855a6b650/",
+   "bytes": 243049842,
+   "sha256": "4c9759de9cbd30ba59ccd8223ef8a708ad6ddb5ab20000bcc27aa72c0902f470",
+   "fetched_utc": "2026-11-09T10:09:28Z"
+  },
+  {
+   "file": "reflx_3.mat",
+   "url": "https://osf.io/download/63b4c780202f170850a6b69c/",
+   "bytes": 183908677,
+   "sha256": "6ff21e7c2cbf6bf47d60a36b0ef5c0aabfc015f0fe198b423ddfaedc7c5460fa",
+   "fetched_utc": "2026-11-09T10:09:58Z"
+  },
+  {
+   "file": "reflx_4.mat",
+   "url": "https://osf.io/download/63b4c83a0b719806507c4c7a/",
+   "bytes": 191382027,
+   "sha256": "1c3edebc9dcf9d9d3edd8dd5ca7964b11da2f69d9d75721f0eea0533ca631e18",
+   "fetched_utc": "2026-11-09T10:10:28Z"
+  },
+  {
+   "file": "tarsw_9.mat",
+   "url": "https://osf.io/download/85euq/",
+   "bytes": 130461759,
+   "sha256": "a1d04558f71659d3d8a1c8d01a489686fdedfe61c3651c724ff88ebb4ccf41a2",
+   "fetched_utc": "2026-11-09T10:10:30Z"
+  },
+  {
+   "file": "reflx_5.mat",
+   "url": "https://osf.io/download/63b4c8dc202f170855a6b99e/",
+   "bytes": 168657907,
+   "sha256": "eb4dae6fd6662060948ffb9c816128128a9ae9dd8f67205b0f50ef9cdcc5cbb2",
+   "fetched_utc": "2026-11-09T10:11:17Z"
+  },
+  {
+   "file": "tarsw_13.mat",
+   "url": "https://osf.io/download/a6wdv/",
+   "bytes": 104725410,
+   "sha256": "030fa3604a76d0f9fd1b994fe246b43a39884ad5d0d7468bfb07c5351b84c01b",
+   "fetched_utc": "2026-11-09T10:11:36Z"
+  },
+  {
+   "file": "tarsw_8.mat",
+   "url": "https://osf.io/download/63b4dcb0c8da86070bdf27ad/",
+   "bytes": 131984826,
+   "sha256": "e1869744efd6de0a61eb62dc6b0160a460a961f0908f1df844e85f1446b335fa",
+   "fetched_utc": "2026-11-09T10:12:38Z"
+  },
+  {
+   "file": "reflx_6.mat",
+   "url": "https://osf.io/download/63b4c97de48ccc09344fe0ed/",
+   "bytes": 194376689,
+   "sha256": "ea2ef1fe6c8abbe7dfe06e7ba29249971c1217fc578fa5642c5ec0f465a53329",
+   "fetched_utc": "2026-11-09T10:12:54Z"
+  },
+  {
+   "file": "tarsw_7.mat",
+   "url": "https://osf.io/download/63b4dc500b719806627c2c5e/",
+   "bytes": 115705959,
+   "sha256": "ad8c3fb440ef14dd94d11eca5f54e81b1b31f6db6a488948b7e9d1777de0bcf7",
+   "fetched_utc": "2026-11-09T10:13:04Z"
+  },
+  {
+   "file": "tarsw_6.mat",
+   "url": "https://osf.io/download/63b4dc050b7198065a7c459a/",
+   "bytes": 137398489,
+   "sha256": "e59d903e39ba308ba27b2bd32b3c6f251f7ef9354c361cee930665be389154da",
+   "fetched_utc": "2026-11-09T10:13:34Z"
+  },
+  {
+   "file": "reflx_7.mat",
+   "url": "https://osf.io/download/63b4ca4e3312f1074c688ce8/",
+   "bytes": 231873836,
+   "sha256": "67b3642958331bfdc76e252b7227ecd6fab22f0ae5a9a626a3fe8334dec860b2",
+   "fetched_utc": "2026-11-09T10:13:51Z"
+  },
+  {
+   "file": "tarsw_5.mat",
+   "url": "https://osf.io/download/63b4db9fe48ccc09464fc76b/",
+   "bytes": 112313317,
+   "sha256": "1ff4b0716bfbde725c9df730c59b50c72f156ffef558d46d626b93e2d8f1230d",
+   "fetched_utc": "2026-11-09T10:13:55Z"
+  },
+  {
+   "file": "tarsw_4.mat",
+   "url": "https://osf.io/download/63b4db55c8da8606bfdf3045/",
+   "bytes": 108711813,
+   "sha256": "f8d4a47e751ab3675e418da7c36589d4a43d53b5716129ce5ecb0b7bfb92baf7",
+   "fetched_utc": "2026-11-09T10:14:27Z"
+  },
+  {
+   "file": "reflx_13.mat",
+   "url": "https://osf.io/download/63b5bb49c8da860774df1fc8/",
+   "bytes": 163281877,
+   "sha256": "e8ecb93f8d18b04c1a9b73f10da681abffb8d0a7d78df19616c07a77052ce290",
+   "fetched_utc": "2026-11-09T10:14:43Z"
+  },
+  {
+   "file": "tarsw_3.mat",
+   "url": "https://osf.io/download/63b4db01e48ccc094a4fc896/",
+   "bytes": 104284659,
+   "sha256": "fe3231bac199ec62c1a48d689e1402e2dc2f5b1f0eb6945253bf714b61eb33a0",
+   "fetched_utc": "2026-11-09T10:14:50Z"
+  },
+  {
+   "file": "reflx_12.mat",
+   "url": "https://osf.io/download/63b5bc17c8da8607addf26fb/",
+   "bytes": 211177269,
+   "sha256": "7832231a738c5c9941ddc72749d7e94efe1c5aea734d8cac607dd7ffdcc92586",
+   "fetched_utc": "2026-11-09T10:15:16Z"
+  },
+  {
+   "file": "tarsw_2.mat",
+   "url": "https://osf.io/download/63b4dab8e48ccc094a4fc7f7/",
+   "bytes": 145614490,
+   "sha256": "18daa46b3b83fc79388d879c38eb03ec241da9a2b6a65c89f342352bbf94f82d",
+   "fetched_utc": "2026-11-09T10:15:39Z"
+  },
+  {
+   "file": "reflx_9.mat",
+   "url": "https://osf.io/download/63b5bc71e48ccc09fa4fdec2/",
+   "bytes": 180474463,
+   "sha256": "eedd5849ed6da446208f42f6c4fa0713845be007e04e97832926ad639c9b786b",
+   "fetched_utc": "2026-11-09T10:15:57Z"
+  },
+  {
+   "file": "tarsw_1.mat",
+   "url": "https://osf.io/download/63b4da48e48ccc09464fc5b7/",
+   "bytes": 112208449,
+   "sha256": "0510a761b0ba5340efc39a78aee1931b969b100b489fc024c8fa7819cbddbdf1",
+   "fetched_utc": "2026-11-09T10:16:05Z"
+  },
+  {
+   "file": "tarsw_14.mat",
+   "url": "https://osf.io/download/63b4d9f4c8da860713df2f17/",
+   "bytes": 108674814,
+   "sha256": "08ceac8acb4e8e5825da9afb3b57ded9d85cc2d3cd0d040fb2efc6c6bff72b04",
+   "fetched_utc": "2026-11-09T10:16:30Z"
+  },
+  {
+   "file": "reflx_1.mat",
+   "url": "https://osf.io/download/zepx4/",
+   "bytes": 174619053,
+   "sha256": "757bc808e38a77c7d977c9c59704cc39c72b93ce7368b7b7255eca1214a09ef6",
+   "fetched_utc": "2026-11-09T10:16:31Z"
+  },
+  {
+   "file": "rtime_11.mat",
+   "url": "https://osf.io/download/63b4ca79e48ccc09344fe1cc/",
+   "bytes": 53598359,
+   "sha256": "0a15eb8fd03c6280f78b70b8899f18a0a52546e009b5bb4a91d8e0e5f82d65fa",
+   "fetched_utc": "2026-11-09T10:16:48Z"
+  },
+  {
+   "file": "tarsw_11.mat",
+   "url": "https://osf.io/download/63b4d9a90b719806567c4db3/",
+   "bytes": 129555181,
+   "sha256": "7ddadfc8d6387aa1f1a02356fc41c6049376dc6272b28086a41e69d356f0705e",
+   "fetched_utc": "2026-11-09T10:16:58Z"
+  },
+  {
+   "file": "rtime_10.mat",
+   "url": "https://osf.io/download/63b4caa6e48ccc093e4fd1ae/",
+   "bytes": 55424896,
+   "sha256": "ffe6b6c5fd67a7bb2cdba69442a523b73109fb996cce76b67ee2cb71bff80a8c",
+   "fetched_utc": "2026-11-09T10:17:08Z"
+  },
+  {
+   "file": "rtime_12.mat",
+   "url": "https://osf.io/download/63b4cadec8da860701df3a48/",
+   "bytes": 60561854,
+   "sha256": "f9f3655c3f5866a145aed804faf3d820547ef6f5e1cff6c6e5bd69294051adf1",
+   "fetched_utc": "2026-11-09T10:17:27Z"
+  },
+  {
+   "file": "tarsw_12.mat",
+   "url": "https://osf.io/download/63b4d9590b7198065e7c4a32/",
+   "bytes": 125243709,
+   "sha256": "c88169607384556ddc99006e6c514cd93241b6aafe8e0d8719e1295bfa0e7f93",
+   "fetched_utc": "2026-11-09T10:17:27Z"
+  },
+  {
+   "file": "rtime_13.mat",
+   "url": "https://osf.io/download/63b4cb123312f1074c688e83/",
+   "bytes": 62486795,
+   "sha256": "ece36893bf591137a4430b23c6e2def17c9126533e8666e6f4a0213cec187f0b",
+   "fetched_utc": "2026-11-09T10:17:52Z"
+  },
+  {
+   "file": "rtime_14.mat",
+   "url": "https://osf.io/download/63b4cb343312f10744689a4a/",
+   "bytes": 48119195,
+   "sha256": "be5e54c8577468bc8e3d189a4d330e7bb98181765a06659968155301eef86615",
+   "fetched_utc": "2026-11-09T10:18:06Z"
+  },
+  {
+   "file": "tjump_7.mat",
+   "url": "https://osf.io/download/m46yk/",
+   "bytes": 96371186,
+   "sha256": "5fb4850efa3988a78d8d92e193c7992e6ce834809b356581a65d665f4d24cf58",
+   "fetched_utc": "2026-11-09T10:18:17Z"
+  },
+  {
+   "file": "rtime_15.mat",
+   "url": "https://osf.io/download/63b4cb603312f10748688d2c/",
+   "bytes": 55678948,
+   "sha256": "c5ef6de8c19b07812d4b89d257ed36c0d34d59e7315354fb4f8b34ecf9b03c68",
+   "fetched_utc": "2026-11-09T10:18:20Z"
+  },
+  {
+   "file": "tjump_8.mat",
+   "url": "https://osf.io/download/6svzd/",
+   "bytes": 102732126,
+   "sha256": "2267fab968dfd31f43df35b60a9026c2554dbee86cdb3b5e53193eb0b532210b",
+   "fetched_utc": "2026-11-09T10:18:38Z"
+  },
+  {
+   "file": "rtime_16.mat",
+   "url": "https://osf.io/download/63b4cb92202f170855a6bf02/",
+   "bytes": 51115951,
+   "sha256": "48467086a59ab0ec84fa90ad0fa42aa57f1d66370302997bf8942c518c7643a0",
+   "fetched_utc": "2026-11-09T10:18:45Z"
+  },
+  {
+   "file": "rtime_17.mat",
+   "url": "https://osf.io/download/63b4cbc60b7198065e7c2d19/",
+   "bytes": 53627967,
+   "sha256": "95e8b3d41f81d4aec2e9d7b909b5c9f10dd0446b196f711c0f6c0f03dde04e2e",
+   "fetched_utc": "2026-11-09T10:19:05Z"
+  },
+  {
+   "file": "tjump_5.mat",
+   "url": "https://osf.io/download/63b52291202f17087ba6bcf0/",
+   "bytes": 103138512,
+   "sha256": "06fea9f796598f03386579761c746c7250d8487b52e50ab31a2109dc8b917232",
+   "fetched_utc": "2026-11-09T10:19:18Z"
+  },
+  {
+   "file": "rtime_1.mat",
+   "url": "https://osf.io/download/63b4cbf7202f170855a6bff2/",
+   "bytes": 55108421,
+   "sha256": "37bf49f3110fc21dce27034dba264fca8fd77677f9007a7ae39afaff77a8bfa7",
+   "fetched_utc": "2026-11-09T10:19:19Z"
+  },
+  {
+   "file": "rtime_2.mat",
+   "url": "https://osf.io/download/63b4cc2de48ccc09384fdb51/",
+   "bytes": 70758563,
+   "sha256": "91eee5658ac1b894e97a098bdfddc07126fb686414f4bf5d0169df130b99aea1",
+   "fetched_utc": "2026-11-09T10:19:39Z"
+  },
+  {
+   "file": "tjump_4.mat",
+   "url": "https://osf.io/download/63b5225a3312f107786885cc/",
+   "bytes": 136780840,
+   "sha256": "9768715ce41f434a6ad4d293986c579cf082eb78941edaa16d417fec6fa6dfc8",
+   "fetched_utc": "2026-11-09T10:19:50Z"
+  },
+  {
+   "file": "rtime_3.mat",
+   "url": "https://osf.io/download/63b4cc57202f170850a6bca7/",
+   "bytes": 43968978,
+   "sha256": "364f051f40680d4a55eda9998af9a252b5d2c99ab9fea0d51dbfe81c4bfb147c",
+   "fetched_utc": "2026-11-09T10:20:05Z"
+  },
+  {
+   "file": "rtime_4.mat",
+   "url": "https://osf.io/download/63b4cc86e48ccc093e4fd5cf/",
+   "bytes": 62466378,
+   "sha256": "b6ad2890b934e54ff409761c4aae23ba274c873727ce4af219c231a8b7bf068f",
+   "fetched_utc": "2026-11-09T10:20:22Z"
+  },
+  {
+   "file": "tjump_3.mat",
+   "url": "https://osf.io/download/63b522073312f1077b688813/",
+   "bytes": 109063957,
+   "sha256": "0c1d462896ed67297729f0da37d5c65371624196ddc91e7577499cc5ed0b65bd",
+   "fetched_utc": "2026-11-09T10:20:29Z"
+  },
+  {
+   "file": "rtime_5.mat",
+   "url": "https://osf.io/download/63b4ccad202f170855a6c1ac/",
+   "bytes": 54827708,
+   "sha256": "572ab49679fd668adad15acd584a4fdf349b97c53057c5de3130dcaeedf918c3",
+   "fetched_utc": "2026-11-09T10:20:35Z"
+  },
+  {
+   "file": "tjump_2.mat",
+   "url": "https://osf.io/download/63b521ca3312f1077b6887a8/",
+   "bytes": 96819966,
+   "sha256": "443a87bb283ed6e8a65e285c84bdce454ed66af69328e0454c81b77173126528",
+   "fetched_utc": "2026-11-09T10:20:47Z"
+  },
+  {
+   "file": "rtime_6.mat",
+   "url": "https://osf.io/download/63b4ccd0c8da86070edf1cbc/",
+   "bytes": 50609762,
+   "sha256": "79478965f748561abd7944f227d883b89f093855dd49d26ad884893663ce2873",
+   "fetched_utc": "2026-11-09T10:20:51Z"
+  },
+  {
+   "file": "tjump_1.mat",
+   "url": "https://osf.io/download/63b521953312f107786884c0/",
+   "bytes": 82148656,
+   "sha256": "fb52f70793bc9aa1a279123e243c85c208990c81d28f84d00614755958fd7e92",
+   "fetched_utc": "2026-11-09T10:21:23Z"
+  },
+  {
+   "file": "rtime_7.mat",
+   "url": "https://osf.io/download/63b4cd08e48ccc09384fdc87/",
+   "bytes": 73316083,
+   "sha256": "7fad8f103c4c1c2c4dd51e2e1e5034d6bebbb1ea54051201b01c22380e64bf0c",
+   "fetched_utc": "2026-11-09T10:21:24Z"
+  },
+  {
+   "file": "rtime_8.mat",
+   "url": "https://osf.io/download/63b4cd3a3312f10748689045/",
+   "bytes": 57011379,
+   "sha256": "ea6872004dbba80329ef71f53f5fa4f4a12523992df0bbe667d26361fde2edef",
+   "fetched_utc": "2026-11-09T10:21:41Z"
+  },
+  {
+   "file": "tjump_14.mat",
+   "url": "https://osf.io/download/63b521730b719806827c3d8d/",
+   "bytes": 104582956,
+   "sha256": "af85d4cbd86708af252449c47baef0fe1b11bc7b01df57d052a8f8a01d6f20fb",
+   "fetched_utc": "2026-11-09T10:21:51Z"
+  },
+  {
+   "file": "rtime_9.mat",
+   "url": "https://osf.io/download/63b4cd663312f10748689090/",
+   "bytes": 55747563,
+   "sha256": "f9e9efe29b2c203a277dac6f756edd26b6c49910d82e9160ef9c719553402e9c",
+   "fetched_utc": "2026-11-09T10:21:57Z"
+  },
+  {
+   "file": "tjump_13.mat",
+   "url": "https://osf.io/download/63b52135e48ccc097a4fd864/",
+   "bytes": 96856961,
+   "sha256": "52cd0cbbc767df0cfa04f9d18965a8e0e8d0108bf0814e378d5000f36dce5065",
+   "fetched_utc": "2026-11-09T10:22:11Z"
+  },
+  {
+   "file": "tjump_10.mat",
+   "url": "https://osf.io/download/63b52003c8da860730df31a4/",
+   "bytes": 99677719,
+   "sha256": "7120a39649541f2a443745595caf54496ae91fc2cf474e5314b3588961c48560",
+   "fetched_utc": "2026-11-09T10:22:29Z"
+  },
+  {
+   "file": "tjump_12.mat",
+   "url": "https://osf.io/download/63b52107c8da860734df29f6/",
+   "bytes": 130558867,
+   "sha256": "ffcbf1083197848b31d03bb3acf2626c79faf1511dcf503f1afd89074c5a4bd6",
+   "fetched_utc": "2026-11-09T10:22:41Z"
+  },
+  {
+   "file": "tjump_9.mat",
+   "url": "https://osf.io/download/63b52044e48ccc09794fcf8e/",
+   "bytes": 117513351,
+   "sha256": "9633ecd40d9ea24d132b43ab6856b44170a73293f78418f1fd413af81857351b",
+   "fetched_utc": "2026-11-09T10:22:51Z"
+  },
+  {
+   "file": "tjump_11.mat",
+   "url": "https://osf.io/download/63b520bd202f170882a6b7a5/",
+   "bytes": 100740811,
+   "sha256": "32b8140effda2d13526954c4a23ff1fb0872b1d760ee6807781b718e064e83e7",
+   "fetched_utc": "2026-11-09T10:23:02Z"
+  },
+  {
+   "file": "tjump_6.mat",
+   "url": "https://osf.io/download/63b520890b719806827c3c1f/",
+   "bytes": 137134709,
+   "sha256": "ad1e36d3f71d044e00bb1c5cc9b637a09617c6e5784b0f7e71b7e2bb67033746",
+   "fetched_utc": "2026-11-09T10:23:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Codol2023_eLife.zip"
+}

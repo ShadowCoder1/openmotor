@@ -1,0 +1,76 @@
+{
+ "id": "Antos2022_JEB",
+ "module": "summary",
+ "rows": 690,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 9724,
+ "zip_sha256": "61f2eabaacedf75b0266b1fe9ba35c3e8fd9b8bed8d9e7f7c10bf78794421dcb",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "75 lines (15 participants x 5 patterns)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = values minus 60 baseline rank cells",
+   "ok": true,
+   "detail": "690"
+  },
+  {
+   "kind": "internal",
+   "what": "ranks are 1-3 permutations per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants (15 healthy young adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Short step length / baseline step length (mean over participants)",
+   "computed": 0.750156912086204,
+   "reported": 0.75,
+   "tol": 0.002,
+   "source": "Methods, Experimental protocol (Short = 75% of baseline step length)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Short step width / baseline step width (mean over participants)",
+   "computed": 1.0003031357601357,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "Methods, Experimental protocol (Short keeps 100% of baseline step width)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (text) gives no numbers for energy, RPE or step length-width, only figures, so those could not be checked; the published checks are the participant count and the protocol definitions of the Short pattern."
+ ],
+ "sources": [
+  {
+   "file": "data.csv",
+   "url": "https://zenodo.org/records/6354902/files/data.csv?download=1",
+   "bytes": 6426,
+   "sha256": "77873793e14a851fd71af52001eb380d0dc9d1939f6ba49780a6c3cc7d480e5f",
+   "fetched_utc": "2026-11-09T15:51:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Antos2022_JEB.zip"
+}

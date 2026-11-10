@@ -1,0 +1,180 @@
+{
+ "id": "AlFawakhiri2023_bioRxiv",
+ "module": "game",
+ "rows": 21780,
+ "subjects": 198,
+ "persons": 198,
+ "zip_bytes": 860836,
+ "zip_sha256": "456fe1eeee026c59e04735766cabbd3c70f34dd93606dad246df05500cb7574e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all_subjects_fast.json matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pong_fast100.json matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows: 198 participants x 110 trials",
+   "ok": true,
+   "detail": "21780 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the four participants the authors' script skips are in the files (two per batch)",
+   "ok": true,
+   "detail": "3 of the 4 have no cursor movement in any trial, 1 has some"
+  },
+  {
+   "kind": "internal",
+   "what": "every analysed participant has calibration, baseline and training trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "groups are the four intended error rates",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants with data (200 recruited, 2 did not post)",
+   "computed": 198.0,
+   "reported": 198.0,
+   "tol": 0,
+   "source": "Methods, Participants, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants after dropping the four without recorded movement",
+   "computed": 194.0,
+   "reported": 194.0,
+   "tol": 0,
+   "source": "Methods, Participants, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "calibration success, SD (%)",
+   "computed": 11.91854465275029,
+   "reported": 12.0,
+   "tol": 0.5,
+   "source": "Methods, calibration, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline success, mean (%)",
+   "computed": 76.95876288659794,
+   "reported": 77.0,
+   "tol": 0.5,
+   "source": "Methods, baseline, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline success, SD (%)",
+   "computed": 16.681358480094282,
+   "reported": 17.0,
+   "tol": 0.5,
+   "source": "Methods, baseline, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "65% group: participants (degrees of freedom 48 + 1)",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "65% group: mean success after baseline (%)",
+   "computed": 41.7201166180758,
+   "reported": 41.6,
+   "tol": 0.15,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "65% group: SD of success (%)",
+   "computed": 6.08178103275139,
+   "reported": 6.1,
+   "tol": 0.15,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "true error rate minus intended error rate, mean (points of %)",
+   "computed": -3.140648011782032,
+   "reported": -3.1,
+   "tol": 0.15,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "true error rate minus intended error rate, SD (points of %)",
+   "computed": 6.613316707473453,
+   "reported": 6.6,
+   "tol": 0.15,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "same difference in trials (of 70), mean",
+   "computed": -2.198453608247422,
+   "reported": -2.2,
+   "tol": 0.1,
+   "source": "Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the four participants left out made no recorded movements; in the shared rows 3 of the four have no cursor movement and 1 has cursor movement on some trials (they are the four the authors' script skips, so they are flagged subject_excluded_by_authors).",
+  "calibration success, mean (%): the paper reports 72, the shared rows give 72.99 (Methods, calibration, Methods and Results (bioRxiv 2023.07.19.549705)).",
+  "65% group: t against the intended 35% success: the paper reports 3.03, the shared rows give 7.735 (Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)).",
+  "65% group: p of that t: the paper reports 0.004, the shared rows give 5.555e-10 (Results, error-rate control, Methods and Results (bioRxiv 2023.07.19.549705)).",
+  "The paper's ten learning-index outliers (1.75 IQR rule on a precision measure built from the trial errors) are not flagged: the first batch does not log the trial error, so the measure cannot be rebuilt from the shared rows.",
+  "In the first batch (all_subjects_fast.json) endpoint_y is a placeholder (mostly 0) and the authors' script rebuilds the error from the puck's launch values and the last cursor sample; outcome_error is therefore filled for the second batch only, where endpoint_y is the final puck minus paddle-centre distance the script uses.",
+  "The last 10 trials of each participant (attempt 100-109, fixed difficulty) are shared but the authors' script does not use them; they are marked excluded_by_authors."
+ ],
+ "sources": [
+  {
+   "file": "all_subjects_fast.json",
+   "url": "https://raw.githubusercontent.com/ilestz/optimalER/main/all_subjects_fast.json",
+   "bytes": 44355052,
+   "sha256": "d405c63497e5ab230fd511337bc026e70cfd1d76988036788679d8735650e3ce",
+   "fetched_utc": "2026-11-08T19:43:10Z"
+  },
+  {
+   "file": "pong_fast100.json",
+   "url": "https://raw.githubusercontent.com/ilestz/optimalER/main/pong_fast100.json",
+   "bytes": 47153366,
+   "sha256": "51775bccbca0340a036ac413d86d057beb3e162225d1a92d5dd046ae33b64042",
+   "fetched_utc": "2026-11-08T19:43:26Z"
+  },
+  {
+   "file": "analyzePongFast_bin.Rmd",
+   "url": "https://raw.githubusercontent.com/ilestz/optimalER/main/analyzePongFast_bin.Rmd",
+   "bytes": 24342,
+   "sha256": "b06ec31603218be4a68fa7a1fe5ae07bab549d73ad9205fdac31133a402b0e9a",
+   "fetched_utc": "2026-11-08T19:43:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/AlFawakhiri2023_bioRxiv.zip"
+}

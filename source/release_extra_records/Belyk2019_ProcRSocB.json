@@ -1,0 +1,126 @@
+{
+ "id": "Belyk2019_ProcRSocB",
+ "module": "timeseries",
+ "rows": 17,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 727187,
+ "zip_sha256": "046998398275f055d2d41479062a5c64ff82a6fbbf684df38fde5bae676e41e9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants (six participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "whistling tasks",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Procedure (three tasks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "runs kept for analysis (6 participants x 3 tasks, 3 runs discarded)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and procedure (three of the 18 runs were discarded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest whistled frequency in the kept runs (Hz, paper rounds to 100 Hz)",
+   "computed": 606.057,
+   "reported": 600.0,
+   "tol": 100,
+   "source": "Results (frequencies from 600 to 3100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest whistled frequency in the kept runs (Hz, paper rounds to 100 Hz)",
+   "computed": 3159.626,
+   "reported": 3100.0,
+   "tol": 100,
+   "source": "Results (frequencies from 600 to 3100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of variance of the tongue outline on functional principal component 1 (%; authors' pipeline re-run with linear resampling)",
+   "computed": 62.084338413327686,
+   "reported": 62.0,
+   "tol": 1.0,
+   "source": "Results (the first two fPCs accounted for 62% and 17% of the total variance in tongue contour)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of variance of the tongue outline on functional principal component 2 (%)",
+   "computed": 16.858628225654165,
+   "reported": 17.0,
+   "tol": 1.0,
+   "source": "Results (62% and 17%)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "17 runs are shared (6 + 6 + 5)",
+   "ok": true,
+   "detail": "17 runs"
+  },
+  {
+   "kind": "internal",
+   "what": "2 of the 3 discarded runs are in the deposit and flagged (call run of participant P0003, discrete run of P0002; the discrete run of P0003 is not shared)",
+   "ok": true,
+   "detail": "2 flagged"
+  },
+  {
+   "kind": "internal",
+   "what": "tongue outlines lie inside the 128 x 128 image (the 2 mm voxels of a 256 mm field of view)",
+   "ok": true,
+   "detail": "columns 24-81, rows 73-112"
+  },
+  {
+   "kind": "internal",
+   "what": "every frame has the same number of Y and Z outline points (asserted for every frame)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "frames in the audio table equal outline lines in every run that has audio (asserted)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pitches lie inside the Praat search range of the shared script (600-3600 Hz)",
+   "ok": true,
+   "detail": "606.1-3159.6"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' time column puts the MRI frames 65-67 ms apart (about 15.0-15.4 frames per second), where the paper gives an acquisition time of 60 ms per frame (16.67 Hz); sample_rate_hz is computed from the authors' time column.",
+  "The runs span 93.2-97.6 s from their first to their last frame time, where the paper says scans lasted 88-98 s; the time columns may not cover the whole scan.",
+  "The shared R script labels the frames W1-W6 and by task in blocks of three consecutive files per whistler, which does not follow the order of its own file list (all six continuous runs first); participants and tasks here come from the file names."
+ ],
+ "sources": [
+  {
+   "file": "extracted_data.zip",
+   "url": "https://zenodo.org/api/records/5026872/files/extracted_data.zip/content",
+   "bytes": 647637,
+   "sha256": "5bcf6c22ebdbcbb2c09558cd5cfb2443a0ba4d50e552b7bb616ca4a4e7c284bb",
+   "fetched_utc": "2026-11-08T22:37:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Belyk2019_ProcRSocB.zip"
+}

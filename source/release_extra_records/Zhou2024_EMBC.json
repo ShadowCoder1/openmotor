@@ -1,0 +1,81 @@
+{
+ "id": "Zhou2024_EMBC",
+ "module": "walking",
+ "rows": 4138,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 188998,
+ "zip_sha256": "c91ed33fd3b9858b5a50124e090613705d30e8c4132afdd51acf63e643315503",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "10 patients, 2 visits each, left and right foot tables for every visit",
+   "ok": true,
+   "detail": "10 patients"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride row of the deposit's left and right foot tables is kept (none lost)",
+   "ok": true,
+   "detail": "4138 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "each stride row fills exactly one foot",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stride time 0.5-3 s on non-excluded strides",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the study (ten stroke patients, two visits)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Zenodo record description / paper abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "foot-visit aggregate tables reproduced from strides (20 visits x 2 feet = 40), max abs difference in the six means < 1e-6",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "deposit's own aggregate_params files",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (IEEE, not open access) could not be read, so only the number of patients and the deposit's own aggregate tables were checked; the deposit page mentions four walking conditions but the processed files carry no condition label."
+ ],
+ "sources": [
+  {
+   "file": "processed.zip",
+   "url": "https://zenodo.org/records/10534055/files/processed.zip?download=1",
+   "bytes": 375485,
+   "sha256": "da0d98488b1e8c3dd1db6ddf694734f7e74a8a0474284e69dcc1123d8363ee17",
+   "fetched_utc": "2026-11-09T01:22:49Z"
+  },
+  {
+   "file": "folder_structure-simple.pdf",
+   "url": "https://zenodo.org/records/10534055/files/folder_structure-simple.pdf?download=1",
+   "bytes": 36326,
+   "sha256": "bc2c9ed5129902a393779437ed17cc120ac2b64a404fdcbbcc93e73a7a87f9e9",
+   "fetched_utc": "2026-11-09T01:22:56Z"
+  },
+  {
+   "file": "raw.zip",
+   "url": "https://zenodo.org/records/10534055/files/raw.zip?download=1",
+   "bytes": 273638044,
+   "sha256": "bd2962dcc6b43799a46e7d3dede1934ab161edec53eadffeff2fa3a590463e7e",
+   "fetched_utc": "2026-11-09T01:29:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhou2024_EMBC.zip"
+}

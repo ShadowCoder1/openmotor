@@ -1,0 +1,314 @@
+{
+ "id": "Leveridge2026_JNeuroengRehabil",
+ "module": "timeseries",
+ "rows": 467,
+ "subjects": 46,
+ "persons": 46,
+ "zip_bytes": 5516213,
+ "zip_sha256": "b18ab08d6e78ee11c6e6dd66965ee72e8581824d126040dc50cee6ed687ef3c8",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with Parkinson's and freezing of gait",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, Participant demographics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with Parkinson's without freezing of gait",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Participant demographics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy older adults",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Results, Participant demographics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 100.00000000000213,
+   "reported": 100.0,
+   "tol": 0.01,
+   "source": "Methods (100 Hz motion capture)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, start of turn, PD+FOG, mean",
+   "computed": 92.28445923237214,
+   "reported": 92.3,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, start of turn, PD-FOG, mean",
+   "computed": 95.14386060937785,
+   "reported": 95.1,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, start of turn, PD-FOG, SD",
+   "computed": 2.242129072897442,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, start of turn, HC, mean",
+   "computed": 94.25963488843816,
+   "reported": 94.3,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, start of turn, HC, SD",
+   "computed": 0.3416051253878757,
+   "reported": 0.3,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, PD+FOG, mean",
+   "computed": 93.44432384765719,
+   "reported": 93.4,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, PD+FOG, SD",
+   "computed": 3.637135948780408,
+   "reported": 3.6,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, PD-FOG, mean",
+   "computed": 95.42200772200769,
+   "reported": 95.4,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, PD-FOG, SD",
+   "computed": 2.020620188761429,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, HC, mean",
+   "computed": 96.483306836248,
+   "reported": 96.5,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, middle of turn, HC, SD",
+   "computed": 0.4364135108586073,
+   "reported": 0.4,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, PD+FOG, mean",
+   "computed": 83.86666666666666,
+   "reported": 83.9,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, PD+FOG, SD",
+   "computed": 4.656678260361677,
+   "reported": 4.7,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, PD-FOG, mean",
+   "computed": 86.78759398496241,
+   "reported": 86.8,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, PD-FOG, SD",
+   "computed": 5.619832089030576,
+   "reported": 5.6,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, HC, mean",
+   "computed": 83.54643962848299,
+   "reported": 83.5,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of the stride in-phase, end of turn, HC, SD",
+   "computed": 2.4688946039518895,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Results, En-bloc turning - percentage of the stride in-phase",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "46 participants have turn rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every heel event lies inside its recording",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "turn counts per direction: 5 for most, more or fewer for some",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Printed in the paper but not reproduced to its rounding (not used as checks): in-phase percentage, start of turn, PD+FOG, SD: 4.154 here, 4.1 in the paper.",
+  "746 empty samples (NaN) lie inside the pelvis series of some turns (kept as empty cells); each series ends at its last non-empty sample.",
+  "The paper recruited 42 people with PD and 24 controls and says 8 PD+FOG, 5 PD-FOG and 2 controls were excluded; 15 + 14 + 17 = 46 analysed matches the deposit, but 24 - 2 = 22 controls does not equal 17 (as printed in the paper); the deposit holds the 17.",
+  "The pelvis and torso matrices hold one more participant (a PD-FOG participant with no head angles) than the head matrix; that participant is not in the 46 analysed and is not carried.",
+  "The deposit documents neither the Gender code nor MAXstart/MAXmiddle/MAXend and pelvis_latency_to_head; those columns are described as inferred.",
+  "Coordination variability and the other Table 3 and 4 values adjusted for covariates (with SEM) are not reproduced; only the unadjusted in-phase percentages of the Results text are used as checks."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://osf.io/download/639ch/",
+   "bytes": 3717,
+   "sha256": "3110b8b8c90ccb6b27f7122c03520eb2e12b95fa4b81094fcd84635feb1ef332",
+   "fetched_utc": "2026-11-09T12:46:26Z"
+  },
+  {
+   "file": "Supplementary.pdf",
+   "url": "https://osf.io/download/kmh5r/",
+   "bytes": 1455425,
+   "sha256": "cebfd81de1ecc9c7d954baaafdfdaf2e4165a2ac227d8debf2de65cdc533307d",
+   "fetched_utc": "2026-11-09T12:46:33Z"
+  },
+  {
+   "file": "SPSS_main.sav",
+   "url": "https://osf.io/download/68495b25aff4adc2b0a4db75/",
+   "bytes": 14099,
+   "sha256": "a688557a3be029b985145c0e0bb63b24c488a3d9f40eab652b1f0f5ae55b47fd",
+   "fetched_utc": "2026-11-09T12:46:38Z"
+  },
+  {
+   "file": "SPSS_affected.sav",
+   "url": "https://osf.io/download/68495b804d1399df4985b361/",
+   "bytes": 9102,
+   "sha256": "89de8076cb3aa132116fefb3d63616370fb827d92f41a41c8f7dacf32def5593",
+   "fetched_utc": "2026-11-09T12:46:44Z"
+  },
+  {
+   "file": "anglesexpanded_UNWRAP.mat",
+   "url": "https://osf.io/download/67a0cca5e7c507e44344d65c/",
+   "bytes": 7372578,
+   "sha256": "e637518b5facf461950e4afe25320f0967f4ce4d0bf38fba7b995a3aae5cd0ab",
+   "fetched_utc": "2026-11-09T12:46:51Z"
+  },
+  {
+   "file": "turntime.mat",
+   "url": "https://osf.io/download/67a0cdd601ff4e2675b8feb9/",
+   "bytes": 12473,
+   "sha256": "240d35e4855aaff46c5a52f387278a3255b1b3cbcc70c59ed83279642edce8ae",
+   "fetched_utc": "2026-11-09T12:47:07Z"
+  },
+  {
+   "file": "MOCAP_Insoles_Data.mat",
+   "url": "https://osf.io/download/67a0cca29aed8e91182b4ce0/",
+   "bytes": 243428878,
+   "sha256": "bcc12122ef72d432aa8de98a4d53ca21180b6510109aec9af16108cf7ec757e0",
+   "fetched_utc": "2026-11-09T12:47:35Z"
+  },
+  {
+   "file": "step_count_curvature.mat",
+   "url": "https://osf.io/download/67a0cd7b3aa63a1b7a769fe7/",
+   "bytes": 44938013,
+   "sha256": "d8789f3b9c2c828579ec23974e6eee760fd8bf536c4dde25963b5f55ccbb0f5a",
+   "fetched_utc": "2026-11-09T12:47:45Z"
+  },
+  {
+   "file": "mostaffectedside.mat",
+   "url": "https://osf.io/download/67a0cda1a32685dd0a769875/",
+   "bytes": 363,
+   "sha256": "b5568e1d55c560e838d5828fff5c016c80c18b467ee79e7723a6192326bfe4c0",
+   "fetched_utc": "2026-11-09T12:47:51Z"
+  },
+  {
+   "file": "UPDRS.mat",
+   "url": "https://osf.io/download/67a0ce195d4a0f93e82b4b9a/",
+   "bytes": 358,
+   "sha256": "e09b3675a5de9059ca7f00786c0cd938061630ee7f420014c30428abd7f22a96",
+   "fetched_utc": "2026-11-09T12:47:57Z"
+  },
+  {
+   "file": "croppedto5deghead.mat",
+   "url": "https://osf.io/download/67a0cd84ad7a7444dd0caffc/",
+   "bytes": 6581298,
+   "sha256": "281fc14330258f2bc34e33d37682217aa5d1abb4d1d3dde9283f1ec0783a7803",
+   "fetched_utc": "2026-11-09T12:48:10Z"
+  },
+  {
+   "file": "normalisedtosteps.mat",
+   "url": "https://osf.io/download/67a0cd89e6d08a8d6744d5ac/",
+   "bytes": 13579823,
+   "sha256": "49a5e27a15a9c01cc6649442e8e68d688656d89a2169d4c134fe085cfbbc1ad9",
+   "fetched_utc": "2026-11-09T12:48:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Leveridge2026_JNeuroengRehabil.zip"
+}

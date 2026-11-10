@@ -1,0 +1,494 @@
+{
+ "id": "Modchalingam2019_PLoSOne",
+ "module": "summary",
+ "rows": 9877,
+ "subjects": 85,
+ "persons": 85,
+ "zip_bytes": 158721,
+ "zip_sha256": "1ca5465db4bf2049578a4755e2c6bf6b84cb8a2b2a5030c5cea8f71b474292d4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "exp30: reachAEs file repeats exclusive/inclusive of locAwareness",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp30: curve columns are the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp60: reachAEs file repeats exclusive/inclusive of locAwareness",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp60: curve columns are the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp30: reachAEs file repeats exclusive/inclusive of locAwareness",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp30: curve columns are the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp60: reachAEs file repeats exclusive/inclusive of locAwareness",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp60: curve columns are the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participantAwareness has the 85 participants of the four curve files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 30 deg: n",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "instructed 30 deg: n",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 60 deg: n",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "instructed 60 deg: n",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "30implicit females",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "30explicit females",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "60implicit females",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "60explicit females",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 30: mean reach aftereffect with strategy (deg)",
+   "computed": 16.43670313544444,
+   "reported": 16.437,
+   "tol": 0.0005,
+   "source": "Results, reach aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 30: SD with strategy",
+   "computed": 7.577767159167757,
+   "reported": 7.578,
+   "tol": 0.0005,
+   "source": "Results, reach aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 30: mean without strategy",
+   "computed": 14.424886262580625,
+   "reported": 14.425,
+   "tol": 0.0005,
+   "source": "Results, reach aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-instructed 30: SD without strategy",
+   "computed": 4.165741197350991,
+   "reported": 4.166,
+   "tol": 0.0005,
+   "source": "Results, reach aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows written",
+   "ok": true,
+   "detail": "9877"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Methods text says 84 participants (41 at 30 deg, 43 at 60 deg) but its group sizes sum to 85, as in the deposit; the deposit's 85 were released. The 8 participants the paper excluded are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "exp30_activeTapData_aligned.csv",
+   "url": "https://osf.io/download/sdhzv/",
+   "bytes": 1606,
+   "sha256": "e3265887876de0303dfbc1776ef05ff6dfa0b54623a6f32bc7f1112e548aa0a2",
+   "fetched_utc": "2026-11-09T14:44:42Z"
+  },
+  {
+   "file": "exp30_curves.csv",
+   "url": "https://osf.io/download/3vz62/",
+   "bytes": 34661,
+   "sha256": "9fae5e973b4a067c6f84999b939e4555c0f4b76de4b2251a78fdd54bb9fb35b4",
+   "fetched_utc": "2026-11-09T14:44:46Z"
+  },
+  {
+   "file": "exp30_activeTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279e204d9bb00197fcf23/",
+   "bytes": 1625,
+   "sha256": "70f5a931098883ba101340cdfbaf38cf5262167a93db5baae6a4f1247d372740",
+   "fetched_utc": "2026-11-09T14:44:51Z"
+  },
+  {
+   "file": "exp30_locAwareness.csv",
+   "url": "https://osf.io/download/h42zx/",
+   "bytes": 2728,
+   "sha256": "c75d77e50853eebab71f5ed6ee9f07cc356d5711568e1b8d15618fe357153874",
+   "fetched_utc": "2026-11-09T14:44:54Z"
+  },
+  {
+   "file": "exp30_activeTapData.csv",
+   "url": "https://osf.io/download/fg9ju/",
+   "bytes": 1615,
+   "sha256": "d76082647a83c9bac5b4e8245e1c54a96a1480820280a04ff327220a2fe19579",
+   "fetched_utc": "2026-11-09T14:44:58Z"
+  },
+  {
+   "file": "exp30_passiveTapData.csv",
+   "url": "https://osf.io/download/73z82/",
+   "bytes": 1627,
+   "sha256": "74370f7947013989095c5fd2b36bd1600d87976316e8a86806bf0be4ec056549",
+   "fetched_utc": "2026-11-09T14:45:17Z"
+  },
+  {
+   "file": "exp30_reachAEs_pp.csv",
+   "url": "https://osf.io/download/tgrh5/",
+   "bytes": 1414,
+   "sha256": "6dbae58e6711496c93b6412c3b9eca6ac15019fb442eb443e26395c9f34f3159",
+   "fetched_utc": "2026-11-09T14:45:23Z"
+  },
+  {
+   "file": "exp30_passiveTapData_aligned.csv",
+   "url": "https://osf.io/download/x9sbp/",
+   "bytes": 1628,
+   "sha256": "c0ccd85a114105cc94d551c024bc203cd83b271717fb22b9689299dcffea5b04",
+   "fetched_utc": "2026-11-09T14:45:27Z"
+  },
+  {
+   "file": "exp30_passiveTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279e804d9bb001a7fad55/",
+   "bytes": 1635,
+   "sha256": "c09344180dc10f0665967d64187798a40c5e6220fd9afd2d91d04f1732cab765",
+   "fetched_utc": "2026-11-09T14:45:32Z"
+  },
+  {
+   "file": "exp30_sessionAEs_pp.csv",
+   "url": "https://osf.io/download/5c5279e904d9bb00197fcf30/",
+   "bytes": 1013,
+   "sha256": "c5e8519f588e1f87a725a270d76fe38557fb4856d7c256317f45c0818480071d",
+   "fetched_utc": "2026-11-09T14:45:35Z"
+  },
+  {
+   "file": "exp60_activeTapData.csv",
+   "url": "https://osf.io/download/m6hr7/",
+   "bytes": 1826,
+   "sha256": "92c76be2f2420490e3a4debb521321b12420cac7e0d1f2cb58949081870c054c",
+   "fetched_utc": "2026-11-09T14:45:53Z"
+  },
+  {
+   "file": "exp60_curves.csv",
+   "url": "https://osf.io/download/f4zke/",
+   "bytes": 38954,
+   "sha256": "6fd5fe71104c681702ce842053b4322caef35d0be519fbb20352b4cbe5a3f656",
+   "fetched_utc": "2026-11-09T14:45:57Z"
+  },
+  {
+   "file": "exp60_activeTapData_aligned.csv",
+   "url": "https://osf.io/download/5c5279ecede2b5001a63c717/",
+   "bytes": 1789,
+   "sha256": "a930571dae34a244f443e515ef7bd5f59183b28a42366e1d525b78fdcec55693",
+   "fetched_utc": "2026-11-09T14:46:02Z"
+  },
+  {
+   "file": "exp60_activeTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279ed7b5db5001a956fb0/",
+   "bytes": 1811,
+   "sha256": "3d15bdf5af155900ae7fc4a94bac5f130042b9072918d7878c04b3dc05c33b38",
+   "fetched_utc": "2026-11-09T14:46:06Z"
+  },
+  {
+   "file": "exp60_passiveTapData.csv",
+   "url": "https://osf.io/download/p2hy7/",
+   "bytes": 1840,
+   "sha256": "384b966ac4cf710f52c95217b1e97fb5924d2585002e3a54af66ebee72300e71",
+   "fetched_utc": "2026-11-09T14:46:10Z"
+  },
+  {
+   "file": "exp60_locAwareness.csv",
+   "url": "https://osf.io/download/jgqdn/",
+   "bytes": 3078,
+   "sha256": "65899439c9418abf41a488707cf0847c371026acebfc2b63fe3cb46c92c242d1",
+   "fetched_utc": "2026-11-09T14:46:14Z"
+  },
+  {
+   "file": "exp60_passiveTapData_aligned.csv",
+   "url": "https://osf.io/download/5c5279f0ede2b5001c63bb86/",
+   "bytes": 1838,
+   "sha256": "dbbd9ef741696aa27efd0b583270feb908cff8494034028e6b12a1c446b1fe31",
+   "fetched_utc": "2026-11-09T14:46:18Z"
+  },
+  {
+   "file": "exp60_sessionAEs_pp.csv",
+   "url": "https://osf.io/download/ft7xw/",
+   "bytes": 1146,
+   "sha256": "43086f65c96d0e65d452e3b0c177f287eb173e259dfbc9480472375289a0efbc",
+   "fetched_utc": "2026-11-09T14:46:21Z"
+  },
+  {
+   "file": "exp60_reachAEs_pp.csv",
+   "url": "https://osf.io/download/md6yt/",
+   "bytes": 1596,
+   "sha256": "09dbbb35a331dfe3445dc1d13029d057b101dcd865568d21a2b36e085ac16ac4",
+   "fetched_utc": "2026-11-09T14:46:26Z"
+  },
+  {
+   "file": "exp60_passiveTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279f104d9bb001c7f9f9b/",
+   "bytes": 1829,
+   "sha256": "5038159bbf6115d332da0e3152f9a97b457cfb0738269d9eb3106136790835bf",
+   "fetched_utc": "2026-11-09T14:46:30Z"
+  },
+  {
+   "file": "imp30_activeTapData.csv",
+   "url": "https://osf.io/download/tjh6e/",
+   "bytes": 1537,
+   "sha256": "4e55344af8a7520f6d366119308714ecf0983ae84786e1573b1b176c523163ac",
+   "fetched_utc": "2026-11-09T14:46:33Z"
+  },
+  {
+   "file": "imp30_curves.csv",
+   "url": "https://osf.io/download/yns6w/",
+   "bytes": 33404,
+   "sha256": "1c9df4ce096feedebb4e6f73d41e2a123f1380f62c20c19f28c88ec59c47af54",
+   "fetched_utc": "2026-11-09T14:46:37Z"
+  },
+  {
+   "file": "imp30_activeTapData_aligned.csv",
+   "url": "https://osf.io/download/btynq/",
+   "bytes": 1515,
+   "sha256": "6dc2b75c22595d052f326d7df7f938c94bf4996ae30f1465c6a678dc372aa5c4",
+   "fetched_utc": "2026-11-09T14:46:41Z"
+  },
+  {
+   "file": "imp30_activeTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279f6ede2b5001a63c72c/",
+   "bytes": 1541,
+   "sha256": "f9db63165aca516f5cf3f43c99124dfe500d5e6e29cfcec37e9e903cf5c1c2be",
+   "fetched_utc": "2026-11-09T14:46:59Z"
+  },
+  {
+   "file": "imp30_locAwareness.csv",
+   "url": "https://osf.io/download/uzp4f/",
+   "bytes": 2605,
+   "sha256": "38021eb590301e6760b7710acb54c2b26d5076e5e883b47c78af903b9ae7d5e4",
+   "fetched_utc": "2026-11-09T14:47:02Z"
+  },
+  {
+   "file": "imp30_passiveTapData_aligned.csv",
+   "url": "https://osf.io/download/5c5279f97b5db50018956948/",
+   "bytes": 1549,
+   "sha256": "740755e84cef503f49f68eed6f904a29cd233df63bf2d7324d2dc3e4be66a75c",
+   "fetched_utc": "2026-11-09T14:47:08Z"
+  },
+  {
+   "file": "imp30_passiveTapData.csv",
+   "url": "https://osf.io/download/9pwx5/",
+   "bytes": 1555,
+   "sha256": "91e88dd2b7a6db6d1ca230918432754980d98f6c08e2d3546ef74f2d91dfc3aa",
+   "fetched_utc": "2026-11-09T14:47:11Z"
+  },
+  {
+   "file": "imp30_reachAEs_pp.csv",
+   "url": "https://osf.io/download/7q6c5/",
+   "bytes": 1355,
+   "sha256": "f676d364855b37b1b79d631b091c6e199456aa23af85365c7e4c1a7fad3f5ba0",
+   "fetched_utc": "2026-11-09T14:47:15Z"
+  },
+  {
+   "file": "imp30_passiveTapData_rotated.csv",
+   "url": "https://osf.io/download/5c5279fb04d9bb00197fcf57/",
+   "bytes": 1556,
+   "sha256": "aafa3bce3ea56a19a44032313163b5bf64d17cbcd55dab23c835ac02d6f1e0ac",
+   "fetched_utc": "2026-11-09T14:47:19Z"
+  },
+  {
+   "file": "imp30_sessionAEs_pp.csv",
+   "url": "https://osf.io/download/pj9vh/",
+   "bytes": 956,
+   "sha256": "547ba6321dc33d165c001fc3ea60d0b00a1cfe1a940d0fca155c74e84b917816",
+   "fetched_utc": "2026-11-09T14:47:23Z"
+  },
+  {
+   "file": "imp60_activeTapData.csv",
+   "url": "https://osf.io/download/cz6xk/",
+   "bytes": 1529,
+   "sha256": "7894758348aeecff92718dc66eb477ad62b9986988b05a30ad68e5f7f03b4e3c",
+   "fetched_utc": "2026-11-09T14:47:27Z"
+  },
+  {
+   "file": "imp60_activeTapData_aligned.csv",
+   "url": "https://osf.io/download/pwc6s/",
+   "bytes": 1496,
+   "sha256": "f7ea29fee3a8e3b5c3e1df45c4bd832c62067c7856eb388def4e97746d8ba942",
+   "fetched_utc": "2026-11-09T14:47:30Z"
+  },
+  {
+   "file": "imp60_curves.csv",
+   "url": "https://osf.io/download/mrzbh/",
+   "bytes": 31971,
+   "sha256": "04f8618915c2fdf0c768c183d2563ec208e9ac1d495736f98eb049fccc0c8099",
+   "fetched_utc": "2026-11-09T14:47:34Z"
+  },
+  {
+   "file": "imp60_passiveTapData.csv",
+   "url": "https://osf.io/download/t8ga2/",
+   "bytes": 1547,
+   "sha256": "657e6986cc1ebaac7016d86451412bf2d822a2d597a85979ddc8e6a96f201ce2",
+   "fetched_utc": "2026-11-09T14:47:38Z"
+  },
+  {
+   "file": "imp60_locAwareness.csv",
+   "url": "https://osf.io/download/5hb2z/",
+   "bytes": 2576,
+   "sha256": "34c1df1196feb2b7efdb22c1c826bb3ee58490501eff9e61fa5bf5e54a2b04e2",
+   "fetched_utc": "2026-11-09T14:53:34Z"
+  },
+  {
+   "file": "imp60_activeTapData_rotated.csv",
+   "url": "https://osf.io/download/2476s/",
+   "bytes": 1527,
+   "sha256": "bdcb1e438fdd68dc12eaaafea95a88ecc6dad587e6ba5f5ff748882e727873d2",
+   "fetched_utc": "2026-11-09T15:06:54Z"
+  },
+  {
+   "file": "imp60_passiveTapData_rotated.csv",
+   "url": "https://osf.io/download/a2wqe/",
+   "bytes": 1541,
+   "sha256": "a82486650321a1bdbda8625f6285ec4d713c1809d46339bbe912eff07b9aefb3",
+   "fetched_utc": "2026-11-09T15:07:01Z"
+  },
+  {
+   "file": "imp60_passiveTapData_aligned.csv",
+   "url": "https://osf.io/download/5c527a03ede2b5001b63b94f/",
+   "bytes": 1531,
+   "sha256": "c16ed5cbb6b9c0ff405253352e17f304cfe993c29654dca83d1a85752b373bc7",
+   "fetched_utc": "2026-11-09T15:07:05Z"
+  },
+  {
+   "file": "imp60_reachAEs_pp.csv",
+   "url": "https://osf.io/download/zdwut/",
+   "bytes": 1336,
+   "sha256": "3dbf51551e2b3b74048938470489ec76cadfdb5c32669bc2c3480b82b5bb8ef4",
+   "fetched_utc": "2026-11-09T15:07:10Z"
+  },
+  {
+   "file": "learningCurveAOVData.csv",
+   "url": "https://osf.io/download/j5xhw/",
+   "bytes": 10055,
+   "sha256": "b9e85dfbeb67abebaa1628e942844c7457a3279a75a19bc38c217498fe6911ba",
+   "fetched_utc": "2026-11-09T15:07:23Z"
+  },
+  {
+   "file": "imp60_sessionAEs_pp.csv",
+   "url": "https://osf.io/download/7r4db/",
+   "bytes": 960,
+   "sha256": "1a70a7ecd924100e8141023c2c28dfd3d30cf587f4f6bba7d35e42be84f1242d",
+   "fetched_utc": "2026-11-09T15:07:28Z"
+  },
+  {
+   "file": "participantAwareness.csv",
+   "url": "https://osf.io/download/7zjxf/",
+   "bytes": 2759,
+   "sha256": "a86ffef59a4f174bfce7892e43299a1801ee018a61bd586d4c9703a9969a9b06",
+   "fetched_utc": "2026-11-09T15:08:12Z"
+  },
+  {
+   "file": "participantInfo.csv",
+   "url": "https://osf.io/download/egtxp/",
+   "bytes": 24494,
+   "sha256": "185603d9fae4c0ed062042724ffd9cdf81a2beb093deebdea1aa07487a34e10c",
+   "fetched_utc": "2026-11-09T15:10:19Z"
+  },
+  {
+   "file": "normLearningCurveAOVData.csv",
+   "url": "https://osf.io/download/t45yk/",
+   "bytes": 10309,
+   "sha256": "8fc510bb186a9b91483c38a3789978a472602f45d973b12525ce6e5debed8b30",
+   "fetched_utc": "2026-11-09T15:10:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Modchalingam2019_PLoSOne.zip"
+}

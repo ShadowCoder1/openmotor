@@ -1,0 +1,185 @@
+{
+ "id": "vanPolanen2022_JNeurophysiol",
+ "module": "grasp_lift",
+ "rows": 3854,
+ "subjects": 47,
+ "persons": 47,
+ "zip_bytes": 107700,
+ "zip_sha256": "e52efb832987d3f55e5c57fb95ae0d7a90f47fb03ee015121f15c500f16e3fbe",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (47)",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aIPS cTBS group size (16)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 cTBS group size (16)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sham cTBS group size (15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant (81 = 4 objects x 20 + 1)",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods, Grasp and lift task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials removed from perception and force analysis (15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Force and perceptual analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with force data (47 - 2 = 45; F(1,44))",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Participants; Results, Force Parameters",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aIPS cTBS: participants with force data (15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Figure 2 legend (n = 15 for all groups)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sham cTBS: participants with force data (15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Figure 2 legend (n = 15 for all groups)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M1 cTBS: participants with force data (15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Figure 2 legend (n = 15 for all groups)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants whose first two lifts were small-light then large-light (47)",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Grasp and lift task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each object lifted 20 or 21 times by every participant",
+   "ok": true,
+   "detail": "{'large heavy': {'min': 20.0, 'max': 20.0}, 'large light': {'min': 20.0, 'max': 20.0}, 'small heavy': {'min': 20.0, 'max': 21.0}, 'small light': {'min': 20.0, 'max': 21.0}}"
+  },
+  {
+   "kind": "internal",
+   "what": "size-weight illusion direction: small objects rated heavier (z) than large of same weight",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "heavy lifted with longer loading phase than light",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "row count = 47 x 82",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Rows flagged excluded_by_authors are the 15 trials the authors removed from the perception and force analysis; their perception value is kept as given, forces are empty.",
+  "Two participants (one aIPS, one M1) have no force values because of technical errors, as in the paper; their perception values are present and their rows are not flagged.",
+  "Ages and sex per participant are not in the deposit (paper: 27 of 47 female, mean age 22 years)."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/rsn5e/",
+   "bytes": 1171,
+   "sha256": "1d65c6a916bec367de97554d29710178773dcf903727377f562d0f2767c13c77",
+   "fetched_utc": "2026-11-09T12:06:32Z"
+  },
+  {
+   "file": "README_processed.txt",
+   "url": "https://osf.io/download/hu4tz/",
+   "bytes": 1027,
+   "sha256": "e0c24649a877c627df15530de975080c4684fde120b5920c245ac25eed661fdd",
+   "fetched_utc": "2026-11-09T12:06:40Z"
+  },
+  {
+   "file": "Processed_MEP_data.csv",
+   "url": "https://osf.io/download/eqzx5/",
+   "bytes": 1231,
+   "sha256": "1477b89f3a51669c1265b73ea4fac05269c670d801b03507663cc7aa343ba210",
+   "fetched_utc": "2026-11-09T12:06:48Z"
+  },
+  {
+   "file": "Processed_lastpractice.csv",
+   "url": "https://osf.io/download/7eb6x/",
+   "bytes": 2314,
+   "sha256": "646501a22394457d57b785ca94f2eb88044bd0e18cceef48c681a639c03aa29c",
+   "fetched_utc": "2026-11-09T12:06:54Z"
+  },
+  {
+   "file": "Processed_data.csv",
+   "url": "https://osf.io/download/8rds3/",
+   "bytes": 222231,
+   "sha256": "e620d5bdb36072047c0f023e76a68beb79e72e07d4de16d3bfa3ed74b8252a87",
+   "fetched_utc": "2026-11-09T12:07:01Z"
+  },
+  {
+   "file": "rawMEPdata.xlsx",
+   "url": "https://osf.io/download/vd3pk/",
+   "bytes": 13054,
+   "sha256": "89f5917896fe22915a1a6ffbaa32f78b0f369e854a1d88b36775f7edfb58b943",
+   "fetched_utc": "2026-11-09T12:07:07Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/vanPolanen2022_JNeurophysiol.zip"
+}

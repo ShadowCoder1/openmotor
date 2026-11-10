@@ -1,0 +1,7 @@
+{
+ "id": "Pradhan2022_GRABMyo",
+ "skipped": true,
+ "reason": "too large",
+ "details": "PhysioNet grabmyo 1.1.0 is 9.4 GB (43 participants x 3 sessions x 17 gestures x 7 trials of 32-channel 2048 Hz sEMG in WFDB format, ~15,000 recordings), over the 5 GB limit; the raw EMG cannot be re-encoded into a ZIP under 1 GB without resampling or computing features. The only per-trial information beyond the signals is the protocol-set gesture number. CC BY 4.0 as listed.",
+ "sources": []
+}

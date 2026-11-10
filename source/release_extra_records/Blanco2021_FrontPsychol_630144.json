@@ -1,0 +1,142 @@
+{
+ "id": "Blanco2021_FrontPsychol_630144",
+ "module": "pitch_matching",
+ "rows": 4773,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 96254,
+ "zip_sha256": "4a75deaef31484aa4993bbff07322ffbf163308cf2b540a1d6fc080aff5a4137",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "72 participants (18 FG, 18 CG, 21 AG + AG2, 15 EG)",
+   "ok": true,
+   "detail": "72"
+  },
+  {
+   "kind": "published",
+   "what": "feedback group size after exclusions",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group size after exclusions",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "equal timbre group size after exclusions",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "expert violinists group size after exclusions",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the feedback group",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the control group",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the equal timbre group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the expert violinists group",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, equal timbre group",
+   "computed": 30.764705882352942,
+   "reported": 30.76,
+   "tol": 0.005,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "novice participants before exclusions",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every error is within +-2400 cents (two octaves)",
+   "ok": true,
+   "detail": "1962.85930490916"
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "mean age, feedback group: 29.60 here, 27.93 printed in the paper (not used as a check)",
+  "mean age, control group: 27.93 here, 27.83 printed in the paper (not used as a check)",
+  "mean age, expert violinists group: 32.07 here, 32.4 printed in the paper (not used as a check)",
+  "novices baseline mean absolute error with the violin (cents): 165.17 here, 150 printed in the paper (not used as a check)",
+  "novices baseline mean absolute error with the voice (cents): 272.17 here, 271 printed in the paper (not used as a check)",
+  "experts baseline mean absolute error with the violin (cents): 27.45 here, 18 printed in the paper (not used as a check)",
+  "experts baseline mean absolute error with the voice (cents): 60.03 here, 26.82 printed in the paper (not used as a check)",
+  "experts baseline mean signed error with the violin (cents): -18.09 here, -16 printed in the paper (not used as a check)",
+  "experts baseline mean signed error with the voice (cents): -46.33 here, -22 printed in the paper (not used as a check)",
+  "The paper's full-sample statistics (ANOVAs, post-hoc tests) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "Intonation_data.rar",
+   "url": "https://zenodo.org/api/records/4630144/files/Intonation_data.rar/content",
+   "bytes": 469352766,
+   "sha256": "9e5fe8127cc6901ff270861d0eda4c74e25b0fe2b8d558c64780fe4639d1252e",
+   "fetched_utc": "2026-11-09T12:16:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Blanco2021_FrontPsychol_630144.zip"
+}

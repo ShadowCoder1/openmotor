@@ -1,0 +1,262 @@
+{
+ "id": "Nault2022_FrontHumNeurosci",
+ "module": "speech",
+ "rows": 14790,
+ "subjects": 154,
+ "persons": 38,
+ "zip_bytes": 336647,
+ "zip_sha256": "4c082c6a82ce84589a3a6a46007f5e4a891cf814b0a79c482d37a4f7f4625467",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1 phases are trials 1-15, 16-75, 76-135 of the file (original trials 6-20, 21-80, 81-140)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 phases are trials 1-15, 16-45, 46-75 of the file (original 6-20, 21-50, 51-80)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every sequence is unique by trial and rows kept in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shift 0 in Baseline rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: three conditions per speaker, 135 trials each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: five conditions per speaker, 75 trials each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: number of speakers",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: number of speakers analysed (22 recruited, 2 removed)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: number of utterances",
+   "computed": 7290.0,
+   "reported": 7290.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 1, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: number of utterances",
+   "computed": 7500.0,
+   "reported": 7500.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 2, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: F1 values omitted for tracking problems",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 1, Acoustic analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: F2 values omitted for tracking problems",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 1, Acoustic analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: F1 values omitted for tracking problems",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 2, Acoustic analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: F2 values omitted for tracking problems",
+   "computed": 191.0,
+   "reported": 191.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Methods, Experiment 2, Acoustic analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: F1 observations in the mixed model",
+   "computed": 7260.0,
+   "reported": 7260.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Results, Experiment 1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: F2 observations in the mixed model",
+   "computed": 7247.0,
+   "reported": 7247.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Results, Experiment 1, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: F1 observations in the mixed model",
+   "computed": 7438.0,
+   "reported": 7438.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Results, Experiment 2, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: F2 observations in the mixed model",
+   "computed": 7309.0,
+   "reported": 7309.0,
+   "tol": 0,
+   "source": "Nault et al. 2022, Results, Experiment 2, Table 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean within-speaker SD of F1, Baseline (Hz)",
+   "computed": 20.723808095235405,
+   "reported": 20.72,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 1, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean within-speaker SD of F1, Perturbation (Hz)",
+   "computed": 24.053731803088926,
+   "reported": 24.05,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 1, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean within-speaker SD of F1, Return (Hz)",
+   "computed": 24.473740986418747,
+   "reported": 24.47,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 1, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Baseline (Hz)",
+   "computed": 28.469717950305142,
+   "reported": 28.47,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Perturbation (Hz)",
+   "computed": 31.640749830071144,
+   "reported": 31.64,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Return (Hz)",
+   "computed": 29.75101923252799,
+   "reported": 29.75,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Control condition, Baseline (Hz)",
+   "computed": 30.416062701145172,
+   "reported": 30.42,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Control condition, Perturbation (Hz)",
+   "computed": 29.155257194455828,
+   "reported": 29.16,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean within-speaker SD of F1, Control condition, Return (Hz)",
+   "computed": 28.65061702312219,
+   "reported": 28.65,
+   "tol": 0.005,
+   "source": "Nault et al. 2022, Results, Experiment 2, Variability",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "raw.xlsx",
+   "url": "https://osf.io/download/vue2q/",
+   "bytes": 842053,
+   "sha256": "1760e2e13ba8d0b3fcb31687ec59550d4c8684fb224fc2af5033d8d96f0232cb",
+   "fetched_utc": "2026-11-09T11:47:42Z"
+  },
+  {
+   "file": "corr.xlsx",
+   "url": "https://osf.io/download/798kd/",
+   "bytes": 765394,
+   "sha256": "b7862f04beb90e0ccf68e9cf0a0198fcacdb31985df6c68993806f341fc40000",
+   "fetched_utc": "2026-11-09T11:47:47Z"
+  },
+  {
+   "file": "corr_values.docx",
+   "url": "https://osf.io/download/uywaj/",
+   "bytes": 61464,
+   "sha256": "d05eaa93e7bcca05536555e114adf0603eeb593327c5cb42a5b25842899da033",
+   "fetched_utc": "2026-11-09T11:48:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nault2022_FrontHumNeurosci.zip"
+}

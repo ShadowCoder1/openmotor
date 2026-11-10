@@ -1,0 +1,79 @@
+{
+ "id": "Carlisle2023_eLife",
+ "module": "timeseries",
+ "rows": 800,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 114810426,
+ "zip_sha256": "4f911961fcc6c5907be3cabcb73e1ed9b0677f6f706f84125596c214f24381c7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Subjects (N = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking distances",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (1.1 ... 12.7 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in the main (sidewalk) set",
+   "computed": 400.0,
+   "reported": 400.0,
+   "tol": 0,
+   "source": "Methods (a total of 400 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per distance per participant in the main set",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods (each distance four times)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "800 recordings, 80 per participant",
+   "ok": true,
+   "detail": "800"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 42 channels plus time",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "main-set sections are 2 per participant-distance pair of trials",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Published speeds and durations (for example peak speed range 1.21 to 1.78 m/s at 12.7 m) were not reproduced: they come from the authors' manual step analysis and are not in the per-trial files."
+ ],
+ "sources": [
+  {
+   "file": "repo.zip",
+   "url": "https://codeload.github.com/kuo-lab/short_walk_experiment/zip/refs/heads/master",
+   "bytes": 305781922,
+   "sha256": "ea513f5cb55560ccf4d4236cff19cf84bf73c111d552374910ad03d9afd02707",
+   "fetched_utc": "2026-11-09T14:23:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Carlisle2023_eLife.zip"
+}

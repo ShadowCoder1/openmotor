@@ -1,0 +1,7 @@
+{
+ "id": "Rossi2026_eLife",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad download needs a token. The deposit (doi:10.5061/dryad.18931zd27, CC0, one 19 MB ZIP plus README.md) is the only copy: the eLife data availability statement says all data and code are in Dryad, and no Zenodo, figshare, OSF or GitHub copy was found. Retry when a Dryad token is available. Paper (eLife 13:RP101671, 2026, doi 10.7554/eLife.101671.3) matches extra_studies.json.",
+ "sources": []
+}

@@ -1,0 +1,522 @@
+{
+ "id": "Belz2022_LangSpeech",
+ "module": "articulography",
+ "rows": 1191,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 146921,
+ "zip_sha256": "d35f26504a07e0bd10e2c208d03275ea52397924ba68e1c886c85ab95ca56b11",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract; Section 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male speakers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Section 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female speakers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Section 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic syllable onsets in the acoustic analysis",
+   "computed": 784.0,
+   "reported": 784.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic syllable nuclei in the acoustic analysis",
+   "computed": 784.0,
+   "reported": 784.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic syllable codas in the acoustic analysis",
+   "computed": 784.0,
+   "reported": 784.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disyllabic first-syllable onsets",
+   "computed": 392.0,
+   "reported": 392.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disyllabic second-syllable onsets",
+   "computed": 392.0,
+   "reported": 392.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disyllabic first-syllable nuclei",
+   "computed": 392.0,
+   "reported": 392.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disyllabic second-syllable nuclei (schwa elided once in Miete)",
+   "computed": 391.0,
+   "reported": 391.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "acoustic data excluded (% of 2,400 + 1,600 constituents)",
+   "computed": 2.024999999999999,
+   "reported": 2.02,
+   "tol": 0.01,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2: target words analysed, phrase-medial",
+   "computed": 582.0,
+   "reported": 582.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2: target words analysed, phrase-final",
+   "computed": 594.0,
+   "reported": 594.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2: target words analysed, total",
+   "computed": 1176.0,
+   "reported": 1176.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2: unexpected boundaries (phrase-medial target produced phrase-final)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 2, row c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2: no noticeable boundary (phrase-final target produced phrase-medial)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Table 2, row b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic stimuli in the articulatory analysis",
+   "computed": 748.0,
+   "reported": 748.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disyllabic stimuli in the articulatory analysis",
+   "computed": 385.0,
+   "reported": 385.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic stimuli excluded for a displacement below 1 mm",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "articulatory data excluded (% of 800 + 400 stimuli)",
+   "computed": 5.583333333333329,
+   "reported": 5.58,
+   "tol": 0.01,
+   "source": "Section 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean coda duration in phrase-final monosyllabic words (ms)",
+   "computed": 136.35899454240132,
+   "reported": 136.0,
+   "tol": 0.5,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of coda duration in phrase-final monosyllabic words (ms)",
+   "computed": 30.95228206793487,
+   "reported": 31.0,
+   "tol": 0.5,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean schwa duration in phrase-final disyllabic words (ms)",
+   "computed": 148.85543570219969,
+   "reported": 149.0,
+   "tol": 0.5,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of schwa duration in phrase-final disyllabic words (ms)",
+   "computed": 38.289222649270606,
+   "reported": 38.3,
+   "tol": 0.05,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lax vowels in monosyllabic words: lengthening phrase-final vs phrase-medial (ms)",
+   "computed": 25.836454172572303,
+   "reported": 26.0,
+   "tol": 0.5,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tense vowels in monosyllabic words: lengthening phrase-final vs phrase-medial (ms)",
+   "computed": 44.96773726851849,
+   "reported": 45.0,
+   "tol": 0.5,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tense vowels in monosyllabic words: proportional lengthening (%)",
+   "computed": 45.00895640828475,
+   "reported": 45.0,
+   "tol": 0.5,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lax vowels in monosyllabic words: proportional lengthening (%)",
+   "computed": 41.19691913147297,
+   "reported": 41.0,
+   "tol": 0.5,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lax vowels in disyllabic words: lengthening phrase-final vs phrase-medial (ms)",
+   "computed": 8.42942176870747,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tense vowels in disyllabic words: lengthening phrase-final vs phrase-medial (ms)",
+   "computed": 18.9132193932452,
+   "reported": 19.0,
+   "tol": 0.5,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Bahn: lengthening of the vowel phrase-finally (%)",
+   "computed": 41.00011407807862,
+   "reported": 41.0,
+   "tol": 0.55,
+   "source": "Section 3.1.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stiel (tense /i\u02d0/): lengthening of the vowel (%)",
+   "computed": 38.48588688851513,
+   "reported": 38.0,
+   "tol": 0.55,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "still (lax /\u026a/): lengthening of the vowel (%)",
+   "computed": 43.088685513342526,
+   "reported": 43.0,
+   "tol": 0.55,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic codas: smallest lengthening over the 8 words (%)",
+   "computed": 74.5575801939212,
+   "reported": 75.0,
+   "tol": 0.55,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "monosyllabic codas: largest lengthening over the 8 words (%)",
+   "computed": 151.17797971607877,
+   "reported": 151.0,
+   "tol": 0.55,
+   "source": "Section 3.1.1 (Monosyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Huete (tense /y\u02d0/): lengthening of the first vowel (%)",
+   "computed": 24.716635639026883,
+   "reported": 25.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Miete (tense /i\u02d0/): lengthening of the first vowel (%)",
+   "computed": 27.952277183788986,
+   "reported": 28.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Huette (lax /\u028f/): lengthening of the first vowel (%)",
+   "computed": 16.64072201939002,
+   "reported": 17.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Mitte (lax /\u026a/): lengthening of the first vowel (%)",
+   "computed": 22.59738017553743,
+   "reported": 23.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Huette: lengthening of the schwa (%)",
+   "computed": 168.6165036638984,
+   "reported": 169.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Miete: lengthening of the schwa (%)",
+   "computed": 240.9906880334517,
+   "reported": 241.0,
+   "tol": 0.55,
+   "source": "Section 3.1.2 (Disyllabic target words)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every acoustic constituent row of the authors' tables is in the table",
+   "ok": true,
+   "detail": "3919 of 3919"
+  },
+  {
+   "kind": "internal",
+   "what": "every gesture row of the authors' EMA tables is in the table",
+   "ok": true,
+   "detail": "1177 of 1177"
+  },
+  {
+   "kind": "internal",
+   "what": "1,191 tokens: 1,162 with acoustic and EMA values, 14 acoustic only, 15 EMA only",
+   "ok": true,
+   "detail": "1191 tokens; both 1162"
+  },
+  {
+   "kind": "internal",
+   "what": "10 speakers, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "speaker sex agrees between the acoustic labels and the EMA tables",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial ranks run 1..n without gaps for each speaker",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "iterations 1 to 5 only (X marks repeated recordings)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "closing, plateau and opening duration equal NONS-GONS, NOFFS-NONS and GOFFS-NOFFS",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tongue tip displacements are the distances between the positions at GONS and MAXC, and at MAXC and GOFFS",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "lip aperture gestures are the words with /m/ (Ruhm, Rum) and have no z values; tongue tip gestures have both",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "landmark times in the order GONS <= PVEL <= NONS <= MAXC <= NOFFS <= PVEL2 <= GOFFS on at least 99% of the gestures",
+   "ok": true,
+   "detail": "99.75%"
+  },
+  {
+   "kind": "internal",
+   "what": "the constituents of a word follow each other without gaps (start + duration = next start) in at least 99% of the words",
+   "ok": true,
+   "detail": "100.00% (largest gap 0.00 ms)"
+  },
+  {
+   "kind": "internal",
+   "what": "acoustic and EMA times share one time axis: the gesture's maximum constriction lies between 100 ms before the word's start and 150 ms after its end on at least 97% of the tokens that have both",
+   "ok": true,
+   "detail": "99.23% of 1162"
+  },
+  {
+   "kind": "internal",
+   "what": "across words, MAXC follows the end of the word's last constituent (correlation over tokens of at least 0.99)",
+   "ok": true,
+   "detail": "r = 0.9947"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's acoustic files are 48 kHz recordings, where the paper says the acoustic data were recorded at 44.1 kHz.",
+  "The paper's Tables 3, 5 and 6 give the number of observations that entered each mixed model (for example 2,342 and 1,541 durations, and 760, 748, 783 and 782 closing movements): these follow residual-based trimming in the authors' models, which was not re-run, so only the counts of the data themselves are checked here.",
+  "The paper says 16 utterances of one speaker had a different prosodic structure than targeted and were re-categorized; in the deposit the 16 words whose phrasal_position differs from the intended one (10 intended phrase-medial, 6 intended phrase-final, as in the paper's Table 2) come from 3 speakers (words per speaker: 14, 1, 1)."
+ ],
+ "sources": [
+  {
+   "file": "di.txt",
+   "url": "https://zenodo.org/api/records/4896137/files/di.txt/content",
+   "bytes": 494641,
+   "sha256": "25788079c03073e81700954513703e54e2f71ba776223475307c24283b61fe71",
+   "fetched_utc": "2026-11-08T21:55:53Z"
+  },
+  {
+   "file": "mono.art.txt",
+   "url": "https://zenodo.org/api/records/4896137/files/mono.art.txt/content",
+   "bytes": 206810,
+   "sha256": "0fc068c32a090c30d3a0a78e6c49eac9e95afdf3aea5ced136cbd7dbac6e5807",
+   "fetched_utc": "2026-11-08T21:56:00Z"
+  },
+  {
+   "file": "analysis.html",
+   "url": "https://zenodo.org/api/records/4896137/files/analysis.html/content",
+   "bytes": 4149272,
+   "sha256": "8578d5168d3bdafb85abd0c19a4f882caa378ca8c32bb126743d044cab154b53",
+   "fetched_utc": "2026-11-08T21:56:09Z"
+  },
+  {
+   "file": "analysis.R",
+   "url": "https://zenodo.org/api/records/4896137/files/analysis.R/content",
+   "bytes": 80147,
+   "sha256": "7976f3b343dcbcd0f9778ee02690eb3b9c145abfcb7b355d19e27a62fdae3133",
+   "fetched_utc": "2026-11-08T21:56:25Z"
+  },
+  {
+   "file": "di.art.txt",
+   "url": "https://zenodo.org/api/records/4896137/files/di.art.txt/content",
+   "bytes": 108693,
+   "sha256": "36b5e78f14c4f4c01fb54ecd95f15158b57b8157d00001e869749f4db0c9b665",
+   "fetched_utc": "2026-11-08T21:56:29Z"
+  },
+  {
+   "file": "mono.txt",
+   "url": "https://zenodo.org/api/records/4896137/files/mono.txt/content",
+   "bytes": 733017,
+   "sha256": "634f1afd78d5b0b61150e3add064a4c8e795840cee0a50cf2e96fc44dc8b05d9",
+   "fetched_utc": "2026-11-08T21:57:02Z"
+  },
+  {
+   "file": "meta.speech.dur.txt",
+   "url": "https://zenodo.org/api/records/4896137/files/meta.speech.dur.txt/content",
+   "bytes": 469,
+   "sha256": "d77f5fc7f480bc243faa407b341c7cf58e0bc969b1e6d2cd86e640165069ca74",
+   "fetched_utc": "2026-11-08T21:57:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Belz2022_LangSpeech.zip"
+}

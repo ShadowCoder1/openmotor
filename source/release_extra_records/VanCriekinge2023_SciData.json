@@ -1,0 +1,85 @@
+{
+ "id": "VanCriekinge2023_SciData",
+ "module": "timeseries",
+ "rows": 188,
+ "subjects": 188,
+ "persons": 188,
+ "zip_bytes": 33066272,
+ "zip_sha256": "dfdf431710a376b587d4dec9337aa2b349f15741f1e45a62c01c923fc145a77a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "able-bodied participants",
+   "computed": 138.0,
+   "reported": 138.0,
+   "tol": 0,
+   "source": "Abstract; Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroke survivors",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Abstract; Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "points per gait cycle",
+   "computed": 1001.0,
+   "reported": 1001.0,
+   "tol": 0,
+   "source": "Data Records / MAT description (1001 points)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every tab converted, 188 recordings, each with 1001 samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "empty cells are kept empty (channels the authors did not share for a participant)",
+   "ok": true,
+   "detail": "299299 empty cells"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "No curve-level number from the paper could be checked; the checks are participant counts and the 1001-point length."
+ ],
+ "sources": [
+  {
+   "file": "able_xlsx.xlsx",
+   "url": "https://ndownloader.figshare.com/files/42450072",
+   "bytes": 37690639,
+   "sha256": "a579373a15e3a92e4812bc38460fd3022b2d9d1c6f9fbe2c9da80acf25b6ffab",
+   "fetched_utc": "2026-11-09T00:27:59Z"
+  },
+  {
+   "file": "stroke_xlsx.xlsx",
+   "url": "https://ndownloader.figshare.com/files/42450084",
+   "bytes": 14788261,
+   "sha256": "905512c4deb0f90d54d01032f577446886280d6a6f8b6ead9c7096aab1ad16dd",
+   "fetched_utc": "2026-11-09T00:28:08Z"
+  },
+  {
+   "file": "desc_mat.xlsx",
+   "url": "https://ndownloader.figshare.com/files/42450093",
+   "bytes": 18742,
+   "sha256": "03ccac92dd48aec01be0abd4e5ab0a1632a50fa5b4edc26fab0d6fc8d44475b6",
+   "fetched_utc": "2026-11-09T00:28:12Z"
+  },
+  {
+   "file": "nrstrides.xlsx",
+   "url": "https://ndownloader.figshare.com/files/42450090",
+   "bytes": 13939,
+   "sha256": "01685847de5a385911a9e1943b7bc6dac8afd3a1a7401661ec436e372a8d36eb",
+   "fetched_utc": "2026-11-09T00:28:33Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanCriekinge2023_SciData.zip"
+}

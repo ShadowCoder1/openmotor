@@ -1,0 +1,86 @@
+{
+ "id": "Voudouris2016_VisRes",
+ "module": "timeseries",
+ "rows": 4296,
+ "subjects": 72,
+ "persons": 24,
+ "zip_bytes": 85147341,
+ "zip_sha256": "3b53d58aa545cb4a8bcef2068ef9d6e1cd207f8f7befdfa49c26a74b661b2bca",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "conditions per participant in Experiment 1 (3 target locations x static or moving, per Instructions.rtf)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Deposit documentation, Instructions.rtf (LS, LMOV, CS, CMOV, RS, RMOV)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per participant in Experiment 2 (central location, static and moving)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Deposit documentation, Instructions.rtf (CS, CMOV) and abstract (static and moving condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions per participant in Experiment 3 (static central location)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Deposit documentation, Instructions.rtf (CS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling interval (ms)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0.01,
+   "source": "EyeLink II at 500 Hz (RECCFG message of the recordings)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "condition code in the text file matches the folder name (location digit, 1 moving / 2 static) in every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand-back duration in the recording messages equals the text file's hand-back start/end difference",
+   "ok": true,
+   "detail": "1677/1680"
+  },
+  {
+   "kind": "internal",
+   "what": "exactly one eye has valid gaze in every recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row and one sample file per recording",
+   "ok": true,
+   "detail": "4296 rows"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper could not be read when this release was made (publisher access refused), so no number from the paper was reproduced: the published checks are the structure given in the deposit's own Instructions.rtf (conditions per participant) and the tracker's sampling rate. The paper's latency, accuracy and precision values are not rebuilt here.",
+  "The deposit has no exclusion flags; excluded_by_authors is False in every row."
+ ],
+ "sources": [
+  {
+   "file": "Data.zip",
+   "url": "https://zenodo.org/records/48220/files/Data.zip?download=1",
+   "bytes": 224386972,
+   "sha256": "3ce1d8e44351ebf973f0675d4c610b3ee423018bfbc20620f712da55733ebd28",
+   "fetched_utc": "2026-11-09T10:29:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Voudouris2016_VisRes.zip"
+}

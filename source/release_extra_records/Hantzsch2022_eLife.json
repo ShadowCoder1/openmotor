@@ -1,0 +1,537 @@
+{
+ "id": "Hantzsch2022_eLife",
+ "module": "speech",
+ "rows": 10410,
+ "subjects": 131,
+ "persons": 92,
+ "zip_bytes": 210011,
+ "zip_sha256": "5cc10033ceacd353d32dae8df21376cd4d7d7003fa4f738c4f2d2e5e709bf848",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the repository's LICENSE is the MIT License text reproduced in LICENSE.txt",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the participant-level tables hold the same 131 participant datasets as the trial table, two rows each (up, down), with the same shift sizes",
+   "ok": true,
+   "detail": "262 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "one row per row of the authors' trial table, in its order",
+   "ok": true,
+   "detail": "10410 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the next trial is always the altered trial + 1 (OSTrial = compTrial + 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant datasets per study: 13, 12, 40, 40, 11, 15",
+   "ok": true,
+   "detail": "{('cat', 'na'): 11, ('cereb', 'na'): 13, ('fmtAlt', 'na'): 15, ('noisyfb', 'noisy'): 40, ('noisyfb', 'normal'): 40, ('reachAndSpeech', 'na'): 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "131 subject sequences and 92 participant codes; 39 codes take part in both noisyfb sessions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one shift size per subject and direction, positive for up and negative for down, 61-164 mel",
+   "ok": true,
+   "detail": "61.2-163.2"
+  },
+  {
+   "kind": "internal",
+   "what": "F1-only studies (1-4) shift by 125 mel or by a per-participant 105-141 mel; 2-D studies (5, 6) have no pert_value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows of each subject come as all up rows, then all down rows (the authors' order)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no altered trial appears twice within a subject",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers within each study's session length (Table 1: 160, 120, 240, 240, 400, 800 trials; one normal-session dataset is numbered up to 689)",
+   "ok": true,
+   "detail": "2-798"
+  },
+  {
+   "kind": "internal",
+   "what": "f1_change_later_mel present on every row; f1_change_mel missing on 65 rows (as shared)",
+   "ok": true,
+   "detail": "65 missing"
+  },
+  {
+   "kind": "internal",
+   "what": "F1 changes within -320 and 290 mel",
+   "ok": true,
+   "detail": "-296.9 to 178.4; -317.6 to 280.2"
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets analysed (t(130))",
+   "computed": 131.0,
+   "reported": 131.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant-level tests; Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Study 1: Parrell et al. 2017 (included minus outliers)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Study 2: Parrell et al. 2021 (included minus outliers)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Studies 3 and 4: Niziolek & Parrell 2021, normal-feedback session (included minus outliers)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Studies 3 and 4: Niziolek & Parrell 2021, noisy-feedback session (included minus outliers)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Study 5: Niziolek & Guenther 2013 (included minus outliers)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant datasets included, Study 6: Niziolek et al. 2014 (included minus outliers)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, up-shift trials, trial-level mean (mel)",
+   "computed": -3.988831211132503,
+   "reported": -3.99,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-up trials, trial-level mean (mel)",
+   "computed": -1.5467258836659854,
+   "reported": -1.55,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, One-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-down trials, trial-level mean (mel)",
+   "computed": 0.5874301773984613,
+   "reported": 0.59,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, One-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot ~ condition, trial level, LMM (1|participant) + (1|study): beta up vs down (mel)",
+   "computed": -2.1448934505379547,
+   "reported": -2.14,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, One-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot ~ condition, trial level, LMM: SE of beta",
+   "computed": 0.5347055848320541,
+   "reported": 0.53,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, One-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot ~ condition, trial level, effect size 2.14 / residual SD (as lmer_byTrial.Rmd)",
+   "computed": 0.07862168340348265,
+   "reported": 0.079,
+   "tol": 0.0005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, One-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation ~ condition, trial level, LMM (1|participant): beta up vs down (mel)",
+   "computed": -6.932715546545834,
+   "reported": -6.93,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation ~ condition, trial level, LMM: SE of beta",
+   "computed": 0.6634361400959521,
+   "reported": 0.66,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation ~ condition, trial level, effect size 6.93 / residual SD (as lmer_byTrial.Rmd)",
+   "computed": 0.20569489098513205,
+   "reported": 0.21,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial-level relationship model: compensation x shift magnitude beta",
+   "computed": 0.15994222056364715,
+   "reported": 0.16,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial-level relationship model: compensation x shift magnitude SE",
+   "computed": 0.05237416670083012,
+   "reported": 0.052,
+   "tol": 0.0005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial-level relationship model: compensation main effect beta",
+   "computed": -0.03305941106323686,
+   "reported": -0.033,
+   "tol": 0.0005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial-level relationship model: compensation main effect SE",
+   "computed": 0.05291371859310837,
+   "reported": 0.053,
+   "tol": 0.0005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial-level relationship model: shift magnitude beta",
+   "computed": 7.454783573195991,
+   "reported": 7.46,
+   "tol": 0.01,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the trial-wise correlation analysis",
+   "computed": 92.0,
+   "reported": 92.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a positive trial-wise correlation",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean trial-wise correlation r (back-transformed mean Fisher z)",
+   "computed": 0.2053677296594714,
+   "reported": 0.21,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "t-test of Fisher z against 0",
+   "computed": 11.071198042391655,
+   "reported": 11.07,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cohen's d of Fisher z against 0 (pooled-SD formula of effsize::cohen.d with a zero vector)",
+   "computed": 1.6323590963484933,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "subject_means.csv: one up and one down row per subject",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "compensation, up shifts, mean of participant means (mel)",
+   "computed": -2.750869700541984,
+   "reported": -2.75,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, down shifts, mean of participant means (mel)",
+   "computed": 4.3966961057480916,
+   "reported": 4.4,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, up shifts, mean of participant means (mel)",
+   "computed": -2.078260403053435,
+   "reported": -2.08,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, down shifts, mean of participant means (mel)",
+   "computed": 0.8177013645648856,
+   "reported": 0.82,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, paired t up vs down, t(130)",
+   "computed": -7.001776025586518,
+   "reported": -7.0,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, up shifts vs 0, t(130)",
+   "computed": -3.6259907801818105,
+   "reported": -3.63,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, down shifts vs 0, t(130)",
+   "computed": 7.235239324249349,
+   "reported": 7.24,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, paired t up vs down, t(130)",
+   "computed": -2.983714812882247,
+   "reported": -2.98,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, paired t up vs down, p",
+   "computed": 0.003402317094055622,
+   "reported": 0.0034,
+   "tol": 5e-05,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-up vs 0, t(130)",
+   "computed": -3.2161213359793708,
+   "reported": -3.2,
+   "tol": 0.05,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-up vs 0, p",
+   "computed": 0.0016397364592960905,
+   "reported": 0.0016,
+   "tol": 5e-05,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-down vs 0, t(130)",
+   "computed": 1.2113134029492307,
+   "reported": 1.2,
+   "tol": 0.05,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-down vs 0, p",
+   "computed": 0.2279726450539989,
+   "reported": 0.23,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, Cohen's d up vs down (pooled SD)",
+   "computed": 0.9085760408757021,
+   "reported": 0.91,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "compensation, down shifts vs 0, Cohen's d (pooled SD with a zero vector)",
+   "computed": 0.8939891564754218,
+   "reported": 0.89,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (Compensation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, Cohen's d up vs down (pooled SD)",
+   "computed": 0.38291043878906744,
+   "reported": 0.38,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-shot adaptation, post-down vs 0, Cohen's d (pooled SD with a zero vector)",
+   "computed": 0.1496703839084557,
+   "reported": 0.15,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, participant level (One-shot adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participant-level relationship model (one-shot ~ compensation + (1|participant), flipped signs): beta",
+   "computed": 0.14232490507308523,
+   "reported": 0.14,
+   "tol": 0.005,
+   "source": "Hantzsch, Parrell & Niziolek 2022, eLife, Results, Relationship between compensation and one-shot adaptation, participant level",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Trial-level mean compensation on down-shift trials is 2.96 mel in the shared table; the paper reports 2.69 (probably transposed digits; the up-shift mean, -3.99, matches).",
+  "The paper's compensation model with random intercepts for participant and study gives -6.96 here (statsmodels); the reported -6.93 is matched by the participant-only model used as the check, as if lme4 estimated the study variance at zero. The one-shot model with both intercepts matches (-2.14).",
+  "SEs not reproduced: shift magnitude in the trial-level relationship model 3.39 (paper 3.34); participant-level relationship 0.059 (paper 0.058). The trial-level SEs of the condition means (0.26-0.33) are not plain SEs of the rows and were not reproduced.",
+  "Cohen's d against 0 for up shifts: 0.45 for compensation (paper 0.49) and 0.40 for one-shot adaptation (paper 0.38), with the formula that reproduces the paper's other d values.",
+  "The paper counts 91 people, 40 of them in both Niziolek & Parrell 2021 sessions; the shared table has 92 participant codes, 39 in both sessions and one only in each, so one person probably carries two codes."
+ ],
+ "sources": [
+  {
+   "file": "byTrial_4_23_21.csv",
+   "url": "https://raw.githubusercontent.com/blab-lab/postMan/1358d3698156a9b0f1581b1b741185376b9b1b02/byTrial_4_23_21.csv",
+   "bytes": 754828,
+   "sha256": "46081c87bf9433033feebf185561ceb288a5d9cd5d0d1cd8900e3f67dce87eca",
+   "fetched_utc": "2026-11-08T19:45:30Z"
+  },
+  {
+   "file": "compensation_04_23_21.csv",
+   "url": "https://raw.githubusercontent.com/blab-lab/postMan/1358d3698156a9b0f1581b1b741185376b9b1b02/compensation_04_23_21.csv",
+   "bytes": 11011,
+   "sha256": "bd29ac315f0cd02159a028e4594354ddfb01a8eb7e3e6bc4bd6a2e87ff40a638",
+   "fetched_utc": "2026-11-08T19:45:32Z"
+  },
+  {
+   "file": "oneShot_4_23_21.csv",
+   "url": "https://raw.githubusercontent.com/blab-lab/postMan/1358d3698156a9b0f1581b1b741185376b9b1b02/oneShot_4_23_21.csv",
+   "bytes": 11017,
+   "sha256": "bd0bb8be027a1cfbae13b8c32e54dc6b5c71100fc299ac62cb7df0dc608af5dd",
+   "fetched_utc": "2026-11-08T19:45:34Z"
+  },
+  {
+   "file": "LICENSE",
+   "url": "https://raw.githubusercontent.com/blab-lab/postMan/1358d3698156a9b0f1581b1b741185376b9b1b02/LICENSE",
+   "bytes": 1065,
+   "sha256": "49881d6f31acf16763745dc2ed8abd38b2f3918ef22ba09b2dacb9ed4ebd7548",
+   "fetched_utc": "2026-11-08T19:45:36Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://raw.githubusercontent.com/blab-lab/postMan/1358d3698156a9b0f1581b1b741185376b9b1b02/README.md",
+   "bytes": 336,
+   "sha256": "ef4bfeb09269302f3511a707f1d20653d842190c37a508a8814018386d2d0f56",
+   "fetched_utc": "2026-11-08T19:45:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hantzsch2022_eLife.zip"
+}

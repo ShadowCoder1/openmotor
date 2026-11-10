@@ -1,0 +1,152 @@
+{
+ "id": "Adams2018_bioRxiv_handtremor",
+ "module": "keypress",
+ "rows": 40047779,
+ "subjects": 744,
+ "persons": 744,
+ "zip_bytes": 596485733,
+ "zip_sha256": "29632d354b043bb07924c493b7384ec159ac0c5f30e448ea558860ecec639d8b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all 14 downloaded files match the SHA-256 values Mendeley Data lists",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every line is read or counted as damaged",
+   "ok": true,
+   "detail": "40047779 kept, 477107 damaged of 40524886"
+  },
+  {
+   "kind": "internal",
+   "what": "participants with keystrokes and participant information",
+   "ok": true,
+   "detail": "744 users with keystrokes, 597 of them with participant information (Mendeley page: over 500 people)"
+  },
+  {
+   "kind": "internal",
+   "what": "no data user lost: users counted equal users with at least one valid row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant row set has a non-negative time from its first keystroke",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group sizes",
+   "ok": true,
+   "detail": "432 with a PD diagnosis, 165 without, 147 unknown"
+  }
+ ],
+ "no_published_reason": "No number of the bioRxiv paper could be reproduced: it reports 465 anonymous participants aged 55 to 75 and a final sample of 76 (27 with PD, 15 with tremor) selected by a rule (8 sequences of 50 continuous keystrokes per hand) that the deposit does not define closely enough to re-run; participants aged 55-75 with data and participant information number 347-364 here depending on the reference year. Internal checks only.",
+ "differences": [
+  "The paper's 465 participants aged 55-75 and its 76 selected subjects could not be reproduced from the deposit (see above)."
+ ],
+ "sources": [
+  {
+   "file": "Archived_Data.zip.001",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/3b750e80-b896-46d9-917b-b0f083e098a6/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "40c00627f73efb277b70cefe2bf847d78d123aacae73bbf2cfc9c0657821e6d1",
+   "fetched_utc": "2026-11-08T23:58:23Z"
+  },
+  {
+   "file": "Archived_Data.zip.002",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/be8d39f1-9fa5-4866-a285-530883c7c247/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "b05076afd41d358ec41a355c13ba0e019106482871593e5cf8024e6dbf9bb7af",
+   "fetched_utc": "2026-11-08T23:58:41Z"
+  },
+  {
+   "file": "Archived_Data.zip.003",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/c9977e5f-7a0e-45c9-ae42-bfeef256cd38/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "6b160e9808342eb825c881d7d12f989c49bf5d4e4f7fa99be1004a1f22737c98",
+   "fetched_utc": "2026-11-08T23:58:46Z"
+  },
+  {
+   "file": "Archived_Data.zip.004",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/cf8f791e-b759-4a3e-97ce-8a52d7066fc3/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "a0221c07345f5ca97ef84574e0f07da26b45c0f97bce3c24016c3bf4bab08d91",
+   "fetched_utc": "2026-11-08T23:58:51Z"
+  },
+  {
+   "file": "Archived_Data.zip.005",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/97793288-ca04-4039-b70c-5bd0fd804b4c/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "a7996c992dbcba1475fb0cbec78a4e77c97ac7677c0f6ec9ff869cc79bdd2894",
+   "fetched_utc": "2026-11-08T23:59:09Z"
+  },
+  {
+   "file": "Archived_Data.zip.006",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/eb524d8d-1863-48a2-ad5f-84935531c5f0/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "bcaa3b286df8182a06392adb86e6a821efee0930e2d7fd399be1a301ca27f474",
+   "fetched_utc": "2026-11-08T23:59:22Z"
+  },
+  {
+   "file": "Archived_Data.zip.007",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/62629b2e-c7a6-4012-90ce-cdfe368eab64/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "309ceca067f9fa8a729b77edc828ae363e3ce08ab3f0985c2537592f46e22afe",
+   "fetched_utc": "2026-11-08T23:59:39Z"
+  },
+  {
+   "file": "Archived_Data.zip.008",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/6dfe8781-fa98-4e58-ac7e-6a5904245aa1/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "a658cf1963f0e91c754110776c737747c77ea79a5e6158ad7ca982dd0e9c36c7",
+   "fetched_utc": "2026-11-08T23:59:57Z"
+  },
+  {
+   "file": "Archived_Data.zip.009",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/fb39269c-e0a7-4fbb-b126-e82bee0dedb7/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "dfab62416816b608666a4df41e62bc22eca87bca2e2d05948e1a4a77c1e4be65",
+   "fetched_utc": "2026-11-09T00:00:02Z"
+  },
+  {
+   "file": "Archived_Data.zip.010",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/5966fcf7-af34-4f76-81ff-3d8886a44ca3/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "6c74e007efc7a929cc9b58d10c7e5c5358eaf494e35ea307481d42b6f4f97d06",
+   "fetched_utc": "2026-11-09T00:00:08Z"
+  },
+  {
+   "file": "Archived_Data.zip.011",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/6c8adcff-1e9c-4a7a-8481-021af401e641/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "6cacfe0d08b6b2e1dab7489c4b8a72589580e4188e66c8680d81d10df0e086cc",
+   "fetched_utc": "2026-11-09T00:00:13Z"
+  },
+  {
+   "file": "Archived_Data.zip.012",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/8d53463d-3b14-4a7a-9f9b-ef8a5184f1c6/file_downloaded",
+   "bytes": 31457280,
+   "sha256": "31b8635f3ab515e9589d856868277fe59f16dcc76b85c99737c39eb263f6cdf6",
+   "fetched_utc": "2026-11-09T00:00:20Z"
+  },
+  {
+   "file": "Archived_Data.zip.013",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/55fa91e4-e195-4988-8ece-69752b9cc229/file_downloaded",
+   "bytes": 11382975,
+   "sha256": "d40c9511e5ca0f417ca7730d2630550d50696f0a15b1815e2e3cd79189e0cc2e",
+   "fetched_utc": "2026-11-09T00:00:34Z"
+  },
+  {
+   "file": "Archived_Users.zip",
+   "url": "https://data.mendeley.com/public-files/datasets/z39mhdsynx/files/d6d581f8-0e7b-4997-8e47-fb8b9ada20b3/file_downloaded",
+   "bytes": 188264,
+   "sha256": "8b1278d20a3b072a00e9aa027ad54b3eb989ff00cbc3014cf1efdd91c22a5035",
+   "fetched_utc": "2026-11-09T00:00:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Adams2018_bioRxiv_handtremor.zip"
+}

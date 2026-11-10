@@ -1,0 +1,243 @@
+{
+ "id": "Menon2025_Bioengineering",
+ "module": "timeseries",
+ "rows": 200,
+ "subjects": 20,
+ "persons": 10,
+ "zip_bytes": 9643151,
+ "zip_sha256": "371d62faf407f50ae6fc1aa1cb336bf5bf6ac1aeb240d5d7ab65db19dc7f4096",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods 2.6 (n = 10 included)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant and electrode configuration",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results 3.2 (ten trials, eight GVS and two sham)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sham trials per configuration",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Results 3.2 / Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest trial duration (s)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods 2.3 (each trial lasted 45 s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sample rate (Hz)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods 2.3 (sampling rate 60 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sub-trials of one quarter period of 0.1 Hz (2.5 s) per trial",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0.01,
+   "source": "Methods 2.4.1 (18 sub-trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "best overall stimulus is GVS8 (index of the stimulus with the largest improvement over sham)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Results 3.2, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "improvement of GVS8 over sham (%)",
+   "computed": 25.060057466151346,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Results 3.2, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "200 recordings = 10 participants x 2 configurations x 10 trials, all with at most 2701 samples",
+   "ok": true,
+   "detail": "99 of 200 have the full 2701 samples"
+  },
+  {
+   "kind": "internal",
+   "what": "each recording used a different one of the 10 cells",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Not reproduced with our reading of the paper's definitions, so not used as checks: individualised stimulus lowers error vs sham (%) (here 29.1, paper 51).",
+  "Not reproduced with our reading of the paper's definitions, so not used as checks: participants whose individualised stimulus is three-pole (here 6, paper 7)."
+ ],
+ "sources": [
+  {
+   "file": "3P01_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885867",
+   "bytes": 1069969,
+   "sha256": "8f0bccabef843aa0f54eb92a00e0462285fcbbf564b9e9cb415192ead56bdbc4",
+   "fetched_utc": "2026-11-09T15:24:59Z"
+  },
+  {
+   "file": "3P01_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885877",
+   "bytes": 1068148,
+   "sha256": "309ed5e53dce6a77806df523868352ea68a7af0d98f2dcebda75938f2ab0877b",
+   "fetched_utc": "2026-11-09T15:25:03Z"
+  },
+  {
+   "file": "3P02_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885870",
+   "bytes": 1074503,
+   "sha256": "bb51254da5542f2597676695612aca664a87c81d249e13039fc55a05d1f0d570",
+   "fetched_utc": "2026-11-09T15:25:07Z"
+  },
+  {
+   "file": "3P02_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885874",
+   "bytes": 1069895,
+   "sha256": "e4260a43c09c4eb8235bab4595e5ee35ea4d664f90eb942973020881f07f6c66",
+   "fetched_utc": "2026-11-09T15:25:11Z"
+  },
+  {
+   "file": "3P03_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885871",
+   "bytes": 1065079,
+   "sha256": "2d3d13a007b0f8717086cf58b312795f960af4f46d8a53f6126293a8d1693724",
+   "fetched_utc": "2026-11-09T15:25:15Z"
+  },
+  {
+   "file": "3P03_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885865",
+   "bytes": 1063605,
+   "sha256": "339353fcbe2f77d5305c512a20406df5b4195e5f6da18d556c44f4068809135d",
+   "fetched_utc": "2026-11-09T15:25:19Z"
+  },
+  {
+   "file": "3P04_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885878",
+   "bytes": 999695,
+   "sha256": "46c93c4daefcc9c48fc7e6bce17f742fe83414dda446e9647fa2b5f9a708ed84",
+   "fetched_utc": "2026-11-09T15:25:22Z"
+  },
+  {
+   "file": "3P04_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885882",
+   "bytes": 1010434,
+   "sha256": "bfaff765be7902cc656978d7aca96b79b10c225a44e0820668cfde3155ab3eaf",
+   "fetched_utc": "2026-11-09T15:25:27Z"
+  },
+  {
+   "file": "3P06_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885858",
+   "bytes": 1027282,
+   "sha256": "28ec2e53cf7dbdfd039f7a4f68696bd68a66ddcae585a5e04689de0669990a09",
+   "fetched_utc": "2026-11-09T15:25:31Z"
+  },
+  {
+   "file": "3P06_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885881",
+   "bytes": 1017269,
+   "sha256": "2c5a15a928a749af37ba0053d88e4913a99733eb2ad517a34df2010bb36d1575",
+   "fetched_utc": "2026-11-09T15:25:36Z"
+  },
+  {
+   "file": "3P07_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885863",
+   "bytes": 1057547,
+   "sha256": "8b820748a83551a72a47a47acec1d75148ec7f8fb5698927f567e437aff81b3c",
+   "fetched_utc": "2026-11-09T15:25:46Z"
+  },
+  {
+   "file": "3P07_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885872",
+   "bytes": 1057271,
+   "sha256": "51ab979afda9eb0cfb8b5cd942cd4c5710955d7b9deb6831ffe40f09bf4db558",
+   "fetched_utc": "2026-11-09T15:25:52Z"
+  },
+  {
+   "file": "3P08_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885857",
+   "bytes": 1043747,
+   "sha256": "685d18bf3d982c636d7481ac60faf24d45b7d9887c051c1079244dcddf98c72e",
+   "fetched_utc": "2026-11-09T15:25:57Z"
+  },
+  {
+   "file": "3P08_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885860",
+   "bytes": 1008131,
+   "sha256": "f82f45ab4e9fb80b92b29a3387f7e15eed5a8af9fdd2f1563a1d887a3bdfe621",
+   "fetched_utc": "2026-11-09T15:26:05Z"
+  },
+  {
+   "file": "3P09_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885885",
+   "bytes": 1074407,
+   "sha256": "e2bf04f7282eac0196c61969a24decc00331032a4d8ec8c3978212389dc77621",
+   "fetched_utc": "2026-11-09T15:26:10Z"
+  },
+  {
+   "file": "3P09_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885868",
+   "bytes": 1074517,
+   "sha256": "1355e5eccfaf685d8c9018ee6792bd09f64d6d4b601de3605901004a94133066",
+   "fetched_utc": "2026-11-09T15:26:14Z"
+  },
+  {
+   "file": "3P11_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885880",
+   "bytes": 1067468,
+   "sha256": "d59170ae5b0f6fab6c2bcee7f9a7f88a1ccac87f2c884b2f069dad6a6bd09158",
+   "fetched_utc": "2026-11-09T15:26:19Z"
+  },
+  {
+   "file": "3P11_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885876",
+   "bytes": 1063936,
+   "sha256": "14a025354a1426f373075632385d24c20b86102f60dfd6c8662255de9ef80abd",
+   "fetched_utc": "2026-11-09T15:26:24Z"
+  },
+  {
+   "file": "3P12_2pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885862",
+   "bytes": 1070592,
+   "sha256": "5c1c9ff9bf7b72df9fe6c2c1081d6dee8cc9ebc7a29363e9952285406f01eb18",
+   "fetched_utc": "2026-11-09T15:26:28Z"
+  },
+  {
+   "file": "3P12_3pole.mat",
+   "url": "https://borealisdata.ca/api/access/datafile/885866",
+   "bytes": 1070254,
+   "sha256": "50f7f5dea57a556809024c13116be889264b25dd36d321919490df89b615fc80",
+   "fetched_utc": "2026-11-09T15:26:33Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Menon2025_Bioengineering.zip"
+}

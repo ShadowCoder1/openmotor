@@ -1,0 +1,64 @@
+{
+ "id": "Zvoncakova2026_DiaGraMo",
+ "module": "timeseries",
+ "rows": 4000,
+ "subjects": 288,
+ "persons": 288,
+ "zip_bytes": 567864335,
+ "zip_sha256": "4d9d9b8f0d937bcd1fd43326f8c9350866b2ee3fd05c6e53f6edb285577c750f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every SVC file kept, none lost",
+   "ok": true,
+   "detail": "4000"
+  },
+  {
+   "kind": "internal",
+   "what": "time axis never runs backward in any recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pen_status holds only 0 and 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of graphomotor and writing tasks",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Zenodo record abstract: 16 graphomotor and writing tasks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average sampling frequency in Hz (abstract: 167 Hz; here mean of samples per second over recordings)",
+   "computed": 167.1078811664556,
+   "reported": 167.0,
+   "tol": 5,
+   "source": "Zenodo record abstract / README (average frequency of 167 Hz)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The record states 276 children with 161 diagnosed with handwriting disabilities; the raw SVC files here come from 288 children, 157 coded group 1 (handwriting disabilities) in the cognitive table, so the participant counts of the abstract were not used as checks (the deposit's version 2 may count after exclusions).",
+  "Cognitive, school-mark and questionnaire scores (WJ-IV, RCFT, BACH, DIB, HPSQ-C) are not included: the instrument items are restricted by copyright and the table has 760 columns; only age, sex and the diagnostic group are kept. Age is the authors' months-since-birth divided by 12 (the deposit coarsened test dates to a three-month window).",
+  "Units are inferred, not stated in the deposit: x and y are in the SVC file's first two columns (values of tens to hundreds, taken as millimetres on the 16-inch tablet), time in seconds, azimuth and altitude in degrees, pressure in the tablet's raw units; pen_status 1 is pen on the surface, 0 in air (standard SVC convention).",
+  "6 children have raw handwriting files but no row in the cognitive table, so their age, sex and group are empty. The deposit's own test-version-2 dates and the participant folder names were not carried over."
+ ],
+ "sources": [
+  {
+   "file": "DiaGraMo-project.zip",
+   "url": "https://zenodo.org/api/records/21236910/files/DiaGraMo-project.zip/content",
+   "bytes": 1357028237,
+   "sha256": "68c28f89b40dc29c6fc59baf1f7b67c4a46569d17c29fb52d09afd00b2712e08",
+   "fetched_utc": "2026-11-09T17:18:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zvoncakova2026_DiaGraMo.zip"
+}

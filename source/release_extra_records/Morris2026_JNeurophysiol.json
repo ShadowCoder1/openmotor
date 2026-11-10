@@ -1,0 +1,95 @@
+{
+ "id": "Morris2026_JNeurophysiol",
+ "module": "walking",
+ "rows": 8063,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 488478,
+ "zip_sha256": "eb93f287fd637cc0a029f87760dcffc3d30a08cc9480697e9f4c76061776cda0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "median left stride time falls with each faster speed",
+   "ok": true,
+   "detail": "{0.4: 1.809, 0.8: 1.335, 1.2: 1.095, 1.6: 0.96}"
+  },
+  {
+   "kind": "internal",
+   "what": "left stride times between 0.4 and 4 s",
+   "ok": true,
+   "detail": "0.9772 of strides"
+  },
+  {
+   "kind": "internal",
+   "what": "transparent intervals between occlusions are 8-10 s (within 0.1 s) in at least 95 percent of cases",
+   "ok": true,
+   "detail": "0.982 of 1077"
+  },
+  {
+   "kind": "internal",
+   "what": "participants without any gait events: sub-05 only has none at any speed",
+   "ok": true,
+   "detail": "['sub-05']"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "occlusion length, mean (s)",
+   "computed": 1.5113511111727942,
+   "reported": 1.5,
+   "tol": 0.05,
+   "source": "Methods, Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with step-duration data at all four speeds, minus the three the README lists with missing or drifting insole data",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Kinematic Analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "participants.tsv gives age 14 for one participant while the paper and README say all participants were 18-29; the table keeps the deposit's value.",
+  "The paper's step-duration results (Fig. 6, 12 participants) report no numbers that can be reproduced from the events; the check of the 12 participants uses the count only. The trial windows between the start and stop markers do not all last exactly the 3 minutes the paper gives."
+ ],
+ "sources": [
+  {
+   "file": "ds007222_main.zip",
+   "url": "https://github.com/OpenNeuroDatasets/ds007222/archive/refs/heads/main.zip",
+   "bytes": 594977,
+   "sha256": "4c8125f660c21cb00d43705bce57dd100e68dabe07ab7d801fdcb201212f0401",
+   "fetched_utc": "2026-11-09T21:26:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Morris2026_JNeurophysiol.zip"
+}

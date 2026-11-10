@@ -1,0 +1,94 @@
+{
+ "id": "Adams2017_PLoSOne",
+ "module": "keypress",
+ "rows": 9315398,
+ "subjects": 266,
+ "persons": 266,
+ "zip_bytes": 136415511,
+ "zip_sha256": "aa90dce3b292bc11c1964fbcddbf35dc4f7ef26c355ed5010d2af21e156ee7a2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "downloaded zips match PhysioNet SHA256SUMS.txt",
+   "ok": true,
+   "detail": "['Archived-Data.zip', 'Archived-users.zip']"
+  },
+  {
+   "kind": "internal",
+   "what": "every line is read or counted as damaged",
+   "ok": true,
+   "detail": "9315398 kept, 1460 damaged of 9316858"
+  },
+  {
+   "kind": "published",
+   "what": "participants with a user file and keystrokes (Group A)",
+   "computed": 217.0,
+   "reported": 217.0,
+   "tol": 0,
+   "source": "Data analysis section: 'The complete dataset comprised 217 participants (termed Group A)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysis subset: >= 2000 keystrokes, non-PD or Mild PD, no levodopa",
+   "computed": 53.0,
+   "reported": 53.0,
+   "tol": 0,
+   "source": "Data analysis section: 'an analysis subset of 53 participants (including both PD and non-PD)'",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "keystroke-file users without a user file are kept, marked unknown",
+   "ok": true,
+   "detail": "49 such users, 301834 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "hold, latency and flight times in 0-9999 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "direction first letter of key side agrees with hand on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group sizes",
+   "ok": true,
+   "detail": "162 with a PD diagnosis, 55 without, among 217 with a file"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 53-participant analysis subset is reproduced only if the one PD participant whose Impact field is empty is counted as Mild (52 otherwise); that participant is therefore not marked subject_excluded_by_authors, which is an inference.",
+  "The paper does not report counts of keystrokes; the keystroke-file users without a participant file are not part of the paper's 217-participant Group A."
+ ],
+ "sources": [
+  {
+   "file": "Archived-Data.zip",
+   "url": "https://physionet.org/files/tappy/1.0.0/Archived-Data.zip",
+   "bytes": 89176393,
+   "sha256": "d5fb550625211deed5a712705316bb4c79593d752f8403d9dc25e58c8230e580",
+   "fetched_utc": "2026-11-08T23:50:48Z"
+  },
+  {
+   "file": "Archived-users.zip",
+   "url": "https://physionet.org/files/tappy/1.0.0/Archived-users.zip",
+   "bytes": 73032,
+   "sha256": "a15f5eeac9004aaba0aa3c31b81d791256b6012bc8ae64f6fc556cd607df77fd",
+   "fetched_utc": "2026-11-08T23:50:50Z"
+  },
+  {
+   "file": "SHA256SUMS.txt",
+   "url": "https://physionet.org/files/tappy/1.0.0/SHA256SUMS.txt",
+   "bytes": 167,
+   "sha256": "87b669ca48a0a38238f3fe388d21537dd07562c99e18ec2c67a26f4fbfbaa2df",
+   "fetched_utc": "2026-11-08T23:50:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Adams2017_PLoSOne.zip"
+}

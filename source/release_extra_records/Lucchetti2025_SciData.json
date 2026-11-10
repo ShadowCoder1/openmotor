@@ -1,0 +1,245 @@
+{
+ "id": "Lucchetti2025_SciData",
+ "module": "timeseries",
+ "rows": 360,
+ "subjects": 30,
+ "persons": 20,
+ "zip_bytes": 708754871,
+ "zip_sha256": "640c1a84c12fbbace87c486c3ce3d2e2245d37638620fbb9e60bb1170766a53f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract and Data Records (ten healthy and ten post-stroke subjects)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy participants' age SD, years",
+   "computed": 17.60176758800724,
+   "reported": 17.6,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "post-stroke participants' age SD, years",
+   "computed": 7.321202087089251,
+   "reported": 7.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy men",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants (7 males, 3 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "post-stroke men",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (8 males, 2 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repetitions in the events (5 per task and arm, except three with 4)",
+   "computed": 897.0,
+   "reported": 897.0,
+   "tol": 0,
+   "source": "Technical Validation ('5 repetitions per exercise, except ST03, ST08 and HS06 with 4')",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "exactly three task captures have 4 repetitions, all others 5",
+   "ok": true,
+   "detail": "[4, 5]"
+  },
+  {
+   "kind": "internal",
+   "what": "kinematics and EMG captures per participant arm: 6 tasks x 2 signal groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample rates 125 Hz (markers, angles) and 1000 Hz (EMG); EMG length equals 8 x kinematic length within one frame",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Numbers that did not reproduce: healthy participants' mean age (midpoints of the 2-year intervals), years: 47.90 here, 47.4 in the paper (ages are only given in 2-year intervals). post-stroke participants' mean age, years: 77.10 here, 76.6 in the paper (ages are only given in 2-year intervals).",
+  "The paper's Table 2 gives the unit of the marker coordinates as metres and says the angle matrix has 20 rows; the files hold values of the size of millimetres and 19 angle rows, so the markers are labelled mm and all 19 angles are kept."
+ ],
+ "sources": [
+  {
+   "file": "HS01.mat",
+   "url": "https://ndownloader.figshare.com/files/56891417",
+   "bytes": 21351660,
+   "sha256": "78219857d3bb10b5c6ba1263ee91c22d67d142f576d565cbd0d34b529035dc53",
+   "fetched_utc": "2026-11-09T05:15:52Z"
+  },
+  {
+   "file": "HS02.mat",
+   "url": "https://ndownloader.figshare.com/files/56891492",
+   "bytes": 17734689,
+   "sha256": "b906287c0293bd3d1c9ada8fd5abc44094307dc65f719d26128476ebc218287c",
+   "fetched_utc": "2026-11-09T05:15:56Z"
+  },
+  {
+   "file": "HS03.mat",
+   "url": "https://ndownloader.figshare.com/files/56891495",
+   "bytes": 20090245,
+   "sha256": "b17ddb028d09092a10da202cda1b19d691352366bb7b44853a6cf7c62f8b8839",
+   "fetched_utc": "2026-11-09T05:16:02Z"
+  },
+  {
+   "file": "HS04.mat",
+   "url": "https://ndownloader.figshare.com/files/56891498",
+   "bytes": 26961224,
+   "sha256": "0bcda63f9da1bb0b166e0dca37011c5e6836c8d0f5c4494f2c8a6d8a3a8c2fa7",
+   "fetched_utc": "2026-11-09T05:16:16Z"
+  },
+  {
+   "file": "HS05.mat",
+   "url": "https://ndownloader.figshare.com/files/56891534",
+   "bytes": 19702366,
+   "sha256": "53257fd876c3aa3c56aae748c4d7d3f3733498dd59887550ff767ec9ab2027cf",
+   "fetched_utc": "2026-11-09T05:16:25Z"
+  },
+  {
+   "file": "HS06.mat",
+   "url": "https://ndownloader.figshare.com/files/56891537",
+   "bytes": 30486445,
+   "sha256": "a56dcaa9dc7b2fbc64ccb3e06fdfbdddf4fd1dbbc2cf8cc96cb04acd2db289e5",
+   "fetched_utc": "2026-11-09T05:16:32Z"
+  },
+  {
+   "file": "HS07.mat",
+   "url": "https://ndownloader.figshare.com/files/56892077",
+   "bytes": 21292395,
+   "sha256": "d7230480d6a116534fa915b2e9832dc660641e501e64b6c14456db50565c6807",
+   "fetched_utc": "2026-11-09T05:16:38Z"
+  },
+  {
+   "file": "HS08.mat",
+   "url": "https://ndownloader.figshare.com/files/56892083",
+   "bytes": 18940894,
+   "sha256": "852ac291272d74693541939f6b70d46d27de9b6b1ef9f5ac8ed5bf6a82bef22b",
+   "fetched_utc": "2026-11-09T05:16:46Z"
+  },
+  {
+   "file": "HS09.mat",
+   "url": "https://ndownloader.figshare.com/files/56892260",
+   "bytes": 24203976,
+   "sha256": "eb3619bd4973d3f6b952e71dc26c1293fa4e6892c4983017d8fe297ac7af098e",
+   "fetched_utc": "2026-11-09T05:16:51Z"
+  },
+  {
+   "file": "HS10.mat",
+   "url": "https://ndownloader.figshare.com/files/56892365",
+   "bytes": 23032157,
+   "sha256": "e9d5311e60934209da11dad9eb0d44ded6340ce32715a0dca7b68c0a9b4f4ac6",
+   "fetched_utc": "2026-11-09T05:16:57Z"
+  },
+  {
+   "file": "ST01.mat",
+   "url": "https://ndownloader.figshare.com/files/56892569",
+   "bytes": 83050372,
+   "sha256": "077b3c84bfca8e351fe060d79ea812d8eca34680161bf64797d982a67de97c4b",
+   "fetched_utc": "2026-11-09T05:17:02Z"
+  },
+  {
+   "file": "ST02.mat",
+   "url": "https://ndownloader.figshare.com/files/56892584",
+   "bytes": 67775193,
+   "sha256": "8016678b849efaa2f83e8973ddd4ea1ad24a75b24391fcfe879b53b695bafbb6",
+   "fetched_utc": "2026-11-09T05:17:08Z"
+  },
+  {
+   "file": "ST03.mat",
+   "url": "https://ndownloader.figshare.com/files/56892599",
+   "bytes": 51687920,
+   "sha256": "de514fa1b9aa07bb9de9b3053ac28a3148079be548f7a96c3979a03daff07c0e",
+   "fetched_utc": "2026-11-09T05:17:13Z"
+  },
+  {
+   "file": "ST04.mat",
+   "url": "https://ndownloader.figshare.com/files/56892668",
+   "bytes": 41760160,
+   "sha256": "982c7c009efc4ce34b67153f1422947bf394de4c3958b81ed0693bb1784f5dab",
+   "fetched_utc": "2026-11-09T05:17:24Z"
+  },
+  {
+   "file": "ST05.mat",
+   "url": "https://ndownloader.figshare.com/files/56892986",
+   "bytes": 31821539,
+   "sha256": "8a124cea69e10e9b5062c377676ab1b4b778a84973d9d3c82a52f90e35441abf",
+   "fetched_utc": "2026-11-09T05:17:30Z"
+  },
+  {
+   "file": "ST06.mat",
+   "url": "https://ndownloader.figshare.com/files/56893619",
+   "bytes": 41407877,
+   "sha256": "e2e1a209304642538a042c122c9020a0708f89b17104feeaf0ebcdd0a2005954",
+   "fetched_utc": "2026-11-09T05:17:34Z"
+  },
+  {
+   "file": "ST07.mat",
+   "url": "https://ndownloader.figshare.com/files/56894414",
+   "bytes": 58530089,
+   "sha256": "aef548ae6d39a71b0afd9225eedc4a4adbd358dc71b56027d232c252caa0cfe4",
+   "fetched_utc": "2026-11-09T05:17:42Z"
+  },
+  {
+   "file": "ST08.mat",
+   "url": "https://ndownloader.figshare.com/files/56899919",
+   "bytes": 45109736,
+   "sha256": "cfd51b27041bdd1f6115252da1d4cefcfbbbe442293d88f9612499029b2c137d",
+   "fetched_utc": "2026-11-09T05:17:47Z"
+  },
+  {
+   "file": "ST09.mat",
+   "url": "https://ndownloader.figshare.com/files/56912018",
+   "bytes": 64792269,
+   "sha256": "4ef598c4d8cdce4c5627300e00feec622999a7bc72a6223465f5fa2185653afb",
+   "fetched_utc": "2026-11-09T05:17:54Z"
+  },
+  {
+   "file": "ST10.mat",
+   "url": "https://ndownloader.figshare.com/files/56912171",
+   "bytes": 52191002,
+   "sha256": "be8a38c55d2f00c6f9e319b3b9a84c258e0f0e3e009b72719e7f88e781235716",
+   "fetched_utc": "2026-11-09T05:17:59Z"
+  },
+  {
+   "file": "CalcAng.m",
+   "url": "https://ndownloader.figshare.com/files/56913332",
+   "bytes": 2764,
+   "sha256": "a8df8a04a59688f9f0db5797b6dffcc7a9e5600255a0c557db656f3548dbaa16",
+   "fetched_utc": "2026-11-09T05:18:02Z"
+  },
+  {
+   "file": "upperlimb_fig.m",
+   "url": "https://ndownloader.figshare.com/files/56913284",
+   "bytes": 3323,
+   "sha256": "5d4c1d8b0578ca495e56ea8532429fb98fc7a3cd9ba2325fd1842abe51250345",
+   "fetched_utc": "2026-11-09T05:18:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lucchetti2025_SciData.zip"
+}

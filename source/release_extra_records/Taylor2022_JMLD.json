@@ -1,0 +1,143 @@
+{
+ "id": "Taylor2022_JMLD",
+ "module": "tapping",
+ "rows": 21420,
+ "subjects": 84,
+ "persons": 84,
+ "zip_bytes": 319289,
+ "zip_sha256": "d74df2c99b1ac0c2ca2aef6514d9697e2f3defee92fd987d7b017b785b4c96dd",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "84 participants in each of the three files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "constant error = hold time - target on every practice and test row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "absolute error = |constant error|",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: 420 + 17640 + 3360",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pre-test, practice and test files hold the same 84 people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "practice trials per participant (3 sets x 70)",
+   "computed": 210.0,
+   "reported": 210.0,
+   "tol": 0,
+   "source": "Task and Stimuli: 210 practice trials",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 210 practice trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "retention and transfer test trials per participant",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Task and Stimuli: 40 test trials (5 targets x 4 trials x 2 sets)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 40 test trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants with a blocked schedule",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Participants: n = 41 blocked",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a random schedule",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Participants: n = 43 random",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Abstract / Participants: N = 84",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of practice trials within +/-50 ms (no KR), after outlier exclusion (%)",
+   "computed": 20.820460006865773,
+   "reported": 20.8,
+   "tol": 0.05,
+   "source": "Results, Changes following KR versus No KR (20.8%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "same, blocked schedule (%)",
+   "computed": 23.82067189511881,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Results (24% blocked)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "same, random schedule (%)",
+   "computed": 17.95187465025182,
+   "reported": 18.0,
+   "tol": 0.5,
+   "source": "Results (18% random)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "targets in practice are 1500, 1700, 1900 ms; tests also 1600, 1800 ms",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "repo.zip",
+   "url": "https://zenodo.org/api/records/7674907/files/keithlohse/taylor_2022_CI_sequential_effects-v1.0.0.zip/content",
+   "bytes": 16230075,
+   "sha256": "1fbcdbf6d411955e5f27d7e97fc270aacfb6af74a2da9fc448267470a30ac0d0",
+   "fetched_utc": "2026-11-09T07:04:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Taylor2022_JMLD.zip"
+}

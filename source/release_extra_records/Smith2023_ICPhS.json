@@ -1,0 +1,206 @@
+{
+ "id": "Smith2023_ICPhS",
+ "module": "summary",
+ "rows": 146,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 5549,
+ "zip_sha256": "a3c4a28287fc01145f1740c486442718b7626f2b9d11e1ccde530a3d842509cd",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "typically developing children",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1 (leaving 11 TD participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD girls",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1 (11 TD participants, 5 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with SSD",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 3.1 (10 children with SSD)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls with SSD",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 3.1 (10 children with SSD, 2 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD mean age (years)",
+   "computed": 9.090909090909092,
+   "reported": 9.0,
+   "tol": 0.5,
+   "source": "Smith et al. 2023, 4.1 (mean age 9 years, printed as an integer)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD youngest age",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1 (range 7-14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD oldest age",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1 (range 7-14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 7-8, /k/ (cm)",
+   "computed": 0.10333333333333333,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 9-11, /k/ (cm)",
+   "computed": 0.07200000000000001,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 9-11, /\u0279/ (cm)",
+   "computed": 0.0675,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 9-11, /s/ (cm)",
+   "computed": 0.052500000000000005,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 14, /k/ (cm)",
+   "computed": 0.07,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 14, /\u0279/ (cm)",
+   "computed": 0.07,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 14, /s/ (cm)",
+   "computed": 0.07,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean NND of age group 14, /t/ (cm)",
+   "computed": 0.05,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Smith et al. 2023, 4.1, Table 1 (printed to two decimals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in age group 7-8 with /k/",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1, Table 1 (n participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in age group 7-8 with /t/",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1, Table 1 (n participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in age group 9-11 with /s/",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Smith et al. 2023, 4.1, Table 1 (n participants)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "21 children",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "NND is positive",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 prints mean NND per age group and consonant; from the shared rows /\u0279/ and /t/ at 7-8 years (printed 0.10 and 0.08; rows give 0.083 and 0.068) and /t/ at 9-11 years (printed 0.07; rows give 0.060) differ, and /s/ at 7-8 years (0.07 printed, 0.065 here) is at the edge of rounding, so these cells are not used as checks. The model coefficients (age slope, diagnosis effect) were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "icphs2023.csv",
+   "url": "https://osf.io/download/f8pzj/",
+   "bytes": 7377,
+   "sha256": "46e9362786dd54449f875968261808875b52b1ff04c893e8f83d06772252c31b",
+   "fetched_utc": "2026-11-09T15:29:20Z"
+  },
+  {
+   "file": "icphs2023_OSF.R",
+   "url": "https://osf.io/download/p48mn/",
+   "bytes": 2046,
+   "sha256": "b157931b5f1e5e7dced79f2d9e5559ab212a757fe6e281df539322c6353b0762",
+   "fetched_utc": "2026-11-09T15:35:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Smith2023_ICPhS.zip"
+}

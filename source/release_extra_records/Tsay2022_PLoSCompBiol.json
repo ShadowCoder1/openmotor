@@ -1,0 +1,411 @@
+{
+ "id": "Tsay2022_PLoSCompBiol",
+ "module": "reach90",
+ "rows": 128858,
+ "subjects": 412,
+ "persons": 412,
+ "zip_bytes": 2940925,
+ "zip_sha256": "fcc0f9eed6506bad14e6b7e022d9c0c8b82e6a04e1f0e755ad76147580284f70",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "TargetJumpClamp_data_5Feb2022.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TE_SPE_data_5Feb2022.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ControlJump_data_5Feb2022.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "NoFB_TJ_Control.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "discretejump_5Feb2022.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "parajump_5Feb2022.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TE: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TE: no clamp or jump before row 100 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 100 to 101"
+  },
+  {
+   "kind": "internal",
+   "what": "TJ: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TJ: no clamp or jump before row 100 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 100 to 101"
+  },
+  {
+   "kind": "internal",
+   "what": "CJ: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CJ: no clamp or jump before row 100 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 100 to 101"
+  },
+  {
+   "kind": "internal",
+   "what": "NF: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "NF: no clamp or jump before row 20 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 20 to 20"
+  },
+  {
+   "kind": "internal",
+   "what": "DJ: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "DJ: no clamp or jump before row 28 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 28 to 28"
+  },
+  {
+   "kind": "internal",
+   "what": "PJ: every row of the authors' file is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PJ: no clamp or jump before row 28 and a perturbation soon after, for everyone",
+   "ok": true,
+   "detail": "first perturbed row 28 to 28"
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1A: participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1A",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1A: trials per participant (100 baseline + 804 perturbation)",
+   "computed": 904.0,
+   "reported": 904.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1A",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1A: every participant has 904 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: participants (Set A + Set B)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: trials per participant (100 baseline + 724 perturbation)",
+   "computed": 824.0,
+   "reported": 824.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: every participant has 824 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: participants",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: trials per participant (28 baseline + 120 perturbation)",
+   "computed": 148.0,
+   "reported": 148.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: every participant has 148 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 4: participants",
+   "computed": 210.0,
+   "reported": 210.0,
+   "tol": 0,
+   "source": "Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 4: trials per participant (28 baseline + 252 perturbation)",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "Methods, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 4: every participant has 280 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1B design: trials per participant in the no-feedback file (20 baseline + 200 perturbation, plus 9 extra)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1B (baseline block of 20 trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1B file: 209 perturbation rows per participant (the paper counts 200)",
+   "ok": true,
+   "detail": "[209]"
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 Set A: repetitions of the 0 deg clamp / 0 deg jump trial",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 ('80 repetitions per type, 84 for the 0/0 type')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 Set A: repetitions of every other combination (min and max)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 TE: all other combinations exactly 80 per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 Set B: repetitions of the 0 deg clamp / 0 deg jump trial",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 ('80 repetitions per type, 84 for the 0/0 type')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 Set B: repetitions of every other combination (min and max)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2 CJ: all other combinations exactly 80 per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: mean percent of trials removed as outliers per participant",
+   "computed": 0.7837837837837838,
+   "reported": 0.8,
+   "tol": 0.05,
+   "source": "Methods, Outlier removal (Exp 3: 0.8 +- 0.8 %; Exp 4: 1.1 +- 0.1 %)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3: SD of that percent across participants",
+   "computed": 0.7785463312598511,
+   "reported": 0.8,
+   "tol": 0.05,
+   "source": "Methods, Outlier removal",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 4: mean percent of trials removed as outliers per participant",
+   "computed": 1.0833333333333333,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Methods, Outlier removal (Exp 3: 0.8 +- 0.8 %; Exp 4: 1.1 +- 0.1 %)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "TE: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 1.64 deg, 1.00 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "TJ: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 1.76 deg, 1.00 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "CJ: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 1.72 deg, 1.00 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "NF: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 1.58 deg, 0.92 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "DJ: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 1.20 deg, 0.87 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "PJ: the median trial-to-trial hand change after a clamp trial opposes the clamp (mean over participants)",
+   "ok": true,
+   "detail": "mean 0.45 deg, 0.78 of participants positive"
+  },
+  {
+   "kind": "internal",
+   "what": "every kept row is a reach with hand_angle in (-180, 180] and a target angle in [0, 360)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows written = rows of the six converted files",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 87 participants for the online Experiment 1B; the deposit's no-feedback file has 50 and also holds rotated-clamp and large-jump trials, so it is converted as the no-feedback control and its identification with Experiment 1B is not certain.",
+  "Outlier removal: the paper reports 0.2 +- 0.2 % of trials per participant for Exp 1 and 0.1 +- 0.2 % for Exp 2; the deposit's missing Hand values give about 0.14 % (Exp 1A) and 0.23 % (Exp 2), and 1.1 % +- 0.8 (not +- 0.1) for Exp 4, so only the Exp 3 and Exp 4 means are listed as reproduced.",
+  "Positive = counter-clockwise is inferred from the paper's Fig 5 legend and from the direction of the hand change; the deposit has no readme."
+ ],
+ "sources": [
+  {
+   "file": "ConsistJump_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/ConsistJump_5Feb2022.csv",
+   "bytes": 1109218,
+   "sha256": "d65e10b5b560a59fec2ccd71128aa6a69b13be4a4ba9817285abcf60ede249ab",
+   "fetched_utc": "2026-11-09T08:10:44Z"
+  },
+  {
+   "file": "ControlJump_data_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/ControlJump_data_5Feb2022.csv",
+   "bytes": 2559465,
+   "sha256": "21e551a2cc2b2faecffeee3c63d7054e4d4fa50a089c8b82ac888af0d7dd3947",
+   "fetched_utc": "2026-11-09T08:10:47Z"
+  },
+  {
+   "file": "NoFB_TJ_Control.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/NoFB_TJ_Control.csv",
+   "bytes": 1179879,
+   "sha256": "4d44de68d608d2a27ebcf5e3cb88b022d5ef1b95fe528ec231703dd997fab145",
+   "fetched_utc": "2026-11-09T08:10:49Z"
+  },
+  {
+   "file": "TE_SPE_data_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/TE_SPE_data_5Feb2022.csv",
+   "bytes": 2245333,
+   "sha256": "d366820b97af2ce22ed8491b49b086b32c972d44bf2103e4a7b29b87b3b56a98",
+   "fetched_utc": "2026-11-09T08:10:51Z"
+  },
+  {
+   "file": "TargetJumpClamp_data_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/TargetJumpClamp_data_5Feb2022.csv",
+   "bytes": 1702273,
+   "sha256": "5f0a89f722e3ca480a376950d3b4e89d47e2cafb52d21bd153bd18c3569e199b",
+   "fetched_utc": "2026-11-09T08:10:54Z"
+  },
+  {
+   "file": "discretejump_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/discretejump_5Feb2022.csv",
+   "bytes": 1330563,
+   "sha256": "4756480dbf880c7e744aec2b59014487cca0cf458b0ec1a03970602cc96ae623",
+   "fetched_utc": "2026-11-09T08:10:56Z"
+  },
+  {
+   "file": "parajump_5Feb2022.csv",
+   "url": "https://raw.githubusercontent.com/xiaotsay2015/target_jump/main/TJ_GitHubData/parajump_5Feb2022.csv",
+   "bytes": 5404902,
+   "sha256": "924c7150ebb5749e7b8fdc99ef4b801b79f01a988f314ecf630e5eff6922ad75",
+   "fetched_utc": "2026-11-09T08:10:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tsay2022_PLoSCompBiol.zip"
+}

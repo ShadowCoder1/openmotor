@@ -1,0 +1,230 @@
+{
+ "id": "Burroni_ItalianLength_OSF",
+ "module": "articulography",
+ "rows": 7900,
+ "subjects": 23,
+ "persons": 23,
+ "zip_bytes": 21511230,
+ "zip_sha256": "afc97351d74b32ca7a978bb99d5c22aab0eac969b3afeb6731c6314b1420070c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "lip aperture samples (trajC.mat) agree row by row with the table: minimum = LAMin, maximum = LAMax, samples / 1250 Hz = closure + plateau + release duration",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every speaker of the table is in the meta table and vice versa (23)",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "kind": "internal",
+   "what": "V1Dur and V1V2 are identical in every row (one column kept)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "tokens analysed",
+   "computed": 7900.0,
+   "reported": 7900.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.3 (7900 tokens entered the analyses)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male speakers",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female speakers",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers from the central or south",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers from the north",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of plateau duration and acoustic consonant duration, singletons",
+   "computed": 0.630033457988953,
+   "reported": 0.63,
+   "tol": 0.006,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of plateau duration and acoustic consonant duration, geminates",
+   "computed": 0.8957622923145552,
+   "reported": 0.9,
+   "tol": 0.006,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cloDur_ms: fixed effect Intercept, mixed model with by-speaker and by-segment slopes",
+   "computed": 102.64775797220774,
+   "reported": 102.0,
+   "tol": 1.0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cloDur_ms: fixed effect Gem, mixed model with by-speaker and by-segment slopes",
+   "computed": 7.566911205634197,
+   "reported": 8.0,
+   "tol": 0.6,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cloDur_ms: fixed effect uttDurZ, mixed model with by-speaker and by-segment slopes",
+   "computed": 7.46814658672468,
+   "reported": 6.0,
+   "tol": 1.6,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "platDur_ms: fixed effect Intercept, mixed model with by-speaker and by-segment slopes",
+   "computed": 42.7618554870486,
+   "reported": 43.0,
+   "tol": 1.0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "platDur_ms: fixed effect Gem, mixed model with by-speaker and by-segment slopes",
+   "computed": 52.77002038344785,
+   "reported": 52.0,
+   "tol": 1.0,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "platDur_ms: fixed effect uttDurZ, mixed model with by-speaker and by-segment slopes",
+   "computed": 13.971390299355576,
+   "reported": 15.0,
+   "tol": 1.1,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "platDur_ms: fixed effect Gem:uttDurZ, mixed model with by-speaker and by-segment slopes",
+   "computed": 42.43871041316394,
+   "reported": 41.0,
+   "tol": 1.5,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAMin: fixed effect Intercept, mixed model with by-speaker and by-segment slopes",
+   "computed": 16.723137149631967,
+   "reported": 16.7,
+   "tol": 0.05,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAMin: fixed effect Gem, mixed model with by-speaker and by-segment slopes",
+   "computed": -0.8210516855282924,
+   "reported": -0.8,
+   "tol": 0.05,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAMin: fixed effect uttDurZ, mixed model with by-speaker and by-segment slopes",
+   "computed": -0.2778441175328307,
+   "reported": -0.3,
+   "tol": 0.05,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAAmp: fixed effect Intercept, mixed model with by-speaker and by-segment slopes",
+   "computed": 10.260547544885828,
+   "reported": 10.3,
+   "tol": 0.05,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LAAmp: fixed effect Gem, mixed model with by-speaker and by-segment slopes",
+   "computed": 1.0575486124546958,
+   "reported": 1.1,
+   "tol": 0.06,
+   "source": "Burroni et al. preprint (OSF yh8tm), Results 3.2-3.3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "durations are non-negative; lip aperture 5-60 mm; rate 1-5 with 12 repetitions per word and rate at most",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The OSF project carries the Academic Free License 3.0; the paper is a preprint under review (the OSF project lists the authors as Burroni et al.; the DOI is not yet assigned).",
+  "The paper's mixed models (MATLAB fitlme with diagonal random-effect covariances) are refitted here with Python's statsmodels; fixed effects agree within the tolerances above (for example plateau duration with utterance duration: 14.0 ms here, 15 in the paper; closure duration with utterance duration: 7.5 ms here, 6 in the paper). V2Dur is not defined in the deposit or the paper, and 12 tokens lack V1 landmarks."
+ ],
+ "sources": [
+  {
+   "file": "Supp.zip",
+   "url": "https://osf.io/download/qtxf4/",
+   "bytes": 21811489,
+   "sha256": "30931cc9c8e36d48ee8cf2245cf02ecb5648b35c87dab17b89aaf6119bae9d96",
+   "fetched_utc": "2026-11-09T00:07:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Burroni_ItalianLength_OSF.zip"
+}

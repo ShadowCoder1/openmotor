@@ -1,0 +1,124 @@
+{
+ "id": "Rao2026_PNAS",
+ "module": "summary",
+ "rows": 600,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 14704,
+ "zip_sha256": "d7bdef9edca76c2264780d1f0663c50d592fca1eac224d08b10ff33fa46b8a27",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed (15 per condition x 4)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Rao et al. 2026, Methods, Participants (60 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "retention, STG vs no TMS, independent t(28)",
+   "computed": 3.4744607945291186,
+   "reported": 3.474,
+   "tol": 0.001,
+   "source": "Rao et al. 2026, Results, retention",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "retention, S1 vs no TMS, independent t(28)",
+   "computed": 2.8608180697468435,
+   "reported": 2.861,
+   "tol": 0.001,
+   "source": "Rao et al. 2026, Results, retention",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main effect of TMS condition on retention, F(3, 56)",
+   "computed": 5.00567425592379,
+   "reported": 5.006,
+   "tol": 0.001,
+   "source": "Rao et al. 2026, Results, retention",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 11 participants the authors excluded for lack of learning on visit 1 are not in the shared tables, which hold the 60 analysed participants. Only the retention statistics were recomputed."
+ ],
+ "sources": [
+  {
+   "file": "F2_BeforeRetention_NoiseFeedback.csv",
+   "url": "https://osf.io/download/qkg9v/",
+   "bytes": 924,
+   "sha256": "2a90e8fe5e7dc0f8b2cab25ae56921fa152c5d917981af0e41a463fd078d035c",
+   "fetched_utc": "2026-11-09T15:22:52Z"
+  },
+  {
+   "file": "F1_BeforeRetention_NoiseFeedback.csv",
+   "url": "https://osf.io/download/bphs2/",
+   "bytes": 942,
+   "sha256": "78a18aee8f0c5c9d92d9327b3be12827ed0447ff3f7d932b436f1dbba7396288",
+   "fetched_utc": "2026-11-09T15:22:57Z"
+  },
+  {
+   "file": "F2_DuringBaseline_NoiseFeedback.csv",
+   "url": "https://osf.io/download/e3jah/",
+   "bytes": 940,
+   "sha256": "da79a8fd2868184b3c8d973aacc95fc207bb37947f7f72f0c1062f228f4612c0",
+   "fetched_utc": "2026-11-09T15:23:01Z"
+  },
+  {
+   "file": "F2_LearningAsymptote_SpeechFeedback.csv",
+   "url": "https://osf.io/download/98c7m/",
+   "bytes": 862,
+   "sha256": "4658d416f34930aff3403c2f79a6edd9c1bb4c81c43773b979fc8a59837f5c7f",
+   "fetched_utc": "2026-11-09T15:23:05Z"
+  },
+  {
+   "file": "F1_RelearningAsymptote_SpeechFeedback.csv",
+   "url": "https://osf.io/download/xnjka/",
+   "bytes": 905,
+   "sha256": "9c4d467396a218eb816ba8f0e9e3e4896a43cc809dccf188141b34e3902aa1a7",
+   "fetched_utc": "2026-11-09T15:23:09Z"
+  },
+  {
+   "file": "F1_DuringBaseline_NoiseFeedback.csv",
+   "url": "https://osf.io/download/5y6h8/",
+   "bytes": 922,
+   "sha256": "f7a5161dcf008b02a2acc5dfa1afd174f6866252bb03b48434fca15895c27c30",
+   "fetched_utc": "2026-11-09T15:23:12Z"
+  },
+  {
+   "file": "F1_LearningAsymptote_SpeechFeedback.csv",
+   "url": "https://osf.io/download/6zhk3/",
+   "bytes": 914,
+   "sha256": "3e905b20f6f65b8c4a30f8604186635aa4af00d5a39fedbccbd7f99bd2d52832",
+   "fetched_utc": "2026-11-09T15:23:16Z"
+  },
+  {
+   "file": "F2_RelearningAsymptote_SpeechFeedback.csv",
+   "url": "https://osf.io/download/zp6yw/",
+   "bytes": 869,
+   "sha256": "dd418fe0c3aaaa40ada74873fab79a389c67a762b64a5425e91e2f034f2e1459",
+   "fetched_utc": "2026-11-09T15:23:21Z"
+  },
+  {
+   "file": "F2_Retention_SpeechFeedback.csv",
+   "url": "https://osf.io/download/7e62p/",
+   "bytes": 856,
+   "sha256": "14613652f514eeb9fae54390ddc8ef2216f9b5400705f9223ffbf35dce3901ff",
+   "fetched_utc": "2026-11-09T15:23:25Z"
+  },
+  {
+   "file": "F1_Retention_SpeechFeedback.csv",
+   "url": "https://osf.io/download/eqc39/",
+   "bytes": 891,
+   "sha256": "7898bc167c69176899780b91d9e9ced874ba0e247dc282b1f04237d15225b5a9",
+   "fetched_utc": "2026-11-09T15:23:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Rao2026_PNAS.zip"
+}

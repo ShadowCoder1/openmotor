@@ -1,0 +1,7 @@
+{
+ "id": "Branscheidt2019_eLife",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The OSF node holds three small .mat files (per participant, session and block rows) with no readme or data dictionary and no description; the numeric codes for group, label, stimulation and day, and columns such as skillp, skillmeas, online_p/m, offline_p/m, T1-T4 force/ov and smooth are not defined in the deposit, and the eLife paper gives no coding table or mat-file contents (group names and n are in the paper but not their numeric codes). Rows are block-level (4 blocks of 30 trials), not trial-level. Could be retried if the authors supply a dictionary.",
+ "sources": []
+}

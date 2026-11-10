@@ -1,0 +1,98 @@
+{
+ "id": "Wiltshire2021_JSLHR",
+ "module": "summary",
+ "rows": 2868,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 31251,
+ "zip_sha256": "90bef5f3eb1af3e1c555c10f5a48093dddc32e203c47f8e0590817f679148c27",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "people who stutter analysed",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Wiltshire et al. 2021, Methods (Participants) (28 PWS after exclusions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically fluent speakers analysed",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Wiltshire et al. 2021, Methods (Participants) (20 PWTF)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median SSI score of PWS",
+   "computed": 28.5,
+   "reported": 28.5,
+   "tol": 0.05,
+   "source": "Wiltshire et al. 2021, Methods (Participants), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI range minimum",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Wiltshire et al. 2021, Methods (Participants), Table 1 (range 16-40)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI range maximum",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Wiltshire et al. 2021, Methods (Participants), Table 1 (range 16-40)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with partial data (6 PWS and 2 PWTF)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Wiltshire et al. 2021, Methods (Participants) (partial datasets)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "five pseudowords per complete participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no duplicate subject x word",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper prints group statistics only in figures and models, so no group mean or CoV could be reproduced."
+ ],
+ "sources": [
+  {
+   "file": "vtMRI_nonwords_manuscript_data.csv",
+   "url": "https://osf.io/download/6pzrm/",
+   "bytes": 22252,
+   "sha256": "c6ff6455808850aa670d97c952291fc1a3c635bdc162acbb55eeae8183eb24f1",
+   "fetched_utc": "2026-11-09T15:25:31Z"
+  },
+  {
+   "file": "OSF_data_README.rtf",
+   "url": "https://osf.io/download/uqx9w/",
+   "bytes": 2046,
+   "sha256": "4b39d437f3a9bb72d89d14169215314d6251f3fa497c919d8607d85165e6e1ad",
+   "fetched_utc": "2026-11-09T15:25:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wiltshire2021_JSLHR.zip"
+}

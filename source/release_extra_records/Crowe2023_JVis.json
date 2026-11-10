@@ -1,0 +1,104 @@
+{
+ "id": "Crowe2023_JVis",
+ "module": "screen_interception",
+ "rows": 10200,
+ "subjects": 51,
+ "persons": 51,
+ "zip_bytes": 278645,
+ "zip_sha256": "c99274ac7fe6a79cdcf0b861f51b034e22e9903e30f1af138f93feb9991d52f9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "disk-invisible trials ('dot') are the white-background ones and disk-visible ('wheel') the grey ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "200 trial files for every one of the 51 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every tap row has a tap position, target position and time",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon signed-rank T for fraction hit, disk visible vs invisible",
+   "computed": 107.0,
+   "reported": 107.0,
+   "tol": 0,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean time to tap, disk invisible, s",
+   "computed": 0.7723642643500082,
+   "reported": 0.772,
+   "tol": 0.0005,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of time to tap, disk invisible, s",
+   "computed": 0.024825297160070033,
+   "reported": 0.025,
+   "tol": 0.0005,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean time to tap, disk visible, s",
+   "computed": 0.7631876810491366,
+   "reported": 0.763,
+   "tol": 0.0005,
+   "source": "Results, first paragraph",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of time to tap, disk visible, s",
+   "computed": 0.023460016449725198,
+   "reported": 0.023,
+   "tol": 0.0005,
+   "source": "Results, first paragraph",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says each participant did one block of 400 trials (200 per disk condition); the deposit holds 200 trial files per participant (100 per condition), so the data are half of what the paper describes."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://osf.io/download/g7c8r/",
+   "bytes": 54529534,
+   "sha256": "9dab91912995e2234f427d3553ce17c45b41f35d807f9b4592611e454dc36ac5",
+   "fetched_utc": "2026-11-09T10:17:09Z"
+  },
+  {
+   "file": "analyse_wheel.py",
+   "url": "https://osf.io/download/afz76/",
+   "bytes": 19714,
+   "sha256": "8edbc648e5efbcd826664897c53239f44cab05b7eafb284ab57650210dea0ace",
+   "fetched_utc": "2026-11-09T10:17:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Crowe2023_JVis.zip"
+}

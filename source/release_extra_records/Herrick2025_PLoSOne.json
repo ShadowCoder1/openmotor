@@ -1,0 +1,283 @@
+{
+ "id": "Herrick2025_PLoSOne",
+ "module": "walking",
+ "rows": 43977,
+ "subjects": 23,
+ "persons": 23,
+ "zip_bytes": 657116,
+ "zip_sha256": "4d1f40dd9bf1e0e0418d77db40967e64dd66d837a50d9c0a59112489ebb9c1fe",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows kept: 43,977 strides, none dropped; 15 left-leading and 8 left-trailing values are empty in the deposit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has contiguous Control, Adapt, Post blocks in that order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CS table has the same 23 participants and 6 values each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants, group 1",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, group 2",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 participants who showed adaptation",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Results (58% of group 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 early washout |AI| (first 20 strides), mean",
+   "computed": 0.026092076932388145,
+   "reported": 0.026,
+   "tol": 0.001,
+   "source": "Results, aftereffects (AI, mean over participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 late washout |AI| (last 20 strides), mean",
+   "computed": 0.02129220335018897,
+   "reported": 0.021,
+   "tol": 0.001,
+   "source": "Results, aftereffects (AI, mean over participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 early washout |AI|, SD",
+   "computed": 0.02144459374178465,
+   "reported": 0.022,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 control |AI|, mean",
+   "computed": 0.021269653093777006,
+   "reported": 0.022,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 late washout |AI|, SD",
+   "computed": 0.014630097047149746,
+   "reported": 0.015,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 early washout |AI| (first 20 strides), mean",
+   "computed": 0.044160200483528846,
+   "reported": 0.044,
+   "tol": 0.001,
+   "source": "Results, aftereffects (AI, mean over participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 late washout |AI| (last 20 strides), mean",
+   "computed": 0.02454545607026982,
+   "reported": 0.024,
+   "tol": 0.001,
+   "source": "Results, aftereffects (AI, mean over participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 early washout |AI|, SD",
+   "computed": 0.032317393764789724,
+   "reported": 0.032,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 adapting subgroup control |AI|, mean",
+   "computed": 0.02316030160171024,
+   "reported": 0.023,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 adapting subgroup washout |AI|, mean",
+   "computed": 0.021842593645943355,
+   "reported": 0.022,
+   "tol": 0.001,
+   "source": "Results, aftereffects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 L leg cumulative GRF in the constraint condition, mean",
+   "computed": 457.6512363636364,
+   "reported": 458.0,
+   "tol": 0.5,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 L leg cumulative GRF in the constraint condition, SD",
+   "computed": 63.50997994048294,
+   "reported": 64.0,
+   "tol": 0.6,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 R leg cumulative GRF in the constraint condition, mean",
+   "computed": 453.1503545454545,
+   "reported": 453.0,
+   "tol": 0.5,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 1 R leg cumulative GRF in the constraint condition, SD",
+   "computed": 53.64808632462789,
+   "reported": 54.0,
+   "tol": 0.6,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 L leg cumulative GRF in the constraint condition, mean",
+   "computed": 420.4052583333333,
+   "reported": 420.0,
+   "tol": 0.5,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 L leg cumulative GRF in the constraint condition, SD",
+   "computed": 34.8475838452502,
+   "reported": 35.0,
+   "tol": 0.6,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 R leg cumulative GRF in the constraint condition, mean",
+   "computed": 616.7332,
+   "reported": 617.0,
+   "tol": 0.5,
+   "source": "Results, loading analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "group 2 R leg cumulative GRF in the constraint condition, SD",
+   "computed": 68.11618175840185,
+   "reported": 68.0,
+   "tol": 0.6,
+   "source": "Results, loading analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Group 1 mean |AI| in the adaptation block is 0.167 here against 0.171 in the paper, and the group 2 adapting subgroup 0.107 against 0.103: the authors trimmed every participant to a common number of strides before averaging, which is not reproduced here (not used as a check). The paper's AI equation is an image; the formula from the deposit's README was used."
+ ],
+ "sources": [
+  {
+   "file": "nTable_AI.csv",
+   "url": "https://ndownloader.figshare.com/files/51683153",
+   "bytes": 2077247,
+   "sha256": "b40a8c2335f4db5cb8bda3eb5cd4dd56e0b5e9c9e6e363fe139f878b1fd46a32",
+   "fetched_utc": "2026-11-09T00:27:48Z"
+  },
+  {
+   "file": "nTable_CS.csv",
+   "url": "https://ndownloader.figshare.com/files/51683156",
+   "bytes": 3393,
+   "sha256": "674b64d0ff2d23d5eec7280b7c34c0a2688e94aae9c0a2a0b4a662ba27609835",
+   "fetched_utc": "2026-11-09T00:27:52Z"
+  },
+  {
+   "file": "nTable_ex_GRF.csv",
+   "url": "https://ndownloader.figshare.com/files/51683159",
+   "bytes": 280788,
+   "sha256": "bf450327d4cc1bfcdbcc882193abfb9da7a003fde3096eb419448c559e5b4400",
+   "fetched_utc": "2026-11-09T00:27:57Z"
+  },
+  {
+   "file": "main_v9_figshare.m",
+   "url": "https://ndownloader.figshare.com/files/51683150",
+   "bytes": 10797,
+   "sha256": "f79d6276999b97760ac81cfb0a31c93ca09839f2c39e434898395d0296b1f066",
+   "fetched_utc": "2026-11-09T00:28:04Z"
+  },
+  {
+   "file": "testHypothesis_v6.m",
+   "url": "https://ndownloader.figshare.com/files/51683171",
+   "bytes": 8208,
+   "sha256": "035700528013b0a7e72aa8def820b19c67c9f5e5f0ca98faff173bf864740e27",
+   "fetched_utc": "2026-11-09T00:28:09Z"
+  },
+  {
+   "file": "getAvgBehavior_v5.m",
+   "url": "https://ndownloader.figshare.com/files/51683147",
+   "bytes": 10217,
+   "sha256": "67700b4950d14e58c0e6e42dd55276caf7b76bfd003319604bf7c87c2f001ad2",
+   "fetched_utc": "2026-11-09T00:28:13Z"
+  },
+  {
+   "file": "plotLoading_v5.m",
+   "url": "https://ndownloader.figshare.com/files/51683168",
+   "bytes": 9156,
+   "sha256": "ab0cd488c26bd604b8877270410dd66b8ef3975cbecaf6178b71ee878658f7b2",
+   "fetched_utc": "2026-11-09T00:28:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Herrick2025_PLoSOne.zip"
+}

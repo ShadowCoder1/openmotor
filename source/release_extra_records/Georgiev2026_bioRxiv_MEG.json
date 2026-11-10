@@ -1,0 +1,94 @@
+{
+ "id": "Georgiev2026_bioRxiv_MEG",
+ "module": "timeseries",
+ "rows": 55,
+ "subjects": 55,
+ "persons": 41,
+ "zip_bytes": 384655924,
+ "zip_sha256": "39789a6a6ac237201fbd1c68fbb6f34a0cd8090b19c1876e903644c3f972a16d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "recordings (14 x 2 + 27 = 55)",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods: ipsilateral task in 14 people, contralateral in 41 (14 of them also ipsilateral + 27 new); OSF folder",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with the ipsilateral task",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (group 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with the contralateral task",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods, Participants (group 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people in all",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods, Participants (group 2 includes the 14 of group 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MEG sampling rate, Hz",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Methods, MEG recordings (1 kHz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all recordings sampled at the same rate and last 5 min or more",
+   "ok": true,
+   "detail": "312-368 s"
+  },
+  {
+   "kind": "internal",
+   "what": "cue interval median 3-4 s in every recording (paper: cued every 3-4 s)",
+   "ok": true,
+   "detail": "3.40-3.70"
+  },
+  {
+   "kind": "internal",
+   "what": "mean cue-to-movement-onset time 100-1000 ms in every recording (sanity range)",
+   "ok": true,
+   "detail": "149-837"
+  },
+  {
+   "kind": "internal",
+   "what": "cues per recording 60-110",
+   "ok": true,
+   "detail": "87-90, mean 88.7"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports retained epochs (63 of 85 and 67 of 85 on average) after its own artifact rejection; here every detected cue is listed, so cue counts are not the retained-epoch counts."
+ ],
+ "sources": [
+  {
+   "file": "MEG3720_DHmovement1.fif",
+   "url": "https://osf.io/download/68fb6c182911c5c06c7f2cde/",
+   "bytes": 433624607,
+   "sha256": "d76c3a939e219fb22761fc6e7fb6750106de87ee056f1d20a22ee775d56735ee",
+   "fetched_utc": "2026-11-10T13:10:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Georgiev2026_bioRxiv_MEG.zip"
+}

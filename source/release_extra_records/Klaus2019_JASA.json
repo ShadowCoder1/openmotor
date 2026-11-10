@@ -1,0 +1,118 @@
+{
+ "id": "Klaus2019_JASA",
+ "module": "speech",
+ "rows": 8185,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 267978,
+ "zip_sha256": "d9bde08358def63347eb0e6cb2a93e6aa54c331dbbab8cf2a29ebc99a959a7a6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Abstract (forty female adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants kept of those tested (43 tested, 3 discarded for experimenter error)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "supplementary code, perception analysis (3 participants discarded due to experimenter error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in Phase 1 (visual target on all 20 trials), most per participant",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "supplementary text, results for production (Phase 1: target presented in all 20 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in the Post-Probe (45 trials of head), most per participant",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "supplementary text, results for production (Post-Probe elicited 45 trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = tokens in the cleaned production file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 participants per group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A participants are had-shift, B participants head-shift",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pre_mean equals the mean F1 of the Pre-Probe tokens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "perception rows for all kept participants, none for the discarded",
+   "ok": true,
+   "detail": "discarded: 3"
+  },
+  {
+   "kind": "internal",
+   "what": "f0 undefined in some tokens only",
+   "ok": true,
+   "detail": "140 tokens"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mixed-model and Wilcoxon statistics and its group medians were not available to compare (the article text could not be retrieved); the checks use the participant and trial counts of the abstract and the authors' supplementary text."
+ ],
+ "sources": [
+  {
+   "file": "APS_production_data_cleaned_FINAL.csv",
+   "url": "https://osf.io/download/feqbu/",
+   "bytes": 1554350,
+   "sha256": "8959a0cc25b5e1f2b1520c2c569604ef48750f63ff493aa1922c46e3c5558f50",
+   "fetched_utc": "2026-11-08T21:31:43Z"
+  },
+  {
+   "file": "APS_Perception_Results.csv",
+   "url": "https://osf.io/download/9tma7/",
+   "bytes": 2978,
+   "sha256": "f43439779952bd14518d9d94eaf3373f43f9c68ef03faf0cac276755a199a1c3",
+   "fetched_utc": "2026-11-08T21:31:46Z"
+  },
+  {
+   "file": "APS_production_data_for_reliability.csv",
+   "url": "https://osf.io/download/agqe7/",
+   "bytes": 1570685,
+   "sha256": "c05ea3e9ec7e58f17c08f019b4240324e3f5d7862509c90290a0881265b57e09",
+   "fetched_utc": "2026-11-08T21:31:48Z"
+  },
+  {
+   "file": "APS_supplement_complete_code.Rmd",
+   "url": "https://osf.io/download/2hzst/",
+   "bytes": 23613,
+   "sha256": "3a391919e7b3e53cf8a4f0e58670840aef22a8904b8b3f99ad30e74af3eadc1a",
+   "fetched_utc": "2026-11-08T21:31:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Klaus2019_JASA.zip"
+}

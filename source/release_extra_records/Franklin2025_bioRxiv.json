@@ -1,0 +1,226 @@
+{
+ "id": "Franklin2025_bioRxiv",
+ "module": "force_field_reaching",
+ "rows": 213360,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 11279661,
+ "zip_sha256": "fe48dc3cd92e91ed940a2a9fa11333c588e6de3637255d97cc329a1edb522c66",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment1: array is 10 participants x 9 days x 12 condition slots",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2: array is 18 participants x 9 days x 12 condition slots",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "week 1 trials",
+   "computed": 1220.0,
+   "reported": 1220.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 2 trials",
+   "computed": 745.0,
+   "reported": 745.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 4 trials",
+   "computed": 845.0,
+   "reported": 845.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 7 trials",
+   "computed": 915.0,
+   "reported": 915.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 23 (9th session) trials",
+   "computed": 915.0,
+   "reported": 915.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 1 baseline null trials (first four blocks)",
+   "computed": 310.0,
+   "reported": 310.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, experiment 1",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods (eight weekly sessions and a ninth 15 weeks later)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "week 1 clockwise-field block (30 CW trials, 3 of them channel trials)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experimental paradigm (session structure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization channel directions (-60, -40, -20, 20, 40, 60 deg from training): count",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Generalisation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest generalization angle from the 90 deg training direction",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force compensation at the end of week 1 (mean of the last 5 channel trials; 'about 80%', read from Fig 1B)",
+   "computed": 83.62435828780238,
+   "reported": 80.0,
+   "tol": 12,
+   "source": "Results, Fig 1B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "predictive force compensation in week 8 ('over 95% for weeks 4-8', read from Fig 3B)",
+   "computed": 92.91415796221506,
+   "reported": 97.0,
+   "tol": 8,
+   "source": "Results, Fig 3B",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "both experiments have all 9 sessions with the same trials per session for every participant",
+   "ok": true,
+   "detail": "[7620]"
+  },
+  {
+   "kind": "internal",
+   "what": "experiment 2 has 18 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "channel trials have a force compensation, other trials do not (right-hand 90 deg or left hand)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "maximum perpendicular error within +-30 cm (a few failed trials reach 20+ cm)",
+   "ok": true,
+   "detail": "range -23.04 to 21.41"
+  },
+  {
+   "kind": "internal",
+   "what": "force compensation values are fractions x 100 (median of channel trials 0-200)",
+   "ok": true,
+   "detail": "median 81.5, range -134 to 151"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports the compensation levels only in figures and as 'about 80%' (end of week 1) and 'over 95%' (weeks 4-8), so those checks use wide tolerances; its retention and decay statistics need the force traces, which are not converted."
+ ],
+ "sources": [
+  {
+   "file": "LonglearnDATA_25.mat",
+   "url": "https://ndownloader.figshare.com/files/67626498",
+   "bytes": 4993788,
+   "sha256": "5ddbbd5f8683a1e3f22182e400a0eaf9ac4d0ec8c4c7bc59ef5b00e53b57f083",
+   "fetched_utc": "2026-11-09T07:41:08Z"
+  },
+  {
+   "file": "Longlearn2DATA_25.mat",
+   "url": "https://ndownloader.figshare.com/files/67626516",
+   "bytes": 8992674,
+   "sha256": "3220fffc7a3ebaac4991116f1a279dd5dac1885fca287c6a32c27702217f0d1b",
+   "fetched_utc": "2026-11-09T07:41:21Z"
+  },
+  {
+   "file": "Read_me.pdf",
+   "url": "https://ndownloader.figshare.com/files/67626543",
+   "bytes": 67846,
+   "sha256": "ddaf918c9010ff644d7a5e42c67804ec116bc3232f5b15af316dbd7e343d5369",
+   "fetched_utc": "2026-11-09T07:41:27Z"
+  },
+  {
+   "file": "df_plotLLdata_25.m",
+   "url": "https://ndownloader.figshare.com/files/67626492",
+   "bytes": 53181,
+   "sha256": "594003d12de6550231a16e5e39ecaf159c5162d2c6fb0a4f265eea650b5485e3",
+   "fetched_utc": "2026-11-09T07:41:33Z"
+  },
+  {
+   "file": "df_plotLL2data.m",
+   "url": "https://ndownloader.figshare.com/files/67626522",
+   "bytes": 54309,
+   "sha256": "505869361705b275f77b694483776318991d34575dd46ebf7bc413d137069b6b",
+   "fetched_utc": "2026-11-09T07:41:37Z"
+  },
+  {
+   "file": "Decay.mat",
+   "url": "https://ndownloader.figshare.com/files/67626501",
+   "bytes": 923,
+   "sha256": "b2b144a69e43747a2b1395a50c3a2418ed60fb2264aa97105c3b7393a3c20a8a",
+   "fetched_utc": "2026-11-09T07:41:41Z"
+  },
+  {
+   "file": "Decay2.mat",
+   "url": "https://ndownloader.figshare.com/files/67626519",
+   "bytes": 1461,
+   "sha256": "5d91206cc1c395935f747287b4e14e466261e376df1c60f899354edd65ee49c7",
+   "fetched_utc": "2026-11-09T07:41:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Franklin2025_bioRxiv.zip"
+}

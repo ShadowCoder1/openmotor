@@ -1,0 +1,542 @@
+{
+ "id": "Chen2026_JNeurophysiol",
+ "module": "reach90",
+ "rows": 24000,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 887112,
+ "zip_sha256": "86ef25f095378d5c989f2e4d2711ed5ee94426ae36880d8390ea044cbaa0e6a3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all_raw_df.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all_control_survey_df.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all_aiming_survey_df.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "24000 rows = 60 participants x 400 trials, trials 1-400 in order, rows grouped by participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group constant within participant: 30 Aiming, 30 Control",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Participants ('Sixty participants were recruited')",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exclusion/Inclusion sets are trials 241-245, 256-260, ... 346-350 for everyone (rest of 241-360 are Top-up)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cursor shown (online and endpoint) on trials 1-10, 21-240 and Top-up trials, never on trials 11-20, sets or washout (Methods)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each PDP block (30 trials) has one Exclusion and one Inclusion set in the same condition, and each participant has the four Target Location x Delay conditions once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target_at_aim and the 60 s delay flag agree with the set labels; delay only before a set's first trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target at 90 deg on all trials except the sets probed at the aiming location",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rotation -45 or +45 on all 200 training trials and on Top-up trials, 0 on baseline, Exclusion and washout",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rotation direction counterbalanced: 15 clockwise and 15 counter-clockwise per group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angle recomputed from final hand x, y and target_angle equals the flipped-back final_HA on every row",
+   "ok": true,
+   "detail": "max difference 5.68e-14 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "clockwise (-45) participants compensate counter-clockwise in late training (mean hand angle > 0), counter-clockwise (+45) participants clockwise (< 0), all 60",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one fixed start position on the screen fits every reported aim angle (9900 aim taps)",
+   "ok": true,
+   "detail": "start at (947.0, 527.0) px, max residual 6.8e-13 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "on the screen, clockwise-rotation participants tap their aim left of the start in late training (counter-clockwise of the 90 deg target), counter-clockwise-rotation participants right of it",
+   "ok": true,
+   "detail": "share of taps left of start: 1.000 vs 0.000"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' criteria flag exactly two participants, one per group (Methods, Testing Participants' Understanding of the Task)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, aiming group",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 29 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed, control group",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 29 per group)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle and aim_report within (-180, 180], target_angle within [0, 360), rt and mt finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "aim reports on trials 31-360 of the 30 aiming-group participants only (9900 rows)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "instruction screens give pauses before trials 11, 21, 41, 361 and every set and Top-up run (and 31 in the aiming group)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: mean hand angle, last 10 training trials",
+   "computed": 43.74791671724138,
+   "reported": 43.75,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: SEM of that mean",
+   "computed": 0.36294180407303844,
+   "reported": 0.36,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: Top-up, target at training location, no delay (mean)",
+   "computed": 43.89267275,
+   "reported": 43.89,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: Top-up, training location, no delay (SEM)",
+   "computed": 0.4926427974893223,
+   "reported": 0.49,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: Inclusion, training location, no delay (mean)",
+   "computed": 44.01177606896552,
+   "reported": 44.01,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: Inclusion, training location, no delay (SEM)",
+   "computed": 0.889508730189024,
+   "reported": 0.89,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: total adaptation (Top-up), mean",
+   "computed": 43.788467227155174,
+   "reported": 43.79,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: total adaptation (Top-up), SD",
+   "computed": 2.0216779302655845,
+   "reported": 2.02,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: implicit (aftereffect, washout trials 1-5), mean",
+   "computed": 13.184591505172413,
+   "reported": 13.18,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: implicit (aftereffect, washout trials 1-5), SD",
+   "computed": 6.198339446882068,
+   "reported": 6.2,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: explicit (Inclusion - Exclusion), mean",
+   "computed": 26.160175077377588,
+   "reported": 26.16,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: explicit (Inclusion - Exclusion), SD",
+   "computed": 11.604607033353181,
+   "reported": 11.6,
+   "tol": 0.05,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: D = A - (I + E), mean",
+   "computed": 4.443700644605172,
+   "reported": 4.44,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: D = A - (I + E), SD",
+   "computed": 10.259746276259918,
+   "reported": 10.26,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: t(28) of D against 0",
+   "computed": 2.332422233495245,
+   "reported": 2.33,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: slope of implicit (aftereffect) on explicit (Inclusion - Exclusion)",
+   "computed": -0.2808826851893048,
+   "reported": -0.281,
+   "tol": 0.0005,
+   "source": "Table 2, observed slope",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: mean hand angle, last 10 training trials",
+   "computed": 43.15477870689655,
+   "reported": 43.15,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: SEM of that mean",
+   "computed": 0.4621396862792337,
+   "reported": 0.46,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: Top-up, target at training location, no delay (mean)",
+   "computed": 43.47250217241379,
+   "reported": 43.47,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: Top-up, training location, no delay (SEM)",
+   "computed": 0.3030909024382603,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: Inclusion, training location, no delay (mean)",
+   "computed": 44.459847317241376,
+   "reported": 44.46,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: Inclusion, training location, no delay (SEM)",
+   "computed": 0.8211166068415947,
+   "reported": 0.82,
+   "tol": 0.005,
+   "source": "Results, 'Participants successfully adapted'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: total adaptation (Top-up), mean",
+   "computed": 43.95072492241379,
+   "reported": 43.95,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: total adaptation (Top-up), SD",
+   "computed": 1.2451615193811287,
+   "reported": 1.25,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: implicit (aftereffect, washout trials 1-5), mean",
+   "computed": 13.45711034462069,
+   "reported": 13.46,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: implicit (aftereffect, washout trials 1-5), SD",
+   "computed": 7.650033401750254,
+   "reported": 7.65,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: explicit (Inclusion - Exclusion), mean",
+   "computed": 23.15240544548276,
+   "reported": 23.15,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: explicit (Inclusion - Exclusion), SD",
+   "computed": 10.902122293081394,
+   "reported": 10.9,
+   "tol": 0.05,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: D = A - (I + E), mean",
+   "computed": 7.341209132310345,
+   "reported": 7.34,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: D = A - (I + E), SD",
+   "computed": 9.293418232156123,
+   "reported": 9.29,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: t(28) of D against 0",
+   "computed": 4.253937579645556,
+   "reported": 4.25,
+   "tol": 0.005,
+   "source": "Results, 'Summation test'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control: slope of implicit (aftereffect) on explicit (Inclusion - Exclusion)",
+   "computed": -0.38838379136611073,
+   "reported": -0.388,
+   "tol": 0.0005,
+   "source": "Table 1 and Table 2, control",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: slope of Exclusion hand angle on Inclusion aim report, training_location_no_delay",
+   "computed": -0.19683549371485023,
+   "reported": -0.197,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: slope of Exclusion hand angle on Inclusion aim report, training_location_1min_delay",
+   "computed": -0.15838757510998075,
+   "reported": -0.158,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: slope of Exclusion hand angle on Inclusion aim report, aiming_location_no_delay",
+   "computed": -0.5877338932291758,
+   "reported": -0.588,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Aiming: slope of Exclusion hand angle on Inclusion aim report, aiming_location_1min_delay",
+   "computed": -0.4010153545936763,
+   "reported": -0.401,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "all_raw_df.csv",
+   "url": "https://osf.io/download/w6tg7/",
+   "bytes": 11968738,
+   "sha256": "31c3f449f56567e1fbc50eaca1320b0c32da8cac11741fee8c97544f0c68de7f",
+   "fetched_utc": "2026-11-08T19:36:05Z"
+  },
+  {
+   "file": "all_raw_pilot_df.csv",
+   "url": "https://osf.io/download/5yn9j/",
+   "bytes": 8586624,
+   "sha256": "2685dba5191638cd35798aa0df070d69b3a94303687f49b3b501dc3a96568674",
+   "fetched_utc": "2026-11-08T19:36:08Z"
+  },
+  {
+   "file": "all_control_survey_df.csv",
+   "url": "https://osf.io/download/zxqms/",
+   "bytes": 8523,
+   "sha256": "ab55ccf18067944f1f747c4dd4975ece069d01a0f288786734d7c1dc87b34ea4",
+   "fetched_utc": "2026-11-08T19:36:11Z"
+  },
+  {
+   "file": "all_aiming_survey_df.csv",
+   "url": "https://osf.io/download/zx49a/",
+   "bytes": 8485,
+   "sha256": "8b6cfba7bf271f39e51e1d1b81ac9c377c0fae2290ac6918782fb43dbad16cc7",
+   "fetched_utc": "2026-11-08T19:36:14Z"
+  },
+  {
+   "file": "helper_function.py",
+   "url": "https://osf.io/download/e9gz6/",
+   "bytes": 10183,
+   "sha256": "90d1f6406c4df5c3b6b4cf831b29e471445be424904444425ecc46b1a956613c",
+   "fetched_utc": "2026-11-08T19:36:17Z"
+  },
+  {
+   "file": "SuppMateral.pdf",
+   "url": "https://osf.io/download/ectzs/",
+   "bytes": 1259708,
+   "sha256": "70250829ca20f42f098afe78ce3d8a2936f64457f3c987858232eb2017806969",
+   "fetched_utc": "2026-11-08T19:36:29Z"
+  },
+  {
+   "file": "data_analysis.ipynb",
+   "url": "https://osf.io/download/5awrv/",
+   "bytes": 11849458,
+   "sha256": "064a382048ee4d3ce56112d67d5d41c9742132e7eb895512e5d211597fbc4aa0",
+   "fetched_utc": "2026-11-08T19:36:32Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Chen2026_JNeurophysiol.zip"
+}

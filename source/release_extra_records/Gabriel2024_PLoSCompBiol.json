@@ -1,0 +1,147 @@
+{
+ "id": "Gabriel2024_PLoSCompBiol",
+ "module": "emg_path_following",
+ "rows": 72240,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 101990058,
+ "zip_sha256": "16720c6bb6163114b928fcc159f04464aa5ad18c8d28296c1ee3ca4421b36eda",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the congruent group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the congruent group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the incongruent group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the incongruent group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "practice trials in session 1 (one of each of the 12 conditions)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per condition per block (five per each of 12 conditions)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "conditions in a test block (2 directions x 3 magnitudes x 2 preview times)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "training blocks use only the two trained paths (right, magnitude 1 and 3) with 0.8 s preview",
+   "ok": true,
+   "detail": "[('right', 0.2), ('right', 0.6)]"
+  },
+  {
+   "kind": "internal",
+   "what": "72240 rows = 20 x 3612",
+   "ok": true,
+   "detail": "72240"
+  },
+  {
+   "kind": "internal",
+   "what": "hits between 0 and 25",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "channel peak times inside the record",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analyses 18 of the 20 participants; the deposit's participant list has no excluded participants and its notebook's exclusion list is empty, so all 20 are released.",
+  "The paper's Bayesian regression outputs and session-to-session changes in hit percentage were not reproduced from the rows."
+ ],
+ "sources": [
+  {
+   "file": "all_participant_performance_features.hdf5",
+   "url": "https://osf.io/download/66a23e2cd7a8aa626f80d4b3/",
+   "bytes": 2329907200,
+   "sha256": "db6c0a5472a283b7e0fa52ff198b67a600f3f80b59c7404f0501783946d879c1",
+   "fetched_utc": "2026-11-10T08:08:36Z"
+  },
+  {
+   "file": "participants_anonymised.csv",
+   "url": "https://osf.io/download/vnc9j/",
+   "bytes": 402,
+   "sha256": "c5254f6e20a5003d359ce74cd8b13139e4ab07c918b09b1401efd7e3dd0fa1c6",
+   "fetched_utc": "2026-11-10T08:08:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gabriel2024_PLoSCompBiol.zip"
+}

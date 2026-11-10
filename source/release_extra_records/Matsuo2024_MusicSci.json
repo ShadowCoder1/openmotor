@@ -1,0 +1,408 @@
+{
+ "id": "Matsuo2024_MusicSci",
+ "module": "tapping",
+ "rows": 38430,
+ "subjects": 42,
+ "persons": 42,
+ "zip_bytes": 414836,
+ "zip_sha256": "d6f7e5ac7896fb8720cbee9b7cabcaee1d0aaf1155f7007658d2a3dce654f753",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1A.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1B.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1C.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1D.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1E.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp1F.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2A.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2B.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2C.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2D.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2E.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2F.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp2G.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp3A.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp3B.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp3C.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp3D.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "barlength_raw_exp3E.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 (preprint e32fv: 15 of 28 completed all conditions, one dropped for large variability = 14; 14 of 18; 14 of 15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per condition (14 participants x 2 trials)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 (28 trials); same design in Experiments 2 and 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (preprint e32fv: 15 of 28 completed all conditions, one dropped for large variability = 14; 14 of 18; 14 of 15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials per condition (14 participants x 2 trials)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 (28 trials); same design in Experiments 2 and 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 (14 of 15 participants used; preprint e32fv)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: trials per condition (14 participants x 2 trials)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 (28 trials); same design in Experiments 2 and 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean bar length in the synchronization phase (4 beats x 455 ms)",
+   "computed": 1814.6172286617493,
+   "reported": 1820.0,
+   "tol": 10,
+   "source": "Results, Experiment 1 (bar length of the original tempo 1820 ms = 455 ms x 4)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "condition D of Experiment 1 has three-beat bars (1365 ms = 3 x 455 ms)",
+   "ok": true,
+   "detail": "1362.7 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the authors' initial/later-range bar-length ratios (barlength_ratio file) are reproduced from the rows (336 of 336 values; 0 differ)",
+   "ok": true,
+   "detail": "largest difference of the others 3.33e-10; differing cells (condition, range, trial, rows, file): []"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: the authors' initial/later-range bar-length ratios (barlength_ratio file) are reproduced from the rows (392 of 392 values; 0 differ)",
+   "ok": true,
+   "detail": "largest difference of the others 3.33e-10; differing cells (condition, range, trial, rows, file): []"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: the authors' initial/later-range bar-length ratios (barlength_ratio file) are reproduced from the rows (278 of 280 values; 2 differ)",
+   "ok": true,
+   "detail": "largest difference of the others 2.22e-16; differing cells (condition, range, trial, rows, file): [('B', 2, 1, 0.956, 0.76483), ('D', 2, 1, 0.9243, 0.73942)]"
+  },
+  {
+   "kind": "internal",
+   "what": "every bar length is between 300 and 6000 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "missing (NaN) bar lengths are not written as rows",
+   "ok": true,
+   "detail": "3178 NaN cells in the raw grids, 38430 rows written"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit and the published paper's analysed samples (14 per experiment) agree with the preprint (PsyArXiv e32fv, read in place of the journal text, which was not reachable); the preprint's Wilcoxon z values for the later-range change in Experiment 3 (-2.66, -2.05, -3.44) were not reproduced from the rows (-3.4, -2.6, -3.6 for the mean of bars 51-55 against 1820 ms), so only counts and the nominal bar length are used as published checks.",
+  "In the authors' barlength_ratio_exp3 file, two later-range values (the last participant's trial 2 in conditions B and D) read 0.765 and 0.739, while the deposit's bar lengths for those trials give 0.956 and 0.924; the other 278 values of that file, and all values of the Experiment 1 and 2 files, are reproduced from the rows."
+ ],
+ "sources": [
+  {
+   "file": "barlength_raw_exp3E.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp3E.csv/content",
+   "bytes": 14331,
+   "sha256": "3a9538afc56d6a3c6371bc56274c7ba1a76b04deb66cb8e19de7e86d5ec0e86e",
+   "fetched_utc": "2026-11-09T03:55:05Z"
+  },
+  {
+   "file": "barlength_raw_exp2C.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2C.csv/content",
+   "bytes": 14316,
+   "sha256": "0cdd6cefb45e4e5c808ccb08565278adc0e3bacc004d5a15ac9638666640849f",
+   "fetched_utc": "2026-11-09T03:55:13Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/api/records/8335982/files/README.md/content",
+   "bytes": 3052,
+   "sha256": "565a6894c88c13bc5814e4abded6aa62e79f7d24b669c56744074fab2e9c7b50",
+   "fetched_utc": "2026-11-09T03:55:29Z"
+  },
+  {
+   "file": "ITI_ratio_exp3.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/ITI_ratio_exp3.csv/content",
+   "bytes": 12267,
+   "sha256": "1b21576112de43353591566c02e62c06b67dde8eb89a9a32a440c829a0e3abfa",
+   "fetched_utc": "2026-11-09T03:55:46Z"
+  },
+  {
+   "file": "barlength_raw_exp2D.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2D.csv/content",
+   "bytes": 13689,
+   "sha256": "9c600ac66726806328597073211e50fc0ccdf7c8c8cedd06e7df554a8e308414",
+   "fetched_utc": "2026-11-09T04:00:44Z"
+  },
+  {
+   "file": "ITI_ratio_exp2.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/ITI_ratio_exp2.csv/content",
+   "bytes": 9601,
+   "sha256": "32f3a479514b81f5ff31b6e3ca2774a1e10a0fd2324169349c063bdfd4ccfafe",
+   "fetched_utc": "2026-11-09T04:00:49Z"
+  },
+  {
+   "file": "barlength_raw_exp2E.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2E.csv/content",
+   "bytes": 13397,
+   "sha256": "b995d73869dbd6f05278d8ab6eb5c79a4c0716276f3e0e8ea55247c162d6fced",
+   "fetched_utc": "2026-11-09T04:00:53Z"
+  },
+  {
+   "file": "barlength_raw_exp1A.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1A.csv/content",
+   "bytes": 13962,
+   "sha256": "36a6e3e632dce040d010c6ec07f7b9a929473d75dad9cb7d78cade06ea61d43c",
+   "fetched_utc": "2026-11-09T04:00:58Z"
+  },
+  {
+   "file": "force_ratio_exp3.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/force_ratio_exp3.csv/content",
+   "bytes": 10917,
+   "sha256": "c1a39e949efdae71ce9bc4f842aa19546525e6138e7b2a5f379eaf7992b007db",
+   "fetched_utc": "2026-11-09T04:01:03Z"
+  },
+  {
+   "file": "barlength_raw_exp2F.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2F.csv/content",
+   "bytes": 13105,
+   "sha256": "d3785bd67bf08cbeedd79b0825313c9c9cd179ff89eb5c662e41efd8d977f8ee",
+   "fetched_utc": "2026-11-09T04:01:08Z"
+  },
+  {
+   "file": "barlength_raw_exp3A.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp3A.csv/content",
+   "bytes": 13210,
+   "sha256": "8a961467cbfaaad602d35b6db013ec5264a7047bd10a7dd912b46d088a55335a",
+   "fetched_utc": "2026-11-09T04:01:17Z"
+  },
+  {
+   "file": "barlength_raw_exp3B.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp3B.csv/content",
+   "bytes": 14497,
+   "sha256": "87cfd7b719328e14899c1d295d07d1a02e372cb4adeba1c1526713b1f73c285e",
+   "fetched_utc": "2026-11-09T04:01:22Z"
+  },
+  {
+   "file": "barlength_raw_exp3C.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp3C.csv/content",
+   "bytes": 14279,
+   "sha256": "4d212f47511fff78bd8b1ff8820d436452a75978e0d8cc60dc26e3331275163f",
+   "fetched_utc": "2026-11-09T04:01:27Z"
+  },
+  {
+   "file": "barlength_ratio_exp1.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_ratio_exp1.csv/content",
+   "bytes": 3035,
+   "sha256": "567b58a0b07b607ac1bd902ecb332ebebfdbbafb5ebad41bf4df3c5d31a97a31",
+   "fetched_utc": "2026-11-09T04:01:32Z"
+  },
+  {
+   "file": "force_ratio_exp2.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/force_ratio_exp2.csv/content",
+   "bytes": 7675,
+   "sha256": "d2f20be260bcde435ea80b79c9336777eff70de79f2d3cba7d0be24e9ec50d2f",
+   "fetched_utc": "2026-11-09T04:01:43Z"
+  },
+  {
+   "file": "barlength_raw_exp3D.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp3D.csv/content",
+   "bytes": 14511,
+   "sha256": "b7a417b4cc296a0030793200e61d056865e0ad6e1978393fc5c8397c806c33f6",
+   "fetched_utc": "2026-11-09T04:01:49Z"
+  },
+  {
+   "file": "barlength_ratio_exp2.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_ratio_exp2.csv/content",
+   "bytes": 3342,
+   "sha256": "9fa99c28f4d93acfde3fcb2d1e776d374892e7ee26aeb50c50c26de1c1e5dd05",
+   "fetched_utc": "2026-11-09T04:01:54Z"
+  },
+  {
+   "file": "barlength_ratio_exp3.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_ratio_exp3.csv/content",
+   "bytes": 2515,
+   "sha256": "0d63c30b889747919bf4304f2e36f5e383d8834904790fb3650b1671bcf1287e",
+   "fetched_utc": "2026-11-09T04:01:58Z"
+  },
+  {
+   "file": "barlength_raw_exp2B.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2B.csv/content",
+   "bytes": 14274,
+   "sha256": "fb8807fc2f38cabc581417bbb7d59f6e649ea904c66e5a1d798c6f92f04bd80b",
+   "fetched_utc": "2026-11-09T04:02:03Z"
+  },
+  {
+   "file": "barlength_raw_exp2A.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2A.csv/content",
+   "bytes": 13733,
+   "sha256": "2c8b525ddbbb71203cc691b809c1b5768fe26dc8721e88f7ca7d346a98c64cb9",
+   "fetched_utc": "2026-11-09T04:02:09Z"
+  },
+  {
+   "file": "barlength_raw_exp1F.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1F.csv/content",
+   "bytes": 13581,
+   "sha256": "0f8b812b72a60e76d3a1154959f79684920bb53ffa5d03e88a017d9edc98a99a",
+   "fetched_utc": "2026-11-09T04:02:14Z"
+  },
+  {
+   "file": "barlength_raw_exp1E.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1E.csv/content",
+   "bytes": 13308,
+   "sha256": "06ab0eab391300741b7ffdfa88ee2420c37982300b269da1a366b77c38705a69",
+   "fetched_utc": "2026-11-09T04:02:18Z"
+  },
+  {
+   "file": "barlength_raw_exp1D.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1D.csv/content",
+   "bytes": 18204,
+   "sha256": "30e588677caff8b02a025dfd5f6a7b189486d54eab3dd70c2787e25314558ecb",
+   "fetched_utc": "2026-11-09T04:02:24Z"
+  },
+  {
+   "file": "barlength_raw_exp1C.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1C.csv/content",
+   "bytes": 13228,
+   "sha256": "3df34f8f92add9d8d311cadff865cdf956bace8bbbf863c27a48e26f0e170432",
+   "fetched_utc": "2026-11-09T04:02:28Z"
+  },
+  {
+   "file": "barlength_raw_exp1B.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp1B.csv/content",
+   "bytes": 13416,
+   "sha256": "a9fd5187d5ed80a47b93bfef2c751b10c1d65ebe6e12898fc67c57ff1084c096",
+   "fetched_utc": "2026-11-09T04:02:34Z"
+  },
+  {
+   "file": "barlength_raw_exp2G.csv",
+   "url": "https://zenodo.org/api/records/8335982/files/barlength_raw_exp2G.csv/content",
+   "bytes": 12965,
+   "sha256": "d5d3ee56f09238fcaaa08be4a0a4afae889a9bbd9a511e09d42ff97d5c665504",
+   "fetched_utc": "2026-11-09T04:06:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Matsuo2024_MusicSci.zip"
+}

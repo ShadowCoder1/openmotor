@@ -1,0 +1,105 @@
+{
+ "id": "Warlop2025_ResDevDisabil",
+ "module": "summary",
+ "rows": 540,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 14136,
+ "zip_sha256": "bc2248089c89059d4c256f3588b135d3d331517249c449ef9318854ee3df9b5f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children with DCD",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children without DCD",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD mean age (years)",
+   "computed": 13.671428571428573,
+   "reported": 13.7,
+   "tol": 0.05,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DCD age SD",
+   "computed": 1.5386269389110723,
+   "reported": 1.5,
+   "tol": 0.05,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD mean age (years)",
+   "computed": 14.21,
+   "reported": 14.2,
+   "tol": 0.05,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD age SD",
+   "computed": 1.357402982589495,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Warlop et al. 2025, Res Dev Disabil 167:105170, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "SAVINGS = EARLY_ADAPTATION1_DAY1 - EARLY_ADAPTATION1_DAY2 on every row where SAVINGS is given",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "36 children x 15 measures, one child has no day-2 data (8 empty values)",
+   "ok": true,
+   "detail": "540"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One child has no day-2 kinematics (and no actigraphy), so that child's 8 day-2 values and SAVINGS are empty, as in the deposit. The paper's group statistics (ANOVAs on directional error, EEG error-related negativity, sleep) were not recomputed; only the group sizes and the ages given in the abstract were checked."
+ ],
+ "sources": [
+  {
+   "file": "DATA_VMR_SLEEP_KINEMATICS.txt",
+   "url": "https://osf.io/download/uvka8/",
+   "bytes": 9464,
+   "sha256": "4590dc5701e2cd4210b0feccf3a0f8b598e33bbfc346047aed226fde6d37961a",
+   "fetched_utc": "2026-11-09T15:09:32Z"
+  },
+  {
+   "file": "DATA_VMR_ERN.txt",
+   "url": "https://osf.io/download/ksznf/",
+   "bytes": 2521,
+   "sha256": "92a53c28c70e7e84af1ffe1b50213daf40890a637735ca8ca1abc6c02e7d4f71",
+   "fetched_utc": "2026-11-09T15:09:37Z"
+  },
+  {
+   "file": "sVMR.py",
+   "url": "https://osf.io/download/bhsfa/",
+   "bytes": 12512,
+   "sha256": "9de5fc64f267934709fc8bacb7515623019e5a77ff4adb7f33647d0bc702fabd",
+   "fetched_utc": "2026-11-09T15:12:27Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Warlop2025_ResDevDisabil.zip"
+}

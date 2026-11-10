@@ -1,0 +1,7 @@
+{
+ "id": "Endo2012_LNCS",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Zenodo 5003465 is CogLaboration Experiment 6 (one CSV, 11 people x 180 trials, 12 numbered conditions, 33 columns with cryptic names such as crf2, F2T1_diff, G1RateVar) with no readme or data dictionary; the record text only says preferred or non-preferred hand and eyes closed for one or both partners, so the 12 condition codes and the column meanings cannot be decoded. The linked paper (EuroHaptics 2012, LNCS 7282:103-111, doi 10.1007/978-3-642-31401-8_10; Springer abstract: glove and location manipulations, 140 trials) appears to describe a different experiment, and its full text is paywalled, so nothing could be reproduced.",
+ "sources": []
+}

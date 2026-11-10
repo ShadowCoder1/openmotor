@@ -1,0 +1,292 @@
+{
+ "id": "Pickering2020_ExpBrainRes",
+ "module": "summary",
+ "rows": 1765,
+ "subjects": 90,
+ "persons": 48,
+ "zip_bytes": 28799,
+ "zip_sha256": "f855013ff17e8dc074cb1de1d2520543e4119de34b4054338eda38b990eb111e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Simon congruent RT, PD (ms)",
+   "computed": 547.2097916666667,
+   "reported": 547.0,
+   "tol": 1.0,
+   "source": "Results, Simon task (RT table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon incongruent RT, PD (ms)",
+   "computed": 586.3579166666667,
+   "reported": 586.0,
+   "tol": 1.0,
+   "source": "Results, Simon task (RT table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon effect, PD (ms)",
+   "computed": 39.14812441666667,
+   "reported": 39.0,
+   "tol": 1.5,
+   "source": "Results, Simon task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSRT, PD (ms)",
+   "computed": 289.84826086956525,
+   "reported": 290.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon congruent RT, HC (ms)",
+   "computed": 542.564652173913,
+   "reported": 543.0,
+   "tol": 1.0,
+   "source": "Results, Simon task (RT table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon incongruent RT, HC (ms)",
+   "computed": 583.0288260869565,
+   "reported": 583.0,
+   "tol": 1.0,
+   "source": "Results, Simon task (RT table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon effect, HC (ms)",
+   "computed": 40.46435043478261,
+   "reported": 40.0,
+   "tol": 1.5,
+   "source": "Results, Simon task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSRT, HC (ms)",
+   "computed": 272.44395000000003,
+   "reported": 272.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop accuracy PD (%)",
+   "computed": 54.78261739130435,
+   "reported": 55.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop accuracy HC (%)",
+   "computed": 55.04159,
+   "reported": 55.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "go RT PD (ms)",
+   "computed": 715.820652173913,
+   "reported": 716.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "go RT HC (ms)",
+   "computed": 699.3760500000001,
+   "reported": 699.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "go partial errors PD (%)",
+   "computed": 10.077805,
+   "reported": 10.0,
+   "tol": 1.0,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop partial errors PD (%)",
+   "computed": 26.922958636363635,
+   "reported": 28.0,
+   "tol": 1.5,
+   "source": "Results, stop-signal task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon incongruent partial errors HC (%)",
+   "computed": 10.318842272727274,
+   "reported": 10.0,
+   "tol": 1.0,
+   "source": "Results, Simon task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon button-press analysis: PwP",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Participants (one of 25 PwP excluded for very slow RTs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Simon: controls",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Participants (text: 23 HC)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop-signal: PwP",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, stop-signal exclusions (23 PwP)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop-signal: controls",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, stop-signal exclusions (20 HC)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age PwP (years)",
+   "computed": 63.84,
+   "reported": 63.84,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age HC (years)",
+   "computed": 68.91304347826087,
+   "reported": 68.91,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "education PwP (years)",
+   "computed": 15.72,
+   "reported": 15.72,
+   "tol": 0.01,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PwP in the demographics file",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all participants with rows are in the demographics file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "force-analysis rows equal the button-press rows for the same participants (checked cell by cell)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Simon effect = incongruent minus congruent RT",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows written for every non-empty cell",
+   "ok": true,
+   "detail": "1765 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "accuracy transformation = arcsine sqrt of proportion",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's text gives 23 controls but its Table 1 lists 25; the deposit's demographics file has 23 controls and 25 PwP, and Table 1 age and education means of PwP and HC reproduce exactly from them (HC with n = 23).",
+  "The deposit does not define the A and U versions of measures or the RespCon, RespIncon and ResponseGo columns; they are kept under the authors' labels with that note. A and U have values only for PwP.",
+  "Group means in the paper are rounded to whole ms or percent; they are matched within 1 unit. The paper reports delta-plot slopes only in a figure."
+ ],
+ "sources": [
+  {
+   "file": "demographics.csv",
+   "url": "https://osf.io/download/f3nke/",
+   "bytes": 2282,
+   "sha256": "17e35dd71a6e6cd5944528cf75172b0d10eb82b1caa6c0c161d07f3d1f2015a8",
+   "fetched_utc": "2026-11-09T06:42:30Z"
+  },
+  {
+   "file": "simon_button.csv",
+   "url": "https://osf.io/download/wk7uq/",
+   "bytes": 9576,
+   "sha256": "4c90761f08cef756cbd0903beaf6e5d99888a4c864e0b7d96a639bd6150760f6",
+   "fetched_utc": "2026-11-09T06:42:34Z"
+  },
+  {
+   "file": "simon_force.csv",
+   "url": "https://osf.io/download/pmj4x/",
+   "bytes": 9214,
+   "sha256": "0a2f18b8f7f911cc27658ba12d5fbfb0799c9fae5c328de31c6d28d40412412c",
+   "fetched_utc": "2026-11-09T06:42:40Z"
+  },
+  {
+   "file": "stop_button.csv",
+   "url": "https://osf.io/download/596fs/",
+   "bytes": 7140,
+   "sha256": "a61c254ece96174bff89255b6b9f248b6b949967bb990ebda1ae2c28824ae71b",
+   "fetched_utc": "2026-11-09T06:42:46Z"
+  },
+  {
+   "file": "stop_force.csv",
+   "url": "https://osf.io/download/n2u76/",
+   "bytes": 6669,
+   "sha256": "36953718e36df9a0506d438dfa8c04689206eb7cd46903a1dc5e325dd7799784",
+   "fetched_utc": "2026-11-09T06:42:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Pickering2020_ExpBrainRes.zip"
+}

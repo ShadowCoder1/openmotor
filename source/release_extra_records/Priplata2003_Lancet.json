@@ -1,0 +1,172 @@
+{
+ "id": "Priplata2003_Lancet",
+ "module": "timeseries",
+ "rows": 420,
+ "subjects": 27,
+ "persons": 27,
+ "zip_bytes": 8222155,
+ "zip_sha256": "0f03afcdadfaedc1a8516d23ae1b9638cdb3b9429ea789931df9eb3792dbc134",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "young participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Letter, para 'We included 15 young ...'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Letter, para 'We included 15 young ...'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per young participant (10 noise + 10 control)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per elderly participant (5 noise + 5 control)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "noise trials per young participant",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "noise trials per elderly participant",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial duration, s",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods (30 s stance trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly mediolateral range, noise / control ratio",
+   "computed": 0.8564209155090995,
+   "reported": 0.8535031847133758,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young anteroposterior range, noise / control ratio",
+   "computed": 0.9249564044192724,
+   "reported": 0.9246231155778895,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young mean radius, noise / control ratio",
+   "computed": 0.9304366682758526,
+   "reported": 0.9411764705882353,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly anteroposterior range, noise / control ratio",
+   "computed": 0.943140928737638,
+   "reported": 0.951111111111111,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly mean radius, noise / control ratio",
+   "computed": 0.9114245872268836,
+   "reported": 0.9090909090909091,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young mediolateral range, noise / control ratio",
+   "computed": 1.0143845190876761,
+   "reported": 1.0148148148148148,
+   "tol": 0.045,
+   "source": "Table (group means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "elderly mediolateral range falls with noise (deposit units, mm)",
+   "computed": 3.141479666666669,
+   "reported": 3.1,
+   "tol": 0.6,
+   "source": "Table (15.7 to 13.4 in height-normalised units; about 3 mm at the deposit's scale)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row per file of the archive",
+   "ok": true,
+   "detail": "420 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "all recordings have 1800 samples at 60 Hz = 30 s",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table values in the paper are divided by marker height and cannot be reproduced in absolute terms because heights were not shared; ratios of noise to control means were reproduced instead."
+ ],
+ "sources": [
+  {
+   "file": "nesfdb.tar.gz",
+   "url": "https://physionet.org/files/nesfdb/1.0.0/nesfdb.tar.gz",
+   "bytes": 6550217,
+   "sha256": "4ed9ce7f91ee76ca54834cd9910c826f523bd28958f1c59c07104a754b5deef1",
+   "fetched_utc": "2026-11-09T05:50:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Priplata2003_Lancet.zip"
+}

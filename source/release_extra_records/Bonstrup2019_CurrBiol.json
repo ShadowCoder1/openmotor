@@ -1,0 +1,224 @@
+{
+ "id": "Bonstrup2019_CurrBiol",
+ "module": "keypress",
+ "rows": 67485,
+ "subjects": 31,
+ "persons": 31,
+ "zip_bytes": 1132408,
+ "zip_sha256": "c6c246beab096403f2939f881f7adc186a78b9cc25936dac867d62c94ee159b4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the archive matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has events files and they are the 143 runs of the deposit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every key press lies in a practice trial and matches its finger label (1 little, 2 ring, 3 middle, 4 index)",
+   "ok": true,
+   "detail": "{}"
+  },
+  {
+   "kind": "internal",
+   "what": "key presses are in time order within each run, except one pair (in a MEG2 control trial 4) that the deposit lists 0.2 s out of order: kept in the authors' order, interval_ms left empty for the later-listed press",
+   "ok": true,
+   "detail": "1 pair, 0.2017 s out of order"
+  },
+  {
+   "kind": "internal",
+   "what": "trained-sequence runs all show 41324; the control runs show the 9 untrained sequences of the README's MEG2 list (all 29 MEG2 runs) or MEG3 list (26 of the 27 MEG3 runs; one participant's MEG3 run used the MEG2 list)",
+   "ok": true,
+   "detail": "{(2, 'README MEG2 list'): 29, (3, 'README MEG2 list'): 1, (3, 'README MEG3 list'): 26}"
+  },
+  {
+   "kind": "internal",
+   "what": "key presses without a usable time (onset -120 s and no sample index): kept, time columns empty",
+   "ok": true,
+   "detail": "82 presses in 8 control runs"
+  },
+  {
+   "kind": "internal",
+   "what": "sessions: 31 participants have MEG1, 29 have MEG2 and 27 have MEG3 (events files)",
+   "ok": true,
+   "detail": "{3: 27, 1: 2, 2: 2}"
+  },
+  {
+   "kind": "internal",
+   "what": "key presses by key",
+   "ok": true,
+   "detail": "{'1': 14456, '2': 13774, '3': 14021, '4': 25234}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants appear in the order of the deposit's labels, so the public codes S0001... follow them",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 26.135806451612904,
+   "reported": 26.14,
+   "tol": 0.005,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 4.170357118356131,
+   "reported": 4.17,
+   "tol": 0.005,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MEG1 to MEG2 interval, mean (hours)",
+   "computed": 23.435057471172414,
+   "reported": 23.44,
+   "tol": 0.01,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MEG1 to MEG2 interval, SD (hours)",
+   "computed": 1.315697766800395,
+   "reported": 1.32,
+   "tol": 0.01,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MEG1 to MEG3 interval, mean (days)",
+   "computed": 29.44820258851852,
+   "reported": 29.45,
+   "tol": 0.01,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MEG1 to MEG3 interval, SD (days)",
+   "computed": 6.774685828020006,
+   "reported": 6.77,
+   "tol": 0.01,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "practice trials in the MEG1 training run",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "MEG2 retest runs hold 9 practice trials, as the MEG3 ones (the README text says 36, which a 3-minute scan of 10-s trials with 10-s rests cannot hold)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "practice trials in the MEG3 retest run",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control sequences (one trial each) in the MEG2 control run",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), MEG session design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Bonstrup2019_CurrBiol_S0001: MEG1 training trials without a key press (trial 1 only)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), Missing data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Bonstrup2019_CurrBiol_S0023: MEG1 training trials without a key press (trial 1 only)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), Missing data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Bonstrup2019_CurrBiol_S0023: MEG2 retest trials without a key press (trials 1 and 2)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "OpenNeuro ds006502 README (Subjects; Missing data), Missing data",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Bonstrup2019_CurrBiol_S0010: the README says the MEG recording stopped after trial 34, but the events file still holds key presses for trials 35 and 36",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no other practice trial lacks key presses",
+   "ok": true,
+   "detail": "0 other trials"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The README's MEG session design says the MEG2 retest has 36 practice trials; the files hold 9 (as in MEG3), which fits its 3-minute scan. The README says one participant's MEG1 recording stopped after trial 34; the events file still has key presses for trials 35 and 36 (the behavioural log was not part of the MEG recording). One participant's MEG3 control run used the MEG2 control sequences.",
+  "The two papers named on OpenMotor (Bonstrup 2019, 27 participants analysed, one retest the next day; Buch 2021, 30 participants, one session) describe other cohorts than this deposit (31 participants, retests about 24 h and 30 days later), and the deposit's README cites no paper; the numbers checked here are therefore the README's, not those of the papers."
+ ],
+ "sources": [
+  {
+   "file": "ds006502-1.0.0.zip",
+   "url": "https://github.com/OpenNeuroDatasets/ds006502/archive/refs/tags/1.0.0.zip",
+   "bytes": 3655766,
+   "sha256": "62f048f0241106469a824f70f7ba7e22a910ece761684faca7ff78ac05eff0da",
+   "fetched_utc": "2026-11-08T20:59:02Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bonstrup2019_CurrBiol.zip"
+}

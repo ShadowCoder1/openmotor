@@ -1,0 +1,214 @@
+{
+ "id": "Beach2024_bioRxiv",
+ "module": "speech",
+ "rows": 327837,
+ "subjects": 82,
+ "persons": 41,
+ "zip_bytes": 14930210,
+ "zip_sha256": "fe8547ceaf9b8f088e5d7779341de389c1be3bd3be807ff62b1a3582f6af7055",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "github.com/blab-lab/vsaSentence README: 'N=41 speakers contributed data'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel categories in the sentences",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "vsaSentence get_AVS_VSA.m (sentenceVowels, n = 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel categories in the transfer words",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "vsaSentence get_AVS_VSA.m (transferVowels, n = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "phases of the sentence task",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "vsaSentence get_AVS_VSA.m (sentencePhases)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every speaker has an adapt and a null session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "token counts",
+   "ok": true,
+   "detail": "327837"
+  },
+  {
+   "kind": "internal",
+   "what": "baseline tokens have zero mean change per speaker, session and vowel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1 and f2 in mel range",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ages",
+   "ok": true,
+   "detail": "18.0-76.0"
+  },
+  {
+   "kind": "published",
+   "what": "male speakers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female speakers",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest speaker (years)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest speaker (years)",
+   "computed": 76.0,
+   "reported": 76.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers aged 18-30",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers aged 31-55",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Beach, Johnson, Parrell & Niziolek 2024 (bioRxiv preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "speakers aged 56 and over",
+   "ok": true,
+   "detail": "the preprint says 14 per age band, which sums to the 42 recruited; one older speaker was excluded"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The published paper (J Exp Psychol Learn Mem Cogn, 2026) could not be read; the participant checks use the bioRxiv preprint (Methods) and the authors' code documentation. The preprint's percent changes in average vowel spacing were not recomputed because the authors' spacing function is not in their public code. The preprint gives 14 speakers in each of three age bands (42), but 41 speakers were kept and the shared file has 13 aged 56 or over (one older participant was excluded)."
+ ],
+ "sources": [
+  {
+   "file": "sentenceVow_41.mat",
+   "url": "https://osf.io/download/76ryf/",
+   "bytes": 15174075,
+   "sha256": "24bf8219d9802dfc558fa9f6471bf3df4719cf35664ba406430c358cd4296c8f",
+   "fetched_utc": "2026-11-08T20:36:32Z"
+  },
+  {
+   "file": "transferVow_41.mat",
+   "url": "https://osf.io/download/356ha/",
+   "bytes": 594025,
+   "sha256": "d9ba4c80709ef1bfc693caecbe628639f8a9cdb4a1e627158be2566f2a3762fa",
+   "fetched_utc": "2026-11-08T20:37:21Z"
+  },
+  {
+   "file": "speakerData.mat",
+   "url": "https://osf.io/download/6tqg7/",
+   "bytes": 229833,
+   "sha256": "e83ae1494e3ebfbf185ee7f65e223f13be6cdf8b5f709470d692155d9901ecbf",
+   "fetched_utc": "2026-11-08T20:37:25Z"
+  },
+  {
+   "file": "segmentDuration_sentence_41.mat",
+   "url": "https://osf.io/download/35f7c/",
+   "bytes": 67967,
+   "sha256": "7299dcc4de4b079675c0e8f32857b8b3cec0087a99b7b85af4646c2b05643b55",
+   "fetched_utc": "2026-11-08T20:37:27Z"
+  },
+  {
+   "file": "segmentDuration_transfer_41.mat",
+   "url": "https://osf.io/download/wvud9/",
+   "bytes": 22872,
+   "sha256": "af6c9faf8643db6d5e39d71d2b5e15bde711c6cdf8c907b8cf1e7dbab6453e65",
+   "fetched_utc": "2026-11-08T20:37:30Z"
+  },
+  {
+   "file": "supplementaryData_sentence_41.mat",
+   "url": "https://osf.io/download/hzdtb/",
+   "bytes": 1167345,
+   "sha256": "78d9b51bff331ed55a1eb330dd95f94af26f2fed0a2febd24748ec4ebb88131a",
+   "fetched_utc": "2026-11-08T20:37:34Z"
+  },
+  {
+   "file": "sentenceAcc_41.mat",
+   "url": "https://osf.io/download/7kuvy/",
+   "bytes": 87394,
+   "sha256": "cd0d63af4942983507f3898910c9fbf9e6831e851198d104626c61673b60e396",
+   "fetched_utc": "2026-11-08T20:37:36Z"
+  },
+  {
+   "file": "listenerData.mat",
+   "url": "https://osf.io/download/pg2h3/",
+   "bytes": 39097,
+   "sha256": "389467d2de65dbc2525143712b65cf05dcdf7d9bfdaa01930d1d93a8f1b82a22",
+   "fetched_utc": "2026-11-08T20:37:39Z"
+  },
+  {
+   "file": "aavs_41.mat",
+   "url": "https://osf.io/download/vhxk3/",
+   "bytes": 23138,
+   "sha256": "0595a472f62d0a0a30597a175f28b421a12220333bebd8435b8e9b83f161e561",
+   "fetched_utc": "2026-11-08T20:37:43Z"
+  },
+  {
+   "file": "avs_vsa_41.mat",
+   "url": "https://osf.io/download/sp45b/",
+   "bytes": 76564,
+   "sha256": "4575ebc69d96adc39b26d7fd2c03ec63e7a31e54b7cd6c3c75f92df52f9c5bd5",
+   "fetched_utc": "2026-11-08T20:37:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Beach2024_bioRxiv.zip"
+}

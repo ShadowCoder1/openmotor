@@ -1,0 +1,1091 @@
+{
+ "2020-10_Tsay": {
+  "study": "Tsay2020_JNeurophysiol",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Holland2019": {
+  "study": "Holland2019_JNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Galea (University of Birmingham)",
+  "url": "https://osf.io/j5v2s/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Wang2025": {
+  "study": "Wang2025_JNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley)",
+  "url": "https://github.com/shion707/Attention-Implicit-Adaptation",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "ext_Guo2023": {
+  "study": "Guo2023_SciRep",
+  "side": "development",
+  "external": true,
+  "lab": "Song (Brown University)",
+  "url": "https://osf.io/r4p2n",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "2022-10_Avraham": {
+  "study": "Avraham2022_eLife",
+  "side": "development",
+  "external": false,
+  "lab": "McDougle",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Wang2024": {
+  "study": "Wang2024_CurrBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley)",
+  "url": "https://osf.io/ej4ba/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "2021-09_Tsay": {
+  "study": "Tsay2021_JNeurophysiol_proprioception",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Ayala2021": {
+  "study": "Ayala2021_PLoSONE",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University)",
+  "url": "https://osf.io/v2hwp/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "2025-07_Cipleu": {
+  "study": "McDougleCipleu_provisional",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Warburton2025": {
+  "study": "Warburton2025_JNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Mushtaq / Morehead (University of Leeds)",
+  "url": "https://osf.io/8s9mk/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "ext_Liufu2021": {
+  "study": "Xu2023_JBBS",
+  "side": "development",
+  "external": true,
+  "lab": "Juan Chen (South China Normal University; data collection), with Haith and Hadjiosif (Johns Hopkins)",
+  "url": "https://github.com/jhanliufu-personal/ImplicitAdaptation2021_Chen",
+  "license": [
+   "None stated",
+   "No license file at the version used (an MIT file was removed in 2023)"
+  ]
+ },
+ "2023-04_Tsay": {
+  "study": "Tsay2023_JCognNeurosci",
+  "side": "development",
+  "external": false,
+  "lab": "Cooper",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2021-12_Tsay": {
+  "study": "Tsay2021_JNeurophysiol_uncertainty",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Barzi2026": {
+  "study": "Barzi2026_ExpBrainRes",
+  "side": "development",
+  "external": true,
+  "lab": "Hill",
+  "url": "https://osf.io/a65wk/",
+  "license": [
+   "None stated",
+   "No license selected on the OSF project"
+  ]
+ },
+ "2025-06_Avraham": {
+  "study": "Avraham2025_eNeuro",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Johnson2017": {
+  "study": "Johnson2017_PLoSOne",
+  "side": "development",
+  "external": true,
+  "lab": "Sensinger / Kording (UNB / Shirley Ryan AbilityLab)",
+  "url": "https://doi.org/10.5061/dryad.b2p3j",
+  "license": [
+   "CC0",
+   "Dryad dataset"
+  ]
+ },
+ "ext_Kim2018": {
+  "study": "Kim2018_CommunBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley)",
+  "url": "https://github.com/hyosubkim/CommunicationsBio2018",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "ext_DAmario2024": {
+  "study": "DAmario2024_bioRxiv",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University)",
+  "url": "https://osf.io/ajwyr/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Crossley2023": {
+  "study": "Crossley2023_BlockedUncertainty",
+  "side": "development",
+  "external": true,
+  "lab": "Crossley (Macquarie University)",
+  "url": "https://github.com/crossley/sensory_uncertainty_fffb_blocked_vs_interleaved",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "2023-08_Mastrigt": {
+  "study": "vanMastrigt2023_ExpBrainRes",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2018-06_Codol": {
+  "study": "Codol2018_SciRep",
+  "side": "development",
+  "external": false,
+  "lab": "Galea (University of Birmingham)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2024-01_Tsay": {
+  "study": "Tsay2024_NatHumBehav",
+  "side": "development",
+  "external": false,
+  "lab": "Nakayama",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_tHart2016": {
+  "study": "tHart2016_PLoSOne",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques ('t Hart; York University)",
+  "url": "https://osf.io/feuby/",
+  "license": [
+   "CC0",
+   "OSF project"
+  ]
+ },
+ "ext_Nakano2024": {
+  "study": "Nakano2024_bioRxiv",
+  "side": "development",
+  "external": true,
+  "lab": "Murai (AIST)",
+  "url": "https://figshare.com/articles/dataset/Nakano2024Data_zip/25795417",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Korka2023": {
+  "study": "Korka2023_Cortex",
+  "side": "development",
+  "external": true,
+  "lab": "Stenner (Leibniz Institute for Neurobiology, Magdeburg)",
+  "url": "https://zenodo.org/records/7440442",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Modchalingam2023": {
+  "study": "Modchalingam2023_SciRep",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University)",
+  "url": "https://osf.io/a7k6s/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Wang2026": {
+  "study": "Wang2026_PLoSBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley) with Taylor (Princeton)",
+  "url": "https://zenodo.org/records/23023244",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Cesanek2024_sr": {
+  "study": "Cesanek2024_NatHumBehav",
+  "side": "development",
+  "external": true,
+  "lab": "Wolpert (Columbia University)",
+  "url": "https://github.com/EvanCesanek/ouvrai-vr-sr",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repositories"
+  ]
+ },
+ "2025-01_Niyogi": {
+  "study": "Niyogi2025_provisional",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Morehead2017": {
+  "study": "Morehead2017_JCogNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley) with Taylor (Princeton)",
+  "url": "https://github.com/xiaotsay2015/morehead2017",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "2023-01_Tsay": {
+  "study": "Tsay2023_ProcRSocB",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2025-07_Padmanabhan": {
+  "study": "Padmanabhan2026_JNeurophysiol",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Kim2025": {
+  "study": "Kim2025_ProcRSocB",
+  "side": "development",
+  "external": true,
+  "lab": "H.E. Kim (University of British Columbia)",
+  "url": "https://osf.io/pmqu5/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Arrighi2016": {
+  "study": "Arrighi2016_PLoSOne",
+  "side": "development",
+  "external": true,
+  "lab": "Andre / Rossi (University of Pisa)",
+  "url": "https://doi.org/10.5061/dryad.v677p",
+  "license": [
+   "CC0",
+   "Dryad dataset"
+  ]
+ },
+ "ext_Brudner2016": {
+  "study": "Brudner2016_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "Taylor (Princeton); re-released by Townsend/Morehead (Leeds)",
+  "url": "https://github.com/Max-Townsend/aha_precedes_strategy_VMR",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "2021-03_Avraham": {
+  "study": "Avraham2021_PLoSBiol",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Hewitson2023_uncertainty": {
+  "study": "Hewitson2023_PLoSComputBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Crossley (Macquarie University)",
+  "url": "https://github.com/crossley/sensory_uncertainty_fffb",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repositories"
+  ]
+ },
+ "ext_LangHodge2023": {
+  "study": "LangHodge2023_PLOSONE",
+  "side": "development",
+  "external": true,
+  "lab": "Marigold (Simon Fraser University)",
+  "url": "https://osf.io/8crqa/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_OBryan2025": {
+  "study": "OBryan2025_bioRxiv",
+  "side": "development",
+  "external": true,
+  "lab": "Song (Brown University)",
+  "url": "https://osf.io/ntgs7/",
+  "license": [
+   "None stated",
+   "No license selected on the OSF project"
+  ]
+ },
+ "2021-07_Tsay": {
+  "study": "Tsay2021_NBDT",
+  "side": "development",
+  "external": false,
+  "lab": "Avraham",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_tHart2024": {
+  "study": "tHart2024_eNeuro",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques ('t Hart; York University)",
+  "url": "https://osf.io/3yhw5/",
+  "license": [
+   "GPL-3.0",
+   "OSF registration"
+  ]
+ },
+ "ext_Sharma2026": {
+  "study": "Sharma2026_PLoSCompBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques / 't Hart (York) with Broucke (Toronto) and Orban de Xivry (KU Leuven)",
+  "url": "https://osf.io/gjb5r/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Tsay2024": {
+  "study": "Tsay2024_JCogNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry / Morehead (UC Berkeley)",
+  "url": "https://github.com/DariusParvin/Adaptation_Multiple_Cursor_Experiments",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "ext_Bansal2023": {
+  "study": "Bansal2023_ExpBrainRes",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University) + Straube/Eggert (LMU Munich)",
+  "url": "https://osf.io/c5ezv/",
+  "license": [
+   "CC BY 4.0",
+   "OSF project"
+  ]
+ },
+ "ext_Goldschmidt2016": {
+  "study": "Goldschmidt2016_Joystick",
+  "side": "development",
+  "external": true,
+  "lab": "INDP course project (Champalimaud, Lisbon; inferred)",
+  "url": "https://github.com/degoldschmidt/motor-data",
+  "license": [
+   "GPL-3.0",
+   "License file in the GitHub repository"
+  ]
+ },
+ "ext_Ruttle2022": {
+  "study": "Ruttle2022_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University)",
+  "url": "https://osf.io/6q2zd/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; GitHub copies are MIT or GPL-3.0"
+  ]
+ },
+ "2024-06_Tsay": {
+  "study": "Tsay2024_JNeurophysiol",
+  "side": "development",
+  "external": false,
+  "lab": "Sarlegna",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Abekawa2022": {
+  "study": "Abekawa2022_CurrBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Gomi (NTT Communication Science Labs, Japan)",
+  "url": "https://doi.org/10.6084/m9.figshare.19589701",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Holland2018": {
+  "study": "Holland2018_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "Galea (University of Birmingham)",
+  "url": "https://osf.io/vwr7c/",
+  "license": [
+   "None stated",
+   "OSF lists no license; the project wiki says the data are freely available for reproduction"
+  ]
+ },
+ "ext_Zhu2023": {
+  "study": "Zhu2023_PLoSComputBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Flanagan / Gallivan (Queen's University)",
+  "url": "https://osf.io/ftb9w/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "2024-07_Chen": {
+  "study": "Chen2024_bioRxiv",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Hewitson2023_metacog": {
+  "study": "Hewitson2023_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "McDougle (Yale)",
+  "url": "https://github.com/ilestz/confidence_analysis",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ },
+ "ext_Stroh2024": {
+  "study": "Stroh2024_JDeafStudDeafEduc",
+  "side": "development",
+  "external": true,
+  "lab": "Roeder (University of Hamburg)",
+  "url": "https://www.fdr.uni-hamburg.de/record/12988",
+  "license": [
+   "CC BY 4.0",
+   "FDR Hamburg record"
+  ]
+ },
+ "ext_Henriques2026": {
+  "study": "Henriques2026_DiscovNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques / 't Hart (York University)",
+  "url": "https://osf.io/dhk3u/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the code is GPL-3.0"
+  ]
+ },
+ "ext_Wilterson2021": {
+  "study": "Wilterson2021_eNeuro",
+  "side": "development",
+  "external": true,
+  "lab": "Taylor (Princeton)",
+  "url": "https://osf.io/vtqa3/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Liddy2026": {
+  "study": "Liddy2026_eNeuro",
+  "side": "development",
+  "external": true,
+  "lab": "Song (Brown University)",
+  "url": "https://github.com/jliddy5/liddy_eneuro_implicit-attention",
+  "license": [
+   "CC0",
+   "License file in the repository (also on Zenodo)"
+  ]
+ },
+ "ext_Matsuda2023": {
+  "study": "Matsuda2023_ExpBrainRes",
+  "side": "development",
+  "external": true,
+  "lab": "Abe (Hokkaido University)",
+  "url": "https://figshare.com/articles/dataset/Implicit_motor_adaptation_driven_by_intermittent_and_invariant_errors/21212843",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_King2025": {
+  "study": "King2025_bioRxiv",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques / 't Hart (York University)",
+  "url": null,
+  "license": [
+   "None stated",
+   "No license on the OSF project; shared through a view-only link in the preprint"
+  ]
+ },
+ "ext_Will2024": {
+  "study": "Will2024_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "Stenner (Leibniz Institute for Neurobiology, Magdeburg)",
+  "url": "https://zenodo.org/records/11084801",
+  "license": [
+   "None stated",
+   "No license on the Zenodo record"
+  ]
+ },
+ "ext_Cesanek2024_dual": {
+  "study": "Cesanek2024_NatHumBehav",
+  "side": "development",
+  "external": true,
+  "lab": "Wolpert (Columbia University)",
+  "url": "https://github.com/EvanCesanek/ouvrai-vr-dual",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repositories"
+  ]
+ },
+ "ext_Buggeln2026": {
+  "study": "Buggeln2026_PLoSComputBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Cashaback (University of Delaware)",
+  "url": "https://doi.org/10.6084/m9.figshare.31337554",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Nettekoven2022": {
+  "study": "Nettekoven2022_BrainStimul",
+  "side": "development",
+  "external": true,
+  "lab": "Stagg (University of Oxford)",
+  "url": "https://github.com/carobellum/cerebellar_tdcs_adaptation",
+  "license": [
+   "None stated",
+   "No license in the GitHub repository"
+  ]
+ },
+ "ext_Szarka2025": {
+  "study": "Szarka2025_PLoSONE",
+  "side": "development",
+  "external": true,
+  "lab": "Chua / H.E. Kim (University of British Columbia)",
+  "url": "https://osf.io/6v3tp/",
+  "license": [
+   "CC0",
+   "OSF project"
+  ]
+ },
+ "ext_Moskowitz2020": {
+  "study": "Moskowitz2020_PLoSCompBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Flanagan (Queen's University) with Wolpert",
+  "url": "https://plos.figshare.com/articles/dataset/Human_decision_making_anticipates_future_performance_in_motor_learning/11915742",
+  "license": [
+   "CC BY 4.0",
+   "PLOS supplementary data on figshare"
+  ]
+ },
+ "2022-02_McDougle": {
+  "study": "McDougleCipleu_provisional",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Kim2019": {
+  "study": "Kim2019_eLife",
+  "side": "development",
+  "external": true,
+  "lab": "Ivry (UC Berkeley)",
+  "url": "https://github.com/hyosubkim/Influence-of-task-outcome-on-implicit-motor-learning",
+  "license": [
+   "MIT",
+   "License file in the GitHub repository"
+  ]
+ },
+ "ext_Ruttle2021": {
+  "study": "Ruttle2021_SciRep",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University)",
+  "url": "https://osf.io/9db8v/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; a GitHub copy is GPL-3.0"
+  ]
+ },
+ "2022-04_Tsay": {
+  "study": "Tsay2022_BrainCommun",
+  "side": "development",
+  "external": false,
+  "lab": "Ivry (UC Berkeley)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Clayton2024": {
+  "study": "Clayton2024_PLoSONE",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques / 't Hart (York University)",
+  "url": "https://osf.io/kgt2z/",
+  "license": [
+   "CC BY 4.0",
+   "Processed data CC BY 4.0 (OSF registration); the raw-data archive lists no license"
+  ]
+ },
+ "ext_Hadjiosif2023": {
+  "study": "Hadjiosif2023_PLoSBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Smith (Harvard)",
+  "url": "https://doi.org/10.5281/zenodo.7668262",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Ruttle2016": {
+  "study": "Ruttle2016_PLoSONE",
+  "side": "development",
+  "external": true,
+  "lab": "Henriques (York University) with Cressman (Ottawa)",
+  "url": "https://osf.io/4v6md/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "2025-08_Wang": {
+  "study": "Wang2025_SciAdv",
+  "side": "development",
+  "external": false,
+  "lab": "Whitney",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Senna2022": {
+  "study": "Senna2022_eLife",
+  "side": "development",
+  "external": true,
+  "lab": "Ernst (Ulm University)",
+  "url": "https://data.mendeley.com/datasets/ksdwxdwtxg",
+  "license": [
+   "CC BY 4.0",
+   "Mendeley Data record"
+  ]
+ },
+ "2024-10_Wang": {
+  "study": "Wang2024_eLife",
+  "side": "development",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Li2021": {
+  "study": "Li2021_FrontAgingNeurosci",
+  "side": "development",
+  "external": true,
+  "lab": "Zhongting Chen (East China Normal University)",
+  "url": "https://osf.io/x2jnf/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "ext_Areshenkoff2024": {
+  "study": "Areshenkoff2024_PLoSBiol",
+  "side": "development",
+  "external": true,
+  "lab": "Gallivan / Flanagan (Queen's University)",
+  "url": "https://openneuro.org/datasets/ds005598",
+  "license": [
+   "CC0",
+   "OpenNeuro dataset"
+  ]
+ },
+ "ext_VelazquezVargas2024": {
+  "study": "VelazquezVargas2024_JNeurophysiol",
+  "side": "development",
+  "external": true,
+  "lab": "Taylor (Princeton University)",
+  "url": "https://osf.io/z3cua/",
+  "license": [
+   "None stated",
+   "No license selected on the OSF project"
+  ]
+ },
+ "2025-12_Ding": {
+  "study": "Ding2026_npjSciLearn",
+  "side": "lockbox",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2026-05_Cisneros": {
+  "study": "Cisneros2026_NatHumBehav",
+  "side": "lockbox",
+  "external": false,
+  "lab": "Ivry (UC Berkeley) and Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "2026_07_Nyamsuren": {
+  "study": "Nyamsuren2026_bioRxiv",
+  "side": "lockbox",
+  "external": false,
+  "lab": "Tsay (Carnegie Mellon University)",
+  "url": null,
+  "license": [
+   "CC BY 4.0",
+   "Shared by OpenMotor under CC BY 4.0"
+  ]
+ },
+ "ext_Berland2025": {
+  "study": "Berland2025_JNeurophysiol",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Guigon (ISIR, Sorbonne) / Paljic (Mines Paris)",
+  "url": "https://zenodo.org/records/15606190",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Bromberg2019": {
+  "study": "Bromberg2019_eNeuro",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Donchin / Haar (Ben-Gurion University)",
+  "url": "https://osf.io/dsn3v/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "ext_Casasnovas2024": {
+  "study": "Casasnovas2024_JNeurophysiol",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Gail (German Primate Center, Goettingen)",
+  "url": "https://doi.org/10.25625/NMU5P3",
+  "license": [
+   "CC BY 4.0",
+   "GRO.data record"
+  ]
+ },
+ "ext_Cook2026": {
+  "study": "Cook2026_InfantChildDev",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Im (University of British Columbia)",
+  "url": "https://doi.org/10.5683/SP3/MEH4QW",
+  "license": [
+   "CC BY-NC 4.0",
+   "Borealis record"
+  ]
+ },
+ "ext_Hulst2024": {
+  "study": "Hulst2024_bioRxiv",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Timmann (Essen) / Donchin (Ben-Gurion University)",
+  "url": "https://zenodo.org/records/14541215",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Kim2015": {
+  "study": "Kim2015_PLoSOne",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Schweighofer (University of Southern California)",
+  "url": "https://figshare.com/articles/dataset/Kim_et_al_PLoS_One_2015_Between_trial_forgetting_due_to_interference_and_time_in_motor_adaptation/1305124",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Kobayashi2024": {
+  "study": "Kobayashi2024_eLife",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Nozaki (University of Tokyo)",
+  "url": "https://doi.org/10.5281/zenodo.8033232",
+  "license": [
+   "CC BY 4.0",
+   "Zenodo record"
+  ]
+ },
+ "ext_Kunavar2023": {
+  "study": "Kunavar2023_PLoSONE",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Babič (Jožef Stefan Institute)",
+  "url": "https://doi.org/10.6084/m9.figshare.22844264",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Luo2025": {
+  "study": "Luo2025_bioRxiv",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Wei (Peking University)",
+  "url": "https://osf.io/mk538/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Maresch2022": {
+  "study": "Maresch2022_eNeuro",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Donchin (Ben-Gurion University)",
+  "url": "https://osf.io/f6smc/",
+  "license": [
+   "None stated",
+   "No license on the OSF project; the article is CC BY 4.0"
+  ]
+ },
+ "ext_MillerMills2026": {
+  "study": "MillerMills2026_EJN",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Carroll (University of Queensland) / Poh (Macquarie)",
+  "url": "https://osf.io/y7hrq/",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Petitet2021": {
+  "study": "Petitet2021_NeuroImage",
+  "side": "lockbox",
+  "external": true,
+  "lab": "O'Shea / Johansen-Berg (University of Oxford)",
+  "url": "https://osf.io/stkv2/",
+  "license": [
+   "CC BY 4.0",
+   "OSF project"
+  ]
+ },
+ "ext_Shingane2025": {
+  "study": "Shingane2025_JNeurophysiol",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Mutha (IIT Gandhinagar)",
+  "url": "https://figshare.com/articles/dataset/Data_Shingane_Rao_Kumar_Mutha_JNeurophys_2025/29562452",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Slade2026": {
+  "study": "Slade2026_ExpBrainRes",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Striemer (MacEwan University)",
+  "url": "https://osf.io/d9tcy",
+  "license": [
+   "None stated",
+   "No license on the OSF project"
+  ]
+ },
+ "ext_Spang2017": {
+  "study": "Spang2017_iPerception",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Fahle (University of Bremen)",
+  "url": "https://doi.org/10.12751/g-node.hnj28q",
+  "license": [
+   "CC BY 4.0",
+   "G-Node GIN record"
+  ]
+ },
+ "ext_Sugiyama2024": {
+  "study": "Sugiyama2024_PNAS",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Izawa (University of Tsukuba)",
+  "url": "https://doi.org/10.6084/m9.figshare.26074357",
+  "license": [
+   "CC BY 4.0",
+   "figshare record"
+  ]
+ },
+ "ext_Takada2025": {
+  "study": "Takada2025_PsyArXiv",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Froese (OIST) / Wen, Kasahara (Sony CSL)",
+  "url": "https://osf.io/8a2mn/",
+  "license": [
+   "CC BY 4.0",
+   "OSF project"
+  ]
+ },
+ "ext_Todorov2025": {
+  "study": "Todorov2025_bioRxiv",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Quentin (Inserm)",
+  "url": "https://osf.io/6j8sm/",
+  "license": [
+   "CC BY 4.0",
+   "OSF project"
+  ]
+ },
+ "ext_Wang2022": {
+  "study": "Wang2022_BrainSci",
+  "side": "lockbox",
+  "external": true,
+  "lab": "Wei (Peking University)",
+  "url": "https://github.com/HJWangOrder66/Motor-learning-with-tDCS",
+  "license": [
+   "None stated",
+   "No license file in the GitHub repository"
+  ]
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "id": "Wenk2022_TNSRE",
+ "module": "game",
+ "rows": 1564,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 70334,
+ "zip_sha256": "09109f5e3cbf703892832cab614eebbde9a28c39353a087225f1850f47fe6c85",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "lap key is unique in both files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "filtered file is a subset of the full file (all 1281 filtered laps found)",
+   "ok": true,
+   "detail": "1281 of 1281"
+  },
+  {
+   "kind": "internal",
+   "what": "filtered rows carry identical values to the full file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "28 participants x 4 modalities x 7 paths x 2 laps = 1568 laps expected, 1564 present (four laps are missing in the authors' file)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows are grouped by participant in ascending order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "error and duration positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Abstract (28 healthy participants; TU Delft repository record of the paper)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each modality has 4 x 7 x 2 laps per participant at most",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text of the paper could not be read (IEEE and the institutional repository blocked access), so only the participant count from the abstract is compared; the paper's error, time and gaze statistics were not checked. The Zenodo record's title omits 'Nor Visual Attention' and the deposit calls the path assistance 'PathController' and no assistance 'Transparent'; the mapping to assisted/unassisted follows the deposit's description."
+ ],
+ "sources": [
+  {
+   "file": "DfLapBased_MetricsFiltered.csv",
+   "url": "https://zenodo.org/api/records/5558770/files/DfLapBased_MetricsFiltered.csv/content",
+   "bytes": 123346,
+   "sha256": "bc08e55811281f6b10a42d7c913aa1c244e0bb66b8e893f543aa97d7ff5a38ef",
+   "fetched_utc": "2026-11-09T10:48:05Z"
+  },
+  {
+   "file": "DataFrameDescription.rtf",
+   "url": "https://zenodo.org/api/records/5558770/files/DataFrameDescription.rtf/content",
+   "bytes": 83245,
+   "sha256": "487bfa5eea0f759c9ab17395a522894e320ee7b669e1ec204ae462c2c4b1ccee",
+   "fetched_utc": "2026-11-09T10:48:13Z"
+  },
+  {
+   "file": "DfLapBased_Metrics.csv",
+   "url": "https://zenodo.org/api/records/5558770/files/DfLapBased_Metrics.csv/content",
+   "bytes": 150712,
+   "sha256": "7c123fb7b8140fa659937d8b5bcab8b886ad918c5b85b25ce7b65d0ad32e937d",
+   "fetched_utc": "2026-11-09T10:48:21Z"
+  },
+  {
+   "file": "Questionnaires.csv",
+   "url": "https://zenodo.org/api/records/5558770/files/Questionnaires.csv/content",
+   "bytes": 11435,
+   "sha256": "7be9424f0d77b320d32f8e10b9b71e84a0a14646d8f631d3cfa8b999bf0a27f1",
+   "fetched_utc": "2026-11-09T10:48:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_TNSRE.zip"
+}

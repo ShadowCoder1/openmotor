@@ -1,0 +1,212 @@
+{
+ "id": "DeComite2022_eNeuro",
+ "module": "force_field_reaching",
+ "rows": 24768,
+ "subjects": 53,
+ "persons": 53,
+ "zip_bytes": 47957728,
+ "zip_sha256": "ca11dd7dc0b136edee6e8bbcc618017b8845183dbcf8f2c959a570ded576fd26",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Exp1 participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (Experiment 1: 14 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (Experiment 2: 20 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants (Experiment 3: 19 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 trials per participant",
+   "computed": 432.0,
+   "reported": 432.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (6 blocks of 72 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 trials per participant",
+   "computed": 480.0,
+   "reported": 480.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (6 blocks of 80 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 trials per participant",
+   "computed": 480.0,
+   "reported": 480.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (8 blocks of 60 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 perturbed trials per participant per reward x direction",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (24 trials per perturbed condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 share of perturbed trials",
+   "computed": 0.3333333333333333,
+   "reported": 0.3333333333333333,
+   "tol": 0.005,
+   "source": "Methods, Experiment 1 (33% perturbed trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 unperturbed trials per reward level per block",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (48 unperturbed trials per block, 16 per reward)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 share of perturbed trials",
+   "computed": 0.5,
+   "reported": 0.5,
+   "tol": 0.005,
+   "source": "Methods, Experiment 2 (50% perturbed trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 perturbed trials per participant per condition (2 reward conditions x 4 loads)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (30 trials per perturbation condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 share of perturbed trials",
+   "computed": 0.3333333333333333,
+   "reported": 0.3333333333333333,
+   "tol": 0.005,
+   "source": "Methods, Experiment 3 (33% perturbed trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 trials with background load per participant",
+   "computed": 240.0,
+   "reported": 240.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (four blocks of 60 without, four with background load)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 largest absolute step load (N)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (lateral step force of 9 N)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 largest absolute step load (N)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (6 or 10 N)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 largest absolute step load (N)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (3 or 6 N)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows: 14*432 + 20*480 + 19*480",
+   "ok": true,
+   "detail": "24768"
+  },
+  {
+   "kind": "internal",
+   "what": "rightward loads give larger rightward lateral endpoint shifts than leftward loads (Exp1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2 unperturbed lateral reaches are rare when the lateral targets have low reward",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "165 reaches have an all-zero recording in the deposit (not recorded or removed by the authors); they are kept with empty measures.",
+  "Experiment 3: the paper's text states 24 trials per perturbation condition, but the 8 blocks hold 20 per condition (480 trials in total, as in the Methods); the deposit has 20.",
+  "Reaction time as computed here (home target left minus goal target shown) has a mean of 524 ms in Experiment 1 (paper: 518 ms) but 381 and 389 ms in Experiments 2 and 3 (paper: 311 and 424 ms), so it is not used as a check; the paper's definition is not given.",
+  "The paper's printed unperturbed lateral-reach rates in Experiment 2 (under 1% and 8%) are 0.2% and 8.2% here with lateral meaning an endpoint more than 4.5 cm off the start line; the 7.5% and 23.5% lateral-trial proportions could not be tied to a defined subset, and the reward slope of peak forward speed (paper 0.013 per level) is 0.0147 here by a simple within-participant fit rather than the paper's mixed model.",
+  "Ages and sex are not in the deposit per participant (the paper gives ranges per experiment), so they are empty. Participants of the three experiments are coded separately, since the deposit does not say whether anyone took part twice."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/6403130/files/README.txt/content",
+   "bytes": 329,
+   "sha256": "2e988c0479a81433b0300eb13b1e5d53237eee28bcb33055a2dea795d3c2901c",
+   "fetched_utc": "2026-11-10T01:35:50Z"
+  },
+  {
+   "file": "DSExpe1.mat",
+   "url": "https://zenodo.org/api/records/6403130/files/DSExpe1.mat/content",
+   "bytes": 327383675,
+   "sha256": "c291fb68cc6f7ba2bbe40af6649a12f18a20036736a69f9de1e209c850be50b5",
+   "fetched_utc": "2026-11-10T01:37:24Z"
+  },
+  {
+   "file": "DSExpe3.mat",
+   "url": "https://zenodo.org/api/records/6403130/files/DSExpe3.mat/content",
+   "bytes": 738096992,
+   "sha256": "10af083794b417d63559d64b0fcc30a7eabfa1469a183e58a943b0ade6c16d42",
+   "fetched_utc": "2026-11-10T01:43:43Z"
+  },
+  {
+   "file": "DSExpe2.mat",
+   "url": "https://zenodo.org/api/records/6403130/files/DSExpe2.mat/content",
+   "bytes": 1258970514,
+   "sha256": "2c6cdf1c7d6e5c30367c3f188753bb5e19942f9e94922a8874d778d9084f9d3a",
+   "fetched_utc": "2026-11-10T01:47:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/DeComite2022_eNeuro.zip"
+}

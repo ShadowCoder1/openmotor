@@ -1,0 +1,95 @@
+{
+ "id": "Hiyama2026_GolfPressure",
+ "module": "game",
+ "rows": 400,
+ "subjects": 40,
+ "persons": 21,
+ "zip_bytes": 11571,
+ "zip_sha256": "8475b9fca8120b7c4c616cd8ce939f19a6b522c5668d20168afa5a68cf6cd5c6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "17 participants have preprocessed fNIRS data",
+   "ok": true,
+   "detail": "[1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+  },
+  {
+   "kind": "internal",
+   "what": "labels in the workbook are as expected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "400 rows: 20 participants + 20 experimenter sequences, 10 putts each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "errors are non-negative distances",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (20 male students)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "putts per session per participant",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods (five trials per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants kept after exclusions (preprocessing errors)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Results, Participants (3 excluded, 17 analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "choking group (error larger in competition than practice), of the 17 analysed",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Results (positive delta error: 7 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-choking group (error smaller in competition than practice), of the 17 analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results (negative delta error: 10 participants)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper is a bioRxiv preprint (CC BY-NC-ND on bioRxiv) while the Zenodo deposit of the data states CC BY 4.0; the deposit's license is used.",
+  "The paper reports group sizes and fNIRS statistics only in text; the putting errors themselves appear only in its Figure 3, which could not be read, so no mean or SD of putting error is checked."
+ ],
+ "sources": [
+  {
+   "file": "g.zip",
+   "url": "https://zenodo.org/api/records/17499032/files/Golf_Putting_Experiment.zip/content",
+   "bytes": 376848192,
+   "sha256": "e6cf2710d6fd5399753ed09ad99477d526ad145d845ad1179e8cc66786a0599c",
+   "fetched_utc": "2026-11-09T15:37:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hiyama2026_GolfPressure.zip"
+}

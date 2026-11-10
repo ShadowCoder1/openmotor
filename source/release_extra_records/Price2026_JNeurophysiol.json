@@ -1,0 +1,217 @@
+{
+ "id": "Price2026_JNeurophysiol",
+ "module": "walking",
+ "rows": 1080,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 46570,
+ "zip_sha256": "4d5688c8824125ffdd3a6f4c67dad88b5aeac129d4b065372c3c59db68fe89fc",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (11F/1M)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean (years)",
+   "computed": 20.583333333333332,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "Methods, Participants (21 +/- 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD (years)",
+   "computed": 0.7929614610987591,
+   "reported": 1.0,
+   "tol": 0.5,
+   "source": "Methods, Participants (21 +/- 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass mean (kg)",
+   "computed": 69.25103684,
+   "reported": 69.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass SD (kg)",
+   "computed": 8.072926846744158,
+   "reported": 8.1,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height mean (cm)",
+   "computed": 164.41666666666666,
+   "reported": 164.0,
+   "tol": 0.5,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height SD (cm)",
+   "computed": 6.639528095680696,
+   "reported": 7.0,
+   "tol": 0.5,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with left-side perturbation",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, AdjuSST (first eight left)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with right-side perturbation",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, AdjuSST (final four right)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill speed (m/s)",
+   "computed": 1.25,
+   "reported": 1.25,
+   "tol": 0.005,
+   "source": "Methods, Protocol (1.25 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride time Baseline (s, mean of participant means)",
+   "computed": 1.1011805555555556,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Table 1 (1.1 +/- 0.0-0.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride length Baseline (m, mean of participant means)",
+   "computed": 1.2818462868074814,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Table 1 (1.3 +/- 0.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride time Post-early (s, mean of participant means)",
+   "computed": 1.1039388888888888,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Table 1 (1.1 +/- 0.0-0.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride length Post-early (m, mean of participant means)",
+   "computed": 1.2679325297906245,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Table 1 (1.3 +/- 0.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride time Post-late (s, mean of participant means)",
+   "computed": 1.106947222222222,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Table 1 (1.1 +/- 0.0-0.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride length Post-late (m, mean of participant means)",
+   "computed": 1.2786722033613727,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Table 1 (1.3 +/- 0.1)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "12 participants x 3 conditions x 30 strides",
+   "ok": true,
+   "detail": "1080"
+  },
+  {
+   "kind": "internal",
+   "what": "stride time = sum of the two step times",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stride length = sum of the two step lengths",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing stride values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' readme describes 12 x 5 arrays (including asymmetric-walking conditions) for the temporal and spatial measures, but the .mat holds 12 x 3, so only the three conditions with force-plate treadmill data (Baseline, Post-early, Post-late) are released; the order is inferred from the paper.",
+  "The asymmetry means of Table 1 were not reproduced from these rows and are not used as checks: step time asymmetry (perturbed minus unperturbed, % of their sum) over the last 10 / first 10 / last 10 strides of the three conditions is Baseline -0.33, Post-early 0.81, Post-late -0.10 here; Table 1 prints 0.3, -0.4 and 0.1. The deposit does not say which 30 strides were saved nor how the readme's perturbed/unperturbed column order relates to the paper's sign convention, so the difference could not be traced."
+ ],
+ "sources": [
+  {
+   "file": "readme.txt",
+   "url": "https://api.figshare.com/v2/file/download/61755727",
+   "bytes": 4225,
+   "sha256": "1181eae49a09d085f8ffa4267cc232e67934b4573ebc644e4196d91436f9dcea",
+   "fetched_utc": "2026-11-09T21:45:40Z"
+  },
+  {
+   "file": "participant info.csv",
+   "url": "https://api.figshare.com/v2/file/download/61755733",
+   "bytes": 476,
+   "sha256": "15786ea0736f4d24ef4de1b85ae72cde332fdb0e73bfaa4d28fc680726820a9e",
+   "fetched_utc": "2026-11-09T21:45:57Z"
+  },
+  {
+   "file": "allParticicipantsOutcomeMeasures.mat",
+   "url": "https://api.figshare.com/v2/file/download/61755730",
+   "bytes": 120570743,
+   "sha256": "0c8f32f108d52bd29379bafb2608222619c35743038a2cdb2bd0a0f0dd7a788d",
+   "fetched_utc": "2026-11-09T21:49:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Price2026_JNeurophysiol.zip"
+}

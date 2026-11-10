@@ -1,0 +1,7 @@
+{
+ "id": "Kashefi2024_eLife",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad file downloads need a token (all 50 .mat files return 401) and no Zenodo or other copy exists (Zenodo searches by title, DOI and file name found nothing); also 7.6 GB in total, over the 5 GB gate, and the task is multi-reach sequences with perturbed targets, not trial-wise reach90. Retry if a token or mirror becomes available.",
+ "sources": []
+}

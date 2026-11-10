@@ -1,0 +1,132 @@
+{
+ "id": "Cheng2026_PsyArXiv",
+ "module": "speech",
+ "rows": 7200,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 186736,
+ "zip_sha256": "888297ff6d0625521deeb8d62d6f0b804fa9ca10b28b7bb4c6e1add4a3fdb591",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "75 participants with 96 trials each (32 baseline, 64 bite block), trials 1-96 in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "8 baseline repetitions of each vowel; 16 of /\u00e6/ and /\u0251/ with the small and of /i/ and /u/ with the large bite block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline on trials 1-32, bite blocks on 33-96",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1, F2 and duration missing together (discarded trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 within 250-1300",
+   "ok": true,
+   "detail": "343.327-1203.256"
+  },
+  {
+   "kind": "internal",
+   "what": "F2 within 600-2100",
+   "ok": true,
+   "detail": "648.993-1975.073"
+  },
+  {
+   "kind": "internal",
+   "what": "vowel_dur within 0.03-1.5",
+   "ok": true,
+   "detail": "0.134-0.942"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has an age in subject_age.csv",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the age table describes the paper's 78 participants (62 F, 14 M, 2 non-binary; mean age 38.88, SD 19.49, 18-74)",
+   "ok": true,
+   "detail": "{'F': 62, 'M': 14, 'other': 2}"
+  },
+  {
+   "kind": "published",
+   "what": "bite block task: % of trials discarded, all participants",
+   "computed": 2.5,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Cheng, Murphy, Parrell & Niziolek 2026, PsyArXiv pzse8 v1, Methods, Acoustic analysis of bite block task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bite block task: % of trials discarded, highest participant",
+   "computed": 15.625,
+   "reported": 16.0,
+   "tol": 0.5,
+   "source": "Cheng, Murphy, Parrell & Niziolek 2026, PsyArXiv pzse8 v1, Methods, Acoustic analysis of bite block task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bite block task: % of trials discarded, lowest participant",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Cheng, Murphy, Parrell & Niziolek 2026, PsyArXiv pzse8 v1, Methods, Acoustic analysis of bite block task",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "vsaPredict_production_superTable-02-13.csv",
+   "url": "https://osf.io/download/6a065fd5022e0aa4f772af25/",
+   "bytes": 37210,
+   "sha256": "7e3cba7242f208169d602315314114a9671a055b693640a427dc7adf8af41f79",
+   "fetched_utc": "2026-11-08T20:12:06Z"
+  },
+  {
+   "file": "vsaGen2biteblockAdaptTable_2025-04-04.csv",
+   "url": "https://osf.io/download/6a065fd511d8c31eb111da1e/",
+   "bytes": 256984,
+   "sha256": "c5aa87d4543b9a556a3dec115e9b0b53e5a584f68d7d4ca22f4076cb48ee8627",
+   "fetched_utc": "2026-11-08T20:12:20Z"
+  },
+  {
+   "file": "vsaRetentionbiteblockAdaptTable_2026-02-12.csv",
+   "url": "https://osf.io/download/6a065fd63ecaba634211da24/",
+   "bytes": 133203,
+   "sha256": "56a8585018274f4594c13ed5c08ffe2997a7cc7116946ea8ef0f2668ce9a01d6",
+   "fetched_utc": "2026-11-08T20:12:22Z"
+  },
+  {
+   "file": "vsaRetentionbiteblockAdaptTable_controls_2026-02-13.csv",
+   "url": "https://osf.io/download/3xhb8/",
+   "bytes": 97219,
+   "sha256": "75a0a99d5055ffc63bc7fab4a746351723215522937a44e4c0b1f8d6c4d14bac",
+   "fetched_utc": "2026-11-08T20:12:26Z"
+  },
+  {
+   "file": "subject_age.csv",
+   "url": "https://osf.io/download/3vq7d/",
+   "bytes": 1659,
+   "sha256": "86a6d3f251520dfe56ad7013f673af64c85acdd08f24ab25eca282f2840a10c5",
+   "fetched_utc": "2026-11-08T20:14:13Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng2026_PsyArXiv.zip"
+}

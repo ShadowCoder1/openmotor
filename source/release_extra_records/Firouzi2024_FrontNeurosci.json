@@ -1,0 +1,197 @@
+{
+ "id": "Firouzi2024_FrontNeurosci",
+ "module": "keypress",
+ "rows": 108968,
+ "subjects": 45,
+ "persons": 45,
+ "zip_bytes": 1180204,
+ "zip_sha256": "c656f09067bffc2ff18998cf7d015e3bd66e7c2edcd460dcf0c053d1c4863bf5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the file is in order of participant, session, block and trial, with no duplicate trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's rows are contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ACC is 0/1 and RT is positive on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "block types: TrialList (sequence) and RandomTrialList (random) only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the codebook's Session label agrees with SessionNr (During/5Min/Post)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "StimCondition is constant within participant and SessionNr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "counterbalancing and task order are constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Results, Table 1 (sex 22:23)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Results, Table 1 (sex 22:23)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Results, Table 1 (dominant hand 7 left, 38 right)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handed participants",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Results, Table 1 (dominant hand 7 left, 38 right)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, years (age recorded at the participant's last session)",
+   "computed": 24.31111111111111,
+   "reported": 24.31,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD, years",
+   "computed": 3.9417475486608398,
+   "reported": 3.94,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per block (maximum trial number)",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Methods, SRT task (blocks of 72 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks in the full-length task",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, SRT task (eight blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "the random block of the full-length task is block",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, SRT task (block 7 random)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks in the short task",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, short SRT task (three blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "the random block of the short task is block",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, short SRT task (block 2 random)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "In the deposit, trials 1-9 are absent from most blocks (block trial numbers start at 10 in 1038 of 1648 blocks); the deposit does not say why, and nothing was added.",
+  "excluded_by_authors marks wrong responses, response times under 100 ms and over 2000 ms, the exclusions the Methods of the paper describe; the practice block exclusion is already in the deposit. The authors' R script is not in the deposit, so the flag was not checked against it.",
+  "The paper says 42 of the 45 participants completed all sessions; the deposit has all six session files for 40."
+ ],
+ "sources": [
+  {
+   "file": "raw.csv",
+   "url": "https://osf.io/download/69370658d1a32f82e29e2f0f/",
+   "bytes": 22773447,
+   "sha256": "07d50b226d3387fe0ef9bf350e03db27a0a152d3f194b39e389d23e0531c157d",
+   "fetched_utc": "2026-11-09T11:21:09Z"
+  },
+  {
+   "file": "codebook.csv",
+   "url": "https://osf.io/download/6937061cd025539cb0793e68/",
+   "bytes": 2589,
+   "sha256": "7ab41a0b92e3b75b07d6e58cf756ea9e90b8caae0bb0b8f1cd18bf813574879e",
+   "fetched_utc": "2026-11-09T11:21:15Z"
+  },
+  {
+   "file": "readme.docx",
+   "url": "https://osf.io/download/6936fd7160211584fdbc7967/",
+   "bytes": 18806,
+   "sha256": "03479ac9c2a45567bf89c13c7ff15c529c9c8becfda701b16ddb5a100dd7d2ef",
+   "fetched_utc": "2026-11-09T11:21:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Firouzi2024_FrontNeurosci.zip"
+}

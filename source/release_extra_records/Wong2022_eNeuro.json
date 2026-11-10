@@ -1,0 +1,196 @@
+{
+ "id": "Wong2022_eNeuro",
+ "module": "reach90",
+ "rows": 28734,
+ "subjects": 69,
+ "persons": 69,
+ "zip_bytes": 1090910,
+ "zip_sha256": "c2aecf5071e27c65ff6ab8ea0f52232ddddaf944a364950da44f5f7151e42973",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1, participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 1 (24 recruited)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, participants",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 2 (17 recruited)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has rows; Experiment 1 has 24 sequences, Experiment 2 has 17",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within (-180, 180] and every row without hand_angle is an authors' exclusion",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target angles are only 67.51 and 112.49 deg (two targets 45 deg apart, midline at 90)",
+   "ok": true,
+   "detail": "[67.51, 112.49]"
+  },
+  {
+   "kind": "internal",
+   "what": "authors' latencies are 150 to 600 ms on kept rows (their script removes others)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, largest block (trials in one frequency x value cell)",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 ('Blocks had 30-44 trials')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, smallest of the blocks' largest sizes (the 1:1 and 2:1 frequency blocks have 30 trials)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 ('Blocks had 30-44 trials')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, trials in one probability-ratio cell (70:30 or 80:20) per participant and reward ratio, largest",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (20 trials per probability ratio)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Participants (28 participants in Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, participants who reliably made both direct and intermediate reaches in every condition (authors' flag)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants ('Of these 28 individuals in experiment 3, 19 participants reliably generated both direct and intermediate reaches')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, near targets are 10 cm from the start (cm)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0.05,
+   "source": "Methods, Experiment 3 (near pair 10 cm from the start)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, far targets are 15 cm from the start (cm)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0.05,
+   "source": "Methods, Experiment 3 (far pair 15 cm from the start)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, angle between the two near targets (deg)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0.05,
+   "source": "Methods, Experiment 3 (near pair 90 deg apart)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, angle between the two far targets (deg)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0.05,
+   "source": "Methods, Experiment 3 (far pair 45 deg apart)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3, largest near-to-far reward ratio in a trial",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (near targets worth one to four times the far targets)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: every participant has direct and intermediate reaches; rows only where the authors kept data",
+   "ok": true,
+   "detail": "{'DiscChoice_0': {'direct': 212, 'intermediate': 291}, 'DiscChoice_1': {'direct': 390, 'intermediate': 117}, 'DiscChoice_2': {'direct': 306, 'intermediate': 251}}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: initial direction never beyond 75 deg from the midline (the authors' exclusion) and hand_angle within (-180, 180]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: reaction times are positive and below 2 s (stored in seconds, converted to ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: reward ratio cells are 1, 2, 4 and near-to-far ratios are 1, 2, 4",
+   "ok": true,
+   "detail": "[1.0, 2.0, 4.0]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper removes reaches whose initial direction is more than 45 deg from the midline (Experiments 1 and 2) or that were not completed in time; the authors' script removes |initial direction| > 75 deg, latency outside 150 to 600 ms and peak speed below 0.3 m/s. The deposit already has those reaches blanked, so the excluded rows carry no values. The median share of reaches blanked per participant is 4.8 % in Experiment 1 (paper: 6.8 %) and 3.6 % in Experiment 2 (paper: 11.4 %); the Experiment 2 deposit has fewer blanked reaches than the paper's criteria remove, so the paper's removals were probably applied partly in the authors' analysis, not in the deposit.",
+  "Experiment 3: the paper reports that a median of 10.5 % of reaches were removed per participant (initial direction beyond 75 deg, movement not completed in 2500 ms, or incomplete trial). The excluded reaches are not in the deposit, which keeps no row for them, so this cannot be reproduced from the rows; the share of blank positions inside the filled part of the arrays is 10.9 % (median over participants), which is not the same quantity. The paper's median of 6.8 % and 11.4 % in Experiments 1 and 2 are discussed above."
+ ],
+ "sources": [
+  {
+   "file": "gbyk_rwdfreq_alldata_clean.mat",
+   "url": "https://osf.io/download/611eb7da87c8f10167b13815/",
+   "bytes": 135842410,
+   "sha256": "6d95e352a406ba0573c045c26cfcabf2dae4a34dfc2a790b6b037d1a25d2b571",
+   "fetched_utc": "2026-11-10T03:01:10Z"
+  },
+  {
+   "file": "gbyk_rwdProb_alldata_clean.mat",
+   "url": "https://osf.io/download/611ebc022dab24015325f21f/",
+   "bytes": 77800127,
+   "sha256": "82ea8bae19c0f1cc7dbcafd06811a7e861c78bb85a8821344816b6513bf28060",
+   "fetched_utc": "2026-11-10T03:01:16Z"
+  },
+  {
+   "file": "gbyk_discretechoice_alldata_clean.mat",
+   "url": "https://osf.io/download/vxq6t/",
+   "bytes": 402056822,
+   "sha256": "93d2b41a0a584bd520d519b6935d8abbb197aab305156163afa2d8cb441df65e",
+   "fetched_utc": "2026-11-10T03:01:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wong2022_eNeuro.zip"
+}

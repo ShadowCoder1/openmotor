@@ -1,0 +1,193 @@
+{
+ "id": "Hirota2022_SciRep",
+ "module": "timeseries",
+ "rows": 23,
+ "subjects": 23,
+ "persons": 23,
+ "zip_bytes": 1469484,
+ "zip_sha256": "4f97bebce0971362a1de1e383202bea0324e962b579943a2495a9efffcfd6267",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participant 1: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 2: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 3: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 4: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 5: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 6: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 7: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 8: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 9: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 10: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 11: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 12: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 13: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 14: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 15: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 16: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 17: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 18: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 19: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 20: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 21: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 22: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 23: target and gaze sheets have the same number of rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "23 recordings, 2 sheets each with a header row",
+   "ok": true,
+   "detail": "1319-2124 samples"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing gaze values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Hirota et al. 2022, Sci Rep 12:8501, Methods, Subjects (23 young adult volunteers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scene-camera sample rate (Hz), from the time column",
+   "computed": 29.969999999997885,
+   "reported": 29.97,
+   "tol": 0.01,
+   "source": "Hirota et al. 2022, Sci Rep 12:8501, Methods, apparatus (29.97 Hz)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 2 (184 direction classifications) and Table 3 (latencies and gains) come from the authors' own detection algorithm and were not re-derived."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/6400751/files/MH_Analysis_SPEM_Dataset.zip/content",
+   "bytes": 440927195,
+   "sha256": "11ba0624642a269d63efd3445c1979dcc85a3f1ad55ffa07d9952d4dc6c3ba10",
+   "fetched_utc": "2026-11-09T15:47:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hirota2022_SciRep.zip"
+}

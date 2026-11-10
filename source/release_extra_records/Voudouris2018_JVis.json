@@ -1,0 +1,129 @@
+{
+ "id": "Voudouris2018_JVis",
+ "module": "timeseries",
+ "rows": 1584,
+ "subjects": 28,
+ "persons": 18,
+ "zip_bytes": 26299960,
+ "zip_sha256": "58927463342963388f142604460695a2551163dcca4f02717ecb2f896bb897f2",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Experiment 1, Methods, Participants (P1-P10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Experiment 2 (eight participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 trials per block (22 water + 22 milk)",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Experiment 1, Experimental procedure (44 trials per height block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 water trials per block",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Experiment 1, Experimental procedure (each content presented 22 times per block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 milk trials per block",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Experiment 1, Experimental procedure (each content presented 22 times per block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 height blocks per participant",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Experiment 1, Experimental procedure (eye height and hip height blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling interval of the combined signal (ms)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Data analysis (combined 100 Hz signal)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sample rate written (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Apparatus (Optotrak at 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 10 people x 2 blocks x 44 trials = 880 recordings; Experiment 2: 8 people x 88 = 704",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: each of the 4 stimlist codes occurs 22 times per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample times are 10 ms apart in every recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial files have 22 columns (Experiment 1) or 37 (Experiment 2)",
+   "ok": true,
+   "detail": "{37, 22}"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings are 1 s or longer",
+   "ok": true,
+   "detail": "145"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (J Vis 18(8):16, 2018) says Experiment 2 had one block of 44 trials; the deposit has 88 trials per participant (four stimulus codes of 22 each), so the 44 is not used as a check for Experiment 2.",
+  "The paper's gaze-bias results (critical fixation at first contact, contact asynchrony) are derived measures the deposit does not contain, so they are not reproduced; the checks are the design numbers (participants, trials, sampling rate).",
+  "The paper text was read from the VU Amsterdam repository copy (publisher version, CC BY-NC-ND); the data are CC BY 4.0."
+ ],
+ "sources": [
+  {
+   "file": "Data.zip",
+   "url": "https://zenodo.org/records/1401845/files/Data.zip?download=1",
+   "bytes": 31000651,
+   "sha256": "761f8c17e8690a81520592b994ca2836e4f77f090de4180c91432b32739f9c63",
+   "fetched_utc": "2026-11-09T10:37:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Voudouris2018_JVis.zip"
+}

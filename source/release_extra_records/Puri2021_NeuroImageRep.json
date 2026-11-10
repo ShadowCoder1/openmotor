@@ -1,0 +1,294 @@
+{
+ "id": "Puri2021_NeuroImageRep",
+ "module": "summary",
+ "rows": 2304,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 32472,
+ "zip_sha256": "242a9151b2b6d3172df014260401a0ba9f2ea352acbf2c2b32253440dff4803d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants completing both sessions",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Participants (48 after one withdrawal)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BEFORE group size",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BEFORE mean age",
+   "computed": 65.625,
+   "reported": 65.6,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BEFORE SD of age",
+   "computed": 3.2015621187164243,
+   "reported": 3.2,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BEFORE women",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DURING group size",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DURING mean age",
+   "computed": 64.375,
+   "reported": 64.4,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DURING SD of age",
+   "computed": 3.8794329482541645,
+   "reported": 3.9,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DURING women",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFTER group size",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFTER mean age",
+   "computed": 66.875,
+   "reported": 66.9,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFTER SD of age",
+   "computed": 5.953990258641679,
+   "reported": 6.0,
+   "tol": 0.05,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFTER women",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Puri et al. 2021, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean error rate, random trials, anodal tDCS (%)",
+   "computed": 3.679591049534722,
+   "reported": 3.68,
+   "tol": 0.005,
+   "source": "Puri et al. 2021, Data processing (error rates)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean error rate, sequence trials, anodal tDCS (%)",
+   "computed": 2.2504684744444443,
+   "reported": 2.25,
+   "tol": 0.005,
+   "source": "Puri et al. 2021, Data processing (error rates)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean error rate, random trials, sham tDCS (%)",
+   "computed": 4.09915123475,
+   "reported": 4.1,
+   "tol": 0.005,
+   "source": "Puri et al. 2021, Data processing (error rates)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean error rate, sequence trials, sham tDCS (%)",
+   "computed": 2.346643518569444,
+   "reported": 2.35,
+   "tol": 0.005,
+   "source": "Puri et al. 2021, Data processing (error rates)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "13 learning blocks per participant and stimulation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pilot has 12 younger and 12 older participants with 20 block scores each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in the carried files",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Bayesian ANOVA results were not recomputed. The error-rate means were checked as means over the participant stage values of each stimulation."
+ ],
+ "sources": [
+  {
+   "file": "main_expt__1_demographics_and_checks__checks.csv",
+   "url": "https://osf.io/download/f72hq/",
+   "bytes": 2356,
+   "sha256": "0c4c761aed465aa30941883bc333d123d66b879b07fce370be700bcde30f9f54",
+   "fetched_utc": "2026-11-09T14:03:30Z"
+  },
+  {
+   "file": "main_expt__1_demographics_and_checks__demographics.csv",
+   "url": "https://osf.io/download/f3kqg/",
+   "bytes": 879,
+   "sha256": "6fda52445888ae46dd38c289c0bc035549b18f75e9f3edeafdd36ee36729669d",
+   "fetched_utc": "2026-11-09T14:03:37Z"
+  },
+  {
+   "file": "main_expt__1_demographics_and_checks__neuro_raw_checks.csv",
+   "url": "https://osf.io/download/et9sq/",
+   "bytes": 2231,
+   "sha256": "cd12808bbf247a339549e182c3b1ef0f5ce83d6c8112823d117d848d8fdd1793",
+   "fetched_utc": "2026-11-09T14:03:45Z"
+  },
+  {
+   "file": "main_expt__2_behaviour__acquisition_after.csv",
+   "url": "https://osf.io/download/vm9z4/",
+   "bytes": 2693,
+   "sha256": "69cf05fa90d8219b077ffe10e8dbd6e68479164c950f450a709103a06d0e8a98",
+   "fetched_utc": "2026-11-09T14:03:52Z"
+  },
+  {
+   "file": "main_expt__2_behaviour__retentions_and_offlineLearning.csv",
+   "url": "https://osf.io/download/vsfr2/",
+   "bytes": 8086,
+   "sha256": "426e8c86119979efcad94f598c88dddc1d0a64fcf5ec772dbb17f54e5c145897",
+   "fetched_utc": "2026-11-09T14:04:13Z"
+  },
+  {
+   "file": "main_expt__2_behaviour__errors.csv",
+   "url": "https://osf.io/download/fpq8c/",
+   "bytes": 6741,
+   "sha256": "be7e2c1f2a32e8e30d818d4b56188e417f561be527b552b8bb2c53f1225d50d1",
+   "fetched_utc": "2026-11-09T14:04:20Z"
+  },
+  {
+   "file": "main_expt__3_neurophysiology__neuro_transformed_during.csv",
+   "url": "https://osf.io/download/xd5mu/",
+   "bytes": 20692,
+   "sha256": "f4a90ce4084e15e54e7afa0feffce45301b873e1af1b0bcaf3586d6af3c3b7bf",
+   "fetched_utc": "2026-11-09T14:04:28Z"
+  },
+  {
+   "file": "main_expt__3_neurophysiology__neuro_transformed_after.csv",
+   "url": "https://osf.io/download/gnvd9/",
+   "bytes": 20692,
+   "sha256": "f4a90ce4084e15e54e7afa0feffce45301b873e1af1b0bcaf3586d6af3c3b7bf",
+   "fetched_utc": "2026-11-09T14:04:40Z"
+  },
+  {
+   "file": "supplementary_1__supp_1.csv",
+   "url": "https://osf.io/download/v789s/",
+   "bytes": 7850,
+   "sha256": "e0a6f01c92aee8d61d1e5ba74a1ebdd22757a6ae7f0f13d6559249bbfbf0f728",
+   "fetched_utc": "2026-11-09T14:04:47Z"
+  },
+  {
+   "file": "supplementary_1__supp_1a_older.csv",
+   "url": "https://osf.io/download/re4u6/",
+   "bytes": 4451,
+   "sha256": "c51416d2dc0b4059bdbb6d73f7d230ad224865d40fee936f2014877036acebbd",
+   "fetched_utc": "2026-11-09T14:04:55Z"
+  },
+  {
+   "file": "supplementary_1__supp_1a_young.csv",
+   "url": "https://osf.io/download/uvqhb/",
+   "bytes": 4440,
+   "sha256": "d4143719da59d2feb3ad45ccd50e5f40e7fd28f0e9fe9fe36337678116ddd8f0",
+   "fetched_utc": "2026-11-09T14:05:03Z"
+  },
+  {
+   "file": "supplementary_1__supp_1b.csv",
+   "url": "https://osf.io/download/hjcbw/",
+   "bytes": 36535,
+   "sha256": "d743579807130fd87bfdea2a815903a0984650ccb08eb27c1baff57c7440fae1",
+   "fetched_utc": "2026-11-09T14:05:19Z"
+  },
+  {
+   "file": "supplementary_2__supp2.csv",
+   "url": "https://osf.io/download/uqw8e/",
+   "bytes": 4849,
+   "sha256": "195023ad6568027161844bf93328fe643e484294f22a966f8424bfa7bb6bb19a",
+   "fetched_utc": "2026-11-09T14:05:27Z"
+  },
+  {
+   "file": "main_expt__2_behaviour__acquisition.csv",
+   "url": "https://osf.io/download/27z43/",
+   "bytes": 5270,
+   "sha256": "5b96e0ba6082dae25c113905e8f6aabf6faf6cd416a43557aa7a8723a52eff67",
+   "fetched_utc": "2026-11-09T14:05:52Z"
+  },
+  {
+   "file": "main_expt__3_neurophysiology__neuro_transformed_before.csv",
+   "url": "https://osf.io/download/y6wvd/",
+   "bytes": 20692,
+   "sha256": "f4a90ce4084e15e54e7afa0feffce45301b873e1af1b0bcaf3586d6af3c3b7bf",
+   "fetched_utc": "2026-11-09T14:06:00Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Puri2021_NeuroImageRep.zip"
+}

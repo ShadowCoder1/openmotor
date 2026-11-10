@@ -1,0 +1,205 @@
+{
+ "id": "GarzasVillar2025_JNER",
+ "module": "game",
+ "rows": 38400,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 1569574,
+ "zip_sha256": "48fca84e77fbb7cbdc8372f1de5944117d0de725bc0ab47d75216ebd53ac212b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows of one participant are contiguous in the file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "|Error| equals the authors' ErrorAbs",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Error = targetPos - ballPosY (sign inferred from the data)",
+   "ok": true,
+   "detail": "max abs gap 1.00e-16"
+  },
+  {
+   "kind": "internal",
+   "what": "Condition label agrees with Stage and Task columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 walls per set, indices 0-19, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 participants in each group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every analysed participant has a demographics row and 3 agency/motivation stages",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Participants, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people who performed the experiment (analysed + 2 excluded)",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Participants (forty-two performed), Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed participants identifying as female",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Participants, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed participants identifying as male",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Participants, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walls per set",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Study protocol (a set comprised 20 targets), Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training sets per participant (two rounds of 15)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Study protocol, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sets per task in baseline (two sets of each of the three tasks)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Study protocol, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sets per task in long-term retention (structured like baseline)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Study protocol, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct target positions on the walls (centre, 0.12 m left and right)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "The pendulum game, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest target offset from the centreline (m)",
+   "computed": 0.12,
+   "reported": 0.12,
+   "tol": 1e-06,
+   "source": "The pendulum game, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median time between consecutive walls (walls 1 m apart approaching at 1 m/s), s",
+   "computed": 0.9985349999999471,
+   "reported": 1.0,
+   "tol": 0.05,
+   "source": "The pendulum game, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest score (scores range 0-100)",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1,
+   "source": "The pendulum game, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest score (scores range 0-100)",
+   "computed": 99.9995,
+   "reported": 100.0,
+   "tol": 1,
+   "source": "The pendulum game, Methods, J NeuroEngineering Rehabil 22:238",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's headline error reductions (38% baseline to short-term retention, 39% to long-term retention, main task) are linear mixed-model estimates for an average participant; the raw mean of the per-participant relative reductions in absolute error is 34.0% (baseline to short-term retention), so the model figure was not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "AgencyMotivationData.csv",
+   "url": "https://zenodo.org/api/records/16539273/files/AgencyMotivationData.csv/content",
+   "bytes": 9746,
+   "sha256": "9d161667ca260dc146d3b16cfa245ac79cd9a1c7b37472073a7c3beca6d34f2c",
+   "fetched_utc": "2026-11-09T18:00:31Z"
+  },
+  {
+   "file": "DemographicsAndPersonalityTraitsData.csv",
+   "url": "https://zenodo.org/api/records/16539273/files/DemographicsAndPersonalityTraitsData.csv/content",
+   "bytes": 115650,
+   "sha256": "77884aedf09b475d41933f07b1bc163d0ed088e315618bac2f886b60df3953c0",
+   "fetched_utc": "2026-11-09T18:00:54Z"
+  },
+  {
+   "file": "SummarizedKinData.csv",
+   "url": "https://zenodo.org/api/records/16539273/files/SummarizedKinData.csv/content",
+   "bytes": 4909004,
+   "sha256": "4e9812f9b326e812a770ff7697d28dfd1ea653ba99fe24801dff25a4dc789304",
+   "fetched_utc": "2026-11-09T18:01:14Z"
+  },
+  {
+   "file": "DataframeDescription.rtf",
+   "url": "https://zenodo.org/api/records/16539273/files/DataframeDescription.rtf/content",
+   "bytes": 135096,
+   "sha256": "4ff8522eccdabadea531cf156aed842b237f15f80c0bd89fe6e3420e5174ccc9",
+   "fetched_utc": "2026-11-09T18:01:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/GarzasVillar2025_JNER.zip"
+}

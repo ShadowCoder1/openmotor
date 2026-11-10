@@ -1,0 +1,538 @@
+{
+ "id": "Murphy2025_PsyArXiv",
+ "module": "speech",
+ "rows": 9799,
+ "subjects": 276,
+ "persons": 276,
+ "zip_bytes": 181712,
+ "zip_sha256": "a78390a2481f9d11c752cb9595e4fa4a801d3338591cbfa83983af12d3433a2c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the 7 rows with no values are single rows of participants that have no other row; 4 of the 5 participants the script excludes are among them",
+   "ok": true,
+   "detail": "7 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 1838 productions of 53 participants (27 Sparse, 26 Full), group, age and sex constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: block_num = ceil(trial_num / 60) on every row, trial numbers 10 ... 360 in steps of 10",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants in the final sample",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean age of the final sample (years)",
+   "computed": 28.71153846153846,
+   "reported": 28.7,
+   "tol": 0.05,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SD of age of the final sample (years)",
+   "computed": 6.8780313487062426,
+   "reported": 6.9,
+   "tol": 0.05,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants in the final sample",
+   "computed": 217.0,
+   "reported": 217.0,
+   "tol": 0,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials in the experiment (6 blocks x 60), from the highest production trial number",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Procedure (360 trials Full group, 36 productions Sparse group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: distinct production trials in the file (every tenth trial of 360, 10 to 360)",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 7961 productions of 223 participants; 217 enter the analyses (1425 productions: 1208 Canonical, 217 Reverse), 6 participants have no production in the Critical Reverse block or are named in the script",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F0 is z-scored within participant over the shared productions: mean 0 and SD 1 for every participant",
+   "ok": true,
+   "detail": "max |mean| 0.0046, SD 0.973-1.000"
+  },
+  {
+   "kind": "internal",
+   "what": "f0_z within +-5 and every row has a perceptual response and an exposure sequence label",
+   "ok": true,
+   "detail": "-4.80 to 3.99"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 1610 productions enter the authors' models (724 Full + 886 Sparse), as the degrees of freedom of the authors' result tables imply (720 + 4, 882 + 4, 1602 + 8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the participant random-intercept variance of the authors' model is zero (singular fit), so the least-squares fit equals their lmer fit",
+   "ok": true,
+   "detail": "5.6e-07"
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), intercept: beta",
+   "computed": 0.04013510784699922,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), intercept: SE",
+   "computed": 0.02246627520464768,
+   "reported": 0.02,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), intercept: t",
+   "computed": 1.7864602601634791,
+   "reported": 1.79,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Statistical Regularity: beta",
+   "computed": 0.07730688211983734,
+   "reported": 0.08,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Statistical Regularity: SE",
+   "computed": 0.04493255040929533,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Statistical Regularity: t",
+   "computed": 1.7205095507742343,
+   "reported": 1.72,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response: beta",
+   "computed": -0.7607585136734317,
+   "reported": -0.76,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response: SE",
+   "computed": 0.04493255040929549,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response: t",
+   "computed": -16.931122465642385,
+   "reported": -16.93,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Group: beta",
+   "computed": 0.04056705187588294,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Group: SE",
+   "computed": 0.04493255040929534,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Group: t",
+   "computed": 0.9028432952581901,
+   "reported": 0.9,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response: beta",
+   "computed": -0.5330546486263888,
+   "reported": -0.53,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response: SE",
+   "computed": 0.08986510081859093,
+   "reported": 0.09,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response: t",
+   "computed": -5.931720364977465,
+   "reported": -5.93,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Group: beta",
+   "computed": 0.17466909049477938,
+   "reported": 0.17,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Group: SE",
+   "computed": 0.08986510081859084,
+   "reported": 0.09,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Group: t",
+   "computed": 1.9436810163645277,
+   "reported": 1.94,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response x Group: beta",
+   "computed": -0.22515241881973738,
+   "reported": -0.23,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response x Group: SE",
+   "computed": 0.08986510081859056,
+   "reported": 0.09,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Response x Group: t",
+   "computed": -2.5054489091849956,
+   "reported": -2.51,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response x Group: beta",
+   "computed": -0.28329826349303316,
+   "reported": -0.28,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response x Group: SE",
+   "computed": 0.17973020163718156,
+   "reported": 0.18,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 2 (Experiment 1, transfer to production), Regularity x Response x Group: t",
+   "computed": -1.5762418386695118,
+   "reported": -1.58,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 2 (Experiment 1, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Full group: t of Response",
+   "computed": -9.51411729223188,
+   "reported": -9.51,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Results (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Full group: t of Regularity x Response",
+   "computed": -2.8725545050575425,
+   "reported": -2.87,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Results (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sparse group: t of Response",
+   "computed": -14.765327326455571,
+   "reported": -14.77,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Results (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sparse group: t of Regularity x Response",
+   "computed": -5.703553232391477,
+   "reported": -5.7,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Experiment 1, Results (post-hoc tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), intercept: beta",
+   "computed": 0.18184767060923443,
+   "reported": 0.18,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), intercept: SE",
+   "computed": 0.04206817527161202,
+   "reported": 0.04,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), intercept: t",
+   "computed": 4.322689763345806,
+   "reported": 4.32,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Statistical Regularity: beta",
+   "computed": -0.03396896057051018,
+   "reported": -0.03,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Statistical Regularity: SE",
+   "computed": 0.07632650172063861,
+   "reported": 0.08,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Statistical Regularity: t",
+   "computed": -0.4450480475947846,
+   "reported": -0.45,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Response: beta",
+   "computed": -0.677580739413518,
+   "reported": -0.68,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Response: SE",
+   "computed": 0.08513827393896377,
+   "reported": 0.09,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Response: t",
+   "computed": -7.958591454406046,
+   "reported": -7.96,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Regularity x Response: beta",
+   "computed": -0.45418006293841384,
+   "reported": -0.45,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Regularity x Response: SE",
+   "computed": 0.15229939842762275,
+   "reported": 0.15,
+   "tol": 0.0051,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 4 (Experiment 2, transfer to production), Regularity x Response: t",
+   "computed": -2.98215270465598,
+   "reported": -2.98,
+   "tol": 0.011,
+   "source": "Murphy, Holt & Nozari 2025, PsyArXiv, Table 4 (Experiment 2, transfer to production)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 sample: the paper reports 39 women among the 52 final participants; the shared sex column gives 28 women and 24 men for the same 52 (age, 28.7 +- 6.9, reproduces).",
+  "Seven Experiment 1 rows hold only a participant identifier with no values (four of them are participants the paper excludes for poor audio); they are not copied. The script excludes one further participant who has 32 productions.",
+  "Tables 2 and 4 were refitted in Python. The Experiment 1 model of the authors has zero participant-intercept variance (a singular fit), so least squares gives their coefficients, SEs and t; Experiment 2 was refitted by REML with a random intercept and a random Response slope per participant. All agree with the printed values to the printed decimals; p-values were not refitted."
+ ],
+ "sources": [
+  {
+   "file": "Overt_Exp1_Production_Data.xlsx",
+   "url": "https://osf.io/download/d2es9/",
+   "bytes": 138715,
+   "sha256": "62609bd3b199371835d80ed3c63d440122b123a126d523fd924436f07c96b6eb",
+   "fetched_utc": "2026-11-08T21:45:23Z"
+  },
+  {
+   "file": "Overt_Exp2_Production_Data.xlsx",
+   "url": "https://osf.io/download/df76v/",
+   "bytes": 424489,
+   "sha256": "1e12d323e186f45f1f34660f13773a608d373d80a1a3ebfbbaf4f7da437eaacc",
+   "fetched_utc": "2026-11-08T21:45:31Z"
+  },
+  {
+   "file": "Overt_Production_Exp1_Full_Sparse.Rmd",
+   "url": "https://osf.io/download/b5ph7/",
+   "bytes": 16983,
+   "sha256": "211a179e2e0f529bffa0d98896cb1c4a861c0e21e22e1605707fbf2fb5f9efcb",
+   "fetched_utc": "2026-11-08T21:45:33Z"
+  },
+  {
+   "file": "Overt_Production_Exp2_Single_Reverse.Rmd",
+   "url": "https://osf.io/download/4xapy/",
+   "bytes": 9936,
+   "sha256": "d8a8738597ea947aed90f53698f830572efa97721b8a0dde2aae801022d70d74",
+   "fetched_utc": "2026-11-08T21:45:36Z"
+  },
+  {
+   "file": "Overt_Exp1_Full_Production.csv",
+   "url": "https://osf.io/download/4yatr/",
+   "bytes": 487,
+   "sha256": "361d6aca153cab1d0011d8aa005ff728be36d3f2ab899778f10c3c1405fdf647",
+   "fetched_utc": "2026-11-08T21:45:40Z"
+  },
+  {
+   "file": "Overt_Exp1_Sparse_Production.csv",
+   "url": "https://osf.io/download/4nz2t/",
+   "bytes": 485,
+   "sha256": "2d69beecea0f6fb3b653a0b12b41ab0c9d15e146ab993c1c5bdc75daad4507ec",
+   "fetched_utc": "2026-11-08T21:45:42Z"
+  },
+  {
+   "file": "Overt_Exp1_Group_Production.csv",
+   "url": "https://osf.io/download/ektsd/",
+   "bytes": 929,
+   "sha256": "851dad3d6538930f07675ad51e986287cdf6ab3c7c6c56b1a0eb4a7122b83180",
+   "fetched_utc": "2026-11-08T21:45:48Z"
+  },
+  {
+   "file": "Overt_Exp2_Production.csv",
+   "url": "https://osf.io/download/6uqvr/",
+   "bytes": 486,
+   "sha256": "60c2c98f8265f37d13397916e0e35de4fa2f464929fca58e1fb08c1c4aa2a0a8",
+   "fetched_utc": "2026-11-08T21:45:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Murphy2025_PsyArXiv.zip"
+}

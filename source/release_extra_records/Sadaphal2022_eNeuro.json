@@ -1,0 +1,193 @@
+{
+ "id": "Sadaphal2022_eNeuro",
+ "module": "reach90",
+ "rows": 30080,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 539516,
+ "zip_sha256": "b7b69871ad7cf502fe358e26f4a34a6951cfc7de19696cd3ec6945ec9cb435cc",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every sheet row belongs to a participant sequence with increasing trial numbers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = authors' rows + placeholders for trials removed as outliers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "placeholders carry no data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within +-180",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (n = 30)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (n = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 participants analysed (36 recruited, 1 excluded)",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 group 15_jump participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 group 30_jump participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 group 60_jump participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 : late-learning hand deviation, mean (last 4 shift trials)",
+   "computed": 44.123871666666666,
+   "reported": 44.65,
+   "tol": 1.5,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 : late-learning hand deviation, SEM",
+   "computed": 1.3089302141711066,
+   "reported": 1.13,
+   "tol": 0.6,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 : late-learning hand deviation, mean (last 4 shift trials)",
+   "computed": 46.72469,
+   "reported": 46.194,
+   "tol": 1.5,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 : late-learning hand deviation, SEM",
+   "computed": 0.9242068379847547,
+   "reported": 0.913,
+   "tol": 0.6,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 15_jump: late-learning hand deviation, mean (last 4 shift trials)",
+   "computed": 12.272924999999999,
+   "reported": 12.032,
+   "tol": 1.5,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 15_jump: late-learning hand deviation, SEM",
+   "computed": 1.9306337447990536,
+   "reported": 2.076,
+   "tol": 0.6,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 30_jump: late-learning hand deviation, mean (last 4 shift trials)",
+   "computed": 29.614258333333332,
+   "reported": 29.458,
+   "tol": 1.5,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 30_jump: late-learning hand deviation, SEM",
+   "computed": 1.1064972963889406,
+   "reported": 1.426,
+   "tol": 0.6,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 60_jump: late-learning hand deviation, mean (last 4 shift trials)",
+   "computed": 55.4656875,
+   "reported": 54.239,
+   "tol": 1.5,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 60_jump: late-learning hand deviation, SEM",
+   "computed": 2.1469615276231084,
+   "reported": 2.261,
+   "tol": 0.6,
+   "source": "Results, late-learning hand deviation",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Late-learning means and SEMs (mean of the last 4 target-shift learning trials per participant) agree with the paper within about 1.3 deg and 0.4 deg, not exactly: the paper averages the last reach to each of the four targets, but the file does not say which target each trial used, so the last four trials are used instead (a tolerance of 1.5 deg and 0.6 deg is used)."
+ ],
+ "sources": [
+  {
+   "file": "Sadaphal_Kumar_Mutha_eNeuro2022_data.xlsx",
+   "url": "https://ndownloader.figshare.com/files/34033616",
+   "bytes": 1276642,
+   "sha256": "ab95ed003c9da9bb5abf5fb51650e7b913cccb429029238b8a3db75a51be6e66",
+   "fetched_utc": "2026-11-09T08:16:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sadaphal2022_eNeuro.zip"
+}

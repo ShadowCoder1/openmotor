@@ -1,0 +1,7 @@
+{
+ "id": "Ozen2022_JNER",
+ "skipped": true,
+ "reason": "too large",
+ "details": "All trial-level kinematics are only in 41 per-participant Python pickle files of 0.6-0.8 GB each (about 28 GB in total, over the 5 GB gate); pickles cannot be read safely without executing code, and the plain-text files are only questionnaire and population-metric tables. CC BY 4.0, Zenodo 5109743.",
+ "sources": []
+}

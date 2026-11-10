@@ -1,0 +1,249 @@
+{
+ "id": "Martel2023_Autism",
+ "module": "reach_displace_weight",
+ "rows": 1344,
+ "subjects": 42,
+ "persons": 42,
+ "zip_bytes": 68551,
+ "zip_sha256": "6ff19bfafb00b1c459aebe6ecb405500fa03e45d484fbb9b36deca926595a98f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children in the ASD group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (3 groups of 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children in the DCD group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (3 groups of 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children in the TD group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (3 groups of 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children in total",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants (3 x 14); F(2,39) in the age comparison",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls in the three groups together",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (2 + 6 + 4 girls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls in the DCD group",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants (DCD: 6 girls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of ASD (years)",
+   "computed": 9.992142857142857,
+   "reported": 10.0,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (mean age, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age of ASD (years)",
+   "computed": 1.3931324889859298,
+   "reported": 1.4166666666666667,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (SD, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of DCD (years)",
+   "computed": 10.579285714285716,
+   "reported": 10.583333333333334,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (mean age, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age of DCD (years)",
+   "computed": 1.31081574299667,
+   "reported": 1.3333333333333333,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (SD, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of TD (years)",
+   "computed": 10.390714285714285,
+   "reported": 10.416666666666666,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (mean age, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age of TD (years)",
+   "computed": 1.5352397171161867,
+   "reported": 1.5,
+   "tol": 0.041666666666666664,
+   "source": "Methods, Participants (SD, printed to the month)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M-ABC total, DCD mean",
+   "computed": 22.821428571428573,
+   "reported": 22.8,
+   "tol": 0.05,
+   "source": "Methods, Participants (DCD 22.8 +- 6.3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M-ABC total, DCD SD",
+   "computed": 6.338548556428183,
+   "reported": 6.3,
+   "tol": 0.05,
+   "source": "Methods, Participants (DCD 22.8 +- 6.3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M-ABC total, ASD mean",
+   "computed": 18.464285714285715,
+   "reported": 18.5,
+   "tol": 0.05,
+   "source": "Methods, Participants (ASD 18.5 +- 8.9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M-ABC total, ASD SD",
+   "computed": 8.850172283664849,
+   "reported": 8.9,
+   "tol": 0.05,
+   "source": "Methods, Participants (ASD 18.5 +- 8.9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials analysed per child (last 8 of 15 per weight x knowledge cell, 4 cells)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Statistical analysis (only the last eight trials per weight and condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with a trial count of 32",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Statistical analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cells per child with 8 trials",
+   "computed": 168.0,
+   "reported": 168.0,
+   "tol": 0,
+   "source": "Statistical analysis (8 trials x 4 cells x 42 children)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "total rows 1344 = 42 x 32",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MT1 + MT2 = MTTOT in every row where all three exist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "condition codes match weight x knowledge",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one ORDER value per child",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant-level columns are constant within child",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "32 rows for each of 42 children, row order of the deposit kept",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports the age comparison across groups as F(2,39) = .624, p = .541; the deposit's ages give F = 0.627, p = 0.539, so that test is not used as a check (the group means and SDs of age do reproduce).",
+  "The paper says 2 girls in the ASD group and 4 in the TD group; the deposit's sex column has 3 and 3 (the DCD group, 6, and the total, 12, agree). The deposit is kept as shared.",
+  "The deposit's license is not stated (the OSF project shows none); the paper's published version is in Autism 28(2), 2024 (online 2023). The data are shared with credit and removed on request.",
+  "The paper's text was read from the author's accepted manuscript (University of Padua repository)."
+ ],
+ "sources": [
+  {
+   "file": "data0920.txt",
+   "url": "https://osf.io/download/m2va7/",
+   "bytes": 206403,
+   "sha256": "f4807d965bb74c7632895f0c996d2c631a89997bf9af0fa82d8cca34fd9bb676",
+   "fetched_utc": "2026-11-09T10:42:07Z"
+  },
+  {
+   "file": "Stats.R",
+   "url": "https://osf.io/download/tgmsf/",
+   "bytes": 8530,
+   "sha256": "c9e99b143cda908a2e741d8030a750ea454b7d86a37c808f727e3002d9b153d9",
+   "fetched_utc": "2026-11-09T10:42:12Z"
+  },
+  {
+   "file": "Graphs.R",
+   "url": "https://osf.io/download/y9h4p/",
+   "bytes": 34513,
+   "sha256": "24b3c8e50073f8cd33732b360c6cdd1cddce21a8a7a8245abb0580755fe67bb1",
+   "fetched_utc": "2026-11-09T10:42:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Martel2023_Autism.zip"
+}

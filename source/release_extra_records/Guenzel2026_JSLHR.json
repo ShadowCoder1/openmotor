@@ -1,0 +1,120 @@
+{
+ "id": "Guenzel2026_JSLHR",
+ "module": "summary",
+ "rows": 3400,
+ "subjects": 48,
+ "persons": 48,
+ "zip_bytes": 57218,
+ "zip_sha256": "b478bda7d79cd9b00e7a09328ade652f8ada597a143eebe4cf5674ba4a122a12",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "individuals with aphasia",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Gunzel et al. 2026, Abstract (sixteen individuals with aphasia)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "neurotypical controls",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Gunzel et al. 2026, Abstract (32 age-matched controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, controls",
+   "computed": 67.0625,
+   "reported": 67.1,
+   "tol": 0.05,
+   "source": "SYNC_Analysis.Rmd printed age comparison (control M = 67.1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, controls",
+   "computed": 6.927912221003921,
+   "reported": 6.93,
+   "tol": 0.005,
+   "source": "SYNC_Analysis.Rmd printed age comparison (control SD = 6.93)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, aphasia",
+   "computed": 61.4375,
+   "reported": 61.4,
+   "tol": 0.05,
+   "source": "SYNC_Analysis.Rmd printed age comparison (aphasia M = 61.4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, aphasia",
+   "computed": 6.25,
+   "reported": 6.25,
+   "tol": 0.005,
+   "source": "SYNC_Analysis.Rmd printed age comparison (aphasia SD = 6.25)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 9 stimuli",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PLV and MVL within 0..1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept (rows with a missing value are not written)",
+   "ok": true,
+   "detail": "3400"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text was not available, so published checks use the abstract and the age summary printed in the authors' analysis script comments.",
+  "The authors removed about 12.5% of the aphasia tapping PLV values for data quality in their analysis (script comment); the shared JSON still contains them and they are not marked here.",
+  "The demographics file lists one further person with aphasia who is not in the tapping results (the script excludes them on aetiology); the demographics file also has an exclude flag set for two controls whose meaning is not documented, and it was not applied."
+ ],
+ "sources": [
+  {
+   "file": "SYNC_Data.RData",
+   "url": "https://osf.io/download/6ad7b86e782b0fa7077d53b6/",
+   "bytes": 16445488,
+   "sha256": "464914dcdcd5367288fe3f8cb5110028eb604bc73bc5fffa3e57d6491ad29e8a",
+   "fetched_utc": "2026-11-09T15:36:23Z"
+  },
+  {
+   "file": "SYNC_VP_info.csv",
+   "url": "https://osf.io/download/686f8d8aef41e92444a6c5d0/",
+   "bytes": 28874,
+   "sha256": "9d4da13f141d5a66aab696811ace4973748e08a74e98cf4528d47447ee89a226",
+   "fetched_utc": "2026-11-09T15:36:28Z"
+  },
+  {
+   "file": "results_control.json",
+   "url": "https://osf.io/download/686f8d834198254ec9f6d7b9/",
+   "bytes": 120780,
+   "sha256": "d7249ca122f06244679caae7e300509d06960856115563b83b0ec44bc18486b0",
+   "fetched_utc": "2026-11-09T15:36:33Z"
+  },
+  {
+   "file": "results_aphasia.json",
+   "url": "https://osf.io/download/686f8d80c8273072bd933a34/",
+   "bytes": 57792,
+   "sha256": "c6fddd4d471892076b1ed0f0b99383effe3eda8bd6a02a71b916088b04d7ee8d",
+   "fetched_utc": "2026-11-09T15:36:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Guenzel2026_JSLHR.zip"
+}

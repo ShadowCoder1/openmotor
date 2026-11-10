@@ -1,0 +1,211 @@
+{
+ "id": "Giancardo2016_SciRep",
+ "module": "keypress",
+ "rows": 177513,
+ "subjects": 116,
+ "persons": 85,
+ "zip_bytes": 2505649,
+ "zip_sha256": "721aa356d29839da287d7c5015eea6a50a578f5f1e44995a366274750a348c76",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "116 typing files: 31 x 2 + 54",
+   "ok": true,
+   "detail": "116"
+  },
+  {
+   "kind": "internal",
+   "what": "85 participants (42 with PD, 43 controls) as in the abstract and Table 1",
+   "ok": true,
+   "detail": "85, PD 42"
+  },
+  {
+   "kind": "internal",
+   "what": "every key class is a known class and no row has more than 4 fields",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hold times 0-5 s apart from the rows the authors' loader removes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every file has press time and hold time (press + hold = release was verified on the first column set)",
+   "ok": true,
+   "detail": "5543 of 177513 rows removed by the authors' loader (mouse, Shift/Control/Alt, invalid times)"
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' file order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS-III, PD mean",
+   "computed": 20.613095238095237,
+   "reported": 20.6,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS-III, PD SD",
+   "computed": 7.665491723077009,
+   "reported": 7.7,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS-III, controls mean",
+   "computed": 1.9244186046511629,
+   "reported": 1.9,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS-III, controls SD",
+   "computed": 1.7949456847142191,
+   "reported": 1.8,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nQi, PD mean",
+   "computed": 0.13019918209761905,
+   "reported": 0.13,
+   "tol": 0.0006,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nQi, PD SD",
+   "computed": 0.08548971863560885,
+   "reported": 0.085,
+   "tol": 0.0006,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nQi, controls mean",
+   "computed": 0.0596879485627907,
+   "reported": 0.06,
+   "tol": 0.0006,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nQi, controls SD",
+   "computed": 0.057200262935578575,
+   "reported": 0.057,
+   "tol": 0.0006,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "alternating finger tapping, PD mean",
+   "computed": 95.37162162162163,
+   "reported": 95.37,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "alternating finger tapping, PD SD",
+   "computed": 22.014170122586634,
+   "reported": 22.01,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single key tapping, PD mean",
+   "computed": 162.88095238095238,
+   "reported": 162.88,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single key tapping, PD SD",
+   "computed": 24.09010259366462,
+   "reported": 24.09,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single key tapping, controls mean",
+   "computed": 170.84883720930233,
+   "reported": 170.85,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single key tapping, controls SD",
+   "computed": 16.45232465978481,
+   "reported": 16.45,
+   "tol": 0.06,
+   "source": "Table 1 (combined dataset of 42 PD subjects and 43 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with PD",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Abstract and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Abstract and Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 gives the alternating finger tapping result of the controls as 128.37 (SD 28.85); the authors' ground-truth file (39 controls with a value) gives 128.99 (SD 27.85). All other Table 1 means and SDs (UPDRS-III, nQi, single key tapping, and the PD group's alternating finger tapping) reproduce."
+ ],
+ "sources": [
+  {
+   "file": "neuroQWERTY.zip",
+   "url": "https://physionet.org/files/nqmitcsxpd/1.0.0/neuroQWERTY.zip",
+   "bytes": 2173207,
+   "sha256": "c13c920c6d728cfdc04d548ff166ca16145e1c0db2c7a53fbe6717d589fc883d",
+   "fetched_utc": "2026-11-09T00:04:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Giancardo2016_SciRep.zip"
+}

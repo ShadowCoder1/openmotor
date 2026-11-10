@@ -1,0 +1,109 @@
+{
+ "id": "Gianferrara2021_PLoSOne",
+ "module": "game",
+ "rows": 1200,
+ "subjects": 80,
+ "persons": 80,
+ "zip_bytes": 22272,
+ "zip_sha256": "ca8b869d8d69774387df338666440aebf74ebdfa5437a47dd518c3a828fde538",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "PG_Skill_Transfer_Data.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every score-table cell has its row in the R table, with equal points",
+   "ok": true,
+   "detail": "1200 games"
+  },
+  {
+   "kind": "internal",
+   "what": "GameSpeed strings agree with the two condition columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "1,200 games = 80 humans x 15",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 humans in each of the four conditions",
+   "ok": true,
+   "detail": "{'HHH': 20, 'HLH': 20, 'LHL': 20, 'LLL': 20}"
+  },
+  {
+   "kind": "published",
+   "what": "human players after excluding two (82 recruited)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Participants, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players per condition (20 in each of 4)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "games per player",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, 15 games of 3 minutes, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Start phase (games 1-5), HHH: median points over all player-games",
+   "computed": 1844.0,
+   "reported": 1844.0,
+   "tol": 0.5,
+   "source": "Results, start phase, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Start phase (games 1-5), HLH: median points over all player-games",
+   "computed": 2128.0,
+   "reported": 2128.0,
+   "tol": 0.5,
+   "source": "Results, start phase, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Start phase, HHH vs HLH: Mann-Whitney z (normal approximation, U of the first group)",
+   "computed": -2.1685076373244176,
+   "reported": -2.17,
+   "tol": 0.05,
+   "source": "Results, start phase, Methods and Results (PLoS ONE 16(10):e0258242)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Resets, Deflations and Misses are the authors' column names in their R table for events counted over a game; the deposit gives no definitions, so they are kept under those names in error_counts."
+ ],
+ "sources": [
+  {
+   "file": "PG_Skill_Transfer_Data.zip",
+   "url": "https://ndownloader.figshare.com/files/26425631",
+   "bytes": 1117174247,
+   "sha256": "1a962783bc2f2e615a79d2215c86d2936c53a7422594e2d262bfabd0b2faaf69",
+   "fetched_utc": "2026-11-08T21:17:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gianferrara2021_PLoSOne.zip"
+}

@@ -1,0 +1,158 @@
+{
+ "id": "Varghese2023_PNAS",
+ "module": "reach90",
+ "rows": 8000,
+ "subjects": 100,
+ "persons": 50,
+ "zip_bytes": 1090792,
+ "zip_sha256": "81673329c0431d95e38c99582ef6d3b09b5f78b382cc4f9992ca30f43ecf5910",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Results, first paragraph (fifty adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results, first paragraph (20 neurotypical young adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left hemisphere stroke",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, first paragraph (15 left hemiparesis; the file's LHP group has 15 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right hemisphere stroke",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, first paragraph (15 right hemiparesis; the file's RHP group has 15 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-cursor trials analysed for the within-trial gain (50 x 2 distances x 20)",
+   "computed": 2000.0,
+   "reported": 2000.0,
+   "tol": 0,
+   "source": "Methods, Kinematic data processing (55 out of 2,000 trials excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials removed as outliers",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Kinematic data processing (55 out of 2,000 trials, 2.75% were excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percentage of one-cursor trials removed",
+   "computed": 2.75,
+   "reported": 2.75,
+   "tol": 0.005,
+   "source": "Methods, Kinematic data processing (2.75%)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 trials per participant, condition and hand",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has all four documented conditions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 2 hands x trials of the documented conditions",
+   "ok": true,
+   "detail": "8000"
+  },
+  {
+   "kind": "internal",
+   "what": "all 55 listed outlier trials found",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The file also holds conditions the paper does not describe (BmAL15, BmAR15, Um05, Um15; 43 of the 50 participants did them). Their meaning is not documented in the deposit, so they are not converted.",
+  "The within-trial gains (g) and trial-to-trial learning rates of the paper come from robust mixed-effects models in R and were not recomputed here.",
+  "The order of the two target distances (5 and 15 cm) within a condition was counterbalanced across participants, but the file does not say which came first. trial counts the two-cursor condition first, then the one-cursor condition (as the paper states), and the 5 cm block before the 15 cm block; trial_orig is the authors' 1 to 20 within each block.",
+  "Demographics (age, sex, handedness score, Fugl-Meyer score, chronicity) are in the deposit's forTable1_v2.csv and fmchron_subj.csv, which use other participant labels than the trial table and cannot be linked to it with certainty, so they are not included.",
+  "The authors' outlier trials (55, listed in their notebook output, one-cursor condition only) are marked in excluded_by_authors on both hands' rows of that trial."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://osf.io/download/zrfhx/",
+   "bytes": 1698,
+   "sha256": "424cc97828b3897c7c486d2f9044b72750e75b3cbc1dab3909e8a8a1b0c8f896",
+   "fetched_utc": "2026-11-09T09:53:06Z"
+  },
+  {
+   "file": "YNC_allData_120321_full.csv",
+   "url": "https://osf.io/download/tj86m/",
+   "bytes": 6028089,
+   "sha256": "64e7061b936e842928795eb12d4fc190a3b6661058706cd5c259675cb020bde5",
+   "fetched_utc": "2026-11-09T09:53:19Z"
+  },
+  {
+   "file": "fmchron_subj.csv",
+   "url": "https://osf.io/download/6ctk9/",
+   "bytes": 368,
+   "sha256": "5af3f51481ad3e0edbe145e4242f411d73fdc7e91341040fdf274247362cff8b",
+   "fetched_utc": "2026-11-09T09:53:30Z"
+  },
+  {
+   "file": "forTable1_v2.csv",
+   "url": "https://osf.io/download/c8tfa/",
+   "bytes": 1724,
+   "sha256": "356c4a8aaf86fe61e097fd8e1ae027a9a6bf5483552256d8d9b6de331e3ea902",
+   "fetched_utc": "2026-11-09T09:53:35Z"
+  },
+  {
+   "file": "analysis.ipynb",
+   "url": "https://osf.io/download/gwtzv/",
+   "bytes": 2013620,
+   "sha256": "559b8230ac5621a9ccbeb02b40aa8059dd188583b6400a3819fea098322f8c7c",
+   "fetched_utc": "2026-11-09T09:53:40Z"
+  },
+  {
+   "file": "analysis.html",
+   "url": "https://osf.io/download/e34qk/",
+   "bytes": 2250529,
+   "sha256": "a2f4a5706448708d8e3c9d6e47fe371645d505688653f23b1c1aa71430e0c4c7",
+   "fetched_utc": "2026-11-09T09:53:46Z"
+  },
+  {
+   "file": "analysis_rev.ipynb",
+   "url": "https://osf.io/download/nmsdr/",
+   "bytes": 3648467,
+   "sha256": "f1f4628fb035e1d832e9fd62fe198809cdc9443db0e8e0729f149ae7870add3d",
+   "fetched_utc": "2026-11-09T09:57:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Varghese2023_PNAS.zip"
+}

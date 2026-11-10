@@ -1,0 +1,412 @@
+{
+ "id": "Hill2019_PLoSOne",
+ "module": "walking",
+ "rows": 90,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 21407,
+ "zip_sha256": "3dc134ca9dafaafb8b24b9643154e2f3477d782c258f079c49babd8ddd9e48e2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "90 recordings: 15 participants x 6 conditions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing measure",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "left step lengths shorter than right ones in asymmetric (right belt slow) walking",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, held arms, symmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 3.232269840205266,
+   "reported": 3.23,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, held arms, symmetric walking (participant 1 excluded)",
+   "computed": 2.1893954489356484,
+   "reported": 2.19,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, normal arms, symmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 3.233278605744394,
+   "reported": 3.23,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, normal arms, symmetric walking (participant 1 excluded)",
+   "computed": 2.0168895808488148,
+   "reported": 2.02,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, active arms, symmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 3.625627890508421,
+   "reported": 3.63,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, active arms, symmetric walking (participant 1 excluded)",
+   "computed": 2.885781830465094,
+   "reported": 2.89,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, held arms, asymmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 1.9362618480661793,
+   "reported": 1.94,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, held arms, asymmetric walking (participant 1 excluded)",
+   "computed": 1.2364740599766495,
+   "reported": 1.24,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, normal arms, asymmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 1.7067273322882952,
+   "reported": 1.71,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, normal arms, asymmetric walking (participant 1 excluded)",
+   "computed": 1.4604672196316297,
+   "reported": 1.46,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct mean, active arms, asymmetric walking (participant 1 excluded as the authors did for this measure)",
+   "computed": 3.4082748083314987,
+   "reported": 3.41,
+   "tol": 0.0051,
+   "source": "Table 2 and Methods (outlier removed), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_time_asymmetry_log_pct SD, active arms, asymmetric walking (participant 1 excluded)",
+   "computed": 2.1221772199026367,
+   "reported": 2.12,
+   "tol": 0.0051,
+   "source": "Table 2 (mean +- SD), PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shoulder_rom_right_deg mean, normal arms, symmetric walking",
+   "computed": 25.270559988912442,
+   "reported": 25.3,
+   "tol": 0.050000001,
+   "source": "Table 1, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shoulder_rom_right_deg mean, normal arms, asymmetric walking",
+   "computed": 27.480600386437217,
+   "reported": 27.5,
+   "tol": 0.050000001,
+   "source": "Table 1, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "arm_swing_asymmetry_pct mean, normal arms, symmetric walking",
+   "computed": 22.1424598209022,
+   "reported": 22.1,
+   "tol": 0.050000001,
+   "source": "Table 2, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_asymmetry_log_pct mean, held arms, symmetric walking",
+   "computed": 2.8789458287466285,
+   "reported": 2.88,
+   "tol": 0.0050000010000000004,
+   "source": "Table 2, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_asymmetry_log_pct mean, normal arms, symmetric walking",
+   "computed": 3.7295583741187257,
+   "reported": 3.73,
+   "tol": 0.0050000010000000004,
+   "source": "Table 2, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_asymmetry_log_pct mean, active arms, symmetric walking",
+   "computed": 3.749694360480193,
+   "reported": 3.75,
+   "tol": 0.0050000010000000004,
+   "source": "Table 2, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_asymmetry_log_pct mean, held arms, asymmetric walking",
+   "computed": 16.4238277401931,
+   "reported": 16.4,
+   "tol": 0.050000001,
+   "source": "Table 2, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, held arms, symmetric walking",
+   "computed": 0.5235705235633973,
+   "reported": 0.52,
+   "tol": 0.0050000010000000004,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, normal arms, symmetric walking",
+   "computed": 0.5133381904414411,
+   "reported": 0.51,
+   "tol": 0.0050000010000000004,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, active arms, symmetric walking",
+   "computed": 0.4867428763139936,
+   "reported": 0.49,
+   "tol": 0.0050000010000000004,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, held arms, asymmetric walking",
+   "computed": 0.5893223423145718,
+   "reported": 0.59,
+   "tol": 0.0050000010000000004,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, normal arms, asymmetric walking",
+   "computed": 0.5624620635801822,
+   "reported": 0.56,
+   "tol": 0.0050000010000000004,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trunk_max_lyapunov_exponent mean, active arms, asymmetric walking",
+   "computed": 0.5046111383312122,
+   "reported": 0.5,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, held arms, symmetric walking",
+   "computed": 19.103232893454603,
+   "reported": 19.1,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, normal arms, symmetric walking",
+   "computed": 19.230592707295717,
+   "reported": 19.2,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, active arms, symmetric walking",
+   "computed": 19.603187639453626,
+   "reported": 19.6,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, held arms, asymmetric walking",
+   "computed": 20.885970572017104,
+   "reported": 20.9,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, normal arms, asymmetric walking",
+   "computed": 20.787518863196798,
+   "reported": 20.8,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_width_mean_m mean, active arms, asymmetric walking",
+   "computed": 21.022134739435604,
+   "reported": 21.0,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_left_m mean, normal arms, symmetric walking",
+   "computed": 62.88707612289319,
+   "reported": 62.9,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_left_m mean, active arms, symmetric walking",
+   "computed": 69.24079915329261,
+   "reported": 69.2,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_left_m mean, held arms, asymmetric walking",
+   "computed": 54.62966707366167,
+   "reported": 54.6,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_left_m mean, normal arms, asymmetric walking",
+   "computed": 55.155528541811464,
+   "reported": 55.2,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_left_m mean, active arms, asymmetric walking",
+   "computed": 60.61203895946028,
+   "reported": 60.6,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "step_length_right_m mean, held arms, symmetric walking",
+   "computed": 63.83973500442502,
+   "reported": 63.8,
+   "tol": 0.050000001,
+   "source": "Table 4, PLoS ONE 14(12):e0218644",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean mass (kg)",
+   "computed": 72.28333333333333,
+   "reported": 72.3,
+   "tol": 0.05,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height (cm)",
+   "computed": 170.2,
+   "reported": 170.2,
+   "tol": 0.05,
+   "source": "Methods, Subjects",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "24 of the 65 published means or descriptives did not reproduce within the paper's printed rounding and are not used as checks (here, then paper): shoulder_rom_left_deg, held arms, symmetric 7.32 vs 7.34; shoulder_rom_left_deg, normal arms, symmetric 25.8 vs 25.9; shoulder_rom_left_deg, active arms, symmetric 95.67 vs 95.8; shoulder_rom_left_deg, held arms, asymmetric 7.71 vs 7.73; shoulder_rom_left_deg, normal arms, asymmetric 25.33 vs 25.4; shoulder_rom_left_deg, active arms, asymmetric 89.43 vs 89.5; shoulder_rom_right_deg, held arms, symmetric 6.443 vs 6.45; shoulder_rom_right_deg, active arms, symmetric 95.32 vs 95.4; shoulder_rom_right_deg, held arms, asymmetric 6.838 vs 6.85; shoulder_rom_right_deg, active arms, asymmetric 91.02 vs 91.1; arm_swing_asymmetry_pct, held arms, symmetric 21.55 vs 21.6; arm_swing_asymmetry_pct, active arms, symmetric 9.246 vs 9.24; arm_swing_asymmetry_pct, held arms, asymmetric 22.88 vs 23.0; arm_swing_asymmetry_pct, normal arms, asymmetric 24.66 vs 24.6; arm_swing_asymmetry_pct, active arms, asymmetric 10.98 vs 10.9; step_length_asymmetry_log_pct, normal arms, asymmetric 15.85 vs 15.9; step_length_asymmetry_log_pct, active arms, asymmetric 13.84 vs 13.9; step_length_left_m, held arms, symmetric 62.98 vs 62.9; step_length_right_m, normal arms, symmetric 64.47 vs 64.6; step_length_right_m, active arms, symmetric 69.72 vs 69.9; step_length_right_m, held arms, asymmetric 64.32 vs 64.1; step_length_right_m, normal arms, asymmetric 64.6 vs 64.7; step_length_right_m, active arms, asymmetric 69.51 vs 69.3; mean age (years) 23.33 vs 23.4. Audit (2026-11-10) of why: (1) Temporal step asymmetry: the paper's Methods and the authors' notebook remove participant 1 as an outlier for this measure only; with that exclusion all six means and SDs of Table 2 reproduce (they are checks above), and the release keeps participant 1's row. (2) Mean age: the deposit's ages are whole years, so their mean (23.33) cannot equal the paper's 23.4 from unrounded ages. (3) The remaining shoulder range-of-motion, arm-swing asymmetry, spatial asymmetry and step-length means differ from Tables 1, 2 and 4 by 0.1 to 0.4 percent for shoulder range and up to 0.3 percent for right step length, in a consistent direction (the deposit is slightly lower, and its SDs agree with the tables to within rounding). No single-participant exclusion, left/right swap, condition relabelling, unit change or SE-for-SD reading reproduces them, and results.csv is identical in the GitHub snapshot and the Zenodo v1.0.0 record, so the tables were most likely made from an earlier run of the authors' pipeline than the shared results.csv; this cannot be settled without re-running their Julia code on the raw MAT files, which was not done. Table 4 also has printed typos for some step-width and left step-length SD cells (for example 22.7 and 16.0), which were not used."
+ ],
+ "sources": [
+  {
+   "file": "repo.zip",
+   "url": "https://zenodo.org/api/records/3239464/files/halleysfifthinc/EffectsArmswingGaitAsymmetryStability.jl-v1.0.0.zip/content",
+   "bytes": 795374120,
+   "sha256": "aaf8d7a5beea70ddb1ab2dacc20abb61da620306b74e45936042c3ccb152b294",
+   "fetched_utc": "2026-11-10T06:16:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hill2019_PLoSOne.zip"
+}

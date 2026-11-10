@@ -1,0 +1,1186 @@
+<title>OpenMotor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="description" content="OpenMotor: find open data from human motor control and motor learning experiments. Each study links to the data its authors shared.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
+<style>
+/* Layout: white header bar with tabs (Home, Studies, Standardization, About), then plain light pages. The home page is a short
+   introduction, the numbers and the most recent studies; Studies is one table of every study, by year.
+   Icons are Lucide (ISC license), inlined. Single fixed light look. */
+:root {
+  --navy-950: #1c1d1f;
+  --navy-900: #26272a;
+  --navy-800: #303134;
+  --navy-700: #3a3b3f;
+  --line-dark: #3a3b3f;
+  --on-dark: #f4f4f5;
+  --on-dark-2: #c9c9cc;
+  --on-dark-3: #9b9ca0;
+  --page: #f6f6f7;
+  --card: #ffffff;
+  --ink: #202124;
+  --ink-2: #4a4b4f;
+  --muted: #6f7074;
+  --border: #e4e4e7;
+  --border-2: #d4d4d8;
+  --link: #b8022b;
+  --accent: #e40335;
+  --accent-dark: #b8022b;
+  --icon: #b8022b;
+  --icon-bg: #fdecef;
+  --bar: #e40335;
+  --row-alt: #f9f9fa;
+  --font: "Source Sans 3", "Source Sans Pro", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { background: var(--page); }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--page); color: var(--ink); font-family: var(--font); font-size: 16.5px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: #ffffff; }
+:root { --gutter: clamp(20px, 3.4vw, 64px); }
+.wrap { max-width: calc(1440px + 2 * var(--gutter)); margin: 0 auto; padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+a { color: var(--link); }
+a:hover { color: var(--accent-dark); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+p { margin: 0 0 12px; max-width: 74ch; }
+code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); border-radius: 4px; padding: 1px 5px; }
+.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.skip { position: absolute; left: -9999px; top: 0; background: var(--card); color: var(--link); padding: 8px 12px; z-index: 60; }
+.skip:focus { left: 8px; top: 8px; }
+
+/* ---------- header: white bar, two tabs ---------- */
+.site-header { background: #ffffff; border-bottom: 1px solid var(--border); position: relative; z-index: 3; }
+.site-header .bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 28px; min-height: 74px; padding-block: 10px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--navy-900); text-decoration: none; }
+.brand:hover { color: var(--navy-900); }
+.brand img { display: block; height: 38px; width: auto; }
+.brand-name { font-size: 28px; font-weight: 700; letter-spacing: -0.015em; }
+.brand-name span { color: var(--accent); }
+.site-nav { display: flex; align-items: center; }
+.site-nav a { color: var(--ink-2); text-decoration: none; font-size: 17.5px; font-weight: 600; padding: 12px 2px 9px; margin: 0 16px; border-bottom: 3px solid transparent; }
+.site-nav a:hover { color: var(--ink); }
+.site-nav a[aria-current="page"] { color: var(--accent-dark); border-bottom-color: var(--accent); }
+.nav-sep { width: 1px; height: 34px; background: var(--border-2); margin: 0 14px 0 10px; }
+.site-nav a.gh { padding: 6px; margin: 0; border: 0; color: var(--ink); }
+.site-nav a.gh .icon { width: 28px; height: 28px; }
+
+/* ---------- buttons ---------- */
+.btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font); font-size: 16px; font-weight: 600; line-height: 1.2; padding: 11px 18px; border-radius: 8px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+.btn .icon { width: 18px; height: 18px; }
+.btn-primary { background: var(--accent); color: #ffffff; }
+.btn-primary:hover { background: var(--accent-dark); color: #ffffff; }
+
+/* ---------- home: headline beside the reaching hand, three numbers, topic chips ---------- */
+.home { padding-bottom: 64px; }
+.hero-band { background: linear-gradient(180deg, #ffffff 0%, #ffffff 72%, var(--page) 100%); }
+.hero2 { padding-block: 64px 0; text-align: center; }
+.hero2 h1 { max-width: 15em; margin-left: auto; margin-right: auto; font-size: 62px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+.hero2 h1 .hl { color: var(--accent-dark); }
+.hero2 .lead { margin: 22px auto 0; font-size: 20px; line-height: 1.5; color: var(--ink-2); max-width: 33em; }
+.home-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 32px; }
+.btn-lg { padding: 14px 24px; font-size: 17.5px; font-weight: 700; }
+.btn-lg .icon { width: 20px; height: 20px; }
+.stats2 { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 18px; margin-top: 46px; }
+.stat2 { display: flex; align-items: center; gap: 18px; padding: 6px 56px 6px 0; }
+.stat2 + .stat2 { padding-left: 56px; border-left: 1px solid var(--border-2); }
+.stat2:last-child { padding-right: 0; }
+.stat2 .icon { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.6; }
+.stat2 b { display: block; font-size: 36px; line-height: 1.08; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.stat2 span { display: block; font-size: 18px; color: var(--ink-2); }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 14px; margin: 38px 0 0; padding-bottom: 46px; }
+.chip { display: inline-block; padding: 10px 22px; border-radius: 999px; background: #f0f0f2; color: var(--ink); font-size: 16.5px; text-decoration: none; }
+.chip:hover { background: #e4e4e7; color: var(--ink); }
+.feed-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 20px; margin-top: 40px; padding-bottom: 10px; border-bottom: 1px solid var(--border-2); max-width: 980px; margin-left: auto; margin-right: auto; }
+.feed-head h2 { font-size: 25px; font-weight: 700; }
+.feed-more { display: flex; flex-wrap: wrap; gap: 10px; max-width: 980px; margin: 26px auto 0; }
+
+/* one study, as listed on the home page */
+.entry { max-width: 920px; padding: 22px 0 20px; border-bottom: 1px solid var(--border); }
+.entry h3 { font-size: 21px; font-weight: 600; line-height: 1.3; }
+.entry h3 a { color: var(--ink); text-decoration: none; }
+.entry h3 a:hover { color: var(--link); text-decoration: underline; }
+.entry-sub { margin: 3px 0 0; font-size: 17px; line-height: 1.45; color: var(--ink-2); max-width: none; }
+.entry-links { display: flex; flex-wrap: wrap; gap: 2px 12px; margin: 7px 0 0; font-size: 16px; max-width: none; }
+.entry-links a { text-decoration: none; }
+.entry-links a:hover { text-decoration: underline; }
+.entry-fmt { color: var(--muted); }
+.entry-facts { margin: 8px 0 0; font-size: 15.5px; color: var(--ink-2); max-width: none; }
+.entry { max-width: 980px; margin-left: auto; margin-right: auto; }
+.tags { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 16px; margin: 10px 0 0; font-size: 14.5px; max-width: none; }
+.tags .icon { width: 15px; height: 15px; color: var(--muted); margin-right: -8px; }
+.tags a { color: var(--muted); text-decoration: none; }
+.tags a:hover { color: var(--link); text-decoration: underline; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* studies table */
+/* studies by task: the menu under the Studies tab and the Studies page's left column (Indranil, 2026-11-08) */
+.nav-drop { position: relative; display: flex; align-items: center; }
+.site-nav .nav-drop > a { margin-right: 0; }
+.nav-caret { display: grid; place-items: center; width: 28px; height: 28px; margin: 0 12px 0 2px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--ink-2); cursor: pointer; }
+.nav-caret:hover, .nav-drop.open .nav-caret { background: var(--icon-bg); color: var(--ink); }
+.nav-caret .icon { width: 18px; height: 18px; }
+.nav-drop.open .nav-caret .icon { transform: rotate(180deg); }
+.task-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); z-index: 10; width: 480px; padding: 14px 10px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(20, 20, 25, 0.13); }
+@media (hover: hover) { .nav-drop:hover .task-menu { display: block; } }
+.nav-drop.open .task-menu { display: block; }
+.nav-drop.shut .task-menu { display: none; }
+.task-menu-h { margin: 0 10px 8px; font-size: 14.5px; font-weight: 700; color: var(--ink-2); }
+.task-menu-list { columns: 2; column-gap: 8px; }
+.task-menu-list a { break-inside: avoid; }
+.site-nav .task-menu a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 0; padding: 7px 10px; border: 0; border-radius: 8px; font-size: 15.5px; font-weight: 500; color: var(--ink); }
+.site-nav .task-menu a:hover { background: var(--icon-bg); }
+.task-menu a span, .task-nav a span { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.st-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 0 36px; align-items: start; margin-top: 22px; }
+.st-layout .st-tools { margin-top: 0; }
+.task-nav { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; padding-bottom: 12px; }
+.task-nav-h { margin: 4px 12px 8px; font-size: 15px; font-weight: 700; color: var(--ink-2); }
+.task-nav a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 6px 12px; color: var(--ink); text-decoration: none; font-size: 15.5px; }
+.task-nav a:hover { color: var(--accent-dark); }
+.task-nav a.active { color: var(--accent-dark); font-weight: 700; }
+@media (max-width: 1000px) { .st-layout { grid-template-columns: minmax(0, 1fr); } .task-nav { display: none; } }
+@media (max-width: 760px) {
+  .nav-drop { position: static; }
+  .site-nav .nav-drop > a { padding-right: 2px; }
+  .nav-caret { width: 22px; height: 26px; margin: 0 1px 0 0; }
+  .task-menu { left: 16px; right: 16px; width: auto; transform: none; }
+}
+@media (max-width: 520px) { .task-menu-list { columns: 1; } }
+.st-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin: 22px 0 12px; }
+.st-filter { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: var(--ink-2); }
+.st-filter select { font-family: var(--font); font-size: 15.5px; color: var(--ink); background: var(--card); border: 1px solid var(--border-2); border-radius: 8px; padding: 9px 10px; max-width: 280px; }
+.st-meta { margin-left: auto; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; font-size: 15px; color: var(--ink-2); }
+.linkbutton { font: inherit; color: var(--link); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+table.studies th, table.studies td { padding: 12px 16px; }
+table.studies tbody th.yr { background: #f7f7f8; font-size: 17px; font-weight: 700; color: var(--ink); padding: 8px 16px; }
+table.studies { table-layout: fixed; }
+table.studies thead th:nth-child(1) { width: 64%; }
+table.studies thead th:nth-child(2) { width: 20%; }
+table.studies thead th:nth-child(3) { width: 16%; }
+table.studies td { overflow-wrap: anywhere; }
+table.studies .dl { white-space: normal; }
+.st-name { display: block; font-weight: 700; font-size: 16.5px; color: var(--ink); text-decoration: none; }
+.st-name:hover { color: var(--link); text-decoration: underline; }
+.st-title { display: block; margin-top: 2px; text-decoration: none; }
+.st-title:hover { text-decoration: underline; }
+.st-venue { display: block; color: var(--muted); font-style: italic; font-size: 14px; }
+table.studies .tags { margin-top: 6px; font-size: 13.5px; gap: 2px 12px; }
+.orig a { display: flex; width: max-content; max-width: 100%; align-items: center; gap: 5px; font-weight: 600; text-decoration: none; }
+.orig a:hover { text-decoration: underline; }
+.orig .icon { width: 14px; height: 14px; flex: none; }
+.orig a + a { margin-top: 4px; }
+.st-foot { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 16px; font-size: 15px; max-width: none; }
+.st-explain { max-width: 84ch; }
+
+/* one study's own page: title, paper, links, the full abstract, tags, details, Previous and Next */
+.page h1.sp-title { font-size: 40px; letter-spacing: -0.015em; margin: 2px 0 0; }
+.sp-paper { max-width: 900px; margin-top: 10px; }
+.sp-paper + .sp-paper { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--border); }
+.page h2.sp-sub { font-size: 22px; font-weight: 600; color: var(--ink-2); line-height: 1.35; margin: 0; }
+.sp-cite { margin: 6px 0 0; color: var(--muted); font-size: 15.5px; max-width: none; }
+.sp-links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 12px 0 0; font-size: 18px; max-width: none; }
+.sp-links a { text-decoration: none; }
+.sp-links a:hover { text-decoration: underline; }
+.sp-none { color: var(--muted); }
+.sp-paper ~ .tags { margin-top: 18px; font-size: 15px; }
+dl.facts { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 10px 22px; margin: 28px 0 0; padding: 20px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 900px; }
+dl.facts dt { font-weight: 600; color: var(--ink-2); }
+dl.facts dd { margin: 0; min-width: 0; }
+dl.facts small { display: block; color: var(--muted); font-size: 14px; margin-top: 6px; }
+.muted { color: var(--muted); }
+.page .study-h2 { font-size: 20px; margin: 30px 0 8px; }
+.st-ref { max-width: 900px; }
+.about ol { padding-left: 1.4em; max-width: 74ch; }
+.about li { margin: 4px 0; }
+.sp-nav { display: flex; justify-content: space-between; gap: 12px; max-width: 900px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--border); }
+.pill { display: inline-flex; align-items: center; padding: 11px 26px; border: 1px solid var(--border-2); border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 16.5px; text-decoration: none; }
+.pill:hover { border-color: var(--accent); color: var(--ink); }
+
+/* ---------- content ---------- */
+main { padding-bottom: 0; flex: 1 0 auto; }
+.sec-sub { font-size: 17.5px; color: var(--ink-2); margin: 8px 0 22px; max-width: 86ch; }
+.page h1 { font-size: 30px; font-weight: 700; line-height: 1.2; color: var(--ink); }
+.page { padding-top: 40px; padding-bottom: 64px; }
+.page h1 { margin-bottom: 10px; }
+.page h2 { font-size: 23px; font-weight: 700; margin: 36px 0 12px; }
+.page h3 { font-size: 18px; font-weight: 700; margin: 26px 0 8px; }
+.lead { font-size: 17.5px; color: var(--ink-2); max-width: 80ch; }
+
+/* tables */
+.table-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.table-wrap { overflow-x: auto; }
+table.data { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.45; }
+table.data th, table.data td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--border); }
+table.data thead th { background: #f7f7f8; color: var(--ink-2); font-weight: 700; font-size: 14px; white-space: nowrap; }
+table.data tbody tr:last-child td { border-bottom: 0; }
+table.data .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.data td.nowrap { white-space: nowrap; }
+table.data.compact th, table.data.compact td { padding: 8px 14px; }
+
+.dl { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14.5px; color: var(--accent); text-decoration: none; padding: 5px 10px; border: 1px solid #f1c2cc; border-radius: 7px; background: #fff5f6; white-space: nowrap; }
+.dl:hover { background: #ffe9ed; color: var(--accent-dark); }
+.dl .icon { width: 16px; height: 16px; }
+.dl small { font-weight: 400; color: var(--muted); font-size: 13px; }
+.dl-list { display: grid; gap: 6px; justify-items: start; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); white-space: nowrap; }
+.status .icon { width: 15px; height: 15px; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--navy-900); color: var(--on-dark); padding: 10px 16px; border-radius: 8px; font-size: 15px; z-index: 50; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); max-width: calc(100vw - 40px); }
+
+/* format page */
+.dict-section { margin-top: 26px; }
+.dict-section h3 { margin: 0 0 10px; font-size: 18px; }
+table.dict td:first-child { white-space: nowrap; }
+table.dict td.vals { color: var(--ink-2); font-size: 14px; }
+.format-grid { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: start; }
+.format-grid h3:first-child { margin-top: 0; }
+
+/* cite */
+.cite-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 22px; max-width: 90ch; }
+.cite-box p { margin: 0; max-width: none; }
+ol.refs { padding-left: 2.2em; font-size: 15.5px; line-height: 1.5; }
+ol.refs li { margin-bottom: 8px; padding-left: 4px; }
+ol.refs .held-tag { color: var(--muted); font-size: 14px; }
+.btn-light { background: var(--card); color: var(--accent); border: 1px solid #f1c2cc; }
+.btn-light:hover { background: #fff5f6; color: var(--accent-dark); }
+
+/* footer */
+.site-footer { margin-top: 0; background: #ffffff; color: var(--ink-2); border-top: 1px solid var(--border); }
+.site-footer .wrap { padding-block: 36px 42px; display: grid; grid-template-columns: minmax(0, 0.9fr) 1px minmax(0, 1.4fr); gap: 10px 44px; align-items: start; font-size: 15px; }
+.foot-sep { align-self: stretch; background: var(--border); }
+.site-footer p { margin: 0 0 6px; max-width: none; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 10px !important; }
+.site-footer a { color: var(--ink); }
+.site-footer .foot-brand { margin-bottom: 12px; }
+.site-footer .foot-brand img { display: block; height: 30px; width: auto; }
+.site-footer .foot-orgs { display: flex; align-items: center; gap: 24px; margin: 0 0 16px; }
+.foot-orgs a { display: block; line-height: 0; }
+.foot-orgs img { display: block; height: 56px; width: auto; }
+.foot-orgs-sep { width: 1px; align-self: stretch; background: var(--border-2); }
+
+/* data format page: sidebar layout */
+.doc-layout { max-width: 1480px; margin: 0 auto; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 0 44px; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.doc-nav { position: sticky; top: calc(16px + env(safe-area-inset-top, 0px)); align-self: start; padding: 6px 18px 28px 0; border-right: 1px solid var(--border); min-height: calc(100vh - 160px); }
+.doc-nav-title { font-weight: 700; color: var(--ink-2); margin: 2px 12px 12px; font-size: 15.5px; }
+.doc-nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 12px; border-radius: 8px; font-size: 16px; border-left: 3px solid transparent; margin-bottom: 2px; }
+.doc-nav a:hover { background: var(--icon-bg); color: var(--ink); }
+.doc-nav a.active { background: #fdecef; border-left-color: var(--accent); font-weight: 700; }
+.doc-sub a { padding: 5px 12px 5px 26px; font-size: 15px; color: var(--ink-2); }
+.doc-nav hr { border: 0; border-top: 1px solid var(--border); margin: 16px 0 12px; }
+.doc-nav a.doc-extra { display: flex; gap: 12px; align-items: flex-start; }
+.doc-extra .icon { width: 20px; height: 20px; color: var(--muted); margin-top: 3px; }
+.doc-extra b { display: block; font-size: 15.5px; }
+.doc-extra small { display: block; color: var(--muted); font-size: 14.5px; }
+.doc-main { min-width: 0; }
+.doc-main h1 { font-size: 40px; margin-bottom: 10px; }
+.doc-main h2 { font-size: 30px; margin: 42px 0 14px; }
+.doc-anchor { scroll-margin-top: 20px; }
+.conv-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.conv-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.conv-card h3 { margin: 2px 0 8px; font-size: 19px; }
+.conv-card p { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.55; max-width: none; }
+.conv-angles { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: start; }
+.conv-card.has-icon { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 16px; align-items: start; }
+.conv-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: var(--icon-bg); color: var(--icon); }
+.conv-icon .icon { width: 22px; height: 22px; }
+.conv-wide { grid-column: 1 / -1; }
+.tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 16px; }
+.tab { font-family: var(--font); font-size: 15.5px; font-weight: 600; color: var(--ink); background: var(--card); border: 1px solid var(--border-2); border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+.tab:hover { border-color: var(--accent); }
+.tab small { font-size: 14px; font-weight: 400; opacity: 0.85; }
+.tab[aria-selected="true"] { background: #b8022b; border-color: #b8022b; color: #ffffff; }
+table.dict code { background: var(--icon-bg); border-radius: 6px; padding: 3px 8px; font-size: 14px; }
+table.sample td, table.sample th { white-space: nowrap; }
+@media (max-width: 1150px) { .conv-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .conv-angles { grid-column: 1 / -1; } }
+@media (max-width: 900px) { .doc-layout { grid-template-columns: minmax(0, 1fr); } .doc-nav { display: none; } .doc-main h1 { font-size: 34px; } }
+@media (max-width: 620px) { .conv-grid { grid-template-columns: minmax(0, 1fr); } .conv-angles { grid-template-columns: minmax(0, 1fr); } }
+
+/* shared: outline buttons, search box */
+.btn-outline { background: var(--card); color: var(--ink); border-color: var(--border-2); }
+.btn-outline:hover { border-color: var(--accent); color: var(--ink); }
+.dl-search { display: flex; align-items: center; gap: 10px; min-width: min(360px, 100%); padding: 10px 16px; background: var(--card); border: 1px solid var(--border-2); border-radius: 12px; color: var(--muted); }
+.dl-search .icon { width: 19px; height: 19px; }
+.dl-search input { border: 0; outline: 0; font-family: var(--font); font-size: 16px; color: var(--ink); background: transparent; width: 100%; }
+.dl-search:focus-within { border-color: var(--accent); }
+
+/* add-your-dataset page */
+.crumbs { display: flex; gap: 8px; font-size: 15px; color: var(--ink-2); margin-bottom: 8px; }
+.crumbs a { text-decoration: none; }
+.ct-top { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 24px; margin-top: 24px; }
+.ct-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; }
+.ct-h { font-size: 26px; font-weight: 700; margin: 0 0 8px; }
+.steps { list-style: none; padding: 0; margin: 20px 0 22px; display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr); align-items: center; gap: 4px; }
+.steps > li:not(.step-arrow) { display: flex; gap: 12px; background: #f6f6f7; border-radius: 12px; padding: 14px; height: 100%; }
+.steps b { display: block; font-size: 16.5px; }
+.steps span:not(.step-n) { display: block; font-size: 14.5px; color: var(--ink-2); line-height: 1.4; margin-top: 2px; }
+.step-n { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--card); border: 1px solid #f1c2cc; color: var(--accent); font-weight: 700; display: grid; place-items: center; }
+.step-arrow { display: grid; place-items: center; color: var(--ink-2); }
+.step-arrow .icon { width: 18px; height: 18px; }
+.needs { list-style: none; padding: 0; margin: 14px 0 18px; display: grid; gap: 10px; font-size: 16.5px; }
+.needs li { display: flex; align-items: center; gap: 12px; }
+.needs .icon { width: 20px; height: 20px; padding: 3px; border-radius: 6px; background: var(--icon-bg); color: var(--accent); stroke-width: 2.5; }
+.ct-help { display: flex; gap: 10px; align-items: center; border-top: 1px solid var(--border); padding-top: 14px; margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.ct-help .icon { width: 19px; height: 19px; }
+.ct-form { margin-top: 24px; }
+.ct-form-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 28px; margin-top: 14px; }
+.ct-fields { display: grid; gap: 14px; padding-right: 28px; border-right: 1px solid var(--border); }
+.frow { display: grid; gap: 16px; }
+.two-f { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.three-f { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr) minmax(0, 1fr); }
+.ff { display: grid; gap: 6px; min-width: 0; }
+.ff label, .ct-upload > label { font-weight: 700; font-size: 15px; }
+.req { color: #d93a3a; }
+.ff input, .ff select, .ff textarea { font-family: var(--font); font-size: 15.5px; color: var(--ink); background: var(--card); border: 1px solid var(--border-2); border-radius: 8px; padding: 9px 12px; width: 100%; }
+.ff textarea { resize: vertical; }
+.ff input:focus, .ff select:focus, .ff textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
+.ff input[aria-invalid="true"], .ff select[aria-invalid="true"] { border-color: #d93a3a; }
+.in-icon { position: relative; }
+.in-icon .icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
+.in-icon input { padding-left: 38px; }
+.ct-upload { display: grid; gap: 8px; align-content: start; }
+.drop { display: grid; justify-items: center; gap: 6px; padding: 30px 16px; border: 2px dashed #f0a5b5; border-radius: 12px; background: #fffafb; text-align: center; cursor: pointer; color: var(--ink); }
+.drop .icon { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.6; }
+.drop b { font-size: 16.5px; }
+.drop span { font-size: 14.5px; color: var(--ink-2); }
+.drop.over, .drop:hover { background: #fff0f3; border-color: var(--accent); }
+.file-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14.5px; }
+.file-list li { display: flex; justify-content: space-between; gap: 10px; background: #f6f6f7; border-radius: 6px; padding: 6px 10px; }
+.drop-note { font-size: 14px; color: var(--ink-2); margin: 0; }
+.ct-actions { display: flex; justify-content: flex-end; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.ct-status { margin: 0; font-size: 14.5px; color: var(--ink-2); min-height: 1.4em; }
+.ct-public { margin: 16px 0 0; font-size: 14px; color: var(--muted); }
+.ct-review { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1.1fr) repeat(3, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.ct-review p { margin: 0; color: var(--ink-2); }
+.rv { display: flex; gap: 14px; padding-left: 18px; border-left: 1px solid var(--border); }
+.rv-i { width: 44px; height: 44px; padding: 11px; border-radius: 50%; background: var(--icon-bg); color: var(--icon); flex: none; }
+.rv b { display: block; font-size: 16px; }
+.rv span { display: block; font-size: 14.5px; color: var(--ink-2); line-height: 1.4; margin-top: 2px; }
+@media (max-width: 1000px) { .ct-top, .ct-form-grid { grid-template-columns: minmax(0, 1fr); } .ct-fields { padding-right: 0; border-right: 0; } .ct-review { grid-template-columns: minmax(0, 1fr); } .rv { border-left: 0; padding-left: 0; } }
+@media (max-width: 700px) { .steps { grid-template-columns: minmax(0, 1fr); } .step-arrow { display: none; } .two-f, .three-f { grid-template-columns: minmax(0, 1fr); } }
+
+/* add-your-dataset top block: measured from the mockup (1536 px wide frame) */
+.ct-wrap { max-width: 1292px; }
+.page[data-view="contribute"] { padding-top: 18px; }
+.ct-head { padding-left: 18px; }
+.ct-head .crumbs { font-size: 15px; margin: 0 0 4px; }
+.ct-head h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; margin: 0; color: #202124; }
+.ct-lead { font-size: 17.5px; line-height: 1.4; color: #3c3d41; margin: 2px 0 0; max-width: none; }
+.ct-wrap .ct-top { grid-template-columns: minmax(0, 788fr) minmax(0, 441fr); gap: 23px; margin-top: 10px; align-items: stretch; }
+.ct-wrap .ct-card { border-radius: 14px; border: 1px solid #e4e4e7; box-shadow: 0 4px 18px -8px rgba(30, 30, 35, 0.12); padding: 13px 28px 13px; }
+.page .ct-wrap .ct-h { font-size: 26px; font-weight: 800; margin: 0 0 2px; line-height: 1.2; letter-spacing: -0.005em; color: #202124; }
+.ct-desc { font-size: 16.5px; line-height: 1.34; color: #2a2b2e; margin: 0; max-width: none; }
+.ct-wrap .steps { margin: 14px 0 14px; grid-template-columns: minmax(0, 220fr) 46px minmax(0, 211fr) 46px minmax(0, 217fr); gap: 0; align-items: stretch; }
+.ct-wrap .steps > li:not(.step-arrow) { background: #f6f6f7; border-radius: 12px; padding: 7px 12px 8px 14px; gap: 12px; min-height: 0; align-items: flex-start; }
+.ct-wrap .step-n { width: 34px; height: 34px; background: #fde7eb; border: 0; color: #e40335; font-size: 19px; font-weight: 800; }
+.ct-wrap .steps b { font-size: 17.5px; font-weight: 700; line-height: 1.25; margin-top: 3px; color: #202124; }
+.ct-wrap .steps span:not(.step-n) { font-size: 13.5px; line-height: 1.3; color: #4a4b4f; margin-top: 3px; }
+.ct-wrap .step-arrow .icon { width: 17px; height: 17px; stroke-width: 1.8; color: #3c3d41; }
+.ct-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.ct-btn-primary, .ct-btn-outline { display: inline-flex; align-items: center; gap: 10px; height: 37px; padding: 0 22px; border-radius: 6px; font-family: var(--font); font-size: 16.5px; font-weight: 700; text-decoration: none; }
+.ct-btn-primary { background: #e40335; color: #ffffff; }
+.ct-btn-primary:hover { background: #c4022c; color: #ffffff; }
+.ct-btn-outline { background: #ffffff; color: #202124; border: 1px solid #d4d4d8; padding: 0 18px 0 16px; }
+.ct-btn-outline:hover { border-color: var(--accent); color: #202124; }
+.ct-btn-outline .icon { width: 19px; height: 19px; stroke-width: 1.8; }
+.ct-wrap .needs { gap: 3px; margin: 10px 0 10px; font-size: 16.5px; color: #202124; }
+.ct-wrap .needs li { gap: 14px; }
+.ct-wrap .needs .icon { width: 26px; height: 26px; padding: 5px; border-radius: 6px; background: #fde7eb; color: #e40335; stroke-width: 2.6; }
+.ct-wrap .ct-help { padding-top: 11px; font-size: 15.5px; color: #4a4b4f; }
+.ct-wrap .ct-help .icon { width: 20px; height: 20px; color: #4a4b4f; stroke-width: 1.8; }
+.ct-wrap .ct-help a { color: #b8022b; text-decoration: underline; }
+
+.ct-fallback { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; background: #fff5f6; border: 1px solid #f1c2cc; border-radius: 10px; font-size: 15px; }
+.ct-fallback .btn { padding: 6px 14px; font-size: 14.5px; }
+.sel { user-select: all; }
+.ct-thanks { margin-top: 24px; border-color: #f4b8c4; background: #fff7f8; }
+.ct-thanks p { font-size: 17px; }
+button.ct-btn-primary { border: 0; cursor: pointer; }
+.ct-form { position: relative; }
+@media (max-width: 1100px) {
+  .hero2 h1 { font-size: 46px; }
+  .stat2 { padding-right: 36px; }
+  .stat2 + .stat2 { padding-left: 36px; }
+}
+@media (max-width: 900px) {
+  .hero2 { padding-top: 44px; }
+}
+@media (max-width: 900px) {
+  .site-footer .wrap { grid-template-columns: minmax(0, 1fr); }
+  .foot-sep { display: none; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .hero2 { padding-top: 30px; }
+  .hero2 h1 { font-size: 36px; }
+  .hero2 .lead { font-size: 17.5px; }
+  .btn-lg { padding: 12px 18px; font-size: 16px; }
+  .stats2 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .stat2, .stat2 + .stat2 { flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 0 6px; }
+  .stat2 .icon { width: 26px; height: 26px; }
+  .stat2 b { font-size: 20px; }
+  .stat2 span { font-size: 14px; }
+  .chip { padding: 8px 16px; font-size: 15px; }
+  .page h1.sp-title { font-size: 30px; }
+  .page h2.sp-sub { font-size: 19px; }
+  .entry h3 { font-size: 19px; }
+  .entry-sub { font-size: 16px; }
+  .format-grid { grid-template-columns: minmax(0, 1fr); }
+  .site-nav { margin-left: -10px; flex-wrap: wrap; }
+  .nav-sep { display: none; }
+  .site-nav a { padding: 7px 8px; margin: 0 3px; font-size: 16.5px; }
+  .site-nav a.star { display: none; }
+  .st-meta { margin-left: 0; }
+  table.studies thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  table.studies, table.studies tbody, table.studies tr, table.studies td, table.studies tbody th { display: block; width: 100%; }
+  table.studies tr { border-bottom: 1px solid var(--border); padding: 12px 14px; }
+  table.studies tr.yr-row { padding: 0; }
+  table.studies td, table.studies tbody th.yr { border: 0; }
+  table.studies td { padding: 3px 0; min-width: 0; }
+  table.studies td.c-study { min-width: 0; margin-bottom: 4px; }
+  table.studies td.num { text-align: left; }
+  table.studies td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; color: var(--ink-2); }
+  table.studies td.c-dl::before, table.studies td.orig::before { display: block; }
+}
+@media (max-width: 600px) {
+  dl.facts { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  dl.facts dd { margin-bottom: 10px; }
+}
+
+/* ---------- standardization page (styled after the user's mockup, 2026-11-08; only this page) ---------- */
+.page.std-page { padding-top: 34px; }
+.std-top { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: stretch; }
+.std-intro { padding-right: 44px; }
+.page .std h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; margin: 0 0 14px; color: var(--ink); }
+.std-lead { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); max-width: 64ch; margin: 0 0 22px; }
+.std-actions { margin: 0; max-width: none; }
+.std-actions .btn { padding: 12px 24px; font-weight: 700; border-radius: 8px; }
+.std-side { margin-top: 28px; padding: 36px 0 8px 44px; border-left: 1px solid var(--border-2); }
+.std-note p { margin: 0; color: var(--ink-2); font-size: 16.5px; line-height: 1.6; max-width: 46ch; }
+.std-note b { color: var(--ink); }
+.flow { list-style: none; padding: 0; margin: 44px 0 0; display: grid; grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr); align-items: stretch; }
+.flow > li:not(.flow-arrow) { display: flex; gap: 18px; align-items: flex-start; background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; padding: 22px 22px 22px 20px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04), 0 8px 20px -12px rgba(30, 30, 35, 0.14); }
+.flow .flow-icon { width: 34px; height: 34px; color: var(--accent); stroke-width: 1.8; flex: none; margin-top: 2px; }
+.flow b { display: block; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.flow span { display: block; color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.flow-arrow { display: grid; place-items: center; color: var(--muted); }
+.flow-arrow .icon { width: 22px; height: 22px; stroke-width: 1.6; }
+.page .std-h2 { font-size: 34px; font-weight: 800; letter-spacing: -0.015em; line-height: 1.15; margin: 56px 0 10px; }
+.std-sub { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); max-width: 104ch; margin: 0 0 20px; }
+.std-fig { margin: 0; padding: 24px 28px 20px; background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04), 0 10px 28px -16px rgba(30, 30, 35, 0.16); }
+.std-fig > a { display: block; }
+.std-fig img { display: block; width: 100%; height: auto; }
+.std-fig figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
+.std-fig figcaption span { display: block; max-width: 120ch; }
+.std-fig figcaption a { display: inline-block; margin-top: 8px; font-weight: 600; }
+.std-list-card { background: #ffffff; border: 1px solid #e6e6ea; border-radius: 12px; padding: 6px 26px 10px; box-shadow: 0 1px 2px rgba(30, 30, 35, 0.04); }
+.std-list { list-style: none; margin: 0; padding: 0; columns: 3 300px; column-gap: 48px; }
+.std-list li { break-inside: avoid; display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 15.5px; }
+.std-who { min-width: 0; }
+.std-name { color: var(--ink); font-weight: 600; text-decoration: none; }
+.std-jr { display: block; color: var(--muted); font-size: 13.5px; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.std-name:hover { color: var(--link); text-decoration: underline; }
+.std-dl { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; flex: none; }
+.std-dl a { display: inline-flex; align-items: center; gap: 5px; font-size: 14.5px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.std-dl a:hover { text-decoration: underline; }
+.std-dl .icon { width: 15px; height: 15px; }
+.std-dl .sz { color: var(--muted); font-weight: 400; }
+@media (max-width: 900px) {
+  .std-top { grid-template-columns: minmax(0, 1fr); }
+  .std-intro { padding-right: 0; }
+  .std-side { margin-top: 26px; padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--border-2); }
+  .page .std h1 { font-size: 36px; }
+  .flow { grid-template-columns: minmax(0, 1fr); margin-top: 32px; }
+  .flow-arrow { height: 36px; }
+  .flow-arrow .icon { transform: rotate(90deg); }
+  .page .std-h2 { font-size: 28px; margin-top: 44px; }
+  .std-fig { padding: 12px 12px 14px; }
+  .std-list-card { padding: 4px 16px 8px; }
+}
+/*PARTS-CSS*/
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home"><img src="img/openmotor-logo.png" width="196" height="38" alt="OpenMotor"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#home" data-view="home">Home</a>
+      <div class="nav-drop" id="nav-drop">
+        <a href="#studies" data-view="studies">Studies</a>
+        <button type="button" class="nav-caret" id="task-btn" aria-expanded="false" aria-controls="task-menu" aria-label="Studies by task"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="task-menu" id="task-menu"><p class="task-menu-h">Studies by task</p><div class="task-menu-list" id="task-menu-list"></div></div>
+      </div>
+      <a href="#standardization" data-view="standardization">Standardization</a>
+      <a href="#about" data-view="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="view home" data-view="home" aria-labelledby="h-home">
+  <div class="hero-band">
+    <div class="wrap hero2">
+      <div>
+        <h1 id="h-home">Open data for <span class="hl">motor control</span> and <span class="hl">motor learning</span></h1>
+        <p class="lead">A collection of publicly available datasets from human motor control and motor learning experiments, organized for easy discovery.</p>
+        <div class="home-actions">
+          <a class="btn btn-primary btn-lg" href="#studies">Browse studies<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="btn btn-outline btn-lg" href="#contribute"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>Add your data</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="stats2" id="stats"></div>
+      <nav class="chips" id="chips" aria-label="Browse by topic"></nav>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="feed-head"><h2>Recently published</h2><a href="#studies" id="feed-all"></a></div>
+    <div id="feed"></div>
+    <p class="feed-more"><a class="btn btn-outline" href="#studies" id="feed-more"></a></p>
+  </div>
+</section>
+
+<section class="view page" data-view="studies" aria-labelledby="h-studies" hidden>
+  <div class="wrap">
+    <h1 id="h-studies">Studies</h1>
+    <p class="lead st-explain" id="st-lead"></p>
+    <div class="st-layout">
+    <nav class="task-nav" id="task-nav" aria-label="Studies by task"></nav>
+    <div class="st-main">
+    <div class="st-tools" role="search">
+      <label class="dl-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="st-q" type="search" placeholder="Search by author, title, journal or lab" aria-label="Search the studies" autocomplete="off"></label>
+      <label class="st-filter" for="st-tag">Tag <select id="st-tag"><option value="">All studies</option></select></label>
+      <span class="st-meta"><span id="st-count" aria-live="polite"></span><button type="button" class="linkbutton" id="st-clear" hidden>Show all</button></span>
+    </div>
+    <div class="table-card"><div class="table-wrap">
+      <table class="data studies" id="st-table">
+        <thead><tr><th scope="col">Study</th><th scope="col">Data</th><th scope="col">Format</th></tr></thead>
+      </table>
+    </div></div>
+    <p class="st-foot"><a href="catalog.csv" download>This table as a spreadsheet (catalog.csv)</a></p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="view page" data-view="study" aria-labelledby="study-h" hidden>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#studies">Studies</a><span aria-hidden="true">/</span><span id="study-crumb"></span></nav>
+    <h1 id="study-h" class="sp-title"></h1>
+    <div id="study-body"></div>
+  </div>
+</section>
+
+<section class="view page doc" data-view="format" aria-labelledby="h-format" hidden>
+  <div class="doc-layout">
+    <aside class="doc-nav" aria-label="On this page">
+      <p class="doc-nav-title">Data Format</p>
+      <a href="#format" data-target="fmt-overview">Overview</a>
+      <a href="#format" data-target="fmt-conventions">Conventions</a>
+      <a href="#format" data-target="fmt-columns">Columns</a>
+      <div class="doc-sub" id="doc-sub"></div>
+      <a href="#format" data-target="fmt-other">Other tasks</a>
+      <hr>
+      <a class="doc-extra" href="columns.csv" download><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg><span><b>Downloads</b><small>columns.csv</small></span></a>
+      <a class="doc-extra" href="#format" data-target="fmt-example"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><span><b>Example</b><small>Sample rows</small></span></a>
+    </aside>
+    <div class="doc-main">
+      <div id="fmt-overview" class="doc-anchor">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#standardization">Standardization</a><span aria-hidden="true">/</span><span>Standardized data format</span></nav>
+        <h1 id="h-format">Data Format</h1>
+        <p class="lead">The reaching datasets in OpenMotor share one format: one table with one row per trial of one participant, and the same 90 columns in every dataset, so code written for one study runs on every other. The columns are described below and in <code>columns.csv</code>, which comes with every download.</p>
+      </div>
+      <h2 id="fmt-conventions" class="doc-anchor">Conventions</h2>
+      <div class="conv-grid">
+        <div class="conv-card conv-angles">
+          <svg viewBox="0 0 200 200" width="150" height="150" role="img" aria-label="Angle convention. Zero degrees points to the right, ninety degrees points up, and angles increase counter-clockwise.">
+        <circle cx="100" cy="100" r="70" style="fill: var(--card); stroke: var(--border-2)" stroke-width="1.5"/>
+        <line x1="100" y1="100" x2="170" y2="100" style="stroke: var(--ink)" stroke-width="1.6"/>
+        <line x1="100" y1="100" x2="100" y2="30" style="stroke: var(--ink)" stroke-width="1.6"/>
+        <path d="M 145 100 A 45 45 0 0 0 131.8 68.2" style="fill: none; stroke: var(--accent)" stroke-width="2"/>
+        <path d="M 126.4 66.6 L 131.8 68.2 L 131.2 73.8" style="fill: none; stroke: var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="100" cy="100" r="3.5" style="fill: var(--ink)"/>
+        <text x="176" y="104" style="font: 14px var(--font); fill: var(--ink)">0&deg;</text>
+        <text x="90" y="22" style="font: 14px var(--font); fill: var(--ink)">90&deg;</text>
+      </svg>
+          <div><h3>Angles</h3><p>Degrees in the frame of the screen: 0&deg; points right and angles increase counter-clockwise. Hand and cursor angles are measured from the target, so 0 means straight at it. A rotation of +30&deg; puts the cursor 30&deg; counter-clockwise of the hand, and people who adapt to it move their hand clockwise, toward negative angles.</p></div>
+        </div>
+        <div class="conv-card has-icon"><span class="conv-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></span><div><h3>Trial order</h3><p>Every trial a participant performed is kept in order, including practice, no-feedback and probe trials. Where the original trial numbers skip, the gap is filled with a marked placeholder row, so trials that were apart never look adjacent.</p></div></div>
+        <div class="conv-card has-icon"><span class="conv-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h3>Participants</h3><p>Participant identifiers are replaced by codes that are unique within each dataset. <code>subject</code> is one sequence of trials and <code>person</code> is one participant, who may have more than one sequence.</p></div></div>
+        <div class="conv-card has-icon conv-wide"><span class="conv-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Checks</h3><p>An experiment is in OpenMotor only if its converted trials reproduce at least one result reported in its paper or in the authors' own files. The direction of adaptation is also checked participant by participant. Experiments that could not be converted faithfully were left out rather than approximated.</p></div></div>
+      </div>
+      <h2 id="fmt-columns" class="doc-anchor">Columns</h2>
+      <p class="sec-sub">The 90 columns are grouped by their function in the experiment.</p>
+      <div class="tabs" role="tablist" aria-label="Column groups" id="col-tabs"></div>
+      <div class="table-card"><div class="table-wrap">
+        <table class="data dict" id="col-table">
+          <thead><tr><th scope="col">Column</th><th scope="col">Type</th><th scope="col">Values or units</th><th scope="col">Description</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div></div>
+      <h2 id="fmt-example" class="doc-anchor">Example</h2>
+      <p class="sec-sub" id="example-sub"></p>
+      <div class="table-card"><div class="table-wrap"><table class="data compact sample" id="example-table"></table></div></div>
+      <h2 id="fmt-other" class="doc-anchor">Other tasks</h2>
+      <p class="sec-sub" id="other-sub"></p>
+      <div class="tabs" role="tablist" aria-label="Formats of other tasks" id="xcol-tabs"></div>
+      <p class="sec-sub" id="xcol-desc"></p>
+      <div class="table-card"><div class="table-wrap">
+        <table class="data dict" id="xcol-table">
+          <thead><tr><th scope="col">Column</th><th scope="col">Type</th><th scope="col">Values or units</th><th scope="col">Description</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="view page" data-view="cite" aria-labelledby="h-cite" hidden>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>How to cite</span></nav>
+    <h1 id="h-cite">How to Cite</h1>
+    <div class="cite-box">
+      <p>A paper describing OpenMotor is in preparation. Until it is published, please cite OpenMotor and the original paper for every dataset you use. Each dataset's README gives its citation.</p>
+    </div>
+    <h2>References</h2>
+    <p>The papers for all 97 studies, sorted by first author. <button type="button" class="btn btn-light" id="copy-refs" style="padding: 6px 12px; font-size: 14.5px">Copy all references</button></p>
+    <ol class="refs" id="refs"></ol>
+  </div>
+</section>
+
+<section class="view page" data-view="about" aria-labelledby="h-about" hidden>
+  <div class="wrap about">
+    <h1 id="h-about">About OpenMotor</h1>
+    <p class="lead">OpenMotor is a hub of publicly available datasets from human motor control and motor learning experiments. To browse them, open <a href="#studies">Studies</a>.</p>
+    <h2>Goal</h2>
+    <p>To make it easier for researchers to find and reuse open motor control and motor learning data. Each study links to the data its authors shared, with the paper, the file format and tags. The data can be used to test new hypotheses, compare and validate models, estimate effect sizes when planning a study, and combine results across studies.</p>
+    <h2>Scope</h2>
+    <p>Any open dataset from human motor control or motor learning research. A dataset is included when:</p>
+    <ol>
+      <li>the data were collected from human participants,</li>
+      <li>the experiment involves a motor control or motor learning task, and</li>
+      <li>the data are publicly available.</li>
+    </ol>
+    <h2>People</h2>
+    <p>OpenMotor is curated by the <a href="https://www.tsaylab.com/" target="_blank" rel="noopener">Physical Intelligence Lab</a> at Carnegie Mellon University: Jonathan Tsay (principal investigator), Sritej Padmanabhan, and Indranil Nyamsuren.</p>
+    <p>To add a dataset, use <a href="#contribute">Add your data</a>. For questions or issues, email <a href="mailto:physical.intelligence.lab@gmail.com">physical.intelligence.lab@gmail.com</a>.</p>
+  </div>
+</section>
+
+<section class="view page" data-view="contribute" aria-labelledby="h-contribute" hidden>
+  <div class="wrap ct-wrap">
+    <div class="ct-head">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
+      <h1 id="h-contribute">Add your dataset</h1>
+      <p class="ct-lead">Labs can contribute any motor control or motor learning dataset to OpenMotor by sharing their data, citation information, and license details.</p>
+    </div>
+    <form class="ct-card ct-form" id="ct-form" novalidate>
+      <h2 class="ct-h">Dataset details</h2>
+      <input type="text" id="om-website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+      <div class="ct-form-grid">
+        <div class="ct-fields">
+          <div class="frow two-f"><div class="ff"><label for="om-name">Dataset name <span class="req" aria-hidden="true">*</span></label><input id="om-name" name="om-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" required></div><div class="ff"><label for="om-title">Study or paper title <span class="req" aria-hidden="true">*</span></label><input id="om-title" name="om-title" type="text" placeholder="e.g., Implicit adaptation in older adults" required></div></div>
+          <div class="frow two-f"><div class="ff"><label for="om-author">Lead author <span class="req" aria-hidden="true">*</span></label><input id="om-author" name="om-author" type="text" placeholder="Last name and initials" required></div><div class="ff"><label for="om-lab">Lab or institution <span class="req" aria-hidden="true">*</span></label><input id="om-lab" name="om-lab" type="text" placeholder="e.g., Tsay lab, Carnegie Mellon University" required></div></div>
+          <div class="frow three-f"><div class="ff"><label for="om-year">Publication year</label><input id="om-year" name="om-year" type="number" placeholder="e.g., 2025" min="1950" max="2100"></div><div class="ff"><label for="om-email">Contact email <span class="req" aria-hidden="true">*</span></label><input id="om-email" name="om-email" type="email" placeholder="name@university.edu" required></div><div class="ff"><label for="om-license">License <span class="req" aria-hidden="true">*</span></label><select id="om-license" name="om-license" required><option value="">Select a license</option><option>CC BY 4.0</option><option>CC0</option><option>CC BY-NC 4.0</option><option>MIT</option><option>GPL-3.0</option><option>Other or not sure</option></select></div></div>
+          <div class="frow two-f"><div class="ff"><label for="om-task">Task</label><input id="om-task" name="om-task" type="text" placeholder="e.g., visuomotor rotation, sequence learning"></div><div class="ff"><label for="om-repo">Repository link (OSF, GitHub, Zenodo or other)</label><div class="in-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><input id="om-repo" name="om-repo" type="url" placeholder="https://"></div></div></div>
+          <div class="ff"><label for="om-notes">Notes</label><textarea id="om-notes" name="om-notes" rows="3" placeholder="Any additional details about the dataset, experimental setup, or known caveats (optional)."></textarea></div>
+        </div>
+        <div class="ct-upload">
+          <label for="om-files">Files</label>
+          <div class="drop" id="om-drop" tabindex="0" role="button" aria-describedby="om-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Drop a ZIP, CSV, or supporting files here</b><span>or click to browse</span></div>
+          <input id="om-files" type="file" multiple hidden>
+          <ul class="file-list" id="om-file-list"></ul>
+          <p class="drop-note" id="om-drop-note">Upload your data as you have it, from any motor task and in any format (CSV, ZIP, MATLAB, Excel). Or just give the repository link above.</p>
+          <div class="ct-actions">
+            <button type="button" class="btn btn-outline" id="om-save">Save draft</button>
+            <button type="submit" class="btn btn-primary">Submit for review</button>
+          </div>
+          <p class="ct-status" id="om-status" role="status"></p>
+        </div>
+      </div>
+      <p class="ct-public">Submitting opens an email to the OpenMotor team at <b>physical.intelligence.lab@gmail.com</b> with your details filled in; attach your files and press send.</p>
+      <div class="ct-fallback" id="om-fallback" hidden>No email window? Send your details and files to <b class="sel">physical.intelligence.lab@gmail.com</b> <button type="button" class="btn btn-outline" id="om-copy">Copy details</button></div>
+    </form>
+
+    <div class="ct-card ct-thanks" id="ct-thanks" hidden>
+      <h2 class="ct-h">Thank you for contributing to OpenMotor</h2>
+      <p>We received <b id="ct-thanks-name"></b>. The OpenMotor team will review it and contact you at <b id="ct-thanks-email"></b>.</p>
+      <p>Do you have another dataset to add?</p>
+      <div class="ct-btns"><button type="button" class="ct-btn-primary" id="ct-another">Add another dataset</button><a class="ct-btn-outline" href="#home">Back to home</a></div>
+    </div>
+    <div class="ct-card ct-review">
+      <div><h2 class="ct-h">Review process</h2><p>After you submit, our team will review your dataset:</p></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><div><b>We check the data</b><span>Make sure the files open and match what the paper reports.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg><div><b>We reproduce at least one reported result</b><span>Run an analysis to confirm the dataset matches the paper.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><div><b>We confirm metadata and licensing</b><span>Make sure the study details, citation and license are complete.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="view page std-page" data-view="standardization" aria-labelledby="h-std" hidden>
+  <div class="wrap std">
+    <div class="std-top">
+      <div class="std-intro">
+        <h1 id="h-std">Standardization</h1>
+        <p class="std-lead" id="std-lead"></p>
+        <p class="std-actions"><a class="btn btn-primary" href="#format">How it works</a></p>
+      </div>
+      <div class="std-side">
+        <div class="std-note" role="note"><p><b>Standardization is in beta.</b> The format may still change, and mistakes are possible. If you use a standardized dataset, check it against the original data and cite the original paper.</p></div>
+      </div>
+    </div>
+    <ol class="flow" aria-label="From studies to insights">
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><div><b>Study</b><span>Each study's data as its authors shared them, in their own layout and kind of file.</span></div></li>
+      <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg><div><b>Standardized data</b><span>The same trials in one table, with the same columns, units and conventions in every study.</span></div></li>
+      <li class="flow-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
+      <li><svg class="icon flow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg><div><b>Insights</b><span>Questions that span studies: comparing and combining results, and testing models on many experiments at once.</span></div></li>
+    </ol>
+    <h2 class="std-h2">Insights</h2>
+    <p class="std-sub">A first look at what the standardized data can show: we answered six questions by combining many studies at once. The number of studies and people is in each panel.</p>
+    <figure class="std-fig">
+      <a href="img/openmotor-insights.png" target="_blank" rel="noopener" title="Open the full-size figure"><img src="img/openmotor-insights.png" width="1788" height="1084" loading="lazy" alt="Six panels from the standardized data: a, hand bias by target direction; b, variability by target direction; c, variability of the dominant and non-dominant hand in left- and right-handers; d, variability by age; e, adaptation by target direction; f, implicit adaptation by error-clamp size."></a>
+      <figcaption><span>(a) Accuracy and (b) precision of reaching by target direction; (c) precision of each hand in left- and right-handers; (d) precision across the lifespan; (e) learning by target direction; (f) implicit learning by error-clamp size.</span><a href="img/openmotor-insights.png" target="_blank" rel="noopener">Open the figure full size</a></figcaption>
+    </figure>
+    <h2 class="std-h2" id="std-studies">Standardized studies</h2>
+    <p class="std-sub" id="std-list-lead"></p>
+    <div class="std-list-card"><ul class="std-list" id="std-list"></ul></div>
+  </div>
+</section>
+
+<!--PARTS-HTML-->
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="foot-brand"><img src="img/openmotor-logo.png" width="155" height="30" alt="OpenMotor"></p>
+      <p>Open data for motor control and motor learning.</p>
+      <p class="foot-links"><a href="#studies">Studies</a><a href="#contribute">Add your data</a></p>
+    </div>
+    <span class="foot-sep" aria-hidden="true"></span>
+    <div>
+      <p class="foot-orgs">
+        <a href="https://www.tsaylab.com/" target="_blank" rel="noopener"><img src="img/pil-logo.png" width="111" height="56" alt="Physical Intelligence Lab"></a>
+        <span class="foot-orgs-sep" aria-hidden="true"></span>
+        <a href="https://www.cmu.edu/" target="_blank" rel="noopener"><img src="img/cmu-wordmark.png" width="88" height="56" alt="Carnegie Mellon University"></a>
+      </p>
+      <p>OpenMotor is curated by the <b><a href="https://www.tsaylab.com/" target="_blank" rel="noopener">Physical Intelligence Lab</a></b> at Carnegie Mellon University. Email <a href="mailto:physical.intelligence.lab@gmail.com">physical.intelligence.lab@gmail.com</a> if you have any questions or issues.</p>
+      <!-- Icons: Lucide (https://lucide.dev, ISC license). -->
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script id="catalog-data" type="application/json">/*CATALOG*/</script>
+<!--PARTS-JS-->
+<script>
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("catalog-data").textContent);
+  var META = DATA.meta, STUDIES = DATA.studies, FILES = DATA.files, DICT = DATA.columns;
+  var ICON = {
+    download: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>',
+    lock: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
+    clock: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+    book: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+    users: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    activity: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
+    calendar: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>',
+    flask: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>',
+    ext: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>',
+    layers: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>',
+    tag: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>'
+  };
+  function $(s) { return document.querySelector(s); }
+  function fmt(n) { return n.toLocaleString("en-US"); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function mb(b) { return b >= 1e6 ? (b / 1e6).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1e3)) + " kB"; }
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  function longDate(iso) { var p = iso.split("-"); return +p[2] + " " + MONTHS[+p[1] - 1] + " " + p[0]; }
+  var inViewer = !!window.claude;
+
+  var T = META.total;
+  var years = STUDIES.map(function (s) { return s.year; });
+  var y0 = Math.min.apply(null, years), y1 = Math.max.apply(null, years);
+  var avail = FILES.filter(function (f) { return f.status === "available"; });
+
+  /* ---------- home ---------- */
+  var stats = [[ICON.layers, fmt(T.studies), "Studies"], [ICON.users, fmt(T.people), "Participants"], [ICON.activity, fmt(T.trials), "Trials"]];
+  $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b>" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
+
+  /* ---------- downloads ---------- */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("[data-dl], a[download]");
+    if (a && inViewer) {
+      e.preventDefault();
+      var t = $("#toast"); t.textContent = "Downloads work on the public OpenMotor site. This preview cannot save files.";
+      t.hidden = false; clearTimeout(t._h); t._h = setTimeout(function () { t.hidden = true; }, 3200);
+    }
+  });
+  /* ---------- data format page ---------- */
+  var TABS = DICT.map(function (sec) { return { name: sec.section, cols: sec.columns }; });
+  TABS.push({ name: "All", cols: DICT.reduce(function (a, sec) { return a.concat(sec.columns); }, []) });
+  var tabsEl = $("#col-tabs");
+  tabsEl.innerHTML = TABS.map(function (t, i) { return "<button type=\"button\" role=\"tab\" class=\"tab\" data-i=\"" + i + "\">" + esc(t.name) + " <small>(" + t.cols.length + ")</small></button>"; }).join("");
+  function showTab(i) {
+    tabsEl.querySelectorAll(".tab").forEach(function (b, j) { b.setAttribute("aria-selected", String(j === i)); });
+    $("#col-table tbody").innerHTML = TABS[i].cols.map(function (c) {
+      return "<tr><td><code>" + esc(c.name) + "</code></td><td class=\"nowrap\">" + esc(c.type) + "</td><td class=\"vals\">" + esc(c.values) + "</td><td>" + esc(c.description) + "</td></tr>";
+    }).join("");
+  }
+  tabsEl.addEventListener("click", function (e) { var b = e.target.closest(".tab"); if (b) showTab(+b.getAttribute("data-i")); });
+  showTab(0);
+  $("#doc-sub").innerHTML = DICT.map(function (sec, i) { return "<a href=\"#format\" data-target=\"fmt-columns\" data-tab=\"" + i + "\">" + esc(sec.section) + "</a>"; }).join("");
+  $(".doc-nav").addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-target]");
+    if (!a) return;
+    e.preventDefault();
+    if (a.hasAttribute("data-tab")) showTab(+a.getAttribute("data-tab"));
+    document.getElementById(a.getAttribute("data-target")).scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  var SPY = ["fmt-overview", "fmt-conventions", "fmt-columns", "fmt-other"];
+  function spy() {
+    if ($("section[data-view=format]").hidden) return;
+    var cur = SPY[0];
+    SPY.forEach(function (id) { if (document.getElementById(id).getBoundingClientRect().top < 160) cur = id; });
+    document.querySelectorAll(".doc-nav > a[data-target]:not(.doc-extra)").forEach(function (a) { a.classList.toggle("active", a.getAttribute("data-target") === cur); });
+  }
+  window.addEventListener("scroll", spy, { passive: true });
+  var SM = DATA.sample;
+  $("#example-sub").textContent = "Trials " + SM.from + " to " + SM.to + " of one participant in Cipleu et al. (2026), around the start of the 60\u00B0 rotation, with " + SM.columns.length + " of the 90 columns. Each download has every column.";
+  $("#example-table").innerHTML = "<thead><tr>" + SM.columns.map(function (c) { return "<th scope=\"col\"" + (SM.numeric.indexOf(c) >= 0 ? " class=\"num\"" : "") + "><code>" + esc(c) + "</code></th>"; }).join("") + "</tr></thead><tbody>" +
+    SM.rows.map(function (r) { return "<tr>" + r.map(function (v, j) { return "<td" + (SM.numeric.indexOf(SM.columns[j]) >= 0 ? " class=\"num\"" : "") + ">" + esc(v) + "</td>"; }).join("") + "</tr>"; }).join("") + "</tbody>";
+
+  var XF = DATA.taskFormats || [];
+  if (XF.length > 1) {
+    $("#other-sub").textContent = "Datasets of other tasks (" + XF.slice(1).map(function (t) { return t.name.toLowerCase(); }).join(", ") + ") use " + XF[0].columns.length +
+      " core columns that say who, when, in which condition and under which perturbation, followed by the columns of their task. As with reaching, every row the authors shared is kept, units and signs are stated, and each dataset reproduces numbers from its paper.";
+    var xt = $("#xcol-tabs");
+    xt.innerHTML = XF.map(function (t, i) { return "<button type=\"button\" role=\"tab\" class=\"tab\" data-i=\"" + i + "\">" + esc(t.name) + " <small>(" + t.columns.length + ")</small></button>"; }).join("");
+    var showX = function (i) {
+      xt.querySelectorAll(".tab").forEach(function (b, j) { b.setAttribute("aria-selected", String(j === i)); });
+      $("#xcol-desc").textContent = XF[i].description;
+      $("#xcol-table tbody").innerHTML = XF[i].columns.map(function (c) {
+        return "<tr><td><code>" + esc(c.name) + "</code></td><td class=\"nowrap\">" + esc(c.type) + "</td><td class=\"vals\">" + esc(c.values) + "</td><td>" + esc(c.description) + "</td></tr>";
+      }).join("");
+    };
+    xt.addEventListener("click", function (e) { var b = e.target.closest(".tab"); if (b) showX(+b.getAttribute("data-i")); });
+    showX(0);
+  } else {
+    ["fmt-other", "other-sub", "xcol-tabs", "xcol-desc"].forEach(function (id) { document.getElementById(id).hidden = true; });
+    $("#xcol-table").closest(".table-card").hidden = true;
+    var oa = document.querySelector(".doc-nav a[data-target=fmt-other]"); if (oa) oa.hidden = true;
+  }
+
+  /* ---------- studies: home entries, the Studies table, study pages ---------- */
+  var TAGS = {};
+  STUDIES.forEach(function (s) {
+    s._name = s.label.replace(/ (\d{4})\b/g, " ($1)");
+    s._first = s.papers[0].authors.replace(/^'t /i, "").toLowerCase();
+    (s.tags || []).forEach(function (t) { (TAGS[t.slug] = TAGS[t.slug] || { f: t.f, v: t.v, slug: t.slug, studies: [] }).studies.push(s); });
+    var parts = [s._name, s.lab || "", (s.formats || []).join(" ")].concat((s.tags || []).map(function (t) { return t.v; }), (s.links || []).map(function (l) { return l.host; }));
+    s.papers.forEach(function (p) { parts.push(p.authors, p.title, p.venue); });
+    s._q = parts.join(" ").toLowerCase();
+  });
+  var NEWEST = STUDIES.slice().sort(function (a, b) { return b.year - a.year || a._first.localeCompare(b._first); });
+  function tagText(t) { return t.f === "topic" ? t.v : t.f + ": " + t.v; }
+  function studyLink(s) { return "#study/" + encodeURIComponent(s.id); }
+  function tagsHtml(s, skipTask) {
+    return "<p class=\"tags\">" + ICON.tag + "<span class=\"sr\">Tags:</span>" + (s.tags || []).filter(function (t) { return !(skipTask && t.f === "task"); }).map(function (t) { return "<a href=\"#tag/" + t.slug + "\">" + esc(tagText(t)) + "</a>"; }).join("") + "</p>";
+  }
+  function formatText(s) { return (s.formats || []).join(", ") || "Not known"; }
+  function origList(s) {  /* [label, url, note] for each place the authors shared the data */
+    var L = s.links || [];
+    if (!L.length) return [["In the paper", "https://doi.org/" + s.papers[0].doi, "The paper gives a view-only link to the data"]];
+    return L.map(function (l) { return [l.host + (L.length > 1 ? ": " + l.url.replace(/\/+$/, "").split("/").pop() : ""), l.url, ""]; });
+  }
+  function origLinks(s) {
+    return origList(s).map(function (o) { return "<a href=\"" + esc(o[1]) + "\" target=\"_blank\" rel=\"noopener\"" + (o[2] ? " title=\"" + esc(o[2]) + "\"" : "") + ">" + esc(o[0]) + ICON.ext + "</a>"; }).join("");
+  }
+  function paperUrl(p) { return /^10\./.test(p.doi || "") ? "https://doi.org/" + p.doi : ""; }
+  function linkList(s, numbered) {
+    var links = s.papers.filter(paperUrl).map(function (p, i, all) { return "<a href=\"" + paperUrl(p) + "\" target=\"_blank\" rel=\"noopener\">[Paper" + (all.length > 1 ? " " + (i + 1) : "") + "]</a>"; });
+    var og = origList(s);
+    og.forEach(function (o, i) { links.push("<a href=\"" + esc(o[1]) + "\" target=\"_blank\" rel=\"noopener\"" + (o[2] ? " title=\"" + esc(o[2]) + "\"" : "") + ">[Data" + (og.length > 1 ? " " + (i + 1) : "") + "]</a>"); });
+    return links.join("");
+  }
+  function entryHtml(s) {
+    return "<article class=\"entry\"><h3><a href=\"" + studyLink(s) + "\">" + esc(s._name) + "</a></h3>" +
+      s.papers.map(function (p) { return "<p class=\"entry-sub\">" + esc(p.title) + "</p>"; }).join("") +
+      "<p class=\"entry-links\">" + linkList(s) + "<span class=\"entry-fmt\">Format: " + esc(formatText(s)) + "</span></p>" +
+      tagsHtml(s) + "</article>";
+  }
+
+  /* home: topic chips and the most recent studies */
+  /* the five methods used by the most studies, then everything else */
+  var CHIPS = Object.keys(TAGS).map(function (k) { return TAGS[k]; })
+    .filter(function (t) { return t.f === "manipulation" && t.v !== "no perturbation" && t.v !== "other mapping"; })
+    .sort(function (a, b) { return b.studies.length - a.studies.length || a.v.localeCompare(b.v); }).slice(0, 5)
+    .map(function (t) { return [t.v.charAt(0).toUpperCase() + t.v.slice(1), t.slug]; }).concat([["Others", ""]]);
+  $("#chips").innerHTML = CHIPS.filter(function (c) { return !c[1] || TAGS[c[1]]; }).map(function (c) { return "<a class=\"chip\" href=\"" + (c[1] ? "#tag/" + c[1] : "#studies") + "\">" + esc(c[0]) + "</a>"; }).join("");
+  var FEED_N = 5;
+  $("#feed").innerHTML = NEWEST.slice(0, FEED_N).map(entryHtml).join("");
+  $("#feed-all").textContent = "All " + STUDIES.length + " studies";
+  $("#feed-more").textContent = "See all " + STUDIES.length + " studies";
+
+  /* the Studies table */
+  $("#st-lead").innerHTML = "All " + STUDIES.length + " studies in OpenMotor, newest first. <b>Data</b> links to the files the authors shared, and <b>Format</b> says what kind of files they are.";
+  var TAG_LIST = Object.keys(TAGS).map(function (k) { return TAGS[k]; });
+  $("#st-tag").insertAdjacentHTML("beforeend", META.facets.map(function (fa) {
+    var list = TAG_LIST.filter(function (t) { return t.f === fa[0]; }).sort(function (a, b) { return b.studies.length - a.studies.length || a.v.localeCompare(b.v); });
+    return list.length ? "<optgroup label=\"" + esc(fa[1]) + "\">" + list.map(function (t) { return "<option value=\"" + t.slug + "\">" + esc(t.v) + " (" + t.studies.length + ")</option>"; }).join("") + "</optgroup>" : "";
+  }).join(""));
+  /* studies by task: the header menu and the Studies page's left column (Indranil, 2026-11-08) */
+  var TASKS = TAG_LIST.filter(function (t) { return t.f === "task"; })
+    .sort(function (a, b) { return (a.v === "other") - (b.v === "other") || b.studies.length - a.studies.length || a.v.localeCompare(b.v); });
+  function taskLabel(t) { return t.v === "other" ? "Other tasks" : t.v.charAt(0).toUpperCase() + t.v.slice(1); }
+  var TASK_LINKS = "<a href=\"#studies\" data-task=\"\">All studies <span>" + STUDIES.length + "</span></a>" + TASKS.map(function (t) {
+    return "<a href=\"#tag/" + t.slug + "\" data-task=\"" + t.slug + "\">" + esc(taskLabel(t)) + " <span>" + t.studies.length + "</span></a>";
+  }).join("");
+  $("#task-menu-list").innerHTML = TASK_LINKS;
+  $("#task-nav").innerHTML = "<p class=\"task-nav-h\">Task</p>" + TASK_LINKS;
+  function markTask() {
+    var cur = !ST.tag ? "" : (TAGS[ST.tag] && TAGS[ST.tag].f === "task" ? ST.tag : null);
+    document.querySelectorAll("#task-nav a").forEach(function (a) {
+      var on = a.getAttribute("data-task") === cur;
+      a.classList.toggle("active", on);
+      if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    });
+  }
+  var navDrop = $("#nav-drop"), navDropBtn = $("#task-btn");
+  function setDrop(open) { navDrop.classList.toggle("open", open); if (open) navDrop.classList.remove("shut"); navDropBtn.setAttribute("aria-expanded", open ? "true" : "false"); }
+  navDropBtn.addEventListener("click", function (e) { e.stopPropagation(); setDrop(!navDrop.classList.contains("open")); });
+  document.addEventListener("click", function (e) { if (!navDrop.contains(e.target)) setDrop(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && navDrop.classList.contains("open")) { setDrop(false); navDropBtn.focus(); } });
+  navDrop.addEventListener("focusout", function (e) { if (!navDrop.contains(e.relatedTarget)) setDrop(false); });
+  $("#task-menu").addEventListener("click", function (e) { if (e.target.closest("a")) { setDrop(false); navDrop.classList.add("shut"); } });
+  navDrop.addEventListener("mouseleave", function () { navDrop.classList.remove("shut"); });
+  window.addEventListener("hashchange", function () { setDrop(false); });
+
+  var ST = { q: "", tag: "" };
+  function studyRow(s) {
+    return "<tr><td class=\"c-study\"><a class=\"st-name\" href=\"" + studyLink(s) + "\">" + esc(s._name) + "</a>" +
+      s.papers.map(function (p) { return (paperUrl(p) ? "<a class=\"st-title\" href=\"" + paperUrl(p) + "\" target=\"_blank\" rel=\"noopener\">" + esc(p.title) + "</a>" : "<span class=\"st-title\">" + esc(p.title) + "</span>") + "<span class=\"st-venue\">" + esc(p.venue) + "</span>"; }).join("") +
+      tagsHtml(s) + "</td>" +
+      "<td class=\"orig\" data-label=\"Data\">" + origLinks(s) + "</td>" +
+      "<td data-label=\"Format\">" + esc(formatText(s)) + "</td></tr>";
+  }
+  function renderStudies() {
+    var words = ST.q.trim().toLowerCase().split(/\s+/).filter(Boolean), t = TAGS[ST.tag];
+    var rows = NEWEST.filter(function (s) { return (!t || t.studies.indexOf(s) >= 0) && words.every(function (w) { return s._q.indexOf(w) >= 0; }); });
+    var html = "", year = null;
+    rows.forEach(function (s) {
+      if (s.year !== year) { html += (year === null ? "" : "</tbody>") + "<tbody><tr class=\"yr-row\"><th class=\"yr\" colspan=\"3\" scope=\"rowgroup\">" + s.year + "</th></tr>"; year = s.year; }
+      html += studyRow(s);
+    });
+    html = html ? html + "</tbody>" : "<tbody><tr><td colspan=\"3\">No studies match. <button type=\"button\" class=\"linkbutton\" data-clear>Show all studies</button></td></tr></tbody>";
+    var table = $("#st-table");
+    table.querySelectorAll("tbody").forEach(function (b) { b.remove(); });
+    table.insertAdjacentHTML("beforeend", html);
+    $("#st-count").textContent = rows.length === STUDIES.length ? STUDIES.length + " studies" : "Showing " + rows.length + " of " + STUDIES.length + " studies";
+    $("#st-clear").hidden = !(ST.q || ST.tag);
+    markTask();
+  }
+  function setHash(h) { try { history.replaceState(null, "", h); } catch (err) {} }
+  function clearStudies() { ST.q = ""; ST.tag = ""; $("#st-q").value = ""; $("#st-tag").value = ""; setHash("#studies"); renderStudies(); }
+  var stTimer;
+  $("#st-q").addEventListener("input", function (e) { clearTimeout(stTimer); stTimer = setTimeout(function () { ST.q = e.target.value; renderStudies(); }, 100); });
+  $("#st-tag").addEventListener("change", function (e) { ST.tag = e.target.value; setHash(ST.tag ? "#tag/" + ST.tag : "#studies"); renderStudies(); });
+  $("#st-clear").addEventListener("click", clearStudies);
+  $("#st-table").addEventListener("click", function (e) { if (e.target.closest("[data-clear]")) clearStudies(); });
+  renderStudies();
+
+  /* one study */
+  var BY_ID = {};
+  STUDIES.forEach(function (s) { BY_ID[s.id] = s; });
+  function refText(p) { return p.authors + " (" + p.year + "). " + p.title + ". " + p.venue + "." + (paperUrl(p) ? " " + paperUrl(p) : ""); }
+  function showStudy(id) {
+    var s = BY_ID[id];
+    if (!s) { $("#study-crumb").textContent = "Not found"; $("#study-h").textContent = "No study by that name"; $("#study-body").innerHTML = "<p><a href=\"#studies\">See all studies</a></p>"; return "Studies"; }
+    $("#study-crumb").textContent = s._name; $("#study-h").textContent = s._name;
+    var licNote = (s.licenses || []).map(function (l) { return l[1]; }).filter(Boolean).join(" ");
+    var k = NEWEST.indexOf(s), prev = NEWEST[k - 1], next = NEWEST[k + 1];
+    var papers = s.papers.map(function (p, i) {
+      return "<div class=\"sp-paper\"><h2 class=\"sp-sub\">" + esc(p.title) + "</h2>" +
+        "<p class=\"sp-cite\">" + esc(p.authors) + " (" + p.year + "). <i>" + esc(p.venue) + "</i>.</p>" +
+        (i === 0 ? "<p class=\"sp-links\">" + linkList(s) + "</p>" : "") + "</div>";
+    }).join("");
+    $("#study-body").innerHTML = papers + tagsHtml(s) +
+      "<dl class=\"facts\">" +
+      "<dt>Data</dt><dd class=\"orig\">" + origLinks(s) + ((s.links || []).length ? "" : "<small>The paper gives a view-only link to the files the authors shared.</small>") + "</dd>" +
+      "<dt>Format</dt><dd>" + esc(formatText(s)) + "</dd>" +
+      (s.lab ? "<dt>Lab</dt><dd>" + esc(s.lab) + "</dd>" : "") +
+      "<dt>License</dt><dd>" + esc(s.license) + (licNote ? "<small>" + esc(licNote) + "</small>" : "") + "</dd>" +
+      "</dl>" +
+      "<h2 class=\"study-h2\">Reference</h2>" + s.papers.map(function (p) { return "<p class=\"st-ref\">" + esc(refText(p)) + "</p>"; }).join("") +
+      "<nav class=\"sp-nav\" aria-label=\"Other studies\">" + (prev ? "<a class=\"pill\" href=\"" + studyLink(prev) + "\" title=\"" + esc(prev._name) + "\">Previous</a>" : "<span></span>") +
+      (next ? "<a class=\"pill\" href=\"" + studyLink(next) + "\" title=\"" + esc(next._name) + "\">Next</a>" : "") + "</nav>";
+    return s._name;
+  }
+
+  /* ---------- references ---------- */
+  var refs = [];
+  STUDIES.forEach(function (s) { s.papers.forEach(function (p) { refs.push({ p: p, held: s.side === "lockbox", key: p.authors.replace(/^'t /i, "").toLowerCase() }); }); });
+  refs.sort(function (a, b) { return a.key.localeCompare(b.key) || a.p.year - b.p.year; });
+  $("#refs").innerHTML = refs.map(function (r) {
+    var p = r.p;
+    return "<li>" + esc(p.authors) + " (" + p.year + "). " + esc(p.title) + ". <i>" + esc(p.venue) + "</i>. " +
+      (paperUrl(p) ? "<a href=\"" + paperUrl(p) + "\" target=\"_blank\" rel=\"noopener\">" + paperUrl(p) + "</a>" : "") + "</li>";
+  }).join("");
+  $("#copy-refs").addEventListener("click", function () {
+    var b = this, text = refs.map(function (r) { return refText(r.p); }).join("\n");
+    navigator.clipboard.writeText(text).then(function () { b.textContent = "Copied"; }, function () {
+      var range = document.createRange(); range.selectNodeContents($("#refs")); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range); b.textContent = "Selected, press copy";
+    });
+    setTimeout(function () { b.textContent = "Copy all references"; }, 2000);
+  });
+
+  /* ---------- add your dataset ---------- */
+  var ctForm = $("#ct-form"), ctFiles = [], DRAFT = "openmotor-draft";
+  var FIELDS = ["om-name", "om-title", "om-author", "om-lab", "om-year", "om-email", "om-license", "om-task", "om-repo", "om-notes"];
+  function fileListRender() {
+    $("#om-file-list").innerHTML = ctFiles.map(function (f) { return "<li><span>" + esc(f.name) + "</span><span>" + mb(f.size) + "</span></li>"; }).join("");
+  }
+  function addFiles(list) { Array.prototype.forEach.call(list, function (f) { if (!ctFiles.some(function (g) { return g.name === f.name && g.size === f.size; })) { ctFiles.push({ name: f.name, size: f.size, file: f }); } }); fileListRender(); }
+  var drop = $("#om-drop"), picker = $("#om-files");
+  drop.addEventListener("click", function () { picker.click(); });
+  drop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); picker.click(); } });
+  picker.addEventListener("change", function () { addFiles(picker.files); picker.value = ""; });
+  ["dragenter", "dragover"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add("over"); }); });
+  ["dragleave", "drop"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove("over"); }); });
+  drop.addEventListener("drop", function (e) { if (e.dataTransfer && e.dataTransfer.files) addFiles(e.dataTransfer.files); });
+  try { var saved = JSON.parse(localStorage.getItem(DRAFT) || "null"); if (saved) FIELDS.forEach(function (id) { if (saved[id] != null) $("#" + id).value = saved[id]; }); } catch (err) {}
+  $("#om-save").addEventListener("click", function () {
+    var v = {}; FIELDS.forEach(function (id) { v[id] = $("#" + id).value; });
+    try { localStorage.setItem(DRAFT, JSON.stringify(v)); $("#om-status").textContent = "Draft saved in this browser."; }
+    catch (err) { $("#om-status").textContent = "This browser would not save the draft; keep this page open instead."; }
+  });
+  var SUBMIT_TO = "physical.intelligence.lab@gmail.com";
+  function ctText() {
+    function v(id) { return $("#" + id).value.trim(); }
+    var lines = [
+      "OpenMotor dataset submission", "",
+      "Dataset name: " + v("om-name"), "Study or paper title: " + v("om-title"), "Lead author: " + v("om-author"),
+      "Lab or institution: " + v("om-lab"), "Publication year: " + v("om-year"), "Contact email: " + v("om-email"),
+      "License: " + v("om-license"), "Task: " + v("om-task"), "Repository link: " + v("om-repo"), "", "Notes:", v("om-notes") || "(none)", "",
+      "Files:", ctFiles.length ? ctFiles.map(function (f) { return "- " + f.name + " (" + mb(f.size) + ")"; }).join("\n") : "(attached to this email, or see the repository link)"
+    ];
+    return { subject: "OpenMotor dataset submission: " + v("om-name"), body: lines.join("\n") };
+  }
+  ctForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var bad = null;
+    ["om-name", "om-title", "om-author", "om-lab", "om-email", "om-license"].forEach(function (id) {
+      var el = $("#" + id), ok = el.value.trim() && (id !== "om-email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim()));
+      el.setAttribute("aria-invalid", ok ? "false" : "true"); if (!ok && !bad) bad = el;
+    });
+    if (bad) { $("#om-status").textContent = "Fill in the fields marked with a star; the email needs to be a full address."; bad.focus(); return; }
+    if (META.submitEndpoint) { sendSubmission(); return; }
+    var m = ctText();
+    var a = document.createElement("a");
+    a.href = "mailto:" + SUBMIT_TO + "?subject=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body + "\n\n(Attach your files to this email before sending.)");
+    document.body.appendChild(a); a.click(); a.remove();
+    $("#om-status").textContent = "An email to the OpenMotor team should have opened with your details filled in. Attach your files and press send.";
+    $("#om-fallback").hidden = false;
+  });
+
+  function readB64(f) { return new Promise(function (res, rej) { var r = new FileReader(); r.onload = function () { res(String(r.result).split(",")[1]); }; r.onerror = rej; r.readAsDataURL(f); }); }
+  function sendSubmission() {
+    var total = ctFiles.reduce(function (t, f) { return t + f.size; }, 0);
+    if (total > 35e6) { $("#om-status").textContent = "The files add up to " + mb(total) + "; the limit is 35 MB. Give a repository or Drive link for the larger files and remove them here."; return; }
+    var btn = ctForm.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = "Sending...";
+    $("#om-status").textContent = ctFiles.length ? "Uploading " + ctFiles.length + " file" + (ctFiles.length > 1 ? "s" : "") + "..." : "Sending...";
+    function v(id) { return $("#" + id).value.trim(); }
+    Promise.all(ctFiles.map(function (f) { return readB64(f.file).then(function (d) { return { name: f.name, type: f.file.type, data: d }; }); }))
+      .then(function (files) {
+        var task = v("om-task") ? "Task: " + v("om-task") + "\n\n" : "";
+        var payload = { name: v("om-name"), title: v("om-title"), author: v("om-author"), lab: v("om-lab"), year: v("om-year"), email: v("om-email"),
+                        license: v("om-license"), task: v("om-task"), repo: v("om-repo"), notes: task + v("om-notes"), website: $("#om-website").value, files: files };
+        return fetch(META.submitEndpoint, { method: "POST", body: JSON.stringify(payload) }).then(function (r) { return r.json(); });
+      })
+      .then(function (r) {
+        if (!r || !r.ok) throw new Error((r && r.error) || "no reply");
+        $("#ct-thanks-name").textContent = v("om-name"); $("#ct-thanks-email").textContent = v("om-email");
+        ctForm.hidden = true; $("#ct-thanks").hidden = false;
+        try { localStorage.removeItem(DRAFT); } catch (err) {}
+        $("#ct-thanks").scrollIntoView({ behavior: "smooth", block: "start" });
+      })
+      .catch(function () {
+        $("#om-status").textContent = "Sending failed. Check your connection and try again, or email physical.intelligence.lab@gmail.com.";
+        $("#om-fallback").hidden = false;
+      })
+      .then(function () { btn.disabled = false; btn.textContent = "Submit for review"; });
+  }
+  $("#ct-another").addEventListener("click", function () {
+    ctForm.reset(); ctFiles = []; fileListRender(); $("#om-status").textContent = ""; $("#om-fallback").hidden = true;
+    $("#ct-thanks").hidden = true; ctForm.hidden = false;
+    ctForm.scrollIntoView({ behavior: "smooth", block: "start" }); setTimeout(function () { $("#om-name").focus({ preventScroll: true }); }, 400);
+  });
+  $("#om-copy").addEventListener("click", function () {
+    var b = this, m = ctText();
+    navigator.clipboard.writeText("To: " + SUBMIT_TO + "\nSubject: " + m.subject + "\n\n" + m.body).then(function () { b.textContent = "Copied"; }, function () { b.textContent = "Select the address and copy it"; });
+    setTimeout(function () { b.textContent = "Copy details"; }, 2000);
+  });
+
+  /* ---------- standardization ---------- */
+  var FILES_OF = {};
+  FILES.forEach(function (f) { (FILES_OF[f.catalog_study] = FILES_OF[f.catalog_study] || []).push(f); });
+  var STD = STUDIES.filter(function (s) { return FILES_OF[s.id]; }).sort(function (a, b) { return a._first.localeCompare(b._first) || a.year - b.year; });
+  var nStd = STD.length;
+  var XS = META.standardizedExtra || { studies: 0, reaching: 0 };
+  $("#std-list-lead").innerHTML = "The " + nStd + " studies we standardized, by first author. Each ZIP has the data as one CSV file, a README with the citation, license and checks, and columns.csv." +
+    (META.bundle ? " <a href=\"" + esc(META.bundle.url) + "\">Download the " + META.standardizedStudies + " reaching studies of the first release in one ZIP (" + mb(META.bundle.bytes) + ")</a>." : "");
+  $("#std-list").innerHTML = STD.map(function (s) {
+    var fs = FILES_OF[s.id];
+    var t = s.papers[0].title;
+    return "<li><span class=\"std-who\"><a class=\"std-name\" href=\"" + studyLink(s) + "\" title=\"" + esc(t) + "\">" + esc(s._name) + "</a><span class=\"std-jr\" title=\"" + esc(t) + "\">" + esc(t) + "</span></span><span class=\"std-dl\">" + fs.map(function (f) {
+      var part = fs.length < 2 ? "" : (f.name.indexOf(s.id) === 0 ? f.name.slice(s.id.length).replace(/^_/, "") : f.name.replace(/^([A-Za-z']+?)(\d{4})_.*$/, "$1 $2")) + " ";
+      return "<a href=\"" + esc(f.url || ("data/" + f.file)) + "\" download>" + ICON.download + esc(part) + "ZIP <span class=\"sz\">" + mb(f.bytes) + "</span></a>";
+    }).join("") + "</span></li>";
+  }).join("");
+  var nReach = META.standardizedStudies + XS.reaching, nOther = XS.studies - XS.reaching;
+  $("#std-lead").textContent = "We standardized the data from " + nStd + " of the studies in OpenMotor. The " + nReach + " reaching studies share one format with one row per trial and the same 90 columns, units and sign conventions in every study, so code written for one study runs on all of them." +
+    (nOther > 0 ? " The " + nOther + " studies of other tasks share a core of columns plus the columns of their task." : "");
+
+  /* ---------- views ---------- */
+  var VIEWS = ["home", "studies", "study", "about", "format", "cite", "contribute", "standardization"];
+  /* views added by site/parts/*.js (window.OM_PARTS[name] = {title, nav, onShow(arg) -> optional title}) */
+  var PARTS = window.OM_PARTS || {};
+  Object.keys(PARTS).forEach(function (k) { if (VIEWS.indexOf(k) < 0) VIEWS.push(k); });
+  var ALIAS = { archive: "studies", tags: "studies", download: "studies", beta: "standardization" };
+  var NAV_OF = { study: "studies", format: "standardization" };
+  var TITLE = { studies: "Studies", about: "About", format: "Standardized Data Format", cite: "How to Cite", contribute: "Add your dataset", standardization: "Standardization" };
+  function show() {
+    var h = location.hash.replace("#", ""), v = h, arg = "";
+    if (v === "main") return;
+    var slash = h.indexOf("/");
+    if (slash > 0) { v = h.slice(0, slash); try { arg = decodeURIComponent(h.slice(slash + 1)); } catch (err) { arg = h.slice(slash + 1); } }
+    if (ALIAS[v]) v = ALIAS[v];
+    if (v === "tag") { v = "studies"; ST.tag = TAGS[arg] ? arg : ""; $("#st-tag").value = ST.tag; renderStudies(); }
+    else if (v === "studies" && ST.tag) { ST.tag = ""; $("#st-tag").value = ""; renderStudies(); }
+    if (VIEWS.indexOf(v) < 0 || (v === "study" && !arg)) v = "home";
+    var title = TITLE[v];
+    if (v === "study") title = showStudy(arg);
+    if (PARTS[v]) { title = PARTS[v].title || title; if (PARTS[v].nav) NAV_OF[v] = PARTS[v].nav; }
+    if (v === "studies" && ST.tag) title = tagText(TAGS[ST.tag]) + " | Studies";
+    document.querySelectorAll("section.view").forEach(function (el) { el.hidden = el.getAttribute("data-view") !== v; });
+    var nav = NAV_OF[v] || v;
+    document.querySelectorAll(".site-nav a[data-view]").forEach(function (a) { if (a.getAttribute("data-view") === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    document.title = title ? title + " | OpenMotor" : "OpenMotor";
+    if (v === "format") setTimeout(spy, 0);
+    if (PARTS[v] && PARTS[v].onShow) { var pt = PARTS[v].onShow(arg); if (pt) document.title = pt + " | OpenMotor"; }
+    if (!(PARTS[v] && PARTS[v].keepScroll)) window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", show);
+  show();
+})();
+</script>

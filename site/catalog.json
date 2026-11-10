@@ -1,0 +1,3363 @@
+{
+ "meta": {
+  "frozen": "2026-11-04",
+  "total": {
+   "studies": 97,
+   "datasets": 99,
+   "experiments": 185,
+   "people": 12498,
+   "trials": 5286546,
+   "scored": 5126710
+  },
+  "development": {
+   "studies": 75,
+   "experiments": 156,
+   "people": 10412,
+   "trials": 4498123,
+   "scored": 4358171
+  },
+  "lockbox": {
+   "studies": 22
+  },
+  "paradigms": [
+   {
+    "name": "Abrupt rotation",
+    "experiments": 78
+   },
+   {
+    "name": "Error clamp",
+    "experiments": 60
+   },
+   {
+    "name": "Contextual cues",
+    "experiments": 18
+   },
+   {
+    "name": "Reward or score",
+    "experiments": 15
+   },
+   {
+    "name": "Gradual rotation",
+    "experiments": 12
+   },
+   {
+    "name": "No perturbation",
+    "experiments": 8
+   },
+   {
+    "name": "Mirror or gain",
+    "experiments": 4
+   },
+   {
+    "name": "Other mapping",
+    "experiments": 2
+   },
+   {
+    "name": "Target jump",
+    "experiments": 1
+   }
+  ]
+ },
+ "studies": [
+  {
+   "id": "Barzi2026_ExpBrainRes",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/a65wk/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Hill",
+   "papers": [
+    {
+     "authors": "Barzi L, Wilson M, Hill CM",
+     "year": 2026,
+     "title": "Anxiety disorders alter cognitive-motor integration during visuomotor adaptation and retention",
+     "venue": "Experimental Brain Research",
+     "doi": "10.1007/s00221-026-07304-y"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license selected on the OSF project"
+    ]
+   ],
+   "year": 2026,
+   "label": "Barzi et al. 2026",
+   "people": 31,
+   "trials": 18600,
+   "scored": 18600,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Buggeln2026_PLoSComputBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.6084/m9.figshare.31337554",
+     "host": "figshare"
+    }
+   ],
+   "lab": "Cashaback (University of Delaware)",
+   "papers": [
+    {
+     "authors": "Buggeln J, Muscara N, Sullivan SR, Calalo JA, Ngo TT, Short M, Roth AM, Carter MJ, Cashaback JGA",
+     "year": 2026,
+     "title": "Successful reinforcement history suppresses explicit and implicit error corrections",
+     "venue": "PLoS Comput Biol 22(8):e1014574",
+     "doi": "10.1371/journal.pcbi.1014574"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "figshare record"
+    ]
+   ],
+   "year": 2026,
+   "label": "Buggeln et al. 2026",
+   "people": 111,
+   "trials": 74150,
+   "scored": 74150,
+   "experiments": 3,
+   "paradigms": [
+    "Error clamp",
+    "Reward or score"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Henriques2026_DiscovNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/dhk3u/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques / 't Hart (York University)",
+   "papers": [
+    {
+     "authors": "Henriques DYP, Gastrock RQ, 't Hart BM",
+     "year": 2026,
+     "title": "Precision of reaches and proprioception in motor control and adaptation",
+     "venue": "Discover Neuroscience 21:14",
+     "doi": "10.1186/s13064-026-00240-1"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the code is GPL-3.0"
+    ]
+   ],
+   "year": 2026,
+   "label": "Henriques et al. 2026",
+   "people": 85,
+   "trials": 81600,
+   "scored": 69322,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Liddy2026_eNeuro",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/jliddy5/liddy_eneuro_implicit-attention",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Song (Brown University)",
+   "papers": [
+    {
+     "authors": "Liddy J, O'Bryan SR, Daskalopoulos A, Song J-H",
+     "year": 2026,
+     "title": "Automatic, but not autonomous: implicit adaptation is modulated by goal-directed attentional demands",
+     "venue": "eNeuro 13(3):ENEURO.0243-25.2026",
+     "doi": "10.1523/ENEURO.0243-25.2026"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "License file in the repository (also on Zenodo)"
+    ]
+   ],
+   "year": 2026,
+   "label": "Liddy et al. 2026",
+   "people": 72,
+   "trials": 26208,
+   "scored": 25208,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Niyogi2025_provisional",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Tsay (Carnegie Mellon University)",
+   "papers": [
+    {
+     "authors": "Niyogi A, Cisneros E, Ding W, Allen K, Vyas S, Ivry R, Tsay JS",
+     "year": 2026,
+     "title": "Understanding Strategic Motor Learning as a Process of Hypothesis Testing",
+     "venue": "bioRxiv 10.64898/2026.09.05.749306",
+     "doi": "10.64898/2026.09.05.749306"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2026,
+   "label": "Niyogi et al. 2026",
+   "people": 100,
+   "trials": 16000,
+   "scored": 15985,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Padmanabhan2026_JNeurophysiol",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Tsay (Carnegie Mellon University)",
+   "papers": [
+    {
+     "authors": "Padmanabhan S, Shadmehr R, Klatzky RL, Tsay JS",
+     "year": 2026,
+     "title": "Goal uncertainty attenuates sensorimotor adaptation",
+     "venue": "J Neurophysiol 135(1):1-10",
+     "doi": "10.1152/jn.00453.2025"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2026,
+   "label": "Padmanabhan et al. 2026",
+   "people": 198,
+   "trials": 44000,
+   "scored": 44000,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Sharma2026_PLoSCompBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/gjb5r/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques / 't Hart (York) with Broucke (Toronto) and Orban de Xivry (KU Leuven)",
+   "papers": [
+    {
+     "authors": "Sharma G, 't Hart BM, Orban de Xivry J-J, Henriques DYP, Broucke ME",
+     "year": 2026,
+     "title": "Modeling human visuomotor adaptation with a disturbance observer framework",
+     "venue": "PLoS Comput Biol 22(2):e1013937",
+     "doi": "10.1371/journal.pcbi.1013937"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2026,
+   "label": "Sharma et al. 2026",
+   "people": 29,
+   "trials": 87000,
+   "scored": 87000,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation",
+    "Other mapping"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Wang2026_PLoSBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://zenodo.org/records/23023244",
+     "host": "Zenodo"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley) with Taylor (Princeton)",
+   "papers": [
+    {
+     "authors": "Wang T, Lam T, Taylor JA, Ivry RB",
+     "year": 2026,
+     "title": "Implicit sensorimotor adaptation comprises distinct mechanisms for action selection and execution",
+     "venue": "PLoS Biol 24(10):e3004057",
+     "doi": "10.1371/journal.pbio.3004057"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Zenodo record"
+    ]
+   ],
+   "year": 2026,
+   "label": "Wang et al. 2026",
+   "people": 270,
+   "trials": 82532,
+   "scored": 70523,
+   "experiments": 6,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation",
+    "Gradual rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Avraham2025_eNeuro",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Avraham G, Ivry RB",
+     "year": 2025,
+     "title": "Interference underlies attenuation upon relearning in sensorimotor adaptation",
+     "venue": "eNeuro 12(6):ENEURO.0132-25.2025",
+     "doi": "10.1523/ENEURO.0132-25.2025"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2025,
+   "label": "Avraham & Ivry 2025",
+   "people": 236,
+   "trials": 220752,
+   "scored": 220752,
+   "experiments": 5,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Kim2025_ProcRSocB",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/pmqu5/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "H.E. Kim (University of British Columbia)",
+   "papers": [
+    {
+     "authors": "Kim HE, Chua R, Hu D",
+     "year": 2025,
+     "title": "Causal inference, prediction and state estimation in sensorimotor learning",
+     "venue": "Proc R Soc B 292(2052):20251320",
+     "doi": "10.1098/rspb.2025.1320"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2025,
+   "label": "Kim et al. 2025",
+   "people": 16,
+   "trials": 29920,
+   "scored": 29920,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation",
+    "Target jump"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "King2025_bioRxiv",
+   "side": "development",
+   "source": "external",
+   "links": [],
+   "lab": "Henriques / 't Hart (York University)",
+   "papers": [
+    {
+     "authors": "King AM, Boulrice JJ, Modchalingam S, Mikula L, 't Hart BM, Henriques DYP",
+     "year": 2025,
+     "title": "Using tools as cues for motor adaptation in virtual reality",
+     "venue": "bioRxiv",
+     "doi": "10.1101/2025.09.02.673800"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; shared through a view-only link in the preprint"
+    ]
+   ],
+   "year": 2025,
+   "label": "King et al. 2025",
+   "people": 144,
+   "trials": 55296,
+   "scored": 55296,
+   "experiments": 4,
+   "paradigms": [
+    "Abrupt rotation",
+    "Contextual cues"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "OBryan2025_bioRxiv",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/ntgs7/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Song (Brown University)",
+   "papers": [
+    {
+     "authors": "O'Bryan SR, Liddy J, Song JH",
+     "year": 2025,
+     "title": "Systematic modulation of sensorimotor learning by domain-specific working memory",
+     "venue": "bioRxiv 2025.04.11.648414",
+     "doi": "10.1101/2025.04.11.648414"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license selected on the OSF project"
+    ]
+   ],
+   "year": 2025,
+   "label": "O'Bryan et al. 2025",
+   "people": 87,
+   "trials": 36424,
+   "scored": 35163,
+   "experiments": 3,
+   "paradigms": [
+    "Abrupt rotation",
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Szarka2025_PLoSONE",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/6v3tp/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Chua / H.E. Kim (University of British Columbia)",
+   "papers": [
+    {
+     "authors": "Szarka A, Kim HE, Inglis JT, Chua R",
+     "year": 2025,
+     "title": "Evidence for an efferent-based prediction contributing to implicit motor adaptation",
+     "venue": "PLoS ONE 20(4):e0322627",
+     "doi": "10.1371/journal.pone.0322627"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "OSF project"
+    ]
+   ],
+   "year": 2025,
+   "label": "Szarka et al. 2025",
+   "people": 12,
+   "trials": 7200,
+   "scored": 7168,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Wang2025_JNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/shion707/Attention-Implicit-Adaptation",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Wang T, Li J, Ivry RB",
+     "year": 2025,
+     "title": "Attention defines the context for implicit sensorimotor adaptation",
+     "venue": "J Neurosci 45(40):e0117252025",
+     "doi": "10.1523/JNEUROSCI.0117-25.2025"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2025,
+   "label": "Wang et al. 2025",
+   "people": 197,
+   "trials": 110320,
+   "scored": 101565,
+   "experiments": 5,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Wang2025_SciAdv",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Whitney",
+   "papers": [
+    {
+     "authors": "Wang T, Fang Y, Whitney D",
+     "year": 2025,
+     "title": "Sequential effects in reaching reveal efficient coding in motor planning",
+     "venue": "Sci Adv 11(35):eadv6572",
+     "doi": "10.1126/sciadv.adv6572"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2025,
+   "label": "Wang et al. 2025",
+   "people": 106,
+   "trials": 77760,
+   "scored": 73120,
+   "experiments": 2,
+   "paradigms": [
+    "No perturbation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Warburton2025_JNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/8s9mk/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Mushtaq / Morehead (University of Leeds)",
+   "papers": [
+    {
+     "authors": "Warburton M, Campagnoli C, Mon-Williams M, Mushtaq F, Morehead JR",
+     "year": 2025,
+     "title": "Visuomotor Memory Is Not Bound to Visual Motion",
+     "venue": "J Neurosci 45(17):e1884242025",
+     "doi": "10.1523/JNEUROSCI.1884-24.2025"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the article is CC BY 4.0"
+    ]
+   ],
+   "year": 2025,
+   "label": "Warburton et al. 2025",
+   "people": 273,
+   "trials": 213851,
+   "scored": 205099,
+   "experiments": 4,
+   "paradigms": [
+    "Abrupt rotation",
+    "Contextual cues"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "tHart2024_eNeuro",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/3yhw5/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques ('t Hart; York University)",
+   "papers": [
+    {
+     "authors": "'t Hart BM, Taqvi U, Gastrock RQ, Ruttle JE, Modchalingam S, Henriques DYP",
+     "year": 2024,
+     "title": "Measures of implicit and explicit adaptation do not linearly add",
+     "venue": "eNeuro 11(8):ENEURO.0021-23.2024",
+     "doi": "10.1523/ENEURO.0021-23.2024"
+    }
+   ],
+   "licenses": [
+    [
+     "GPL-3.0",
+     "OSF registration"
+    ]
+   ],
+   "year": 2024,
+   "label": "'t Hart et al. 2024",
+   "people": 72,
+   "trials": 19008,
+   "scored": 19008,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "GPL-3.0"
+  },
+  {
+   "id": "Areshenkoff2024_PLoSBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://openneuro.org/datasets/ds005598",
+     "host": "OpenNeuro"
+    }
+   ],
+   "lab": "Gallivan / Flanagan (Queen's University)",
+   "papers": [
+    {
+     "authors": "Areshenkoff CN, de Brouwer AJ, Gale DJ, Nashed JY, Smallwood J, Flanagan JR, Gallivan JP",
+     "year": 2024,
+     "title": "Distinct patterns of connectivity with the motor cortex reflect different components of sensorimotor learning",
+     "venue": "PLoS Biol 22(12):e3002934",
+     "doi": "10.1371/journal.pbio.3002934"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "OpenNeuro dataset"
+    ]
+   ],
+   "year": 2024,
+   "label": "Areshenkoff et al. 2024",
+   "people": 38,
+   "trials": 15200,
+   "scored": 13640,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Cesanek2024_NatHumBehav",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/EvanCesanek/ouvrai-vr-sr",
+     "host": "GitHub"
+    },
+    {
+     "url": "https://github.com/EvanCesanek/ouvrai-vr-dual",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Wolpert (Columbia University)",
+   "papers": [
+    {
+     "authors": "Cesanek E, Shivkumar S, Ingram JN, Wolpert DM",
+     "year": 2024,
+     "title": "Ouvrai opens access to remote virtual reality studies of human behavioural neuroscience",
+     "venue": "Nat Hum Behav 8:1209-1224",
+     "doi": "10.1038/s41562-024-01834-7"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repositories"
+    ]
+   ],
+   "year": 2024,
+   "label": "Cesanek et al. 2024",
+   "people": 10,
+   "trials": 2500,
+   "scored": 2500,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation",
+    "Gradual rotation",
+    "Contextual cues"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Chen2024_bioRxiv",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Tsay (Carnegie Mellon University)",
+   "papers": [
+    {
+     "authors": "Chen Y, Abram SJ, Ivry RB, Tsay JS",
+     "year": 2024,
+     "title": "Motor adaptation is reduced by symbolic compared to sensory feedback",
+     "venue": "bioRxiv 2024.06.28.601293",
+     "doi": "10.1101/2024.06.28.601293"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2024,
+   "label": "Chen et al. 2024",
+   "people": 415,
+   "trials": 94350,
+   "scored": 87150,
+   "experiments": 7,
+   "paradigms": [
+    "Reward or score",
+    "Mirror or gain",
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Clayton2024_PLoSONE",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/kgt2z/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques / 't Hart (York University)",
+   "papers": [
+    {
+     "authors": "Clayton HA, Abbas S, 't Hart BM, Henriques DYP",
+     "year": 2024,
+     "title": "Visuomotor adaptation across the lifespan",
+     "venue": "PLoS ONE 19(7):e0306276",
+     "doi": "10.1371/journal.pone.0306276"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Processed data CC BY 4.0 (OSF registration); the raw-data archive lists no license"
+    ]
+   ],
+   "year": 2024,
+   "label": "Clayton et al. 2024",
+   "people": 133,
+   "trials": 11970,
+   "scored": 11969,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "DAmario2024_bioRxiv",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/ajwyr/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University)",
+   "papers": [
+    {
+     "authors": "D'Amario S, Ruttle JE, 't Hart BM, Henriques DYP",
+     "year": 2024,
+     "title": "Implicit adaptation is fast, robust and independent from explicit adaptation",
+     "venue": "bioRxiv 2024.04.10.588930 (version 4)",
+     "doi": "10.1101/2024.04.10.588930"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2024,
+   "label": "D'Amario et al. 2024",
+   "people": 458,
+   "trials": 141040,
+   "scored": 138504,
+   "experiments": 4,
+   "paradigms": [
+    "Abrupt rotation",
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Nakano2024_bioRxiv",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://figshare.com/articles/dataset/Nakano2024Data_zip/25795417",
+     "host": "figshare"
+    }
+   ],
+   "lab": "Murai (AIST)",
+   "papers": [
+    {
+     "authors": "Nakano N, Murai A",
+     "year": 2024,
+     "title": "Augmenting visual errors or variability does not enhance motor learning in remote web application tasks",
+     "venue": "bioRxiv 2024.05.10.593506",
+     "doi": "10.1101/2024.05.10.593506"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "figshare record"
+    ]
+   ],
+   "year": 2024,
+   "label": "Nakano & Murai 2024",
+   "people": 35,
+   "trials": 13125,
+   "scored": 13125,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation",
+    "Other mapping"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Stroh2024_JDeafStudDeafEduc",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://www.fdr.uni-hamburg.de/record/12988",
+     "host": "FDR Hamburg"
+    }
+   ],
+   "lab": "Roeder (University of Hamburg)",
+   "papers": [
+    {
+     "authors": "Stroh A-L, Overvliet KE, Zierul B, Roesler F, Roeder B",
+     "year": 2024,
+     "title": "Motor adaptation in deaf and hearing native signers",
+     "venue": "J Deaf Stud Deaf Educ 29(3):335-349",
+     "doi": "10.1093/deafed/enae010"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "FDR Hamburg record"
+    ]
+   ],
+   "year": 2024,
+   "label": "Stroh et al. 2024",
+   "people": 64,
+   "trials": 79464,
+   "scored": 79164,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2024_NatHumBehav",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Nakayama",
+   "papers": [
+    {
+     "authors": "Tsay JS, Asmerian H, Germine LT, Wilmer J, Ivry RB, Nakayama K",
+     "year": 2024,
+     "title": "Large-scale citizen science reveals predictors of sensorimotor adaptation",
+     "venue": "Nat Hum Behav 8(3):510-525",
+     "doi": "10.1038/s41562-023-01798-0"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2024,
+   "label": "Tsay et al. 2024",
+   "people": 2547,
+   "trials": 347520,
+   "scored": 347520,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2024_JCogNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/DariusParvin/Adaptation_Multiple_Cursor_Experiments",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Ivry / Morehead (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Parvin DE, Dang KV, Stover AR, Ivry RB, Morehead JR",
+     "year": 2024,
+     "title": "Implicit adaptation is modulated by the relevance of feedback",
+     "venue": "Journal of Cognitive Neuroscience 36(5)",
+     "doi": "10.1162/jocn_a_02160"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2024,
+   "label": "Tsay et al. 2024",
+   "people": 48,
+   "trials": 28800,
+   "scored": 28800,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Tsay2024_JNeurophysiol",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Sarlegna",
+   "papers": [
+    {
+     "authors": "Tsay JS, Chandy AM, Chua R, Miall RC, Cole J, Farnè A, Ivry RB, Sarlegna FR",
+     "year": 2024,
+     "title": "Minimal impact of chronic proprioceptive loss on implicit sensorimotor adaptation and perceived movement outcome",
+     "venue": "J Neurophysiol 132(3):770-780",
+     "doi": "10.1152/jn.00096.2024"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2024,
+   "label": "Tsay et al. 2024",
+   "people": 66,
+   "trials": 29040,
+   "scored": 28653,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "VelazquezVargas2024_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/z3cua/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Taylor (Princeton University)",
+   "papers": [
+    {
+     "authors": "Velazquez-Vargas CA, Taylor JA",
+     "year": 2024,
+     "title": "Working memory constraints for visuomotor retrieval strategies",
+     "venue": "J Neurophysiol 132(2):347-361",
+     "doi": "10.1152/jn.00122.2024"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license selected on the OSF project"
+    ]
+   ],
+   "year": 2024,
+   "label": "Velazquez-Vargas & Taylor 2024",
+   "people": 45,
+   "trials": 20325,
+   "scored": 20325,
+   "experiments": 3,
+   "paradigms": [
+    "Abrupt rotation",
+    "Contextual cues"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Wang2024_CurrBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/ej4ba/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Wang T, Avraham G, Tsay JS, Thummala T, Ivry RB",
+     "year": 2024,
+     "title": "Advanced feedback enhances sensorimotor adaptation",
+     "venue": "Curr Biol 34(5):1076-1085.e5",
+     "doi": "10.1016/j.cub.2024.01.073"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2024,
+   "label": "Wang et al. 2024",
+   "people": 432,
+   "trials": 224640,
+   "scored": 224548,
+   "experiments": 4,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Wang2024_eLife",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Tsay (Carnegie Mellon University)",
+   "papers": [
+    {
+     "authors": "Wang T, Morehead JR, Jiang A, Ivry RB, Tsay JS",
+     "year": 2024,
+     "title": "Motor biases reflect a misalignment between visual and proprioceptive reference frames",
+     "venue": "eLife 13:RP100715",
+     "doi": "10.7554/eLife.100715"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2024,
+   "label": "Wang et al. 2024",
+   "people": 406,
+   "trials": 152512,
+   "scored": 152504,
+   "experiments": 4,
+   "paradigms": [
+    "No perturbation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Will2024_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://zenodo.org/records/11084801",
+     "host": "Zenodo"
+    }
+   ],
+   "lab": "Stenner (Leibniz Institute for Neurobiology, Magdeburg)",
+   "papers": [
+    {
+     "authors": "Will M, Stenner MP",
+     "year": 2024,
+     "title": "Imprecise perception of hand position during early motor adaptation",
+     "venue": "J Neurophysiol 131(6):1200-1212",
+     "doi": "10.1152/jn.00447.2023"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the Zenodo record"
+    ]
+   ],
+   "year": 2024,
+   "label": "Will & Stenner 2024",
+   "people": 92,
+   "trials": 55003,
+   "scored": 54744,
+   "experiments": 3,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Bansal2023_ExpBrainRes",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/c5ezv/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University) + Straube/Eggert (LMU Munich)",
+   "papers": [
+    {
+     "authors": "Bansal AT, 't Hart BM, Chauhan U, Eggert T, Straube A, Henriques DYP",
+     "year": 2023,
+     "title": "Motor adaptation does not differ when a perturbation is introduced abruptly or gradually",
+     "venue": "Exp Brain Res 241:2577-2590",
+     "doi": "10.1007/s00221-023-06699-2"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "OSF project"
+    ]
+   ],
+   "year": 2023,
+   "label": "Bansal et al. 2023",
+   "people": 130,
+   "trials": 50592,
+   "scored": 50591,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Crossley2023_BlockedUncertainty",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/crossley/sensory_uncertainty_fffb_blocked_vs_interleaved",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Crossley (Macquarie University)",
+   "papers": [
+    {
+     "authors": "Crossley MJ, Hewitson CL, Kaplan DM",
+     "year": 2023,
+     "title": "Sensory uncertainty influences motor learning differently in blocked versus interleaved trial contexts when both feedforward and feedback processes are engaged",
+     "venue": "bioRxiv",
+     "doi": "10.1101/2023.11.28.569131"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2023,
+   "label": "Crossley et al. 2023",
+   "people": 40,
+   "trials": 12000,
+   "scored": 12000,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Guo2023_SciRep",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/r4p2n",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Song (Brown University)",
+   "papers": [
+    {
+     "authors": "Guo J, Song J-H",
+     "year": 2023,
+     "title": "Reciprocal facilitation between mental and visuomotor rotations",
+     "venue": "Sci Rep 13:825",
+     "doi": "10.1038/s41598-022-26397-3"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the article is CC BY 4.0"
+    ]
+   ],
+   "year": 2023,
+   "label": "Guo & Song 2023",
+   "people": 74,
+   "trials": 47040,
+   "scored": 46232,
+   "experiments": 4,
+   "paradigms": [
+    "Abrupt rotation",
+    "No perturbation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Hadjiosif2023_PLoSBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.5281/zenodo.7668262",
+     "host": "Zenodo"
+    }
+   ],
+   "lab": "Smith (Harvard)",
+   "papers": [
+    {
+     "authors": "Hadjiosif AM, Morehead JR, Smith MA",
+     "year": 2023,
+     "title": "A double dissociation between savings and long-term memory in motor learning",
+     "venue": "PLoS Biol 21(4):e3001799",
+     "doi": "10.1371/journal.pbio.3001799"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Zenodo record"
+    ]
+   ],
+   "year": 2023,
+   "label": "Hadjiosif et al. 2023",
+   "people": 106,
+   "trials": 122080,
+   "scored": 121474,
+   "experiments": 4,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Hewitson2023_PLoSComputBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/crossley/sensory_uncertainty_fffb",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Crossley (Macquarie University)",
+   "papers": [
+    {
+     "authors": "Hewitson CL, Kaplan DM, Crossley MJ",
+     "year": 2023,
+     "title": "Error-independent effect of sensory uncertainty on motor learning when both feedforward and feedback control processes are engaged",
+     "venue": "PLoS Comput Biol 19(9):e1010526",
+     "doi": "10.1371/journal.pcbi.1010526"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repositories"
+    ]
+   ],
+   "year": 2023,
+   "label": "Hewitson et al. 2023",
+   "people": 120,
+   "trials": 33600,
+   "scored": 33600,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Hewitson2023_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/ilestz/confidence_analysis",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "McDougle (Yale)",
+   "papers": [
+    {
+     "authors": "Hewitson CL, Al-Fawakhiri N, Forrence AD, McDougle SD",
+     "year": 2023,
+     "title": "Metacognitive judgments during visuomotor learning reflect the integration of error history",
+     "venue": "J Neurophysiol 130(2):264-277",
+     "doi": "10.1152/jn.00022.2023"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2023,
+   "label": "Hewitson et al. 2023",
+   "people": 38,
+   "trials": 11280,
+   "scored": 11275,
+   "experiments": 2,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Korka2023_Cortex",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://zenodo.org/records/7440442",
+     "host": "Zenodo"
+    }
+   ],
+   "lab": "Stenner (Leibniz Institute for Neurobiology, Magdeburg)",
+   "papers": [
+    {
+     "authors": "Korka B, Will M, Avci I, Dukagjini F, Stenner MP",
+     "year": 2023,
+     "title": "Strategy-based motor learning decreases the post-movement beta power",
+     "venue": "Cortex 166:43-58",
+     "doi": "10.1016/j.cortex.2023.05.002"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Zenodo record"
+    ]
+   ],
+   "year": 2023,
+   "label": "Korka et al. 2023",
+   "people": 30,
+   "trials": 32400,
+   "scored": 32400,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "LangHodge2023_PLOSONE",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/8crqa/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Marigold (Simon Fraser University)",
+   "papers": [
+    {
+     "authors": "Lang-Hodge AM, Cooke DF, Marigold DS",
+     "year": 2023,
+     "title": "The effects of prior exposure to prism lenses on de novo motor skill learning",
+     "venue": "PLOS ONE 18(10):e0292518",
+     "doi": "10.1371/journal.pone.0292518"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2023,
+   "label": "Lang-Hodge et al. 2023",
+   "people": 23,
+   "trials": 2185,
+   "scored": 2074,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Matsuda2023_ExpBrainRes",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://figshare.com/articles/dataset/Implicit_motor_adaptation_driven_by_intermittent_and_invariant_errors/21212843",
+     "host": "figshare"
+    }
+   ],
+   "lab": "Abe (Hokkaido University)",
+   "papers": [
+    {
+     "authors": "Matsuda N, Abe MO",
+     "year": 2023,
+     "title": "Implicit motor adaptation driven by intermittent and invariant errors",
+     "venue": "Exp Brain Res 241(8):2125-2132",
+     "doi": "10.1007/s00221-023-06667-w"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "figshare record"
+    ]
+   ],
+   "year": 2023,
+   "label": "Matsuda & Abe 2023",
+   "people": 30,
+   "trials": 11700,
+   "scored": 11700,
+   "experiments": 3,
+   "paradigms": [
+    "Gradual rotation",
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Modchalingam2023_SciRep",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/a7k6s/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University)",
+   "papers": [
+    {
+     "authors": "Modchalingam S, Ciccone M, D'Amario S, 't Hart BM, Henriques DYP",
+     "year": 2023,
+     "title": "Adapting to visuomotor rotations in stepped increments increases implicit motor learning",
+     "venue": "Sci Rep 13:5022",
+     "doi": "10.1038/s41598-023-32068-8"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2023,
+   "label": "Modchalingam et al. 2023",
+   "people": 105,
+   "trials": 42246,
+   "scored": 42246,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation",
+    "Gradual rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Tsay2023_JCognNeurosci",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Cooper",
+   "papers": [
+    {
+     "authors": "Tsay JS, Tan S, Chu MA, Ivry RB, Cooper EA",
+     "year": 2023,
+     "title": "Low vision impairs implicit sensorimotor adaptation in response to small errors, but not large errors",
+     "venue": "J Cogn Neurosci 35(4):736-748",
+     "doi": "10.1162/jocn_a_01969"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2023,
+   "label": "Tsay et al. 2023",
+   "people": 40,
+   "trials": 17550,
+   "scored": 17550,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2023_ProcRSocB",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Irving C, Ivry RB",
+     "year": 2023,
+     "title": "Signatures of contextual interference in implicit sensorimotor adaptation",
+     "venue": "Proc R Soc B 290(1993):20222491",
+     "doi": "10.1098/rspb.2022.2491"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2023,
+   "label": "Tsay et al. 2023",
+   "people": 360,
+   "trials": 124200,
+   "scored": 122553,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Xu2023_JBBS",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/jhanliufu-personal/ImplicitAdaptation2021_Chen",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Juan Chen (South China Normal University; data collection), with Haith and Hadjiosif (Johns Hopkins)",
+   "papers": [
+    {
+     "authors": "Xu JY, Yang C, Liufu MZ, Chang S, Chen JP, Lu F, Hadjiosif AM, Haith AM, Deng XQ",
+     "year": 2023,
+     "title": "Effects of Different Feedback Conditions on Sensorimotor Adaptation Revealed in a Mirror Reversal Paradigm",
+     "venue": "J Behav Brain Sci 13(7):127-141",
+     "doi": "10.4236/jbbs.2023.137009"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file at the version used (an MIT file was removed in 2023)"
+    ]
+   ],
+   "year": 2023,
+   "label": "Xu et al. 2023",
+   "people": 26,
+   "trials": 5670,
+   "scored": 5648,
+   "experiments": 3,
+   "paradigms": [
+    "Mirror or gain",
+    "No perturbation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Zhu2023_PLoSComputBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/ftb9w/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Flanagan / Gallivan (Queen's University)",
+   "papers": [
+    {
+     "authors": "Zhu T, Gallivan JP, Wolpert DM, Flanagan JR",
+     "year": 2023,
+     "title": "Interaction between decision-making and motor learning when selecting reach targets in the presence of bias and noise",
+     "venue": "PLoS Comput Biol 19(11):e1011596",
+     "doi": "10.1371/journal.pcbi.1011596"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the article is CC BY 4.0"
+    ]
+   ],
+   "year": 2023,
+   "label": "Zhu et al. 2023",
+   "people": 162,
+   "trials": 69498,
+   "scored": 69350,
+   "experiments": 2,
+   "paradigms": [
+    "Abrupt rotation",
+    "Gradual rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "vanMastrigt2023_ExpBrainRes",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "van Mastrigt NM, Tsay JS, Wang T, Avraham G, Abram SJ, van der Kooij K, Smeets JBJ, Ivry RB",
+     "year": 2023,
+     "title": "Implicit reward-based motor learning",
+     "venue": "Exp Brain Res 241(9):2287-2298",
+     "doi": "10.1007/s00221-023-06683-w"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2023,
+   "label": "van Mastrigt et al. 2023",
+   "people": 68,
+   "trials": 68680,
+   "scored": 68000,
+   "experiments": 2,
+   "paradigms": [
+    "Reward or score"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Abekawa2022_CurrBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.6084/m9.figshare.19589701",
+     "host": "figshare"
+    }
+   ],
+   "lab": "Gomi (NTT Communication Science Labs, Japan)",
+   "papers": [
+    {
+     "authors": "Abekawa N, Ito S, Gomi H",
+     "year": 2022,
+     "title": "Gaze-specific motor memories for hand-reaching",
+     "venue": "Curr Biol 32(12):2747-2753.e6",
+     "doi": "10.1016/j.cub.2022.04.065"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "figshare record"
+    ]
+   ],
+   "year": 2022,
+   "label": "Abekawa et al. 2022",
+   "people": 10,
+   "trials": 6967,
+   "scored": 5800,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation",
+    "Contextual cues"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Avraham2022_eLife",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "McDougle",
+   "papers": [
+    {
+     "authors": "Avraham G, Taylor JA, Breska A, Ivry RB, McDougle SD",
+     "year": 2022,
+     "title": "Contextual effects in sensorimotor adaptation adhere to associative learning rules",
+     "venue": "eLife 11:e75801",
+     "doi": "10.7554/eLife.75801"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2022,
+   "label": "Avraham et al. 2022",
+   "people": 166,
+   "trials": 135000,
+   "scored": 135000,
+   "experiments": 4,
+   "paradigms": [
+    "Error clamp",
+    "Contextual cues"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Nettekoven2022_BrainStimul",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/carobellum/cerebellar_tdcs_adaptation",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Stagg (University of Oxford)",
+   "papers": [
+    {
+     "authors": "Nettekoven CR, Jurdon R, Nandi T, Jenkinson N, Stagg CJ",
+     "year": 2022,
+     "title": "Cerebellar anodal tDCS does not facilitate visuomotor adaptation or retention",
+     "venue": "Brain Stimul 15(6):1435-1438",
+     "doi": "10.1016/j.brs.2022.10.006"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license in the GitHub repository"
+    ]
+   ],
+   "year": 2022,
+   "label": "Nettekoven et al. 2022",
+   "people": 27,
+   "trials": 28080,
+   "scored": 27649,
+   "experiments": 1,
+   "paradigms": [
+    "Gradual rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Ruttle2022_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/6q2zd/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University)",
+   "papers": [
+    {
+     "authors": "Ruttle JE, 't Hart BM, Henriques DYP",
+     "year": 2022,
+     "title": "Reduced feedback barely slows down proprioceptive recalibration",
+     "venue": "J Neurophysiol 128(6):1625-1633",
+     "doi": "10.1152/jn.00082.2022"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; GitHub copies are MIT or GPL-3.0"
+    ]
+   ],
+   "year": 2022,
+   "label": "Ruttle et al. 2022",
+   "people": 96,
+   "trials": 55296,
+   "scored": 19477,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Senna2022_eLife",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://data.mendeley.com/datasets/ksdwxdwtxg",
+     "host": "Mendeley Data"
+    }
+   ],
+   "lab": "Ernst (Ulm University)",
+   "papers": [
+    {
+     "authors": "Senna I, Piller S, Ben-Zion I, Ernst MO",
+     "year": 2022,
+     "title": "Recalibrating vision-for-action requires years after sight restoration from congenital cataracts",
+     "venue": "eLife 11:e78734",
+     "doi": "10.7554/eLife.78734"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Mendeley Data record"
+    ]
+   ],
+   "year": 2022,
+   "label": "Senna et al. 2022",
+   "people": 59,
+   "trials": 8208,
+   "scored": 8208,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2022_BrainCommun",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Najafi T, Schuck L, Wang T, Ivry RB",
+     "year": 2022,
+     "title": "Implicit sensorimotor adaptation is preserved in Parkinson's disease",
+     "venue": "Brain Commun 4(6):fcac303",
+     "doi": "10.1093/braincomms/fcac303"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2022,
+   "label": "Tsay et al. 2022",
+   "people": 32,
+   "trials": 10560,
+   "scored": 10560,
+   "experiments": 1,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "McDougleCipleu_provisional",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Tsay (Carnegie Mellon University)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Schuck L, Ivry RB",
+     "year": 2022,
+     "title": "Cerebellar degeneration impairs strategy discovery but not strategy recall",
+     "venue": "The Cerebellum 22(6)",
+     "doi": "10.1007/s12311-022-01500-6"
+    },
+    {
+     "authors": "Cipleu M, Padmanabhan S, Cooper EA, Tsay JS",
+     "year": 2026,
+     "title": "Minimal impact of low vision on explicit sensorimotor adaptation",
+     "venue": "Neurorehabil Neural Repair 40(8):643-652",
+     "doi": "10.1177/15459683261445439"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2022,
+   "label": "Tsay et al. 2022 and Cipleu et al. 2026",
+   "people": 78,
+   "trials": 12480,
+   "scored": 12480,
+   "experiments": 2,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Avraham2021_PLoSBiol",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Avraham G, Morehead JR, Kim HE, Ivry RB",
+     "year": 2021,
+     "title": "Reexposure to a sensorimotor perturbation produces opposite effects on explicit and implicit learning processes",
+     "venue": "PLoS Biol 19(3):e3001147",
+     "doi": "10.1371/journal.pbio.3001147"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Avraham et al. 2021",
+   "people": 104,
+   "trials": 109440,
+   "scored": 109418,
+   "experiments": 4,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Ayala2021_PLoSONE",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/v2hwp/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University)",
+   "papers": [
+    {
+     "authors": "Ayala MN, Henriques DYP",
+     "year": 2021,
+     "title": "Differential contributions of implicit and explicit learning mechanisms to various contextual cues in dual adaptation",
+     "venue": "PLoS ONE 16(7):e0253948",
+     "doi": "10.1371/journal.pone.0253948"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the article is CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Ayala & Henriques 2021",
+   "people": 132,
+   "trials": 112752,
+   "scored": 112693,
+   "experiments": 3,
+   "paradigms": [
+    "Abrupt rotation",
+    "Contextual cues"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Li2021_FrontAgingNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/x2jnf/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Zhongting Chen (East China Normal University)",
+   "papers": [
+    {
+     "authors": "Li N, Chen G, Xie Y, Chen Z",
+     "year": 2021,
+     "title": "Aging Effect on Visuomotor Adaptation: Mediated by Cognitive Decline",
+     "venue": "Front Aging Neurosci 13:742928",
+     "doi": "10.3389/fnagi.2021.742928"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; the article is CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Li et al. 2021",
+   "people": 120,
+   "trials": 14400,
+   "scored": 14400,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Ruttle2021_SciRep",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/9db8v/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University)",
+   "papers": [
+    {
+     "authors": "Ruttle JE, 't Hart BM, Henriques DYP",
+     "year": 2021,
+     "title": "Implicit motor learning within three trials",
+     "venue": "Sci Rep 11:1627",
+     "doi": "10.1038/s41598-021-81031-y"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project; a GitHub copy is GPL-3.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Ruttle et al. 2021",
+   "people": 80,
+   "trials": 37888,
+   "scored": 37256,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp",
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Tsay2021_JNeurophysiol_proprioception",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Kim HE, Parvin DE, Stover AR, Ivry RB",
+     "year": 2021,
+     "title": "Individual differences in proprioception predict the extent of implicit sensorimotor adaptation",
+     "venue": "J Neurophysiol 125(4):1307-1321",
+     "doi": "10.1152/jn.00585.2020"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Tsay et al. 2021",
+   "people": 62,
+   "trials": 52968,
+   "scored": 35568,
+   "experiments": 2,
+   "paradigms": [
+    "Gradual rotation",
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2021_JNeurophysiol_uncertainty",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Avraham G, Kim HE, Parvin DE, Wang Z, Ivry RB",
+     "year": 2021,
+     "title": "The effect of visual uncertainty on implicit motor adaptation",
+     "venue": "J Neurophysiol 125(1):12-22",
+     "doi": "10.1152/jn.00493.2020"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Tsay et al. 2021",
+   "people": 117,
+   "trials": 135420,
+   "scored": 135420,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2021_NBDT",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Avraham",
+   "papers": [
+    {
+     "authors": "Tsay JS, Lee AS, Ivry RB, Avraham G",
+     "year": 2021,
+     "title": "Moving outside the lab: the viability of conducting sensorimotor learning studies online",
+     "venue": "Neurons, Behavior, Data analysis, and Theory 5(3)",
+     "doi": "10.51628/001c.26985"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2021,
+   "label": "Tsay et al. 2021",
+   "people": 255,
+   "trials": 46944,
+   "scored": 46464,
+   "experiments": 2,
+   "paradigms": [
+    "Abrupt rotation",
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Wilterson2021_eNeuro",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/vtqa3/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Taylor (Princeton)",
+   "papers": [
+    {
+     "authors": "Wilterson SA, Taylor JA",
+     "year": 2021,
+     "title": "Implicit visuomotor adaptation remains limited after several days of training",
+     "venue": "eNeuro 8(4):ENEURO.0312-20.2021",
+     "doi": "10.1523/ENEURO.0312-20.2021"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2021,
+   "label": "Wilterson & Taylor 2021",
+   "people": 24,
+   "trials": 96768,
+   "scored": 96197,
+   "experiments": 2,
+   "paradigms": [
+    "Mirror or gain",
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Moskowitz2020_PLoSCompBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://plos.figshare.com/articles/dataset/Human_decision_making_anticipates_future_performance_in_motor_learning/11915742",
+     "host": "figshare"
+    }
+   ],
+   "lab": "Flanagan (Queen's University) with Wolpert",
+   "papers": [
+    {
+     "authors": "Moskowitz JB, Gale DJ, Gallivan JP, Wolpert DM, Flanagan JR",
+     "year": 2020,
+     "title": "Human decision making anticipates future performance in motor learning",
+     "venue": "PLoS Comput Biol 16(2):e1007632",
+     "doi": "10.1371/journal.pcbi.1007632"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "PLOS supplementary data on figshare"
+    ]
+   ],
+   "year": 2020,
+   "label": "Moskowitz et al. 2020",
+   "people": 17,
+   "trials": 6426,
+   "scored": 6426,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Tsay2020_JNeurophysiol",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Tsay JS, Parvin DE, Ivry RB",
+     "year": 2020,
+     "title": "Continuous reports of sensed hand position during sensorimotor adaptation",
+     "venue": "J Neurophysiol 124(4):1122-1130",
+     "doi": "10.1152/jn.00242.2020"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2020,
+   "label": "Tsay et al. 2020",
+   "people": 32,
+   "trials": 14720,
+   "scored": 14720,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Holland2019_JNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/j5v2s/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Galea (University of Birmingham)",
+   "papers": [
+    {
+     "authors": "Holland P, Codol O, Oxley E, Taylor M, Hamshere E, Joseph S, Huffer L, Galea JM",
+     "year": 2019,
+     "title": "Domain-specific working memory, but not dopamine-related genetic variability, shapes reward-based motor learning",
+     "venue": "J Neurosci 39(47):9383-9396",
+     "doi": "10.1523/JNEUROSCI.0583-19.2019"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2019,
+   "label": "Holland et al. 2019",
+   "people": 121,
+   "trials": 81070,
+   "scored": 80379,
+   "experiments": 1,
+   "paradigms": [
+    "Reward or score"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Kim2019_eLife",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/hyosubkim/Influence-of-task-outcome-on-implicit-motor-learning",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Kim HE, Parvin DE, Ivry RB",
+     "year": 2019,
+     "title": "The influence of task outcome on implicit motor learning",
+     "venue": "eLife 8:e39882",
+     "doi": "10.7554/eLife.39882"
+    }
+   ],
+   "licenses": [
+    [
+     "MIT",
+     "License file in the GitHub repository"
+    ]
+   ],
+   "year": 2019,
+   "label": "Kim et al. 2019",
+   "people": 116,
+   "trials": 138880,
+   "scored": 138880,
+   "experiments": 3,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "MIT"
+  },
+  {
+   "id": "Codol2018_SciRep",
+   "side": "development",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "lab": "Galea (University of Birmingham)",
+   "papers": [
+    {
+     "authors": "Codol O, Holland PJ, Galea JM",
+     "year": 2018,
+     "title": "The relationship between reinforcement and explicit control during visuomotor adaptation",
+     "venue": "Sci Rep 8:9121",
+     "doi": "10.1038/s41598-018-27378-1"
+    }
+   ],
+   "licenses": [
+    [
+     "CC BY 4.0",
+     "Shared by OpenMotor under CC BY 4.0"
+    ]
+   ],
+   "year": 2018,
+   "label": "Codol et al. 2018",
+   "people": 123,
+   "trials": 64755,
+   "scored": 59158,
+   "experiments": 2,
+   "paradigms": [
+    "Abrupt rotation",
+    "Reward or score",
+    "Gradual rotation"
+   ],
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "Holland2018_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/vwr7c/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Galea (University of Birmingham)",
+   "papers": [
+    {
+     "authors": "Holland P, Codol O, Galea JM",
+     "year": 2018,
+     "title": "Contribution of explicit processes to reinforcement-based motor learning",
+     "venue": "J Neurophysiol 119(6):2241-2255",
+     "doi": "10.1152/jn.00901.2017"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "OSF lists no license; the project wiki says the data are freely available for reproduction"
+    ]
+   ],
+   "year": 2018,
+   "label": "Holland et al. 2018",
+   "people": 70,
+   "trials": 45600,
+   "scored": 43825,
+   "experiments": 3,
+   "paradigms": [
+    "Reward or score"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Kim2018_CommunBiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/hyosubkim/CommunicationsBio2018",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley)",
+   "papers": [
+    {
+     "authors": "Kim HE, Morehead JR, Parvin DE, Moazzezi R, Ivry RB",
+     "year": 2018,
+     "title": "Invariant errors reveal limitations in motor correction rather than constraints on error sensitivity",
+     "venue": "Communications Biology 1:19",
+     "doi": "10.1038/s42003-018-0021-y"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2018,
+   "label": "Kim et al. 2018",
+   "people": 126,
+   "trials": 89040,
+   "scored": 89040,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Johnson2017_PLoSOne",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.5061/dryad.b2p3j",
+     "host": "Dryad"
+    }
+   ],
+   "lab": "Sensinger / Kording (UNB / Shirley Ryan AbilityLab)",
+   "papers": [
+    {
+     "authors": "Johnson RE, Kording KP, Hargrove LJ, Sensinger JW",
+     "year": 2017,
+     "title": "Adaptation to random and systematic errors: Comparison of amputee and non-amputee control interfaces with varying levels of process noise",
+     "venue": "PLoS ONE 12(3):e0170473",
+     "doi": "10.1371/journal.pone.0170473"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "Dryad dataset"
+    ]
+   ],
+   "year": 2017,
+   "label": "Johnson et al. 2017",
+   "people": 8,
+   "trials": 7200,
+   "scored": 7200,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Morehead2017_JCogNeurosci",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/xiaotsay2015/morehead2017",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Ivry (UC Berkeley) with Taylor (Princeton)",
+   "papers": [
+    {
+     "authors": "Morehead JR, Taylor JA, Parvin DE, Ivry RB",
+     "year": 2017,
+     "title": "Characteristics of implicit sensorimotor adaptation revealed by task-irrelevant clamped feedback",
+     "venue": "J Cogn Neurosci 29(6):1061-1074",
+     "doi": "10.1162/jocn_a_01108"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2017,
+   "label": "Morehead et al. 2017",
+   "people": 110,
+   "trials": 38720,
+   "scored": 38587,
+   "experiments": 2,
+   "paradigms": [
+    "Error clamp"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "tHart2016_PLoSOne",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/feuby/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques ('t Hart; York University)",
+   "papers": [
+    {
+     "authors": "'t Hart BM, Henriques DYP",
+     "year": 2016,
+     "title": "Separating predicted and perceived sensory consequences of motor learning",
+     "venue": "PLoS ONE 11(9):e0163556 (Table 1 corrected in e0168825)",
+     "doi": "10.1371/journal.pone.0163556"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "OSF project"
+    ]
+   ],
+   "year": 2016,
+   "label": "'t Hart & Henriques 2016",
+   "people": 21,
+   "trials": 11235,
+   "scored": 8912,
+   "experiments": 1,
+   "paradigms": [
+    "Gradual rotation"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Arrighi2016_PLoSOne",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.5061/dryad.v677p",
+     "host": "Dryad"
+    }
+   ],
+   "lab": "Andre / Rossi (University of Pisa)",
+   "papers": [
+    {
+     "authors": "Arrighi P, Bonfiglio L, Minichilli F, Cantore N, Carboncini MC, Piccotti E, Rossi B, Andre P",
+     "year": 2016,
+     "title": "EEG Theta Dynamics within Frontal and Parietal Cortices for Error Processing during Reaching Movements in a Prism Adaptation Study Altering Visuo-Motor Predictive Planning",
+     "venue": "PLoS ONE 11(3):e0150265",
+     "doi": "10.1371/journal.pone.0150265"
+    }
+   ],
+   "licenses": [
+    [
+     "CC0",
+     "Dryad dataset"
+    ]
+   ],
+   "year": 2016,
+   "label": "Arrighi et al. 2016",
+   "people": 12,
+   "trials": 1475,
+   "scored": 1475,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "CC0"
+  },
+  {
+   "id": "Brudner2016_JNeurophysiol",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/Max-Townsend/aha_precedes_strategy_VMR",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "Taylor (Princeton); re-released by Townsend/Morehead (Leeds)",
+   "papers": [
+    {
+     "authors": "Brudner SN, Kethidi N, Graeupner D, Ivry RB, Taylor JA",
+     "year": 2016,
+     "title": "Delayed feedback during sensorimotor learning selectively disrupts adaptation but not strategy use",
+     "venue": "J Neurophysiol 115(3):1499-1511",
+     "doi": "10.1152/jn.00066.2015"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license file in the GitHub repository"
+    ]
+   ],
+   "year": 2016,
+   "label": "Brudner et al. 2016",
+   "people": 40,
+   "trials": 11520,
+   "scored": 11520,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Goldschmidt2016_Joystick",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/degoldschmidt/motor-data",
+     "host": "GitHub"
+    }
+   ],
+   "lab": "INDP course project (Champalimaud, Lisbon; inferred)",
+   "papers": [
+    {
+     "authors": "Goldschmidt D, Dias R",
+     "year": 2016,
+     "title": "INDP2015 Motor Week joystick visuomotor rotation course project",
+     "venue": "Unpublished dataset, GitHub degoldschmidt/motor-data",
+     "doi": "none"
+    }
+   ],
+   "licenses": [
+    [
+     "GPL-3.0",
+     "License file in the GitHub repository"
+    ]
+   ],
+   "year": 2016,
+   "label": "Goldschmidt & Dias 2016",
+   "people": 33,
+   "trials": 13200,
+   "scored": 13200,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "GPL-3.0"
+  },
+  {
+   "id": "Ruttle2016_PLoSONE",
+   "side": "development",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/4v6md/",
+     "host": "OSF"
+    }
+   ],
+   "lab": "Henriques (York University) with Cressman (Ottawa)",
+   "papers": [
+    {
+     "authors": "Ruttle JE, Cressman EK, 't Hart BM, Henriques DYP",
+     "year": 2016,
+     "title": "Time course of reach adaptation and proprioceptive recalibration during visuomotor learning",
+     "venue": "PLoS ONE 11(10):e0163695",
+     "doi": "10.1371/journal.pone.0163695"
+    }
+   ],
+   "licenses": [
+    [
+     "None stated",
+     "No license on the OSF project"
+    ]
+   ],
+   "year": 2016,
+   "label": "Ruttle et al. 2016",
+   "people": 41,
+   "trials": 44280,
+   "scored": 36541,
+   "experiments": 1,
+   "paradigms": [
+    "Abrupt rotation"
+   ],
+   "license": "None stated"
+  },
+  {
+   "id": "Cisneros2026_NatHumBehav",
+   "side": "lockbox",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Cisneros E, Karny S, Ivry RB, Tsay JS",
+     "year": 2026,
+     "title": "A systematic investigation reveals dissociable effects of ageing on implicit and explicit components of sensorimotor learning",
+     "venue": "Nat Hum Behav 10(8):1510-1530",
+     "doi": "10.1038/s41562-026-02468-7"
+    }
+   ],
+   "year": 2026,
+   "label": "Cisneros et al. 2026"
+  },
+  {
+   "id": "Cook2026_InfantChildDev",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.5683/SP3/MEH4QW",
+     "host": "Borealis"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Cook AJ, Giaschi D, Im HY",
+     "year": 2026,
+     "title": "Speed and accuracy of movement during visuomotor adaptation are still developing in school-age children",
+     "venue": "Infant Child Dev 35(4):e70121",
+     "doi": "10.1002/icd.70121"
+    }
+   ],
+   "year": 2026,
+   "label": "Cook et al. 2026"
+  },
+  {
+   "id": "Ding2026_npjSciLearn",
+   "side": "lockbox",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Ding W, Niyogi A, Taylor JA, Tsay JS",
+     "year": 2026,
+     "title": "Hypothesis testing governs strategic motor learning",
+     "venue": "npj Sci Learn 11:43",
+     "doi": "10.1038/s41539-026-00428-4"
+    }
+   ],
+   "year": 2026,
+   "label": "Ding et al. 2026"
+  },
+  {
+   "id": "MillerMills2026_EJN",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/y7hrq/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Miller-Mills B, Kwan T, Carroll TJ, Poh E",
+     "year": 2026,
+     "title": "Benefits of dual-tasking on implicit sensorimotor adaptation",
+     "venue": "Eur J Neurosci 63(4):e70442",
+     "doi": "10.1111/ejn.70442"
+    }
+   ],
+   "year": 2026,
+   "label": "Miller-Mills et al. 2026"
+  },
+  {
+   "id": "Nyamsuren2026_bioRxiv",
+   "side": "lockbox",
+   "source": "openmotor",
+   "links": [
+    {
+     "url": "https://osf.io/aknqj/",
+     "host": "OpenMotor on OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Nyamsuren I, Statham A, Mitchell E, Kohler B, Lam P, Klatzky RL, Tsay JS",
+     "year": 2026,
+     "title": "Motor learning and transfer are symmetric across hands",
+     "venue": "bioRxiv 2026.07.17.739258",
+     "doi": "10.64898/2026.07.17.739258"
+    }
+   ],
+   "year": 2026,
+   "label": "Nyamsuren et al. 2026"
+  },
+  {
+   "id": "Slade2026_ExpBrainRes",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/d9tcy",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Slade SA, Kowalewski J, Cobzas D, Striemer CL",
+     "year": 2026,
+     "title": "The influence of prism adaptation on spatial biases is not dependent on which hand is used to adapt",
+     "venue": "Experimental Brain Research 244(4):75",
+     "doi": "10.1007/s00221-026-07273-2"
+    }
+   ],
+   "year": 2026,
+   "label": "Slade et al. 2026"
+  },
+  {
+   "id": "Berland2025_JNeurophysiol",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://zenodo.org/records/15606190",
+     "host": "Zenodo"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Berland A, Cherifi YI, Paljic A, Guigon E",
+     "year": 2025,
+     "title": "Coexistence of two adaptation processes in a visuomotor rotation task",
+     "venue": "J Neurophysiol 134(5):1531-1539",
+     "doi": "10.1152/jn.00041.2025"
+    }
+   ],
+   "year": 2025,
+   "label": "Berland et al. 2025"
+  },
+  {
+   "id": "Luo2025_bioRxiv",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/mk538/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Luo Y, Wei K",
+     "year": 2025,
+     "title": "Use-dependent learning biases the initial state but not the learning dynamics of implicit adaptation",
+     "venue": "bioRxiv 2025.12.12.694069",
+     "doi": "10.64898/2025.12.12.694069"
+    }
+   ],
+   "year": 2025,
+   "label": "Luo & Wei 2025"
+  },
+  {
+   "id": "Shingane2025_JNeurophysiol",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://figshare.com/articles/dataset/Data_Shingane_Rao_Kumar_Mutha_JNeurophys_2025/29562452",
+     "host": "figshare"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Shingane SN, Rao N, Kumar N, Mutha PK",
+     "year": 2025,
+     "title": "Task relevance selectively modulates sensorimotor adaptation in the presence of multiple prediction errors",
+     "venue": "J Neurophysiol 134(5):1607-1618",
+     "doi": "10.1152/jn.00511.2024"
+    }
+   ],
+   "year": 2025,
+   "label": "Shingane et al. 2025"
+  },
+  {
+   "id": "Takada2025_PsyArXiv",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/8a2mn/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Takada K, Wen W, Kasahara S, Froese T",
+     "year": 2025,
+     "title": "The role of regularity detection and prediction in the exploration of sense of agency",
+     "venue": "PsyArXiv ucagp_v1",
+     "doi": "10.31234/osf.io/ucagp_v1"
+    }
+   ],
+   "year": 2025,
+   "label": "Takada et al. 2025"
+  },
+  {
+   "id": "Todorov2025_bioRxiv",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/6j8sm/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Todorov DI, Moulin M, Buch E, Quentin R",
+     "year": 2025,
+     "title": "Modulation of error sensitivity during motor learning across time, space and environment variability",
+     "venue": "bioRxiv 2025.05.30.656374 (version 2)",
+     "doi": "10.1101/2025.05.30.656374"
+    }
+   ],
+   "year": 2025,
+   "label": "Todorov et al. 2025"
+  },
+  {
+   "id": "Casasnovas2024_JNeurophysiol",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.25625/NMU5P3",
+     "host": "GRO.data"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Casasnovas V, Amann LK, Haas GL, Gail A",
+     "year": 2024,
+     "title": "Task-relevant visual feedback uncertainty attenuates visuomotor adaptation",
+     "venue": "J Neurophysiol 132(3):879-889",
+     "doi": "10.1152/jn.00180.2024"
+    }
+   ],
+   "year": 2024,
+   "label": "Casasnovas et al. 2024"
+  },
+  {
+   "id": "Hulst2024_bioRxiv",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://zenodo.org/records/14541215",
+     "host": "Zenodo"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Hulst T, Mamlins A, Frens M, Chang D-I, Goericke SL, Timmann D, Donchin O",
+     "year": 2024,
+     "title": "Can we improve slow learning in cerebellar patients?",
+     "venue": "bioRxiv 2020.07.03.185959 (v3, 2024)",
+     "doi": "10.1101/2020.07.03.185959"
+    }
+   ],
+   "year": 2024,
+   "label": "Hulst et al. 2024"
+  },
+  {
+   "id": "Kobayashi2024_eLife",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.5281/zenodo.8033232",
+     "host": "Zenodo"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Kobayashi T, Nozaki D",
+     "year": 2024,
+     "title": "Implicit motor adaptation patterns in a redundant motor task manipulating a stick with both hands",
+     "venue": "eLife 13:RP96665",
+     "doi": "10.7554/eLife.96665"
+    }
+   ],
+   "year": 2024,
+   "label": "Kobayashi & Nozaki 2024"
+  },
+  {
+   "id": "Sugiyama2024_PNAS",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.6084/m9.figshare.26074357",
+     "host": "figshare"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Sugiyama T, Uehara S, Izawa J",
+     "year": 2024,
+     "title": "Meta-learning of human motor adaptation via the dorsal premotor cortex",
+     "venue": "PNAS 121(44):e2417543121",
+     "doi": "10.1073/pnas.2417543121"
+    }
+   ],
+   "year": 2024,
+   "label": "Sugiyama et al. 2024"
+  },
+  {
+   "id": "Kunavar2023_PLoSONE",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.6084/m9.figshare.22844264",
+     "host": "figshare"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Kunavar T, Cheng X, Franklin DW, Burdet E, Babič J",
+     "year": 2023,
+     "title": "Explicit learning based on reward prediction error facilitates agile motor adaptations",
+     "venue": "PLOS ONE 18(12):e0295274",
+     "doi": "10.1371/journal.pone.0295274"
+    }
+   ],
+   "year": 2023,
+   "label": "Kunavar et al. 2023"
+  },
+  {
+   "id": "Maresch2022_eNeuro",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/f6smc/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Maresch J, Donchin O",
+     "year": 2022,
+     "title": "Prolonged feedback duration does not affect implicit recalibration in a visuomotor rotation task",
+     "venue": "eNeuro 9(2):ENEURO.0447-21.2022",
+     "doi": "10.1523/ENEURO.0447-21.2022"
+    }
+   ],
+   "year": 2022,
+   "label": "Maresch & Donchin 2022"
+  },
+  {
+   "id": "Wang2022_BrainSci",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://github.com/HJWangOrder66/Motor-learning-with-tDCS",
+     "host": "GitHub"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Wang H, Wei K",
+     "year": 2022,
+     "title": "Transcranial Direct-Current Stimulation Does Not Affect Implicit Sensorimotor Adaptation: A Randomized Sham-Controlled Trial",
+     "venue": "Brain Sci 12(10):1325",
+     "doi": "10.3390/brainsci12101325"
+    }
+   ],
+   "year": 2022,
+   "label": "Wang & Wei 2022"
+  },
+  {
+   "id": "Petitet2021_NeuroImage",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/stkv2/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Petitet P, Spitz G, Emir UE, Johansen-Berg H, O'Shea J",
+     "year": 2021,
+     "title": "Age-related decline in cortical inhibitory tone strengthens motor memory",
+     "venue": "NeuroImage 245:118681",
+     "doi": "10.1016/j.neuroimage.2021.118681"
+    }
+   ],
+   "year": 2021,
+   "label": "Petitet et al. 2021"
+  },
+  {
+   "id": "Bromberg2019_eNeuro",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://osf.io/dsn3v/",
+     "host": "OSF"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Bromberg Z, Donchin O, Haar S",
+     "year": 2019,
+     "title": "Eye movements during visuomotor adaptation represent only part of the explicit learning",
+     "venue": "eNeuro 6(6):ENEURO.0308-19.2019",
+     "doi": "10.1523/ENEURO.0308-19.2019"
+    }
+   ],
+   "year": 2019,
+   "label": "Bromberg et al. 2019"
+  },
+  {
+   "id": "Spang2017_iPerception",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://doi.org/10.12751/g-node.hnj28q",
+     "host": "G-Node GIN"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Spang K, Wischhusen S, Fahle M",
+     "year": 2017,
+     "title": "Limited Plasticity of Prismatic Visuomotor Adaptation",
+     "venue": "i-Perception 8(2):2041669517701458",
+     "doi": "10.1177/2041669517701458"
+    }
+   ],
+   "year": 2017,
+   "label": "Spang et al. 2017"
+  },
+  {
+   "id": "Kim2015_PLoSOne",
+   "side": "lockbox",
+   "source": "external",
+   "links": [
+    {
+     "url": "https://figshare.com/articles/dataset/Kim_et_al_PLoS_One_2015_Between_trial_forgetting_due_to_interference_and_time_in_motor_adaptation/1305124",
+     "host": "figshare"
+    }
+   ],
+   "papers": [
+    {
+     "authors": "Kim S, Oh Y, Schweighofer N",
+     "year": 2015,
+     "title": "Between-trial forgetting due to interference and time in motor adaptation",
+     "venue": "PLoS ONE 10(11):e0142963",
+     "doi": "10.1371/journal.pone.0142963"
+    }
+   ],
+   "year": 2015,
+   "label": "Kim et al. 2015"
+  }
+ ]
+}

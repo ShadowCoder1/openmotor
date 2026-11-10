@@ -1,0 +1,199 @@
+{
+ "id": "Gastrock2026_DiscovNeurosci",
+ "module": "reach90",
+ "rows": 13440,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 399786,
+ "zip_sha256": "050db35648b6bbfce0fdf7c7b38b434c3a0332956d6ef223cccaa974cc30b748",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aligned trials per participant (all 32 participants have the same number)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 48 aligned, 48 random, 90 training, 48 washout trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "random0 trials per participant (all 32 participants have the same number)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 48 aligned, 48 random, 90 training, 48 washout trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "random1 trials per participant (all 32 participants have the same number)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 48 aligned, 48 random, 90 training, 48 washout trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "washout0 trials per participant (all 32 participants have the same number)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 48 aligned, 48 random, 90 training, 48 washout trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "washout1 trials per participant (all 32 participants have the same number)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 48 aligned, 48 random, 90 training, 48 washout trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rotation and mirror training trials per participant (all equal)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Fig. 1B caption: 90 training trials per perturbation; Methods, Perturbed trials: 15 blocks of six",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct target directions in the aligned block of one participant (all participants)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Aligned trials: 12 target locations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct training targets per perturbation and participant (all equal)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Perturbed trials: each block included six targets",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct random rotation values (+-15, +-25, +-35)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Random rotation trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "random rotation values are +-15, +-25, +-35 only",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Random rotation trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "each random rotation value appears 8 times per random block and participant",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Random rotation trials: each magnitude and direction once per shuffled set of six, eight blocks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fixed rotation size (deg, counter-clockwise)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Perturbed trials: cursor rotated 30 degrees counterclockwise",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with even ids who did the rotation before the mirror (of 16 even ids)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Fig. 1C: even numbered participant IDs experienced the rotation before the mirror reversal",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct full-compensation levels for the mirror (15, 30, 45)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Amount of compensation: full compensation for the mirror could be 15, 30, or 45 degrees",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smallest and largest mirror compensation (deg)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0.01,
+   "source": "Methods, Amount of compensation: 15 and 45 degrees",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "cursor direction = hand direction + 30 deg on every rotation trial (counter-clockwise rotation, checked on the data)",
+   "ok": true,
+   "detail": "max abs deviation 0.00"
+  },
+  {
+   "kind": "internal",
+   "what": "late rotation training hand angle is negative (compensation for a counter-clockwise rotation)",
+   "ok": true,
+   "detail": "mean -25.7"
+  },
+  {
+   "kind": "internal",
+   "what": "mirror axis reads 0 or 90 deg for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: 32 participants x (5 x 48 + 2 x 90 trials)",
+   "ok": true,
+   "detail": "13440"
+  },
+  {
+   "kind": "internal",
+   "what": "fraction of trials flagged by the authors",
+   "ok": true,
+   "detail": "0.00% of 13440 trials flagged as not selected or without a reach sample"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports behaviour as figures and Bayesian t-tests on baseline-corrected percent compensation (for example BF10 > 1e8 for the first versus last block of fixed-rotation training, BF10 = 0.447 for the mirror); these were not recomputed, so the published checks are the design numbers of Methods and Fig. 1 (participants, trials per block, targets, rotation sizes, mirror compensation levels). The OSF project states no license; the article itself is CC BY-NC-ND 4.0, which does not cover the data."
+ ],
+ "sources": [
+  {
+   "file": "behavior.zip",
+   "url": "https://osf.io/download/srph7/",
+   "bytes": 159713130,
+   "sha256": "1958b300ba056f58ba0de0a35116db3f6fb09cf44fb52517eab5dbb0ea9dfcda",
+   "fetched_utc": "2026-11-09T10:39:14Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gastrock2026_DiscovNeurosci.zip"
+}

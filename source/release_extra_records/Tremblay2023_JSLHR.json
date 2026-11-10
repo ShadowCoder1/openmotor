@@ -1,0 +1,153 @@
+{
+ "id": "Tremblay2023_JSLHR",
+ "module": "summary",
+ "rows": 9607,
+ "subjects": 78,
+ "persons": 78,
+ "zip_bytes": 87272,
+ "zip_sha256": "2cf261dcd001e7d34912c3cf2032cc6493ee211f1dbae0097dc03c23d0ff3d21",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (78 healthy adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (44 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (34 males)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "singers",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (38 amateur singers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (40 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 58.34615384615385,
+   "reported": 58.35,
+   "tol": 0.005,
+   "source": "Tremblay et al. 2023 data README, Sample (58.35)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 17.986161291448433,
+   "reported": 18.0,
+   "tol": 0.5,
+   "source": "Tremblay et al. 2023 data README, Sample (SD 18, printed as an integer)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (20-88 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 88.0,
+   "reported": 88.0,
+   "tol": 0,
+   "source": "Tremblay et al. 2023 data README, Sample (20-88 years)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "78 persons in the rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 DDK cells per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MPT durations are positive",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The README gives the group breakdown as 23 females among 38 singers aged 20-87 and 19 females among 40 controls aged 23-88; the shared rows give 24 and 20 females and a singer aged 88 and a control aged 20 (the totals of 44 females, 38 singers, 40 controls and ages 20-88 match), so the group labels of one or two participants differ from the README, and the rows follow the shared files.",
+  "The paper's effect sizes and mixed-model results were not recomputed; checks are limited to the sample description in the deposit's README."
+ ],
+ "sources": [
+  {
+   "file": "README.docx",
+   "url": "https://borealisdata.ca/api/access/datafile/663316",
+   "bytes": 131733,
+   "sha256": "2b87ee05362c014e3b301484b3819fd32216000db573698456714c844e3eb893",
+   "fetched_utc": "2026-11-09T15:29:14Z"
+  },
+  {
+   "file": "DDK.csv",
+   "url": "https://borealisdata.ca/api/access/datafile/663317",
+   "bytes": 81030,
+   "sha256": "95857cdaf756c97435413d1714b1cd348c0f9ae7f274c46b2b5d8ed706b0414a",
+   "fetched_utc": "2026-11-09T15:29:33Z"
+  },
+  {
+   "file": "MPT.csv",
+   "url": "https://borealisdata.ca/api/access/datafile/663323",
+   "bytes": 13225,
+   "sha256": "7499bf33115ebe414f30be02b57760ee9d90fd706fd2ab885b28bc67ba9c9d4c",
+   "fetched_utc": "2026-11-09T15:29:37Z"
+  },
+  {
+   "file": "Passages.csv",
+   "url": "https://borealisdata.ca/api/access/datafile/663322",
+   "bytes": 9324,
+   "sha256": "d6eb419190a5eb1bd4ffc65bbd62b27dd2bfeaf156debe145e07b2fceb7b14bb",
+   "fetched_utc": "2026-11-09T15:29:43Z"
+  },
+  {
+   "file": "Voice.csv",
+   "url": "https://borealisdata.ca/api/access/datafile/663315",
+   "bytes": 21985,
+   "sha256": "c7fed667e081aa98e1587ad3914f6a78d5585f5e37c71d3642e398b10f17c6f5",
+   "fetched_utc": "2026-11-09T15:29:48Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tremblay2023_JSLHR.zip"
+}

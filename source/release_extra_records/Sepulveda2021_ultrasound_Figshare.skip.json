@@ -1,0 +1,7 @@
+{
+ "id": "Sepulveda2021_ultrasound_Figshare",
+ "skipped": true,
+ "reason": "no trial-level data",
+ "details": "The deposit (Figshare 13542995, CC BY 4.0) is one 2.7 GB ZIP of 483 MP4 ultrasound videos of the tongue with the audio inside them (17 speakers, up to 30 sentences each, Videos_<speaker>_with_audio/*_rec_NN_video.mp4) plus two PDFs (a preprint and the recording protocol). It has no table, annotation, tongue contour or other measured value per trial or recording, only raw media, which cannot be re-encoded into a CSV format without new analysis (for example tracing tongue contours). The linked article is Castillo, Rubio, Porras, Contreras-Ortiz & Sepulveda 2019, STSIVA, doi 10.1109/STSIVA.2019.8730224; the entry in extra_studies.json cites the dataset record itself.",
+ "sources": []
+}

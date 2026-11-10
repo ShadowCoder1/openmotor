@@ -1,0 +1,419 @@
+{
+ "id": "Thorburn2025_PsyArXiv",
+ "module": "speech",
+ "rows": 51547,
+ "subjects": 213,
+ "persons": 213,
+ "zip_bytes": 34609058,
+ "zip_sha256": "55a1f181281bafbf6b5ae31d02c951de76b13dd035005c8f7e34c50f2c684f33",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Exp 1: every row of the authors' spectrum table matches a trial of the behavioral file",
+   "ok": true,
+   "detail": "12767 spectrum rows, 19926 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: key press Response agrees with the authors' response_num (ga = 1) on every matched row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: rows that share a trial number within a participant are exact repeats (same recording, response, time)",
+   "ok": true,
+   "detail": "0 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: no spectrum for an excluded participant, a practice trial or a key press of 3 s or more",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: spectra have 80, 120, 221 or 240 values",
+   "ok": true,
+   "detail": "[np.int64(80), np.int64(120), np.int64(221), np.int64(240)]"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: spectrum levels within -60 to 50 dB",
+   "ok": true,
+   "detail": "-57.0 to 50.0"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 1: chronological block (40 trials each) is 1-6 on every critical trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: every row of the authors' spectrum table matches a trial of the behavioral file",
+   "ok": true,
+   "detail": "12514 spectrum rows, 17221 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: key press Response agrees with the authors' response_num (ga = 1) on every matched row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: rows that share a trial number within a participant are exact repeats (same recording, response, time)",
+   "ok": true,
+   "detail": "4 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: no spectrum for an excluded participant, a practice trial or a key press of 3 s or more",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: spectra have 80, 120, 221 or 240 values",
+   "ok": true,
+   "detail": "[np.int64(240)]"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: spectrum levels within -60 to 50 dB",
+   "ok": true,
+   "detail": "-59.5 to 50.0"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: chronological block (40 trials each) is 1-6 on every critical trial and equals the authors' block label",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: every row of the authors' spectrum table matches a trial of the behavioral file",
+   "ok": true,
+   "detail": "6470 spectrum rows, 14400 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: key press Response agrees with the authors' response_num (ga = 1) on every matched row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: rows that share a trial number within a participant are exact repeats (same recording, response, time)",
+   "ok": true,
+   "detail": "0 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: no spectrum for an excluded participant, a practice trial or a key press of 3 s or more",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: spectra have 80, 120, 221 or 240 values",
+   "ok": true,
+   "detail": "[np.int64(80), np.int64(120), np.int64(221), np.int64(240)]"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: spectrum levels within -60 to 50 dB",
+   "ok": true,
+   "detail": "-54.2 to 49.9"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 3: chronological block (40 trials each) is 1-6 on every critical trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants analysed",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Thorburn et al. 2025 preprint, Experiment 1, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: critical trials with a key press of 3 s or more (%)",
+   "computed": 1.0606060606060606,
+   "reported": 1.1,
+   "tol": 0.05,
+   "source": "Thorburn et al. 2025 preprint, Experiment 1, Analytic Approach",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants excluded",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Thorburn et al. 2025 preprint, Experiment 1, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: critical trials lost to recording problems (%)",
+   "computed": 2.2196969696969697,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Thorburn et al. 2025 preprint, Experiment 1, Analytic Approach",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants analysed",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Thorburn et al. 2025 preprint, Experiment 2, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: critical trials with a key press of 3 s or more (%)",
+   "computed": 2.507716049382716,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Thorburn et al. 2025 preprint, Experiment 2, Analytic Approach",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: critical trials lost to recording problems (%)",
+   "computed": 0.933641975308642,
+   "reported": 0.9,
+   "tol": 0.05,
+   "source": "Thorburn et al. 2025 preprint, Experiment 2, Analytic Approach",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants analysed",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Thorburn et al. 2025 preprint, Experiment 3, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: critical trials with a key press of 3 s or more (%)",
+   "computed": 3.508771929824561,
+   "reported": 3.5,
+   "tol": 0.05,
+   "source": "Thorburn et al. 2025 preprint, Experiment 3, Analytic Approach",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants excluded",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Thorburn et al. 2025 preprint, Experiment 3, Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 2: the paper reports 54 analysed and 16 excluded participants (70 in all); the shared behavioral file has 71 participants and the authors' notebook excludes 17, which leaves the paper's 54. The paper's 0.9% of trials lost to recording problems reproduces when the roughly 30 trials that are absent from the behavioral file (one participant stopped after 212 trials) are counted among the losses (121 of the 12,960 designed trials).",
+  "Experiment 3: the authors' file has a spectrum for only 6470 of the 13680 critical trials of the 57 analysed participants (47%), although the paper reports that only 0.2% of trials were lost to recording problems; the spectra are missing from about half of every participant's trials, in both conditions and all blocks.",
+  "One analysed participant in Experiment 1 and one in Experiment 3 have no spectrum on any trial, so the authors' production analysis has 54 and 56 participants where the paper reports 55 and 57.",
+  "The paper's cluster-mass statistics come from random subsamples of the spectra and a permutation test (permuco in R); they were not recomputed here."
+ ],
+ "sources": [
+  {
+   "file": "README_root.txt",
+   "url": "https://osf.io/download/hsmju/",
+   "bytes": 2020,
+   "sha256": "a2e004bc9753a04b1e30bfba2b3bb8e9472e0d4aa5fa0be1f3de09d2be36cdf7",
+   "fetched_utc": "2026-11-08T22:15:01Z"
+  },
+  {
+   "file": "README_exp1.txt",
+   "url": "https://osf.io/download/jc9rz/",
+   "bytes": 2020,
+   "sha256": "a2e004bc9753a04b1e30bfba2b3bb8e9472e0d4aa5fa0be1f3de09d2be36cdf7",
+   "fetched_utc": "2026-11-08T22:15:05Z"
+  },
+  {
+   "file": "README_exp1_data.txt",
+   "url": "https://osf.io/download/nhrxu/",
+   "bytes": 904,
+   "sha256": "47c2eba7e230b1403bd0ebe151fdea554d170ab6fff07e04ff05db9995162a32",
+   "fetched_utc": "2026-11-08T22:15:09Z"
+  },
+  {
+   "file": "README_exp1_analysis.txt",
+   "url": "https://osf.io/download/9hevu/",
+   "bytes": 1515,
+   "sha256": "90b6f05371bd0020836d9f1e32ba95b30af52a895738880aa5f9490acf3582d9",
+   "fetched_utc": "2026-11-08T22:15:13Z"
+  },
+  {
+   "file": "README_exp1_stimuli.txt",
+   "url": "https://osf.io/download/erd4c/",
+   "bytes": 573,
+   "sha256": "effd87f5b8d1acb372a483b118fb31ad7e5c077046e4e1c543983b10dc50e818",
+   "fetched_utc": "2026-11-08T22:15:17Z"
+  },
+  {
+   "file": "README_production_extraction.txt",
+   "url": "https://osf.io/download/2ngpu/",
+   "bytes": 8668,
+   "sha256": "f169c5ef3e952c310e6f92fca7f26165ac83c5e5f0f9015e79b50e5fa7ce1de7",
+   "fetched_utc": "2026-11-08T22:15:21Z"
+  },
+  {
+   "file": "README_exp2_stimuli.txt",
+   "url": "https://osf.io/download/h2p4v/",
+   "bytes": 828,
+   "sha256": "ff061c8c48ec4069490914e3d07c17020fb11922777ab8a4c1525a0e509ea54e",
+   "fetched_utc": "2026-11-08T22:15:24Z"
+  },
+  {
+   "file": "README_exp3_stimuli.txt",
+   "url": "https://osf.io/download/nmbz3/",
+   "bytes": 1660,
+   "sha256": "b73d6927ca53ec04e581bdc41b15aaf36e97d52e9903513e38a2911ae64e36d6",
+   "fetched_utc": "2026-11-08T22:15:27Z"
+  },
+  {
+   "file": "exp1_behavioral_data.csv",
+   "url": "https://osf.io/download/680ab8dbefd6f28c3535fd52/",
+   "bytes": 3110408,
+   "sha256": "41a97786df05139dc87cb15d298f5680423162983d7c58be50f4244601840e88",
+   "fetched_utc": "2026-11-08T22:15:32Z"
+  },
+  {
+   "file": "exp2_behavioral_data.csv",
+   "url": "https://osf.io/download/680bf6551da9a04f3639a77f/",
+   "bytes": 2443211,
+   "sha256": "82ce1ff2b60896c9413d14872c272a762071a4de2739316c004016a0e2de881d",
+   "fetched_utc": "2026-11-08T22:15:35Z"
+  },
+  {
+   "file": "exp3_behavioral_data.csv",
+   "url": "https://osf.io/download/de9vb/",
+   "bytes": 2442363,
+   "sha256": "5bad3c860cd9b6ef4982e19774dfb8abed0403581a71459c1c929283d63eb101",
+   "fetched_utc": "2026-11-08T22:15:40Z"
+  },
+  {
+   "file": "exp1_ltas_rstats.csv",
+   "url": "https://osf.io/download/6gev3/",
+   "bytes": 191630,
+   "sha256": "b04ca356eb7b08fe65030b539938f9767297ef198c821b03991731bd5a0577ab",
+   "fetched_utc": "2026-11-08T22:15:43Z"
+  },
+  {
+   "file": "exp2_ltas_rstats.csv",
+   "url": "https://osf.io/download/8zpnk/",
+   "bytes": 192120,
+   "sha256": "28b5385ea3dbfa8089d81567d00b6a5f049e0fb3487af41fee899e00ebbd686f",
+   "fetched_utc": "2026-11-08T22:15:47Z"
+  },
+  {
+   "file": "exp3_ltas_rstats.csv",
+   "url": "https://osf.io/download/680bc04eccf861300eb7d177/",
+   "bytes": 191969,
+   "sha256": "0cd3d50d801cdbbd43d57d0cf4ffb6a536b36b4935ecff384a2b8e7e9809b55b",
+   "fetched_utc": "2026-11-08T22:15:50Z"
+  },
+  {
+   "file": "exp1_ProductionSCB_sampling.R",
+   "url": "https://osf.io/download/zgchp/",
+   "bytes": 8897,
+   "sha256": "f60954d359891ca1e2fc26e7a81d620ce0f7ae1bfb662938395ef1d6015b90cb",
+   "fetched_utc": "2026-11-08T22:15:55Z"
+  },
+  {
+   "file": "exp1_PerceptionAnalysis.R",
+   "url": "https://osf.io/download/680aba0ef3260241e039a753/",
+   "bytes": 2971,
+   "sha256": "4d3464dc30ac5a6a9415cf5a419f6eea4511625b69f1dccaeea1e96c2b6abf1a",
+   "fetched_utc": "2026-11-08T22:16:13Z"
+  },
+  {
+   "file": "exp1_diff_fig_stats.txt",
+   "url": "https://osf.io/download/ag8e2/",
+   "bytes": 557,
+   "sha256": "b72b0d4b10a8bbe4d679446a2a3827ce4d95b909fdcf2a25affb19e9c0882785",
+   "fetched_utc": "2026-11-08T22:16:17Z"
+  },
+  {
+   "file": "exp2_diff_fig_stats.txt",
+   "url": "https://osf.io/download/4wbfk/",
+   "bytes": 452,
+   "sha256": "5b1227a697f76b26ca42abf3fb49b9db77588f8b1a1851da14c4d9589a58acd7",
+   "fetched_utc": "2026-11-08T22:16:20Z"
+  },
+  {
+   "file": "exp3_diff_fig_stats.txt",
+   "url": "https://osf.io/download/fzkva/",
+   "bytes": 487,
+   "sha256": "f5b70b38ee150394e3138cdfe01f71e2a8104e9747bd96504fc760444735c012",
+   "fetched_utc": "2026-11-08T22:16:23Z"
+  },
+  {
+   "file": "exp1_ltas_raw.csv",
+   "url": "https://osf.io/download/c8wuk/",
+   "bytes": 59390051,
+   "sha256": "9317f0c6463ec776766a4d7f5ab8f95062197876a4e030aeffe3ffd1b3890c9a",
+   "fetched_utc": "2026-11-08T22:17:42Z"
+  },
+  {
+   "file": "exp2_ltas_raw.csv",
+   "url": "https://osf.io/download/680bbf36b351d30acdb7d15d/",
+   "bytes": 61279113,
+   "sha256": "61b28bcbe1d4c9588fdb57f3b8be849a392df000f83a3d9456be08072ba4f917",
+   "fetched_utc": "2026-11-08T22:17:49Z"
+  },
+  {
+   "file": "exp3_ltas_raw.csv",
+   "url": "https://osf.io/download/680bc04e227b7b09da35fd2c/",
+   "bytes": 30531351,
+   "sha256": "312cc26a61e2569a890402c97899d4f4b6d76a986d7c9a1174f354a1e462ea9a",
+   "fetched_utc": "2026-11-08T22:17:53Z"
+  },
+  {
+   "file": "preprint.docx",
+   "url": "https://osf.io/download/evx6t/",
+   "bytes": 5881671,
+   "sha256": "c4a99d402a5eba6a01bcfcb6e37666614c832da741cbad381eb1353219a0ff7a",
+   "fetched_utc": "2026-11-08T22:18:38Z"
+  },
+  {
+   "file": "exp1_sampling_analysis_general.ipynb",
+   "url": "https://osf.io/download/vte7p/",
+   "bytes": 314871,
+   "sha256": "c404b9c86aa5d67e743737112ae7d2b9f7061943dc978478e7188a0ede856398",
+   "fetched_utc": "2026-11-08T22:20:02Z"
+  },
+  {
+   "file": "exp2_sampling_analysis_general.ipynb",
+   "url": "https://osf.io/download/3vdsg/",
+   "bytes": 300306,
+   "sha256": "44b6b0ed48e1fa594e95a69a8825a54c9e450b287c1a95639cccad0dd77c59e8",
+   "fetched_utc": "2026-11-08T22:21:25Z"
+  },
+  {
+   "file": "exp3_sampling_analysis_general.ipynb",
+   "url": "https://osf.io/download/680bc01518a5b910b5b7d18a/",
+   "bytes": 301965,
+   "sha256": "de64fda0e05830f34b640de2da408c79002d606117f072916bbf661fa328b02d",
+   "fetched_utc": "2026-11-08T22:21:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Thorburn2025_PsyArXiv.zip"
+}

@@ -1,0 +1,105 @@
+{
+ "id": "Barchet2024_CommunPsychol",
+ "module": "summary",
+ "rows": 3168,
+ "subjects": 66,
+ "persons": 66,
+ "zip_bytes": 44734,
+ "zip_sha256": "4a51c6a554680247eeb048705ad748c65c7fd9a01504801361ee5de62f8a9bd6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants who took the synchronization task",
+   "computed": 66.0,
+   "reported": 66.0,
+   "tol": 0,
+   "source": "Barchet et al. 2024, Participants (66 participated)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who spoke loudly",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Barchet et al. 2024, Participants (two excluded for speaking loudly)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants inconsistent between trials (authors' rule)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Barchet et al. 2024, Participants (additional 2 excluded for inconsistency)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final synchronization sample",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Barchet et al. 2024, Participants and Table 1 (N = 62)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "mean of the two corrected trials equals the authors' plv_corrected.csv",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "66 participants x 16 cells x 3 measures",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "raw PLV in 0..1",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "data_plv.csv",
+   "url": "https://osf.io/download/dpm8r/",
+   "bytes": 10037,
+   "sha256": "5a79425053cc20579c61bd524926507bf3a9efa8f50675fa5662f76023b0697d",
+   "fetched_utc": "2026-11-09T15:33:58Z"
+  },
+  {
+   "file": "plv_corrected.csv",
+   "url": "https://osf.io/download/a2fkr/",
+   "bytes": 10646,
+   "sha256": "1685010b58b31bbfa937fb89498945bc48ba6860767f2b0f55149712a2f169c4",
+   "fetched_utc": "2026-11-09T15:34:02Z"
+  },
+  {
+   "file": "data_plv_trial.csv",
+   "url": "https://osf.io/download/65045f8df3dcd1766cddd4ec/",
+   "bytes": 19665,
+   "sha256": "5e5e6f90e2986f1cb7711b94e8d35b6d3b7d5e95777c5ff67fac58588eef0202",
+   "fetched_utc": "2026-11-09T15:34:06Z"
+  },
+  {
+   "file": "msi_data.csv",
+   "url": "https://osf.io/download/uta3m/",
+   "bytes": 6380,
+   "sha256": "a21e59cb1d6c83bcef7392a5ec6dd275f14487425879faf192a7dcd2488b1846",
+   "fetched_utc": "2026-11-09T15:34:13Z"
+  },
+  {
+   "file": "data_plv_trial_shuffle.csv",
+   "url": "https://osf.io/download/65045f85f3dcd17669ddd35d/",
+   "bytes": 19660,
+   "sha256": "230a30d905c4690c08dc7a63057aab7faddfef0775d15bf333768eb790712a1c",
+   "fetched_utc": "2026-11-09T15:34:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Barchet2024_CommunPsychol.zip"
+}

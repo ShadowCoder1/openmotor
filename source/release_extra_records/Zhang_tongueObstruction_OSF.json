@@ -1,0 +1,75 @@
+{
+ "id": "Zhang_tongueObstruction_OSF",
+ "module": "speech",
+ "rows": 2847,
+ "subjects": 54,
+ "persons": 54,
+ "zip_bytes": 58677,
+ "zip_sha256": "0f3c192b077358c557c1642406f568ec456cef6412b11aa9b3c118cf8c8551d9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "no duplicate token files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one bite-block and one feedback condition per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has blocks 1, 2 and 4",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 and F2 present on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the authors' models",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "the authors' model summaries in the OSF deposit (full model results.pdf), '~subj (Number of levels)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pseudowords in the authors' models",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "the authors' model summaries in the OSF deposit (full model results.pdf), '~word (Number of levels)'",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' models used 2897 observations (962 in block 2, 967 in block 4); the shared table has 2847 (945 and 950), so 50 tokens of their model data are not in the shared file. 54 participants and 6 words agree.",
+  "No paper was found, so no result could be checked beyond the counts above."
+ ],
+ "sources": [
+  {
+   "file": "productionFullTable.csv",
+   "url": "https://osf.io/download/pdm34/",
+   "bytes": 347563,
+   "sha256": "4c00d0f861d3fa59a06e018518d1e1979637639b8c3098ce032af01a2986c2ea",
+   "fetched_utc": "2026-11-09T11:57:09Z"
+  },
+  {
+   "file": "subject-1.csv",
+   "url": "https://osf.io/download/69bb0f38db5e02b3ad3b692c/",
+   "bytes": 751227,
+   "sha256": "56b11178298bd462909b7bcc1ec27c45ac522dce920a3a255111edce78f53a03",
+   "fetched_utc": "2026-11-09T11:57:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhang_tongueObstruction_OSF.zip"
+}

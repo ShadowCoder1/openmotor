@@ -1,0 +1,7 @@
+{
+ "id": "Moraes2026_JNeurophysiol",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "OSF deposit (CC BY 4.0, 19 pre-processed MATLAB files of about 340 MB each, 6.5 GB in all, no readme beyond one wiki line) stores 150 trials per participant as 1 kHz hand, gaze, dot and force time series, but the condition of each trial (jump direction, gaze task, force channel) is only given by an undocumented protocol-row code (TProw: 9-14, 31-42, 45-56) and trialType is 2 on every trial; the cursor jump is not logged and the paper reports its measure (lateral channel force 180-230 ms after the perturbation) only as a derived quantity, so labelling trials or releasing per-trial measures would mean guessing the design from the codes. Retry if the authors supply a code book.",
+ "sources": []
+}

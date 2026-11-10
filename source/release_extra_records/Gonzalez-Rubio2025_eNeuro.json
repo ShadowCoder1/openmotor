@@ -1,0 +1,374 @@
+{
+ "id": "Gonzalez-Rubio2025_eNeuro",
+ "module": "perception",
+ "rows": 6796,
+ "subjects": 39,
+ "persons": 39,
+ "zip_bytes": 99473,
+ "zip_sha256": "052293f805b295c1be52298df59f936515c18b4dc6f9dc50d7df04ac5b256326",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the analysed rows (excluded_by_authors False) are exactly the authors' Dataset.csv, in its order: stimulus, reaction time and participant equal on all 6,549 rows",
+   "ok": true,
+   "detail": "6549 vs 6549 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Dataset.csv's initialResponse = the run files' response, reversed on every row of one participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "response differs from Dataset.csv's initialResponse only on that participant's answered null trials, where the authors' choice columns keep the recorded side",
+   "ok": true,
+   "detail": "24 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "each treadmill run (deposit file) falls in exactly one of the authors' three blocks",
+   "ok": true,
+   "detail": "239 runs"
+  },
+  {
+   "kind": "internal",
+   "what": "Dataset.csv's left/right/no-response and correct/incorrect columns follow from the response and the stimulus (correct = response opposite in sign to the stimulus, none on null trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Dataset.csv's previous-stimulus column equals the stimulus of the previous row of the same run file (0 at a run's first row), set before the authors' deletions: the rows line up one to one",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 39 participant folders read, in the authors' order; every Slow<k>.csv of each folder read",
+   "ok": true,
+   "detail": "239 runs"
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the per-run files is kept, in order: 6,796 rows = 6,549 analysed + 236 first trials after a treadmill start + 6 repeated last trials + 5 rows without a stimulus (3 of them empty)",
+   "ok": true,
+   "detail": "{'analysed': 6549, 'first trial after the treadmill started': 236, 'repeated last trial of a run': 6, 'no stimulus recorded': 5}"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has three analysed blocks of 55 or 56 trials (56 planned)",
+   "ok": true,
+   "detail": "{56: 114, 55: 3}"
+  },
+  {
+   "kind": "internal",
+   "what": "stimuli are 0, +-25, +-50, +-100, +-150, +-200 and +-300 mm/s",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reaction time is missing exactly when the response is missing; recorded times lie within 0-10 s (response window 8 strides)",
+   "ok": true,
+   "detail": "0.014-9.074 s"
+  },
+  {
+   "kind": "internal",
+   "what": "null trials: 8 per analysed block of 56",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks analysed (39 x 3)",
+   "computed": 117.0,
+   "reported": 117.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials at |dV| = 0 mm/s",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials at |dV| = 25 mm/s",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials at |dV| = 50 mm/s",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials at |dV| = 150 mm/s",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-response trials at |dV| = 300 mm/s",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Testing protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean individual PSE, mm/s (logistic fit per participant, PSE = -b0/b1)",
+   "computed": 5.2888631294125314,
+   "reported": 5.3,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of individual PSEs, mm/s",
+   "computed": 19.000091648469315,
+   "reported": 19.0,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smallest individual PSE, mm/s",
+   "computed": -32.54615932530479,
+   "reported": -32.5,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest individual PSE, mm/s",
+   "computed": 49.05184797377728,
+   "reported": 49.1,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a PSE significantly different from 0 (95% CI with b1 fixed)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean individual JND, mm/s (JND = ln 3 / b1)",
+   "computed": 49.67856413216436,
+   "reported": 49.7,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of individual JNDs, mm/s",
+   "computed": 22.59773605041835,
+   "reported": 22.6,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smallest individual JND, mm/s",
+   "computed": 14.27127554797003,
+   "reported": 14.3,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest individual JND, mm/s",
+   "computed": 112.48317580937763,
+   "reported": 112.5,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean Weber fraction, % (mean JND / 1050 mm/s)",
+   "computed": 4.731291822110892,
+   "reported": 4.7,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest individual accuracy, % (null trials scored 0.5, as in accrtPlot.m; the paper gives the whole percent)",
+   "computed": 71.6867469879518,
+   "reported": 71.0,
+   "tol": 1,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest individual accuracy, % ('nearly 90%')",
+   "computed": 89.88095238095238,
+   "reported": 90.0,
+   "tol": 0.5,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest individual mean RT, s",
+   "computed": 1.7673084988690473,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest individual mean RT, s",
+   "computed": 4.921299404761905,
+   "reported": 4.9,
+   "tol": 0.05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, accuracy vs mean RT across participants",
+   "computed": -0.13473757638314607,
+   "reported": -0.1347,
+   "tol": 5e-05,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p, accuracy vs mean RT",
+   "computed": 0.4134723615741512,
+   "reported": 0.414,
+   "tol": 0.001,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, JND vs accuracy",
+   "computed": -0.9423488660868655,
+   "reported": -0.942,
+   "tol": 0.0005,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, JND vs mean RT",
+   "computed": 0.1751727426554624,
+   "reported": 0.175,
+   "tol": 0.0005,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "p, JND vs mean RT",
+   "computed": 0.2861364106019697,
+   "reported": 0.286,
+   "tol": 0.001,
+   "source": "Results, Individual differences in PSE and JND (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest group mean RT across stimuli, s",
+   "computed": 4.725858918640283,
+   "reported": 4.7,
+   "tol": 0.05,
+   "source": "Results, Group-level inference (Fig. 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stimulus with the largest group mean RT, mm/s (null trials)",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Results, Group-level inference (Fig. 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smallest group mean RT across stimuli, s",
+   "computed": 1.8022968726602566,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Results, Group-level inference (Fig. 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy at |dV| = 25 mm/s pooled across participants, %",
+   "computed": 65.19871106337271,
+   "reported": 65.0,
+   "tol": 0.5,
+   "source": "Discussion, para 2",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "repo_61fe3dc.zip",
+   "url": "https://codeload.github.com/PittSMLlab/Gonzalez-Rubioetal2025_perceptualCharacterization/zip/61fe3dc0281388ed712b25cac884aea301cd79df",
+   "bytes": 476203,
+   "sha256": "db335b31ee0e4619bb1da2b3b30f9828b2934332100e89ddb49cb2b6766f57a7",
+   "fetched_utc": "2026-11-08T19:44:40Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Gonzalez-Rubio2025_eNeuro.zip"
+}

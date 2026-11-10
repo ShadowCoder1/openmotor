@@ -1,0 +1,582 @@
+{
+ "id": "Hillman2025_JNeurophysiol",
+ "module": "reach90",
+ "rows": 10835,
+ "subjects": 62,
+ "persons": 31,
+ "zip_bytes": 332701,
+ "zip_sha256": "4bbf44918f5287634dfa871319021363d88af3fa815e3ab150b36d0b4395f8c6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "mwm.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "vmr.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "31 participants in both files, same ids, rows sorted by participant and trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "age, sex, handedness and the VMR metrics are constant within participant in mwm.csv, and the demographics are the same in vmr.csv",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rotation direction constant within participant (15 participants +1, 16 participants -1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "VMR schedule is the same for everyone: trial number fixes the phase, rotation and cursor (255 trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "39 baseline, 160 rotation (learn1-5: 20, 40, 40, 40, 20), 4 x 4 catch and 40 washout trials (Methods)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cursor shown (online = 1) on baseline and rotation trials only; rotation 45 exactly on learn1-5",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "targAng = -rotDir * atan2(targy, targx) and handAng = -rotDir * (hand direction - target direction) on every row",
+   "ok": true,
+   "detail": "max differences 2.3e-13, 3.1e-13 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "cursor 45 deg from the hand on rotation trials (cursAng = handAng - 45 in the authors' mirrored frame), on the hand otherwise",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "handAngErr = 45 - handAng on rotation trials and -handAng otherwise (the cursor error, mirrored)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angle taken where the hand crossed the 9 cm target ring (hand x, y at 8.8-9.1 cm from home)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 31 participants compensate in late learning (mean handAng in learn5 > 15 deg), in both rotation directions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the speed rule of the Methods: the authors' fb code is 1 exactly on trials with RT > 500 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: the authors' trial = block offset + block_trial within each participant's block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: hand_ang and target_ang are atan2 of the x, y coordinates and ang_err = hand_ang - target_ang (counter-clockwise positive)",
+   "ok": true,
+   "detail": "max differences 6.5e-13, 4.0e-13, 9.1e-13"
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: targets 9 cm from home, dist = |hand x, y|, ext_err = dist - target distance, dist_err = Euclidean distance hand - target, abs_ang_err = |ang_err|",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: the recalled target is the probed movement of the four encoded ones, all four distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: every kept trial has |angular error| < 90 deg (the authors' exclusion rule)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: twelve target directions evenly spaced from 15 to 165 deg (Methods)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MWM: ms = mt + 1 on every row (ms is not kept)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order (2847 MWM and 7841 VMR reaches)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "VMR target directions 0, 60, 120 and 180 deg; hand angles recover the authors' raw hand x, y direction",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cursor_error equals rotDir * the authors' handAngErr on every cursor trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "placeholder rows only for gaps in the authors' trial numbers before each participant's last trial: 96 MWM, 51 VMR",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within (-180, 180], target_angle within [0, 360)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Results, Motor Working Memory Task (n = 31)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age",
+   "computed": 18.806451612903224,
+   "reported": 18.8,
+   "tol": 0.05,
+   "source": "Methods, Participants (18.8 +/- 0.75 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 0.7491931143441223,
+   "reported": 0.75,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handed participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants (Edinburgh Handedness Inventory)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR trials removed for hand angles beyond 3 SD of the block mean",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Methods, Analysis (51 trials, 0.6% of all data)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "total, last catch, explicit and implicit learning recomputed from the converted VMR rows equal the authors' per-participant values in mwm.csv",
+   "ok": true,
+   "detail": "max difference 5.7e-14 deg"
+  },
+  {
+   "kind": "published",
+   "what": "VMR total learning: SD across participants",
+   "computed": 5.505830004457109,
+   "reported": 5.51,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR total learning: t against 0",
+   "computed": 36.63380794124684,
+   "reported": 36.63,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR total learning: Cohen's d",
+   "computed": 6.5796261396785045,
+   "reported": 6.58,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR explicit learning: SD across participants",
+   "computed": 7.5171048811711785,
+   "reported": 7.52,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR explicit learning: t against 0",
+   "computed": 8.508143807838914,
+   "reported": 8.51,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR explicit learning: Cohen's d",
+   "computed": 1.528107738294143,
+   "reported": 1.53,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR implicit learning: SD across participants",
+   "computed": 6.35789600365845,
+   "reported": 6.36,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR implicit learning: t against 0",
+   "computed": 17.36776012012612,
+   "reported": 17.37,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR implicit learning: Cohen's d",
+   "computed": 3.1193418019038286,
+   "reported": 3.12,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VMR implicit learning (early aftereffect): mean",
+   "computed": 19.8324507763691,
+   "reported": 19.83,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Rotation Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 1 recalled: paired t, switch vs same hand",
+   "computed": 1.339002254817555,
+   "reported": 1.34,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 1 recalled: Cohen's d",
+   "computed": 0.2404919043910396,
+   "reported": 0.24,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 2 recalled: paired t, switch vs same hand",
+   "computed": 1.2632885020676652,
+   "reported": 1.26,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 2 recalled: Cohen's d",
+   "computed": 0.22689331296081508,
+   "reported": 0.23,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 3 recalled: paired t, switch vs same hand",
+   "computed": 2.2097315812503306,
+   "reported": 2.21,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 3 recalled: Cohen's d",
+   "computed": 0.3968795080485686,
+   "reported": 0.4,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 4 recalled: paired t, switch vs same hand",
+   "computed": 4.616836792060068,
+   "reported": 4.62,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM mean absolute angular error, movement 4 recalled: Cohen's d",
+   "computed": 0.8292083664462752,
+   "reported": 0.83,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 1 recalled: paired t, switch vs same hand",
+   "computed": 0.838286260010017,
+   "reported": 0.84,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 1 recalled: Cohen's d",
+   "computed": 0.15056065691399467,
+   "reported": 0.15,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 2 recalled: paired t, switch vs same hand",
+   "computed": 0.5603369401873782,
+   "reported": 0.56,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 2 recalled: Cohen's d",
+   "computed": 0.10063948537911296,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 3 recalled: paired t, switch vs same hand",
+   "computed": 1.458616456570633,
+   "reported": 1.46,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 3 recalled: Cohen's d",
+   "computed": 0.2619752492235927,
+   "reported": 0.26,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 4 recalled: paired t, switch vs same hand",
+   "computed": 2.2834716337310708,
+   "reported": 2.28,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MWM IQR of angular error, movement 4 recalled: Cohen's d",
+   "computed": 0.4101236124458421,
+   "reported": 0.41,
+   "tol": 0.005,
+   "source": "Results, Motor Working Memory Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, explicit learning vs switch-hand MWM IQR of angular error",
+   "computed": -0.4414243743045725,
+   "reported": -0.44,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (Fig. 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman r, explicit learning vs switch-hand MWM IQR of angular error",
+   "computed": -0.45806451612903226,
+   "reported": -0.46,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, explicit learning vs switch-hand MWM mean absolute angular error",
+   "computed": -0.4055040617300376,
+   "reported": -0.41,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (Fig. 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, implicit learning vs same-hand IQR of angular error (movement 4 - movements 1-3)",
+   "computed": -0.4578819540579596,
+   "reported": -0.46,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (Fig. 5A-B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman r, implicit learning vs same-hand IQR of angular error (movement 4 - movements 1-3)",
+   "computed": -0.2725806451612903,
+   "reported": -0.27,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, implicit learning vs same-hand mean absolute angular error (movement 4 - movements 1-3)",
+   "computed": -0.5295302276384398,
+   "reported": -0.53,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (Fig. 5A-B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman r, implicit learning vs same-hand mean absolute angular error (movement 4 - movements 1-3)",
+   "computed": -0.46491935483870966,
+   "reported": -0.46,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, implicit learning vs movement-4 IQR of angular error, switch - same",
+   "computed": 0.37638616405729475,
+   "reported": 0.38,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (text; Fig. 5C-D plots same - switch, r of opposite sign)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman r, implicit learning vs movement-4 IQR of angular error, switch - same",
+   "computed": 0.4044354838709678,
+   "reported": 0.4,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Pearson r, implicit learning vs movement-4 mean absolute angular error, switch - same",
+   "computed": 0.23565084275920997,
+   "reported": 0.24,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations (text; Fig. 5C-D plots same - switch, r of opposite sign)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman r, implicit learning vs movement-4 mean absolute angular error, switch - same",
+   "computed": 0.18306451612903227,
+   "reported": 0.18,
+   "tol": 0.005,
+   "source": "Results, Cross-Task Correlations",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The text gives mean total learning 36.21 deg and explicit learning 11.51 deg; the shared data give 36.23 and 11.49 (the same values the authors' mwm.csv stores), while the reported SDs, t values and Cohen's d reproduce exactly. The t tests are reported with 29 degrees of freedom but reproduce with all 31 participants (30 df).",
+  "The Methods report 98 MWM trials excluded (|angular error| > 90 deg); the shared file lacks 129 of 31 x 96 trials, 96 of them before each participant's last shared trial (added here as placeholder rows) and 33 at block ends, so the excluded trials cannot be told apart from trials that were not recorded."
+ ],
+ "sources": [
+  {
+   "file": "mwm.csv",
+   "url": "https://raw.githubusercontent.com/hhillman231/MWM_MotorLearning_public/e089bafe89d08c15564f817e253b25a2272426b5/mwm.csv",
+   "bytes": 1323251,
+   "sha256": "9bfec81f1485aadb6692a0100a5ed0ff5feff25c5d0e9c347695831397a38263",
+   "fetched_utc": "2026-11-08T19:42:43Z"
+  },
+  {
+   "file": "vmr.csv",
+   "url": "https://raw.githubusercontent.com/hhillman231/MWM_MotorLearning_public/e089bafe89d08c15564f817e253b25a2272426b5/vmr.csv",
+   "bytes": 1754594,
+   "sha256": "3a1d9e253361ff63359cc375fdd5e186abb04b3bd25da5b6b2210f57022aa9b5",
+   "fetched_utc": "2026-11-08T19:42:45Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Hillman2025_JNeurophysiol.zip"
+}

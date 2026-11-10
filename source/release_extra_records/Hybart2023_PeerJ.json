@@ -1,0 +1,176 @@
+{
+ "id": "Hybart2023_PeerJ",
+ "module": "timeseries",
+ "rows": 107,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 1191638340,
+ "zip_sha256": "7998a45c84d19155c9b18e107d150a75adcd7393d02238c168c8146e3d0152b9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, mean (22.6 years)",
+   "computed": 22.583333333333332,
+   "reported": 22.6,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, SD (8.66; population SD, as in the deposit's own std row)",
+   "computed": 8.664663229975467,
+   "reported": 8.66,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, minimum (18)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, maximum (50)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age without the oldest, mean (20.1)",
+   "computed": 20.09090909090909,
+   "reported": 20.1,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, mean (1.73 m)",
+   "computed": 1.7293166666666666,
+   "reported": 1.73,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, SD (0.075 m)",
+   "computed": 0.07510439216332307,
+   "reported": 0.075,
+   "tol": 0.0005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass, mean (69.3 kg)",
+   "computed": 69.28484038170824,
+   "reported": 69.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass, SD (10.2 kg)",
+   "computed": 10.177998767125414,
+   "reported": 10.2,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every CSV of the deposit is one recording (no file dropped)",
+   "ok": true,
+   "detail": "107 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "12 participants all have treadmill and outdoor recordings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no outdoor condition has more than 3 laps per participant except the files marked as a second file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "treadmill recordings last about 6 minutes (the readme) : median between 6 and 8 minutes (readme says 6, paper says 8)",
+   "ok": true,
+   "detail": "397.414"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "107 malformed lines (wrong number of fields) in the deposit's CSV files were left out (106 files affected).",
+  "Standard deviations of age, height and mass in the paper are population SDs (divided by n), as in the deposit's own std row. The paper's SD of age without the oldest participant (2.1) comes out 2.71 here and is not used as a check.",
+  "One 438-byte controller-settings log (PhD27 exoout2_GUI, gains and thresholds, 13 values per row under 12 header names) is not released because its columns cannot be matched to names; all 107 recordings are.",
+  "The paper describes 8-minute treadmill trials; the readme and the data (a median of about 6.6 minutes) are closer to the readme's 6.",
+  "The readme says the right-leg foot switch is a 'left foot switch'; the data have a 0/1 switch for each leg and are released as such.",
+  "Treadmill force-plate, respiratory (metabolic) and IMU data named in the paper are not part of this deposit."
+ ],
+ "sources": [
+  {
+   "file": "Subject_Information.xlsx",
+   "url": "https://ndownloader.figshare.com/files/40795754",
+   "bytes": 10111,
+   "sha256": "cc0f8b5c7664f339d2a194cb65864af4ff5a8a8f999b2249a837b97ddb1e8f85",
+   "fetched_utc": "2026-11-09T22:38:42Z"
+  },
+  {
+   "file": "Readme_Exo_EMG.docx",
+   "url": "https://ndownloader.figshare.com/files/40796885",
+   "bytes": 14497,
+   "sha256": "98514570f4350234d79db36e5ec82b13040d3c9637e71a12951097b9b5dc2ea0",
+   "fetched_utc": "2026-11-09T22:38:47Z"
+  },
+  {
+   "file": "EMG_EXO_Data.zip",
+   "url": "https://ndownloader.figshare.com/files/40796018",
+   "bytes": 1816710218,
+   "sha256": "5d4be763a907aaa63d67177ecaca342d5de6e5574020180bfb8e8e1ba7dfe755",
+   "fetched_utc": "2026-11-09T22:40:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hybart2023_PeerJ.zip"
+}

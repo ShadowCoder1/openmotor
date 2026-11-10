@@ -1,0 +1,52 @@
+{
+ "id": "Wade2022_Biomechanics",
+ "module": "summary",
+ "rows": 1929,
+ "subjects": 38,
+ "persons": 38,
+ "zip_bytes": 22331,
+ "zip_sha256": "6fdc202cc8783a1348dcba52f38ee72a250c88351cca02f35ceb959334c9adcf",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "38 rows, unique participants, 26 PRE/POST column pairs",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants randomized and analysed",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Abstract (38 sedentary older adults)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty PRE/POST cell kept",
+   "ok": true,
+   "detail": "1929"
+  },
+  {
+   "kind": "internal",
+   "what": "groups 1/2/3 all present",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper text could not be read (publisher site blocked automated access), so only the participant count from the abstract was checked."
+ ],
+ "sources": [
+  {
+   "file": "Formatted_GAITstudy_data.xlsx",
+   "url": "https://zenodo.org/api/records/6584790/files/Formatted_GAITstudy_data.xlsx/content",
+   "bytes": 29051,
+   "sha256": "f9253e4e541076ceea7021778bdc5231937cb1e18665eeaabf256560ad844b12",
+   "fetched_utc": "2026-11-09T15:41:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wade2022_Biomechanics.zip"
+}

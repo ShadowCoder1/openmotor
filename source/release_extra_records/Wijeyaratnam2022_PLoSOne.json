@@ -1,0 +1,235 @@
+{
+ "id": "Wijeyaratnam2022_PLoSOne",
+ "module": "summary",
+ "rows": 1368,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 22568,
+ "zip_sha256": "933c06d69cbfadb9ca7597438f6c09686dbab2d89aefafbf2af787adc924bcfb",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, CTL",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, MS-NR",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, MS-R",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the participants, CTL",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (66.7% female in each group; sex coded 0 = female inferred from this)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the participants, MS-NR",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (66.7% female in each group; sex coded 0 = female inferred from this)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the participants, MS-R",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (66.7% female in each group; sex coded 0 = female inferred from this)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "path length, MS-R, mean of the two hands",
+   "computed": 9.74180264931147,
+   "reported": 9.7,
+   "tol": 0.05,
+   "source": "Results, path length",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "path length, MS-NR, mean of the two hands",
+   "computed": 9.954974848551478,
+   "reported": 10.0,
+   "tol": 0.05,
+   "source": "Results, path length",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "path length, CTL, mean of the two hands",
+   "computed": 9.388177275143699,
+   "reported": 9.4,
+   "tol": 0.05,
+   "source": "Results, path length",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "|IDE|, MS-R, mean of the two hands",
+   "computed": 6.421014147188808,
+   "reported": 6.4,
+   "tol": 0.05,
+   "source": "Results, initial direction error",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "|IDE|, MS-NR, mean of the two hands",
+   "computed": 5.594914722794538,
+   "reported": 5.6,
+   "tol": 0.05,
+   "source": "Results, initial direction error",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "|IDE|, CTL, mean of the two hands",
+   "computed": 4.499647392663517,
+   "reported": 4.5,
+   "tol": 0.05,
+   "source": "Results, initial direction error",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "|change in angular error|, MS-R, mean of the two hands",
+   "computed": 4.753891099857163,
+   "reported": 4.8,
+   "tol": 0.05,
+   "source": "Results, online control",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "|change in angular error|, CTL, mean of the two hands",
+   "computed": 3.402666565772078,
+   "reported": 3.4,
+   "tol": 0.05,
+   "source": "Results, online control",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration mean, MS-NR",
+   "computed": 12.25,
+   "reported": 12.3,
+   "tol": 0.050000001,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration SD, MS-NR",
+   "computed": 7.932957719654012,
+   "reported": 7.9,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration mean, MS-R",
+   "computed": 16.416666666666668,
+   "reported": 16.4,
+   "tol": 0.050000001,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "disease duration SD, MS-R",
+   "computed": 9.189503234504556,
+   "reported": 9.2,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median EDSS, MS-NR",
+   "computed": 3.25,
+   "reported": 3.3,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median EDSS, MS-R",
+   "computed": 5.75,
+   "reported": 5.8,
+   "tol": 0.05,
+   "source": "Results, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every Performance cell kept: 72 hand x participant rows x 9 measures x (mean, SD) + 72 9-HPT values",
+   "ok": true,
+   "detail": "1368 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "36 participants, 12 per group",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "Opensource_data.xlsx",
+   "url": "https://osf.io/download/tkv9s/",
+   "bytes": 42194,
+   "sha256": "e0c252971e41e673db1ae5dcf357ce1e3b4e16a03805e59986d729dd99226ffc",
+   "fetched_utc": "2026-11-09T15:06:54Z"
+  },
+  {
+   "file": "S1_File.docx",
+   "url": "https://osf.io/download/d4u2x/",
+   "bytes": 47346,
+   "sha256": "7253537c9bbbb9bd3d0efabac547e1e1cc0bbefcd9e39d645da2315924cbd425",
+   "fetched_utc": "2026-11-09T15:07:01Z"
+  },
+  {
+   "file": "S2_File.docx",
+   "url": "https://osf.io/download/s5c36/",
+   "bytes": 54183,
+   "sha256": "cffbdf3644cbc86102f27f061734a2ea6a6f98318845916b0e3c8077be69fa46",
+   "fetched_utc": "2026-11-09T15:07:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wijeyaratnam2022_PLoSOne.zip"
+}

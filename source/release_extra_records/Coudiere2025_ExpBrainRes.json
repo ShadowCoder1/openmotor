@@ -1,0 +1,93 @@
+{
+ "id": "Coudiere2025_ExpBrainRes",
+ "module": "summary",
+ "rows": 1728,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 35620,
+ "zip_sha256": "a32be918b27cdf76269d2d8726970608f4b80023a1af4794a35f396c69ad20c4",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed (25 recruited, 1 excluded for a noisy eye signal)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Methods (Participants); df of the ANOVAs F(4,92)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "effect of W on movement time at A = 20 cm (W=0.3 minus W=1.2, ms)",
+   "computed": 380.6749999999996,
+   "reported": 381.0,
+   "tol": 0.5,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Results, Hand related variables (Fig. 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... at A = 5 cm (ms)",
+   "computed": 304.30104166666666,
+   "reported": 304.0,
+   "tol": 0.5,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Results, Hand related variables (Fig. 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movement time at ID 4.14, small scale (A=5, W=0.3 cm, ms)",
+   "computed": 753.4815972222223,
+   "reported": 753.0,
+   "tol": 0.5,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Results, Fig. 3C",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-hand lag at ID 4.14, small scale (ms)",
+   "computed": 120.02500000000002,
+   "reported": 120.0,
+   "tol": 0.5,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Results, Time lag (Fig. 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-hand lag at ID 4.14, large scale (ms)",
+   "computed": 153.8708333333333,
+   "reported": 154.0,
+   "tol": 0.5,
+   "source": "Coudiere & Danion 2025, Exp Brain Res 243:143, Results, Time lag (Fig. 4C)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "24 participants x 9 conditions x 8 measures rows",
+   "ok": true,
+   "detail": "1728"
+  },
+  {
+   "kind": "internal",
+   "what": "only one value missing (primary saccade amplitude, subject 1, lowest ID)",
+   "ok": true,
+   "detail": "1"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports a linear fit MT(ms) = 11.2 + 176.7 x ID; a fit to the 24 x 9 values here gives a slope of about 176.9 and an intercept of about 4.3, so the fit was not used as a check.",
+  "The paper gives the movement times at ID 4.14 for the intermediate and large scales as 707 and 723 ms; the rows give 707.6 and 723.7 ms (the paper appears to truncate there), so those two values are not checks.",
+  "One primary-saccade amplitude (the lowest-difficulty condition of one participant, whose signal the paper calls too noisy) is empty in the deposit and stays empty here; the paper replaced it with the group mean for its statistics."
+ ],
+ "sources": [
+  {
+   "file": "DataUncertainTargetOSF.xlsx",
+   "url": "https://osf.io/download/as9m2/",
+   "bytes": 39720,
+   "sha256": "680ba35f82d882c50cb774f9bd703a35df07ce9d79a82d84bd8f7fe7d1c81b1c",
+   "fetched_utc": "2026-11-09T15:09:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Coudiere2025_ExpBrainRes.zip"
+}

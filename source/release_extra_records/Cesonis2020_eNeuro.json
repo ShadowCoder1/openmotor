@@ -1,0 +1,126 @@
+{
+ "id": "Cesonis2020_eNeuro",
+ "module": "force_field_reaching",
+ "rows": 44000,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 89675933,
+ "zip_sha256": "225eb8a75a4202f9b764c6922c2b367e2115d4a22eb57fb6a871199a22431f2a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "movement time, baseline condition, maintained-jump trials (ms)",
+   "computed": 932.3310101948856,
+   "reported": 932.0,
+   "tol": 0.5,
+   "source": "Results, movement durations (Fig. 6A and text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movement time, matched-cursor late-peak, maintained-jump trials (ms)",
+   "computed": 1048.4595682834968,
+   "reported": 1048.0,
+   "tol": 0.5,
+   "source": "Results, movement durations (Fig. 6A and text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movement time, matched-cursor early-peak, maintained-jump trials (ms)",
+   "computed": 1200.5082715814651,
+   "reported": 1201.0,
+   "tol": 0.5,
+   "source": "Results, movement durations (Fig. 6A and text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session",
+   "computed": 880.0,
+   "reported": 880.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "probe (force channel) trials per session",
+   "computed": 440.0,
+   "reported": 440.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial types (jump locations x 2 directions + no jump) per probe or maintained set",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "44000 rows",
+   "ok": true,
+   "detail": "44000"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 5 conditions x 880 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "jump size is 2 cm in absolute value on jump trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "40 repetitions of every trial type per participant and condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ideal-trial flag implies reference peak speed of 42-58 cm/s",
+   "ok": true,
+   "detail": "violations: 0"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Peak speed is the speed of the reference modality (cursor in the matched-cursor conditions), as the authors store it; the meaning of the hand-speed flag and of PeakDH and PeakDC is inferred from the values (see columns.csv).",
+  "Movement times check against the paper's means for the maintained-jump trials of the baseline and matched-cursor conditions. The paper's other numbers (feedback intensity ANOVA, onset latencies) need the left-minus-right difference per participant and the authors' normalisation and are not reproduced here."
+ ],
+ "sources": [
+  {
+   "file": "TTT_subdata.mat",
+   "url": "https://ndownloader.figshare.com/files/21994650",
+   "bytes": 3639670710,
+   "sha256": "7122b4f27bf85731df5f8e2a0c5096cfe7eeb9832b2ba925d451e64ddd025991",
+   "fetched_utc": "2026-11-10T07:43:41Z"
+  },
+  {
+   "file": "MATLAB_timetotarget.zip",
+   "url": "https://ndownloader.figshare.com/files/21997011",
+   "bytes": 264071095,
+   "sha256": "245b7725c698e0463d974de50ad511dddcc50d667500bdeb27ab2fb06c6b9070",
+   "fetched_utc": "2026-11-10T07:44:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cesonis2020_eNeuro.zip"
+}

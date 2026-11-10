@@ -1,0 +1,204 @@
+{
+ "id": "Vandevoorde2020_JNeurophysiol",
+ "module": "reach90",
+ "rows": 64890,
+ "subjects": 143,
+ "persons": 143,
+ "zip_bytes": 883156,
+ "zip_sha256": "d9e136219a517192b7e1c4b843592f71b39f686ba03c78c1cc364f7c2618c4ec",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "E1: young participants",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1: older participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2: young participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2: older participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants over E1 and E2",
+   "computed": 143.0,
+   "reported": 143.0,
+   "tol": 0,
+   "source": "Methods, Participants (143 recruited)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials of the E1 adaptation baseline + learning + washout 1 + relearning + washout 2 (260 dual-task + 20 + 81 + 99 + 81 + 81)",
+   "computed": 622.0,
+   "reported": 622.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2 learning trials (18 cycles of 9)",
+   "computed": 162.0,
+   "reported": 162.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2 baseline trials (5 cycles of 9)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 uncued trials per adaptation block",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (nine uncued trials per adaptation block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 learning block: age effect on final adaptation, F(1,77)",
+   "computed": 8.471554432987979,
+   "reported": 8.5,
+   "tol": 0.051,
+   "source": "Results, Experiment 1, adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 relearning block: age effect on final adaptation, F(1,77)",
+   "computed": 11.125492825686987,
+   "reported": 11.1,
+   "tol": 0.051,
+   "source": "Results, Experiment 1, adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2: age effect on final adaptation, F(1,58)",
+   "computed": 9.693982110663223,
+   "reported": 9.7,
+   "tol": 0.051,
+   "source": "Results, Experiment 2, adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 error df of that ANOVA",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0,
+   "source": "Results, Experiment 1, adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2 error df of that ANOVA",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Results, Experiment 2, adaptation",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "row count",
+   "ok": true,
+   "detail": "64890"
+  },
+  {
+   "kind": "internal",
+   "what": "E2: 18 uncued trials per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "E1: uncued trials show less compensation than cued trials",
+   "ok": true,
+   "detail": "2.7 vs 21.7"
+  },
+  {
+   "kind": "internal",
+   "what": "E2: uncued trials show less compensation than cued trials",
+   "ok": true,
+   "detail": "4.0 vs 23.0"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "62 of the 81 E1 participants are the same people and the same reaches as E1b of Vandevoorde2019_NeurobiolAging (the paper says 62 overlapped with a prior publication); this file adds their dual-task baseline reaches (trials 1-260) and 19 new participants.",
+  "The paper's implicit and explicit adaptation statistics need the cued/uncued trial pairs and the authors' baseline handling; only the final-adaptation ANOVAs are reproduced."
+ ],
+ "sources": [
+  {
+   "file": "E1_ANA_Rot_1.mat",
+   "url": "https://osf.io/download/fegt3/",
+   "bytes": 8357,
+   "sha256": "b336d7a64093cac16aaa20133287b7096e27bddbb226c86b8c42742e2502ccd8",
+   "fetched_utc": "2026-11-09T13:27:07Z"
+  },
+  {
+   "file": "E1_TRA_Rot_1.mat",
+   "url": "https://osf.io/download/5ec571d0c7d4ab00f5219c09/",
+   "bytes": 350,
+   "sha256": "055429d4c0d9b7914b0fe00aaf3442419e7449fa3c97fb764760f2e84c2f1508",
+   "fetched_utc": "2026-11-09T13:27:13Z"
+  },
+  {
+   "file": "E1_all_subjects.xlsx",
+   "url": "https://osf.io/download/ykpdx/",
+   "bytes": 14026,
+   "sha256": "2bf539c38011d51c4a1344dd34cf4003cb3f48185950810bdd1d7d4d88daf12c",
+   "fetched_utc": "2026-11-09T13:27:19Z"
+  },
+  {
+   "file": "E2_all_subjects.xlsx",
+   "url": "https://osf.io/download/uvedr/",
+   "bytes": 10555,
+   "sha256": "621c19e83c7d5506cb1231de2bf06f54074de3a5d07805ac7d7e3599ef1a439d",
+   "fetched_utc": "2026-11-09T13:27:24Z"
+  },
+  {
+   "file": "E1_FlankerDualdata.mat",
+   "url": "https://osf.io/download/24s8d/",
+   "bytes": 15960,
+   "sha256": "d90c1139e810f608fd6ddec45c8b4807652299feffe589604598610a5e8fd145",
+   "fetched_utc": "2026-11-09T13:27:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Vandevoorde2020_JNeurophysiol.zip"
+}

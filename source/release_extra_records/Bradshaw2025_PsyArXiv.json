@@ -1,0 +1,240 @@
+{
+ "id": "Bradshaw2025_PsyArXiv",
+ "module": "speech",
+ "rows": 11200,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 227850,
+ "zip_sha256": "a8731194e7a2b7b26889d6000fe4bc43c3d267475048983450ca80f965e8cc4c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "block 7 has no values for exactly two participants, as the paper says (technical issue)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each block holds each sentence once per participant (where the block exists)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blocks 1-2 hold formants, blocks 3-7 hold compensation, blocks 6-7 hold change from baseline",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per training group, training 1",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Methods, Procedure and Apparatus",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per training group, training 2",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Methods, Procedure and Apparatus",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the F1+F2- group (sum of Table I column)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the F1-F2+ group (sum of Table I column)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant with all seven blocks (7 blocks of 50 sentences)",
+   "computed": 350.0,
+   "reported": 350.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Methods, Procedure and Apparatus",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, block 2 vs block 1, F1 (df 1599)",
+   "computed": 13.586081208038136,
+   "reported": 13.59,
+   "tol": 0.0051,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Baseline: Effect of noise vocoding on speech formants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "degrees of freedom of that t-test (32 participants x 50 sentences - 1)",
+   "computed": 1599.0,
+   "reported": 1599.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), same section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t, block 2 vs block 1, F2 (df 1599)",
+   "computed": 1.9982036851860991,
+   "reported": 1.9982,
+   "tol": 6e-05,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Baseline: Effect of noise vocoding on speech formants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1+F2- group: participants with significant adaptation (block 6)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1+F2- group: participants with significant following (block 6)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1+F2- group: participants with no significant change (block 6)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1-F2+ group: participants with significant adaptation (block 6)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1-F2+ group: participants with significant following (block 6)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table I, F1-F2+ group: participants with no significant change (block 6)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training groups, block 6 vector of adaptation, Welch t (code 1 minus code 2)",
+   "computed": -1.7403134377997833,
+   "reported": -1.74,
+   "tol": 0.0051,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), Results, Phase 2 (exploratory comparison of training groups)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "degrees of freedom of that Welch t-test",
+   "computed": 26.709762189417255,
+   "reported": 26.71,
+   "tol": 0.0051,
+   "source": "Bradshaw et al. 2025, PsyArXiv jr4bp v2 (OSF preprint), same section",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Baseline for the block 6 and 7 change values: the paper's Methods say the production change is normed to block 1 in one place and to block 2 in another; the values are kept as the authors shared them.",
+  "The raw formants of blocks 3-7 are not in the deposit (only the compensation and change values). The deposit's phase 1 perceptual tests (typed sentence reports and token-sort scores) are not carried because they are not movement data.",
+  "The preprint exists in two versions (v1 2025-10-15, v2 2025-12-16); numbers were checked against v2. It had not been published in a journal when checked (Crossref, 2026-11-09)."
+ ],
+ "sources": [
+  {
+   "file": "Participants_list.csv",
+   "url": "https://osf.io/download/ahndf/",
+   "bytes": 346,
+   "sha256": "753bcc8918f4d4b9c2af811ce2f1571d75e3779f57a1abf4df4f4b4358134e31",
+   "fetched_utc": "2026-11-09T11:54:35Z"
+  },
+  {
+   "file": "Adaptation_data.zip",
+   "url": "https://osf.io/download/x2b3h/",
+   "bytes": 31163,
+   "sha256": "8e7aee4e954a7d134866e143fb61ef38614d32f87e35068be36f7391ba242df1",
+   "fetched_utc": "2026-11-09T11:54:41Z"
+  },
+  {
+   "file": "Baseline_data.zip",
+   "url": "https://osf.io/download/n7wyt/",
+   "bytes": 39103,
+   "sha256": "b81b260981f96f95ede77364c07f0436401476cd816191a3406990604b939902",
+   "fetched_utc": "2026-11-09T11:54:59Z"
+  },
+  {
+   "file": "After-effect_data.zip",
+   "url": "https://osf.io/download/d6jzr/",
+   "bytes": 30134,
+   "sha256": "ff30875966e87a90e339ee46a9441d57b907cd6a2d58664e2b7ae41c600d5cda",
+   "fetched_utc": "2026-11-09T11:55:03Z"
+  },
+  {
+   "file": "F1-F2plus.zip",
+   "url": "https://osf.io/download/f5q4k/",
+   "bytes": 39100,
+   "sha256": "379bfcdc506c785a56a1c23ab62cff06fbc6935758687d88f08bf1042349a591",
+   "fetched_utc": "2026-11-09T11:55:09Z"
+  },
+  {
+   "file": "F1plusF2-.zip",
+   "url": "https://osf.io/download/7x2hk/",
+   "bytes": 41019,
+   "sha256": "8834d5acfea99f928d3b6b6ce0c789af0a77c21fcfd68601c3383521529c80d7",
+   "fetched_utc": "2026-11-09T11:55:16Z"
+  },
+  {
+   "file": "Vector_of_compensation.zip",
+   "url": "https://osf.io/download/8wuak/",
+   "bytes": 106518,
+   "sha256": "6a0c8a3cf78de964e3952f4cf1805ef2c19bf19b629e161eb0b0d67f6d0e6b2d",
+   "fetched_utc": "2026-11-09T11:55:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bradshaw2025_PsyArXiv.zip"
+}

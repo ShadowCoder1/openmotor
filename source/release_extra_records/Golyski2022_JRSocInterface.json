@@ -1,0 +1,86 @@
+{
+ "id": "Golyski2022_JRSocInterface",
+ "module": "timeseries",
+ "rows": 222,
+ "subjects": 7,
+ "persons": 7,
+ "zip_bytes": 169971619,
+ "zip_sha256": "fab7c34facc62a902d5c22d8fbc7da0d30c1985518441c0a21382e9ee1a1d3b0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "seven participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording is sampled at 200 Hz",
+   "ok": true,
+   "detail": "lengths [2105, 2164, 2180, 2226, 2255]"
+  },
+  {
+   "kind": "internal",
+   "what": "channel units all assigned",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of participants (7)",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials analysed after removing crossover trials (222)",
+   "computed": 222.0,
+   "reported": 222.0,
+   "tol": 0,
+   "source": "Results / Methods, trials analysed",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass, kg (72.7)",
+   "computed": 72.74285714285715,
+   "reported": 72.7,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass, kg (13.3)",
+   "computed": 13.304868425111303,
+   "reported": 13.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Zenodo record is licensed CC BY 3.0 US, not CC BY 4.0 as the OpenMotor listing says. The Zenodo record title is the paper's earlier wording: 'Which lower-limb joints compensate for destabilising energy introduced by unilateral treadmill belt accelerations delivered during walking in humans?'."
+ ],
+ "sources": [
+  {
+   "file": "Pert_MechEnergetics_Readme.xlsx",
+   "url": "https://zenodo.org/records/6338829/files/Pert_MechEnergetics_Readme.xlsx?download=1",
+   "bytes": 16626,
+   "sha256": "fd1beef4bf7b2037a43ef088a8d23702a41ec507801f6446db2b522f1cc6a8dc",
+   "fetched_utc": "2026-11-09T01:25:03Z"
+  },
+  {
+   "file": "Pert_MechEnergetics.zip",
+   "url": "https://zenodo.org/records/6338829/files/Pert_MechEnergetics.zip?download=1",
+   "bytes": 290940172,
+   "sha256": "43b0a15c89139100771032550103ccbb65cf2e630ceab83d255d89fbc2a2667b",
+   "fetched_utc": "2026-11-09T01:26:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Golyski2022_JRSocInterface.zip"
+}

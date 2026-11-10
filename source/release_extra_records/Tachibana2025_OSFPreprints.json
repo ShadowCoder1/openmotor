@@ -1,0 +1,89 @@
+{
+ "id": "Tachibana2025_OSFPreprints",
+ "module": "summary",
+ "rows": 1008,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 17328,
+ "zip_sha256": "f40d37dd5e6922a611fe73c71ea398e38f09d820d0b97f98269bbe88a2004a1f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "ANS participants analysed",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Tachibana & Iimura 2025 preprint (OSF ceurq_v1), Results (n = 16)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AWS participants analysed",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Tachibana & Iimura 2025 preprint (OSF ceurq_v1), Results (n = 16)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ANS: Pearson r of variability and compensation ratio, 0-cent adaptive shift",
+   "computed": 0.5756907471882129,
+   "reported": 0.58,
+   "tol": 0.005,
+   "source": "Tachibana & Iimura 2025 preprint (OSF ceurq_v1), Results (Fig 3c,d text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AWS: Pearson r of variability and compensation ratio, 0-cent adaptive shift",
+   "computed": -0.27106606199796845,
+   "reported": -0.27,
+   "tol": 0.005,
+   "source": "Tachibana & Iimura 2025 preprint (OSF ceurq_v1), Results (Fig 3c,d text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AWS: same r without the outlier (largest compensation), n = 15",
+   "computed": 0.07623415967939118,
+   "reported": 0.08,
+   "tol": 0.005,
+   "source": "Tachibana & Iimura 2025 preprint (OSF ceurq_v1), Results (Fig 3d text)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "96 participant x shift cells, 32 people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in value",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The preprint is a preprint (2025); the 4 participants per group it excluded are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "indivdata.csv",
+   "url": "https://osf.io/download/sa3vb/",
+   "bytes": 432,
+   "sha256": "be85364e412748f0dcbd33a373f01f216a037a0e21e06a6fc2e24c29a8a6eebb",
+   "fetched_utc": "2026-11-09T15:25:03Z"
+  },
+  {
+   "file": "alldata.csv",
+   "url": "https://osf.io/download/t9ypn/",
+   "bytes": 18062,
+   "sha256": "72e388b1df933d56359090bee73d8de4ec9958e2d23f965fb9309e7311ae7ce8",
+   "fetched_utc": "2026-11-09T15:25:09Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tachibana2025_OSFPreprints.zip"
+}

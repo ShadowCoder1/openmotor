@@ -1,0 +1,142 @@
+{
+ "id": "Albert2020_eLife",
+ "module": "force_field_reaching",
+ "rows": 22111,
+ "subjects": 469,
+ "persons": 244,
+ "zip_bytes": 384955,
+ "zip_sha256": "da1f5c251526769ab15db84ca14ce61081dfe7bb6618c754c94e5e0b40e1eea5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "healthy participants with null-field channel trials (Fig 3)",
+   "computed": 220.0,
+   "reported": 220.0,
+   "tol": 0,
+   "source": "Results, Fig 3 (220 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who adapted to a force field in Fig 3E-G",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Results, Fig 3 (32 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Fig 4A participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Results, Fig 4A (n = 11)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Fig 4B participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Fig 4B (n = 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stroke patients (Fig 7)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Results, Fig 7 (n = 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "variance in hold force explained by the move force integral, null field (mean %)",
+   "computed": 38.86226594446758,
+   "reported": 39.0,
+   "tol": 0.5,
+   "source": "Results, Fig 3 ('39 \u00b1 2%', mean \u00b1 SEM)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "... SEM across participants (%)",
+   "computed": 1.8581792641949737,
+   "reported": 2.0,
+   "tol": 0.5,
+   "source": "Results, Fig 3 ('39 \u00b1 2%')",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the converted sheets kept",
+   "ok": true,
+   "detail": "22111"
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 7: 10 controls and 14 patients (both arms)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's '48 \u00b1 3%' (variance in change in hold force explained, 32 participants) is not a check: the deposit does not state the exact model."
+ ],
+ "sources": [
+  {
+   "file": "data-for-figure-1.xlsx",
+   "url": "https://osf.io/download/ahwnt/",
+   "bytes": 27240,
+   "sha256": "f6dfb41540ff98a590ae52fcc0365c6a1b16aa137158f1fb46dff42285f5c279",
+   "fetched_utc": "2026-11-09T15:10:38Z"
+  },
+  {
+   "file": "data-for-figure-2.xlsx",
+   "url": "https://osf.io/download/vj6s2/",
+   "bytes": 2474161,
+   "sha256": "0ede3f10e190cd75d7241da5658f265b91600150359569b563720e7e0102e7f5",
+   "fetched_utc": "2026-11-09T15:10:43Z"
+  },
+  {
+   "file": "data-for-figure-3.xlsx",
+   "url": "https://osf.io/download/9gcwj/",
+   "bytes": 365621,
+   "sha256": "18908c70e7dc522f8ec4769c110ca48f6c3dd495ae99e1cbbb0866db333c3707",
+   "fetched_utc": "2026-11-09T15:10:47Z"
+  },
+  {
+   "file": "data-for-figure-4.xlsx",
+   "url": "https://osf.io/download/2zc7x/",
+   "bytes": 126862,
+   "sha256": "1c1f82265af3cfe303bb6af2ba0879e620e397dada9638806ae335bca90e5260",
+   "fetched_utc": "2026-11-09T15:10:52Z"
+  },
+  {
+   "file": "data-for-figure-5.xlsx",
+   "url": "https://osf.io/download/gcb9t/",
+   "bytes": 60177,
+   "sha256": "4e9e00699abc78e39957002d659433f7772d41eaf5c1afcc4205888489f03400",
+   "fetched_utc": "2026-11-09T15:10:56Z"
+  },
+  {
+   "file": "data-for-figure-6.xlsx",
+   "url": "https://osf.io/download/47nwd/",
+   "bytes": 361322,
+   "sha256": "5f14e219b445f54af3e88d95d8ddabd30b8a9bbf4988a1b5a13e5a3338334cc4",
+   "fetched_utc": "2026-11-09T15:11:02Z"
+  },
+  {
+   "file": "data-for-figure-7.xlsx",
+   "url": "https://osf.io/download/cn5hu/",
+   "bytes": 254777,
+   "sha256": "fe909cc8f6bdb8ac68d0350435bae0b8f167ce4ac0a6342050a3bc4293258e27",
+   "fetched_utc": "2026-11-09T15:11:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Albert2020_eLife.zip"
+}

@@ -1,0 +1,224 @@
+{
+ "id": "Lomele2026_SciData",
+ "module": "timeseries",
+ "rows": 1558,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 733542050,
+ "zip_sha256": "d07a3b8b7ed6ea58cfc1cea903eba7694742ef6565e10af73df5aaea92128446",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-handed participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 31.428571428571427,
+   "reported": 31.4,
+   "tol": 0.1,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age (years)",
+   "computed": 10.434515843062432,
+   "reported": 10.4,
+   "tol": 0.1,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG muscles",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "EMG setup and acquisition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epoch length (s) = 9 s at 1000 Hz",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Data pre-processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grip types",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Experimental protocol",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has at least three blocks of ten trials per grip, in complete blocks of 30 (+- failed repeats)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 9000 samples and an LED-on event at 2 s",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trials flagged event-incomplete lack a touch or lift event",
+   "ok": true,
+   "detail": "164 flagged"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 1 (trials per participant) could not be read as text, so trial counts per participant were not compared with it. The paper says all events are at fixed offsets from the go signal; the files give the LED-on frame as 2000 in every trial."
+ ],
+ "sources": [
+  {
+   "file": "s_1.mat",
+   "url": "https://osf.io/download/5bfne/",
+   "bytes": 304036127,
+   "sha256": "ac9806b0d7f99e812f2c30b2fc142a44aaed28b0a150bddb64753d24d86e9487",
+   "fetched_utc": "2026-11-09T04:31:29Z"
+  },
+  {
+   "file": "s_2.mat",
+   "url": "https://osf.io/download/xjv2s/",
+   "bytes": 291854554,
+   "sha256": "3e851863da3698a58d6bad86ba5aa8169c34317d7eb928d10c47dd9dc324c1a9",
+   "fetched_utc": "2026-11-09T04:38:11Z"
+  },
+  {
+   "file": "s_3.mat",
+   "url": "https://osf.io/download/t9cwb/",
+   "bytes": 281801330,
+   "sha256": "be7c02cef392c67c271f83ce1580204eac1aab1df321657ce295ea29f7335f26",
+   "fetched_utc": "2026-11-09T04:39:22Z"
+  },
+  {
+   "file": "s_4.mat",
+   "url": "https://osf.io/download/3dey2/",
+   "bytes": 230925594,
+   "sha256": "106a4a12816e58f77de093a22f6b01bb64237e4bc26f13b7b6e6bc4b60901305",
+   "fetched_utc": "2026-11-09T04:39:40Z"
+  },
+  {
+   "file": "s_5.mat",
+   "url": "https://osf.io/download/fg3sb/",
+   "bytes": 236137519,
+   "sha256": "b53b92289a85649362555ac17693917a70259b3a55cdff670adfbe62b24521cf",
+   "fetched_utc": "2026-11-09T04:40:07Z"
+  },
+  {
+   "file": "s_6.mat",
+   "url": "https://osf.io/download/wkghu/",
+   "bytes": 228581357,
+   "sha256": "6c6db8343ca049c0a585249eb7507a294dc2f9b9fb09553d03bdceb183beda52",
+   "fetched_utc": "2026-11-09T04:40:22Z"
+  },
+  {
+   "file": "s_7.mat",
+   "url": "https://osf.io/download/kw8dq/",
+   "bytes": 204914783,
+   "sha256": "5304b9f86b3a72e6c31ded94a8af854e3130547402f2ce8836f0fe5cd8e524c6",
+   "fetched_utc": "2026-11-09T04:40:33Z"
+  },
+  {
+   "file": "s_8.mat",
+   "url": "https://osf.io/download/k9eyr/",
+   "bytes": 261995941,
+   "sha256": "057050dc5c9863b0ba79b062a2f871c16ff574155117d70fc705af7e32be57ae",
+   "fetched_utc": "2026-11-09T04:40:47Z"
+  },
+  {
+   "file": "s_9.mat",
+   "url": "https://osf.io/download/6z5th/",
+   "bytes": 249675519,
+   "sha256": "02e6b1adf4127ddd4b4961ecb003d10de85718a452a91a5748e19caf204ec96c",
+   "fetched_utc": "2026-11-09T04:41:09Z"
+  },
+  {
+   "file": "s_10.mat",
+   "url": "https://osf.io/download/gp8jy/",
+   "bytes": 285413295,
+   "sha256": "6382eea6d963ba48a112f03e45ef9e08da4a3adc63efd2be71fc260e47358d0d",
+   "fetched_utc": "2026-11-09T04:41:31Z"
+  },
+  {
+   "file": "s_11.mat",
+   "url": "https://osf.io/download/r34wv/",
+   "bytes": 286011644,
+   "sha256": "972394f903c476c6e173417856a9c4297f0b2dced28d0281e9a72ee23a64239f",
+   "fetched_utc": "2026-11-09T04:41:48Z"
+  },
+  {
+   "file": "s_12.mat",
+   "url": "https://osf.io/download/c3pzq/",
+   "bytes": 285804184,
+   "sha256": "a14d5bc05b04a17dd268d0159da82abc640966de441952a337dde3c2a9eb69f4",
+   "fetched_utc": "2026-11-09T04:42:07Z"
+  },
+  {
+   "file": "s_13.mat",
+   "url": "https://osf.io/download/f52dp/",
+   "bytes": 288319160,
+   "sha256": "e060a7d4ffb05166fdf58fe5c7f1aed124a2caa8fe92de59b8862cfbc9b5dff3",
+   "fetched_utc": "2026-11-09T04:42:24Z"
+  },
+  {
+   "file": "s_14.mat",
+   "url": "https://osf.io/download/h7u2d/",
+   "bytes": 235301377,
+   "sha256": "1436e79e3d166ced6eef9f60c09a95276773b0175b60ff9d83810a23ee680517",
+   "fetched_utc": "2026-11-09T04:42:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lomele2026_SciData.zip"
+}

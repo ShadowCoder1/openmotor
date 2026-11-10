@@ -1,0 +1,7 @@
+{
+ "id": "Weiss2013_NNR",
+ "skipped": true,
+ "reason": "too large",
+ "details": "PhysioNet ltmm 1.0.0: the 3-day 3D trunk accelerometer recordings of the 71 participants are about 22 GB in total, over the 5 GB limit for needed files; the continuous recordings are the data (no smaller per-participant or per-stride measures are shared).",
+ "sources": []
+}

@@ -1,0 +1,175 @@
+{
+ "id": "Binetti2026_iScience",
+ "module": "time_perception_reach",
+ "rows": 24000,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 1592919,
+ "zip_sha256": "1a9fb2e8f12592aa6f12f7ce38f6d24beb2007a3fd71b799ba5325884704e9b9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "cursor gain differs from 1 only on incongruent rows of the Distance task",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant belongs to one task and has 600 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sensory-control rows hold no reach (action latency -1, no hand position)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "share of 'longer' judgements rises with test duration",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the authors' trialData.csv is kept, in order (24,000)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' filter keeps 19,327 reach rows (15,389 cued, 3,938 non-cued)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "STAR Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Directional task",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "STAR Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Distance task",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "STAR Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cued trials per participant (20 blocks of 20)",
+   "computed": 400.0,
+   "reported": 400.0,
+   "tol": 0,
+   "source": "STAR Methods, Trials and timing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-cued trials per participant (5 blocks of 20)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "STAR Methods, Trials and timing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensory-control trials per participant (5 blocks of 20)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "STAR Methods, Trials and timing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of test durations (5 linearly spaced values)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "STAR Methods, Duration discrimination task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest test duration, s",
+   "computed": 0.44,
+   "reported": 0.44,
+   "tol": 1e-09,
+   "source": "STAR Methods, Duration discrimination task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest test duration, s",
+   "computed": 1.24,
+   "reported": 1.24,
+   "tol": 1e-09,
+   "source": "STAR Methods, Duration discrimination task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target distance in the Directional task, px (205)",
+   "computed": 204.79999999999995,
+   "reported": 205.0,
+   "tol": 0.5,
+   "source": "STAR Methods, Tasks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "far target distance in the Distance task, px (410)",
+   "computed": 409.5999999999999,
+   "reported": 410.0,
+   "tol": 0.5,
+   "source": "STAR Methods, Tasks",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes cued blocks as 20 blocks of 20 trials and non-cued and sensory blocks as 5 blocks of 20; the deposit's Block column is the authors' own number (up to 20 per participant, shared across the three conditions), so it is not a count of blocks within a condition.",
+  "The paper's PSE and JND statistics rest on psychometric fits that are not rebuilt here."
+ ],
+ "sources": [
+  {
+   "file": "trialData.csv",
+   "url": "https://osf.io/download/uzrpc/",
+   "bytes": 7268163,
+   "sha256": "31183424bb50950d4833e4cd19c45cb37c0c8e5ae88fdd0c20dae4c2747e3ddd",
+   "fetched_utc": "2026-11-09T09:53:19Z"
+  },
+  {
+   "file": "dataTotFits.csv",
+   "url": "https://osf.io/download/tq4s8/",
+   "bytes": 5031,
+   "sha256": "ff6b9ffa8d3880d0a2a92d02cf49f31ef8dd9f6d3398fa7baad59372ecc32cf6",
+   "fetched_utc": "2026-11-09T09:53:30Z"
+  },
+  {
+   "file": "MTA3-logic.Rmd",
+   "url": "https://osf.io/download/vu932/",
+   "bytes": 25455,
+   "sha256": "0a2f7967d5cee539fd6622439137a6bf5296c3e3238e8b08ced8cd9f59e7f275",
+   "fetched_utc": "2026-11-09T09:53:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Binetti2026_iScience.zip"
+}

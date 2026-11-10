@@ -1,0 +1,135 @@
+{
+ "id": "Brinkerhoff2023_PLoSOne",
+ "module": "walking",
+ "rows": 39552,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 676859,
+ "zip_sha256": "665ce631ca80517846cb6630c68b49b3d6dd194651f3f9aba2a32c1dfa549493",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows kept: 26,336 step rows (32 x 823) and 13,216 stride rows (32 x 413), none dropped",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RPE is one value per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods (32 analysed after 5 exclusions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOVE participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "notMOVE participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "steps per participant",
+   "computed": 823.0,
+   "reported": 823.0,
+   "tol": 0,
+   "source": "Methods (data truncated to 823 steps)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOVE net work rate, last 100 strides, mean (deposit group 'notmove')",
+   "computed": 0.16617466346153845,
+   "reported": 0.166,
+   "tol": 0.0015,
+   "source": "Results (W/kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOVE net work rate, last 100 strides, SD (deposit group 'notmove')",
+   "computed": 0.07175391607327489,
+   "reported": 0.072,
+   "tol": 0.0015,
+   "source": "Results (W/kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "notMOVE net work rate, last 100 strides, mean (deposit group 'move')",
+   "computed": 0.18774139294736844,
+   "reported": 0.188,
+   "tol": 0.0015,
+   "source": "Results (W/kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "notMOVE net work rate, last 100 strides, SD (deposit group 'move')",
+   "computed": 0.08495418065409419,
+   "reported": 0.085,
+   "tol": 0.0015,
+   "source": "Results (W/kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "move initial SLA (first 5 steps), mean",
+   "computed": -0.1529684210526316,
+   "reported": -0.144,
+   "tol": 0.01,
+   "source": "Results (initial SLA)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "notmove initial SLA (first 5 steps), mean",
+   "computed": -0.1367846153846154,
+   "reported": -0.137,
+   "tol": 0.01,
+   "source": "Results (initial SLA)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports last-100-stride net work rates of 0.166 (SD 0.072) W/kg for MOVE and 0.188 (SD 0.085) for notMOVE. In the deposit the 19 'move' participants have 0.188 (SD 0.085) and the 13 'notmove' participants 0.166 (SD 0.072): the numbers match exactly but with the group labels the other way round. The group sizes (19, 13) and the initial step length asymmetry (-0.153 and -0.137 here, -0.144 and -0.137 in the paper) agree with the labels as given, so the labels are kept as in the deposit and the swap is left for the authors to explain (the paper text or the work file may be mislabelled).",
+  "The initial work rates of the paper (first five strides, for example slow-leg negative work -1.664 and -1.57 W/kg) come out about 0.05 W/kg more negative here (-1.727 and -1.619), and the deposit's avg100workratenet_norm differs from the mean of the last 100 net work rates in the stride rows for some participants; the authors' own value is kept in participants.csv."
+ ],
+ "sources": [
+  {
+   "file": "sla.csv",
+   "url": "https://ndownloader.figshare.com/files/40224430",
+   "bytes": 1193802,
+   "sha256": "668ffccbcb4ad599e5bd0473d797ed0f0cdee4dc0782d9bc1f9c736a07808129",
+   "fetched_utc": "2026-11-09T01:26:06Z"
+  },
+  {
+   "file": "work.csv",
+   "url": "https://ndownloader.figshare.com/files/40224406",
+   "bytes": 1370922,
+   "sha256": "023fcde30658a6dc652db7ddae79e0e3df2bdfbfe14ddc5838eac7a8519e7ccc",
+   "fetched_utc": "2026-11-09T01:26:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Brinkerhoff2023_PLoSOne.zip"
+}

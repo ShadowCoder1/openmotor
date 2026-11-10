@@ -1,0 +1,381 @@
+{
+ "id": "Mariscal2025_JNeurophysiol",
+ "module": "walking",
+ "rows": 77317,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 1951330,
+ "zip_sha256": "23eb73785995aa7626ee224f7a033cd60553b3bc95dc3ffe2be286abe23e317b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "32 participants, 8 per group, one file each",
+   "ok": true,
+   "detail": "{'YoungSlow': 8, 'YoungFast': 8, 'OldSlow': 8, 'OldFast': 8}"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride the deposit shares is kept, in its order",
+   "ok": true,
+   "detail": "77317 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "leading_position_asymmetry + trailing_position_asymmetry is close to step_length_asymmetry on good strides (approximate, not exact: this labTools version took X_fast at the stride's opening slow heel strike), and much closer than their difference",
+   "ok": true,
+   "detail": "median |sum - SLA| 0.0113, median |difference - SLA| 0.0561, n=72889"
+  },
+  {
+   "kind": "internal",
+   "what": "on good treadmill strides |step_length_asymmetry| < 1 (the large values sit on bad or overground strides and are kept as shared)",
+   "ok": true,
+   "detail": "max 1.62"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = labTools 'bad' flag",
+   "ok": true,
+   "detail": "4399 strides (5.69%)"
+  },
+  {
+   "kind": "published",
+   "what": "Young Fast: number of participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Young Fast: number of women",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Young Slow: number of participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Young Slow: number of women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Old Fast: number of participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Old Fast: number of women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Old Slow: number of participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Old Slow: number of women",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults: women (7 of 16)",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults: women (9 of 16)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Young Slow: mean age (22.17 yrs)",
+   "computed": 22.166666666666664,
+   "reported": 22.17,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Young Slow: SD of age (1.03)",
+   "computed": 1.0283674841902004,
+   "reported": 1.03,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One Young Fast participant's age is 0 in the deposit (left empty here); the paper's Young Fast age (20 +- 8.67) appears to include it. Mean ages here: Young Fast 20.41 (with the 0), Old Fast 71.48 (paper 71.2), Old Slow 75.51 (paper 75).",
+  "No outcome statistic was checked: the paper's epochs are not documented in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "YoungSlow__OG31KinReduceParams.mat",
+   "url": "https://osf.io/download/ehwgx/",
+   "bytes": 79693,
+   "sha256": "b8c3a11445959869ec76db125845ef613917429a7cf0db403e58e390d2e08a51",
+   "fetched_utc": "2026-11-08T19:45:23Z"
+  },
+  {
+   "file": "YoungSlow__OG32KinReduceParams.mat",
+   "url": "https://osf.io/download/g2rb8/",
+   "bytes": 73544,
+   "sha256": "536ce21c7d44ee4ceb88ea439fe61065234881a098c273864f1dded23658548a",
+   "fetched_utc": "2026-11-08T19:45:51Z"
+  },
+  {
+   "file": "YoungSlow__OG33KinReduceParams.mat",
+   "url": "https://osf.io/download/qxmsb/",
+   "bytes": 78849,
+   "sha256": "ba73a400e26a88e54d089d41672c359ed9fbd2238ee7e26e701b12e7be912cac",
+   "fetched_utc": "2026-11-08T19:45:56Z"
+  },
+  {
+   "file": "YoungSlow__OG39KinReduceParams.mat",
+   "url": "https://osf.io/download/u92z3/",
+   "bytes": 77617,
+   "sha256": "144d8a6c8a18a84b86c80e8c8939201e700a8e7a5e6bf4aefc51a5dc60c25416",
+   "fetched_utc": "2026-11-08T19:46:01Z"
+  },
+  {
+   "file": "YoungSlow__OG42KinReduceParams.mat",
+   "url": "https://osf.io/download/xsk7f/",
+   "bytes": 74650,
+   "sha256": "1e5341047c319746e048f028de1ac722640853d4524422f5b921dded6c3d8eae",
+   "fetched_utc": "2026-11-08T19:46:07Z"
+  },
+  {
+   "file": "YoungSlow__OG43KinReduceParams.mat",
+   "url": "https://osf.io/download/by8rw/",
+   "bytes": 79944,
+   "sha256": "dbe2be0bf5652e0ea95b8591ee298b0daeb892a3f842c1d8dc53a9b309367509",
+   "fetched_utc": "2026-11-08T19:46:12Z"
+  },
+  {
+   "file": "YoungSlow__OG45KinReduceParams.mat",
+   "url": "https://osf.io/download/5afs7/",
+   "bytes": 76901,
+   "sha256": "b067df759fa4702c66dcc894a601d7795261a7846e31e9f5a432d5f112b00250",
+   "fetched_utc": "2026-11-08T19:46:18Z"
+  },
+  {
+   "file": "YoungSlow__OG99KinReduceParams.mat",
+   "url": "https://osf.io/download/skdxe/",
+   "bytes": 76385,
+   "sha256": "e92a1fbeed1af6fa31e2904a31415505f69fa837ef2daa95d5eb736f1a7bcda0",
+   "fetched_utc": "2026-11-08T19:46:33Z"
+  },
+  {
+   "file": "YoungFast__OG65KinReduceParams.mat",
+   "url": "https://osf.io/download/sr492/",
+   "bytes": 101070,
+   "sha256": "2ddc13ef19ab787b323b96847b6aa32528db68e7916383df6be123b4f593edc6",
+   "fetched_utc": "2026-11-08T19:46:38Z"
+  },
+  {
+   "file": "YoungFast__OG66KinReduceParams.mat",
+   "url": "https://osf.io/download/5pwjs/",
+   "bytes": 107866,
+   "sha256": "0280035598ab7f7315af1afd002c2ee6038c2cd86759df14d89a30ceb5b61122",
+   "fetched_utc": "2026-11-08T19:46:45Z"
+  },
+  {
+   "file": "YoungFast__OG69KinReduceParams.mat",
+   "url": "https://osf.io/download/c4kvt/",
+   "bytes": 105927,
+   "sha256": "0826308b133307a7b7b502ec37ddf8dac96d1ef36b9e0de0ce81c31a1b1bcf38",
+   "fetched_utc": "2026-11-08T19:46:50Z"
+  },
+  {
+   "file": "YoungFast__OG86KinReduceParams.mat",
+   "url": "https://osf.io/download/45ena/",
+   "bytes": 85487,
+   "sha256": "39aa93b916464ef2df4fa0b7876aef4e15628909de84b3df60df314eeb7739a9",
+   "fetched_utc": "2026-11-08T19:46:55Z"
+  },
+  {
+   "file": "YoungFast__OG101KinReduceParams.mat",
+   "url": "https://osf.io/download/d3v6x/",
+   "bytes": 62794,
+   "sha256": "f6999de19119c6e73b10498fcc70578a32f584ac588d272ca0d4ec12fb5917d1",
+   "fetched_utc": "2026-11-08T19:47:01Z"
+  },
+  {
+   "file": "YoungFast__OG102KinReduceParams.mat",
+   "url": "https://osf.io/download/9ck7g/",
+   "bytes": 72535,
+   "sha256": "6ef3ad9aab9aa1e6a39617d364e882008cb38858421dc16da797bcfd23ff8f69",
+   "fetched_utc": "2026-11-08T19:47:06Z"
+  },
+  {
+   "file": "YoungFast__OG105KinReduceParams.mat",
+   "url": "https://osf.io/download/2krv9/",
+   "bytes": 80895,
+   "sha256": "08255625e9c9855dfdbe19532486c3a217bff78b1749606f4838c98accaf07bd",
+   "fetched_utc": "2026-11-08T19:47:11Z"
+  },
+  {
+   "file": "YoungFast__OG100KinReduceReduceParams.mat",
+   "url": "https://osf.io/download/exmc4/",
+   "bytes": 89702,
+   "sha256": "4062c28dd3515e84dd0cca08f49d55a0dbad95c322e7e8467e343615bb3d9dfe",
+   "fetched_utc": "2026-11-08T19:47:17Z"
+  },
+  {
+   "file": "OldSlow__OG19KinReduceParams.mat",
+   "url": "https://osf.io/download/x6tv4/",
+   "bytes": 77449,
+   "sha256": "8c3b54672afc99f566789e7f733eb6e10c7f7fa95369b1268292c0df752ed345",
+   "fetched_utc": "2026-11-08T19:47:22Z"
+  },
+  {
+   "file": "OldSlow__OG25KinReduceParams.mat",
+   "url": "https://osf.io/download/5hjrt/",
+   "bytes": 77717,
+   "sha256": "999a118e4f5607fda0becc29e7b1d845d08f079333243b9ae299def1e0e50287",
+   "fetched_utc": "2026-11-08T19:47:27Z"
+  },
+  {
+   "file": "OldSlow__OG26KinReduceParams.mat",
+   "url": "https://osf.io/download/zv5es/",
+   "bytes": 76868,
+   "sha256": "3258ad1d493ca3b582b9d9a4fca4d8d620e6dbcbcc4a7025716ce0aff906a2e0",
+   "fetched_utc": "2026-11-08T19:47:32Z"
+  },
+  {
+   "file": "OldSlow__OG24KinReduceParams.mat",
+   "url": "https://osf.io/download/ab9sd/",
+   "bytes": 81007,
+   "sha256": "48b799061452bc86b88f5576beaf16bd2b44d5b93d3ee6f89324a1b6ea9b892d",
+   "fetched_utc": "2026-11-08T19:47:38Z"
+  },
+  {
+   "file": "OldSlow__OG17KinReduceParams.mat",
+   "url": "https://osf.io/download/qshxu/",
+   "bytes": 79254,
+   "sha256": "2f1f8fe62bbad5e0a376d5ba98d1ae9a18c2d6ec1196b2dd1168c256e434aa27",
+   "fetched_utc": "2026-11-08T19:47:43Z"
+  },
+  {
+   "file": "OldSlow__OG27KinReduceParams.mat",
+   "url": "https://osf.io/download/92h68/",
+   "bytes": 70654,
+   "sha256": "38ea637e5d10477c092a69c657711a92e89e0b32bcceec360c39fb3cd7066cc8",
+   "fetched_utc": "2026-11-08T19:47:49Z"
+  },
+  {
+   "file": "OldSlow__OG28KinReduceParams.mat",
+   "url": "https://osf.io/download/rj4w7/",
+   "bytes": 75951,
+   "sha256": "285b3498a10c59dbeed75b46fc4d2caa48aa8a8167daa2e5b758a404fd027353",
+   "fetched_utc": "2026-11-08T19:47:54Z"
+  },
+  {
+   "file": "OldSlow__OG29KinReduceParams.mat",
+   "url": "https://osf.io/download/g8a2p/",
+   "bytes": 77619,
+   "sha256": "4c8a2a88567102b4ffd901bfbbeff54e0e8b317f0624672648eefd6a8b9748fa",
+   "fetched_utc": "2026-11-08T19:47:59Z"
+  },
+  {
+   "file": "OldFast__OG70KinReduceParams.mat",
+   "url": "https://osf.io/download/uf97a/",
+   "bytes": 96467,
+   "sha256": "a91125f8c52aaf2c8d3467a32fcd178a22516f4e3760bbe78ba36a37e474a3af",
+   "fetched_utc": "2026-11-08T19:48:06Z"
+  },
+  {
+   "file": "OldFast__OG72KinReduceParams.mat",
+   "url": "https://osf.io/download/3cnb8/",
+   "bytes": 105844,
+   "sha256": "4331ad9ecd342ec3d7e5dac48d7944b336747cdb1b4afdf1becb5b0286e5aeea",
+   "fetched_utc": "2026-11-08T19:48:11Z"
+  },
+  {
+   "file": "OldFast__OG74KinReduceParams.mat",
+   "url": "https://osf.io/download/4u7gy/",
+   "bytes": 83077,
+   "sha256": "7d75635572d8f91312c34721fa8ffc2669f72a46bcba7e9556a19c6463c0b958",
+   "fetched_utc": "2026-11-08T19:48:18Z"
+  },
+  {
+   "file": "OldFast__OG84KinReduceParams.mat",
+   "url": "https://osf.io/download/vcs9x/",
+   "bytes": 86612,
+   "sha256": "83b803aef928d8baa75877d0e43bf42d1edf9b32df695004d31768840fc59e1e",
+   "fetched_utc": "2026-11-08T19:48:23Z"
+  },
+  {
+   "file": "OldFast__OG75KinReduceParams.mat",
+   "url": "https://osf.io/download/w4tcq/",
+   "bytes": 56761,
+   "sha256": "0f6bc29a59f3847cbc093fd35cda0d2f045db5c30a5550d8296d0c26f917e8a2",
+   "fetched_utc": "2026-11-08T19:48:29Z"
+  },
+  {
+   "file": "OldFast__OG104KinReduceParams.mat",
+   "url": "https://osf.io/download/f9qk8/",
+   "bytes": 70128,
+   "sha256": "f35a44bcaee9d16bae3aa640a42f48d3639eda7bb2e3be3d8d805b083d8a26ee",
+   "fetched_utc": "2026-11-08T19:48:43Z"
+  },
+  {
+   "file": "OldFast__OG103KinReduceParams.mat",
+   "url": "https://osf.io/download/pnr7f/",
+   "bytes": 75604,
+   "sha256": "7c063673efe982dbbd5d26e46b4cb203fa1e154abd1e21b05c76f1855e585b60",
+   "fetched_utc": "2026-11-08T19:48:49Z"
+  },
+  {
+   "file": "OldFast__OG106KinReduceParams.mat",
+   "url": "https://osf.io/download/jytu9/",
+   "bytes": 73666,
+   "sha256": "0cdfca009ae6348a3f643fafc444eba7c7084206ff2b10d20eb7a82ac954cd22",
+   "fetched_utc": "2026-11-08T19:48:55Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mariscal2025_JNeurophysiol.zip"
+}

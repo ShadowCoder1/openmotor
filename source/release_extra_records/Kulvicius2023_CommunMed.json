@@ -1,0 +1,90 @@
+{
+ "id": "Kulvicius2023_CommunMed",
+ "module": "timeseries",
+ "rows": 1776,
+ "subjects": 45,
+ "persons": 45,
+ "zip_bytes": 26680361,
+ "zip_sha256": "42605ab307230dfb69f799140541e35fc5924ee9aaf82a96e535a93e1c2c5ada",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every snippet appears once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "features within 0..1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample file names carry 45 subject codes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "infants",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Kulvicius et al. 2023, Commun Med 3:112, Abstract (N = 45)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pressure snippets",
+   "computed": 1776.0,
+   "reported": 1776.0,
+   "tol": 0,
+   "source": "Kulvicius et al. 2023, Commun Med 3:112, Abstract (1776 snippets)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "snippet length (s)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Kulvicius et al. 2023, Commun Med 3:112, Abstract (5 s snippets)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "deposit README (pressure mat, 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "ages within the 4-16 week sessions (20 to 130 days)",
+   "ok": true,
+   "detail": "26-115 days"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/8104097/files/data.zip/content",
+   "bytes": 129131398,
+   "sha256": "cbf756457e8661403c302311cfcefe3f070257f75e6e5cd69e6819c3b55b086a",
+   "fetched_utc": "2026-11-09T17:12:28Z"
+  },
+  {
+   "file": "pressure_mat_data.zip",
+   "url": "https://zenodo.org/api/records/8104097/files/pressure_mat_data.zip/content",
+   "bytes": 92469336,
+   "sha256": "2524c113efd219d02002ce58eb71b0d7cdfa0fba181daa756c4dc6ae62b31296",
+   "fetched_utc": "2026-11-09T17:13:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kulvicius2023_CommunMed.zip"
+}

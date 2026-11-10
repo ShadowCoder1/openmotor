@@ -1,0 +1,138 @@
+{
+ "id": "Eads2026_FoliaPhoniatr",
+ "module": "speech",
+ "rows": 3312,
+ "subjects": 46,
+ "persons": 46,
+ "zip_bytes": 53322,
+ "zip_sha256": "41786390b259e19f05b1f0403d7b7c6dcefbe2d9231e93a6867dff5c38d90f80",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "72 trials for each of 46 children",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "missing F1 trials equal the authors' n_missing_trials per child",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subID prefix (MOSAIC/RCT) agrees with Group in the acuity file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "children analysed",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children without RSSD",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with RSSD",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RSSD: number of female children",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RSSD: number of male children",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "No RSSD: number of female children",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "No RSSD: number of male children",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest child, whole years (ages 9-15)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest child, whole years (ages 9-15)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Eads et al. 2026, abstract (Folia Phoniatr Logop, doi 10.1159/fpl/acvag022)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text is paywalled, so only the abstract's counts (children per group, sex, age range) could be checked; the stimulus word, the ramp (if any) of the shift and the units of the two adaptation columns are not documented, and the main-table shift is therefore assumed to start at trial 19 as the authors' phase code says."
+ ],
+ "sources": [
+  {
+   "file": "AAF_Trial_Response_Data.csv",
+   "url": "https://osf.io/download/k4mn6/",
+   "bytes": 134599,
+   "sha256": "4817e552465efef26b3e1da5b2797ae0fef0a91a40c65554d63f0aa49475a0c9",
+   "fetched_utc": "2026-11-09T11:50:20Z"
+  },
+  {
+   "file": "AudAcuity_AAF_Data.csv",
+   "url": "https://osf.io/download/fm6dg/",
+   "bytes": 4035,
+   "sha256": "62dad894f06c5e446eada9a97569a527ac2bc0cf07a78a74f80ca4d622ef8acc",
+   "fetched_utc": "2026-11-09T11:50:23Z"
+  },
+  {
+   "file": "OSF_Code.Rmd",
+   "url": "https://osf.io/download/6aa31ab68365a080fca132b2/",
+   "bytes": 23998,
+   "sha256": "57e68246d904129003d17e16bd2a8eea56b324dab76a19370736a78fcd028ed3",
+   "fetched_utc": "2026-11-09T11:50:27Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Eads2026_FoliaPhoniatr.zip"
+}

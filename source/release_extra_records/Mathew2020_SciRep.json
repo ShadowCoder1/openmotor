@@ -1,0 +1,365 @@
+{
+ "id": "Mathew2020_SciRep",
+ "module": "summary",
+ "rows": 10310,
+ "subjects": 127,
+ "persons": 127,
+ "zip_bytes": 144162,
+ "zip_sha256": "b82a96fe2c2cdce4efb785a638bfb1280d0c1aac9fd8eccc764238b0737d0b97",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "first cohort participants",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "first cohort females",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "first cohort males",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "second cohort participants",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "second cohort females",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "second cohort males",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-tracking trials (both cohorts)",
+   "computed": 1270.0,
+   "reported": 1270.0,
+   "tol": 0,
+   "source": "Methods, Participants/Materials (1,270 trials for hand movements)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-tracking trials (first cohort)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods (500 trials for eye movements)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target distance, women, mean (cm)",
+   "computed": 1.8708666852,
+   "reported": 1.87,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target distance, women, SD (cm)",
+   "computed": 0.422726609623011,
+   "reported": 0.42,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target distance, men, mean (cm)",
+   "computed": 1.6178726062000002,
+   "reported": 1.62,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target distance, men, SD (cm)",
+   "computed": 0.30305207539949386,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target distance sex difference, |t|(48)",
+   "computed": 2.432013299474359,
+   "reported": 2.43,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target lag, women, mean (ms)",
+   "computed": 71.452,
+   "reported": 71.0,
+   "tol": 0.5,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target lag, women, SD (ms)",
+   "computed": 24.64964705629677,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target lag, men, mean (ms)",
+   "computed": 48.903999999999996,
+   "reported": 49.0,
+   "tol": 0.5,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target lag, men, SD (ms)",
+   "computed": 21.25955628260697,
+   "reported": 21.0,
+   "tol": 0.5,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand-target lag sex difference, |t|(48)",
+   "computed": 3.4634778788800973,
+   "reported": 3.46,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "residual distance, men (cm)",
+   "computed": 1.4042258280800002,
+   "reported": 1.4,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "residual distance, women (cm)",
+   "computed": 1.5026326690799998,
+   "reported": 1.5,
+   "tol": 0.005,
+   "source": "Results, Manual tracking is more accurate in male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tangential velocity mean, men (cm/s)",
+   "computed": 18.509976948000002,
+   "reported": 18.5,
+   "tol": 0.05,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tangential velocity mean, women (cm/s)",
+   "computed": 18.561729316000005,
+   "reported": 18.6,
+   "tol": 0.05,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tangential velocity SD, men (cm/s)",
+   "computed": 9.6689681324,
+   "reported": 9.67,
+   "tol": 0.005,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tangential velocity SD, women (cm/s)",
+   "computed": 9.6575799208,
+   "reported": 9.66,
+   "tol": 0.005,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ApEn vertical, men",
+   "computed": 0.51195349088,
+   "reported": 0.51,
+   "tol": 0.005,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ApEn vertical, women",
+   "computed": 0.50419749656,
+   "reported": 0.5,
+   "tol": 0.005,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "submovements, men",
+   "computed": 57.876000000000005,
+   "reported": 57.9,
+   "tol": 0.05,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "submovements, women",
+   "computed": 58.96,
+   "reported": 59.0,
+   "tol": 0.05,
+   "source": "Results, Similar hand movement kinematics",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-target distance, men (cm)",
+   "computed": 1.3854396224399996,
+   "reported": 1.39,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-target distance, women (cm)",
+   "computed": 1.4429981557600002,
+   "reported": 1.44,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-target lag, men (ms)",
+   "computed": 57.956,
+   "reported": 58.0,
+   "tol": 0.5,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-target lag, women (ms)",
+   "computed": 60.388000000000005,
+   "reported": 60.0,
+   "tol": 0.5,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade rate, men (Hz)",
+   "computed": 2.73386319224,
+   "reported": 2.73,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "saccade rate, women (Hz)",
+   "computed": 2.5885043318000003,
+   "reported": 2.59,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smooth pursuit gain, men",
+   "computed": 0.7978864473199999,
+   "reported": 0.8,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smooth pursuit gain, women",
+   "computed": 0.81769853284,
+   "reported": 0.82,
+   "tol": 0.005,
+   "source": "Results, Similar gaze behavior",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 10 trials of each per-trial measure",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "eye-hand sheet's eye-target distance equals the mean of the 10 trial values (max abs diff < 1e-3)",
+   "ok": true,
+   "detail": "4.4e-16"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "data.xlsx",
+   "url": "https://zenodo.org/api/records/3903369/files/DataRepositorySexDiff(2020)SciRep.xlsx/content",
+   "bytes": 118339,
+   "sha256": "4e73f257240f8b07e1c528ab3055deac794fdffec6149cd8b67169edf2add40e",
+   "fetched_utc": "2026-11-09T15:15:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mathew2020_SciRep.zip"
+}

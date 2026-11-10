@@ -1,0 +1,242 @@
+{
+ "id": "Wrench2000_MOCHA",
+ "module": "timeseries",
+ "rows": 1380,
+ "subjects": 3,
+ "persons": 3,
+ "zip_bytes": 203374217,
+ "zip_sha256": "418d2689c9c92d60c129beca6f7f75e88425e68ce6108110d4cf2d3ad0e00415",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "sentences read by the female speaker",
+   "computed": 460.0,
+   "reported": 460.0,
+   "tol": 0,
+   "source": "Abstract (each speaker reads up to 460 TIMIT sentences) and Wrench & Richmond 2000, Sec. 2.2 (all 460 sentences of the two analysed speakers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sentences read by the male speaker",
+   "computed": 460.0,
+   "reported": 460.0,
+   "tol": 0,
+   "source": "Abstract (up to 460 sentences); Wrench & Richmond 2000, Sec. 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers with a documented sex: male",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Wrench & Richmond 2000, Sec. 2.1 (two speakers, one male and one female, were analysed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers with a documented sex: female",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Wrench & Richmond 2000, Sec. 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA sampling rate (Hz)",
+   "computed": 499.99997903860157,
+   "reported": 500.0,
+   "tol": 0.5,
+   "source": "Wrench & Richmond 2000, Sec. 3.1 (EMA sampled at 500 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA coefficients of the articulators (x and y of upper lip, lower lip, jaw, 3 tongue sensors, velum), female speaker",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Wrench & Richmond 2000, Sec. 3.1 (14 coefficients in total)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA coefficients of the articulators, male speaker",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Wrench & Richmond 2000, Sec. 3.1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 channels (coils 1-10, x and y) in every recording, every time step 2 ms, presence flag always 1, no missing values",
+   "ok": true,
+   "detail": "flags {1.0}, nan 0"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings: 460 sentences for the female and the male speaker, 459 for the third (sentence 93 is missing, as the deposit's readme for that speaker says) plus its palate trace",
+   "ok": true,
+   "detail": "1380 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: upper lip above lower lip in nearly every recording (y up)",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: tongue-tip coil further along x than the upper-lip coil in nearly every recording (x grows towards the back)",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: mean x increases from tongue tip to blade to dorsum to velum in most recordings",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "the upper-incisor coil sits at the origin in every sentence (mean |x|, |y| below 1 mm)",
+   "ok": true,
+   "detail": "largest 0.3 units"
+  },
+  {
+   "kind": "internal",
+   "what": "labels fit the EMA time axis: in labelled bilabial closures (p, b, m) the lip aperture is below the sentence mean without a shift and above it when the labels are shifted by 0.12 s either way (both labelled speakers)",
+   "ok": true,
+   "detail": "female: +0.2, -6.6, +1.3 mm; male: +1.7, -4.9, +1.7 mm"
+  },
+  {
+   "kind": "internal",
+   "what": "every sentence has a sample file; the female and the male speaker have a label file for each sentence",
+   "ok": true,
+   "detail": "920 label files"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "In 919 of the 920 label files the last label ends more than 50 ms after the end of the EMA signal of the same sentence (median 0.36 s later: the EMA recording is shorter than the audio the labels were made on). The label times fit the EMA time axis: in the labelled bilabial closures (p, b, m) the lip aperture is 6.6 mm (female speaker) and 4.9 mm (male speaker) below the sentence mean when the labels are used as given, and above the mean when they are shifted by 0.12 s either way; the label times are copied as given.",
+  "The deposit's readme says EMA files hold 'x-values of coils 1-5, y-values of coils 1-5, x-values of coils 6-10, y-values of coils 6-10' without naming the coils; coil names are those of each file's header. The listed paper could not be read: the numbers checked above are from its abstract and from Wrench & Richmond (2000, 'Continuous speech recognition using articulatory data', CSTR, Edinburgh), whose authors describe the same database."
+ ],
+ "sources": [
+  {
+   "file": "LICENCE.txt",
+   "url": "https://data.cstr.ed.ac.uk/mocha/LICENCE.txt",
+   "bytes": 2130,
+   "sha256": "ceeae5f9c5ba9549ae15b5d65cdd6555651f7193005df9199417acede02f73f8",
+   "fetched_utc": "2026-11-08T22:13:54Z"
+  },
+  {
+   "file": "README_v1.2.txt",
+   "url": "https://data.cstr.ed.ac.uk/mocha/README_v1.2.txt",
+   "bytes": 8448,
+   "sha256": "010e284649219a7be8decc28c0781e6cfebfce078b8b5b53683c48d701ef57a2",
+   "fetched_utc": "2026-11-08T22:13:57Z"
+  },
+  {
+   "file": "README.fsew0.v1.1",
+   "url": "https://data.cstr.ed.ac.uk/mocha/README.fsew0.v1.1",
+   "bytes": 675,
+   "sha256": "491cb1347d97ab549bf6ca5ecbdac642532b69d7a8341a3e7dd851a51deb5ada",
+   "fetched_utc": "2026-11-08T22:13:59Z"
+  },
+  {
+   "file": "README.maps0",
+   "url": "https://data.cstr.ed.ac.uk/mocha/README.maps0",
+   "bytes": 116,
+   "sha256": "5fd4d6cc19a82e91bb1769e6cbb19fc2eeb665430313e3c72dfdbd5449116868",
+   "fetched_utc": "2026-11-08T22:14:01Z"
+  },
+  {
+   "file": "README.msak0",
+   "url": "https://data.cstr.ed.ac.uk/mocha/README.msak0",
+   "bytes": 343,
+   "sha256": "c5bd5fe2f33b6b8807d583675db166d8afb43a2aac8b967a8ce0b242c3c4dfd1",
+   "fetched_utc": "2026-11-08T22:14:04Z"
+  },
+  {
+   "file": "mocha-timit.txt",
+   "url": "https://data.cstr.ed.ac.uk/mocha/mocha-timit.txt",
+   "bytes": 24257,
+   "sha256": "7d07615cae1353cd9c69080dc4fb13f0cc98eac0cb47f5d297d56f17bf48fd89",
+   "fetched_utc": "2026-11-08T22:14:06Z"
+  },
+  {
+   "file": "fsew0_v1.1.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/fsew0_v1.1.tar.gz",
+   "bytes": 162523086,
+   "sha256": "b966246d8ec2ffb89203b9c633d47ff16ae17ebe66b1ba446055136966ffe597",
+   "fetched_utc": "2026-11-08T22:15:12Z"
+  },
+  {
+   "file": "msak0_v1.1.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/msak0_v1.1.tar.gz",
+   "bytes": 161849205,
+   "sha256": "118e6b2ed1ae00e57d9f41158a24edaba84fd0553de2b79511e0fa2972fce8f8",
+   "fetched_utc": "2026-11-08T22:16:40Z"
+  },
+  {
+   "file": "maps0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/maps0.tar.gz",
+   "bytes": 148925588,
+   "sha256": "8ccef76279f84066ce0533c8acb7e4f776a4cc0702e826ffcad2831d54f3c6e6",
+   "fetched_utc": "2026-11-08T22:17:41Z"
+  },
+  {
+   "file": "faet0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/faet0.tar.gz",
+   "bytes": 164990870,
+   "sha256": "b5edf010899232d49a5bec657cbbdb289e8b8fa68194e5c26375f326bb9a9c22",
+   "fetched_utc": "2026-11-08T22:18:40Z"
+  },
+  {
+   "file": "falh0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/falh0.tar.gz",
+   "bytes": 148203577,
+   "sha256": "ecfd683bfe5094ee4b6926404fbe367aae6bd4f5d6b0f2e4ddaebe8b7cf2ea0b",
+   "fetched_utc": "2026-11-08T22:19:46Z"
+  },
+  {
+   "file": "ffes0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/ffes0.tar.gz",
+   "bytes": 166639203,
+   "sha256": "0691a9bdd80b2c9896550c00f17716a02c9681eaef898ea4417c157a777796d2",
+   "fetched_utc": "2026-11-08T22:21:08Z"
+  },
+  {
+   "file": "fjmw0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/fjmw0.tar.gz",
+   "bytes": 146762851,
+   "sha256": "5ce06d6e5874860a34012b55304f1adaf3616ef6b21ea206d798ed52153611e8",
+   "fetched_utc": "2026-11-08T22:22:10Z"
+  },
+  {
+   "file": "mjjn0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/mjjn0.tar.gz",
+   "bytes": 171926773,
+   "sha256": "d3d13c685b34a3810f3d9139a78a8e2a3bd766d59010836bacadb415715c5da7",
+   "fetched_utc": "2026-11-08T22:23:25Z"
+  },
+  {
+   "file": "mkxr0.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/mkxr0.tar.gz",
+   "bytes": 235097867,
+   "sha256": "1734e0d967bb331fe4d6f605c5ab000f3320ef362b1cf3fef4641485a4f873ab",
+   "fetched_utc": "2026-11-08T22:24:55Z"
+  },
+  {
+   "file": "ss240402.tar.gz",
+   "url": "https://data.cstr.ed.ac.uk/mocha/unchecked/ss240402.tar.gz",
+   "bytes": 109250896,
+   "sha256": "577041fc9b3c2a18224315a1d9df4083dfcf0b53c90b96ef3851314754158ac2",
+   "fetched_utc": "2026-11-08T22:25:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wrench2000_MOCHA.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Westbury1994_XRMB_TTIC",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The TTIC release (single2.mat, 47 speakers) holds only z-scored 112-feature vectors (7 concatenated frames of 16 standardized pellet coordinates; every column has mean 0 and SD 1), with silence frames removed, missing pellet data filled in by the 2014 matrix-completion algorithm (so part of the values are reconstructed, not measured), and no times, utterance boundaries or pellet names; the README says nothing on feature order, unit or frame rate, and the test set (8 speakers) is not in time order. Units and what each column means cannot be recovered from the deposit; the original XRMB database (UW-Madison) has the raw pellet positions.",
+ "sources": []
+}

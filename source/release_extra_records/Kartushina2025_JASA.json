@@ -1,0 +1,639 @@
+{
+ "id": "Kartushina2025_JASA",
+ "module": "speech",
+ "rows": 12681,
+ "subjects": 95,
+ "persons": 48,
+ "zip_bytes": 346738,
+ "zip_sha256": "65f54bb659886c3b868006f288da50f38f3e2c085f31d8c5bf8ee64947673142",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every row of the six data files kept",
+   "ok": true,
+   "detail": "12681 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "48 participants in all (Sub01-Sub48), none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each of the five misspelled Day-15 word labels is mapped to its participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each person has one group, except Sub18 whose Day-15 word rows (labelled Subect18) say Low where all other rows say High",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial runs 1..n within each subject sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1_minus_f0_hz and f2_minus_f0_hz differ from f1_hz - f0_hz and f2_hz - f0_hz by at most 1 Hz",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "compactness: 464 rows of 46 participants, all in the main table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "isolated vowels, Day 1 vs Day 3: participants",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (N = 46)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "isolated vowels, Day 1 vs Day 3: tokens analysed",
+   "computed": 6370.0,
+   "reported": 6370.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (6370 observations)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "isolated vowels, Day 3 vs Day 15: participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 3 (N = 25)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "isolated vowels, Day 3 vs Day 15: tokens analysed",
+   "computed": 3506.0,
+   "reported": 3506.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 3 (3506 observations)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per training group",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Methods (n = 23 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "returned for Day 15, multiple-talker group",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Methods (Day 15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "returned for Day 15, single-talker group",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Methods (Day 15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "word tests, Day 1 vs Day 3: participants",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2 (N = 45)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "word tests, Day 1 vs Day 3: tokens analysed",
+   "computed": 3055.0,
+   "reported": 3055.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2 (3055 observations)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "word tests, Day 3 vs Day 15: participants (labels as spelled in the files)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4 (N = 22)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "word tests, Day 3 vs Day 15: tokens analysed",
+   "computed": 1488.0,
+   "reported": 1488.0,
+   "tol": 0,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4 (1488 observations)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day1: mean distance score over participants",
+   "computed": 2.7834815595198728,
+   "reported": 2.78,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day1: SD over participants",
+   "computed": 0.6284955518030757,
+   "reported": 0.62,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day3: mean distance score over participants",
+   "computed": 2.4798289333215804,
+   "reported": 2.47,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day3: SD over participants",
+   "computed": 0.578246236490196,
+   "reported": 0.57,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day3 (retention sample): mean over participants",
+   "computed": 2.5658343389008498,
+   "reported": 2.56,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day3 (retention sample): SD over participants",
+   "computed": 0.5502534664776381,
+   "reported": 0.55,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day15 (retention sample): mean over participants",
+   "computed": 2.7726251292528032,
+   "reported": 2.77,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words, Day15 (retention sample): SD over participants",
+   "computed": 0.8363961268490393,
+   "reported": 0.83,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /e/, Day1: mean distance score",
+   "computed": 3.4631650709336133,
+   "reported": 3.46,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /e/, Day1: SD",
+   "computed": 0.9897593559299683,
+   "reported": 0.98,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /e/, Day3: mean distance score",
+   "computed": 2.2811022307473716,
+   "reported": 2.28,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /e/, Day3: SD",
+   "computed": 0.9793445376795975,
+   "reported": 0.97,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /\u025b/, Day1: mean distance score",
+   "computed": 4.4746124609264,
+   "reported": 4.47,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /\u025b/, Day1: SD",
+   "computed": 1.484387268420197,
+   "reported": 1.48,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /\u025b/, Day3: mean distance score",
+   "computed": 3.1931905370843987,
+   "reported": 3.19,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, familiar voice, /\u025b/, Day3: SD",
+   "computed": 1.7433067399464475,
+   "reported": 1.74,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /e/, Day1: mean distance score",
+   "computed": 3.2070871819802305,
+   "reported": 3.2,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /e/, Day1: SD",
+   "computed": 1.6172541650407912,
+   "reported": 1.61,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /e/, Day3: mean distance score",
+   "computed": 2.946582125603865,
+   "reported": 2.94,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /e/, Day3: SD",
+   "computed": 1.5898913139362594,
+   "reported": 1.58,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /\u025b/, Day1: mean distance score",
+   "computed": 4.072397026992615,
+   "reported": 4.07,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /\u025b/, Day1: SD",
+   "computed": 1.9154793124302236,
+   "reported": 1.91,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /\u025b/, Day3: mean distance score",
+   "computed": 3.153076513213981,
+   "reported": 3.15,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, familiar voice, /\u025b/, Day3: SD",
+   "computed": 1.4256461412236099,
+   "reported": 1.42,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /e/, Day1: mean distance score",
+   "computed": 2.617924809277111,
+   "reported": 2.61,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /e/, Day1: SD",
+   "computed": 0.714844733973582,
+   "reported": 0.71,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /e/, Day3: mean distance score",
+   "computed": 1.926779269678886,
+   "reported": 1.92,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /e/, Day3: SD",
+   "computed": 0.8919221002897625,
+   "reported": 0.89,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /\u025b/, Day1: mean distance score",
+   "computed": 3.535774012503552,
+   "reported": 3.53,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /\u025b/, Day1: SD",
+   "computed": 1.2874425070759148,
+   "reported": 1.28,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /\u025b/, Day3: mean distance score",
+   "computed": 2.445716467746519,
+   "reported": 2.44,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-talker, unfamiliar voice, /\u025b/, Day3: SD",
+   "computed": 1.5194658623340433,
+   "reported": 1.51,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /e/, Day1: mean distance score",
+   "computed": 2.4211493612596553,
+   "reported": 2.42,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /e/, Day1: SD",
+   "computed": 0.7600597625900587,
+   "reported": 0.76,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /e/, Day3: mean distance score",
+   "computed": 1.9292661267405513,
+   "reported": 1.92,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /e/, Day3: SD",
+   "computed": 0.688136255588203,
+   "reported": 0.68,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /\u025b/, Day1: mean distance score",
+   "computed": 2.9091027202892175,
+   "reported": 2.9,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /\u025b/, Day1: SD",
+   "computed": 1.1228625112546653,
+   "reported": 1.12,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /\u025b/, Day3: mean distance score",
+   "computed": 2.3194487070190393,
+   "reported": 2.31,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "multiple-talker, unfamiliar voice, /\u025b/, Day3: SD",
+   "computed": 0.83878010691843,
+   "reported": 0.83,
+   "tol": 0.015,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1 (descriptive table)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "improvement in the familiar voice, single-talker group (% of Day 1)",
+   "computed": 30.78203406713716,
+   "reported": 31.0,
+   "tol": 0.5,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "improvement in the familiar voice, multiple-talker group (% of Day 1)",
+   "computed": 15.840525035593208,
+   "reported": 16.0,
+   "tol": 0.5,
+   "source": "Kartushina & Martin 2025, J Acoust Soc Am, Results, Model 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel tokens without a distance score removed",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "authors' analysis script (OSF Analyses/analyses_articul2.Rmd), 'Remove NAs in DS (n=7)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel tokens with F1 >= 900 removed (after the missing-DS step)",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "authors' analysis script (OSF Analyses/analyses_articul2.Rmd), comment 'number of removed trials 52'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of isolated-vowel tokens excluded, %",
+   "computed": 2.34290520245104,
+   "reported": 2.4,
+   "tol": 0.1,
+   "source": "authors' analysis script (OSF Analyses/analyses_articul2.Rmd), comment '~2.4% of data'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of word tokens excluded, %",
+   "computed": 5.223529411764705,
+   "reported": 5.0,
+   "tol": 0.3,
+   "source": "authors' analysis script (OSF Analyses/analyses_articul2_words.Rmd), comment '~5% of data'",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' Day 3 vs Day 15 word model has 22 participants (1,488 tokens) although 27 took the Day-15 word test: five Day-15 labels are misspelled in the word file (their script corrects them only after the days are joined), so those participants have no Day-3 partner there. Here they are mapped to their participants, and the 22 is reproduced from the labels as spelled.",
+  "The Day-15 word rows labelled Subect18 are attached to Sub18 (the authors' own correction) but carry the group Low, while every other row of Sub18 says High; the label is kept as shared.",
+  "The counts of removed tokens in the comments of the authors' scripts are from an earlier version of the data: with the files shared, the vowel steps remove 7 (missing distance), 52, 63, 50, 10, 3 and 10 tokens (comments: 7, 52, 64, 2%, 26, 8, 35), although the analysis sets reproduce the paper's token counts exactly.",
+  "The paper's descriptive table (Model 1) is matched to within 0.015 (the shared tokens give means up to 0.01 higher in some cells)."
+ ],
+ "sources": [
+  {
+   "file": "formants_distances_articul2_day_15.txt",
+   "url": "https://osf.io/download/hn8y6/",
+   "bytes": 159133,
+   "sha256": "27961ad9a0a17d9020406d3aac5b73885d8e319bbf46aeea9da36eb532c822d1",
+   "fetched_utc": "2026-11-08T22:51:59Z"
+  },
+  {
+   "file": "formants_distances_articul2_words_day15.txt",
+   "url": "https://osf.io/download/y4a93/",
+   "bytes": 70868,
+   "sha256": "ec421c0c7ff63747abd515b17d120120b110b81c7178ea76112d849ae20497a9",
+   "fetched_utc": "2026-11-08T22:52:04Z"
+  },
+  {
+   "file": "formants_distances_articul2_words_day15_sub04.txt",
+   "url": "https://osf.io/download/zgdfm/",
+   "bytes": 2382,
+   "sha256": "8d7c559fd2eec89a60915fa7cbd936c7d3a0ae100757dddb0c6db9e66453d380",
+   "fetched_utc": "2026-11-08T22:52:08Z"
+  },
+  {
+   "file": "formants_distances_articul2_words_day1.txt",
+   "url": "https://osf.io/download/7bw49/",
+   "bytes": 119715,
+   "sha256": "e089ee44c354dca48d8d99ea08f3ef4a0417a4fc4dac54f06fd485feff96bbd6",
+   "fetched_utc": "2026-11-08T22:52:12Z"
+  },
+  {
+   "file": "formants_distances_articul2_words_day3.txt",
+   "url": "https://osf.io/download/8hb3q/",
+   "bytes": 117148,
+   "sha256": "36da66b67bbbd4b3d5261387926c4f55fab39ac45a69e038bfcf921165c97bf2",
+   "fetched_utc": "2026-11-08T22:52:17Z"
+  },
+  {
+   "file": "Repetition_All.txt",
+   "url": "https://osf.io/download/rw2fp/",
+   "bytes": 439564,
+   "sha256": "0b3226f53b55a56ca2fc09d0d8093a12209b5c1f213c7ef542b81a28248db788",
+   "fetched_utc": "2026-11-08T22:52:21Z"
+  },
+  {
+   "file": "compactness_repetition_clean.txt",
+   "url": "https://osf.io/download/fkasz/",
+   "bytes": 19903,
+   "sha256": "0720fbb07c14ca18a10898fcb6cfd01ce0bd62e7e0547c243b949dff872ae44d",
+   "fetched_utc": "2026-11-08T22:52:25Z"
+  },
+  {
+   "file": "analyses_articul2.Rmd",
+   "url": "https://osf.io/download/j53ya/",
+   "bytes": 30617,
+   "sha256": "20485e7d904aa66fb4ebd524fabc320a845a83e6de6ad319b428cbf3108af831",
+   "fetched_utc": "2026-11-08T22:52:30Z"
+  },
+  {
+   "file": "analyses_articul2_words.Rmd",
+   "url": "https://osf.io/download/6nsfb/",
+   "bytes": 14288,
+   "sha256": "41d008e1a9bc7e2e0af830ae15e5ca527c99800929d419977f0e768f65d03488",
+   "fetched_utc": "2026-11-08T22:52:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kartushina2025_JASA.zip"
+}

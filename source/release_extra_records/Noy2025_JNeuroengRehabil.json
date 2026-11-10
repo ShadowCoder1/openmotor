@@ -1,0 +1,253 @@
+{
+ "id": "Noy2025_JNeuroengRehabil",
+ "module": "timeseries",
+ "rows": 989,
+ "subjects": 90,
+ "persons": 90,
+ "zip_bytes": 111378442,
+ "zip_sha256": "64251e45eac577acafeb805a276e6588a8edeacf3d5497b0bbd9ef65948f9bf3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "subjects in the raw folder equal those of combined.csv",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants, Parkinson's disease",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, older controls",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, younger controls",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, Parkinson's disease",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, older controls",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, younger controls",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Parkinson's disease",
+   "computed": 67.09677419354838,
+   "reported": 67.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, Parkinson's disease",
+   "computed": 10.802329497874297,
+   "reported": 11.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, older controls",
+   "computed": 62.241379310344826,
+   "reported": 62.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, older controls",
+   "computed": 11.137629820996775,
+   "reported": 11.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, younger controls",
+   "computed": 24.966666666666665,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, younger controls",
+   "computed": 6.294405470724384,
+   "reported": 6.0,
+   "tol": 0.5,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PwP mean timing error dT",
+   "computed": 0.18269569892473117,
+   "reported": 0.183,
+   "tol": 0.0005,
+   "source": "Noy et al. 2025, J NeuroEngineering Rehabil 22:51, Results (error measures)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "recordings: 989 raw trial files (90 participants x 11 trials minus one missing trial)",
+   "ok": true,
+   "detail": "989"
+  },
+  {
+   "kind": "internal",
+   "what": "every sample file has samples and stimuli are dot1-dot11",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The group means of dX and dT in the paper (for example 0.389 for dX in people with Parkinson's disease) are marginal means of the authors' mixed ANOVA and differ slightly from the means of the six frequency columns of combined.csv, so only the dT mean that matches is a check."
+ ],
+ "sources": [
+  {
+   "file": "results.zip",
+   "url": "https://ndownloader.figshare.com/files/51955358",
+   "bytes": 908856464,
+   "sha256": "f4a102dd1c3ff78fb3bd0b730a2739055f7af61101cbd6fcedd86fd77340fc93",
+   "fetched_utc": "2026-11-09T12:56:48Z"
+  },
+  {
+   "file": "dot1.csv",
+   "url": "https://ndownloader.figshare.com/files/51955313",
+   "bytes": 66456,
+   "sha256": "0136abcdf7ebeb127f3e8899e1e851e30c7867c9d574205cb8963cceec0decd3",
+   "fetched_utc": "2026-11-09T12:56:52Z"
+  },
+  {
+   "file": "dot2.csv",
+   "url": "https://ndownloader.figshare.com/files/51955322",
+   "bytes": 67193,
+   "sha256": "58ca37967568eb91af25cf72edb94183771dd89389bc34d4282ba407886b149d",
+   "fetched_utc": "2026-11-09T12:56:56Z"
+  },
+  {
+   "file": "dot3.csv",
+   "url": "https://ndownloader.figshare.com/files/51955325",
+   "bytes": 67397,
+   "sha256": "d9a00fcb0f77498cf07b8b655b249e75a1acecc6b7255159f172bb08a1440af9",
+   "fetched_utc": "2026-11-09T12:57:00Z"
+  },
+  {
+   "file": "dot4.csv",
+   "url": "https://ndownloader.figshare.com/files/51955328",
+   "bytes": 67881,
+   "sha256": "f5f9b254e881e911e5d2b216268037592d2b93625c4a71fbc7c14b6ee154429f",
+   "fetched_utc": "2026-11-09T12:57:04Z"
+  },
+  {
+   "file": "dot5.csv",
+   "url": "https://ndownloader.figshare.com/files/51955331",
+   "bytes": 67502,
+   "sha256": "4224a08ea430c1b00800f31b346ec350825a4c51e05075e65f0e354d99ebabcb",
+   "fetched_utc": "2026-11-09T12:57:08Z"
+  },
+  {
+   "file": "dot6.csv",
+   "url": "https://ndownloader.figshare.com/files/51955334",
+   "bytes": 67834,
+   "sha256": "b7b1fc9929f8ecf18a9c41bd18a7666e08b6a19a9fc3d37f2f040f42204dc266",
+   "fetched_utc": "2026-11-09T12:57:25Z"
+  },
+  {
+   "file": "dot7.csv",
+   "url": "https://ndownloader.figshare.com/files/51955337",
+   "bytes": 67316,
+   "sha256": "b9faddf8df55ed03859648c4a63d2703e9634f1f8af60c716524a58afe2a337d",
+   "fetched_utc": "2026-11-09T12:57:29Z"
+  },
+  {
+   "file": "dot8.csv",
+   "url": "https://ndownloader.figshare.com/files/51955340",
+   "bytes": 67438,
+   "sha256": "d4bf98ec50e908aa809276f6a593d23c35b02859a421ada3d98e494385c4ec18",
+   "fetched_utc": "2026-11-09T12:57:34Z"
+  },
+  {
+   "file": "dot9.csv",
+   "url": "https://ndownloader.figshare.com/files/51955343",
+   "bytes": 67983,
+   "sha256": "361c895b0a3959bedc0034a7b4d166d29c0b0a8379f7b778ef3919b162a3bf59",
+   "fetched_utc": "2026-11-09T12:57:39Z"
+  },
+  {
+   "file": "dot10.csv",
+   "url": "https://ndownloader.figshare.com/files/51955316",
+   "bytes": 67630,
+   "sha256": "dab722611a8d7b645542438e3c8e47987ee0bc6e0c85b24de5a49af8af2dce61",
+   "fetched_utc": "2026-11-09T12:57:45Z"
+  },
+  {
+   "file": "dot11.csv",
+   "url": "https://ndownloader.figshare.com/files/51955319",
+   "bytes": 67133,
+   "sha256": "a0cf019ed31d01c1da399ca57698aba8a231018c5778d4d9f721bed54bb10344",
+   "fetched_utc": "2026-11-09T12:57:50Z"
+  },
+  {
+   "file": "combined.csv",
+   "url": "https://ndownloader.figshare.com/files/51955262",
+   "bytes": 75839,
+   "sha256": "cec834cfee676fabf9e33a5f2d1148190285789b69fd674158dcd44ce869b73d",
+   "fetched_utc": "2026-11-09T12:57:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Noy2025_JNeuroengRehabil.zip"
+}

@@ -1,0 +1,311 @@
+{
+ "id": "Yokoi2022_JNeurophysiol",
+ "module": "force_field_reaching",
+ "rows": 37610,
+ "subjects": 121,
+ "persons": 121,
+ "zip_bytes": 1785576,
+ "zip_sha256": "cc336e2ffd7d69ab7a4c906143c0d87b99cb0e655bafa04af25a446ddaa4483b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Exp1 participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Table of experiments / Methods, Exp 1 (28 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 participants",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Exp 2 (29 analysed of 30)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Exp 3 (30 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4 participants",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Methods, Exp 4 (34 analysed of 35)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 participants with a CW field",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (20 CW, 8 CCW)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 participants with a CCW field",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (20 CW, 8 CCW)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4 participants with a CW field",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Exp 4 (19 CW, 15 CCW)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4 participants with a CCW field",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Exp 4 (19 CW, 15 CCW)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 participants with a CCW field (half of 30)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Exp 3 (half CW, half CCW)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 subgroup A participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Exp 2 (subgroups A 10, B 10, C 9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 subgroup B participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Exp 2 (subgroups A 10, B 10, C 9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 subgroup C participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Exp 2 (subgroups A 10, B 10, C 9)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 block 1 reaching trials",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (59 trials per block, 44 in block 4, minus the 4 light-reflex trials of each block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 block 2 reaching trials",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (59 trials per block, 44 in block 4, minus the 4 light-reflex trials of each block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 block 3 reaching trials",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (59 trials per block, 44 in block 4, minus the 4 light-reflex trials of each block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 block 4 reaching trials",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (59 trials per block, 44 in block 4, minus the 4 light-reflex trials of each block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 block 5 reaching trials",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Exp 1 (59 trials per block, 44 in block 4, minus the 4 light-reflex trials of each block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 share of channel trials",
+   "computed": 0.2,
+   "reported": 0.2,
+   "tol": 0.0005,
+   "source": "Methods, Exp 1 (20% channel trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 share of channel trials",
+   "computed": 0.2,
+   "reported": 0.2,
+   "tol": 0.0005,
+   "source": "Methods, Exp 3 (20% channel trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3 reaching trials per participant (7 blocks of 50)",
+   "computed": 350.0,
+   "reported": 350.0,
+   "tol": 0,
+   "source": "Methods, Exp 3 (7 x 50 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4 reaching trials per participant (6 blocks of 50 plus a block of 70)",
+   "computed": 370.0,
+   "reported": 370.0,
+   "tol": 0,
+   "source": "Methods, Exp 4 (block 7 has 70 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4 block 7 channel trials per participant (all of trials 21-70 plus 20% of the first 20)",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Methods, Exp 4 (20% channel trials, block 7 channel on trials 21-70)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 non-channel trials whose field direction differs from the schedule printed in the Methods (A, B, C)",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Exp 2 (trial ranges of CW and CCW fields for subgroups A, B, C)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "row counts: 28*260, 29*250, 30*350, 34*370",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has consecutive trials from 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "on non-channel trials the field coefficient is non-zero exactly on field trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1 field timing: block 2 field from its 11th reach, off from the 11th reach of block 4",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost: all four experiments keep every participant of the deposit",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's table gives 59 reaching-plus-light-reflex trials per block; the deposit holds only the 55 reaching trials of each block, as the published check on block sizes shows."
+ ],
+ "sources": [
+  {
+   "file": "Exp1_trial.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp1_trial.mat",
+   "bytes": 317463,
+   "sha256": "684d6ddafeec5003103e12b6b0612aa50d1382afe1a7a5c029dde2521fcc3d0a",
+   "fetched_utc": "2026-11-09T09:21:13Z"
+  },
+  {
+   "file": "Exp1_pupilTs_ptb.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp1_pupilTs_ptb.mat",
+   "bytes": 101425,
+   "sha256": "a48f3a12944f7fadf8112637c174a5c33d605564ff836340c17dab67c6803b6b",
+   "fetched_utc": "2026-11-09T09:21:16Z"
+  },
+  {
+   "file": "Exp2_trial.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp2_trial.mat",
+   "bytes": 347818,
+   "sha256": "e5fed4cea6f95ae00571b5e9bd943bba619f18ff4e3079756a6a987fbd09d0f9",
+   "fetched_utc": "2026-11-09T09:21:19Z"
+  },
+  {
+   "file": "Exp3_trial.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp3_trial.mat",
+   "bytes": 517882,
+   "sha256": "85ec1acd8b8ad8f75036ae663b2e15f2f718fdb238f8821b3a218088134e832a",
+   "fetched_utc": "2026-11-09T09:21:23Z"
+  },
+  {
+   "file": "Exp4_trial.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp4_trial.mat",
+   "bytes": 613013,
+   "sha256": "734a7af8cbb773889b14719ee0a6e2dadc7a301ed7e78963df23105015870d27",
+   "fetched_utc": "2026-11-09T09:21:26Z"
+  },
+  {
+   "file": "Exp3_interview.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp3_interview.mat",
+   "bytes": 377,
+   "sha256": "364b5bc7dfe6184161b47c54f08e8c6afe541e13ff5f0c36ce1b5e3c43b1466a",
+   "fetched_utc": "2026-11-09T09:21:38Z"
+  },
+  {
+   "file": "Exp4_interview.mat",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/data/Exp4_interview.mat",
+   "bytes": 379,
+   "sha256": "4abb715af4f02bf576620cdf00a7dabad6adbaad88cc40b738c9068105d0e4bb",
+   "fetched_utc": "2026-11-09T09:21:41Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://raw.githubusercontent.com/ayokoi/pupilMotor01/master/README.md",
+   "bytes": 1326,
+   "sha256": "d2dafbcb517061bcd1f431395c8bb171427b3604baf6760d04535c372b6e0cf5",
+   "fetched_utc": "2026-11-09T09:21:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Yokoi2022_JNeurophysiol.zip"
+}

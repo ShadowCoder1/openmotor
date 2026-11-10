@@ -1,0 +1,213 @@
+{
+ "id": "Ikegami2021_PLoSCompBiol",
+ "module": "force_field_reaching",
+ "rows": 39270,
+ "subjects": 119,
+ "persons": 119,
+ "zip_bytes": 783468,
+ "zip_sha256": "babbc2536a2f7637f349b0ef27ad3f15dc7e363f3fa63b7677b1dc5bd9bed9f7",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "119 sequences x 330 reaches",
+   "ok": true,
+   "detail": "119 sequences"
+  },
+  {
+   "kind": "published",
+   "what": "participants, experiment 1 (VDCF + LIPF)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants (30 in experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, experiment 2 (PSPF + CPVF, one CPVF participant excluded)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants (30, one excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the CPVF group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in each experiment 3 condition",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants (30)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LIPF first adaptation reach, |TE| mean (mm)",
+   "computed": 112.58178514738877,
+   "reported": 112.6,
+   "tol": 0.1,
+   "source": "Results, experiment 1 (112.6 +/- 38.0 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LIPF first adaptation reach, TE SD (mm)",
+   "computed": 38.03563027782956,
+   "reported": 38.0,
+   "tol": 0.1,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LIPF first de-adaptation reach, TE mean (mm)",
+   "computed": 44.32045503053814,
+   "reported": 44.3,
+   "tol": 0.1,
+   "source": "Results, experiment 1 (44.3 +/- 27.7 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "LIPF first de-adaptation reach, TE SD (mm)",
+   "computed": 27.74489024195629,
+   "reported": 27.7,
+   "tol": 0.1,
+   "source": "Results, experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CPVF first adaptation reach, |TE| mean (mm)",
+   "computed": 73.19659207548413,
+   "reported": 73.2,
+   "tol": 0.1,
+   "source": "Results, experiment 2 (73.2 +/- 50.0 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "CPVF first adaptation reach, TE SD (mm)",
+   "computed": 50.11236778573435,
+   "reported": 50.0,
+   "tol": 0.2,
+   "source": "Results, experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 first de-adaptation reach, PEC TE mean (mm)",
+   "computed": 8.621938495586315,
+   "reported": 8.6,
+   "tol": 0.1,
+   "source": "Results, experiment 3 (8.6 +/- 1.9 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 first de-adaptation reach, PEC TE SD (mm)",
+   "computed": 1.9305328756517284,
+   "reported": 1.9,
+   "tol": 0.1,
+   "source": "Results, experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 first de-adaptation reach, Null TE mean (mm)",
+   "computed": 39.896816453741245,
+   "reported": 39.9,
+   "tol": 0.1,
+   "source": "Results, experiment 3 (39.9 +/- 26.5 mm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3 first de-adaptation reach, Null TE SD (mm)",
+   "computed": 26.460409640062405,
+   "reported": 26.5,
+   "tol": 0.1,
+   "source": "Results, experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "some reaches are empty and flagged",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "CPVF first de-adaptation reach: the paper reports 26.0 +/- 22.8 mm; the rows give a mean of about 26.6 mm over the participants with a value (one is empty), so that number is not used as a check.",
+  "The deposit holds one CPVF participant fewer than the 15 recruited (14), as the paper says."
+ ],
+ "sources": [
+  {
+   "file": "ReadMe.txt",
+   "url": "https://zenodo.org/records/4725997/files/ReadMe.txt?download=1",
+   "bytes": 2119,
+   "sha256": "487c0d06df960246b3d04ed6d0c4c4f08c904abf7d4e97c3b882876a9a3dec96",
+   "fetched_utc": "2026-11-09T07:18:45Z"
+  },
+  {
+   "file": "Data_CPVF.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_CPVF.mat?download=1",
+   "bytes": 42867,
+   "sha256": "07c62bb1e6d07dc27bc4f91d4a9e8a135fcff4aa222cf78c42ef7f04243cc1c4",
+   "fetched_utc": "2026-11-09T07:26:40Z"
+  },
+  {
+   "file": "Data_LIPF.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_LIPF.mat?download=1",
+   "bytes": 45903,
+   "sha256": "bc169e6cfcf54a74367f8cc265217b666d24bc04d9a67e3279bd7b69cebfdcad",
+   "fetched_utc": "2026-11-09T07:26:58Z"
+  },
+  {
+   "file": "Data_LIPFNULL.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_LIPFNULL.mat?download=1",
+   "bytes": 91365,
+   "sha256": "6f8ebba6d4effab7c4ce48e4481f1b10a603719bf6a96b483b0c58960caf4707",
+   "fetched_utc": "2026-11-09T07:27:06Z"
+  },
+  {
+   "file": "Data_LIPFPEC.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_LIPFPEC.mat?download=1",
+   "bytes": 91167,
+   "sha256": "926a85a94c35ba92ad0f0354746f9cc654d38cd69cc421053c2a3eb7cab36005",
+   "fetched_utc": "2026-11-09T07:27:14Z"
+  },
+  {
+   "file": "Data_PSPF.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_PSPF.mat?download=1",
+   "bytes": 45925,
+   "sha256": "bc474bf788dbb1f4bb4ae5a6f880307c0bc3aa2ff9b0dad7bf354c95912df846",
+   "fetched_utc": "2026-11-09T07:27:22Z"
+  },
+  {
+   "file": "Data_VDCF.mat",
+   "url": "https://zenodo.org/records/4725997/files/Data_VDCF.mat?download=1",
+   "bytes": 45957,
+   "sha256": "7cd54d4b9b365f04c0ee2c839eb9317463436b97cb96608e0c47b77d16b8f76f",
+   "fetched_utc": "2026-11-09T07:27:30Z"
+  },
+  {
+   "file": "Traj.mat",
+   "url": "https://zenodo.org/records/4725997/files/Traj.mat?download=1",
+   "bytes": 11633,
+   "sha256": "f194dd3a0a1f37c564e40494f644b5a120ace0e3b9ca7bb0413c49ca683f8f64",
+   "fetched_utc": "2026-11-09T07:27:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ikegami2021_PLoSCompBiol.zip"
+}

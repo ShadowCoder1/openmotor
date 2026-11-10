@@ -1,0 +1,172 @@
+{
+ "id": "Hadjiosif2025_SciRep",
+ "module": "reach90",
+ "rows": 65178,
+ "subjects": 42,
+ "persons": 42,
+ "zip_bytes": 2099885,
+ "zip_sha256": "f7e65846abd6b6204d6f40e443519093732eb8ea62b25017512c081614b566f3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "two participants have an inconsistent block clock (time_s left empty for them)",
+   "ok": true,
+   "detail": "[('Exp1a', 19), ('Exp1b', 6)]"
+  },
+  {
+   "kind": "published",
+   "what": "participants, Experiment 1a",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Results (Experiments 1a (n = 24) and 1b (n = 18))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Experiment 1b",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Results (Experiments 1a (n = 24) and 1b (n = 18))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Results (participants (n = 42))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline_train_dir trials per superset",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Experiment schedule (16 additional no-VMR trials in the training direction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training trials per superset",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods, Experiment schedule (120 training trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "extended_training trials per superset",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Experiment schedule (60-trial extended training block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "generalization trials per superset (2 blocks of 114)",
+   "computed": 228.0,
+   "reported": 228.0,
+   "tol": 0,
+   "source": "Methods, Experiment schedule (114-trial generalization blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall late-learning adaptation at 25 ms, deg (mean of 34 supersets)",
+   "computed": 29.46819732427641,
+   "reported": 29.5,
+   "tol": 1.0,
+   "source": "Results, 'Implicit adaptation increases...' (29.5, 28.8, 29.0 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "explicit late-learning adaptation at 25 ms, deg",
+   "computed": 9.039213932556905,
+   "reported": 9.1,
+   "tol": 1.5,
+   "source": "Results, explicit adaptation (9.1, 15.0, 18.4 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall late-learning adaptation at 85 ms, deg (mean of 34 supersets)",
+   "computed": 28.829490657872526,
+   "reported": 28.8,
+   "tol": 1.0,
+   "source": "Results, 'Implicit adaptation increases...' (29.5, 28.8, 29.0 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "explicit late-learning adaptation at 85 ms, deg",
+   "computed": 14.687493311742884,
+   "reported": 15.0,
+   "tol": 1.5,
+   "source": "Results, explicit adaptation (9.1, 15.0, 18.4 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall late-learning adaptation at 300 ms, deg (mean of 34 supersets)",
+   "computed": 29.31467996061505,
+   "reported": 29.0,
+   "tol": 1.0,
+   "source": "Results, 'Implicit adaptation increases...' (29.5, 28.8, 29.0 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "explicit late-learning adaptation at 300 ms, deg",
+   "computed": 18.332339367247467,
+   "reported": 18.4,
+   "tol": 1.5,
+   "source": "Results, explicit adaptation (9.1, 15.0, 18.4 deg)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each superset's latency is constant over its training trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angles within +-180",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The late-learning means were recomputed here from the rows without the authors' across-participant outlier rejection (3 IQR), so they agree with the paper within about 1 deg rather than exactly.",
+  "The paper describes a 25-trial washout block; the authors' index vectors and the file hold 30 trials, which are all kept (block ending _washout).",
+  "time_s is empty for two participants (one in each experiment) whose block start times in the file are not consistent (t_last_trial runs backwards at one block boundary).",
+  "One Experiment 1a participant has 57 reaches (a whole baseline block) with no data at all in the file; they are written as placeholder rows (trial_kind missing, excluded_by_authors True) so that trial_orig stays continuous.",
+  "Fifteen of the 24 Experiment 1a participants have 30 fewer trials than the others (the authors' code pads the missing last block of 30 reaches, the washout of the last superset, with NaN); they are kept as they are.",
+  "The first 323 outward trials of each participant (block pre_superset) are not described in the paper beyond a 17-trial familiarization; they include trials with random 15 and 30 degree rotations and trials without a cursor. They are kept and labelled."
+ ],
+ "sources": [
+  {
+   "file": "exp1a_data_R2.mat",
+   "url": "https://media.githubusercontent.com/media/AlkisMH/Latency/HEAD/SciReports/exp1a_data_R2.mat",
+   "bytes": 160539416,
+   "sha256": "341a3aac843ec5faeba6636034ccf61579f7f608ddc24745ff91c42e7ed2efbb",
+   "fetched_utc": "2026-11-09T09:20:46Z"
+  },
+  {
+   "file": "exp1b_data_R2.mat",
+   "url": "https://raw.githubusercontent.com/AlkisMH/Latency/HEAD/SciReports/exp1b_data_R2.mat",
+   "bytes": 81252079,
+   "sha256": "70da123accff6cdb985815d6857eea9ee580dac7fcddb76c4499c2917406f0ff",
+   "fetched_utc": "2026-11-09T09:21:08Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hadjiosif2025_SciRep.zip"
+}

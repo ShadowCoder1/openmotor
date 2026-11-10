@@ -1,0 +1,78 @@
+{
+ "id": "Jang2025_Data",
+ "module": "articulography",
+ "rows": 1404,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 41774,
+ "zip_sha256": "3776961306f932b266492da5657bde3fce480be8cd8b351785492d2ebb781a83",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every token of articulatory_data.csv kept with its 3 gestures, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "10 speakers, 5 women and 5 men",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no duplicate speaker x condition x repetition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Kim, Jang & Cho 2017, J Acoust Soc Am (same recordings), Methods (10 speakers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the speakers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Kim, Jang & Cho 2017, J Acoust Soc Am (same recordings), Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "C3 release peak velocity, main effect of boundary F(1,9)",
+   "computed": 46.91288436828541,
+   "reported": 46.91,
+   "tol": 0.01,
+   "source": "Kim, Jang & Cho 2017, J Acoust Soc Am (same recordings), Results (kinematics of C3-rel/opening)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The 2017 article analysed 467 of 480 planned tokens; the table has 468.",
+  "Not reproduced: Table 2 durations of the 2017 article (for example S1 unaccented C3 release duration 145 and 81 ms, here 129 and 75) and the boundary effect on C3 release displacement (F = 31.99 there, 29.80 here); the F for peak velocity matches."
+ ],
+ "sources": [
+  {
+   "file": "articulatory_data.csv",
+   "url": "https://osf.io/download/rvbjn/",
+   "bytes": 51451,
+   "sha256": "a79e0150203cb582c7f6da1edbcea9c45a25e2a017636c07948f79ac5f95355f",
+   "fetched_utc": "2026-11-08T22:58:49Z"
+  },
+  {
+   "file": "articulatory_data.zip",
+   "url": "https://osf.io/download/a2fvs/",
+   "bytes": 151455234,
+   "sha256": "421fc25651f70dd287c8f2fa795e03b3973c20be91cdfdb750c131e772c01cbe",
+   "fetched_utc": "2026-11-08T22:59:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jang2025_Data.zip"
+}

@@ -1,0 +1,151 @@
+{
+ "id": "Thomas2016_PLoSONE",
+ "module": "summary",
+ "rows": 5472,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 55946,
+ "zip_sha256": "191f2b57f3dbdb6b5c1ed78ea0d8c3c88db00ee6f6b97a78975425d3873ed0c9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "B5 rows of the Retention sheet are identical to B5 of the Acquisition sheet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "R7 rows of the Tracking Saturation sheet are identical to R7 of the Retention sheet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Block column equals Subject in every sheet (it is the participant number, not a block)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX90 at B5",
+   "computed": 70.47640350877194,
+   "reported": 70.48,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX45 at R7",
+   "computed": 73.54078947368421,
+   "reported": 73.54,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX90 at R7",
+   "computed": 73.94938596491228,
+   "reported": 73.95,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, CON at R7",
+   "computed": 69.65570175438596,
+   "reported": 69.66,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX90 at R7Tr",
+   "computed": 74.16684210526316,
+   "reported": 74.17,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX45 at R7Tr",
+   "computed": 74.72065789473685,
+   "reported": 74.72,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, CON at R7Tr",
+   "computed": 71.97973684210527,
+   "reported": 71.98,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean score, EX45 at R24",
+   "computed": 71.56482456140351,
+   "reported": 71.56,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EX90: R7 minus B5",
+   "computed": 3.4729824561403433,
+   "reported": 3.47,
+   "tol": 0.005,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Results (motor skill)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Thomas et al. 2016, PLoS ONE 11:e0159589, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "12 participants in each of the three groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "19 scores per participant and block, 36 participants, 8 blocks of the design",
+   "ok": true,
+   "detail": "5472 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "score range 0-100",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Missing scores are kept as empty cells: 3 single trials in the acquisition blocks and all 19 trials of one participant in R24. The paper's linear-mixed-model estimates differ slightly from raw group means where scores are missing (for example EX90 at R24: 72.45 here against 72.63 in the paper), so only means that match to the printed two decimals are used as checks."
+ ],
+ "sources": [
+  {
+   "file": "Thomas_et_al_DATA.xlsx",
+   "url": "https://zenodo.org/api/records/57508/files/Thomas_et_al_DATA.xlsx/content",
+   "bytes": 209942,
+   "sha256": "580c8f04c1448434dac04f4dae8369570221012065fccc16aa3b7ae7e654eb16",
+   "fetched_utc": "2026-11-09T12:32:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Thomas2016_PLoSONE.zip"
+}

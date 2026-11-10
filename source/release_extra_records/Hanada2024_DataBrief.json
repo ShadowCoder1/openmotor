@@ -1,0 +1,77 @@
+{
+ "id": "Hanada2024_DataBrief",
+ "module": "walking",
+ "rows": 350659,
+ "subjects": 39,
+ "persons": 39,
+ "zip_bytes": 11399162,
+ "zip_sha256": "b182c1753d87a68c35719c4e1a145e5e046596e89ba0e9cbb307d6154d7df532",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every gait-event file in the ZIP read",
+   "ok": true,
+   "detail": "{'outside': 15067, 'no_to': 90, 'files': 80}"
+  },
+  {
+   "kind": "internal",
+   "what": "stride times between 0.4 and 3 s for 98% of strides",
+   "ok": true,
+   "detail": "0.9920"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has strides of both feet in every session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "youngest participant, years (ages 18-45)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Section 4.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest participant, years (ages 18-45)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Section 4.1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The gait-events item covers 39 of the 49 participants (80 events files; 7 participants have one environment only and some sessions are split in parts) and the cortisol spreadsheet, the only per-participant demographics, lists 47 (one participant with events, LSIE_14, is not in it, so that participant has no age or sex). The paper's 49 participants (20 men, 29 women, mean age 22.7) therefore cannot be counted from the deposit: the spreadsheet gives 19 men, 28 women and mean age 22.8 for 47, so those numbers are not used as checks; its age range 18-45 is reproduced.",
+  "Strides whose two heel strikes are not both inside a labelled condition (before the baseline marker, between conditions, or in a file missing a condition marker) are left out.",
+  "The paper's and the deposit's other outcomes (EEG, cortisol, visual search performance) are not part of the converted file."
+ ],
+ "sources": [
+  {
+   "file": "LSIE_gait_events.zip",
+   "url": "https://ndownloader.figshare.com/files/49198855",
+   "bytes": 12227939,
+   "sha256": "d9d618f99efac993e2b037ccb23d87c2c011e08b055d0760307bcad2896f3ca4",
+   "fetched_utc": "2026-11-09T19:45:18Z"
+  },
+  {
+   "file": "UM_LSIE.xml",
+   "url": "https://ndownloader.figshare.com/files/12352271",
+   "bytes": 343298,
+   "sha256": "ccf535e49effe6438de49e15cf61dcc6351c47e7aaf1c07f16fb9212a0a781f1",
+   "fetched_utc": "2026-11-09T19:45:22Z"
+  },
+  {
+   "file": "Cortisol_all_subjects.xlsx",
+   "url": "https://ndownloader.figshare.com/files/12352268",
+   "bytes": 27776,
+   "sha256": "fcbe0cf3396feec13b33b6281c5af6e2e116c526733ef726f938eceb4af441f3",
+   "fetched_utc": "2026-11-09T19:46:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hanada2024_DataBrief.zip"
+}

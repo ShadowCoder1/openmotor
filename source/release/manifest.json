@@ -1,0 +1,2671 @@
+{
+ "2018-06_Codol": {
+  "name": "Codol2018_SciRep",
+  "study": "Codol2018_SciRep",
+  "catalog_study": "Codol2018_SciRep",
+  "file": "Codol2018_SciRep.zip",
+  "bytes": 1814658,
+  "csv_bytes": 30524400,
+  "sha256": "cd06edbfeb38ee00909c8bbe2cd4bc5de9545cf6453581f28671d84310cf6640",
+  "rows": 64755,
+  "subjects": 123,
+  "persons": 123,
+  "experiments": [
+   "Codol2018_SciRep_Exp1",
+   "Codol2018_SciRep_Exp2"
+  ],
+  "paradigms": {
+   "Codol2018_SciRep_Exp1": [
+    "abrupt_rotation",
+    "reward_score"
+   ],
+   "Codol2018_SciRep_Exp2": [
+    "abrupt_rotation",
+    "gradual_rotation",
+    "reward_score"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2020-10_Tsay": {
+  "name": "Tsay2020_JNeurophysiol",
+  "study": "Tsay2020_JNeurophysiol",
+  "catalog_study": "Tsay2020_JNeurophysiol",
+  "file": "Tsay2020_JNeurophysiol.zip",
+  "bytes": 487128,
+  "csv_bytes": 7124740,
+  "sha256": "d3604e6b82fa0c68b93038576dcf6af8399226cc9ddbc23fe4e56219c1aca6d0",
+  "rows": 14720,
+  "subjects": 32,
+  "persons": 32,
+  "experiments": [
+   "Tsay2020_JNeurophysiol_Exp1",
+   "Tsay2020_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Tsay2020_JNeurophysiol_Exp1": [
+    "clamp"
+   ],
+   "Tsay2020_JNeurophysiol_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2021-03_Avraham": {
+  "name": "Avraham2021_PLoSBiol",
+  "study": "Avraham2021_PLoSBiol",
+  "catalog_study": "Avraham2021_PLoSBiol",
+  "file": "Avraham2021_PLoSBiol.zip",
+  "bytes": 2936938,
+  "csv_bytes": 49615189,
+  "sha256": "c969450b275834906f9bbc6b82f31883af869bf46211fbfc8e78ffb0d8dac088",
+  "rows": 109440,
+  "subjects": 104,
+  "persons": 104,
+  "experiments": [
+   "Avraham2021_PLoSBiol_Exp1",
+   "Avraham2021_PLoSBiol_Exp2S",
+   "Avraham2021_PLoSBiol_Exp2control",
+   "Avraham2021_PLoSBiol_Exp2test"
+  ],
+  "paradigms": {
+   "Avraham2021_PLoSBiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Avraham2021_PLoSBiol_Exp2S": [
+    "clamp"
+   ],
+   "Avraham2021_PLoSBiol_Exp2control": [
+    "clamp"
+   ],
+   "Avraham2021_PLoSBiol_Exp2test": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2021-07_Tsay": {
+  "name": "Tsay2021_NBDT",
+  "study": "Tsay2021_NBDT",
+  "catalog_study": "Tsay2021_NBDT",
+  "file": "Tsay2021_NBDT.zip",
+  "bytes": 1507771,
+  "csv_bytes": 19892437,
+  "sha256": "c25c669693e126fd82a222fad5a2a58cc4f23343bf4ca78db13eb30e621a5253",
+  "rows": 46944,
+  "subjects": 264,
+  "persons": 255,
+  "experiments": [
+   "Tsay2021_NBDT_Exp1",
+   "Tsay2021_NBDT_Exp2"
+  ],
+  "paradigms": {
+   "Tsay2021_NBDT_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Tsay2021_NBDT_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2021-09_Tsay": {
+  "name": "Tsay2021_JNeurophysiol_proprioception",
+  "study": "Tsay2021_JNeurophysiol_proprioception",
+  "catalog_study": "Tsay2021_JNeurophysiol_proprioception",
+  "file": "Tsay2021_JNeurophysiol_proprioception.zip",
+  "bytes": 1791745,
+  "csv_bytes": 28693643,
+  "sha256": "2bd4d1fba5f9ecf4b4667e677277808a7a741076415e9cd3e44097a7bfba8d9f",
+  "rows": 52968,
+  "subjects": 62,
+  "persons": 62,
+  "experiments": [
+   "Tsay2021_JNeurophysiol_proprioception_Exp1",
+   "Tsay2021_JNeurophysiol_proprioception_Exp2"
+  ],
+  "paradigms": {
+   "Tsay2021_JNeurophysiol_proprioception_Exp1": [
+    "gradual_rotation"
+   ],
+   "Tsay2021_JNeurophysiol_proprioception_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2021-12_Tsay": {
+  "name": "Tsay2021_JNeurophysiol_uncertainty",
+  "study": "Tsay2021_JNeurophysiol_uncertainty",
+  "catalog_study": "Tsay2021_JNeurophysiol_uncertainty",
+  "file": "Tsay2021_JNeurophysiol_uncertainty.zip",
+  "bytes": 3787644,
+  "csv_bytes": 71278463,
+  "sha256": "b8b17cb7ceed23962ebc34ad58b029bf087ac25dade938001e10eef47517d86c",
+  "rows": 135420,
+  "subjects": 141,
+  "persons": 141,
+  "experiments": [
+   "Tsay2021_JNeurophysiol_uncertainty_Exp1",
+   "Tsay2021_JNeurophysiol_uncertainty_Exp2"
+  ],
+  "paradigms": {
+   "Tsay2021_JNeurophysiol_uncertainty_Exp1": [
+    "clamp"
+   ],
+   "Tsay2021_JNeurophysiol_uncertainty_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2022-02_McDougle": {
+  "name": "Tsay2022_Cerebellum",
+  "study": "Tsay2022_Cerebellum",
+  "catalog_study": "McDougleCipleu_provisional",
+  "file": "Tsay2022_Cerebellum.zip",
+  "bytes": 162058,
+  "csv_bytes": 2363339,
+  "sha256": "8925668d14fd0ceb7eb3cf199db1dabc048bd225ad269a69cf98e91bf596d89a",
+  "rows": 5120,
+  "subjects": 32,
+  "persons": 32,
+  "experiments": [
+   "Tsay2022_Cerebellum_Exp1"
+  ],
+  "paradigms": {
+   "Tsay2022_Cerebellum_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2022-04_Tsay": {
+  "name": "Tsay2022_BrainCommun",
+  "study": "Tsay2022_BrainCommun",
+  "catalog_study": "Tsay2022_BrainCommun",
+  "file": "Tsay2022_BrainCommun.zip",
+  "bytes": 170099,
+  "csv_bytes": 4645938,
+  "sha256": "14fbab268c769027407e8e59f67a7d9c0ce70012cf480d9530d8274adbff136b",
+  "rows": 10560,
+  "subjects": 32,
+  "persons": 32,
+  "experiments": [
+   "Tsay2022_BrainCommun_Exp2"
+  ],
+  "paradigms": {
+   "Tsay2022_BrainCommun_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2022-10_Avraham": {
+  "name": "Avraham2022_eLife",
+  "study": "Avraham2022_eLife",
+  "catalog_study": "Avraham2022_eLife",
+  "file": "Avraham2022_eLife.zip",
+  "bytes": 2787287,
+  "csv_bytes": 59984881,
+  "sha256": "f1bc0e440370bd0a8b7837381ab1f80b6f66a215b81f6f06931e242d2798ea64",
+  "rows": 135000,
+  "subjects": 166,
+  "persons": 166,
+  "experiments": [
+   "Avraham2022_eLife_Exp1",
+   "Avraham2022_eLife_Exp2",
+   "Avraham2022_eLife_Exp3",
+   "Avraham2022_eLife_Exp4"
+  ],
+  "paradigms": {
+   "Avraham2022_eLife_Exp1": [
+    "clamp",
+    "cue_context"
+   ],
+   "Avraham2022_eLife_Exp2": [
+    "clamp",
+    "cue_context"
+   ],
+   "Avraham2022_eLife_Exp3": [
+    "clamp",
+    "cue_context"
+   ],
+   "Avraham2022_eLife_Exp4": [
+    "clamp",
+    "cue_context"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2023-01_Tsay": {
+  "name": "Tsay2023_ProcRSocB",
+  "study": "Tsay2023_ProcRSocB",
+  "catalog_study": "Tsay2023_ProcRSocB",
+  "file": "Tsay2023_ProcRSocB.zip",
+  "bytes": 2589383,
+  "csv_bytes": 57911941,
+  "sha256": "11eb3d357f8fd31b5f2566a0f2892155a1823bb609a9c4eb71692d9cde665456",
+  "rows": 124200,
+  "subjects": 360,
+  "persons": 360,
+  "experiments": [
+   "Tsay2023_ProcRSocB_All"
+  ],
+  "paradigms": {
+   "Tsay2023_ProcRSocB_All": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2023-04_Tsay": {
+  "name": "Tsay2023_JCognNeurosci",
+  "study": "Tsay2023_JCognNeurosci",
+  "catalog_study": "Tsay2023_JCognNeurosci",
+  "file": "Tsay2023_JCognNeurosci.zip",
+  "bytes": 397093,
+  "csv_bytes": 8302300,
+  "sha256": "ae3635f90af9d04a942006318261c995305c7d5702a0da61237b7f0bc3875a06",
+  "rows": 17550,
+  "subjects": 40,
+  "persons": 40,
+  "experiments": [
+   "Tsay2023_JCognNeurosci_All"
+  ],
+  "paradigms": {
+   "Tsay2023_JCognNeurosci_All": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2023-08_Mastrigt": {
+  "name": "vanMastrigt2023_ExpBrainRes",
+  "study": "vanMastrigt2023_ExpBrainRes",
+  "catalog_study": "vanMastrigt2023_ExpBrainRes",
+  "file": "vanMastrigt2023_ExpBrainRes.zip",
+  "bytes": 1734565,
+  "csv_bytes": 36118355,
+  "sha256": "a8a3ee132960c101ca50a84b2368b3c62e37c327fac2a38069672af1f7ae32e6",
+  "rows": 68680,
+  "subjects": 68,
+  "persons": 68,
+  "experiments": [
+   "vanMastrigt2023_ExpBrainRes_Exp1",
+   "vanMastrigt2023_ExpBrainRes_Exp2"
+  ],
+  "paradigms": {
+   "vanMastrigt2023_ExpBrainRes_Exp1": [
+    "reward_score"
+   ],
+   "vanMastrigt2023_ExpBrainRes_Exp2": [
+    "reward_score"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2024-01_Tsay": {
+  "name": "Tsay2024_NatHumBehav",
+  "study": "Tsay2024_NatHumBehav",
+  "catalog_study": "Tsay2024_NatHumBehav",
+  "file": "Tsay2024_NatHumBehav.zip",
+  "bytes": 12280915,
+  "csv_bytes": 166727871,
+  "sha256": "304b1a9071ae227335d818f4f50aedd227bce41ed599474489c432e814235403",
+  "rows": 347520,
+  "subjects": 2547,
+  "persons": 2547,
+  "experiments": [
+   "Tsay2024_NatHumBehav_All"
+  ],
+  "paradigms": {
+   "Tsay2024_NatHumBehav_All": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2024-06_Tsay": {
+  "name": "Tsay2024_JNeurophysiol",
+  "study": "Tsay2024_JNeurophysiol",
+  "catalog_study": "Tsay2024_JNeurophysiol",
+  "file": "Tsay2024_JNeurophysiol.zip",
+  "bytes": 617957,
+  "csv_bytes": 13108823,
+  "sha256": "7ecb1784f017ef376b80ef22e1f4212ec27556f7d2661f0d0f3a3c8ef8751d95",
+  "rows": 29040,
+  "subjects": 66,
+  "persons": 66,
+  "experiments": [
+   "Tsay2024_JNeurophysiol_All"
+  ],
+  "paradigms": {
+   "Tsay2024_JNeurophysiol_All": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2024-07_Chen": {
+  "name": "Chen2024_bioRxiv",
+  "study": "Chen2024_bioRxiv",
+  "catalog_study": "Chen2024_bioRxiv",
+  "file": "Chen2024_bioRxiv.zip",
+  "bytes": 1751693,
+  "csv_bytes": 39670101,
+  "sha256": "45038ed68774589aae4f9b0120dbcfc39c9c50a8e4e3db9f99ef1b32669d4bcd",
+  "rows": 94350,
+  "subjects": 415,
+  "persons": 415,
+  "experiments": [
+   "Chen2024_bioRxiv_mrsens_gng_df",
+   "Chen2024_bioRxiv_mrsymb_gng_df",
+   "Chen2024_bioRxiv_sens_gng_df",
+   "Chen2024_bioRxiv_symb_gng_df",
+   "Chen2024_bioRxiv_trial_data_30_r",
+   "Chen2024_bioRxiv_trial_data_60_r",
+   "Chen2024_bioRxiv_trial_data_90_r"
+  ],
+  "paradigms": {
+   "Chen2024_bioRxiv_mrsens_gng_df": [
+    "mirror_gain"
+   ],
+   "Chen2024_bioRxiv_mrsymb_gng_df": [
+    "reward_score"
+   ],
+   "Chen2024_bioRxiv_sens_gng_df": [
+    "abrupt_rotation"
+   ],
+   "Chen2024_bioRxiv_symb_gng_df": [
+    "reward_score"
+   ],
+   "Chen2024_bioRxiv_trial_data_30_r": [
+    "reward_score"
+   ],
+   "Chen2024_bioRxiv_trial_data_60_r": [
+    "reward_score"
+   ],
+   "Chen2024_bioRxiv_trial_data_90_r": [
+    "reward_score"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2024-10_Wang": {
+  "name": "Wang2024_eLife",
+  "study": "Wang2024_eLife",
+  "catalog_study": "Wang2024_eLife",
+  "file": "Wang2024_eLife.zip",
+  "bytes": 3325093,
+  "csv_bytes": 65125295,
+  "sha256": "7cd84f8aed4d81a8634e9489ba33a98d033ca488f721ca475101106382545c91",
+  "rows": 152512,
+  "subjects": 406,
+  "persons": 406,
+  "experiments": [
+   "Wang2024_eLife_Exp1a",
+   "Wang2024_eLife_Exp1b",
+   "Wang2024_eLife_Exp3a",
+   "Wang2024_eLife_Exp3b"
+  ],
+  "paradigms": {
+   "Wang2024_eLife_Exp1a": [
+    "no_perturbation"
+   ],
+   "Wang2024_eLife_Exp1b": [
+    "no_perturbation"
+   ],
+   "Wang2024_eLife_Exp3a": [
+    "no_perturbation"
+   ],
+   "Wang2024_eLife_Exp3b": [
+    "no_perturbation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-01_Niyogi": {
+  "name": "Niyogi2026_bioRxiv",
+  "study": "Niyogi2026_bioRxiv",
+  "catalog_study": "Niyogi2025_provisional",
+  "file": "Niyogi2026_bioRxiv.zip",
+  "bytes": 607675,
+  "csv_bytes": 8788345,
+  "sha256": "d95c53aafab01b1238750515052638bf34dbd7076c93548e83563e54645650c4",
+  "rows": 16000,
+  "subjects": 100,
+  "persons": 100,
+  "experiments": [
+   "Niyogi2026_bioRxiv_Data_rotation"
+  ],
+  "paradigms": {
+   "Niyogi2026_bioRxiv_Data_rotation": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-06_Avraham": {
+  "name": "Avraham2025_eNeuro",
+  "study": "Avraham2025_eNeuro",
+  "catalog_study": "Avraham2025_eNeuro",
+  "file": "Avraham2025_eNeuro.zip",
+  "bytes": 4694598,
+  "csv_bytes": 97662423,
+  "sha256": "f7c1f66fcaa497de48c5f772a8cf4cdc3b834633ad122658f5092beea9ff4d3b",
+  "rows": 220752,
+  "subjects": 236,
+  "persons": 236,
+  "experiments": [
+   "Avraham2025_eNeuro_Exp1",
+   "Avraham2025_eNeuro_Exp2",
+   "Avraham2025_eNeuro_Exp3",
+   "Avraham2025_eNeuro_Exp4",
+   "Avraham2025_eNeuro_Exp5"
+  ],
+  "paradigms": {
+   "Avraham2025_eNeuro_Exp1": [
+    "clamp"
+   ],
+   "Avraham2025_eNeuro_Exp2": [
+    "clamp"
+   ],
+   "Avraham2025_eNeuro_Exp3": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "Avraham2025_eNeuro_Exp4": [
+    "clamp"
+   ],
+   "Avraham2025_eNeuro_Exp5": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-07_Cipleu": {
+  "name": "Cipleu2026_NeurorehabilNeuralRepair",
+  "study": "Cipleu2026_NeurorehabilNeuralRepair",
+  "catalog_study": "McDougleCipleu_provisional",
+  "file": "Cipleu2026_NeurorehabilNeuralRepair.zip",
+  "bytes": 240820,
+  "csv_bytes": 3853312,
+  "sha256": "64fb6fc390b28162010f48cd22b38d03b4228c2bcf996d144026040be5eac7f2",
+  "rows": 7360,
+  "subjects": 46,
+  "persons": 46,
+  "experiments": [
+   "Cipleu2026_NeurorehabilNeuralRepair_All"
+  ],
+  "paradigms": {
+   "Cipleu2026_NeurorehabilNeuralRepair_All": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-07_Padmanabhan": {
+  "name": "Padmanabhan2026_JNeurophysiol",
+  "study": "Padmanabhan2026_JNeurophysiol",
+  "catalog_study": "Padmanabhan2026_JNeurophysiol",
+  "file": "Padmanabhan2026_JNeurophysiol.zip",
+  "bytes": 1516027,
+  "csv_bytes": 22734522,
+  "sha256": "b5253022b97a604bf2a8cc5f09d1be49448798f43eb192a6973207579fe62f73",
+  "rows": 44000,
+  "subjects": 200,
+  "persons": 198,
+  "experiments": [
+   "Padmanabhan2026_JNeurophysiol_2x2"
+  ],
+  "paradigms": {
+   "Padmanabhan2026_JNeurophysiol_2x2": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-08_Wang": {
+  "name": "Wang2025_SciAdv",
+  "study": "Wang2025_SciAdv",
+  "catalog_study": "Wang2025_SciAdv",
+  "file": "Wang2025_SciAdv.zip",
+  "bytes": 1940288,
+  "csv_bytes": 31736841,
+  "sha256": "6ab304da3318fd489f20f9480f8d323cc04fb8275de27a7d56b5bc6ba4289af3",
+  "rows": 77760,
+  "subjects": 106,
+  "persons": 106,
+  "experiments": [
+   "Wang2025_SciAdv_Exp1",
+   "Wang2025_SciAdv_Exp4"
+  ],
+  "paradigms": {
+   "Wang2025_SciAdv_Exp1": [
+    "no_perturbation"
+   ],
+   "Wang2025_SciAdv_Exp4": [
+    "no_perturbation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": false,
+  "redistributable": true
+ },
+ "2025-12_Ding": {
+  "name": "Ding2026_npjSciLearn",
+  "study": "Ding2026_npjSciLearn",
+  "catalog_study": "Ding2026_npjSciLearn",
+  "file": "Ding2026_npjSciLearn.zip",
+  "bytes": 1900571,
+  "csv_bytes": 34467857,
+  "sha256": "ed11248a3230d8fc4320046da502039d2d44412a571a4b03c807eaa904e8d0f3",
+  "rows": 73920,
+  "subjects": 560,
+  "persons": 560,
+  "experiments": [
+   "Ding2026_npjSciLearn_Exp1",
+   "Ding2026_npjSciLearn_Exp2"
+  ],
+  "paradigms": {
+   "Ding2026_npjSciLearn_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Ding2026_npjSciLearn_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": true,
+  "redistributable": true
+ },
+ "2026-05_Cisneros": {
+  "name": "Cisneros2026_NatHumBehav",
+  "study": "Cisneros2026_NatHumBehav",
+  "catalog_study": "Cisneros2026_NatHumBehav",
+  "file": "Cisneros2026_NatHumBehav.zip",
+  "bytes": 722063,
+  "csv_bytes": 16401254,
+  "sha256": "c19bcc8de283f49857c6a5ad9ffcb2556e924710c12e54cbbf9099ab7a1fd70e",
+  "rows": 34800,
+  "subjects": 100,
+  "persons": 100,
+  "experiments": [
+   "Cisneros2026_NatHumBehav_Exp3"
+  ],
+  "paradigms": {
+   "Cisneros2026_NatHumBehav_Exp3": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": true,
+  "redistributable": true
+ },
+ "2026_07_Nyamsuren": {
+  "name": "Nyamsuren2026_bioRxiv",
+  "study": "Nyamsuren2026_bioRxiv",
+  "catalog_study": "Nyamsuren2026_bioRxiv",
+  "file": "Nyamsuren2026_bioRxiv.zip",
+  "bytes": 4020536,
+  "csv_bytes": 82244192,
+  "sha256": "01d70e8b34826bfbf25f094b39c35729cea94260a8f5a98775378014d7db3c3b",
+  "rows": 175248,
+  "subjects": 491,
+  "persons": 489,
+  "experiments": [
+   "Nyamsuren2026_bioRxiv_Explicit",
+   "Nyamsuren2026_bioRxiv_Implicit"
+  ],
+  "paradigms": {
+   "Nyamsuren2026_bioRxiv_Explicit": [
+    "abrupt_rotation"
+   ],
+   "Nyamsuren2026_bioRxiv_Implicit": [
+    "clamp"
+   ]
+  },
+  "kind": "openmotor",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Abekawa2022": {
+  "name": "Abekawa2022_CurrBiol",
+  "study": "Abekawa2022_CurrBiol",
+  "catalog_study": "Abekawa2022_CurrBiol",
+  "file": "Abekawa2022_CurrBiol.zip",
+  "bytes": 170727,
+  "csv_bytes": 3176666,
+  "sha256": "448dae457e51f32a0a63a655afb17e5517d6037e642205b4cb5830fad09b63fc",
+  "rows": 6967,
+  "subjects": 10,
+  "persons": 10,
+  "experiments": [
+   "Abekawa2022_CurrBiol_Exp1"
+  ],
+  "paradigms": {
+   "Abekawa2022_CurrBiol_Exp1": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Areshenkoff2024": {
+  "name": "Areshenkoff2024_PLoSBiol",
+  "study": "Areshenkoff2024_PLoSBiol",
+  "catalog_study": "Areshenkoff2024_PLoSBiol",
+  "file": "Areshenkoff2024_PLoSBiol.zip",
+  "bytes": 292051,
+  "csv_bytes": 6969698,
+  "sha256": "a43c13e0f8d00f952b6004fe6f97c265c03908cd85165d6725e589f6f99cb11b",
+  "rows": 15200,
+  "subjects": 38,
+  "persons": 38,
+  "experiments": [
+   "Areshenkoff2024_PLoSBiol_Exp1"
+  ],
+  "paradigms": {
+   "Areshenkoff2024_PLoSBiol_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Arrighi2016": {
+  "name": "Arrighi2016_PLoSOne",
+  "study": "Arrighi2016_PLoSOne",
+  "catalog_study": "Arrighi2016_PLoSOne",
+  "file": "Arrighi2016_PLoSOne.zip",
+  "bytes": 32256,
+  "csv_bytes": 640367,
+  "sha256": "518eceffd156ec89c863c7b55b952b2f129739e7d53dff40549ad799c9973694",
+  "rows": 1475,
+  "subjects": 12,
+  "persons": 12,
+  "experiments": [
+   "Arrighi2016_PLoSOne_Exp1"
+  ],
+  "paradigms": {
+   "Arrighi2016_PLoSOne_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Ayala2021": {
+  "name": "Ayala2021_PLoSONE",
+  "study": "Ayala2021_PLoSONE",
+  "catalog_study": "Ayala2021_PLoSONE",
+  "file": "Ayala2021_PLoSONE.zip",
+  "bytes": 2326488,
+  "csv_bytes": 50492240,
+  "sha256": "eff3f54feaffef36be287f7f7b57a851f8e8fb6d6c72b0d5f72feadf6fb8a734",
+  "rows": 112752,
+  "subjects": 132,
+  "persons": 132,
+  "experiments": [
+   "Ayala2021_PLoSONE_Exp1a",
+   "Ayala2021_PLoSONE_Exp1b",
+   "Ayala2021_PLoSONE_Exp2"
+  ],
+  "paradigms": {
+   "Ayala2021_PLoSONE_Exp1a": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "Ayala2021_PLoSONE_Exp1b": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "Ayala2021_PLoSONE_Exp2": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Bansal2023": {
+  "name": "Bansal2023_ExpBrainRes",
+  "study": "Bansal2023_ExpBrainRes",
+  "catalog_study": "Bansal2023_ExpBrainRes",
+  "file": "Bansal2023_ExpBrainRes.zip",
+  "bytes": 1042301,
+  "csv_bytes": 23073592,
+  "sha256": "96a8c4139f513fe508b080c77dddd383aaff94d30b437da65e12818ce15b0f34",
+  "rows": 50592,
+  "subjects": 130,
+  "persons": 130,
+  "experiments": [
+   "Bansal2023_ExpBrainRes_Exp1",
+   "Bansal2023_ExpBrainRes_Exp2"
+  ],
+  "paradigms": {
+   "Bansal2023_ExpBrainRes_Exp1": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "Bansal2023_ExpBrainRes_Exp2": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Barzi2026": {
+  "name": "Barzi2026_ExpBrainRes",
+  "study": "Barzi2026_ExpBrainRes",
+  "catalog_study": "Barzi2026_ExpBrainRes",
+  "file": "Barzi2026_ExpBrainRes.zip",
+  "bytes": 539450,
+  "csv_bytes": 8216006,
+  "sha256": "ac1b626587d07d067dbaee60346de2e7c6b4e41e823637b86c6cb71d7e9e1e56",
+  "rows": 18600,
+  "subjects": 31,
+  "persons": 31,
+  "experiments": [
+   "Barzi2026_ExpBrainRes_VMR"
+  ],
+  "paradigms": {
+   "Barzi2026_ExpBrainRes_VMR": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Berland2025": {
+  "name": "Berland2025_JNeurophysiol",
+  "study": "Berland2025_JNeurophysiol",
+  "catalog_study": "Berland2025_JNeurophysiol",
+  "file": "Berland2025_JNeurophysiol.zip",
+  "bytes": 136943,
+  "csv_bytes": 3259789,
+  "sha256": "9993412ff6eec985f43b89af7106c41e68b3bd3e77124fc932b9b49b56ecefe5",
+  "rows": 6930,
+  "subjects": 33,
+  "persons": 33,
+  "experiments": [
+   "Berland2025_JNeurophysiol_VMR"
+  ],
+  "paradigms": {
+   "Berland2025_JNeurophysiol_VMR": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Bromberg2019": {
+  "name": "Bromberg2019_eNeuro",
+  "study": "Bromberg2019_eNeuro",
+  "catalog_study": "Bromberg2019_eNeuro",
+  "file": "Bromberg2019_eNeuro.zip",
+  "bytes": 971142,
+  "csv_bytes": 22088492,
+  "sha256": "44110ba160cde7e096d2600f33fab60e5ba8059ff6bb7a854a2536bee711f515",
+  "rows": 51672,
+  "subjects": 106,
+  "persons": 106,
+  "experiments": [
+   "Bromberg2019_eNeuro_Exp1",
+   "Bromberg2019_eNeuro_Exp2"
+  ],
+  "paradigms": {
+   "Bromberg2019_eNeuro_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Bromberg2019_eNeuro_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Brudner2016": {
+  "name": "Brudner2016_JNeurophysiol",
+  "study": "Brudner2016_JNeurophysiol",
+  "catalog_study": "Brudner2016_JNeurophysiol",
+  "file": "Brudner2016_JNeurophysiol.zip",
+  "bytes": 247800,
+  "csv_bytes": 5443966,
+  "sha256": "951d3a423ff552716127c42e3f3ecb360553b0f53c15a20450600a283b9ae667",
+  "rows": 11520,
+  "subjects": 40,
+  "persons": 40,
+  "experiments": [
+   "Brudner2016_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Brudner2016_JNeurophysiol_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Buggeln2026": {
+  "name": "Buggeln2026_PLoSComputBiol",
+  "study": "Buggeln2026_PLoSComputBiol",
+  "catalog_study": "Buggeln2026_PLoSComputBiol",
+  "file": "Buggeln2026_PLoSComputBiol.zip",
+  "bytes": 1215770,
+  "csv_bytes": 35082027,
+  "sha256": "b2bd14f240a4dc0a57a91c1d8713fe3d38c494cf9ecb3049b23dd8f378a13c84",
+  "rows": 74150,
+  "subjects": 111,
+  "persons": 111,
+  "experiments": [
+   "Buggeln2026_PLoSComputBiol_Exp1",
+   "Buggeln2026_PLoSComputBiol_Exp2",
+   "Buggeln2026_PLoSComputBiol_Exp3"
+  ],
+  "paradigms": {
+   "Buggeln2026_PLoSComputBiol_Exp1": [
+    "clamp",
+    "reward_score"
+   ],
+   "Buggeln2026_PLoSComputBiol_Exp2": [
+    "clamp",
+    "reward_score"
+   ],
+   "Buggeln2026_PLoSComputBiol_Exp3": [
+    "clamp"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Casasnovas2024": {
+  "name": "Casasnovas2024_JNeurophysiol",
+  "study": "Casasnovas2024_JNeurophysiol",
+  "catalog_study": "Casasnovas2024_JNeurophysiol",
+  "file": "Casasnovas2024_JNeurophysiol.zip",
+  "bytes": 766232,
+  "csv_bytes": 12682638,
+  "sha256": "14d33253c1b910098714fc206cd79f247a0473892e27983e112d8d3afc5cfec0",
+  "rows": 26057,
+  "subjects": 60,
+  "persons": 60,
+  "experiments": [
+   "Casasnovas2024_JNeurophysiol_Exp1",
+   "Casasnovas2024_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Casasnovas2024_JNeurophysiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Casasnovas2024_JNeurophysiol_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Cesanek2024_dual": {
+  "name": "Cesanek2024_NatHumBehav_dual",
+  "study": "Cesanek2024_NatHumBehav",
+  "catalog_study": "Cesanek2024_NatHumBehav",
+  "file": "Cesanek2024_NatHumBehav_dual.zip",
+  "bytes": 34495,
+  "csv_bytes": 687837,
+  "sha256": "a6701c6e87850016e17632ebdb72bbf8116f0c0e6f56136f1721feb4d023a81d",
+  "rows": 1300,
+  "subjects": 10,
+  "persons": 10,
+  "experiments": [
+   "Cesanek2024_NatHumBehav_dual_Exp1"
+  ],
+  "paradigms": {
+   "Cesanek2024_NatHumBehav_dual_Exp1": [
+    "gradual_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Cesanek2024_sr": {
+  "name": "Cesanek2024_NatHumBehav_sr",
+  "study": "Cesanek2024_NatHumBehav",
+  "catalog_study": "Cesanek2024_NatHumBehav",
+  "file": "Cesanek2024_NatHumBehav_sr.zip",
+  "bytes": 29790,
+  "csv_bytes": 577454,
+  "sha256": "936868f2efe8e93d6789aa8a54dde5f6f31f87a4d34b3f5f5be0d69be51f44cd",
+  "rows": 1200,
+  "subjects": 10,
+  "persons": 10,
+  "experiments": [
+   "Cesanek2024_NatHumBehav_sr_Exp1"
+  ],
+  "paradigms": {
+   "Cesanek2024_NatHumBehav_sr_Exp1": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Clayton2024": {
+  "name": "Clayton2024_PLoSONE",
+  "study": "Clayton2024_PLoSONE",
+  "catalog_study": "Clayton2024_PLoSONE",
+  "file": "Clayton2024_PLoSONE.zip",
+  "bytes": 252087,
+  "csv_bytes": 5330190,
+  "sha256": "c375cad497dbfdc583a7da59f036721441ddc7745c0fc8d3a68770758c2aeed6",
+  "rows": 11970,
+  "subjects": 133,
+  "persons": 133,
+  "experiments": [
+   "Clayton2024_PLoSONE_Exp1"
+  ],
+  "paradigms": {
+   "Clayton2024_PLoSONE_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "mixed",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Cook2026": {
+  "name": "Cook2026_InfantChildDev",
+  "study": "Cook2026_InfantChildDev",
+  "catalog_study": "Cook2026_InfantChildDev",
+  "file": "Cook2026_InfantChildDev.zip",
+  "bytes": 275743,
+  "csv_bytes": 4844610,
+  "sha256": "43dc347faf80a71c65344f642f0d520b42caef5455f6ec9c7ef75b8d248466a5",
+  "rows": 10140,
+  "subjects": 78,
+  "persons": 78,
+  "experiments": [
+   "Cook2026_InfantChildDev_VML"
+  ],
+  "paradigms": {
+   "Cook2026_InfantChildDev_VML": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by-nc",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Crossley2023": {
+  "name": "Crossley2023_BlockedUncertainty",
+  "study": "Crossley2023_BlockedUncertainty",
+  "catalog_study": "Crossley2023_BlockedUncertainty",
+  "file": "Crossley2023_BlockedUncertainty.zip",
+  "bytes": 257648,
+  "csv_bytes": 6244053,
+  "sha256": "6af6bed1b609380b07ba8162690ca12a6e0809414160d25186048f7e9b68fd6b",
+  "rows": 12000,
+  "subjects": 40,
+  "persons": 40,
+  "experiments": [
+   "Crossley2023_BlockedUncertainty_Blocked"
+  ],
+  "paradigms": {
+   "Crossley2023_BlockedUncertainty_Blocked": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_DAmario2024": {
+  "name": "DAmario2024_bioRxiv",
+  "study": "DAmario2024_bioRxiv",
+  "catalog_study": "DAmario2024_bioRxiv",
+  "file": "DAmario2024_bioRxiv.zip",
+  "bytes": 2526186,
+  "csv_bytes": 64651750,
+  "sha256": "0808bd00bac05c5f6a14930ed4dd38d9ed32e2126a7bf8cd8d0995d8642627d5",
+  "rows": 141040,
+  "subjects": 458,
+  "persons": 458,
+  "experiments": [
+   "DAmario2024_bioRxiv_ContinuousAiming",
+   "DAmario2024_bioRxiv_Delay",
+   "DAmario2024_bioRxiv_FeedbackType",
+   "DAmario2024_bioRxiv_RotSize"
+  ],
+  "paradigms": {
+   "DAmario2024_bioRxiv_ContinuousAiming": [
+    "abrupt_rotation"
+   ],
+   "DAmario2024_bioRxiv_Delay": [
+    "abrupt_rotation"
+   ],
+   "DAmario2024_bioRxiv_FeedbackType": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "DAmario2024_bioRxiv_RotSize": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Goldschmidt2016": {
+  "name": "Goldschmidt2016_Joystick",
+  "study": "Goldschmidt2016_Joystick",
+  "catalog_study": "Goldschmidt2016_Joystick",
+  "file": "Goldschmidt2016_Joystick.zip",
+  "bytes": 283157,
+  "csv_bytes": 6200729,
+  "sha256": "6f681d73faa67c9653aa23b7943fabe82e84fbe53b5ceaa8003ec3f8e38fce1f",
+  "rows": 13200,
+  "subjects": 33,
+  "persons": 33,
+  "experiments": [
+   "Goldschmidt2016_Joystick_Joystick"
+  ],
+  "paradigms": {
+   "Goldschmidt2016_Joystick_Joystick": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "gpl",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Guo2023": {
+  "name": "Guo2023_SciRep",
+  "study": "Guo2023_SciRep",
+  "catalog_study": "Guo2023_SciRep",
+  "file": "Guo2023_SciRep.zip",
+  "bytes": 957975,
+  "csv_bytes": 20250054,
+  "sha256": "f61ce96580d694cae6589dd00072d4adf897165042943c9b6cfaf27a4ce93faf",
+  "rows": 47040,
+  "subjects": 74,
+  "persons": 74,
+  "experiments": [
+   "Guo2023_SciRep_Color",
+   "Guo2023_SciRep_Control",
+   "Guo2023_SciRep_MR",
+   "Guo2023_SciRep_VMR"
+  ],
+  "paradigms": {
+   "Guo2023_SciRep_Color": [
+    "abrupt_rotation"
+   ],
+   "Guo2023_SciRep_Control": [
+    "no_perturbation"
+   ],
+   "Guo2023_SciRep_MR": [
+    "abrupt_rotation"
+   ],
+   "Guo2023_SciRep_VMR": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Hadjiosif2023": {
+  "name": "Hadjiosif2023_PLoSBiol",
+  "study": "Hadjiosif2023_PLoSBiol",
+  "catalog_study": "Hadjiosif2023_PLoSBiol",
+  "file": "Hadjiosif2023_PLoSBiol.zip",
+  "bytes": 3061657,
+  "csv_bytes": 57001875,
+  "sha256": "210d055a091c84037e27dfbea1db4daa5d97d39ecde42003d148107d0fc02390",
+  "rows": 122080,
+  "subjects": 106,
+  "persons": 106,
+  "experiments": [
+   "Hadjiosif2023_PLoSBiol_Exp1",
+   "Hadjiosif2023_PLoSBiol_Exp2",
+   "Hadjiosif2023_PLoSBiol_Exp3",
+   "Hadjiosif2023_PLoSBiol_Exp4"
+  ],
+  "paradigms": {
+   "Hadjiosif2023_PLoSBiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Hadjiosif2023_PLoSBiol_Exp2": [
+    "abrupt_rotation"
+   ],
+   "Hadjiosif2023_PLoSBiol_Exp3": [
+    "abrupt_rotation"
+   ],
+   "Hadjiosif2023_PLoSBiol_Exp4": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Henriques2026": {
+  "name": "Henriques2026_DiscovNeurosci",
+  "study": "Henriques2026_DiscovNeurosci",
+  "catalog_study": "Henriques2026_DiscovNeurosci",
+  "file": "Henriques2026_DiscovNeurosci.zip",
+  "bytes": 1942707,
+  "csv_bytes": 40670055,
+  "sha256": "92837b77158ab675c5905757925ed30133900a1094c62b06404dfe4647e7dc9b",
+  "rows": 81600,
+  "subjects": 85,
+  "persons": 85,
+  "experiments": [
+   "Henriques2026_DiscovNeurosci_Core"
+  ],
+  "paradigms": {
+   "Henriques2026_DiscovNeurosci_Core": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Hewitson2023_metacog": {
+  "name": "Hewitson2023_JNeurophysiol",
+  "study": "Hewitson2023_JNeurophysiol",
+  "catalog_study": "Hewitson2023_JNeurophysiol",
+  "file": "Hewitson2023_JNeurophysiol.zip",
+  "bytes": 364409,
+  "csv_bytes": 5480866,
+  "sha256": "b88bc2be08bae9ff71effafd1022a423202295418ab1e7a705286429e3457ec6",
+  "rows": 11280,
+  "subjects": 38,
+  "persons": 38,
+  "experiments": [
+   "Hewitson2023_JNeurophysiol_Exp1",
+   "Hewitson2023_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Hewitson2023_JNeurophysiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Hewitson2023_JNeurophysiol_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Hewitson2023_uncertainty": {
+  "name": "Hewitson2023_PLoSComputBiol",
+  "study": "Hewitson2023_PLoSComputBiol",
+  "catalog_study": "Hewitson2023_PLoSComputBiol",
+  "file": "Hewitson2023_PLoSComputBiol.zip",
+  "bytes": 660457,
+  "csv_bytes": 16325755,
+  "sha256": "2ce715c302a02afdfb8411f856b7716581ebfc63d99f79c06e18bc22a43a8452",
+  "rows": 33600,
+  "subjects": 120,
+  "persons": 120,
+  "experiments": [
+   "Hewitson2023_PLoSComputBiol_Exp1"
+  ],
+  "paradigms": {
+   "Hewitson2023_PLoSComputBiol_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Holland2018": {
+  "name": "Holland2018_JNeurophysiol",
+  "study": "Holland2018_JNeurophysiol",
+  "catalog_study": "Holland2018_JNeurophysiol",
+  "file": "Holland2018_JNeurophysiol.zip",
+  "bytes": 888507,
+  "csv_bytes": 21429058,
+  "sha256": "9e846d3dfe732eb8ec7ab0fd48fc77fc8c1ad7beb6234db3639810209c34e818",
+  "rows": 45600,
+  "subjects": 70,
+  "persons": 70,
+  "experiments": [
+   "Holland2018_JNeurophysiol_Exp1",
+   "Holland2018_JNeurophysiol_Exp1Control",
+   "Holland2018_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Holland2018_JNeurophysiol_Exp1": [
+    "reward_score"
+   ],
+   "Holland2018_JNeurophysiol_Exp1Control": [
+    "reward_score"
+   ],
+   "Holland2018_JNeurophysiol_Exp2": [
+    "reward_score"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Holland2019": {
+  "name": "Holland2019_JNeurosci",
+  "study": "Holland2019_JNeurosci",
+  "catalog_study": "Holland2019_JNeurosci",
+  "file": "Holland2019_JNeurosci.zip",
+  "bytes": 1826833,
+  "csv_bytes": 36169648,
+  "sha256": "bfbda3e8bd452768b6ada4cdeb22a20b18c2970c88b7fc40b23d916a5b3901dd",
+  "rows": 81070,
+  "subjects": 121,
+  "persons": 121,
+  "experiments": [
+   "Holland2019_JNeurosci_Acquire"
+  ],
+  "paradigms": {
+   "Holland2019_JNeurosci_Acquire": [
+    "reward_score"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Hulst2024": {
+  "name": "Hulst2024_bioRxiv",
+  "study": "Hulst2024_bioRxiv",
+  "catalog_study": "Hulst2024_bioRxiv",
+  "file": "Hulst2024_bioRxiv.zip",
+  "bytes": 1587944,
+  "csv_bytes": 33354905,
+  "sha256": "e8a0f6b30791ae962cd43887795b1f0f8b73c358a21382a44fae7a8a41bc6d59",
+  "rows": 73920,
+  "subjects": 40,
+  "persons": 40,
+  "experiments": [
+   "Hulst2024_bioRxiv_Main"
+  ],
+  "paradigms": {
+   "Hulst2024_bioRxiv_Main": [
+    "clamp",
+    "abrupt_rotation",
+    "gradual_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Johnson2017": {
+  "name": "Johnson2017_PLoSOne",
+  "study": "Johnson2017_PLoSOne",
+  "catalog_study": "Johnson2017_PLoSOne",
+  "file": "Johnson2017_PLoSOne.zip",
+  "bytes": 149162,
+  "csv_bytes": 3144980,
+  "sha256": "3abfef8b2b7be51321c1af2666b1721f52abe847f27d220c4620b68dac7537ed",
+  "rows": 7200,
+  "subjects": 8,
+  "persons": 8,
+  "experiments": [
+   "Johnson2017_PLoSOne_NonAmputee"
+  ],
+  "paradigms": {
+   "Johnson2017_PLoSOne_NonAmputee": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Kim2015": {
+  "name": "Kim2015_PLoSOne",
+  "study": "Kim2015_PLoSOne",
+  "catalog_study": "Kim2015_PLoSOne",
+  "file": "Kim2015_PLoSOne.zip",
+  "bytes": 397267,
+  "csv_bytes": 5684008,
+  "sha256": "decaffa5511c6d11d65953a53ebfc66a776bd04a3b0d50e298f2a43811c71c0a",
+  "rows": 13050,
+  "subjects": 45,
+  "persons": 45,
+  "experiments": [
+   "Kim2015_PLoSOne_Main"
+  ],
+  "paradigms": {
+   "Kim2015_PLoSOne_Main": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Kim2018": {
+  "name": "Kim2018_CommunBiol",
+  "study": "Kim2018_CommunBiol",
+  "catalog_study": "Kim2018_CommunBiol",
+  "file": "Kim2018_CommunBiol.zip",
+  "bytes": 2499792,
+  "csv_bytes": 40461337,
+  "sha256": "2ba2377c150ed102dece49f12aa7ee3e80fe4a86514e7e87c5da296b4d0a3363",
+  "rows": 89040,
+  "subjects": 126,
+  "persons": 126,
+  "experiments": [
+   "Kim2018_CommunBiol_Exp1",
+   "Kim2018_CommunBiol_Exp2"
+  ],
+  "paradigms": {
+   "Kim2018_CommunBiol_Exp1": [
+    "clamp"
+   ],
+   "Kim2018_CommunBiol_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Kim2019": {
+  "name": "Kim2019_eLife",
+  "study": "Kim2019_eLife",
+  "catalog_study": "Kim2019_eLife",
+  "file": "Kim2019_eLife.zip",
+  "bytes": 3654343,
+  "csv_bytes": 61552958,
+  "sha256": "4163b597db7dcd95d5ec0590dae47212e544403c13566e9183beffc4499fb968",
+  "rows": 138880,
+  "subjects": 116,
+  "persons": 116,
+  "experiments": [
+   "Kim2019_eLife_Exp1",
+   "Kim2019_eLife_Exp2",
+   "Kim2019_eLife_Exp3"
+  ],
+  "paradigms": {
+   "Kim2019_eLife_Exp1": [
+    "clamp"
+   ],
+   "Kim2019_eLife_Exp2": [
+    "clamp"
+   ],
+   "Kim2019_eLife_Exp3": [
+    "clamp"
+   ]
+  },
+  "kind": "mit",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Kim2025": {
+  "name": "Kim2025_ProcRSocB",
+  "study": "Kim2025_ProcRSocB",
+  "catalog_study": "Kim2025_ProcRSocB",
+  "file": "Kim2025_ProcRSocB.zip",
+  "bytes": 915640,
+  "csv_bytes": 13279492,
+  "sha256": "aaef27da06ea0bdbc2b943f5a059c487a229090ea750f743614ced6a4b611aaf",
+  "rows": 29920,
+  "subjects": 16,
+  "persons": 16,
+  "experiments": [
+   "Kim2025_ProcRSocB_Exp1"
+  ],
+  "paradigms": {
+   "Kim2025_ProcRSocB_Exp1": [
+    "abrupt_rotation",
+    "target_jump"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_King2025": {
+  "name": "King2025_bioRxiv",
+  "study": "King2025_bioRxiv",
+  "catalog_study": "King2025_bioRxiv",
+  "file": "King2025_bioRxiv.zip",
+  "bytes": 1453181,
+  "csv_bytes": 26218194,
+  "sha256": "9a8b0e00259f1e15c4f80a277cb43d9a7a351cc914fb43613458a892a94799f5",
+  "rows": 55296,
+  "subjects": 144,
+  "persons": 144,
+  "experiments": [
+   "King2025_bioRxiv_ColourControl",
+   "King2025_bioRxiv_MotorCongruent",
+   "King2025_bioRxiv_MotorIncongruent",
+   "King2025_bioRxiv_SingleAdaptation"
+  ],
+  "paradigms": {
+   "King2025_bioRxiv_ColourControl": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "King2025_bioRxiv_MotorCongruent": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "King2025_bioRxiv_MotorIncongruent": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "King2025_bioRxiv_SingleAdaptation": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Kobayashi2024": {
+  "name": "Kobayashi2024_eLife",
+  "study": "Kobayashi2024_eLife",
+  "catalog_study": "Kobayashi2024_eLife",
+  "file": "Kobayashi2024_eLife.zip",
+  "bytes": 158811,
+  "csv_bytes": 3510971,
+  "sha256": "0e980c53d484853e7a82774fd05e1660720735846d03a3e3087ea180c3e863d4",
+  "rows": 7680,
+  "subjects": 32,
+  "persons": 32,
+  "experiments": [
+   "Kobayashi2024_eLife_E1A",
+   "Kobayashi2024_eLife_E1B"
+  ],
+  "paradigms": {
+   "Kobayashi2024_eLife_E1A": [
+    "abrupt_rotation"
+   ],
+   "Kobayashi2024_eLife_E1B": [
+    "gradual_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Korka2023": {
+  "name": "Korka2023_Cortex",
+  "study": "Korka2023_Cortex",
+  "catalog_study": "Korka2023_Cortex",
+  "file": "Korka2023_Cortex.zip",
+  "bytes": 1190827,
+  "csv_bytes": 15887181,
+  "sha256": "b94f6a90014d4cd89b7cf0b29a0fa96245380a92b94029ca7c7218da2a03fd0f",
+  "rows": 32400,
+  "subjects": 30,
+  "persons": 30,
+  "experiments": [
+   "Korka2023_Cortex_CompensateIgnore"
+  ],
+  "paradigms": {
+   "Korka2023_Cortex_CompensateIgnore": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Kunavar2023": {
+  "name": "Kunavar2023_PLoSONE",
+  "study": "Kunavar2023_PLoSONE",
+  "catalog_study": "Kunavar2023_PLoSONE",
+  "file": "Kunavar2023_PLoSONE.zip",
+  "bytes": 28077,
+  "csv_bytes": 572899,
+  "sha256": "b035b863e3b02821f9d613128580d6c574e11abcbacfabdfe7c7ffa89ed39d8d",
+  "rows": 1280,
+  "subjects": 8,
+  "persons": 8,
+  "experiments": [
+   "Kunavar2023_PLoSONE_Part1"
+  ],
+  "paradigms": {
+   "Kunavar2023_PLoSONE_Part1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_LangHodge2023": {
+  "name": "LangHodge2023_PLOSONE",
+  "study": "LangHodge2023_PLOSONE",
+  "catalog_study": "LangHodge2023_PLOSONE",
+  "file": "LangHodge2023_PLOSONE.zip",
+  "bytes": 47554,
+  "csv_bytes": 998152,
+  "sha256": "870fbfa098af7b47d4286a93230b6200ce39ea8274cb5eb34922f4de4f0a9051",
+  "rows": 2185,
+  "subjects": 23,
+  "persons": 23,
+  "experiments": [
+   "LangHodge2023_PLOSONE_Pointing"
+  ],
+  "paradigms": {
+   "LangHodge2023_PLOSONE_Pointing": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Li2021": {
+  "name": "Li2021_FrontAgingNeurosci",
+  "study": "Li2021_FrontAgingNeurosci",
+  "catalog_study": "Li2021_FrontAgingNeurosci",
+  "file": "Li2021_FrontAgingNeurosci.zip",
+  "bytes": 464592,
+  "csv_bytes": 7173345,
+  "sha256": "e84b62413d3200eb590ae28c0406600b486ba1149bb34997f55581d8e754080c",
+  "rows": 14400,
+  "subjects": 120,
+  "persons": 120,
+  "experiments": [
+   "Li2021_FrontAgingNeurosci_Aging"
+  ],
+  "paradigms": {
+   "Li2021_FrontAgingNeurosci_Aging": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Liddy2026": {
+  "name": "Liddy2026_eNeuro",
+  "study": "Liddy2026_eNeuro",
+  "catalog_study": "Liddy2026_eNeuro",
+  "file": "Liddy2026_eNeuro.zip",
+  "bytes": 524835,
+  "csv_bytes": 10834694,
+  "sha256": "0989b02cb80edcbc5641e4ae4a0e6c16923991ebb958f12243a8cc80e58ea192",
+  "rows": 26208,
+  "subjects": 72,
+  "persons": 72,
+  "experiments": [
+   "Liddy2026_eNeuro_Exp1",
+   "Liddy2026_eNeuro_Exp2"
+  ],
+  "paradigms": {
+   "Liddy2026_eNeuro_Exp1": [
+    "clamp"
+   ],
+   "Liddy2026_eNeuro_Exp2": [
+    "clamp"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Liufu2021": {
+  "name": "Xu2023_JBBS",
+  "study": "Xu2023_JBBS",
+  "catalog_study": "Xu2023_JBBS",
+  "file": "Xu2023_JBBS.zip",
+  "bytes": 123963,
+  "csv_bytes": 2284245,
+  "sha256": "14ef0512cb4058855808e31e1c221b4611bffdacea26f73533ae3663463e45ff",
+  "rows": 5670,
+  "subjects": 26,
+  "persons": 26,
+  "experiments": [
+   "Xu2023_JBBS_Experiment1",
+   "Xu2023_JBBS_Experiment2",
+   "Xu2023_JBBS_Experiment3"
+  ],
+  "paradigms": {
+   "Xu2023_JBBS_Experiment1": [
+    "no_perturbation"
+   ],
+   "Xu2023_JBBS_Experiment2": [
+    "mirror_gain"
+   ],
+   "Xu2023_JBBS_Experiment3": [
+    "mirror_gain"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Luo2025": {
+  "name": "Luo2025_bioRxiv",
+  "study": "Luo2025_bioRxiv",
+  "catalog_study": "Luo2025_bioRxiv",
+  "file": "Luo2025_bioRxiv.zip",
+  "bytes": 701857,
+  "csv_bytes": 10522942,
+  "sha256": "dd79645226cc71a6b2d04f91f835687ed807ea0bcb979e1250ed1c36e3ccf376",
+  "rows": 25200,
+  "subjects": 60,
+  "persons": 60,
+  "experiments": [
+   "Luo2025_bioRxiv_UDL"
+  ],
+  "paradigms": {
+   "Luo2025_bioRxiv_UDL": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Maresch2022": {
+  "name": "Maresch2022_eNeuro",
+  "study": "Maresch2022_eNeuro",
+  "catalog_study": "Maresch2022_eNeuro",
+  "file": "Maresch2022_eNeuro.zip",
+  "bytes": 650035,
+  "csv_bytes": 13681774,
+  "sha256": "75c9a840008523c39ef6a52f8e2e8f85aa889ffb9db9fc815c2782f65fdec879",
+  "rows": 31200,
+  "subjects": 78,
+  "persons": 78,
+  "experiments": [
+   "Maresch2022_eNeuro_Duration"
+  ],
+  "paradigms": {
+   "Maresch2022_eNeuro_Duration": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Matsuda2023": {
+  "name": "Matsuda2023_ExpBrainRes",
+  "study": "Matsuda2023_ExpBrainRes",
+  "catalog_study": "Matsuda2023_ExpBrainRes",
+  "file": "Matsuda2023_ExpBrainRes.zip",
+  "bytes": 225010,
+  "csv_bytes": 5339603,
+  "sha256": "e690a8e235e3c49455723372c381e09cc4d4519a5ff404be8651c7ab598f0002",
+  "rows": 11700,
+  "subjects": 30,
+  "persons": 30,
+  "experiments": [
+   "Matsuda2023_ExpBrainRes_Exp1clamp",
+   "Matsuda2023_ExpBrainRes_Exp1control",
+   "Matsuda2023_ExpBrainRes_Exp2clamp"
+  ],
+  "paradigms": {
+   "Matsuda2023_ExpBrainRes_Exp1clamp": [
+    "clamp",
+    "gradual_rotation"
+   ],
+   "Matsuda2023_ExpBrainRes_Exp1control": [
+    "gradual_rotation"
+   ],
+   "Matsuda2023_ExpBrainRes_Exp2clamp": [
+    "clamp",
+    "gradual_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_MillerMills2026": {
+  "name": "MillerMills2026_EJN",
+  "study": "MillerMills2026_EJN",
+  "catalog_study": "MillerMills2026_EJN",
+  "file": "MillerMills2026_EJN.zip",
+  "bytes": 370136,
+  "csv_bytes": 6257632,
+  "sha256": "fa7c1b1a603a52e4183988a1fb347e55a07ddadd06fc115e5a5ba7adc1a3bcdc",
+  "rows": 13520,
+  "subjects": 52,
+  "persons": 52,
+  "experiments": [
+   "MillerMills2026_EJN_DualTask"
+  ],
+  "paradigms": {
+   "MillerMills2026_EJN_DualTask": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Modchalingam2023": {
+  "name": "Modchalingam2023_SciRep",
+  "study": "Modchalingam2023_SciRep",
+  "catalog_study": "Modchalingam2023_SciRep",
+  "file": "Modchalingam2023_SciRep.zip",
+  "bytes": 851170,
+  "csv_bytes": 19093756,
+  "sha256": "3fd8c11fab02145fdc2f474aac7bf06cc02733085256e7817492f43f1b23f899",
+  "rows": 42246,
+  "subjects": 105,
+  "persons": 105,
+  "experiments": [
+   "Modchalingam2023_SciRep_Exp1"
+  ],
+  "paradigms": {
+   "Modchalingam2023_SciRep_Exp1": [
+    "abrupt_rotation",
+    "gradual_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Morehead2017": {
+  "name": "Morehead2017_JCogNeurosci",
+  "study": "Morehead2017_JCogNeurosci",
+  "catalog_study": "Morehead2017_JCogNeurosci",
+  "file": "Morehead2017_JCogNeurosci.zip",
+  "bytes": 960582,
+  "csv_bytes": 17837098,
+  "sha256": "1b828bc615c75d6722052784729382be29ad822a00fc226a91b25de7fc363bc5",
+  "rows": 38720,
+  "subjects": 110,
+  "persons": 110,
+  "experiments": [
+   "Morehead2017_JCogNeurosci_Exp3",
+   "Morehead2017_JCogNeurosci_Exp4"
+  ],
+  "paradigms": {
+   "Morehead2017_JCogNeurosci_Exp3": [
+    "clamp"
+   ],
+   "Morehead2017_JCogNeurosci_Exp4": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Moskowitz2020": {
+  "name": "Moskowitz2020_PLoSCompBiol",
+  "study": "Moskowitz2020_PLoSCompBiol",
+  "catalog_study": "Moskowitz2020_PLoSCompBiol",
+  "file": "Moskowitz2020_PLoSCompBiol.zip",
+  "bytes": 171636,
+  "csv_bytes": 3155360,
+  "sha256": "8f80f4c3b179e2edbbb36a0fbcf021b5dfdf085ade7a26d0e40f299e9c404e69",
+  "rows": 6426,
+  "subjects": 17,
+  "persons": 17,
+  "experiments": [
+   "Moskowitz2020_PLoSCompBiol_Exp2"
+  ],
+  "paradigms": {
+   "Moskowitz2020_PLoSCompBiol_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Nakano2024": {
+  "name": "Nakano2024_bioRxiv",
+  "study": "Nakano2024_bioRxiv",
+  "catalog_study": "Nakano2024_bioRxiv",
+  "file": "Nakano2024_bioRxiv.zip",
+  "bytes": 337736,
+  "csv_bytes": 5951899,
+  "sha256": "048af3b6646fed9e408a3bde97b9c143ccec4bff71498b91993f638f556042db",
+  "rows": 13125,
+  "subjects": 35,
+  "persons": 35,
+  "experiments": [
+   "Nakano2024_bioRxiv_Reaching"
+  ],
+  "paradigms": {
+   "Nakano2024_bioRxiv_Reaching": [
+    "abrupt_rotation",
+    "other_mapping"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Nettekoven2022": {
+  "name": "Nettekoven2022_BrainStimul",
+  "study": "Nettekoven2022_BrainStimul",
+  "catalog_study": "Nettekoven2022_BrainStimul",
+  "file": "Nettekoven2022_BrainStimul.zip",
+  "bytes": 576651,
+  "csv_bytes": 13130897,
+  "sha256": "9b860bc9a7f9ba1decd00d7738feed98dc3c581d93fd2c946d134231378a1bee",
+  "rows": 28080,
+  "subjects": 27,
+  "persons": 27,
+  "experiments": [
+   "Nettekoven2022_BrainStimul_Main"
+  ],
+  "paradigms": {
+   "Nettekoven2022_BrainStimul_Main": [
+    "gradual_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_OBryan2025": {
+  "name": "OBryan2025_bioRxiv",
+  "study": "OBryan2025_bioRxiv",
+  "catalog_study": "OBryan2025_bioRxiv",
+  "file": "OBryan2025_bioRxiv.zip",
+  "bytes": 828348,
+  "csv_bytes": 15854652,
+  "sha256": "f406cb4e5ccb311534afa21528a6049fca058f88eae03dfe2dde32c5eb51c125",
+  "rows": 36424,
+  "subjects": 87,
+  "persons": 87,
+  "experiments": [
+   "OBryan2025_bioRxiv_ClampedVMR",
+   "OBryan2025_bioRxiv_DelayedVMR",
+   "OBryan2025_bioRxiv_VMR"
+  ],
+  "paradigms": {
+   "OBryan2025_bioRxiv_ClampedVMR": [
+    "clamp"
+   ],
+   "OBryan2025_bioRxiv_DelayedVMR": [
+    "abrupt_rotation"
+   ],
+   "OBryan2025_bioRxiv_VMR": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Petitet2021": {
+  "name": "Petitet2021_NeuroImage",
+  "study": "Petitet2021_NeuroImage",
+  "catalog_study": "Petitet2021_NeuroImage",
+  "file": "Petitet2021_NeuroImage.zip",
+  "bytes": 1331792,
+  "csv_bytes": 22753382,
+  "sha256": "6ccd5d796e621f16e49f0eb9f066e4f488d1b37a015ed7d5acac75c7251fa77b",
+  "rows": 49262,
+  "subjects": 57,
+  "persons": 33,
+  "experiments": [
+   "Petitet2021_NeuroImage_Exp1",
+   "Petitet2021_NeuroImage_Exp2"
+  ],
+  "paradigms": {
+   "Petitet2021_NeuroImage_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Petitet2021_NeuroImage_Exp2": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Ruttle2016": {
+  "name": "Ruttle2016_PLoSONE",
+  "study": "Ruttle2016_PLoSONE",
+  "catalog_study": "Ruttle2016_PLoSONE",
+  "file": "Ruttle2016_PLoSONE.zip",
+  "bytes": 680183,
+  "csv_bytes": 18558648,
+  "sha256": "d0e9ea24019e9ea4ac910ad16b74721279f240597c30abde08934385ffe72f64",
+  "rows": 44280,
+  "subjects": 41,
+  "persons": 41,
+  "experiments": [
+   "Ruttle2016_PLoSONE_Exp1"
+  ],
+  "paradigms": {
+   "Ruttle2016_PLoSONE_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Ruttle2021": {
+  "name": "Ruttle2021_SciRep",
+  "study": "Ruttle2021_SciRep",
+  "catalog_study": "Ruttle2021_SciRep",
+  "file": "Ruttle2021_SciRep.zip",
+  "bytes": 718227,
+  "csv_bytes": 15911138,
+  "sha256": "87153b770499ef6a5cca8010a0d048cbbca412b8dafc58b7c6347761a175ee4d",
+  "rows": 37888,
+  "subjects": 80,
+  "persons": 80,
+  "experiments": [
+   "Ruttle2021_SciRep_NoCursor",
+   "Ruttle2021_SciRep_Pause"
+  ],
+  "paradigms": {
+   "Ruttle2021_SciRep_NoCursor": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "Ruttle2021_SciRep_Pause": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Ruttle2022": {
+  "name": "Ruttle2022_JNeurophysiol",
+  "study": "Ruttle2022_JNeurophysiol",
+  "catalog_study": "Ruttle2022_JNeurophysiol",
+  "file": "Ruttle2022_JNeurophysiol.zip",
+  "bytes": 848595,
+  "csv_bytes": 25167676,
+  "sha256": "7de3a5b02a316df311b5b7a7452299bef9dccefa506f5e1d96308c76e356a48e",
+  "rows": 55296,
+  "subjects": 96,
+  "persons": 96,
+  "experiments": [
+   "Ruttle2022_JNeurophysiol_Exp1"
+  ],
+  "paradigms": {
+   "Ruttle2022_JNeurophysiol_Exp1": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Senna2022": {
+  "name": "Senna2022_eLife",
+  "study": "Senna2022_eLife",
+  "catalog_study": "Senna2022_eLife",
+  "file": "Senna2022_eLife.zip",
+  "bytes": 91538,
+  "csv_bytes": 3354176,
+  "sha256": "2944f0e3e72e6b95226d068f14fdf2f29c291244ed0f029b45131ece8bbcf84d",
+  "rows": 8208,
+  "subjects": 59,
+  "persons": 59,
+  "experiments": [
+   "Senna2022_eLife_Main"
+  ],
+  "paradigms": {
+   "Senna2022_eLife_Main": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Sharma2026": {
+  "name": "Sharma2026_PLoSCompBiol",
+  "study": "Sharma2026_PLoSCompBiol",
+  "catalog_study": "Sharma2026_PLoSCompBiol",
+  "file": "Sharma2026_PLoSCompBiol.zip",
+  "bytes": 2473369,
+  "csv_bytes": 40996729,
+  "sha256": "271325dc9561c4d1caab3bc2b39d0dd1948ade7cbdb92ec538bb3cea60665b50",
+  "rows": 87000,
+  "subjects": 29,
+  "persons": 29,
+  "experiments": [
+   "Sharma2026_PLoSCompBiol_Exp12"
+  ],
+  "paradigms": {
+   "Sharma2026_PLoSCompBiol_Exp12": [
+    "abrupt_rotation",
+    "other_mapping"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Shingane2025": {
+  "name": "Shingane2025_JNeurophysiol",
+  "study": "Shingane2025_JNeurophysiol",
+  "catalog_study": "Shingane2025_JNeurophysiol",
+  "file": "Shingane2025_JNeurophysiol.zip",
+  "bytes": 109483,
+  "csv_bytes": 4298571,
+  "sha256": "c815828ddfa1c15b93699b99d496eba0d7edba2485084575c243fcc3bf454dcb",
+  "rows": 9000,
+  "subjects": 60,
+  "persons": 60,
+  "experiments": [
+   "Shingane2025_JNeurophysiol_Exp1",
+   "Shingane2025_JNeurophysiol_Exp2"
+  ],
+  "paradigms": {
+   "Shingane2025_JNeurophysiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Shingane2025_JNeurophysiol_Exp2": [
+    "mirror_gain"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Slade2026": {
+  "name": "Slade2026_ExpBrainRes",
+  "study": "Slade2026_ExpBrainRes",
+  "catalog_study": "Slade2026_ExpBrainRes",
+  "file": "Slade2026_ExpBrainRes.zip",
+  "bytes": 297498,
+  "csv_bytes": 11333087,
+  "sha256": "074ce7bbb622ed5a61412a436cf66a415de01caaad1e892c67bf9d1ad311458b",
+  "rows": 24960,
+  "subjects": 52,
+  "persons": 52,
+  "experiments": [
+   "Slade2026_ExpBrainRes_TDP"
+  ],
+  "paradigms": {
+   "Slade2026_ExpBrainRes_TDP": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Spang2017": {
+  "name": "Spang2017_iPerception",
+  "study": "Spang2017_iPerception",
+  "catalog_study": "Spang2017_iPerception",
+  "file": "Spang2017_iPerception.zip",
+  "bytes": 132140,
+  "csv_bytes": 3157655,
+  "sha256": "73251c6d2d4460fc56f120b73cf91c9d25982d3b983b838148078a0e5dca349b",
+  "rows": 7200,
+  "subjects": 20,
+  "persons": 20,
+  "experiments": [
+   "Spang2017_iPerception_Pointing"
+  ],
+  "paradigms": {
+   "Spang2017_iPerception_Pointing": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Stroh2024": {
+  "name": "Stroh2024_JDeafStudDeafEduc",
+  "study": "Stroh2024_JDeafStudDeafEduc",
+  "catalog_study": "Stroh2024_JDeafStudDeafEduc",
+  "file": "Stroh2024_JDeafStudDeafEduc.zip",
+  "bytes": 1995605,
+  "csv_bytes": 37720258,
+  "sha256": "4e513d8d31ef3296aa072d509e0d53483cbcc764288530b8ee3358d3c79b4b92",
+  "rows": 79464,
+  "subjects": 64,
+  "persons": 64,
+  "experiments": [
+   "Stroh2024_JDeafStudDeafEduc_Exp1"
+  ],
+  "paradigms": {
+   "Stroh2024_JDeafStudDeafEduc_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Sugiyama2024": {
+  "name": "Sugiyama2024_PNAS",
+  "study": "Sugiyama2024_PNAS",
+  "catalog_study": "Sugiyama2024_PNAS",
+  "file": "Sugiyama2024_PNAS.zip",
+  "bytes": 169561,
+  "csv_bytes": 4031329,
+  "sha256": "cb5b672b574ad4c34bcf1d2b6268e6344ea63c6f1ffb0bf1b357bc0f702f6529",
+  "rows": 8944,
+  "subjects": 44,
+  "persons": 44,
+  "experiments": [
+   "Sugiyama2024_PNAS_Probe"
+  ],
+  "paradigms": {
+   "Sugiyama2024_PNAS_Probe": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Szarka2025": {
+  "name": "Szarka2025_PLoSONE",
+  "study": "Szarka2025_PLoSONE",
+  "catalog_study": "Szarka2025_PLoSONE",
+  "file": "Szarka2025_PLoSONE.zip",
+  "bytes": 153161,
+  "csv_bytes": 3058846,
+  "sha256": "084e2941cb932b9828c0db9abb8c82e315cfa57fb0eb287d7b9e67f4b8f20921",
+  "rows": 7200,
+  "subjects": 12,
+  "persons": 12,
+  "experiments": [
+   "Szarka2025_PLoSONE_Reaching"
+  ],
+  "paradigms": {
+   "Szarka2025_PLoSONE_Reaching": [
+    "clamp"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Takada2025": {
+  "name": "Takada2025_PsyArXiv",
+  "study": "Takada2025_PsyArXiv",
+  "catalog_study": "Takada2025_PsyArXiv",
+  "file": "Takada2025_PsyArXiv.zip",
+  "bytes": 92605,
+  "csv_bytes": 1927890,
+  "sha256": "8e7e67bf7f3c7b6a1752fdafe0e4fedda2213e9aa45c97a50c3c6c6c649a4a37",
+  "rows": 4440,
+  "subjects": 40,
+  "persons": 40,
+  "experiments": [
+   "Takada2025_PsyArXiv_Exp2"
+  ],
+  "paradigms": {
+   "Takada2025_PsyArXiv_Exp2": [
+    "gradual_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Todorov2025": {
+  "name": "Todorov2025_bioRxiv",
+  "study": "Todorov2025_bioRxiv",
+  "catalog_study": "Todorov2025_bioRxiv",
+  "file": "Todorov2025_bioRxiv.zip",
+  "bytes": 449996,
+  "csv_bytes": 7110675,
+  "sha256": "2b0cff564c14b78d1b14bbfba93a519f06d868766d4ed8531cf4628aefd3fc81",
+  "rows": 15360,
+  "subjects": 20,
+  "persons": 20,
+  "experiments": [
+   "Todorov2025_bioRxiv_Exp1"
+  ],
+  "paradigms": {
+   "Todorov2025_bioRxiv_Exp1": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": true,
+  "redistributable": true
+ },
+ "ext_Tsay2024": {
+  "name": "Tsay2024_JCogNeurosci",
+  "study": "Tsay2024_JCogNeurosci",
+  "catalog_study": "Tsay2024_JCogNeurosci",
+  "file": "Tsay2024_JCogNeurosci.zip",
+  "bytes": 936760,
+  "csv_bytes": 14125356,
+  "sha256": "c7b11740030ddf12d85cb1fefeff6597e9114608095062a86ee4540d7c58d88e",
+  "rows": 28800,
+  "subjects": 48,
+  "persons": 48,
+  "experiments": [
+   "Tsay2024_JCogNeurosci_E1"
+  ],
+  "paradigms": {
+   "Tsay2024_JCogNeurosci_E1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_VelazquezVargas2024": {
+  "name": "VelazquezVargas2024_JNeurophysiol",
+  "study": "VelazquezVargas2024_JNeurophysiol",
+  "catalog_study": "VelazquezVargas2024_JNeurophysiol",
+  "file": "VelazquezVargas2024_JNeurophysiol.zip",
+  "bytes": 760848,
+  "csv_bytes": 11610111,
+  "sha256": "b14b37e4cfee45a79e31d3d1205fa38dfe8fc8d877b4aca0d3758843b212f085",
+  "rows": 20325,
+  "subjects": 45,
+  "persons": 45,
+  "experiments": [
+   "VelazquezVargas2024_JNeurophysiol_Exp3",
+   "VelazquezVargas2024_JNeurophysiol_Exp4",
+   "VelazquezVargas2024_JNeurophysiol_Exp5"
+  ],
+  "paradigms": {
+   "VelazquezVargas2024_JNeurophysiol_Exp3": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "VelazquezVargas2024_JNeurophysiol_Exp4": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "VelazquezVargas2024_JNeurophysiol_Exp5": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Wang2022": {
+  "name": "Wang2022_BrainSci",
+  "study": "Wang2022_BrainSci",
+  "catalog_study": "Wang2022_BrainSci",
+  "file": "Wang2022_BrainSci.zip",
+  "bytes": 2307632,
+  "csv_bytes": 52859351,
+  "sha256": "c66d503aeeef0873f02a4dc6316cd622b99903f422f71a20bb821203a5919758",
+  "rows": 124640,
+  "subjects": 82,
+  "persons": 82,
+  "experiments": [
+   "Wang2022_BrainSci_Exp1"
+  ],
+  "paradigms": {
+   "Wang2022_BrainSci_Exp1": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": true,
+  "redistributable": false
+ },
+ "ext_Wang2024": {
+  "name": "Wang2024_CurrBiol",
+  "study": "Wang2024_CurrBiol",
+  "catalog_study": "Wang2024_CurrBiol",
+  "file": "Wang2024_CurrBiol.zip",
+  "bytes": 4708880,
+  "csv_bytes": 100086645,
+  "sha256": "6cadd24f51cdefcae9541d1f6e24c8d748cab1e5486e7c0558dd732c9d315c9c",
+  "rows": 224640,
+  "subjects": 432,
+  "persons": 432,
+  "experiments": [
+   "Wang2024_CurrBiol_Exp1a",
+   "Wang2024_CurrBiol_Exp3a",
+   "Wang2024_CurrBiol_Exp3b",
+   "Wang2024_CurrBiol_Exp3c"
+  ],
+  "paradigms": {
+   "Wang2024_CurrBiol_Exp1a": [
+    "clamp"
+   ],
+   "Wang2024_CurrBiol_Exp3a": [
+    "clamp"
+   ],
+   "Wang2024_CurrBiol_Exp3b": [
+    "clamp"
+   ],
+   "Wang2024_CurrBiol_Exp3c": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Wang2025": {
+  "name": "Wang2025_JNeurosci",
+  "study": "Wang2025_JNeurosci",
+  "catalog_study": "Wang2025_JNeurosci",
+  "file": "Wang2025_JNeurosci.zip",
+  "bytes": 2095976,
+  "csv_bytes": 48097504,
+  "sha256": "1d83906c022721c22f0f32fc69385515eb55c2a32f48f42f7ee8fd3a8f0b9bac",
+  "rows": 110320,
+  "subjects": 197,
+  "persons": 197,
+  "experiments": [
+   "Wang2025_JNeurosci_Exp2Sin",
+   "Wang2025_JNeurosci_Exp3_0b",
+   "Wang2025_JNeurosci_Exp3_1b",
+   "Wang2025_JNeurosci_Exp4",
+   "Wang2025_JNeurosci_Exp4dual"
+  ],
+  "paradigms": {
+   "Wang2025_JNeurosci_Exp2Sin": [
+    "clamp"
+   ],
+   "Wang2025_JNeurosci_Exp3_0b": [
+    "clamp"
+   ],
+   "Wang2025_JNeurosci_Exp3_1b": [
+    "clamp"
+   ],
+   "Wang2025_JNeurosci_Exp4": [
+    "clamp"
+   ],
+   "Wang2025_JNeurosci_Exp4dual": [
+    "clamp"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Wang2026": {
+  "name": "Wang2026_PLoSBiol",
+  "study": "Wang2026_PLoSBiol",
+  "catalog_study": "Wang2026_PLoSBiol",
+  "file": "Wang2026_PLoSBiol.zip",
+  "bytes": 1801979,
+  "csv_bytes": 34766475,
+  "sha256": "8316cf95eb5e4d7b88bd273047095440240857e2c2bb1bab52c8fd12b596d4fd",
+  "rows": 82532,
+  "subjects": 270,
+  "persons": 270,
+  "experiments": [
+   "Wang2026_PLoSBiol_Exp1",
+   "Wang2026_PLoSBiol_Exp2",
+   "Wang2026_PLoSBiol_Exp3",
+   "Wang2026_PLoSBiol_Exp4",
+   "Wang2026_PLoSBiol_ExpS1",
+   "Wang2026_PLoSBiol_ExpS3"
+  ],
+  "paradigms": {
+   "Wang2026_PLoSBiol_Exp1": [
+    "gradual_rotation"
+   ],
+   "Wang2026_PLoSBiol_Exp2": [
+    "gradual_rotation"
+   ],
+   "Wang2026_PLoSBiol_Exp3": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "Wang2026_PLoSBiol_Exp4": [
+    "clamp",
+    "abrupt_rotation"
+   ],
+   "Wang2026_PLoSBiol_ExpS1": [
+    "clamp"
+   ],
+   "Wang2026_PLoSBiol_ExpS3": [
+    "clamp",
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "cc-by",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_Warburton2025": {
+  "name": "Warburton2025_JNeurosci",
+  "study": "Warburton2025_JNeurosci",
+  "catalog_study": "Warburton2025_JNeurosci",
+  "file": "Warburton2025_JNeurosci.zip",
+  "bytes": 7973285,
+  "csv_bytes": 110319517,
+  "sha256": "e07b3972357b81214731c5c2065e692d5b1482e326352d3735356583e0979e9a",
+  "rows": 213851,
+  "subjects": 273,
+  "persons": 273,
+  "experiments": [
+   "Warburton2025_JNeurosci_Exp1",
+   "Warburton2025_JNeurosci_Exp2a",
+   "Warburton2025_JNeurosci_Exp2b",
+   "Warburton2025_JNeurosci_Exp3"
+  ],
+  "paradigms": {
+   "Warburton2025_JNeurosci_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Warburton2025_JNeurosci_Exp2a": [
+    "abrupt_rotation"
+   ],
+   "Warburton2025_JNeurosci_Exp2b": [
+    "abrupt_rotation",
+    "cue_context"
+   ],
+   "Warburton2025_JNeurosci_Exp3": [
+    "abrupt_rotation",
+    "cue_context"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Will2024": {
+  "name": "Will2024_JNeurophysiol",
+  "study": "Will2024_JNeurophysiol",
+  "catalog_study": "Will2024_JNeurophysiol",
+  "file": "Will2024_JNeurophysiol.zip",
+  "bytes": 1853635,
+  "csv_bytes": 26467571,
+  "sha256": "d73ff5a1317d707f7505bf62c5d5dca7eba6ce94a987bd0d0e5e6d1e3d0e8718",
+  "rows": 55003,
+  "subjects": 92,
+  "persons": 92,
+  "experiments": [
+   "Will2024_JNeurophysiol_Exp1",
+   "Will2024_JNeurophysiol_Exp2",
+   "Will2024_JNeurophysiol_Exp3"
+  ],
+  "paradigms": {
+   "Will2024_JNeurophysiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Will2024_JNeurophysiol_Exp2": [
+    "abrupt_rotation"
+   ],
+   "Will2024_JNeurophysiol_Exp3": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Wilterson2021": {
+  "name": "Wilterson2021_eNeuro",
+  "study": "Wilterson2021_eNeuro",
+  "catalog_study": "Wilterson2021_eNeuro",
+  "file": "Wilterson2021_eNeuro.zip",
+  "bytes": 3089103,
+  "csv_bytes": 47424444,
+  "sha256": "90a53e9d4a233cbff5c6a66869f952f48866cd88aecb2267cbf14f825bd67eb8",
+  "rows": 96768,
+  "subjects": 24,
+  "persons": 24,
+  "experiments": [
+   "Wilterson2021_eNeuro_Mirror",
+   "Wilterson2021_eNeuro_Rotation"
+  ],
+  "paradigms": {
+   "Wilterson2021_eNeuro_Mirror": [
+    "mirror_gain"
+   ],
+   "Wilterson2021_eNeuro_Rotation": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_Zhu2023": {
+  "name": "Zhu2023_PLoSComputBiol",
+  "study": "Zhu2023_PLoSComputBiol",
+  "catalog_study": "Zhu2023_PLoSComputBiol",
+  "file": "Zhu2023_PLoSComputBiol.zip",
+  "bytes": 2690526,
+  "csv_bytes": 35210474,
+  "sha256": "7578b0cd6b7a88510e00ff5435cf2660f1273c65b936dcef8d1fd4f88d62c28a",
+  "rows": 69498,
+  "subjects": 162,
+  "persons": 162,
+  "experiments": [
+   "Zhu2023_PLoSComputBiol_Exp1",
+   "Zhu2023_PLoSComputBiol_Exp2"
+  ],
+  "paradigms": {
+   "Zhu2023_PLoSComputBiol_Exp1": [
+    "abrupt_rotation"
+   ],
+   "Zhu2023_PLoSComputBiol_Exp2": [
+    "abrupt_rotation",
+    "gradual_rotation"
+   ]
+  },
+  "kind": "none",
+  "heldout": false,
+  "redistributable": false
+ },
+ "ext_tHart2016": {
+  "name": "tHart2016_PLoSOne",
+  "study": "tHart2016_PLoSOne",
+  "catalog_study": "tHart2016_PLoSOne",
+  "file": "tHart2016_PLoSOne.zip",
+  "bytes": 208585,
+  "csv_bytes": 4700717,
+  "sha256": "8e7c8331cb18ccc8b4591ec010e30c488f8ab022fcd4043f9e3e29a17f4f5200",
+  "rows": 11235,
+  "subjects": 21,
+  "persons": 21,
+  "experiments": [
+   "tHart2016_PLoSOne_Rotated"
+  ],
+  "paradigms": {
+   "tHart2016_PLoSOne_Rotated": [
+    "gradual_rotation"
+   ]
+  },
+  "kind": "cc0",
+  "heldout": false,
+  "redistributable": true
+ },
+ "ext_tHart2024": {
+  "name": "tHart2024_eNeuro",
+  "study": "tHart2024_eNeuro",
+  "catalog_study": "tHart2024_eNeuro",
+  "file": "tHart2024_eNeuro.zip",
+  "bytes": 429722,
+  "csv_bytes": 8125908,
+  "sha256": "96e605a5f48c42a103c85a982dd1f4588cd3f8875150a8028a7d50cc1c82695c",
+  "rows": 19008,
+  "subjects": 72,
+  "persons": 72,
+  "experiments": [
+   "tHart2024_eNeuro_Exp1"
+  ],
+  "paradigms": {
+   "tHart2024_eNeuro_Exp1": [
+    "abrupt_rotation"
+   ]
+  },
+  "kind": "gpl",
+  "heldout": false,
+  "redistributable": true
+ }
+}

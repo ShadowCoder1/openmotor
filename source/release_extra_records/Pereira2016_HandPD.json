@@ -1,0 +1,168 @@
+{
+ "id": "Pereira2016_HandPD",
+ "module": "timeseries",
+ "rows": 792,
+ "subjects": 67,
+ "persons": 61,
+ "zip_bytes": 234314956,
+ "zip_sha256": "18d033d9a5a1b0b2c2b6c2443305f2e986d94f9d85931bbfac3f7a0ef5c88905",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "HealthySignal.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PatientSignal.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "NewSpiral.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one pen, one sample rate (1000 Hz in every header), six columns in every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "codes of Gender and Writing_Hand compared with the authors' table (not decoded: they disagree in some persons)",
+   "ok": true,
+   "detail": "gender {'F': {1: 0, 2: 24}, 'M': {1: 28, 2: 1}}, hand {'L': {1: 1, 2: 3}, 'R': {1: 48, 2: 1}}"
+  },
+  {
+   "kind": "published",
+   "what": "signal files of healthy individuals",
+   "computed": 420.0,
+   "reported": 420.0,
+   "tol": 0,
+   "source": "HandPD / NewHandPD home page, NewHandPD (420 signals of healthy individuals)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "signal files of patients",
+   "computed": 372.0,
+   "reported": 372.0,
+   "tol": 0,
+   "source": "HandPD / NewHandPD home page, NewHandPD (372 signals from patients)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy individuals",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "HandPD / NewHandPD home page, NewHandPD",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "patients",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "HandPD / NewHandPD home page, NewHandPD",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, healthy",
+   "computed": 43.34285714285714,
+   "reported": 44.05,
+   "tol": 1.0,
+   "source": "HandPD / NewHandPD home page, NewHandPD group description (see differences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, healthy",
+   "computed": 15.31040180274001,
+   "reported": 14.88,
+   "tol": 1.0,
+   "source": "HandPD / NewHandPD home page, NewHandPD group description (see differences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Parkinson's disease",
+   "computed": 58.03225806451613,
+   "reported": 57.83,
+   "tol": 1.0,
+   "source": "HandPD / NewHandPD home page, NewHandPD group description (see differences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, Parkinson's disease",
+   "computed": 7.413878296671013,
+   "reported": 7.85,
+   "tol": 1.0,
+   "source": "HandPD / NewHandPD home page, NewHandPD group description (see differences)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every sample line kept",
+   "ok": true,
+   "detail": "14697600 lines in 792 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "792 recordings = 420 + 372",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Nothing in the deposit documents the channel order or units; the order is the one given in the dataset description (secondary source quoting it: Sequence-based Dynamic Handwriting Analysis for PD detection, arXiv 2101.09461, section 3.2). The home page numbers (35 healthy, 31 patients, 420 and 372 signals) reproduce. The file labels are not all reliable: one healthy session holds a diadochokinesis file that belongs to a different person (header age 50, a different ID), and one meander file is named sigMea1-28 without a group letter. The mean ages reproduce within 1 year; the deposit's per-session ages may differ from the page by session counting.",
+  "License: the home page states none. The signals belong to the SIBGRAPI 2016 paper (the DOI listed in extra_studies, 10.1109/sibgrapi.2016.054, is not the one the UNESP repository gives, 10.1109/SIBGRAPI.2016.51); the first listed paper (CMPB 2016) uses the image dataset."
+ ],
+ "sources": [
+  {
+   "file": "HealthySignal.zip",
+   "url": "https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/NewHealthy/HealthySignal.zip",
+   "bytes": 151916860,
+   "sha256": "f278f12f0eae53ab031824bdd884a9804c1fa3f0b1512ae9e10c389deff44289",
+   "fetched_utc": "2026-11-09T04:39:25Z"
+  },
+  {
+   "file": "PatientSignal.zip",
+   "url": "https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/NewPatients/PatientSignal.zip",
+   "bytes": 251451298,
+   "sha256": "51dad3fb56e0a72342091454f5ab80863a3733474ada43073f678ec24bf03517",
+   "fetched_utc": "2026-11-09T04:39:51Z"
+  },
+  {
+   "file": "NewSpiral.csv",
+   "url": "https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/NewSpiral.csv",
+   "bytes": 32442,
+   "sha256": "b3824c007aebc1dd1020432029c4654cc16aca8d2bb18c3d6fb311e0a0c7f6b4",
+   "fetched_utc": "2026-11-09T04:39:56Z"
+  },
+  {
+   "file": "NewMeander.csv",
+   "url": "https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/NewMeander.csv",
+   "bytes": 31936,
+   "sha256": "b40c7d35c1910f40e6152cddee168fb7d1892aba9252b264b3fb123b309f56a2",
+   "fetched_utc": "2026-11-09T04:40:01Z"
+  },
+  {
+   "file": "Spiral_HandPD.csv",
+   "url": "https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/Spiral_HandPD.csv",
+   "bytes": 38906,
+   "sha256": "f786d12c0184c75a5f55ea1579330c06b97ca4fa2d35eca30fd92a69c00c2bf3",
+   "fetched_utc": "2026-11-09T04:40:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Pereira2016_HandPD.zip"
+}

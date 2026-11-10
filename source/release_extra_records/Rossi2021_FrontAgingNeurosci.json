@@ -1,0 +1,224 @@
+{
+ "id": "Rossi2021_FrontAgingNeurosci",
+ "module": "walking",
+ "rows": 95783,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 2869979,
+ "zip_sha256": "3e04b76c588c36b0408fc235a6e310ebba91f66d2243c3b2ec2c0c4bc283926f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "four groups of 10 participants",
+   "ok": true,
+   "detail": "{'YASingle': 10, 'YADual': 10, 'MASingle': 10, 'MADual': 10}"
+  },
+  {
+   "kind": "internal",
+   "what": "authors' SLA equals (FSL-SSL)/(FSL+SSL) on every stride (max abs difference < 1e-6)",
+   "ok": true,
+   "detail": "0.00e+00"
+  },
+  {
+   "kind": "internal",
+   "what": "7 phases for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "step lengths in m are mostly 0.2-0.9",
+   "ok": true,
+   "detail": "0.993"
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 initial adaptation, YASingle minus YADual",
+   "computed": 0.22400940904337413,
+   "reported": 0.224,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (initial adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 initial adaptation, MASingle minus MADual",
+   "computed": 0.012015185109260418,
+   "reported": 0.012,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (initial adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 early adaptation, YASingle minus YADual",
+   "computed": -0.025705250170407035,
+   "reported": -0.026,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (early adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 early adaptation, MASingle minus MADual",
+   "computed": -0.06153560468897179,
+   "reported": -0.062,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (early adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 late adaptation, YASingle minus YADual",
+   "computed": -0.011476729810029479,
+   "reported": -0.011,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (late adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 late adaptation, MASingle minus MADual",
+   "computed": -0.010798996031176233,
+   "reported": -0.011,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (late adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 initial readaptation, YASingle minus YADual",
+   "computed": 0.1480924975990181,
+   "reported": 0.148,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (initial readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 initial readaptation, MASingle minus MADual",
+   "computed": 0.03737829258176434,
+   "reported": 0.037,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (initial readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 early readaptation, YASingle minus YADual",
+   "computed": 0.013274225459863842,
+   "reported": 0.013,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (early readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 early readaptation, MASingle minus MADual",
+   "computed": -0.029780526846397648,
+   "reported": -0.03,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (early readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 late readaptation, YASingle minus YADual",
+   "computed": -0.023043796048911547,
+   "reported": -0.023,
+   "tol": 0.0015,
+   "source": "Results, Experiment 1 (late readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 late readaptation, MASingle minus MADual",
+   "computed": -0.004688172452913239,
+   "reported": -0.005,
+   "tol": 0.0015,
+   "source": "Results, Experiment 2 (late readaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 1 motor data (10 per group, 2 groups)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Participants' age and sex are not in the deposit; the paper gives only totals (13 of 20 young and 21 of 30 late middle-aged adults were female)."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/records/5655845/files/README.txt?download=1",
+   "bytes": 6768,
+   "sha256": "7fc33a2e9e13c710087878b460b70129a2e3139addcd2ffedfd25b3d19e1d9e8",
+   "fetched_utc": "2026-11-09T01:26:13Z"
+  },
+  {
+   "file": "YAST_MOTOR.mat",
+   "url": "https://zenodo.org/records/5655845/files/YAST_MOTOR.mat?download=1",
+   "bytes": 1143010,
+   "sha256": "8ed917c04f8b3bb18e9f83ff251c1eb65e13e5e15832ff4d5f93df995e60e54f",
+   "fetched_utc": "2026-11-09T01:26:26Z"
+  },
+  {
+   "file": "YADT_MOTOR.mat",
+   "url": "https://zenodo.org/records/5655845/files/YADT_MOTOR.mat?download=1",
+   "bytes": 1143517,
+   "sha256": "d749a91d76fcc5539bf7635a86d723ee100c70196a6e6c6b0d67a063c4e44b24",
+   "fetched_utc": "2026-11-09T01:26:33Z"
+  },
+  {
+   "file": "OAST_MOTOR.mat",
+   "url": "https://zenodo.org/records/5655845/files/OAST_MOTOR.mat?download=1",
+   "bytes": 1229079,
+   "sha256": "67414e1fe284983a262ac9237ad821e0f4f33619c0880637c84962bc242feb63",
+   "fetched_utc": "2026-11-09T01:26:45Z"
+  },
+  {
+   "file": "OADT_MOTOR.mat",
+   "url": "https://zenodo.org/records/5655845/files/OADT_MOTOR.mat?download=1",
+   "bytes": 1179300,
+   "sha256": "c747ada71f0efd29ef8bb172d9b184be95248c4334c0370d161de32d23df7a3f",
+   "fetched_utc": "2026-11-09T01:26:55Z"
+  },
+  {
+   "file": "YADT_COGNITIVE.mat",
+   "url": "https://zenodo.org/records/5655845/files/YADT_COGNITIVE.mat?download=1",
+   "bytes": 7567,
+   "sha256": "152b6ef9589cb636d0ac52a50c6fcbd123291cf0a6659eb4a90810c6aba0be7e",
+   "fetched_utc": "2026-11-09T01:27:01Z"
+  },
+  {
+   "file": "OADT_COGNITIVE.mat",
+   "url": "https://zenodo.org/records/5655845/files/OADT_COGNITIVE.mat?download=1",
+   "bytes": 7874,
+   "sha256": "0316f187fd553af189b4b55ebe0572650dac6d14d78aa1536346b28c6e30e070",
+   "fetched_utc": "2026-11-09T01:27:07Z"
+  },
+  {
+   "file": "OADN_COGNITIVE.mat",
+   "url": "https://zenodo.org/records/5655845/files/OADN_COGNITIVE.mat?download=1",
+   "bytes": 8001,
+   "sha256": "9e4499e1ceb07536245b92222f0505ef94809990f595d960e755e9e17753262f",
+   "fetched_utc": "2026-11-09T01:27:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Rossi2021_FrontAgingNeurosci.zip"
+}

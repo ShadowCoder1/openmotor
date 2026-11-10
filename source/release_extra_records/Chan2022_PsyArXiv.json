@@ -1,0 +1,175 @@
+{
+ "id": "Chan2022_PsyArXiv",
+ "module": "keypress",
+ "rows": 55296,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 588032,
+ "zip_sha256": "d3481866c493a2fcd2fb4b4eb75ce0b806eea2d2ae659a0445a3fa5cddc1a347",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows are in order of participant, session and trial, each participant contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows come in groups of six steps (SubTrial 8-13), one group per sequence execution",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each group of six has one participant, session and trial number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "feedback.CRESP equals the cued key and ACC equals (response == cued key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the sequence-level file (DFrdy_all) holds exactly these executions, with the same accuracy and summed RT",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Trial Nr runs 1-48 within each participant and session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "24 participants x 8 sessions x 48 executions x 6 steps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant practised two different six-step sequences",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RT >= 0 on every step",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Section 3.1, Participants (24 participants took part)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training blocks per participant",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Section 2.1 (participants practiced over the course of eight training blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequence executions per participant (48 per block x 8 blocks)",
+   "computed": 384.0,
+   "reported": 384.0,
+   "tol": 0,
+   "source": "Section 3.2, Fig. 4 caption (raw response time for 384 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "steps per sequence",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Section 2.1 (six stimuli, six steps per trial)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequence executions per block",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Section 2.1 (a block is 48 trials: 24 for each of the two sequences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct counterbalanced sequences across participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Section 2.1 (both sequences rotated four times, eight counterbalanced sequences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distinct keys",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Section 2.1 (arrows mapped to W, S, D, A)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 19 of 24 participants female, a mean age of 20.5 +/- 2.3 years and 87.5% right-footed; the deposit has no age, sex or footedness, so these columns are empty.",
+  "The deposit's score1 and score2 columns (one pair of numbers per participant and block, undocumented; they look like the block feedback shown by the task) and the E-Prime timing columns were not released.",
+  "The deposit's centre-of-mass summaries (MVN_AllSubsV0.2.csv, two participants, one row per sequence) and the Xsens recordings are not released; this file holds the E-Prime step data of all 24 participants only.",
+  "The deposit's Block column is the trial number within the session (1-52, with the 4 no-go trials missing), not the paper's block; it is trial_in_block here, and block is the authors' Session (1-8, the eight training blocks).",
+  "RT is the E-Prime response time of each step; for the first step it starts at the Go signal and for later steps after the previous step (the deposit does not say; the paper reports step-level response times).",
+  "excluded_by_authors marks all six steps of a sequence execution with any wrong step: the authors' linear mixed models use accurate sequence executions only (Methods.rmd; Figs 5-6 of the preprint). The R markdown has a second model that keeps wrong steps.",
+  "The title of the OSF project is 'Multimodal mobile brain and body imaging for the quantification of dance motor sequence learning'; the listed paper is the methods preprint (PsyArXiv, 2022, doi 10.31234/osf.io/ypt7n, CC BY 4.0 per Crossref). The OSF project states no license."
+ ],
+ "sources": [
+  {
+   "file": "MVN_AllSubsV0.2.csv",
+   "url": "https://osf.io/download/e6qyb/",
+   "bytes": 21667,
+   "sha256": "c910a09f19b5b64b3760bf330a67718415f2d4a1083a68bd632bc5491657a9e9",
+   "fetched_utc": "2026-11-09T11:35:21Z"
+  },
+  {
+   "file": "DFrdy_all.csv",
+   "url": "https://osf.io/download/aryvs/",
+   "bytes": 468739,
+   "sha256": "fb604d918e726030a07f81711c4ef3892d65716d08e23157a2d6719ec9d37288",
+   "fetched_utc": "2026-11-09T11:35:28Z"
+  },
+  {
+   "file": "Concat1.csv",
+   "url": "https://osf.io/download/qx2en/",
+   "bytes": 3804462,
+   "sha256": "7117cfe27c5be7c65d783716ce0150f2c6399655dffc5a35ef87cfc2374f0fa7",
+   "fetched_utc": "2026-11-09T11:35:36Z"
+  },
+  {
+   "file": "Methods.rmd",
+   "url": "https://osf.io/download/fk5ej/",
+   "bytes": 14103,
+   "sha256": "347f2cec7f1400c5ed6ffd2cfbd4d5f2e28d7b4a90d4e8ec2248fb626992ac8b",
+   "fetched_utc": "2026-11-09T11:35:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Chan2022_PsyArXiv.zip"
+}

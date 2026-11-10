@@ -1,0 +1,116 @@
+{
+ "id": "Toffoli2026_PLOSDigitHealth",
+ "module": "summary",
+ "rows": 493145,
+ "subjects": 2755,
+ "persons": 2755,
+ "zip_bytes": 17593970,
+ "zip_sha256": "e763bbd88eaf92bd075022b9993b78da211410db8898511f72d67297126ed39d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "pen-derived indicators per sample",
+   "computed": 178.0,
+   "reported": 178.0,
+   "tol": 0,
+   "source": "Toffoli et al. 2026, PLOS Digit Health 5:e0001503, Methods (Indicators)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UNO cursive samples with a z-score above zero",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Toffoli et al. 2026, PLOS Digit Health 5:e0001503, Results (cursive tasks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "NUM cursive samples with a z-score above zero",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Toffoli et al. 2026, PLOS Digit Health 5:e0001503, Results (cursive tasks)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "UNO_C: mean z-score below -1 in every grade (paper: lower than -1 across all grades)",
+   "ok": true,
+   "detail": "{1: -1.88, 2: -1.58, 3: -1.2, 4: -1.5, 5: -1.39, 6: -1.45, 7: -1.4, 8: -1.59}"
+  },
+  {
+   "kind": "internal",
+   "what": "NUM_C: mean z-score below -1 in every grade (paper: lower than -1 across all grades)",
+   "ok": true,
+   "detail": "{1: -2.02, 2: -1.55, 3: -1.3, 4: -1.65, 5: -1.48, 6: -1.42, 7: -1.51, 8: -1.83}"
+  },
+  {
+   "kind": "internal",
+   "what": "every file row is a person (2755 rows)",
+   "ok": true,
+   "detail": "2755"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = values present (children x 179 columns minus missing)",
+   "ok": true,
+   "detail": "493145 rows, 0 missing values not written"
+  },
+  {
+   "kind": "internal",
+   "what": "grades 1 to 8 in every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants in the largest file within the paper's 707 recruited",
+   "ok": true,
+   "detail": "701"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit has no codebook for ExecutionTime (read as seconds from its values near 60) and the value 2 in the handedness column (0 right, 1 left are stated); the value 2 is left unmapped in handedness and kept as shared in participants.csv. Table 1 of the paper (sample sizes by grade) was not available as text, so only the cursive z-score counts were checked."
+ ],
+ "sources": [
+  {
+   "file": "UNO_B.xlsx",
+   "url": "https://zenodo.org/api/records/19485897/files/UNO_B.xlsx/content",
+   "bytes": 1503433,
+   "sha256": "1e1575d0bcc4da128471d184a81467253ebf20a102f298900ac0c95970e574ba",
+   "fetched_utc": "2026-11-09T04:30:53Z"
+  },
+  {
+   "file": "UNO_C.xlsx",
+   "url": "https://zenodo.org/api/records/19485897/files/UNO_C.xlsx/content",
+   "bytes": 1460919,
+   "sha256": "b53d86e2bd81943959d23a6776b2af3f4ab862333c75e1612a550cf534f3475b",
+   "fetched_utc": "2026-11-09T04:31:01Z"
+  },
+  {
+   "file": "NUM_B.xlsx",
+   "url": "https://zenodo.org/api/records/19485897/files/NUM_B.xlsx/content",
+   "bytes": 1510764,
+   "sha256": "1adc91377185753c265e1f5c2123737bce6f0160f54e50a91e8d6d124260d675",
+   "fetched_utc": "2026-11-09T04:31:10Z"
+  },
+  {
+   "file": "NUM_C.xlsx",
+   "url": "https://zenodo.org/api/records/19485897/files/NUM_C.xlsx/content",
+   "bytes": 1453946,
+   "sha256": "0c8468c49e3be0daac9a3e8857794b42247675743a00b9d5151fd85ae11af0ec",
+   "fetched_utc": "2026-11-09T04:31:22Z"
+  },
+  {
+   "file": "indicators_description.docx",
+   "url": "https://zenodo.org/api/records/19485897/files/indicators_description.docx/content",
+   "bytes": 32646,
+   "sha256": "28c9402de4a830ab713ad287240b096dac34602b48e05f7adefa234e135484df",
+   "fetched_utc": "2026-11-09T04:31:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Toffoli2026_PLOSDigitHealth.zip"
+}

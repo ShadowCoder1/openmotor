@@ -1,0 +1,7 @@
+{
+ "id": "Sivakumar2024_emg2qwerty",
+ "skipped": true,
+ "reason": "too large",
+ "details": "The only download is one 308 GB tar.gz (fb-ctrl-oss S3, 1,135 HDF5 session files with 16-channel sEMG); the keylogger labels cannot be fetched separately. Also: the repo LICENSE file is CC BY-NC-SA 4.0 (README says CC-BY-NC-4.0); the paper is NeurIPS 2024 Datasets and Benchmarks, not just arXiv.",
+ "sources": []
+}

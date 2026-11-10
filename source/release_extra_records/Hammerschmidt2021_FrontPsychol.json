@@ -1,0 +1,218 @@
+{
+ "id": "Hammerschmidt2021_FrontPsychol",
+ "module": "tapping",
+ "rows": 151415,
+ "subjects": 5966,
+ "persons": 5966,
+ "zip_bytes": 1619090,
+ "zip_sha256": "9e274d26485eede2d90e7511a408e1819fc4201fed740a2cde83a6b8f8dc4b44",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw_data.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cleaned_data.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "three trailing rows of the raw file are empty ('undefined' in every field) and are not converted",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subj_no is unique in the raw file and the cleaned file is a subset of it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participations in the raw data",
+   "computed": 5966.0,
+   "reported": 5966.0,
+   "tol": 0,
+   "source": "Participants section (N = 5,966 took part)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the analysed sample",
+   "computed": 3576.0,
+   "reported": 3576.0,
+   "tol": 0,
+   "source": "Participants section (3,986 -> 3,704 first participations -> 3,703 -> 3,577 -> 3,576)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the first-participation step",
+   "computed": 3704.0,
+   "reported": 3704.0,
+   "tol": 0,
+   "source": "Participants section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants after the age-outlier step",
+   "computed": 3577.0,
+   "reported": 3577.0,
+   "tol": 0,
+   "source": "Participants section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with complete questionnaire data (cleaned file)",
+   "computed": 3986.0,
+   "reported": 3986.0,
+   "tol": 0,
+   "source": "Participants section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean SMT (mean inter-tap interval, ms) in the analysed sample",
+   "computed": 780.3557792897808,
+   "reported": 780.0,
+   "tol": 0.5,
+   "source": "Results (SMT descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of SMT (ms)",
+   "computed": 327.6580742157948,
+   "reported": 328.0,
+   "tol": 0.5,
+   "source": "Results (SMT descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median SMT (ms)",
+   "computed": 729.05,
+   "reported": 729.0,
+   "tol": 0.5,
+   "source": "Results (SMT descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest SMT (ms)",
+   "computed": 123.2520325203252,
+   "reported": 123.0,
+   "tol": 0.5,
+   "source": "Results (SMT descriptives, range 123-2150 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "slowest SMT (ms)",
+   "computed": 2150.0,
+   "reported": 2150.0,
+   "tol": 0.5,
+   "source": "Results (SMT descriptives, range 123-2150 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years) of the analysed sample",
+   "computed": 27.64513422818792,
+   "reported": 27.64,
+   "tol": 0.01,
+   "source": "Participants section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 7.608693506580656,
+   "reported": 7.61,
+   "tol": 0.01,
+   "source": "Participants section",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest and oldest age",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0,
+   "source": "Participants section (age 7-49)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman correlation of SMT with age",
+   "computed": 0.12190351633838528,
+   "reported": 0.12,
+   "tol": 0.006,
+   "source": "Table 2 (rho = 0.12)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' smt_ms (cleaned file) equals the mean of the converted intervals for all 3,986 participations",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "smt_bpm in the raw file = 60000 / mean of the converted intervals (5956 participations with a valid interval)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participation has at least one interval; number of intervals per participation 1-342",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "'undefined' interval entries are kept as rows with an empty iti_ms",
+   "ok": true,
+   "detail": "10 entries"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "variable_list_raw_data.txt",
+   "url": "https://zenodo.org/api/records/4897921/files/variable_list_raw_data.txt/content",
+   "bytes": 4912,
+   "sha256": "c78f1dc2e75438954dfc57cb324271b7952011d3f360c02be9422d4c82cd52e1",
+   "fetched_utc": "2026-11-09T04:01:43Z"
+  },
+  {
+   "file": "variable_list_cleaned_data.txt",
+   "url": "https://zenodo.org/api/records/4897921/files/variable_list_cleaned_data.txt/content",
+   "bytes": 4086,
+   "sha256": "31174b3133ce22f3ca50f48a6350fcab24d5a52cf966e946b9931a6ee3ad4437",
+   "fetched_utc": "2026-11-09T04:01:50Z"
+  },
+  {
+   "file": "cleaned_data.csv",
+   "url": "https://zenodo.org/api/records/4897921/files/cleaned_data.csv/content",
+   "bytes": 379928,
+   "sha256": "30938db16276a384f924457e962bd93719f788f2f709f6eaf49ea3c2b30bc26a",
+   "fetched_utc": "2026-11-09T04:01:56Z"
+  },
+  {
+   "file": "raw_data.csv",
+   "url": "https://zenodo.org/api/records/4897921/files/raw_data.csv/content",
+   "bytes": 2300055,
+   "sha256": "0e4654a7504691a6756598a565a9e219e524df0f020e4513c0b123470ebe3f7f",
+   "fetched_utc": "2026-11-09T04:02:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hammerschmidt2021_FrontPsychol.zip"
+}

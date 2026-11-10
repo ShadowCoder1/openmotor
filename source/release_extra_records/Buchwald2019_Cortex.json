@@ -1,0 +1,263 @@
+{
+ "id": "Buchwald2019_Cortex",
+ "module": "speech",
+ "rows": 66051,
+ "subjects": 80,
+ "persons": 80,
+ "zip_bytes": 1285400,
+ "zip_sha256": "ef1fcb19efb85014f0f4553842b5b0f6e01bde980e6db64a0575766afdbd3551",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the 17 placeholder rows belong to participants who are not in the analysed set and hold no item",
+   "ok": true,
+   "detail": "17 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the other rows are exactly the 80 participants of the practice file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 12,800 practice rows of the authors' withorder file are in the table with the same word, response, codes and group",
+   "ok": true,
+   "detail": "12800 rows matched, 12800 identical"
+  },
+  {
+   "kind": "internal",
+   "what": "every non-placeholder row of alldata_new.csv kept, in the file's order",
+   "ok": true,
+   "detail": "66051 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the practice rows the authors analysed (cluster items, trained) are exactly their 12,800 withorder rows",
+   "ok": true,
+   "detail": "12800 practice cluster rows"
+  },
+  {
+   "kind": "internal",
+   "what": "trial runs 1..n without gaps in each participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 5,439 /gd/ re-scored rows: every one attached to a token except the few that cannot be told apart",
+   "ok": true,
+   "detail": "5437 linked, 2 not"
+  },
+  {
+   "kind": "internal",
+   "what": "re-scored rows only on cluster gd",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "among the eight target clusters, cluster_correct is 1 exactly on the rows coded c as typed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "inserted-vowel durations: 0 for final code c, positive for e, all within 0-101 ms",
+   "ok": true,
+   "detail": "4767 durations"
+  },
+  {
+   "kind": "published",
+   "what": "participants who completed the study",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the smallest of the four stimulation groups",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Participants (20 participants in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the largest of the four stimulation groups",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Participants (20 participants in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "practice productions of cluster nonwords per participant (32 nonwords x 5), mean",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Practice",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "different cluster nonwords practised per participant, mean",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Speech stimuli (4 nonwords per cluster x 8 clusters)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "practice filler items per participant, median",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Practice (62 filler stimuli)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "R1 cluster productions per participant, median",
+   "computed": 192.0,
+   "reported": 192.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Retention (192 total cluster stimuli)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "R1 filler items per participant, median",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Retention (110 filler items)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "R2 cluster productions per participant, median",
+   "computed": 192.0,
+   "reported": 192.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Retention (192 total cluster stimuli)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "R2 filler items per participant, median",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Retention (110 filler items)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epenthesis errors in practice /gd/ tokens, tDCS Before group",
+   "computed": 259.0,
+   "reported": 259.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Results, Epenthesis duration (Before, N=259)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epenthesis errors in practice /gd/ tokens, tDCS During group",
+   "computed": 258.0,
+   "reported": 258.0,
+   "tol": 0,
+   "source": "Buchwald et al. 2019, Cortex, Results, Epenthesis duration (During, N=258)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epenthesis errors in practice /gd/ tokens, both sham groups together",
+   "computed": 486.0,
+   "reported": 485.0,
+   "tol": 1,
+   "source": "Buchwald et al. 2019, Cortex, Results, Epenthesis duration (Sham, N=485)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "two coders agree on whether a practice /gd/ token has an inserted vowel (%)",
+   "computed": 85.6875,
+   "reported": 85.7,
+   "tol": 0.05,
+   "source": "Buchwald et al. 2019, Cortex, Methods, Data analysis (85.7%)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 485 epenthesis errors in the sham groups' practice /gd/ tokens counts only final codes typed exactly e; one token's final code is typed with trailing spaces (e plus spaces), which the authors' code does not count and the cleaned code does, so 486 here (Before 259 and During 258 agree).",
+  "The paper's 85.7% agreement between the two coders on whether a /gd/ token has an inserted vowel reproduces on the 1,600 practice /gd/ tokens (85.69%); over all 5,439 re-scored /gd/ tokens it is 84.4%.",
+  "27 cluster codes are typed with white space (c plus a space); the authors' cluster_correct is 0 on 27 of them, so those tokens are coded correct but scored incorrect in the shared file (kept as shared).",
+  "2 of the 5,439 re-scored /gd/ rows could not be attached to a single token (two tokens of the same recording session with the same word and code) and are not in the table; the authors' R scripts name two files (alldata_new_withorder_new.csv, gd_new_compquint.csv) that are not in the deposit, so the retention analyses of the paper could not be recomputed."
+ ],
+ "sources": [
+  {
+   "file": "alldata_new.csv",
+   "url": "https://osf.io/download/q76xn/",
+   "bytes": 3592201,
+   "sha256": "8170f4ee9e0741752c3ad513f03cda8f15cd505db476d993e7580947de9b5549",
+   "fetched_utc": "2026-11-08T22:00:11Z"
+  },
+  {
+   "file": "all_gd_data.csv",
+   "url": "https://osf.io/download/wyp4f/",
+   "bytes": 659120,
+   "sha256": "6ff672eae305fb98bfb840c422aac1d690cc497002789a97fe09826e8dac6b9e",
+   "fetched_utc": "2026-11-08T22:00:14Z"
+  },
+  {
+   "file": "alldata_new_withorder.csv",
+   "url": "https://osf.io/download/w6spd/",
+   "bytes": 807862,
+   "sha256": "420fbe17cae7dbf6616f3c46024150b9c50844640030a1278a6cd3f3bb6eaa9b",
+   "fetched_utc": "2026-11-08T22:00:18Z"
+  },
+  {
+   "file": "gd_practice.csv",
+   "url": "https://osf.io/download/fcs78/",
+   "bytes": 197437,
+   "sha256": "1beabd512d1a077afbd8dbd5a29f98f64aacfe03c79b81750d9245c8ad4553ef",
+   "fetched_utc": "2026-11-08T22:00:20Z"
+  },
+  {
+   "file": "osf_accuracy_practice.R",
+   "url": "https://osf.io/download/p98wt/",
+   "bytes": 3463,
+   "sha256": "d8836000be018e2c2c8bf2b2cbd2e337cbfb665589e98c4335af0a695d50abef",
+   "fetched_utc": "2026-11-08T22:00:24Z"
+  },
+  {
+   "file": "osf_durationchanges_practice.R",
+   "url": "https://osf.io/download/v2hz6/",
+   "bytes": 2150,
+   "sha256": "9c520bc5d097694890bf74aab0976cd9bbc0f6955940ccb233bef71a5d3e9a70",
+   "fetched_utc": "2026-11-08T22:00:26Z"
+  },
+  {
+   "file": "osf_accuracy_practice_vs_retention.R",
+   "url": "https://osf.io/download/4shfj/",
+   "bytes": 7341,
+   "sha256": "7e5c1df248c02f9e9bdcfe6e757c05581ef824b8e1aab603ac6d30e16cf46e2b",
+   "fetched_utc": "2026-11-08T22:00:29Z"
+  },
+  {
+   "file": "osf_durationchanges_practice_vs_retention.R",
+   "url": "https://osf.io/download/qk8jd/",
+   "bytes": 3162,
+   "sha256": "3820ed2623c34da11aaf7133c5fcb2f20bce9c9091530c78d35ee2cfffe5b277",
+   "fetched_utc": "2026-11-08T22:00:33Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Buchwald2019_Cortex.zip"
+}

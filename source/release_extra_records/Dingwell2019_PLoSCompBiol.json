@@ -1,0 +1,106 @@
+{
+ "id": "Dingwell2019_PLoSCompBiol",
+ "module": "walking",
+ "rows": 91350,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 2725740,
+ "zip_sha256": "ab94ef4b513082edc4298f2ad35a59b0249e1dfa89fb8e7c8cf579af2373f78e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "13 able-bodied and 8 transtibial participants (README)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "15 trials per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in the five step columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "step width = zR - zL (README: w is step width)",
+   "ok": true,
+   "detail": "max |diff| 5.00e-08"
+  },
+  {
+   "kind": "published",
+   "what": "able-bodied participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "able-bodied NOP trials (13 x 5 = 65)",
+   "computed": 65.0,
+   "reported": 65.0,
+   "tol": 0,
+   "source": "Fig 2 caption: 65 total trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "steps per NOP trial analysed (first 290 steps) - fewest steps in a trial at least 290",
+   "computed": 290.0,
+   "reported": 290.0,
+   "tol": 0,
+   "source": "Methods: first 290 consecutive steps of each trial",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill half-width (all foot positions inside +-0.885 m)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Fig 5 caption: lateral boundary +-0.885 m (1.77 m treadmill)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analysed only the first 290 steps of the 13 able-bodied participants' no-perturbation trials. Every trial in the deposit holds exactly those 290 steps. The rows here keep every row the authors shared, which includes the perturbed trials and the 8 participants with a transtibial amputation (README: 10 TT files named TT01-TT10, 8 present, numbering not consecutive)."
+ ],
+ "sources": [
+  {
+   "file": "README_for_Able_Bodied_CSV_Files.txt",
+   "url": "https://zenodo.org/records/4937771/files/README_for_Able_Bodied_CSV_Files.txt?download=1",
+   "bytes": 4069,
+   "sha256": "fc733c730abf1d250277c67c2e73db2bb99532c51b148f314e2c28867212dc21",
+   "fetched_utc": "2026-11-09T02:19:35Z"
+  },
+  {
+   "file": "README_for_Trans_Tibial_Amputees_CSV_Files.txt",
+   "url": "https://zenodo.org/records/4937771/files/README_for_Trans_Tibial_Amputees_CSV_Files.txt?download=1",
+   "bytes": 4069,
+   "sha256": "fc733c730abf1d250277c67c2e73db2bb99532c51b148f314e2c28867212dc21",
+   "fetched_utc": "2026-11-09T02:19:40Z"
+  },
+  {
+   "file": "Able_Bodied_CSV_Files.zip",
+   "url": "https://zenodo.org/records/4937771/files/Able_Bodied_CSV_Files.zip?download=1",
+   "bytes": 1339320,
+   "sha256": "4c349b190422bbf26117a3082f0c6d6fc085b78564fc1145286e7c3a359d6d5e",
+   "fetched_utc": "2026-11-09T02:19:45Z"
+  },
+  {
+   "file": "Trans_Tibial_Amputees_CSV_Files.zip",
+   "url": "https://zenodo.org/records/4937771/files/Trans_Tibial_Amputees_CSV_Files.zip?download=1",
+   "bytes": 826001,
+   "sha256": "1c4dd9bd97b92e7e2a75483d9e3072723515b21c2eb8a0249372acbb163d9f8b",
+   "fetched_utc": "2026-11-09T02:19:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Dingwell2019_PLoSCompBiol.zip"
+}

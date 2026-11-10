@@ -1,0 +1,7 @@
+{
+ "id": "Kim_variability_OSF2026",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "OSF project has only per-subject MATLAB/CSV outcome tables (packed per-trial F1/F2 cents vectors for three words plus UCM variability measures) with no readme, no license, no located paper; the perturbation size/direction, trial schedule (baseline/ramp/hold), reference for cents and the meaning of nonadapter/selected-epoch are not stated anywhere in the deposit.",
+ "sources": []
+}

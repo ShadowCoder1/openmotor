@@ -1,0 +1,188 @@
+{
+ "id": "Mathew2021_eNeuro",
+ "module": "reach90",
+ "rows": 6640,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 272464,
+ "zip_sha256": "386f434f8577aeb16bbd49290f1170954a9277872d8d25b450a506b15fc88d4f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "16 sequences x 415 reaches = 6640 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angles within (-90, 90)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "missing reach rows are only those with every measure empty",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants (two groups of 8)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants ('sixteen')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 415.0,
+   "reported": 415.0,
+   "tol": 0,
+   "source": "Methods, Task (15 + 180 + 40 + 180 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial reach angle G1, first adaptation trial (deg)",
+   "computed": 20.899955123688528,
+   "reported": 20.9,
+   "tol": 0.1,
+   "source": "Results, initial reach angle",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial reach angle G1, first readaptation trial (deg)",
+   "computed": 19.248728477468074,
+   "reported": 19.2,
+   "tol": 0.1,
+   "source": "Results, initial reach angle",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial reach angle G2, first adaptation trial (deg)",
+   "computed": -11.53863869407183,
+   "reported": -11.47,
+   "tol": 0.1,
+   "source": "Results, initial reach angle",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "initial reach angle G2, first readaptation trial (deg)",
+   "computed": -11.47845811312454,
+   "reported": -11.5,
+   "tol": 0.1,
+   "source": "Results, initial reach angle",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "path length, first adaptation trial, both groups (cm)",
+   "computed": 31.85714882131717,
+   "reported": 31.8,
+   "tol": 0.15,
+   "source": "Results, first trial of adaptation vs readaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "path length, first readaptation trial, both groups (cm)",
+   "computed": 25.23811449897371,
+   "reported": 25.2,
+   "tol": 0.15,
+   "source": "Results, first trial of adaptation vs readaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum lateral deviation, first adaptation trial (cm)",
+   "computed": 7.963766135799233,
+   "reported": 7.9,
+   "tol": 0.1,
+   "source": "Results (authors' script: sign flipped for G1, minus 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum lateral deviation, first readaptation trial (cm)",
+   "computed": 6.36419875518186,
+   "reported": 6.3,
+   "tol": 0.1,
+   "source": "Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lateral target overshoot, first adaptation trial (cm)",
+   "computed": 2.182162131066434,
+   "reported": 2.18,
+   "tol": 0.02,
+   "source": "Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lateral target overshoot, first readaptation trial (cm)",
+   "computed": 0.6726960651576519,
+   "reported": 0.67,
+   "tol": 0.02,
+   "source": "Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "peak terminal force, first adaptation trial (N)",
+   "computed": 2.672732157223734,
+   "reported": 2.67,
+   "tol": 0.02,
+   "source": "Results (stored value times -1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "peak terminal force, first readaptation trial (N)",
+   "computed": 1.5811966641183668,
+   "reported": 1.58,
+   "tol": 0.02,
+   "source": "Results (stored value times -1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force correlation (squared), first adaptation trial",
+   "computed": 0.4235422233056465,
+   "reported": 0.42,
+   "tol": 0.01,
+   "source": "Results (R squared)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force correlation (squared), first readaptation trial",
+   "computed": 0.6043373100229242,
+   "reported": 0.6,
+   "tol": 0.01,
+   "source": "Results (R squared)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' stored x-deviation and overshoot values include an offset of 5 (their scripts subtract it); the raw numbers are kept in trial_measures.csv.",
+  "Hand paths, EMG and force traces in the deposit (first and last trials of each block, 8 people per group) are not converted; they are not trial-by-trial."
+ ],
+ "sources": [
+  {
+   "file": "PublicationData_v3.zip",
+   "url": "https://zenodo.org/records/4570064/files/PublicationData_v3.zip?download=1",
+   "bytes": 5114518,
+   "sha256": "de4f858727976557ca36e39c216331ef15d51087688a527ef0729aaf33c89b66",
+   "fetched_utc": "2026-11-09T07:18:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mathew2021_eNeuro.zip"
+}

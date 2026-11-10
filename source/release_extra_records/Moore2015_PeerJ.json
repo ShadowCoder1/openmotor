@@ -1,0 +1,167 @@
+{
+ "id": "Moore2015_PeerJ",
+ "module": "timeseries",
+ "rows": 46,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 464368390,
+ "zip_sha256": "98417f19c1f5f3e6d74bfca20171ee64fae1bf22436c8c2e4c9485842dd19bb5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean (years)",
+   "computed": 24.133333333333333,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Participants (printed as 24 +/- 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD (years)",
+   "computed": 4.015446366695678,
+   "reported": 4.0,
+   "tol": 0.5,
+   "source": "Participants (printed as 24 +/- 4)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height mean (m)",
+   "computed": 1.7522666666666666,
+   "reported": 1.75,
+   "tol": 0.005,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height SD (m)",
+   "computed": 0.09084796299836546,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass mean (kg)",
+   "computed": 74.08393333333333,
+   "reported": 74.0,
+   "tol": 0.5,
+   "source": "Participants (printed as 74 +/- 13)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mass SD (kg)",
+   "computed": 13.141819641710129,
+   "reported": 13.0,
+   "tol": 0.5,
+   "source": "Participants (printed as 74 +/- 13)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials assigned to a participant in Table 1",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Table 1 (trial numbers per subject and speed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials at 0.8 m/s in Table 1",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials at 1.2 m/s in Table 1",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials at 1.6 m/s in Table 1",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has the 6 protocol events or the pilot variant",
+   "ok": true,
+   "detail": "[6, 7, 8, 9, 10, 11]"
+  },
+  {
+   "kind": "internal",
+   "what": "belt file read for every trial that has a record file",
+   "ok": true,
+   "detail": "[(6, 0), (7, 0), (8, 0), (9, 0), (10, 0), (11, 0)]"
+  },
+  {
+   "kind": "internal",
+   "what": "frame rate near 100 Hz",
+   "ok": true,
+   "detail": "[(14, 90.62)]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Some trials have no protocol events in the record file (listed by an empty events cell), trials 3-5 have no record file (so no belts file), and a few trials have a frame rate below 100 Hz (frames dropped; time_s is the system TimeStamp, not frame number / 100). In trials 49-51 three of the five markers were not found in the file (trial_info markers_not_found); their columns are empty."
+ ],
+ "sources": [
+  {
+   "file": "perturbed-walking-data-01.tar.gz",
+   "url": "https://zenodo.org/api/records/13030/files/perturbed-walking-data-01.tar.gz/content",
+   "bytes": 1280265598,
+   "sha256": "7216aff6ac2d0afeb44cf92757a671b9de9b53502264d9f2169a5d90be451c81",
+   "fetched_utc": "2026-11-09T21:45:50Z"
+  },
+  {
+   "file": "perturbed-walking-data-02.tar.gz",
+   "url": "https://zenodo.org/api/records/13030/files/perturbed-walking-data-02.tar.gz/content",
+   "bytes": 1164726616,
+   "sha256": "1b0de3579522293419ca4d5e6455f15e624b5743a9c23e43b110ffdabab509fb",
+   "fetched_utc": "2026-11-09T21:50:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Moore2015_PeerJ.zip"
+}

@@ -1,0 +1,500 @@
+{
+ "id": "Crouch2021_KTsEMG",
+ "module": "keypress",
+ "rows": 150813,
+ "subjects": 1,
+ "persons": 1,
+ "zip_bytes": 2294160,
+ "zip_sha256": "4f8118c080dceaa7a4f15c58bad9651a3d5de74f09ddae32b3e7716bebe7ac7e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all 29 key logs match their downloaded hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "timestamps never run backward within a run",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every key is one character or a known control key",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "kind": "internal",
+   "what": "no @ sign and no run of 5 or more digits in the typed keys (no e-mail address or number typed)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every key press kept, in run order",
+   "ok": true,
+   "detail": "150813"
+  },
+  {
+   "kind": "published",
+   "what": "key presses of the 32 characters (Table I: 148,739; the paper also drops 27 blocks, hence a small excess here)",
+   "computed": 148774.0,
+   "reported": 148739.0,
+   "tol": 60,
+   "source": "Table I, Keystrokes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recorded duration in seconds (Table I: 29,565 s of EMG; here first to last key press of each run, summed)",
+   "computed": 29710.72478914261,
+   "reported": 29565.0,
+   "tol": 250,
+   "source": "Table I, Duration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "key presses per second",
+   "computed": 5.007417390718367,
+   "reported": 5.03,
+   "tol": 0.05,
+   "source": "Table I, Keystroke / s",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average words per minute (key presses / 5 per word)",
+   "computed": 60.08900868862041,
+   "reported": 60.37,
+   "tol": 0.6,
+   "source": "Table I, Average WPM",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of 32-character classes seen",
+   "computed": 33.0,
+   "reported": 32.0,
+   "tol": 1,
+   "source": "Table I, Characters",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit holds 29 runs and 150,813 logged key presses; 148,774 of them are among the paper's 32 characters, 35 more than Table I (148,739): the paper kept only its 32 characters (letters a-z, space, period, comma, enter, backspace, apostrophe) and dropped blocks with other keys; all logged keys are kept here, including 2,039 presses of capital letters, digits and rare symbols.",
+  "The paper describes 20 sessions of 30 minutes; the deposit has 29 runs of different lengths (65 s to 2,163 s between first and last key)."
+ ],
+ "sources": [
+  {
+   "file": "run10_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204642",
+   "bytes": 77006,
+   "sha256": "8d26411acdbf90266f08c730d61468f1593997c4059e1ed26534bd004b044350",
+   "fetched_utc": "2026-11-08T23:57:13Z"
+  },
+  {
+   "file": "run10_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204610",
+   "bytes": 24,
+   "sha256": "24105fc5630a00426d8fa73a48843cbe2ead926809b6d0efb06dded3e69f2973",
+   "fetched_utc": "2026-11-08T23:57:25Z"
+  },
+  {
+   "file": "run11_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204644",
+   "bytes": 96590,
+   "sha256": "2ce3127dd29abc5c413f9431803aafe584c01bb773ecc58ea4711b40ee7e2274",
+   "fetched_utc": "2026-11-08T23:58:32Z"
+  },
+  {
+   "file": "run12_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204629",
+   "bytes": 230925,
+   "sha256": "5669ae178d930a4a0ffd31a57be6a5230e9225ffe7e853cf411cd84c6f0f4e53",
+   "fetched_utc": "2026-11-08T23:58:37Z"
+  },
+  {
+   "file": "run13_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204625",
+   "bytes": 68588,
+   "sha256": "90287946aa8d7a5468d77c66465f782d8a687cd672f79c6eeaba5fe75457f54e",
+   "fetched_utc": "2026-11-08T23:58:42Z"
+  },
+  {
+   "file": "run14_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204633",
+   "bytes": 97668,
+   "sha256": "6c452eb2261bdb24d4e71152c10624010b6c54ca8385244ebf9e71a1f6348598",
+   "fetched_utc": "2026-11-08T23:58:47Z"
+  },
+  {
+   "file": "run14_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204637",
+   "bytes": 24,
+   "sha256": "b57e3c3267e8bb313941e7af5f1a05ce5bc159185f6bf076756884877843d8ef",
+   "fetched_utc": "2026-11-08T23:58:49Z"
+  },
+  {
+   "file": "run16_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204630",
+   "bytes": 121813,
+   "sha256": "d633d284fc10a7b5752bb4852d56bce701dd87cfd1a23ff822e0d743e29ea332",
+   "fetched_utc": "2026-11-08T23:58:55Z"
+  },
+  {
+   "file": "run16_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204639",
+   "bytes": 24,
+   "sha256": "95d8627ed6c4bd8237e1d0262d9697e2da0bb27bd8bf508189d3a3f95756bee9",
+   "fetched_utc": "2026-11-08T23:58:57Z"
+  },
+  {
+   "file": "run17_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204624",
+   "bytes": 212478,
+   "sha256": "b5586e40a47c52629b7a1d80b73dc8bfc102b866702a436b5517bc27a2e997d1",
+   "fetched_utc": "2026-11-08T23:58:59Z"
+  },
+  {
+   "file": "run17_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204600",
+   "bytes": 24,
+   "sha256": "2182074c095ff414fb3eb3509899bcfaef7336121e68cd2fab556bfd48a26e05",
+   "fetched_utc": "2026-11-08T23:59:02Z"
+  },
+  {
+   "file": "run18_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204649",
+   "bytes": 236608,
+   "sha256": "40002fb08cf741fcf5e6fe2d04b891cd00aa0a3767a6fc8dfde5a0b9b26aee5b",
+   "fetched_utc": "2026-11-08T23:59:04Z"
+  },
+  {
+   "file": "run18_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204584",
+   "bytes": 24,
+   "sha256": "768a8e309fb32467f86283a0f8ae4a8505ead11fe62f25c320b7c66cc6949287",
+   "fetched_utc": "2026-11-08T23:59:07Z"
+  },
+  {
+   "file": "run19_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204598",
+   "bytes": 134463,
+   "sha256": "57ed2a89f3c2cdaf51f99a022cf64ddeaf66517d6a8ee192985b45932962a5c6",
+   "fetched_utc": "2026-11-08T23:59:19Z"
+  },
+  {
+   "file": "run19_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204648",
+   "bytes": 24,
+   "sha256": "7bb452bf9dc8247c9701dd92441c9d5e95173909c069f8d757da7d42358e1b9a",
+   "fetched_utc": "2026-11-08T23:59:21Z"
+  },
+  {
+   "file": "run1_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204575",
+   "bytes": 54126,
+   "sha256": "fce0be2842e351d72dca5796784dd6e9bf118c6defcd95b114d3a145dce5f144",
+   "fetched_utc": "2026-11-08T23:59:23Z"
+  },
+  {
+   "file": "run1_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204650",
+   "bytes": 24,
+   "sha256": "ab2955e5cedc1da00c5b0ca8f8a252185e85c73b08cb359fc7c19ee232a3c9d1",
+   "fetched_utc": "2026-11-08T23:59:26Z"
+  },
+  {
+   "file": "run20_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204643",
+   "bytes": 165057,
+   "sha256": "feed6a4c0af9744a5c5c01738b0a6c3eba8ee3c6148e2c25615a46aa9bc015fc",
+   "fetched_utc": "2026-11-08T23:59:29Z"
+  },
+  {
+   "file": "run21_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204593",
+   "bytes": 183363,
+   "sha256": "107c913ac74e6b45eec8821bccf95d4b3fa1248dfde085f2e82247ef2c18a044",
+   "fetched_utc": "2026-11-08T23:59:33Z"
+  },
+  {
+   "file": "run22_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204604",
+   "bytes": 167193,
+   "sha256": "652e02a0d6aac0f1ac5cc34bec4a8c464e825511f234d34a6575577411a7562a",
+   "fetched_utc": "2026-11-08T23:59:37Z"
+  },
+  {
+   "file": "run23_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204596",
+   "bytes": 151973,
+   "sha256": "43e70baafd875e6950ad006bd971ef53448a4ed723aa849365adb4b0b93d3c1d",
+   "fetched_utc": "2026-11-08T23:59:41Z"
+  },
+  {
+   "file": "run23_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204592",
+   "bytes": 24,
+   "sha256": "f9ca3ed97aeb7e9812bc940bfd6a5761600a25bd9811435898d8f485d00eec87",
+   "fetched_utc": "2026-11-08T23:59:43Z"
+  },
+  {
+   "file": "run26_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204615",
+   "bytes": 2322,
+   "sha256": "63740279d69f436bcbf738cfc310f23f4ed96d24d5d3847be44c42e9ad23d079",
+   "fetched_utc": "2026-11-08T23:59:56Z"
+  },
+  {
+   "file": "run26_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204611",
+   "bytes": 24,
+   "sha256": "977eca0844c5217f0d089f516fba97ae139ca012af8bde507e452e03b8945750",
+   "fetched_utc": "2026-11-08T23:59:58Z"
+  },
+  {
+   "file": "run27_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204620",
+   "bytes": 5001,
+   "sha256": "0eb0d71604004aa278cb401449bb5b1196ef827ab0c833b91753e17270921fee",
+   "fetched_utc": "2026-11-09T00:00:01Z"
+  },
+  {
+   "file": "run28_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204579",
+   "bytes": 17586,
+   "sha256": "1d34b5b773b4262a944b8c4b3a47e7c5962b6311ca7937d11cfd060067475dd0",
+   "fetched_utc": "2026-11-09T00:00:05Z"
+  },
+  {
+   "file": "run29_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204607",
+   "bytes": 63312,
+   "sha256": "db7c005ace5515795a21e05f18cdd7fb9505db897e506f648947c7beb52c9cf7",
+   "fetched_utc": "2026-11-09T00:00:10Z"
+  },
+  {
+   "file": "run29_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204568",
+   "bytes": 24,
+   "sha256": "eebe03ea0f4e601a8882a051c0624036e24ba76d3126113572b5fe03aba1c822",
+   "fetched_utc": "2026-11-09T00:00:12Z"
+  },
+  {
+   "file": "run2_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204578",
+   "bytes": 5905,
+   "sha256": "5f4c28644e7e1d51933a0b9c6a7e5efb4760d0016f0cf0967fdf615f9807c76d",
+   "fetched_utc": "2026-11-09T00:00:15Z"
+  },
+  {
+   "file": "run5_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204631",
+   "bytes": 99603,
+   "sha256": "894aee79a2fb092d755d004ba14cbfd1437b0f12432473b92c6fd960c24603a4",
+   "fetched_utc": "2026-11-09T00:00:41Z"
+  },
+  {
+   "file": "run5_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204609",
+   "bytes": 24,
+   "sha256": "7bd4ceeeb172873ee9eeef93d11af047bc756b7f7de3bc0fe4ae92180e8fdaba",
+   "fetched_utc": "2026-11-09T00:00:44Z"
+  },
+  {
+   "file": "run6_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204605",
+   "bytes": 24,
+   "sha256": "b197fc014df50ad78adc89af4bc3e678c1bc5279c0a46e24f66a2da6ac54512d",
+   "fetched_utc": "2026-11-09T00:00:49Z"
+  },
+  {
+   "file": "run8_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204636",
+   "bytes": 80382,
+   "sha256": "61a0ba5fad81371fa6ed31034140ab45ad3474f7edaa6d670745b0be5a1e1371",
+   "fetched_utc": "2026-11-09T00:00:55Z"
+  },
+  {
+   "file": "run9_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204621",
+   "bytes": 24,
+   "sha256": "3e1602d80bb4cd54813df4f36146b3ef42192b0ee57f6c51238aca45458ac435",
+   "fetched_utc": "2026-11-09T00:01:01Z"
+  },
+  {
+   "file": "run15_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204589",
+   "bytes": 128217,
+   "sha256": "c4c0ad27c158fdb55e4cdba53f1b8eaf03218b5cb0facc7f95177ef6bd481886",
+   "fetched_utc": "2026-11-09T00:01:15Z"
+  },
+  {
+   "file": "run21_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204622",
+   "bytes": 24,
+   "sha256": "0de1bc290fb3287aa8158598f71d39e2d3b82d4b322c072a32ca8689df905dfd",
+   "fetched_utc": "2026-11-09T00:01:21Z"
+  },
+  {
+   "file": "run24_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204567",
+   "bytes": 250204,
+   "sha256": "4c2ff6d98510669ed17f7c33f24cb6f9c3ccbdd718732881022dd0db626588da",
+   "fetched_utc": "2026-11-09T00:01:25Z"
+  },
+  {
+   "file": "run24_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204569",
+   "bytes": 24,
+   "sha256": "3d853db9e37735aa3a2f79bcdfa89d45066c4ec24c9bb4a65d0473e8489258c9",
+   "fetched_utc": "2026-11-09T00:01:29Z"
+  },
+  {
+   "file": "run25_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204581",
+   "bytes": 24,
+   "sha256": "88eb95b13f7669f07dc6970f8036ce4f0328c13896d00a6f9e1435ca270557c9",
+   "fetched_utc": "2026-11-09T00:01:33Z"
+  },
+  {
+   "file": "run27_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204617",
+   "bytes": 24,
+   "sha256": "71ce64cc8aa9fc2cf12eaff52f6b3125de53a35a7f448ad7a6a0c347f14481b0",
+   "fetched_utc": "2026-11-09T00:01:36Z"
+  },
+  {
+   "file": "run2_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204583",
+   "bytes": 24,
+   "sha256": "3401e9903d109d88179cb39f315254d882d35541b0c0db8317734784bdc05a89",
+   "fetched_utc": "2026-11-09T00:01:40Z"
+  },
+  {
+   "file": "run4_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204647",
+   "bytes": 28627,
+   "sha256": "0f103040c9eaacef76ac1a12687320cdc86f89ff2f622e1af0f160536413533a",
+   "fetched_utc": "2026-11-09T00:01:46Z"
+  },
+  {
+   "file": "run6_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204570",
+   "bytes": 85527,
+   "sha256": "af766ba29ce3f8c55c493955c42fba837671a000c0e253fc814f67687cef5bf9",
+   "fetched_utc": "2026-11-09T00:01:51Z"
+  },
+  {
+   "file": "run11_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204627",
+   "bytes": 24,
+   "sha256": "77e7cfce0bfaf982c3a57d101e06131b0cff63f289f1e0f68bcafc503b661748",
+   "fetched_utc": "2026-11-09T00:02:01Z"
+  },
+  {
+   "file": "run15_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204572",
+   "bytes": 24,
+   "sha256": "1983706a93471f81069af80e398b9a2de5200a7cabf7f82446fa6405711181b2",
+   "fetched_utc": "2026-11-09T00:02:08Z"
+  },
+  {
+   "file": "run20_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204634",
+   "bytes": 24,
+   "sha256": "55d64fc1c82ac95c8a82825f9358b438db581bef5bfc2812e58e939ed05c9ade",
+   "fetched_utc": "2026-11-09T00:02:10Z"
+  },
+  {
+   "file": "run25_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204640",
+   "bytes": 289850,
+   "sha256": "3edad98002c242ad7d969b362a82ee108d6e54da482712c601656f2463de86da",
+   "fetched_utc": "2026-11-09T00:02:14Z"
+  },
+  {
+   "file": "run28_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204576",
+   "bytes": 24,
+   "sha256": "efa17354a205df6d08f72cce2dcb30fddd2ca647262fd316b60313bc050cc05f",
+   "fetched_utc": "2026-11-09T00:02:16Z"
+  },
+  {
+   "file": "run3_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204564",
+   "bytes": 4932,
+   "sha256": "de0d038cd8fcb703528997faa0255b1974abe5755e1566c77bc16b31ca9f7de5",
+   "fetched_utc": "2026-11-09T00:02:19Z"
+  },
+  {
+   "file": "run4_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204586",
+   "bytes": 24,
+   "sha256": "5c9844690b8b251b9ca285dab6eceb5b71595af83cd41bef4b3844d8ed01729c",
+   "fetched_utc": "2026-11-09T00:02:23Z"
+  },
+  {
+   "file": "run7_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204613",
+   "bytes": 89130,
+   "sha256": "98f9b7942b088c7ab261b1b14e9d824b402d3c151f0a7ace32d9a21cd238f0f2",
+   "fetched_utc": "2026-11-09T00:02:25Z"
+  },
+  {
+   "file": "run8_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204628",
+   "bytes": 24,
+   "sha256": "4a277d89a0239dee9838a9fdc7ed10023f2d580087d1c4cea026b073e1fcf0e3",
+   "fetched_utc": "2026-11-09T00:02:42Z"
+  },
+  {
+   "file": "run9_keys.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204566",
+   "bytes": 129811,
+   "sha256": "25bd97d64bf29cafe2c12f709bd657523ce4bacfa01b71b7f641bb6714670c69",
+   "fetched_utc": "2026-11-09T00:02:44Z"
+  },
+  {
+   "file": "run13_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204587",
+   "bytes": 24,
+   "sha256": "10d913ad640e7cd9234642906502c70bdb63a9d824fac6d483b10df051f60ce0",
+   "fetched_utc": "2026-11-09T00:02:48Z"
+  },
+  {
+   "file": "run3_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204601",
+   "bytes": 24,
+   "sha256": "ea6155c524d5678ea182a3573bd642eb3d5efa53ef640cb1bc894921a18c4f39",
+   "fetched_utc": "2026-11-09T00:02:53Z"
+  },
+  {
+   "file": "run7_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204588",
+   "bytes": 24,
+   "sha256": "848107783640b6358181aa83a9c09b934ed6082d2575500b4fe032d01fb3ec37",
+   "fetched_utc": "2026-11-09T00:02:55Z"
+  },
+  {
+   "file": "run22_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204580",
+   "bytes": 24,
+   "sha256": "2023fec5eb5e7f3e0d6941713b1ae551345357a236cce94756ef01e2ad431770",
+   "fetched_utc": "2026-11-09T00:02:59Z"
+  },
+  {
+   "file": "run12_ts.txt",
+   "url": "https://dataverse.harvard.edu/api/access/datafile/5204602",
+   "bytes": 24,
+   "sha256": "7657a0b0cafa3f92662b0d93c84e6ff10ffad2981156db4d45373243b13f3b95",
+   "fetched_utc": "2026-11-09T00:03:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Crouch2021_KTsEMG.zip"
+}

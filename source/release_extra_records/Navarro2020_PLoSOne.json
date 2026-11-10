@@ -1,0 +1,100 @@
+{
+ "id": "Navarro2020_PLoSOne",
+ "module": "timeseries",
+ "rows": 72,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 86602665,
+ "zip_sha256": "74967906166ab7ac14f2b9a8d3eacfaf5e8c0f4a2c13b7792e012c8ebd67c3cf",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "2.1 Participants (eighteen participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "drives per participant (regular and automated)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "2.3 Procedure (two drives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "eye-tracker sample rate (Hz)",
+   "computed": 50.037528146202625,
+   "reported": 50.0,
+   "tol": 0.5,
+   "source": "2.2.2 Eye movement tracker (50 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "4 rows per participant, 72 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row has a samples file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sync offsets found for 36 drives",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the steering signal was originally sampled at 60 Hz; the simulator logs have a median interval of about 17 ms (58.8 Hz, intervals alternate between 16 and 17 ms) and an average rate of about 60 Hz, so this was not used as a check. sample_rate_hz is the average rate (samples per second of recording).",
+  "The paper's correlation and lag results rely on preprocessing (outlier removal, normalisation, saccade removal) not available in the deposit, so only the design numbers (participants, drives, sample rates) are checked.",
+  "The paper says the track is 2650 m; the simulator logs cover a longer drive (about 16.7 km of positions in about 16 to 18 minutes), so they probably include more road than the ten bends."
+ ],
+ "sources": [
+  {
+   "file": "Sauto_VisuDrive.txt",
+   "url": "https://osf.io/download/z3v2b/",
+   "bytes": 15194066,
+   "sha256": "f808085f24464f2d9ab0604ae700239f5caf78ea5257c23c593a75dd92557e3b",
+   "fetched_utc": "2026-11-09T22:34:50Z"
+  },
+  {
+   "file": "sync_data.csv",
+   "url": "https://osf.io/download/vhras/",
+   "bytes": 852,
+   "sha256": "08362b9687b1770c78e53a955bb13283f9bb4680730381369dc9be18a5285a63",
+   "fetched_utc": "2026-11-09T22:34:56Z"
+  },
+  {
+   "file": "readme.txt",
+   "url": "https://osf.io/download/yeztp/",
+   "bytes": 943,
+   "sha256": "a099f3b1a5c506a7224de019fbab44034f45cf4807d8fa4d4cf3da287f647505",
+   "fetched_utc": "2026-11-09T22:35:01Z"
+  },
+  {
+   "file": "subjects.zip",
+   "url": "https://osf.io/download/ywrg5/",
+   "bytes": 60245974,
+   "sha256": "eca01480069e45ed01f0a97ad4304fe6213380319b4573c450845c45862b1302",
+   "fetched_utc": "2026-11-09T22:35:17Z"
+  },
+  {
+   "file": "columns_VisuDrive.csv",
+   "url": "https://osf.io/download/hgbwe/",
+   "bytes": 277,
+   "sha256": "4fdb89af82d76eb4f997af553717d160108d342bcb413233dbcae23bda69b126",
+   "fetched_utc": "2026-11-09T22:35:22Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Navarro2020_PLoSOne.zip"
+}

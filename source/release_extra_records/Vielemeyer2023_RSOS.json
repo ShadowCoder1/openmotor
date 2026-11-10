@@ -1,0 +1,102 @@
+{
+ "id": "Vielemeyer2023_RSOS",
+ "module": "timeseries",
+ "rows": 1102,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 406207014,
+ "zip_sha256": "f4c690fb1a6bc764034850a142a9d17a9c56ceaba8a07f73860fc827e869e44d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each of the 551 trials has a kinematics and a kinetics recording: 1,102 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all kinetics files are 250 Hz and the 4 plates are the same devices in every file",
+   "ok": true,
+   "detail": "{'KMP2', 'KMP1', 'KMP4-Robo', 'KMP3-Jena'}"
+  },
+  {
+   "kind": "internal",
+   "what": "the 16 markers have the same names and order in every kinematics file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods 2.1, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experimental conditions (2 speeds x 2 postures x 2 mass distributions)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate of force plates, Hz",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of force plates",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of markers (toe, malleolus, femoral epicondyle, trochanter, acromion, humeral epicondyle, ulnar styloid on both sides, L5, C7)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods 2.2",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says cameras and force plates ran at 250 Hz; for one participant the kinematics files and the kinetics files state 300 Hz in their headers: the kinematics files of [5] (subject number of the deposit folder; the same participant's force plates also state 300 Hz) state a different rate and are kept with their stated rate. The paper says participants completed 5-10 trials per condition; the deposit holds 2-12 per participant and condition (551 trials in all), probably because it includes the unusable trials the authors did not analyse. All files are kept and none are marked as excluded because the deposit does not say which trials the authors analysed. The paper's analyses (spatio-temporal parameters, virtual pivot point) were not reproduced from the rows; its Table 1 is an image."
+ ],
+ "sources": [
+  {
+   "file": "LOLA.zip",
+   "url": "https://ndownloader.figshare.com/files/39565411",
+   "bytes": 1338822,
+   "sha256": "7c6b223e4f77bc0e456dc77ecc317801eddc4f330371db24cb4e0eff47a3a828",
+   "fetched_utc": "2026-11-09T13:58:49Z"
+  },
+  {
+   "file": "kinetics.zip",
+   "url": "https://ndownloader.figshare.com/files/39414790",
+   "bytes": 621056958,
+   "sha256": "deb5ada696a05e4cc2f81cae638488d1e5d99f79fa04b3bda14e2f1184748451",
+   "fetched_utc": "2026-11-09T13:59:14Z"
+  },
+  {
+   "file": "kinematics.zip",
+   "url": "https://ndownloader.figshare.com/files/39414754",
+   "bytes": 229523809,
+   "sha256": "3bba499ffe6defc1d3407b955594a930a355b0ed188760744e10082451096660",
+   "fetched_utc": "2026-11-09T13:59:28Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Vielemeyer2023_RSOS.zip"
+}

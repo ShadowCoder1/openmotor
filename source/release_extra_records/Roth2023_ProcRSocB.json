@@ -1,0 +1,500 @@
+{
+ "id": "Roth2023_ProcRSocB",
+ "module": "reach90",
+ "rows": 27000,
+ "subjects": 54,
+ "persons": 54,
+ "zip_bytes": 951788,
+ "zip_sha256": "e3cc76c11841dc3a576af72e8b8d70909dac08bc8390cbebb7cd0d4e04f58e49",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "54 sequences x 500 trials = 27000 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "washout placeholders: 50 per sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants per experiment",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods (18 per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants total",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Methods (54 total)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods (50 + 200 + 50 + 200)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (rows)",
+   "computed": 500.0,
+   "reported": 500.0,
+   "tol": 0,
+   "source": "Methods (50 + 200 + 50 + 200)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: participants with the larger lag-1 autocorrelation of extent in the condition pair of the paper (%)",
+   "computed": 77.77777777777777,
+   "reported": 77.78,
+   "tol": 0.01,
+   "source": "Results, serial dependence of movement extent (theta-hat)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: participants with the larger lag-1 autocorrelation of extent in the condition pair of the paper (%)",
+   "computed": 77.77777777777777,
+   "reported": 77.78,
+   "tol": 0.01,
+   "source": "Results, serial dependence of movement extent (theta-hat)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3: participants with the larger lag-1 autocorrelation of extent in the condition pair of the paper (%)",
+   "computed": 66.66666666666667,
+   "reported": 66.67,
+   "tol": 0.01,
+   "source": "Results, serial dependence of movement extent (theta-hat)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's Washout lists repeat the Baseline lists (authors' u_pos is identical for the two in all 54 participants), so washout reaches could not be recovered; they are placeholder rows.",
+  "The GitHub repository has no license file; the same data are on Dryad (doi 10.5061/dryad.ngf1vhj10) under CC0, which would allow sharing. The Zenodo copy of that deposit holds only 4 kB placeholders for the three data folders, so the GitHub files were used. 'none stated' is recorded here as the brief allows."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/records/8339536/files/README.md?download=1",
+   "bytes": 615,
+   "sha256": "04d2bae7fb6cd1bf0c44a5c8b57ab0259e1ad7ef1031a177f2e4d479bb9d1e5c",
+   "fetched_utc": "2026-11-09T07:18:52Z"
+  },
+  {
+   "file": "Experiment_1_Data",
+   "url": "https://zenodo.org/records/8339536/files/Experiment_1_Data?download=1",
+   "bytes": 4010,
+   "sha256": "44cd0df8f80bb21430204cba8441b2c0af14683d609155878ee65c1f2ee99fef",
+   "fetched_utc": "2026-11-09T07:18:58Z"
+  },
+  {
+   "file": "Exp1_S1.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_1.pkl",
+   "bytes": 485280,
+   "sha256": "4c77918e6561e8facb9cc3e04fdf6f2f073b7a154fe1a38f4ca92276f44dfc93",
+   "fetched_utc": "2026-11-09T07:20:58Z"
+  },
+  {
+   "file": "Exploration_Subject.py.txt",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Exploration_Subject.py",
+   "bytes": 15284,
+   "sha256": "38a62c6ab777cc2b1bd08dddacb8f933bba1e5d40050fe9a6bd19685dd97c682",
+   "fetched_utc": "2026-11-09T07:21:02Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_1.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_1.pkl",
+   "bytes": 485280,
+   "sha256": "4c77918e6561e8facb9cc3e04fdf6f2f073b7a154fe1a38f4ca92276f44dfc93",
+   "fetched_utc": "2026-11-09T07:24:18Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_2.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_2.pkl",
+   "bytes": 485815,
+   "sha256": "e66d08ba79ab91b67778851c0eeead30ecee7aa370b578d491f70c9265fb9ad7",
+   "fetched_utc": "2026-11-09T07:24:21Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_3.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_3.pkl",
+   "bytes": 483528,
+   "sha256": "3528fbd6e3ef85aa45f7b99e322a256751995de35fe25b2eece9c05b1f5b362e",
+   "fetched_utc": "2026-11-09T07:24:23Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_4.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_4.pkl",
+   "bytes": 485528,
+   "sha256": "4ceb38b03bb534e59ee8d5b41497750245bb1141cf01bc35d6c9110280cdee3c",
+   "fetched_utc": "2026-11-09T07:24:26Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_5.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_5.pkl",
+   "bytes": 482160,
+   "sha256": "c2c36a3a04f1861f884b861268a8a8205525bdc4fd63693c43019af6f52a84e5",
+   "fetched_utc": "2026-11-09T07:24:28Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_6.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_6.pkl",
+   "bytes": 487690,
+   "sha256": "c59f207a0df1db2a8c87af73ac4c260b3679b76ff3256e61d2eb8115eec60037",
+   "fetched_utc": "2026-11-09T07:24:31Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_7.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_7.pkl",
+   "bytes": 483931,
+   "sha256": "a4029e62d399889965f4bdd4f04f2639bb8f397826041ece459774d61c574d38",
+   "fetched_utc": "2026-11-09T07:24:34Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_8.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_8.pkl",
+   "bytes": 480908,
+   "sha256": "7674b0d70b67196839a62800739ab402ef579521c59de92cbf8edd2fc42f8a57",
+   "fetched_utc": "2026-11-09T07:24:36Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_9.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_9.pkl",
+   "bytes": 483072,
+   "sha256": "8a7df4a039a83908300ef8a1dcc25d44c3e61b1f46ea281db67c46146d23ffd3",
+   "fetched_utc": "2026-11-09T07:24:38Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_10.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_10.pkl",
+   "bytes": 488034,
+   "sha256": "7c1a737fa4b8569d8ec1d2d4c3ad40d7c159d4f6b1427d407c983935a24b81e3",
+   "fetched_utc": "2026-11-09T07:24:41Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_11.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_11.pkl",
+   "bytes": 487919,
+   "sha256": "68149a2dd84b13d436db5d6ad831042d4f9f5f3969b9065ecee3a5b4c2013c14",
+   "fetched_utc": "2026-11-09T07:24:44Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_12.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_12.pkl",
+   "bytes": 487981,
+   "sha256": "e533a9c28cd927004ceb2bbf42321de1ef9fda3d5a20363d10f654eaaabb6243",
+   "fetched_utc": "2026-11-09T07:24:46Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_13.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_13.pkl",
+   "bytes": 560063,
+   "sha256": "2af5c74bcd14bf53d942fc29e4ae9e4404a7c081e83f61aaf01a9a7cd3d2dc82",
+   "fetched_utc": "2026-11-09T07:24:48Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_14.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_14.pkl",
+   "bytes": 553774,
+   "sha256": "be639083893957af31fb92052df7949240ce70b7082a6a9e63cd9a2be51480ef",
+   "fetched_utc": "2026-11-09T07:24:51Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_15.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_15.pkl",
+   "bytes": 556422,
+   "sha256": "8adacf7478bb5c1d0afda4c7da7fc0b3b8ace36173ceb6cf2dd4c0cb255dfcd5",
+   "fetched_utc": "2026-11-09T07:24:53Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_16.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_16.pkl",
+   "bytes": 556729,
+   "sha256": "acd9dd4b18559be945c4dc40d1b5105970ff12293205cc937f6d43533d96f69d",
+   "fetched_utc": "2026-11-09T07:24:56Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_17.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_17.pkl",
+   "bytes": 547499,
+   "sha256": "a8aec5aff5cee1d47eace4b3a60423fd49c8c5b5a948a3bdeaec4f926f93cc69",
+   "fetched_utc": "2026-11-09T07:24:58Z"
+  },
+  {
+   "file": "Aim1_Exp1_Subject_18.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_1_Data/Aim1_Exp1_Subject_18.pkl",
+   "bytes": 550215,
+   "sha256": "d1feb779c18c6573d3474e4aeec71d36ee50297a72a5a7b346182bd2c3cab529",
+   "fetched_utc": "2026-11-09T07:25:00Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_1.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_1.pkl",
+   "bytes": 480595,
+   "sha256": "ceb1afac021845e417188129b054a2fdeb3ecf09a11b4e5fc33438c5ece60c9b",
+   "fetched_utc": "2026-11-09T07:25:03Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_2.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_2.pkl",
+   "bytes": 483849,
+   "sha256": "be2a91237cc31759206fcc09e2c0e1af499f58aac9f253d2a897c029d14dc671",
+   "fetched_utc": "2026-11-09T07:25:14Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_3.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_3.pkl",
+   "bytes": 484537,
+   "sha256": "018107562aace31da8f3e017c565a8fb43e9ae5efc56d95e96ad777246932a9a",
+   "fetched_utc": "2026-11-09T07:25:18Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_4.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_4.pkl",
+   "bytes": 484705,
+   "sha256": "4dec8c21c8bca195f194721a851b0243f3120bb496246b1077905a378034f723",
+   "fetched_utc": "2026-11-09T07:25:21Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_5.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_5.pkl",
+   "bytes": 479747,
+   "sha256": "4395ef3acf3f6b2676cdd6456dd88c813e06571cec602b71f297377b742693e3",
+   "fetched_utc": "2026-11-09T07:25:26Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_6.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_6.pkl",
+   "bytes": 489722,
+   "sha256": "6ab062c872d94063da5f836ef4dd7e845ee91435565bfe62c3743e7acfc7eef3",
+   "fetched_utc": "2026-11-09T07:25:29Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_7.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_7.pkl",
+   "bytes": 489156,
+   "sha256": "36df0851ec7008d3344b0908a20d7b3b44e57b2ba8eabe6d23e39ed76b131ac5",
+   "fetched_utc": "2026-11-09T07:25:32Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_8.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_8.pkl",
+   "bytes": 483921,
+   "sha256": "a25b3284e0795c0dcecc0c89fdbefcc25f4dc92c93e31f16fe2c23c2cdf9f74f",
+   "fetched_utc": "2026-11-09T07:25:36Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_9.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_9.pkl",
+   "bytes": 485905,
+   "sha256": "5349b8ef09a2b4950ed75ea052a4ec940e16d61f0e8cf8d36eaa20dd6756d9c0",
+   "fetched_utc": "2026-11-09T07:25:39Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_10.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_10.pkl",
+   "bytes": 480716,
+   "sha256": "13b3c2ef0df4e7fd49c8b2a2c4f8c3d9be8928f55ca53d9275f9834b4fd76f97",
+   "fetched_utc": "2026-11-09T07:25:41Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_11.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_11.pkl",
+   "bytes": 483137,
+   "sha256": "4f1a118de57ac2de5ad8dcb89d0b5866ef27e07e147ac08ae6319da11b4bb062",
+   "fetched_utc": "2026-11-09T07:25:45Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_12.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_12.pkl",
+   "bytes": 482200,
+   "sha256": "566bbcb099caab34211db023268234402d77e394be4ca98edde6f802ed7da61b",
+   "fetched_utc": "2026-11-09T07:25:47Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_13.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_13.pkl",
+   "bytes": 548286,
+   "sha256": "88ec8a45eba46b1dcc52814324d133a0f785a5a1a5c5d3fb31b2ae94ae6d6d92",
+   "fetched_utc": "2026-11-09T07:25:49Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_14.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_14.pkl",
+   "bytes": 559060,
+   "sha256": "83c5ac78797ea967a33f66c87bbbd178b08c04b41560f1689364ca27776e4d3d",
+   "fetched_utc": "2026-11-09T07:25:52Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_15.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_15.pkl",
+   "bytes": 554442,
+   "sha256": "b4c01a5a886de10d70976651fdf04d1cd101509b6fac78c578dd654a2cab9d80",
+   "fetched_utc": "2026-11-09T07:25:54Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_16.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_16.pkl",
+   "bytes": 555910,
+   "sha256": "097f0d732645ac1610e07a954279d24bdaa6daa9c52624e9421e58d47811a6aa",
+   "fetched_utc": "2026-11-09T07:25:57Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_17.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_17.pkl",
+   "bytes": 566198,
+   "sha256": "d23c13a206aa17002f447b1d2a69b6c79a5a9d6375a47cabd7f41e61fd39dca5",
+   "fetched_utc": "2026-11-09T07:25:59Z"
+  },
+  {
+   "file": "Aim1_Exp2_Subject_18.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_2_Data/Aim1_Exp2_Subject_18.pkl",
+   "bytes": 551431,
+   "sha256": "b1a923f43570eaba6533b344858717722bc51cb87cca3790b9921be2c8be4934",
+   "fetched_utc": "2026-11-09T07:26:02Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_1.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_1.pkl",
+   "bytes": 486651,
+   "sha256": "a796e22aa08e9d8f889dfb4263956608b3f0438464434291ecfa316fa9691e4e",
+   "fetched_utc": "2026-11-09T07:26:06Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_2.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_2.pkl",
+   "bytes": 482472,
+   "sha256": "fac928c23f6ea5f112e064b341fda91bb637c512d25a402b8141c986849c15b4",
+   "fetched_utc": "2026-11-09T07:26:08Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_3.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_3.pkl",
+   "bytes": 490962,
+   "sha256": "44c9b633afac4c0d7564273a2126b36c8bff73fb790d00462ad6e6710978cce5",
+   "fetched_utc": "2026-11-09T07:26:12Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_4.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_4.pkl",
+   "bytes": 491177,
+   "sha256": "07f440e2cc30c11d8f578f84eb2dc9208432f84cabea1f43ae6ec35089a33ac3",
+   "fetched_utc": "2026-11-09T07:26:21Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_5.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_5.pkl",
+   "bytes": 485569,
+   "sha256": "6a7af921cff066870f89fe9dbdd233486ed0c6d9a88c0ef16533f3fa6a28dcf9",
+   "fetched_utc": "2026-11-09T07:26:24Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_6.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_6.pkl",
+   "bytes": 495798,
+   "sha256": "4301b066b665d9a6320d3f9d52de98bbf8d4e6282978d4abb33b735d5e5182d3",
+   "fetched_utc": "2026-11-09T07:26:27Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_7.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_7.pkl",
+   "bytes": 493167,
+   "sha256": "55e324930d8146b7ca014531b11f50b90cb174eb984af58f9919e419d7905eb3",
+   "fetched_utc": "2026-11-09T07:26:31Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_8.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_8.pkl",
+   "bytes": 493793,
+   "sha256": "4a4801b515d8c8f02c9c80b2167583ea34335fb21977bb39c84737ef1fb05405",
+   "fetched_utc": "2026-11-09T07:26:33Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_9.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_9.pkl",
+   "bytes": 569794,
+   "sha256": "1024d8170029c135e85a0d06098640c1d4efb6a6b824599c7b17d08314f5dea5",
+   "fetched_utc": "2026-11-09T07:26:37Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_10.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_10.pkl",
+   "bytes": 550889,
+   "sha256": "da27936bbf8677d16b8b62952dd8c3c3075055be4740055988fb3a89eb8c091d",
+   "fetched_utc": "2026-11-09T07:26:39Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_11.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_11.pkl",
+   "bytes": 561708,
+   "sha256": "f9eab4d5be091068613196dafc1bc11c20a1786c7382a0d802c34561992acd1a",
+   "fetched_utc": "2026-11-09T07:26:43Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_12.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_12.pkl",
+   "bytes": 562942,
+   "sha256": "c77317e5c01edf162de34aad23f77e1e4f54ca1672dca4d40bcf9145762bac6c",
+   "fetched_utc": "2026-11-09T07:26:46Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_13.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_13.pkl",
+   "bytes": 563926,
+   "sha256": "480aecf51ab85402c8b1f7e053121b751e91cf4b5423cf7624748b23f10e7a3b",
+   "fetched_utc": "2026-11-09T07:26:49Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_14.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_14.pkl",
+   "bytes": 565076,
+   "sha256": "242a794a4aa13e163d82dc517c58a0707d36e8f210e3a04ccef640c54df19385",
+   "fetched_utc": "2026-11-09T07:26:53Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_15.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_15.pkl",
+   "bytes": 565599,
+   "sha256": "e6a7dd7d5084aef3acda81b4c8301b4a5f2bf60bb1c088a6ba661767a85ddb0a",
+   "fetched_utc": "2026-11-09T07:26:56Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_16.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_16.pkl",
+   "bytes": 567069,
+   "sha256": "ba7c621b4858e1ebbb1101be05f77f67f031824379b088076a1092f5f7b5885c",
+   "fetched_utc": "2026-11-09T07:26:59Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_17.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_17.pkl",
+   "bytes": 566533,
+   "sha256": "10378a2452d020f27f58bd536c7802adc522adfe00a1db6faa719c44d40992f0",
+   "fetched_utc": "2026-11-09T07:27:02Z"
+  },
+  {
+   "file": "Aim1_Exp3_Subject_18.pkl",
+   "url": "https://raw.githubusercontent.com/CashabackLab/Exploration-Along-Solution-Manifolds-Data/main/Experiment_3_Data/Aim1_Exp3_Subject_18.pkl",
+   "bytes": 566912,
+   "sha256": "e361ac597065af92b4adc56f637be36c4c184ab8dba6203ef59360026e376dbd",
+   "fetched_utc": "2026-11-09T07:27:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Roth2023_ProcRSocB.zip"
+}

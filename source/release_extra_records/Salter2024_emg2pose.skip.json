@@ -1,0 +1,7 @@
+{
+ "id": "Salter2024_emg2pose",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Full dataset is 431 GiB (25,253 HDF5 files of 2 kHz sEMG and joint angles; README of github.com/facebookresearch/emg2pose); even the 600 MiB mini subset is a sample of sessions. License CC BY-NC-SA 4.0. The paper was published at the NeurIPS 2024 Datasets and Benchmarks Track (arXiv 2412.02725 comments), listed here only as arXiv.",
+ "sources": []
+}

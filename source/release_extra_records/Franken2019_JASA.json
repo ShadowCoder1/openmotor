@@ -1,0 +1,225 @@
+{
+ "id": "Franken2019_JASA",
+ "module": "speech",
+ "rows": 30337,
+ "subjects": 49,
+ "persons": 49,
+ "zip_bytes": 378910,
+ "zip_sha256": "3e63ef80fb69535fa71debf99cd08313e4ce5a89b2b22e19e52013a4bb890172",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "30337 epochs from 49 participants, as in the authors' file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers are unique within each participant and within 1-720 (3 blocks x 80 trials x 3 shifts)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant heard each headphone type in one block of consecutive trial numbers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "at most 240 epochs per participant and headphone, with at most 40 per shift size and 80 null",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shift sizes are 0, +-25, +-100 cents; null shifts have no response class",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "peaks.csv: 42 participants x 3 headphones x 5 conditions = 630 rows, all matched to epoch rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "response sign: mean peak is positive for downward shifts and negative for upward shifts (opposing = against the shift)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2 (before exclusions)",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed epochs (null shifts excluded)",
+   "computed": 19857.0,
+   "reported": 19857.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Results, Proportion of opposing responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epochs classified as opposing",
+   "computed": 13377.0,
+   "reported": 13377.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Results, Proportion of opposing responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "epochs classified as following",
+   "computed": 6480.0,
+   "reported": 6480.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Results, Proportion of opposing responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of epochs classified as opposing (%)",
+   "computed": 67.36667170267413,
+   "reported": 67.0,
+   "tol": 0.5,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Results, Proportion of opposing responses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants left after the 3 + 2 exclusions",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis (49 - 3 - 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "average pitch contours (conditions with at least 20 epochs, null shifts included)",
+   "computed": 656.0,
+   "reported": 656.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean epochs per non-null contour",
+   "computed": 35.23091603053435,
+   "reported": 35.2,
+   "tol": 0.05,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum epochs per non-null contour",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean epochs per null-shift contour",
+   "computed": 70.22727272727273,
+   "reported": 70.2,
+   "tol": 0.05,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum epochs per null-shift contour",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Franken et al. 2019, J Acoust Soc Am 146(6):4108-4121 (accepted manuscript, OSF vecw6), Experiment 2, Analysis",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 19857 analysed epochs (13377 opposing, 6480 following); these counts are reproduced only by the file as shared, which still holds the five participants whose data the authors drop before the statistics. After dropping them the file has 18401 classified epochs.",
+  "Epochs discarded per participant: the paper reports a mean of 77.3 (10.7% of 720), a maximum of 264 and four participants above 200; the shared file gives 100.9 (14.0%), 399 and seven over all 49 participants, and 88.1, 325 and five over the 44 kept. Not used as checks.",
+  "The largest number of epochs behind a non-null contour is 41 in the shared file; the paper states a maximum of 40 (ranging from 20).",
+  "peaks.csv holds 42 participants and 15 contours each (630 rows), not the 44 participants and 656 contours described in the paper; the epoch file reproduces the 656."
+ ],
+ "sources": [
+  {
+   "file": "freqresponse_data.csv",
+   "url": "https://osf.io/download/m6yp3/",
+   "bytes": 144308,
+   "sha256": "8087cade6929f67ba32b1f57e3154c0ec7e4430996fc659dbd921285900dd740",
+   "fetched_utc": "2026-11-09T11:52:19Z"
+  },
+  {
+   "file": "attenuation_data.csv",
+   "url": "https://osf.io/download/yntu4/",
+   "bytes": 181702,
+   "sha256": "3273ed92114cb4d596115b4ac360dd2e4ec2c88afb9765fde51361fe22e17da6",
+   "fetched_utc": "2026-11-09T11:52:25Z"
+  },
+  {
+   "file": "peaks.csv",
+   "url": "https://osf.io/download/k2jn4/",
+   "bytes": 34001,
+   "sha256": "9215f912d523ee18feb33b2264a13eba289b89bf7b0fdea092a9b48ff1035d6c",
+   "fetched_utc": "2026-11-09T11:52:38Z"
+  },
+  {
+   "file": "grandAverages.csv",
+   "url": "https://osf.io/download/5zwgx/",
+   "bytes": 689940,
+   "sha256": "23fc2d1dac310ae14532c9dabd293c179f44dc3bd1f1a68ab35399b2f4590b20",
+   "fetched_utc": "2026-11-09T11:52:46Z"
+  },
+  {
+   "file": "oppfoll.csv",
+   "url": "https://osf.io/download/smf2h/",
+   "bytes": 652934,
+   "sha256": "139434294e431c503074f107efb7f52ca8678d278362d00d6b65b5db1e923167",
+   "fetched_utc": "2026-11-09T11:52:53Z"
+  },
+  {
+   "file": "exp1_freqresponse_script.R",
+   "url": "https://osf.io/download/r8gtk/",
+   "bytes": 4704,
+   "sha256": "e53b92ea39bef58bf2b0ea6bc887c49b76bdb80855ca147ff09fe8c739e434ea",
+   "fetched_utc": "2026-11-09T11:52:59Z"
+  },
+  {
+   "file": "exp1_attenuation_script.R",
+   "url": "https://osf.io/download/ehv3w/",
+   "bytes": 2497,
+   "sha256": "13e67763594c138b5acabd954ecb2307ed4e0ee5ec723a4eb3bfc9693cbf2fb1",
+   "fetched_utc": "2026-11-09T11:53:05Z"
+  },
+  {
+   "file": "exp2_script.R",
+   "url": "https://osf.io/download/654xn/",
+   "bytes": 7788,
+   "sha256": "5ba6f2dfc2a81192336c61f2b3b224d8ff23cf46424603523b214656ab5d094e",
+   "fetched_utc": "2026-11-09T11:53:10Z"
+  },
+  {
+   "file": "Franken_JASA_accepted.pdf",
+   "url": "https://osf.io/download/vecw6/",
+   "bytes": 2357971,
+   "sha256": "786672ef5953fb89faf39ebf66986126f3db6a44f88fe220a4e7c896ffdc3044",
+   "fetched_utc": "2026-11-09T11:53:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Franken2019_JASA.zip"
+}

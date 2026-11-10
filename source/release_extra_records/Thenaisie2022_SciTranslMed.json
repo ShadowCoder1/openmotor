@@ -1,0 +1,74 @@
+{
+ "id": "Thenaisie2022_SciTranslMed",
+ "module": "walking",
+ "rows": 8407,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 194599,
+ "zip_sha256": "cc5e86c412f631c5be4ebb4bcc6b72322025194d00fd8fa25a6d8ab3b5f9127e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "patients retained for gait experiments",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 patients retained for gait experiments; Fig 5G n = 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "foot strikes per bout in the gait-termination state (last 2 gait cycles), median",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Identification of gait events and definition of locomotor states (termination = last 2 gait cycles)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "foot strikes per bout in the gait-initiation state (ends at the first heel strike), median",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Identification of gait events and definition of locomotor states (initiation ends at the first heel strike)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "share of bouts whose first foot strike has code 4 (initiation)",
+   "ok": true,
+   "detail": "0.998 of 836 bouts"
+  },
+  {
+   "kind": "internal",
+   "what": "foot strikes before the first gait-initiation time (given bout 1)",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "kind": "internal",
+   "what": "rows",
+   "ok": true,
+   "detail": "8407 steps, 12 patients, 42 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "tasks",
+   "ok": true,
+   "detail": "{'SMALL LADDER': 2615, 'MIX LADDER': 2003, 'BIG LADDER': 1917, 'STAIRS': 945, 'OBSTACLE': 927}"
+  },
+  {
+   "kind": "internal",
+   "what": "step times positive and under 5 s",
+   "ok": true,
+   "detail": "median 0.680 s"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper states that 15 patients performed the walking tasks and 12 were retained for gait analysis; the deposit's gait data hold the 12 retained patients."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Thenaisie2022_SciTranslMed.zip"
+}

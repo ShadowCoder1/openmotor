@@ -1,0 +1,7 @@
+{
+ "id": "Cognolato2020_SciData",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Harvard Dataverse doi:10.7910/DVN/1Z3IOM (MeganePro MDS1, CC BY 4.0, same title/DOI as listed; the task fits grasping but it is grasp recognition for prosthetics with gaze and video). 244 files, 240 GB: 151 mp4 videos (163 GB), 45 per-subject S###_ex1.mat of 1.5-1.7 GB each (72 GB, the files that hold the synchronized EMG/glove-type signals) and 45 S###_ex1_orig.mat of about 115 MB (5.2 GB total; opened S010: only Myo accelerometer, Tobii gaze/accelerometer/gyroscope, video and pattern timestamps and the stimulus label, no EMG). The signals a standardized copy would need exceed the 5 GB limit and a converted copy would exceed 1.9 GB.",
+ "sources": []
+}

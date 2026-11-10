@@ -1,0 +1,249 @@
+{
+ "id": "Hammerschmidt2020_MusicPercept",
+ "module": "summary",
+ "rows": 3042,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 68262,
+ "zip_sha256": "c4b8b2377cbe04b245f937af1279e39a0788ab289f0a0c94b988ee530825497c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (subsequent analyses based on 30)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "musicians",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (musicians group, 10 men and 5 women)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "non-musicians",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (non-musicians group, 12 women and 3 men)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male musicians",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female non-musicians",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, musicians",
+   "computed": 26.533333333333335,
+   "reported": 26.53,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest, musicians",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest, musicians",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, non-musicians",
+   "computed": 28.733333333333334,
+   "reported": 28.73,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, non-musicians",
+   "computed": 11.157743414115513,
+   "reported": 11.16,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest, non-musicians",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest, non-musicians",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Wollner 2020, Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years playing an instrument, musicians mean",
+   "computed": 16.666666666666668,
+   "reported": 16.67,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years playing an instrument, musicians SD",
+   "computed": 10.111285538352442,
+   "reported": 10.11,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years playing an instrument, non-musicians mean",
+   "computed": 0.2,
+   "reported": 0.2,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of music lessons, musicians mean",
+   "computed": 9.8,
+   "reported": 9.8,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of music lessons, musicians SD",
+   "computed": 5.157518783291051,
+   "reported": 5.16,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of music lessons, non-musicians mean",
+   "computed": 0.23333333333333334,
+   "reported": 0.23,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "importance of music, non-musicians mean",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "importance of music, non-musicians SD",
+   "computed": 1.4142135623730951,
+   "reported": 1.41,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Wollner 2020, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "mean time estimation ratio is lowest when tapping to half notes and highest when listening only (abstract and Results: half notes shortest, listening only longest)",
+   "ok": true,
+   "detail": "{0: -0.031, 2: -0.176, 4: -0.105, 8: -0.081}"
+  },
+  {
+   "kind": "internal",
+   "what": "estimates grow with tempo: ratio rises from 83 to 120 to 150 BPM (Results: the faster the tempo, the longer the stimuli seemed to last)",
+   "ok": true,
+   "detail": "{83: -0.171, 120: -0.09, 150: -0.034}"
+  },
+  {
+   "kind": "internal",
+   "what": "ratios at 120 and 150 BPM correspond to whole-second estimates (ratio = estimate / duration - 1, 8 bars)",
+   "ok": true,
+   "detail": "0.985 of cells (averages of two estimates fall on half seconds)"
+  },
+  {
+   "kind": "internal",
+   "what": "no listening-only tapping rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "48 time-estimate columns per participant: 27 tapping + 9 listening-only + 12 catch",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "circular variance within 0-1",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Five published descriptive numbers did not reproduce and are not used as checks: the SD of age of the musicians (paper 8.76, rows 8.77), the SDs of the non-musicians' years of playing (0.76 vs 0.77) and of lessons (0.77 vs 0.78), and the musicians' mean (5.77 vs 5.79) and SD (0.42 vs 0.43) of the importance of music (one musician has no answer in the deposit). The paper rates importance on a 7-point scale from 1 to 7 while the codebook says 0 to 6.",
+  "The paper's ANOVA statistics were not recomputed (they need the authors' analysis pipeline)."
+ ],
+ "sources": [
+  {
+   "file": "codebook.txt",
+   "url": "https://zenodo.org/api/records/6564050/files/codebook.txt/content",
+   "bytes": 804,
+   "sha256": "c3447371f1ee3ff0ecae56103b575dbb19593bf5947bcce3f0304bf8daf878c3",
+   "fetched_utc": "2026-11-09T13:54:33Z"
+  },
+  {
+   "file": "dataset_cleaned.csv",
+   "url": "https://zenodo.org/api/records/6564050/files/dataset_cleaned.csv/content",
+   "bytes": 34028,
+   "sha256": "f77a748fbcdce290db5b8662b0b876c3d338a0586e49e4cfe5f0b67b16e5dda5",
+   "fetched_utc": "2026-11-09T13:54:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hammerschmidt2020_MusicPercept.zip"
+}

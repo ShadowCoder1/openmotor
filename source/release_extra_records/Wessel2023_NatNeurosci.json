@@ -1,0 +1,144 @@
+{
+ "id": "Wessel2023_NatNeurosci",
+ "module": "summary",
+ "rows": 12588,
+ "subjects": 44,
+ "persons": 44,
+ "zip_bytes": 122922,
+ "zip_sha256": "b17bfa31d98cfd0dce29c8e94a06bf063e21e52b686b72c4832a322709e7465c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the behavioural members match the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the letter A or B (cond) is crossed with the stimulation (427 rows of each combination), so it is not the stimulation",
+   "ok": true,
+   "detail": "{('iTBS', 'A'): 427, ('HF_control', 'B'): 427, ('iTBS', 'B'): 427, ('HF_control', 'A'): 427}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: every participant has a baseline repetition and 60 training repetitions in each of 2 sessions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: accuracy = correct key presses / key presses for every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "young_exp2: a file of each of the 6 block types for every participant and session, and one letter A or B per participant and session",
+   "ok": true,
+   "detail": "15 participants; missing 0"
+  },
+  {
+   "kind": "internal",
+   "what": "young_exp2: correct sequences per trial equal the authors' number_of_seq.csv in all compared blocks",
+   "ok": true,
+   "detail": "510 blocks compared, 0 differ []"
+  },
+  {
+   "kind": "internal",
+   "what": "older_exp2: a file of each of the 6 block types for every participant and session, and one letter A or B per participant and session",
+   "ok": true,
+   "detail": "15 participants; missing 0"
+  },
+  {
+   "kind": "internal",
+   "what": "older_exp2: correct sequences per trial equal the authors' number_of_seq.csv in all compared blocks",
+   "ok": true,
+   "detail": "510 blocks compared, 0 differ []"
+  },
+  {
+   "kind": "internal",
+   "what": "in 59 of the 60 Train/Train_R pairs the 7 trials have the same key press counts (one pair differs in some trials, listed in the detail); trial 4 has no correct sequence in Train but has the correct sequences the authors list as Train-T4 in Train_R, and Train_R trials 1-3 and 5-7 have none",
+   "ok": true,
+   "detail": "60 pairs; passing: {'same key counts': 59, 'same max sequences': 59, 'Train trial 4 has no correct sequence': 60, 'Train_R trial 4 has correct sequences': 60, 'Train_R other trials have none': 60}; trials that differ in the one odd pair: [[]]"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: older adults",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (N = 15, right-handed, 9 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: young adults",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (N = 15, right-handed, 8 females)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants who performed the full protocol",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (fourteen out of 15 participants performed the full protocol)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: training blocks of 90 s per session",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (seven 90-s blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: training repetitions per session (six blocks of ten 30-s repetitions)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (six blocks, each of ten 30-s repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: median repetition length in seconds (30-s repetitions)",
+   "computed": 30.0071,
+   "reported": 30.0,
+   "tol": 0.05,
+   "source": "Methods, Experiment 1 (30-s repetitions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: training sessions per participant",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (two main training sessions)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "behav_members.zip",
+   "url": "https://zenodo.org/api/records/14965889/files/Zenodo.zip/content",
+   "bytes": 1983377,
+   "sha256": "5032fa0d7d3238e7ea0d194e15271dc074326243c6091e5bcc2ce28c01796e07",
+   "fetched_utc": "2026-11-08T21:17:26Z",
+   "note": "434 members (data/Behav/**, Code/behav/*.ipynb, readme.txt) of the 124 GB Zenodo.zip, read with HTTP range requests; nothing else of the zip was downloaded",
+   "members": 434,
+   "uncompressed_bytes": 7841572,
+   "http_requests": 11
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wessel2023_NatNeurosci.zip"
+}

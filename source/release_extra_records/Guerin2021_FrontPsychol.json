@@ -1,0 +1,243 @@
+{
+ "id": "Guerin2021_FrontPsychol",
+ "module": "summary",
+ "rows": 2000,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 28307,
+ "zip_sha256": "0de6d804daf748ea8e548cff71267bec2049624b92cd04c39b90e7bb97f4c3d3",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Study 1 participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Guerin et al. 2021, Study 1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Guerin et al. 2021, Study 2 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 1 target, ISI 300 (px)",
+   "computed": 7.810779490444443,
+   "reported": 7.8,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 6 targets, ISI 300 (px)",
+   "computed": 16.300894616666668,
+   "reported": 16.3,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 1 target, ISI 450 (px)",
+   "computed": 7.718959548222223,
+   "reported": 7.7,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 6 targets, ISI 450 (px)",
+   "computed": 10.475030012,
+   "reported": 10.5,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 1 target, ISI 600 (px)",
+   "computed": 8.385684959777777,
+   "reported": 8.4,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 6 targets, ISI 600 (px)",
+   "computed": 9.086619337333333,
+   "reported": 9.1,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 1 target, ISI 800 (px)",
+   "computed": 8.405216585333333,
+   "reported": 8.4,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 6 targets, ISI 800 (px)",
+   "computed": 7.758376682666666,
+   "reported": 7.8,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 1 target, ISI 1000 (px)",
+   "computed": 8.831305731777778,
+   "reported": 8.8,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 spatial error, 6 targets, ISI 1000 (px)",
+   "computed": 7.825353403555555,
+   "reported": 7.8,
+   "tol": 0.05,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 lag-1 autocorrelation at ISI 1000, mean of both tasks",
+   "computed": -0.22754789880000004,
+   "reported": -0.23,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 1 Results (M = -0.23)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 lag-1 autocorrelation at ISI 300-800, mean",
+   "computed": -0.14842175325,
+   "reported": -0.15,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 1 Results (M = -0.15)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 pressure, ISI 300, 6 targets",
+   "computed": 0.4309180336207115,
+   "reported": 0.43,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 0.43)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 pressure, ISI 300, 1 target",
+   "computed": 0.48718451717911543,
+   "reported": 0.49,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 0.49)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 pressure, ISI 1100, 6 targets",
+   "computed": 0.5442270542458228,
+   "reported": 0.54,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 0.54)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 pressure, ISI 1100, 1 target",
+   "computed": 0.4893772589710333,
+   "reported": 0.49,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 0.49)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 dual-task RT, 1 target, mean over ISIs (%)",
+   "computed": 164.2231079436337,
+   "reported": 164.22,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 164.22)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 2 dual-task RT, 6 targets, mean over ISIs (%)",
+   "computed": 177.29551976732685,
+   "reported": 177.3,
+   "tol": 0.005,
+   "source": "Guerin et al. 2021, Study 2 Results (M = 177.30)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 relative asynchrony, 1 target, ISI 300 (absolute asynchrony / ISI x 1000)",
+   "computed": 109.69764117438226,
+   "reported": 110.0,
+   "tol": 0.5,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Study 1 relative asynchrony, 6 targets, ISI 1000 (absolute asynchrony / ISI x 1000)",
+   "computed": 120.39944795049485,
+   "reported": 120.0,
+   "tol": 0.5,
+   "source": "Guerin et al. 2021, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "40 values per participant",
+   "ok": true,
+   "detail": "4 sheets x 10 conditions"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 1 relative asynchrony is not in the workbooks; it was rebuilt from absolute asynchrony / ISI x 1000, and only two cells are checked for that reason.",
+  "Not used as checks: the paper's pooled ISI means for dual-task reaction time (for example 165.14 at 300/500 ms) did not reproduce from a simple pooling of the workbook columns (we get 165.24), and the paper's Study 2 spatial error cells have no sheet in the Study 2 workbook."
+ ],
+ "sources": [
+  {
+   "file": "study2.xlsx",
+   "url": "https://osf.io/download/ga4hm/",
+   "bytes": 23684,
+   "sha256": "90cbd35afb78cba230ee5ec2009c008aed00904f54bbad060c1aa39af4a863ce",
+   "fetched_utc": "2026-11-09T13:48:39Z"
+  },
+  {
+   "file": "study1.xlsx",
+   "url": "https://osf.io/download/czxrj/",
+   "bytes": 23134,
+   "sha256": "d0fb35503f94d31d46479ef6e54fd2409685af89ed38a05a058f163138945b03",
+   "fetched_utc": "2026-11-09T13:48:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Guerin2021_FrontPsychol.zip"
+}

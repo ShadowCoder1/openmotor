@@ -1,0 +1,182 @@
+{
+ "id": "Iturralde2019_eNeuro",
+ "module": "walking",
+ "rows": 33609,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 283056936,
+ "zip_sha256": "3ca10c26a1ee76d13fe651c97d3cda04f3fa4c1dd74424db81ca88292196a72b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "16 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant walked every condition; tied blocks hold at least the planned 50 slow, 50 medium, 150 baseline strides, split blocks the planned 10 (short) and 900 (long) strides, washout 600 (paper, Experimental design)",
+   "ok": true,
+   "detail": "{'OG Base': (79, 256), 'TM slow': (50, 53), 'TM mid': (50, 53), 'Short exposure': (10, 13), 'TM base': (150, 302), 'Adaptation': (900, 936), 'Washout': (402, 627), 'OG washout': (9, 221)}"
+  },
+  {
+   "kind": "internal",
+   "what": "the dominant leg is the fast leg (paper: the dominant leg always walked faster); dominant legs: {'right': 15, 'left': 1}",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = the deposit's bad-stride flag or the one excluded participant",
+   "ok": true,
+   "detail": "3530 of 33609 strides"
+  },
+  {
+   "kind": "internal",
+   "what": "signs: step_time_asymmetry = stance_time_asymmetry - double_support_asymmetry_s / stride time",
+   "ok": true,
+   "detail": "n=30079, median |diff| 0.00000, 95th pct 0.00000"
+  },
+  {
+   "kind": "internal",
+   "what": "the three contributions add up to step_length_asymmetry",
+   "ok": true,
+   "detail": "median |diff| 0.00000, 95th pct 0.00000"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_asymmetry is negative early in split-belt walking and near 0 in baseline (paper: negative = longer slow step)",
+   "ok": true,
+   "detail": "early adaptation -0.153, late baseline 0.011"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Iturralde & Torres-Oviedo 2019, Methods: Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, years (Methods: 61 +- 9.9)",
+   "computed": 61.088541666666664,
+   "reported": 61.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Methods: Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age, years",
+   "computed": 46.333333333333336,
+   "reported": 46.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Methods: Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age, years",
+   "computed": 78.25,
+   "reported": 78.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Methods: Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median DS1 [FHS-STO] in late long exposure (ms)",
+   "computed": 175.90625000000273,
+   "reported": 176.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median swing of the slow leg in late long exposure (ms)",
+   "computed": 329.48750000000047,
+   "reported": 329.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median DS2 [SHS-FTO] in late long exposure (ms)",
+   "computed": 160.87499999999898,
+   "reported": 161.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median swing of the fast leg in late long exposure (ms)",
+   "computed": 472.69375000000053,
+   "reported": 473.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median DS1 [FHS-STO] in late washout (ms)",
+   "computed": 186.8312499999945,
+   "reported": 187.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median swing of the slow leg in late washout (ms)",
+   "computed": 405.0562500000012,
+   "reported": 405.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median DS2 [SHS-FTO] in late washout (ms)",
+   "computed": 181.16874999999624,
+   "reported": 181.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median swing of the fast leg in late washout (ms)",
+   "computed": 393.6375000000055,
+   "reported": 394.0,
+   "tol": 0.5,
+   "source": "Iturralde & Torres-Oviedo 2019, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "median stride time while walking at the medium speed is between 0.7 and 1.8 s for everyone",
+   "ok": true,
+   "detail": "0.78-1.25 s"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 3 intervals for baseline and for early long exposure and early washout, and the interquartile ranges of Table 3, were not reproduced exactly from the shared strides (for example baseline DS2 median 168 ms here, 166 in the paper); only the late long exposure and late washout medians are used as checks, with the epochs the paper defines (last 40 strides without the last one, all strides, all 16 participants).",
+  "The paper's text says 10 of the 16 participants were women, while its Table 1 lists 6 women and 10 men; the data hold 5 women and 11 men. 15 of 16 participants have the age printed in Table 1 and 15 of 16 the printed sex, in the deposit's order (the participant in the table's S06 row is 63 years old here, 52 in the table; the S04 row is female in the table, male here); the deposit's data are kept as shared. The SD of age is 9.72 here and 9.9 in the paper (not used as a check). The medium speeds (and so the belt speeds) are matched to participants by their order in Table 1."
+ ],
+ "sources": [
+  {
+   "file": "healthyParams_scrubbed.mat",
+   "url": "https://ndownloader.figshare.com/files/14527427",
+   "bytes": 440673338,
+   "sha256": "60acaf3d921b621f86c8d694524a033bbae3f62f946a36984bd801c7dc8528d7",
+   "fetched_utc": "2026-11-10T00:59:11Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Iturralde2019_eNeuro.zip"
+}

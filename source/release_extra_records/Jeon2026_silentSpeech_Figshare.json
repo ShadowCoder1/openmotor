@@ -1,0 +1,165 @@
+{
+ "id": "Jeon2026_silentSpeech_Figshare",
+ "module": "timeseries",
+ "rows": 15000,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 1543511930,
+ "zip_sha256": "ab5e4b7abda500e1b8599673958528b817d1da96fb6433ccda672f85d77bd02c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Figshare record description, Dataset Overview",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recording sessions per participant",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Figshare record description, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words per session (each articulated once)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Figshare record description, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target words in the word list",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Figshare record description, Dataset Overview (Word_List.csv)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "silent articulations (10 participants x 5 sessions x 100 words)",
+   "computed": 5000.0,
+   "reported": 5000.0,
+   "tol": 0,
+   "source": "Figshare record description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "surface EMG electrodes",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (sEMG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "raw sEMG sampling rate (Hz)",
+   "computed": 2048.0,
+   "reported": 2048.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (sEMG)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "preprocessed sEMG sampling rate (Hz)",
+   "computed": 512.0,
+   "reported": 512.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (sEMG, downsampled from 2,048 to 512 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration of each raw sEMG recording (s)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (each trial is a 4-s silent articulation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration of each preprocessed sEMG recording (s)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IMU sensors per recording",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (IMU)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IMU measurement components per sensor",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Figshare record description, Data Acquisition (IMU: x, y, z, roll, pitch, yaw)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "15,000 rows: raw sEMG, preprocessed sEMG and IMU for each of the 5,000 articulations",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every sEMG file has the expected size (8,192 x 6 raw, 2,048 x 6 preprocessed) and no missing values",
+   "ok": true,
+   "detail": "0 NaN"
+  },
+  {
+   "kind": "internal",
+   "what": "sample file names are unique",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "IMU counts stay within the 16-bit range",
+   "ok": true,
+   "detail": "[-32768, 32767]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The description gives about 400 IMU samples per 4-s recording at about 100 Hz; the files hold 374 to 547 (median 491), and only 1 of 5,000 have exactly 400.",
+  "The description speaks of 100 English words; the word list gives each word in Korean script (column Content) with its English meaning (column English)."
+ ],
+ "sources": [
+  {
+   "file": "Word_List.csv",
+   "url": "https://ndownloader.figshare.com/files/67813608",
+   "bytes": 1997,
+   "sha256": "843d4724835ab50a86b14db06c8dc5d363f3dfa0d5b59b77ebf9e73c57d6650a",
+   "fetched_utc": "2026-11-08T22:22:39Z"
+  },
+  {
+   "file": "EMG_Accel_Silent_Speech_opendata.zip",
+   "url": "https://ndownloader.figshare.com/files/67838865",
+   "bytes": 1680341920,
+   "sha256": "460e089d7844d35fedd6c3ed9bde79fb02ae04cf0343f26c5222f27f8fa225b5",
+   "fetched_utc": "2026-11-08T22:23:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jeon2026_silentSpeech_Figshare.zip"
+}

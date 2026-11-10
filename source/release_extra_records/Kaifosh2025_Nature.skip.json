@@ -1,0 +1,7 @@
+{
+ "id": "Kaifosh2025_Nature",
+ "skipped": true,
+ "reason": "too large",
+ "details": "The handwriting sEMG recordings (2 kHz, 16 channels, HDF5) are one 74.7 GB tar for the full data; even the 3-participant small subset is 2.0 GB, over the 5 GB total gate for a usable release.",
+ "sources": []
+}

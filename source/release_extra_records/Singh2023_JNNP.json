@@ -1,0 +1,1118 @@
+{
+ "id": "Singh2023_JNNP",
+ "module": "tapping",
+ "rows": 11183,
+ "subjects": 139,
+ "persons": 139,
+ "zip_bytes": 389940,
+ "zip_sha256": "40b6a73a69115dc94d0f796c831ee1aa858afd7816a432678d64eedbe5b4aeb5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participants.tsv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "139 participants: 94 with Parkinson's disease and 45 controls (README)",
+   "ok": true,
+   "detail": "Counter({'PD': 94, 'Control': 45})"
+  },
+  {
+   "kind": "internal",
+   "what": "all 139 event files match their downloaded hashes",
+   "ok": true,
+   "detail": "139"
+  },
+  {
+   "kind": "internal",
+   "what": "11183 trials read: every cue marker (S1/S2) starts one trial; 10604 have the go cue",
+   "ok": true,
+   "detail": "579 trials without a go marker, 771 without a press, 24 segments with a second go marker (its cue marker is missing), 1 with more than one press"
+  },
+  {
+   "kind": "internal",
+   "what": "presses of the participants with S1-S7 markers fall within the trial length the README gives (6 s for 3-s intervals, 14 s for 7-s intervals, plus 50 ms)",
+   "ok": true,
+   "detail": "latest press 6.024 s (short), 13.994 s (long)"
+  },
+  {
+   "kind": "internal",
+   "what": "participants whose markers are ASCII digits (S49-S55), read as S1-S7: median press about 3 s after short cues and about 7 s after long cues (these trials run longer, up to 18-20 s in the paper's description)",
+   "ok": true,
+   "detail": "sub-095: 3638 / 6767 ms, sub-096: 4582 / 8399 ms; the third participant has 3 such trials"
+  },
+  {
+   "kind": "internal",
+   "what": "short-interval presses are earlier than long-interval presses overall (3-s vs 7-s target)",
+   "ok": true,
+   "detail": "medians 3.16 s and 6.13 s"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Control group, 3rd quartile of participants' median 7-s press time (ms)",
+   "computed": 6920.0,
+   "reported": 6918.0,
+   "tol": 5,
+   "source": "Table 2, interval timing (7-s intervals; Figure 1E-F)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group, 1st quartile of participants' median 7-s press time (ms)",
+   "computed": 5464.0,
+   "reported": 5476.0,
+   "tol": 15,
+   "source": "Table 2, interval timing (7-s intervals; Figure 1E-F)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group, median of participants' median 7-s press time (ms)",
+   "computed": 5802.0,
+   "reported": 5889.0,
+   "tol": 100,
+   "source": "Table 2, interval timing (7-s intervals; Figure 1E-F); the paper's controls number 41 here 45",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group mean MoCA",
+   "computed": 26.711111111111112,
+   "reported": 26.7,
+   "tol": 0.06,
+   "source": "Table 1 (49 controls; 45 in the deposit)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 2 of the paper (7-s intervals) rests on 41 controls and 43 + 31 + 18 patients in three cognitive-status groups; the deposit holds 45 controls and 94 patients without the split, so only the control group can be compared: its quartiles of participants' median press times match (5464 and 6920 ms against 5476 and 6918) while the median is 5802 ms against 5889 (the paper has four controls fewer; the deposit does not say which).",
+  "Table 1 lists 49 controls, 47 PD, 34 PDMCI and 19 PDD participants overall; control MoCA and age means are recomputed from the 45 controls the deposit holds."
+ ],
+ "sources": [
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/README",
+   "bytes": 1042,
+   "sha256": "017dff9cc6b86fa0b763436da7340530a012220c6515f9dd588e0d108bdb63e2",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/dataset_description.json",
+   "bytes": 555,
+   "sha256": "22680fe74cf5b005d533e2ba27e6dcb795b08b45758b943651994a32ddd7e8ce",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/participants.tsv",
+   "bytes": 5423,
+   "sha256": "422bf7ba34b99924a78be530c6b03ccd59b50dfb79faa79a1a7d86079ced638b",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "participants.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/participants.json",
+   "bytes": 615,
+   "sha256": "6913c5b45c2bb8b91325ece6d33c29faf9b25188e9ec0d56a0c6f20a183930f5",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "task-IntervalTiming_events.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/task-IntervalTiming_events.json",
+   "bytes": 740,
+   "sha256": "247150f96868fc25ad5b75aab7c9316f206cc921d1d5c45f3aabd39697ba4cac",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "CHANGES",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/CHANGES",
+   "bytes": 49,
+   "sha256": "69aecfef806d9b0b1502b3facce4842db3abf612860f3963af4f2ff47a0fc64f",
+   "fetched_utc": "2026-11-08T20:58:23Z"
+  },
+  {
+   "file": "sub-001_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-001/eeg/sub-001_task-IntervalTiming_events.tsv",
+   "bytes": 70508,
+   "sha256": "6a823124d8441ea99869b99ccf3924f670a276ac084d8c503b55d7d7e23cbc47",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-002_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-002/eeg/sub-002_task-IntervalTiming_events.tsv",
+   "bytes": 50894,
+   "sha256": "05624a9e6d66d9976e0936686acbf97861c61ac36f807f6a2f9df652135e3548",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-003_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-003/eeg/sub-003_task-IntervalTiming_events.tsv",
+   "bytes": 74350,
+   "sha256": "7fba50340508582d3992b0201ec9b74a2ae1a62ab1773e7d36d434d10edffb84",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-004_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-004/eeg/sub-004_task-IntervalTiming_events.tsv",
+   "bytes": 69270,
+   "sha256": "800764967011337f48c8cd9f76cf336f9b927ec6f9c2b911e5d8967ef3b17a3c",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-005_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-005/eeg/sub-005_task-IntervalTiming_events.tsv",
+   "bytes": 72394,
+   "sha256": "0910bcfa49aca6dd15667c4d40a06359056c6b5f2908772bb44ace87f1393227",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-006_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-006/eeg/sub-006_task-IntervalTiming_events.tsv",
+   "bytes": 67686,
+   "sha256": "096248cc1b9e22050fbc44bfae796b540ac184c0d55e376b373a5dbbd43585cc",
+   "fetched_utc": "2026-11-08T21:00:12Z"
+  },
+  {
+   "file": "sub-007_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-007/eeg/sub-007_task-IntervalTiming_events.tsv",
+   "bytes": 72890,
+   "sha256": "65c60b3ef2ceb3982cfe72f5cb6886312d189ca997e6c75259a3c818f989c35d",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-008_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-008/eeg/sub-008_task-IntervalTiming_events.tsv",
+   "bytes": 71618,
+   "sha256": "f17d3f82b879011d8932a58108823e2fd6eb7d44bba6bf199b60eb4fa302a05a",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-009_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-009/eeg/sub-009_task-IntervalTiming_events.tsv",
+   "bytes": 34019,
+   "sha256": "f9381af6d28477d44f3a8327bf571f1337d4b0775fecf8824cbf49e8866e7607",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-010_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-010/eeg/sub-010_task-IntervalTiming_events.tsv",
+   "bytes": 45798,
+   "sha256": "3a80680c613abe2e5f124472bddb47a3d675778bc6cb21b2c00fd6b5fe700412",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-011_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-011/eeg/sub-011_task-IntervalTiming_events.tsv",
+   "bytes": 29153,
+   "sha256": "ed3dcac332247da0d07462c89433b732549e54b747cf397aa8a0efd68816088d",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-012_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-012/eeg/sub-012_task-IntervalTiming_events.tsv",
+   "bytes": 27943,
+   "sha256": "b5eb827d2a5f2246f5e63c4c9ac4e958fa8048a3f833f79be17bc2ce460dda7a",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-013_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-013/eeg/sub-013_task-IntervalTiming_events.tsv",
+   "bytes": 34516,
+   "sha256": "a5a2dd8aab8682466a35e92af3fb37b1fc1df569aa3196a00b1b0e5abe5d97ed",
+   "fetched_utc": "2026-11-08T21:00:13Z"
+  },
+  {
+   "file": "sub-014_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-014/eeg/sub-014_task-IntervalTiming_events.tsv",
+   "bytes": 36561,
+   "sha256": "48e3b5c205b753fb69cc301efa642c1ebaea569c376686b4cd72a79d365c6e06",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-015_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-015/eeg/sub-015_task-IntervalTiming_events.tsv",
+   "bytes": 36503,
+   "sha256": "a5078a3cc18223f0344e673dd02af0ba4675ff59bd6602ad72ade247d2d337a9",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-016_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-016/eeg/sub-016_task-IntervalTiming_events.tsv",
+   "bytes": 50662,
+   "sha256": "42b4ffb3d863fa0afc35fc9592d9cda1f4ad688a6f6160891f61b6fa2ca28ae7",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-017_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-017/eeg/sub-017_task-IntervalTiming_events.tsv",
+   "bytes": 36518,
+   "sha256": "f8c479855d350ac79f7e134adeb57ff50996c065ecd8f3c2e2b8d70d1692d6e2",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-018_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-018/eeg/sub-018_task-IntervalTiming_events.tsv",
+   "bytes": 36225,
+   "sha256": "f9f46bfe0b4eafb819816835ecfeedcb2532535da2ad7d944a7119f974feb6de",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-019_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-019/eeg/sub-019_task-IntervalTiming_events.tsv",
+   "bytes": 44737,
+   "sha256": "b2d6384a51c5abbcec873f6c70dc3831f94b4b40e499c7b7545eac023dbb1648",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-020_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-020/eeg/sub-020_task-IntervalTiming_events.tsv",
+   "bytes": 52226,
+   "sha256": "4f8825a32484381b46be799defb553fd8a0cc9f31aa8abb873e155fc8afd39f1",
+   "fetched_utc": "2026-11-08T21:00:14Z"
+  },
+  {
+   "file": "sub-021_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-021/eeg/sub-021_task-IntervalTiming_events.tsv",
+   "bytes": 31672,
+   "sha256": "b4dea2a5ed6add86395eda3a176f5cf0b7826043c06a6246c73d59657af71647",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-022_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-022/eeg/sub-022_task-IntervalTiming_events.tsv",
+   "bytes": 32523,
+   "sha256": "996e28c81aee7e113d6e7723e0d01594d6c592a89d80770833f3526560418077",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-023_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-023/eeg/sub-023_task-IntervalTiming_events.tsv",
+   "bytes": 33216,
+   "sha256": "d4f49543e75eab5b5cf80c85af7075d8515caafdb880918fb64167eb0e1104cf",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-024_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-024/eeg/sub-024_task-IntervalTiming_events.tsv",
+   "bytes": 31918,
+   "sha256": "7b1f7eb03ef3744989450e5d97b695e59714f13165c875cd76e9a2422d687409",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-025_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-025/eeg/sub-025_task-IntervalTiming_events.tsv",
+   "bytes": 32843,
+   "sha256": "fb508e72b810ab3c1f49a93c142f4f6c0a4b3a353db77ab46c903f79fafa1f03",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-026_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-026/eeg/sub-026_task-IntervalTiming_events.tsv",
+   "bytes": 32670,
+   "sha256": "f468da43fb4dde1dd37fa7c5f3ddc638004207dbc72c15c9bd1b75f53d9bb59c",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-027_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-027/eeg/sub-027_task-IntervalTiming_events.tsv",
+   "bytes": 32781,
+   "sha256": "afdd936e645f598b1376cbbb97a0c26727ef19247f9d37a7671ca75ca3b92068",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-028_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-028/eeg/sub-028_task-IntervalTiming_events.tsv",
+   "bytes": 32332,
+   "sha256": "85e6abc22717a3f9fbf7bba50958a790469bb889b5398ae1ca75117aa4e7b76a",
+   "fetched_utc": "2026-11-08T21:00:15Z"
+  },
+  {
+   "file": "sub-029_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-029/eeg/sub-029_task-IntervalTiming_events.tsv",
+   "bytes": 32372,
+   "sha256": "db501bd19523ecdfd8f9d3178bb74aea8da713bc054a00cbed6cbe34383ca0c9",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-030_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-030/eeg/sub-030_task-IntervalTiming_events.tsv",
+   "bytes": 32649,
+   "sha256": "72dc0d1401963f1fd18da7156f1e5da5ed39cdcbe35cc5eda33a98ab15545db5",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-031_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-031/eeg/sub-031_task-IntervalTiming_events.tsv",
+   "bytes": 30102,
+   "sha256": "74bf7dac00a6b4c593abf0ffcfeb71863860c05f01af380d719041ad797ff875",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-032_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-032/eeg/sub-032_task-IntervalTiming_events.tsv",
+   "bytes": 33381,
+   "sha256": "6177062de02bb31de4924a835a90dc033cc6401d793389a3c41c268fa0826ca3",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-033_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-033/eeg/sub-033_task-IntervalTiming_events.tsv",
+   "bytes": 33072,
+   "sha256": "b743087597a4d6f767ae3ce67f5766fa02035c3bb71563a644cf00afb23a21c0",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-034_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-034/eeg/sub-034_task-IntervalTiming_events.tsv",
+   "bytes": 32268,
+   "sha256": "850ef1c1f258f0b47fc277df84a909ed43a623ea6fce1d9f7e93a4b07c0f7528",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-035_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-035/eeg/sub-035_task-IntervalTiming_events.tsv",
+   "bytes": 33374,
+   "sha256": "6049c11029cc934776b4e0bb07c5d6f925a4cdf1f283412d18a3d5da7aa5aaac",
+   "fetched_utc": "2026-11-08T21:00:16Z"
+  },
+  {
+   "file": "sub-036_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-036/eeg/sub-036_task-IntervalTiming_events.tsv",
+   "bytes": 33348,
+   "sha256": "c4281c2d397bf27f578c36b5b028d3f5fd51b53c3481fcd68c6f235f631cddb6",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-037_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-037/eeg/sub-037_task-IntervalTiming_events.tsv",
+   "bytes": 36461,
+   "sha256": "f02d361ae3a4cc7ff619bd05ccc63f8240b4c000ee09d616aa8f9a4a2640e373",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-038_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-038/eeg/sub-038_task-IntervalTiming_events.tsv",
+   "bytes": 33069,
+   "sha256": "046262e6b9519b1f5a9cd64149acba3821e3b34a4b66ebb0fe7c25b5d890a53e",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-039_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-039/eeg/sub-039_task-IntervalTiming_events.tsv",
+   "bytes": 33399,
+   "sha256": "13d6a5cc5438ee2b96bb8b56c5b40836864d482a7b474ac3f525afd9ffb96d2f",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-040_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-040/eeg/sub-040_task-IntervalTiming_events.tsv",
+   "bytes": 31679,
+   "sha256": "67b055e84de52cb5c57c22fedf9ff6b672674a4746b93a8e7a71461a25bf7ba1",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-041_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-041/eeg/sub-041_task-IntervalTiming_events.tsv",
+   "bytes": 33224,
+   "sha256": "dcb715da1e6831f9e0268388f35847c7730527b2977fcf925f73c9478e52b512",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-042_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-042/eeg/sub-042_task-IntervalTiming_events.tsv",
+   "bytes": 31851,
+   "sha256": "3938b2e8b11bbd074436fe8c564ceac82ef9972e201bbe514e405f8d64fdc809",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-043_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-043/eeg/sub-043_task-IntervalTiming_events.tsv",
+   "bytes": 30742,
+   "sha256": "42c7e4b35ea6f9856457c0b7005eaaa6e8589c62af38506bdcfa57c7c11a7597",
+   "fetched_utc": "2026-11-08T21:00:17Z"
+  },
+  {
+   "file": "sub-044_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-044/eeg/sub-044_task-IntervalTiming_events.tsv",
+   "bytes": 31540,
+   "sha256": "ad8692b8cbdfeb0a72d63422a8ef4be402c5db6bd85c7a7d6b9355c02c9a4606",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-045_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-045/eeg/sub-045_task-IntervalTiming_events.tsv",
+   "bytes": 34164,
+   "sha256": "e420cf0b416286ce6267ca074906a1ea32a107fafefc871722b3baccde24a24e",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-046_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-046/eeg/sub-046_task-IntervalTiming_events.tsv",
+   "bytes": 34354,
+   "sha256": "6e19c977ad9a80c5afc5c9b4606b5c1ec4d55fb690218c59ca02ab6e0cb5b066",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-047_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-047/eeg/sub-047_task-IntervalTiming_events.tsv",
+   "bytes": 32990,
+   "sha256": "ea8fbdb91472311675a856b4f1ee7efafd522cc3afaff66128a624c2a6086d67",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-048_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-048/eeg/sub-048_task-IntervalTiming_events.tsv",
+   "bytes": 34236,
+   "sha256": "b39c29dcd1538d1a4e39d39072e6914a8d74931da51db7c0aad47ea9739a3218",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-049_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-049/eeg/sub-049_task-IntervalTiming_events.tsv",
+   "bytes": 34309,
+   "sha256": "49379f5fad86b364042101553593830d43218a1b77e67866c8221bc19ad8fe42",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-050_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-050/eeg/sub-050_task-IntervalTiming_events.tsv",
+   "bytes": 33352,
+   "sha256": "0fb7b718de83cb3f2636ba0a461a9eca8f26c303b99c279c5446b3bee050cd6e",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-051_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-051/eeg/sub-051_task-IntervalTiming_events.tsv",
+   "bytes": 32263,
+   "sha256": "4efb190e2ec5731ffab557ddd4fb1e6e4b223df50a8a765405d72dc516a9406f",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-052_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-052/eeg/sub-052_task-IntervalTiming_events.tsv",
+   "bytes": 34855,
+   "sha256": "e599c03338950492addc185a8606efd1ec8168a82b8e630119ca450e6e1f73e2",
+   "fetched_utc": "2026-11-08T21:00:18Z"
+  },
+  {
+   "file": "sub-053_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-053/eeg/sub-053_task-IntervalTiming_events.tsv",
+   "bytes": 31215,
+   "sha256": "3361ad80f02010abc62f42bf4f3f17a8b768c906bba5339cac80acd2b0f18de8",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-054_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-054/eeg/sub-054_task-IntervalTiming_events.tsv",
+   "bytes": 32865,
+   "sha256": "ad17d481cef181a06d778cefe37bdd207710220953a2cc7fcbd7742dca31624e",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-055_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-055/eeg/sub-055_task-IntervalTiming_events.tsv",
+   "bytes": 34542,
+   "sha256": "cabbeb0472d185c3c5fe78e0f37ddf3171bb224360cecca0e6715fac3adc24ea",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-056_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-056/eeg/sub-056_task-IntervalTiming_events.tsv",
+   "bytes": 32603,
+   "sha256": "4861196777f8b4be894962aff51fb47bd83851f5317a665a8a861be7ba9f2cbb",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-057_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-057/eeg/sub-057_task-IntervalTiming_events.tsv",
+   "bytes": 36971,
+   "sha256": "c054a678700cc1817964258e3d89f78fe762f76b098df03b3da852d5439612e4",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-058_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-058/eeg/sub-058_task-IntervalTiming_events.tsv",
+   "bytes": 34148,
+   "sha256": "32e591716605e6ef73d532f780e97047d947427131fdc38941e0557cf10a0765",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-059_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-059/eeg/sub-059_task-IntervalTiming_events.tsv",
+   "bytes": 37654,
+   "sha256": "72af2278327669f5d98f0aa4ecb0f79127aeab08993d8dcad40906766b992a4b",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-060_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-060/eeg/sub-060_task-IntervalTiming_events.tsv",
+   "bytes": 37667,
+   "sha256": "1655df73e70661eb5912d8c6bb67257e396ba01f4888e3adcb000a744193aac6",
+   "fetched_utc": "2026-11-08T21:00:19Z"
+  },
+  {
+   "file": "sub-061_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-061/eeg/sub-061_task-IntervalTiming_events.tsv",
+   "bytes": 34494,
+   "sha256": "2981cfd9436946c4cb3c30cd43e1022243da0b6dcee673e894589510d7683b7c",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-062_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-062/eeg/sub-062_task-IntervalTiming_events.tsv",
+   "bytes": 36103,
+   "sha256": "7b2ca2f6b1b154e5f5d7067fb78a6b2d43b2b61b01405d86eef3a8483eb6e2a9",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-063_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-063/eeg/sub-063_task-IntervalTiming_events.tsv",
+   "bytes": 37242,
+   "sha256": "15fea1534e680a4b327ed31bf8e81780df5aa6f3dcabdf1bd772ae8b3e442d5a",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-064_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-064/eeg/sub-064_task-IntervalTiming_events.tsv",
+   "bytes": 35533,
+   "sha256": "41ceba0097652dde68b7e9d70d4f88b2685d245c010182de16080dd9d6429ca7",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-065_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-065/eeg/sub-065_task-IntervalTiming_events.tsv",
+   "bytes": 37797,
+   "sha256": "db2086a8bda2296946a7f4707360d1c6dc928703fe08a668bdb663ea97f48cd3",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-066_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-066/eeg/sub-066_task-IntervalTiming_events.tsv",
+   "bytes": 34492,
+   "sha256": "234ab9d26a09e47c4315f5c6f7b621db98507ee3d43a2ef486531683daebb44a",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-067_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-067/eeg/sub-067_task-IntervalTiming_events.tsv",
+   "bytes": 37323,
+   "sha256": "1488e0a99ea691c227749ef5f89385bb2ffa408c7a376a6e270431ba78853935",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-068_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-068/eeg/sub-068_task-IntervalTiming_events.tsv",
+   "bytes": 36770,
+   "sha256": "99095141b9c5a7e4f6f640748c6e73225b1953308b5b56196ee7dd5572e2a295",
+   "fetched_utc": "2026-11-08T21:00:20Z"
+  },
+  {
+   "file": "sub-069_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-069/eeg/sub-069_task-IntervalTiming_events.tsv",
+   "bytes": 36886,
+   "sha256": "1c0c8d9aa0c06fbca5c50bd441bccc7f1dcdafd1f254ef09acc5d68f9d869edb",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-070_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-070/eeg/sub-070_task-IntervalTiming_events.tsv",
+   "bytes": 37197,
+   "sha256": "65ae7b8cd3ac954b26044135f00edab73f1b7deb0d7664fb21a2d071b94cd50a",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-071_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-071/eeg/sub-071_task-IntervalTiming_events.tsv",
+   "bytes": 36667,
+   "sha256": "3790cb79541e900fcec3d7c90c57e41350399cbdd2aa98312e299a3e5adec27d",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-072_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-072/eeg/sub-072_task-IntervalTiming_events.tsv",
+   "bytes": 36700,
+   "sha256": "4307ca99b456b4598786b00cfa21240394098fd533c8c44830fc5022cb22f235",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-073_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-073/eeg/sub-073_task-IntervalTiming_events.tsv",
+   "bytes": 37389,
+   "sha256": "95b82e66410f6280c5b1c530c8b103e80611643f4818195257c4c8ec341e1fe4",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-074_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-074/eeg/sub-074_task-IntervalTiming_events.tsv",
+   "bytes": 37188,
+   "sha256": "97c7911d3799a2a4e52d86fd211d94fb23468267b154d82d8fe848b462a72c6e",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-075_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-075/eeg/sub-075_task-IntervalTiming_events.tsv",
+   "bytes": 37383,
+   "sha256": "b13253da30cc7a84262867a36c202fb51cfc0f8f32a07fdd9f85ae2ca06da4b8",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-076_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-076/eeg/sub-076_task-IntervalTiming_events.tsv",
+   "bytes": 36223,
+   "sha256": "077f5990176dd4ed0ca1f2f86a7115e72f4a94f33175a0181016fb4b9badd31d",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-077_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-077/eeg/sub-077_task-IntervalTiming_events.tsv",
+   "bytes": 36996,
+   "sha256": "5e9cede700200b4d40e32bf34dda5b7f2f243a327edf6899dd176a0a40ef831c",
+   "fetched_utc": "2026-11-08T21:00:21Z"
+  },
+  {
+   "file": "sub-078_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-078/eeg/sub-078_task-IntervalTiming_events.tsv",
+   "bytes": 35618,
+   "sha256": "f758e63e11b4d20d0ad83d44d8ea9c94e44ece02fb8b534f7cca2add87a03dfa",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-079_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-079/eeg/sub-079_task-IntervalTiming_events.tsv",
+   "bytes": 37111,
+   "sha256": "8a64e3c903bc17568efe49ac4fa9a8d2aa89ea72ae7eb2e6df27b8df309b1dea",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-080_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-080/eeg/sub-080_task-IntervalTiming_events.tsv",
+   "bytes": 36989,
+   "sha256": "b5c9797dd440dae11821c1bd5b24e45de50e2081a16d367672c6553f74a6db82",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-081_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-081/eeg/sub-081_task-IntervalTiming_events.tsv",
+   "bytes": 35022,
+   "sha256": "731922cd4bb26091ccdcd5294c20b3ff5e3c2a55a1b29b6ce4f51984e67cd55a",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-082_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-082/eeg/sub-082_task-IntervalTiming_events.tsv",
+   "bytes": 35779,
+   "sha256": "bf909451b5d716c83d918c813be1b92a8bca1ff8da1fc1f7657df4a8ad40499d",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-083_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-083/eeg/sub-083_task-IntervalTiming_events.tsv",
+   "bytes": 37061,
+   "sha256": "1eddbdcc936a0f2a9c04420ef1a49708dec81ccd1bff7b94a0fb913d555a7f76",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-084_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-084/eeg/sub-084_task-IntervalTiming_events.tsv",
+   "bytes": 36778,
+   "sha256": "1f3c276c3ac894620c8eea665ed4596dd9169d932e405668a84a79fb48312013",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-085_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-085/eeg/sub-085_task-IntervalTiming_events.tsv",
+   "bytes": 37270,
+   "sha256": "078e0d0de4bd2ae966c99799989d6d7c4c22547c13282d82b68f5529ce5f189f",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-086_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-086/eeg/sub-086_task-IntervalTiming_events.tsv",
+   "bytes": 36296,
+   "sha256": "c271c37b9788bff84074db77e657ada30f603e7d7172191e4b1cee41052280bd",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-087_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-087/eeg/sub-087_task-IntervalTiming_events.tsv",
+   "bytes": 36323,
+   "sha256": "8102aa2a92dae038f68223b07326bbfcdc86f21959660645097508fd753bfb81",
+   "fetched_utc": "2026-11-08T21:00:22Z"
+  },
+  {
+   "file": "sub-088_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-088/eeg/sub-088_task-IntervalTiming_events.tsv",
+   "bytes": 37748,
+   "sha256": "a0f9df1b703e57308e3f287061c5632891de8abe676bf71f1d60f0a7117cabbf",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-089_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-089/eeg/sub-089_task-IntervalTiming_events.tsv",
+   "bytes": 36699,
+   "sha256": "fcc40321513e7c982c7b9530f25a5423ee5e25d11b64067eeb9f8243fe7e23e7",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-090_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-090/eeg/sub-090_task-IntervalTiming_events.tsv",
+   "bytes": 35319,
+   "sha256": "d29b172d357b6fae1b57c2b371322877ea1239e29c3c8dda41f2cb0771c7c766",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-091_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-091/eeg/sub-091_task-IntervalTiming_events.tsv",
+   "bytes": 35818,
+   "sha256": "e4f1c7f0d8aa17ba8aba22002353a294b6d751918047c83767466bfb99f4bb28",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-092_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-092/eeg/sub-092_task-IntervalTiming_events.tsv",
+   "bytes": 37295,
+   "sha256": "c6928785465735b801b765ce89cb12028003b6af21142fe664f026f9ad868873",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-093_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-093/eeg/sub-093_task-IntervalTiming_events.tsv",
+   "bytes": 37591,
+   "sha256": "bca9d93e335c257a6bd421e29135e651a1a1bdeb408dfc146c43c49c96c0e153",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-094_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-094/eeg/sub-094_task-IntervalTiming_events.tsv",
+   "bytes": 37256,
+   "sha256": "f21692fc0eaf4cd646f1e47ff49a772a99fbc5f8259235b66f6da3d6b4c84531",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-095_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-095/eeg/sub-095_task-IntervalTiming_events.tsv",
+   "bytes": 35326,
+   "sha256": "4355eb114e90681dbcc3ae7e603afa466376d1f1b183aa5e22bca55d4b89030d",
+   "fetched_utc": "2026-11-08T21:00:23Z"
+  },
+  {
+   "file": "sub-096_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-096/eeg/sub-096_task-IntervalTiming_events.tsv",
+   "bytes": 36229,
+   "sha256": "b167a31ce3063c809fbd8b876d5152b9afad65634557dcfebbb7d0124306a4b9",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-097_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-097/eeg/sub-097_task-IntervalTiming_events.tsv",
+   "bytes": 36366,
+   "sha256": "42203697ca7d1064468181f55abad6cdf2f2bd225f34640673c13f0ea14a7f5a",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-098_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-098/eeg/sub-098_task-IntervalTiming_events.tsv",
+   "bytes": 37366,
+   "sha256": "1e815e5ac832a609dd9f8a4e9317d12a179b5f90aa2c06cb7140050d165577ed",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-099_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-099/eeg/sub-099_task-IntervalTiming_events.tsv",
+   "bytes": 36737,
+   "sha256": "a6a97b89a6be31c2b30b1682db17f4e786052b94c665f04895f170230998ef29",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-100_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-100/eeg/sub-100_task-IntervalTiming_events.tsv",
+   "bytes": 36391,
+   "sha256": "ad2f6d3763567e8979eb661a0a7406096cd8273bc2ef183797760512fa5565b4",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-101_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-101/eeg/sub-101_task-IntervalTiming_events.tsv",
+   "bytes": 37124,
+   "sha256": "791b8ee393e28902e1981776e364d67588b89306716be85d073162555f12ae79",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-102_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-102/eeg/sub-102_task-IntervalTiming_events.tsv",
+   "bytes": 37683,
+   "sha256": "ad96e04d363fdc335cc93c6278c9c64187f1f03c7eae990b433d979436f6e8dc",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-103_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-103/eeg/sub-103_task-IntervalTiming_events.tsv",
+   "bytes": 35885,
+   "sha256": "36aa3e8785a944bc240fbf375e8da3e669aecb3cbce4875991d31fef7f7bbbc0",
+   "fetched_utc": "2026-11-08T21:00:24Z"
+  },
+  {
+   "file": "sub-104_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-104/eeg/sub-104_task-IntervalTiming_events.tsv",
+   "bytes": 44806,
+   "sha256": "d286c83a5e83ea9d4412839f296692e2b22e9bb532646b394adf348d5cfdf93a",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-105_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-105/eeg/sub-105_task-IntervalTiming_events.tsv",
+   "bytes": 36542,
+   "sha256": "d1a197a9b9be7cf04f4f20e81258107d7ef1243dd58771719daba477203c20c6",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-106_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-106/eeg/sub-106_task-IntervalTiming_events.tsv",
+   "bytes": 45383,
+   "sha256": "3a7d09ea5a6a208acc2ba873c8c721b53d8b45007182b6e07be6b835aef05c8d",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-107_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-107/eeg/sub-107_task-IntervalTiming_events.tsv",
+   "bytes": 36187,
+   "sha256": "2323a6400a9c05fc543a937222416c9a4bbd96e3a535a8d3481e9cba048ba465",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-108_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-108/eeg/sub-108_task-IntervalTiming_events.tsv",
+   "bytes": 36973,
+   "sha256": "a209b0068bab3b8ca30e35d81476a3b9f912ef18a37dd74763488dc34c6a6de5",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-109_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-109/eeg/sub-109_task-IntervalTiming_events.tsv",
+   "bytes": 37881,
+   "sha256": "846340ac4c317aef3f9f462b3422bc58590356f2ccd858d823e2c2829afc07b1",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-110_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-110/eeg/sub-110_task-IntervalTiming_events.tsv",
+   "bytes": 37066,
+   "sha256": "82c45084eb3e1dfff014a833d93a2fd3ffa46c6d3546345e15cf38f2b8874e05",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-111_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-111/eeg/sub-111_task-IntervalTiming_events.tsv",
+   "bytes": 42663,
+   "sha256": "24f98ebde0ec5529597af5dc38579d39f1c887f85ddf91794b0bf20e405fea5a",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-112_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-112/eeg/sub-112_task-IntervalTiming_events.tsv",
+   "bytes": 32088,
+   "sha256": "e7c18c57c7a926e8a957b0f2593857e9d43a352790e390df18d5022dd11df468",
+   "fetched_utc": "2026-11-08T21:00:25Z"
+  },
+  {
+   "file": "sub-113_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-113/eeg/sub-113_task-IntervalTiming_events.tsv",
+   "bytes": 32451,
+   "sha256": "e7bdb73fb65239bfc15a6c3211006aee412d0692148f1bde3a087b4ae914e370",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-114_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-114/eeg/sub-114_task-IntervalTiming_events.tsv",
+   "bytes": 32815,
+   "sha256": "0eea1cec31526e190af50219d9ea5229377ad1bb38ddd3ebc836e57f1e998857",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-115_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-115/eeg/sub-115_task-IntervalTiming_events.tsv",
+   "bytes": 34139,
+   "sha256": "2054d3bfae4db20d190c32c0a1ade3e497499ae0beecdfc84a9f8a02f5add620",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-116_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-116/eeg/sub-116_task-IntervalTiming_events.tsv",
+   "bytes": 32545,
+   "sha256": "41aecf01dbe0d78ba97ec931af49c4177164b7197ca61fdbc132ebc1b6788a15",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-117_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-117/eeg/sub-117_task-IntervalTiming_events.tsv",
+   "bytes": 32670,
+   "sha256": "9906c71ad594ffacb2f1ab0aac6809e5aed2d1b18b9233574e3410c7bb96ba02",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-118_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-118/eeg/sub-118_task-IntervalTiming_events.tsv",
+   "bytes": 32279,
+   "sha256": "3e31f44045dec2e528a53e887e1ca87f8a095c2cb499570338167421ac81df98",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-119_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-119/eeg/sub-119_task-IntervalTiming_events.tsv",
+   "bytes": 32409,
+   "sha256": "c026c0d8fbce29a4d05f98d079b3c06c8593365af64371bd2fb5ee3e7c1ef6a2",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-120_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-120/eeg/sub-120_task-IntervalTiming_events.tsv",
+   "bytes": 32570,
+   "sha256": "8727a0528d08a776421c127b12f60f0832fac8548123e053d5ea687dbc7f0b78",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-121_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-121/eeg/sub-121_task-IntervalTiming_events.tsv",
+   "bytes": 32575,
+   "sha256": "91cfce2c948750d695860f6e5b09abd62fa9b5e7399fe8e1ce5aeadabbc58ba3",
+   "fetched_utc": "2026-11-08T21:00:26Z"
+  },
+  {
+   "file": "sub-122_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-122/eeg/sub-122_task-IntervalTiming_events.tsv",
+   "bytes": 34431,
+   "sha256": "6ca5cf4394d364a72bde5b7badac7b05f35e134ecea9d5e8b03b831a3be7c677",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-123_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-123/eeg/sub-123_task-IntervalTiming_events.tsv",
+   "bytes": 32189,
+   "sha256": "f48306701b736ae73e392682e5c1d42d20b5ddce503795d038bd35822759651f",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-124_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-124/eeg/sub-124_task-IntervalTiming_events.tsv",
+   "bytes": 35034,
+   "sha256": "f555c2c94549f8c541193dc4d951ab91e4a90f5f0460c02a2e6572db75ab681d",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-125_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-125/eeg/sub-125_task-IntervalTiming_events.tsv",
+   "bytes": 30961,
+   "sha256": "3505a44147872156f7eae4d1a2c7d00488726ed81b83a906adaaf6fae6fc1870",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-126_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-126/eeg/sub-126_task-IntervalTiming_events.tsv",
+   "bytes": 34915,
+   "sha256": "1c8b970656d722e3c195e9cd85023b56967ae5204bd6c3048e64bf6f74e03188",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-127_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-127/eeg/sub-127_task-IntervalTiming_events.tsv",
+   "bytes": 33803,
+   "sha256": "80932f62354db2ff183c2370dd362566aab3e80f3a1c652de57815d75e0d41fa",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-128_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-128/eeg/sub-128_task-IntervalTiming_events.tsv",
+   "bytes": 34620,
+   "sha256": "f6f258c2cc986b3015b510580e908af3f7a82be2c5fdf5279fb05d994675d78c",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-129_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-129/eeg/sub-129_task-IntervalTiming_events.tsv",
+   "bytes": 33682,
+   "sha256": "3cbee6adb5675fd00a702c1df57c125ba39b5fafd8991d9410911c0a2dd5de96",
+   "fetched_utc": "2026-11-08T21:00:27Z"
+  },
+  {
+   "file": "sub-130_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-130/eeg/sub-130_task-IntervalTiming_events.tsv",
+   "bytes": 37397,
+   "sha256": "c64f24ce4de06205b904275c228562c544ba125640580a4e1666f7504501ec5b",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-131_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-131/eeg/sub-131_task-IntervalTiming_events.tsv",
+   "bytes": 35040,
+   "sha256": "08bce1429a3272fc5ea585341e80f10a58f4ad9fce986c0445bcc67434997169",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-132_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-132/eeg/sub-132_task-IntervalTiming_events.tsv",
+   "bytes": 37106,
+   "sha256": "f55915439b39ef11366556a05a0a65c2846886fbc07785de0dc34835b1b6aa8e",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-133_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-133/eeg/sub-133_task-IntervalTiming_events.tsv",
+   "bytes": 37458,
+   "sha256": "216482ecd5d3962b2f9cb0164e6b00ff49815c0bc546fc8452601576343bd334",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-134_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-134/eeg/sub-134_task-IntervalTiming_events.tsv",
+   "bytes": 36968,
+   "sha256": "5e31f80ad29ae7e22c225e7a396ce3499ee11ef9fbc4426a29af37998ed42e01",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-135_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-135/eeg/sub-135_task-IntervalTiming_events.tsv",
+   "bytes": 36997,
+   "sha256": "8a1e3a113fe66528c337506629a252bdcad3ffc62ea6936fe958963202c8edb1",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-136_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-136/eeg/sub-136_task-IntervalTiming_events.tsv",
+   "bytes": 36828,
+   "sha256": "5fbedb9f77ea9951b69212307cfde5c1e80521de8caeb9df85cac80939a36f23",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-137_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-137/eeg/sub-137_task-IntervalTiming_events.tsv",
+   "bytes": 35425,
+   "sha256": "1f46019c6b4aca02f0a70fe0cd57fdba93b5fe713cde8346524483ce249bc3f9",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-138_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-138/eeg/sub-138_task-IntervalTiming_events.tsv",
+   "bytes": 37150,
+   "sha256": "20099f8bc28e9527f54d92905da8e9dd4da155efd479b5dc3c659b05a4e25a21",
+   "fetched_utc": "2026-11-08T21:00:28Z"
+  },
+  {
+   "file": "sub-139_task-IntervalTiming_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004579/sub-139/eeg/sub-139_task-IntervalTiming_events.tsv",
+   "bytes": 37562,
+   "sha256": "de55af3e6272a279b5fc0640c25777dd89236f49ffd667114720a1c392ba8b86",
+   "fetched_utc": "2026-11-08T21:00:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Singh2023_JNNP.zip"
+}

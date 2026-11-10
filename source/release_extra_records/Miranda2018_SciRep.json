@@ -1,0 +1,61 @@
+{
+ "id": "Miranda2018_SciRep",
+ "module": "timeseries",
+ "rows": 487,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 13335958,
+ "zip_sha256": "a69e84ded2e2d8ea7f48d22525a48139d4e089884cabdc9e1cb36168bd6ca05b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every file read, none lost",
+   "ok": true,
+   "detail": "487"
+  },
+  {
+   "kind": "internal",
+   "what": "sampling rate is near 120 Hz in every recording",
+   "ok": true,
+   "detail": "120.05-125.00"
+  },
+  {
+   "kind": "internal",
+   "what": "time axis strictly increasing",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Participants (ten healthy subjects); PhysioNet page",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of motor tasks in the file naming",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "PhysioNet CULM Files section (14 task names)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit does not state the order in which tasks were performed; recording numbers follow alphabetical file order. Task names are matched ignoring letter case (for example Harvardcu = HarvardCU). One participant has three Ellipse sets with a number in the file name (25, 45, 90; not explained in the deposit, possibly an orientation in degrees); they are kept as Ellipse with that number in trial_info (file_variant)."
+ ],
+ "sources": [
+  {
+   "file": "csvFiles.zip",
+   "url": "https://physionet.org/files/culm/1.0.0/csvFiles.zip?download",
+   "bytes": 13042146,
+   "sha256": "a4208a36a0546dc6056cdb16e6f4c1fbb389c57f9870ae111e5c84392dddd7fd",
+   "fetched_utc": "2026-11-09T17:11:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Miranda2018_SciRep.zip"
+}

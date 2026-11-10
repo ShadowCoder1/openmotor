@@ -1,0 +1,7 @@
+{
+ "id": "Eshky2018_Interspeech",
+ "skipped": true,
+ "reason": "too large",
+ "details": "UltraSuite (CC BY-NC 4.0 per ultrasuite.github.io, which would allow a converted copy) is offered only by rsync, and the tongue movement is stored as raw ultrasound image sequences (.ult) beside the audio (.wav), prompts (.txt) and .param files: UXTD 82 GB (58 typically developing children), UXSSD 110 GB (8 children with speech sound disorder), UPX 191 GB (20 children), Cleft 85 GB (29 children), UX2020 91 GB (37 children), all far over the 5 GB gate. The only small parts do not hold trial-level tongue values: 80 MB of manual and automatic labels (alignments of the audio) and samples of 94-159 MB per dataset on Edinburgh DataShare (hdl.handle.net/10283/3255) under a separate Depositor Agreement. Paper and licence match extra_studies.json (Interspeech 2018, doi 10.21437/interspeech.2018-1736).",
+ "sources": []
+}

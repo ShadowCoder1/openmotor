@@ -1,0 +1,648 @@
+{
+ "id": "Tang2022_JNeurophysiol",
+ "module": "speech",
+ "rows": 60954,
+ "subjects": 112,
+ "persons": 112,
+ "zip_bytes": 2733576,
+ "zip_sha256": "4cf56557b4df50043bf15d033fda4486239e65f709f7cd56518e0e804732d068",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "datatable_inout_3phases holds the same Experiment 4 rows as datatable_inout, with holdIn1+holdIn2 and holdOut1+holdOut2 merged (so it is not a second set of rows)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the authors' initdists, middists, norminitdists and centering follow exactly from the shared formants (distance to the median of the same vowel in the same phase), so they are not carried as columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: Audapter's log matches the kept trials (for every participant the produced F1 it logged correlates with the offline midpoint F1 better at the chosen alignment than one trial off)",
+   "ok": true,
+   "detail": "12600 of 12600 rows matched; smallest margin in median r 0.16"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: the authors' initdists, middists, norminitdists and centering follow exactly from the shared formants (distance to the median of the same vowel in the same phase), so they are not carried as columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: Audapter's log matches the kept trials (for every participant the produced F1 it logged correlates with the offline midpoint F1 better at the chosen alignment than one trial off)",
+   "ok": true,
+   "detail": "11578 of 11581 rows matched; smallest margin in median r 0.15"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: the authors' initdists, middists, norminitdists and centering follow exactly from the shared formants (distance to the median of the same vowel in the same phase), so they are not carried as columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: Audapter's log matches the kept trials (for every participant the produced F1 it logged correlates with the offline midpoint F1 better at the chosen alignment than one trial off)",
+   "ok": true,
+   "detail": "11160 of 11160 rows matched; smallest margin in median r 0.19"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4: the authors' initdists, middists, norminitdists and centering follow exactly from the shared formants (distance to the median of the same vowel in the same phase), so they are not carried as columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Control (no perturbation; data set of Parrell & Niziolek 2021): the authors' initdists, middists, norminitdists and centering follow exactly from the shared formants (distance to the median of the same vowel in the same phase), so they are not carried as columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows per experiment = the authors' tables (12600, 11581, 11160, 14269, 11344)",
+   "ok": true,
+   "detail": "{'Control (no perturbation; data set of Parrell & Niziolek 2021)': 11344, 'Experiment 1': 12600, 'Experiment 2': 11581, 'Experiment 3': 11160, 'Experiment 4': 14269}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants per experiment = 24, 22, 21, 20 (paper, Methods) and 25 in the control data set",
+   "ok": true,
+   "detail": "{'Control (no perturbation; data set of Parrell & Niziolek 2021)': 25, 'Experiment 1': 24, 'Experiment 2': 22, 'Experiment 3': 21, 'Experiment 4': 20}"
+  },
+  {
+   "kind": "internal",
+   "what": "subject x trial is unique and trials increase within every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers within the design (540 trials in Experiments 1-3, 720 in Experiment 4, 460 in the control; one Experiment 1 participant ran 640 trials with a fourth word, booed, that the authors did not keep)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "words: bead, bad, bod in Experiments 1, 2, 4; bead, bad, bed in Experiment 3; plus booed in the control",
+   "ok": true,
+   "detail": "{'in': ['aa', 'ae', 'iy'], 'inout': ['aa', 'ae', 'iy'], 'null': ['aa', 'ae', 'iy', 'uw'], 'out': ['aa', 'ae', 'iy'], 'out2': ['ae', 'eh', 'iy']}"
+  },
+  {
+   "kind": "internal",
+   "what": "f1_mel present on every row and within 250-1200",
+   "ok": true,
+   "detail": "268.1-1172.7"
+  },
+  {
+   "kind": "internal",
+   "what": "f2_mel present on every row and within 850-2050",
+   "ok": true,
+   "detail": "903.7-1999.1"
+  },
+  {
+   "kind": "internal",
+   "what": "f1_mel_onset present on every row and within 250-1200",
+   "ok": true,
+   "detail": "286.6-1091.3"
+  },
+  {
+   "kind": "internal",
+   "what": "f2_mel_onset present on every row and within 850-2050",
+   "ok": true,
+   "detail": "887.3-1991.8"
+  },
+  {
+   "kind": "internal",
+   "what": "duration_ms present on every row and within 100-750",
+   "ok": true,
+   "detail": "100.3-729.1"
+  },
+  {
+   "kind": "internal",
+   "what": "reaction_time_ms present on every row and within 50-4500",
+   "ok": true,
+   "detail": "75.5-4402.0"
+  },
+  {
+   "kind": "internal",
+   "what": "perturbation: 0 with normal feedback on baseline, washout and all control rows; on exposure rows of Experiments 1-3 the logged shift (heard minus produced, mels) is present except where Audapter logged no heard formants; Experiment 4 has no shift log",
+   "ok": true,
+   "detail": "19683 exposure rows with a logged shift, 14 without"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors: the control's booed rows (not analysed) and the Experiment 2 washout of the one participant whose washout the authors' summary leaves empty",
+   "ok": true,
+   "detail": "2918 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the authors' summary table (table_in.csv) RT = the mean of the converted rows' reaction_time_ms per participant, vowel and phase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials removed (mean over participants)",
+   "computed": 1.9097222222222223,
+   "reported": 1.9,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of trials removed (mean over participants)",
+   "computed": 2.225722572257226,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: % of trials removed (mean over participants)",
+   "computed": 0.9097222222222208,
+   "reported": 1.0,
+   "tol": 0.1,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiments 1-4: % of all trials removed",
+   "computed": 1.6162617749132413,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, late exposure: variability change from baseline (mels), mean",
+   "computed": 4.947468376674512,
+   "reported": 4.9,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, late exposure: paired t",
+   "computed": 2.983160928539642,
+   "reported": 2.98,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, late exposure: Cohen's d (t / sqrt n)",
+   "computed": 0.6089351746274496,
+   "reported": 0.609,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, washout: variability change from baseline (mels), mean",
+   "computed": 4.353049124037812,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, washout: paired t",
+   "computed": 3.317924919693435,
+   "reported": 3.32,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, washout: Cohen's d (t / sqrt n)",
+   "computed": 0.6772685881761474,
+   "reported": 0.677,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, late exposure: variability change from baseline (mels), mean",
+   "computed": 4.370557029234654,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, late exposure: paired t",
+   "computed": 3.528705490063149,
+   "reported": 3.53,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, late exposure: Cohen's d (t / sqrt n)",
+   "computed": 0.7523225382894387,
+   "reported": 0.75,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2 and Figure 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, washout: variability change, mean, without the participant whose washout the authors' summary leaves empty (mels)",
+   "computed": 1.6215461843985033,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, washout: paired t (21 participants)",
+   "computed": 1.5729185911376165,
+   "reported": 1.57,
+   "tol": 0.03,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, inward phase: variability change from baseline (mels), mean",
+   "computed": 4.066810330588128,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, inward phase: paired t",
+   "computed": 4.001149097733612,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, inward phase: Cohen's d (t / sqrt n)",
+   "computed": 0.8946841370644306,
+   "reported": 0.89,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, outward phase: variability change from baseline (mels), mean",
+   "computed": 4.116076264440444,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, outward phase: paired t",
+   "computed": 4.043882780008121,
+   "reported": 4.04,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, outward phase: Cohen's d (t / sqrt n)",
+   "computed": 0.9042396789138986,
+   "reported": 0.9,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: repeated-measures ANOVA F for phase, variability (df 2, 46)",
+   "computed": 7.548113473564273,
+   "reported": 7.55,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: repeated-measures ANOVA F for phase, variability (df 2, 40)",
+   "computed": 7.925235501528127,
+   "reported": 7.93,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: repeated-measures ANOVA F for phase, variability (df 2, 40)",
+   "computed": 1.3939067585820475,
+   "reported": 1.39,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: repeated-measures ANOVA F for phase, variability (df 2, 38)",
+   "computed": 9.706222658602906,
+   "reported": 9.71,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control (no perturbation; data set of Parrell & Niziolek 2021): repeated-measures ANOVA F for phase, variability (df 2, 48)",
+   "computed": 0.4341439815824745,
+   "reported": 0.434,
+   "tol": 0.0005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, control data set",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: repeated-measures ANOVA F for phase, centering (df 2, 46)",
+   "computed": 0.059612156574902646,
+   "reported": 0.06,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: repeated-measures ANOVA F for phase, centering (df 2, 40)",
+   "computed": 3.9402515444448905,
+   "reported": 3.94,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: repeated-measures ANOVA F for phase, centering (df 2, 40)",
+   "computed": 0.8679795865772708,
+   "reported": 0.87,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 3, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: repeated-measures ANOVA F for phase, centering (df 2, 38)",
+   "computed": 3.1512737670906046,
+   "reported": 3.15,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control (no perturbation; data set of Parrell & Niziolek 2021): repeated-measures ANOVA F for phase, centering (df 2, 48)",
+   "computed": 1.451230356774798,
+   "reported": 1.45,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, control data set, centering",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, late exposure: centering change from baseline (mels), mean",
+   "computed": 2.2255016946159185,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2 (centering)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, late exposure: centering, paired t",
+   "computed": 2.680511462999672,
+   "reported": 2.68,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2 (centering)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, outward phase: centering change from baseline (mels), mean",
+   "computed": 2.7046656582430018,
+   "reported": 2.7,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4 (centering)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, outward phase: centering, paired t",
+   "computed": 1.9151584556004912,
+   "reported": 1.92,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4 (centering)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4, inward phase: centering, paired t",
+   "computed": 0.32233441509813904,
+   "reported": 0.32,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 4 (centering)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 vs control: variability change in late exposure, Welch |t|",
+   "computed": 2.9114797456609867,
+   "reported": 2.91,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 vs control: variability change, Cohen's d",
+   "computed": 0.8401944760157263,
+   "reported": 0.84,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 vs control: variability change in late exposure, Welch |t|",
+   "computed": 3.1866841816541065,
+   "reported": 3.19,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 vs control: variability change, Cohen's d",
+   "computed": 0.942022585727274,
+   "reported": 0.94,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 vs control: centering change in late exposure, Welch |t|",
+   "computed": 3.4022573924617703,
+   "reported": 3.4,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 vs control: centering change, Cohen's d",
+   "computed": 0.9977882397214846,
+   "reported": 0.99,
+   "tol": 0.01,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 vs control: centering, Welch degrees of freedom",
+   "computed": 43.58669674850879,
+   "reported": 43.6,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: mean F1 perturbation over exposure, produced minus heard (mels)",
+   "computed": 13.353053583942378,
+   "reported": 13.4,
+   "tol": 0.05,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Perturbation magnitude",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 vs control: variability change in late exposure, Welch |t|",
+   "computed": 1.490037347024311,
+   "reported": 1.49,
+   "tol": 0.005,
+   "source": "Tang, Parrell & Niziolek 2022, J Neurophysiol 128:1469, Results, Experiment 3",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Trials removed in Experiment 3: the shared tables give 1.59% (the paper reports 1.5%).",
+  "Experiment 2 against the control, centering change in late exposure: Cohen's d is 0.998 here (paper 0.99); the paper's Welch t (3.40) and degrees of freedom (43.6) for the same comparison reproduce, so the paper's d may be truncated rather than rounded.",
+  "Mean F1 perturbation in Experiment 3: the logs give 13.35 mels with t(20) = 2.44 (paper 13.4 mels, t(20) = 2.47); the paper's means for the other experiments (2.5-13.4 mels) are not matched one to one because the paper does not say which experiment each belongs to.",
+  "Experiment 4 against the control (inward and outward phase): the shared rows give Welch t = 3.35 and 3.38 (paper 2.56 and 2.23); the within-experiment statistics for the same data, and the Experiment 3 comparison with the control (Welch t 1.49), reproduce."
+ ],
+ "sources": [
+  {
+   "file": "datatables.mat",
+   "url": "https://osf.io/download/fhb6g/",
+   "bytes": 6259794,
+   "sha256": "36809e1f464f1644e9fe91ab2125b3f93e36f388a4927d20f473e3490b3bd094",
+   "fetched_utc": "2026-11-08T19:49:18Z"
+  },
+  {
+   "file": "table_out.csv",
+   "url": "https://osf.io/download/usmby/",
+   "bytes": 59749,
+   "sha256": "940e064dc39226a57e443e2b27950358356c4a2a762e26846dcaa997dae9881c",
+   "fetched_utc": "2026-11-08T19:49:27Z"
+  },
+  {
+   "file": "table_in.csv",
+   "url": "https://osf.io/download/y7c4t/",
+   "bytes": 65406,
+   "sha256": "1affde7c96ac5ea3abcc30a4a9282b5443583332cb8aab09f176d397ad4de4d5",
+   "fetched_utc": "2026-11-08T19:49:29Z"
+  },
+  {
+   "file": "table_out2.csv",
+   "url": "https://osf.io/download/6158eb5cc20b1e012f7dcd74/",
+   "bytes": 57232,
+   "sha256": "4a5d9c71f3a2a65db91195094d604b88265d0e92eab11ec9cd90e3f86ca2481a",
+   "fetched_utc": "2026-11-08T19:49:32Z"
+  },
+  {
+   "file": "table_control.csv",
+   "url": "https://osf.io/download/6158eb5cf684f4014bb0143e/",
+   "bytes": 68360,
+   "sha256": "296c0f242b7f328d5450c45e362362e35a1db339ebc11d5cd91cf1742c01e584",
+   "fetched_utc": "2026-11-08T19:49:34Z"
+  },
+  {
+   "file": "table_inout.csv",
+   "url": "https://osf.io/download/6158eb5c17d2270162865233/",
+   "bytes": 54768,
+   "sha256": "ea743fcd883d0df8ba53ca127e08a3a16ae48fa153f3806731aeb99deb4026ea",
+   "fetched_utc": "2026-11-08T19:49:36Z"
+  },
+  {
+   "file": "table_shift_in.mat",
+   "url": "https://osf.io/download/615742ad9c072e011403ae07/",
+   "bytes": 597966,
+   "sha256": "4543080a0960c6cbffc7f0c4604e3b7ebfbb3b43d859cb19b6c15a1d7d8e6581",
+   "fetched_utc": "2026-11-08T19:49:38Z"
+  },
+  {
+   "file": "table_shift_out.mat",
+   "url": "https://osf.io/download/615742b6c20b1e011f7d3009/",
+   "bytes": 545740,
+   "sha256": "7828c2e9d64b87f997cf266e73e888e80325d4e9bc933f17ce0a42c4bf5c4f1d",
+   "fetched_utc": "2026-11-08T19:49:40Z"
+  },
+  {
+   "file": "table_shift_out2.mat",
+   "url": "https://osf.io/download/615742f1c20b1e011f7d30b5/",
+   "bytes": 537322,
+   "sha256": "e3bc5e4f314d8f3826ebda92de79bdd5f48a76c4999916efa81ffee588f9af53",
+   "fetched_utc": "2026-11-08T19:49:42Z"
+  },
+  {
+   "file": "pairedData.mat",
+   "url": "https://osf.io/download/uzw3d/",
+   "bytes": 142845,
+   "sha256": "4e428bbc410d92235d3c9cc0792f16698d70635196acba011233a9a955821440",
+   "fetched_utc": "2026-11-08T19:49:44Z"
+  },
+  {
+   "file": "vsapaired_phase4.mat",
+   "url": "https://osf.io/download/bkmp8/",
+   "bytes": 67503,
+   "sha256": "08453aa52441c40a9d8c3f05023e37cc5a8f9c8c7153a198b974ec0b20c4786a",
+   "fetched_utc": "2026-11-08T19:49:47Z"
+  },
+  {
+   "file": "areadata.mat",
+   "url": "https://osf.io/download/shpj8/",
+   "bytes": 50692,
+   "sha256": "cc9d307d0ebe2e51b4542117481d4bc93b6a25bb6185cd33157063fe97970ee4",
+   "fetched_utc": "2026-11-08T19:49:49Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tang2022_JNeurophysiol.zip"
+}

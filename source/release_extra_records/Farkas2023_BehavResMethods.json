@@ -1,0 +1,231 @@
+{
+ "id": "Farkas2023_BehavResMethods",
+ "module": "keypress",
+ "rows": 688500,
+ "subjects": 180,
+ "persons": 180,
+ "zip_bytes": 8471750,
+ "zip_sha256": "afdf6bb974cb0716cfad12e6c26b4d341ad542361da9f7e372e17ae54c3bdfb2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' file lists blocks 1-15 of every participant, then blocks 16-30, then 31-45, with participants in the same order each time (rows are kept in this order)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "180 participants (Methods, Participants)",
+   "ok": true,
+   "detail": "180"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 45 blocks x 85 trials = 3825 rows (Methods, The ASRT task)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "nine epochs of five blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' Block label restarts every 15 blocks (block_number = 15 x run + Block)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each block = 5 warm-up trials then 80 trials alternating random/pattern",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' cycle counter = (Block - 1) x 10 + repetition (repetition is lossless)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "keys Z, C, B, M map one to one to positions 1-4 left to right (Methods)",
+   "ok": true,
+   "detail": "{'b': [3], 'c': [2], 'm': [4], 'z': [1]}"
+  },
+  {
+   "kind": "internal",
+   "what": "correct == (key pressed is the correct key)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "finalRT equals firstRT on correct presses and exceeds it on every error (time to the correct key)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: stimulus 1-4, firstRT 0-5000 ms, finalRT 1-6000 ms",
+   "ok": true,
+   "detail": "firstRT 0-4368, finalRT 2-5716, firstRT <= 100 ms on 391 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "authors' triplet code = the last three stimuli in the block, on every coded row (dropped as redundant)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trills and repetitions are coded as the authors define them",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's four pattern positions are identical in all 450 cycles",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' high/low triplet labels follow from each participant's sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ACCmean and RTmean (dropped) are not per-participant: at most two 45-block vectors across 180 people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors share",
+   "ok": true,
+   "detail": "142466 of 688500 rows (20.7%); of high/low rows, 320 at <= 100 ms and 6499 at or above mean + 3 SD"
+  },
+  {
+   "kind": "published",
+   "what": "RT learning score split-half r, sequence-wise split, single-stage average",
+   "computed": 0.6058490231772792,
+   "reported": 0.606,
+   "tol": 0.0005,
+   "source": "Results, 'Reaction time-based learning scores' and Fig. 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RT learning score Cronbach alpha, sequence-wise split, single-stage average",
+   "computed": 0.7537371978598021,
+   "reported": 0.754,
+   "tol": 0.0005,
+   "source": "Results, 'Reaction time-based learning scores' and Fig. 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RT learning score split-half r, trial-wise split, two-stage average (0.65449 here, 0.6545 to four decimals; the paper's .655 matches rounding that, so the tolerance is one unit of the third decimal)",
+   "computed": 0.6544865236169445,
+   "reported": 0.655,
+   "tol": 0.001,
+   "source": "Results, 'Reaction time-based learning scores' and Fig. 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RT learning score Cronbach alpha, trial-wise split, two-stage average",
+   "computed": 0.7911415318730372,
+   "reported": 0.791,
+   "tol": 0.0005,
+   "source": "Results, 'Reaction time-based learning scores' and Fig. 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy learning score split-half r, trial-wise split, single-stage average",
+   "computed": 0.598337160063412,
+   "reported": 0.598,
+   "tol": 0.0005,
+   "source": "Results, 'Accuracy-based learning scores' and Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy learning score Cronbach alpha, trial-wise split, single-stage average",
+   "computed": 0.7472436400994731,
+   "reported": 0.747,
+   "tol": 0.0005,
+   "source": "Results, 'Accuracy-based learning scores' and Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy learning score split-half r, sequence-wise split, single-stage average (rows with excluded_by_authors false)",
+   "computed": 0.5314125632757328,
+   "reported": 0.531,
+   "tol": 0.0005,
+   "source": "Results, 'Accuracy-based learning scores' and Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy learning score Cronbach alpha, sequence-wise split, single-stage average (rows with excluded_by_authors false)",
+   "computed": 0.6902264749877863,
+   "reported": 0.69,
+   "tol": 0.0005,
+   "source": "Results, 'Accuracy-based learning scores' and Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of RT and accuracy learning scores",
+   "computed": 0.0898584386094184,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Results, 'Dissociation of RT- and accuracy-based learning scores' (r = .09)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "same correlation as the value in the authors' script (r_xy = 0.08985844)",
+   "ok": true,
+   "detail": "0.08985844"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "ASRT_master.csv",
+   "url": "https://osf.io/download/gr42a/",
+   "bytes": 40302304,
+   "sha256": "6b867fa321518908005f13960cb2e2faa509dcfd939b234e3b72cce16bdb1f23",
+   "fetched_utc": "2026-11-08T18:14:58Z"
+  },
+  {
+   "file": "ASRT_reliability_main.R.txt",
+   "url": "https://osf.io/download/xrdfm/",
+   "bytes": 39442,
+   "sha256": "49500cff11faa9a77c04130c09cf4601638ec9fbed3ee20ef48f493d661fb4a9",
+   "fetched_utc": "2026-11-08T18:15:01Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Farkas2023_BehavResMethods.zip"
+}

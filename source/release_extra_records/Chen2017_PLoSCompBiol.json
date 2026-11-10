@@ -1,0 +1,307 @@
+{
+ "id": "Chen2017_PLoSCompBiol",
+ "module": "trajectory_search",
+ "rows": 17716,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 372046,
+ "zip_sha256": "5ef9911c8dd467a46c08cb2a872b52d4ba9fa6b61a616e0cc2e1c84b1ceb006b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw Experiment 1 folder has the 24 valid IDs plus the machine-failure IDs 1 and 5",
+   "ok": true,
+   "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 2: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 3: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 4: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 6: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 7: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 8: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 9: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 10: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 11: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 12: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 13: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 14: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 15: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 17: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 18: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 19: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 20: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 21: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 22: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 23: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 24: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 25: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 26: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment1 27: 12 targets per feedback condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 12}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 1: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 2: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 3: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 4: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 5: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2 6: 12 targets, all in the reward condition",
+   "ok": true,
+   "detail": "{1: 12, 2: 0}"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants (26 took part, 1 withdrew, 1 equipment fault)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects; Experiment 1 procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants (six new individuals)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hidden target trajectories per Experiment 1 participant",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects; Experiment 1 procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid attempts allowed per target: most valid attempts on any target",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects; Experiment 1 procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "targets per participant in the positive_feedback condition",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects; Experiment 1 procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "targets per participant in the negative_feedback condition",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Ethics statement and subjects; Experiment 1 procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants flagged as curvature outliers by the paper's rule (Fig 2G boxplot rule: beyond 1.5 IQR, valid attempts)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Results, Fig 2G (4 of 24 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "score range: highest score in the positive condition",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Eq 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "score range: lowest score in the negative condition",
+   "computed": -50.0,
+   "reported": -50.0,
+   "tol": 0,
+   "source": "Methods, Eq 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rule outliers are the participants the authors name (numbers 10, 16, 18, 22 of the 24)",
+   "ok": true,
+   "detail": "[12, 19, 21, 25] vs [12, 19, 21, 25]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the curvature outliers (Fig 2G) were found with a limit of q3 + 0.15 (q3 - q1); the authors' figure is a MATLAB boxplot, whose default limit is 1.5 (q3 - q1). With 1.5 and the mean absolute curvature of valid attempts, four participants are flagged, the same four the paper names; 0.15 would flag ten.",
+  "The deposit's Experiment 2 reaching folder holds 12 targets per participant, while the paper describes the same reaching task as in Experiment 1; all rows present are kept.",
+  "Mean age 26.46 (SD 5.96), 17 women and 25 right-handed refer to all 32 participants in the paper and are not available per participant."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://osf.io/download/njr8q/",
+   "bytes": 893911345,
+   "sha256": "b9e7f464ec730ea688aea7e3b128d5e257266f26850c352f2fe6299ebd43f7b1",
+   "fetched_utc": "2026-11-09T09:44:41Z"
+  },
+  {
+   "file": "info.pdf",
+   "url": "https://osf.io/download/ncyhu/",
+   "bytes": 104248,
+   "sha256": "6a889dac4ef0db2f6ed7601795425f86f7b0fd1c57d520589854b4bf9d8e13aa",
+   "fetched_utc": "2026-11-09T09:44:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Chen2017_PLoSCompBiol.zip"
+}

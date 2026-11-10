@@ -1,0 +1,166 @@
+{
+ "id": "Borders2024_JSLHR",
+ "module": "summary",
+ "rows": 3137,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 39474,
+ "zip_sha256": "892c1bcae2c7257e58e9a485f840b99b05b43c7ea79bdcb1ddd1ccb5670efadc",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants enrolled and analysed",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): 'Twenty participants ... were enrolled'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants randomized to biofeedback",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): biofeedback (n = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants randomized to no biofeedback",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): no biofeedback (n = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with Hoehn and Yahr stage 2",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with Hoehn and Yahr stage 3",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean disease duration (years)",
+   "computed": 11.388,
+   "reported": 11.39,
+   "tol": 0.005,
+   "source": "analysis script text of the OSF deposit (Results, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of disease duration (years)",
+   "computed": 7.969245226097903,
+   "reported": 7.97,
+   "tol": 0.005,
+   "source": "analysis script text of the OSF deposit (Results, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of UPDRS motor score",
+   "computed": 14.79500271250931,
+   "reported": 15.0,
+   "tol": 0.5,
+   "source": "analysis script text of the OSF deposit (Results, Participants): SD = 15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum UPDRS motor score",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): range 10-66",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum UPDRS motor score",
+   "computed": 66.0,
+   "reported": 66.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): range 10-66",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with lung-volume data (20 minus 6 excluded)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "analysis script text of the OSF deposit (Results, Participants): six participants excluded from LVCI",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 25 voluntary treatment trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one condition per participant matching the demographics file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all cough trials carried over (862) and four measures at most per trial",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper text in the deposit's script gives a mean UPDRS motor score of 31 (SD 15); the demographics file gives 30.45 (SD 14.8), so the mean was not used as a published check.",
+  "The script reports 9 participants with an EAT-10 of 3 or more and 18 with an unrestricted diet; the demographics file gives 10 and 16 (FOIS 7) by the obvious cut-offs, so these were not used as checks.",
+  "participant_calibration_factors.csv (belt calibration, 23 rows) and the reliability files are not carried over.",
+  "Trials the authors excluded for extraneous movement have empty lung volume or flow values in cough_data.csv and give no row for that measure."
+ ],
+ "sources": [
+  {
+   "file": "cough_data.csv",
+   "url": "https://osf.io/download/ez6kb/",
+   "bytes": 55963,
+   "sha256": "931d3731f934fbe66f7ad701e75cc2d56cf9968dc78b68d398591b1db0831a11",
+   "fetched_utc": "2026-11-09T14:12:00Z"
+  },
+  {
+   "file": "participant_calibration_factors.csv",
+   "url": "https://osf.io/download/7cejs/",
+   "bytes": 665,
+   "sha256": "19ab2f7893c49d8cfaee16f2d78a56eeb6151603c8c252180b7e07143fad53a4",
+   "fetched_utc": "2026-11-09T14:12:04Z"
+  },
+  {
+   "file": "demographics.csv",
+   "url": "https://osf.io/download/ejdx8/",
+   "bytes": 1466,
+   "sha256": "7868354d44638917e58fe7c08d6c861d515943adfbe8f30529ec9ae565c1622b",
+   "fetched_utc": "2026-11-09T14:12:09Z"
+  },
+  {
+   "file": "script.qmd",
+   "url": "https://osf.io/download/aux47/",
+   "bytes": 21477,
+   "sha256": "c399008fca360ed9f9d517b79482490b9549913b77479eb24668afe95a094521",
+   "fetched_utc": "2026-11-09T14:12:14Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Borders2024_JSLHR.zip"
+}

@@ -1,0 +1,86 @@
+{
+ "id": "Rossi2024_npjSciLearn",
+ "module": "walking",
+ "rows": 95285,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 899905,
+ "zip_sha256": "7e207f180734dc34ad5cdb7d697a274ba2bbaeb78c0942a6157024d55a564687",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "5 groups of 10 participants each, 50 in all (paper: 50 neurotypical adults)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial counts per group are 14 (Short/LongPreferred, ShortSlow), 12 (SwitchSlow) and 9 (SwitchControl)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation starts negative (right/fast step shorter) and the catch trial and first post-adaptation strides are positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "overground baseline SLA, Short Preferred, mean of participants' means (-0.0110)",
+   "computed": -0.011038814002918623,
+   "reported": -0.011,
+   "tol": 0.0005,
+   "source": "Results, Experiment 1A baseline",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill baseline SLA, Short Preferred, mean of participants' means over the four baseline blocks (-0.0145)",
+   "computed": -0.014547965523963086,
+   "reported": -0.0145,
+   "tol": 0.0005,
+   "source": "Results, Experiment 1A baseline",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "treadmill catch trial SLA, Short Preferred, first 5 strides (0.9203)",
+   "computed": 0.92028398,
+   "reported": 0.9203,
+   "tol": 0.0005,
+   "source": "Results, Experiment 1A catch trial",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants (50)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper gives group sizes only as the bootstrap size of 10; the files hold 10 participants each."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/records/12522690/files/README.md?download=1",
+   "bytes": 21744,
+   "sha256": "25469290376611637a575180cdd8a19290d0c3c2871b11702471729163070544",
+   "fetched_utc": "2026-11-09T01:34:13Z"
+  },
+  {
+   "file": "Dataset.zip",
+   "url": "https://zenodo.org/records/12522690/files/Dataset.zip?download=1",
+   "bytes": 1060152576,
+   "sha256": "f587879a52935442fc94cbea4728ef66c55d9f093cc036dd719c6d3bccd83410",
+   "fetched_utc": "2026-11-09T01:40:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Rossi2024_npjSciLearn.zip"
+}

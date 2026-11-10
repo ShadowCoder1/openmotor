@@ -1,0 +1,111 @@
+{
+ "id": "Maiello2018_ExpBrainRes",
+ "module": "timeseries",
+ "rows": 1300,
+ "subjects": 5,
+ "persons": 5,
+ "zip_bytes": 14080643,
+ "zip_sha256": "fbe3f7ffa87fa7027950e0b048699bb59eae058cc25a456036e04c259b91ab07",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "observers",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants: 5 observers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per observer (70 + 70 + 60 + 60)",
+   "computed": 260.0,
+   "reported": 260.0,
+   "tol": 0,
+   "source": "Methods, Procedure: sessions of 70, 70, 60 and 60 trials",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "horizontal pursuit blur levels",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Stimuli: 0 to 200 arcmin, 7 levels",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vergence blur levels",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Stimuli: first six levels, up to 100 arcmin",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per blur level x binocular/monocular condition per observer and experiment (median; blur > 0)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Procedure: 5 trials per condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest blur (arcmin)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "Methods, Stimuli: 200 arcmin",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "gaze, finger, target and time arrays have the same length in every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings = 5 x 260",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blur conditions balanced: 5 trials each (binocular blur>0, monocular blur>0, and the no-blur condition counted twice) per experiment",
+   "ok": true,
+   "detail": "[5, 10]"
+  },
+  {
+   "kind": "internal",
+   "what": "median sample interval is about 16.7 ms (60 samples/s)",
+   "ok": true,
+   "detail": "60.08 Hz"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper states gaze and finger data were sampled at 120 Hz; the deposited arrays have one sample per about 16.7 ms (60 per second), so sample_rate_hz is the rate measured from the clock.",
+  "Only the five observers' MATLAB workspaces are converted; the deposit's binary EyeLink .edf files (and one .asc) hold the same recordings and are not read. No age or sex per observer is in the deposit (the paper reports a mean age of 29 +/- 6 years and 3 men)."
+ ],
+ "sources": [
+  {
+   "file": "scripts.zip",
+   "url": "https://zenodo.org/api/records/1100971/files/ExperimentalScripts.zip/content",
+   "bytes": 3736587,
+   "sha256": "aa07a0edce113a3653fff7cbfcbffe269461d5b59566003f07c4d01340fa3b82",
+   "fetched_utc": "2026-11-09T19:56:45Z"
+  },
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/1100971/files/Data_and_Analyses.zip/content",
+   "bytes": 672612746,
+   "sha256": "af29eedddefd5c2fbd9ab05d7dc5752d09d3bc594d2332b3bda19da4909fbbe7",
+   "fetched_utc": "2026-11-09T19:58:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Maiello2018_ExpBrainRes.zip"
+}

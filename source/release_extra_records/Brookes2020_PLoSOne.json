@@ -1,0 +1,630 @@
+{
+ "id": "Brookes2020_PLoSOne",
+ "module": "summary",
+ "rows": 780,
+ "subjects": 99,
+ "persons": 99,
+ "zip_bytes": 15639,
+ "zip_sha256": "5690dfe44129bc896a15eabd9ade64b5cdc8ee077ca976913ebb1194513707e0",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants, Control",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 16 / 15 / 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants, Convergence",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 16 / 15 / 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants, Divergence",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 16 / 15 / 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants with summary data, AA",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 13 / 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants with summary data, ADA",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 13 / 17)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information mean, Control",
+   "computed": 6117.9506249999995,
+   "reported": 6118.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information SD, Control",
+   "computed": 658.2212544473554,
+   "reported": 658.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information mean, Convergence",
+   "computed": 5741.837333333333,
+   "reported": 5742.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information SD, Convergence",
+   "computed": 771.8065482218296,
+   "reported": 772.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information mean, Divergence",
+   "computed": 10466.469411764707,
+   "reported": 10466.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 cumulative information SD, Divergence",
+   "computed": 2822.87650869966,
+   "reported": 2823.0,
+   "tol": 0.5,
+   "source": "Results, Exp 1, cumulative information (Fig 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a mean, Control",
+   "computed": 10.1444589464375,
+   "reported": 10.1,
+   "tol": 0.05,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a SD, Control",
+   "computed": 5.17552709319938,
+   "reported": 5.18,
+   "tol": 0.005,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a mean, Convergence",
+   "computed": 5.982015701733333,
+   "reported": 5.98,
+   "tol": 0.05,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a SD, Convergence",
+   "computed": 1.9358616102312443,
+   "reported": 1.94,
+   "tol": 0.005,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a mean, Divergence",
+   "computed": 14.827079008117646,
+   "reported": 14.8,
+   "tol": 0.05,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential a SD, Divergence",
+   "computed": 9.722794141159163,
+   "reported": 9.72,
+   "tol": 0.005,
+   "source": "Results, Exp 1, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b mean, Control",
+   "computed": -0.0219001909375,
+   "reported": -0.022,
+   "tol": 0.0005,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b SD, Control",
+   "computed": 0.012227389851652606,
+   "reported": 0.012,
+   "tol": 0.0005,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b mean, Convergence",
+   "computed": -0.0171813372,
+   "reported": -0.0172,
+   "tol": 5e-05,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b SD, Convergence",
+   "computed": 0.013615139726598911,
+   "reported": 0.014,
+   "tol": 0.0005,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b mean, Divergence",
+   "computed": -0.044692976588235296,
+   "reported": -0.0447,
+   "tol": 5e-05,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 exponential b SD, Divergence",
+   "computed": 0.013240996921983005,
+   "reported": 0.013,
+   "tol": 0.0005,
+   "source": "Results, Exp 1, exponential fit b (Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 motor learning mean, Control",
+   "computed": 0.743868712,
+   "reported": 0.744,
+   "tol": 0.0005,
+   "source": "Results, Exp 1, motor learning (Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 motor learning SD, Control",
+   "computed": 1.575304793678141,
+   "reported": 1.58,
+   "tol": 0.005,
+   "source": "Results, Exp 1, motor learning (Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 motor learning mean, Divergence",
+   "computed": 2.004195757882353,
+   "reported": 2.0,
+   "tol": 0.005,
+   "source": "Results, Exp 1, motor learning (Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 motor learning SD, Divergence",
+   "computed": 1.0184074641884464,
+   "reported": 1.02,
+   "tol": 0.005,
+   "source": "Results, Exp 1, motor learning (Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness mean, AA",
+   "computed": -11.645911111111111,
+   "reported": -11.6,
+   "tol": 0.05,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness SD, AA",
+   "computed": 19.894330145345698,
+   "reported": 19.9,
+   "tol": 0.05,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness mean, ADA",
+   "computed": 17.544027777777778,
+   "reported": 17.5,
+   "tol": 0.05,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness SD, ADA",
+   "computed": 18.339606642354582,
+   "reported": 18.3,
+   "tol": 0.05,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness mean, RAN",
+   "computed": 0.5507440476190476,
+   "reported": 0.55,
+   "tol": 0.005,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 mean stiffness SD, RAN",
+   "computed": 5.594379311681919,
+   "reported": 5.59,
+   "tol": 0.005,
+   "source": "Results, Exp 2, mean stiffness (Fig 5C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches (sum of 3 sessions), mean, AA",
+   "computed": 5.266666666666667,
+   "reported": 5.27,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches, SD, AA",
+   "computed": 1.162919151265879,
+   "reported": 1.16,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches (sum of 3 sessions), mean, ADA",
+   "computed": 39.06666666666667,
+   "reported": 39.1,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches, SD, ADA",
+   "computed": 22.38770921308216,
+   "reported": 22.4,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches (sum of 3 sessions), mean, RAN",
+   "computed": 62.642857142857146,
+   "reported": 62.6,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 assist/disrupt switches, SD, RAN",
+   "computed": 5.138199967021418,
+   "reported": 5.14,
+   "tol": 0.05,
+   "source": "Results, Exp 2, switches (Fig 5B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change mean, AA",
+   "computed": 3.1294643874222223,
+   "reported": 3.13,
+   "tol": 0.005,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change SD, AA",
+   "computed": 0.624401514467202,
+   "reported": 0.624,
+   "tol": 0.005,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change mean, ADA",
+   "computed": 23.512518519333334,
+   "reported": 23.5,
+   "tol": 0.05,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change SD, ADA",
+   "computed": 4.241834751666137,
+   "reported": 4.24,
+   "tol": 0.005,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change mean, RAN",
+   "computed": 68.12713064714285,
+   "reported": 68.1,
+   "tol": 0.05,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 trial-to-trial stiffness change SD, RAN",
+   "computed": 5.831053943431289,
+   "reported": 5.83,
+   "tol": 0.005,
+   "source": "Results, Exp 2 (Fig 5A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 cumulative information mean, AA",
+   "computed": 5758.19,
+   "reported": 5758.0,
+   "tol": 0.5,
+   "source": "Results, Exp 2, cumulative information (Fig 6D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 cumulative information SD, AA",
+   "computed": 459.1177146803784,
+   "reported": 459.0,
+   "tol": 0.5,
+   "source": "Results, Exp 2, cumulative information (Fig 6D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 cumulative information SD, ADA",
+   "computed": 665.4601584192567,
+   "reported": 665.0,
+   "tol": 0.5,
+   "source": "Results, Exp 2, cumulative information (Fig 6D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 cumulative information mean, RAN",
+   "computed": 6873.452666666667,
+   "reported": 6873.0,
+   "tol": 0.5,
+   "source": "Results, Exp 2, cumulative information (Fig 6D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 cumulative information SD, RAN",
+   "computed": 740.6589717702807,
+   "reported": 741.0,
+   "tol": 0.5,
+   "source": "Results, Exp 2, cumulative information (Fig 6D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential a mean, AA",
+   "computed": 7.9321591274297925,
+   "reported": 7.93,
+   "tol": 0.005,
+   "source": "Results, Exp 2, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential a SD, AA",
+   "computed": 1.374154790762389,
+   "reported": 1.37,
+   "tol": 0.005,
+   "source": "Results, Exp 2, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential a mean, RAN",
+   "computed": 8.86194384192393,
+   "reported": 8.86,
+   "tol": 0.005,
+   "source": "Results, Exp 2, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential a SD, RAN",
+   "computed": 2.1556351919355903,
+   "reported": 2.16,
+   "tol": 0.005,
+   "source": "Results, Exp 2, exponential fit a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential b SD, AA",
+   "computed": 0.01977839758653695,
+   "reported": 0.0198,
+   "tol": 5e-05,
+   "source": "Results, Exp 2, exponential fit b (Fig 7A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential b mean, AA",
+   "computed": -0.008415057838652372,
+   "reported": -0.0084,
+   "tol": 5e-05,
+   "source": "Results, Exp 2, exponential fit b (Fig 7A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential b SD, ADA",
+   "computed": 0.027574035521455615,
+   "reported": 0.0276,
+   "tol": 5e-05,
+   "source": "Results, Exp 2, exponential fit b (Fig 7A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential b SD, RAN",
+   "computed": 0.020499770780406525,
+   "reported": 0.0205,
+   "tol": 5e-05,
+   "source": "Results, Exp 2, exponential fit b (Fig 7A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 exponential b mean, RAN",
+   "computed": -0.023119897783829103,
+   "reported": -0.0231,
+   "tol": 5e-05,
+   "source": "Results, Exp 2, exponential fit b (Fig 7A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 motor learning mean, Random",
+   "computed": 1.9699374349333334,
+   "reported": 1.97,
+   "tol": 0.005,
+   "source": "Results, Exp 2, motor learning (Fig 7B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2 motor learning SD, Random",
+   "computed": 1.0283518898076505,
+   "reported": 1.03,
+   "tol": 0.005,
+   "source": "Results, Exp 2, motor learning (Fig 7B)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the five data files is kept",
+   "ok": true,
+   "detail": "780 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing or non-finite values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 48 participants in both files",
+   "ok": true,
+   "detail": "(48, 48)"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 45 participants in the summary file, 51 in the curve-fit file, 44 with stiffness",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1, motor learning of the Convergence (Assistance) group: the file mean is 0.295 (SD 1.745); the paper prints 0.595 (1.74). The SD agrees, so the paper's mean looks like a typo; not used as a check.",
+  "Experiment 2, motor learning: the paper's means 0.672 (Adaptive) and 0.726 (AD) are in the opposite order to the file (AA 0.726, ADA 0.672), while the paper's cumulative information and stiffness rows match the file with AA = Adaptive. Only the Random value is checked.",
+  "Experiment 2, exponential a for ADA: the file mean is 7.51 (SD 0.93), the paper prints 9.51 (0.93); not used as a check.",
+  "Experiment 2, ADA: the file's mean cumulative information is 5642.86 and mean b is -0.00656; the paper prints 5642 and -0.0065 (truncated rather than rounded), so these two means are not used as checks.",
+  "The paper reports 47 (Exp 1) and 45 (Exp 2) analysed participants; the files contain 48 and 45 (summary) / 51 (curve-fit) participants, all of which are kept. The paper's F test degrees of freedom do not match its group sizes either."
+ ],
+ "sources": [
+  {
+   "file": "exp1_summary.csv",
+   "url": "https://osf.io/download/ajnvb/",
+   "bytes": 1658,
+   "sha256": "c4db22347c881fc550184a34f7c7c4a19fc8cfb0b5ac8d85c4f1f2597c08dc24",
+   "fetched_utc": "2026-11-09T14:46:41Z"
+  },
+  {
+   "file": "exp1_curvefitdata.xlsx",
+   "url": "https://osf.io/download/6wyb8/",
+   "bytes": 14144,
+   "sha256": "e109f447570ce7bca8a51ea25fe76eb58000ad3a7c6c4e2eac196219c2f11750",
+   "fetched_utc": "2026-11-09T14:47:01Z"
+  },
+  {
+   "file": "exp2_curvefitdata.xlsx",
+   "url": "https://osf.io/download/s4vjy/",
+   "bytes": 14949,
+   "sha256": "1f11cf7d0a1cc8d9c4ee8b3eba0f21f9e0563a5203ab04b9f1076e4c5fb731c6",
+   "fetched_utc": "2026-11-09T14:47:07Z"
+  },
+  {
+   "file": "exp2_stiffness.csv",
+   "url": "https://osf.io/download/396nh/",
+   "bytes": 4264,
+   "sha256": "7382c311112037ebbc13e4ccb165eb9f07f102d125846acb202028a4d35a8768",
+   "fetched_utc": "2026-11-09T14:47:12Z"
+  },
+  {
+   "file": "exp2_summary.csv",
+   "url": "https://osf.io/download/kudj5/",
+   "bytes": 1299,
+   "sha256": "31d512473b90aa414198fa4b938b5ede3b88f8ade7d5268e011c6c4feeb10b98",
+   "fetched_utc": "2026-11-09T14:47:19Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Brookes2020_PLoSOne.zip"
+}

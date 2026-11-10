@@ -1,0 +1,89 @@
+{
+ "id": "Skaramagkas2021_Signals",
+ "module": "timeseries",
+ "rows": 592,
+ "subjects": 37,
+ "persons": 37,
+ "zip_bytes": 8598306,
+ "zip_sha256": "1d90b415484e3f05af3e77688be1e8bd7054ae2655ddb958811f67d4e26e4535",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "people with essential tremor",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "readme.txt Database Structure (data{1}-data{2})",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "readme.txt Database Structure (data{3}-data{10})",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with no diagnosed tremor",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "readme.txt Database Structure (data{11}-data{37})",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people in the database",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "readme.txt Database Structure (1x37 cell vector)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings per person (4 tasks x 4 sensor positions)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "readme.txt (four sequences, four positions)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row per person x task x position",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all recordings have samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample files unique",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "One participant's rest recording has its metacarpal field spelled 'Meatcarpal' in the deposit; it is read as the metacarpal sensor.",
+  "In the shared tables the first sample of each recording appears to have been read as the column names (the variable descriptions read 'Original column heading: ...'), so each table starts at the second sample and the first sample is not included here."
+ ],
+ "sources": [
+  {
+   "file": "database.mat",
+   "url": "https://zenodo.org/api/records/4772130/files/database.mat/content",
+   "bytes": 6749196,
+   "sha256": "244223c0db897b18767df3c1aeca93d0f9c7dedd664f5fdd41fe5d9c2276f210",
+   "fetched_utc": "2026-11-09T15:46:18Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Skaramagkas2021_Signals.zip"
+}

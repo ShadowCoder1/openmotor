@@ -1,0 +1,1764 @@
+{
+ "id": "Seegelke2026_bioRxiv_history",
+ "module": "reach90",
+ "rows": 480128,
+ "subjects": 320,
+ "persons": 320,
+ "zip_bytes": 9000125,
+ "zip_sha256": "0a689b073b65bc2edc2604f821115b827ef256bebcb152dfac1234df6f49810f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "A038: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A038: ReachDiff2_sig equals the counter-clockwise angle of the first movement relative to the direction to the target (stored target-up frame), recomputed from the stored positions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A054: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A054: ReachDiff2_sig equals the counter-clockwise angle of the first movement relative to the direction to the target (stored target-up frame), recomputed from the stored positions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A072: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A072: ReachDiff2_sig equals the counter-clockwise angle of the first movement relative to the direction to the target (stored target-up frame), recomputed from the stored positions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: female participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: mean age",
+   "computed": 22.466666666666665,
+   "reported": 22.5,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: SD of age",
+   "computed": 4.446876729085051,
+   "reported": 4.5,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: mean EHI score",
+   "computed": 84.33333333333333,
+   "reported": 84.3,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: withheld-trial movement errors",
+   "computed": 2302.0,
+   "reported": 2302.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: too-slow prime",
+   "computed": 153.0,
+   "reported": 153.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: too-slow probe",
+   "computed": 174.0,
+   "reported": 174.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: obstacle hit prime",
+   "computed": 127.0,
+   "reported": 127.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: obstacle hit probe",
+   "computed": 230.0,
+   "reported": 230.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: onset not detected prime",
+   "computed": 149.0,
+   "reported": 149.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: onset not detected probe",
+   "computed": 166.0,
+   "reported": 166.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: more than two velocity peaks (not already excluded)",
+   "computed": 768.0,
+   "reported": 768.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: trials excluded before the RT/MT rule",
+   "computed": 3851.0,
+   "reported": 3851.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 OA task: trials removed by the RT/MT rule",
+   "computed": 187.0,
+   "reported": 187.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A038: converted rows flag exactly the removed trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A038: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: female participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: mean age",
+   "computed": 24.366666666666667,
+   "reported": 24.4,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: SD of age",
+   "computed": 6.059949546468776,
+   "reported": 6.1,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: mean EHI score",
+   "computed": 89.97333333333334,
+   "reported": 90.0,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: withheld-trial movement errors",
+   "computed": 358.0,
+   "reported": 358.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: too-slow prime",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: too-slow probe",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: obstacle hit prime",
+   "computed": 89.0,
+   "reported": 89.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: obstacle hit probe",
+   "computed": 264.0,
+   "reported": 264.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: onset not detected prime",
+   "computed": 144.0,
+   "reported": 144.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: onset not detected probe",
+   "computed": 178.0,
+   "reported": 178.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: more than two velocity peaks (not already excluded)",
+   "computed": 666.0,
+   "reported": 666.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: trials excluded before the RT/MT rule",
+   "computed": 1756.0,
+   "reported": 1756.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA task: trials removed by the RT/MT rule",
+   "computed": 268.0,
+   "reported": 268.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A054: converted rows flag exactly the removed trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A054: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: female participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: mean age",
+   "computed": 22.433333333333334,
+   "reported": 22.4,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: SD of age",
+   "computed": 3.2021903423290983,
+   "reported": 3.2,
+   "tol": 0.06,
+   "source": "Methods, Specific task setups and procedures; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: withheld-trial movement errors",
+   "computed": 349.0,
+   "reported": 349.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: too-slow prime",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: too-slow probe",
+   "computed": 134.0,
+   "reported": 134.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: obstacle hit prime",
+   "computed": 183.0,
+   "reported": 183.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: obstacle hit probe",
+   "computed": 294.0,
+   "reported": 294.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: onset not detected prime",
+   "computed": 272.0,
+   "reported": 272.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: onset not detected probe",
+   "computed": 258.0,
+   "reported": 258.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: more than two velocity peaks (not already excluded)",
+   "computed": 683.0,
+   "reported": 683.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 OA control task: trials excluded before the RT/MT rule",
+   "computed": 2084.0,
+   "reported": 2084.0,
+   "tol": 0,
+   "source": "Methods, Specific task setups and procedures; Data exclusion (Data exclusion)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A072: converted rows flag exactly the removed trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A072: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A039: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A039: median absolute initial direction error is under 15 degrees (sign and frame are plausible)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A039: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: participants analysed",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: female participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: mean age",
+   "computed": 25.564102564102566,
+   "reported": 25.6,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: SD of age",
+   "computed": 7.6461027974520315,
+   "reported": 7.6,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: number of right-handed participants",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: mean EHI of right-handed participants",
+   "computed": 81.29454545454546,
+   "reported": 81.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: SD of EHI of right-handed participants",
+   "computed": 18.693446393540754,
+   "reported": 18.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: number of left-handed participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: mean EHI of left-handed participants",
+   "computed": -66.345,
+   "reported": -66.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: SD of EHI of left-handed participants",
+   "computed": 34.85378649922176,
+   "reported": 34.9,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: number of ambidextrous participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: mean EHI of ambidextrous participants",
+   "computed": 30.95,
+   "reported": 31.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: SD of EHI of ambidextrous participants",
+   "computed": 43.76990975544729,
+   "reported": 43.8,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: moved out of the start on stop trials",
+   "computed": 3499.0,
+   "reported": 3499.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: too-slow prime",
+   "computed": 191.0,
+   "reported": 191.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: too-slow probe",
+   "computed": 177.0,
+   "reported": 177.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: wrong hand prime",
+   "computed": 861.0,
+   "reported": 861.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: wrong hand probe",
+   "computed": 1365.0,
+   "reported": 1365.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: onset not detected prime",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: onset not detected probe",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 1 HS task: trials excluded in total",
+   "computed": 5761.0,
+   "reported": 5761.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A056: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A056: median absolute initial direction error is under 15 degrees (sign and frame are plausible)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A056: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: participants analysed",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: female participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: mean age",
+   "computed": 26.285714285714285,
+   "reported": 26.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: SD of age",
+   "computed": 8.456015709580504,
+   "reported": 8.5,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: number of right-handed participants",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: mean EHI of right-handed participants",
+   "computed": 94.95806451612903,
+   "reported": 95.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: SD of EHI of right-handed participants",
+   "computed": 7.666714819858129,
+   "reported": 7.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: number of left-handed participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: mean EHI of left-handed participants",
+   "computed": -57.73333333333333,
+   "reported": -57.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: SD of EHI of left-handed participants",
+   "computed": 62.69500245899456,
+   "reported": 62.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: number of ambidextrous participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: mean EHI of ambidextrous participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: too-slow prime",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: too-slow probe",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: wrong hand prime",
+   "computed": 1458.0,
+   "reported": 1458.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: wrong hand probe",
+   "computed": 1405.0,
+   "reported": 1405.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: onset not detected prime",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: onset not detected probe",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 HS task: trials excluded in total",
+   "computed": 2843.0,
+   "reported": 2843.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A096: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A096: median absolute initial direction error is under 15 degrees (sign and frame are plausible)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A096: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: participants analysed",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: female participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: mean age",
+   "computed": 24.103448275862068,
+   "reported": 24.1,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: SD of age",
+   "computed": 5.531370455257946,
+   "reported": 5.5,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: number of right-handed participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: mean EHI of right-handed participants",
+   "computed": 86.33200000000001,
+   "reported": 86.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: SD of EHI of right-handed participants",
+   "computed": 15.499105350524806,
+   "reported": 15.5,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: number of left-handed participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: mean EHI of left-handed participants",
+   "computed": -90.0,
+   "reported": -90.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: SD of EHI of left-handed participants",
+   "computed": 17.320508075688775,
+   "reported": 17.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: number of ambidextrous participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: mean EHI of ambidextrous participants",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: moved on no-go trials",
+   "computed": 85.0,
+   "reported": 85.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: too-slow prime",
+   "computed": 88.0,
+   "reported": 88.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: too-slow probe",
+   "computed": 131.0,
+   "reported": 131.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: wrong hand prime",
+   "computed": 970.0,
+   "reported": 970.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: wrong hand probe",
+   "computed": 1316.0,
+   "reported": 1316.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: onset not detected prime",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 4 HS task: onset not detected probe",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "B098: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "B098: median absolute initial direction error is under 15 degrees (sign and frame are plausible)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "B098: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: participants analysed",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: female participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: mean age",
+   "computed": 23.785714285714285,
+   "reported": 23.8,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: SD of age",
+   "computed": 3.0228407396960457,
+   "reported": 3.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: mean EHI",
+   "computed": 98.4280303030303,
+   "reported": 98.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: SD of EHI",
+   "computed": 4.696002262701848,
+   "reported": 4.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: too-slow prime",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: too-slow probe",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: wrong hand prime",
+   "computed": 290.0,
+   "reported": 290.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: wrong hand probe",
+   "computed": 864.0,
+   "reported": 864.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: force exerted on passive trials",
+   "computed": 175.0,
+   "reported": 175.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 HS passive task: trials excluded in total",
+   "computed": 2733.0,
+   "reported": 2733.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A073: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A073: hand_angle equals minus the authors' ReachError100_TC_sig_adj (prime and probe), recomputed from the stored directions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A073: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: female participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: mean age",
+   "computed": 24.966666666666665,
+   "reported": 25.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: SD of age",
+   "computed": 2.413801313614937,
+   "reported": 2.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: number of right-handed participants",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: mean EHI of right-handed participants",
+   "computed": 92.22400000000002,
+   "reported": 92.2,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: SD of EHI of right-handed participants",
+   "computed": 16.770019876752286,
+   "reported": 16.8,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: number of left-handed participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: mean EHI of left-handed participants",
+   "computed": -81.57499999999999,
+   "reported": -81.6,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: SD of EHI of left-handed participants",
+   "computed": 21.702899191889856,
+   "reported": 21.7,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: number of ambidextrous participants",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: mean EHI of ambidextrous participants",
+   "computed": 47.4,
+   "reported": 47.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: too-slow prime",
+   "computed": 815.0,
+   "reported": 815.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: too-slow probe",
+   "computed": 987.0,
+   "reported": 987.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: obstacle hit prime",
+   "computed": 113.0,
+   "reported": 113.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: obstacle hit probe",
+   "computed": 339.0,
+   "reported": 339.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 2 OA task: trials excluded in total",
+   "computed": 2415.0,
+   "reported": 2415.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A074: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A074: hand_angle equals minus the authors' ReachError100_TC_sig_adj (prime and probe), recomputed from the stored directions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A074: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: female participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: mean age",
+   "computed": 22.4,
+   "reported": 22.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: SD of age",
+   "computed": 4.359689960504547,
+   "reported": 4.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: number of right-handed participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: mean EHI of right-handed participants",
+   "computed": 87.42857142857143,
+   "reported": 87.4,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: SD of EHI of right-handed participants",
+   "computed": 13.276290678495036,
+   "reported": 13.3,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: number of left-handed participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: mean EHI of left-handed participants",
+   "computed": -95.0,
+   "reported": -95.0,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: SD of EHI of left-handed participants",
+   "computed": 7.0710678118654755,
+   "reported": 7.1,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: too-slow prime",
+   "computed": 1107.0,
+   "reported": 1107.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: too-slow probe",
+   "computed": 900.0,
+   "reported": 900.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: obstacle hit prime",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: obstacle hit probe",
+   "computed": 118.0,
+   "reported": 118.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA passive task: trials excluded in total",
+   "computed": 4196.0,
+   "reported": 4196.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "A080: every participant in the data has demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A080: hand_angle equals minus the authors' ReachError100_TC_sig_adj (prime and probe), recomputed from the stored directions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "A080: two rows per trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: participants analysed",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: female participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: mean age",
+   "computed": 21.5,
+   "reported": 21.5,
+   "tol": 0.06,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: number of right-handed participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: number of left-handed participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants; Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: too-slow prime",
+   "computed": 696.0,
+   "reported": 696.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: too-slow probe",
+   "computed": 69.0,
+   "reported": 69.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: obstacle hit prime",
+   "computed": 154.0,
+   "reported": 154.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: obstacle hit probe",
+   "computed": 156.0,
+   "reported": 156.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment Set 3 OA control task: trials excluded in total",
+   "computed": 1338.0,
+   "reported": 1338.0,
+   "tol": 0,
+   "source": "Methods, Data exclusion",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Set 4 control task (mouse): the paper reports a mean EHI of 72.2; the demographics sheet gives 62.7 for the 30 participants. The RT/MT rule removes 624 trials from the deposit's values where the paper reports 626 (the other nine counts per experiment match exactly).",
+  "Set 4 hand selection (A096): the paper prints 2543 excluded trials (11.0%); the authors' flags give 2453, which is 11.0% of the 22,272 trials, so the printed total is probably a transposition. All category counts match, and the total is not used as a check.",
+  "Set 3 OA control (A080): the paper's exclusion counts reproduce only when the 64 practice trials per participant are included (they are in the rows, flagged as practice). The SD of age is 1.87 (paper 1.8), and the EHI of the 6 left-handed participants is -70.0 with SD 26.9 (paper -85.8, SD 5.6; right-handed 93.5, paper 93.7); these are not used as checks.",
+  "Kinarm obstacle avoidance (A073, A074, A080): the paper's totals include trials with more than two velocity peaks, which the deposit's Error_Any flag does not contain; we flag them. Other paper sub-counts (non-smooth trajectories, movement time) are not separate columns and are not checked one by one.",
+  "In the Kinarm files the deposit records no hand for the obstacle-avoidance task, and for passive prime movements our rows leave hand_angle, rt and mt empty."
+ ],
+ "sources": [
+  {
+   "file": "A039_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A039_data.csv/content",
+   "bytes": 53819636,
+   "sha256": "c27bdd667a77a2c036c0995fe91c3c2c9b26555377e6ce4db86e04ef4c354e04",
+   "fetched_utc": "2026-11-10T06:19:57Z"
+  },
+  {
+   "file": "A039_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A039_SubjInfo.xlsx/content",
+   "bytes": 13050,
+   "sha256": "8175995e2b8dccf76ddab4b904609b03228a40f74ae638c77a8369ced55d8637",
+   "fetched_utc": "2026-11-10T06:20:03Z"
+  },
+  {
+   "file": "A056_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A056_data.csv/content",
+   "bytes": 48789035,
+   "sha256": "e08ba412e871a6f62881fd176f9745897cbc1ddae0eba48e690f3a293ac8a2ee",
+   "fetched_utc": "2026-11-10T06:21:33Z"
+  },
+  {
+   "file": "A056_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A056_SubjInfo.xlsx/content",
+   "bytes": 12676,
+   "sha256": "f34b821e4231a552f4758f53e8c2f078dc66a0296b7b18fb444df6b18008867a",
+   "fetched_utc": "2026-11-10T06:21:46Z"
+  },
+  {
+   "file": "A096_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A096_data.csv/content",
+   "bytes": 40477584,
+   "sha256": "c58b26a5d7b670e35184b268b4410558f38babc8c7cf8934df838cd1496c3f1e",
+   "fetched_utc": "2026-11-10T06:22:17Z"
+  },
+  {
+   "file": "A096_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A096_SubjInfo.xlsx/content",
+   "bytes": 12995,
+   "sha256": "a7808e8372994d17dd826959dd007b2f0287aa23ee79d4ab97db52b11ff1151f",
+   "fetched_utc": "2026-11-10T06:22:22Z"
+  },
+  {
+   "file": "B098_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/B098_data.csv/content",
+   "bytes": 42701117,
+   "sha256": "c216ea46f8c0cc6263603307d27e97877d972fd76d12b4922e528d2494c4f3ea",
+   "fetched_utc": "2026-11-10T06:23:44Z"
+  },
+  {
+   "file": "B098_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/B098_SubjInfo.xlsx/content",
+   "bytes": 12381,
+   "sha256": "0e3e883fc7b36b4a7cd394f1edf0e75619e4f95c05793040b37307b86212fc6f",
+   "fetched_utc": "2026-11-10T06:23:52Z"
+  },
+  {
+   "file": "A073_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A073_data.csv/content",
+   "bytes": 60293992,
+   "sha256": "fe821edd980a1e475a6612087172edc0ce82ab8db3cd836cfee9cdef5be3fb16",
+   "fetched_utc": "2026-11-10T06:24:39Z"
+  },
+  {
+   "file": "A073_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A073_SubjInfo.xlsx/content",
+   "bytes": 12545,
+   "sha256": "c8b0f58138b41b99bed3b57164f1852481a7693fef08673a50a6c8a5099805a8",
+   "fetched_utc": "2026-11-10T06:24:44Z"
+  },
+  {
+   "file": "A074_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A074_data.csv/content",
+   "bytes": 117782286,
+   "sha256": "573c3673214a366e931b35420e0f649b6ef6c5ac45939b303844ce27814df2de",
+   "fetched_utc": "2026-11-10T06:25:48Z"
+  },
+  {
+   "file": "A074_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A074_SubjInfo.xlsx/content",
+   "bytes": 12689,
+   "sha256": "2fb46886057c8ad425fb8f15af85869c3ff3677d3d3a1f9c37c443ba374e46f2",
+   "fetched_utc": "2026-11-10T06:25:53Z"
+  },
+  {
+   "file": "A080_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A080_data.csv/content",
+   "bytes": 51756055,
+   "sha256": "e57771e2dd74c27c8d347c07c5949497eda6cc0b7ee3cfa571350109d7a8c428",
+   "fetched_utc": "2026-11-10T06:26:40Z"
+  },
+  {
+   "file": "A080_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A080_SubjInfo.xlsx/content",
+   "bytes": 12266,
+   "sha256": "8fca20aaca6d621312f9c43877b3390ae3e812c7f20be309c1cbec91e4f88ea9",
+   "fetched_utc": "2026-11-10T06:26:45Z"
+  },
+  {
+   "file": "A038_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A038_data.csv/content",
+   "bytes": 70036445,
+   "sha256": "a60965f58547fc491910107cd76a2c8a024ae1466fb7004fffbf7ffe930f4c22",
+   "fetched_utc": "2026-11-10T06:33:56Z"
+  },
+  {
+   "file": "A038_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A038_SubjInfo.xlsx/content",
+   "bytes": 11987,
+   "sha256": "ef71a30e1208dbbe9f9bf1253ffcb597a3fbb2c3b67ac60b137d99768f1e93cb",
+   "fetched_utc": "2026-11-10T06:34:06Z"
+  },
+  {
+   "file": "A054_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A054_data.csv/content",
+   "bytes": 71338932,
+   "sha256": "80a35d2e2bac0a863d1ccf9bb4eac9af0c72ec3dcbfd321fe99e550f00201a12",
+   "fetched_utc": "2026-11-10T06:34:40Z"
+  },
+  {
+   "file": "A054_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A054_SubjInfo.xlsx/content",
+   "bytes": 12437,
+   "sha256": "7ef68afce2e5284acfd4f7d41519aa75f69c516382056a12ffc9ba19cf700c0d",
+   "fetched_utc": "2026-11-10T06:34:47Z"
+  },
+  {
+   "file": "A072_data.csv",
+   "url": "https://zenodo.org/api/records/22257057/files/A072_data.csv/content",
+   "bytes": 68975474,
+   "sha256": "057bedc2e4a10295372d90048e02e952858c4ebed187846aae94e594b5b585be",
+   "fetched_utc": "2026-11-10T06:35:20Z"
+  },
+  {
+   "file": "A072_SubjInfo.xlsx",
+   "url": "https://zenodo.org/api/records/22257057/files/A072_SubjInfo.xlsx/content",
+   "bytes": 12434,
+   "sha256": "060e6baa435232fd2030e2c5f5df1c0cda58d119175996f5cb74ea6213353c4a",
+   "fetched_utc": "2026-11-10T06:35:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Seegelke2026_bioRxiv_history.zip"
+}

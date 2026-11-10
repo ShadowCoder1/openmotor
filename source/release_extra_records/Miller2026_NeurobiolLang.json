@@ -1,0 +1,254 @@
+{
+ "id": "Miller2026_NeurobiolLang",
+ "module": "speech",
+ "rows": 10808,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 231438,
+ "zip_sha256": "a48e533fa9110cf08376a1d5d7fce3b866da718cefa797916d53b910b7786573",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants with learning data (Methods, Participants: 30 adults with PPA recruited)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "day-1 training trials per participant, median (4 blocks of 45)",
+   "computed": 180.0,
+   "reported": 180.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "day-2 training trials per participant, median (2 blocks of 45)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant (2 blocks of 45)",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trained pseudowords per participant",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "novel pseudowords in the test phase per participant",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Experimental Protocol",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males among the 26 participants of Table 1 (15 in the text, Participants)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Table 1 (8 + 6 + 9 + 3)",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the svPPA group (Table 1)",
+   "computed": 63.07833333333334,
+   "reported": 63.1,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the nfvPPA group (Table 1)",
+   "computed": 70.08,
+   "reported": 70.1,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the PPA-O group (Table 1)",
+   "computed": 75.30333333333334,
+   "reported": 75.3,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "svPPA participants (Table 1: 6)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lvPPA participants (Table 1: 9)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nfvPPA participants (agPPA, PPAOS, agPPA+AOS; Table 1: 8)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PPA-Other participants (Table 1: 3)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error rate, start of training, % (Table 3, full cohort, the 26 participants of Table 1)",
+   "computed": 61.48804187265726,
+   "reported": 61.5,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error rate, end of training, % (Table 3, full cohort, the 26 participants of Table 1)",
+   "computed": 50.15215553677093,
+   "reported": 50.2,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration of accurate productions, end of training, ms (Table 3, full cohort, the 26 participants of Table 1)",
+   "computed": 396.8218384632409,
+   "reported": 396.8,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error rate, trained words in the test, % (Table 3, full cohort, the 26 participants of Table 1)",
+   "computed": 48.141025641025635,
+   "reported": 48.1,
+   "tol": 0.05,
+   "source": "Miller et al. 2026, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 270 or 274 training lines and 90 test lines",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "overall accuracy implies sequencing accuracy",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "an accurately sequenced utterance has a measured duration (all but at most 20 of about 5,000 have one; the rest have a missing field)",
+   "ok": true,
+   "detail": "17 without"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 3, duration of accurate productions, start of training: 449.17 ms here against 447.3 ms in the paper (the learning measures are rebuilt from the rows by the paper's description and come close but not within its rounding).",
+  "Table 3, error rate, novel words in the test: 52.01 % here against 52.1 % in the paper (the learning measures are rebuilt from the rows by the paper's description and come close but not within its rounding).",
+  "Table 3, duration of accurate productions, novel words in the test: 426.36 ms here against 418.8 ms in the paper (the learning measures are rebuilt from the rows by the paper's description and come close but not within its rounding).",
+  "Table 3, duration of accurate productions, trained words in the test: 370.35 ms here against 379.6 ms in the paper (the learning measures are rebuilt from the rows by the paper's description and come close but not within its rounding).",
+  "The paper analysed 26 participants (Table 1) of 30 who were enrolled, but the deposit does not say which four were left out. The four with a diagnosis of Alzheimer's disease (AD) are the only ones that Table 1 (diagnosis groups 8 + 6 + 9 + 3) and the text (15 males) do not count, and without them Table 3 is reproduced closely, so subject_excluded_by_authors is true for them; this is inferred, not stated.",
+  "Age is empty for the participant that the authors give only as 90+ (the paper's mean age uses the true age)."
+ ],
+ "sources": [
+  {
+   "file": "learning.zip",
+   "url": "https://osf.io/download/6937047905ef12d4a9ab2d0b/",
+   "bytes": 225596,
+   "sha256": "7e569da644a4e11aab5e9b712a2845dc6ffddf7d32162936a4a2a0434cf6ef05",
+   "fetched_utc": "2026-11-09T11:21:43Z"
+  },
+  {
+   "file": "subjects.csv",
+   "url": "https://osf.io/download/msdtz/",
+   "bytes": 1342,
+   "sha256": "39463dd2bf6be416d8cd7b73b6a81741fe0e01b88001726bba83212025eee04a",
+   "fetched_utc": "2026-11-09T11:21:44Z"
+  },
+  {
+   "file": "clinical.xlsx",
+   "url": "https://osf.io/download/yfrsh/",
+   "bytes": 21243,
+   "sha256": "23a0608658d91f9b31ee7aba079aad9510f66c441657fa499a7cb372ff7c3f5f",
+   "fetched_utc": "2026-11-09T11:21:44Z"
+  },
+  {
+   "file": "neuro.xlsx",
+   "url": "https://osf.io/download/6936f0b128eb90495d8d5774/",
+   "bytes": 31817,
+   "sha256": "429bc156262747375c46ccce63cadecae0d20a9cbc41ed6650d25f207ea24072",
+   "fetched_utc": "2026-11-09T11:21:45Z"
+  },
+  {
+   "file": "neuro_controlData.xlsx",
+   "url": "https://osf.io/download/6a16e818a3b70b10dfcc747e/",
+   "bytes": 31129,
+   "sha256": "debacba90e37f7e691eca0e8cc168f926fbe698a089698712b386b37f6456267",
+   "fetched_utc": "2026-11-09T11:21:46Z"
+  },
+  {
+   "file": "SEQFTD_Acoustic_Features_SMR.xlsx",
+   "url": "https://osf.io/download/6a2c547330486ec8744bf38d/",
+   "bytes": 35025,
+   "sha256": "5719ef06c5df4e977e18b28f6f91f2b3a4f23a929d2b87efce8fdca8b99e08e4",
+   "fetched_utc": "2026-11-09T11:21:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Miller2026_NeurobiolLang.zip"
+}

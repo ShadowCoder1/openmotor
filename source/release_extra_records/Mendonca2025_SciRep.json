@@ -1,0 +1,206 @@
+{
+ "id": "Mendonca2025_SciRep",
+ "module": "summary",
+ "rows": 3180,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 55919,
+ "zip_sha256": "e4cbdc01917ffafdc26b48ebecc4815d3ae8c6f77494a1b7afe74298bba2b733",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "30 rows in both sheets, 10 cases and 20 controls",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values beyond the empty cells of the sheet",
+   "ok": true,
+   "detail": "0 empty cells skipped"
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept",
+   "ok": true,
+   "detail": "3180"
+  },
+  {
+   "kind": "published",
+   "what": "cerebellar ataxia participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, ataxia mean (years)",
+   "computed": 50.8,
+   "reported": 50.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, ataxia SD",
+   "computed": 9.852241707685955,
+   "reported": 9.85,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, control mean",
+   "computed": 48.35,
+   "reported": 48.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, control SD",
+   "computed": 11.056196167046355,
+   "reported": 11.1,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males among ataxia",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males among controls",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, ataxia mean (cm)",
+   "computed": 165.35399999999998,
+   "reported": 165.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, control mean (cm)",
+   "computed": 165.73499999999996,
+   "reported": 166.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS head V, ataxia",
+   "computed": 0.95958801405,
+   "reported": 0.96,
+   "tol": 0.0005,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS head V, control",
+   "computed": 0.9543394416,
+   "reported": 0.954,
+   "tol": 0.0005,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS left shoulder ML, ataxia",
+   "computed": 0.08096725317,
+   "reported": 0.081,
+   "tol": 5e-05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS left shoulder ML, control",
+   "computed": 0.10872404805,
+   "reported": 0.1087,
+   "tol": 5e-05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS back V, ataxia",
+   "computed": 0.91754716375,
+   "reported": 0.9175,
+   "tol": 5e-05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS back V, control",
+   "computed": 0.88414269365,
+   "reported": 0.8841,
+   "tol": 0.0005,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS right ankle V, ataxia",
+   "computed": 0.8782831646,
+   "reported": 0.8783,
+   "tol": 5e-05,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median acceleration RMS right ankle V, control",
+   "computed": 0.8491812976499999,
+   "reported": 0.8492,
+   "tol": 0.0005,
+   "source": "Table 2",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Mean SARA total of the ten cases in the sheet is 15.55; the paper reports 15.4 (Table 1), so this was not used as a check.",
+  "The deposit's second sheet cannot be tied to the first by an identifier; the order-within-group matching is ours."
+ ],
+ "sources": [
+  {
+   "file": "DataSheet.xlsx",
+   "url": "https://osf.io/download/a49mn/",
+   "bytes": 51901,
+   "sha256": "fb8e89fa77a2d0c9740e669426c05db727568dc3707bf1473c6b771d63a6e07a",
+   "fetched_utc": "2026-11-09T14:17:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mendonca2025_SciRep.zip"
+}

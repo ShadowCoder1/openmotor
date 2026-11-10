@@ -1,0 +1,174 @@
+{
+ "id": "Hadjiosif2025_eLife",
+ "module": "reach90",
+ "rows": 24000,
+ "subjects": 50,
+ "persons": 25,
+ "zip_bytes": 2289316,
+ "zip_sha256": "9f9ac8843f2c44b63b6dba50476e3f0b40c459fec7889b1e379ab2bd53182c89",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "stroke patients",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Participants and ethics statement (sixteen stroke patients)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Participants and ethics statement (nine healthy control participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "patients with left paresis",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 2 (paretic side 11 L/5 R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "patients with right paresis",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 2 (paretic side 11 L/5 R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FM-UE of patients, mean",
+   "computed": 38.3125,
+   "reported": 38.3,
+   "tol": 0.05,
+   "source": "Table 2 (38.3 +- 18.2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FM-UE of patients, SD",
+   "computed": 18.196954873457994,
+   "reported": 18.2,
+   "tol": 0.05,
+   "source": "Table 2 (38.3 +- 18.2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ARAT of patients, mean",
+   "computed": 29.59375,
+   "reported": 29.6,
+   "tol": 0.05,
+   "source": "Table 2 (29.6 +- 21.8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ARAT of patients, SD",
+   "computed": 21.790838097696014,
+   "reported": 21.8,
+   "tol": 0.05,
+   "source": "Table 2 (29.6 +- 21.8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movements per block",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (blocks of 96 movements, 12 in each of the 8 directions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movement directions",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (eight movement directions)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 25 participants x 2 arms x 5 blocks x 96",
+   "ok": true,
+   "detail": "24000"
+  },
+  {
+   "kind": "internal",
+   "what": "every direction code 1-8 present",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 (resting postural forces while the robot holds the hand at about 54 positions, F_P_DT file) and the hold-perturbation (release) data of Experiment 2 are not converted; neither is the 763 MB trajectory file. The force-pulse trials of Experiment 2 are kept with their pulse direction in trial_measures.csv (trial_pulse_pert: 1 counter-clockwise, -1 clockwise, 0 none; the paper describes a 12 N, 70 ms pulse after 2 cm of movement).",
+  "The deposit does not say which of the five blocks per arm is the familiarization block. The authors' analysis code uses blocks 1 to 4 and leaves block 5 out of their rejection step, and block 5 has the slowest movements, so block 5 is treated as the familiarization block (phase practice, placed first in each arm's sequence). The order of blocks 1 to 4 is the file's. This is inferred.",
+  "The authors' rule rejects reaches whose angle at 150 ms is more than 90 degrees from the target (blocks 1 to 4); these are marked in excluded_by_authors. Their other exclusions (stabilization during holds) concern the hold data.",
+  "Ages are given only as 5-year ranges per patient in the paper and are not in the deposit, so no age column is included.",
+  "The paper's mean time to target (1.59 s patients' paretic side, 0.82 s controls) was not reproduced exactly: unperturbed outward reaches of the paretic (or primary) arm in blocks 1 to 4, without the angle-rejected reaches, give 1.61 s and 0.84 s. The authors' exact selection of reaches is not in the deposit, so these two checks were dropped.",
+  "The paper's mean path to target (13.4 cm patients' paretic side, 10.8 cm controls) was not reproduced to its printed rounding: the same selection of reaches gives 13.3 cm and 10.9 cm (p_whole_mvt x 100). The two checks were dropped."
+ ],
+ "sources": [
+  {
+   "file": "parsed_data_Sep_2025.mat",
+   "url": "https://osf.io/download/68c1bf3532849d28b70356f6/",
+   "bytes": 15104242,
+   "sha256": "1058d6681f4db17819c524c9422908fe3cc242c45b6dffb135407bcb509edd51",
+   "fetched_utc": "2026-11-09T10:01:04Z"
+  },
+  {
+   "file": "exp1_F_P_DT_2s_4_26_2023.mat",
+   "url": "https://osf.io/download/68c1c0aad9f68849875d8363/",
+   "bytes": 122586,
+   "sha256": "7fe11781a2e5a2da2cecdd9b062c082e592380030738937a3adbeec5083f454d",
+   "fetched_utc": "2026-11-09T10:01:09Z"
+  },
+  {
+   "file": "exp1_info.mat",
+   "url": "https://osf.io/download/68c1c0adbe25bc91eaa6c099/",
+   "bytes": 643,
+   "sha256": "aa6a96cc67bf8cdd7f00fdba1fb5fd8e80354646c8e0f944357dd20d7d05c9b3",
+   "fetched_utc": "2026-11-09T10:01:13Z"
+  },
+  {
+   "file": "exp2_info.mat",
+   "url": "https://osf.io/download/68c1bf25341e5d32de5d81cc/",
+   "bytes": 440,
+   "sha256": "fd44185fcef919ce9be8e24083c248fec48dba02d74d8ecc711678afd8b8dcc5",
+   "fetched_utc": "2026-11-09T10:01:16Z"
+  },
+  {
+   "file": "analyze_exp1.m",
+   "url": "https://osf.io/download/68c1c0a912511db9690358c2/",
+   "bytes": 20888,
+   "sha256": "54a063cfd84192742a9084c1c868859c07370d9fbc3186b59556f0edf21a8bb7",
+   "fetched_utc": "2026-11-09T10:01:22Z"
+  },
+  {
+   "file": "analyze_exp2.m",
+   "url": "https://osf.io/download/68c1bf22e57c8949c074e921/",
+   "bytes": 60491,
+   "sha256": "f17c49d7455f95d47fd1e9e1b2a188ce9e967e6ca29bcfb175590a61ff4170ef",
+   "fetched_utc": "2026-11-09T10:01:27Z"
+  },
+  {
+   "file": "postural_forces.mat",
+   "url": "https://osf.io/download/68c1bf3cbe25bc91eaa6c011/",
+   "bytes": 8020,
+   "sha256": "42d7fecd7b0c22af5f124f740262b7fed8d900f00127383373a1d038d604cb62",
+   "fetched_utc": "2026-11-09T10:01:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hadjiosif2025_eLife.zip"
+}

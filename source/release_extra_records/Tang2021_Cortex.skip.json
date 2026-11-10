@@ -1,0 +1,7 @@
+{
+ "id": "Tang2021_Cortex",
+ "skipped": true,
+ "reason": "too large",
+ "details": "OSF project 26ja8 (no license set on OSF; the paper, Cortex 145:115-130, is CC BY 4.0, read on PMC8650828) holds the speech data as raw Audapter output in three components: speech data (47 files, 4.6 GB, tongue-site and hand-site participants F-series), speech data 1 (53 files, 5.1 GB) and speech data 2 (44 files, 4.3 GB), 144 MATLAB files and 14.0 GB in all, one file per participant and session phase (about 24 MB for the baseline phase and about 120 MB for each of the vowel-exploration, learning and later phases, with signalIn/signalOut, fmts and sfmts per trial). Even without the vowel-exploration phase the needed files are about 10.6 GB, over the 5 GB gate. A data description document (data_description.docx, with extract_formants.m and go_F1F2.m) documents the fields: hand group N=20 (file prefix F) and tongue group N=20 (prefix L), g1/g2 = female/male, S1 vowel exploration, S2 baseline, S3 learning, S4 unlearning (the files are labelled S1, S2, S3, S5, so the S4 to S5 mapping needs confirming); the paper reports a 110 mel F1 upward shift, 45 baseline, 225 learning and 45 unlearning utterances of dead/bed/head, and group F1 and F2 adaptation statistics that could serve as checks. No consent-limit columns found. Retry as a speech conversion (one row per trial: F1/F2 from fmts over the 30 ms at the centre of the vowel as extract_formants.m does, sfmts for the heard formants) if the gate is lifted; fetch one file at a time, as OSF throttles.",
+ "sources": []
+}

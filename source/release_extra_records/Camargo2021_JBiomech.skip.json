@@ -1,0 +1,7 @@
+{
+ "id": "Camargo2021_JBiomech",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Part 1 of 3 on Mendeley Data (subjects AB06-AB14 only, CC BY 4.0) is one 10.08 GB zip (Subjects_Part1_AB06-AB14.zip) of MATLAB tables at 200-1000 Hz, over the 5 GB limit; the whole dataset (22 subjects, parts 2 and 3 on separate DOIs) is about three times that. A retry would need a per-sensor subset (for example gait-cycle-segmented ik/id at 200 Hz pulled from the zip by range requests) and a decision from the curator to release only part of the subjects.",
+ "sources": []
+}

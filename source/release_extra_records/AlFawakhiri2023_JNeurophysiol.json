@@ -1,0 +1,928 @@
+{
+ "id": "AlFawakhiri2023_JNeurophysiol",
+ "module": "reach90",
+ "rows": 183648,
+ "subjects": 204,
+ "persons": 204,
+ "zip_bytes": 6178644,
+ "zip_sha256": "400321f80597a9fd51faa8f4e3af7907998ea79ab132178a184e081af1197d34",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "data_fig1_kimrep.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "data_fig2_soundtargetsize.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "data_fig3_tsayrep.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "data_fig4_TargetSizeTargetJump.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1: 48 participants x 880 trials, trials 1-880 in order, cycles of 8 reaches to the 8 targets",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1: condition constant within participant, 24 participants per condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1: every participant's late-clamp hand angle is positive although the clamp side was counterbalanced (the authors stored the angles with adaptation positive)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1: the authors' outlier rule removes under 1% of trials (Methods)",
+   "ok": true,
+   "detail": "0.97%"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2: 96 participants x 880 trials, trials 1-880 in order, cycles of 8 reaches to the 8 targets",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2: condition constant within participant, 24 participants per condition",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2: every participant's late-clamp hand angle is positive although the clamp side was counterbalanced (the authors stored the angles with adaptation positive)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2: the authors' outlier rule removes under 1% of trials (Methods)",
+   "ok": true,
+   "detail": "0.57%"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: 18 participants x 904 trials in order: 100 baseline (TrialType 1, no clamp), 3 tutorial (TrialType 2, 45 deg clamp), then clamp trials (TrialType 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: clamp trials have TargetJump = ClampAngle (Jump-To), -ClampAngle (Jump-Away), 0.01 (Jump-In-Place) or 0, about a quarter each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: BadReachAngle (Exp3 only) marks |HandError| > 90 exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: the next-trial change of the hand has a negative slope on ClampAngle in every participant (clamp and hand in one frame)",
+   "ok": true,
+   "detail": "18 of 18"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: trials without a hand angle (HandError NaN) are kept with hand_angle empty",
+   "ok": true,
+   "detail": "1 of 16272"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: 42 participants x 968 trials in order: 100 baseline (TrialType 1, no clamp), 3 tutorial (TrialType 2, 45 deg clamp), then clamp trials (TrialType 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: HandAngle = 90 + HandError on every row (target at 90 deg)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: Jump-To trials (TrialLabel) all have TargetJump = -ClampAngle, Hit and Miss trials no jump; Hit trials have the large target (TgtSize 62), Miss and Jump-To the small one (6)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: BadReachAngle (Exp3 only) marks |HandError| > 90 exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: the next-trial change of the hand has a negative slope on ClampAngle in every participant (clamp and hand in one frame)",
+   "ok": true,
+   "detail": "42 of 42"
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: trials without a hand angle (HandError NaN) are kept with hand_angle empty",
+   "ok": true,
+   "detail": "1 of 40656"
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order (42240 + 84480 + 16272 + 40656)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle within (-180, 180] where recorded, target_angle within [0, 360), rt and mt recorded on the rows that have a hand angle",
+   "ok": true,
+   "detail": "2 rows without a hand angle"
+  },
+  {
+   "kind": "internal",
+   "what": "clamp trials: cursor_error equals the clamp; veridical trials: cursor_error equals hand_angle_fb",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants, all four experiments",
+   "computed": 204.0,
+   "reported": 204.0,
+   "tol": 0,
+   "source": "Methods, Participants (204 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Exp1",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Exp2",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Exp3",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Exp4",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: clamp trials per participant",
+   "computed": 865.0,
+   "reported": 865.0,
+   "tol": 0,
+   "source": "Methods, Experiment 4 (865 clamp trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Hit: early learning rate (deg/cycle), mean",
+   "computed": 1.391944110597656,
+   "reported": 1.39194411106015,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelB_earlyLR_meanSEM.csv (the data behind Fig 1B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Hit: asymptote, last 10 clamp cycles (deg), mean",
+   "computed": 17.240142805350906,
+   "reported": 17.2401428035099,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelC_asym1_meanSEM.csv (the data behind Fig 1C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Hit: retention, last no-feedback washout cycle / last clamp cycle, mean",
+   "computed": 0.7044478428214238,
+   "reported": 0.704447840901554,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelD_wash_meanSEM.csv (the data behind Fig 1D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Miss: early learning rate (deg/cycle), mean",
+   "computed": 1.3440987609237534,
+   "reported": 1.34409876032794,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelB_earlyLR_meanSEM.csv (the data behind Fig 1B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Miss: asymptote, last 10 clamp cycles (deg), mean",
+   "computed": 18.867552729539145,
+   "reported": 18.8675527323169,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelC_asym1_meanSEM.csv (the data behind Fig 1C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Miss: retention, last no-feedback washout cycle / last clamp cycle, mean",
+   "computed": 0.8117835578651817,
+   "reported": 0.811783564963534,
+   "tol": 1e-06,
+   "source": "authors' file output_fig1PanelD_wash_meanSEM.csv (the data behind Fig 1D)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Hit: SD of the asymptote",
+   "computed": 7.458603623369233,
+   "reported": 7.46,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (17.24 +- 7.46 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1 Miss: SD of the asymptote",
+   "computed": 9.328303881150235,
+   "reported": 9.33,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (18.88 +- 9.33 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: t(46), Miss vs Hit, early learning",
+   "computed": -0.29920538805561736,
+   "reported": -0.3,
+   "tol": 0.005,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: t(46), Miss vs Hit, asymptote",
+   "computed": 0.6675283346552927,
+   "reported": 0.67,
+   "tol": 0.005,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: t(46), Miss vs Hit, retention",
+   "computed": 0.8502448438476448,
+   "reported": 0.85,
+   "tol": 0.005,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Lenient: early learning rate, mean",
+   "computed": 1.3746916042696296,
+   "reported": 1.37469160385848,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_earlyLR_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Lenient: asymptote, mean",
+   "computed": 17.084496062322756,
+   "reported": 17.0844960534743,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_asym1_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Lenient: retention, mean",
+   "computed": 0.4929244384739262,
+   "reported": 0.492924438662217,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_wash_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Strict: early learning rate, mean",
+   "computed": 1.2258995048612231,
+   "reported": 1.2258995026358,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_earlyLR_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Strict: asymptote, mean",
+   "computed": 17.982626600649002,
+   "reported": 17.9826266062891,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_asym1_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Hit_16mm_Strict: retention, mean",
+   "computed": 0.550580635291308,
+   "reported": 0.550580637923302,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_wash_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Lenient: early learning rate, mean",
+   "computed": 1.2000256967053868,
+   "reported": 1.20002569712323,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_earlyLR_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Lenient: asymptote, mean",
+   "computed": 19.62149291041115,
+   "reported": 19.6214929123232,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_asym1_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Lenient: retention, mean",
+   "computed": 0.4421135652091771,
+   "reported": 0.442113565190106,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_wash_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Strict: early learning rate, mean",
+   "computed": 1.432925128204093,
+   "reported": 1.43292512743835,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_earlyLR_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Strict: asymptote, mean",
+   "computed": 19.13753645178601,
+   "reported": 19.1375364523072,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_asym1_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2 Miss_6mm_Strict: retention, mean",
+   "computed": 0.7566104258740216,
+   "reported": 0.756610423852361,
+   "tol": 1e-06,
+   "source": "authors' file output_fig2_wash_meanSEM.csv (the data behind Fig 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2: retention, Strict mean",
+   "computed": 0.6535955305826647,
+   "reported": 0.65,
+   "tol": 0.005,
+   "source": "Results, Experiment 2 (0.65 +- 0.08)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2: retention, Lenient mean",
+   "computed": 0.46751900184155165,
+   "reported": 0.47,
+   "tol": 0.005,
+   "source": "Results, Experiment 2 (0.47 +- 0.03)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2: t(94), retention, Strict vs Lenient",
+   "computed": 2.2347509611627996,
+   "reported": 2.23,
+   "tol": 0.005,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3: every clamp trial is one of the four jump kinds",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning after a -4 deg clamp, mean",
+   "computed": 1.262919913361111,
+   "reported": 1.26291992433214,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelB_STLXJump_meanSEM.csv (the data behind Fig 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning after a +4 deg clamp, mean",
+   "computed": -1.1830893319097222,
+   "reported": -1.18308933771036,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelB_STLXJump_meanSEM.csv (the data behind Fig 3B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning, Jump Away, mean",
+   "computed": 1.573297444888889,
+   "reported": 1.57329747516538,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelC_STLXJump_meanSEM.csv (the data behind Fig 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning, Jump In Place, mean",
+   "computed": 1.3581349990833333,
+   "reported": 1.35813500741364,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelC_STLXJump_meanSEM.csv (the data behind Fig 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning, Jump To, mean",
+   "computed": 0.4572618167083333,
+   "reported": 0.457261805567801,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelC_STLXJump_meanSEM.csv (the data behind Fig 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: single-trial learning, No Jump, mean",
+   "computed": 1.5033242298611111,
+   "reported": 1.50332423593818,
+   "tol": 1e-06,
+   "source": "authors' file output_fig3PanelC_STLXJump_meanSEM.csv (the data behind Fig 3C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: F(1,17) for clamp direction (squared paired t)",
+   "computed": 94.7002176613766,
+   "reported": 94.7,
+   "tol": 0.05,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: t(17), No Jump vs Jump To",
+   "computed": 3.3559903577403545,
+   "reported": 3.36,
+   "tol": 0.005,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: t(17), Jump Away vs Jump To",
+   "computed": 2.892709131373643,
+   "reported": 2.89,
+   "tol": 0.005,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: t(17), Jump In Place vs Jump To",
+   "computed": 3.116405005986,
+   "reported": 3.12,
+   "tol": 0.005,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp3: t(17), No Jump vs Jump In Place",
+   "computed": 1.965111537594513,
+   "reported": 1.96,
+   "tol": 0.006,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp4: the trial kind read back from target size and jump equals the authors' TrialLabel on every clamp trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -10.5 deg clamp, mean",
+   "computed": 1.4468885531031745,
+   "reported": 1.44688853634613,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -8.75 deg clamp, mean",
+   "computed": 1.4427392456444443,
+   "reported": 1.44273923718018,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -7 deg clamp, mean",
+   "computed": 1.2908639838761904,
+   "reported": 1.29086398856185,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -5.25 deg clamp, mean",
+   "computed": 1.1744482657650794,
+   "reported": 1.17444827986219,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -3.5 deg clamp, mean",
+   "computed": 0.7692046559059523,
+   "reported": 0.769204662823823,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a -1.75 deg clamp, mean",
+   "computed": 0.41961584470317453,
+   "reported": 0.419615849917394,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +1.75 deg clamp, mean",
+   "computed": -0.5383189745793652,
+   "reported": -0.538318969499486,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +3.5 deg clamp, mean",
+   "computed": -0.7765251956309523,
+   "reported": -0.776525192244187,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +5.25 deg clamp, mean",
+   "computed": -1.008629561,
+   "reported": -1.00862955296447,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +7 deg clamp, mean",
+   "computed": -1.1921635459126985,
+   "reported": -1.19216355786108,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +8.75 deg clamp, mean",
+   "computed": -1.3037347496706349,
+   "reported": -1.30373475057967,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning after a +10.5 deg clamp, mean",
+   "computed": -1.4448712158055554,
+   "reported": -1.44487120860929,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelA_STLXClamp_meanSEM.csv (the data behind Fig 4A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, mean",
+   "computed": 1.0735041652410715,
+   "reported": 1.07350415577691,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelB_STLXSuccess_meanSEM.csv (the data behind Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, mean",
+   "computed": 0.8253254343327381,
+   "reported": 0.825325445727916,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelB_STLXSuccess_meanSEM.csv (the data behind Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, mean",
+   "computed": 1.303171348325496,
+   "reported": 1.3031713451076,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelB_STLXSuccess_meanSEM.csv (the data behind Fig 4B)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 1.75 deg clamp, mean",
+   "computed": 0.4331870180488095,
+   "reported": 0.433187030349509,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 3.5 deg clamp, mean",
+   "computed": 0.7465955024928571,
+   "reported": 0.746595486272525,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 5.25 deg clamp, mean",
+   "computed": 1.069777866375,
+   "reported": 1.06977784867074,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 7 deg clamp, mean",
+   "computed": 1.2494457239761905,
+   "reported": 1.24944573312396,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 8.75 deg clamp, mean",
+   "computed": 1.469792027077381,
+   "reported": 1.46979201072519,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Hit trials, 10.5 deg clamp, mean",
+   "computed": 1.4722268534761904,
+   "reported": 1.47222682551956,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 1.75 deg clamp, mean",
+   "computed": 0.37533708919047626,
+   "reported": 0.375337090592546,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 3.5 deg clamp, mean",
+   "computed": 0.5221097653630953,
+   "reported": 0.522109771404975,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 5.25 deg clamp, mean",
+   "computed": 0.7711799564642857,
+   "reported": 0.771179999797034,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 7 deg clamp, mean",
+   "computed": 1.0125421164821429,
+   "reported": 1.01254212264108,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 8.75 deg clamp, mean",
+   "computed": 1.1006829232583333,
+   "reported": 1.10068292088824,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Jump To trials, 10.5 deg clamp, mean",
+   "computed": 1.170100755238095,
+   "reported": 1.17010076904362,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 1.75 deg clamp, mean",
+   "computed": 0.6283781216845238,
+   "reported": 0.628378108183265,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 3.5 deg clamp, mean",
+   "computed": 1.0498895094494047,
+   "reported": 1.04988952492451,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 5.25 deg clamp, mean",
+   "computed": 1.4336589173083334,
+   "reported": 1.43365890077221,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 7 deg clamp, mean",
+   "computed": 1.462553454225,
+   "reported": 1.46255346386934,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 8.75 deg clamp, mean",
+   "computed": 1.5492360426369047,
+   "reported": 1.54923605002634,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: single-trial learning, Miss trials, 10.5 deg clamp, mean",
+   "computed": 1.6953120446488095,
+   "reported": 1.69531202286995,
+   "tol": 1e-06,
+   "source": "authors' file output_fig4PanelC_STLXSuccessClamp_meanSEM.csv (the data behind Fig 4C)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: t(41), Miss vs Hit",
+   "computed": 4.042474935876049,
+   "reported": 4.04,
+   "tol": 0.005,
+   "source": "Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: t(41), Miss vs Jump To",
+   "computed": 5.356045465408408,
+   "reported": 5.36,
+   "tol": 0.005,
+   "source": "Results, Experiment 4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp4: t(41), Hit vs Jump To",
+   "computed": 2.793222298610156,
+   "reported": 2.79,
+   "tol": 0.005,
+   "source": "Results, Experiment 4",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1, Miss group: the paper prints an asymptote of 18.88 deg; the rows and the authors' own Fig 1C file give 18.8676 (the SD, 9.33, matches).",
+  "Experiment 3 has 801 clamp trials per participant in the file; the paper says 800.",
+  "Experiment 3, No Jump vs Jump-In-Place: t(17) = 1.9651 from the rows (with the authors' exclusions, whose condition means match their Fig 3 files exactly); the paper prints 1.96.",
+  "Experiments 3 and 4: the authors' 3 SD / 90 deg rule removes 1.2% and 1.3% of clamp trials as their scripts compute it; the paper says under 1% of trials."
+ ],
+ "sources": [
+  {
+   "file": "data_fig1_kimrep.csv",
+   "url": "https://raw.githubusercontent.com/kimoli/TaskSuccessImplicitAdapt/main/data_fig1_kimrep.csv",
+   "bytes": 4353561,
+   "sha256": "15e87732f52c1491cb8a55836ebacbc153e3527e06feaab23fe27a3edcadf4eb",
+   "fetched_utc": "2026-11-08T19:45:32Z"
+  },
+  {
+   "file": "data_fig2_soundtargetsize.csv",
+   "url": "https://raw.githubusercontent.com/kimoli/TaskSuccessImplicitAdapt/main/data_fig2_soundtargetsize.csv",
+   "bytes": 7458296,
+   "sha256": "f72613806658a7e8ec7e8dfd8d2abef0cf37e6f3905fc5d4ff6e649fbcf46eb4",
+   "fetched_utc": "2026-11-08T19:45:34Z"
+  },
+  {
+   "file": "data_fig3_tsayrep.csv",
+   "url": "https://raw.githubusercontent.com/kimoli/TaskSuccessImplicitAdapt/main/data_fig3_tsayrep.csv",
+   "bytes": 1680294,
+   "sha256": "45b06253b53b30d79c0ae524e67981faa82d67cccadfbab588df4058e87b9a4f",
+   "fetched_utc": "2026-11-08T19:45:36Z"
+  },
+  {
+   "file": "data_fig4_TargetSizeTargetJump.csv",
+   "url": "https://raw.githubusercontent.com/kimoli/TaskSuccessImplicitAdapt/main/data_fig4_TargetSizeTargetJump.csv",
+   "bytes": 4879022,
+   "sha256": "af6a1751bc80e73cfbcc288332fe376c42870e2883b449625507d7ecda7fccca",
+   "fetched_utc": "2026-11-08T19:45:38Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/AlFawakhiri2023_JNeurophysiol.zip"
+}

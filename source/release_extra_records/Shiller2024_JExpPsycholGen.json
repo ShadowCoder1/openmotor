@@ -1,0 +1,232 @@
+{
+ "id": "Shiller2024_JExpPsycholGen",
+ "module": "summary",
+ "rows": 1502,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 21947,
+ "zip_sha256": "a081b7141cb910ff96bc5956a318b1bb3d1c1a29fcb8e2f86be325f56da2bacd",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, Experiment 1",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Shiller et al. 2024, Results / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Experiment 2",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Shiller et al. 2024, Results / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Shiller et al. 2024, Methods: 'We recruited 40 bilinguals'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean adaptation, MTL sentences in French (mel)",
+   "computed": 24.112250777832564,
+   "reported": 24.11,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results (Experiment 1, adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of adaptation, MTL French",
+   "computed": 9.979219259278656,
+   "reported": 9.98,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of adaptation, MTL English",
+   "computed": 6.743717805079071,
+   "reported": 6.74,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean adaptation, WV sentences in French (mel)",
+   "computed": 20.551930808282652,
+   "reported": 20.55,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results (Experiment 2, adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of adaptation, WV French",
+   "computed": 5.813897976760746,
+   "reported": 5.81,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean adaptation, WV sentences in English (mel)",
+   "computed": 25.372803912124997,
+   "reported": 25.37,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results (Experiment 2, adaptation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of adaptation, WV English",
+   "computed": 4.369661788603879,
+   "reported": 4.37,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t French vs English sentences, MTL",
+   "computed": 0.3084314314323783,
+   "reported": 0.3,
+   "tol": 0.05,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "paired t French vs English sentences, WV",
+   "computed": 0.7053584323513737,
+   "reported": 0.71,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, MTL train French transfer French (n = 20)",
+   "computed": 4.761872777144765,
+   "reported": 4.76,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, MTL train French transfer English (n = 20)",
+   "computed": 4.97916869786461,
+   "reported": 4.98,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, MTL train English transfer French (n = 20)",
+   "computed": 3.9907770882496933,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, MTL train English transfer English (n = 20)",
+   "computed": 5.150063893307491,
+   "reported": 5.15,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, WV train French transfer French (n = 19)",
+   "computed": 2.171919557791756,
+   "reported": 2.17,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, WV train French transfer English (n = 19)",
+   "computed": 2.2755746790211835,
+   "reported": 2.28,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, WV train English transfer French (n = 20)",
+   "computed": 4.929117210849384,
+   "reported": 4.93,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "one-sample t of transfer, WV train English transfer English (n = 20)",
+   "computed": 5.003102795968909,
+   "reported": 5.0,
+   "tol": 0.005,
+   "source": "Shiller et al. 2024, Results",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Wolfville has 19 participants with train-French transfer (one removed by the authors as an outlier)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows: 80 sentence, 158 transfer and 1264 word values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper prints a mean adaptation of 22.95 mel for English sentences in Experiment 1; the rows give 22.958 (22.96 rounded), so that number is not used as a check (the other three means match to the printed two decimals).",
+  "The paper's effect sizes (Cohen's d) and F tests were not recomputed; means, one-sample t and paired t values were."
+ ],
+ "sources": [
+  {
+   "file": "basic_data_analysis.m",
+   "url": "https://osf.io/download/vswt8/",
+   "bytes": 3682,
+   "sha256": "cb45531a159884298ba6e4e6e9249df8e9051c37aa62355fa919affd156b9146",
+   "fetched_utc": "2026-11-09T12:08:17Z"
+  },
+  {
+   "file": "bilingual_data_MTL.xlsx",
+   "url": "https://osf.io/download/4qu7z/",
+   "bytes": 29613,
+   "sha256": "f4801db97f40afd9ab6a4b6fc91b245fe68006d87ef0708d4031155dfa60335b",
+   "fetched_utc": "2026-11-09T12:08:22Z"
+  },
+  {
+   "file": "bilingual_data_WV.xlsx",
+   "url": "https://osf.io/download/bk92z/",
+   "bytes": 29707,
+   "sha256": "79056298453eba42358cf2196191cf65564ea5cef7d87b00d3e58b4ea13061f8",
+   "fetched_utc": "2026-11-09T12:08:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Shiller2024_JExpPsycholGen.zip"
+}

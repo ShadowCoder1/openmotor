@@ -1,0 +1,478 @@
+{
+ "id": "Sharma2026_bioRxiv",
+ "module": "reach90",
+ "rows": 25080,
+ "subjects": 44,
+ "persons": 44,
+ "zip_bytes": 402236,
+ "zip_sha256": "410e6f56dbb60ad017f6c2e5363a0cfff0dbb7768ec85626900efb46669218cf",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "internallymonitored_model.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "InternalMonitoring: 22 participants x 570 trials, subTrial 1-570 in order, each participant's rows contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "InternalMonitoring: schedule of the Methods: 20 baseline trials (10 per delay), 400 training trials (200 per delay: rotDir +1 with 500 ms, -1 with 1500 ms for everyone), 150 test trials (30 per delay of 500, 750, 1000, 1250, 1500 ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "InternalMonitoring: the sign alignment is applied: every participant has rotDir +1 at 500 ms and -1 at 1500 ms in training",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "InternalMonitoring: hand angles of kept trials lie within the authors' +-30 deg rule",
+   "ok": true,
+   "detail": "max |angle| 29.99 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "externallycued_model.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "LoomingCue: 22 participants x 570 trials, subTrial 1-570 in order, each participant's rows contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "LoomingCue: schedule of the Methods: 20 baseline trials (10 per delay), 400 training trials (200 per delay: rotDir +1 with 500 ms, -1 with 1500 ms for everyone), 150 test trials (30 per delay of 500, 750, 1000, 1250, 1500 ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "LoomingCue: the sign alignment is applied: every participant has rotDir +1 at 500 ms and -1 at 1500 ms in training",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "LoomingCue: hand angles of kept trials lie within the authors' +-30 deg rule",
+   "ok": true,
+   "detail": "max |angle| 29.92 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "rtGoSig exists in the internal-monitoring file only; it is empty exactly where handAng is empty",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reaction times relative to the go signal are in milliseconds (kept trials: median 300-450, no value below -200, the authors' early-start limit)",
+   "ok": true,
+   "detail": "median 364, range -200 to 1192 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order (2 x 12540 rows); rows without a hand angle are kept and flagged as excluded_by_authors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring experiment: share of trials removed before the analyses",
+   "computed": 12.009569377990431,
+   "reported": 12.01,
+   "tol": 0.005,
+   "source": "Methods, Statistical Analysis (12.01% of trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: participants (t tests with 21 degrees of freedom)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: test-phase context effect (1500 - 500 ms, baseline-subtracted): mean",
+   "computed": 1.577933496999317,
+   "reported": 1.578,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: test-phase context effect (1500 - 500 ms, baseline-subtracted): SD",
+   "computed": 2.2830846514066305,
+   "reported": 2.283,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: test-phase context effect (1500 - 500 ms, baseline-subtracted): t(21)",
+   "computed": 3.241738819328913,
+   "reported": 3.242,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 500 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": -1.024690852231467,
+   "reported": -1.025,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 500 ms: SD",
+   "computed": 1.2911299814250308,
+   "reported": 1.291,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 500 ms: t(21)",
+   "computed": -3.7224959464954126,
+   "reported": -3.722,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 750 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": -0.33964253261278826,
+   "reported": -0.34,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 750 ms: SD",
+   "computed": 0.851192074299823,
+   "reported": 0.851,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 750 ms: t(21)",
+   "computed": -1.8715689863346001,
+   "reported": -1.872,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1000 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 0.0882321054023858,
+   "reported": 0.088,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1000 ms: SD",
+   "computed": 0.7192842232618093,
+   "reported": 0.719,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1000 ms: t(21)",
+   "computed": 0.5753570623654823,
+   "reported": 0.575,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1250 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 0.7705763433896341,
+   "reported": 0.771,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1250 ms: SD",
+   "computed": 1.0640756236392162,
+   "reported": 1.064,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1250 ms: t(21)",
+   "computed": 3.396679093935637,
+   "reported": 3.397,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1500 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 0.7480572137453175,
+   "reported": 0.748,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1500 ms: SD",
+   "computed": 0.8570514616215537,
+   "reported": 0.857,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "internal-monitoring: aligned generalization at 1500 ms: t(21)",
+   "computed": 4.093919095548979,
+   "reported": 4.094,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under high uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: participants (t tests with 21 degrees of freedom)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: test-phase context effect (1500 - 500 ms, baseline-subtracted): mean",
+   "computed": 3.698808275119912,
+   "reported": 3.699,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: test-phase context effect (1500 - 500 ms, baseline-subtracted): SD",
+   "computed": 3.5432025295874134,
+   "reported": 3.543,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: test-phase context effect (1500 - 500 ms, baseline-subtracted): t(21)",
+   "computed": 4.896403319120441,
+   "reported": 4.896,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 500 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": -1.8543936293547674,
+   "reported": -1.854,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 500 ms: SD",
+   "computed": 1.4422673361893765,
+   "reported": 1.442,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 500 ms: t(21)",
+   "computed": -6.030696865826889,
+   "reported": -6.031,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 750 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": -0.5405738061693443,
+   "reported": -0.541,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 750 ms: SD",
+   "computed": 0.6323337492541752,
+   "reported": 0.632,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 750 ms: t(21)",
+   "computed": -4.009774747583879,
+   "reported": -4.01,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1000 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 0.6370505749073655,
+   "reported": 0.637,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1000 ms: SD",
+   "computed": 0.5031117066795047,
+   "reported": 0.503,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1000 ms: t(21)",
+   "computed": 5.939102622101255,
+   "reported": 5.939,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1250 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 0.8467925797467604,
+   "reported": 0.847,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1250 ms: SD",
+   "computed": 0.8490681079513752,
+   "reported": 0.849,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1250 ms: t(21)",
+   "computed": 4.677845303751773,
+   "reported": 4.678,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1500 ms (test-phase mean minus the participant's test mean): mean",
+   "computed": 1.025596692740415,
+   "reported": 1.026,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1500 ms: SD",
+   "computed": 1.143753830156023,
+   "reported": 1.144,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "looming-cue: aligned generalization at 1500 ms: t(21)",
+   "computed": 4.205865601513412,
+   "reported": 4.206,
+   "tol": 0.0006,
+   "source": "Results, Temporal Indexing under reduced uncertainty",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Methods give 4.36% of trials removed in the looming-cue experiment; the shared file has 4.17% without a hand angle (the 12.01% of the internal-monitoring experiment reproduces).",
+  "The Results give mean participant median reaction times of 408.64 and 347.57 ms for the 500 and 1500 ms delays (t(21) = -8.15) in the internal-monitoring experiment; the median rtGoSig of the training trials gives 397.98 and 345.77 ms (t(21) = -8.49), so the authors' RT measure is not recovered. The looming-cue reaction times (275.00 and 286.02 ms) cannot be checked because that file has no reaction times.",
+  "The Methods call the training feedback 'a fixed cursor rotation of +15 or -15 deg', the Figure 1 legend a fixed ('clamped') cursor trajectory 15 deg off the reach direction that participants ignored; it is coded as an error clamp. The model-fitting text also describes the error as the rotation minus the hand angle.",
+  "The third experiment (discrete numeric cues, 9 participants after exclusions) and the participants excluded in the paper (2 and 4 in the first two experiments) are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "behavioral_explicit_lme.csv",
+   "url": "https://raw.githubusercontent.com/apoorvas980/Temporal-Indexing-of-Motor-Memory/3c5888128c7d56b158033a1b914c3bc569cac35a/data/behavioral_explicit_lme.csv",
+   "bytes": 473945,
+   "sha256": "4af6328dd03a986c2cff3f9f3454613c1af5d51b47aff59aec0264459c7684ab",
+   "fetched_utc": "2026-11-08T19:43:04Z"
+  },
+  {
+   "file": "behavioral_implicit_lme.csv",
+   "url": "https://raw.githubusercontent.com/apoorvas980/Temporal-Indexing-of-Motor-Memory/3c5888128c7d56b158033a1b914c3bc569cac35a/data/behavioral_implicit_lme.csv",
+   "bytes": 432950,
+   "sha256": "4d69ee76fdd95572c56cdc22d7cb54cf8c182dea81fd2ce8091f81b20939012f",
+   "fetched_utc": "2026-11-08T19:43:16Z"
+  },
+  {
+   "file": "externallycued_model.csv",
+   "url": "https://raw.githubusercontent.com/apoorvas980/Temporal-Indexing-of-Motor-Memory/3c5888128c7d56b158033a1b914c3bc569cac35a/data/externallycued_model.csv",
+   "bytes": 358681,
+   "sha256": "6ef6c02f47e6c12ce21b577b4f855cf64f60fccbc4896faa6c55369e05b664c1",
+   "fetched_utc": "2026-11-08T19:43:24Z"
+  },
+  {
+   "file": "internallymonitored_model.csv",
+   "url": "https://raw.githubusercontent.com/apoorvas980/Temporal-Indexing-of-Motor-Memory/3c5888128c7d56b158033a1b914c3bc569cac35a/data/internallymonitored_model.csv",
+   "bytes": 454124,
+   "sha256": "3c74ffafc1fa111dfb18a81934a6ceb3399764dfa980cbc3d7bf0a78e1956883",
+   "fetched_utc": "2026-11-08T19:43:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sharma2026_bioRxiv.zip"
+}

@@ -1,0 +1,118 @@
+{
+ "id": "Codol2020_JNeurosci",
+ "module": "reward_speed_accuracy_reaching",
+ "rows": 13440,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 564921,
+ "zip_sha256": "3ce19cf723b49a5e2750e1430a6a54ff9b41a086e4eca653c25ce98263e3983b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Exp1_reward_magnitude: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1_reward_magnitude: percent of trials removed by the authors' rules",
+   "computed": 0.3298611111111111,
+   "reported": 0.3,
+   "tol": 0.15,
+   "source": "Methods, Experiment 1, exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: share of distractor trials in the 168-trial main block (%)",
+   "computed": 42.857142857142854,
+   "reported": 42.86,
+   "tol": 0.05,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp1: trials per person (24-trial block + 168-trial main block)",
+   "computed": 192.0,
+   "reported": 192.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp1_reward_magnitude: no-distractor blocks have no distractors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp2_reward_punishment: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2_reward_punishment: percent of trials removed by the authors' rules",
+   "computed": 0.6640625,
+   "reported": 0.7,
+   "tol": 0.15,
+   "source": "Methods, Experiment 2, exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp2: share of distractor trials in the distractor blocks (%)",
+   "computed": 42.857142857142854,
+   "reported": 42.86,
+   "tol": 0.05,
+   "source": "Methods, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp2_reward_punishment: no-distractor blocks have no distractors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows",
+   "ok": true,
+   "detail": "13440"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "readme.pdf",
+   "url": "https://osf.io/download/7h9pq/",
+   "bytes": 204336,
+   "sha256": "58a5409f0b9eac8e4b907568f02a4164d1cb9c6bf254cad62dc8da1c43692eeb",
+   "fetched_utc": "2026-11-09T09:51:19Z"
+  },
+  {
+   "file": "R_Trial.mat",
+   "url": "https://osf.io/download/pdthq",
+   "bytes": 199553,
+   "sha256": "c2ca4e2d6f8413322a61928178ef659d73e2efb3182a88e7d6e1208261885735",
+   "fetched_utc": "2026-11-09T09:51:32Z"
+  },
+  {
+   "file": "RP_Trial.mat",
+   "url": "https://osf.io/download/5d793ea035a800001896fc7e",
+   "bytes": 266702,
+   "sha256": "ad03ae395bbf53d8b43837652a9deb89d49a30ac2e720e1f66dc4f20cd4f74f9",
+   "fetched_utc": "2026-11-09T09:51:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Codol2020_JNeurosci.zip"
+}

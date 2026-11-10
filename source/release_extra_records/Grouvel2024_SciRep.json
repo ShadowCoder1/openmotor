@@ -1,0 +1,300 @@
+{
+ "id": "Grouvel2024_SciRep",
+ "module": "timeseries",
+ "rows": 510,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 315745700,
+ "zip_sha256": "8a7ed60b6457e66b1ab6668f8b049336ed4189696e093f8048a0060556c22fd2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "270 C3D files from 30 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants (10 BV, 10 UV, 10 HS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in bilateral vestibulopathy",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in unilateral vestibulopathy",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in healthy subjects",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate of the motion capture (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Instruments and protocol (100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "anatomical markers per participant",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Instruments and protocol (35 anatomical markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilateral vestibulopathy: weight (kg) mean",
+   "computed": 71.4,
+   "reported": 71.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilateral vestibulopathy: weight (kg) SD",
+   "computed": 10.595596569644707,
+   "reported": 10.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilateral vestibulopathy: weight (kg) min",
+   "computed": 53.0,
+   "reported": 53.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilateral vestibulopathy: weight (kg) max",
+   "computed": 88.0,
+   "reported": 88.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unilateral vestibulopathy: weight (kg) mean",
+   "computed": 79.6,
+   "reported": 79.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unilateral vestibulopathy: weight (kg) SD",
+   "computed": 17.36663467687393,
+   "reported": 17.4,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unilateral vestibulopathy: weight (kg) min",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unilateral vestibulopathy: weight (kg) max",
+   "computed": 102.0,
+   "reported": 102.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: weight (kg) mean",
+   "computed": 70.9,
+   "reported": 70.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: weight (kg) SD",
+   "computed": 12.74929191933593,
+   "reported": 12.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: weight (kg) min",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: weight (kg) max",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: age (years) mean",
+   "computed": 64.6,
+   "reported": 64.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: age (years) SD",
+   "computed": 10.024414640710393,
+   "reported": 10.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: age (years) min",
+   "computed": 53.0,
+   "reported": 53.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: age (years) max",
+   "computed": 82.0,
+   "reported": 82.0,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: height (m) mean",
+   "computed": 1.7079999999999997,
+   "reported": 1.71,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: height (m) SD",
+   "computed": 0.07036413227711343,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: height (m) max",
+   "computed": 1.84,
+   "reported": 1.84,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: BMI (kg/m2) mean",
+   "computed": 24.20671144006716,
+   "reported": 24.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy subjects: BMI (kg/m2) min",
+   "computed": 19.607156612163443,
+   "reported": 19.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has the Static trial and at least one walking trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all files 100 Hz",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows: 270 marker recordings plus one force-plate recording for each of the 240 files that have analog data",
+   "ok": true,
+   "detail": "510"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Paper Table 1 and the description's participant table differ for some values, so only the values that match within the paper's printed rounding are used as checks. Ages of the bilateral and unilateral groups are about 1 year higher in the description (BV mean 65.4 vs 64.4 printed; UV 64.4 vs 63.4), heights of the bilateral and unilateral groups are about 1 cm higher (BV 1.65 vs 1.64; UV 1.68 vs 1.67), the female counts are 6 (BV), 5 (UV) and 5 (HS) in the description vs 5, 5 and 6 in Table 1, the healthy group's shortest height is 1.62 m vs 1.63 m printed, and its BMI SD and maximum are 3.50 and 29.0 vs 3.6 and 29.1 printed.",
+  "The paper's gait-speed table (slow, comfortable, fast) and the GaitSD and anchoring-index results are not reproduced here: the deposit's tasks are the change-of-speed and other trials, not three separate speed blocks, and the authors' gait-cycle processing is not part of the deposit."
+ ],
+ "sources": [
+  {
+   "file": "c3d.zip",
+   "url": "https://zenodo.org/api/records/14179651/files/c3d.zip/content",
+   "bytes": 255632198,
+   "sha256": "2a453f56ce625d81f58a328cba3dd44895e35550521f2d8429a6b776c1b309af",
+   "fetched_utc": "2026-11-09T13:24:32Z"
+  },
+  {
+   "file": "desc.pdf",
+   "url": "https://zenodo.org/api/records/14179651/files/Dataset%20Description_v1.pdf/content",
+   "bytes": 1030952,
+   "sha256": "7e685c87ba0f67b443e8e6e2f94bfec3bfd4d0082aa2b7ae9a7c3f9ad1f560f6",
+   "fetched_utc": "2026-11-09T13:24:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Grouvel2024_SciRep.zip"
+}

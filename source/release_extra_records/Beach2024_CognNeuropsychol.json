@@ -1,0 +1,347 @@
+{
+ "id": "Beach2024_CognNeuropsychol",
+ "module": "speech",
+ "rows": 7936,
+ "subjects": 17,
+ "persons": 17,
+ "zip_bytes": 294465,
+ "zip_sha256": "1392fd7719f73ce920cf90942894b4066bebb49030338bdfdfe3ce9703c03b9f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "duration and reaction-time tables hold the same rows in the same order",
+   "ok": true,
+   "detail": "7936 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "17 participants in every table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the three acoustic tables hold the same participant, condition and colour on every row, in the same order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the acoustic tables hold as many rows per participant, condition and colour as the trial table",
+   "ok": true,
+   "detail": "153 cells"
+  },
+  {
+   "kind": "internal",
+   "what": "trials per participant and condition in the trial table = ntrials of the authors' table",
+   "ok": true,
+   "detail": "7936 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "share kept = ntrials / designed trials (120, 240, 120)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "words per condition and ink colour as in the design (own colour word; rid/rad, grin/grain, bleed/blow; the other two colour words)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "durations 70-600 ms and reaction times 320-1500 ms",
+   "ok": true,
+   "detail": "dur 0.072-0.599, rt 0.325-1.433"
+  },
+  {
+   "kind": "published",
+   "what": "participants in the original sample",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, congruent: mean (of 120)",
+   "computed": 119.11764705882354,
+   "reported": 119.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, congruent: SD",
+   "computed": 1.7278003697322961,
+   "reported": 2.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, congruent: minimum",
+   "computed": 113.0,
+   "reported": 113.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, congruent: maximum",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error-free trials, congruent: mean percentage",
+   "computed": 99.26470588235294,
+   "reported": 99.26,
+   "tol": 0.01,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, vowel-modified: mean (of 240)",
+   "computed": 237.88235294117646,
+   "reported": 238.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, vowel-modified: SD",
+   "computed": 3.1796688691823016,
+   "reported": 3.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, vowel-modified: minimum",
+   "computed": 228.0,
+   "reported": 228.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, vowel-modified: maximum",
+   "computed": 240.0,
+   "reported": 240.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error-free trials, vowel-modified: mean percentage",
+   "computed": 99.11764705882354,
+   "reported": 99.12,
+   "tol": 0.01,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, color-incongruent: mean (of 120)",
+   "computed": 109.82352941176471,
+   "reported": 110.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, color-incongruent: SD",
+   "computed": 8.640278454118588,
+   "reported": 9.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, color-incongruent: minimum",
+   "computed": 87.0,
+   "reported": 87.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials kept per participant, color-incongruent: maximum",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error-free trials, color-incongruent: mean percentage",
+   "computed": 91.51960784313727,
+   "reported": 91.52,
+   "tol": 0.01,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, red ink: mean (ms)",
+   "computed": 229.20959022321765,
+   "reported": 229.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, red ink: SD (ms)",
+   "computed": 62.629345842820406,
+   "reported": 63.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials with duration of at least 200 ms, red ink (%)",
+   "computed": 65.03391107761868,
+   "reported": 65.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, green ink: mean (ms)",
+   "computed": 264.4977892247972,
+   "reported": 264.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, green ink: SD (ms)",
+   "computed": 76.07415595309836,
+   "reported": 76.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials with duration of at least 200 ms, green ink (%)",
+   "computed": 78.84178652535958,
+   "reported": 79.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, blue ink: mean (ms)",
+   "computed": 279.3830947881627,
+   "reported": 279.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "syllable duration, blue ink: SD (ms)",
+   "computed": 83.70198035361912,
+   "reported": 84.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials with duration of at least 200 ms, blue ink (%)",
+   "computed": 79.9621212121212,
+   "reported": 80.0,
+   "tol": 0.5,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Methods, Analysis (Duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reaction time, colour-incongruent minus congruent: raw difference of means (ms; the paper's is a model estimate)",
+   "computed": 121.22129596865818,
+   "reported": 121.0,
+   "tol": 3,
+   "source": "Beach & Niziolek 2024, Cognitive Neuropsychology, Results, The color-word interference effect",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "stroop_stats.R",
+   "url": "https://osf.io/download/xe62v/",
+   "bytes": 4905,
+   "sha256": "a20db66bd683d130b5ae25d2fe272ee0142d2402a3f41a0b44c4d6c95dad37d2",
+   "fetched_utc": "2026-11-08T19:49:55Z"
+  },
+  {
+   "file": "stroop_f0_mean_byColor_mid50p.csv",
+   "url": "https://osf.io/download/63100c176ff5ae00fc15484b/",
+   "bytes": 193264,
+   "sha256": "68eea2329256bd2fff21cc8e1d9759385eaa2a7320be82183790b54685c7211d",
+   "fetched_utc": "2026-11-08T19:49:57Z"
+  },
+  {
+   "file": "stroop_f0_var_byColor_mid50p.csv",
+   "url": "https://osf.io/download/63100c1871d2cb011b8d0b7b/",
+   "bytes": 193778,
+   "sha256": "72db288df5dc967743b44595afa6ca432b672cd1f3279e7f73b5fa8d074215a7",
+   "fetched_utc": "2026-11-08T19:50:00Z"
+  },
+  {
+   "file": "stroop_durations_BosVoice.csv",
+   "url": "https://osf.io/download/79ktx/",
+   "bytes": 217175,
+   "sha256": "d1c3f361b04fcb162cca252ef230984179b50776964c43d6a7a8933397d1135f",
+   "fetched_utc": "2026-11-08T19:50:03Z"
+  },
+  {
+   "file": "stroop_ntrials_BosVoice.csv",
+   "url": "https://osf.io/download/k5g2q/",
+   "bytes": 1017,
+   "sha256": "7896146862789e330a70e6cfee5134ac1ce04a6fe1873f5237230c301e54c40f",
+   "fetched_utc": "2026-11-08T19:50:06Z"
+  },
+  {
+   "file": "stroop_fmt_var_byColor_mid50p.csv",
+   "url": "https://osf.io/download/unhgr/",
+   "bytes": 193329,
+   "sha256": "23d87e5d650d4c50da9f73212be52b426c4ac5689afc1dde6b9382b3b2ae7f5d",
+   "fetched_utc": "2026-11-08T19:50:08Z"
+  },
+  {
+   "file": "stroop_rts_BosVoice.csv",
+   "url": "https://osf.io/download/9c6ft/",
+   "bytes": 216901,
+   "sha256": "8f8b3018469da1d3dc41fc596a8ba2ab424160471053ef9e8d545c89992ff170",
+   "fetched_utc": "2026-11-08T19:50:11Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Beach2024_CognNeuropsychol.zip"
+}

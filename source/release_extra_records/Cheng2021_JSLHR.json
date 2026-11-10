@@ -1,0 +1,148 @@
+{
+ "id": "Cheng2021_JSLHR",
+ "module": "speech",
+ "rows": 13458,
+ "subjects": 34,
+ "persons": 34,
+ "zip_bytes": 318542,
+ "zip_sha256": "5109a4d600cabd5bb37478133891e9fa0fe3c1f654d38ffd379a0cb3a42c076e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Method, Participants (34 neurotypical adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop-stop target productions per participant at baseline (48 nonwords x 2)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Method, Procedure (baseline: all 48 target nonwords, each produced twice)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop-stop target nonwords (8 per cluster x 6 clusters)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Method, Stimuli (8 nonwords per cluster, 6 clusters)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "nonwords per stop-stop cluster",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Method, Stimuli",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stop-fricative productions per participant per test session",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Method, Procedure (36 stop-fricative items per participant per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test session 1: stop-stop productions per participant (median)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Method, Procedure (R1 and R2 have the same structure as baseline)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test session 2: stop-stop productions per participant (median)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Method, Procedure (R1 and R2 have the same structure as baseline)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test session 3: stop-stop productions per participant (median)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Method, Procedure (R1 and R2 have the same structure as baseline)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = both shared tables",
+   "ok": true,
+   "detail": "9787 + 3671"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 6 passes in both tables",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one training group per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "17 participants per training group",
+   "ok": true,
+   "detail": "{'trained on voiced clusters': 17, 'trained on voiceless clusters': 17}"
+  },
+  {
+   "kind": "internal",
+   "what": "cluster_acc agrees with cluster_code c in nearly all rows",
+   "ok": true,
+   "detail": "74 of 9787 rows disagree (both kept)"
+  },
+  {
+   "kind": "internal",
+   "what": "burst_dur of 0 only for other errors or rare unmeasured tokens",
+   "ok": true,
+   "detail": "25 c/e rows blanked"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's logistic and linear mixed-model coefficients were not refitted; the authors revised the deposited data for an erratum (September 2021), so the deposit can differ slightly from the originally printed estimates.",
+  "In 74 of 9787 stop-stop rows cluster_acc disagrees with cluster_code (for example code c with accuracy 0); both are kept as shared."
+ ],
+ "sources": [
+  {
+   "file": "data_master_sheet_final.csv",
+   "url": "https://osf.io/download/9ytes/",
+   "bytes": 672357,
+   "sha256": "ddec839c9d1cf1fcd9303b8081ef4e8ef5866fab38b2d5b45bacffb77ff27c99",
+   "fetched_utc": "2026-11-08T21:31:35Z"
+  },
+  {
+   "file": "master_sheet_stop_fricative_final.csv",
+   "url": "https://osf.io/download/e53qs/",
+   "bytes": 208183,
+   "sha256": "d614068cf037821725fce89457b297ffa66409465e1e203b5c0d15af80323c67",
+   "fetched_utc": "2026-11-08T21:31:37Z"
+  },
+  {
+   "file": "voicing_transfer_results.Rmd",
+   "url": "https://osf.io/download/hbezc/",
+   "bytes": 51717,
+   "sha256": "1ecf35d69d2bbeeead955bb9123ea38d4943c645827ab17c5831aa3a29f07095",
+   "fetched_utc": "2026-11-08T21:31:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng2021_JSLHR.zip"
+}

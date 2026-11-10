@@ -1,0 +1,226 @@
+{
+ "id": "Barbier2020_JASA",
+ "module": "speech",
+ "rows": 4606,
+ "subjects": 9,
+ "persons": 9,
+ "zip_bytes": 258311,
+ "zip_sha256": "00eead355ec53737cdcfff617803a84a1832007293cded1e05daf8f69c9b9d67",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "tests shared between comparison files carry identical values",
+   "ok": true,
+   "detail": "6912 repeated values compared"
+  },
+  {
+   "kind": "published",
+   "what": "talkers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Barbier et al. 2020, deposit scripts (allDATAk is 4 x 8 x 9: tests x VCV x talkers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "VCV syllables",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Barbier et al. 2020, deposit scripts (8 VCV conditions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech tests",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Barbier et al. 2020, deposit scripts (4 speech tests)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tokens per VCV and test",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Barbier et al. 2020, deposit scripts (8 tokens per condition)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "2304 acoustic rows (9 x 4 x 8 x 8)",
+   "ok": true,
+   "detail": "4606"
+  },
+  {
+   "kind": "internal",
+   "what": "F1 within 100-1300 Hz",
+   "ok": true,
+   "detail": "184-1185, 0 outside"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors left talker 7 out of the kinematic statistics as an outlier; those rows are kept and not marked. Their rotated and re-centred kinematic files used for the statistics are not carried, and none of the published statistics were recomputed (full text not accessible)."
+ ],
+ "sources": [
+  {
+   "file": "allData_audioPTKS_comp1.csv",
+   "url": "https://osf.io/download/3bcv8/",
+   "bytes": 33098,
+   "sha256": "3558b740a567d0b3bb913b9685de27ce89ae602b5e8e7cef7ace2ccab523312b",
+   "fetched_utc": "2026-11-09T15:20:58Z"
+  },
+  {
+   "file": "allData_audioPTKS_comp2.csv",
+   "url": "https://osf.io/download/b7crm/",
+   "bytes": 32996,
+   "sha256": "7fcb4dd8f028ea546cdfd02f4538a118316e3609b2b0dcaae73ac23fb162e823",
+   "fetched_utc": "2026-11-09T15:21:02Z"
+  },
+  {
+   "file": "allData_audioPTKS_comp3.csv",
+   "url": "https://osf.io/download/q47e2/",
+   "bytes": 33069,
+   "sha256": "41a2db17a74483d1d0d559c20ba1d13ab90dcaef6070d613d359587084f7b249",
+   "fetched_utc": "2026-11-09T15:21:06Z"
+  },
+  {
+   "file": "allData_audioPTKS_comp4.csv",
+   "url": "https://osf.io/download/wcr7j/",
+   "bytes": 33171,
+   "sha256": "9482c3904424b05fe52d0f0621759ef91a1343af8035009ae7c5fc26eca20340",
+   "fetched_utc": "2026-11-09T15:21:10Z"
+  },
+  {
+   "file": "allData_audioV_F1_comp1.csv",
+   "url": "https://osf.io/download/5r3bd/",
+   "bytes": 33110,
+   "sha256": "4271703b7dcb46ebb3183dfe83237e839507e9fe6590b935cda125e0486815b0",
+   "fetched_utc": "2026-11-09T15:21:14Z"
+  },
+  {
+   "file": "allData_audioV_F1_comp2.csv",
+   "url": "https://osf.io/download/pq7ca/",
+   "bytes": 32986,
+   "sha256": "906007dc3ff3efac92da077d8e48f6ed027404078fae84af808987145c7470e6",
+   "fetched_utc": "2026-11-09T15:21:20Z"
+  },
+  {
+   "file": "allData_audioV_F1_comp3.csv",
+   "url": "https://osf.io/download/juer5/",
+   "bytes": 33065,
+   "sha256": "c4981c55961c8587188e64ec2b0f151109bd6d84900989cccad2722b88854c38",
+   "fetched_utc": "2026-11-09T15:21:24Z"
+  },
+  {
+   "file": "allData_audioV_F1_comp4.csv",
+   "url": "https://osf.io/download/fcsvz/",
+   "bytes": 33189,
+   "sha256": "8a2ecfb1904d29c055004b518d8dd8c43be107315fb3d870fa1319b13de7cfcd",
+   "fetched_utc": "2026-11-09T15:21:29Z"
+  },
+  {
+   "file": "allData_audioV_F2_comp1.csv",
+   "url": "https://osf.io/download/6qh5k/",
+   "bytes": 33003,
+   "sha256": "c90f70645c4589ce2df67abbfca52365d9795a276f8fc8e457327f028aa8e646",
+   "fetched_utc": "2026-11-09T15:21:33Z"
+  },
+  {
+   "file": "allData_audioV_F2_comp2.csv",
+   "url": "https://osf.io/download/4r9nv/",
+   "bytes": 32891,
+   "sha256": "4f8d698cae271ff5ba8a68e65c0708396eddd708ac7fad929f7494258da31391",
+   "fetched_utc": "2026-11-09T15:21:39Z"
+  },
+  {
+   "file": "allData_audioV_F2_comp3.csv",
+   "url": "https://osf.io/download/6hvtd/",
+   "bytes": 32868,
+   "sha256": "fe92ad3e21c321c8d12b19bea7b2c033c24ca8a2797133437371d441b8a1664c",
+   "fetched_utc": "2026-11-09T15:21:43Z"
+  },
+  {
+   "file": "allData_audioV_F2_comp4.csv",
+   "url": "https://osf.io/download/4xezr/",
+   "bytes": 32980,
+   "sha256": "85be6f58903250432715d874ad980cee4ade58b6002d8f5cb92c09b195760015",
+   "fetched_utc": "2026-11-09T15:21:48Z"
+  },
+  {
+   "file": "allData_TBD_both_comp1.csv",
+   "url": "https://osf.io/download/7mkz6/",
+   "bytes": 62473,
+   "sha256": "1975d2fb8a57982114dcc9b9d9bac1d3e3377d717e0041627e9d1e72188c839d",
+   "fetched_utc": "2026-11-09T15:21:52Z"
+  },
+  {
+   "file": "allData_TBD_both_comp2.csv",
+   "url": "https://osf.io/download/nskvw/",
+   "bytes": 62133,
+   "sha256": "e7d6f47e4185582cb81e83ab875a2a7050a902392f506230b5b247e2730b1e8b",
+   "fetched_utc": "2026-11-09T15:21:57Z"
+  },
+  {
+   "file": "allData_TBD_both_comp3.csv",
+   "url": "https://osf.io/download/c3x8d/",
+   "bytes": 62460,
+   "sha256": "b425ef6fd3294a41267a05251b46fb317aff4a6049eba9aeeae4521bed6d25dd",
+   "fetched_utc": "2026-11-09T15:22:04Z"
+  },
+  {
+   "file": "allData_TBD_both_comp4.csv",
+   "url": "https://osf.io/download/ybqsw/",
+   "bytes": 62776,
+   "sha256": "d2a7aad8659474fed1e19e9b879275ab710879a52ca71e66950d306d60935ec2",
+   "fetched_utc": "2026-11-09T15:22:11Z"
+  },
+  {
+   "file": "allData_TBL_both_comp1.csv",
+   "url": "https://osf.io/download/yxdt2/",
+   "bytes": 62328,
+   "sha256": "775ec30d91866671fc25352a67504a145d3f76c256458ccc257fc78c56bc5fc9",
+   "fetched_utc": "2026-11-09T15:22:20Z"
+  },
+  {
+   "file": "allData_TBL_both_comp3.csv",
+   "url": "https://osf.io/download/jru74/",
+   "bytes": 62567,
+   "sha256": "83bf6dfb0dbe7e27b1f5c44c8bf026879069471651026e6c94d0aa0c7bc16735",
+   "fetched_utc": "2026-11-09T15:22:26Z"
+  },
+  {
+   "file": "allData_TBL_both_comp4.csv",
+   "url": "https://osf.io/download/9avc8/",
+   "bytes": 62680,
+   "sha256": "69362f14ad4d755df70c6ba3cf615b2de650bec2d6f13cc916093e5b36fcb0a6",
+   "fetched_utc": "2026-11-09T15:22:33Z"
+  },
+  {
+   "file": "allData_TBL_both_comp2.csv",
+   "url": "https://osf.io/download/5e4755a93e86a801446e7e1e/",
+   "bytes": 61814,
+   "sha256": "5c873acdfe15ef662f69325eff275b1567b5dc16512b70ab3fe3dfe419103362",
+   "fetched_utc": "2026-11-09T15:22:36Z"
+  },
+  {
+   "file": "allDATA_kinematics_K.mat",
+   "url": "https://osf.io/download/9kc7f/",
+   "bytes": 211282,
+   "sha256": "22a87caa40e2d47b3ece9469fdbe876b46d046aea7f7f973b7f388f8ea39ea4b",
+   "fetched_utc": "2026-11-09T15:22:40Z"
+  },
+  {
+   "file": "allDATA_kinematics_vector.mat",
+   "url": "https://osf.io/download/p4hgj/",
+   "bytes": 44432,
+   "sha256": "032faf2ee352dd0a767b039c1258392b032a42a58d9a052db1c95151fcb59d21",
+   "fetched_utc": "2026-11-09T15:22:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Barbier2020_JASA.zip"
+}

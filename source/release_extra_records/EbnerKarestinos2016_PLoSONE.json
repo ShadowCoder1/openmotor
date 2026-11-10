@@ -1,0 +1,523 @@
+{
+ "id": "EbnerKarestinos2016_PLoSONE",
+ "module": "summary",
+ "rows": 2048,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 40564,
+ "zip_sha256": "19462629ee7e0e278e537511cd809009edff895688c99b199af8cd88c4251f60",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (12)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women (6)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 29.154629629629635,
+   "reported": 29.2,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age (years)",
+   "computed": 3.964279749923411,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height (cm)",
+   "computed": 169.41666666666666,
+   "reported": 169.4,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD height (cm)",
+   "computed": 7.452374037035366,
+   "reported": 7.5,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body weight of the group in N (646.9)",
+   "computed": 646.9120116666667,
+   "reported": 646.9,
+   "tol": 0.05,
+   "source": "Results, Dynamic variables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand_vertical_displacement_at_LFmin mean",
+   "computed": 4.939075000000001,
+   "reported": 4.9,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand_vertical_displacement_at_LFmin SD",
+   "computed": 2.3413241782925196,
+   "reported": 2.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand_vertical_displacement_at_GFmax mean",
+   "computed": 13.450375,
+   "reported": 13.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hand_vertical_displacement_at_GFmax SD",
+   "computed": 2.0087629396862994,
+   "reported": 2.0,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sacrum_vertical_displacement_at_LFmin mean",
+   "computed": 6.809137499999999,
+   "reported": 6.8,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sacrum_vertical_displacement_at_LFmin SD",
+   "computed": 2.8528384171044707,
+   "reported": 2.9,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sacrum_vertical_displacement_at_GFmax mean",
+   "computed": 16.7228125,
+   "reported": 16.7,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sacrum_vertical_displacement_at_GFmax SD",
+   "computed": 1.60988397579941,
+   "reported": 1.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_t0 mean",
+   "computed": 631.7783333333334,
+   "reported": 631.8,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_t0 SD",
+   "computed": 117.12278109537509,
+   "reported": 117.1,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_vGRFfc mean",
+   "computed": 560.1250778571429,
+   "reported": 560.1,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_vGRFfc SD",
+   "computed": 152.30823723156882,
+   "reported": 152.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_vGRFmax mean",
+   "computed": 982.7296457142857,
+   "reported": 982.7,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vGRF_at_vGRFmax SD",
+   "computed": 153.50684819188692,
+   "reported": 153.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "load_force_at_t0 mean",
+   "computed": 2.7541666666666664,
+   "reported": 2.8,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "load_force_at_t0 SD",
+   "computed": 0.407976343639796,
+   "reported": 0.4,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "load_force_at_LFmax mean",
+   "computed": 3.2716666666666665,
+   "reported": 3.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "load_force_at_LFmax SD",
+   "computed": 0.5347868451046358,
+   "reported": 0.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grip_force_at_t0 mean",
+   "computed": 8.145,
+   "reported": 8.1,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grip_force_at_t0 SD",
+   "computed": 4.940219906772646,
+   "reported": 4.9,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grip_force_at_GFmax mean",
+   "computed": 8.41,
+   "reported": 8.4,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grip_force_at_GFmax SD",
+   "computed": 4.117748722961923,
+   "reported": 4.1,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GF_LF_ratio_at_t0 mean",
+   "computed": 3.016666666666667,
+   "reported": 3.0,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GF_LF_ratio_at_t0 SD",
+   "computed": 1.7682571457040217,
+   "reported": 1.8,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GF_LF_ratio_at_LFmax mean",
+   "computed": 2.5545888075,
+   "reported": 2.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GF_LF_ratio_at_LFmax SD",
+   "computed": 1.2871340462142986,
+   "reported": 1.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "safety_margin_at_LFmin mean",
+   "computed": 1.6592600000000002,
+   "reported": 1.7,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "safety_margin_at_LFmin SD",
+   "computed": 1.490259112593064,
+   "reported": 1.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "safety_margin_at_GFmax mean",
+   "computed": 2.07149,
+   "reported": 2.1,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "safety_margin_at_GFmax SD",
+   "computed": 1.4851572744625023,
+   "reported": 1.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmin_to_vGRFfc mean (ms)",
+   "computed": 101.31250000000001,
+   "reported": 101.3,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmin_to_vGRFfc SD (ms)",
+   "computed": 63.8137517417965,
+   "reported": 63.8,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay GFmin_to_vGRFfc mean (ms)",
+   "computed": 92.41833333333334,
+   "reported": 92.4,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay GFmin_to_vGRFfc SD (ms)",
+   "computed": 63.19567143308779,
+   "reported": 63.2,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmin_to_LFmax mean (ms)",
+   "computed": 226.49000000000004,
+   "reported": 226.5,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmin_to_LFmax SD (ms)",
+   "computed": 51.446962451193805,
+   "reported": 51.4,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay GFmin_to_LFmax mean (ms)",
+   "computed": 217.5958333333334,
+   "reported": 217.6,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay GFmin_to_LFmax SD (ms)",
+   "computed": 57.542383345327345,
+   "reported": 57.5,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmax_to_vGRFmax mean (ms)",
+   "computed": 17.265833333333305,
+   "reported": 17.3,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmax_to_vGRFmax SD (ms)",
+   "computed": 21.240602396154266,
+   "reported": 21.2,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmax_to_GFmax mean (ms)",
+   "computed": 73.4208333333333,
+   "reported": 73.4,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "delay LFmax_to_GFmax SD (ms)",
+   "computed": 42.16363048417511,
+   "reported": 42.2,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "six women and six men present in trial-level normalized vGRF",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial-level rows exist for kinematics of 8 participants",
+   "ok": true,
+   "detail": "8"
+  },
+  {
+   "kind": "internal",
+   "what": "participant means exist for all 12 participants (forces)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "F vGRF* at LFmin mean (trial rows)",
+   "computed": 539.9918825000001,
+   "reported": 540.0,
+   "tol": 0.051,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F vGRF* at LFmin SD (trial rows)",
+   "computed": 86.18595380269902,
+   "reported": 86.2,
+   "tol": 0.051,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M vGRF* at LFmin mean (trial rows)",
+   "computed": 606.7409547619047,
+   "reported": 606.7,
+   "tol": 0.051,
+   "source": "Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "M vGRF* at LFmin SD (trial rows)",
+   "computed": 75.02697251317868,
+   "reported": 75.0,
+   "tol": 0.051,
+   "source": "Table 3",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper gives mean body mass 66.0 +/- 13.2 kg; the deposit's Subjects sheet gives 65.9 +/- 13.1 kg (so this is not used as a check).",
+  "The hand and sacrum displacement is missing for participants 1, 3, 8 and 10 in table1 (marker data not available), so they have no kinematic rows.",
+  "Table3's normalized vGRF is in N after the authors normalized it to the mean weight (646.9 N) of the whole group (paper, Table 3 footnote); the individual weights are in participants.csv.",
+  "The safety margin is unavailable for participants 1 and 7 in table1."
+ ],
+ "sources": [
+  {
+   "file": "data2016.zip",
+   "url": "https://zenodo.org/api/records/4959013/files/DATA%20FOR%20PLOS_One.zip/content",
+   "bytes": 447954,
+   "sha256": "75182c5de41e705e7c93a8e018673ffd0ac16987a00a7b6c3b00a6e7019a6931",
+   "fetched_utc": "2026-11-09T12:07:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/EbnerKarestinos2016_PLoSONE.zip"
+}

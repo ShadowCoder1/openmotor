@@ -1,0 +1,288 @@
+{
+ "id": "Schiller2026_JVoice",
+ "module": "speech",
+ "rows": 7619,
+ "subjects": 56,
+ "persons": 56,
+ "zip_bytes": 163606,
+ "zip_sha256": "8a07745cd32a755fe7b80df5994a501cb2636e8c0fe8656a987d5f81982f20a5",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "7619 rows of 56 participants (34 AFM, 22 control); group, age, gender and AVQI constant within participant; one row per participant and trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "feedback is modulated only in the AFM group's ramp and hold phases (SNR and SDO given together there, 'control' everywhere else)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "phase follows the trial number: baseline 1-20, ramp 21-70, hold 71-120, after 121-140, in both groups",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CPPS_z is standardised against each group's baseline phase: mean 0 and SD 1 over the baseline rows",
+   "ok": true,
+   "detail": "1.4e-05, SD 1.0000-1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "value ranges: CPPS 9-24 dB, F0 70-340 Hz, RMS 54-91, AVQI below the 3.05 inclusion cut-off",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: participants",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: female",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: male",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: youngest (years)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: oldest (years)",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: mean age (years, printed as a whole number)",
+   "computed": 24.11764705882353,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "AFM group: SD of age (years, printed as a whole number)",
+   "computed": 3.337252597865613,
+   "reported": 3.0,
+   "tol": 0.5,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: female",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: male",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: youngest (years)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: oldest (years)",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: mean age (years, printed as a whole number)",
+   "computed": 24.363636363636363,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "control group: SD of age (years, printed as a whole number)",
+   "computed": 8.162314415861266,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant (140 sustained vowels)",
+   "computed": 140.0,
+   "reported": 140.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline phase: last trial",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ramp phase: trials (21-70, 50 trials)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hold phase: trials (71-120, 50 trials)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "after phase: trials (121-140, 20 trials)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ramp phase: SNR of the first step (dB)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ramp phase: SNR of the last step (dB)",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hold phase: SNR (dB)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "hold phase: only one SNR value",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SDO in the ramp and hold phases (dB)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ramp phase: steps of the stepwise SNR decrease",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Schiller et al. 2026, preprint v1 (PsyArXiv 3jgn6), Study 2, Technical set-up (+17 to +13 dB)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The preprint (v1, before the authors corrected their CPPS extraction script) gives AFM-group mean CPPS by phase of 15.39, 15.71, 15.93 and 15.91 dB; the shared, corrected file gives 15.34, 15.63, 15.82 and 15.91 dB. The published article was behind a paywall, so no CPPS statistic of the corrected analysis could be checked; the checks are the participant counts, ages, trial design and feedback settings.",
+  "The preprint describes z-scoring CPPS within each group over all data; the shared CPPS_z is standardised against each group's baseline phase (an exact linear transform of CPPS, baseline mean 0 and SD 1)."
+ ],
+ "sources": [
+  {
+   "file": "Study1_OSF.csv",
+   "url": "https://osf.io/download/6g3hc/",
+   "bytes": 83595,
+   "sha256": "54e8d8e2e7b6075d0375054970e322c06511ecb77fd26967912edd5834fbb9cb",
+   "fetched_utc": "2026-11-08T21:54:10Z"
+  },
+  {
+   "file": "Study2_OSF.csv",
+   "url": "https://osf.io/download/4c63x/",
+   "bytes": 647943,
+   "sha256": "dd044d21abbe71f1640273d89571699b6124abbfd23f6bfcc90ac54ed9648da6",
+   "fetched_utc": "2026-11-08T21:54:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schiller2026_JVoice.zip"
+}

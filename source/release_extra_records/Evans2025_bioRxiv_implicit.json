@@ -1,0 +1,103 @@
+{
+ "id": "Evans2025_bioRxiv_implicit",
+ "module": "reach90",
+ "rows": 12120,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 392034,
+ "zip_sha256": "9f4916bfc6a3f7f99ef7d201165527a619d372918d3e1dbb6d46f3263e9d13a1",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "implicitAdaptation_repo.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants ('Twenty individuals'; also the deposit README)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "endPtAngle equals the direction of the stored screen endpoint from the start (y up) on every trial",
+   "ok": true,
+   "detail": "max 3.4e-13 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' processed sensorimotor and motor-awareness files (240 clamp trials each) are reproduced from the runs (endPtAngle - 90 minus its mean)",
+   "ok": true,
+   "detail": "max 3.6e-15 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "clamp = 10 sin(2 pi (t - 61) / 20) deg on trials 61-300 (0 on trial 61)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no-feedback pre-test: the report rises with the hand in most runs (report in the hand's frame)",
+   "ok": true,
+   "detail": "33 of 41 runs, median r 0.37"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 240 analysed clamp trials in each task",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle and hand_report within (-180, 180]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "reach lag behind the clamp at 12 cycles/session, sensorimotor task, mean (trials)",
+   "computed": 11.887149489136354,
+   "reported": 11.89,
+   "tol": 0.005,
+   "source": "Results, sensorimotor task (Fig 8 text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "same, SD across participants",
+   "computed": 0.6114413442886738,
+   "reported": 0.61,
+   "tol": 0.005,
+   "source": "Results, sensorimotor task (Fig 8 text)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reach lag behind the clamp, motor-awareness task, mean (trials)",
+   "computed": 11.835166506440924,
+   "reported": 11.84,
+   "tol": 0.005,
+   "source": "Fig 11 legend",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' dataProcessingSaveFiles.m sets report = -reportAngle, although the experiment code already saved reportAngle 'negative to match reach angles'; hand_report here keeps the saved sign, so report phases and lags computed from the authors' processed files are those of the mirrored series."
+ ],
+ "sources": [
+  {
+   "file": "implicitAdaptation_repo.zip",
+   "url": "https://github.com/marissahevans/implicitAdaptation/archive/3cb6dfdaab195e3a25b9ca4f62d41032cab2fa08.zip",
+   "bytes": 12529023,
+   "sha256": "dd2a31eee992097065b6155552e0df33159c15c4c40a7ed4c24ebfe13e51bcd8",
+   "fetched_utc": "2026-11-08T20:10:04Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Evans2025_bioRxiv_implicit.zip"
+}

@@ -1,0 +1,129 @@
+{
+ "id": "Jiang2021_Hyser",
+ "module": "timeseries",
+ "rows": 2400,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 89668855,
+ "zip_sha256": "1cab70bbf1dda66e4aa1b5768bf31b8f5b8f8352f7f5280aab485aca161ef2f0",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "PhysioNet record page, Abstract and Methods: 20 subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "subject-session folders (20 subjects x 2 sessions)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "PhysioNet record page, Data Description: 40 folders subjectXX_sessionY per sub-dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force sampling rate (Hz), all recordings",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "PhysioNet record page, Methods: force signals acquired at 100 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force channels per recording (thumb, index, middle, ring, little)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet record page, Data Description: force matrix is N x 5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MVC recordings per session (5 fingers x flexion/extension)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "PhysioNet record page: MVC files per finger and direction; toolbox load_mvc.m loops over 10",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "N-DoF recordings per session (15 combinations x 2 samples)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "PhysioNet record page: 15 finger combinations; toolbox load_ndof.m loops over 15 x 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "1-DoF recordings per session (5 fingers x 3 samples)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Toolbox main_1dof.m (feature = cell(5,3)); PhysioNet record page: five fingers",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "random-task recordings per session",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Toolbox load_random.m loops over 5 samples",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all 2,400 force recordings kept (40 sessions x 60)",
+   "ok": true,
+   "detail": "2400"
+  },
+  {
+   "kind": "internal",
+   "what": "every recording matches its header first sample and checksum",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every session has the same 60 recordings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sign: peak of the pressed finger is negative in flexion and positive in extension MVC recordings (>= 85%)",
+   "ok": true,
+   "detail": "0.995 of 400"
+  },
+  {
+   "kind": "internal",
+   "what": "sample file names carry the release subject codes (S0001..S0020 in order)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text of the IEEE paper could not be read (the publisher's PDF is behind a bot check), so the checks use the PhysioNet record page, readme and the authors' toolbox code instead of numbers printed in the paper."
+ ],
+ "sources": [
+  {
+   "file": "force files + readme/LICENSE/RECORDS (flattened with __ for /)",
+   "url": "https://physionet.org/files/hd-semg/2.0.0/",
+   "bytes": 56745656,
+   "sha256": "d3d105dbf8003e3d84e293936c7d84016d841c7c92b4a6b8219effe89ec0feb5",
+   "n_files": 4803,
+   "note": "each file verified against SHA256SUMS.txt of the deposit; sha256 here is of the verified list",
+   "fetched_utc": "2026-11-09T17:13:33Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jiang2021_Hyser.zip"
+}

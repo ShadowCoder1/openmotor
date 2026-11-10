@@ -1,0 +1,267 @@
+{
+ "id": "Shida2023_FrontNeurosci",
+ "module": "walking",
+ "rows": 869,
+ "subjects": 48,
+ "persons": 26,
+ "zip_bytes": 75896,
+ "zip_sha256": "fcd7ce1c2d4e85d91530dad997274fbfa4c7cf6f085ccee1be58d2a5365544bd",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "26 participants, all with walking data; 48 session files (25 ON, 23 OFF)",
+   "ok": true,
+   "detail": "26 persons, 48 sessions"
+  },
+  {
+   "kind": "internal",
+   "what": "at most 20 passes per session (paper Methods: 20 trials)",
+   "ok": true,
+   "detail": "max 20, min 5"
+  },
+  {
+   "kind": "internal",
+   "what": "one row kept for every pass of every spatiotemporal workbook",
+   "ok": true,
+   "detail": "869 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "at least 90% of passes have speed 0.2-2 m/s, stance 0.3-2 s and step lengths 0.05-1 m (the rest are kept as shared)",
+   "ok": true,
+   "detail": "94.48% inside; speed 0.00-1.66 m/s; 19 passes under 0.2 m/s; 29 passes with an empty value; 1 with a zero"
+  },
+  {
+   "kind": "internal",
+   "what": "double_support_s = initial + terminal double support of the right leg in the same pass",
+   "ok": true,
+   "detail": "median |diff| 0.00e+00"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, minimum (44-81 years)",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, maximum",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "body mass, minimum (53.3-94.6 kg)",
+   "computed": 53.3,
+   "reported": 53.3,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "body mass, maximum",
+   "computed": 94.55,
+   "reported": 94.6,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, minimum (151.5-179.0 cm)",
+   "computed": 151.5,
+   "reported": 151.5,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "height, maximum",
+   "computed": 179.0,
+   "reported": 179.0,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BMI, minimum (19.2-34.3)",
+   "computed": 19.168002391847786,
+   "reported": 19.2,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "BMI, maximum",
+   "computed": 34.314524245415946,
+   "reported": 34.3,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOCA ON, mean",
+   "computed": 22.8,
+   "reported": 22.8,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOCA ON, SD",
+   "computed": 4.252450274057692,
+   "reported": 4.25,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOCA OFF, mean",
+   "computed": 23.347826086956523,
+   "reported": 23.35,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MOCA OFF, SD",
+   "computed": 4.063235339347809,
+   "reported": 4.06,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS_III ON, mean",
+   "computed": 24.8,
+   "reported": 24.8,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS_III ON, SD",
+   "computed": 13.595342339688742,
+   "reported": 13.6,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS_III OFF, mean",
+   "computed": 26.434782608695652,
+   "reported": 26.43,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UPDRS_III OFF, SD",
+   "computed": 11.762135269029876,
+   "reported": 11.76,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FES_I ON, mean",
+   "computed": 27.72,
+   "reported": 27.72,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FES_I ON, SD",
+   "computed": 10.285588623571007,
+   "reported": 10.29,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FES_I OFF, mean",
+   "computed": 33.91304347826087,
+   "reported": 33.91,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "FES_I OFF, SD",
+   "computed": 12.59477901743511,
+   "reported": 12.59,
+   "tol": 0.01,
+   "source": "Results (clinical characteristics)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports no group values for the spatiotemporal measures, so the checks are the participant and clinical numbers of its Methods and Results. The paper's text says 13 participants had freezing of gait while its Results say no freezing episodes occurred in the trials; the deposit's FoG group column is kept as shared."
+ ],
+ "sources": [
+  {
+   "file": "PDGinfo.xlsx",
+   "url": "https://ndownloader.figshare.com/files/37907001",
+   "bytes": 21301,
+   "sha256": "7c85667796fb2b127da23e762230b7539e0fa1c1f253b0a049d2d01e6c20e229",
+   "fetched_utc": "2026-11-09T00:32:25Z"
+  },
+  {
+   "file": "Supplementary_material.docx",
+   "url": "https://ndownloader.figshare.com/files/38431859",
+   "bytes": 16657,
+   "sha256": "65ac33961584a07bb98540b400010912182d3db6fda590a2f925d1d81d0fb82c",
+   "fetched_utc": "2026-11-09T00:32:28Z"
+  },
+  {
+   "file": "Gait_cycles.zip",
+   "url": "https://ndownloader.figshare.com/files/30420402",
+   "bytes": 116175881,
+   "sha256": "d76fc636f30cb00598e811ca9793a5c8f2bbedbce13a455023bd041c0452ecad",
+   "fetched_utc": "2026-11-09T00:32:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Shida2023_FrontNeurosci.zip"
+}

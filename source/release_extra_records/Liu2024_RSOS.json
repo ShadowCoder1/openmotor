@@ -1,0 +1,147 @@
+{
+ "id": "Liu2024_RSOS",
+ "module": "walking",
+ "rows": 42884,
+ "subjects": 13,
+ "persons": 13,
+ "zip_bytes": 2204542,
+ "zip_sha256": "76ed2b8a3dfe13a10ce99ac1fc52de909d162b7907625250bf8cbc56228bddaf",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "unperturbed table is 100 samples per step",
+   "ok": true,
+   "detail": "4288400 samples, 42884 steps"
+  },
+  {
+   "kind": "internal",
+   "what": "perturbed table is 100 samples per step",
+   "ok": true,
+   "detail": "148100 samples, 1481 steps"
+  },
+  {
+   "kind": "internal",
+   "what": "step key (participant, trial, step number, side) is unique in the all-steps table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every perturbed step is also a row of the unperturbed-model table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the perturbed steps hold the same values in both tables",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "13 participants, six perturbation levels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "mean AP CoM velocity change rises from Mag 1 to 6 (order of the paper's levels)",
+   "ok": true,
+   "detail": "{1.0: -0.148, 2.0: -0.13, 3.0: -0.096, 4.0: 0.095, 5.0: 0.149, 6.0: 0.209}"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants (6 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "self-selected walking speed mean (m/s)",
+   "computed": 0.7515384615384615,
+   "reported": 0.75,
+   "tol": 0.01,
+   "source": "Methods, Participants (0.75 +- 0.25 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "self-selected walking speed SD (m/s)",
+   "computed": 0.2568347767809152,
+   "reported": 0.25,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean perturbations kept per participant (120 - 6)",
+   "computed": 113.84615384615384,
+   "reported": 114.0,
+   "tol": 1.0,
+   "source": "Methods: on average 6 of 120 perturbations removed",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median perturbations per participant, level and side",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods: median 10 (IQR 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "IQR of perturbations per participant, level and side",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods: median 10 (IQR 1)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "1 step is listed twice in the deposit's perturbed table with two different levels (4 and 1); it is a perturbed step here with an empty pert_value.",
+  "The deposit's step cycle is 100 time-normalized samples; only midstance (sample 50), the point the paper analyses, is kept, so the files hold 1 of every 100 samples.",
+  "Perturbation level order (Mag 1-6 = -0.5 ... +0.7 m/s) is inferred from the paper's list and confirmed because the mean anterior-posterior CoM velocity at midstance rises monotonically across the six levels, negative for 1-3 and positive for 4-6.",
+  "The paper gives participant age as 58 +- 29 years; the demographics sheet gives mean 58.4, SD 15.0 (the paper's SD looks like a typo)."
+ ],
+ "sources": [
+  {
+   "file": "Demographics.xlsx",
+   "url": "https://osf.io/download/6mf7r/",
+   "bytes": 9552,
+   "sha256": "e763b6ccbb3e4db7100f90a25a433c3ed23e2fdd656d511600a6eb6a74f5a73d",
+   "fetched_utc": "2026-11-09T02:22:35Z"
+  },
+  {
+   "file": "FP_v_CoM_HO_20221224.mat",
+   "url": "https://osf.io/download/eg7r6/",
+   "bytes": 211388301,
+   "sha256": "16b62375d2c4eae7b5755e1bf342ee6fed6a7c025c97c3f2198f90c1d875a0cd",
+   "fetched_utc": "2026-11-09T02:22:48Z"
+  },
+  {
+   "file": "LME_HY_Coeff_202212.mat",
+   "url": "https://osf.io/download/yk4aq/",
+   "bytes": 13959,
+   "sha256": "e9d62582452c3db7ce25f8669996a7d4000673bbb67e75dcb70aef7de402a7a6",
+   "fetched_utc": "2026-11-09T02:22:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Liu2024_RSOS.zip"
+}

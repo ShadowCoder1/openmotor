@@ -1,0 +1,727 @@
+{
+ "id": "Zeng2026_JExpPsycholLMC",
+ "module": "speech",
+ "rows": 25164,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 724748,
+ "zip_sha256": "52c15a9b4122a6e392cdfeb968df030a0d4a3871ec1bfdd4535abf88fd721214",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: the authors' F2 table (data2) is a subset of the F1 table with the same values",
+   "ok": true,
+   "detail": "6203 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: the authors' F2 table (data2) is a subset of the F1 table with the same values",
+   "ok": true,
+   "detail": "7714 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 Post-training: the F2 table is a subset of the F1 table with the same values",
+   "ok": true,
+   "detail": "2032 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "one Pre-training reference per speaker, word and syllable (F1_Ref, F2_Ref)",
+   "ok": true,
+   "detail": "280 F1 and 210 F2 references"
+  },
+  {
+   "kind": "internal",
+   "what": "f0 and intensity tables agree on phase and vowel duration where both hold a syllable",
+   "ok": true,
+   "detail": "4649 shared rows, 3 intensity-only, 0 f0-only"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: each row's shift label matches the speaker's shift table (summary0)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: each row's shift label matches the speaker's shift table (summary0)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every Post-training prosody row matches a Post-training formant row",
+   "ok": true,
+   "detail": "2312 of 2312"
+  },
+  {
+   "kind": "internal",
+   "what": "rows per source table as shared (Exp 1 9549; Exp 2 training 10285, Post-training 2710, Pre-training prosody 2340, Pre-training reference means 280)",
+   "ok": true,
+   "detail": "{(1, 'train'): 9549, (2, 'post'): 2710, (2, 'pre'): 2340, (2, 'ref'): 280, (2, 'train'): 10285}"
+  },
+  {
+   "kind": "internal",
+   "what": "40 people, no participant number in both experiments",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject x trial x syllable unique among utterance rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' phase labels match the design's trial ranges (Exp 2: 80 Transfer1, 20 Baseline, 30 Ramp, 200 Hold, 80 Transfer2, 10 Washout)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 and F2 parts of the shift add up to its size; 125 mel in Hold, 0 outside Ramp and Hold",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1_mel within 350-1400",
+   "ok": true,
+   "detail": "438.375-1301.963, n=22824"
+  },
+  {
+   "kind": "internal",
+   "what": "f2_mel within 900-2000",
+   "ok": true,
+   "detail": "1133.866-1682.294, n=22754"
+  },
+  {
+   "kind": "internal",
+   "what": "f0_hz within 45-320",
+   "ok": true,
+   "detail": "58.350-278.130, n=4649"
+  },
+  {
+   "kind": "internal",
+   "what": "duration_ms within 20-800",
+   "ok": true,
+   "detail": "48.425-431.744, n=24884"
+  },
+  {
+   "kind": "internal",
+   "what": "intensity_au within 0-250",
+   "ok": true,
+   "detail": "0.270-119.807, n=4652"
+  },
+  {
+   "kind": "internal",
+   "what": "intensity_max_au within 0-400",
+   "ok": true,
+   "detail": "0.377-205.162, n=4652"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials removed per participant, mean",
+   "computed": 0.53125,
+   "reported": 0.53,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials removed per participant, SD",
+   "computed": 1.4908269100505913,
+   "reported": 1.49,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials removed per participant, maximum",
+   "computed": 6.666666666666667,
+   "reported": 6.67,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants whose projected F2 shifts were opposing (/\u026a/-shift up, /\u00e6/-shift down), the F2 analyses' sample",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Experiment design",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: that F2 sample is the authors' F2 table's speakers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants whose projected F2 shifts were opposing (/\u026a/-shift up, /\u00e6/-shift down), the F2 analyses' sample",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Experiment design",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: that F2 sample is the authors' F2 table's speakers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean absolute F1 part of the shift, both experiments and directions (mel)",
+   "computed": 107.6194049572654,
+   "reported": 107.62,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Experiment design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean absolute F2 part of the shift, both experiments and directions, participants of the F2 analyses (mel)",
+   "computed": 56.39596087494824,
+   "reported": 56.4,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Experiment design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SE of F1 change, /\u00e6/-shift, analysed Hold and Washout trials (mel)",
+   "computed": 2.5877559120298357,
+   "reported": 2.59,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: Cohen's d, F1 change /\u026a/-shift vs /\u00e6/-shift",
+   "computed": 1.0972741599707279,
+   "reported": 1.1,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of participants with more positive F1 change for /\u026a/-shift than /\u00e6/-shift, Hold",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of the F2 sample with more negative F2 change for /\u026a/-shift than /\u00e6/-shift, Hold",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of the F2 sample with more negative F2 change for /\u026a/-shift than /\u00e6/-shift, Washout",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u026a/-shift, analysed Hold and Washout trials (mel)",
+   "computed": 1.9850188768284684,
+   "reported": 1.99,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u00e6/-shift, analysed Hold and Washout trials (mel)",
+   "computed": 2.332422644250323,
+   "reported": 2.33,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Cohen's d, F1 change /\u026a/-shift vs /\u00e6/-shift",
+   "computed": 1.5951762828318088,
+   "reported": 1.6,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of participants with more positive F1 change for /\u026a/-shift than /\u00e6/-shift, Hold",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of the F2 sample with more negative F2 change for /\u026a/-shift than /\u00e6/-shift, Hold",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of participants with more positive F1 change for /\u026a/-shift than /\u00e6/-shift, Washout",
+   "computed": 95.0,
+   "reported": 95.0,
+   "tol": 0.5,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u026a/-shift, Hold (mel)",
+   "computed": 2.7279761556237747,
+   "reported": 2.73,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2, Training results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u00e6/-shift, Hold (mel)",
+   "computed": 3.289790689413383,
+   "reported": 3.29,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2, Training results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u026a/-shift, Washout (mel)",
+   "computed": 2.7468338364837646,
+   "reported": 2.75,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2, Training results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, /\u00e6/-shift, Washout (mel)",
+   "computed": 3.274124555258534,
+   "reported": 3.27,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Experiment 2, Training results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Post-training: SE of F1 transfer in bedhead, syllable 1, all participants (mel)",
+   "computed": 2.331342490428585,
+   "reported": 2.33,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, The maintenance of adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Post-training: SE of F1 transfer in bedhead, syllable 2, all participants (mel)",
+   "computed": 2.869276723122647,
+   "reported": 2.87,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, The maintenance of adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Post-training: Cohen's d, bedhead syllable 1 vs 2, F1 transfer",
+   "computed": 1.315940534936378,
+   "reported": 1.32,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, The maintenance of adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: adapters in F1 (bootstrap 95% CIs of the two bedhead syllables do not overlap)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Statistical analysis; Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: adapters in F2, among the F2 sample",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Methods, Statistical analysis",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "adapter counts do not hinge on the bootstrap draw (no participant within 1 mel of the cut-off)",
+   "ok": true,
+   "detail": "closest margins 3.70 and 1.93 mel"
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean F1 perturbation of the F1 adapters (mel)",
+   "computed": 110.00033306489384,
+   "reported": 110.0,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'bed' in bedhead (mel)",
+   "computed": 2.3942548147665668,
+   "reported": 2.39,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'head' in bedhead (mel)",
+   "computed": 2.8603048174701344,
+   "reported": 2.86,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'bed' in bedspread (mel)",
+   "computed": 2.5273842514770144,
+   "reported": 2.53,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'head' in redhead (mel)",
+   "computed": 2.6590596104769726,
+   "reported": 2.66,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'bed' in bed (mel)",
+   "computed": 2.6807007831887684,
+   "reported": 2.68,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'head' in head (mel)",
+   "computed": 2.4278074605441478,
+   "reported": 2.43,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'bed' in deathbed (mel)",
+   "computed": 2.799768688997519,
+   "reported": 2.8,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, 'head' in headrest (mel)",
+   "computed": 2.7690149918386346,
+   "reported": 2.77,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, all 'bed' vs all 'head' syllables",
+   "computed": 0.7693542661652316,
+   "reported": 0.77,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in bedhead vs 'head' in bedhead",
+   "computed": 1.602759563783369,
+   "reported": 1.6,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in bedspread vs 'head' in redhead",
+   "computed": 0.9866907393321498,
+   "reported": 0.99,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in deathbed vs 'head' in headrest",
+   "computed": 0.2622209047360832,
+   "reported": 0.26,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in bed vs 'head' in head",
+   "computed": 0.43418273499628685,
+   "reported": 0.43,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in bedhead vs 'bed' in bedspread",
+   "computed": 0.2284706347165152,
+   "reported": 0.23,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'head' in bedhead vs 'head' in redhead",
+   "computed": 0.38869036897224585,
+   "reported": 0.39,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'head' in bedhead vs 'head' in head",
+   "computed": 1.0241949165984199,
+   "reported": 1.02,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'bed' in bedhead vs 'bed' in deathbed",
+   "computed": 0.619348363666932,
+   "reported": 0.62,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, 'head' in bedhead vs 'head' in headrest",
+   "computed": 0.6559948660964635,
+   "reported": 0.66,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, position 1, bedhead and novel syllables (mel)",
+   "computed": 1.291137542209487,
+   "reported": 1.29,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, position 2, bedhead and novel syllables (mel)",
+   "computed": 1.4904949996119696,
+   "reported": 1.49,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, novel syllables in position 1 (mel)",
+   "computed": 1.5107145806487376,
+   "reported": 1.51,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: SE of F1 transfer, novel syllables in position 2 (mel)",
+   "computed": 1.544547262242658,
+   "reported": 1.54,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, position 1 vs 2, bedhead and novel syllables",
+   "computed": 0.5440627225065336,
+   "reported": 0.54,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F1 adapters: Cohen's d, position 1 vs 2, novel syllables",
+   "computed": 0.24092300889181092,
+   "reported": 0.24,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: SE of F2 transfer, 'bed' in deathbed (mel)",
+   "computed": 2.4620967038264725,
+   "reported": 2.46,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables (F2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: SE of F2 transfer, 'head' in headrest (mel)",
+   "computed": 2.4369890274725954,
+   "reported": 2.44,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables (F2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: SE of F2 transfer, 'bed' in bedhead (mel)",
+   "computed": 2.7735588477171293,
+   "reported": 2.77,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the trained syllables (F2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: SE of F2 transfer, position 1, bedhead and novel syllables (mel)",
+   "computed": 1.3069731181301432,
+   "reported": 1.31,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: SE of F2 transfer, position 2, bedhead and novel syllables (mel)",
+   "computed": 1.1351711044853394,
+   "reported": 1.14,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 F2 adapters: Cohen's d, position 1 vs 2, bedhead and novel syllables",
+   "computed": 0.4949127982894508,
+   "reported": 0.49,
+   "tol": 0.005,
+   "source": "Zeng, Parrell & Niziolek, manuscript PsyArXiv 63gaj v2 (first revision), Results, Comparison of the trained word and the novel syllables",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper lists Experiment 2's Baseline as 10 trials and Ramp as 20; the trial numbers in the shared data and the experiment code give 20 Baseline and 30 Ramp trials (with the last 10 Baseline trials as the reference).",
+  "Trials removed in Experiment 2 (paper: mean 1.53%, SD 1.65%, range 0-4.76%) cannot be recounted, because Transfer1 formants were shared only as means.",
+  "Numbers that differ from the paper here and equally in the authors' own analysis objects in the shared R workspaces, so most likely typing slips in the paper: Experiment 1 SE of F1 change for the /\u026a/-shift 2.57 (paper 2.56); Experiment 1 Washout, 95% of speakers with a more positive F1 change for the /\u026a/-shift (paper 90%; one speaker's difference is +0.9 mel); Experiment 2 Washout, 14 of the 15 speakers of the F2 analysis with a more negative F2 change for the /\u026a/-shift (paper: all); Table 1 mean F2 perturbation of the F2 adapters 53.90 mel (paper 58.90); SE of F2 transfer for 'head' in bedhead 2.53 (paper 2.46) and for novel syllables 1.45 and 1.20 (the paper prints 1.51 and 1.54, the F1 values)."
+ ],
+ "sources": [
+  {
+   "file": "readme.txt",
+   "url": "https://osf.io/download/94xue/",
+   "bytes": 386,
+   "sha256": "1f2482c1699d4e5ccd450a859929d4c2051cb487bce6beda87f19a1fdc80831d",
+   "fetched_utc": "2026-11-08T19:45:41Z"
+  },
+  {
+   "file": "1_Exp1.RData",
+   "url": "https://osf.io/download/d3cya/",
+   "bytes": 1098892,
+   "sha256": "8f9b97b01ddb01ea045da21d7a9a6092f08fb0c7b75cf5177ccb127120dbea11",
+   "fetched_utc": "2026-11-08T19:45:43Z"
+  },
+  {
+   "file": "2_Exp2_Training.RData",
+   "url": "https://osf.io/download/ga43w/",
+   "bytes": 1211259,
+   "sha256": "3a40760bc9fcf30a23c1491774dce7dbcdf365e35cae7b313bf4256ad0f4a580",
+   "fetched_utc": "2026-11-08T19:45:46Z"
+  },
+  {
+   "file": "3_Exp2_Transfer.RData",
+   "url": "https://osf.io/download/f4j53/",
+   "bytes": 1986986,
+   "sha256": "89b48e31b89e2b41f4e929425ad285a68902ac6bab7b2dad9e93f30cd461d240",
+   "fetched_utc": "2026-11-08T19:45:49Z"
+  },
+  {
+   "file": "4_Exp2_Prosody.RData",
+   "url": "https://osf.io/download/b3acd/",
+   "bytes": 3829541,
+   "sha256": "8916242c754400848441d636b558578e411ab69404cd7adca98ba3d3dee702cf",
+   "fetched_utc": "2026-11-08T19:45:51Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Zeng2026_JExpPsycholLMC.zip"
+}

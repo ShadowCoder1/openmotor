@@ -1,0 +1,219 @@
+{
+ "id": "Vishne2021_NatCommun",
+ "module": "tapping",
+ "rows": 133650,
+ "subjects": 109,
+ "persons": 109,
+ "zip_bytes": 1882720,
+ "zip_sha256": "a327090e0a578934781b85952c6b4120692e715dd1c6f1257a3b731433f95d63",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "109 participants x 6 conditions x 2 repetitions in the tapping arrays; subject_info has one row each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject_info.Group equals the group vector of analyses_data.mat (1 neurotypical, 2 dyslexia, 3 autism)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group sizes 47, 32, 30 as in analyses_data.mat g_size",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tempo pairs of the six conditions: 500/500 (isochronous) and five alternating pairs 10-90 ms apart",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "inter-tap interval r = inter-stimulus interval s + asynchrony e - previous asynchrony, wherever both taps exist",
+   "ok": true,
+   "detail": "125660 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "no asynchrony beyond +-200 ms (the authors' window); omitted or excluded taps are NaN",
+   "ok": true,
+   "detail": "4934 of 133650 rows without a valid tap"
+  },
+  {
+   "kind": "internal",
+   "what": "every beat of every block kept in the authors' order (109 x 12 blocks of 96-103 beats)",
+   "ok": true,
+   "detail": "133650 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "12 blocks per participant, 96-103 beats each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "neurotypical participants",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dyslexia participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "autism participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 109.0,
+   "reported": 109.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with a negative mean asynchrony",
+   "computed": 105.0,
+   "reported": 105.0,
+   "tol": 0,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median % omitted or excluded taps, neurotypical, Experiment 1",
+   "computed": 0.49261083743842365,
+   "reported": 0.5,
+   "tol": 0.05,
+   "source": "Methods, Finger tapping analyses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median % omitted or excluded taps, dyslexia, Experiment 1",
+   "computed": 0.48900047824007653,
+   "reported": 0.5,
+   "tol": 0.05,
+   "source": "Methods, Finger tapping analyses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median % omitted or excluded taps, autism, Experiment 1",
+   "computed": 1.2195121951219514,
+   "reported": 1.2,
+   "tol": 0.05,
+   "source": "Methods, Finger tapping analyses",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median SD of asynchrony (ms, average of the two blocks), neurotypical, Experiment 1",
+   "computed": 30.641746849424024,
+   "reported": 30.6,
+   "tol": 0.05,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median SD of asynchrony (ms, average of the two blocks), dyslexia, Experiment 1",
+   "computed": 30.2014714415476,
+   "reported": 30.2,
+   "tol": 0.05,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median SD of asynchrony (ms, average of the two blocks), autism, Experiment 1",
+   "computed": 41.40229102867558,
+   "reported": 41.4,
+   "tol": 0.05,
+   "source": "Results, 'Experiment 1 - isochronous tapping reveals reduced online error correction in ASD, but not in dyslexia'",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "raw_data.mat",
+   "url": "https://osf.io/download/6hq57/",
+   "bytes": 674493,
+   "sha256": "93f3fbfdfcc6ccf1e428c32abed20a599cb787df09ca34f96eaadc17a6437630",
+   "fetched_utc": "2026-11-08T20:03:10Z"
+  },
+  {
+   "file": "analyses_data.mat",
+   "url": "https://osf.io/download/p9u6q/",
+   "bytes": 681967,
+   "sha256": "48f1b8e90c02023fdbd7d6ea4179858bb8863639f93fb025bc751c6c507bc6c0",
+   "fetched_utc": "2026-11-08T20:03:13Z"
+  },
+  {
+   "file": "analysis_data.m",
+   "url": "https://osf.io/download/nxy8j/",
+   "bytes": 24702,
+   "sha256": "1815cfc918bb9c76b8d96c63578e1309f7fd31e2ad4166920196bd313d5c8b9a",
+   "fetched_utc": "2026-11-08T20:03:17Z"
+  },
+  {
+   "file": "analysis_stats.m",
+   "url": "https://osf.io/download/cztuw/",
+   "bytes": 7217,
+   "sha256": "2f9a9cf6a8af73a961d435044b6454dbc9408cd9e67cbd277d00517213bf7a64",
+   "fetched_utc": "2026-11-08T20:03:20Z"
+  },
+  {
+   "file": "create_figures.m",
+   "url": "https://osf.io/download/muxfk/",
+   "bytes": 30783,
+   "sha256": "2911fe0007145f1a1fbffeb12d16274e199db59d61cb3dbeaed49176b80c755e",
+   "fetched_utc": "2026-11-08T20:03:25Z"
+  },
+  {
+   "file": "model_fit_exp2.m",
+   "url": "https://osf.io/download/60ca7169da0ff20512390211/",
+   "bytes": 3067,
+   "sha256": "2b077f3c4884ca15962172ae5566b548c83baca4e94d286fa44d6afdbab3c2e0",
+   "fetched_utc": "2026-11-08T20:03:29Z"
+  },
+  {
+   "file": "model_fit_exp1.m",
+   "url": "https://osf.io/download/60ca716af3ce94052624972a/",
+   "bytes": 2917,
+   "sha256": "5a7181ea7c1a67036cdec97fc3c7c709f891b92f53ed92ef52c0b11c5c741736",
+   "fetched_utc": "2026-11-08T20:03:33Z"
+  },
+  {
+   "file": "Single_Participant_Graph.m",
+   "url": "https://osf.io/download/py65x/",
+   "bytes": 4885,
+   "sha256": "c8f49b0ca43eafc43243386ff47174b85fffbd2dd7c7f66cc72ea8ac6d46e42d",
+   "fetched_utc": "2026-11-08T20:03:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Vishne2021_NatCommun.zip"
+}

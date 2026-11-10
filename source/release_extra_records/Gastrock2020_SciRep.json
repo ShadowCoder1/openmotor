@@ -1,0 +1,791 @@
+{
+ "id": "Gastrock2020_SciRep",
+ "module": "reach90",
+ "rows": 33537,
+ "subjects": 180,
+ "persons": 90,
+ "zip_bytes": 1080677,
+ "zip_sha256": "8ed88da51c66e9e8947ca2cd356384c3546e55d0b58937f4b97a0a6bc6be1b30",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "imp001: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp002: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp003: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp004: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp005: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp006: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp007: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp008: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp009: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp010: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp011: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp012: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp013: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp014: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp015: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp016: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp017: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp018: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp019: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "imp020: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp001: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp002: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp003: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp004: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp005: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp006: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp007: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp008: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp009: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp010: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp011: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp012: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp013: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp014: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp015: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp016: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp017: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp018: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp019: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp020: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp021: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur001: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur002: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur003: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur004: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur005: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur006: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur007: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur008: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur009: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur010: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur011: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur012: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur013: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur014: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur015: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur016: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur017: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur018: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur019: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cur020: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han001: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han002: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han003: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han004: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han005: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han006: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han007: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han008: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han009: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han010: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han011: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han012: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han013: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han014: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han015: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han016: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han017: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han018: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han019: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han020: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han021: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han022: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han023: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han024: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han025: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han026: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han027: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han028: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "han029: aligned localization rows come before rotated ones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 90.0,
+   "reported": 90.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group, participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Control group, women",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed group, participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Instructed group, women",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cursor Jump group, participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Cursor Jump group, women",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Hand View group, participants",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Hand View group, women",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in all groups",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 20.788888888888888,
+   "reported": 20.8,
+   "tol": 0.1,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 3.8816608412369065,
+   "reported": 3.88,
+   "tol": 0.01,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent of cursor-training trials removed as outliers (paper: 0.94% over aligned and rotated sessions; here the rotated block only)",
+   "computed": 0.8148148148148148,
+   "reported": 0.94,
+   "tol": 0.6,
+   "source": "Methods, Data analysis, learning during adaptation training",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "90 rotated training trials per participant",
+   "ok": true,
+   "detail": "8100"
+  },
+  {
+   "kind": "internal",
+   "what": "every localization row kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "late rotated training deviations rise toward +30 (counter-clockwise compensation): mean of last 15 trials in 15 to 40 deg",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's learning-curve statistics use baseline-corrected deviations over aligned and rotated sessions, which the deposit does not hold, so only the participant, group, sex, age and outlier-rate numbers are checked. The outlier rate of the paper (0.94 percent) covers both sessions; the rotated block alone is compared here with a wide tolerance."
+ ],
+ "sources": [
+  {
+   "file": "30explicit_learningcurves_long.csv",
+   "url": "https://osf.io/download/k9dmr/",
+   "bytes": 52079,
+   "sha256": "d506eb17943d2e256faa135b02a890218b8af22bb86e3e5ec781ab6371dbb16d",
+   "fetched_utc": "2026-11-09T09:39:54Z"
+  },
+  {
+   "file": "cursorjump_learningcurves_long.csv",
+   "url": "https://osf.io/download/rhca7/",
+   "bytes": 50044,
+   "sha256": "6ed5f0484425b43575ff25cdd273d674c1d0d345d09023656fa362890d5698b7",
+   "fetched_utc": "2026-11-09T09:40:00Z"
+  },
+  {
+   "file": "30implicit_learningcurves_long.csv",
+   "url": "https://osf.io/download/7dutr/",
+   "bytes": 49907,
+   "sha256": "d5dd041ce6ab523975a0f20f066fd4f825e00832334cbadb8ae03d9934ce1606",
+   "fetched_utc": "2026-11-09T09:40:07Z"
+  },
+  {
+   "file": "handview_learningcurves_long.csv",
+   "url": "https://osf.io/download/k5yvn/",
+   "bytes": 72628,
+   "sha256": "34723c8098462953b2fb4c3cabb3998757bcedbc777a5839a57df746b8c5d448",
+   "fetched_utc": "2026-11-09T09:40:13Z"
+  },
+  {
+   "file": "participant_demographics.csv",
+   "url": "https://osf.io/download/jc2ug/",
+   "bytes": 2129,
+   "sha256": "9fd3e9faa100341119c4e58d429731bb5b22e00e77c63180585f22924ed840d2",
+   "fetched_utc": "2026-11-09T09:40:19Z"
+  },
+  {
+   "file": "ppawareness_scores.csv",
+   "url": "https://osf.io/download/d9eug/",
+   "bytes": 2595,
+   "sha256": "c0343f6674b5c6bd43ae534480a91d2b604c8b21066cc6b54b672805db6f7ed1",
+   "fetched_utc": "2026-11-09T09:40:24Z"
+  },
+  {
+   "file": "30implicit_nocursor.csv",
+   "url": "https://osf.io/download/wprmc/",
+   "bytes": 3815,
+   "sha256": "3ffbf959cb23189320c4bb123ffd3cf05a598382538091fd91dac9c66b5f0d38",
+   "fetched_utc": "2026-11-09T09:41:18Z"
+  },
+  {
+   "file": "30implicit_localization.csv",
+   "url": "https://osf.io/download/exnpw/",
+   "bytes": 313780,
+   "sha256": "90ae67b0a54311ef41d86b416749e00c5fbf035dd859525dcf426da10274edd5",
+   "fetched_utc": "2026-11-09T09:41:26Z"
+  },
+  {
+   "file": "handview_nocursor.csv",
+   "url": "https://osf.io/download/s2kfj/",
+   "bytes": 5563,
+   "sha256": "68e9b1844b0b699c8500d0998c536d7666d5853c6302f471db55eb327ac2b5f1",
+   "fetched_utc": "2026-11-09T09:41:32Z"
+  },
+  {
+   "file": "handview_localization.csv",
+   "url": "https://osf.io/download/uxrz2/",
+   "bytes": 443098,
+   "sha256": "34fd9ae11d4f0f4d90357487598ad89a3a6ec0c1b2ca10f324b3840341e47412",
+   "fetched_utc": "2026-11-09T09:41:37Z"
+  },
+  {
+   "file": "30explicit_nocursor.csv",
+   "url": "https://osf.io/download/db4yc/",
+   "bytes": 3989,
+   "sha256": "52334276182210e114523f822e833faeb3a2cefa97ea8af679947ca358df3d1c",
+   "fetched_utc": "2026-11-09T09:41:42Z"
+  },
+  {
+   "file": "30explicit_localization.csv",
+   "url": "https://osf.io/download/vqpe8/",
+   "bytes": 328723,
+   "sha256": "64af962bbecbb858d1482ff194a6102a4e70526450f79d17ea9ed8f72fca7236",
+   "fetched_utc": "2026-11-09T09:41:47Z"
+  },
+  {
+   "file": "cursorjump_nocursor.csv",
+   "url": "https://osf.io/download/bhuvk/",
+   "bytes": 3838,
+   "sha256": "1b3107ea9207ddd3afbc6d6a8dab551eb916a3958636961d2b20c1214a74534d",
+   "fetched_utc": "2026-11-09T09:41:52Z"
+  },
+  {
+   "file": "cursorjump_localization.csv",
+   "url": "https://osf.io/download/65arn/",
+   "bytes": 312745,
+   "sha256": "5c85258a4dcd0c2b6b61df7d058a77bad01a084946d32755053d7b43c2c92f24",
+   "fetched_utc": "2026-11-09T09:41:57Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gastrock2020_SciRep.zip"
+}

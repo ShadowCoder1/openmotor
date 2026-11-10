@@ -1,0 +1,267 @@
+{
+ "id": "Thompson2013_PLoSOne",
+ "module": "game",
+ "rows": 3395,
+ "subjects": 3395,
+ "persons": 3395,
+ "zip_bytes": 256962,
+ "zip_sha256": "37ad3ba768378cfabd7ac0d71077b404294ad02566dc8cc7e3660d74cf0925b2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "3395 rows as on the UCI page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "GameID unique, in increasing order (the file order is kept)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "league index 1-8 only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "missing values only in age and the two hours columns (professional players)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "players in the Bronze league",
+   "computed": 167.0,
+   "reported": 167.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players in the Silver league",
+   "computed": 347.0,
+   "reported": 347.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players in the Gold league",
+   "computed": 553.0,
+   "reported": 553.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players in the Platinum league",
+   "computed": 811.0,
+   "reported": 811.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players in the Diamond league",
+   "computed": 806.0,
+   "reported": 806.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players in the Masters league",
+   "computed": 621.0,
+   "reported": 621.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "professional games",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Analysis, 'The sample size by league' and Data Collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "players excluding the 35 GrandMasters the paper dropped",
+   "computed": 3360.0,
+   "reported": 3360.0,
+   "tol": 0,
+   "source": "Abstract; Data Collection",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean (years)",
+   "computed": 21.647904191616767,
+   "reported": 21.6,
+   "tol": 0.05,
+   "source": "Data Collection (mean 21.6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD (years)",
+   "computed": 4.206340688226189,
+   "reported": 4.2,
+   "tol": 0.05,
+   "source": "Data Collection (SD 4.2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age median (years)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Data Collection (median 21)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age minimum and maximum: minimum",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Data Collection (16-44)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age maximum",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Data Collection (16-44)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "actions per minute: mean",
+   "computed": 117.0469470927835,
+   "reported": 117.05,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "actions per minute: SD",
+   "computed": 51.94529098683485,
+   "reported": 51.95,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "actions per PAC: mean",
+   "computed": 5.272988453608248,
+   "reported": 5.27,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "actions per PAC: SD",
+   "computed": 1.494835497184856,
+   "reported": 1.49,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique hotkeys: mean",
+   "computed": 4.364653902798232,
+   "reported": 4.36,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique hotkeys: SD",
+   "computed": 2.3603330710612123,
+   "reported": 2.36,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "map explored: mean",
+   "computed": 22.131664212076583,
+   "reported": 22.13,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "map explored: SD",
+   "computed": 7.431719158149776,
+   "reported": 7.43,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique units made: mean",
+   "computed": 6.534020618556701,
+   "reported": 6.53,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unique units made: SD",
+   "computed": 1.8576967746613344,
+   "reported": 1.86,
+   "tol": 0.005,
+   "source": "Supporting Information, Figs S1-S15",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "action latency mean in seconds (timestamps / 88.5; paper 719.94 ms, mean only to 0.01 s here)",
+   "computed": 0.7202192393266934,
+   "reported": 0.71994,
+   "tol": 0.0005,
+   "source": "Supporting Information, Figs S1-S15 (S1)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The UCI file keeps 35 GrandMaster games (league 7) that the paper left out of its analysis (3,360 players there, 3,395 here).",
+  "The paper's supplementary latency and gap values are in milliseconds and seconds and its rates are per minute; this file holds the UCI versions in replay timestamps or per timestamp, which were not converted.",
+  "The paper's exclusion counts sum to a different total than it states, and the UCI page notes that some players may have submitted more than one game; the file has no player identifier, so every row is treated as a different person."
+ ],
+ "sources": [
+  {
+   "file": "skillcraft.zip",
+   "url": "https://archive.ics.uci.edu/static/public/272/skillcraft1+master+table+dataset.zip",
+   "bytes": 500403,
+   "sha256": "d6f4f88c2d077a0938cf774ff242df511c9a5801dcc66e4461ffdf893ce23fc2",
+   "fetched_utc": "2026-11-09T15:33:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Thompson2013_PLoSOne.zip"
+}

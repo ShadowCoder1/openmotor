@@ -1,0 +1,801 @@
+{
+ "id": "Li2026_PsyArXiv_posture",
+ "module": "speech",
+ "rows": 2640,
+ "subjects": 132,
+ "persons": 132,
+ "zip_bytes": 263236,
+ "zip_sha256": "e9ffcbab19f88b8f7d73eb8a44b729a491c57563fc03d741fcb98b325407070a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the six trial_exclusions.csv copies of the deposit are identical (same sha256)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "amplitude_envelope.csv and fundamental_frequency.csv are identical (same sha256)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one exclusion-file row per pair and trial (2640 rows, 66 pairs)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the clue-giver of each row is participant 1 in rounds 1 and 3 (sheets p1_*) and participant 2 in rounds 2 and 4",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the condition column of the f0 table agrees with the exclusion file's postural_stability on every trial it covers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pause_duration.csv: clue-giver agrees with the exclusion file on every trial; its stability_condition column copies the ground or board tag of the recording file name (not the analysis variable), so it is not used",
+   "ok": true,
+   "detail": "578 of 2183 rows differ from the analysis variable"
+  },
+  {
+   "kind": "internal",
+   "what": "every TextGrid of the interval table belongs to a trial of the exclusion file",
+   "ok": true,
+   "detail": "0 unmatched"
+  },
+  {
+   "kind": "internal",
+   "what": "filler table: one row per pair and trial, total = uh + uhm + um",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every filler row belongs to a trial of the exclusion file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "board_trial_metrics: one row per pair and trial, clue-giver as in the exclusion file, only wobble-board trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "board metrics sit on wobble-board trials of the right clue-giver",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "board_speech_trial_metrics: one speaking and one non-speaking row per trial at most",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept in order and number after all merges",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "demographics: 118 participants, all of them clue-givers of the exclusion file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "final sample: participants",
+   "computed": 118.0,
+   "reported": 118.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Abstract and Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final sample: pairs",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested but excluded: participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (14 participants, 7 pairs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested but excluded: pairs",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded for microphone popping or rustling",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (1) n = 8",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded for low English proficiency only",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (2) n = 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded for not adhering to the balance manipulation",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (3) n = 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded for several reasons",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (4) n = 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants: females",
+   "computed": 95.0,
+   "reported": 95.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants: males",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants: non-binary",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants: prefer not to disclose",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: youngest",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (18 to 27 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: oldest",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (18 to 27 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: mean (years; 117 of 118 gave an age)",
+   "computed": 18.931623931623932,
+   "reported": 18.93,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (M = 18.93)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age: SD (years)",
+   "computed": 1.3628475243381977,
+   "reported": 1.36,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants (SD = 1.36)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "English as first language",
+   "computed": 98.0,
+   "reported": 98.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials of the 59 included pairs",
+   "computed": 2360.0,
+   "reported": 2360.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions (25 of 2360 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials",
+   "computed": 2335.0,
+   "reported": 2335.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: microphone popping or rustling",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: external noise",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: skipped by the experimenter",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: skipped by the participant",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: participant asked the experimenter a question",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: participant said the target word",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials excluded: participants spoke another language",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pairs with 0 trial exclusions",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pairs with 1 trial exclusions",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pairs with 2 trial exclusions",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Trial exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials with a mean f0",
+   "computed": 2295.0,
+   "reported": 2295.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials with a mean speech rate",
+   "computed": 2303.0,
+   "reported": 2303.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials with a mean pause duration",
+   "computed": 2165.0,
+   "reported": 2165.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials with a pause frequency",
+   "computed": 2335.0,
+   "reported": 2335.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "valid trials with a filler particle frequency",
+   "computed": 2335.0,
+   "reported": 2335.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "valid trials with a mean amplitude envelope: 2303, the same as for speech rate (the paper's text says 2305)",
+   "ok": true,
+   "detail": "2303"
+  },
+  {
+   "kind": "published",
+   "what": "valid wobble-board trials with balance metrics",
+   "computed": 1153.0,
+   "reported": 1153.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Methods, Operationalization (1153 usable board trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "clue-givers with balance metrics",
+   "computed": 117.0,
+   "reported": 117.0,
+   "tol": 0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Manipulation checks (N = 117)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "angular velocity RMS, mean over clue-givers (deg/s)",
+   "computed": 12.84293953114291,
+   "reported": 12.84,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Manipulation checks (M = 12.84)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "angular velocity RMS, SD over clue-givers (deg/s)",
+   "computed": 3.734202595786338,
+   "reported": 3.73,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Manipulation checks (SD = 3.73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tilt SD, mean over clue-givers (deg)",
+   "computed": 4.204549125230602,
+   "reported": 4.2,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Manipulation checks (M = 4.20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tilt SD, SD over clue-givers (deg)",
+   "computed": 1.228838971293105,
+   "reported": 1.23,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Manipulation checks (SD = 1.23)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "f0 (Hz): unstable (board) mean over participants",
+   "computed": 197.92563091915355,
+   "reported": 198.0,
+   "tol": 1.0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "f0 (Hz): stable (ground) mean over participants",
+   "computed": 194.5874832793659,
+   "reported": 195.0,
+   "tol": 1.0,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "amplitude envelope: unstable (board) mean over participants",
+   "computed": 0.004684123385852166,
+   "reported": 0.00468,
+   "tol": 0.0003,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "amplitude envelope: stable (ground) mean over participants",
+   "computed": 0.00438606526047888,
+   "reported": 0.00439,
+   "tol": 0.0003,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech rate (syllables/s): unstable (board) mean over participants",
+   "computed": 3.1469829171219414,
+   "reported": 3.15,
+   "tol": 0.05,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech rate (syllables/s): stable (ground) mean over participants",
+   "computed": 3.125091392797643,
+   "reported": 3.12,
+   "tol": 0.05,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pause duration (s): unstable (board) mean over participants",
+   "computed": 0.9729154560994518,
+   "reported": 0.97,
+   "tol": 0.05,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pause duration (s): stable (ground) mean over participants",
+   "computed": 1.0223661870567662,
+   "reported": 1.02,
+   "tol": 0.05,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, estimated marginal mean",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pause frequency: rate ratio board / ground (raw participant means)",
+   "computed": 0.9738788078976249,
+   "reported": 0.97,
+   "tol": 0.01,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Pause frequency (rate ratio = 0.97)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pause frequency: percent lower on the board",
+   "computed": 2.612119210237507,
+   "reported": 2.6,
+   "tol": 0.2,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Pause frequency (estimated to be 2.6% lower)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "filler particle frequency: rate ratio board / ground (raw participant means)",
+   "computed": 0.9766734409550469,
+   "reported": 0.99,
+   "tol": 0.02,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Filler particle frequency (rate ratio = 0.99)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "f0: mean within-participant difference board minus ground (Hz)",
+   "computed": 3.3381476397876617,
+   "reported": 3.34,
+   "tol": 0.3,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, f0 (beta = 3.34 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "amplitude envelope: mean within-participant difference board minus ground",
+   "computed": 0.000298058125373285,
+   "reported": 0.000294,
+   "tol": 5e-05,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results, Amplitude envelope (beta = 0.000294)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech rate (syllables/s): mean within-participant difference board minus ground",
+   "computed": 0.02189152432429811,
+   "reported": 0.025,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results (speech rate: estimated difference 0.025)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pause duration (s): mean within-participant difference board minus ground",
+   "computed": -0.04945073095731438,
+   "reported": -0.052,
+   "tol": 0.005,
+   "source": "Li et al. 2026 (J Acoust Soc Am 159:5491; preprint v2 identical), Results (pause duration: estimated difference 0.052)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "value ranges: f0 80-335 Hz, speech rate under 7 syllables/s, pauses and fillers non-negative integers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's rows run in the authors' trial order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 clue-giving trials per participant",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The recording file names carry a ground or board tag that disagrees with the authors' postural stability variable on 680 of 2640 rows, all of them in participant 2's rounds (rounds 2 and 4); this tag is not used. The condition here is the authors' postural_stability variable, which is also the condition column of their f0 and pause-duration tables. The gyroscope backs it: the board moves (angular velocity RMS about 13 deg/s) on exactly the rows labelled board and is at rest (about 0) on the ground rows of participant 1, whereas the file name tags of participant 2's rounds would put board trials on rows where the board did not move. In the authors' analysis variable, therefore, participant 2 of every pair stands on the ground in round 2 and on the board in round 4, and only participant 1's order is counterbalanced across pairs (the paper says the order was counterbalanced over pairs without saying for which partner).",
+  "The exclusion file's own gyro_tilt_sd_x column (values near 140 to 180) looks like the SD of an angle that wraps at 180 degrees (the paper uses the unwrapped angle) and is not used; the board_trial_metrics table (tilt SD 0.7 to 14.6 degrees), whose clue-giver means reproduce the paper's manipulation check, is used for the board metrics. The exclusion file also holds gyro values on ground trials (board at rest, near zero); they are not copied.",
+  "The paper's text gives 2305 trials with a mean amplitude envelope; the shared table has 2303 valid trials with one, the same as for speech rate (2303), while the f0 count (2295) and all other counts match, so the 2305 looks like an error in the text. The stability_condition column of the authors' pause_duration table copies the ground or board tag of the recording file name, so it disagrees with the analysis variable on 578 of its 2183 rows (their R script takes the condition from the exclusion file); it is not used.",
+  "The paper's condition means are estimated marginal means of mixed models (negative binomial for the counts); the values here are averages of the participants' own condition means over the valid trials, so they can differ slightly (the checks use a tolerance)."
+ ],
+ "sources": [
+  {
+   "file": "00_ReadMe.txt",
+   "url": "https://osf.io/download/g5ebz/",
+   "bytes": 6757,
+   "sha256": "1b06ced59ec278f7290d09676508136c5c5fa3a3bcd991fd54a74ba0ea0fc006",
+   "fetched_utc": "2026-11-08T22:49:57Z"
+  },
+  {
+   "file": "demographic_information.csv",
+   "url": "https://osf.io/download/zw2yf/",
+   "bytes": 20991,
+   "sha256": "581d7648bcf4151ffe5f2ad22a659e3479d6132713a721758288367222bcd60a",
+   "fetched_utc": "2026-11-08T22:50:01Z"
+  },
+  {
+   "file": "target_word_ser.csv",
+   "url": "https://osf.io/download/x9qpy/",
+   "bytes": 712,
+   "sha256": "94f69924bd89c47e024115239e70278bce8c4d4f645f69781e7e6fbe992951e7",
+   "fetched_utc": "2026-11-08T22:50:05Z"
+  },
+  {
+   "file": "board_trial_metrics.csv",
+   "url": "https://osf.io/download/392h6/",
+   "bytes": 64251,
+   "sha256": "3da17ac1b6c61c98515d95d8ad537cf85c6d285e24189fd50056ba92eab4d8d3",
+   "fetched_utc": "2026-11-08T22:50:10Z"
+  },
+  {
+   "file": "board_speech_trial_metrics.csv",
+   "url": "https://osf.io/download/2tgdn/",
+   "bytes": 162331,
+   "sha256": "e57e929b84a2a8f516efdefa903a7e5249106f291a861e2bcc376e6f42a4aea1",
+   "fetched_utc": "2026-11-08T22:50:15Z"
+  },
+  {
+   "file": "Manipulation_checks.Rmd",
+   "url": "https://osf.io/download/4zwvb/",
+   "bytes": 17671,
+   "sha256": "3f61c15b904d9b51517ee5bce94c60db26066cba4e23131042757477067b015c",
+   "fetched_utc": "2026-11-08T22:50:29Z"
+  },
+  {
+   "file": "amplitude_envelope.csv",
+   "url": "https://osf.io/download/p4vsz/",
+   "bytes": 403945,
+   "sha256": "481c82cb4e50b4758e99cc123e48d85234ab731d6f668f15f92286e7d5cee807",
+   "fetched_utc": "2026-11-08T22:50:59Z"
+  },
+  {
+   "file": "fundamental_frequency.csv",
+   "url": "https://osf.io/download/s9g5v/",
+   "bytes": 403945,
+   "sha256": "481c82cb4e50b4758e99cc123e48d85234ab731d6f668f15f92286e7d5cee807",
+   "fetched_utc": "2026-11-08T22:51:04Z"
+  },
+  {
+   "file": "pause_duration.csv",
+   "url": "https://osf.io/download/gjmzc/",
+   "bytes": 202394,
+   "sha256": "ce1048e1fe0137209f72011f967d55175efc4f2bbb2afa963c9c89f3b88da0dc",
+   "fetched_utc": "2026-11-08T22:51:08Z"
+  },
+  {
+   "file": "pause_frequency.csv",
+   "url": "https://osf.io/download/q6ed8/",
+   "bytes": 3356813,
+   "sha256": "cd14da293b4a3c88679b4b3b89d108c587655ba51b80704a362112c503e7442e",
+   "fetched_utc": "2026-11-08T22:51:14Z"
+  },
+  {
+   "file": "speech_rate.csv",
+   "url": "https://osf.io/download/69a864f814965969e0e7d8a4/",
+   "bytes": 241367,
+   "sha256": "302117d37d1ebb2745c30dba68dd9f3ba8e1ab6a834a00130d3061440aa7e0f3",
+   "fetched_utc": "2026-11-08T22:51:18Z"
+  },
+  {
+   "file": "filler_particle_frequency.csv",
+   "url": "https://osf.io/download/7k8ej/",
+   "bytes": 47308,
+   "sha256": "13d7f1926f0636146457779b6b1f08205d0902efe1df59266d406fa7ed8d18ac",
+   "fetched_utc": "2026-11-08T22:51:23Z"
+  },
+  {
+   "file": "trial_exclusions_AE.csv",
+   "url": "https://osf.io/download/ar7hq/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:28Z"
+  },
+  {
+   "file": "trial_exclusions_F0.csv",
+   "url": "https://osf.io/download/xguk2/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:39Z"
+  },
+  {
+   "file": "trial_exclusions_PD.csv",
+   "url": "https://osf.io/download/q3mna/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:44Z"
+  },
+  {
+   "file": "trial_exclusions_PF.csv",
+   "url": "https://osf.io/download/skqt2/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:49Z"
+  },
+  {
+   "file": "trial_exclusions_SR.csv",
+   "url": "https://osf.io/download/fsgrb/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:54Z"
+  },
+  {
+   "file": "trial_exclusions_FP.csv",
+   "url": "https://osf.io/download/69a85d525fb95e4d9459d08e/",
+   "bytes": 1696573,
+   "sha256": "84ae39f707d54406eb049fb779c60227dee82342ca0777eae6e9df8d2c3b6c11",
+   "fetched_utc": "2026-11-08T22:51:59Z"
+  },
+  {
+   "file": "Amplitude_envelope.Rmd",
+   "url": "https://osf.io/download/5p46c/",
+   "bytes": 5847,
+   "sha256": "5fbfcd78d19c6efcb4f37c80765953303d756ded12ba6171e1e417dbd5bb0f12",
+   "fetched_utc": "2026-11-08T22:52:04Z"
+  },
+  {
+   "file": "Fundamental_frequency.Rmd",
+   "url": "https://osf.io/download/c8kx6/",
+   "bytes": 5604,
+   "sha256": "ff0af1b0a2d548b8b8fa71beae16cefe1de3d0cbfc2893cd72ea17380b9c8172",
+   "fetched_utc": "2026-11-08T22:52:08Z"
+  },
+  {
+   "file": "Pause_duration.Rmd",
+   "url": "https://osf.io/download/7afrv/",
+   "bytes": 5706,
+   "sha256": "91d7508b713bdf1dfe577c26157de915ae109adfefb59569b7e6794bedde77c3",
+   "fetched_utc": "2026-11-08T22:52:12Z"
+  },
+  {
+   "file": "Pause_frequency.Rmd",
+   "url": "https://osf.io/download/djrx9/",
+   "bytes": 6970,
+   "sha256": "eb27a6be1e16cbfd3a79a7934402c7703bd37cc3f0f2dd3530719be9e387670b",
+   "fetched_utc": "2026-11-08T22:52:16Z"
+  },
+  {
+   "file": "Speech_rate.Rmd",
+   "url": "https://osf.io/download/jwbqt/",
+   "bytes": 5694,
+   "sha256": "cc03178d7916bfd771825b69ad279d2a56c57e9c9fab4152dd05d4a07b0cbf9a",
+   "fetched_utc": "2026-11-08T22:52:21Z"
+  },
+  {
+   "file": "Filler_particle_frequency.Rmd",
+   "url": "https://osf.io/download/3jw64/",
+   "bytes": 5925,
+   "sha256": "3c21442b8d9d402cdbd4c6808cf0b971020d4a19979f419071f6d1d04e4a0044",
+   "fetched_utc": "2026-11-08T22:52:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Li2026_PsyArXiv_posture.zip"
+}

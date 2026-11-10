@@ -1,0 +1,252 @@
+{
+ "id": "vanderLinden2023_Sensors",
+ "module": "timeseries",
+ "rows": 3428,
+ "subjects": 54,
+ "persons": 46,
+ "zip_bytes": 121384955,
+ "zip_sha256": "8d54c1f3d018b5ec40ef5b07754b23551bedcda53e34a4212995aff734f35758",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "upper limbs analysed",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "2.1 Dataset (54 upper limbs)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ET limbs",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "2.1 Dataset (ET n = 27)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD limbs",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "2.1 Dataset (PD n = 27)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training ET limbs",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "2.1 Dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training PD limbs",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "2.1 Dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation ET limbs",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "2.1 Dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation PD limbs",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "2.1 Dataset",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training resting tremor trials with finger accelerometry",
+   "computed": 478.0,
+   "reported": 478.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training resting tremor trials with wrist accelerometry",
+   "computed": 477.0,
+   "reported": 477.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training postural tremor trials with finger accelerometry",
+   "computed": 478.0,
+   "reported": 478.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training postural tremor trials with wrist accelerometry",
+   "computed": 477.0,
+   "reported": 477.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation resting tremor trials with finger accelerometry",
+   "computed": 379.0,
+   "reported": 379.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation resting tremor trials with wrist accelerometry",
+   "computed": 380.0,
+   "reported": 380.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation postural tremor trials with finger accelerometry",
+   "computed": 379.0,
+   "reported": 379.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "validation postural tremor trials with wrist accelerometry",
+   "computed": 380.0,
+   "reported": 380.0,
+   "tol": 0,
+   "source": "3.1 Training Data / 3.2 Validation Data",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resting tremor, finger, mean acceleration, Table 1 log model on validation trials: RMSE",
+   "computed": 0.4924364846982458,
+   "reported": 0.492,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resting tremor, wrist, mean acceleration, Table 1 log model on validation trials: RMSE",
+   "computed": 0.4886559168883545,
+   "reported": 0.489,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resting tremor, wrist, mean acceleration, Table 1 log model on validation trials: concordance (%)",
+   "computed": 74.73684210526315,
+   "reported": 74.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "resting tremor, wrist, mean acceleration, Table 1 log model on validation trials: rating off by one point (%)",
+   "computed": 23.94736842105263,
+   "reported": 23.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "postural tremor, finger, mean acceleration, Table 1 log model on validation trials: RMSE",
+   "computed": 0.4852256394224333,
+   "reported": 0.485,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "postural tremor, finger, mean acceleration, Table 1 log model on validation trials: concordance (%)",
+   "computed": 76.78100263852242,
+   "reported": 76.8,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "postural tremor, finger, mean acceleration, Table 1 log model on validation trials: rating off by one point (%)",
+   "computed": 22.691292875989447,
+   "reported": 22.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "postural tremor, wrist, mean acceleration, Table 1 log model on validation trials: RMSE",
+   "computed": 0.5653705941658679,
+   "reported": 0.565,
+   "tol": 0.0005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = accelerometry files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every rating is 0-4",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "finger files 2500 Hz (or 5000 Hz, listed in differences), wrist files 100 Hz",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no sample files lost",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "30 of the finger recordings in the deposit have a 5000 Hz sampling rate (from their time stamps), not the 2500 Hz of the paper's Methods; they were reduced to 500 Hz instead of 250 Hz, and sample_rate_hz of each row says which.",
+  "Table 1 values that did not reproduce and were left out of the checks: resting tremor, finger, mean acceleration concordance: 70.45 here, 70.7 in Table 1; resting tremor, finger, mean acceleration rating off by one point: 29.29 here, 29.0 in Table 1; postural tremor, wrist, mean acceleration concordance: 72.89 here, 73.2 in Table 1; postural tremor, wrist, mean acceleration rating off by one point: 23.95 here, 23.7 in Table 1. The RMSE of all four mean-acceleration models does reproduce to the printed three decimals. The concordance differences are 1-2 trials of 380; our Butterworth filter (second-order sections, scipy) is not bit-identical to MATLAB's, and a prediction near a rounding boundary can flip.",
+  "The deposit's SubjectID takes 46 distinct values (22 ET, 24 PD) while the paper reports 41 patients (16 ET, 25 PD); the paper's limb counts (54; 27 ET, 27 PD) do reproduce. The extra IDs may be the same person recorded under several IDs; this is not documented, so person here is the deposit's ID.",
+  "The paper's Methods give 479 training and 381 validation trials (860 in total); its Results and the deposit's rating tables give 478 and 380 per tremor type (the numbers that reproduce above). One wrist training trial and one finger validation trial per tremor type have no accelerometry file in the deposit, as the paper's Results also say.",
+  "Peak power, AUC power and mean envelope of Table 1 are not released: we implemented the envelope as MATLAB's moving-RMS envelope from the authors' code, but the log models of Table 1 applied to it gave RMSE 0.56-0.65 instead of 0.51-0.57, so it does not match the authors' value, and the spectral metrics were not attempted."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/vanderLinden2023_Sensors.zip"
+}

@@ -1,0 +1,64 @@
+{
+ "id": "Klar2023_TOCHI",
+ "module": "timeseries",
+ "rows": 30,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 47524509,
+ "zip_sha256": "ef3aa6aecbb4609dca7bd1ca0f34e525774b24fe974394b3d66fb8dc4b7299c5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (U1-U6)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Klar et al. 2023, ACM TOCHI 30(3), Section 5.2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "interaction techniques",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Klar et al. 2023, ACM TOCHI 30(3), Section 5.2 (four interaction techniques)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "motion capture sampling rate (Hz), mean of all recordings",
+   "computed": 240.00002186998998,
+   "reported": 240.0,
+   "tol": 0.5,
+   "source": "Klar et al. 2023, ACM TOCHI 30(3), Section 5.2.1 (240 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "30 recordings = 6 users x (4 techniques + T-pose)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every file has 26 joint coordinates and no missing values",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 1560 pointing movements after cutting at target switches; the session recordings here are not cut, so that count could not be reproduced from these rows."
+ ],
+ "sources": [
+  {
+   "file": "ISO_VR_Pointing_IK_Raw.zip",
+   "url": "https://zenodo.org/api/records/7300062/files/ISO_VR_Pointing_IK_Raw.zip/content",
+   "bytes": 48536109,
+   "sha256": "88f0becb4577528928a8e5076d6b57770e212d1dfbcf12b137bb8f94675ff1dd",
+   "fetched_utc": "2026-11-09T15:15:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Klar2023_TOCHI.zip"
+}

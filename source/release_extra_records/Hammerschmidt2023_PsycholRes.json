@@ -1,0 +1,162 @@
+{
+ "id": "Hammerschmidt2023_PsycholRes",
+ "module": "summary",
+ "rows": 7782,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 121149,
+ "zip_sha256": "9638310cf1c3dba041761ccd34191b513542dd2d7440ccde2c68a0fa814c4cac",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean",
+   "computed": 28.63888888888889,
+   "reported": 28.64,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD",
+   "computed": 4.998015479183587,
+   "reported": 5.0,
+   "tol": 0.005,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tests (36 x 28)",
+   "computed": 1008.0,
+   "reported": 1008.0,
+   "tol": 0,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Gold-MSI general: mean over participants",
+   "computed": 71.11111111111111,
+   "reported": 71.11,
+   "tol": 0.01,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Gold-MSI general: SD",
+   "computed": 23.90789203562919,
+   "reported": 23.91,
+   "tol": 0.01,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Method (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum SMT (ms)",
+   "computed": 180.7361,
+   "reported": 181.0,
+   "tol": 0.5,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Results (descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum SMT (ms)",
+   "computed": 1821.7692,
+   "reported": 1822.0,
+   "tol": 0.5,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Results (descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall mean SMT (ms)",
+   "computed": 649.3030054223149,
+   "reported": 650.0,
+   "tol": 1.5,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Results (descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "overall SD of SMT (ms)",
+   "computed": 251.71183330506315,
+   "reported": 253.0,
+   "tol": 1.5,
+   "source": "Hammerschmidt & Woellner 2022, Psychological Research 87:327, Results (descriptives)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rebuilt exclusions leave about the 946 tests the paper analysed (not exact)",
+   "ok": true,
+   "detail": "959"
+  },
+  {
+   "kind": "internal",
+   "what": "1008 sessions = 36 x 28",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "bpm = 60000 / smt_ms in the rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every smt_ms row has an output row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no lost participants",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analysed N = 946 tests; the rebuilt exclusion flag (no SMT, per-participant 1.5 IQR outlier) leaves 959, because the deposit does not say which further 13 or so tests (for example missing questionnaire answers or a negative time of day) were left out.",
+  "The paper reports a mean tapping variability (CV) of 9.25% (SD 5.46); the rows give 9.96% (SD 6.00) for the sessions kept, so this number was not reproduced."
+ ],
+ "sources": [
+  {
+   "file": "smt_esm_data.csv",
+   "url": "https://zenodo.org/api/records/5947002/files/smt_esm_data.csv/content",
+   "bytes": 275067,
+   "sha256": "0d9d9a4b33db21214ebb0db8ab1ff097ad6786a55d37899f0ed82d90865ae325",
+   "fetched_utc": "2026-11-09T03:55:42Z"
+  },
+  {
+   "file": "smt_esm_variable_list.txt",
+   "url": "https://zenodo.org/api/records/5947002/files/smt_esm_variable_list.txt/content",
+   "bytes": 4391,
+   "sha256": "8784d6109015a6defeb8d1896bf7fe4e856db83eada10c274eea56933e6caec0",
+   "fetched_utc": "2026-11-09T03:56:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hammerschmidt2023_PsycholRes.zip"
+}

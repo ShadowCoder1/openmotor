@@ -1,0 +1,394 @@
+{
+ "id": "Kang2026_bioRxiv",
+ "module": "timeseries",
+ "rows": 138,
+ "subjects": 27,
+ "persons": 27,
+ "zip_bytes": 1658469,
+ "zip_sha256": "478bc19105017031d1ef426d170cefc05f2bb2a7ef6469ccee06a07e6d1eb59f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (27 adults)",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "deposit README, Experiment and units",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with metabolic data",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "deposit README (energy excludes one participant)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "metabolic participants, condition_1",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "deposit README (8/9/9 by condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "metabolic participants, condition_2",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "deposit README (8/9/9 by condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "metabolic participants, condition_3",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "deposit README (8/9/9 by condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tied metabolic samples per participant",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "deposit README (360 tied samples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "split metabolic samples per participant",
+   "computed": 2700.0,
+   "reported": 2700.0,
+   "tol": 0,
+   "source": "deposit README (2,700 split samples)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with step-length asymmetry",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "deposit README",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with step-time asymmetry",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "deposit README",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with double-support asymmetry",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "deposit README",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean belt speed condition_1 (m/s)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "deposit README (mean belt speed 1.0 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean belt speed condition_2 (m/s)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "deposit README (mean belt speed 1.0 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean belt speed condition_3 (m/s)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "deposit README (mean belt speed 1.0 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left belt speed condition_3 (m/s)",
+   "computed": 1.5,
+   "reported": 1.5,
+   "tol": 0.0,
+   "source": "deposit README condition table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rows excluded AB19 from energy",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "deposit README (energy excludes AB19)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tied_sla: AB11, AB23, AB25, AB27 absent",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "deposit README",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "split_sla: AB11, AB23, AB25, AB27 absent",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "deposit README",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every sample file has declared length",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = sum of CSV rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample counts match declared lengths",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper text could not be read (the preprint's full text was not available from Europe PMC or the authors' page), so the published checks are the participant and sample counts that the deposit's own README documents; no result values of the paper were reproduced.",
+  "The preprint title differs from the Zenodo record and README title (Safety prioritization shapes locomotor adaptation and performance); no published version was found."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/README.md)",
+   "size": 8319,
+   "sha256": "400eb6138d2e7b011f39b0bd93f69ddeeaaac763df5c26b167e40ecfee579a9c"
+  },
+  {
+   "file": "processed_csv__split_ds_asym.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/split_ds_asym.csv)",
+   "size": 986769,
+   "sha256": "c76b427794b974724721a3afb9dec05dccd9742a9faf463fb818fcabb2db2d9a"
+  },
+  {
+   "file": "processed_csv__split_energy.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/split_energy.csv)",
+   "size": 639933,
+   "sha256": "f3b41c920321762248fabe2552794d9d19697c26b97b04f15d3e2ffee3c43034"
+  },
+  {
+   "file": "processed_csv__split_sla.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/split_sla.csv)",
+   "size": 538564,
+   "sha256": "2a5760ced86edf1fc6e463d4f1d1b8c61d3be0269a7b35f878642c9ffbb08ac2"
+  },
+  {
+   "file": "processed_csv__split_step_time_asym.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/split_step_time_asym.csv)",
+   "size": 959028,
+   "sha256": "3745658ea8da916cbd2783ef106d02c7cc60a330998646b39fc745ab2388cbd6"
+  },
+  {
+   "file": "processed_csv__tied_energy.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/tied_energy.csv)",
+   "size": 84985,
+   "sha256": "e8af8e1a895d5436eaa9a672d7486713cc2fb5fb280405a7de03f952ad13486c"
+  },
+  {
+   "file": "processed_csv__tied_sla.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_csv/tied_sla.csv)",
+   "size": 70751,
+   "sha256": "2b134ad6a97584a4426751afdaf87ecb16508bc4bd7b3f7d82fb49f489851d7d"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB01.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB01.mat)",
+   "size": 27834,
+   "sha256": "5bf4f9c2a509c381155115c1b7b355c1dd76b6440815504afcfb6e0bd58bb543"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB02.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB02.mat)",
+   "size": 28052,
+   "sha256": "69d7be5afa941b5a446f4eb4dfc32ad8c93cafc82a1dc804b797940846bd1d34"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB05.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB05.mat)",
+   "size": 27841,
+   "sha256": "7268fb6d7dd59cad9451baca0baafa4b0eb2bf2d78e0f61b82f8400571ebf569"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB06.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB06.mat)",
+   "size": 27710,
+   "sha256": "0b9a291387449b298eda1b2beb04fb75b784a8583e8343ca57ac675ec204ad72"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB07.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB07.mat)",
+   "size": 28246,
+   "sha256": "35e50c6a57311d71f818e40a245314e765239910ebb2e87378bbe43c58f15962"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB08.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB08.mat)",
+   "size": 27935,
+   "sha256": "9ddd0c07eed405c3dc110a1555be97d659a8c8e321ccdcfed2252e7dfcf4992d"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB09.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB09.mat)",
+   "size": 28237,
+   "sha256": "2551568292dfaea4fdaab4e376cca3c1a3497e55ed845718048a0759b2130888"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB10.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB10.mat)",
+   "size": 28005,
+   "sha256": "536221635fa51d86478242ec20dc662d02e00206d360a15a8d0ff8a76808e82e"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB11.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB11.mat)",
+   "size": 27685,
+   "sha256": "cfd2294093f7d160a43ac6d4029c9a51710134df439201efc07c84fc643a4138"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB12.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB12.mat)",
+   "size": 27822,
+   "sha256": "42730def675f26cd89f1456cfee5e199ebfb8f6266d48f8d7503598149630968"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB13.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB13.mat)",
+   "size": 28050,
+   "sha256": "9fd06c01694fe97d7f07a3a2b0c4cbe0d8ea9865b0e67fa32e60077c08ac147c"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB14.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB14.mat)",
+   "size": 28069,
+   "sha256": "01a1d4ba9ccf84b7db3631a24b6d5684b2d1d023f361f0d68d5e0ede0403fba6"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB15.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB15.mat)",
+   "size": 27865,
+   "sha256": "13ac5f41dd26924680fb3ff6aa55fb2f5938da8115f41281039e74270a2898fc"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB16.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB16.mat)",
+   "size": 27981,
+   "sha256": "d3eebeb6a783092faf6599b816e151a3a06c53bfaf9d1ea639aa7ad69ef283a3"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB17.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB17.mat)",
+   "size": 27802,
+   "sha256": "6dce29250b84e7f562f9a5987eeb0c5f374a2ac634d513dca21cba0a8b8e94c3"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB18.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB18.mat)",
+   "size": 28311,
+   "sha256": "2bda32f283d5bc5eeaa7e9d0731f99f36af0a82334d75b03de3f7bb5ac8e75c8"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB20.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB20.mat)",
+   "size": 27819,
+   "sha256": "c789053eda38b7012a07c52f2e5b33fd6454f37f3514f93283c35035fb60bcf8"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB21.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB21.mat)",
+   "size": 28029,
+   "sha256": "0c5ba4526592e66f3fb88f72721c842ebb5d0e2f458359bb51234767dbcd1933"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB22.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB22.mat)",
+   "size": 28028,
+   "sha256": "8f74abc75fde521f8db771198e6ff4b13b78a589b711fd0632150305c3e6acd3"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB23.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB23.mat)",
+   "size": 28116,
+   "sha256": "794a75a957135f24a15a56803ff94c0f01720e0692a31c6d673fb854ecb47481"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB24.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB24.mat)",
+   "size": 27928,
+   "sha256": "d8f6c0c2a8681f8bd981dff0e02226d525bad2a718e13eec94ebbeea0291dd5b"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB25.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB25.mat)",
+   "size": 28072,
+   "sha256": "42bfdb3f9b3b256c97365dba16667dc1a3c946e79102c031666b677137ce1365"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB26.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB26.mat)",
+   "size": 27156,
+   "sha256": "a4f3171072fea5dbf45ffe2c3d8e46c321261be62e16d8243a5401e1f46dd180"
+  },
+  {
+   "file": "processed_mat__energy__processed_energy_AB27.mat",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/processed_mat/energy/processed_energy_AB27.mat)",
+   "size": 27734,
+   "sha256": "fa9d072f07d0272b4b6ddfd26846b942302ddca7e090f1215a900a476a285566"
+  },
+  {
+   "file": "subject_information__experimental_notes.docx",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/subject_information/experimental_notes.docx)",
+   "size": 9852,
+   "sha256": "68b8cfc35a0f50677e1341a59109e0d43406c1a5a65fb6e770d7a210398cbf9a"
+  },
+  {
+   "file": "subject_information__subject_experiment_information.xlsx",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/subject_information/subject_experiment_information.xlsx)",
+   "size": 9850,
+   "sha256": "ab00c1283fed303e7c735e8e20d28816e57ef25529ef50050b743be53b70aa46"
+  },
+  {
+   "file": "validation__fall_fit_comparison.csv",
+   "url": "https://zenodo.org/api/records/23904047/files/invLocAd-DATA.zip/content (range, member invLocAd-DATA/validation/fall_fit_comparison.csv)",
+   "size": 256,
+   "sha256": "77cb9b4433f54650b7ad61abb11755f0da33f589e5bcd0ffb7775139ad03d73c"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kang2026_bioRxiv.zip"
+}

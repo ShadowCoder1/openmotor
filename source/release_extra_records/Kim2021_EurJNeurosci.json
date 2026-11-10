@@ -1,0 +1,189 @@
+{
+ "id": "Kim2021_EurJNeurosci",
+ "module": "speech",
+ "rows": 4656,
+ "subjects": 96,
+ "persons": 24,
+ "zip_bytes": 90349,
+ "zip_sha256": "2a3e1a84eee3fc20dae9107a2da06b4e5d60031e4a19302221d0be3977d10de9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants who do not stutter",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Kim & Max 2021, Eur J Neurosci, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who stutter",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Kim & Max 2021, Eur J Neurosci, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per word in the adaptation task",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Kim & Max 2021, Eur J Neurosci, Methods (10 baseline, 60 perturbation, 10 after-effects trials per word)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "perturbation phase has 60 trials per word",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "missing F1 values",
+   "ok": true,
+   "detail": "4 missing"
+  },
+  {
+   "kind": "published",
+   "what": "repeated-measures ANOVA on extent of adaptation (early and late, bed and pet): Group, F(1, 22)",
+   "computed": 13.425990926425126,
+   "reported": 13.426,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Auditory-motor adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repeated-measures ANOVA on extent of adaptation (early and late, bed and pet): Group x Phase, F(1, 22)",
+   "computed": 1.4471087577197017,
+   "reported": 1.447,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Auditory-motor adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repeated-measures ANOVA on extent of adaptation (early and late, bed and pet): Group x Word, F(1, 22)",
+   "computed": 0.19804408970562967,
+   "reported": 0.198,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Auditory-motor adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repeated-measures ANOVA on extent of adaptation (early and late, bed and pet): Group x PhaseXWord, F(1, 22)",
+   "computed": 1.104715733745665,
+   "reported": 1.105,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Auditory-motor adaptation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, baseline, adults who do not stutter: t(11)",
+   "computed": 0.5055776785871852,
+   "reported": 0.506,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, baseline, adults who stutter: t(11)",
+   "computed": -0.6407619711776883,
+   "reported": -0.641,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, early, adults who do not stutter: t(11)",
+   "computed": 1.3990344390676666,
+   "reported": 1.399,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, early, adults who stutter: t(11)",
+   "computed": 1.0528453294214293,
+   "reported": 1.053,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, late, adults who do not stutter: t(11)",
+   "computed": -0.6647768863422775,
+   "reported": -0.665,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intent-to-change rating vs 0, late, adults who stutter: t(11)",
+   "computed": 0.5238179476319438,
+   "reported": 0.524,
+   "tol": 0.0005,
+   "source": "Kim & Max 2021, Eur J Neurosci, Results, Explicit strategy use",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The ANOVA main effect of Phase (paper F = 18.417), of Word (0.149) and the Phase x Word interaction (1.565) came out as 18.07, 0.155 and 1.558 from the shared trial values, so they were not used as checks; the Group effect, Group x Phase, Group x Word and the three-way interaction match to the printed digits."
+ ],
+ "sources": [
+  {
+   "file": "Adaptation_NormalizedCents_PET.txt",
+   "url": "https://osf.io/download/ab28x/",
+   "bytes": 33950,
+   "sha256": "31f2124834f80bc261e930f914a5529f921e6166bc9bd554efe6279c6ed454e9",
+   "fetched_utc": "2026-11-09T11:23:29Z"
+  },
+  {
+   "file": "Adaptation_NormalizedCents_BED.txt",
+   "url": "https://osf.io/download/bx7q2/",
+   "bytes": 33913,
+   "sha256": "2926cd01024e061c2d90896f18ad508cc83a101e9bc7a38218f74f9335a0fc75",
+   "fetched_utc": "2026-11-09T11:23:34Z"
+  },
+  {
+   "file": "explicit_BED_PET.txt",
+   "url": "https://osf.io/download/dxvs6/",
+   "bytes": 38098,
+   "sha256": "81cdd0edc4c3ef7155a02fdbbd300edb66825bcb05ec4701fdd3178d92ab1744",
+   "fetched_utc": "2026-11-09T11:23:39Z"
+  },
+  {
+   "file": "Target_BED.txt",
+   "url": "https://osf.io/download/rvcek/",
+   "bytes": 7029,
+   "sha256": "647f866bd23d088b220ddc3d43c5318c694e4bc6f177861fe7be6244651a08f8",
+   "fetched_utc": "2026-11-09T11:23:43Z"
+  },
+  {
+   "file": "Target_PET.txt",
+   "url": "https://osf.io/download/h6kfe/",
+   "bytes": 7074,
+   "sha256": "69421b53b6e1bc37a7fd8927e68914ac586e546852b657429b5b7da161fe8ab8",
+   "fetched_utc": "2026-11-09T11:23:47Z"
+  },
+  {
+   "file": "AdaptationData_KeyReadMe.txt",
+   "url": "https://osf.io/download/fzyw9/",
+   "bytes": 1347,
+   "sha256": "822d7aa6c63a2cd3441a257ae3fdced33ab0542dd67b0a68d8343093d4c89825",
+   "fetched_utc": "2026-11-09T11:23:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kim2021_EurJNeurosci.zip"
+}

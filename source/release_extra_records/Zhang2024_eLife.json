@@ -1,0 +1,227 @@
+{
+ "id": "Zhang2024_eLife",
+ "module": "reach90",
+ "rows": 10080,
+ "subjects": 84,
+ "persons": 84,
+ "zip_bytes": 250438,
+ "zip_sha256": "2c037bde73c145a8d0183da0e369126f9f5bd781ace545ebbde8cfe725d702fb",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 ('Eighty-four participants')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per clamp-size group",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (seven groups of 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per clamp-size group (largest)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (seven groups of 12)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of clamp sizes",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (2, 4, 8, 16, 32, 64, 95 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sum of the seven clamp sizes (2+4+8+16+32+64+95)",
+   "computed": 221.0,
+   "reported": 221.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (clamp sizes 2, 4, 8, 16, 32, 64, 95 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cycles per participant (480 reaches / 4)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (120 cycles)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline cycles per participant (15 veridical + 15 without feedback)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (15 + 15 baseline cycles)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "clamp cycles per participant",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (80 cycles of perturbation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "no-feedback aftereffect cycles per participant",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (10 cycles without feedback)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "groups whose adaptation extent exceeds the clamp size (2, 4, 8, 16 deg)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 ('groups with 2-16 deg ... overcompensated', cycles 101-110)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "groups of 32, 64 and 95 deg that overcompensate",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Results, Experiment 2 (only the 2-16 deg groups overcompensate)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 4's table of single-trial learning",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Experiment 4 ('Nineteen participants')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "single-trial-learning values per participant in Experiment 4 (3 days x 15 blocks x 12 clamp trials)",
+   "computed": 540.0,
+   "reported": 540.0,
+   "tol": 0,
+   "source": "Methods, Experiment 4 (540 trials overall, 12 clamp trials per block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 3's proprioception table",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (11 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per participant and perturbation size in Experiment 3",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3 (3-trial proprioception test block)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has the same group and clamp size on all 120 cycles; sub ids unique to a group",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: 84 x 120 = 10080",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing hand angles",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 table has 19 x 540 = 10260 rows and all 6 clamp sizes x 2 cursor conditions",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's README says trialType 3 marks the washout cycles; the file codes them 2 (cycles 111-120).",
+  "The paper reports a one-way ANOVA of adaptation extent (mean of cycles 101-110) over the seven groups of F(6,83) = 12.108. From the 84 participants of this file the same analysis gives F(6,77) = 12.761 (p = 6.0e-10); 83 cannot be the error degrees of freedom of seven groups of 12, so the reported degrees of freedom or the exact measure (for example a baseline correction or a different window) differ from the file's."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://ndownloader.figshare.com/files/44164202",
+   "bytes": 3598,
+   "sha256": "4ed9f49a7205e452a289743e8eb24f47f61fcf465cb0d62db7d2a670effa595c",
+   "fetched_utc": "2026-11-09T09:16:59Z"
+  },
+  {
+   "file": "Exp2.csv",
+   "url": "https://ndownloader.figshare.com/files/44164190",
+   "bytes": 310511,
+   "sha256": "3a9d68c25660e6d03e3c19535113eea1f0d96312fe2b3028d2fd591671544a97",
+   "fetched_utc": "2026-11-09T09:17:07Z"
+  },
+  {
+   "file": "Exp3.csv",
+   "url": "https://ndownloader.figshare.com/files/44164193",
+   "bytes": 3479,
+   "sha256": "f85a51225aff30e4273972487c03dc6a9e414c1a63ee25fbe228fbd8c4b7dc23",
+   "fetched_utc": "2026-11-09T09:17:11Z"
+  },
+  {
+   "file": "Exp4data.csv",
+   "url": "https://ndownloader.figshare.com/files/44164196",
+   "bytes": 288265,
+   "sha256": "dbcf97e485f7d3f5b66cb3093dedc6cea18b1d1c9ad5721e9a324e0079263589",
+   "fetched_utc": "2026-11-09T09:17:16Z"
+  },
+  {
+   "file": "Fig1B.csv",
+   "url": "https://ndownloader.figshare.com/files/44164199",
+   "bytes": 397,
+   "sha256": "5ef475c2fff1ee3ff4f9485000c55fe4827576b7cadda723d481d0f8d99ae911",
+   "fetched_utc": "2026-11-09T09:17:19Z"
+  },
+  {
+   "file": "Tsay_report.csv",
+   "url": "https://ndownloader.figshare.com/files/44164205",
+   "bytes": 157436,
+   "sha256": "2386f3b152a5b13031528354fbc22dce1759ff7efb942722efa53605c5043261",
+   "fetched_utc": "2026-11-09T09:17:23Z"
+  },
+  {
+   "file": "Tsay_STL.csv",
+   "url": "https://ndownloader.figshare.com/files/44164208",
+   "bytes": 5333,
+   "sha256": "e768cf9a81d7840439ff7e2e8f8b916754908135b2d64aab26441310967576fd",
+   "fetched_utc": "2026-11-09T09:17:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhang2024_eLife.zip"
+}

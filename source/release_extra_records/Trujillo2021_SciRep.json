@@ -1,0 +1,163 @@
+{
+ "id": "Trujillo2021_SciRep",
+ "module": "communication",
+ "rows": 2387,
+ "subjects": 61,
+ "persons": 61,
+ "zip_bytes": 196319,
+ "zip_sha256": "f3fa581a0f8cb0dd9e77719bf4263f2e4f23aa5ce522dcb4a8da4b83173c1213",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "modality file: Modality 1/2/3 = speech only / gesture only / both, as its G and S columns say",
+   "ok": true,
+   "detail": "0 inconsistent rows"
+  },
+  {
+   "kind": "internal",
+   "what": "attempt 1 rows with kinematics = the authors' A1 rows with a duration (1159), attempt 2 rows = A2 (519)",
+   "ok": true,
+   "detail": "1159 and 519"
+  },
+  {
+   "kind": "internal",
+   "what": "every one of the 1180 production rows (59 pairs x 20 rounds) has an attempt 1 row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "subject x round x attempt is unique",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "noise levels are 0, 4 or 8 talkers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "vertical amplitude within 0-5 and rounds within 1-20",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "speech_intensity_max_db within 50-110",
+   "ok": true,
+   "detail": "73.3-88.4"
+  },
+  {
+   "kind": "internal",
+   "what": "speech_f0_max_hz within 40-2000",
+   "ok": true,
+   "detail": "43.4-1.93e+03"
+  },
+  {
+   "kind": "internal",
+   "what": "attempt_duration_s within 0.3-15",
+   "ok": true,
+   "detail": "0.333-14.1"
+  },
+  {
+   "kind": "published",
+   "what": "participants with kinematic data after the excluded pair",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Trujillo et al. 2021, Sci Rep 11:16721, Methods (Participants: final sample of 58 native Dutch speakers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech intensity, 8-talker minus clear, mixed model with random pair and verb intercepts (dB)",
+   "computed": 0.2790394563634128,
+   "reported": 0.29,
+   "tol": 0.015,
+   "source": "Trujillo et al. 2021, Sci Rep 11:16721, Results (Speech: +0.29 dB)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speech intensity, 8-talker minus clear: standard error (dB)",
+   "computed": 0.08743435164523843,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Trujillo et al. 2021, Sci Rep 11:16721, Results (Speech: 0.29 +- 0.09 dB)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The OSF project states no license; the paper itself is CC BY 4.0. The paper's Table 1 counts (243 speech-only, 732 gesture-only and 327 multimodal attempts, 1302 in all) do not reproduce from the deposit: the hand-checked modality file has 71 speech-only, 254 gesture-only and 734 speech-and-gesture rounds (1059 in all), and the paper does not say how it counted attempts.",
+  "Speech-intensity analysis: the deposit gives 687 rounds with speech and an intensity from 44 pairs (paper: 243 + 327 = 570 attempts); the 8-talker effect reproduces (0.28 dB against 0.29 dB) but the 4-talker contrast is 0.11 dB here. The paper's submovement ratios (1.142 and 1.093 times clear) come from Poisson mixed models and were not reproduced."
+ ],
+ "sources": [
+  {
+   "file": "face_data_full.txt",
+   "url": "https://osf.io/download/zqsyt/",
+   "bytes": 248855,
+   "sha256": "5f968ce2e9234fdeea214ac52fb3d795e263a736b4681b9b24a2cdccae426ac9",
+   "fetched_utc": "2026-11-08T23:48:32Z"
+  },
+  {
+   "file": "Lowlands_Production_full.txt",
+   "url": "https://osf.io/download/hxadg/",
+   "bytes": 218578,
+   "sha256": "636aba5fb62512d007a8524184427f98899fcaacaa07ae395c61eeea98ecddae",
+   "fetched_utc": "2026-11-08T23:49:05Z"
+  },
+  {
+   "file": "noise_data_full.txt",
+   "url": "https://osf.io/download/3p7nc/",
+   "bytes": 8758,
+   "sha256": "b4608d1cf89796254584ebb661736460bc89ed8176ba9ba90f04d9345c12c24f",
+   "fetched_utc": "2026-11-08T23:49:19Z"
+  },
+  {
+   "file": "modality.csv",
+   "url": "https://osf.io/download/7sc5n/",
+   "bytes": 15447,
+   "sha256": "3dddf2ea2bcbd6dd96d7db697438b19f436af5c004485308efd244e875500ef6",
+   "fetched_utc": "2026-11-08T23:49:36Z"
+  },
+  {
+   "file": "KFE_analyze_Lombard.m",
+   "url": "https://osf.io/download/yxktz/",
+   "bytes": 33115,
+   "sha256": "f77992c83e1c01a98b0252ee1d51712068c33378805e541741e08f7648217bf7",
+   "fetched_utc": "2026-11-08T23:49:49Z"
+  },
+  {
+   "file": "KFE_import_Lombard.m",
+   "url": "https://osf.io/download/amc2b/",
+   "bytes": 11957,
+   "sha256": "91ff901c85ea7f02c11bd4e1b6d23301d24e612c4c2ab198cae474ef6116a1a4",
+   "fetched_utc": "2026-11-08T23:50:07Z"
+  },
+  {
+   "file": "Lowlands_analyses_SR.R",
+   "url": "https://osf.io/download/krht9/",
+   "bytes": 30399,
+   "sha256": "2292cdec826ed123f61ecb3c8e5d8f234aedbb6538512c6b6663e124b8d24e59",
+   "fetched_utc": "2026-11-08T23:50:23Z"
+  },
+  {
+   "file": "kinect_XYZ_import_face_anon.m",
+   "url": "https://osf.io/download/nzdvq/",
+   "bytes": 23678,
+   "sha256": "b642dfb7268df250c36655bc8ed2d9f40740c24934453c7dc79144c7d333c9b7",
+   "fetched_utc": "2026-11-08T23:50:34Z"
+  },
+  {
+   "file": "Lowlands_timings.zip",
+   "url": "https://osf.io/download/5ea298878146fc0047c9c2a7/",
+   "bytes": 20553,
+   "sha256": "27cb156c92ed1530209a462b5e9f18b2e9c5e89d8975361ba3296d8900fa79dc",
+   "fetched_utc": "2026-11-08T23:50:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Trujillo2021_SciRep.zip"
+}

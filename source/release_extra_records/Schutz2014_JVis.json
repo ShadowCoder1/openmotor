@@ -1,0 +1,291 @@
+{
+ "id": "Schutz2014_JVis",
+ "module": "saccade",
+ "rows": 52600,
+ "subjects": 78,
+ "persons": 40,
+ "zip_bytes": 1944039,
+ "zip_sha256": "b472f5fbe74609b734b58481e90a2877cae0b455f7ff4a2625e758d1b2638e2b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every file has 49 data columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each file has 600 (experiments 6, 7) or 700 trials; 78 files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers run 1..N in order inside every file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "black character at the array centre in pre/post-adaptation trials and one (vertical) or two (horizontal) positions away in adaptation trials of experiments 1, 2, 4-8",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "array shift during the saccade (experiment 3) is 1.4 deg (1.409-1.410 in the file) in every adaptation trial and 0 elsewhere",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial direction equals the sign of end minus start of the array position in every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept (52600)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: |horizontal amplitude| < 40 deg, |vertical amplitude| < 25 deg, gain < 5",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 3: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4: number of observers",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 5: number of observers",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 6: number of observers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 7: number of observers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 8: number of observers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: pre-adaptation / adaptation / post-adaptation trials per observer (first, adaptation, post)",
+   "computed": 700.0,
+   "reported": 700.0,
+   "tol": 0,
+   "source": "Methods, Perceptual task and Fig. 1 (100 pre, 300 adaptation, 300 post)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: adaptation trials per observer",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "Methods, Perceptual task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiments 6 and 7: trials per observer",
+   "computed": 600.0,
+   "reported": 600.0,
+   "tol": 0,
+   "source": "Methods, Transfer of adaptation (150 + 300 + 150 trials; 100 + 50 + 300 + 100 + 50)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: mean horizontal saccade amplitude, forward condition, all 100 pre-adaptation trials (deg)",
+   "computed": 7.730207335241,
+   "reported": 7.73,
+   "tol": 0.06,
+   "source": "Results, Perceptual task (experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: mean horizontal saccade amplitude, backward condition, all 100 pre-adaptation trials (deg)",
+   "computed": 7.9118805681021485,
+   "reported": 7.91,
+   "tol": 0.06,
+   "source": "Results, Perceptual task (experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: mean horizontal saccade amplitude, forward condition, last 50 adaptation trials (deg)",
+   "computed": 8.75382750166098,
+   "reported": 8.65,
+   "tol": 0.12,
+   "source": "Results, Perceptual task (experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: mean horizontal saccade amplitude, backward condition, last 50 adaptation trials (deg)",
+   "computed": 7.186359456704728,
+   "reported": 7.17,
+   "tol": 0.06,
+   "source": "Results, Perceptual task (experiment 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: mean horizontal saccade amplitude, forward condition, all 100 pre-adaptation trials (deg)",
+   "computed": 7.825576015784738,
+   "reported": 7.83,
+   "tol": 0.06,
+   "source": "Results, Experiment without the perceptual task (experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: mean horizontal saccade amplitude, backward condition, all 100 pre-adaptation trials (deg)",
+   "computed": 8.009302051996697,
+   "reported": 8.01,
+   "tol": 0.06,
+   "source": "Results, Experiment without the perceptual task (experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: mean horizontal saccade amplitude, forward condition, last 50 adaptation trials (deg)",
+   "computed": 7.840328263483698,
+   "reported": 7.87,
+   "tol": 0.06,
+   "source": "Results, Experiment without the perceptual task (experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: mean horizontal saccade amplitude, backward condition, last 50 adaptation trials (deg)",
+   "computed": 7.558387921186347,
+   "reported": 7.56,
+   "tol": 0.06,
+   "source": "Results, Experiment without the perceptual task (experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4: mean vertical amplitude, upward adaptation, last 50 adaptation trials (deg)",
+   "computed": 0.5221720085093854,
+   "reported": 0.49,
+   "tol": 0.06,
+   "source": "Results, Cross-axis adaptation (experiments 4 and 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4: mean vertical amplitude, downward adaptation (magnitude), last 50 adaptation trials (deg)",
+   "computed": 0.557862524636184,
+   "reported": 0.54,
+   "tol": 0.06,
+   "source": "Results, Cross-axis adaptation (experiments 4 and 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 4: mean vertical amplitude before adaptation, all pre-adaptation trials (deg, |value| < 0.06)",
+   "computed": 0.015963088612836445,
+   "reported": 0.04,
+   "tol": 0.06,
+   "source": "Results, Cross-axis adaptation (upward 0.04, downward 0.02)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 1: mean saccade latency across observers (ms)",
+   "computed": 133.966264489562,
+   "reported": 133.97,
+   "tol": 0.01,
+   "source": "Results, Perceptual task / Experiment without the perceptual task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiment 2: mean saccade latency across observers (ms)",
+   "computed": 148.55587999103216,
+   "reported": 148.56,
+   "tol": 0.01,
+   "source": "Results, Perceptual task / Experiment without the perceptual task",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports that, on average, 14.35 % of trials were excluded; the authors' valid flag marks 12.6 % of the rows as invalid in the deposit.",
+  "The paper says the 50 pre-adaptation trials were averaged; the published pre-adaptation amplitudes (experiments 1 and 2) are reproduced from all 100 pre-adaptation trials of each observer. The forward amplitude at the end of adaptation in experiment 1 is 8.75 deg here against 8.65 deg in the paper (last 50 adaptation trials, valid trials); the other three end-of-adaptation means agree within 0.03 deg.",
+  "Experiments 4 and 5 appear in the deposit with the vertical array coded as characters 2 to 4 of a five-position array; vertical step sizes in degrees are not given, so step_y_deg is empty for them and pert_value counts array positions."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/api/records/579842/files/SchutzKerzelSouto_JoV_2014.zip/content",
+   "bytes": 1778663,
+   "sha256": "a17026110ce0da613bf1cf09135b150f74893ca9069348ccbcda1ca177125105",
+   "fetched_utc": "2026-11-09T08:29:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schutz2014_JVis.zip"
+}

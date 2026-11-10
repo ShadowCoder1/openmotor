@@ -1,0 +1,269 @@
+{
+ "id": "Sun2026_iScience",
+ "module": "game",
+ "rows": 168480,
+ "subjects": 156,
+ "persons": 156,
+ "zip_bytes": 2642044,
+ "zip_sha256": "188c5948383392c0c36ec1a3de20538c7b387eeeeaca4ea6b131d763464eff70",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Basketball.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one camera model, frame rate, IMU model and IMU rate in all sessions",
+   "ok": true,
+   "detail": "{'Frontal_Camera': {'Sony alpha6400'}, 'Camera_FPS': {120}, 'Hand_IMU': {'Shimmer3'}, 'IMU_Sample_Rate_Hz': {200}}"
+  },
+  {
+   "kind": "internal",
+   "what": "sheet sizes: 156 participants, 1,404 sessions, 16,848 blocks, 168,480 shots",
+   "ok": true,
+   "detail": "156, 1404, 16848, 168480"
+  },
+  {
+   "kind": "internal",
+   "what": "two study conditions",
+   "ok": true,
+   "detail": "['MSEEM-feedback', 'Standard coaching']"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 1,080 shots (9 sessions x 12 blocks x 10 shots)",
+   "ok": true,
+   "detail": "{1080}"
+  },
+  {
+   "kind": "internal",
+   "what": "shots are 0/1 outcomes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 156.0,
+   "reported": 156.0,
+   "tol": 0,
+   "source": "Participants, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in condition MSEEM-feedback",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Participants, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in condition Standard coaching",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Participants, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean [MSEEM-feedback]",
+   "computed": 21.405128205128204,
+   "reported": 21.4,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD [MSEEM-feedback]",
+   "computed": 2.2977627422590046,
+   "reported": 2.3,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male players [MSEEM-feedback]",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "competitive players [MSEEM-feedback]",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of playing experience mean [MSEEM-feedback]",
+   "computed": 5.202564102564102,
+   "reported": 5.2,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of playing experience SD [MSEEM-feedback]",
+   "computed": 2.104168673734548,
+   "reported": 2.1,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-hand shooters [MSEEM-feedback]",
+   "computed": 69.0,
+   "reported": 69.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline familiarization minutes mean [MSEEM-feedback]",
+   "computed": 18.898717948717948,
+   "reported": 18.9,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline familiarization minutes SD [MSEEM-feedback]",
+   "computed": 3.7979315487886365,
+   "reported": 3.8,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean [Standard coaching]",
+   "computed": 21.599999999999998,
+   "reported": 21.6,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD [Standard coaching]",
+   "computed": 2.401027918399756,
+   "reported": 2.4,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male players [Standard coaching]",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "competitive players [Standard coaching]",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of playing experience mean [Standard coaching]",
+   "computed": 5.003846153846154,
+   "reported": 5.0,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "years of playing experience SD [Standard coaching]",
+   "computed": 2.1993176218995747,
+   "reported": 2.2,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-hand shooters [Standard coaching]",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline familiarization minutes mean [Standard coaching]",
+   "computed": 19.094871794871796,
+   "reported": 19.1,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline familiarization minutes SD [Standard coaching]",
+   "computed": 3.6003209610132014,
+   "reported": 3.6,
+   "tol": 0.06,
+   "source": "Table 3, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scheduled shots at baseline",
+   "computed": 18720.0,
+   "reported": 18720.0,
+   "tol": 0,
+   "source": "Shot task protocol, Method details and Table 3 (iScience 29(11):117915)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 3 baseline shot-made percentages (mean and SD for each of four shot types and two conditions): 16 of 16 values were not reproduced (the shared rows differ from the reported value by 0.13 to 2.7 points, mean -0.85); the text does not say how they were computed, and the share of made shots over each player's 30 baseline shots of the type, averaged over the players of the condition was tried here.",
+  "Table 3 baseline rubric totals (mean and SD for two conditions): 4 of 4 values were not reproduced (the shared rows differ from the reported value by 0.45 to 5.2 points, mean -2.8); the text does not say how they were computed, and the mean of the two raters' block totals over a player's 12 baseline blocks, averaged over the players of the condition was tried here.",
+  "Not carried over from the Shots sheet: the pose keypoints (pixels) and confidences at the release frame, the IMU and ball-trajectory values, the video and IMU file names and the release frame numbers; the OpenMotor game format has no columns for them.",
+  "rubric_total_coach1 and rubric_total_coach2 are the two raters' block totals from the Blocks sheet (their four component scores are not carried over), repeated on the ten shots of each block."
+ ],
+ "sources": [
+  {
+   "file": "Basketball.xlsx",
+   "url": "https://zenodo.org/api/records/22828547/files/Basketball.xlsx/content",
+   "bytes": 65651924,
+   "sha256": "72e2d8a6eb88795fd76ccacbda4670205094c6623b20dd53f0c6ef797e3140c0",
+   "fetched_utc": "2026-11-08T19:44:14Z"
+  },
+  {
+   "file": "MSEEM_analysis_code.zip",
+   "url": "https://zenodo.org/api/records/22828547/files/MSEEM_analysis_code.zip/content",
+   "bytes": 16165,
+   "sha256": "1d61a86318265877a542ef29637ed33872ba3eb77f29eca206d81ca877b137fd",
+   "fetched_utc": "2026-11-08T19:44:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sun2026_iScience.zip"
+}

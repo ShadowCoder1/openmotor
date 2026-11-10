@@ -1,0 +1,7 @@
+{
+ "id": "Healy2023_PLoSOne",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The GitHub deposit holds only processed MATLAB structs (per-phase trajectory averages and trial-length arrays for 28 participants, with per-phase maxPerp/angErr vectors that are not indexed by participant, estGain and FxMax without units or definitions) and no data dictionary; raw trial data are available only on request. The paper could not be matched to the struct fields within the time box, so values could not be interpreted with confidence. Retry by reading processRawCurlTrialData.m and the paper methods.",
+ "sources": []
+}

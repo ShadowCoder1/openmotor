@@ -1,0 +1,228 @@
+{
+ "id": "Mehler2017_PLoSOne",
+ "module": "reach90",
+ "rows": 25830,
+ "subjects": 41,
+ "persons": 41,
+ "zip_bytes": 8827560,
+ "zip_sha256": "26fd0c4aee8dd56bd6d4d335ccddec442a004f4920b9204e31d8e5d1dbb1a3d4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows are grouped by participant and ordered by block then trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 9 blocks x 70 trials = 630 rows, block 1 is the baseline (BT 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "start (0,-10) and target (7.5,3) cm constant on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "displayed endpoint minus actual endpoint equals the injected noise on every row that has a stored noise value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "reward = valid trial (MT < 700 ms, speed 45-100 cm/s, the paper's in-task criteria) with the displayed endpoint within 1 cm of the target, on 99.9 % of rows",
+   "ok": true,
+   "detail": "0.99973"
+  },
+  {
+   "kind": "published",
+   "what": "flexion group, participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants (flexion experimental group, n = 13)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "extension group, participants in the deposit (13 recruited, 1 excluded before analysis)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (extension group n = 13; one excluded for changing body position)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "low-noise control group, participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high-noise control group, participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aware participants in the flexion group",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Results, awareness (2 flexion aware)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "aware participants in the extension group",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Results, awareness (3 extension aware)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unaware flexion participants",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Results (final sample 11 flexion)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unaware extension participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Results (final sample 9 extension)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high-noise control, participants left after the 2 who detected the manipulation",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Results, control groups (2 of 7 excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "unaware experimental participants answering the 2AFC question correctly",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Results, awareness ('only 10 participants answered correctly')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "extension (unaware), change in wrist angle vs 0, block B7, t(8)",
+   "computed": 3.560701261219475,
+   "reported": 3.561,
+   "tol": 0.0006,
+   "source": "Results, Learning (extension group vs 0, df = 8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "extension (unaware), change in wrist angle vs 0, block B8, t(8)",
+   "computed": 3.1593214149051225,
+   "reported": 3.159,
+   "tol": 0.0006,
+   "source": "Results, Learning (extension group vs 0, df = 8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high-noise control (unaware), change in wrist angle block B1, mean (deg)",
+   "computed": 2.3189474218993156,
+   "reported": 2.32,
+   "tol": 0.005,
+   "source": "Results, control groups",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high-noise control (unaware), change in wrist angle block B1, SEM (deg)",
+   "computed": 0.8215097163412076,
+   "reported": 0.82,
+   "tol": 0.005,
+   "source": "Results, control groups",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high-noise control (unaware), block B1 vs 0, t(4)",
+   "computed": 2.8227875772757858,
+   "reported": 2.823,
+   "tol": 0.0006,
+   "source": "Results, control groups",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "low-noise control, block B8 vs 0, t(8)",
+   "computed": -0.6495331953121607,
+   "reported": -0.65,
+   "tol": 0.001,
+   "source": "Results, control groups",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order (25830 = 41 x 630)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angles finite and within (-180, 180]; MT blanked only where the authors stored -1 (3 rows)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand angle (actual endpoint) has median ~0 deg relative to the target and the displayed endpoint is wider",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "block-mean time courses: 369 = 41 x 9 rows of 149 samples",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "DOF3rfl1_alldat_OSF.mat",
+   "url": "https://osf.io/download/g96pe/",
+   "bytes": 6166217,
+   "sha256": "821aa49f1f3e95442adec1cd5c00951eb6f64578b434e2696423178dc813dab1",
+   "fetched_utc": "2026-11-09T08:09:13Z"
+  },
+  {
+   "file": "DOF3rfl1_alltraj_OSF.mat",
+   "url": "https://osf.io/download/28f6d/",
+   "bytes": 9544644,
+   "sha256": "c75aea8c3129dd6417128a7a067558673c796c0fb79b5ec4db5a20b19655c7a1",
+   "fetched_utc": "2026-11-09T08:09:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mehler2017_PLoSOne.zip"
+}

@@ -1,0 +1,109 @@
+{
+ "id": "Hausdorff2000_JApplPhysiol",
+ "module": "walking",
+ "rows": 15160,
+ "subjects": 64,
+ "persons": 64,
+ "zip_bytes": 541692,
+ "zip_sha256": "4600169707559226bc3f05577536fd8df175693b707366182776ae0c46d138ea",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Parkinson's disease records",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Huntington's disease records",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "amyotrophic lateral sclerosis records",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy control records",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "records in the database",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recording length (90000 samples at 300 Hz, s); the paper says subjects walked for 5 min",
+   "computed": 300.0,
+   "reported": 300.0,
+   "tol": 0,
+   "source": "abstract of the paper (5 min); .hea headers",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every stride line the deposit shares is kept, in order",
+   "ok": true,
+   "detail": "15160 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "last stride time stamp lies within the 300 s recording",
+   "ok": true,
+   "detail": "max 300.0 s"
+  },
+  {
+   "kind": "internal",
+   "what": "stride + stance = swing + stance consistency: swing_time + stance_time within 0.01 s of stride time on 99% of rows",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "every record has a .let, .rit, .ts and .hea file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "64 participants, ages 20-80",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text of the paper was not available, so none of its group means or variability statistics were checked; the checks are the record counts per group and the recording length, from the PhysioNet page."
+ ],
+ "sources": [
+  {
+   "file": "gaitndd.zip",
+   "url": "https://physionet.org/content/gaitndd/get-zip/1.0.0/",
+   "bytes": 18788912,
+   "sha256": "f175561d19182cdad432d5de639ba0af61692c6bb4f02ebaf89c159370e680ee",
+   "fetched_utc": "2026-11-09T00:16:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hausdorff2000_JApplPhysiol.zip"
+}

@@ -1,0 +1,100 @@
+{
+ "id": "Lepori2025_JNeurophysiol",
+ "module": "multidigit_grasp",
+ "rows": 800,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 21406,
+ "zip_sha256": "77a376e11eb36c1cc0d32287ce9f57c037a4c3b3644274d9c93fd044a4dbd40f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (20)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants; the ANOVAs' 19 error degrees of freedom",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session (20 = 5 repetitions x 4 objects)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of digits, effect of grasp type, F(1,19) = 196.90",
+   "computed": 196.90179627231268,
+   "reported": 196.9,
+   "tol": 0.05,
+   "source": "Results, Number of digits (2 grasp types x 2 material configurations, subjects' means)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of digits, effect of material configuration, F(1,19) = 1.16",
+   "computed": 1.15508684863524,
+   "reported": 1.16,
+   "tol": 0.01,
+   "source": "Results, Number of digits",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of digits, interaction, F(1,19) = 0.18",
+   "computed": 0.17981072555205138,
+   "reported": 0.18,
+   "tol": 0.01,
+   "source": "Results, Number of digits",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "precision grip: thumb vs index contact time, signed-rank z = 2.05",
+   "computed": 2.0532968306030326,
+   "reported": 2.05,
+   "tol": 0.01,
+   "source": "Results, Contact times (Wilcoxon signed-rank test of the 20 participants' mean contact times)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "800 rows = 20 participants x 2 sessions x 20 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "digits in contact are between 0 and 5",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trials the authors flagged as mislabelled: 24",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' scripts set the first-contact frame to 1 for 24 of the 800 trials (3%) and then set their tilt to missing; the paper says 2% of trials were excluded and 7% re-processed by hand, so these 24 may include trials the paper counts differently.",
+  "The paper's text defines contact time as the time a digit reached minimum distance to the object relative to object motion, which is how it is computed here; the paper's unconstrained-session thumb-versus-index test (z = 3.92) was not reproduced (z = 1.64 from the 20 participants' mean contact times, thumb minus index), so its definition may differ from the authors' script.",
+  "The paper gives no age, sex or handedness per participant (20 right-handed, ages 20-39, mean 26.7, 15 women); none are in the table.",
+  "Raw recordings contain renamed and duplicated copies of some trial files (for example '- Copia'), which the authors' scripts read by sorted file order; the derived values are released as the authors computed them."
+ ],
+ "sources": [
+  {
+   "file": "Scripts_and_Data.zip",
+   "url": "https://zenodo.org/api/records/14973756/files/Scripts_and_Data.zip/content",
+   "bytes": 158486936,
+   "sha256": "c49fa20626c461d22017fa067d5ebdc9f97c08b39a117172cd958e0374b02057",
+   "fetched_utc": "2026-11-09T09:01:46Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lepori2025_JNeurophysiol.zip"
+}

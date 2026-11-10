@@ -1,0 +1,105 @@
+{
+ "id": "Zhang2026_SciData",
+ "module": "gesture_labels",
+ "rows": 35872,
+ "subjects": 64,
+ "persons": 64,
+ "zip_bytes": 714733,
+ "zip_sha256": "f587bfb74366ab4a03198de3870fa5f5aac706c9267f6f40ca364faaefd94c22",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participant table has 64 rows",
+   "ok": true,
+   "detail": "64"
+  },
+  {
+   "kind": "internal",
+   "what": "621 label files, one per recording folder of the deposit",
+   "ok": true,
+   "detail": "621"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant with a label folder has rows; 64 participants",
+   "ok": true,
+   "detail": "64"
+  },
+  {
+   "kind": "internal",
+   "what": "6 label files are empty (header only) and not converted",
+   "ok": true,
+   "detail": "6"
+  },
+  {
+   "kind": "internal",
+   "what": "all gesture codes 1-14 appear",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 5 files that hold two recordings hold the same annotation twice (identical times and codes)",
+   "ok": true,
+   "detail": "5"
+  },
+  {
+   "kind": "internal",
+   "what": "scored gestures last under 65 s (9 of them over 12 s, longest 61 s)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of every non-empty label file kept",
+   "ok": true,
+   "detail": "35872"
+  },
+  {
+   "kind": "published",
+   "what": "distinct gestures",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "README.txt, gesture_code list; dataset description (14 distinct hand gestures)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with labelled recordings (all 64 participants of participants.csv)",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "deposit folder structure (one folder per participant) and participants.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with five anatomical and five random recordings (participants.csv: 'Anatomical sequence' and 'Random sequence' both 5; three of them have one recording fewer in the deposit)",
+   "computed": 52.0,
+   "reported": 55.0,
+   "tol": 3,
+   "source": "participants.csv",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median scored repetitions of a gesture in one placement mode of a participant with 5+5 recordings",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "README.txt / dataset description: 14 distinct gestures performed ten times per mode",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "299 of the 615 non-empty label files hold their segment times as integers in microseconds (values up to about 150,000,000, for example 6068511 for 6.07 s); the README says seconds. start_s and stop_s here are in seconds: those files were divided by 1,000,000. The other files already give seconds with two decimals.",
+  "5 label files (all anatomical recordings of one participant) hold the same annotation twice in a row (each copy starts with a preparation segment, times and codes identical); both copies are kept, as recording ..._part1 and ..._part2, so that no row of the files is lost: drop the part2 recordings to count each recording once. Six label files are empty (header only) and give no rows: the five anatomical recordings of one participant (the participants table notes that the label file is empty) and one random recording of another.",
+  "The README says each recording has all 14 gestures twice, 28 scored gestures; 39 recordings have fewer scored gestures (the authors did not mark every gesture), and 9 scored gestures last more than 12 s (longest 61 s, probably a missed transition). Segments are kept exactly as scored, including 54 segments whose stop time is earlier than the start time. The final segment's stop is the string 'end' in the files and empty here; in one file the 'end' and 'finished' labels are in swapped columns, which was put right.",
+  "participants.csv lists no recording counts for two participants, but the deposit has five anatomical recordings for each; for three participants whose table says five random (or anatomical) recordings, the deposit has one fewer label file or an empty one.",
+  "The Sci Data article text could not be read (the publisher page was not reachable), so the numbers checked are those of the deposit's own README and participants table, not figures from the article."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhang2026_SciData.zip"
+}

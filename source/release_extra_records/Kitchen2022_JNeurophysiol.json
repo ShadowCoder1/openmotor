@@ -1,0 +1,447 @@
+{
+ "id": "Kitchen2022_JNeurophysiol",
+ "module": "speech",
+ "rows": 9360,
+ "subjects": 48,
+ "persons": 24,
+ "zip_bytes": 223861,
+ "zip_sha256": "579eb03e98c25c65a834412c51f407f28e97f6988facb947eed3a3ff007b66a1",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "extent computed from the trial rows (mean of epochs 46-50, % of 250 cents) equals the deposit's Extent column",
+   "ok": true,
+   "detail": "max difference 4.3e-14, 48 values"
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Kitchen et al. 2022, J Neurophysiol 128(3):696-710, Results (26 recruited, 24 analysed; Methods)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per condition",
+   "computed": 195.0,
+   "reported": 195.0,
+   "tol": 0,
+   "source": "Kitchen et al. 2022, Methods (195 trials, 65 per word)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation extent, pooled over both conditions, mean (% of perturbation)",
+   "computed": 29.206111111111113,
+   "reported": 29.2,
+   "tol": 0.05,
+   "source": "Kitchen et al. 2022, J Neurophysiol 128(3):696-710, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation extent, pooled over both conditions, SD (%)",
+   "computed": 19.753617301359608,
+   "reported": 19.8,
+   "tol": 0.05,
+   "source": "Kitchen et al. 2022, J Neurophysiol 128(3):696-710, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of speech adaptation extent between the gradual and sudden conditions, r",
+   "computed": 0.17175717188673492,
+   "reported": 0.17,
+   "tol": 0.005,
+   "source": "Kitchen et al. 2022, J Neurophysiol 128(3):696-710, Results",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "65 trials of each word in every sequence",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The two excluded participants (one with curved reaches, one who followed the shift) and the authors' outlier values are not identified in the deposit, so no rows are marked as excluded.",
+  "The paper's table gives baseline centering for the gradual condition as 15.7 +- 1.1 cents; the shared values have SD 17.1, so that SD was not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "Speech_CF63_S_.txt",
+   "url": "https://osf.io/download/96fhz/",
+   "bytes": 6528,
+   "sha256": "284cf726463fd80f445a6586dedc54421e1a0feb259e755b94527bf93b4fe52f",
+   "fetched_utc": "2026-11-09T11:36:39Z"
+  },
+  {
+   "file": "Speech_CF63_G_.txt",
+   "url": "https://osf.io/download/8yb2k/",
+   "bytes": 6669,
+   "sha256": "7c07ae9fd21fbbcd36be700d984494fa7110a7d1ccb950866eef616bd0d80f97",
+   "fetched_utc": "2026-11-09T11:36:44Z"
+  },
+  {
+   "file": "Speech_CF65_S_.txt",
+   "url": "https://osf.io/download/yjbau/",
+   "bytes": 6639,
+   "sha256": "9208ffbb21ea4bab5ca1b99bbb2238d1789b853185d8279d69bb1493bd26aa59",
+   "fetched_utc": "2026-11-09T11:36:50Z"
+  },
+  {
+   "file": "Speech_CF65_G_.txt",
+   "url": "https://osf.io/download/tw37j/",
+   "bytes": 6515,
+   "sha256": "777b461636cf9f87eb0b9b57ab15a5b0b583ea30f6c578a2a823c0b7540aafe4",
+   "fetched_utc": "2026-11-09T11:36:54Z"
+  },
+  {
+   "file": "Speech_CF67_S_.txt",
+   "url": "https://osf.io/download/3cew6/",
+   "bytes": 6523,
+   "sha256": "b925c7a63ea4ceb2c8283cc1eb3caa363e444ee94877ff864b22e8aef64a4ed0",
+   "fetched_utc": "2026-11-09T11:36:58Z"
+  },
+  {
+   "file": "Speech_CF67_G_.txt",
+   "url": "https://osf.io/download/kr5bp/",
+   "bytes": 6637,
+   "sha256": "28e37ff726bc18d5fc672c18aaa82559e2e3202b51352beecd561f37c564c3f2",
+   "fetched_utc": "2026-11-09T11:37:02Z"
+  },
+  {
+   "file": "Speech_CF68_G_.txt",
+   "url": "https://osf.io/download/eqnj9/",
+   "bytes": 6670,
+   "sha256": "6dcf7fd7834bee0c61aa139cb20549f5163bcb1c229b2d94a87581711c116f84",
+   "fetched_utc": "2026-11-09T11:37:06Z"
+  },
+  {
+   "file": "Speech_CF68_S_.txt",
+   "url": "https://osf.io/download/mkqzh/",
+   "bytes": 6716,
+   "sha256": "38b7c2b9ce8914a7ca8028753377f8c9b987305a646ca39c2a7d2d2cc7aee340",
+   "fetched_utc": "2026-11-09T11:37:10Z"
+  },
+  {
+   "file": "Speech_CF69_G_.txt",
+   "url": "https://osf.io/download/d8kug/",
+   "bytes": 6454,
+   "sha256": "9e107c269be1ddd0b7e6019fa142e875f1f7701e13cb186f5bcdd986c0659644",
+   "fetched_utc": "2026-11-09T11:37:28Z"
+  },
+  {
+   "file": "Speech_CF69_S_.txt",
+   "url": "https://osf.io/download/f5k4d/",
+   "bytes": 6721,
+   "sha256": "36ceadab7e6c930b59531d57b3182c80c075460b3381502b32df7f9216bbc6b3",
+   "fetched_utc": "2026-11-09T11:37:33Z"
+  },
+  {
+   "file": "Speech_CF71_G_.txt",
+   "url": "https://osf.io/download/62c6f7d8c79a4c03609e5e21/",
+   "bytes": 6531,
+   "sha256": "af1dc5c443cbab434824e69035eafe7e80ab2d92f5f8020f225add278639ee9c",
+   "fetched_utc": "2026-11-09T11:37:38Z"
+  },
+  {
+   "file": "Speech_CF71_S_.txt",
+   "url": "https://osf.io/download/62c6f7da779f1703400711f4/",
+   "bytes": 6584,
+   "sha256": "cfc3b210ec2caa0ca4df766db7fbd3584b497e4ad8e779a5d40a652b6c0b5a2d",
+   "fetched_utc": "2026-11-09T11:37:43Z"
+  },
+  {
+   "file": "Speech_CF72_G_.txt",
+   "url": "https://osf.io/download/62c6f7dbc79a4c03659e5fb2/",
+   "bytes": 6756,
+   "sha256": "9ceb366ed2028bc57bc3f33c194d92b7a3f170099cbd78c96098be57375c56bf",
+   "fetched_utc": "2026-11-09T11:37:47Z"
+  },
+  {
+   "file": "Speech_CF87_G_.txt",
+   "url": "https://osf.io/download/zg6th/",
+   "bytes": 6684,
+   "sha256": "c1591f37e0ee9a9c4fc735cdf4995f83d7a986b8ef858f0fdeee6d42752c6c3d",
+   "fetched_utc": "2026-11-09T11:37:52Z"
+  },
+  {
+   "file": "Speech_CF72_S_.txt",
+   "url": "https://osf.io/download/m6grq/",
+   "bytes": 6556,
+   "sha256": "fd8a03ce5a34201b08095042969dc688ba91e73b7ab30f9f02ac023e2409925c",
+   "fetched_utc": "2026-11-09T11:37:59Z"
+  },
+  {
+   "file": "Speech_CF87_S_.txt",
+   "url": "https://osf.io/download/69hv2/",
+   "bytes": 6699,
+   "sha256": "d1ad60d1fd21da3dced0d97f263746a3b1f6e1bee9b703aa39ffb47f1be44f63",
+   "fetched_utc": "2026-11-09T11:38:05Z"
+  },
+  {
+   "file": "Speech_CF88_G_.txt",
+   "url": "https://osf.io/download/tqgcb/",
+   "bytes": 6744,
+   "sha256": "ced42a16ee330b83d3cd7fcc0c0aa422043b7cf37494288a4e5813e71c1b59d9",
+   "fetched_utc": "2026-11-09T11:38:09Z"
+  },
+  {
+   "file": "Speech_CF88_S_.txt",
+   "url": "https://osf.io/download/62c6f7e4588bb90366b87028/",
+   "bytes": 6621,
+   "sha256": "41f04914b2e75c37b3e4a600d238e2c0a4fb46bcdd412c39f7b41b1d79b8c9a3",
+   "fetched_utc": "2026-11-09T11:38:14Z"
+  },
+  {
+   "file": "Speech_CF92_G_.txt",
+   "url": "https://osf.io/download/ub3mn/",
+   "bytes": 6673,
+   "sha256": "f0094e2bb825f5245c5e35a6003df6c90ca3cc859d74f4d9e919c17caf85e1f8",
+   "fetched_utc": "2026-11-09T11:38:19Z"
+  },
+  {
+   "file": "Speech_CF92_S_.txt",
+   "url": "https://osf.io/download/v74y8/",
+   "bytes": 6593,
+   "sha256": "588f18a313f2c85ec4e939899c9070105085af1012fd50524183d2b538565591",
+   "fetched_utc": "2026-11-09T11:38:38Z"
+  },
+  {
+   "file": "Speech_CF95_G_.txt",
+   "url": "https://osf.io/download/ucgsj/",
+   "bytes": 6651,
+   "sha256": "3e0c1b917702e6dd29a0afc32f9cb737fd1da5ed5bb89c4ad1fc483d58322980",
+   "fetched_utc": "2026-11-09T11:38:44Z"
+  },
+  {
+   "file": "Speech_CF104_G.txt",
+   "url": "https://osf.io/download/62c6f7ecf66a9403ef2305d9/",
+   "bytes": 6669,
+   "sha256": "15c8738bf6e1d9e955aa30a28b701695de7e80ebee08b2d0176c13f3446db3b3",
+   "fetched_utc": "2026-11-09T11:38:51Z"
+  },
+  {
+   "file": "Speech_CF95_S_.txt",
+   "url": "https://osf.io/download/62c6f7ecc79a4c03609e5e28/",
+   "bytes": 6650,
+   "sha256": "5f4299f35c7ee45cad9554522a785e0cb202ef8c5d3e9e65ff4e6869dfd80429",
+   "fetched_utc": "2026-11-09T11:38:54Z"
+  },
+  {
+   "file": "Speech_CF108_G.txt",
+   "url": "https://osf.io/download/2eakq/",
+   "bytes": 6659,
+   "sha256": "7a8125854cb05c120c922e63041cc8b5b1c11f330266417f412a4fe52e69bfe4",
+   "fetched_utc": "2026-11-09T11:38:59Z"
+  },
+  {
+   "file": "Speech_CF104_S.txt",
+   "url": "https://osf.io/download/eh9rf/",
+   "bytes": 6678,
+   "sha256": "b43fcba40c436f2fc2ef73880a09eac95d2015ca916f5581a6609f331a687c78",
+   "fetched_utc": "2026-11-09T11:39:04Z"
+  },
+  {
+   "file": "Speech_CF108_S.txt",
+   "url": "https://osf.io/download/zgk8x/",
+   "bytes": 6604,
+   "sha256": "6f2a9aa418fee17ae419421742119f3975e3ffdb9239b274c4344f5fc9b337a9",
+   "fetched_utc": "2026-11-09T11:39:09Z"
+  },
+  {
+   "file": "Speech_CF111_G.txt",
+   "url": "https://osf.io/download/62c6f7f3779f17033f071043/",
+   "bytes": 6673,
+   "sha256": "06532ad0361ca84c09520a2964f823570cf6817e5f1a2c08a7b1a38999ab6e4a",
+   "fetched_utc": "2026-11-09T11:39:16Z"
+  },
+  {
+   "file": "Speech_CF134_G.txt",
+   "url": "https://osf.io/download/bxwp9/",
+   "bytes": 6805,
+   "sha256": "46b854c08fd82ed9f0b7abcf60d4a933b91bebab5cd8c2c7c56e989f29bbb93c",
+   "fetched_utc": "2026-11-09T11:39:21Z"
+  },
+  {
+   "file": "Speech_CF111_S.txt",
+   "url": "https://osf.io/download/h23dm/",
+   "bytes": 6648,
+   "sha256": "433b44802247f5e2a838093e0de36fe5ea094878085a0245dc03f5a5aba28fc9",
+   "fetched_utc": "2026-11-09T11:39:26Z"
+  },
+  {
+   "file": "Speech_CF134_S.txt",
+   "url": "https://osf.io/download/skvdz/",
+   "bytes": 6501,
+   "sha256": "ba3f08a9a8f7f3790cb9d2cbcdc02e2f77001a95561fe3e6387f9313c85fcb26",
+   "fetched_utc": "2026-11-09T11:39:30Z"
+  },
+  {
+   "file": "Speech_CF232_G.txt",
+   "url": "https://osf.io/download/5jnsh/",
+   "bytes": 6587,
+   "sha256": "644f187b0ac1cf95d0ea2fdd441514db2518fa0fa2fa58ca37de47cf64352e59",
+   "fetched_utc": "2026-11-09T11:39:49Z"
+  },
+  {
+   "file": "Speech_CF234_G.txt",
+   "url": "https://osf.io/download/br5qg/",
+   "bytes": 6462,
+   "sha256": "821b9c0f54c270d4a6939aea607d58506f472650b89fff1c0f7d8e2bc1c8c489",
+   "fetched_utc": "2026-11-09T11:39:54Z"
+  },
+  {
+   "file": "Speech_CF232_S.txt",
+   "url": "https://osf.io/download/62c6f7fe1bb7a503ca1f38b8/",
+   "bytes": 6469,
+   "sha256": "5c5cf9d77e77f34f2bef1bdf393192560a8e7433a2ace6e69529629087f2222a",
+   "fetched_utc": "2026-11-09T11:40:00Z"
+  },
+  {
+   "file": "Speech_CF236_G.txt",
+   "url": "https://osf.io/download/u6d9r/",
+   "bytes": 6635,
+   "sha256": "0f7bf4c2ea97c6645ddc2f31fc3ced693abb95d3adc5c49b7f5d145dfcc687fa",
+   "fetched_utc": "2026-11-09T11:40:06Z"
+  },
+  {
+   "file": "Speech_CF234_S.txt",
+   "url": "https://osf.io/download/gy3xt/",
+   "bytes": 6569,
+   "sha256": "b6356046b48d530fccade671f31595de50516d21ac7515e9c688e52d5f18a2a1",
+   "fetched_utc": "2026-11-09T11:40:11Z"
+  },
+  {
+   "file": "Speech_CF236_S.txt",
+   "url": "https://osf.io/download/bq29y/",
+   "bytes": 6721,
+   "sha256": "2335c3d3b1f732a0522855bdd1a486e2169043f4cef113d8a65ad1a744263891",
+   "fetched_utc": "2026-11-09T11:40:16Z"
+  },
+  {
+   "file": "Speech_CF237_G.txt",
+   "url": "https://osf.io/download/3k8n4/",
+   "bytes": 6541,
+   "sha256": "0e428776328b23369859f236e869c8dd6439b623fbe42e398234f76815c1967e",
+   "fetched_utc": "2026-11-09T11:40:20Z"
+  },
+  {
+   "file": "Speech_CF237_S.txt",
+   "url": "https://osf.io/download/62c6f809c79a4c03609e5e3f/",
+   "bytes": 6598,
+   "sha256": "9762bbc3344dfca884263490345347d7831963b1907651cecc6e62d40ba608d1",
+   "fetched_utc": "2026-11-09T11:40:24Z"
+  },
+  {
+   "file": "Speech_CF238_G.txt",
+   "url": "https://osf.io/download/9c62e/",
+   "bytes": 6670,
+   "sha256": "7b19f7dd68abd6db402d6dedd9038990a351a73f2ecf6ceb2451b1fddad01687",
+   "fetched_utc": "2026-11-09T11:40:31Z"
+  },
+  {
+   "file": "Speech_CF238_S.txt",
+   "url": "https://osf.io/download/qgw4s/",
+   "bytes": 6596,
+   "sha256": "e564d4376661426a0d4b95d35147b3f6363b6fbef0c411814cedca491cc32e79",
+   "fetched_utc": "2026-11-09T11:40:37Z"
+  },
+  {
+   "file": "Speech_CF239_G.txt",
+   "url": "https://osf.io/download/62c6f80c779f17033f071077/",
+   "bytes": 6640,
+   "sha256": "75ce2fe5e82175ad5181467f16b92ed3b9bf75ebf79d9b0b0c0596316ae65eba",
+   "fetched_utc": "2026-11-09T11:40:49Z"
+  },
+  {
+   "file": "Speech_CF239_S.txt",
+   "url": "https://osf.io/download/g9dk3/",
+   "bytes": 6691,
+   "sha256": "ca9b453d37cca1eab68020f77bb63875cc24fc813f883e6bd4f97fdc3f95f238",
+   "fetched_utc": "2026-11-09T11:40:52Z"
+  },
+  {
+   "file": "Speech_CF240_G.txt",
+   "url": "https://osf.io/download/rcwpz/",
+   "bytes": 6672,
+   "sha256": "3ad7ca358c0b5ec1335a0a252be7badff312f2445a2bb2a3cb2bf5c91fbef623",
+   "fetched_utc": "2026-11-09T11:40:58Z"
+  },
+  {
+   "file": "Speech_CF241_G.txt",
+   "url": "https://osf.io/download/nksyv/",
+   "bytes": 6577,
+   "sha256": "3bbe8e16937fe2a30e48cc6f5b085f7bbe5dc72a2d85497faf940ab851b64748",
+   "fetched_utc": "2026-11-09T11:41:01Z"
+  },
+  {
+   "file": "Speech_CF240_S.txt",
+   "url": "https://osf.io/download/uzavm/",
+   "bytes": 6614,
+   "sha256": "03c271b56fd41570c19068913af992e23e94c5e59e4d20b5e0453399b6f96afb",
+   "fetched_utc": "2026-11-09T11:41:07Z"
+  },
+  {
+   "file": "Speech_CF241_S.txt",
+   "url": "https://osf.io/download/62c6f814f66a9403f32302cc/",
+   "bytes": 6728,
+   "sha256": "36de8638ed906f6d2be13fef707bf51f222094f8f489c58cb4a2118c871d3cbb",
+   "fetched_utc": "2026-11-09T11:41:12Z"
+  },
+  {
+   "file": "Speech_CF246_G.txt",
+   "url": "https://osf.io/download/qsgpu/",
+   "bytes": 6635,
+   "sha256": "765e4340022f4a532a78f819b3dd5fb10d1fec6c1247c256416d6deaf3ee3449",
+   "fetched_utc": "2026-11-09T11:41:18Z"
+  },
+  {
+   "file": "Speech_CF246_S.txt",
+   "url": "https://osf.io/download/sgmbe/",
+   "bytes": 6681,
+   "sha256": "81f96a1c4f55dc346255019fcabd05d284ca4f7858dea53d680c829d37b983ff",
+   "fetched_utc": "2026-11-09T11:41:23Z"
+  },
+  {
+   "file": "SpeechAdaptationData_ReadMe.txt",
+   "url": "https://osf.io/download/uk7eg/",
+   "bytes": 1344,
+   "sha256": "f17ebede86c1d5c8334e00f489664a6bc578fcb3dd5ab489cd1df1a8e6f25ebb",
+   "fetched_utc": "2026-11-09T11:41:27Z"
+  },
+  {
+   "file": "ReachAdaptationData_ReadMe.txt",
+   "url": "https://osf.io/download/qmhvt/",
+   "bytes": 1169,
+   "sha256": "e494e27b5f28360265ae5feb43e255984ee1dbbd72d9da8000085f74aa34fd46",
+   "fetched_utc": "2026-11-09T11:41:31Z"
+  },
+  {
+   "file": "Speech_BehavCorrels_All.txt",
+   "url": "https://osf.io/download/xaqsu/",
+   "bytes": 5674,
+   "sha256": "9c61cdfdf046f8fe163fe2728898642e968cb2d1e7db4c92920b510b12694c28",
+   "fetched_utc": "2026-11-09T11:41:36Z"
+  },
+  {
+   "file": "Reach_BehavCorrels_All.txt",
+   "url": "https://osf.io/download/9vcpx/",
+   "bytes": 5732,
+   "sha256": "cbe9ffbaaa3f408ed13167be61e49c5a1103f4841438f5f5cc5314447be81ed9",
+   "fetched_utc": "2026-11-09T11:41:40Z"
+  },
+  {
+   "file": "BehavCorrelationsData_ReadMe.txt",
+   "url": "https://osf.io/download/2yqxr/",
+   "bytes": 1106,
+   "sha256": "16ed276a3e2bb6673923745bef93cc572854982f399d89e93f91a9a40166a68a",
+   "fetched_utc": "2026-11-09T11:41:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kitchen2022_JNeurophysiol.zip"
+}

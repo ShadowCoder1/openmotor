@@ -1,0 +1,110 @@
+{
+ "id": "McDermott2019_PLoSOne",
+ "module": "hand_selection_vr",
+ "rows": 6067,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 146442,
+ "zip_sha256": "0d818b7396bc95b6269d1014405ddccfee2fca059a9977124048d207d709267f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants recruited and tested",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Participants: 30 participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the analysis",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants: three excluded, 27 analysed",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Participants: three participants excluded",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-hand contacts left of the midline, non-weighted rounds (27 participants)",
+   "computed": 267.0,
+   "reported": 267.0,
+   "tol": 0,
+   "source": "Results, crossovers: 267 right-hand crossovers in the non-weighted condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "right-hand contacts left of the midline, weighted rounds (27 participants)",
+   "computed": 327.0,
+   "reported": 327.0,
+   "tol": 0,
+   "source": "Results, crossovers: 327 in the weighted condition",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in right-hand crossovers with the weighted glove (percent)",
+   "computed": 22.47191011235956,
+   "reported": 22.5,
+   "tol": 0.05,
+   "source": "Results, crossovers: rising 22.5 percent",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "47 to 49 cubes per test round and 4 test rounds per participant",
+   "ok": true,
+   "detail": "{'count': 120.0, 'mean': 47.975, 'std': 0.20343685659646024, 'min': 47.0, '25%': 48.0, '50%': 48.0, '75%': 48.0, 'max': 49.0}"
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: all 6067 log lines",
+   "ok": true,
+   "detail": "6067"
+  },
+  {
+   "kind": "internal",
+   "what": "13 cube columns between 1 and 7, 3 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "contact after appearance on every row",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's repeated-measures ANOVA and correlation results rest on the authors' MATLAB tables of per-participant hand-selection biases and EHI and grip scores, which are not rebuilt here; the published checks are the participant counts and the 267 and 327 crossover counts."
+ ],
+ "sources": [
+  {
+   "file": "dataset.zip",
+   "url": "https://dataverse.harvard.edu/api/access/dataset/:persistentId/?persistentId=doi:10.7910/DVN/PQ2ABU",
+   "bytes": 237146,
+   "sha256": "2f89368acd5209f226606da7678f4061c25dec1074eb0af15636d26f2530d601",
+   "fetched_utc": "2026-11-09T10:39:22Z"
+  },
+  {
+   "file": "code_leap.zip",
+   "url": "https://github.com/EricJamesMcDermott/VR_HandSelection/raw/HEAD/HandSelectionwLeap.zip",
+   "bytes": 24082865,
+   "sha256": "d5a95bf85841389ed5699d5193ea6cd18ff55ae3782a494bef81bc553c463579",
+   "fetched_utc": "2026-11-09T10:46:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/McDermott2019_PLoSOne.zip"
+}

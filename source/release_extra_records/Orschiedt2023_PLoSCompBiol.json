@@ -1,0 +1,399 @@
+{
+ "id": "Orschiedt2023_PLoSCompBiol",
+ "module": "summary",
+ "rows": 5226,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 73464,
+ "zip_sha256": "b8dfaf661c0c3f19dc492aae17b22a435bd44c4faa0ce34d70d11d3b3750ff7d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Fig 3A Ambiguous file equals the Evident file (deposit duplicate), so it is left out",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "184 bins x 8 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 3C bimanual Evident: 8 participants x 184 bins",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 3C _Uni Evident: 8 participants x 184 bins",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 3C bimanual Ambiguous: 8 participants x 184 bins",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Fig 3C _Uni Ambiguous: 8 participants x 184 bins",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 participants",
+   "ok": true,
+   "detail": "16"
+  },
+  {
+   "kind": "published",
+   "what": "participants per group, Evident",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (16 in two groups of 8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per group, Ambiguous",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (16 in two groups of 8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late baseline force compensation, Evident (percent)",
+   "computed": 7.622882351211445,
+   "reported": 7.62,
+   "tol": 0.005,
+   "source": "Results, force compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late baseline force compensation, Ambiguous (percent)",
+   "computed": 6.882534886729339,
+   "reported": 6.88,
+   "tol": 0.005,
+   "source": "Results, force compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "late exposure force compensation, Evident (percent)",
+   "computed": 79.52407497032372,
+   "reported": 79.52,
+   "tol": 0.005,
+   "source": "Results, force compensation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of late baseline FC, Evident",
+   "computed": 2.268325350040501,
+   "reported": 2.27,
+   "tol": 0.005,
+   "source": "Results, force compensation (the paper's +- is a standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of late baseline FC, Ambiguous",
+   "computed": 2.7657318322221265,
+   "reported": 2.77,
+   "tol": 0.005,
+   "source": "Results, force compensation (the paper's +- is a standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of late exposure FC, Evident",
+   "computed": 3.826086044258454,
+   "reported": 3.83,
+   "tol": 0.005,
+   "source": "Results, force compensation (the paper's +- is a standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of late exposure FC, Ambiguous",
+   "computed": 2.851244289207012,
+   "reported": 2.85,
+   "tol": 0.005,
+   "source": "Results, force compensation (the paper's +- is a standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "omega, Evident group mean",
+   "computed": 0.9349683335000001,
+   "reported": 0.935,
+   "tol": 0.0005,
+   "source": "Results, encoding parameters",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "omega, Ambiguous group mean",
+   "computed": 0.373870748375,
+   "reported": 0.374,
+   "tol": 0.0005,
+   "source": "Results, encoding parameters",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of omega, Evident",
+   "computed": 0.020546209987908515,
+   "reported": 0.021,
+   "tol": 0.0005,
+   "source": "Results, encoding parameters (standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SE of omega, Ambiguous",
+   "computed": 0.04463259430232814,
+   "reported": 0.045,
+   "tol": 0.0005,
+   "source": "Results, encoding parameters (standard error)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MPE decrease from early to late exposure, both groups (cm)",
+   "computed": 2.182163724394129,
+   "reported": 2.18,
+   "tol": 0.005,
+   "source": "Results, kinematic error",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Ambiguous group's MPE file (Fig_3A) is byte-identical to the Evident group's file, so it is a duplicate by mistake in the deposit; only the Evident one is released and the Ambiguous group's MPE per bin is missing (its early, late and generalization values are in the phase bar chart).",
+  "The paper's +- values for force compensation and omega are standard errors (SD / sqrt(n) of the shared rows), not SDs.",
+  "Two reported numbers do not reproduce and are not used as checks: late-exposure force compensation of the Ambiguous group (paper 86.88 percent; the shared rows give 86.87) and the change in MPE from late exposure to late generalization (paper 0.042 cm; the bar-chart rows give 0.085 cm averaged over both groups).",
+  "Late baseline force compensation exists for only 4 Evident and 7 Ambiguous participants in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "Fig_2_Velocity_Profile_F.csv",
+   "url": "https://ndownloader.figshare.com/files/41461647",
+   "bytes": 128641,
+   "sha256": "be09570fdde0ea644a715e586f401f819242fd6bc875e289d92e199c4d78a69b",
+   "fetched_utc": "2026-11-09T14:38:51Z"
+  },
+  {
+   "file": "Fig_2_Velocity_Profile_E.csv",
+   "url": "https://ndownloader.figshare.com/files/41461650",
+   "bytes": 127809,
+   "sha256": "1d09deba1899c6bbb77d8f496fa9128038579eb264a61b306d6b7a55eabefb24",
+   "fetched_utc": "2026-11-09T14:39:02Z"
+  },
+  {
+   "file": "Fig_2_Velocity_Profile_D.csv",
+   "url": "https://ndownloader.figshare.com/files/41461653",
+   "bytes": 128186,
+   "sha256": "4f5209bad99f0d2a6397ae86d60ab13a705104257164201e8fa86f24cbb8fafc",
+   "fetched_utc": "2026-11-09T14:39:11Z"
+  },
+  {
+   "file": "Fig_2_Velocity_Profile_C.csv",
+   "url": "https://ndownloader.figshare.com/files/41461656",
+   "bytes": 122621,
+   "sha256": "601b67d501a28ed23230565798d8850d80bca0140f42ac755b0842faa3b332fc",
+   "fetched_utc": "2026-11-09T14:39:19Z"
+  },
+  {
+   "file": "Fig_2_Velocity_Profile_B.csv",
+   "url": "https://ndownloader.figshare.com/files/41461662",
+   "bytes": 128498,
+   "sha256": "a37357013c1b78627082ec00feb8940f57b32bbeeb582fb01d1c3c9bcf99c9c3",
+   "fetched_utc": "2026-11-09T14:39:24Z"
+  },
+  {
+   "file": "Fig_2_Velocity_Profile_A.csv",
+   "url": "https://ndownloader.figshare.com/files/41461665",
+   "bytes": 128681,
+   "sha256": "1b3ccfed2578ab93d43eb2cebd2c71ef3cee9cf05a646d1d83b2272434dbe019",
+   "fetched_utc": "2026-11-09T14:39:29Z"
+  },
+  {
+   "file": "Fig_2_Peak_Velocity_Data.csv",
+   "url": "https://ndownloader.figshare.com/files/41461668",
+   "bytes": 1903,
+   "sha256": "09c4d715214674f631ca11391dff001daa52d20c7ead1c71a43bbf2065fedafa",
+   "fetched_utc": "2026-11-09T14:39:33Z"
+  },
+  {
+   "file": "Fig_3D_FC_BarChart_Evident.csv",
+   "url": "https://ndownloader.figshare.com/files/41484270",
+   "bytes": 428,
+   "sha256": "d1ac742c30d8b954e2ef41b8e5dce65d28c7546a3290913f721c9bb95fd2bce1",
+   "fetched_utc": "2026-11-09T14:39:48Z"
+  },
+  {
+   "file": "Fig_3D_FC_BarChart_Ambiguous.csv",
+   "url": "https://ndownloader.figshare.com/files/41484273",
+   "bytes": 482,
+   "sha256": "06910116c8cd865391c68326a3b3455bca782df58fdc9f213ac587f3bf028f53",
+   "fetched_utc": "2026-11-09T14:39:53Z"
+  },
+  {
+   "file": "Fig_3B_MPE_BarChart_Evident.csv",
+   "url": "https://ndownloader.figshare.com/files/41484276",
+   "bytes": 531,
+   "sha256": "d741096f696d21bd0564c0ecdaf9ff34dbc0cb1b89ceacdf1a1dbea4d31f85e3",
+   "fetched_utc": "2026-11-09T14:39:57Z"
+  },
+  {
+   "file": "Fig_3B_MPE_BarChart_Ambiguous.csv",
+   "url": "https://ndownloader.figshare.com/files/41484279",
+   "bytes": 527,
+   "sha256": "a29e616b2844a9132489b7e684ba8582fc43e46c44d798529a226b4c27950699",
+   "fetched_utc": "2026-11-09T14:40:01Z"
+  },
+  {
+   "file": "Fig_3A_MaximumPerpendicularError_Evident.csv",
+   "url": "https://ndownloader.figshare.com/files/41484282",
+   "bytes": 29392,
+   "sha256": "ffd928f990b593d6d61d1b85f33c7057119fddc0d4e112c0781716d46a5d98be",
+   "fetched_utc": "2026-11-09T14:40:05Z"
+  },
+  {
+   "file": "Fig_3A_MaximumPerpendicularError_Ambiguous.csv",
+   "url": "https://ndownloader.figshare.com/files/41484285",
+   "bytes": 29392,
+   "sha256": "ffd928f990b593d6d61d1b85f33c7057119fddc0d4e112c0781716d46a5d98be",
+   "fetched_utc": "2026-11-09T14:40:09Z"
+  },
+  {
+   "file": "Fig_3C_ForceCompensation_Uni_Evident.csv",
+   "url": "https://ndownloader.figshare.com/files/41484288",
+   "bytes": 10432,
+   "sha256": "a77abe53134b2ed8b940ac02ea1bbc393c182b9f0aa7b7f823064b9d896e10a2",
+   "fetched_utc": "2026-11-09T14:40:17Z"
+  },
+  {
+   "file": "Fig_3C_ForceCompensation_Uni_Ambiguous.csv",
+   "url": "https://ndownloader.figshare.com/files/41484291",
+   "bytes": 10298,
+   "sha256": "cdbb6834cfd854072a96df56e4e8802dfa72bb676100c8a5dfe9904936350548",
+   "fetched_utc": "2026-11-09T14:40:24Z"
+  },
+  {
+   "file": "Fig_3C_ForceCompensation_Evident.csv",
+   "url": "https://ndownloader.figshare.com/files/41484294",
+   "bytes": 26132,
+   "sha256": "4cf32c3bffdcdc3ef414c05850057a17443cc776c5f6cda1c24c65d2917957e6",
+   "fetched_utc": "2026-11-09T14:40:31Z"
+  },
+  {
+   "file": "Fig_3C_ForceCompensation_Ambiguous.csv",
+   "url": "https://ndownloader.figshare.com/files/41484297",
+   "bytes": 26278,
+   "sha256": "fd8822405bdfe368f08831fc7826f92830d436d9a3436a4a1b956a39b7ec3ff3",
+   "fetched_utc": "2026-11-09T14:40:37Z"
+  },
+  {
+   "file": "Fig_4_ForceProfiles.csv",
+   "url": "https://ndownloader.figshare.com/files/41488836",
+   "bytes": 5178736,
+   "sha256": "4995e1beaaf00dd5705f0f670ebacf13f10a16142a50a1b5117585efe95be8b9",
+   "fetched_utc": "2026-11-09T14:40:43Z"
+  },
+  {
+   "file": "Fig_5_AB_BIC_improvements.csv",
+   "url": "https://ndownloader.figshare.com/files/42640450",
+   "bytes": 1016,
+   "sha256": "31453e3273511a351bc2abead85efac00dea9526874192cbdc79b85d71fdec5b",
+   "fetched_utc": "2026-11-09T14:41:01Z"
+  },
+  {
+   "file": "Fig_5_CD_Rsquared.csv",
+   "url": "https://ndownloader.figshare.com/files/42640453",
+   "bytes": 1198,
+   "sha256": "b51cb4283aec47e4f9dcf08737c390e0670a33a7186b0788d8a2cd166fe0c30c",
+   "fetched_utc": "2026-11-09T14:41:07Z"
+  },
+  {
+   "file": "Fig_6_A_Predictions.csv",
+   "url": "https://ndownloader.figshare.com/files/42640456",
+   "bytes": 5272,
+   "sha256": "cd8279eb686038578af5c97cf1024b82c736482ba64216697d6a863fe0b76c11",
+   "fetched_utc": "2026-11-09T14:41:12Z"
+  },
+  {
+   "file": "Fig_6_AB_GeneratedForces.csv",
+   "url": "https://ndownloader.figshare.com/files/42640459",
+   "bytes": 1996,
+   "sha256": "f1d456f84d066c19f5d3f8163a74f29550faf644fdc4a228febc7e998dfa10c7",
+   "fetched_utc": "2026-11-09T14:41:16Z"
+  },
+  {
+   "file": "Fig_6_B_Predictions.csv",
+   "url": "https://ndownloader.figshare.com/files/42640462",
+   "bytes": 5284,
+   "sha256": "16d1faab4f27dc3514d4c3ef42f0a44c8a4d853897e2e10d640bfd9e96f4f691",
+   "fetched_utc": "2026-11-09T14:41:20Z"
+  },
+  {
+   "file": "Fig_6_CD_MSE.csv",
+   "url": "https://ndownloader.figshare.com/files/42640465",
+   "bytes": 998,
+   "sha256": "97a0a13f86bb4a8a52f3cd9321fabbb9cef8c7b18e73806ab5bcc3ce34c2d47e",
+   "fetched_utc": "2026-11-09T14:41:26Z"
+  },
+  {
+   "file": "Fig_7_AB_BIC_improvements.csv",
+   "url": "https://ndownloader.figshare.com/files/42640477",
+   "bytes": 1015,
+   "sha256": "eff734a8d193579874ed415c353045ed38ba81d4d8a17d3d615bb1d276c5cf6f",
+   "fetched_utc": "2026-11-09T14:41:30Z"
+  },
+  {
+   "file": "Fig_7_CD_Rsquared.csv",
+   "url": "https://ndownloader.figshare.com/files/42640468",
+   "bytes": 1203,
+   "sha256": "9980037fe931072334410ee3bf0a514fd1806c6bddae80b12ffe48b46d10c350",
+   "fetched_utc": "2026-11-09T14:41:34Z"
+  },
+  {
+   "file": "Fig_8A_Omega.csv",
+   "url": "https://ndownloader.figshare.com/files/42640471",
+   "bytes": 312,
+   "sha256": "3f2361db24ece8a535f99102c9d0fe20bb4bd85397866091c1a5e5cacad6d7b6",
+   "fetched_utc": "2026-11-09T14:41:38Z"
+  },
+  {
+   "file": "Fig_8B_Omega_Blocks.csv",
+   "url": "https://ndownloader.figshare.com/files/42640474",
+   "bytes": 5615,
+   "sha256": "382c4450e0ce7e5eb5bab8b1ac6b441b760b0355e616bb7fe49150ab50c8f42b",
+   "fetched_utc": "2026-11-09T14:41:42Z"
+  },
+  {
+   "file": "Fig_9_GeneratedForces.csv",
+   "url": "https://ndownloader.figshare.com/files/42640528",
+   "bytes": 15441752,
+   "sha256": "a4910eefa8d67679c8303ea1f14644f4d8e252436a6510467b8b028d791e3baa",
+   "fetched_utc": "2026-11-09T14:41:48Z"
+  },
+  {
+   "file": "Fig_9_PredictedForces.csv",
+   "url": "https://ndownloader.figshare.com/files/42640531",
+   "bytes": 53565698,
+   "sha256": "18018d66cec7b0ad7b2a119c6fee14be56bb6b8b52e05b80fc0748c457c1b2e7",
+   "fetched_utc": "2026-11-09T14:41:55Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Orschiedt2023_PLoSCompBiol.zip"
+}

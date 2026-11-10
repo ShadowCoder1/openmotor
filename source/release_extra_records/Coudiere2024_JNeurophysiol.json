@@ -1,0 +1,116 @@
+{
+ "id": "Coudiere2024_JNeurophysiol",
+ "module": "timeseries",
+ "rows": 2688,
+ "subjects": 28,
+ "persons": 28,
+ "zip_bytes": 613583705,
+ "zip_sha256": "d903d1052e4ea9dc9aab9ec798648bc4060901859d64174e3bfc338839aa53fa",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Abstract: twenty-eight participants; Data Set Description: 28 folders",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest target update rate (Hz)",
+   "computed": 1.5,
+   "reported": 1.5,
+   "tol": 0,
+   "source": "Abstract: refresh rate from 1.5 to 240 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest target update rate (Hz)",
+   "computed": 240.0,
+   "reported": 240.0,
+   "tol": 0,
+   "source": "Abstract: refresh rate from 1.5 to 240 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "update rates tested",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Data Set Description: 8 refreshing rates",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target patterns",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Data Set Description: 4 target patterns",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tracking conditions (eyes and hand, hand only, eyes only)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Abstract and Data Set Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings per participant (3 x 8 x 4)",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Data Set Description: 8 rates x 4 patterns x 3 conditions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 1000.0,
+   "reported": 1000.0,
+   "tol": 0,
+   "source": "Data Set Description scripts: sf = 1000",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every signal file has 10000 samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings = 28 x 96",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target positions repeat in steps at the low rates (distinct values in 10 s far below 10000) and change on almost every sample at 240 Hz",
+   "ok": true,
+   "detail": "{1.5: 15.0, 2.0: 9.5, 2.5: 25.0, 3.0: 31.0, 3.5: 35.0, 4.0: 20.0, 8.0: 40.0, 240.0: 4999.5}"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text could not be read (paywalled, not in Europe PMC), so none of its tracking error, lag or fixation/pursuit numbers are reproduced; checks are against the abstract and the deposit's description.",
+  "The unit of position is not stated in the deposit (the target and gaze lie within about +/-10 units, so degrees of visual angle or cm are likely); treat values as the authors' screen units."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://osf.io/download/52zgs/",
+   "bytes": 465157431,
+   "sha256": "f9c7a05c42cf48a2fbaa4920df528b8029518f1ee16786cd7f68edde6cdf426d",
+   "fetched_utc": "2026-11-09T19:47:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Coudiere2024_JNeurophysiol.zip"
+}

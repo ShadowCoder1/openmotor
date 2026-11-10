@@ -1,0 +1,105 @@
+{
+ "id": "Burroni2026_LabPhon",
+ "module": "articulography",
+ "rows": 1758,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 93081331,
+ "zip_sha256": "11c3ec2d2ff4c083cb6f5efd7ec604cc7e0fbf5589104204f0688eaf364acc6d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows come in singleton/geminate pairs of one trial (same speaker, trial number, word pair); traces are on the singleton row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every token's gesture trace equals the trial trace from landmark onset to offset (landmark indices are 1-based samples)",
+   "ok": true,
+   "detail": "1758/1758"
+  },
+  {
+   "kind": "published",
+   "what": "tokens analysed (15 words x 2 x 10 repetitions x 6 speakers = 1800, minus 42 excluded)",
+   "computed": 1758.0,
+   "reported": 1758.0,
+   "tol": 0,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Methods 2.2 and 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "excluded tokens (21 pairs)",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Methods 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "words (singleton/geminate pairs)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman correlation of plateau duration and target consonant acoustic duration",
+   "computed": 0.7511128211624912,
+   "reported": 0.75,
+   "tol": 0.005,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Results 3.1 (rho = 0.75)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Spearman correlation of V1-to-target lag and preceding vowel duration",
+   "computed": 0.7696254810190164,
+   "reported": 0.77,
+   "tol": 0.005,
+   "source": "Burroni et al. 2026 (Laboratory Phonology 17(1):26525), Results 3.3 (rho = .77)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "equal numbers of singleton and geminate tokens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "durations are non-negative and the plateau is the target-to-release lag",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's mixed-effects regression coefficients (MATLAB fitlme with random slopes) were not refitted; the checks are the token and speaker counts and two Spearman correlations.",
+  "The deposit's V2Dur column equals V1Dur in every row, which the paper does not explain; both are kept as shared.",
+  "The paper is under review as a preprint at the OSF project; the published article is in Laboratory Phonology 17(1), 26525 (full text blocked by a bot check, so numbers were checked against the OSF preprint PDF)."
+ ],
+ "sources": [
+  {
+   "file": "SupplementaryMaterial.zip",
+   "url": "https://osf.io/download/dg7h9/",
+   "bytes": 188345394,
+   "sha256": "1be6eb8fa2995df64f85ae69f84a34c4f1f4cc02e8c6661b0de2623aae27620e",
+   "fetched_utc": "2026-11-09T19:21:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Burroni2026_LabPhon.zip"
+}

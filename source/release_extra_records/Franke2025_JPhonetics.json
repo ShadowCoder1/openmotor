@@ -1,0 +1,597 @@
+{
+ "id": "Franke2025_JPhonetics",
+ "module": "articulography",
+ "rows": 2749,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 279022,
+ "zip_sha256": "356f35d2c0601896765a16801ddfe7a1b4e0dabf9273a296cd835f805d4b804b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every token of the landmark table kept, in the file's order",
+   "ok": true,
+   "detail": "2749 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "20 participants, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial runs 1..n in each participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sync table: the articulator time is the lip-aperture nucleus onset on every joined token",
+   "ok": true,
+   "detail": "2086 tokens"
+  },
+  {
+   "kind": "internal",
+   "what": "sync table: tap offset = tap time minus articulator time on every token with a tap",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "landmark order gons <= pvel <= nons <= maxc <= noffs <= pvel2 <= goffs on at least 99.5% of tokens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CV-lag rows attached to a token of the landmark table: all but a few that cannot be told apart",
+   "ok": true,
+   "detail": "1809 of 1815"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: mean age (years)",
+   "computed": 23.1,
+   "reported": 23.1,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: SD of age (years)",
+   "computed": 3.1780497164141406,
+   "reported": 3.18,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: youngest (years)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: oldest (years)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: males",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: left-handed participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: mean age (years)",
+   "computed": 23.1,
+   "reported": 23.1,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: SD of age (years)",
+   "computed": 4.04007700696685,
+   "reported": 4.04,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: youngest (years)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: oldest (years)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants (range)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: males",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWNS: left-handed participants",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: mean age of stuttering onset (years)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PWS: SD of age of stuttering onset (years)",
+   "computed": 2.6666666666666665,
+   "reported": 2.67,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S01",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S02",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S03",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S04",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S05",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S06",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S07",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S08",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S09",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SSI-4 score of S10",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "different target words",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.2 Speech material, Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "most target words produced by one participant (4 repetitions x 4 conditions x 9 words)",
+   "computed": 144.0,
+   "reported": 144.0,
+   "tol": 0,
+   "source": "Franke et al. 2025, 2.3 Procedure (a maximum of 144 target words)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Unpaced, PWNS: mean (s)",
+   "computed": 0.5165088495575221,
+   "reported": 0.52,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Unpaced, PWNS: SD (s)",
+   "computed": 0.08906992215360007,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Unpaced, PWS: mean (s)",
+   "computed": 0.5636476190476191,
+   "reported": 0.56,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Unpaced, PWS: SD (s)",
+   "computed": 0.14065808970708216,
+   "reported": 0.14,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Tapping, PWNS: mean (s)",
+   "computed": 0.523068085106383,
+   "reported": 0.52,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Tapping, PWNS: SD (s)",
+   "computed": 0.06925972765267446,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Tapping, PWS: mean (s)",
+   "computed": 0.5996037735849057,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Tapping, PWS: SD (s)",
+   "computed": 0.09812837894037117,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome, PWNS: mean (s)",
+   "computed": 0.5975677966101693,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome, PWNS: SD (s)",
+   "computed": 0.09419549420615315,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome, PWS: mean (s)",
+   "computed": 0.6021622807017544,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome, PWS: SD (s)",
+   "computed": 0.10081773573984591,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome+Tapping, PWNS: mean (s)",
+   "computed": 0.5965531914893617,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome+Tapping, PWNS: SD (s)",
+   "computed": 0.09844192363782037,
+   "reported": 0.1,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome+Tapping, PWS: mean (s)",
+   "computed": 0.6196035242290749,
+   "reported": 0.62,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target word duration, Metronome+Tapping, PWS: SD (s)",
+   "computed": 0.08665107317915961,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Franke et al. 2025, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilabial closure duration (nucleus offset minus onset), PWNS: mean (s)",
+   "computed": 0.07367924397602611,
+   "reported": 0.074,
+   "tol": 0.0005,
+   "source": "Franke et al. 2025, 3.1 (footnote 5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bilabial closure duration (nucleus offset minus onset), PWS: mean (s)",
+   "computed": 0.07257729061800806,
+   "reported": 0.073,
+   "tol": 0.0005,
+   "source": "Franke et al. 2025, 3.1 (footnote 5)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper excludes 94 trials (80 in PWS, 14 in PWNS) before analysis; the landmark table flags only 11 tokens with '!!' and holds 2749 of the at most 2,880 tokens (20 participants x 144), so the other exclusions were made before the tables were built and cannot be reproduced here.",
+  "6 of the 1,815 rows of the authors' CV-lag table could not be attached to a single token of the landmark table (the recording label is cut or shared by two tokens); they are in cv_lag_stats.csv.",
+  "The paper says each target word was repeated four times per condition; one token of the landmark table has repetition 5."
+ ],
+ "sources": [
+  {
+   "file": "participant_metadata.csv",
+   "url": "https://osf.io/download/685c60184d7e52d87ca1c6f5/",
+   "bytes": 4603,
+   "sha256": "fb6cc63b4970cc58e537a43110586d50e337591b72253e1a544db51b514ca051",
+   "fetched_utc": "2026-11-08T22:05:17Z"
+  },
+  {
+   "file": "Link_Scripts_and_DataFrames.txt",
+   "url": "https://osf.io/download/au3n2/",
+   "bytes": 469,
+   "sha256": "e5fe3f6ed8d6e407896c792ae3e4864d1600b423f17c61f3b2827f0de242f2e8",
+   "fetched_utc": "2026-11-08T22:05:20Z"
+  },
+  {
+   "file": "CV_acoustics_all_final.csv",
+   "url": "https://osf.io/download/685c60188d212905a65cfc2f/",
+   "bytes": 501248,
+   "sha256": "8aa86c3299aa3e3be134a3928dc5c3f2c57af29c45f0219b4db6864360612c82",
+   "fetched_utc": "2026-11-08T22:05:25Z"
+  },
+  {
+   "file": "cv_data_all_final.csv",
+   "url": "https://osf.io/download/685c601a7a6581f4ebd1adf3/",
+   "bytes": 640716,
+   "sha256": "2071d59a5180e811d0d2e920f64fc9f953379b37c3cf1345f8af14ae2d02277d",
+   "fetched_utc": "2026-11-08T22:05:30Z"
+  },
+  {
+   "file": "cv_kin_stats_final.csv",
+   "url": "https://osf.io/download/685c601c6977e9b36f5cfe48/",
+   "bytes": 1444735,
+   "sha256": "45d2d798f211a33c0b7af7af1f849592b388b4f9ee564f3b94007034c725e4d4",
+   "fetched_utc": "2026-11-08T22:05:35Z"
+  },
+  {
+   "file": "CV_lag_stats_final.csv",
+   "url": "https://osf.io/download/685c601dc0bb70902ed1af8a/",
+   "bytes": 322545,
+   "sha256": "1b7eeb52e1faa2c77cc74fa75831853d662877c43ad7aa0f0e3065bb9a45d737",
+   "fetched_utc": "2026-11-08T22:05:40Z"
+  },
+  {
+   "file": "LipAp_TBack_all_final.csv",
+   "url": "https://osf.io/download/3pnb5/",
+   "bytes": 1464332,
+   "sha256": "b849ef94e936660ab11b443e8cb654cb170a5b7554fbddb478e981753fd97d6a",
+   "fetched_utc": "2026-11-08T22:05:58Z"
+  },
+  {
+   "file": "syncdata_10pairs_stats.csv",
+   "url": "https://osf.io/download/685c6023b3bb5a5d6fa1c70f/",
+   "bytes": 420426,
+   "sha256": "8a91ce0ef1b9d21e0a4c2117872ac7b83cb28c01f3893f2b4fed7ba7fa69c847",
+   "fetched_utc": "2026-11-08T22:06:03Z"
+  },
+  {
+   "file": "worddur_all.csv",
+   "url": "https://osf.io/download/685c6026b4fe12927cd16642/",
+   "bytes": 269441,
+   "sha256": "e701e59e12c01b7c5d2a346372f42eb67e3794db8e93c72cc68f886ce652d3b6",
+   "fetched_utc": "2026-11-08T22:06:08Z"
+  },
+  {
+   "file": "CV_Analyses_Prep.R",
+   "url": "https://osf.io/download/vfx5t/",
+   "bytes": 15891,
+   "sha256": "631885741d6bca67be31ca2e054cbcb42f7d38a92e6d65ddc5f2c42938714db1",
+   "fetched_utc": "2026-11-08T22:06:12Z"
+  },
+  {
+   "file": "enn2gamms_mat2R.R",
+   "url": "https://osf.io/download/uf6kj/",
+   "bytes": 4197,
+   "sha256": "ab952b4f933395a6ca4dcbf91b39ccd1f4527c6b29b898dab8fb58b8c2869258",
+   "fetched_utc": "2026-11-08T22:06:17Z"
+  },
+  {
+   "file": "CV_acoustics_mat2R.R",
+   "url": "https://osf.io/download/mwpfz/",
+   "bytes": 3475,
+   "sha256": "d1a79ed58dac6bf7f7471a866088c4c6222c62424f71a3702be1173bbbd242e8",
+   "fetched_utc": "2026-11-08T22:06:22Z"
+  },
+  {
+   "file": "kinematics_mat2R_EMA.R",
+   "url": "https://osf.io/download/685c5e4c3aa22eb8c2070650/",
+   "bytes": 6857,
+   "sha256": "06187d9269745cf57592e0620c5d1416a6c1df2057f7461eab4f3e570037a252",
+   "fetched_utc": "2026-11-08T22:06:26Z"
+  },
+  {
+   "file": "LipAp_TBack_mat2R_EMA.R",
+   "url": "https://osf.io/download/685c5e4c709e31523e0704cb/",
+   "bytes": 3902,
+   "sha256": "85020158647f99a0f5e802ee82dbb34bf6fe644098d990378c6c46e57a2142ab",
+   "fetched_utc": "2026-11-08T22:06:30Z"
+  },
+  {
+   "file": "Onset_Sync_mat2R.R",
+   "url": "https://osf.io/download/685c5e4fc0bb70902ed1af4f/",
+   "bytes": 4339,
+   "sha256": "95291c9ab76af6e4864e66c8b520bcde3e0fa91413a538f405b0363851171d8b",
+   "fetched_utc": "2026-11-08T22:06:35Z"
+  },
+  {
+   "file": "InterGesturalCoupling_and_PredictiveTiming.Rmd",
+   "url": "https://osf.io/download/4ed6k/",
+   "bytes": 65632,
+   "sha256": "b64f147f9653472ebf0dde51180905baf9379f5ac8f145768c216994f7883c10",
+   "fetched_utc": "2026-11-08T22:06:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Franke2025_JPhonetics.zip"
+}

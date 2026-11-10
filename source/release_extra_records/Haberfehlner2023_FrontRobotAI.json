@@ -1,0 +1,104 @@
+{
+ "id": "Haberfehlner2023_FrontRobotAI",
+ "module": "timeseries",
+ "rows": 188,
+ "subjects": 34,
+ "persons": 34,
+ "zip_bytes": 24587240,
+ "zip_sha256": "e5dd31b3ce6909084793892f7a8b19f983d4b6e83a15d281056fd6a3b108215d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "lying and sitting each hold 94 files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "188 recordings",
+   "ok": true,
+   "detail": "188"
+  },
+  {
+   "kind": "internal",
+   "what": "all samples have the 14 named landmarks x 3 channels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "scores 0-4 or 999 for not scored",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 34.0,
+   "reported": 34.0,
+   "tol": 0,
+   "source": "Zenodo record description (188 videos of 34 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "videos",
+   "computed": 188.0,
+   "reported": 188.0,
+   "tol": 0,
+   "source": "Zenodo record description (188 videos of 34 children)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sample rate (Hz)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Zenodo record description (sampled with 25 Hz)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's classifier results were not reproduced (no code was run); published checks are participant, video and frame-rate counts from the dataset description. Videos without clinical rows (if any) are kept under their own codes."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://zenodo.org/api/records/5638470/files/README.txt/content",
+   "bytes": 1627,
+   "sha256": "91b02ae1c625a701427bb282c8531b8b2f40953c810bf18e22c82d73e3e5dae8",
+   "fetched_utc": "2026-11-09T16:56:19Z"
+  },
+  {
+   "file": "data_clinical_scoring.xlsx",
+   "url": "https://zenodo.org/api/records/5638470/files/data_clinical_scoring.xlsx/content",
+   "bytes": 69250,
+   "sha256": "4d200fd809c398833245b9686d4c058dab76fb514684db28b7ffdc285ef8e700",
+   "fetched_utc": "2026-11-09T16:56:28Z"
+  },
+  {
+   "file": "README_data_clinical_scoring.xlsx",
+   "url": "https://zenodo.org/api/records/5638470/files/README_data_clinical_scoring.xlsx/content",
+   "bytes": 104465,
+   "sha256": "d047b13b31f92ee0e7adbf6bde1d81f58a940aeb36caec8b92ae45b351bdff62",
+   "fetched_utc": "2026-11-09T16:56:37Z"
+  },
+  {
+   "file": "data_stickfigure_coordinates_sitting.zip",
+   "url": "https://zenodo.org/api/records/5638470/files/data_stickfigure_coordinates_sitting.zip/content",
+   "bytes": 12700612,
+   "sha256": "142d14c0c49d3ed333daecf4ed8df77155771b6689afa67d0d8d16f5b8843f16",
+   "fetched_utc": "2026-11-09T16:56:51Z"
+  },
+  {
+   "file": "data_stickfigure_coordinates_lying.zip",
+   "url": "https://zenodo.org/api/records/5638470/files/data_stickfigure_coordinates_lying.zip/content",
+   "bytes": 11964208,
+   "sha256": "ab7419d268d15a624fe943d745f9d10a2c54f35e09d0f33e3f9d73a43d2d2218",
+   "fetched_utc": "2026-11-09T16:57:06Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Haberfehlner2023_FrontRobotAI.zip"
+}

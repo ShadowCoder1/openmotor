@@ -1,0 +1,108 @@
+{
+ "id": "Tomassini2018_ProcRSocB",
+ "module": "tapping",
+ "rows": 71216,
+ "subjects": 8,
+ "persons": 8,
+ "zip_bytes": 1360120,
+ "zip_sha256": "d6e71bf713a42371db418adb460862919cfbf3246277fc16174e876eccb81087",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "MainExp_rawdata.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each trial's tap events are consistent with the authors' latencies (interval = onset difference, first interval from the 4th tone, probe latencies from tap 3 and 4 within 1 ms, duration = offset - onset)",
+   "ok": true,
+   "detail": "{'tap interval != difference of tap onsets': 0, 'first tap interval != tap onset - 4th tone onset': np.int64(0), 'probe latency after tap 3': np.int64(0), 'probe latency to tap 4': np.int64(0), 'offset - onset != duration': 0}"
+  },
+  {
+   "kind": "published",
+   "what": "participants in the main experiment",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants (eight in the main experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks of trials per participant (mean)",
+   "computed": 26.75,
+   "reported": 26.75,
+   "tol": 0.005,
+   "source": "Methods, Procedure (26.75 +- 0.9 blocks per subject)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accepted trials per participant (mean)",
+   "computed": 1076.75,
+   "reported": 1076.0,
+   "tol": 1,
+   "source": "Results (1076 +- 48 trials per subject)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean last inter-tap interval of accepted trials (ms)",
+   "computed": 1014.1547480845136,
+   "reported": 1014.0,
+   "tol": 0.5,
+   "source": "Results (inter-tap = 1014 +- 73 ms, mean +- s.d.)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of the last inter-tap interval (ms)",
+   "computed": 73.19325997359148,
+   "reported": 73.0,
+   "tol": 0.5,
+   "source": "Results (inter-tap = 1014 +- 73 ms)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "tone events: 4 tones per trial 50 ms long, onsets about 1050 ms apart (1000-ms silence between tones, Methods)",
+   "ok": true,
+   "detail": "mean tone interval 1051 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "probe interval (SOA) between 50 and 300 ms",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "responses are 0, 1 or missing (3 trials)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The README does not list the beat and tap event fields; their meaning was read from the data and verified against the README's own fields (the probe latencies from tap 3 and 4 are reproduced within 1 ms from the tap onsets).",
+  "The paper's inter-tap interval of 1014 +- 73 ms is reproduced as the mean and SD of the last (4th) interval of the accepted trials; the mean of intervals 2-4 is 1007 ms."
+ ],
+ "sources": [
+  {
+   "file": "README_for_MainExp_rawdata.docx",
+   "url": "https://zenodo.org/api/records/5003924/files/README_for_MainExp_rawdata.docx/content",
+   "bytes": 15059,
+   "sha256": "5c648fa16990ad4e69e12d5d87e09e1e98c40675fc8b100cb753aaa797da2062",
+   "fetched_utc": "2026-11-09T04:00:46Z"
+  },
+  {
+   "file": "MainExp_rawdata.zip",
+   "url": "https://zenodo.org/api/records/5003924/files/MainExp_rawdata.zip/content",
+   "bytes": 324657718,
+   "sha256": "2a08ce050b003c86e9cc53c77d97ec44e28dfb2a961df2d4b37a15e3e905f3be",
+   "fetched_utc": "2026-11-09T04:31:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tomassini2018_ProcRSocB.zip"
+}

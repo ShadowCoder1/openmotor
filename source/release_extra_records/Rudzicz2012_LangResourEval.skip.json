@@ -1,0 +1,7 @@
+{
+ "id": "Rudzicz2012_LangResourEval",
+ "skipped": true,
+ "reason": "license does not allow a converted copy",
+ "details": "The TORGO page grants use \"free for academic (non-profit) purposes\" under the authors own terms and says nothing about redistributing a converted copy, so a public copy on OpenMotor is not clearly allowed. Also, the four archives are 9.6 GB compressed (18 GB uncompressed) of AG500 .pos articulograph files and audio, over the 5 GB limit.",
+ "sources": []
+}

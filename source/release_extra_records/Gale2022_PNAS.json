@@ -1,0 +1,1023 @@
+{
+ "id": "Gale2022_PNAS",
+ "module": "reach90",
+ "rows": 35840,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 925589,
+ "zip_sha256": "b019f5295c8879b4ff105f23068f2368e568c8220d3df3035274dc0960d7a58a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Results (N = 32 perform a visuomotor rotation task)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the scan with the rotation (120 baseline + 320 rotation)",
+   "computed": 440.0,
+   "reported": 440.0,
+   "tol": 0,
+   "source": "Materials and Methods ('a total of 440 trials')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline trials per participant",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Materials and Methods (120 trials with no rotation)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rotation trials per participant",
+   "computed": 320.0,
+   "reported": 320.0,
+   "tol": 0,
+   "source": "Materials and Methods (320 trials with 45 deg rotation)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has 2 x (440 + 120) rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "session 1: baseline cursor error near 0 (|mean| < 5 deg), first 10 rotation trials cursor error counter-clockwise (< -15 deg, i.e. clockwise displaced by the rotation), late hand angle compensating (> +30 deg)",
+   "ok": true,
+   "detail": "0.2, -31.7, 40.6"
+  },
+  {
+   "kind": "internal",
+   "what": "session 2: baseline cursor error near 0 (|mean| < 5 deg), first 10 rotation trials cursor error counter-clockwise (< -15 deg, i.e. clockwise displaced by the rotation), late hand angle compensating (> +30 deg)",
+   "ok": true,
+   "detail": "0.6, -18.8, 42.1"
+  },
+  {
+   "kind": "internal",
+   "what": "missing responses (n/a) are kept as empty hand angle, not dropped",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 32 x 1120",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analyses 32 of 40 recruited participants (8 excluded for head motion or missing scans); the deposit holds only those 32, so no participant is flagged.",
+  "The paper does not say whether it used the first or both sessions; both are converted."
+ ],
+ "sources": [
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/participants.tsv",
+   "bytes": 239,
+   "sha256": "e203abf76968674d49cf37996255144d76c0f7ea647ddab7a1758308fc636e2f",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/dataset_description.json",
+   "bytes": 308,
+   "sha256": "9c0c93e411d502d617a4e3c3a0a502cdb844ff31c04ea3a7a9b4f31ff01371c0",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/README",
+   "bytes": 2075,
+   "sha256": "d8f3d98e3d4e34b0bd9a5174c65a325e40ec319a38102d776fc2a53055ffc3e1",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "CHANGES",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/CHANGES",
+   "bytes": 36,
+   "sha256": "abc6121a8ba7901642b31e2af204c40926a6980d1f27654cffd1b88ef5e8b812",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "task-rotation_bold.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/task-rotation_bold.json",
+   "bytes": 73,
+   "sha256": "c496581fcba74b1352629bd8840b8f009fa829ece4661de52bd9a3f1f928c8ec",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "task-washout_bold.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/task-washout_bold.json",
+   "bytes": 61,
+   "sha256": "bea809f4609c4efce316e031fbb5c49645e365c66f522da3eb09a9b9bb3c8063",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "sub-01__ses-01__func__sub-01_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-01/ses-01/func/sub-01_ses-01_task-rotation_events.tsv",
+   "bytes": 20029,
+   "sha256": "135b0e52eb151fe6f93e1d93be2047df82ec48a090ebf4151f16e9bf34c3aea1",
+   "fetched_utc": "2026-11-09T05:04:42Z"
+  },
+  {
+   "file": "sub-01__ses-01__func__sub-01_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-01/ses-01/func/sub-01_ses-01_task-washout_events.tsv",
+   "bytes": 5304,
+   "sha256": "08d8dded9f78ae83604a84f87721d49e1747d97d488b84e607892c3cef04f15c",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-01__ses-02__func__sub-01_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-01/ses-02/func/sub-01_ses-02_task-rotation_events.tsv",
+   "bytes": 20033,
+   "sha256": "c66049f104252fb0920a9d1db66dda3d6605bb10012faaf2f7690d4e8c27c063",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-01__ses-02__func__sub-01_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-01/ses-02/func/sub-01_ses-02_task-washout_events.tsv",
+   "bytes": 5304,
+   "sha256": "b08b3b50879a403aa13c7064d1f77007878d1f75599caa6e87e7ef3cfc18efb5",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-02__ses-01__func__sub-02_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-02/ses-01/func/sub-02_ses-01_task-rotation_events.tsv",
+   "bytes": 19920,
+   "sha256": "e11e7191e128067199c4badd3ff3f26f8a2ffb42d8bd6fc5530835b265aca8d2",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-02__ses-01__func__sub-02_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-02/ses-01/func/sub-02_ses-01_task-washout_events.tsv",
+   "bytes": 5298,
+   "sha256": "805587d1a743f75f09961fd914a72099e0e1dee5c7b9dba7ba22adf8318392f4",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-02__ses-02__func__sub-02_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-02/ses-02/func/sub-02_ses-02_task-rotation_events.tsv",
+   "bytes": 19943,
+   "sha256": "6e26edcaf7173ab81730bca8a4a6eb5293e9be0c45e7fd9614495f9322791493",
+   "fetched_utc": "2026-11-09T05:04:43Z"
+  },
+  {
+   "file": "sub-02__ses-02__func__sub-02_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-02/ses-02/func/sub-02_ses-02_task-washout_events.tsv",
+   "bytes": 5268,
+   "sha256": "af7a896051dbd1375185ffaf3b34049479f9e2f9f6361bb04421d83a8fae72ed",
+   "fetched_utc": "2026-11-09T05:04:44Z"
+  },
+  {
+   "file": "sub-03__ses-01__func__sub-03_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-03/ses-01/func/sub-03_ses-01_task-rotation_events.tsv",
+   "bytes": 20013,
+   "sha256": "aa6c60b45ad0d3f814a861f8b3e3a9068bfae0670212f6fbd875f3664763c45c",
+   "fetched_utc": "2026-11-09T05:04:44Z"
+  },
+  {
+   "file": "sub-03__ses-01__func__sub-03_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-03/ses-01/func/sub-03_ses-01_task-washout_events.tsv",
+   "bytes": 5288,
+   "sha256": "8d456415e61de5707d65177e7373028708929d962dd490be3fd3efe125b57571",
+   "fetched_utc": "2026-11-09T05:04:44Z"
+  },
+  {
+   "file": "sub-03__ses-02__func__sub-03_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-03/ses-02/func/sub-03_ses-02_task-rotation_events.tsv",
+   "bytes": 20062,
+   "sha256": "1131891d63e33eb7f9d2555736946a16da3a9ba20293d2142c2efbf722f4c5a9",
+   "fetched_utc": "2026-11-09T05:04:44Z"
+  },
+  {
+   "file": "sub-03__ses-02__func__sub-03_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-03/ses-02/func/sub-03_ses-02_task-washout_events.tsv",
+   "bytes": 5272,
+   "sha256": "ea5782fe303751b737f1415d42e0362d7134e91debe83f0b6977815e67df6e08",
+   "fetched_utc": "2026-11-09T05:04:44Z"
+  },
+  {
+   "file": "sub-06__ses-01__func__sub-06_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-06/ses-01/func/sub-06_ses-01_task-rotation_events.tsv",
+   "bytes": 20033,
+   "sha256": "ebc97750d4f69cbafebb13d3730dfb6cac7fe102a45ac3682d55df9074652e25",
+   "fetched_utc": "2026-11-09T05:04:45Z"
+  },
+  {
+   "file": "sub-06__ses-01__func__sub-06_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-06/ses-01/func/sub-06_ses-01_task-washout_events.tsv",
+   "bytes": 5305,
+   "sha256": "8183422f87df483e4c0fd02d55d0db60e0fd979be5b8124b9c7a73ef9c1fbb88",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-06__ses-02__func__sub-06_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-06/ses-02/func/sub-06_ses-02_task-rotation_events.tsv",
+   "bytes": 20048,
+   "sha256": "c0412c6c8985274f2e88802b192a4f8e126ac4a1a608674b8e135f503833df03",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-06__ses-02__func__sub-06_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-06/ses-02/func/sub-06_ses-02_task-washout_events.tsv",
+   "bytes": 5296,
+   "sha256": "0a055009c2aa28e4dcd2ab238636187ff89b6a4076a316b39c9f14084228c5cd",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-07__ses-01__func__sub-07_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-07/ses-01/func/sub-07_ses-01_task-rotation_events.tsv",
+   "bytes": 20073,
+   "sha256": "aa3e677c354e593fd1c990da0e554e806b1740a75e6cc47c18f25bd8bc78babe",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-07__ses-01__func__sub-07_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-07/ses-01/func/sub-07_ses-01_task-washout_events.tsv",
+   "bytes": 5276,
+   "sha256": "934b402a05f519f081ad9736b042b3cb3f6c0184788b17ecc36bf9ee06106815",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-07__ses-02__func__sub-07_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-07/ses-02/func/sub-07_ses-02_task-rotation_events.tsv",
+   "bytes": 20045,
+   "sha256": "194621696fbf37ba264ed33ca7db62751ef8ca401b5961a3e304586c52ad7f35",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-07__ses-02__func__sub-07_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-07/ses-02/func/sub-07_ses-02_task-washout_events.tsv",
+   "bytes": 5276,
+   "sha256": "dfdea310ed94e43b85b0f8a6673a662f989451a37af0e23674bc4bb9676f26c7",
+   "fetched_utc": "2026-11-09T05:04:46Z"
+  },
+  {
+   "file": "sub-08__ses-01__func__sub-08_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-08/ses-01/func/sub-08_ses-01_task-rotation_events.tsv",
+   "bytes": 20007,
+   "sha256": "42d851f96a2a9cbf9c72265828ae61b651eb662c115b1717572ed4c8cb6d096b",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-08__ses-01__func__sub-08_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-08/ses-01/func/sub-08_ses-01_task-washout_events.tsv",
+   "bytes": 5300,
+   "sha256": "1899c6fe2f0b241e8cea84c9e54c5d20391e0f30b8f53ec3b1efffca80215049",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-08__ses-02__func__sub-08_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-08/ses-02/func/sub-08_ses-02_task-rotation_events.tsv",
+   "bytes": 20016,
+   "sha256": "3b6aa77b7f99cac5272d8fd89c373aed399fae67e50d44007a4b496427703f0c",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-08__ses-02__func__sub-08_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-08/ses-02/func/sub-08_ses-02_task-washout_events.tsv",
+   "bytes": 5300,
+   "sha256": "0b4f25c3ff76e127903c7e2bd62862ff45e61960bbd353cd150959e7ad625f8d",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-09__ses-01__func__sub-09_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-09/ses-01/func/sub-09_ses-01_task-rotation_events.tsv",
+   "bytes": 19826,
+   "sha256": "79e853eefac614f47bc72301143323647618299a3964f10e119346d8f8add8ad",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-09__ses-01__func__sub-09_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-09/ses-01/func/sub-09_ses-01_task-washout_events.tsv",
+   "bytes": 5281,
+   "sha256": "1ef7e792e61720412548f7b4a96e7db99795f8da93e591476b53ff275426c403",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-09__ses-02__func__sub-09_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-09/ses-02/func/sub-09_ses-02_task-rotation_events.tsv",
+   "bytes": 19972,
+   "sha256": "d85548c75ac2958d6b1d3d3a599043c39e07e9f1633365fb7300d4d84d365114",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  },
+  {
+   "file": "sub-09__ses-02__func__sub-09_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-09/ses-02/func/sub-09_ses-02_task-washout_events.tsv",
+   "bytes": 5304,
+   "sha256": "2db8baa39d02f8696e3ed3d6b2e1823f7f00d2fd90aa392820ea6679b3fabb9a",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-10__ses-01__func__sub-10_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-10/ses-01/func/sub-10_ses-01_task-rotation_events.tsv",
+   "bytes": 20067,
+   "sha256": "5166caa028762648b97224deb9c719e45f01376658440f0c49c8ef6405c12088",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-10__ses-01__func__sub-10_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-10/ses-01/func/sub-10_ses-01_task-washout_events.tsv",
+   "bytes": 5289,
+   "sha256": "ec5d4e251c4350576f213ff885f993ca0fab6ef2ca480679c13d7966b57da8d7",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-10__ses-02__func__sub-10_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-10/ses-02/func/sub-10_ses-02_task-rotation_events.tsv",
+   "bytes": 20072,
+   "sha256": "852751b165ed15e07647f10866cf967ac5ee2f6ae4d6b3c1b67a04709d574ab0",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-10__ses-02__func__sub-10_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-10/ses-02/func/sub-10_ses-02_task-washout_events.tsv",
+   "bytes": 5277,
+   "sha256": "4eb1ed21a9a824c70032ee065dd2df8081872029eaec8e997fcdd731544fd3c0",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-11__ses-01__func__sub-11_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-11/ses-01/func/sub-11_ses-01_task-rotation_events.tsv",
+   "bytes": 20007,
+   "sha256": "94b835a373b6bedea0632e21ed01afac7888f563a21259f590d80d321fc9730d",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-11__ses-01__func__sub-11_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-11/ses-01/func/sub-11_ses-01_task-washout_events.tsv",
+   "bytes": 5268,
+   "sha256": "057435c6f91890197bc6b2157324f2f1e75efb71dda6dcdb4b17bcb4574313f0",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-11__ses-02__func__sub-11_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-11/ses-02/func/sub-11_ses-02_task-rotation_events.tsv",
+   "bytes": 20083,
+   "sha256": "285e60b6ec611a9c27037cffbe1cb26d421eaea277134539bcb6d017eee43197",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-11__ses-02__func__sub-11_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-11/ses-02/func/sub-11_ses-02_task-washout_events.tsv",
+   "bytes": 5256,
+   "sha256": "83201eb55a3ce47a2f6b857324247232780086895182d55134637023ae1a06b3",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-12__ses-01__func__sub-12_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-12/ses-01/func/sub-12_ses-01_task-rotation_events.tsv",
+   "bytes": 19050,
+   "sha256": "2d87e7f62086d40bf5e8b87933ebf6643aa1b1be5d9236979c455f83d6c66e66",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-12__ses-01__func__sub-12_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-12/ses-01/func/sub-12_ses-01_task-washout_events.tsv",
+   "bytes": 5291,
+   "sha256": "776043fa46b78584e68bcaf57d9f35dcdf8fd5d8ba4b656170c3250babd54c48",
+   "fetched_utc": "2026-11-09T05:04:48Z"
+  },
+  {
+   "file": "sub-12__ses-02__func__sub-12_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-12/ses-02/func/sub-12_ses-02_task-rotation_events.tsv",
+   "bytes": 19807,
+   "sha256": "7a1d3348c2ac4183cef0734194d059dce97e8972202aa2e36b9d34e7e34d592d",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-12__ses-02__func__sub-12_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-12/ses-02/func/sub-12_ses-02_task-washout_events.tsv",
+   "bytes": 5273,
+   "sha256": "a1712efd8a8001153abdbbd71503c18294e7149f184abfb840198cd6ecdb5a95",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-13__ses-01__func__sub-13_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-13/ses-01/func/sub-13_ses-01_task-rotation_events.tsv",
+   "bytes": 20004,
+   "sha256": "9c28b5971937ff89bc2a745c2b1319555284835ab88e0675ab4c12d7878b320e",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-13__ses-01__func__sub-13_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-13/ses-01/func/sub-13_ses-01_task-washout_events.tsv",
+   "bytes": 5284,
+   "sha256": "d345d03fe5165ed9e48827479449c9a81005a9da9eefe976445b435a30cb9579",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-13__ses-02__func__sub-13_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-13/ses-02/func/sub-13_ses-02_task-rotation_events.tsv",
+   "bytes": 20027,
+   "sha256": "1003633bdec3113f26ccc11b78246ed3002b8736ad964110b0df018501453fcd",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-13__ses-02__func__sub-13_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-13/ses-02/func/sub-13_ses-02_task-washout_events.tsv",
+   "bytes": 5299,
+   "sha256": "83220954e9b6207f2837c8d42afd597c4b96c4101802a94365c28b182d3649b6",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-14__ses-01__func__sub-14_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-14/ses-01/func/sub-14_ses-01_task-rotation_events.tsv",
+   "bytes": 19991,
+   "sha256": "7cd491c8ab7c7f562f4c57e8b4d63ed7a0ffc2ebad34df162b0447759ae1b72e",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-14__ses-01__func__sub-14_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-14/ses-01/func/sub-14_ses-01_task-washout_events.tsv",
+   "bytes": 5308,
+   "sha256": "a02b9c4925c824bea9b20ebd7e4237facf86416bf1810aca1dae6fcb117d5b04",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-14__ses-02__func__sub-14_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-14/ses-02/func/sub-14_ses-02_task-rotation_events.tsv",
+   "bytes": 20058,
+   "sha256": "01acd5ac320fa2f975ffa6870c75c60f38ebed2b898483858fdb1c36b720d3c0",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-14__ses-02__func__sub-14_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-14/ses-02/func/sub-14_ses-02_task-washout_events.tsv",
+   "bytes": 5278,
+   "sha256": "561977e7e2b9f7056942ba920f2440ecc2c8242d87fb1e6ed3180dce70fb4d22",
+   "fetched_utc": "2026-11-09T05:04:49Z"
+  },
+  {
+   "file": "sub-15__ses-01__func__sub-15_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-15/ses-01/func/sub-15_ses-01_task-rotation_events.tsv",
+   "bytes": 20155,
+   "sha256": "0e45e4837ab0bcb47075a27637cc39bcc656180b0da8bca3732cbe2fbe372ae4",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-15__ses-01__func__sub-15_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-15/ses-01/func/sub-15_ses-01_task-washout_events.tsv",
+   "bytes": 5280,
+   "sha256": "cffc8aa6f1d21e59403aac9b3e4ba442a9fcb9bb49fc6111dfb176ffd5636dfe",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-15__ses-02__func__sub-15_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-15/ses-02/func/sub-15_ses-02_task-rotation_events.tsv",
+   "bytes": 20102,
+   "sha256": "15b7306ee1b44c619fe5c42a1fd4e881a6e3f645e3723efa444dda52e210e722",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-15__ses-02__func__sub-15_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-15/ses-02/func/sub-15_ses-02_task-washout_events.tsv",
+   "bytes": 5265,
+   "sha256": "216e9e5bd0ba0760ce4b66b3c5a83ad7857949c868ab0f9d0c92c7b8665520ec",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-16__ses-01__func__sub-16_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-16/ses-01/func/sub-16_ses-01_task-rotation_events.tsv",
+   "bytes": 19915,
+   "sha256": "dd5707cc8ef69ee4d663b92c3e6db259948e567dc07c3228b3e913cdcf93a241",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-16__ses-01__func__sub-16_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-16/ses-01/func/sub-16_ses-01_task-washout_events.tsv",
+   "bytes": 5312,
+   "sha256": "e36d9775d128cc2fea25075521c2c4b23ecf60e6cc49f9a8a3048d2d93898ad0",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-16__ses-02__func__sub-16_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-16/ses-02/func/sub-16_ses-02_task-rotation_events.tsv",
+   "bytes": 19926,
+   "sha256": "488a103efa9dba8153bc584dff80d32424701f5c5f1595d2c975258c9a377d13",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-16__ses-02__func__sub-16_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-16/ses-02/func/sub-16_ses-02_task-washout_events.tsv",
+   "bytes": 5276,
+   "sha256": "41dc03c641b2ae9d4471f30331bc47df5ecbc6d52a3e49ea11593f8494cc12a6",
+   "fetched_utc": "2026-11-09T05:04:50Z"
+  },
+  {
+   "file": "sub-18__ses-01__func__sub-18_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-18/ses-01/func/sub-18_ses-01_task-rotation_events.tsv",
+   "bytes": 19980,
+   "sha256": "e295b86efa65cf9c276ad7bf6bc6f43b90d4282d7377b0f4620315439b734ab0",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-18__ses-01__func__sub-18_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-18/ses-01/func/sub-18_ses-01_task-washout_events.tsv",
+   "bytes": 5309,
+   "sha256": "8c6fe6218dcb84f7ae1baacb8ec0cb08c49cd07a362c02734797577edc41828b",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-18__ses-02__func__sub-18_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-18/ses-02/func/sub-18_ses-02_task-rotation_events.tsv",
+   "bytes": 20103,
+   "sha256": "f21c50e7bd4eddab3d88ff2c436bdc82b1f3e98b1c3e362df7b0caa73a9d828f",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-18__ses-02__func__sub-18_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-18/ses-02/func/sub-18_ses-02_task-washout_events.tsv",
+   "bytes": 5302,
+   "sha256": "5740d39760267020e4937b0714f9e75cebc1c44eee5f24338a24d309dcfeb25e",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-19__ses-01__func__sub-19_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-19/ses-01/func/sub-19_ses-01_task-rotation_events.tsv",
+   "bytes": 19985,
+   "sha256": "d7302dc0d133ff5dfe4e8ad382422a2cb45a3e155f6ceedce5d571ff706dc971",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-19__ses-01__func__sub-19_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-19/ses-01/func/sub-19_ses-01_task-washout_events.tsv",
+   "bytes": 5261,
+   "sha256": "78b62d97fc10d50147e5270b26c95bd3b88469386b4d912ef0250f64913c82ed",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-19__ses-02__func__sub-19_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-19/ses-02/func/sub-19_ses-02_task-rotation_events.tsv",
+   "bytes": 20056,
+   "sha256": "d6d4b73bb912b4acb7959e358712105e944c4d13aadc53cd4bd3c9fefbbcf64e",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-19__ses-02__func__sub-19_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-19/ses-02/func/sub-19_ses-02_task-washout_events.tsv",
+   "bytes": 5267,
+   "sha256": "553b339200beb8e1d6fc6c83fa93737d320afd9ca90ff1889b71400d926b43e9",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-20__ses-01__func__sub-20_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-20/ses-01/func/sub-20_ses-01_task-rotation_events.tsv",
+   "bytes": 19998,
+   "sha256": "df21bdf2890305a3e2f43f4018060374a45a85e3b162d8bffea77c5a26daef8b",
+   "fetched_utc": "2026-11-09T05:04:51Z"
+  },
+  {
+   "file": "sub-20__ses-01__func__sub-20_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-20/ses-01/func/sub-20_ses-01_task-washout_events.tsv",
+   "bytes": 5290,
+   "sha256": "4a14a30722f172ded22630fb190efed4b127be0b7f9137b7f847cd7dab7aa776",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-20__ses-02__func__sub-20_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-20/ses-02/func/sub-20_ses-02_task-rotation_events.tsv",
+   "bytes": 20024,
+   "sha256": "9af537f6663d7ca0b6af414dcc7c537520260d0a26b79e10ebf470728537e95f",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-20__ses-02__func__sub-20_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-20/ses-02/func/sub-20_ses-02_task-washout_events.tsv",
+   "bytes": 5288,
+   "sha256": "1d8c9547ba9037d8ff31dd154953b4b9f6c9099fc32a38cd9d7c416ebb9b235e",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-21__ses-01__func__sub-21_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-21/ses-01/func/sub-21_ses-01_task-rotation_events.tsv",
+   "bytes": 20049,
+   "sha256": "e901d33ee286c8d3d084f8f4719195b523cb4a87e151fa0c14617c3b1ffed055",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-21__ses-01__func__sub-21_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-21/ses-01/func/sub-21_ses-01_task-washout_events.tsv",
+   "bytes": 5273,
+   "sha256": "a0ccc9a3a6869edf57f1b945e1f24e385e78be9bb38d25ba91360b1bef82329b",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-21__ses-02__func__sub-21_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-21/ses-02/func/sub-21_ses-02_task-rotation_events.tsv",
+   "bytes": 20077,
+   "sha256": "ec2bcc95d43e1a13e9dc757f9420667bea9557535ca8512ab694e797a315a83c",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-21__ses-02__func__sub-21_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-21/ses-02/func/sub-21_ses-02_task-washout_events.tsv",
+   "bytes": 5277,
+   "sha256": "e63f1d60fa814386c2fb7ffb82bb24baebc96d9b2b5484663f8ae7b4f9eafb7f",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-22__ses-01__func__sub-22_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-22/ses-01/func/sub-22_ses-01_task-rotation_events.tsv",
+   "bytes": 20039,
+   "sha256": "1729dfbe6a237c8ec3bbe73da4982897348fbbd296cf069930e34104466032fa",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-22__ses-01__func__sub-22_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-22/ses-01/func/sub-22_ses-01_task-washout_events.tsv",
+   "bytes": 5274,
+   "sha256": "d0302ff735859dad99faa1e157a67bb470ffd1a74e39f13103e359ce0d749367",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-22__ses-02__func__sub-22_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-22/ses-02/func/sub-22_ses-02_task-rotation_events.tsv",
+   "bytes": 20067,
+   "sha256": "1145716998cf58e143cdd2f83767450c8c1ea573aa6d3c979876b085e5b0ac79",
+   "fetched_utc": "2026-11-09T05:04:52Z"
+  },
+  {
+   "file": "sub-22__ses-02__func__sub-22_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-22/ses-02/func/sub-22_ses-02_task-washout_events.tsv",
+   "bytes": 5275,
+   "sha256": "272a545be8567dc8f6773b9d38eff2cf9030f1a45bb6358c727b6b0f1852a77e",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-23__ses-01__func__sub-23_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-23/ses-01/func/sub-23_ses-01_task-rotation_events.tsv",
+   "bytes": 19955,
+   "sha256": "9c2468e0d3fc1435499ce73cdb5b6095100000d9189611c3fb3f3225dc2c4a9b",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-23__ses-01__func__sub-23_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-23/ses-01/func/sub-23_ses-01_task-washout_events.tsv",
+   "bytes": 5307,
+   "sha256": "0672c3f7d23cec9f1ff0d39a1d0c31b7f1d38f4117164b3b5625d26bfbfa3e74",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-23__ses-02__func__sub-23_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-23/ses-02/func/sub-23_ses-02_task-rotation_events.tsv",
+   "bytes": 19966,
+   "sha256": "23538af23eac27b44cdd7354b3cd581f3fdb96655a4ec4455b28b1eddedce5cf",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-23__ses-02__func__sub-23_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-23/ses-02/func/sub-23_ses-02_task-washout_events.tsv",
+   "bytes": 5292,
+   "sha256": "ac9edde910873226f2fbff8dbe18af3eebd86b85524e78c13835f8ff29f30260",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-24__ses-01__func__sub-24_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-24/ses-01/func/sub-24_ses-01_task-rotation_events.tsv",
+   "bytes": 19868,
+   "sha256": "bdb6069833bda198e57cdacf02684b6cc3c595a1b3959329c5d04b59cb70b3cd",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-24__ses-01__func__sub-24_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-24/ses-01/func/sub-24_ses-01_task-washout_events.tsv",
+   "bytes": 5270,
+   "sha256": "60281dd55fa9d526e337cd776a54b2a3d2684271c26c075aa244fb029ba96fba",
+   "fetched_utc": "2026-11-09T05:04:53Z"
+  },
+  {
+   "file": "sub-24__ses-02__func__sub-24_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-24/ses-02/func/sub-24_ses-02_task-rotation_events.tsv",
+   "bytes": 20043,
+   "sha256": "2d143937111bb072bf8dcd761113e2c49e6c6126060d66fd53c15f866230a39d",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-24__ses-02__func__sub-24_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-24/ses-02/func/sub-24_ses-02_task-washout_events.tsv",
+   "bytes": 5244,
+   "sha256": "257490bfc880e8346545dec0d947d84936d0a1ec1420effea4815a71cf5ed7f6",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-25__ses-01__func__sub-25_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-25/ses-01/func/sub-25_ses-01_task-rotation_events.tsv",
+   "bytes": 19794,
+   "sha256": "bd4349ccee5a8fb329b35d1880867ce003db76a6a78417ac3bb2fb4f12260181",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-25__ses-01__func__sub-25_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-25/ses-01/func/sub-25_ses-01_task-washout_events.tsv",
+   "bytes": 5240,
+   "sha256": "8f5844c46fabe15370f6d6ce8570b78f7ebab045f068093072f2cdc13baca61e",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-25__ses-02__func__sub-25_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-25/ses-02/func/sub-25_ses-02_task-rotation_events.tsv",
+   "bytes": 19985,
+   "sha256": "76cf287b478d123dfb025a50e01372ef1c3c2521c94db13095d16520798aa4ee",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-25__ses-02__func__sub-25_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-25/ses-02/func/sub-25_ses-02_task-washout_events.tsv",
+   "bytes": 5276,
+   "sha256": "991f340d7631c9b987d06b346fb49dca1f248bb2a0a67e5354798a5e5885165c",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-26__ses-01__func__sub-26_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-26/ses-01/func/sub-26_ses-01_task-rotation_events.tsv",
+   "bytes": 20080,
+   "sha256": "891fae92c0b0e26e09ccb59c6e953a21e0b68bd341e0eac76ceae04ef1364636",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-26__ses-01__func__sub-26_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-26/ses-01/func/sub-26_ses-01_task-washout_events.tsv",
+   "bytes": 5273,
+   "sha256": "d81a243ed6e7fbb2fe45d30a6bde3ec032e60f54b39ec94434f6600205663940",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-26__ses-02__func__sub-26_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-26/ses-02/func/sub-26_ses-02_task-rotation_events.tsv",
+   "bytes": 20065,
+   "sha256": "7c085c8a338352331872f971b5f787110198064f6bbfbb9d7ae31b583da0990f",
+   "fetched_utc": "2026-11-09T05:04:54Z"
+  },
+  {
+   "file": "sub-26__ses-02__func__sub-26_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-26/ses-02/func/sub-26_ses-02_task-washout_events.tsv",
+   "bytes": 5282,
+   "sha256": "8c3a5cad6dc5dfb35014d66c3188c88ce81b7f5e53435c2b3c0e96a9587caf78",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-27__ses-01__func__sub-27_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-27/ses-01/func/sub-27_ses-01_task-rotation_events.tsv",
+   "bytes": 19881,
+   "sha256": "284263378b7e2548eac103ab274b0edeb4817af48cc89059fdd5f79dab3c488a",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-27__ses-01__func__sub-27_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-27/ses-01/func/sub-27_ses-01_task-washout_events.tsv",
+   "bytes": 5257,
+   "sha256": "42f7bc402910959516a2ebb69d808c8a3bbf294c88ed8aead3a1aaa3e874da5e",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-27__ses-02__func__sub-27_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-27/ses-02/func/sub-27_ses-02_task-rotation_events.tsv",
+   "bytes": 19938,
+   "sha256": "3979da5a5ecefadbed5ebb76965fbf043cdac9274985d60c916a7c2c5baa5885",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-27__ses-02__func__sub-27_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-27/ses-02/func/sub-27_ses-02_task-washout_events.tsv",
+   "bytes": 5257,
+   "sha256": "9ebb785bd66ea44cb57ee32c8dea180c4c599d4b36bcc33593129efd24937bbe",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-28__ses-01__func__sub-28_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-28/ses-01/func/sub-28_ses-01_task-rotation_events.tsv",
+   "bytes": 19949,
+   "sha256": "a1f4ce55ae678ef883c1955d956b2cbd2ff09c3595298b4ae3f170f7aa0e21bc",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-28__ses-01__func__sub-28_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-28/ses-01/func/sub-28_ses-01_task-washout_events.tsv",
+   "bytes": 5303,
+   "sha256": "549155e17f5e5f4870d2cabce6ee05111652c5d345e21457d8f5c2583aa0ccfa",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-28__ses-02__func__sub-28_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-28/ses-02/func/sub-28_ses-02_task-rotation_events.tsv",
+   "bytes": 20011,
+   "sha256": "9c561c7145a21d692b7c5a8c903705e84c7ffdcfc5ac376d3e2657d89822f8d2",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-28__ses-02__func__sub-28_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-28/ses-02/func/sub-28_ses-02_task-washout_events.tsv",
+   "bytes": 5289,
+   "sha256": "47fd61ebf867479e19298871d4e555cff92c8ea895582336f2bee90a943e9cf5",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-29__ses-01__func__sub-29_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-29/ses-01/func/sub-29_ses-01_task-rotation_events.tsv",
+   "bytes": 20122,
+   "sha256": "79247d9ffd3f4eaab26cdc666f26f1a90df975d9140d24e4653c298cdc6ca129",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-29__ses-01__func__sub-29_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-29/ses-01/func/sub-29_ses-01_task-washout_events.tsv",
+   "bytes": 5276,
+   "sha256": "6a74536adbb25fd5428a7871bd233064f49e0be4d32fb394d161d1a1b9c4d4b6",
+   "fetched_utc": "2026-11-09T05:04:55Z"
+  },
+  {
+   "file": "sub-29__ses-02__func__sub-29_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-29/ses-02/func/sub-29_ses-02_task-rotation_events.tsv",
+   "bytes": 20143,
+   "sha256": "a6ea3254569e61fe27e5bc74c72c3ae28c17c4c833dec0e6f4a4d1447e8901f8",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-29__ses-02__func__sub-29_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-29/ses-02/func/sub-29_ses-02_task-washout_events.tsv",
+   "bytes": 5280,
+   "sha256": "b38ac327cb9a75301c5c7f3ea18ddd5405bdb858771deac583bc7c44c74f258e",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-30__ses-01__func__sub-30_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-30/ses-01/func/sub-30_ses-01_task-rotation_events.tsv",
+   "bytes": 20049,
+   "sha256": "75a7fb9882fca44b167ec7920eb058c7324f8f0ea0950e85f806b6f56f8575a4",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-30__ses-01__func__sub-30_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-30/ses-01/func/sub-30_ses-01_task-washout_events.tsv",
+   "bytes": 5282,
+   "sha256": "975d38eef56af558ed0e03e7dc3e0a8a15205051a4dbfbc20183f12bde065cb7",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-30__ses-02__func__sub-30_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-30/ses-02/func/sub-30_ses-02_task-rotation_events.tsv",
+   "bytes": 20088,
+   "sha256": "fe4a5dfc7ba44b3007bb6762933770086cc3463eb847e2961c7db4ec156ed463",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-30__ses-02__func__sub-30_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-30/ses-02/func/sub-30_ses-02_task-washout_events.tsv",
+   "bytes": 5279,
+   "sha256": "c507ba75ecb560b324b316c863084ede82a3495829bf361c9869287e2129e3a8",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-31__ses-01__func__sub-31_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-31/ses-01/func/sub-31_ses-01_task-rotation_events.tsv",
+   "bytes": 19986,
+   "sha256": "2e09edf5ccb1a8f34886e4a8ab251c13bfd4c2f5ebdc4f66b3a570e6f3b1ea5c",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-31__ses-01__func__sub-31_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-31/ses-01/func/sub-31_ses-01_task-washout_events.tsv",
+   "bytes": 5287,
+   "sha256": "1aaf19fd831387c2be38ca1a57a1e0879eaba860f196007d892fae6375504d6f",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-31__ses-02__func__sub-31_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-31/ses-02/func/sub-31_ses-02_task-rotation_events.tsv",
+   "bytes": 20112,
+   "sha256": "b9400fca838a42723552501dfbbca71ddb40f779cd42a5566334a81a7b7d1109",
+   "fetched_utc": "2026-11-09T05:04:56Z"
+  },
+  {
+   "file": "sub-31__ses-02__func__sub-31_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-31/ses-02/func/sub-31_ses-02_task-washout_events.tsv",
+   "bytes": 5255,
+   "sha256": "de3a7055007354b09162e94e8263eb11eb56a9c734e1330a32fa7aa60faeafa1",
+   "fetched_utc": "2026-11-09T05:04:57Z"
+  },
+  {
+   "file": "sub-34__ses-01__func__sub-34_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-34/ses-01/func/sub-34_ses-01_task-rotation_events.tsv",
+   "bytes": 20057,
+   "sha256": "b1c7770e359d13fc8fcce8f827ac8bc17ba21f413625b7e0830a924268b95520",
+   "fetched_utc": "2026-11-09T05:06:06Z"
+  },
+  {
+   "file": "sub-34__ses-01__func__sub-34_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-34/ses-01/func/sub-34_ses-01_task-washout_events.tsv",
+   "bytes": 5284,
+   "sha256": "66fb6088e1f7962817256682ee27606812282e72adf1973ee36fea56ce3e11e5",
+   "fetched_utc": "2026-11-09T05:06:06Z"
+  },
+  {
+   "file": "sub-34__ses-02__func__sub-34_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-34/ses-02/func/sub-34_ses-02_task-rotation_events.tsv",
+   "bytes": 20061,
+   "sha256": "300ae234b41315ec79856478069f45201d830092e614766089956dfc9b373efc",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-34__ses-02__func__sub-34_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-34/ses-02/func/sub-34_ses-02_task-washout_events.tsv",
+   "bytes": 5280,
+   "sha256": "97fbf9b79a6a7c5ff6bcbfbe271a2c83155c493c96927338ac0edf50901476c1",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-36__ses-01__func__sub-36_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-36/ses-01/func/sub-36_ses-01_task-rotation_events.tsv",
+   "bytes": 20092,
+   "sha256": "b7d5ed1d9d3d27d1f47fa32cff91bc15e79bd903e9e9125259f1ac27c182f967",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-36__ses-01__func__sub-36_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-36/ses-01/func/sub-36_ses-01_task-washout_events.tsv",
+   "bytes": 5280,
+   "sha256": "322a880a59265548844b31665701bd00bce98cd2c7acf170f084cb560c4f3b22",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-36__ses-02__func__sub-36_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-36/ses-02/func/sub-36_ses-02_task-rotation_events.tsv",
+   "bytes": 20020,
+   "sha256": "40762666ec171e490511225210abf5798d160b57cf7e9d2accdbbec044664480",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-36__ses-02__func__sub-36_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-36/ses-02/func/sub-36_ses-02_task-washout_events.tsv",
+   "bytes": 5251,
+   "sha256": "6b45d29471010f7b74f9d7b7478d9947458d01f2ddb5db11974efe7335e23959",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-37__ses-01__func__sub-37_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-37/ses-01/func/sub-37_ses-01_task-rotation_events.tsv",
+   "bytes": 20011,
+   "sha256": "b9f4ffa96209bddeb04a1d0ff24aac9dfa10261ea38b140d7ee3529f40e4961c",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-37__ses-01__func__sub-37_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-37/ses-01/func/sub-37_ses-01_task-washout_events.tsv",
+   "bytes": 5293,
+   "sha256": "fa814440f59ca60cc4def47aace5b8139fa58f101a5dda5f4737d308c02e657a",
+   "fetched_utc": "2026-11-09T05:06:07Z"
+  },
+  {
+   "file": "sub-37__ses-02__func__sub-37_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-37/ses-02/func/sub-37_ses-02_task-rotation_events.tsv",
+   "bytes": 20060,
+   "sha256": "2028a0023c1c439637b92da198111ffe0d46cbb7cac1fde545a9fe56258f6a44",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  },
+  {
+   "file": "sub-37__ses-02__func__sub-37_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-37/ses-02/func/sub-37_ses-02_task-washout_events.tsv",
+   "bytes": 5305,
+   "sha256": "a85f35b687ecd82d599f81d19e35bb39720fb3a77077d1dc895896446c06fe16",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  },
+  {
+   "file": "sub-39__ses-01__func__sub-39_ses-01_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-39/ses-01/func/sub-39_ses-01_task-rotation_events.tsv",
+   "bytes": 20087,
+   "sha256": "56f2d60370d5353862becf59a98f87aae5428166b2a5ec189821492f08140101",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  },
+  {
+   "file": "sub-39__ses-01__func__sub-39_ses-01_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-39/ses-01/func/sub-39_ses-01_task-washout_events.tsv",
+   "bytes": 5259,
+   "sha256": "47c777b6749104d70efd8e5477752be0f22b72c3358e172cfbecf717179f23e6",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  },
+  {
+   "file": "sub-39__ses-02__func__sub-39_ses-02_task-rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-39/ses-02/func/sub-39_ses-02_task-rotation_events.tsv",
+   "bytes": 20117,
+   "sha256": "c42f5c496105cac6081edce29f697c91d60bda641d1e8e0570c61862d88e1739",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  },
+  {
+   "file": "sub-39__ses-02__func__sub-39_ses-02_task-washout_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004021/sub-39/ses-02/func/sub-39_ses-02_task-washout_events.tsv",
+   "bytes": 5288,
+   "sha256": "42a8e7cc4c8ffe632a506ffd5c31293f687580062bf704fb98ca94c74d08eb41",
+   "fetched_utc": "2026-11-09T05:06:08Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gale2022_PNAS.zip"
+}

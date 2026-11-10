@@ -1,0 +1,103 @@
+{
+ "id": "Wayne2013_ContempClinTrials",
+ "module": "timeseries",
+ "rows": 396,
+ "subjects": 87,
+ "persons": 87,
+ "zip_bytes": 505651867,
+ "zip_sha256": "2e672e4ace2a87c25fb3eed037a58d4557206d23c041f404f13f607115c205c0",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Tai Chi-naive participants in the randomized trial",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Design paper abstract (60 Tai Chi-naive older adults) and PhysioNet description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Tai Chi expert comparison group",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "PhysioNet project description (27 healthy Tai Chi experts)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest participant is at least 50 years",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Design paper abstract (aged 50-79)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest participant is at most 79 years",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Design paper abstract (aged 50-79)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dual-task recording length (s, median)",
+   "computed": 89.99933333333334,
+   "reported": 90.0,
+   "tol": 3,
+   "source": "PhysioNet project description (90 seconds)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate (Hz)",
+   "computed": 1500.0,
+   "reported": 1500.0,
+   "tol": 0,
+   "source": "PhysioNet project description (1500 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one sampling rate in all recordings",
+   "ok": true,
+   "detail": "{1500.0}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants with recordings but no subjects-table row: 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 396 recordings of the deposit converted, each with a sample file",
+   "ok": true,
+   "detail": "396"
+  },
+  {
+   "kind": "internal",
+   "what": "single-task recordings last 128 to 610 s (median 600 s)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Recordings of one subject number (6 recordings, three visits) have no row in TCPCHA_Subjects.csv, so group, age and sex are empty for that participant, while the table has one subject number that has no recordings (a Control participant). They may be the same person with a mistyped number, but this was not assumed and the two were not merged; 87 participants have recordings. The 60 Tai Chi-naive and 27 expert participants counted in the checks are those of the subjects table. The design paper (2013) describes the planned trial: 60 Tai Chi-naive adults, 30 per arm. The deposit holds 29 control and 31 Tai Chi participants at the first visit (60 in total); 27 experts are in the data but not in the design paper. The PhysioNet entry (version 1.0.2, Dec 2021) is the data release, titled 'Tai Chi, Physiological Complexity, and Healthy Aging - Gait'; the design paper is the one the curator listed as the original publication."
+ ],
+ "sources": [
+  {
+   "file": "taichidb.zip",
+   "url": "https://physionet.org/content/taichidb/get-zip/1.0.2/",
+   "bytes": 1596571588,
+   "sha256": "5afe0c925137b8955da4975867b7e6242b3a6cdadcabc9cc1ad26ac42573baaa",
+   "fetched_utc": "2026-11-09T02:10:01Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wayne2013_ContempClinTrials.zip"
+}

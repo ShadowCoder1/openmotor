@@ -1,0 +1,1251 @@
+{
+ "id": "Trach2025_NatHumBehav",
+ "module": "choice_rt",
+ "rows": 353969,
+ "subjects": 494,
+ "persons": 228,
+ "zip_bytes": 6474231,
+ "zip_sha256": "e8aecffc0d403f264560665927031e54c492da88ea3eb2b09c965a848972815b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment1.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment2.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment3.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment4.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment5_learn.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment5_forced.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment6_learn.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment6_forced.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hierLearn_prolific.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment1.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment2.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment3.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment4.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment5.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "motorData_Experiment6.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "md_Experiment6_multiday_wexclusions.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "md_Experiment6_multiday_motor.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "md_HierLearnDay01Forced_Data_exclusions.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "md_HierLearnDay08Forced_Data_exclusions.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 learn: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 learn: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 motor: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1 motor: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: learning and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Modified structure control learn: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Modified structure control learn: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Modified structure control motor: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Modified structure control motor: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Modified structure control: learning and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 learn: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 learn: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 motor: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 motor: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: learning and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 learn: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 learn: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 motor: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 motor: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: learning and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1A (Prolific) learn: ASCII key codes agree with the authors' finger numbers 1-8 (corrrespAll, finger_press)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1A (Prolific) learn: corr equals (key pressed == correct key) on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1A: 169 trials without a key press have no RT and are marked not correct",
+   "ok": true,
+   "detail": "169 rows without a key press, 169 without an RT"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 learn: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 learn: rt (ms) equals rtS (s) x 1000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 forced: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 forced: the authors' rt equals PT_actual - PT_planned (s)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 motor: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4 motor: rt (ms) equals rtS (s) x 1000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4: learning, forced-response and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 learn: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 learn: rt (ms) equals rtS (s) x 1000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 forced: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 forced: the authors' rt equals PT_actual - PT_planned (s)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 motor: corr equals (resp == stim); stim equals the authors' corrresp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5 motor: rt (ms) equals rtS (s) x 1000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 5: learning, forced-response and baseline-task files hold the same participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 6 learn: corr equals (finger pressed == correct finger); key_press is the finger number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 6 motor: corr equals (finger pressed == correct finger); key_press is the finger number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 6 forced: corr equals (resp == stim); the authors' rt equals PT_actual - PT_planned (s)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 6: baseline-task participants are the learning participants; forced-response participants are a subset",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 6: each forced-response participant has day 1 and day 8 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no participant code of the deposit's prolificID or demoID columns appears in two of the five experiments that have them (so every experiment's participants are counted as different persons)",
+   "ok": true,
+   "detail": "5 experiments with these columns"
+  },
+  {
+   "kind": "internal",
+   "what": "every row of the 19 trial files kept",
+   "ok": true,
+   "detail": "353969 rows from 353969 rows in the files"
+  },
+  {
+   "kind": "internal",
+   "what": "rows of each subject sequence are contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost: 228 persons (40 + 28 + 33 + 26 + 36 + 19 + 20 + 26)",
+   "ok": true,
+   "detail": "228 persons"
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: learning RT 200-3600 ms (Prolific sample 0-3000 ms), baseline-task RT 0-4600 ms, forced PT_actual 0-1750 ms",
+   "ok": true,
+   "detail": "learning 0-3493; baseline 0-4588; forced 0-1749"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' streak column (correct trial after a correct trial with the next trial number) is rebuilt exactly from correct, trial_in_block and the row order of the converted learning rows, in every experiment but 1A",
+   "ok": true,
+   "detail": "equal on 162877 of 162916 rows outside Experiment 1A; Experiment 1A: the deposit flags 20 trials that follow a trial missing from its file; the deposit leaves the flag empty on 65 first trials"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' treeDistance equals the value from combinedType (0 repeat, 2, 4, 6) in every file that has both",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Modified structure control: participants",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: participants",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4: participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 5: participants",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: participants who also did the forced-response task",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Experiment 6 (subset of nine)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: participants in the Day x path distance analysis (N = denominator df + 1 of F(1,19))",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results, Experiment 6 (F(1,19) = 37.81)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), t(39)",
+   "computed": 3.2362928196246954,
+   "reported": 3.24,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 17.839662391235944,
+   "reported": 17.8,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 77.30582365470498,
+   "reported": 77.3,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), t(39)",
+   "computed": 8.504595250441595,
+   "reported": 8.5,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 148.59567427210047,
+   "reported": 148.6,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 241.3348156682666,
+   "reported": 241.3,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), t(39)",
+   "computed": 13.597123773592012,
+   "reported": 13.6,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 315.19607003318583,
+   "reported": 315.2,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 425.360297853915,
+   "reported": 425.4,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), t(39)",
+   "computed": 7.12202782692558,
+   "reported": 7.12,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 105.53230670295716,
+   "reported": 105.5,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 189.252697191469,
+   "reported": 189.3,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), t(39)",
+   "computed": 13.109886343765869,
+   "reported": 13.11,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 272.91604167785425,
+   "reported": 272.9,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 372.4948401633057,
+   "reported": 372.5,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), t(39)",
+   "computed": 13.915830962320973,
+   "reported": 13.92,
+   "tol": 0.005,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 149.83088973128233,
+   "reported": 149.8,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 200.79498821545147,
+   "reported": 200.8,
+   "tol": 0.05,
+   "source": "Results, Experiment 1 (two-tailed paired t-tests, t(39))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), t(32)",
+   "computed": 11.978505309141072,
+   "reported": 11.98,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 175.92583839296168,
+   "reported": 175.9,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 248.01689349689184,
+   "reported": 248.0,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), t(32)",
+   "computed": 11.312369150633955,
+   "reported": 11.31,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 197.15062321900797,
+   "reported": 197.2,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 283.7412021345868,
+   "reported": 283.7,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), t(32)",
+   "computed": 10.675766022242694,
+   "reported": 10.68,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 192.4369899935881,
+   "reported": 192.4,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 283.1856677393125,
+   "reported": 283.2,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), t(32)",
+   "computed": 2.394400529031564,
+   "reported": 2.39,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 4.2510498796046114,
+   "reported": 4.3,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 52.69804358413653,
+   "reported": 52.7,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), t(32)",
+   "computed": 2.2332997250615363,
+   "reported": 2.23,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 2.272019273846009,
+   "reported": 2.3,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 49.40790656920099,
+   "reported": 49.4,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), t(32)",
+   "computed": -0.3546101622333451,
+   "reported": -0.35,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": -17.76802379874988,
+   "reported": -17.8,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 12.498856178055737,
+   "reported": 12.5,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 2, t(32))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), t(25)",
+   "computed": 5.499751357858443,
+   "reported": 5.5,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 148.32298565767326,
+   "reported": 148.3,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 2- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 325.914852514361,
+   "reported": 325.9,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), t(25)",
+   "computed": 9.042310585904698,
+   "reported": 9.04,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 241.04176370421396,
+   "reported": 241.0,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 383.230224910052,
+   "reported": 383.2,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), t(25)",
+   "computed": 10.579514643462067,
+   "reported": 10.58,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 267.3079262540085,
+   "reported": 267.3,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 0-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 396.540913228475,
+   "reported": 396.5,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), t(25)",
+   "computed": 2.1938853916670222,
+   "reported": 2.19,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 4.593816504175749,
+   "reported": 4.6,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 4- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 145.44033393805626,
+   "reported": 145.4,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), t(25)",
+   "computed": 2.7832486910444407,
+   "reported": 2.78,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": 24.65166056153126,
+   "reported": 24.7,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 2-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 164.9593407489182,
+   "reported": 165.0,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), t(25)",
+   "computed": 0.7557192666253799,
+   "reported": 0.76,
+   "tol": 0.005,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI lower bound (ms)",
+   "computed": -34.140363839479626,
+   "reported": -34.1,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: corrected RT, 6- minus 4-distance (consecutively correct trials, paired), 95% CI upper bound (ms)",
+   "computed": 73.71721470769711,
+   "reported": 73.7,
+   "tol": 0.05,
+   "source": "Results, Experiments 2 and 3: unstructured mappings (Experiment 3, t(25))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: complete participants in the Day x path distance ANOVA (df 19 = N - 1)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Results, Experiment 6 (Day x path distance ANOVA)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: main effect of path distance, F(3,57)",
+   "computed": 65.5898782240818,
+   "reported": 65.6,
+   "tol": 0.05,
+   "source": "Results, Experiment 6 (Day x path distance ANOVA)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: main effect of day, F(1,19)",
+   "computed": 37.8077767381689,
+   "reported": 37.81,
+   "tol": 0.005,
+   "source": "Results, Experiment 6 (Day x path distance ANOVA)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 6: day x path distance interaction, F value (the paper prints it with df 1,19; here df are 3,57)",
+   "computed": 19.73675429370743,
+   "reported": 19.74,
+   "tol": 0.005,
+   "source": "Results, Experiment 6 (Day x path distance ANOVA)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "participants.csv has one row for each of the 228 persons",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hierarchy string is constant within participant in the learning files that have it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimulus set (type) is constant within participant in Experiment 2",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 6: the Methods give 21 analysed participants (27 recruited, 6 excluded); the deposit's multi-day learning file has 20, matching the denominator df of the Results (F(1,19) and F(3,57) imply 20). The cause of the difference of one participant was not found.",
+  "Experiment 6: the Results print the Day x path distance interaction as F(1,19) = 19.74; the converted rows give F = 19.74 with df (3,57) (as for path distance), so the printed df look like a typo.",
+  "Experiment 1: the Methods say each stimulus was shown at least 125 times; the highest iteration number of a stimulus in the deposit is 104-127 (median 126), and 9 of 40 participants stay below 125 on some stimulus (Experiment 2: 10 of 33; lowest 124). The deposit's counter was not checked against the authors' raw files.",
+  "The forced-response error analyses, the model comparisons (BIC) and the mixed-model fits of the Results were not reproduced; they need smoothing and model code from the authors."
+ ],
+ "sources": [
+  {
+   "file": "Experiment1.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment1.csv",
+   "bytes": 10451990,
+   "sha256": "f0795d0f795390ec7bc46c5b8120783229165705231b9997547053fdd53fa83f",
+   "fetched_utc": "2026-11-08T20:54:05Z"
+  },
+  {
+   "file": "Experiment2.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment2.csv",
+   "bytes": 3423038,
+   "sha256": "fe57602ed121bab3d81451a6ddb3050b7b09f5a958fce6d3855aa3d91fd9dda9",
+   "fetched_utc": "2026-11-08T20:54:08Z"
+  },
+  {
+   "file": "Experiment3.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment3.csv",
+   "bytes": 7569298,
+   "sha256": "ee9c426d7607738b1e85b32595d5095ddc102068fa936cca0f9647b0d9dcc1f0",
+   "fetched_utc": "2026-11-08T20:54:10Z"
+  },
+  {
+   "file": "Experiment4.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment4.csv",
+   "bytes": 2968609,
+   "sha256": "9dc4138d98633219da70934f11fa175906d34b1cc0276c8df18d07f35c62963d",
+   "fetched_utc": "2026-11-08T20:54:12Z"
+  },
+  {
+   "file": "Experiment5_forced.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment5_forced.csv",
+   "bytes": 4847797,
+   "sha256": "631bdd72dfd260e07df6703cf657730dabf22c4faec5787bb2a7a02c6828dffa",
+   "fetched_utc": "2026-11-08T20:54:14Z"
+  },
+  {
+   "file": "Experiment5_learn.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment5_learn.csv",
+   "bytes": 2805535,
+   "sha256": "523ec30efe3a62307e1d1eb7dba833798a57564791969b4104f30c961c5dfc4b",
+   "fetched_utc": "2026-11-08T20:54:17Z"
+  },
+  {
+   "file": "Experiment6_forced.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment6_forced.csv",
+   "bytes": 2554603,
+   "sha256": "a64edf8e661b2307fe32653d3d86080b991a43b60465e54760685b2a4169802b",
+   "fetched_utc": "2026-11-08T20:54:19Z"
+  },
+  {
+   "file": "Experiment6_learn.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment6_learn.csv",
+   "bytes": 1480434,
+   "sha256": "c2faf830bdbe36f96323386c8f8caed41463f5b5763e7f5e03a2f49c82f08f31",
+   "fetched_utc": "2026-11-08T20:54:21Z"
+  },
+  {
+   "file": "hierLearn_prolific.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/hierLearn_prolific.csv",
+   "bytes": 3141653,
+   "sha256": "c599c45b9cb17313f39430f21b3de77d1a221ad2cac5f06f5aedf73d2aa87587",
+   "fetched_utc": "2026-11-08T20:54:23Z"
+  },
+  {
+   "file": "motorData_Experiment1.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment1.csv",
+   "bytes": 6824289,
+   "sha256": "3b5f4e8a294e99304cfdd6b3039fb8d2d65d372ee0a5ea888914c68d252c7871",
+   "fetched_utc": "2026-11-08T20:54:25Z"
+  },
+  {
+   "file": "motorData_Experiment2.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment2.csv",
+   "bytes": 2223161,
+   "sha256": "8d22a0b9ff0eb4e7994008027a8ff5a85f29990db59d191393d081e79627336d",
+   "fetched_utc": "2026-11-08T20:54:28Z"
+  },
+  {
+   "file": "motorData_Experiment3.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment3.csv",
+   "bytes": 5945016,
+   "sha256": "42f89fc27f4847900f1be726c425b5dede3bdabb10592a07f64eeeec8184bdb8",
+   "fetched_utc": "2026-11-08T20:54:30Z"
+  },
+  {
+   "file": "motorData_Experiment4.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment4.csv",
+   "bytes": 2078785,
+   "sha256": "5c04cc5f41b4ae92e1528f92ab78b7eeed2ce8005a0c48045d631bb77eb45d54",
+   "fetched_utc": "2026-11-08T20:54:32Z"
+  },
+  {
+   "file": "motorData_Experiment5.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment5.csv",
+   "bytes": 2352321,
+   "sha256": "66fc39392eae8cc2ab78bbc266bdaa6894ad807e3ce047c51f23b8181ba1c2a6",
+   "fetched_utc": "2026-11-08T20:54:34Z"
+  },
+  {
+   "file": "motorData_Experiment6.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/motorData_Experiment6.csv",
+   "bytes": 1262065,
+   "sha256": "c3f7aa107eda4a746a44a2c0c0eb51f234c909eac90058e93e5d0472c8c48411",
+   "fetched_utc": "2026-11-08T20:54:37Z"
+  },
+  {
+   "file": "Experiment4_scrambled_colors.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment4_scrambled_colors.csv",
+   "bytes": 878,
+   "sha256": "d754cafdaa1566279a84e823c268419302c27b71d050c109fb6ff7c11d92c52d",
+   "fetched_utc": "2026-11-08T20:54:46Z"
+  },
+  {
+   "file": "Experiment4_scrambled_patterns.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment4_scrambled_patterns.csv",
+   "bytes": 878,
+   "sha256": "654d262cbbb8c3ce7c6fdc85449d362860bbd1b98e6255f6a9ab116565c2f59b",
+   "fetched_utc": "2026-11-08T20:54:48Z"
+  },
+  {
+   "file": "Experiment4_scrambled_shapes.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/compiledData/Experiment4_scrambled_shapes.csv",
+   "bytes": 878,
+   "sha256": "02742446acc433992f2ed376722c17f8ff28dff879adbb3cd78ca61db5d4f395",
+   "fetched_utc": "2026-11-08T20:54:50Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/README.md",
+   "bytes": 3261,
+   "sha256": "826a76356a1fdcd29132c9bf8ba7c5677fe3158b0accce89b7d4146ba767a490",
+   "fetched_utc": "2026-11-08T20:54:52Z"
+  },
+  {
+   "file": "modelingData_wstruct.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/modelingData_wstruct.csv",
+   "bytes": 2460,
+   "sha256": "9254839587f606172f805e95a8a63616d5322f9d3f07bc6d72ca19519e368271",
+   "fetched_utc": "2026-11-08T20:54:53Z"
+  },
+  {
+   "file": "compiledData_wExclusions.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/rawData/compiledData_wExclusions.Rmd",
+   "bytes": 180835,
+   "sha256": "461ea6d3126ae5a08f81dd34ad56539a4dcbcbf7620c0424ad1eb98c2a79add8",
+   "fetched_utc": "2026-11-08T21:06:40Z"
+  },
+  {
+   "file": "NHB_Expt6_multiday_learn.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/NHB_Expt6_multiday_learn.Rmd",
+   "bytes": 64841,
+   "sha256": "bfc55a1ee643f1503d47d5d98dbc461bcf455a0495806840508c474cfb7b7c71",
+   "fetched_utc": "2026-11-08T21:06:42Z"
+  },
+  {
+   "file": "NHB_Expt6_multiday_forced.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/NHB_Expt6_multiday_forced.Rmd",
+   "bytes": 77222,
+   "sha256": "a4074f35edab5aceb5228a26560cd186b8062bb6cac20c10c350b5df34530aa9",
+   "fetched_utc": "2026-11-08T21:06:44Z"
+  },
+  {
+   "file": "NHB_hierarchy_Expt123.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/NHB_hierarchy_Expt123.Rmd",
+   "bytes": 128383,
+   "sha256": "d59eb931848ec153bdaeb20224e05834f962f102b45c6c5212af6711d3c3d728",
+   "fetched_utc": "2026-11-08T21:06:46Z"
+  },
+  {
+   "file": "NHB_hierarchy_Expt45.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/NHB_hierarchy_Expt45.Rmd",
+   "bytes": 223604,
+   "sha256": "2906c45df25205ac67439d4512b354f59266916332648b07ac9acf8093a90412",
+   "fetched_utc": "2026-11-08T21:06:48Z"
+  },
+  {
+   "file": "NHB_hierarchy_additionalAnalyses.Rmd",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/NHB_hierarchy_additionalAnalyses.Rmd",
+   "bytes": 93715,
+   "sha256": "4afeffe3dff7dfccc4806466c612b3bf3025c0629ed68e9ee02f0b5fad3810d8",
+   "fetched_utc": "2026-11-08T21:06:50Z"
+  },
+  {
+   "file": "md_Experiment6_multiday_wexclusions.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/rawData/Experiment6_multiday/data/Experiment6_multiday_wexclusions.csv",
+   "bytes": 11604559,
+   "sha256": "0e199674a076497a8453792d8b8ab1b2d682cf54f839abe845b0c01adb7192e3",
+   "fetched_utc": "2026-11-08T21:07:05Z"
+  },
+  {
+   "file": "md_Experiment6_multiday_motor.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/rawData/Experiment6_multiday/data/Experiment6_multiday_motor.csv",
+   "bytes": 3009749,
+   "sha256": "57dfe2f724203de15424b21784a48d57a68f9c8f8ff23f8f15cf1c7a4d8d285d",
+   "fetched_utc": "2026-11-08T21:07:07Z"
+  },
+  {
+   "file": "md_HierLearnDay01Forced_Data_exclusions.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/rawData/Experiment6_multiday/data/HierLearnDay01Forced_Data_exclusions.csv",
+   "bytes": 1056841,
+   "sha256": "f781405275d3e898b1cd79e7e1d0bcc1f0f75434f9dffc43b8094749e7c5b254",
+   "fetched_utc": "2026-11-08T21:07:09Z"
+  },
+  {
+   "file": "md_HierLearnDay08Forced_Data_exclusions.csv",
+   "url": "https://raw.githubusercontent.com/jetrach/StructuredActionPrepVMDM/main/rawData/Experiment6_multiday/data/HierLearnDay08Forced_Data_exclusions.csv",
+   "bytes": 1059805,
+   "sha256": "0d4edc2cdfe19e5cf50772983f3623a7e95236363aebe167eaf09983cab83753",
+   "fetched_utc": "2026-11-08T21:07:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Trach2025_NatHumBehav.zip"
+}

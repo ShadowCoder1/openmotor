@@ -1,0 +1,335 @@
+{
+ "id": "Hickman2026_JNeurodevDisord",
+ "module": "timeseries",
+ "rows": 6835,
+ "subjects": 188,
+ "persons": 94,
+ "zip_bytes": 132304528,
+ "zip_sha256": "fb877298d949a1d9e13ca1a5412c5ffb9799fa67e53daa04dd8cac15d57a785c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, autism",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Methods and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, Parkinson's disease",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Methods and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, control",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Methods and Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in all",
+   "computed": 94.0,
+   "reported": 94.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1 (F(2, 91) tests: 94 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, autism",
+   "computed": 55.516129032258064,
+   "reported": 55.52,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, autism",
+   "computed": 8.007791904313928,
+   "reported": 8.01,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, Parkinson's disease",
+   "computed": 63.15625,
+   "reported": 63.16,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, Parkinson's disease",
+   "computed": 7.603519452498042,
+   "reported": 7.6,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, control",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, control",
+   "computed": 9.959919678390985,
+   "reported": 9.96,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males, autism",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, autism",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other gender, autism",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males, Parkinson's disease",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, Parkinson's disease",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other gender, Parkinson's disease",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males, control",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females, control",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "other gender, control",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean depression, autism",
+   "computed": 8.161290322580646,
+   "reported": 8.2,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean depression, Parkinson's disease",
+   "computed": 7.866666666666666,
+   "reported": 7.87,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean depression, control",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean anxiety, autism",
+   "computed": 9.935483870967742,
+   "reported": 9.9,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean anxiety, Parkinson's disease",
+   "computed": 5.1,
+   "reported": 5.1,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean anxiety, control",
+   "computed": 3.6451612903225805,
+   "reported": 3.6,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean UPDRS, autism",
+   "computed": 3.7419354838709675,
+   "reported": 3.7,
+   "tol": 0.05,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean UPDRS, Parkinson's disease",
+   "computed": 11.90625,
+   "reported": 11.91,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean UPDRS, control",
+   "computed": 0.9354838709677419,
+   "reported": 0.94,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean years since diagnosis, autism",
+   "computed": 4.225806451612903,
+   "reported": 4.23,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean years since diagnosis, PD",
+   "computed": 3.6875,
+   "reported": 3.69,
+   "tol": 0.005,
+   "source": "Hickman et al. 2026, J Neurodev Disord 18:8, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "188 sessions of 94 participants, 8 blocks each",
+   "ok": true,
+   "detail": "{8}"
+  },
+  {
+   "kind": "internal",
+   "what": "at most 7 attempts and 4 successful attempts in a block",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The group coding of MetaData_ALL.csv (1 = Parkinson's disease, 2 = control, 3 = autism; gender 1 = male, 2 = female, 3 = other) is not documented in the deposit; it was inferred from the participant number ranges of the tablet files and from the group counts in Table 1, and the age, gender and questionnaire means in Table 1 are reproduced with it."
+ ],
+ "sources": [
+  {
+   "file": "MetaData_ALL.csv",
+   "url": "https://osf.io/download/9gec7/",
+   "bytes": 15019,
+   "sha256": "cb4b6d8905e8aaccd9b365d0b155b4abf1abca46370fac6ffef06012ff886fe4",
+   "fetched_utc": "2026-11-09T12:53:15Z"
+  },
+  {
+   "file": "Script1func.m",
+   "url": "https://osf.io/download/xvtb8/",
+   "bytes": 46869,
+   "sha256": "3f083dc682ab969f326043a1a4d9ebfd7450d9af681bdc8f52272aa0a6a7999e",
+   "fetched_utc": "2026-11-09T12:53:21Z"
+  },
+  {
+   "file": "Script2.m",
+   "url": "https://osf.io/download/jmbgs/",
+   "bytes": 39158,
+   "sha256": "da9c18e4483bb81270dada5882baef5505f1adb5ea5bacca0721c66fa9c2ea02",
+   "fetched_utc": "2026-11-09T12:53:26Z"
+  },
+  {
+   "file": "TabletStudyData.zip",
+   "url": "https://osf.io/download/pty4d/",
+   "bytes": 163979578,
+   "sha256": "f4217a7c57d35dc96e3ba5c87ff582acaaaa34115c3d3fbd0c37d7855d6b438f",
+   "fetched_utc": "2026-11-09T12:53:48Z"
+  },
+  {
+   "file": "MetaData_ALL_fullQs.csv",
+   "url": "https://osf.io/download/zvwr5/",
+   "bytes": 24460,
+   "sha256": "19c6a278cb92a9218269f387e001371e18f0aaf804d41eb8f40d61c90e5a682d",
+   "fetched_utc": "2026-11-09T12:55:14Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hickman2026_JNeurodevDisord.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Dhakal2018_CHI",
+ "skipped": true,
+ "reason": "license does not allow a converted copy",
+ "details": "The Aalto readme.txt (inside Keystrokes.zip) and the data page state only: \"You are free to use this data for non-commercial use in your own research or projects with attribution to the authors\"; redistribution of a converted copy is not granted. Also very large: 168,596 participants, about 136 million key presses, 16 GB unzipped (a converter would need hours on the PC). No consent-limit columns exist in the deposit (readme and metadata_participants.txt checked); paper venue/year/DOI match extra_studies.json (CHI 2018, 10.1145/3173574.3174220).",
+ "sources": []
+}

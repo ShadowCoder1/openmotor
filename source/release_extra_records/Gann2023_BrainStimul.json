@@ -1,0 +1,173 @@
+{
+ "id": "Gann2023_BrainStimul",
+ "module": "keypress",
+ "rows": 184440,
+ "subjects": 75,
+ "persons": 75,
+ "zip_bytes": 2490687,
+ "zip_sha256": "1574a9f1152df546fb3a70400a094786c5a023c5bfac5f0a14ac4cb294f804a8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Behavior.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "figure_source.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "CorrespondanceSubjID.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every logged key press kept (rep lines of the Training logs and of the -Retest tasks of the Retest logs)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 69 participants of CorrespondanceSubjID, Fig2 and Suppl. Table 1 all have a Training log",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the sequence 4-7-3-8-6-2-5-1 is the modal 8-press cycle",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in the analysed sample",
+   "computed": 69.0,
+   "reported": 69.0,
+   "tol": 0,
+   "source": "figure_source.xlsx (Suppl. Table 1 / CorrespondanceSubjID)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group cTBS",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "figure_source.xlsx (Suppl. Table 1 / CorrespondanceSubjID)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group iTBS",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "figure_source.xlsx (Suppl. Table 1 / CorrespondanceSubjID)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group control",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "figure_source.xlsx (Suppl. Table 1 / CorrespondanceSubjID)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "random-SRTT (RC) practice blocks per participant, median",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Zenodo README (Behavior: tasks and blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequence-learning practice blocks per participant in Session 1 (SL-TRAINING), median",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Zenodo README (Behavior: tasks and blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequence-learning practice blocks per participant in Session 2 (SL-TRAINING-Retest), median",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Zenodo README (Behavior: tasks and blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "key presses per practice block (6 sequences of 8), median",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Zenodo README (Behavior: tasks and blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean time between key presses over the 20 practice blocks and participants (s), Fig. 2 source data",
+   "computed": 0.6879185896510368,
+   "reported": 0.6892561217434783,
+   "tol": 0.02,
+   "source": "figure_source.xlsx, Fig2 (speed_block1-20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean time between key presses in practice block 1 (s), Fig. 2 source data",
+   "computed": 0.9249436795995618,
+   "reported": 0.9352964772173913,
+   "tol": 0.02,
+   "source": "figure_source.xlsx, Fig2 (speed_block1)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Fig. 2 'speed' per block could be matched only approximately: the mean time between key presses per practice block (intervals beyond 2.5 SD removed from block 2 on, as in the authors' code) differs from speed_block1-20 by 0.010 s (median) per participant and block, and by less than 0.02 s on the group mean; the authors' exact definition was not found.",
+  "The paper itself (not open access) was not read: the checks use the authors' README, spreadsheets and source data."
+ ],
+ "sources": [
+  {
+   "file": "Behavior.zip",
+   "url": "https://zenodo.org/api/records/8233882/files/Behavior.zip/content",
+   "bytes": 4423273,
+   "sha256": "ecf6dbd3696a0749b4b85a8772d33a9dc9d3a516f90bb4b65b5300a87d6a1ea6",
+   "fetched_utc": "2026-11-08T21:28:10Z"
+  },
+  {
+   "file": "figure_source.xlsx",
+   "url": "https://zenodo.org/api/records/8233882/files/figure_source.xlsx/content",
+   "bytes": 51266,
+   "sha256": "4c4bc56ce6e35048d05e4cf508db75f691c4ca9eacaa03a467ddf1557e2f942e",
+   "fetched_utc": "2026-11-08T21:28:18Z"
+  },
+  {
+   "file": "CorrespondanceSubjID.xlsx",
+   "url": "https://zenodo.org/api/records/8233882/files/CorrespondanceSubjID.xlsx/content",
+   "bytes": 10499,
+   "sha256": "41889b9c5504bf059814ca281c21d769ad6b29be789664ff91d9c5be3b7cc421",
+   "fetched_utc": "2026-11-08T21:28:20Z"
+  },
+  {
+   "file": "scripts.zip",
+   "url": "https://zenodo.org/api/records/8233882/files/scripts.zip/content",
+   "bytes": 41997,
+   "sha256": "27b12ff8e9c3e3b1ff056a0c4f507f323e8f78e3ff1a2cfdedcd34190fcf4e5d",
+   "fetched_utc": "2026-11-08T21:28:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gann2023_BrainStimul.zip"
+}

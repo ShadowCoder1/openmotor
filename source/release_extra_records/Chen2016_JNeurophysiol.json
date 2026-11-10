@@ -1,0 +1,96 @@
+{
+ "id": "Chen2016_JNeurophysiol",
+ "module": "timeseries",
+ "rows": 4000,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 13097339,
+ "zip_sha256": "0862070ceed16e73294b56ff098bef7b3376ca7b31d92eec6ac419dd84314363",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods, Participants (12 observers)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers run 1..N without gaps for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "trials in total (11 participants x 320 plus participant 1 x 480)",
+   "computed": 4000.0,
+   "reported": 4000.0,
+   "tol": 0,
+   "source": "Methods, Procedure (320 trials, 80 per condition; participant 1 completed 480, 120 per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant, participants with 320 trials",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Procedure (320 trials per participant, except participant 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials of the participant with extra trials",
+   "computed": 480.0,
+   "reported": 480.0,
+   "tol": 0,
+   "source": "Methods, Procedure (participant 1 completed 480 trials, 120 per condition)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "median sampling interval is close to 10 ms",
+   "ok": true,
+   "detail": "0.00988 s"
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has equal trials in all four congruency x direction cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "trials per condition (incongruent) for a 320-trial participant",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Procedure (80 trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row and one sample file per trial",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper rejected 6.6% of trials after visual inspection; the deposit has no per-trial exclusion flags, so every trial is a row and excluded_by_authors is False.",
+  "The paper gives a 100 Hz Zebris rate; the median interval between the saved time stamps is 9.9 ms (about 101 Hz), because the stamps are the computer's read times, so n_samples and the time stamps are as saved and sample_rate_hz states the nominal 100 Hz.",
+  "Eye movement results (latency, pursuit gain, saccade rate) cannot be reproduced: the gaze data are only in EyeLink .edf files that were not converted."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/records/154406/files/data_JNP%202015b.zip?download=1",
+   "bytes": 306860921,
+   "sha256": "b6bebbeec0c3335a293a22ac33a3a9e6391274abaf5f75a7370d90c9042f940e",
+   "fetched_utc": "2026-11-09T10:41:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Chen2016_JNeurophysiol.zip"
+}

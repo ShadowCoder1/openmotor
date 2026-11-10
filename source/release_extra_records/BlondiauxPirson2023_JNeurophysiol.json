@@ -1,0 +1,556 @@
+{
+ "id": "BlondiauxPirson2023_JNeurophysiol",
+ "module": "force_field_reaching",
+ "rows": 12160,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 226264466,
+ "zip_sha256": "51b4a4051cb20a3696e4f0bb29b456aaaa83925394e5ed29e017303f7a113e90",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "ET001: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET001: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET002: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET002: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET003: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET003: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET004: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET004: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET005: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET005: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET006: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET006: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET007: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET007: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET008: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET008: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET009: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET009: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET010: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET010: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET011: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET011: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET012: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET012: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET013: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET013: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET014: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET014: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET015: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET015: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET016: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET016: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET017: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET017: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET018: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET018: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET019: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET019: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ET022: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "ET022: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV001: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV001: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV002: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV002: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV003: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV003: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV004: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV004: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV005: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV005: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV006: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV006: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV007: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV007: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV008: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV008: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV009: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV009: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV010: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV010: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV011: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV011: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV012: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV012: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV013: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV013: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV015: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV015: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV016: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV016: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV017: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV017: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV018: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV018: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV019: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV019: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV020: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV020: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "HV021: 304 trials",
+   "ok": true,
+   "detail": "304"
+  },
+  {
+   "kind": "internal",
+   "what": "HV021: time stamps are distinct",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants with essential tremor",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract and Methods: 20 people with essential tremor",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age-matched control participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract and Methods: 20 neurologically intact age-matched volunteers",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "304 reaches per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "40 baseline, 24 catch and 240 field trials per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "field gain recovered from the commanded forces is 15 N s/m (median of both axes)",
+   "ok": true,
+   "detail": "median 14.50"
+  },
+  {
+   "kind": "internal",
+   "what": "clockwise field pushes the hand to the right of the reach on early learning reaches (mean peak-velocity error > 0 in set 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "40 participants and 12160 rows",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Time stamps of a few reaches of two people have only second resolution and share a stamp with the next reach; those reaches keep the deposit's file order relative to each other.",
+  "The paper's full text was not available to read (publisher page blocked, preprint not in Europe PMC full text), so only the participant counts from the abstract are checked; the field gain, direction and target geometry come from the stored forces and positions.",
+  "356 reaches have an empty movement window in the deposit; their movement measures and samples are empty.",
+  "The deposit lists 22 essential tremor and 20 control rows in ParticipantsInfos.csv but has Kinarm data for 20 and 20; the others are not in the release."
+ ],
+ "sources": [
+  {
+   "url": "https://zenodo.org/records/8383213/files/DataAM01.zip?download=1",
+   "member": "DataAM01/DataKinarm/ET001.mat"
+  },
+  {
+   "note": "40 members of DataAM01/DataKinarm read by range request"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/BlondiauxPirson2023_JNeurophysiol.zip"
+}

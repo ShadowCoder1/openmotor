@@ -1,0 +1,81 @@
+{
+ "id": "Camara2020_bioRxiv",
+ "module": "timeseries",
+ "rows": 5600,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 20934674,
+ "zip_sha256": "ff45bef9320c82c1ecc98c45ec24112a074bd239459a08582ea79d0921699cb8",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "README.txt: 20 participants, TDTC01-TDTC20",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant",
+   "computed": 280.0,
+   "reported": 280.0,
+   "tol": 0,
+   "source": "README.txt: 280 trials (data0-data279.log) per participant",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has the same delay sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "delay ramps from 0 up to 160 ms and returns to 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each trial's samples last at most 3 s after the start (some trials are shorter)",
+   "ok": true,
+   "detail": "0.549-3.000"
+  },
+  {
+   "kind": "internal",
+   "what": "5600 recordings, no trial lost",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The numbers checked are the participant and trial counts of the deposit README and the phase structure in the authors' exp.Rmd (40-trial blocks, four adaptation blocks); the preprint text was not reachable when this file was made, so none of its result statistics (adaptation levels, coherence) was reproduced. Participants 2, 8, 9, 11 (EEG quality) and 17 (no adaptation) are dropped in parts of the authors' analysis, according to comments in exp.Rmd; all 20 are kept here."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/cb6w5/",
+   "bytes": 1528,
+   "sha256": "320b42b0691e1b32f4c89fdb06e8c9f5c0ec8657d37499215b6abb5ae3df4c33",
+   "fetched_utc": "2026-11-09T07:05:05Z"
+  },
+  {
+   "file": "RawDada.zip",
+   "url": "https://osf.io/download/hxqmk/",
+   "bytes": 440239596,
+   "sha256": "04927e6108f52259f3a393ce9f1b9d44c8351bdd902652ed671d7c6dca62c356",
+   "fetched_utc": "2026-11-09T07:06:38Z"
+  },
+  {
+   "file": "exp.Rmd",
+   "url": "https://osf.io/download/cpt8m/",
+   "bytes": 75899,
+   "sha256": "052a6b4b37f76bad4b333ef8b010b5cce1bced1011ac2d5f3204154197afe6fb",
+   "fetched_utc": "2026-11-09T07:07:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Camara2020_bioRxiv.zip"
+}

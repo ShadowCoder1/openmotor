@@ -1,0 +1,1111 @@
+{
+ "id": "Gramann2021_SciRep",
+ "module": "timeseries",
+ "rows": 40,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 187990338,
+ "zip_sha256": "c6a6d4c05199f204b492327e3c1b71d6bc082ac08b2dedd445e7ac5fdb312488",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (20 healthy adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (one dropped out after the first block)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants (19 remaining)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experimental (test) trials per participant and condition (min over analysed)",
+   "computed": 140.0,
+   "reported": 140.0,
+   "tol": 0,
+   "source": "Methods, Procedure (140 experimental trials per rotation condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experimental (test) trials per participant and condition (max over analysed)",
+   "computed": 140.0,
+   "reported": 140.0,
+   "tol": 0,
+   "source": "Methods, Procedure (140 experimental trials per rotation condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "learning trials per condition (max over analysed)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Procedure (three learning trials before the 140)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "breaks between the five blocks of 28 trials (min over analysed sessions)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, Procedure (five blocks of 28 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smallest stimulus angle in the trial labels (deg)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods (sphere stopped at 30 to 150 deg eccentricity)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest stimulus angle in the trial labels (deg)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0,
+   "source": "Methods (sphere stopped at 30 to 150 deg eccentricity)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "40 recordings (20 participants x 2 sessions)",
+   "ok": true,
+   "detail": "40"
+  },
+  {
+   "kind": "internal",
+   "what": "the head turns during the outward rotation (median range of heading from the quaternion per session >= 25 deg: marker times and motion are aligned)",
+   "ok": true,
+   "detail": "lowest session median 81.4"
+  },
+  {
+   "kind": "internal",
+   "what": "effective sampling rates do not exceed the nominal 90 (head tracking) and 60 Hz (joystick)",
+   "ok": true,
+   "detail": "59.89-89.51"
+  },
+  {
+   "kind": "published",
+   "what": "number of test-trial angle labels that are not 3-deg steps (the two additional eccentricities)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods (additional eccentricities of 67 and 112 deg besides the 3-deg-step clusters)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "smaller additional eccentricity (deg)",
+   "computed": 67.0,
+   "reported": 67.0,
+   "tol": 0,
+   "source": "Methods (additional eccentricities of 67 and 112 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "larger additional eccentricity (deg)",
+   "computed": 112.0,
+   "reported": 112.0,
+   "tol": 0,
+   "source": "Methods (additional eccentricities of 67 and 112 deg)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Age, sex and handedness are left empty: the deposit's participants.tsv repeats the values of participants 1-10 for participants 11-20 and its summary (mean age 26.0, SD 3.9, range 21-34, 12 women) does not match the paper (30.25, SD 7.68, range 20-46, 11 women).",
+  "Effective sampling rates of the physical-rotation head tracking are 74-90 Hz in many sessions, below the nominal 90 Hz (timestamps are as shared).",
+  "The paper's Methods text for the ANOVA mentions eccentricities of 15, 30 and 45 deg while the Results use 45, 90 and 135 deg; not used here.",
+  "The heading-error means in Fig. 1D and the ERSP epoch counts need the authors' preprocessing (heading error from yaw at the response, outlier removal, EEG) and were not reproduced."
+ ],
+ "sources": [
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/README",
+   "bytes": 8924,
+   "sha256": "bfb9cc58db2dfa423206cd4ed6eb8bcb10142fce5c0f2d022703b93972d86542",
+   "fetched_utc": "2026-11-09T17:19:23Z"
+  },
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/participants.tsv",
+   "bytes": 389,
+   "sha256": "0e6b016bd26a856baeeb015e48cc0b933307607d8ff24229b9974edb6717db91",
+   "fetched_utc": "2026-11-09T17:19:32Z"
+  },
+  {
+   "file": "task-Rotation_events.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/task-Rotation_events.json",
+   "bytes": 424,
+   "sha256": "6c5c25e91ac03061a21a4dd445fa146f8df98e05fe26e9181b7ada7458bcffbf",
+   "fetched_utc": "2026-11-09T17:19:38Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/dataset_description.json",
+   "bytes": 1335,
+   "sha256": "bd74b96f5fdd4d307d807783592f2d3965bb57df6504ac2bdf3f1eb58990310c",
+   "fetched_utc": "2026-11-09T17:19:54Z"
+  },
+  {
+   "file": "sub-01_ses-body_task-Rotation_tracksys-HTCVive_channels.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/motion/sub-01_ses-body_task-Rotation_tracksys-HTCVive_channels.tsv",
+   "bytes": 727,
+   "sha256": "08c4cad0f1284b50297667a00b51b04876d3109055e8a66166fcdf1557d08cb1",
+   "fetched_utc": "2026-11-09T17:20:02Z"
+  },
+  {
+   "file": "sub-01_ses-body_task-Rotation_tracksys-HTCVive_motion.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/motion/sub-01_ses-body_task-Rotation_tracksys-HTCVive_motion.json",
+   "bytes": 838,
+   "sha256": "0f39a0a35a48f47e13ef83e685db86988aedd41ec73775ee35fab0f297a4f5eb",
+   "fetched_utc": "2026-11-09T17:20:08Z"
+  },
+  {
+   "file": "sub-01_ses-body_task-Rotation_tracksys-PhaseSpace_channels.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/motion/sub-01_ses-body_task-Rotation_tracksys-PhaseSpace_channels.tsv",
+   "bytes": 2214,
+   "sha256": "34e799dd0b17aa41803232fee5356ff13fa877dce4ef14f7a19cfd666f521e72",
+   "fetched_utc": "2026-11-09T17:20:14Z"
+  },
+  {
+   "file": "sub-01_ses-joy_task-Rotation_tracksys-VIRPos_channels.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/motion/sub-01_ses-joy_task-Rotation_tracksys-VIRPos_channels.tsv",
+   "bytes": 676,
+   "sha256": "a340a2899822ce5131710c66ca1354b495bb582b46e040311b59ffcf0cd7e469",
+   "fetched_utc": "2026-11-09T17:20:19Z"
+  },
+  {
+   "file": "sub-01_ses-joy_task-Rotation_tracksys-VIRPos_motion.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/motion/sub-01_ses-joy_task-Rotation_tracksys-VIRPos_motion.json",
+   "bytes": 887,
+   "sha256": "c8295aa6f3380e919d73836a76677bd3ba9b721ba28fe9db460fd87539277917",
+   "fetched_utc": "2026-11-09T17:20:24Z"
+  },
+  {
+   "file": "vive1.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/motion/sub-01_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 28381425,
+   "sha256": "a96ddae18bcc165385ee66a7c69f13e5e66ac676332338adbf90021459dd5501",
+   "fetched_utc": "2026-11-09T17:22:21Z"
+  },
+  {
+   "file": "vir1.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/motion/sub-01_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 17452913,
+   "sha256": "b67fc1a952080e7a48983d41fcfc10fb4e2f31f68b330aed279e7bd045342d9e",
+   "fetched_utc": "2026-11-09T17:22:29Z"
+  },
+  {
+   "file": "ev1joy.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/eeg/sub-01_ses-joy_task-Rotation_events.tsv",
+   "bytes": 1707286,
+   "sha256": "c8b3f5b37bbbceb87bd79d8aa9d2f27216b0e6e4c851ae7350d8e4d039605e15",
+   "fetched_utc": "2026-11-09T17:22:43Z"
+  },
+  {
+   "file": "eegjson.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/eeg/sub-01_ses-body_task-Rotation_eeg.json",
+   "bytes": 620,
+   "sha256": "e2f2c3f23d0a3141698b8aec1545a82c7068940811c1e57722f5a0f3753ff45d",
+   "fetched_utc": "2026-11-09T17:23:25Z"
+  },
+  {
+   "file": "vmrk.txt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/eeg/sub-01_ses-body_task-Rotation_eeg.vmrk",
+   "bytes": 435,
+   "sha256": "fe27839d1122abb43801c5444197cc06c7af511892b301f47de09f9527a8f9b2",
+   "fetched_utc": "2026-11-09T17:23:30Z"
+  },
+  {
+   "file": "scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/sub-01_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "b35846e191e7995e1fbc887a058fb6bd8d56dc834910dca1ef282b111809062c",
+   "fetched_utc": "2026-11-09T17:23:35Z"
+  },
+  {
+   "file": "chg.txt",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/CHANGES",
+   "bytes": 119,
+   "sha256": "b44249cde4b3a88fae31d88c67530fb4d0b40d8c4a0370a77c89553e5f192e4d",
+   "fetched_utc": "2026-11-09T17:23:40Z"
+  },
+  {
+   "file": "sub-01_ses-body_eeg_sub-01_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/eeg/sub-01_ses-body_task-Rotation_events.tsv",
+   "bytes": 1757957,
+   "sha256": "0b87f35218840d3d8cc904020d5aff670d2c19786e6c6e42a875aed9e268c277",
+   "fetched_utc": "2026-11-09T17:26:19Z"
+  },
+  {
+   "file": "sub-01_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/eeg/sub-01_ses-body_task-Rotation_events.tsv",
+   "bytes": 1757957,
+   "sha256": "0b87f35218840d3d8cc904020d5aff670d2c19786e6c6e42a875aed9e268c277",
+   "fetched_utc": "2026-11-09T17:28:23Z"
+  },
+  {
+   "file": "sub-01_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/motion/sub-01_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 28381425,
+   "sha256": "a96ddae18bcc165385ee66a7c69f13e5e66ac676332338adbf90021459dd5501",
+   "fetched_utc": "2026-11-09T17:28:31Z"
+  },
+  {
+   "file": "sub-01_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-body/sub-01_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "b35846e191e7995e1fbc887a058fb6bd8d56dc834910dca1ef282b111809062c",
+   "fetched_utc": "2026-11-09T17:28:38Z"
+  },
+  {
+   "file": "sub-01_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/eeg/sub-01_ses-joy_task-Rotation_events.tsv",
+   "bytes": 1707286,
+   "sha256": "c8b3f5b37bbbceb87bd79d8aa9d2f27216b0e6e4c851ae7350d8e4d039605e15",
+   "fetched_utc": "2026-11-09T17:28:51Z"
+  },
+  {
+   "file": "sub-01_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/motion/sub-01_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 17452913,
+   "sha256": "b67fc1a952080e7a48983d41fcfc10fb4e2f31f68b330aed279e7bd045342d9e",
+   "fetched_utc": "2026-11-09T17:29:03Z"
+  },
+  {
+   "file": "sub-01_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/ses-joy/sub-01_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "a0bf9f06f08ac8063631b94622fb7b8d9aa9a8c889c45543c649ea57bbe867d6",
+   "fetched_utc": "2026-11-09T17:29:27Z"
+  },
+  {
+   "file": "sub-02_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-body/eeg/sub-02_ses-body_task-Rotation_events.tsv",
+   "bytes": 1761493,
+   "sha256": "638d6082a3e823257ef8cf10950e186fa7e12072b96725e9ec06c71c646d3491",
+   "fetched_utc": "2026-11-09T17:29:34Z"
+  },
+  {
+   "file": "sub-02_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-body/motion/sub-02_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 50769562,
+   "sha256": "ee865c1d1a1b717455c6c36215750da2da94cd5b692e8817c65b52133df24455",
+   "fetched_utc": "2026-11-09T17:29:44Z"
+  },
+  {
+   "file": "sub-02_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-body/sub-02_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "f81cb99035098f93b857553ea8781c587a208848b2f41162943e975c23a83390",
+   "fetched_utc": "2026-11-09T17:29:51Z"
+  },
+  {
+   "file": "sessions01.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-01/sub-01_sessions.tsv",
+   "bytes": 31,
+   "sha256": "26ec818c239e731f5f9c677ab04d90c33d2a3c83ee7e188124f73c6a6bde5047",
+   "fetched_utc": "2026-11-09T17:29:52Z"
+  },
+  {
+   "file": "sub-02_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-joy/eeg/sub-02_ses-joy_task-Rotation_events.tsv",
+   "bytes": 1712543,
+   "sha256": "0a7c869bf61dc620ee22bdd08e78844bc2dace8b44e9967ada9ac0117302e4bd",
+   "fetched_utc": "2026-11-09T17:29:58Z"
+  },
+  {
+   "file": "sessions02.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/sub-02_sessions.tsv",
+   "bytes": 31,
+   "sha256": "26ec818c239e731f5f9c677ab04d90c33d2a3c83ee7e188124f73c6a6bde5047",
+   "fetched_utc": "2026-11-09T17:29:58Z"
+  },
+  {
+   "file": "sub-02_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-joy/motion/sub-02_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 18526661,
+   "sha256": "d2524193b42fac14f923378422c4ad40a7aff8e1ed9b8c088f0de1f867e9d6f1",
+   "fetched_utc": "2026-11-09T17:30:08Z"
+  },
+  {
+   "file": "sub-02_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-02/ses-joy/sub-02_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "8c8a27a7c036a8ea836cf351a0717f713525f43e2d3d894054c506e18317bc9b",
+   "fetched_utc": "2026-11-09T17:30:14Z"
+  },
+  {
+   "file": "sub-03_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-body/eeg/sub-03_ses-body_task-Rotation_events.tsv",
+   "bytes": 2167941,
+   "sha256": "22258935a7d0cc3aebe81eebc0a3aaa6ccfbd2c4446563f474342ef709d12a77",
+   "fetched_utc": "2026-11-09T17:30:23Z"
+  },
+  {
+   "file": "sub-03_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-body/motion/sub-03_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 29867260,
+   "sha256": "c264c7b28717ac30f35d7b6b600242873c04aeed6513c1a1a2185d44fc6eab7a",
+   "fetched_utc": "2026-11-09T17:30:30Z"
+  },
+  {
+   "file": "sub-03_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-body/sub-03_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "3a191660b9aeecf4cf66ab24faeb23c595e7c7280b2cadfdf5c2323ba21c9746",
+   "fetched_utc": "2026-11-09T17:30:36Z"
+  },
+  {
+   "file": "sub-03_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-joy/eeg/sub-03_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2121575,
+   "sha256": "e89356c2b0df85fa46757d717f21f42173af9f74c3d38181f26a8e0431764d97",
+   "fetched_utc": "2026-11-09T17:30:42Z"
+  },
+  {
+   "file": "sub-03_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-joy/motion/sub-03_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 14283054,
+   "sha256": "d746de27686c816634a2fdc11625ee30a15336dfcfd2efac67791493bce7210d",
+   "fetched_utc": "2026-11-09T17:30:51Z"
+  },
+  {
+   "file": "sub-03_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-03/ses-joy/sub-03_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "2250b5ea3cdad7602e71150bb9d51c06b99a3f8785978fd52ebc62cdbc6c47d8",
+   "fetched_utc": "2026-11-09T17:30:56Z"
+  },
+  {
+   "file": "sub-04_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-body/eeg/sub-04_ses-body_task-Rotation_events.tsv",
+   "bytes": 2148604,
+   "sha256": "d47b068e8a5c6e5fdd22a5c440ef07f1d47dd2c3a5b8d322a920c86ab7b2fb5f",
+   "fetched_utc": "2026-11-09T17:31:03Z"
+  },
+  {
+   "file": "sub-04_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-body/motion/sub-04_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 22949344,
+   "sha256": "5a881bbd81b4973a5758dc18b3e11613244e3924d619bec653af547e8247bd92",
+   "fetched_utc": "2026-11-09T17:31:11Z"
+  },
+  {
+   "file": "sub-04_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-body/sub-04_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "2740498ce28a3319fe9210add59d28db2d28e62da50dee804c0557968799b178",
+   "fetched_utc": "2026-11-09T17:31:16Z"
+  },
+  {
+   "file": "sub-04_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-joy/eeg/sub-04_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2133729,
+   "sha256": "c23a47b4750c1e5c04208eab74f067f81a110d39ef1af6f3b2757a913b4fff0c",
+   "fetched_utc": "2026-11-09T17:31:20Z"
+  },
+  {
+   "file": "sub-04_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-joy/motion/sub-04_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 17683970,
+   "sha256": "94d60588f0075ddb216955082aba47a253b777e9d1faa4145dfb5be51c64b933",
+   "fetched_utc": "2026-11-09T17:31:34Z"
+  },
+  {
+   "file": "sub-04_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-04/ses-joy/sub-04_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "219e1044365ce4b96b5e91dce0656b00076b7d9ea991ca03e5e3b52556bebb78",
+   "fetched_utc": "2026-11-09T17:31:41Z"
+  },
+  {
+   "file": "sub-05_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-body/eeg/sub-05_ses-body_task-Rotation_events.tsv",
+   "bytes": 2156110,
+   "sha256": "9f8a4b3a5a2d79981e8ef39c961dcc1eefc899e67162988e1cf44d058be6dd6d",
+   "fetched_utc": "2026-11-09T17:31:50Z"
+  },
+  {
+   "file": "sub-05_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-body/motion/sub-05_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 29027145,
+   "sha256": "a900af16d08ae5ad2502788bb6cd2f91c1c25226462929dc188b508bcda6cd9f",
+   "fetched_utc": "2026-11-09T17:32:03Z"
+  },
+  {
+   "file": "sub-05_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-body/sub-05_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "423af79b66c039214ef8eead4fa479255756df2606b62a62d5f9b4c7b93ec7ef",
+   "fetched_utc": "2026-11-09T17:32:11Z"
+  },
+  {
+   "file": "sub-05_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-joy/eeg/sub-05_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2104593,
+   "sha256": "8f0de0bf76e5c700d7443c8f274b1db05e84990651ffa603dc30e7520e651e90",
+   "fetched_utc": "2026-11-09T17:32:16Z"
+  },
+  {
+   "file": "sub-05_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-joy/motion/sub-05_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 13756029,
+   "sha256": "f48c3cc28bcc9f912a89f092e2858260cc11c12dd949dbfd6a5031f1abed6f66",
+   "fetched_utc": "2026-11-09T17:32:22Z"
+  },
+  {
+   "file": "sub-05_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-05/ses-joy/sub-05_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "8c3d92ffa58d130c64c19bcd2ae8998f1e2004ca0813de2dfd11f593cf9ff4c1",
+   "fetched_utc": "2026-11-09T17:32:28Z"
+  },
+  {
+   "file": "sub-06_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-body/eeg/sub-06_ses-body_task-Rotation_events.tsv",
+   "bytes": 2176732,
+   "sha256": "0b40ee99c2a00a8b68cfbbb30df7d09e3b9de688e6dc817e2add9422da5e1f1a",
+   "fetched_utc": "2026-11-09T17:32:44Z"
+  },
+  {
+   "file": "sub-06_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-body/motion/sub-06_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 28287989,
+   "sha256": "5d534273a82c8774e0ea7710763abbeba98f67e50d346bc44ba76c07c1f9421d",
+   "fetched_utc": "2026-11-09T17:32:50Z"
+  },
+  {
+   "file": "sub-06_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-body/sub-06_ses-body_scans.tsv",
+   "bytes": 177,
+   "sha256": "e94fef250b9399d77dee892295ebe2a02e559b561fd7450be13ed52769abc521",
+   "fetched_utc": "2026-11-09T17:32:57Z"
+  },
+  {
+   "file": "sub-06_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-joy/eeg/sub-06_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2137897,
+   "sha256": "c61aab589c93bd908016cbbd6f9511e4ac016d0be6ecdf9085cde784685fdf86",
+   "fetched_utc": "2026-11-09T17:33:02Z"
+  },
+  {
+   "file": "sub-06_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-joy/motion/sub-06_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 15570907,
+   "sha256": "0b527d983ec07b4e43db455f57ade984cc60867cbeedb2ce3e6d30ca8c8ce265",
+   "fetched_utc": "2026-11-09T17:33:10Z"
+  },
+  {
+   "file": "sub-06_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-06/ses-joy/sub-06_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "42b123cea65d3159f60559fa6ce277028313d2a4a2d3f8ae51e3a3a477b14f4f",
+   "fetched_utc": "2026-11-09T17:33:19Z"
+  },
+  {
+   "file": "sub-07_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-body/eeg/sub-07_ses-body_task-Rotation_events.tsv",
+   "bytes": 2148865,
+   "sha256": "22dfa2f35b7b87f49d1fb62d3cd65a629ae66b6c923fd2b99c7e764b3e0e9696",
+   "fetched_utc": "2026-11-09T17:33:29Z"
+  },
+  {
+   "file": "sub-07_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-body/motion/sub-07_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 33848442,
+   "sha256": "f0cb100ba06ddba891482b062573a8b07738c11d1e412ff649d621bb89673150",
+   "fetched_utc": "2026-11-09T17:33:52Z"
+  },
+  {
+   "file": "sub-07_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-body/sub-07_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "6306f68fd41cc4de3f914e5e6eb2df51bd50006291c89b296131728647805d13",
+   "fetched_utc": "2026-11-09T17:34:01Z"
+  },
+  {
+   "file": "sub-07_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-joy/eeg/sub-07_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2116240,
+   "sha256": "22d3d5118c5a72a828cd78d06185d4ddfb4bdbe632d325dcbc9c1372b82b47b7",
+   "fetched_utc": "2026-11-09T17:34:07Z"
+  },
+  {
+   "file": "sub-07_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-joy/motion/sub-07_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 14530502,
+   "sha256": "15c2c566b5287226b97f5914a22026dad07af2860f7142a34339fc17355e6680",
+   "fetched_utc": "2026-11-09T17:34:13Z"
+  },
+  {
+   "file": "sub-07_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-07/ses-joy/sub-07_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "5ede5c9500bb6842e4848a3e60340cc7105e29ece8fa6c342aed4834ebdcd048",
+   "fetched_utc": "2026-11-09T17:34:18Z"
+  },
+  {
+   "file": "sub-08_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-body/eeg/sub-08_ses-body_task-Rotation_events.tsv",
+   "bytes": 512095,
+   "sha256": "dc835ea52d4296cc665a906fb7d13ed981920dd9adf41ffdcfb9cfefc2fe050a",
+   "fetched_utc": "2026-11-09T17:34:24Z"
+  },
+  {
+   "file": "sub-08_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-body/motion/sub-08_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 14586339,
+   "sha256": "bd4ce57ef3bda38c1872cb09b3e44c85a3fcbf2b222fb8173a350a8157661a9e",
+   "fetched_utc": "2026-11-09T17:34:31Z"
+  },
+  {
+   "file": "sub-08_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-body/sub-08_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "b4dfe769b967eb912195e8ac7cc553964336e76add2f6c696a2e6895b057fc41",
+   "fetched_utc": "2026-11-09T17:34:39Z"
+  },
+  {
+   "file": "sub-08_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-joy/eeg/sub-08_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2127192,
+   "sha256": "4a8ad579d3e84a5b5f9cf47a14fcf10e894f6b5abd9d58e4c9c0aa387c51ad45",
+   "fetched_utc": "2026-11-09T17:34:56Z"
+  },
+  {
+   "file": "sub-08_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-joy/motion/sub-08_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 22737870,
+   "sha256": "5f016eb2e533ae8d3ff372efd6a2d5d2879d752193c9765afb3dbf690a0d9492",
+   "fetched_utc": "2026-11-09T17:35:02Z"
+  },
+  {
+   "file": "sub-08_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-08/ses-joy/sub-08_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "c567e8c8eef61c9d92442728f5e3742d92c75c0a0f6ce6de67cb001e3e9e959a",
+   "fetched_utc": "2026-11-09T17:35:11Z"
+  },
+  {
+   "file": "sub-09_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-body/eeg/sub-09_ses-body_task-Rotation_events.tsv",
+   "bytes": 2148035,
+   "sha256": "39ff264f844e4459fbcf21355c8894618570867000907bc3c81949ab86663bd2",
+   "fetched_utc": "2026-11-09T17:35:19Z"
+  },
+  {
+   "file": "sub-09_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-body/motion/sub-09_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 26950657,
+   "sha256": "f355c4f395f4f6db4d551961f5f818521496196dc86407d8b055d135d2c5476c",
+   "fetched_utc": "2026-11-09T17:35:35Z"
+  },
+  {
+   "file": "sub-09_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-joy/eeg/sub-09_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2116696,
+   "sha256": "2f0806cdafd03c8be326ae47cf0fa243dcd82fa9580e5be7949acb701df0165f",
+   "fetched_utc": "2026-11-09T17:36:16Z"
+  },
+  {
+   "file": "sub-09_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-joy/motion/sub-09_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 13450790,
+   "sha256": "71eef63fea346eadb3f3f328d540c217a3aecd1f5ba32a875a8002d48740dce7",
+   "fetched_utc": "2026-11-09T17:36:28Z"
+  },
+  {
+   "file": "sub-09_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-joy/sub-09_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "c72cac3ee0f68731774e1f3922864dfccd25ff7c8c2114a17ee96ceb53948ef7",
+   "fetched_utc": "2026-11-09T17:36:34Z"
+  },
+  {
+   "file": "sub-10_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-body/eeg/sub-10_ses-body_task-Rotation_events.tsv",
+   "bytes": 2157916,
+   "sha256": "e34fcdfb43fcbe22457db719647ccf7d8a8d30ce945a2d12db838ed16b2324b6",
+   "fetched_utc": "2026-11-09T17:36:50Z"
+  },
+  {
+   "file": "sub-10_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-body/motion/sub-10_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 30197309,
+   "sha256": "4288fcf2bb1e0c355a8f1d4077b2758c546fe1c6d84c7ac54c307e5044e50cb8",
+   "fetched_utc": "2026-11-09T17:37:02Z"
+  },
+  {
+   "file": "sub-10_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-body/sub-10_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "1110007a312f9d9ce4b8cdb72fc62a9959276adfa69e6a5527295491199fc7c7",
+   "fetched_utc": "2026-11-09T17:37:18Z"
+  },
+  {
+   "file": "sub-10_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-joy/eeg/sub-10_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2127872,
+   "sha256": "aac70c097cec2dd081f093c2021c8aca363ca07e185037844fbad7abf831dfe6",
+   "fetched_utc": "2026-11-09T17:37:25Z"
+  },
+  {
+   "file": "sub-10_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-joy/motion/sub-10_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 24264466,
+   "sha256": "3a026de388aab36820003b0e23612946b4f04066e6e3d70733f58c3260ecdc9a",
+   "fetched_utc": "2026-11-09T17:37:32Z"
+  },
+  {
+   "file": "sub-10_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-10/ses-joy/sub-10_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "fa421a1ae0f05ebf7e35b9a118496cea12757029cb8c1166ffd073592838b649",
+   "fetched_utc": "2026-11-09T17:37:41Z"
+  },
+  {
+   "file": "sub-11_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-body/eeg/sub-11_ses-body_task-Rotation_events.tsv",
+   "bytes": 2162828,
+   "sha256": "a6a7ad2a236734b854e8cb6a6d46ee4b4f96da4b9666d1e322fc02c5f73c8274",
+   "fetched_utc": "2026-11-09T17:37:50Z"
+  },
+  {
+   "file": "sub-11_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-body/motion/sub-11_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 27347951,
+   "sha256": "2326ca5439803c881cb8fa9368dbf0ced677269c63f7b0b03ca52ac5bda694a7",
+   "fetched_utc": "2026-11-09T17:37:59Z"
+  },
+  {
+   "file": "sub-11_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-body/sub-11_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "da4846046c872fdabf77d8aec47210b8f6e44d33d901dd0ba6171bdfe3a413eb",
+   "fetched_utc": "2026-11-09T17:38:07Z"
+  },
+  {
+   "file": "sub-11_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-joy/eeg/sub-11_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2136820,
+   "sha256": "f2971afff83e82571eaadbcde7ec66e6279f769f833b655ca113a8b0324d95f0",
+   "fetched_utc": "2026-11-09T17:38:25Z"
+  },
+  {
+   "file": "sub-11_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-joy/motion/sub-11_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 12900607,
+   "sha256": "1fa2b73621931406a2792ecc98f0267bd4dc766baeee02e7709184d2333bbec0",
+   "fetched_utc": "2026-11-09T17:38:40Z"
+  },
+  {
+   "file": "sub-11_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-11/ses-joy/sub-11_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "ed0178d2acc0b2be4096c1afc1a1fbfc95b7386ea31289e156539ec5f5e43c82",
+   "fetched_utc": "2026-11-09T17:38:51Z"
+  },
+  {
+   "file": "sub-12_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-body/eeg/sub-12_ses-body_task-Rotation_events.tsv",
+   "bytes": 2178535,
+   "sha256": "2c1637bb356e1a472b76f99448af52ec41e076c630fc99d4887728e1bc7067a8",
+   "fetched_utc": "2026-11-09T17:38:56Z"
+  },
+  {
+   "file": "sub-12_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-body/motion/sub-12_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 30141628,
+   "sha256": "cc384a76e74cda331f70ce594ab2c56a42ed12c86c4f8ae87d71d49b3c26eafc",
+   "fetched_utc": "2026-11-09T17:39:03Z"
+  },
+  {
+   "file": "sub-12_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-body/sub-12_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "8468a341c5cc8a15e2ce525fabc79dc6318c65e0f5acc36addf7977f95b77f29",
+   "fetched_utc": "2026-11-09T17:39:09Z"
+  },
+  {
+   "file": "sub-12_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-joy/eeg/sub-12_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2122870,
+   "sha256": "bbcad5b6449edff6f35a2e3fa53408359bae25163e0da32f590b15df1388af79",
+   "fetched_utc": "2026-11-09T17:39:29Z"
+  },
+  {
+   "file": "sub-12_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-joy/motion/sub-12_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 12750796,
+   "sha256": "bca0e4fd6e91bf83e8318db7acab1cf2664c76e433064f490eb347c2ef0187e1",
+   "fetched_utc": "2026-11-09T17:39:43Z"
+  },
+  {
+   "file": "sub-12_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-12/ses-joy/sub-12_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "ed77c4b13596c1dfde0367f07b4fde4af1539fad6fe1f5c86405c10cdb8a1299",
+   "fetched_utc": "2026-11-09T17:39:53Z"
+  },
+  {
+   "file": "sub-13_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-body/eeg/sub-13_ses-body_task-Rotation_events.tsv",
+   "bytes": 2153091,
+   "sha256": "e79691558122ea740c4d1f4a1d786415c356df9d682a3469f3ee7ef616c09674",
+   "fetched_utc": "2026-11-09T17:40:03Z"
+  },
+  {
+   "file": "sub-13_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-body/motion/sub-13_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 32733989,
+   "sha256": "2e85a8eb5027474a7ffd965a915904c026e4ca694b2e20d5630d0f06ca720bfd",
+   "fetched_utc": "2026-11-09T17:40:11Z"
+  },
+  {
+   "file": "sub-13_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-body/sub-13_ses-body_scans.tsv",
+   "bytes": 177,
+   "sha256": "516e0944b0ae1f86908687423f7125ce6d6791353a88c74587342ed17d951388",
+   "fetched_utc": "2026-11-09T17:40:17Z"
+  },
+  {
+   "file": "sub-13_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-joy/eeg/sub-13_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2102034,
+   "sha256": "2dab88bb6c8aa59d4a8531e2480f035fa8cdfa5fb9200df49605bca759041c94",
+   "fetched_utc": "2026-11-09T17:40:23Z"
+  },
+  {
+   "file": "sub-13_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-joy/motion/sub-13_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 14810069,
+   "sha256": "fd3abca3d4a0d236a98b0b98aa40a1582629a39eaa5eac373f3b1020fa476cf2",
+   "fetched_utc": "2026-11-09T17:40:44Z"
+  },
+  {
+   "file": "sub-13_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-13/ses-joy/sub-13_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "d10a8f33609820bbdfa291e41db4f0f3229f69c67dad3f8518f6a327439cca3e",
+   "fetched_utc": "2026-11-09T17:40:50Z"
+  },
+  {
+   "file": "sub-14_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-body/eeg/sub-14_ses-body_task-Rotation_events.tsv",
+   "bytes": 2153851,
+   "sha256": "d466e2222927abb63db993193a9bfb8f91eea0189ec12956251cdfb1ed8b9517",
+   "fetched_utc": "2026-11-09T17:40:57Z"
+  },
+  {
+   "file": "sub-14_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-body/motion/sub-14_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 45596890,
+   "sha256": "bd4e4d0ec83a566e0909064363d4e522968ee88c79962fe3b160ffc5cacabd56",
+   "fetched_utc": "2026-11-09T17:41:04Z"
+  },
+  {
+   "file": "sub-14_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-body/sub-14_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "6b761ffbe86a2a56d54aaa72d4bfaf7677eb0c8bbc61369840e028f6238fc800",
+   "fetched_utc": "2026-11-09T17:41:13Z"
+  },
+  {
+   "file": "sub-14_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-joy/eeg/sub-14_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2122626,
+   "sha256": "4de9e1692a4ae0006ea190c061e0608df68763d22f20951478f1a891e9837c53",
+   "fetched_utc": "2026-11-09T17:41:22Z"
+  },
+  {
+   "file": "sub-14_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-joy/motion/sub-14_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 21471316,
+   "sha256": "0b8d3a76b075f0d733b489de57dd6dbf86b0653571fc265603b8b9f307bbf0da",
+   "fetched_utc": "2026-11-09T17:41:34Z"
+  },
+  {
+   "file": "sub-14_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-14/ses-joy/sub-14_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "1dc52709d409e06fd3e2d99667704ca1b7c2694da29f404927c2ad98d926a1a6",
+   "fetched_utc": "2026-11-09T17:41:49Z"
+  },
+  {
+   "file": "sub-15_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-body/eeg/sub-15_ses-body_task-Rotation_events.tsv",
+   "bytes": 2144356,
+   "sha256": "91b1428ab302311edb6aabc37b59b7a7b16e1c12611d54f9c9cec433c2593bbb",
+   "fetched_utc": "2026-11-09T17:41:56Z"
+  },
+  {
+   "file": "sub-15_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-body/motion/sub-15_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 32462404,
+   "sha256": "ee0eeded221f8eacc7408e4f6bd05661face801bad1e4295d538012b2cb08dbb",
+   "fetched_utc": "2026-11-09T17:42:06Z"
+  },
+  {
+   "file": "sub-15_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-body/sub-15_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "88c62ffc9ca6c0a3270f78f775c8ac9a27f1ba5a61ad27289f36a21ea783f242",
+   "fetched_utc": "2026-11-09T17:42:15Z"
+  },
+  {
+   "file": "sub-15_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-joy/eeg/sub-15_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2105851,
+   "sha256": "107320c59f3f4aa36dccc9f20c5a85ba2fceba445253399c14db87da67e52930",
+   "fetched_utc": "2026-11-09T17:42:23Z"
+  },
+  {
+   "file": "sub-15_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-joy/motion/sub-15_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 15317768,
+   "sha256": "615ccc602f44492ded8c267282ff04c2845fa55aa72962fcf1e793348fc1d44b",
+   "fetched_utc": "2026-11-09T17:42:31Z"
+  },
+  {
+   "file": "sub-15_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-15/ses-joy/sub-15_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "efaa25b560b3ea17c5b6a29e3a6e35b1c38e123cdb1cc41ce1767786a15937e0",
+   "fetched_utc": "2026-11-09T17:42:36Z"
+  },
+  {
+   "file": "sub-16_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-body/eeg/sub-16_ses-body_task-Rotation_events.tsv",
+   "bytes": 2152807,
+   "sha256": "1d03b2f8d7ade41645b3184582a3101bac126a3f9e95056567dea45c4a5920b6",
+   "fetched_utc": "2026-11-09T17:42:43Z"
+  },
+  {
+   "file": "sub-16_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-body/motion/sub-16_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 19518825,
+   "sha256": "03478b4a6b8fda0f7f8e5e73e2c82e8376cd1ce9d8a77ca7df5768213a498ecb",
+   "fetched_utc": "2026-11-09T17:43:07Z"
+  },
+  {
+   "file": "sub-16_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-body/sub-16_ses-body_scans.tsv",
+   "bytes": 177,
+   "sha256": "fc4fb78744cb3a4aa8f593cee156d036ca8c879901b12e882124478a0fc55c3f",
+   "fetched_utc": "2026-11-09T17:43:21Z"
+  },
+  {
+   "file": "sub-16_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-joy/eeg/sub-16_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2120957,
+   "sha256": "a9c59901b2d3ef8662c8ff82f76678df9a1a44ccb03bc44004b723e8c5047c33",
+   "fetched_utc": "2026-11-09T17:43:32Z"
+  },
+  {
+   "file": "sub-16_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-joy/motion/sub-16_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 15924005,
+   "sha256": "9f5215b360015245fefee4e8a7d18c58fac2ab4ba7e31e953d108ddda46f71f3",
+   "fetched_utc": "2026-11-09T17:43:40Z"
+  },
+  {
+   "file": "sub-16_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-16/ses-joy/sub-16_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "b0d04bc294c05418d1a6b4650e1b0fe01a0691908696fc80e0a492fb8fb0425d",
+   "fetched_utc": "2026-11-09T17:44:11Z"
+  },
+  {
+   "file": "sub-17_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-body/eeg/sub-17_ses-body_task-Rotation_events.tsv",
+   "bytes": 2152519,
+   "sha256": "847c3154fad34d43114b93c96d9aee4919a2132f7e140171d979eead4ccde909",
+   "fetched_utc": "2026-11-09T17:44:20Z"
+  },
+  {
+   "file": "sub-17_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-body/motion/sub-17_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 25034367,
+   "sha256": "3ead1f699206dcd1c6c4b2cd5f1aac9f7a3eaf0afcd1ad07e8896f124e93cc5c",
+   "fetched_utc": "2026-11-09T17:44:29Z"
+  },
+  {
+   "file": "sub-17_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-body/sub-17_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "d9156da0f074346886a829d575b4017d5cd4f941c518764f465492fc17dc7b04",
+   "fetched_utc": "2026-11-09T17:44:36Z"
+  },
+  {
+   "file": "sub-17_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-joy/eeg/sub-17_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2118687,
+   "sha256": "8e1ffd2f4f26e2a7d7797287aadee66f4cf12c8240d86104075c81cdaef133e4",
+   "fetched_utc": "2026-11-09T17:44:50Z"
+  },
+  {
+   "file": "sub-17_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-joy/motion/sub-17_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 9298750,
+   "sha256": "abb2997c833bb0a59507f2ea58f70eb7fa493dffaf82ec3c0d447d468947059f",
+   "fetched_utc": "2026-11-09T17:45:07Z"
+  },
+  {
+   "file": "sub-17_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-17/ses-joy/sub-17_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "93133ffcc7516467a37821c12ae163c0b9e12cbfd240f391874795b9e8a2dfba",
+   "fetched_utc": "2026-11-09T17:45:15Z"
+  },
+  {
+   "file": "sub-18_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-body/eeg/sub-18_ses-body_task-Rotation_events.tsv",
+   "bytes": 2155873,
+   "sha256": "235b1e8242606011ac49e76ab9fb5c15274220b4872142460a25b54d3685c2ea",
+   "fetched_utc": "2026-11-09T17:45:22Z"
+  },
+  {
+   "file": "sub-18_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-body/motion/sub-18_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 24361982,
+   "sha256": "c67755f8a12c0e357e120a498801e75188f33a942566520acb1243586f0a80d7",
+   "fetched_utc": "2026-11-09T17:45:32Z"
+  },
+  {
+   "file": "sub-18_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-body/sub-18_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "ea7cf6d3fb48e34c212448538615ce95c217b51414dcf0cde3e75c55ac562123",
+   "fetched_utc": "2026-11-09T17:45:40Z"
+  },
+  {
+   "file": "sub-18_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-joy/eeg/sub-18_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2134436,
+   "sha256": "74cc613292cfd20bfb343f40391cb47be56af93850ad198f61a35a52461e2bc1",
+   "fetched_utc": "2026-11-09T17:45:44Z"
+  },
+  {
+   "file": "sub-18_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-joy/motion/sub-18_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 14791643,
+   "sha256": "18d2d6b2a37ae363b06b69d41039bcd18dad69a6160e2aa6ef82f30fa49bd0fa",
+   "fetched_utc": "2026-11-09T17:45:51Z"
+  },
+  {
+   "file": "sub-18_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-18/ses-joy/sub-18_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "b89e7af75dde45bc34f3f305762dcdd005bc42c50014d744b924de2d9b5a32e4",
+   "fetched_utc": "2026-11-09T17:45:59Z"
+  },
+  {
+   "file": "sub-19_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-body/eeg/sub-19_ses-body_task-Rotation_events.tsv",
+   "bytes": 2170139,
+   "sha256": "0a2663f7abb62c1ac3e683689990e37f550d0485d83cfd2cfaec879e60b82443",
+   "fetched_utc": "2026-11-09T17:46:20Z"
+  },
+  {
+   "file": "sub-19_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-body/motion/sub-19_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 50416792,
+   "sha256": "d0f8b688f46a25a970b7a7c5b41dad7746b5b79f5ff4bfa40054ec623b719c1c",
+   "fetched_utc": "2026-11-09T17:46:28Z"
+  },
+  {
+   "file": "sub-19_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-body/sub-19_ses-body_scans.tsv",
+   "bytes": 177,
+   "sha256": "dc9d1f3f561913e4df4179f241372dd1dddbced87941772083856173311831df",
+   "fetched_utc": "2026-11-09T17:46:34Z"
+  },
+  {
+   "file": "sub-19_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-joy/eeg/sub-19_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2102884,
+   "sha256": "831c1f0e5b3d9288612ade891e25b8729fd6a300b8872678cb68377228fe688a",
+   "fetched_utc": "2026-11-09T17:46:39Z"
+  },
+  {
+   "file": "sub-19_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-joy/motion/sub-19_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 14186450,
+   "sha256": "81cd3878f5e0f62157d375920770be68fd31275b794ebd348bf48be0566ddf9d",
+   "fetched_utc": "2026-11-09T17:46:44Z"
+  },
+  {
+   "file": "sub-19_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-19/ses-joy/sub-19_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "c41aa4ec091c17748d09dea604a6428ef097739a391314fa6edd23dd49f78e56",
+   "fetched_utc": "2026-11-09T17:46:50Z"
+  },
+  {
+   "file": "sub-20_ses-body_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-body/eeg/sub-20_ses-body_task-Rotation_events.tsv",
+   "bytes": 2167793,
+   "sha256": "d763ea891758b9ca3f9cae6ed0ebd7c15204caeabf50e8ba13fe662c4675e872",
+   "fetched_utc": "2026-11-09T17:47:16Z"
+  },
+  {
+   "file": "sub-20_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-body/motion/sub-20_ses-body_task-Rotation_tracksys-HTCVive_motion.tsv",
+   "bytes": 26158752,
+   "sha256": "535c959f6a74047bc130c62c2caf03e285bc43e912a55bf9749ba7bae50bd5fb",
+   "fetched_utc": "2026-11-09T17:47:25Z"
+  },
+  {
+   "file": "sub-20_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-body/sub-20_ses-body_scans.tsv",
+   "bytes": 177,
+   "sha256": "971b2c28ef8429284d5561e96e311e26364b17c283347c65ad931a3e8402574c",
+   "fetched_utc": "2026-11-09T17:47:35Z"
+  },
+  {
+   "file": "sub-20_ses-joy_task-Rotation_events.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-joy/eeg/sub-20_ses-joy_task-Rotation_events.tsv",
+   "bytes": 2133993,
+   "sha256": "d484bde31220f214c5a28f258b9d8c467216ca4e5d817a618eda76d8cc6d0e08",
+   "fetched_utc": "2026-11-09T17:47:41Z"
+  },
+  {
+   "file": "sub-20_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-joy/motion/sub-20_ses-joy_task-Rotation_tracksys-VIRPos_motion.tsv",
+   "bytes": 17042745,
+   "sha256": "b4d1407aeaea6f363330adf6b34e2699c12065b94f2f0d1e1b9893d86f1344d3",
+   "fetched_utc": "2026-11-09T17:47:51Z"
+  },
+  {
+   "file": "sub-20_ses-joy_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-20/ses-joy/sub-20_ses-joy_scans.tsv",
+   "bytes": 174,
+   "sha256": "918bee7b126e430142fb8bee2c6ae36e185fdf8b8ac11693eae0dc5c0251b0d1",
+   "fetched_utc": "2026-11-09T17:47:55Z"
+  },
+  {
+   "file": "sub-09_ses-body_scans.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds004460/sub-09/ses-body/sub-09_ses-body_scans.tsv",
+   "bytes": 270,
+   "sha256": "8977a15e3a07e1fe90c67cd0e82ce575dfef9e4a63ddf28d93e9460f22906b3d",
+   "fetched_utc": "2026-11-09T17:48:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gramann2021_SciRep.zip"
+}

@@ -1,0 +1,189 @@
+{
+ "id": "Camara2018_ExpBrainRes",
+ "module": "timeseries",
+ "rows": 11726,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 67505337,
+ "zip_sha256": "9ce70d60b854b469983419bd9872a4f20a81d88199280c7101e8b1047634097d",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 13 participant folders",
+   "ok": true,
+   "detail": "13"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: trials per participant x participants (271 x 13)",
+   "computed": 3523.0,
+   "reported": 3523.0,
+   "tol": 0,
+   "source": "README: 271 trials in Experiment 1, 260 in Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "README / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: share of trials without a temporal error (finger lifted or off the target path) below 2.1%",
+   "ok": true,
+   "detail": "1.19%"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 9 participant folders",
+   "ok": true,
+   "detail": "9"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials per participant x participants (260 x 9)",
+   "computed": 2340.0,
+   "reported": 2340.0,
+   "tol": 0,
+   "source": "README: 271 trials in Experiment 1, 260 in Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "README / Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: share of trials without a temporal error (finger lifted or off the target path) below 2.1%",
+   "ok": true,
+   "detail": "2.01%"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: hand-visible trials per participant",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (40 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: adaptation (delayed cursor) trials per participant",
+   "computed": 151.0,
+   "reported": 151.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (151 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: no-feedback trials per participant (40 before and 40 after the delay)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: largest imposed delay (s)",
+   "computed": 0.2,
+   "reported": 0.2,
+   "tol": 0.001,
+   "source": "Methods, Experiment 1 (delay rises to 200 ms)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: first trials at the minimal delay",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (20 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials at the fixed 200 ms delay",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (80 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: random-delay trials per participant",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (160 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: random-delay trials per participant and delay value (59, 100, 150, 200 ms)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2 (40 trials each)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 random delays take exactly four values 0.05, 0.10, 0.15, 0.20 s (nominal 59, 100, 150, 200 ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "two recordings (eye, finger) per trial: 2 x (3523 + 2340) rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "sample counts: every recording has samples",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's license for the article is CC BY 4.0 but the OSF project states no license for the data. The repeated-measures ANOVA of finger temporal error in Experiment 2 (F[3,21] = 57) was not reproduced from the log (F[3,24] = 12.4 for 9 participants, F[3,21] = 9.0 without participant 6); the paper does not say how the error was averaged. The reproduced numbers are counts and design values."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/m8n5z/",
+   "bytes": 1898,
+   "sha256": "bea1cf8a7723be44d65186355f0225059285ed08e916a8e8c73ee7ba3f7ee08c",
+   "fetched_utc": "2026-11-09T03:41:36Z"
+  },
+  {
+   "file": "RawData_Exp1.zip",
+   "url": "https://osf.io/download/sh3au/",
+   "bytes": 41655233,
+   "sha256": "665b4f086dc2187f83178e2c8f86e01e91147d36e7ac0f20b2da549096d62910",
+   "fetched_utc": "2026-11-09T03:41:44Z"
+  },
+  {
+   "file": "RawData_Exp2.zip",
+   "url": "https://osf.io/download/pc4jg/",
+   "bytes": 31308698,
+   "sha256": "0826fc0f33254046d4fc0fc6b5b72941ed8aebf51e64ffb1f5dbb7af2dedf274",
+   "fetched_utc": "2026-11-09T03:41:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Camara2018_ExpBrainRes.zip"
+}

@@ -1,0 +1,197 @@
+{
+ "id": "Jain2025_PLoSOne",
+ "module": "summary",
+ "rows": 1884,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 20357,
+ "zip_sha256": "d68e9a8a3c2ab99074fd8986f27b9628097eec77402063f63f038ee136102307",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "ID sets agree",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = values",
+   "ok": true,
+   "detail": "1884 vs 1884"
+  },
+  {
+   "kind": "internal",
+   "what": "28 staircase points per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "7 forward magnitudes 0.30-0.60",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "young adults",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults SD of age",
+   "computed": 5.300198606010712,
+   "reported": 5.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults mean age",
+   "computed": 71.35,
+   "reported": 71.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults SD of age",
+   "computed": 4.331949846626137,
+   "reported": 4.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults female",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults female",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults fallers",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults fallers",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults median MiniBESTest",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults median MiniBESTest",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults median ABC",
+   "computed": 96.25,
+   "reported": 96.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults median ABC",
+   "computed": 95.3125,
+   "reported": 95.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "equivalence points per participant (7 magnitudes x 2 sides x 2 days)",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "Methods, Two-alternative forced-choice task (14 per visit, two visits)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper prints a mean age of 27 for the young adults; the deposit gives 27.75 (the paper seems to truncate), so that number is not used as a check.",
+  "Paper reports weekly activity in minutes (284 +- 216 and 427 +- 296); the deposit's hours column is rounded, so it was not used as a check."
+ ],
+ "sources": [
+  {
+   "file": "All_Subs_Assessments.csv",
+   "url": "https://osf.io/download/5e32a/",
+   "bytes": 2812,
+   "sha256": "4f92015c951b8fe6945533a9d85e718e31b0b5780d191e27fa365c910947f82f",
+   "fetched_utc": "2026-11-09T15:41:31Z"
+  },
+  {
+   "file": "State_Anxiety.csv",
+   "url": "https://osf.io/download/znmyt/",
+   "bytes": 1155,
+   "sha256": "aa66dd4cab76a507f94b03454bd34e64e75d32434e8053203e1e3b1ee7c4a0d8",
+   "fetched_utc": "2026-11-09T15:41:37Z"
+  },
+  {
+   "file": "Peak_VCOM_Means.csv",
+   "url": "https://osf.io/download/ksd4u/",
+   "bytes": 2914,
+   "sha256": "f9d9c60766d237bd373c093fb5ec4a00ecabbd7889d528f7cbb205d5886f8aa2",
+   "fetched_utc": "2026-11-09T15:41:43Z"
+  },
+  {
+   "file": "Data_Table.csv",
+   "url": "https://osf.io/download/3e5ts/",
+   "bytes": 25509,
+   "sha256": "ee376ec2f6db2bbed505be8238fc0c38130bf82118345d6c0439b10463f239cb",
+   "fetched_utc": "2026-11-09T15:41:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jain2025_PLoSOne.zip"
+}

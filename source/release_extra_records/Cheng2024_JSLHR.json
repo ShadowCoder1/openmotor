@@ -1,0 +1,366 @@
+{
+ "id": "Cheng2024_JSLHR",
+ "module": "articulography",
+ "rows": 7683,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 193835,
+ "zip_sha256": "cf75b55ad1be3463bc9b198c5defc1f0a4a3ee5cfa1e8fe6fe90360ffddd4c25",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants recruited",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Method, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (3 excluded for a sensor that fell off)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Abstract; Method, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "utterances removed: other-error tokens plus the 3 iambic-stress tokens the paper adds",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Method, data exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "removed utterances as a percentage of all utterances",
+   "computed": 2.0246478873239435,
+   "reported": 2.0,
+   "tol": 0.5,
+   "source": "Method, data exclusions ('approximately 2%')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/fn/ tokens (nonnative cluster + f#n boundary tokens)",
+   "computed": 304.0,
+   "reported": 304.0,
+   "tol": 0,
+   "source": "Results, accuracy of /fn/",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/fn/ tokens with an epenthetic vocoid",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Results, accuracy of /fn/",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/fn/ tokens with a phonemic error",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results, accuracy of /fn/",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/fn/ accuracy (%)",
+   "computed": 88.48684210526316,
+   "reported": 88.0,
+   "tol": 0.5,
+   "source": "Results, accuracy of /fn/",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration #m: mean (ms)",
+   "computed": 59.02777777777778,
+   "reported": 59.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration #m: SD (ms)",
+   "computed": 13.289642870092772,
+   "reported": 13.3,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration s#m: mean (ms)",
+   "computed": 49.21678321678322,
+   "reported": 49.2,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration s#m: SD (ms)",
+   "computed": 14.367480818584461,
+   "reported": 14.4,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration #sm: mean (ms)",
+   "computed": 41.11888111888112,
+   "reported": 41.1,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/m/ kinematic duration #sm: SD (ms)",
+   "computed": 9.343589736382055,
+   "reported": 9.34,
+   "tol": 0.005,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration #n: mean (ms)",
+   "computed": 75.8041958041958,
+   "reported": 75.8,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration #n: SD (ms)",
+   "computed": 22.58918435616664,
+   "reported": 23.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration f#n: mean (ms)",
+   "computed": 71.37414965986395,
+   "reported": 71.4,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration f#n: SD (ms)",
+   "computed": 27.208784561606464,
+   "reported": 27.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration #fn: mean (ms)",
+   "computed": 60.27210884353742,
+   "reported": 60.3,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/n/ kinematic duration #fn: SD (ms)",
+   "computed": 35.07380824738559,
+   "reported": 35.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration #s: mean (ms)",
+   "computed": 94.27801418439716,
+   "reported": 94.3,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration #s: SD (ms)",
+   "computed": 44.12858984538997,
+   "reported": 44.1,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration s#m: mean (ms)",
+   "computed": 107.14755244755246,
+   "reported": 107.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration s#m: SD (ms)",
+   "computed": 51.823210896559395,
+   "reported": 51.8,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration #sm: mean (ms)",
+   "computed": 125.9818181818182,
+   "reported": 126.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/s/ kinematic duration #sm: SD (ms)",
+   "computed": 52.663930030414555,
+   "reported": 52.7,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration #f: mean (ms)",
+   "computed": 57.3986013986014,
+   "reported": 57.6,
+   "tol": 0.25,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration #f: SD (ms)",
+   "computed": 28.7515192152531,
+   "reported": 29.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration f#n: mean (ms)",
+   "computed": 64.27142857142857,
+   "reported": 64.1,
+   "tol": 0.25,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration f#n: SD (ms)",
+   "computed": 41.34139687879947,
+   "reported": 41.3,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration #fn: mean (ms)",
+   "computed": 73.08013245033113,
+   "reported": 73.1,
+   "tol": 0.05,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/f/ kinematic duration #fn: SD (ms)",
+   "computed": 42.662720681906116,
+   "reported": 43.0,
+   "tol": 0.5,
+   "source": "Results, nasal and fricative kinematic durations",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every kinematic row kept",
+   "ok": true,
+   "detail": "7511 gesture rows of 7511"
+  },
+  {
+   "kind": "internal",
+   "what": "every acoustic token kept, plus the kinematic-only tokens",
+   "ok": true,
+   "detail": "3579 tokens = 3577 acoustic + 2 kinematic-only"
+  },
+  {
+   "kind": "internal",
+   "what": "row count = kinematic rows + tokens without gesture values",
+   "ok": true,
+   "detail": "7683 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's trial ranks run 1..n without gaps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "12 participants, none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "landmarks in the order GONS<=PVEL<=NONS<=MAXC<=NOFFS<=PVEL2<=GOFFS on most rows",
+   "ok": true,
+   "detail": "7386 of 7511 rows"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Kinematic durations of /f/ (target offset minus target onset, as in the authors' code): the mean is 57.40 ms for #f and 64.27 ms for f#n here, where the paper prints 57.6 and 64.1; the other ten means and all twelve SDs agree to the digits the paper prints.",
+  "The paper's 304 /fn/ tokens pool the 154 nonnative-cluster tokens with 150 f#n boundary tokens: all 29 vocoid tokens are cluster tokens, and the 6 phonemic errors are 3 cluster and 3 boundary tokens. The 88% accuracy is therefore pooled; for the 154 cluster tokens alone it is 79% (122 correct).",
+  "The paper says 288 tokens were collected per participant (22 nonwords x 8 = 176); the tables hold 279 to 392 tokens per participant because they include other items (/zm/ clusters, real words).",
+  "The two tables disagree about the item of 2 tokens (one is FAGBEET in the acoustic table and FNAGBEET in the kinematic table; the other is a nativeCC token in one and a singleton in the other); the acoustic table's labels are kept, as in the authors' code. The two files are sorted differently (neither is in the order of the authors' trial numbers); rows follow the acoustic table, and the trial column gives the order of the authors' trial numbers."
+ ],
+ "sources": [
+  {
+   "file": "all_acoustic_data_2022_0301.csv",
+   "url": "https://osf.io/download/f4j5r/",
+   "bytes": 200742,
+   "sha256": "36815584dcf04e3b5f30cb6c2f30ef9d06bdb2bf307e327b09b05e18cffecef8",
+   "fetched_utc": "2026-11-08T21:30:21Z"
+  },
+  {
+   "file": "all_kin_data_2022_0629.csv",
+   "url": "https://osf.io/download/qan78/",
+   "bytes": 659327,
+   "sha256": "ad72d31f94f54a81f347c930a7db741e5b1b004b0ea2cb481082f2259375b9f3",
+   "fetched_utc": "2026-11-08T21:30:24Z"
+  },
+  {
+   "file": "statistical_analysis_for_ms_20231027.Rmd",
+   "url": "https://osf.io/download/cx4gp/",
+   "bytes": 68007,
+   "sha256": "54729554b9d20559570baa12ebba3333a6b9834312a2c4879da2668a647edda9",
+   "fetched_utc": "2026-11-08T21:30:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng2024_JSLHR.zip"
+}

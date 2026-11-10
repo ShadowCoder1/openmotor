@@ -1,0 +1,157 @@
+{
+ "id": "Moreira2021_SciData",
+ "module": "timeseries",
+ "rows": 3180,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 433501875,
+ "zip_sha256": "f789bc0084bb77b7f222f2ad49c8fb2faef44cd89259a02be19982658664d569",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 23.75,
+   "reported": 23.8,
+   "tol": 0.1,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years, population SD)",
+   "computed": 2.0155644370746373,
+   "reported": 2.02,
+   "tol": 0.02,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass (kg)",
+   "computed": 67.51875,
+   "reported": 67.5,
+   "tol": 0.1,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass (kg, population SD)",
+   "computed": 10.78750543163247,
+   "reported": 10.8,
+   "tol": 0.1,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body height (m)",
+   "computed": 1.68875,
+   "reported": 1.69,
+   "tol": 0.01,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body height (m, population SD)",
+   "computed": 0.1086206126847018,
+   "reported": 0.108,
+   "tol": 0.002,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum body height (m)",
+   "computed": 1.51,
+   "reported": 1.51,
+   "tol": 0,
+   "source": "Introduction (1.51 to 1.83 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum body mass (kg)",
+   "computed": 83.7,
+   "reported": 83.7,
+   "tol": 0,
+   "source": "Introduction (52.0 to 83.7 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking speeds",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods (Experimental protocol)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "right-leg strides are twice the left-leg strides (two right strides per trial, one left)",
+   "ok": true,
+   "detail": "2120 right, 1060 left"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride has a sample file of 1001 samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stride times between 0.5 and 15 s",
+   "ok": true,
+   "detail": "0.855-5.14"
+  },
+  {
+   "kind": "internal",
+   "what": "slower speeds give longer strides (median stride time falls from 1.0 to 4.0 km/h)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper counts 1120 trials (1120 left-leg and 2240 right-leg strides). The ASCII deposit holds 1060 trials (1060 left-leg and 2120 right-leg strides); the missing trials are not in the files, and trial numbers in the deposit are renumbered 1..N in the StrideTime tables."
+ ],
+ "sources": [
+  {
+   "file": "ascii.zip",
+   "url": "https://ndownloader.figshare.com/files/26902613",
+   "bytes": 1341020068,
+   "sha256": "542446f1efc098d4c102f3f83aba3310c48fac1c95e86c7fc928b3f79458a219",
+   "fetched_utc": "2026-11-09T01:33:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Moreira2021_SciData.zip"
+}

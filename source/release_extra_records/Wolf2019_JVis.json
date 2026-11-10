@@ -1,0 +1,528 @@
+{
+ "id": "Wolf2019_JVis",
+ "module": "saccade",
+ "rows": 13200,
+ "subjects": 66,
+ "persons": 66,
+ "zip_bytes": 416908,
+ "zip_sha256": "ae6a1c559adba440760f03b1259fe94b19cfcebe0dd2b0fba095bb83e42355a9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p1: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p2: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p3: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p4: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p5: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p6: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p7: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p8: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p9: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p10: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p11: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p12: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p13: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p14: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p15: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1/double-target, seque p16: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p2: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p3: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p4: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p5: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p6: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p7: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p9: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p10: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p11: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p12: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p13: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p15: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p17: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2/double-target, simul p18: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p1: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p2: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p3: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p4: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p5: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p6: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p7: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p8: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p9: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, sequen p10: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p1: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p2: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p3: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p4: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p5: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p6: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p7: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p8: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p9: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3/random steps, simult p10: recoded endpoint = +-(vertical amplitude minus a constant); target positions are 0 in baseline, +2/-2 recoded after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the deposit's salient-only time-course file is a byte-identical copy of the informative-only file (left out, see Known differences)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept: 3200 + 2800 + 2000 + 2000 double-target rows and 2 x 1600 control rows",
+   "ok": true,
+   "detail": "13200"
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: participants recorded",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: participants analysed (one excluded)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: % of trials considered for the final analyses (double-target task, all 16 recorded participants)",
+   "computed": 90.53125,
+   "reported": 90.5,
+   "tol": 0.1,
+   "source": "Methods, Eye movement and data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: participants analysed",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Experiment 2, Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: mean % of trials discarded per participant",
+   "computed": 13.321428571428571,
+   "reported": 13.4,
+   "tol": 0.1,
+   "source": "Experiment 2, Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: smallest % discarded",
+   "computed": 4.0000000000000036,
+   "reported": 4.0,
+   "tol": 1,
+   "source": "Experiment 2, Methods (range 4%-25%)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: largest % discarded is 28 where the paper's range ends at 25 (see Known differences)",
+   "ok": true,
+   "detail": "28.0"
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: mean vertical endpoint, trials 151-200 (deg)",
+   "computed": 0.3510684514473851,
+   "reported": 0.35,
+   "tol": 0.015,
+   "source": "Experiment 2, Results (M = 0.35 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: SD of that endpoint across participants (deg)",
+   "computed": 0.27422738978151484,
+   "reported": 0.27,
+   "tol": 0.015,
+   "source": "Experiment 2, Results (SD = 0.27 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: participants with a positive mean late endpoint",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Experiment 2, Results (13 of 14 toward the informative target)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: no-task: participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: no-task: mean |vertical endpoint| trials 151-200 (deg)",
+   "computed": 0.7319859212860284,
+   "reported": 0.73,
+   "tol": 0.015,
+   "source": "Results, Figure 3B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: no-task: SD across participants (deg)",
+   "computed": 0.4279686402203152,
+   "reported": 0.43,
+   "tol": 0.015,
+   "source": "Results, Figure 3B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: informative-only: participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: informative-only: mean |vertical endpoint| trials 151-200 (deg)",
+   "computed": 1.1111922776671008,
+   "reported": 1.11,
+   "tol": 0.015,
+   "source": "Results, Figure 3B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 control: informative-only: SD across participants (deg)",
+   "computed": 0.4517853393444503,
+   "reported": 0.45,
+   "tol": 0.015,
+   "source": "Results, Figure 3B",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 sequential: participants analysed",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Experiment 3, Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 sequential: mean % of valid trials",
+   "computed": 83.0625,
+   "reported": 83.0,
+   "tol": 1.5,
+   "source": "Experiment 3, Methods (83% and 84% correct trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 simultaneous: participants analysed",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Experiment 3, Methods",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 3 simultaneous: mean % of valid trials",
+   "computed": 84.3125,
+   "reported": 84.0,
+   "tol": 1.5,
+   "source": "Experiment 3, Methods (83% and 84% correct trials)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 2: the paper reports that 4%-25% of trials were discarded per participant (mean 13.4%); the deposit's trials reproduce the mean and the lower end, but one participant has 28% of trials without a vertical endpoint. Experiment 1 control groups: the deposit's salient-only file (exp1_salonly_adaptation_timeCourse.txt) is a byte-identical copy of the informative-only file, and its values reproduce the paper's informative-only mean and SD (1.11 and 0.45 deg) but not the salient-only ones (0.95 and 0.28 deg), so the salient-only group's data are not in the deposit and only one copy is released, as informative-only. In the control files both target positions are listed in every adaptation trial although only one target was shown. The deposit holds 14 participants for Experiment 2 and 10 per Experiment 3 group, where the paper analysed 8 per Experiment 3 group: the authors' excluded participants are flagged, not removed, in Experiment 3 and Experiment 1 (16 recorded, 15 analysed). Participants excluded in Experiment 2 are absent from the deposit."
+ ],
+ "sources": [
+  {
+   "file": "Exp1.zip",
+   "url": "https://zenodo.org/records/3241428/files/Exp1.zip?download=1",
+   "bytes": 211604,
+   "sha256": "c52835c45ff786a6384de7394094a689c4848a3243cba4ea6d2a3b20d0ca5c18",
+   "fetched_utc": "2026-11-09T06:17:48Z"
+  },
+  {
+   "file": "Exp2.zip",
+   "url": "https://zenodo.org/records/3241428/files/Exp2.zip?download=1",
+   "bytes": 167600,
+   "sha256": "c12c46ee45df4397c69a86234fa676fd2bbf522d8e8bf13b755bd46a5dce3f23",
+   "fetched_utc": "2026-11-09T06:17:55Z"
+  },
+  {
+   "file": "Exp3.zip",
+   "url": "https://zenodo.org/records/3241428/files/Exp3.zip?download=1",
+   "bytes": 218182,
+   "sha256": "1ef9e8f333281c7a3caeec6a896780c93df268c6e5bebf5e77fd5dd175fda763",
+   "fetched_utc": "2026-11-09T06:18:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wolf2019_JVis.zip"
+}

@@ -1,0 +1,165 @@
+{
+ "id": "Forte2025_PLoSOne",
+ "module": "summary",
+ "rows": 130,
+ "subjects": 13,
+ "persons": 13,
+ "zip_bytes": 5338,
+ "zip_sha256": "c07592ca53eec2937989cc39cf4b628fb4be6512f9937ac953a4d409f62858c7",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "26 pots, 13 before and 13 after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one pot before and one after for each of 13 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "130 rows = 13 participants x 2 stages x 5 measures",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "pot_height: mean before training (mm)",
+   "computed": 91.16499999999999,
+   "reported": 91.2,
+   "tol": 0.05,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pot_height: mean after training (mm)",
+   "computed": 120.79438461538462,
+   "reported": 121.0,
+   "tol": 0.5,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "base_thickness: mean before training (mm)",
+   "computed": 10.792692307692306,
+   "reported": 10.8,
+   "tol": 0.05,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "base_thickness: mean after training (mm)",
+   "computed": 12.990384615384615,
+   "reported": 13.0,
+   "tol": 0.05,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lower_wall_thickness: mean before training (mm)",
+   "computed": 9.654692307692308,
+   "reported": 9.65,
+   "tol": 0.005,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lower_wall_thickness: mean after training (mm)",
+   "computed": 12.753615384615385,
+   "reported": 12.8,
+   "tol": 0.05,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "medium_wall_thickness: mean before training (mm)",
+   "computed": 8.412769230769232,
+   "reported": 8.41,
+   "tol": 0.005,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "medium_wall_thickness: mean after training (mm)",
+   "computed": 10.656076923076922,
+   "reported": 10.7,
+   "tol": 0.05,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rim_thickness: mean before training (mm)",
+   "computed": 7.226692307692308,
+   "reported": 7.23,
+   "tol": 0.005,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "rim_thickness: mean after training (mm)",
+   "computed": 8.960615384615384,
+   "reported": 8.96,
+   "tol": 0.005,
+   "source": "Results, 3D morphometry (Table of pot measures before and after training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training group analysed",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants (13 analysed after one exclusion)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's paired t-test p values (for example 0.008842 for height) do not reproduce from these rows with a paired t-test (0.0225 for height); the deposit's own R script (3D_Measures pots.R) runs unpaired Student's t-tests instead. They were therefore not used as checks; the pre and post means all reproduce.",
+  "The paper does not give the number of pots measured; the deposit has 13 per stage, matching its 13 analysed participants.",
+  "The TMS-EEG data and the control group's pots are not part of this release."
+ ],
+ "sources": [
+  {
+   "file": "data_input.csv",
+   "url": "https://zenodo.org/api/records/14379018/files/data_input.csv/content",
+   "bytes": 141732,
+   "sha256": "3b7276b469e7433b339b1a65005f45eb1b7ebfaf16087574410aea9993d44fb2",
+   "fetched_utc": "2026-11-09T15:40:09Z"
+  },
+  {
+   "file": "measures_experimental_pots.csv",
+   "url": "https://zenodo.org/api/records/14379018/files/measures_experimental_pots.csv/content",
+   "bytes": 1314,
+   "sha256": "1686965e1b69b2fd3dd9ca22bd003f897e91910cdf947f64879974bc5f41a78d",
+   "fetched_utc": "2026-11-09T15:40:13Z"
+  },
+  {
+   "file": "analysis.R",
+   "url": "https://zenodo.org/api/records/14379018/files/analysis.R/content",
+   "bytes": 1897,
+   "sha256": "c2ec1f5a7330284bf7dc899cf8658f4be2a2e7d1fe7041841e11ad0bc5b29ea1",
+   "fetched_utc": "2026-11-09T15:40:21Z"
+  },
+  {
+   "file": "pots.R",
+   "url": "https://zenodo.org/api/records/14379018/files/3D_Measures%20pots.R/content",
+   "bytes": 1000,
+   "sha256": "ad001ca9ebdad2e4e07adef55760ee9783df56201d9a98a5125e5620c6511914",
+   "fetched_utc": "2026-11-09T15:40:24Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Forte2025_PLoSOne.zip"
+}

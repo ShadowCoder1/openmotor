@@ -1,0 +1,113 @@
+{
+ "id": "Sullivan2026_eLife",
+ "module": "joint_reach_probe",
+ "rows": 69984,
+ "subjects": 96,
+ "persons": 96,
+ "zip_bytes": 284505327,
+ "zip_sha256": "fc72906c1ba270cad875feefed9a3439c3782ba31c3d07f9f91bbf91b6a1a92c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants (24 pairs)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 pairs; 48 individuals per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants (24 pairs)",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 pairs; 48 individuals per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants across both experiments",
+   "computed": 96.0,
+   "reported": 96.0,
+   "tol": 0,
+   "source": "Methods, Participants (96 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reaches per pair",
+   "computed": 729.0,
+   "reported": 729.0,
+   "tol": 0,
+   "source": "Methods, Probe trials ('729 reaches')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experimental trials per participant (4 conditions x (81 + 40 + 30))",
+   "computed": 604.0,
+   "reported": 604.0,
+   "tol": 0,
+   "source": "Methods, Experimental design (81 non-perturbation, 40 perturbation, 30 probe trials per block)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "familiarization (50) plus washout (3 x 25) trials per participant",
+   "computed": 125.0,
+   "reported": 125.0,
+   "tol": 0,
+   "source": "Methods, Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "probe trials per participant (4 blocks x 30)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods, Probe trials (120 probe trials across the four experimental blocks)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each condition has 81 regular, 20+20 perturbation, 10+10 probe and 10 null-probe trials for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "both partners have a row for every trial file (rows = 2 x trial files)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every probe has a left or right jump in the participant's display",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the reach+hold rule finds a held target on at least 95% of experimental trials",
+   "ok": true,
+   "detail": "8 of 57984 without"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: self x partner target interaction on the involuntary (180-230 ms) response, F[1,47]",
+   "computed": 20.5440125773452,
+   "reported": 20.54,
+   "tol": 0.005,
+   "source": "Results, Visuomotor feedback responses",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The interaction of self and partner target on the involuntary (180-230 ms) response in Experiment 1 is F[1,47] = 61.61 in the paper; recomputed from these rows (left-jump minus right-jump mean force per participant and condition, 2 x 2 interaction contrast) it is 61.39. The likely reason is that the authors filtered each participant's whole session in one pass and these rows are filtered trial by trial. Experiment 2 reproduces (20.54)."
+ ],
+ "sources": [],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sullivan2026_eLife.zip"
+}

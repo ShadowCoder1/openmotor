@@ -1,0 +1,174 @@
+{
+ "id": "Sombric2021_FrontAgingNeurosci",
+ "module": "walking",
+ "rows": 84883,
+ "subjects": 41,
+ "persons": 41,
+ "zip_bytes": 6854311,
+ "zip_sha256": "1fc51f19186118c5eb26c55fba2510b395a04184ad4b027779fdb4ad8895ca44",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "41 sequences: OldNaive 8, OldExpert 11, YoungNaive 11, YoungNaive2017 11",
+   "ok": true,
+   "detail": "{'OldExpert': 11, 'YoungNaive': 11, 'YoungNaive2017': 11, 'OldNaive': 8}"
+  },
+  {
+   "kind": "internal",
+   "what": "every stride the deposit shares is kept, in its order",
+   "ok": true,
+   "detail": "84883 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "step_length_asymmetry = (step_length_fast - step_length_slow) / sum on >= 98% of strides (labTools definitions; the rest are kept as shared)",
+   "ok": true,
+   "detail": "99.50% of 82420"
+  },
+  {
+   "kind": "internal",
+   "what": "step_position_asymmetry (Sout) = (leading_position_fast - leading_position_slow) / sum on >= 98% of strides (labTools definitions; the rest are kept as shared)",
+   "ok": true,
+   "detail": "99.26% of 82587"
+  },
+  {
+   "kind": "internal",
+   "what": "step_time_asymmetry (Tout) = (step_time_fast - step_time_slow) / stride_time on >= 98% of strides (labTools definitions; the rest are kept as shared)",
+   "ok": true,
+   "detail": "100.00% of 82649"
+  },
+  {
+   "kind": "internal",
+   "what": "the three contributions add up to step_length_asymmetry on >= 98% of strides (labTools definitions; the rest are kept as shared)",
+   "ok": true,
+   "detail": "98.25% of 82341"
+  },
+  {
+   "kind": "internal",
+   "what": "stride_time = step_time_fast + step_time_slow on >= 98% of strides (labTools definitions; the rest are kept as shared)",
+   "ok": true,
+   "detail": "100.00% of 82649"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = labTools 'bad' flag (missing or disordered events, stride time out of range)",
+   "ok": true,
+   "detail": "4908 strides (5.78%)"
+  },
+  {
+   "kind": "published",
+   "what": "older adults (OldExpert): number",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults: women",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults: mean age",
+   "computed": 76.54545454545455,
+   "reported": 76.5,
+   "tol": 0.06,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults: SD of age",
+   "computed": 2.910794955459294,
+   "reported": 2.9,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults (YoungNaive): number",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults: mean age",
+   "computed": 21.363636363636363,
+   "reported": 21.4,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults: SD of age",
+   "computed": 3.6952057391362465,
+   "reported": 3.7,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon rank-sum |Z|, StepPosition steady state, older vs young (Z = -2.17)",
+   "computed": -2.199777860930874,
+   "reported": -2.17,
+   "tol": 0.05,
+   "source": "Results, Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon rank-sum |Z|, StepAsym after-effects, older vs young (Z = -3.13)",
+   "computed": -3.1688045559878866,
+   "reported": -3.13,
+   "tol": 0.05,
+   "source": "Results, Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon rank-sum |Z|, StepPosition after-effects, older vs young (Z = -3.27)",
+   "computed": -3.309640314031793,
+   "reported": -3.27,
+   "tol": 0.05,
+   "source": "Results, Fig. 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Wilcoxon rank-sum |Z|, StepTime after-effects, older vs young (Z = 1.87)",
+   "computed": 1.901282733592732,
+   "reported": 1.87,
+   "tol": 0.05,
+   "source": "Results, Fig. 3",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "StepTime steady state: rank-sum Z +2.20 here, 2.1 in the paper (Fig. 3)",
+  "StepAsym steady state: rank-sum Z -1.02 here, -0.79 in the paper (Fig. 3)",
+  "The paper reports 7 women among the young adults; the deposit codes 6 as female and leaves one blank. The post-hoc older subsample (n = 8, 75.0 +- 2.4 y) does not reproduce from OldNaive, whose ages include a 22."
+ ],
+ "sources": [
+  {
+   "file": "StudyData.mat",
+   "url": "https://osf.io/download/qjtsh/",
+   "bytes": 235377274,
+   "sha256": "d8b2f38dd43109732948accc84c58c5dcdb11302f061833f6fc1d3ec73a2f36d",
+   "fetched_utc": "2026-11-08T19:45:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sombric2021_FrontAgingNeurosci.zip"
+}

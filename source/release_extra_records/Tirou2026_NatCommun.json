@@ -1,0 +1,1196 @@
+{
+ "id": "Tirou2026_NatCommun",
+ "module": "keypress",
+ "rows": 33225,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 450986,
+ "zip_sha256": "be5daea9a602fa1a76375e2de77498b7ccfa2619db311e2847e1011546bb1a78",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (Methods, Participants: fifteen)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean Edinburgh laterality quotient",
+   "computed": 75.95466666666668,
+   "reported": 76.0,
+   "tol": 0.05,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Participants (mLQ = 76.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of the laterality quotient",
+   "computed": 22.803994282539524,
+   "reported": 22.8,
+   "tol": 0.05,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Participants (22.8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest laterality quotient",
+   "computed": 33.33,
+   "reported": 33.3,
+   "tol": 0.05,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Participants (between +33.3 and +100)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest laterality quotient",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Participants (between +33.3 and +100)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "learning blocks per participant",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "practice blocks per participant",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per block (85)",
+   "computed": 85.0,
+   "reported": 85.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials in the learning session per participant (1700)",
+   "computed": 1700.0,
+   "reported": 1700.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequence-report key presses after each block, besides the anchor (12)",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task (12 consecutive responses)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "warm-up trials per block (five)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Tirou et al. 2026, Nature Communications, Methods, Behavioral task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has the same number of rows (practice, learning and sequence-report rows)",
+   "ok": true,
+   "detail": "2215 rows each"
+  },
+  {
+   "kind": "internal",
+   "what": "hits have a response time and misses none (but for a few rows)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Methods, Participants: the mean counting span is 3.78 (SD 0.95) in the paper and 3.76 (SD 0.92) from the deposit's participants table, which gives one decimal.",
+  "Results, main effect of trial condition F(1,14) = 19.77: 29.92 here from the mean RT of correct, non-trill, non-repetition pattern and random trials of the 20 learning blocks; the exact pre-processing of the paper's ANOVA is not given in the deposit.",
+  "The paper reports 10 female and 5 male participants with a mean age of 25.8 years; the deposit contains neither age nor sex, so they are empty here.",
+  "The paper itself is licensed CC BY-NC-ND; the data deposit is CC0 and is shared under CC0 here."
+ ],
+ "sources": [
+  {
+   "file": "CHANGES",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/CHANGES?versionId=3WRKdVK1srQbUUBwoxz_YKet9RyXE4YQ",
+   "bytes": 56,
+   "sha256": "74d9d4f448d157abfb216effeb7451ab54ec43cd2314b40d103fa3d220b27d0e",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "README",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/README?versionId=IT6vVM_Tz_cnY.3RqXaQpvirdfIwLhe9",
+   "bytes": 1111,
+   "sha256": "0e92815be7b4dab939534d16c9ac18c09e81fa371f1287dcf9ed16015e2bbfdd",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "dataset_description.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/dataset_description.json?versionId=LD624zmVeIXV0UuPJ.SC3IXWUCzsJoby",
+   "bytes": 683,
+   "sha256": "3b31d9a44be29d546cd7e5a725ff874b13d29130c8d8c7cdbf3665cca36c9bc7",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "participants.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/participants.json?versionId=FLsAyqavjJfkSLPcTir5yaw6FNP4zkf4",
+   "bytes": 344,
+   "sha256": "0381fd76767897f9de1885273e70a964c4094b259675b65479dd70349b4828a2",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "participants.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/participants.tsv?versionId=0R_tBIorDnsYrbV1ymrd02qe7EBSTWOI",
+   "bytes": 581,
+   "sha256": "159e2c7beb7428ad12ea94721e84b11e16e69634dde5ae4cb01dcca464981d5a",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-01_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.json?versionId=7b0Q_MwXcvXGkq0jD.zsvIKt6gVw7hQf",
+   "bytes": 1299,
+   "sha256": "cbed132b100f29909bd0c3d601a2f4526ef99a86c004066de1fa42da7b5ffc44",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-asrt_run-01_beh.tsv?versionId=D9INy3H_T42pmPr9lOjDvSOxKAQyiQM5",
+   "bytes": 21714,
+   "sha256": "06e68ec728607cee22c5e7075057a09f53eb26aa02e2ae68c1913f8f090a9846",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-02_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.json?versionId=7b0Q_MwXcvXGkq0jD.zsvIKt6gVw7hQf",
+   "bytes": 1299,
+   "sha256": "cbed132b100f29909bd0c3d601a2f4526ef99a86c004066de1fa42da7b5ffc44",
+   "fetched_utc": "2026-11-09T11:34:42Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-asrt_run-02_beh.tsv?versionId=wz7ECLoFwHvZvjSuPHCBEQMMNFxER.Ps",
+   "bytes": 21775,
+   "sha256": "2fd98ee68c9addabf3bea0ca32ec4e930ef33d63950011a75a1a8deaf252ea5b",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-03_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.json?versionId=7b0Q_MwXcvXGkq0jD.zsvIKt6gVw7hQf",
+   "bytes": 1299,
+   "sha256": "cbed132b100f29909bd0c3d601a2f4526ef99a86c004066de1fa42da7b5ffc44",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-asrt_run-03_beh.tsv?versionId=uxt0qKMvrVA4ThSBAIO0y24oO7l6g06I",
+   "bytes": 22134,
+   "sha256": "650a45bd98718c256b72d04ffe02a52610814d9cb9b180c1fae882dcbba24a36",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-04_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.json?versionId=7b0Q_MwXcvXGkq0jD.zsvIKt6gVw7hQf",
+   "bytes": 1299,
+   "sha256": "cbed132b100f29909bd0c3d601a2f4526ef99a86c004066de1fa42da7b5ffc44",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-asrt_run-04_beh.tsv?versionId=W9S6TjAD8PDNx1Z.5wJfDaI_lAxD6Kc5",
+   "bytes": 22123,
+   "sha256": "81e2e17cbb8fd50c1653d8c301aece1afca423a359f292b86335fe989cb4df96",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-01_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-03_beh.json?versionId=os_KBbZLSeN0mP_CEUpVixboQkEPQ_ZO",
+   "bytes": 427,
+   "sha256": "185f1fd4d62f633bf4eaa65f2950c552782567f8f5fa6226116862b4929c039f",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-01_beh.tsv?versionId=DuE0F5KwgEE2WFw.KYJbp6ZzfVN92u4b",
+   "bytes": 644,
+   "sha256": "45f8b93550023b2a069aafa31dfc91dd7782d569976b8280444b94b1927cd106",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-02_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-03_beh.json?versionId=os_KBbZLSeN0mP_CEUpVixboQkEPQ_ZO",
+   "bytes": 427,
+   "sha256": "185f1fd4d62f633bf4eaa65f2950c552782567f8f5fa6226116862b4929c039f",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-02_beh.tsv?versionId=3cOyRGHPhkWo6Gf8MGOQUb6pnMFUqZ_w",
+   "bytes": 657,
+   "sha256": "0749dfef294e733b1951112932f6882f332d08304bff7045e84b0f27eec0b43f",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-03_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-03_beh.json?versionId=os_KBbZLSeN0mP_CEUpVixboQkEPQ_ZO",
+   "bytes": 427,
+   "sha256": "185f1fd4d62f633bf4eaa65f2950c552782567f8f5fa6226116862b4929c039f",
+   "fetched_utc": "2026-11-09T11:34:43Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-03_beh.tsv?versionId=wz_aYfbCaDy9MtjhxRImxDtdqqbc_To5",
+   "bytes": 709,
+   "sha256": "0e52f0b7b08acb10f6360e504e92419e8f9f27be40ade323d5ae4579e145e519",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-04_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-03_beh.json?versionId=os_KBbZLSeN0mP_CEUpVixboQkEPQ_ZO",
+   "bytes": 427,
+   "sha256": "185f1fd4d62f633bf4eaa65f2950c552782567f8f5fa6226116862b4929c039f",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-explicit_run-04_beh.tsv?versionId=xQ1xRY87PDX4_bP3VDEFiPTcTdgufG1I",
+   "bytes": 709,
+   "sha256": "8d1b40a58a8c2e7807f12ecb4503d170266a23995e7de96444591058fe0a2eea",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-practice_beh.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.json?versionId=7b0Q_MwXcvXGkq0jD.zsvIKt6gVw7hQf",
+   "bytes": 1299,
+   "sha256": "cbed132b100f29909bd0c3d601a2f4526ef99a86c004066de1fa42da7b5ffc44",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-15__beh__sub-15_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/beh/sub-15_task-practice_beh.tsv?versionId=1aCKQF7bvihvo5lh4jIh20cS28KTsks.",
+   "bytes": 14009,
+   "sha256": "d326f85cceca30bd1f9b62b69596491b99e48326556f2272d39e26399d225d32",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-asrt_run-01_beh.tsv?versionId=8FkRI4moLMw9BvwNJ.uxsOJkc5S3p_UT",
+   "bytes": 21752,
+   "sha256": "4b656a6fe465a44b3b0f9ee1487d0b123c94c8cc27ab8edf880e35055ee1110e",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-asrt_run-02_beh.tsv?versionId=rF9om1hE8PnYVSXe8H75zlbeSHDyWQFf",
+   "bytes": 21835,
+   "sha256": "1f0e7f164c997621ee738cc8b70e58a218fa9628b36a058d9fa6d85611f7ebbb",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-asrt_run-03_beh.tsv?versionId=Q4hshq2_rgbO6IALT2h6SHNdSxmgo4ik",
+   "bytes": 22156,
+   "sha256": "5b6a35e86d95be20f4859b04486fe03304821a59b6be8037f1d1bf095fc9d6fe",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-asrt_run-04_beh.tsv?versionId=dzb2crP_Tq6B3gE1QIZ0z2jys7NPHSxZ",
+   "bytes": 22156,
+   "sha256": "82420718567bd2fcb7267e39bd6d7e72de49db7880775c7beba1348358b7f210",
+   "fetched_utc": "2026-11-09T11:34:44Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-explicit_run-01_beh.tsv?versionId=Qu2yGN8yyHXdEkKEufZCqnRa2NrcCIMm",
+   "bytes": 709,
+   "sha256": "06039cc2d8c2312c4ef32a6483faf756e0ef702354cdac645c6d5c385aef3a4f",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-explicit_run-02_beh.tsv?versionId=Vo5RqO0xwGhcUG8GXZwDpuiw5cKqGNYt",
+   "bytes": 722,
+   "sha256": "2d3ea015a6fd82e1aa029250a6c24783c94a3fb3e4ce7f3c49726a5a3d8b105a",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-explicit_run-03_beh.tsv?versionId=yQznutCTXsmAUnf4h7IXRCM4EDw_3h8t",
+   "bytes": 774,
+   "sha256": "659c406eca2fe093ce35230989d423c729091d0cff69388fffaeada17fe99b64",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-explicit_run-04_beh.tsv?versionId=WxUOJZT9ISq4ls1_mT9ZnLiCRLhFxcCU",
+   "bytes": 774,
+   "sha256": "79fbf31ce64ed0825c5c27b77733718d11fe0402bc739fa49c46e065103a5f33",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-14__beh__sub-14_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-14/beh/sub-14_task-practice_beh.tsv?versionId=jb9IwC3tML7XkJ01Kqxw9VHIWz84_vUs",
+   "bytes": 14061,
+   "sha256": "962069a2e17e827bcb4284c7578362dee2b0234e7830b432d9843e463bcf91b8",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-asrt_run-01_beh.tsv?versionId=wQWSxB5gGyfVRRIm4ygTQkLngiNtZMLX",
+   "bytes": 21735,
+   "sha256": "5e85f8fb696e1b9475aa2a6ad8d4c254bda7a68e55ca5bd69e39ba48a6c29982",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-asrt_run-02_beh.tsv?versionId=WYrm.0Z.Ef2sn5AA3nzVnlFrnmsRoww_",
+   "bytes": 21811,
+   "sha256": "974495dd22d59c9ea053012335dcccf3a234f7a10030bd66f9556b7daf04d5cf",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-asrt_run-03_beh.tsv?versionId=uCNXlGTngsfNNnGidxkzjKgi6SB8aOTl",
+   "bytes": 22150,
+   "sha256": "9462990dd6145a82c0c510f6a934f21b88fc45f851907d759e5079d8f009cb5c",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-asrt_run-04_beh.tsv?versionId=OR1clxqk3BAz0liWGp2.dvL_.XiZMaw2",
+   "bytes": 22157,
+   "sha256": "9f4a2432798a3eea3fddd5edea03c802e7bc609a80cd88757bdf7dc9eb3854af",
+   "fetched_utc": "2026-11-09T11:34:45Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-explicit_run-01_beh.tsv?versionId=RyU1OKfreVDdtRD48BZJi9QuH2cZS2HR",
+   "bytes": 709,
+   "sha256": "aaa20696aad71cb69e2ac8a510db1b397e02293f3ec1fba2ae35a613bac7c218",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-explicit_run-02_beh.tsv?versionId=75LYxhtqEjqlZticddTnRFrS.b.T6KgW",
+   "bytes": 722,
+   "sha256": "8e978fd8d69cf123d0f1d5829580f91666c1307f1774bbe66d3417d3b5ec832b",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-explicit_run-03_beh.tsv?versionId=YQ6l6ha2GN.Lw81MiydHJw8exLC01VCh",
+   "bytes": 774,
+   "sha256": "76ad5089c244726bb1c001faccc90b038509e8f4ba93bce50dea9ba227ce05a7",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-explicit_run-04_beh.tsv?versionId=7IcfiKyu3yLLn6AITe6ibmh0Q9qxifjd",
+   "bytes": 774,
+   "sha256": "eaed29e346ad73ad0957e30815cc1602c7ef586e1558d7aa7bb54eb75c769c36",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-13__beh__sub-13_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-13/beh/sub-13_task-practice_beh.tsv?versionId=7vOrK5f0Lj2M0ZcXf037mb4.e1HZhifR",
+   "bytes": 14044,
+   "sha256": "126fa788a02f00e40b70331e82a689a589a1a554d5184676555f2322c0f93130",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-asrt_run-01_beh.tsv?versionId=5qOueqrFOTri.K_IAYeqDsEmTVs9fC1N",
+   "bytes": 21770,
+   "sha256": "bef0d49c542d79391d5ce3ac00e04807a7c7feb0aaa7cef9ed27a483dacf2f8f",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-asrt_run-02_beh.tsv?versionId=Ky8j9VBbaJfsR5Mvwtl.AvdILX9LkNaY",
+   "bytes": 21825,
+   "sha256": "6037656ef76b0b92c215929bde0f831d2fad6bef127dbefa4f63c917c447235c",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-asrt_run-03_beh.tsv?versionId=mrtK498GHVw6.Ird9MBZuMFQf7hT9sFa",
+   "bytes": 22178,
+   "sha256": "cd477ecdb125e12ecbca9782b46f075d5b5e69381e425da8909ca80232af92d1",
+   "fetched_utc": "2026-11-09T11:34:46Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-asrt_run-04_beh.tsv?versionId=WFhkgVEg2AzeI5aoLizls6brCjO5E_pp",
+   "bytes": 22159,
+   "sha256": "66d6698e1058aa4dfaa925ae8eb053b72b800ff9f165a816f96a468f82d49677",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-explicit_run-01_beh.tsv?versionId=SYYvoEidX_aUjY6mCBmH6kRFA6Vt8osj",
+   "bytes": 644,
+   "sha256": "f1508361ddf6f57a30c35109b48abefa603226956efe0ebfea772d5918dd2fc4",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-explicit_run-02_beh.tsv?versionId=grTrHbwtpOzyFABxEGmJYWRmn4U9iUvX",
+   "bytes": 657,
+   "sha256": "55d375aa413ad536c18dcc6cba6b1b19b99cec743ebf94c2d15e06174decfda8",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-explicit_run-03_beh.tsv?versionId=08hf4zY2Lc1RsHqjuwssBSvKPY4LV8M6",
+   "bytes": 709,
+   "sha256": "799560317feaf060cf73e09f42a08ac966355399a363cce84a908d7c09d8ef55",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-explicit_run-04_beh.tsv?versionId=IPdj.cF3PBEG9aUEfzIGBmFJjdERzA_1",
+   "bytes": 709,
+   "sha256": "97ebd45ce3d0a744945b4fcefd7389f30c101170f22d6e1d64c071b3ef2e2aaa",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-12__beh__sub-12_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-12/beh/sub-12_task-practice_beh.tsv?versionId=UOt2ZANN9iur42zYxfVyfJp5sRX962Ac",
+   "bytes": 13990,
+   "sha256": "052852b762f19fa0504a74b6e75c0941ce6dc9c817ba1a30d28bbe4516b44ac4",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-asrt_run-01_beh.tsv?versionId=1rGIPiJs9v_iDGUnsw_jvGbzCPThlRi6",
+   "bytes": 21740,
+   "sha256": "8975abd48fb40f6e232ff8dcf30965807358f0baf74d81411da041c5bbf1e9c9",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-asrt_run-02_beh.tsv?versionId=3nyqETw1rezdExA1UDYkhw.zaKr7aUQ9",
+   "bytes": 21840,
+   "sha256": "4c4eff8ce84069d89acd848fa94984f6ae3d19ee7565a143c10f8084ce4ea199",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-asrt_run-03_beh.tsv?versionId=PiK7_XK.A1tObA3XbIsVJXODgUTUCmXm",
+   "bytes": 22176,
+   "sha256": "08768f1555aeed2816872679969c37662dce700ed8b4c95a7ef045bad812613e",
+   "fetched_utc": "2026-11-09T11:34:47Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-asrt_run-04_beh.tsv?versionId=0UZPf2tISnup.EiVKLqc4Ht6UGxeINO9",
+   "bytes": 22165,
+   "sha256": "fde0d67362dca4408033540a2a0b376e03f6db04780cfc0d42e9c6837684d80e",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-explicit_run-01_beh.tsv?versionId=yYpD69MIUrwwAMUJH2P1oog.os5EtLO4",
+   "bytes": 644,
+   "sha256": "555093752f54055e4e9abb8b925e34979728c6b7a57b2e42f04718d19c77a619",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-explicit_run-02_beh.tsv?versionId=lQCvoqfLF4ZSMBwWex2dqwCLmAr_z7kI",
+   "bytes": 657,
+   "sha256": "853cb201d8184c5735f1af754fa7393fe158486c6974fc2b7fbd8770fc397d11",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-explicit_run-03_beh.tsv?versionId=BILu96j9RHf1Y0jaYhFyD0JGAXRZ6XTl",
+   "bytes": 709,
+   "sha256": "c04394b2748ec4959f7ebccc95200fb4909c65105431a058cfeb3551fe8b888a",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-explicit_run-04_beh.tsv?versionId=zSjjuWIZdNZ5EixEd9G.qQSN5S0MJw79",
+   "bytes": 709,
+   "sha256": "dbf9346fc5941b285d0e5fb33cbf0ff6811e6d4359b10b7e1a1c65a6d22dbf6f",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-11__beh__sub-11_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-11/beh/sub-11_task-practice_beh.tsv?versionId=g6Q54XW34AEh32aufQsRPyqQqr7rDKWc",
+   "bytes": 14039,
+   "sha256": "b7c574238baab655e4d2d2806d0943081cdc69ca015937eed15289ef1d84beeb",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-asrt_run-01_beh.tsv?versionId=i4J1y37Jal.F8j4w0l77bUmh2VMvYns2",
+   "bytes": 21735,
+   "sha256": "a4707b472666185b74cafed75a3ab1029f9b30ee5045581e258514c2ea6ec5ac",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-asrt_run-02_beh.tsv?versionId=9KFHwH4za5aWyu0VGLSArgx9.F0dMiP_",
+   "bytes": 21838,
+   "sha256": "76b1e0f0fd8cff44125368d18826be6c9eb0893a056e4e783b10804ff2093c43",
+   "fetched_utc": "2026-11-09T11:34:48Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-asrt_run-03_beh.tsv?versionId=dqxIQFyJEzIiHUqRubh_EgbSZDx5aaf.",
+   "bytes": 22161,
+   "sha256": "9a9586e4d41f459af44a4bf5a7e6ded49934abc26531d59c599acff9c2a7ad16",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-asrt_run-04_beh.tsv?versionId=Il04zmjFJZaqxhatsxd9NMFXCiI25XYx",
+   "bytes": 22169,
+   "sha256": "d0b531f8c4ec9b29432eebdbf26263c66a93ae5b08c56e83e35adbfd55a75e53",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-explicit_run-01_beh.tsv?versionId=JwCSvKMvx3ebNpn0kpL6_oftNqmRM8sn",
+   "bytes": 644,
+   "sha256": "42f7ac1f750ce4c71caef40b6d0fae8966b6c53bb12bd493e5e22d8fe9f66718",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-explicit_run-02_beh.tsv?versionId=95bdhGDQjF6nXXWywVkv1KcSGXdD_EUt",
+   "bytes": 657,
+   "sha256": "04ad7ecccc9329aedc4d24b66b81dd22c2906cbd5d92718ba1e150caf1912ef5",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-explicit_run-03_beh.tsv?versionId=lFzcm7H2LyCeOti3UVuIV3opXle6M3UY",
+   "bytes": 709,
+   "sha256": "b9ffce0375e0779785ec9fc8498a6c12c4e89263690c303b5d1fbb24132611f8",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-explicit_run-04_beh.tsv?versionId=qPKropUWvrh0ux9DB.usfiXYkjlJH8h9",
+   "bytes": 709,
+   "sha256": "d8aa8028d4cb0ab9b4d1a2b77c0df730808b92b1f015132f7b2d07da033cea31",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-10__beh__sub-10_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-10/beh/sub-10_task-practice_beh.tsv?versionId=UziSQOejkYLQiLZ3m_WDJgM7SqglDceh",
+   "bytes": 14064,
+   "sha256": "0d1d282a1bb4cecfe4e1960f8783f69da569b279162345ade6dbcbbfc6efb930",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-asrt_run-01_beh.tsv?versionId=XmXiYSUtEQM.D77kboaBExE64TkEzaOi",
+   "bytes": 21329,
+   "sha256": "810b94a291ed356adea47090005f49feefc0d115d131b46132afdffa7b16f662",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-asrt_run-02_beh.tsv?versionId=97I_.nO2lBLJMQYCoOVnjIdNxhy..nCa",
+   "bytes": 21390,
+   "sha256": "aa59fabd4d853a17e1b725da0ee44ac5e2607043d34fe39cea40aca32d63c307",
+   "fetched_utc": "2026-11-09T11:34:49Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-asrt_run-03_beh.tsv?versionId=SnsqpSD0vLm2155P3uuhtTVRpNN8ajCo",
+   "bytes": 21735,
+   "sha256": "39ba9544fe7c548dfb1bad330d0b132b8b0eacfdd0442f5807b9aa67054d10cb",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-asrt_run-04_beh.tsv?versionId=t_oWTbmrvYTjW4F1XEp5Wv_otXmyJuTt",
+   "bytes": 21733,
+   "sha256": "5c1f65422023aaebbb76b898483a0bd31702f6aabd394880154f6cebfde6d211",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-explicit_run-01_beh.tsv?versionId=aOT2QNsOOD2EpTDDZeQ12z7wQgfMYEiY",
+   "bytes": 579,
+   "sha256": "60fc0b36edfdab675c30635dfb545396095b7c19b4ae1ea0396772f9d4d212b7",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-explicit_run-02_beh.tsv?versionId=ytOExH7hboHX9cRgRxor530kg86e_TG0",
+   "bytes": 592,
+   "sha256": "b077d9e238c1d295862310b2eca2df8c19796ab83d1c101dc9962f4cbf1ec7ef",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-explicit_run-03_beh.tsv?versionId=yyMWHLrwfZU4pvvQFsEFdwnAL1kK6hJF",
+   "bytes": 644,
+   "sha256": "10f3dcfb5d25e1da24e643c3adc0d7b95794ddd16338b49236f57df07ff32979",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-explicit_run-04_beh.tsv?versionId=x_P_wsxeuleldlyQgRtjTCSeqafaIdjQ",
+   "bytes": 644,
+   "sha256": "6aaa4ef5e5bda04def0b55da664a89b4aa837c361b7d259cb1c79e733b2cb826",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-09__beh__sub-09_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-09/beh/sub-09_task-practice_beh.tsv?versionId=WUNE0QEOxr5H5PyJoA4GJDQXMKkIChp7",
+   "bytes": 13817,
+   "sha256": "6f6e49535089d87cf328759add8df14e04533a2969cbef3431ea726a1d8a43fd",
+   "fetched_utc": "2026-11-09T11:34:50Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-asrt_run-01_beh.tsv?versionId=Iwli0VHQVhLVKx4hG73FN_ldWge4u87W",
+   "bytes": 21334,
+   "sha256": "d03d5e014f13ba847ee450d522483f9772d0e0bbd9f7954c3090c99c99d941ef",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-asrt_run-02_beh.tsv?versionId=CkfunGW0QOsvLxPnDgXD8B_fObD8XUqo",
+   "bytes": 21392,
+   "sha256": "0f4b11545ce014e5546b27987b3a7d2802899abc97676976c9b72607d280a7a8",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-asrt_run-03_beh.tsv?versionId=g9gIcCPOHASllRTIbxeD3fgXzJISHm8E",
+   "bytes": 21725,
+   "sha256": "e9a4fb108cf014271442cdcf8c4fe6f28acac08e9fcd8db123f24f5401aec8e3",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-asrt_run-04_beh.tsv?versionId=3Op9K4pY517Ux1dAJrtOYzSt3ALabPqz",
+   "bytes": 21731,
+   "sha256": "e80dad0e3bf8a56ead8cd17136ca889bd13eaaf3ce2058567d2a040530e36f9e",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-explicit_run-01_beh.tsv?versionId=p.ZuvwXqmQwJvidMUHpZ5cyBEwTun2PP",
+   "bytes": 579,
+   "sha256": "414858841e4b0f265ed2a578bad23d0b271f74b2e8300bce0e2123c6bf99ebc1",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-explicit_run-02_beh.tsv?versionId=TwADRJyjJOn8gQfEKLpZJO2QHUalKGeR",
+   "bytes": 592,
+   "sha256": "c20b17288a7e922c77e38bd3e257cfa300a461c036e4700f94720ddd49e7866e",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-explicit_run-03_beh.tsv?versionId=w5Tou.EBZRSBs63x9et1RDC6GJ98Zk5k",
+   "bytes": 644,
+   "sha256": "6e60125b5d17ca108fba09fe956f527b497478da1de603c9a495d31ae7ec78b0",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-explicit_run-04_beh.tsv?versionId=wNKPZpSLuGZxbbcJEY.ZRvYyZgjarQNU",
+   "bytes": 644,
+   "sha256": "0ea7fe42447fdf71e9bcfcb0343b49c34cdb390daf9d9700001ed9a7897a9657",
+   "fetched_utc": "2026-11-09T11:34:51Z"
+  },
+  {
+   "file": "sub-08__beh__sub-08_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-08/beh/sub-08_task-practice_beh.tsv?versionId=Ae8S4lVubT2lz6wtqd5zhuIQHJ_7tPe8",
+   "bytes": 13789,
+   "sha256": "2f9fd620589e171f78ed4813d30ae18943f02c4d4212da8969aa14496fe43140",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-asrt_run-01_beh.tsv?versionId=85Pe1g6Y.qx29LhO_HtX_pJZrYgPsugy",
+   "bytes": 21317,
+   "sha256": "77b51473a2a70eab1aa68cc390ce64a20ec33a6c7482443856928198a6a3ddc1",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-asrt_run-02_beh.tsv?versionId=uLwo3ee9Iq8X.wUvSkIfckT4LiWLSWXy",
+   "bytes": 21395,
+   "sha256": "28e8a4f714114a26424d9ad6aadaa2dac568c1835d701d9cf1df1cea45aa85cd",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-asrt_run-03_beh.tsv?versionId=mseTvN_XThwwy7v4E7LCKTkqjCVhyZl8",
+   "bytes": 21728,
+   "sha256": "3ac18b71c2752a1d174e496f11f31f7190eeaec9c5a87c58b506f587957604a5",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-asrt_run-04_beh.tsv?versionId=uROb7SrMgPu9vrShYcw4EkWCGnZT2oJu",
+   "bytes": 21714,
+   "sha256": "535d0592cd10ae3f87c2a5080c8325cf503f5c634a7950e70a33b8309892834a",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-explicit_run-01_beh.tsv?versionId=n0VHJ6G4w7rMgGXUwHz0lmnpQpjNyTbM",
+   "bytes": 579,
+   "sha256": "3480709ab7dcb35dd486add6c19752d2ebc6c3b032dd9fd8f4e9da29e85441f2",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-explicit_run-02_beh.tsv?versionId=eH4aX5H3CjsBMe3GbhKtdYD5h7.Ja8L.",
+   "bytes": 592,
+   "sha256": "528bb0b0f131006243569fb68d6ca642141c7b35b34d16eafe48505f10eb6784",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-explicit_run-03_beh.tsv?versionId=E_wSQVooHVItjR.g_tTxjJlnTzlHPLML",
+   "bytes": 644,
+   "sha256": "2f680e916449bb886eb42d7f3846ddf1622400f14d9dedb10e5485195f5683fe",
+   "fetched_utc": "2026-11-09T11:34:52Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-explicit_run-04_beh.tsv?versionId=E3RaOFJEnJn_iXqllWas.MjMf3wt5oKj",
+   "bytes": 644,
+   "sha256": "b7380b65493920ac737a791ab633cd7eb7e5b73ff68832e46f5be72fb3dfcd06",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-07__beh__sub-07_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-07/beh/sub-07_task-practice_beh.tsv?versionId=8HMGge9Pah4V2.bLuTgphfsLL1AeUII4",
+   "bytes": 13804,
+   "sha256": "1ac598a6001b7356f16da9bede7014c4416492ed9b522ba22f519254c0b40db7",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-asrt_run-01_beh.tsv?versionId=.4O_eZowXZ9e86TePtYl3jMO.8G91oPb",
+   "bytes": 21245,
+   "sha256": "f4134eaa8efde546f6297a1cd2f88e10c461cc0bd441c888bb481c1762344676",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-asrt_run-02_beh.tsv?versionId=ZyUBmUaJ.oTDs7dMKy6kBdzoQ2Wa8Vb.",
+   "bytes": 21338,
+   "sha256": "bf59d278b38b0ec20ba0b83bf595a05f83778c0f338f2396e9f085a6a726f8d0",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-asrt_run-03_beh.tsv?versionId=vBvbSMdoFmPnoVDMmOHWoXSv6ilXPA3M",
+   "bytes": 21675,
+   "sha256": "461d2a1c1aa885158fbdf9fa1958b0732c4c50d0d25337ac7cf54064f4925e98",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-asrt_run-04_beh.tsv?versionId=XVzaMJkWHdUNvCm_UfGwzZ9Ltle9tTgr",
+   "bytes": 21702,
+   "sha256": "25210a83677e1630d40e744406dfb2b37705d4dca4bf937ccacd2020acd83df5",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-explicit_run-01_beh.tsv?versionId=03cWPuAIJfSPhI9O.6KF_E5gsQXxCjgM",
+   "bytes": 579,
+   "sha256": "351b8ce54bdb9bf89bd451acc09aa0495fd81d8bdc7573ad198f905c3bafd6b9",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-explicit_run-02_beh.tsv?versionId=eIWsaeEafkqZgBpCK3cZ99PNtiT5iStp",
+   "bytes": 592,
+   "sha256": "09b936d3f0db479b447c077e372633e461d7643b841858c8c564f951a65c7deb",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-explicit_run-03_beh.tsv?versionId=0lOKGXd6ymRy0C2OBLQfqmTHxHaUabq8",
+   "bytes": 644,
+   "sha256": "6565106b3d2bb5481d7c0ff0e5ed3ae50ef36aef6aa2bd29b8fe3a1f60b5c688",
+   "fetched_utc": "2026-11-09T11:34:53Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-explicit_run-04_beh.tsv?versionId=l6cr7eRYDvHVcIJAFO6xSg8w0RtaRbIc",
+   "bytes": 644,
+   "sha256": "dd095a192e0fdeb850277b29b26dfddbc44b086e06b0360593c8baece70702e2",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-06__beh__sub-06_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-06/beh/sub-06_task-practice_beh.tsv?versionId=ZTC2Ta3SnJWv9qC8880hPtlH_OfP9T.4",
+   "bytes": 13652,
+   "sha256": "bda9ed45311955e94850c900d04331ec04a21b6d8c95950b96c17146b8b2c019",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-asrt_run-01_beh.tsv?versionId=9ub2PLNDKyBN8p_17JjMswG58VU.QB91",
+   "bytes": 21317,
+   "sha256": "79015b7159c69ac79d66fdc53deb82af89133a08d06214f1e19ecdf4bc8cf6ec",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-asrt_run-02_beh.tsv?versionId=h7nH.b.c4s0VEvwmGqdyBJaMQAdOvDfP",
+   "bytes": 21404,
+   "sha256": "3dcc7a5f163b471224553e7533b06cc6fc23f062838589b6fc86e12526d12e14",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-asrt_run-03_beh.tsv?versionId=Wn6dLfmiwNZ_f8fbxUGrfSTaTc9NsxkV",
+   "bytes": 21751,
+   "sha256": "b2e01d7325cc1213198de1914996c8e06442155ac1f3d1ea4a8061c057c3e0bc",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-asrt_run-04_beh.tsv?versionId=RRNtwo1MITCu5W9v7L5VG6VU_t3y6sjh",
+   "bytes": 21744,
+   "sha256": "61109630eda26ac65fb250a7d74de3e7c43ef37be183853e06986603b06fcc63",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-explicit_run-01_beh.tsv?versionId=eJtcGzQP4q9aiKPmNOZs.uM49ub1TxxB",
+   "bytes": 579,
+   "sha256": "8e1f8de099ef2c9d4e6079323e73896dc5630b904dbb4eab031ce5a5be666736",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-explicit_run-02_beh.tsv?versionId=05Ex4HRUI0RYQA0mZHsslC24SG9_axsY",
+   "bytes": 592,
+   "sha256": "f48c0b524fad91440dedf017d4ed75943279b43b11b0b0df9eb34a299e84b171",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-explicit_run-03_beh.tsv?versionId=iG_eXn2IbmKHbepWSxCqPMvF.TdqaiqL",
+   "bytes": 644,
+   "sha256": "6359b7cb2e8f6de47ff74c812fc372743406e5c22602d6bafac3c0bf270d71f7",
+   "fetched_utc": "2026-11-09T11:34:54Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-explicit_run-04_beh.tsv?versionId=R1oW9cBT5YJ5XG3ZlALVjuR1I20w.xto",
+   "bytes": 644,
+   "sha256": "e36785c658dd3f80af2dbf822db9e3f338536febd00d0987bf9834ac1b386542",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-05__beh__sub-05_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-05/beh/sub-05_task-practice_beh.tsv?versionId=I4pgBZMOfWowsqv5sq83X2rVCEt6mrEu",
+   "bytes": 13780,
+   "sha256": "c29a911811172d8ed03107d2cf01a51d88286821710d4696bc17cd803f2922a2",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-asrt_run-01_beh.tsv?versionId=iJVkQ7BkvtwWmi99fOKGK.HiXU2YLSa.",
+   "bytes": 21338,
+   "sha256": "44818dececd74a41945df4d95f8a230c27990e5c4bfb2cdac8adf2a633538238",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-asrt_run-02_beh.tsv?versionId=.HCLOhoRc1jLDwUZjqmdcN5JfQ3..su3",
+   "bytes": 21397,
+   "sha256": "3cee09b5cf8be85f309913562994a4acd0d6cf921a8e44f165359b882a1a193d",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-asrt_run-03_beh.tsv?versionId=f5.Cg.21zQsnxQlqoXRS_dZajSqQ0fAV",
+   "bytes": 21750,
+   "sha256": "7f3bc6b0583c3c4f10e1ad0fba59039f2e5442e23dc46a8e4941be593ef07343",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-asrt_run-04_beh.tsv?versionId=l_4Yze.aUvTZ67Hmss1cL8irw5.__zDi",
+   "bytes": 21734,
+   "sha256": "f938f59fd9a40ae381da1f06edc8225b19e307c4f596bc607c4d730dca9a87c0",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-explicit_run-01_beh.tsv?versionId=0CTzV_g97eYuOvklIzzGTfj.xfAvwcxf",
+   "bytes": 579,
+   "sha256": "b5d301602455a9e359801ac718ca761d67a5079bf777b5a2f82131f64e58b5f8",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-explicit_run-02_beh.tsv?versionId=6XHKycV7uBhcdDm9fthyMxrA2RqOZdyT",
+   "bytes": 592,
+   "sha256": "90f2af25f403d7f893403284393a0ce3489df46ac9d9017d9cfa7ba25b05e21f",
+   "fetched_utc": "2026-11-09T11:34:55Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-explicit_run-03_beh.tsv?versionId=DgafaWBMUquxZeSGigMHq0Hx2JDmRgni",
+   "bytes": 644,
+   "sha256": "2e9e0d7d40165e73745a6016661b1625e9f4823bd81747854703e9088326be31",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-explicit_run-04_beh.tsv?versionId=xtjaW.loaIe1kTw5K_U8vSd9PwkYruAZ",
+   "bytes": 644,
+   "sha256": "c9e7a64f7589d7df5c521c6ea8cdb370297b7c242c3470ae723374728233f09a",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-04__beh__sub-04_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-04/beh/sub-04_task-practice_beh.tsv?versionId=hicaonQfEaDQJXKu3gKTnxsf_esePnbf",
+   "bytes": 13798,
+   "sha256": "98600a8b07f9b17a59140780b66362e3f1294017c89ae9be4e08d609407699bb",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-asrt_run-01_beh.tsv?versionId=AhG0N6zIkgGROZxvSAy.aByv0E6GFbrW",
+   "bytes": 21323,
+   "sha256": "305d3ad9bcee2a1cd63a2ca52e011a66daeb98f1e0434c3caff5b0e8c77d856b",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-asrt_run-02_beh.tsv?versionId=EXQmvkDqUhFgXsSTEXBIyUpCUxKO4MHO",
+   "bytes": 21377,
+   "sha256": "57b16ffe454eb0af5b515063e2af7162d842d4936b36dc5fde6ff852a6090c15",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-asrt_run-03_beh.tsv?versionId=oEMw5d4xE4JSBvGb1aUp5_bJ.3SLTwAN",
+   "bytes": 21726,
+   "sha256": "badc82f28b8dd89073b4bf09858aaf10985ab41cbbee4c0e52b533add9d14b5c",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-asrt_run-04_beh.tsv?versionId=l1x_gWHi3.FYNYFLsndVprBdJGnHb5lC",
+   "bytes": 21739,
+   "sha256": "a1eb8ef45e74df0242a28a68f8afb93c9dcb3b3d12f5437b162232aa74610279",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-explicit_run-01_beh.tsv?versionId=ibize4p_cyoEYiNvQuMiUh6HqF6D.946",
+   "bytes": 579,
+   "sha256": "359d34a2c95e254a399ed6d8d2c64c859aae92ec0c2f39999557e179b0d19560",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-explicit_run-02_beh.tsv?versionId=roj_l2g7A6DW0lEtS0MPJkDSOLM726Tx",
+   "bytes": 592,
+   "sha256": "79b4b6b1b10619019e4387d6b93de1fa82eb2137fbb053defc7c1a63e214b690",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-explicit_run-03_beh.tsv?versionId=p6vLj8dzJ7JZhlE13ELmagvdkyWzE58M",
+   "bytes": 644,
+   "sha256": "1322302882f1aef3f447534393b563c7cae079c1c6f64fcb0b165065c5032751",
+   "fetched_utc": "2026-11-09T11:34:56Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-explicit_run-04_beh.tsv?versionId=NlBdZp.K9PJZIxIGL_7PQpKGQpPJ6BoU",
+   "bytes": 644,
+   "sha256": "d008c7d7488ae25d7d8127d69c8a9becb258d62fe9dfd9c4afd6c7936c0d7fed",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-03__beh__sub-03_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-03/beh/sub-03_task-practice_beh.tsv?versionId=GyUBYHJOFFYANF8qMDDBHv1Mt2u7AQne",
+   "bytes": 13695,
+   "sha256": "59cbab1bbddcce19cc60f61d507acb82a9811e9a71da9e2ac2819480acc370e6",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-asrt_run-01_beh.tsv?versionId=_LkmMxCzvakk5TH.75Hc6S7MooLG20Nk",
+   "bytes": 21282,
+   "sha256": "ba4795f0bce483e788ce78027de78efa99aa7440addbb878cb6d20253a7d0c68",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-asrt_run-02_beh.tsv?versionId=oL7Kkkav2Z8TvWfCpR_5SRIehxT_hOq1",
+   "bytes": 21388,
+   "sha256": "49b453064f9771b0d95c623a83945a51929b41484d8809a17e0a7f2f63bdc381",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-asrt_run-03_beh.tsv?versionId=6TPWIfkU6LWoD9ksxj9N0ObomRnhVczs",
+   "bytes": 21735,
+   "sha256": "d12281ca748f8bf206e3ef2d6025a940a04d9921a4fccf2b11fe25cf84349222",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-asrt_run-04_beh.tsv?versionId=MK.LowWiRzIzUfwMZ3CXKYzKSJzmFcGg",
+   "bytes": 21733,
+   "sha256": "94d13680a137f48e37c1e17f8e7adebe3345602361509e8e592c5f0fbe6ea08a",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-explicit_run-01_beh.tsv?versionId=AXvvySZ11nL.Q4Ezbg2o1ewbW2AISFFx",
+   "bytes": 579,
+   "sha256": "0fd3c11a4830cd79757e60af016690ea4fd9b47a050fa727d08c1409eb36e8be",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-explicit_run-02_beh.tsv?versionId=403jY99CkeJZiaJZKPfFCJoy2BfWwyyj",
+   "bytes": 592,
+   "sha256": "69ccefd3c6e98ecb060d88c14cec8dc485f9fdf65f241237225ac38b378eb8d2",
+   "fetched_utc": "2026-11-09T11:34:57Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-explicit_run-03_beh.tsv?versionId=12LI.cEzu0g6hXxv8EjN6YFRy597oqoI",
+   "bytes": 644,
+   "sha256": "fd0a7d7b48edad4f9a8e77029a9edc7f885f6a70e9b333ad201da6244a868a98",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-explicit_run-04_beh.tsv?versionId=DQ9nZJS6eUN.yVHvNsSxOn1wDlt53vFj",
+   "bytes": 644,
+   "sha256": "63a3a19d6787895d930e800583df1adeb5c4637551c83f78f5432ff54046f405",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-02__beh__sub-02_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-02/beh/sub-02_task-practice_beh.tsv?versionId=0se_lOZBNK49qeBeN1vyX0wcEZZPFUg_",
+   "bytes": 13730,
+   "sha256": "d718dc5f49ba52a73f1c5570b2d64e67808793de6e09d676a34e698914f9804a",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-asrt_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-asrt_run-01_beh.tsv?versionId=JNtoUBaM0yY2KF4on_B_UYDs4smH1gBq",
+   "bytes": 21266,
+   "sha256": "8d8c800da04950f8db7342c377fac4b5aa1bb918b84decb4559b49272f7c61eb",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-asrt_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-asrt_run-02_beh.tsv?versionId=XiNKm5Cp418Rsh.R4ZwBOHY1E3oY0ZQO",
+   "bytes": 21384,
+   "sha256": "ae56b45e929ef43489e2793d7cb4d5a7e68d28158f3f3c1dfd6f3b01887fbb69",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-asrt_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-asrt_run-03_beh.tsv?versionId=LWPOlYvlrjW9BjE3JKFZOoE0rpB6K9t6",
+   "bytes": 21721,
+   "sha256": "cf869165eb56cbfeb301399cda28aade2c4f4041437c03b094ab1e3696f7a637",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-asrt_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-asrt_run-04_beh.tsv?versionId=i.kqlMmSJMgwJG4qfhoEWLQAK4bWIexB",
+   "bytes": 21715,
+   "sha256": "0734d952837a8bfac8060aa4eadb66aa9ac92e5b8121f0484c7b0084227aae11",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-explicit_run-01_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-explicit_run-01_beh.tsv?versionId=gpV.EG5yAI3o87XISJ1KyB4Krlh6b6cQ",
+   "bytes": 579,
+   "sha256": "b4391465306184a35d016c93d8c57ac287f3a4ee6b93f566fd42c98487af28ab",
+   "fetched_utc": "2026-11-09T11:34:58Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-explicit_run-02_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-explicit_run-02_beh.tsv?versionId=w9wmrfY4SeqeIn9qOAxeIqfJFTKkAraI",
+   "bytes": 592,
+   "sha256": "a301af22f24d18440121a8108b1c49b60062c83ad455e1b8ce60f87a7d5dc9d9",
+   "fetched_utc": "2026-11-09T11:34:59Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-explicit_run-03_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-explicit_run-03_beh.tsv?versionId=jhxmuxKTOb80lrt_IKhlNA.UoiNZOMlO",
+   "bytes": 644,
+   "sha256": "a580ab95f1f6faf55966ab9f803cddf33859bc7737754728d3c4f94fc3b5c125",
+   "fetched_utc": "2026-11-09T11:34:59Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-explicit_run-04_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-explicit_run-04_beh.tsv?versionId=ZkvSINPl8R.XQMlWtZJ.csC28kH2WjQW",
+   "bytes": 644,
+   "sha256": "1e599bc730056f5efb085a77c276ddc6f9e110f2c999e5eba4f3ead6d72047b3",
+   "fetched_utc": "2026-11-09T11:34:59Z"
+  },
+  {
+   "file": "sub-01__beh__sub-01_task-practice_beh.tsv",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/beh/sub-01_task-practice_beh.tsv?versionId=.nPxIYSjz8BLbtA4PoWCJA49xhB7.KzJ",
+   "bytes": 13618,
+   "sha256": "25500a41881501b933baa445de53fae335a575fd1d902288c0cf51c975ea3656",
+   "fetched_utc": "2026-11-09T11:34:59Z"
+  },
+  {
+   "file": "sub-15__meg__sub-15_task-asrt_run-01_meg.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/meg/sub-15_task-asrt_run-01_meg.json?versionId=fjBu9gFm3oYQdSfZIn14EGBr0GY1LTcF",
+   "bytes": 632,
+   "sha256": "aaf7d1e82b2200b5f1e9c8a2281dd4cda46c9b263de6f076197d61f584a23fa0",
+   "fetched_utc": "2026-11-09T11:36:41Z"
+  },
+  {
+   "file": "sub-15__meg__sub-15_task-practice_meg.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-15/meg/sub-15_task-practice_meg.json?versionId=fwdql_JXBeOa3PMqJYYsClvBjjuTv8Gz",
+   "bytes": 636,
+   "sha256": "7ba97c1ffff7f064a52251f41807ad96845ad8895b61b12f9cc61815e0fb7b03",
+   "fetched_utc": "2026-11-09T11:36:41Z"
+  },
+  {
+   "file": "sub-01__meg__sub-01_task-asrt_run-01_meg.json",
+   "url": "https://s3.amazonaws.com/openneuro.org/ds008017/sub-01/meg/sub-01_task-asrt_run-01_meg.json?versionId=P5y9ZssNkKZQbz.ATjUBydSDXMoxBTl2",
+   "bytes": 632,
+   "sha256": "08062106d075ad8f1650023048e3907f975a5cf556a8b64f937eca494cdf8642",
+   "fetched_utc": "2026-11-09T11:36:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tirou2026_NatCommun.zip"
+}

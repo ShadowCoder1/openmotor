@@ -1,0 +1,124 @@
+{
+ "id": "Firouzi2023_EJN",
+ "module": "keypress",
+ "rows": 195112,
+ "subjects": 89,
+ "persons": 89,
+ "zip_bytes": 2081689,
+ "zip_sha256": "53a3987141634317d494c52e9700fb6fa5d350eb55a4cb7fcbd65bb98a6555c8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the file is in order of participant, session, block and trial, with no duplicate trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's rows are contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ACC is 0/1 and RT is positive on every row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "block types: TrialList (sequence) and RandomTrialList (random) only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the codebook's Session label agrees with SessionNr (During/5Min/Post)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "StimCondition is constant within participant and SessionNr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "counterbalancing and task order are constant within participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants (readme: n = 89 healthy adults)",
+   "computed": 89.0,
+   "reported": 89.0,
+   "tol": 0,
+   "source": "Abstract; deposit readme, Overview",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per block (maximum trial number)",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "deposit readme, Variables (trial number 1-72)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks in the full-length task",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "deposit readme, Variables (block number 1-8)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "45 conventional-M1 and 44 high-definition-M1 participants",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "In the deposit, trials 1-9 are absent from most blocks (block trial numbers start at 10 in 1806 of 2944 blocks); the deposit does not say why, and nothing was added.",
+  "excluded_by_authors marks wrong responses, response times under 100 ms and over 2000 ms, the exclusions the Methods of the 2024 companion paper (same lab, same task) describe; the practice block exclusion is already in the deposit. The authors' R script is not in the deposit, so the flag was not checked against it.",
+  "The readme says block 7 is the random block; in the deposit block 7 is random in all full-length sessions except 1 (block 6 is random there instead, with block 7 sequential), and block_type follows the deposit's block list column as given.",
+  "The abstract-level counts per group (45 conventional, 44 high-definition) are the deposit's; the paper text could not be read (publisher blocked), so only the participant count of 89 from the abstract and readme was checked.",
+  "1 participant has both sexes in the deposit across sessions; the rows are kept as given."
+ ],
+ "sources": [
+  {
+   "file": "raw.csv",
+   "url": "https://osf.io/download/6937064841d25bf598ab2dba/",
+   "bytes": 39466143,
+   "sha256": "bbeea429b2de3802220168b7f9222ddf6764eb34ab27225e54f7d28f0819c597",
+   "fetched_utc": "2026-11-09T11:21:39Z"
+  },
+  {
+   "file": "codebook.csv",
+   "url": "https://osf.io/download/69370636746496d9189e2f68/",
+   "bytes": 2589,
+   "sha256": "7ab41a0b92e3b75b07d6e58cf756ea9e90b8caae0bb0b8f1cd18bf813574879e",
+   "fetched_utc": "2026-11-09T11:21:44Z"
+  },
+  {
+   "file": "readme.docx",
+   "url": "https://osf.io/download/6936fd565d3eb99103ab330f/",
+   "bytes": 18767,
+   "sha256": "43d8eb3bc888dc456d8a5bc176a4c014fa95537927147f90634d421c56a725cd",
+   "fetched_utc": "2026-11-09T11:21:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Firouzi2023_EJN.zip"
+}

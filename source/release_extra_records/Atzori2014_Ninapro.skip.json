@@ -1,0 +1,7 @@
+{
+ "id": "Atzori2014_Ninapro",
+ "skipped": true,
+ "reason": "license does not allow a converted copy",
+ "details": "The Ninapro site shows no visible license, but the page source of DB1 and DB4-DB8 carries a commented-out line naming Creative Commons Attribution No Derivatives 4.0 International (the only license statement found for the data; the CC BY on the 2014 Sci Data article covers the article, not the data). With that no-derivatives intent a converted copy is not allowed; ask the Ninapro team (HES-SO Valais-Wallis) for written permission to retry.",
+ "sources": []
+}

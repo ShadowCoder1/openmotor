@@ -1,0 +1,104 @@
+{
+ "id": "Doty2026_JSLHR",
+ "module": "speech",
+ "rows": 21392,
+ "subjects": 26,
+ "persons": 26,
+ "zip_bytes": 259933,
+ "zip_sha256": "3dfc274934443028e088a180ac43f2640c8145e398f6bcdf4d71327aed914f30",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "cisgender men",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Doty et al. 2026, J Speech Lang Hear Res (abstract) and the deposit's analysis script, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "transgender women",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Doty et al. 2026, J Speech Lang Hear Res (abstract) and the deposit's analysis script, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in total",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Doty et al. 2026, J Speech Lang Hear Res (abstract) and the deposit's analysis script, Abstract (20 + 6)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "21392 trials: 4920 (trans) + 16472 (cis), as in the authors' files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has all four blocks and all six vowels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "direct adaptation within -300 to 300 mel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group means rise from Ramp to Hold 2 and fall in the After-Effect (the paper's descriptive result), both groups",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Only counts of participants could be checked: the paper's full text was not reachable (publisher site blocked, not in PubMed Central), so its reported adaptation percentages (27% cis, 35% trans) and model estimates were not reproduced."
+ ],
+ "sources": [
+  {
+   "file": "Gtrain_proj_cleaned_trans.csv",
+   "url": "https://osf.io/download/xcufe/",
+   "bytes": 394220,
+   "sha256": "0d36bb1a0eb0131025d6ec924d4605909fee755b6708f7011dd282ed6c13b1ed",
+   "fetched_utc": "2026-11-09T11:54:11Z"
+  },
+  {
+   "file": "Gtrain_proj_cleaned_cis.csv",
+   "url": "https://osf.io/download/2bps3/",
+   "bytes": 1347490,
+   "sha256": "14894b9dcd948a3f72cd916ffaaee5ac6b420630000a35135de5c57ff79f5d99",
+   "fetched_utc": "2026-11-09T11:54:16Z"
+  },
+  {
+   "file": "prolific_processed_data_anonymized.csv",
+   "url": "https://osf.io/download/xwn2g/",
+   "bytes": 2342342,
+   "sha256": "99aa04224688da9d34cd5843b74f2d2570f877c4a7c44184d94aa54044af3ebb",
+   "fetched_utc": "2026-11-09T11:54:20Z"
+  },
+  {
+   "file": "GTrain_proj_analysis_public.Rmd",
+   "url": "https://osf.io/download/fu6hq/",
+   "bytes": 12062,
+   "sha256": "40711f2fa2e7316ae125763fd84409b4ff87b4c1b742f2c875ec91bcf230bf43",
+   "fetched_utc": "2026-11-09T11:54:24Z"
+  },
+  {
+   "file": "Gtrain_perceptual_analysis_public.Rmd",
+   "url": "https://osf.io/download/fn7ab/",
+   "bytes": 11056,
+   "sha256": "2ebb64a5afd138a94bc7e81ec4d83b7b4e4ddbb197287eb2a24e313cdbaff810",
+   "fetched_utc": "2026-11-09T11:54:29Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Doty2026_JSLHR.zip"
+}

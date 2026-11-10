@@ -1,0 +1,190 @@
+{
+ "id": "KligerAmrani2020_DataBrief",
+ "module": "tapping",
+ "rows": 47357,
+ "subjects": 20,
+ "persons": 20,
+ "zip_bytes": 838791,
+ "zip_sha256": "873f2e30f1c9b1a100813b88a7336bf426fb15580ce5381772a02351641927a8",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participant order of the SMT and PPT files is the same (the code pairs columns by index)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Kliger Amrani & Zion Golumbic 2020, Data in Brief, 2.1 Experimental design",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 x 9 spontaneous trials",
+   "ok": true,
+   "detail": "180"
+  },
+  {
+   "kind": "internal",
+   "what": "every spontaneous trial has 31 taps (30 intervals)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "median across participants of SMT (s)",
+   "computed": 0.7257025716953396,
+   "reported": 0.73,
+   "tol": 0.005,
+   "source": "Kliger Amrani & Zion Golumbic 2020, Data in Brief, 1. Data description (Fig. 1A)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "lowest participant SMT (s), reported as 0.4",
+   "computed": 0.4235380124454321,
+   "reported": 0.4,
+   "tol": 0.05,
+   "source": "Kliger Amrani & Zion Golumbic 2020, Data in Brief, 1. Data description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "highest participant SMT (s), reported as 1.5",
+   "computed": 1.4924705540916086,
+   "reported": 1.5,
+   "tol": 0.05,
+   "source": "Kliger Amrani & Zion Golumbic 2020, Data in Brief, 1. Data description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with CV of SMT across sessions above 0.25",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Kliger Amrani & Zion Golumbic 2020, Data in Brief, 1. Data description",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "800 synchronization and 800 continuation trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every tempo appears 4 times per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no tap times out of order",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The article says participants tapped 30 taps per spontaneous trial; every trial in the deposit holds 31 taps (30 intervals), so the rows are kept as shared."
+ ],
+ "sources": [
+  {
+   "file": "read_me.docx",
+   "url": "https://osf.io/download/t6fmy/",
+   "bytes": 15968,
+   "sha256": "ff32039aa01f106e8406003d2c88350de9e5bf19231c434a5b191bff01ed025c",
+   "fetched_utc": "2026-11-09T03:54:17Z"
+  },
+  {
+   "file": "SYNC_CONTanalysis.m",
+   "url": "https://osf.io/download/p68wu/",
+   "bytes": 7687,
+   "sha256": "d002effe9353f001f7a975e3c20a74584805ced2022ccce0b5fd61744d760349",
+   "fetched_utc": "2026-11-09T03:54:20Z"
+  },
+  {
+   "file": "ITIcalc.m",
+   "url": "https://osf.io/download/538x6/",
+   "bytes": 1747,
+   "sha256": "223483fef2db84b6af116c1caa2c9efede57358e4aef44d626e6e9bf9ead85bf",
+   "fetched_utc": "2026-11-09T03:54:25Z"
+  },
+  {
+   "file": "robust_correlation1.m",
+   "url": "https://osf.io/download/x29cr/",
+   "bytes": 6079,
+   "sha256": "e734d2a79979369367c45c73b06a39eaee53cf63e43aa5e6439af0a06145ef85",
+   "fetched_utc": "2026-11-09T03:54:32Z"
+  },
+  {
+   "file": "RTcalc.m",
+   "url": "https://osf.io/download/3cfwp/",
+   "bytes": 365,
+   "sha256": "5d46090c14e2256510a0e395a37184fd6acd8a91f67e6dd1f234ab59d4771a39",
+   "fetched_utc": "2026-11-09T03:54:35Z"
+  },
+  {
+   "file": "main.m",
+   "url": "https://osf.io/download/6t7ph/",
+   "bytes": 680,
+   "sha256": "d55c8337b1eea2a3b2e4040e7db5042c50aba923e5d4bbc71d956ec2ce62ac46",
+   "fetched_utc": "2026-11-09T03:54:38Z"
+  },
+  {
+   "file": "SMT_PPTcorr.m",
+   "url": "https://osf.io/download/2xhz8/",
+   "bytes": 1020,
+   "sha256": "8a6b1013d395b6e9b8bde04b81fc3969a26a4ca9966c582deef4170ddf6dd98d",
+   "fetched_utc": "2026-11-09T03:54:41Z"
+  },
+  {
+   "file": "anova_rm.m",
+   "url": "https://osf.io/download/7jnz6/",
+   "bytes": 5303,
+   "sha256": "edd1579032784c4a61b27212506882540c53d1fcc88fca59daef51b140cc240c",
+   "fetched_utc": "2026-11-09T03:54:45Z"
+  },
+  {
+   "file": "PPTcalc.m",
+   "url": "https://osf.io/download/qts6a/",
+   "bytes": 2381,
+   "sha256": "c3849937d2fadf43fb501425c05c1454631b7562df649deb92fae7cd568a8e1b",
+   "fetched_utc": "2026-11-09T03:54:58Z"
+  },
+  {
+   "file": "SMTcalc.m",
+   "url": "https://osf.io/download/9am5f/",
+   "bytes": 2406,
+   "sha256": "1b8970859a550fafc3ad4d3279fb166cffea88f5d5c4b544d85650bd81639f15",
+   "fetched_utc": "2026-11-09T03:55:01Z"
+  },
+  {
+   "file": "PPTdata.mat",
+   "url": "https://osf.io/download/es3dm/",
+   "bytes": 1376,
+   "sha256": "0f7a16d5174c06edf59eb9cbf1a265b980a2df158e2c0685f6dcfa5e773a4940",
+   "fetched_utc": "2026-11-09T03:55:05Z"
+  },
+  {
+   "file": "SYNC_CONTdata.mat",
+   "url": "https://osf.io/download/9d4xr/",
+   "bytes": 438085,
+   "sha256": "e17f850f3e7e13753287dcf6217414a5b51c0b4447ab008065416e00e39d76ac",
+   "fetched_utc": "2026-11-09T03:55:08Z"
+  },
+  {
+   "file": "SMTdata.mat",
+   "url": "https://osf.io/download/t64kr/",
+   "bytes": 57401,
+   "sha256": "707c8db87d0343645c923ea0b1fdfa71c793df30de78e460b13163c2aaa62cfc",
+   "fetched_utc": "2026-11-09T03:55:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/KligerAmrani2020_DataBrief.zip"
+}

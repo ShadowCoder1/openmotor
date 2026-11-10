@@ -1,0 +1,7 @@
+{
+ "id": "Stieger2021_SciData",
+ "skipped": true,
+ "reason": "too large",
+ "details": "The Figshare deposit holds 599 files (per-session EEG .mat files of about 0.6 GB each, over 300 GB in total) and the per-trial BCI cursor-control values are inside them, far beyond the 5 GB limit; the task is also brain-driven cursor control with EEG rather than limb movement.",
+ "sources": []
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Clark2015_PLoSOne",
+ "skipped": true,
+ "reason": "other",
+ "details": "Could not download: Dryad answers HTTP 401 to the file API without an API token and puts the file_stream link behind an Anubis proof-of-work bot challenge (an HTML Validating page comes back instead of the workbook), and the sanctioned route is a Dryad API token or a manual browser download. Not circumvented. License CC0 and paper match source/extra_studies.json. Deposit = one 23 MB workbook (ConfiguralLearningData.xlsx: demographics, musical-experience questionnaire, e-prime mapping-phase and configural-learning trial data, formulas kept), probably trial-level and convertible with the keypress module; retry once the file can be placed in raw_extra/Clark2015_PLoSOne/ on the PC (a download of the same record with a Dryad token, or from a browser).",
+ "sources": []
+}

@@ -1,0 +1,178 @@
+{
+ "id": "Lo2025_SpeechCommun",
+ "module": "speech",
+ "rows": 13052,
+ "subjects": 11,
+ "persons": 11,
+ "zip_bytes": 2895198,
+ "zip_sha256": "140b177ce516d14363afd07de820206a55730c66923405990c71b6beff223e22",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "intensity file holds the same 13052 tokens as the vowel duration file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "tokens",
+   "computed": 13052.0,
+   "reported": 13052.0,
+   "tol": 0,
+   "source": "Lo 2025, Speech Communication 169:103205, Methods 2.4 (Data processing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "filler tokens",
+   "computed": 1553.0,
+   "reported": 1553.0,
+   "tol": 0,
+   "source": "Lo 2025, Speech Communication 169:103205, Methods 2.4 (Data processing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers analysed (11 male; the nonbinary speaker was removed)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Lo 2025, Speech Communication 169:103205, Methods 2.1 and 2.4",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every token has a 33-point nasalance series and a duration; 400 tokens carry formant series",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "50 items per speaker, session and condition; 6 blocks per speaker",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "tokens without a voiced f0 frame",
+   "ok": true,
+   "detail": "4 tokens"
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: duration 40-450 ms, intensity 40-100 dB, f0 40-800 Hz",
+   "ok": true,
+   "detail": "48-441 ms, 54.7-80.6 dB, f0 43-246 Hz"
+  },
+  {
+   "kind": "published",
+   "what": "intensity (dB): condition (Lombard) minus quiet, mixed model estimate",
+   "computed": 3.630579458231254,
+   "reported": 3.631,
+   "tol": 0.06,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "intensity (dB): condition (Phone) minus quiet, mixed model estimate",
+   "computed": 4.295474890887626,
+   "reported": 4.295,
+   "tol": 0.06,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration (s): condition (Lombard) minus quiet, mixed model estimate",
+   "computed": 0.014487210342932141,
+   "reported": 0.014,
+   "tol": 0.001,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration (s): condition (Phone) minus quiet, mixed model estimate",
+   "computed": 0.014770250944509167,
+   "reported": 0.015,
+   "tol": 0.001,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "f0 (ERB): condition (Lombard) minus quiet, mixed model estimate",
+   "computed": 0.17806677714018318,
+   "reported": 0.178,
+   "tol": 0.012,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "f0 (ERB): condition (Phone) minus quiet, mixed model estimate",
+   "computed": 0.25737401921315406,
+   "reported": 0.257,
+   "tol": 0.012,
+   "source": "Lo 2025, Speech Communication 169:103205, Results 3.1, Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The mixed-model estimates in the paper (Table 1) come from R's lmerTest; here they are refitted with Python's statsmodels from the shared rows (same fixed effects, by-speaker intercepts and condition slopes) and agree within the tolerances listed above; the paper's standard errors, t and p values were not compared."
+ ],
+ "sources": [
+  {
+   "file": "formants_02_B.rds",
+   "url": "https://osf.io/download/664cdefe915ae41f8be89886/",
+   "bytes": 166944,
+   "sha256": "903c85e1c7947dacd1d043c756bf5924ad589c188036430abd69eb68cb511b5c",
+   "fetched_utc": "2026-11-08T23:59:55Z"
+  },
+  {
+   "file": "f0s.rds",
+   "url": "https://osf.io/download/664cdf0032453c21b42ae2b3/",
+   "bytes": 981449,
+   "sha256": "c2e5c7efa8f9c5b594fbf91c548dce1b48142655d0ddbf9ac4fde94cea935d46",
+   "fetched_utc": "2026-11-09T00:00:00Z"
+  },
+  {
+   "file": "intensities.rds",
+   "url": "https://osf.io/download/664cdf01915ae41f8be89889/",
+   "bytes": 191696,
+   "sha256": "35738fc0a93d00270b842c2b32e71e8528fcfc8e16e27d085758042e7f295209",
+   "fetched_utc": "2026-11-09T00:00:04Z"
+  },
+  {
+   "file": "vowel_dur.rds",
+   "url": "https://osf.io/download/664cdf05ffd64021b37a0f89/",
+   "bytes": 373760,
+   "sha256": "a15c6ac3d99f01f7fd6926dec9ece9969a5ffa5163b86600d370b30065335fe1",
+   "fetched_utc": "2026-11-09T00:00:09Z"
+  },
+  {
+   "file": "analysis.R",
+   "url": "https://osf.io/download/uh5ge/",
+   "bytes": 12341,
+   "sha256": "23605115e2f9d2274acfbfee1c41c4654a70af9afa5eaa1f932f1773c7b45351",
+   "fetched_utc": "2026-11-09T00:00:13Z"
+  },
+  {
+   "file": "nasalances.rds",
+   "url": "https://osf.io/download/2xpu5/",
+   "bytes": 12315203,
+   "sha256": "b8411d4f0220f91fcc877c481db095af2332c5c005bddfeba09b6e20f5ecf76f",
+   "fetched_utc": "2026-11-09T00:00:36Z"
+  },
+  {
+   "file": "stimuli.pdf",
+   "url": "https://osf.io/download/648nd/",
+   "bytes": 43824,
+   "sha256": "56d07d1050a65f82e9b024551276bf52ed6d6d27d4df2147d34b8e8c49f5780a",
+   "fetched_utc": "2026-11-09T00:00:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lo2025_SpeechCommun.zip"
+}

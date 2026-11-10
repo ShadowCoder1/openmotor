@@ -1,0 +1,89 @@
+{
+ "id": "Kuberski2019_PLoSOne",
+ "module": "timeseries",
+ "rows": 609,
+ "subjects": 9,
+ "persons": 9,
+ "zip_bytes": 12172332,
+ "zip_sha256": "898181b40b25dbd3ce4c5054d00cddc78a0de86b0a7e4d12d31eb326b59c80e5",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "sampling rate after decimation (Hz)",
+   "computed": 83.33333333333333,
+   "reported": 83.33,
+   "tol": 0.005,
+   "source": "Kuberski & Gafos 2019, Data processing (decimated to 83.33 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of metronome rates",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Methods (eight metronome rates)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "slowest rate (bpm)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Methods (30 bpm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "fastest rate (bpm)",
+   "computed": 570.0,
+   "reported": 570.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Methods (570 bpm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Abstract and Methods (nine adult speakers)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rates are exactly the paper's eight",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has at least one channel and 80+ samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings",
+   "ok": true,
+   "detail": "609"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's README lists six subject aliases, but signals.zip holds nine speakers, matching the paper (five German, four English); all nine are included.",
+  "The paper's power law results were not recomputed; checks cover the stated setup (sampling rate, rates, subject count)."
+ ],
+ "sources": [
+  {
+   "file": "signals.zip",
+   "url": "https://zenodo.org/api/records/2273898/files/signals.zip/content",
+   "bytes": 357651494,
+   "sha256": "1a6ab2116356664ba7cab0191645fa94d978dc27adc91cfdefa1c2397abfed5e",
+   "fetched_utc": "2026-11-09T23:44:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kuberski2019_PLoSOne.zip"
+}

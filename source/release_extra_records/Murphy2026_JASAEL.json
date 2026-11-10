@@ -1,0 +1,950 @@
+{
+ "id": "Murphy2026_JASAEL",
+ "module": "speech",
+ "rows": 5952,
+ "subjects": 62,
+ "persons": 62,
+ "zip_bytes": 137347,
+ "zip_sha256": "eddd61a51f2d09013fc28c2f36eb84ab513670482d81c8eaa0c30dc87c4ccbb2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "one participant has a different identifier in the metrics table than in the processed table and the demographics, with all 96 trials identical; it is matched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "demographics cover all 62 participants and repeated rows agree",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "age, sex and parent study in the processed table equal the demographics file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 55 analysed participants' trials in the metrics table equal the processed table (5280 trials)",
+   "ok": true,
+   "detail": "5280 matched"
+  },
+  {
+   "kind": "internal",
+   "what": "5952 rows = 62 participants x 96 trials, trials 1-96 complete and in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline = trials 1-32, each bite block 32 trials at 33-64 or 65-96",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline: 8 trials of each of the 4 words per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "bite block phases hold their two words (16 trials each) for every participant but one excluded participant, whose block labels and words are swapped (the paper: bite blocks of incorrect sizes)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "formants and duration are missing together, on 122 trials, which are marked excluded_by_authors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1_mel within 250-1300",
+   "ok": true,
+   "detail": "323.83-1236.60"
+  },
+  {
+   "kind": "internal",
+   "what": "f2_mel within 600-2100",
+   "ok": true,
+   "detail": "727.60-1975.61"
+  },
+  {
+   "kind": "internal",
+   "what": "duration_ms within 20-1100",
+   "ok": true,
+   "detail": "30.00-1050.00"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' summary of the 55 analysed participants (postdrop_demo_summary.csv): 36 from vsaGeneralize2, 19 from vsaRetention, 43 F / 12 M, mean age and SD",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants who completed the bite block task",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants excluded",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: mean age (years)",
+   "computed": 39.32258064516129,
+   "reported": 39.3,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: SD of age (years)",
+   "computed": 19.288809457306456,
+   "reported": 19.3,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: youngest (years)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: oldest (years)",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: females",
+   "computed": 48.0,
+   "reported": 48.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "all 62: males",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed 55: mean age (years)",
+   "computed": 37.236363636363635,
+   "reported": 37.2,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed 55: SD of age (years)",
+   "computed": 18.756691286404116,
+   "reported": 18.8,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed 55: females",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "analysed 55: males",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline trials per participant (4 words x 8)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Methods 2.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F1: mean change at the first bite block trial (mel)",
+   "computed": 37.2779840623146,
+   "reported": 37.278,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F1: SE (mel)",
+   "computed": 7.941961641700771,
+   "reported": 7.942,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F1: d",
+   "computed": 0.624080610044639,
+   "reported": 0.624,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F1: t",
+   "computed": 4.6938005676808485,
+   "reported": 4.694,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F2: mean change at the first bite block trial (mel)",
+   "computed": -86.85130484976392,
+   "reported": -86.851,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F2: SE (mel)",
+   "computed": 11.67996334772064,
+   "reported": 11.68,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F2: d",
+   "computed": -0.988669016012448,
+   "reported": -0.989,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ F2: t",
+   "computed": -7.435922722027468,
+   "reported": -7.436,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ Euclidean distance: mean change at the first bite block trial (mel)",
+   "computed": 87.07717186548565,
+   "reported": 87.077,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ Euclidean distance: SE (mel)",
+   "computed": 12.08453138103849,
+   "reported": 12.085,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ Euclidean distance: d",
+   "computed": 0.9580552560216351,
+   "reported": 0.958,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /i/ Euclidean distance: t",
+   "computed": 7.205672203567287,
+   "reported": 7.206,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F1: mean change at the first bite block trial (mel)",
+   "computed": 32.73766946210886,
+   "reported": 32.738,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F1: SE (mel)",
+   "computed": 8.914174716813202,
+   "reported": 8.914,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F1: d",
+   "computed": 0.48829544586752033,
+   "reported": 0.488,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F1: t",
+   "computed": 3.67254070086395,
+   "reported": 3.672,
+   "tol": 0.001,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F2: mean change at the first bite block trial (mel)",
+   "computed": 42.66950484011578,
+   "reported": 42.67,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F2: SE (mel)",
+   "computed": 21.810755540385973,
+   "reported": 21.811,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F2: d",
+   "computed": 0.26011353378332613,
+   "reported": 0.26,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F2: t",
+   "computed": 1.9563515239582883,
+   "reported": 1.956,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ Euclidean distance: mean change at the first bite block trial (mel)",
+   "computed": 111.88979446501972,
+   "reported": 111.89,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ Euclidean distance: SE (mel)",
+   "computed": 14.34261571582912,
+   "reported": 14.343,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ Euclidean distance: d",
+   "computed": 1.0372374048310384,
+   "reported": 1.037,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ Euclidean distance: t",
+   "computed": 7.801212601794342,
+   "reported": 7.801,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F1: mean change at the first bite block trial (mel)",
+   "computed": -32.62246963771079,
+   "reported": -32.622,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F1: SE (mel)",
+   "computed": 7.088984815569162,
+   "reported": 7.089,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F1: d",
+   "computed": -0.6118554682602881,
+   "reported": -0.612,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F1: t",
+   "computed": -4.601853507439286,
+   "reported": -4.602,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F2: mean change at the first bite block trial (mel)",
+   "computed": -35.52011015383736,
+   "reported": -35.52,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F2: SE (mel)",
+   "computed": 7.72583725621453,
+   "reported": 7.726,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F2: d",
+   "computed": -0.6112864999432855,
+   "reported": -0.611,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ F2: t",
+   "computed": -4.597574214401888,
+   "reported": -4.598,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ Euclidean distance: mean change at the first bite block trial (mel)",
+   "computed": 49.17646883671634,
+   "reported": 49.176,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ Euclidean distance: SE (mel)",
+   "computed": 6.806739777016492,
+   "reported": 6.807,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ Euclidean distance: d",
+   "computed": 0.960581568269167,
+   "reported": 0.961,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u00e6/ Euclidean distance: t",
+   "computed": 7.224672963518404,
+   "reported": 7.225,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F1: mean change at the first bite block trial (mel)",
+   "computed": -18.869281119123396,
+   "reported": -18.869,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F1: SE (mel)",
+   "computed": 7.646389916058866,
+   "reported": 7.646,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F1: d",
+   "computed": -0.3281066030934046,
+   "reported": -0.328,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F1: t",
+   "computed": -2.4677372362994903,
+   "reported": -2.468,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F2: mean change at the first bite block trial (mel)",
+   "computed": -32.75395087190864,
+   "reported": -32.754,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F2: SE (mel)",
+   "computed": 8.129156320416943,
+   "reported": 8.129,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F2: d",
+   "computed": -0.5357155770915831,
+   "reported": -0.536,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F2: t",
+   "computed": -4.029194369118578,
+   "reported": -4.029,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ Euclidean distance: mean change at the first bite block trial (mel)",
+   "computed": 47.53845278459152,
+   "reported": 47.538,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ Euclidean distance: SE (mel)",
+   "computed": 7.081275994297393,
+   "reported": 7.081,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ Euclidean distance: d",
+   "computed": 0.8925849865211187,
+   "reported": 0.893,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ Euclidean distance: t",
+   "computed": 6.71326083362301,
+   "reported": 6.713,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F1: Holm-corrected p",
+   "computed": 0.0016563097368312981,
+   "reported": 0.002,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /u/ F2: Holm-corrected p",
+   "computed": 0.05560394267497867,
+   "reported": 0.056,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, vowel /\u0251/ F1: Holm-corrected p",
+   "computed": 0.03359403199682251,
+   "reported": 0.034,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: tests with Holm-corrected p < .001",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Murphy et al. 2026, JASA Express Letters, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no missing formants on the first or last bite block trial of any word (complete rmANOVA cells)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "F1/F2 deviation from baseline, rmANOVA F for formant",
+   "computed": 35.37912640275019,
+   "reported": 35.379,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1/F2 deviation from baseline, rmANOVA F for vowel",
+   "computed": 13.696344668778035,
+   "reported": 13.696,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1/F2 deviation from baseline, rmANOVA F for formant x vowel",
+   "computed": 24.85263612844508,
+   "reported": 24.853,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1/F2 deviation from baseline, rmANOVA F for timepoint",
+   "computed": 0.043452283715813514,
+   "reported": 0.043,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1/F2 deviation from baseline, rmANOVA F for formant x vowel x timepoint",
+   "computed": 0.6488545622242355,
+   "reported": 0.649,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Euclidean distance from baseline, rmANOVA F for vowel",
+   "computed": 15.997427908596494,
+   "reported": 15.997,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Euclidean distance from baseline, rmANOVA F for timepoint",
+   "computed": 0.10399564738936692,
+   "reported": 0.104,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Euclidean distance from baseline, rmANOVA F for vowel x timepoint",
+   "computed": 0.41971870404024986,
+   "reported": 0.42,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (adaptation rmANOVA; F unaffected by the Greenhouse-Geisser df correction)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration with a bite block, mean of per-phase medians (ms)",
+   "computed": 448.64301804015935,
+   "reported": 449.0,
+   "tol": 0.5,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: vowel duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration at baseline, mean of per-phase medians (ms)",
+   "computed": 365.43624521418445,
+   "reported": 365.0,
+   "tol": 0.5,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: vowel duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration rmANOVA F for phase",
+   "computed": 92.69160741896272,
+   "reported": 92.692,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: vowel duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration rmANOVA F for vowel",
+   "computed": 6.9090176294661765,
+   "reported": 6.909,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: vowel duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "vowel duration rmANOVA F for vowel x phase",
+   "computed": 2.8688639409517935,
+   "reported": 2.869,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: vowel duration)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F1 SD with a bite block (mel)",
+   "computed": 5.186292536900384,
+   "reported": 5.2,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F2 SD with a bite block (mel)",
+   "computed": 11.254566849862268,
+   "reported": 11.25,
+   "tol": 0.005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F2 SD with a bite block, vowel /i/ (mel)",
+   "computed": 13.466946290881252,
+   "reported": 13.5,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F2 SD with a bite block, vowel /u/ (mel)",
+   "computed": 19.039438426126196,
+   "reported": 19.0,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F2 SD with a bite block, vowel /\u00e6/ (mel)",
+   "computed": 4.934490061957496,
+   "reported": 4.9,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "increase in F2 SD with a bite block, vowel /\u0251/ (mel)",
+   "computed": 7.577392620484127,
+   "reported": 7.6,
+   "tol": 0.05,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "formant SD rmANOVA F for phase",
+   "computed": 91.77141705936879,
+   "reported": 91.771,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1 SD rmANOVA F for phase",
+   "computed": 28.293511766486827,
+   "reported": 28.294,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F2 SD rmANOVA F for phase",
+   "computed": 82.16247718252717,
+   "reported": 82.162,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1 SD rmANOVA F for vowel",
+   "computed": 5.565071977711765,
+   "reported": 5.565,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F2 SD rmANOVA F for vowel",
+   "computed": 53.90236274756382,
+   "reported": 53.902,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F2 SD rmANOVA F for phase x vowel",
+   "computed": 6.628631045764664,
+   "reported": 6.629,
+   "tol": 0.0005,
+   "source": "Murphy et al. 2026, JASA Express Letters, Results (exploratory: formant variability)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1, vowel /u/ F1: the t statistic is 3.6725 here and 3.672 in the paper (rounding to three decimals gives 3.673); every other mean, SE, d, t and Holm-corrected p in Table 1 agrees with the printed decimals.",
+  "Vowel duration: the means of the per-phase medians reproduce (449 and 365 ms), the paper's +-2.1 and +-1.3 ms do not match an SE across participants and words (7.8 and 4.8 ms here); the paper does not say what they are."
+ ],
+ "sources": [
+  {
+   "file": "biteBlock_demos.csv",
+   "url": "https://osf.io/download/56c9y/",
+   "bytes": 7019,
+   "sha256": "79a74701b8d074b32fe07a26130f350f0a2d31b19892be48a067fc226305d4f5",
+   "fetched_utc": "2026-11-08T19:41:56Z"
+  },
+  {
+   "file": "biteblock_metricsTable_2025-11-17.csv",
+   "url": "https://osf.io/download/b9npy/",
+   "bytes": 350833,
+   "sha256": "a7775b4085014cf8ab87fb1b0a663a22bb322a58e41dff154871c7b44e4fd58d",
+   "fetched_utc": "2026-11-08T19:42:00Z"
+  },
+  {
+   "file": "processed_biteBlock_fromVSA_data.csv",
+   "url": "https://osf.io/download/qkubp/",
+   "bytes": 2295843,
+   "sha256": "1eaad29e4f2362685a0841367969cab76662e2b96327818d28e3b10dd1ebd283",
+   "fetched_utc": "2026-11-08T19:42:03Z"
+  },
+  {
+   "file": "postdrop_demo_summary.csv",
+   "url": "https://osf.io/download/vj952/",
+   "bytes": 241,
+   "sha256": "a5383b0e8f72da8769f52581a656ecb715d1eaf6fdd4c709dcc533da650d7c91",
+   "fetched_utc": "2026-11-08T19:42:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Murphy2026_JASAEL.zip"
+}

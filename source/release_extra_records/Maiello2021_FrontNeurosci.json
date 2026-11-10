@@ -1,0 +1,813 @@
+{
+ "id": "Maiello2021_FrontNeurosci",
+ "module": "perception",
+ "rows": 1422,
+ "subjects": 71,
+ "persons": 71,
+ "zip_bytes": 14948,
+ "zip_sha256": "95d836f9070150af1695115219e2e97e7aa0e0f0dd46686cd7b7b40c3dbd998f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants (21)",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2a participants (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2b participants (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 women (16)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 men (5)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E1 mean age (24)",
+   "computed": 24.38095238095238,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Methods, Participants (mean reported as a whole number)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2a women (17)",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2a men (8)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2a mean age (23)",
+   "computed": 22.96,
+   "reported": 23.0,
+   "tol": 0.5,
+   "source": "Methods, Participants (mean reported as a whole number)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2b women (18)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2b men (7)",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "E2b mean age (24)",
+   "computed": 24.24,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Methods, Participants (mean reported as a whole number)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 youngest and oldest age (19, 32)",
+   "computed": 1932.0,
+   "reported": 1932.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2b youngest and oldest age (19, 36)",
+   "computed": 1936.0,
+   "reported": 1936.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 vision vs chance t(20) = 6.63",
+   "computed": 6.631885135652507,
+   "reported": 6.63,
+   "tol": 0.01,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 grasping vs chance t(20) = 15.79",
+   "computed": 15.794130094897456,
+   "reported": 15.79,
+   "tol": 0.01,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 grasping vs vision t(20) = 5.14",
+   "computed": 5.139261178129198,
+   "reported": 5.14,
+   "tol": 0.01,
+   "source": "Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 subset vision vs chance t(20) = 0.5",
+   "computed": 0.4979295977319675,
+   "reported": 0.5,
+   "tol": 0.05,
+   "source": "Results, Experiment 2 (the six conditions of Experiment 1 used again)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 subset grasping vs chance t(20) = 10.25",
+   "computed": 10.246950765959596,
+   "reported": 10.25,
+   "tol": 0.01,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1 subset grasping vs vision t(20) = 4.81",
+   "computed": 4.8115158662844335,
+   "reported": 4.81,
+   "tol": 0.01,
+   "source": "Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2a vision vs chance t(24) = 1.88",
+   "computed": 1.876948528813856,
+   "reported": 1.88,
+   "tol": 0.01,
+   "source": "Results, Experiment 2a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2a grasping vs chance t(24) = 7.27",
+   "computed": 7.268374528922054,
+   "reported": 7.27,
+   "tol": 0.01,
+   "source": "Results, Experiment 2a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2a grasping vs vision t(24) = 3.51",
+   "computed": 3.51324026261472,
+   "reported": 3.51,
+   "tol": 0.01,
+   "source": "Results, Experiment 2a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b vision vs chance t(24) = -1.19",
+   "computed": -1.1862403313740861,
+   "reported": -1.19,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b video vs chance t(24) = 4.58",
+   "computed": 4.578344712893245,
+   "reported": 4.58,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b grasping vs chance t(24) = 6.41",
+   "computed": 6.410486691557947,
+   "reported": 6.41,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b video vs vision t(24) = 4.23",
+   "computed": 4.226164350362994,
+   "reported": 4.23,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b grasping vs vision t(24) = 6.35",
+   "computed": 6.354567725144749,
+   "reported": 6.35,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2b grasping vs video t(24) = 0.92",
+   "computed": 0.924473451641905,
+   "reported": 0.92,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Grasping session, Exp 2b vs Exp 2a, t(24) = 0.68 in magnitude",
+   "computed": 0.6793662204867577,
+   "reported": 0.68,
+   "tol": 0.01,
+   "source": "Results, Experiment 2b (participants matched to the Experiment 2a participant whose videos they saw)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = judgements: 21 x 32 + 25 x 12 + 25 x 18",
+   "ok": true,
+   "detail": "1422"
+  },
+  {
+   "kind": "internal",
+   "what": "every response is G or B",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "In Experiment 1 two files (numbers 2 and 6) carry the same SubjectInfo.ID; participants are separated by file number, which gives the 21 participants of the paper (the deposit's own analysis also loops over files).",
+  "The paper (Methods, Experiment 1) says verbal reports; the deposit's scripts collected the letters G or B by an input box, the table has those letters.",
+  "Experiment 2b's grasping session (session 3) is its own participants' judgements, not a copy of Experiment 2a's."
+ ],
+ "sources": [
+  {
+   "file": "Experiment_01__DataExp01__S001_20181121T130551.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S001_20181121T130551.mat, read with HTTP range requests)",
+   "bytes": 466,
+   "sha256": "f67d10bc691116a04305a938d15598bb46337181d378ee9aea25054ae1c8c8a0",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S002_20181121T141137.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S002_20181121T141137.mat, read with HTTP range requests)",
+   "bytes": 465,
+   "sha256": "d0d6f00fefdd9df5e913d61c32e91da25ea0fe79f7add989765e11b8ba47c526",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S003_20181121T151227.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S003_20181121T151227.mat, read with HTTP range requests)",
+   "bytes": 481,
+   "sha256": "bfd3ec33c6ed809ce3030105ce78271163f7c7dffe326b07554ec176a66027d1",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S004_20181121T161615.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S004_20181121T161615.mat, read with HTTP range requests)",
+   "bytes": 466,
+   "sha256": "99ef9dfb21f05e38dd639982e5de19406f0a4e500a65f36d357228cdee0f759d",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S005_20181121T172035.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S005_20181121T172035.mat, read with HTTP range requests)",
+   "bytes": 462,
+   "sha256": "749e842de64ded1a77af75a1284d627a7def594cc656fe7f8b1933b4450aabca",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S006_20181120T151836.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S006_20181120T151836.mat, read with HTTP range requests)",
+   "bytes": 522,
+   "sha256": "b7b5f4109993194553101ce2a30b409bfc1fdbf52c5447256560260e6d638c88",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S007_20181122T110352.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S007_20181122T110352.mat, read with HTTP range requests)",
+   "bytes": 460,
+   "sha256": "08339bb9e15ffe4e172e17c2cb1ca5d54dc814d6b5006d945adb076fce656181",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S008_20181122T141055.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S008_20181122T141055.mat, read with HTTP range requests)",
+   "bytes": 467,
+   "sha256": "a7e8933616871dbd2ffa734c33ebc5e39dd83fbfb75d6a6324df8e12d6cb8372",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S009_20181122T161118.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S009_20181122T161118.mat, read with HTTP range requests)",
+   "bytes": 469,
+   "sha256": "fe855a025f376360bcc51d05267d2016ec9b61a94c1a269d16286e3bf32f86e3",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S010_20181123T161441.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S010_20181123T161441.mat, read with HTTP range requests)",
+   "bytes": 466,
+   "sha256": "343023ea85e1c1331f5d75ddb55f2280bf91c19239f242ac60fb7a17eecde70f",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S011_20181123T171630.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S011_20181123T171630.mat, read with HTTP range requests)",
+   "bytes": 459,
+   "sha256": "d17253900ad9d9ca2abc8eaf350d82640a97dbb08f9bf70fa782215c861707a8",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S012_20181212T140859.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S012_20181212T140859.mat, read with HTTP range requests)",
+   "bytes": 463,
+   "sha256": "7b785ed8aba81fe83c01e04a87e6dd114e40137be1f58bbed1eaeb4d13b4d9d8",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S013_20181212T151046.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S013_20181212T151046.mat, read with HTTP range requests)",
+   "bytes": 469,
+   "sha256": "a633b88fc4bc70b729869a3908f4f27cb0d5d2791178d335a7a37a02b47a1881",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S014_20181212T160244.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S014_20181212T160244.mat, read with HTTP range requests)",
+   "bytes": 487,
+   "sha256": "af044f38393fe005862a10304f2864d3f37f2b450ffb3b3187f894f5a8e0a1bb",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S015_20181213T132856.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S015_20181213T132856.mat, read with HTTP range requests)",
+   "bytes": 475,
+   "sha256": "b410bf18eb4a7f83360085259733c64c29b7d51862883ec0ec2a32ad5bdae892",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S016_20181213T141733.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S016_20181213T141733.mat, read with HTTP range requests)",
+   "bytes": 467,
+   "sha256": "a10e24f30a17a4331d0abba6f91c2ea5ae78d1f23f8e6bd312bcccd17353d415",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S017_20181214T125950.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S017_20181214T125950.mat, read with HTTP range requests)",
+   "bytes": 471,
+   "sha256": "091bf243efc053c22abd3fc856c885ace88cb77372d0f05af5ef7728f7cf0e4d",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S018_20181214T145411.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S018_20181214T145411.mat, read with HTTP range requests)",
+   "bytes": 469,
+   "sha256": "ca825a790979cd421c632d657d93a03b3b371ffa6ef4117317569ca2d618e37f",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S019_20181218T150508.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S019_20181218T150508.mat, read with HTTP range requests)",
+   "bytes": 470,
+   "sha256": "99149da81aae090cc6f8567095300d700441352aad921ad8ea8d46ee46c08fde",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S020_20181219T141041.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S020_20181219T141041.mat, read with HTTP range requests)",
+   "bytes": 469,
+   "sha256": "2e3eeb7b438b76c7a8748e57c9e85526d656e6833e9c442b71dbecbb6ca49bef",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_01__DataExp01__S021_20181219T150314.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_01/DataExp01/S021_20181219T150314.mat, read with HTTP range requests)",
+   "bytes": 467,
+   "sha256": "4a09aab894752e7e82d9c48e187993147610e3587698959eac1e4a303d68dd64",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S001_20190409T130231.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S001_20190409T130231.mat, read with HTTP range requests)",
+   "bytes": 490,
+   "sha256": "c6689807f903f2c211221f1a3ce91de18aba59f639ee46680a164eb79b1f4593",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S002_20190409T170844.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S002_20190409T170844.mat, read with HTTP range requests)",
+   "bytes": 483,
+   "sha256": "c16f34c5363ef1c5af673492d17ef00f533e4a2b2570d7e829ad678cd539bb1b",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S003_20190410T130618.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S003_20190410T130618.mat, read with HTTP range requests)",
+   "bytes": 486,
+   "sha256": "dc9205c2fd56018db8e8d1e66f08f22ddfb4ad58f919e975c67dfdccb29ad4c9",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S004_20190410T173559.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S004_20190410T173559.mat, read with HTTP range requests)",
+   "bytes": 488,
+   "sha256": "a5febab2393213fb34f8b5d16fdce2a88db99e5732b0a8ccd8c6a658d58b8739",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S005_20190416T100137.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S005_20190416T100137.mat, read with HTTP range requests)",
+   "bytes": 484,
+   "sha256": "44e7e525b9ba56e047877e31795e2d9b4fcb429f03f6b35d190c4df161c36b60",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S006_20190416T140114.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S006_20190416T140114.mat, read with HTTP range requests)",
+   "bytes": 487,
+   "sha256": "8091a7a8dfcd4c2661c77100917f4bf712c285e4e6fd5de2300f52004fb736b1",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S007_20190417T132947.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S007_20190417T132947.mat, read with HTTP range requests)",
+   "bytes": 486,
+   "sha256": "35837ead9b60566ca9fb4ceabe7f15b3c8ae1d3695eaf3401094b06c8373c2c0",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S008_20190418T130026.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S008_20190418T130026.mat, read with HTTP range requests)",
+   "bytes": 483,
+   "sha256": "ae319d59a7461a9e16da7f0571e94ee9b08bb1d99afd0d5705003c8412f4e827",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S009_20190418T152923.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S009_20190418T152923.mat, read with HTTP range requests)",
+   "bytes": 484,
+   "sha256": "9d51d551ac95b837e983d1d3506ab0c65b0567219b2d9f26e02742d9becd66ea",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S010_20190423T125900.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S010_20190423T125900.mat, read with HTTP range requests)",
+   "bytes": 480,
+   "sha256": "a0bb1bdbdc007dd887f4b1dfa31aeb09a65b2093df28e12eb2758058140b5f2a",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S011_20190423T142933.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S011_20190423T142933.mat, read with HTTP range requests)",
+   "bytes": 488,
+   "sha256": "d36a8b345a9e4857a8896c600d592636b8b632016f43a05529c9c8fe279bd6ab",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S012_20190425T130144.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S012_20190425T130144.mat, read with HTTP range requests)",
+   "bytes": 488,
+   "sha256": "87736333e6880d31c81c0d2862f09f899dc69b1da0d86cd57299a3133b52e2f6",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S013_20190425T152842.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S013_20190425T152842.mat, read with HTTP range requests)",
+   "bytes": 487,
+   "sha256": "2af007f2e594b45fa2df18155523741e0077c027e5961487759614da137ba063",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S014_20190426T143242.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S014_20190426T143242.mat, read with HTTP range requests)",
+   "bytes": 483,
+   "sha256": "c5174094b1be31c30092186325699d24843ee61989611f1e7ad34828f9664124",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S015_20190429T105838.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S015_20190429T105838.mat, read with HTTP range requests)",
+   "bytes": 482,
+   "sha256": "64e158de8c7d06932bf212a79e07ed8735d958413d0b73bcb569a3548c2cb1ca",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S016_20190429T120129.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S016_20190429T120129.mat, read with HTTP range requests)",
+   "bytes": 482,
+   "sha256": "9539e2e0adfa86406441ed4c9415be33a0f6a1cc21307cf83a8a7ca9cab2b2d3",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S017_20190429T132542.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S017_20190429T132542.mat, read with HTTP range requests)",
+   "bytes": 485,
+   "sha256": "eacd97b980d7d8eeaa65f3186b71aae63dae82b35f4356c4182103eafeb30a0e",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S018_20190429T142914.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S018_20190429T142914.mat, read with HTTP range requests)",
+   "bytes": 484,
+   "sha256": "51c76c7ce78dacb74c8ddaf9ef0845770d287d8ec1c2b545bd5380357a66c766",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S019_20190429T155442.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S019_20190429T155442.mat, read with HTTP range requests)",
+   "bytes": 479,
+   "sha256": "3324b7f3dc9d72d6b02b38be738c699aefe9423b96712fab314c51916a230aab",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S020_20190430T130031.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S020_20190430T130031.mat, read with HTTP range requests)",
+   "bytes": 484,
+   "sha256": "62b252c538fb420d13872ff7fb961187f5d9edd1439a72db9835d18b70f6c5c2",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S021_20190430T150034.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S021_20190430T150034.mat, read with HTTP range requests)",
+   "bytes": 485,
+   "sha256": "a3d50d603345c65892e9aaa0e6bf3b4f0a26aab9ad340b93650ddb14256e7143",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S022_20190430T163020.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S022_20190430T163020.mat, read with HTTP range requests)",
+   "bytes": 485,
+   "sha256": "5a8ed798850cab2c6d058452f61b898ef50d7d0421e481f724a429c528357375",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S023_20190502T102949.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S023_20190502T102949.mat, read with HTTP range requests)",
+   "bytes": 483,
+   "sha256": "d7f45730814b318a0ad7f2ba6bd2bad3c940ca01b15eb54d5371525e9f0b5af7",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S024_20190502T140031.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S024_20190502T140031.mat, read with HTTP range requests)",
+   "bytes": 485,
+   "sha256": "0427817c0052578c61b35f56ea891f4f0a7003282dea8030ae90af123f69cc67",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02a__DataExp02a__S025_20190502T151859.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02a/DataExp02a/S025_20190502T151859.mat, read with HTTP range requests)",
+   "bytes": 486,
+   "sha256": "40346ac5097ac2471c3073b15c01150275dee6533e1e4680170791c5a3e06569",
+   "fetched_utc": "2026-11-09T09:08:54Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S001_20190409T133347.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S001_20190409T133347.mat, read with HTTP range requests)",
+   "bytes": 530,
+   "sha256": "3ce09652bf8975a663182559b542c05727df7a7355e6b38a57b9113e4b1d7cc2",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S002_20190409T173228.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S002_20190409T173228.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "6b637c82869124dcbbdafa219fedca55aa2838f64daa5fa7c52b23335ca1045c",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S003_20190410T133115.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S003_20190410T133115.mat, read with HTTP range requests)",
+   "bytes": 526,
+   "sha256": "18c515c93d7bd9cbb7bc0e230861624257d2ca913977e1592c0899436ffb165f",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S004_20190416T130353.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S004_20190416T130353.mat, read with HTTP range requests)",
+   "bytes": 534,
+   "sha256": "8284800a91c85c4d25d0e8b6777b3d733015fbb7c2ba7778a42bc568ecf8aa9b",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S005_20190416T133319.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S005_20190416T133319.mat, read with HTTP range requests)",
+   "bytes": 527,
+   "sha256": "f86c34a62c2a8085baef03d9a264bdf5c76ad23ee526fc4f3bf19835d2a02106",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S006_20190416T152133.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S006_20190416T152133.mat, read with HTTP range requests)",
+   "bytes": 531,
+   "sha256": "d66ef317bc1a5875608b7938740982a1e2d416d09b1f80005fccd61954be41bd",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S007_20190418T103038.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S007_20190418T103038.mat, read with HTTP range requests)",
+   "bytes": 527,
+   "sha256": "427ccf984f72e773dd93b942e969e5bae0e488982b356b5cb2b21a022943ed8d",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S008_20190418T140240.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S008_20190418T140240.mat, read with HTTP range requests)",
+   "bytes": 531,
+   "sha256": "2e8534304764813e9c95ccdaf37e342ccb0e20621180fda7c3f948dfc205a03a",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S009_20190418T162932.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S009_20190418T162932.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "f9c9620aa8606aa41fb7608116489bfa162bbab446ea7a527880650f47a45895",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S010_20190423T132423.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S010_20190423T132423.mat, read with HTTP range requests)",
+   "bytes": 527,
+   "sha256": "45fac080e6ecc275d2d6fc301d9fae38951ac0e13bb6e0ac942b7eeb9492a3b1",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S011_20190423T154243.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S011_20190423T154243.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "bd45cab27161ca322f925cace72814d033df30f06ee085ae7602795328b5ea66",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S012_20190425T135906.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S012_20190425T135906.mat, read with HTTP range requests)",
+   "bytes": 532,
+   "sha256": "63114e93e60fa6a8809489821c72a97c68fe3b04f5c83c27536618da719ee82f",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S013_20190425T155242.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S013_20190425T155242.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "36d789e7ad511bc5fe108c3c20cf99269a0564aa84fbab54281fa547fb33834a",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S014_20190429T103112.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S014_20190429T103112.mat, read with HTTP range requests)",
+   "bytes": 522,
+   "sha256": "1bb7e6ed18fcb749c348f3482e31a5e0a150f3d85a16093d31259f1413f8aa31",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S015_20190429T113442.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S015_20190429T113442.mat, read with HTTP range requests)",
+   "bytes": 528,
+   "sha256": "5d4cfeb7cb63c027326b3d67f31d6ea23c123a83e9822cb127d247683a69c0a3",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S016_20190429T130020.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S016_20190429T130020.mat, read with HTTP range requests)",
+   "bytes": 531,
+   "sha256": "1c6df2fa717b6daddeffbb50e9c19bee6a696c927de36b6446aa7e090443037b",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S017_20190429T140123.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S017_20190429T140123.mat, read with HTTP range requests)",
+   "bytes": 533,
+   "sha256": "4b7b38a50f5f8248fc85219090b2620d549c99b42605dfaf64c2419e943ba40b",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S018_20190429T153029.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S018_20190429T153029.mat, read with HTTP range requests)",
+   "bytes": 531,
+   "sha256": "60f9b894a13ee5d81c5bba4902456e9b1b88d300e3d9c607086e60e93a3b3a3e",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S019_20190430T100852.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S019_20190430T100852.mat, read with HTTP range requests)",
+   "bytes": 528,
+   "sha256": "d2953824fc9faaf13aca852847180c6dfe8a151b4bfe207d897af5157655aa1b",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S020_20190430T141031.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S020_20190430T141031.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "050846ffab7d396700284dbc6c1f9dbbbff2e62532138f1df3ae858cc8bbb9a7",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S021_20190430T160233.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S021_20190430T160233.mat, read with HTTP range requests)",
+   "bytes": 528,
+   "sha256": "9a3ccf2839422df7fe7f0db3da204db22bd58eaf1515726307058e557ff67510",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S022_20190502T100156.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S022_20190502T100156.mat, read with HTTP range requests)",
+   "bytes": 528,
+   "sha256": "ff3dc6c770cb3fde9bd7936ff91932b91688b41759c5aa415f6afaabc7866c89",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S023_20190502T130317.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S023_20190502T130317.mat, read with HTTP range requests)",
+   "bytes": 529,
+   "sha256": "9875556a05e8d0d8594fe868ef1696e2d5d3c2243ba86950b678dc7da558f825",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S024_20190502T142841.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S024_20190502T142841.mat, read with HTTP range requests)",
+   "bytes": 530,
+   "sha256": "b77a79b5518315574c093004713357170180dc4264f15f3bd041c42f6d6bc8c2",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "Experiment_02b__DataExp02b__S025_20190502T160300.mat",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Experiment_02b/DataExp02b/S025_20190502T160300.mat, read with HTTP range requests)",
+   "bytes": 530,
+   "sha256": "6ad2814eaf9031b762964b887ad13ec64627ac3012c3491adbe8c6a8e781b254",
+   "fetched_utc": "2026-11-09T09:08:56Z"
+  },
+  {
+   "file": "ReadMe.txt",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/ReadMe.txt, read with HTTP range requests)",
+   "bytes": 2224,
+   "sha256": "bb4b38f953c7f7e641932bacb1ecc08ea99b5a14a7eb573b7dd635843e77f5a5",
+   "fetched_utc": "2026-11-09T09:08:58Z"
+  },
+  {
+   "file": "Results__Stats_Results.txt",
+   "url": "https://zenodo.org/api/records/4382477/files/Data_and_Analyses.zip/content  (member Data_and_Analyses/Results/Stats_Results.txt, read with HTTP range requests)",
+   "bytes": 1376,
+   "sha256": "7c4df72aeb7deff0c37d0ed5aecfd85506b612f09033e3f7c0e5ffb125a03727",
+   "fetched_utc": "2026-11-09T09:08:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Maiello2021_FrontNeurosci.zip"
+}

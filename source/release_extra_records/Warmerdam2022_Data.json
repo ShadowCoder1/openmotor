@@ -1,0 +1,80 @@
+{
+ "id": "Warmerdam2022_Data",
+ "module": "walking",
+ "rows": 105,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 10755,
+ "zip_sha256": "1445adcba1d01859637b849bae2c010ae2409126f542d1e63fe00f0bfc5f07b7",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "healthy participants whose data are shared online",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Abstract (the data of 21 healthy subjects are shared online)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "timed 5 m walks per participant",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Labels sheet of the deposit (speed_5m_hallway: the five 5 m over ground walking trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "timed walks in all",
+   "computed": 105.0,
+   "reported": 105.0,
+   "tol": 0,
+   "source": "Abstract and Labels sheet: 21 participants x five 5 m walks",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the deposit's mean column equals the mean of the five times",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all walk times are between 2 and 6 s (5 m, so 0.8-2.5 m/s)",
+   "ok": true,
+   "detail": "2.70 to 4.85"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing walk times",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "21 participants in the rows",
+   "ok": true,
+   "detail": "13 men, 8 women"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Only 21 healthy participants are in the deposit (the paper's 167 participants include patients whose data are available on request under a data sharing agreement).",
+  "The deposit's seven RAR parts (full-body IMU and optical motion capture, about 15 GB) are not converted; only the demographics and clinical test file, whose five timed 5 m walks per participant are the only per-trial values outside the RAR parts, is.",
+  "The columns are called speed_5m_hallway_1 to _5 in the Excel file but the Labels sheet defines them as times in seconds of five 5 m over-ground walks; values of 2.70 to 4.85 are consistent with seconds (1.0 to 1.9 m/s over 5 m), so they are carried as times (walk_time_s), not as speeds.",
+  "The paper itself could not be read (the publisher blocks automated access and it is not in Europe PMC), so only numbers in its abstract (via Crossref) and the deposit's Labels sheet are used as checks.",
+  "The Excel file's other columns (questionnaires and cognitive tests, mostly zero or empty for these healthy participants) are not carried; the participants table keeps a few."
+ ],
+ "sources": [
+  {
+   "file": "demographics_scores_extern.xlsx",
+   "url": "https://ndownloader.figshare.com/files/37208827",
+   "bytes": 37690,
+   "sha256": "25d3f516069936c3a409ca8439c464a1180b0d0c034af5493a8e89f354a4e27f",
+   "fetched_utc": "2026-11-09T12:35:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Warmerdam2022_Data.zip"
+}

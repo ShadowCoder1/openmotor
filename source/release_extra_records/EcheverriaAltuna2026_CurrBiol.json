@@ -1,0 +1,211 @@
+{
+ "id": "EcheverriaAltuna2026_CurrBiol",
+ "module": "retrocue_hand",
+ "rows": 7680,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 205853,
+ "zip_sha256": "09edc8330d04db0bec7271cbf94e0a4950036f41714ec73c7fe1323c556bf1b2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "7680 rows = 40 participants x 4 blocks x 48 trials, rows of a participant contiguous",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 HC and 20 PWS; delay2_time 1 <-> short and 3 <-> long; wm_TargDev = target tilt minus reported tilt; error = |wm_TargDev| on correct-hand trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "wrongHand = 1 - correctResp; 20 trials have no key press (wm_respKey 0, wm_DT 0), all among the 30 noResp trials (response trigger 20); the other 10 noResp trials have a late key press (2.1-2.9 s) and a report",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in order; 488 rows flagged as the authors' bad trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), PWS, inf cue, short delay",
+   "computed": 665.9325124557612,
+   "reported": 665.9325,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), PWS, noninf cue, short delay",
+   "computed": 778.7088940018315,
+   "reported": 778.7089,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), PWS, inf cue, long delay",
+   "computed": 527.9008644759464,
+   "reported": 527.9009,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), PWS, noninf cue, long delay",
+   "computed": 678.6792791167167,
+   "reported": 678.6793,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), TFS, inf cue, short delay",
+   "computed": 640.0050546789572,
+   "reported": 640.0051,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), TFS, noninf cue, short delay",
+   "computed": 829.5200483058609,
+   "reported": 829.52,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), TFS, inf cue, long delay",
+   "computed": 538.388439194403,
+   "reported": 538.3884,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT (ms), TFS, noninf cue, long delay",
+   "computed": 734.9829404761905,
+   "reported": 734.9829,
+   "tol": 0.001,
+   "source": "Supplementary Table 2 (OSF 00_behaviour output of the authors' script)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), PWS, inf cue, short delay",
+   "computed": 12.108941875155505,
+   "reported": 12.10894,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), PWS, noninf cue, short delay",
+   "computed": 12.550801282051282,
+   "reported": 12.5508,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), PWS, inf cue, long delay",
+   "computed": 13.56889206303148,
+   "reported": 13.56889,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), PWS, noninf cue, long delay",
+   "computed": 13.402815725940723,
+   "reported": 13.40282,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), TFS, inf cue, short delay",
+   "computed": 10.408368816843414,
+   "reported": 10.40837,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), TFS, noninf cue, short delay",
+   "computed": 10.106023351648352,
+   "reported": 10.10602,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), TFS, inf cue, long delay",
+   "computed": 11.323069417744474,
+   "reported": 11.32307,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean report error (deg), TFS, noninf cue, long delay",
+   "computed": 11.935416666666665,
+   "reported": 11.93542,
+   "tol": 0.0001,
+   "source": "Supplementary Table 4 (OSF 00_behaviour output)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who stutter",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract (twenty adults who stutter)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically fluent participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Abstract (twenty typically fluent speakers)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit and its analysis notebooks contain no statement about participant consent limits; none are recorded in the files."
+ ],
+ "sources": [
+  {
+   "file": "behav_data.csv",
+   "url": "https://osf.io/download/69b4594a16213074bfdc7fb3/",
+   "bytes": 2591146,
+   "sha256": "b68d120f448532f3c84bd90363bb68584b4c9a4f96ed0e4a6b66b45617d2f497",
+   "fetched_utc": "2026-11-09T05:35:35Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/EcheverriaAltuna2026_CurrBiol.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Wagner2016_JNeurosci",
+ "skipped": true,
+ "reason": "license does not allow a converted copy",
+ "details": "dataset_description.json (OpenNeuro ds001971 v1.1.1) says only \"Creative commons\" with no variant, so it is unclear whether derivatives or reuse are allowed; the full deposit is also 34 GB (only events.tsv would be needed). Retry if the authors confirm CC-BY or CC0.",
+ "sources": []
+}

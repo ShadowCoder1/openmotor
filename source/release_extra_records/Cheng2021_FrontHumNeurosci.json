@@ -1,0 +1,156 @@
+{
+ "id": "Cheng2021_FrontHumNeurosci",
+ "module": "speech",
+ "rows": 3313,
+ "subjects": 74,
+ "persons": 37,
+ "zip_bytes": 414575,
+ "zip_sha256": "f093954b45a6e0a87591761bdfae8fb392c50427756798fa778247bed93e3e37",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "both vowels come from the same 37 participants",
+   "ok": true,
+   "detail": "37 / 37"
+  },
+  {
+   "kind": "internal",
+   "what": "every row is a baseline-probe production (stage Pre)",
+   "ok": true,
+   "detail": "<ArrowStringArray>\n['Pre']\nLength: 1, dtype: str"
+  },
+  {
+   "kind": "internal",
+   "what": "trialdists = inidists - middists on every row (the authors' centering)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "at most 45 productions per participant and word",
+   "ok": true,
+   "detail": "max 45"
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values in the formant, distance and centering columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "formants within mel ranges for /e/ and /ae/ (F1 400-1200, F2 1000-2000)",
+   "ok": true,
+   "detail": "F1 532-1093, F2 1132-1743"
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation-task table holds only participants of the main table; the acuity table has 43 participants, 6 with no production data",
+   "ok": true,
+   "detail": "7568 / 172 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "adaptation-task table: 37 participants, stages Pre, Intro, Ramp, Hold, Post",
+   "ok": true,
+   "detail": "7568"
+  },
+  {
+   "kind": "published",
+   "what": "participants with baseline-probe productions",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek, Buchwald & McAllister 2021, Front Hum Neurosci, Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/e/ ('head') tokens removed by the authors (45 x 37 minus rows shared)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek, Buchwald & McAllister 2021, Front Hum Neurosci, Methods, Formant Tracking",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/ae/ ('had') tokens removed by the authors (45 x 37 minus rows shared)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Cheng, Niziolek, Buchwald & McAllister 2021, Front Hum Neurosci, Methods, Formant Tracking",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's Table 1 (n = 31) leaves out participants flagged as outliers on several measures; the shared tables hold all 37 participants, so the centering ratio and the other Table 1 values were not recomputed here (the token and participant counts of the Methods were)."
+ ],
+ "sources": [
+  {
+   "file": "VAP_production.csv",
+   "url": "https://osf.io/download/g4vm7/",
+   "bytes": 1421560,
+   "sha256": "cc2b5e0fddee2f6591775e4b2a75e22d77cdc79ff6974a4acf739bbcf1fb3e62",
+   "fetched_utc": "2026-11-08T19:48:10Z"
+  },
+  {
+   "file": "VAP_acuity_results_all.csv",
+   "url": "https://osf.io/download/rgya8/",
+   "bytes": 6706,
+   "sha256": "e77739c8da6fe7a596b4145315bb52dd5e4f7ab821f1f1ad10659f8d437431d6",
+   "fetched_utc": "2026-11-08T19:48:13Z"
+  },
+  {
+   "file": "stat_analysis.Rmd",
+   "url": "https://osf.io/download/s96zk/",
+   "bytes": 17032,
+   "sha256": "0c286db90bc5d51a4a02bd625a54c49fa9288fbc1b2eb85cebd251f1d75fc6dc",
+   "fetched_utc": "2026-11-08T19:48:26Z"
+  },
+  {
+   "file": "centering_table_all_data_ae_11.csv",
+   "url": "https://osf.io/download/jk5bt/",
+   "bytes": 22473,
+   "sha256": "04f86ec178ef8c151abf89abb8820813ff69da0c464ec3bc4aac21ebbe039d7a",
+   "fetched_utc": "2026-11-08T19:49:33Z"
+  },
+  {
+   "file": "centering_table_all_data_ae_10.csv",
+   "url": "https://osf.io/download/xe6zp/",
+   "bytes": 68789,
+   "sha256": "22dc76bcbba0a81cc4bcc3f4598b8af625c4dc1c0aa4e685a1caf29f0ea150bf",
+   "fetched_utc": "2026-11-08T19:49:35Z"
+  },
+  {
+   "file": "centering_table_all_data_eh_9.csv",
+   "url": "https://osf.io/download/52tru/",
+   "bytes": 228173,
+   "sha256": "1a0460b502a32f63c43cdf789f819ac8f0d91f5643310c6d2794b1e348f3005c",
+   "fetched_utc": "2026-11-08T19:49:37Z"
+  },
+  {
+   "file": "centering_table_all_data_eh_10.csv",
+   "url": "https://osf.io/download/jvz5w/",
+   "bytes": 53335,
+   "sha256": "b5057dd04933b0cef68b244fc807442f93d40c5377e5f488fdc8025ccc4bd5ce",
+   "fetched_utc": "2026-11-08T19:49:40Z"
+  },
+  {
+   "file": "centering_table_all_data_ae_9.csv",
+   "url": "https://osf.io/download/s7xdj/",
+   "bytes": 181876,
+   "sha256": "1fe8d07b8e80917cb540ee8bbc5763281376f74c1c87d42769bf69fc147f9cba",
+   "fetched_utc": "2026-11-08T19:49:42Z"
+  },
+  {
+   "file": "centering_table_all_data_ae_12.csv",
+   "url": "https://osf.io/download/nfqzr/",
+   "bytes": 7734,
+   "sha256": "c1b9f73901d7b747c9b7d62255f662e39420eaf79af3965409c5e0b0022d1fa4",
+   "fetched_utc": "2026-11-08T19:49:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng2021_FrontHumNeurosci.zip"
+}

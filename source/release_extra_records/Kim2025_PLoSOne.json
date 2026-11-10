@@ -1,0 +1,225 @@
+{
+ "id": "Kim2025_PLoSOne",
+ "module": "walking",
+ "rows": 9978,
+ "subjects": 35,
+ "persons": 35,
+ "zip_bytes": 239892,
+ "zip_sha256": "0682206400e1df50e7cc0c062c5057528e056a191a7a3b137e6ed1819104f698",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all rows of the four tables kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "35 participants in the data tables and the demographics",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "baseline bout has at most 32 obstacles per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "obstacle heights are 0.05 or 0.18 m",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "clearance = foot height minus obstacle height (signed) in the baseline, catch and retention tables",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "clearance = absolute value of that difference in the practice-bout table",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (37 recruited, 2 controls excluded)",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "obstacle heights (low, m)",
+   "computed": 0.05,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Methods (Setup)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "obstacle heights (high, m)",
+   "computed": 0.18,
+   "reported": 0.18,
+   "tol": 0.005,
+   "source": "Methods (Setup)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD age, mean",
+   "computed": 64.66666666666667,
+   "reported": 65.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD age, SD",
+   "computed": 10.209705932988237,
+   "reported": 10.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD men",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD women",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD treadmill speed, mean",
+   "computed": 0.9966666666666666,
+   "reported": 1.0,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD treadmill speed, SD",
+   "computed": 0.24088131833707965,
+   "reported": 0.24,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD overground speed, mean",
+   "computed": 1.3466666666666671,
+   "reported": 1.35,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD Mini-BESTest, mean",
+   "computed": 23.6,
+   "reported": 24.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD MDS-UPDRS III, mean",
+   "computed": 19.666666666666668,
+   "reported": 20.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD MDS-UPDRS III, SD",
+   "computed": 8.243323416704028,
+   "reported": 8.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD LED, mean (mg)",
+   "computed": 519.7333333333333,
+   "reported": 520.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD LED, SD (mg)",
+   "computed": 376.6207768084622,
+   "reported": 377.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD Hoehn and Yahr stage 1",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PD Hoehn and Yahr stage 2",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "In the practice-bout table (LL_Table) the authors' clearance is the absolute value of foot height minus obstacle height (157 rows where the foot was lower than the top of the obstacle show a positive number), whereas in the baseline, catch and retention tables it is signed (negative when lower). foot_clearance_m is the authors' value as shared in each table, so signs are not comparable across them.",
+  "Retention_table of 18 control participants lists the first 32 obstacles of the retention test twice (identical obstacle positions and foot heights; the repeat has error 1.0 in the authors' error column, while their undocumented second error column error.1 holds the real value). Both listings are kept; performance_error_alt_m holds error.1. Treat the repeats (the second 32 rows with block 1 and trial numbers 1-32 again) as duplicates in analysis.",
+  "Table 1 of the paper gives the control group for 22 participants; the deposit's 20 analysed controls are not comparable to it, so control demographics are not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "OSF.zip",
+   "url": "https://osf.io/download/4pkzy/",
+   "bytes": 714518,
+   "sha256": "d4fb119401acf8138b3aaf16226235400b8a3677b763701847ee54973c7fe284",
+   "fetched_utc": "2026-11-09T12:45:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kim2025_PLoSOne.zip"
+}

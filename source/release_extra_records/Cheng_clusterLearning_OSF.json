@@ -1,0 +1,207 @@
+{
+ "id": "Cheng_clusterLearning_OSF",
+ "module": "speech",
+ "rows": 92475,
+ "subjects": 120,
+ "persons": 120,
+ "zip_bytes": 1630120,
+ "zip_sha256": "f5a6f018784a6bb425084e59b97297d7dfcb9d98d03e239a7089f75ced5ecd8f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Method, Participants (120 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target clusters",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Method, Stimuli (eight word-initial clusters in five classes)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cluster accuracy items at R1 (authors' sample)",
+   "computed": 22567.0,
+   "reported": 22567.0,
+   "tol": 0,
+   "source": "Results, cluster accuracy (items per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cluster accuracy items at R2 (authors' sample)",
+   "computed": 22516.0,
+   "reported": 22516.0,
+   "tol": 0,
+   "source": "Results, cluster accuracy (items per session)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of pt at Q1 (ms)",
+   "computed": 109.51157024793388,
+   "reported": 110.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of pt at R1 (ms)",
+   "computed": 106.49578780680918,
+   "reported": 106.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of pt at R2 (ms)",
+   "computed": 104.30808,
+   "reported": 104.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of gd at Q1 (ms)",
+   "computed": 120.33317757009345,
+   "reported": 120.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of gd at R1 (ms)",
+   "computed": 118.11977834612105,
+   "reported": 118.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean burst-to-burst duration of gd at R2 (ms)",
+   "computed": 116.54213863060018,
+   "reported": 117.0,
+   "tol": 0.5,
+   "source": "Results, burst-to-burst duration (Figure 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fm at Q1 (ms)",
+   "computed": 74.155130691875,
+   "reported": 74.2,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fm at R1 (ms)",
+   "computed": 72.89511958083793,
+   "reported": 72.9,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fm at R2 (ms)",
+   "computed": 72.86289675202191,
+   "reported": 72.9,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fn at Q1 (ms)",
+   "computed": 66.24742402462857,
+   "reported": 66.2,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fn at R1 (ms)",
+   "computed": 63.05002508292036,
+   "reported": 63.1,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean nasal duration in fn at R2 (ms)",
+   "computed": 63.150870758820986,
+   "reported": 63.2,
+   "tol": 0.05,
+   "source": "Results, nasal duration (Figure 3)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows = rows of the master sheet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one stimulation group per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "20 participants in each of the six updown/timing cells",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "authors' sample (63,665 rows of 120 participants, after dropping 2 rows with a missing cluster code)",
+   "ok": true,
+   "detail": "63665 rows kept"
+  },
+  {
+   "kind": "internal",
+   "what": "R1 and R2 are the only retention blocks",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper gives 3,644 cluster-accuracy items for Q1; applying the authors' code to the shared sheet gives 3664 (the R1 and R2 counts, 22,567 and 22,516, match exactly), so the printed figure may be a typing slip.",
+  "The paper's mixed-model coefficients were not refitted. The sheet's OSF project had no paper listed; the paper was identified from the project title, the authors and the data link in its Method."
+ ],
+ "sources": [
+  {
+   "file": "mastermastersheet_all_2022_0524.csv",
+   "url": "https://osf.io/download/kwp9h/",
+   "bytes": 9395722,
+   "sha256": "a71ed407277022863d528edfe07dd9a9a1fc9ee8c91d4024af1ab03077648b7e",
+   "fetched_utc": "2026-11-08T21:31:28Z"
+  },
+  {
+   "file": "cluster_learning_2022_0914.Rmd",
+   "url": "https://osf.io/download/29av3/",
+   "bytes": 33948,
+   "sha256": "7285cba1439f8adc3181a680b3b8ce7d8ebdeb102a27eeb456e02de660d78e2e",
+   "fetched_utc": "2026-11-08T21:31:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Cheng_clusterLearning_OSF.zip"
+}

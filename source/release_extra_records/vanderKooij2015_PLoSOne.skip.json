@@ -1,0 +1,7 @@
+{
+ "id": "vanderKooij2015_PLoSOne",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Dryad 10.5061/dryad.sm925 (CC0; read from its Zenodo copy 4941117). Output files have 13 numeric columns under a 10-name header, and the readme column order (eyes in columns 4-9, Euler angles 7-9) contradicts the values (columns 4-6 are small angles, 7-12 the two eyes). Hand coordinates (hand at about y=-300 to -600) and target coordinates in the input files are in unreconciled frames (hand endpoints do not land near the listed targets), with no calibration documented, so a hand direction relative to the target (the paper azimuthal error) cannot be reconstructed from the deposit, paper or code.",
+ "sources": []
+}

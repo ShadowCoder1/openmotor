@@ -1,0 +1,82 @@
+{
+ "id": "Hos2022_JBiomech",
+ "module": "summary",
+ "rows": 224,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 7034,
+ "zip_sha256": "c36ffc92e9ea7f1b628a1ecc7137ae83cda7cff30b822111793ef5b16afdb96e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Abstract / Methods (fourteen healthy young adults)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "14 participants x 4 conditions x 4 measures = 224 rows, no missing value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "stride frequency, effect of LesSchuh (Hz)",
+   "computed": 0.0053731001108384925,
+   "reported": 0.004,
+   "tol": 0.002,
+   "source": "Discussion, limitations (about 0.004 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "stride frequency, effect of the split-belt treadmill (Hz)",
+   "computed": 0.004340194244618452,
+   "reported": 0.005,
+   "tol": 0.002,
+   "source": "Discussion, limitations (about 0.005 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "step width is larger with LesSchuh on both treadmills (paper: wider step width on both treadmills)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "step width increase with LesSchuh is larger on the split-belt treadmill",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "foot placement R2: lower with LesSchuh on the split-belt, higher on the normal treadmill (paper abstract)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stride frequency between 0.7 and 1.1 Hz",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit holds only summary values; the paper's test statistics (ANOVA interactions) were not recomputed. The checks use the paper's participant count and the stride frequency effects it quotes in its limitations section (about 0.004 Hz for LesSchuh and 0.005 Hz for the split-belt treadmill)."
+ ],
+ "sources": [
+  {
+   "file": "analysis_for_paper.zip",
+   "url": "https://zenodo.org/api/records/7188711/files/analysis_for_paper.zip/content",
+   "bytes": 705159716,
+   "sha256": "228b9f8702e048c55638ab46730fa1e30f4329b0807b2504825cce95d2b3c0ad",
+   "fetched_utc": "2026-11-09T01:31:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hos2022_JBiomech.zip"
+}

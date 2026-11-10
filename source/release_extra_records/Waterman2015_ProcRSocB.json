@@ -1,0 +1,89 @@
+{
+ "id": "Waterman2015_ProcRSocB",
+ "module": "summary",
+ "rows": 1232,
+ "subjects": 88,
+ "persons": 88,
+ "zip_bytes": 22627,
+ "zip_sha256": "bdd4d53644b6ac05c9065e46e33d1503c326050645b9622baf9b7cf9c507d640",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Year 2 children",
+   "computed": 33.0,
+   "reported": 33.0,
+   "tol": 0,
+   "source": "Waterman et al. 2015, Proc R Soc B 282:20140896, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Year 4 children",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Waterman et al. 2015, Proc R Soc B 282:20140896, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "females",
+   "computed": 44.0,
+   "reported": 44.0,
+   "tol": 0,
+   "source": "Waterman et al. 2015, Proc R Soc B 282:20140896, Abstract and Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "year 6 children: 28 in the file, 27 in the paper (total 88 vs 87, one extra male)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row per child and measure (88 x 14)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "OE_avg_simple equals Shape1_OE (path 1 is the only simple path)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "OE values positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no child lost: 88 persons",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 87 children (33 in Year 2, 27 in Year 4, 27 in Year 6; 44 female); the shared file has 88 rows (28 in Year 6, 44 female and 44 male), one more male in Year 6, unexplained in the deposit. Partial correlations of VMM with writing and reading (r = -0.42 and -0.32, controlling for exact age and copying OE) could not be reproduced because exact age was removed (with school year in its place the values are -0.29 and -0.26). Writing_converted is not strictly consecutive (2a=2, 2b=3, 2c=4, 3=6, 3a=5)."
+ ],
+ "sources": [
+  {
+   "file": "VMM_Writing_Reading_Waterman_et_al_Data.csv",
+   "url": "https://zenodo.org/api/records/4956602/files/VMM_Writing_Reading_Waterman_et_al_Data.csv/content",
+   "bytes": 16159,
+   "sha256": "cd0e2839af38d9bc1e4bdfb9706639f3e07b8d3fe69d11081f53a3549709185c",
+   "fetched_utc": "2026-11-09T04:28:47Z"
+  },
+  {
+   "file": "README.pdf",
+   "url": "https://zenodo.org/api/records/4956602/files/README_for_VMM_Writing_Reading_Waterman_et_al_Data.pdf/content",
+   "bytes": 62275,
+   "sha256": "ddeec110c53623cf4c1a6204792c537a7b7982d076e34bee3541dc7d47ec6585",
+   "fetched_utc": "2026-11-09T04:28:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Waterman2015_ProcRSocB.zip"
+}

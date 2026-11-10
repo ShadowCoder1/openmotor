@@ -1,0 +1,85 @@
+{
+ "id": "Isenkul2014_ICEHTM",
+ "module": "timeseries",
+ "rows": 202,
+ "subjects": 77,
+ "persons": 77,
+ "zip_bytes": 3387633,
+ "zip_sha256": "3a779c4de05a550dfadddc9dc4e7d18a2e0aa4d14f5ef947ee76de370bff40e6",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease",
+   "computed": 62.0,
+   "reported": 62.0,
+   "tol": 0,
+   "source": "UCI dataset 395 page (abstract)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "UCI dataset 395 page (abstract)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people with Parkinson's disease in the hw_dataset folder (the paper's 25 PWP, UCI dataset 358 page)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "UCI dataset 358 page, abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "healthy controls in the hw_dataset folder (UCI dataset 358 page)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "UCI dataset 358 page, abstract",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every sample of every file kept (524,743 lines)",
+   "ok": true,
+   "detail": "524743"
+  },
+  {
+   "kind": "internal",
+   "what": "77 files = 77 people, all three test ids only 0, 1, 2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pressure inside the documented 0-1023 scale",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's analysis used the first 40 people (25 with Parkinson's disease and 15 controls, the hw_dataset folder, also published as UCI dataset 358); dataset 395 adds 37 people with Parkinson's disease in new_dataset. The numbers in the paper itself could not be read (PDF not accessible), so the checks use the counts the UCI pages give for the two datasets."
+ ],
+ "sources": [
+  {
+   "file": "uci395.zip",
+   "url": "https://archive.ics.uci.edu/static/public/395/parkinson+disease+spiral+drawings+using+digitized+graphics+tablet.zip",
+   "bytes": 3641631,
+   "sha256": "4181243d64c29382a0035a9bca3ebcf446079b65c70a0b343fe7975372dc92e6",
+   "fetched_utc": "2026-11-09T04:35:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Isenkul2014_ICEHTM.zip"
+}

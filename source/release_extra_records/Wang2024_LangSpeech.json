@@ -1,0 +1,100 @@
+{
+ "id": "Wang2024_LangSpeech",
+ "module": "speech",
+ "rows": 1200,
+ "subjects": 40,
+ "persons": 40,
+ "zip_bytes": 39715,
+ "zip_sha256": "7a755fb7543371ec7053a99adfa8b85a9336dfdc4dc123c7dd9a554baf239a6b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Wang & Grigos 2024, Abstract (n = 40)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young adults (18-30 years)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Wang & Grigos 2024, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults 31-40 years",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Wang & Grigos 2024, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adults 41-50 years",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Wang & Grigos 2024, Abstract",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "1200 rows = 40 participants x 3 rates x 10 repetitions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "speaking rate column = acoustic duration / 9",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "kinematic durations in seconds and ms columns agree",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "slow rate longer than habitual longer than fast",
+   "ok": true,
+   "detail": "{'fast': 1262.0, 'habitual': 1494.0, 'slow': 4784.0}"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Where the authors wrote na for a missing lip-movement record, kinematic_duration_ms and the lip STI are empty.",
+  "The paper's duration and STI means were not recomputed (the full text was not available); checks are the participant counts."
+ ],
+ "sources": [
+  {
+   "file": "aSTI_laSTI_Corr_OSF.xlsx",
+   "url": "https://osf.io/download/sxmb7/",
+   "bytes": 18572,
+   "sha256": "04ba00e0bf50268923a1cb73b430d7e8e0119ba5a853185523269c744e4a8fd6",
+   "fetched_utc": "2026-11-09T15:23:35Z"
+  },
+  {
+   "file": "Acoustic_Kinematic_Durations_OSF.xlsx",
+   "url": "https://osf.io/download/y95zq/",
+   "bytes": 96939,
+   "sha256": "201369c6f2c91ca684f636e535f394aa09422e8bcc0085b1a65fd31bb36baa66",
+   "fetched_utc": "2026-11-09T15:23:38Z"
+  },
+  {
+   "file": "Acoustic_Kinematic_STI_OSF.xlsx",
+   "url": "https://osf.io/download/gfqjr/",
+   "bytes": 19974,
+   "sha256": "087eea73daf88e143aff300f949e2db741dfb93c90a3c991907b1b76001edc31",
+   "fetched_utc": "2026-11-09T15:23:42Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wang2024_LangSpeech.zip"
+}

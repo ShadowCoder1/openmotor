@@ -1,0 +1,189 @@
+{
+ "id": "Mirdamadi2025_JNeurosci",
+ "module": "summary",
+ "rows": 1452,
+ "subjects": 103,
+ "persons": 103,
+ "zip_bytes": 22466,
+ "zip_sha256": "2835288b5c623fbe7307ddaf71df4a83663d38522962cabd398f384be104e2f6",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Methods, Participants (N = 22)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 cue-conflict proprioceptive recalibration mean (mm)",
+   "computed": 11.128957456512099,
+   "reported": 11.1,
+   "tol": 0.05,
+   "source": "Results, Behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 veridical visual recalibration mean (mm)",
+   "computed": -1.2319076919750658,
+   "reported": -1.2,
+   "tol": 0.05,
+   "source": "Results, Behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 veridical proprioceptive recalibration mean (mm)",
+   "computed": -2.235157591960103,
+   "reported": -2.2,
+   "tol": 0.05,
+   "source": "Results, Behavior",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods, Participants (3 groups of 27)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 M1 cTBS group size",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants (N = 27 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 S1 cTBS group size",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants (N = 27 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 Sham cTBS group size",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Participants (N = 27 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 M1 visual recalibration mean (mm)",
+   "computed": 36.83094555885185,
+   "reported": 36.8,
+   "tol": 0.05,
+   "source": "Results, Experiment 2 cue conflict block",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 S1 visual recalibration mean (mm)",
+   "computed": 38.83015108259259,
+   "reported": 38.8,
+   "tol": 0.05,
+   "source": "Results, Experiment 2 cue conflict block",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 sham visual recalibration mean (mm)",
+   "computed": 32.70578420677778,
+   "reported": 32.7,
+   "tol": 0.05,
+   "source": "Results, Experiment 2 cue conflict block",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 sham proprioceptive recalibration mean (mm)",
+   "computed": 9.580562804148148,
+   "reported": 9.6,
+   "tol": 0.05,
+   "source": "Results, Experiment 2 cue conflict block",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 M1 pre-cTBS proprioceptive variance (mm^2)",
+   "computed": 56.133981139900534,
+   "reported": 56.1,
+   "tol": 0.05,
+   "source": "Results, Veridical blocks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 S1 pre-cTBS proprioceptive variance (mm^2)",
+   "computed": 53.839027659112936,
+   "reported": 53.8,
+   "tol": 0.05,
+   "source": "Results, Veridical blocks",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 sham pre-cTBS proprioceptive variance (mm^2)",
+   "computed": 60.510599309123414,
+   "reported": 60.5,
+   "tol": 0.05,
+   "source": "Results, Veridical blocks",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 total = visual + proprioceptive within 0.01 mm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 2 sessions per person",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper prints S1 and M1 proprioceptive recalibration as 'cm'; the values match millimetres from the file and are treated as mm.",
+  "The paper's Experiment 1 cue-conflict visual recalibration (34.7 mm) is 34.650 mm from the file, which rounds to 34.6; not used as a check.",
+  "Ratings of sleep, attention, fatigue and pain have no stated scale in the deposit. Age and sex are not in the deposit (paper: Experiment 1 mean age 21.6 yr, 12 men; Experiment 2 38 men).",
+  "The Group-to-site mapping and R/S meanings are inferred as described above; the video example in the deposit is not carried over."
+ ],
+ "sources": [
+  {
+   "file": "TT1_data.xlsx",
+   "url": "https://osf.io/download/6781965dcb47cc9e6642882d/",
+   "bytes": 32698,
+   "sha256": "8037e7337d61b40ddd40be9534db5a3cdf6808e321edaea0865a1272830c8ed8",
+   "fetched_utc": "2026-11-09T15:09:15Z"
+  },
+  {
+   "file": "SAI_Data.xlsx",
+   "url": "https://osf.io/download/2bhjc/",
+   "bytes": 24802,
+   "sha256": "1f16ccdcc012761a26d841b3d2937e0e9885344a52f24fd340711395d27e23b1",
+   "fetched_utc": "2026-11-09T15:09:19Z"
+  },
+  {
+   "file": "SAI_Analysis.R",
+   "url": "https://osf.io/download/ymp4g/",
+   "bytes": 3402,
+   "sha256": "5ff945c19843b9a10d15c21b657fb83105113a26fb8bba1b43b852b0ae6d8107",
+   "fetched_utc": "2026-11-09T15:09:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mirdamadi2025_JNeurosci.zip"
+}

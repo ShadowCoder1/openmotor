@@ -1,0 +1,128 @@
+{
+ "id": "Santos2016_PeerJ",
+ "module": "timeseries",
+ "rows": 1930,
+ "subjects": 163,
+ "persons": 163,
+ "zip_bytes": 427644665,
+ "zip_sha256": "2c83e5af10aef83fa1ddb2566f20c5bb17f1c992aaad6cd42112c83d24b9a458",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 163.0,
+   "reported": 163.0,
+   "tol": 0,
+   "source": "Abstract / Data description (163 subjects)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 116.0,
+   "reported": 116.0,
+   "tol": 0,
+   "source": "Methods, Participants (116 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male participants",
+   "computed": 47.0,
+   "reported": 47.0,
+   "tol": 0,
+   "source": "Methods, Participants (47 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young participants (<60 y)",
+   "computed": 87.0,
+   "reported": 87.0,
+   "tol": 0,
+   "source": "Methods, Participants (87 young)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older participants (>=60 y)",
+   "computed": 76.0,
+   "reported": 76.0,
+   "tol": 0,
+   "source": "Methods, Participants (76 older)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recordings (1956 files minus 26 missing)",
+   "computed": 1930.0,
+   "reported": 1930.0,
+   "tol": 0,
+   "source": "Data description (1956 - 26 missing trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age (years, floor)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (ages 18 to 85)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age (years, floor)",
+   "computed": 85.0,
+   "reported": 85.0,
+   "tol": 0,
+   "source": "Methods, Participants (ages 18 to 85)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples per recording",
+   "computed": 6000.0,
+   "reported": 6000.0,
+   "tol": 0,
+   "source": "Data description (6000 rows, 60 s at 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all recordings have 6000 samples",
+   "ok": true,
+   "detail": "{6000}"
+  },
+  {
+   "kind": "internal",
+   "what": "at most 12 recordings, 4 conditions and 3 repetitions per condition for every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants with all 12 recordings (the rest are the authors' 26 missing trials)",
+   "ok": true,
+   "detail": "158"
+  },
+  {
+   "kind": "internal",
+   "what": "sample files in ZIP equal rows",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "BDS.zip",
+   "url": "https://ndownloader.figshare.com/files/5302768",
+   "bytes": 375743151,
+   "sha256": "61485324b912ec4019a10838935b6d4c892a8d3852ad87a93f2d3ea8161b8768",
+   "fetched_utc": "2026-11-09T03:02:43Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Santos2016_PeerJ.zip"
+}

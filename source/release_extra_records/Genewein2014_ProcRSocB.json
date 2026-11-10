@@ -1,0 +1,71 @@
+{
+ "id": "Genewein2014_ProcRSocB",
+ "module": "model_choice_curve",
+ "rows": 19800,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 4231359,
+ "zip_sha256": "3a5754ce31a6b306b02578b69f934caa443948b8f4c102ccd76b77a28a70bf66",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "the two order groups (drawing first, clicking first)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Genewein & Braun 2014, Results 3(b) (subjects randomly assigned into two groups, session order reversed)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "simpler model preferred in probe trials (pooled median of P(choose M1) above 0.5, 1 = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Genewein & Braun 2014, Results 3(b), Figure 2 (ambiguous probe trials: subjects significantly preferred the simpler model M1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "simpler model preferred in probe trials of the control experiment (1 = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Genewein & Braun 2014, Results 3(d), Figure 3 (subjects significantly preferred M1)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "main experiment: 12 participants x 2 sessions",
+   "ok": true,
+   "detail": "12 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "every session file has 600 trials",
+   "ok": true,
+   "detail": "[600]"
+  },
+  {
+   "kind": "internal",
+   "what": "row count",
+   "ok": true,
+   "detail": "19800 rows"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (main text, Results 3(d)) refers to 10 subjects in the control experiment; the deposit has 9 control files. No participant count or trial count for the main experiment is given in the main text (they are in the electronic supplement, which the publisher site did not serve and which is not on PMC), so those counts are internal checks only.",
+  "The paper's regression statistics (intercepts and slopes with 95% CIs) and sign tests were not recomputed; the supplement defines the error levels and fits."
+ ],
+ "sources": [
+  {
+   "file": "Data.zip",
+   "url": "https://zenodo.org/api/records/5003178/files/Data.zip/content",
+   "bytes": 9158602,
+   "sha256": "dfe5fb069033e17014b6284ad6df35f1c3bf22ed5d78d3147c7a073dc89c975e",
+   "fetched_utc": "2026-11-10T07:58:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Genewein2014_ProcRSocB.zip"
+}

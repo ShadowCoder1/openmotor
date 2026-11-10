@@ -1,0 +1,144 @@
+{
+ "id": "Sporn2026_Brain",
+ "module": "reward_reaching",
+ "rows": 10850,
+ "subjects": 70,
+ "persons": 70,
+ "zip_bytes": 226903,
+ "zip_sha256": "0e31b8eea335b08c051f6cdc08a716504dfcb18b72301072ddb2e2a2119626f0",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "data4brms.csv matches the downloaded hash and the MD5 and size listed on OSF",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "10850 rows = 70 participants x 155 trials, each participant's rows contiguous and numbered 1-70",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group is constant within participant (40 with group 1 = SK, 30 with group 0 = HC)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant: the file lists the weak limb (arm 1) first, with blocks 1 to 4, then the strong limb (arm 2), with blocks 4 to 1 (the reward-probability order was reversed); one limb has 78 trials and the other 77 (66 participants 78 weak and 77 strong, 4 the reverse); blocks have 18 to 21 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "movement time exp(logMT) lies between 200 ms and 8 s (213 to 7848 ms); 433 rows have no logMT, 81 no prediction",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the prediction strength is 0 on trial 1 of each limb's sequence (140 rows), never negative, and has a value on every other row with a movement time except 78",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row the authors shared is kept, in order (10850)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows without a movement time or a prediction (the rows the authors' models drop) are flagged excluded_by_authors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Methods, Experimental Subjects (40 stroke survivors and 30 controls)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "chronic stroke survivors (SK)",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Methods, Experimental Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age-matched healthy controls (HC)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Methods, Experimental Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per limb",
+   "computed": 78.0,
+   "reported": 78.0,
+   "tol": 0,
+   "source": "Methods, task ('limiting the total number of trials to 78')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks of reward probabilities per limb",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, task (four blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest block (reversals 'every 18-21 trials')",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest block (reversals 'every 18-21 trials')",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "stroke survivors are slower than controls and, in stroke survivors, slower with the weak limb (direction of the paper's group effect and group x limb interaction)",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's 2 x 2 analysis of log-transformed movement time (group x limb, F(1, 136)) reports a group effect of F = 69.84, an interaction of F = 5.91 and p = 0.090 for the limb effect; a Type III ANOVA of each participant's mean logMT per limb (140 values) gives F = 74.95, F = 11.03 and p = 0.073. The direction reproduces (stroke survivors slower, most with the weak limb) but the authors' participant-level summary is not stated, so the F values are not recovered.",
+  "The Methods give 78 trials per limb; in the shared file one limb has 78 trials and the other 77 for every participant (the weak limb has 78 for 66 participants and the strong limb for the other 4), so one trial per participant is absent.",
+  "The shared file has no choices or outcomes, so the paper's accuracy, win-stay and model-parameter results cannot be checked."
+ ],
+ "sources": [
+  {
+   "file": "data4brms.csv",
+   "url": "https://osf.io/download/u8qde/",
+   "bytes": 491014,
+   "sha256": "11ccb89c5e30f7667d88a3dbd66236add3bf501ebca13f8a177e81b84410b19b",
+   "fetched_utc": "2026-11-08T19:58:15Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sporn2026_Brain.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Averta2021_GigaScience",
+ "skipped": true,
+ "reason": "too large",
+ "details": "U-Limb is 36.2 GB in .rar archives (multi-part, 1.5-2.5 GB each, kinematics mixed with EMG/EEG/fMRI per centre); the kinematic blocks alone exceed the 5 GB gate and need a rar extractor. Licence CC0, data documented in ReadMe_gen.txt. Retry per centre if a rar reader is added.",
+ "sources": []
+}

@@ -1,0 +1,64 @@
+{
+ "id": "MicoAmigo2023_JNeuroengRehabil",
+ "module": "timeseries",
+ "rows": 6,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 664047820,
+ "zip_sha256": "7b30c5735fe0500fb0bb00ff2be153963fe81ce3e319236c00f2760efac6a2e1",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants (one per cohort)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Zenodo record description and README: one participant from each of six cohorts",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "cohorts (five disease cohorts plus healthy older adults)",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling frequency of the lower-back sensor (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods (Dynaport MM+, 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "sample interval is 10 ms in every recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording is between 1 and 3 hours",
+   "ok": true,
+   "detail": "{'CHF': 2.29, 'COPD': 2.54, 'HA': 1.19, 'MS': 2.63, 'PD': 2.08, 'PFF': 1.93}"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Zenodo description speaks of 2.5 hours of real-world data per participant; the six recordings last 1.19, 1.93, 2.08, 2.29, 2.54 and 2.63 hours (mean 2.11). The paper's validation statistics (gait sequences, initial contacts, cadence, stride length) are for the full 108-participant study, whose data are not in this record, so only the cohort and sampling checks apply."
+ ],
+ "sources": [
+  {
+   "file": "mobilise.zip",
+   "url": "https://zenodo.org/api/records/7547125/files/Mobilise-D%20dataset_1-18-2023.zip/content",
+   "bytes": 1341286272,
+   "sha256": "326fa6501b22cc38291d3e473bceb6cb53cc36dad2691c1cf5587a08d02e1ae4",
+   "fetched_utc": "2026-11-09T23:20:16Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/MicoAmigo2023_JNeuroengRehabil.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Seethapathi2024_NatCommun",
+ "skipped": true,
+ "reason": "Dryad download needs a token",
+ "details": "Data are only on Dryad (doi 10.5061/dryad.kh18932gq, CC0, 3 small MAT files, 30 MB). The Dryad file API answers HTTP 401 without a token; no Zenodo, Figshare, GitHub (SeethapathiLab/LocAd holds code only) or Europe PMC supplement copy exists. Retry if a Dryad token becomes available.",
+ "sources": []
+}

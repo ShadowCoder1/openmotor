@@ -1,0 +1,7 @@
+{
+ "id": "You2026_CognPsychol",
+ "skipped": true,
+ "reason": "other",
+ "details": "Per-participant x contrast x trajectory tracking features (K, sensory/motor noise, lag, RMSE, velocity) are in mdata_1.csv for Exp 1 (32 persons), 2a and 2b (36 each), convertible as summary, but the paper full text (Elsevier, no OA copy in Europe PMC/PMC) could not be read, so no published number could be checked and units/definitions rest on authors MATLAB code only. Retry when the text is available.",
+ "sources": []
+}

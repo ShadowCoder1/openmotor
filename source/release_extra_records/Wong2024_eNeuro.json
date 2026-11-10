@@ -1,0 +1,738 @@
+{
+ "id": "Wong2024_eNeuro",
+ "module": "position_report_reaching",
+ "rows": 20315,
+ "subjects": 81,
+ "persons": 59,
+ "zip_bytes": 1062470,
+ "zip_sha256": "06c2051f00c4e7342966e8f49021edd067a6ad746c9597fa71e40591ccf02f08",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants analysed",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants analysed",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 people with the static task (22 did both, one only static)",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 people with the dynamic task (22 did both, one only dynamic)",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "static task, unimodal block: trials per person (modal)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods, static task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "static task, multimodal block: VPv trials per person (modal)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, static task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "static task, multimodal block: VPp trials per person (modal)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, static task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "static task, multimodal block: V trials per person (modal)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, static task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dynamic task, unimodal block: trials per person (modal)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, dynamic task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "dynamic task, multimodal block: VPv trials per person (modal)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, dynamic task",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "dynamic task: mean peak velocity near the 0.187 m/s the Methods give for the arc movements (within 0.05)",
+   "ok": true,
+   "detail": "0.222"
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept",
+   "ok": true,
+   "detail": "20315"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The Methods give a peak velocity of 0.187 m/s for the dynamic task's arcs (the speed of the displayed arc, as we read it); the mean of the participants' own peak velocities in the deposit is 0.222 m/s, so it is not the same quantity."
+ ],
+ "sources": [
+  {
+   "file": "group_static.csv",
+   "url": "https://osf.io/download/649b090367aff80caaedf906",
+   "bytes": 25655,
+   "sha256": "685c4b0b61646fd5f1ec2c14d52ee9ce8b2411b41bb337174ec9c2f65aebb33b",
+   "fetched_utc": "2026-11-09T09:59:25Z"
+  },
+  {
+   "file": "group_dynamic.csv",
+   "url": "https://osf.io/download/tudz4",
+   "bytes": 42546,
+   "sha256": "ada13a245cc47e6aa0f8283ba9de294978ad0d2294c925b4b0ecbc82322b3024",
+   "fetched_utc": "2026-11-09T09:59:30Z"
+  },
+  {
+   "file": "s_CN03.csv",
+   "url": "https://osf.io/download/649b0991a2a2f40cb34367c0",
+   "bytes": 62246,
+   "sha256": "dfb6ab07993d9fcf61af07027d66ad09507e88b1a71d5eee7df854eb376a65e1",
+   "fetched_utc": "2026-11-09T09:59:44Z"
+  },
+  {
+   "file": "d_CN07.csv",
+   "url": "https://osf.io/download/649b09416513ba0bc53a3a25",
+   "bytes": 61887,
+   "sha256": "bfd7a61ca04575adffa882f65296cdcad3ffd14705eee53cd1c8ee3357f63183",
+   "fetched_utc": "2026-11-09T09:59:48Z"
+  },
+  {
+   "file": "h_CN91.csv",
+   "url": "https://osf.io/download/65f8c8228510260351aa06c5",
+   "bytes": 97929,
+   "sha256": "8e8a156ce7922de387d57b36bf7287155728ed1c41b2ee86fa681667bfa2f1fc",
+   "fetched_utc": "2026-11-09T09:59:52Z"
+  },
+  {
+   "file": "e3_CN103.csv",
+   "url": "https://osf.io/download/667b2453d6a72900a70b1705",
+   "bytes": 138920,
+   "sha256": "0861533b1597d8a1972e4b58e5a51b7475c07e24bedbe1255492fc38e24f5d8f",
+   "fetched_utc": "2026-11-09T09:59:55Z"
+  },
+  {
+   "file": "E1_static_CN03.csv",
+   "url": "https://osf.io/download/649b0991a2a2f40cb34367c0",
+   "bytes": 62246,
+   "sha256": "dfb6ab07993d9fcf61af07027d66ad09507e88b1a71d5eee7df854eb376a65e1",
+   "fetched_utc": "2026-11-09T10:01:17Z"
+  },
+  {
+   "file": "E1_static_CN06.csv",
+   "url": "https://osf.io/download/649b099167aff80ca9edf7fd",
+   "bytes": 67718,
+   "sha256": "9edf174b6efa84d8c7be7192c5305da0c65741c60769564b8856f3997dd2f728",
+   "fetched_utc": "2026-11-09T10:01:22Z"
+  },
+  {
+   "file": "E1_static_CN08.csv",
+   "url": "https://osf.io/download/649b09943809110c083c3793",
+   "bytes": 62307,
+   "sha256": "91f6ba74f14a0c9b5e6ffc7e401697829eebc62e52b40a117815c9a352073f29",
+   "fetched_utc": "2026-11-09T10:01:27Z"
+  },
+  {
+   "file": "E1_static_CN07.csv",
+   "url": "https://osf.io/download/649b099967aff80caaedf9b7",
+   "bytes": 62835,
+   "sha256": "666ed4a2e79a9ec2e8a9aabc82d47551bac61e751a6425398e3c9b690c1fefb9",
+   "fetched_utc": "2026-11-09T10:01:45Z"
+  },
+  {
+   "file": "E1_static_CN09.csv",
+   "url": "https://osf.io/download/649b099d6c09810bea7d186b",
+   "bytes": 62372,
+   "sha256": "e4f48f27b160c47e1c3562b2d351b1ba646319bfa2c0def03a96ad37add47da8",
+   "fetched_utc": "2026-11-09T10:01:49Z"
+  },
+  {
+   "file": "E1_static_CN10.csv",
+   "url": "https://osf.io/download/649b099fa2a2f40cad4370ed",
+   "bytes": 62157,
+   "sha256": "2d844cc68ebe29a4720be6c56830a464e0b6ad9b177fbd0b27a1c6aa2e4c1b37",
+   "fetched_utc": "2026-11-09T10:01:54Z"
+  },
+  {
+   "file": "E1_static_CN11.csv",
+   "url": "https://osf.io/download/649b09a33809110c0f3c3870",
+   "bytes": 62240,
+   "sha256": "99e6422796bd5fc2e7a9609993abeb46ed2e367569fe6950e98170b022bbaec6",
+   "fetched_utc": "2026-11-09T10:01:59Z"
+  },
+  {
+   "file": "E1_static_CN15.csv",
+   "url": "https://osf.io/download/649b09a53809110c0f3c3872",
+   "bytes": 62295,
+   "sha256": "42440191ae0aa6f2af303421cb7b4025ff7b951ded2adb525866b839af3b8ae4",
+   "fetched_utc": "2026-11-09T10:02:03Z"
+  },
+  {
+   "file": "E1_static_CN16.csv",
+   "url": "https://osf.io/download/649b09a96c09810be57d1c2c",
+   "bytes": 62524,
+   "sha256": "ca92601b4a8d1678d1fd7133232435855c1817eefb0269a138cbb82c6e3f54aa",
+   "fetched_utc": "2026-11-09T10:02:06Z"
+  },
+  {
+   "file": "E1_static_CN18.csv",
+   "url": "https://osf.io/download/649b09ac6c09810bea7d1877",
+   "bytes": 62624,
+   "sha256": "f321997ef29c5a5cfe7e924e213a35ff69ed17ca2d511e65773d4229271bfcb1",
+   "fetched_utc": "2026-11-09T10:02:10Z"
+  },
+  {
+   "file": "E1_static_CN17.csv",
+   "url": "https://osf.io/download/649b09ac6c09810bea7d1879",
+   "bytes": 62648,
+   "sha256": "5269710ec56c21557e873240afd15148ec753a80d54dde527d0859a9b9e90082",
+   "fetched_utc": "2026-11-09T10:02:15Z"
+  },
+  {
+   "file": "E1_static_CN20.csv",
+   "url": "https://osf.io/download/649b09b16c09810beb7d1b66",
+   "bytes": 62561,
+   "sha256": "62457c31f097f2b758afce1d10683d25fdf5d40111128ed1be3d681c6d087868",
+   "fetched_utc": "2026-11-09T10:02:19Z"
+  },
+  {
+   "file": "E1_static_CN26.csv",
+   "url": "https://osf.io/download/649b09b36513ba0bc63a4035",
+   "bytes": 62255,
+   "sha256": "b6163d70a046c5ae46c5c55f930797c99b509578b24e3d4d1b6a230773c7ab32",
+   "fetched_utc": "2026-11-09T10:02:22Z"
+  },
+  {
+   "file": "E1_static_CN27.csv",
+   "url": "https://osf.io/download/649b09b7a2a2f40cad4370fb",
+   "bytes": 62470,
+   "sha256": "5aadc36cc19b86155447ddb15800f37c60e9c7cb1e56193ccdf58300491c0aac",
+   "fetched_utc": "2026-11-09T10:02:25Z"
+  },
+  {
+   "file": "E1_static_CN31.csv",
+   "url": "https://osf.io/download/649b09b9a2a2f40cad4370fd",
+   "bytes": 62454,
+   "sha256": "bcdaa748fa28987a16dbcfd9f59e9a7a8217c8afe084cdb34d471f9591370a2c",
+   "fetched_utc": "2026-11-09T10:02:30Z"
+  },
+  {
+   "file": "E1_static_CN32.csv",
+   "url": "https://osf.io/download/649b09bb3809110c083c379f",
+   "bytes": 62298,
+   "sha256": "17eb88f62c46260956e68474b87b610b0994774ed45048c380e276ae6d47deb5",
+   "fetched_utc": "2026-11-09T10:02:35Z"
+  },
+  {
+   "file": "E1_static_CN35.csv",
+   "url": "https://osf.io/download/649b09bf6513ba0bd63a3caf",
+   "bytes": 60501,
+   "sha256": "c1303aa6a405e20fcdc6763c945b885ed7228538da6beba2b66e1827ead11473",
+   "fetched_utc": "2026-11-09T10:02:52Z"
+  },
+  {
+   "file": "E1_static_CN33.csv",
+   "url": "https://osf.io/download/649b09c26513ba0bd63a3cb2",
+   "bytes": 62639,
+   "sha256": "59cbb4ea8baadab31bb98be99f97dee9f809c4bd260eaee1fca789edf7796fa2",
+   "fetched_utc": "2026-11-09T10:02:55Z"
+  },
+  {
+   "file": "E1_static_CN36.csv",
+   "url": "https://osf.io/download/649b09c63809110c143c2e89",
+   "bytes": 62707,
+   "sha256": "bfd011668ef68dea908310ee7a13b032a98929fd4c8f91317f46d03d47b57b6b",
+   "fetched_utc": "2026-11-09T10:03:01Z"
+  },
+  {
+   "file": "E1_static_CN37.csv",
+   "url": "https://osf.io/download/649b09c96c09810bea7d1881",
+   "bytes": 62707,
+   "sha256": "e6d88bed87fee091e05d0e794dd0e021e01741725ccb190c906eb192aaec2376",
+   "fetched_utc": "2026-11-09T10:03:07Z"
+  },
+  {
+   "file": "E1_static_CN38.csv",
+   "url": "https://osf.io/download/649b09cb3809110c143c2e8b",
+   "bytes": 62608,
+   "sha256": "f55bea61145d48283eaf2ba1c92377704e9acab68e8a0930fed8f9df79ae7245",
+   "fetched_utc": "2026-11-09T10:03:11Z"
+  },
+  {
+   "file": "E1_static_CN39.csv",
+   "url": "https://osf.io/download/649b09cea2a2f40cb44368bd",
+   "bytes": 62393,
+   "sha256": "a4b5764ef0c7848cd60d4c6357b39cbddacb3f0c5f9b843ff9abb98204f2056c",
+   "fetched_utc": "2026-11-09T10:03:14Z"
+  },
+  {
+   "file": "E1_static_CN02.csv",
+   "url": "https://osf.io/download/649b09d06513ba0bcf3a3f65",
+   "bytes": 62512,
+   "sha256": "577e74d569897e3e6aac3c4db94be904252b888fb16b290d413ce295b301525b",
+   "fetched_utc": "2026-11-09T10:03:19Z"
+  },
+  {
+   "file": "E1_dynamic_CN33.csv",
+   "url": "https://osf.io/download/649b092b6513ba0bc63a400a",
+   "bytes": 61532,
+   "sha256": "5a9c661df8cb32288448cba85e89ab14e36a5b60176e4e14e40442e60b0f4171",
+   "fetched_utc": "2026-11-09T10:03:23Z"
+  },
+  {
+   "file": "E1_dynamic_CN35.csv",
+   "url": "https://osf.io/download/649b092ea2a2f40cad4370ae",
+   "bytes": 62108,
+   "sha256": "029b131e3ff94188961819c066c1501b34812bccbc5981b8a82dd0d236db4e62",
+   "fetched_utc": "2026-11-09T10:03:27Z"
+  },
+  {
+   "file": "E1_dynamic_CN36.csv",
+   "url": "https://osf.io/download/649b092fa2a2f40cad4370b0",
+   "bytes": 61925,
+   "sha256": "f9be4aae9d544f00367dde2b87f45e654bd85e188e62c5db1be53110782bf9cf",
+   "fetched_utc": "2026-11-09T10:03:31Z"
+  },
+  {
+   "file": "E1_dynamic_CN37.csv",
+   "url": "https://osf.io/download/649b0931a2a2f40cb3436784",
+   "bytes": 62088,
+   "sha256": "7bb858b3e6bb6ce07c9b6505a82f4bfc9699c37eb2641d3e31e7287010ed3fb6",
+   "fetched_utc": "2026-11-09T10:03:35Z"
+  },
+  {
+   "file": "E1_dynamic_CN38.csv",
+   "url": "https://osf.io/download/649b093467aff80caaedf949",
+   "bytes": 61977,
+   "sha256": "837a151e01db9ecf2aae1a7302721a401b9cf59671d3362763b8980172635c13",
+   "fetched_utc": "2026-11-09T10:03:40Z"
+  },
+  {
+   "file": "E1_dynamic_CN39.csv",
+   "url": "https://osf.io/download/649b09393809110c133c2b3d",
+   "bytes": 62143,
+   "sha256": "fa68dba735ccd08746231f45bf5b17a26d8f3b3aef5fa57ab7900f206d6f7210",
+   "fetched_utc": "2026-11-09T10:03:45Z"
+  },
+  {
+   "file": "E1_dynamic_CN02.csv",
+   "url": "https://osf.io/download/649b093c6513ba0bc53a3a23",
+   "bytes": 61947,
+   "sha256": "d953d4cbe5b2418942088273d5cf99fc3af9a23918b6d448d0fa642c2c8d56d4",
+   "fetched_utc": "2026-11-09T10:04:02Z"
+  },
+  {
+   "file": "E1_dynamic_CN06.csv",
+   "url": "https://osf.io/download/649b093ea2a2f40cb4436855",
+   "bytes": 61958,
+   "sha256": "566d27389747df8a7c895c0c29865270e70bc66b5c8624e71c7098665b565437",
+   "fetched_utc": "2026-11-09T10:04:06Z"
+  },
+  {
+   "file": "E1_dynamic_CN03.csv",
+   "url": "https://osf.io/download/649b09403809110c0f3c3848",
+   "bytes": 61926,
+   "sha256": "041022b818c323d453802500dc72ed705f640cf05936fff73b84ed9e00d45984",
+   "fetched_utc": "2026-11-09T10:04:09Z"
+  },
+  {
+   "file": "E1_dynamic_CN07.csv",
+   "url": "https://osf.io/download/649b09416513ba0bc53a3a25",
+   "bytes": 61887,
+   "sha256": "bfd7a61ca04575adffa882f65296cdcad3ffd14705eee53cd1c8ee3357f63183",
+   "fetched_utc": "2026-11-09T10:04:14Z"
+  },
+  {
+   "file": "E1_dynamic_CN09.csv",
+   "url": "https://osf.io/download/649b094467aff80ca3edfbdf",
+   "bytes": 61845,
+   "sha256": "b65f1d84adc77403151fcc492eb499d9a60555bf51ad6be227309f593ab416f1",
+   "fetched_utc": "2026-11-09T10:04:20Z"
+  },
+  {
+   "file": "E1_dynamic_CN08.csv",
+   "url": "https://osf.io/download/649b0947a2a2f40cac436b44",
+   "bytes": 61919,
+   "sha256": "ddb11da7da6dd387eddf3428c79d7d8fd8a6a32af6e07820b898f8908cb87928",
+   "fetched_utc": "2026-11-09T10:04:25Z"
+  },
+  {
+   "file": "E1_dynamic_CN10.csv",
+   "url": "https://osf.io/download/649b094a67aff80ca9edf7ec",
+   "bytes": 61847,
+   "sha256": "01a9a2cf8b264f600789230ce4b70f77dccf0e5da973fec973ea8a96d3884656",
+   "fetched_utc": "2026-11-09T10:04:29Z"
+  },
+  {
+   "file": "E1_dynamic_CN11.csv",
+   "url": "https://osf.io/download/649b094c6513ba0bd63a3c50",
+   "bytes": 61976,
+   "sha256": "dbdd3a14a0a6fefc4744be3f7d9e30c308f8822755dec9573dcc545e1398fee2",
+   "fetched_utc": "2026-11-09T10:04:34Z"
+  },
+  {
+   "file": "E1_dynamic_CN15.csv",
+   "url": "https://osf.io/download/649b094ea2a2f40cb443686d",
+   "bytes": 61931,
+   "sha256": "032dc117a2d73421f5dbca8ad7168e576641e3f9ae7912d767e56bb8e58bea27",
+   "fetched_utc": "2026-11-09T10:04:38Z"
+  },
+  {
+   "file": "E1_dynamic_CN16.csv",
+   "url": "https://osf.io/download/649b095067aff80ca3edfbe3",
+   "bytes": 62096,
+   "sha256": "ee9a3a99567ed0a309ccefc86e9ac92bdb3e83f2e9d01fcd57a59ce8996c2e60",
+   "fetched_utc": "2026-11-09T10:04:43Z"
+  },
+  {
+   "file": "E1_dynamic_CN17.csv",
+   "url": "https://osf.io/download/649b0953a2a2f40cb443686f",
+   "bytes": 61698,
+   "sha256": "22f00060bc80c91a515a894faf5cda7addb7201909f286536f7a977687938b43",
+   "fetched_utc": "2026-11-09T10:04:47Z"
+  },
+  {
+   "file": "E1_dynamic_CN18.csv",
+   "url": "https://osf.io/download/649b0958a2a2f40cad4370d3",
+   "bytes": 62160,
+   "sha256": "990b8a00e19faa9bb1f26980dbf48d5c1ad6f55d28c819d880c7de9316247296",
+   "fetched_utc": "2026-11-09T10:04:50Z"
+  },
+  {
+   "file": "E1_dynamic_CN19.csv",
+   "url": "https://osf.io/download/649b095a67aff80caaedf96a",
+   "bytes": 62045,
+   "sha256": "44fcdcd3e4c85739eaa6130a8daceaf32f20a8f0265c7ed53ca1b391e2f02b6a",
+   "fetched_utc": "2026-11-09T10:04:54Z"
+  },
+  {
+   "file": "E1_dynamic_CN20.csv",
+   "url": "https://osf.io/download/649b095e3809110c0f3c3850",
+   "bytes": 62171,
+   "sha256": "f89880978228eaf92f54d9d97bfded193b53eeb2dfd7f192f6d1877a6b364611",
+   "fetched_utc": "2026-11-09T10:05:07Z"
+  },
+  {
+   "file": "E1_dynamic_CN27.csv",
+   "url": "https://osf.io/download/649b095e3809110c0f3c3852",
+   "bytes": 62012,
+   "sha256": "1c57c839944869974db73f3a2b40ac49a320e344850d986d5160917af76c3671",
+   "fetched_utc": "2026-11-09T10:05:12Z"
+  },
+  {
+   "file": "E1_dynamic_CN31.csv",
+   "url": "https://osf.io/download/649b09603809110c143c2e58",
+   "bytes": 62011,
+   "sha256": "a6987002cf713356e3838f2990afbd20927bc6c82e3bc2ca2f90984f4792c7c2",
+   "fetched_utc": "2026-11-09T10:05:17Z"
+  },
+  {
+   "file": "E1_dynamic_CN32.csv",
+   "url": "https://osf.io/download/649b096467aff80ca4ee0024",
+   "bytes": 61952,
+   "sha256": "536f86fdcaf7dc49dd657c2f9cacedbc39ae0e5eccc8879c188e74d43ed96604",
+   "fetched_utc": "2026-11-09T10:05:24Z"
+  },
+  {
+   "file": "E2_hstatic_CN91.csv",
+   "url": "https://osf.io/download/65f8c8228510260351aa06c5",
+   "bytes": 97929,
+   "sha256": "8e8a156ce7922de387d57b36bf7287155728ed1c41b2ee86fa681667bfa2f1fc",
+   "fetched_utc": "2026-11-09T10:05:27Z"
+  },
+  {
+   "file": "E2_hstatic_CN90.csv",
+   "url": "https://osf.io/download/65f8c82218cee303561a2947",
+   "bytes": 92515,
+   "sha256": "1f26c037df2e97c582c6a05f44d9483ec366e2b5f546937e74e5d03d02928c53",
+   "fetched_utc": "2026-11-09T10:05:30Z"
+  },
+  {
+   "file": "E2_hstatic_CN92.csv",
+   "url": "https://osf.io/download/65f8c82523e423033f1f6e0f",
+   "bytes": 101166,
+   "sha256": "703034801cfa0f96f48928863167604d714957621248b08f36c4609e1545b364",
+   "fetched_utc": "2026-11-09T10:05:35Z"
+  },
+  {
+   "file": "E2_hstatic_CN93.csv",
+   "url": "https://osf.io/download/65f8c825acb81e032d25f93d",
+   "bytes": 99687,
+   "sha256": "57bf10855031981a62fe3b51bf5a80d8e44c76060c9f6324d53da12155a673ae",
+   "fetched_utc": "2026-11-09T10:05:42Z"
+  },
+  {
+   "file": "E2_hstatic_CN94.csv",
+   "url": "https://osf.io/download/65f8c82c18cee3034a1a3101",
+   "bytes": 87313,
+   "sha256": "05ab624aa5f8d703077f8ed3f4c7c2a8e156eca9b3561cbc30e725cf452797a9",
+   "fetched_utc": "2026-11-09T10:05:46Z"
+  },
+  {
+   "file": "E2_hstatic_CN95.csv",
+   "url": "https://osf.io/download/65f8c82cacb81e033625f324",
+   "bytes": 102679,
+   "sha256": "804905686007cdbd1804d863468d891984aff5df0839a19578c841b4d37ed04b",
+   "fetched_utc": "2026-11-09T10:05:50Z"
+  },
+  {
+   "file": "E2_hstatic_CN96.csv",
+   "url": "https://osf.io/download/65f8c8363abfb3032b8b8f0c",
+   "bytes": 99259,
+   "sha256": "e54caa5fd619414802f66ae2b2d7133015636554de35b58ac8c8c519bc5450b5",
+   "fetched_utc": "2026-11-09T10:05:54Z"
+  },
+  {
+   "file": "E2_hstatic_CN97.csv",
+   "url": "https://osf.io/download/65f8c836acb81e033525f103",
+   "bytes": 103535,
+   "sha256": "fb20d1e8cc70dbd4544bd5c62436f6c901e51ab9493a1643c49427c3b9c317b5",
+   "fetched_utc": "2026-11-09T10:06:00Z"
+  },
+  {
+   "file": "E2_hstatic_CN98.csv",
+   "url": "https://osf.io/download/65f8c8388510260348aa0d31",
+   "bytes": 95620,
+   "sha256": "7c91139771b77487e9a8aa9fb962805e47b5f196c2910e0d7a9e60e5dde243d7",
+   "fetched_utc": "2026-11-09T10:06:22Z"
+  },
+  {
+   "file": "E2_hstatic_CN99.csv",
+   "url": "https://osf.io/download/65f8c83aacb81e033225f891",
+   "bytes": 102479,
+   "sha256": "c8ee39a7cab9699820ddf46813bb4b58fe1d2fbde4401a9dbb81ebfd6161749a",
+   "fetched_utc": "2026-11-09T10:06:26Z"
+  },
+  {
+   "file": "E2_hstatic_CN101.csv",
+   "url": "https://osf.io/download/65f8c83d8510260348aa0d33",
+   "bytes": 94434,
+   "sha256": "bc96e72c059e09ad554ed0769446acaddb30efe5a0e6fb3dafb6f9cc4c51a850",
+   "fetched_utc": "2026-11-09T10:06:31Z"
+  },
+  {
+   "file": "E2_hstatic_CN102.csv",
+   "url": "https://osf.io/download/65f8c84123e42303331f6d4b",
+   "bytes": 89761,
+   "sha256": "b1a72ac84d4a493173f8332c890e07ad47b020e4d164c32acf764db54d1fb035",
+   "fetched_utc": "2026-11-09T10:06:37Z"
+  },
+  {
+   "file": "E2_hstatic_CN100.csv",
+   "url": "https://osf.io/download/65f8c8423abfb3032b8b8f10",
+   "bytes": 90595,
+   "sha256": "fd65d9d527db188a2e2aeb60f6dbf753458185f203790966145202704af80b1e",
+   "fetched_utc": "2026-11-09T10:06:42Z"
+  },
+  {
+   "file": "E2_hstatic_CN78.csv",
+   "url": "https://osf.io/download/65f8c84518cee303561a2951",
+   "bytes": 99688,
+   "sha256": "a07edfadf06129422ac803cb3515b634dc02be760518e7535b147904d6604544",
+   "fetched_utc": "2026-11-09T10:06:46Z"
+  },
+  {
+   "file": "E2_hstatic_CN55.csv",
+   "url": "https://osf.io/download/65f8c84bacb81e033525f10b",
+   "bytes": 105488,
+   "sha256": "68b64b45866618dfb051fd090f559107bbeeaf86f1186bbdde10e0bdfb4afa2b",
+   "fetched_utc": "2026-11-09T10:06:51Z"
+  },
+  {
+   "file": "E2_hstatic_CN79.csv",
+   "url": "https://osf.io/download/65f8c84d8510260355a9ff30",
+   "bytes": 98408,
+   "sha256": "d68040ca199b459e90612b90874f1745aa9af2bc0a8330663df0a87e99ff617f",
+   "fetched_utc": "2026-11-09T10:06:56Z"
+  },
+  {
+   "file": "E2_hstatic_CN82.csv",
+   "url": "https://osf.io/download/65f8c84f23e42303371f7008",
+   "bytes": 105693,
+   "sha256": "2c5d7c55098af65e806bb8bfce2fbfadb9e51cf0ee6468b466a70fd959b01a30",
+   "fetched_utc": "2026-11-09T10:07:01Z"
+  },
+  {
+   "file": "E2_hstatic_CN87.csv",
+   "url": "https://osf.io/download/65f8c85118cee3034a1a3111",
+   "bytes": 106181,
+   "sha256": "a877332092761c5a4ccf8d17d4fa0009fa06872d670c8fb9fc3e75801b4c88ac",
+   "fetched_utc": "2026-11-09T10:07:06Z"
+  },
+  {
+   "file": "E2_hstatic_CN84.csv",
+   "url": "https://osf.io/download/65f8c8563abfb3032f8b9004",
+   "bytes": 104069,
+   "sha256": "53d89660c645a5a382deb031631cd1fa57944aa9d9c564398f48768a2123aeb1",
+   "fetched_utc": "2026-11-09T10:07:11Z"
+  },
+  {
+   "file": "E2_hstatic_CN88.csv",
+   "url": "https://osf.io/download/65f8c85b23e42303451f6592",
+   "bytes": 105358,
+   "sha256": "da8b8b7648545279ca590d6a6990347faa030a5a2799cd6d49be56a5b4504a92",
+   "fetched_utc": "2026-11-09T10:07:23Z"
+  },
+  {
+   "file": "E3_dmc_CN103.csv",
+   "url": "https://osf.io/download/667b2453d6a72900a70b1705",
+   "bytes": 138920,
+   "sha256": "0861533b1597d8a1972e4b58e5a51b7475c07e24bedbe1255492fc38e24f5d8f",
+   "fetched_utc": "2026-11-09T10:07:26Z"
+  },
+  {
+   "file": "E3_dmc_CN105.csv",
+   "url": "https://osf.io/download/667b24591c69c0008a274309",
+   "bytes": 141898,
+   "sha256": "e5364c37c14ac8e03c1dd704675859dd4857ba78f2d2fe74b49c75d6d1a80977",
+   "fetched_utc": "2026-11-09T10:07:30Z"
+  },
+  {
+   "file": "E3_dmc_CN107.csv",
+   "url": "https://osf.io/download/667b2460b0ed59009779e5b4",
+   "bytes": 141891,
+   "sha256": "fc1c0b1cb9ae95530144b59d3c69b83723d25cee7e34f264453c3db993a82981",
+   "fetched_utc": "2026-11-09T10:07:35Z"
+  },
+  {
+   "file": "E3_dmc_CN108.csv",
+   "url": "https://osf.io/download/667b2465d6a72900aa0b1394",
+   "bytes": 142258,
+   "sha256": "2dad632624c610f3259c453d26d1aa93d171512a4df185a6b4fa1866bc98d80b",
+   "fetched_utc": "2026-11-09T10:07:41Z"
+  },
+  {
+   "file": "E3_dmc_CN110.csv",
+   "url": "https://osf.io/download/667b2482d6a72900aa0b13af",
+   "bytes": 140928,
+   "sha256": "1464d8442dc38b3fa61d0ef1f016e7fbd064453b253c1cb3fcaf50cb1be6010c",
+   "fetched_utc": "2026-11-09T10:07:46Z"
+  },
+  {
+   "file": "E3_dmc_CN111.csv",
+   "url": "https://osf.io/download/667b2489f112ce008b8a63a8",
+   "bytes": 110288,
+   "sha256": "605f3ee9f0a028591ca951ecf68b272707c83d1f09decd4f4db04ee90ca27b53",
+   "fetched_utc": "2026-11-09T10:07:51Z"
+  },
+  {
+   "file": "E3_dmc_CN112.csv",
+   "url": "https://osf.io/download/667b248fd6a72900aa0b13b5",
+   "bytes": 145082,
+   "sha256": "22ed8c32612862a221fa4c4aa76971f1d2da2d9f413be6b262586a004ced748b",
+   "fetched_utc": "2026-11-09T10:07:56Z"
+  },
+  {
+   "file": "E3_dmc_CN114.csv",
+   "url": "https://osf.io/download/667b24abd6a729009e0b17d5",
+   "bytes": 144771,
+   "sha256": "5a12e8427da452392bf465724d00654c0380769f5a355fbd721835f44c85ecca",
+   "fetched_utc": "2026-11-09T10:08:00Z"
+  },
+  {
+   "file": "E3_dmc_CN115.csv",
+   "url": "https://osf.io/download/667b24b17ba708008038d60b",
+   "bytes": 141005,
+   "sha256": "46b2698e87641171bfd5fa602a5e32cfdf5adf7be236d41d9bbca4c7ec51c5b7",
+   "fetched_utc": "2026-11-09T10:08:05Z"
+  },
+  {
+   "file": "E3_dmc_CN116.csv",
+   "url": "https://osf.io/download/667b24b6b0ed59009f79e759",
+   "bytes": 144183,
+   "sha256": "ead3cd653fc4bc157f7de5e3ddc9c89a20e867fbf74abbf55c4a343ad9d8c0f5",
+   "fetched_utc": "2026-11-09T10:08:11Z"
+  },
+  {
+   "file": "E3_dmc_CN117.csv",
+   "url": "https://osf.io/download/667b24bcb0ed5900a279e272",
+   "bytes": 144823,
+   "sha256": "d38e333b42f2a6277bc5282542bcff6b84208055a59e5ed184f52694c65f891a",
+   "fetched_utc": "2026-11-09T10:08:17Z"
+  },
+  {
+   "file": "E3_dmc_CN85.csv",
+   "url": "https://osf.io/download/667b24dad6a72900a70b1758",
+   "bytes": 139550,
+   "sha256": "a5562071d3b75dda040b65e5d2a28e0f3de88cff7ee9bd41ff38fb092b4388dc",
+   "fetched_utc": "2026-11-09T10:08:31Z"
+  },
+  {
+   "file": "E3_dmc_CN113.csv",
+   "url": "https://osf.io/download/667b2620b0ed59009f79e7f4",
+   "bytes": 144785,
+   "sha256": "56f756e7271982c983499b0371c2d2aee2ff89c840a0792d7828dd5c6761918f",
+   "fetched_utc": "2026-11-09T10:08:34Z"
+  },
+  {
+   "file": "E3_dmc_CN109.csv",
+   "url": "https://osf.io/download/667b2643f112ce00908a619d",
+   "bytes": 142584,
+   "sha256": "7c418b291505892a8d8b223fb39539b2593d3522d8757bc39e5f47e380f402b3",
+   "fetched_utc": "2026-11-09T10:08:37Z"
+  },
+  {
+   "file": "E3_dmc_CN118.csv",
+   "url": "https://osf.io/download/aym6t",
+   "bytes": 134411,
+   "sha256": "3f51fd644b9f57318886cac273f610cc04d857a2528044a5068cc44f0fd09e69",
+   "fetched_utc": "2026-11-09T10:12:41Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wong2024_eNeuro.zip"
+}

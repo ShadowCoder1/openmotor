@@ -1,0 +1,107 @@
+{
+ "id": "Souto2016_FrontHumNeurosci",
+ "module": "saccade",
+ "rows": 28624,
+ "subjects": 66,
+ "persons": 33,
+ "zip_bytes": 462676,
+ "zip_sha256": "ec7824c42b2638a8f3800dbccbe8370926f0feeb788ebad87a22650c06005689",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1: observers (Table 1 lists 19)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: observers",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (Experiment 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: adaptation trials per block (150)",
+   "computed": 150.0,
+   "reported": 150.0,
+   "tol": 0.01,
+   "source": "Methods, Experiment 1 (50 pre, 150 adaptation, 50 post)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: pre-adaptation trials per block (50)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0.01,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: post-adaptation trials per block (50)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0.01,
+   "source": "Methods, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest perceptual step (deg)",
+   "computed": 4.000077148588181,
+   "reported": 4.0,
+   "tol": 0.01,
+   "source": "Methods (steps limited to +-4 deg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation step (deg, backward)",
+   "computed": 1.5,
+   "reported": 1.5,
+   "tol": 0.001,
+   "source": "Methods (target stepped backward 1.5 deg)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all adaptation rows have phase -1, 1, 2 or 3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "response 1 goes with positive steps: perceptual 'errors' column equals a response that disagrees with the step direction on rows with a step",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 folder: number of observers whose adaptation saccade values equal those of the same-numbered exp1 file",
+   "ok": true,
+   "detail": "10"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper describes Experiment 2 as five backward step sizes (0.25-1.25 deg) in separate sessions. The deposit's exp2 folder holds only the 1.5 deg adaptation session: its adaptation rows are the same trials and saccade values as the exp1 folder's for most observers (a copy with the step in pixels instead of the contrast), and its perception rows are the same trials as exp1's with step sizes instead of contrasts. So the exp2 folder is not an independent experiment, and the five-step-size data are not in the deposit. The exp1 adaptation contrast column holds 0.1 and 0.5 where the paper has 10% and 100% contrast, while the perception files hold 0.1 and 1.0.",
+  "A few exp1/exp2 files have fewer columns (no saccade end values in some exp2 adaptation files) or an extra block, and the paper's analysis excludes observers whose psychometric function was flat; the deposit does not say which ones, so none is flagged."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/records/579839/files/SoutoGegenfurtnerSchutz_FrontHumNeurosci_2016.zip?download=1",
+   "bytes": 247702,
+   "sha256": "ff1e25185036e6e3791190dc91c2f148be5d0af781f9f393fb7ea7be3cf67368",
+   "fetched_utc": "2026-11-09T06:17:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Souto2016_FrontHumNeurosci.zip"
+}

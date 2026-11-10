@@ -1,0 +1,185 @@
+{
+ "id": "Ayala2023_JSLHR",
+ "module": "summary",
+ "rows": 3197,
+ "subjects": 98,
+ "persons": 98,
+ "zip_bytes": 40518,
+ "zip_sha256": "20f0a1053b983e67b4ba497f2bbb683e801a6fc25062bbeba72ea1f275ca4b8b",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children",
+   "computed": 98.0,
+   "reported": 98.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Participants (98 children included)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls",
+   "computed": 58.0,
+   "reported": 58.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Participants (58 female, 59.2%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 12.811645423920671,
+   "reported": 12.8,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 1.9642772016672851,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age",
+   "computed": 9.04342092354167,
+   "reported": 9.0,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age",
+   "computed": 15.7648685462398,
+   "reported": 15.8,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "younger group (up to 12.5 years)",
+   "computed": 43.0,
+   "reported": 43.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Table 2 (n = 43)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older group (over 12.5 years)",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Table 2 (n = 55)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with a bite block score",
+   "computed": 95.0,
+   "reported": 95.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Results (bite block completed by 95 of 98)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with a stereognosis score",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Methods (stereognosis completed by 77 of 98)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "children with an identification boundary width of 0",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Ayala et al. 2023, Results (39 of 98)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median phonetic awareness, % correct",
+   "computed": 73.53,
+   "reported": 73.5,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median stereognosis letter size (mm)",
+   "computed": 5.5,
+   "reported": 5.5,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median category goodness, % correct",
+   "computed": 84.0,
+   "reported": 84.0,
+   "tol": 0.05,
+   "source": "Ayala et al. 2023, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every child in the by-vowel file is in the main file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the three children without bite block data have no bite block rows",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper prints a median bite block ED of 0.93 Bark; with the three outlier children left out as the authors state, the rows give 0.918, so this number is not used as a check (it is 0.928 with them in).",
+  "The paper's medians in Table 1 are given after the authors' outlier removal; those that need it (the discrimination and identification medians) were not used as checks. Spearman correlations were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "MOSAIC_all_data.csv",
+   "url": "https://osf.io/download/hmkb2/",
+   "bytes": 23295,
+   "sha256": "2b8ba2bb460e24c21d006ccf21d40959a11338067fd924fa607ef543678396f4",
+   "fetched_utc": "2026-11-09T12:09:04Z"
+  },
+  {
+   "file": "MOSAIC_bite_block_means_by_vowel.csv",
+   "url": "https://osf.io/download/8vmt9/",
+   "bytes": 29975,
+   "sha256": "017d2bc2075df6be99e8f6aa5779a0cbc8d626b31ee501c8611e80a5e039d507",
+   "fetched_utc": "2026-11-09T12:09:10Z"
+  },
+  {
+   "file": "analyses.Rmd",
+   "url": "https://osf.io/download/q8tgm/",
+   "bytes": 29441,
+   "sha256": "355619f2c4920301ba3e684149ca0f6ba5d6362b7b31141cb82274615ea1e437",
+   "fetched_utc": "2026-11-09T12:09:17Z"
+  },
+  {
+   "file": "bitebock.Rmd",
+   "url": "https://osf.io/download/9e5qn/",
+   "bytes": 10250,
+   "sha256": "ddea74e02879fdda7d44a706a6907bc1fcf21fa1e96bb0b3313e87512df0c73e",
+   "fetched_utc": "2026-11-09T12:09:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Ayala2023_JSLHR.zip"
+}

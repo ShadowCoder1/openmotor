@@ -1,0 +1,85 @@
+{
+ "id": "Bocquelet2016_PLoSComputBiol",
+ "module": "timeseries",
+ "rows": 672,
+ "subjects": 1,
+ "persons": 1,
+ "zip_bytes": 26917367,
+ "zip_sha256": "c81f4d879bfa723a768416c3bf3fdaae0c65d29a989e9e08f82465d668fa6bd9",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "EMA sampling rate after down-sampling (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Bocquelet et al. 2016, Methods, 'Articulatory data acquisition and parameterization' (down-sampled from 400 Hz to 100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "coils tracked (nine 3D coils)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Bocquelet et al. 2016, Methods ('Nine such 3D coils were glued on the tongue tip, dorsum, back, upper lip, lower lip, both lip corners, jaw and soft palate')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "raw 3D parameters per sample (9 coils x 3 coordinates)",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Bocquelet et al. 2016, Methods (the 27-parameter raw 3D parameterization)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "speakers of the reference corpus",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Bocquelet et al. 2016, Methods ('a native French male speaker')",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every ASCII file has 27 columns, no missing values, and the HTK copy has the same number of samples (108-byte frames)",
+   "ok": true,
+   "detail": "672/672 files agree, nan 0"
+  },
+  {
+   "kind": "internal",
+   "what": "one recording per ema_ascii file and a transcription for each",
+   "ok": true,
+   "detail": "672 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "upper lip above lower lip (larger y) in nearly every recording",
+   "ok": true,
+   "detail": "1.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "x decreases from tongue tip to tongue back to velum in nearly every recording (x grows towards the front)",
+   "ok": true,
+   "detail": "1.0000"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says the reference database had 712 items of variable length and 'more than 45 minutes of speech after removing the periods of silence'; the deposit has 672 EMA items with 46.0 minutes of recording including silences, so 40 items of the paper's database are not in the deposit and the duration claim cannot be checked."
+ ],
+ "sources": [
+  {
+   "file": "BY2014.zip",
+   "url": "https://zenodo.org/api/records/154083/files/BY2014.zip/content",
+   "bytes": 151902088,
+   "sha256": "87078c74715fbb5d0a11b801b98bca2ec0d8c8a05853e0a64538d916196c05d8",
+   "fetched_utc": "2026-11-09T19:18:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bocquelet2016_PLoSComputBiol.zip"
+}

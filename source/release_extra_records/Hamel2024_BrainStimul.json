@@ -1,0 +1,107 @@
+{
+ "id": "Hamel2024_BrainStimul",
+ "module": "keypress",
+ "rows": 40321,
+ "subjects": 80,
+ "persons": 80,
+ "zip_bytes": 828169,
+ "zip_sha256": "19e84dc1dad8091e14eceb7ec1a46abeaa0f84d1448bcac722f280ba0c8a09e7",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "each sheet has 20 participants, numbered 1-20",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pulse labels cleaned of stray spaces (' SICI ', 'CSE  ', '  NoTMS' are the authors' typing; same four labels after strip)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: TMS trials per participant, variable (CSE, SICI) and time point -500 ms, -250 ms and GoCue (all 240 combinations of 40 participants)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods 2.7 (24 TMS trials for each TMS variable and time point)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: TMS trials per participant (CSE + SICI)",
+   "computed": 240.0,
+   "reported": 240.0,
+   "tol": 0,
+   "source": "Methods 2.4 (288 trials, 240 TMS and 48 NoTMS)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Random trials per participant (median over 40)",
+   "computed": 264.0,
+   "reported": 264.0,
+   "tol": 0,
+   "source": "Methods 2.4 (264 trials in the 2 Random blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Learning trials per participant (median over 40)",
+   "computed": 336.0,
+   "reported": 336.0,
+   "tol": 0,
+   "source": "Methods 2.4 (336 trials in the 2 Learning blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials in the short pseudorandom blocks per participant (4 blocks x 18 trials)",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Methods 2.4 (each Learning block starts and ends with a short block of 18 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants (4 groups of 20)",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Methods 2.1 (four groups of 20, 80 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: shortest reaction time kept (ms; the authors rejected RTs below 150 ms)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods 2.9 (RTs below 150 ms were rejected)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every sheet row kept, in the authors' order",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 has 408 rows per participant against 288 trials in the paper (240 TMS, 48 NoTMS): 120 rows labelled NoTMS carry RT = MT = 1 and 48 rows have no pulse label; the sheet does not say how they relate to the 48 NoTMS trials, so they are kept as shared.",
+  "In the Right M1 sequence-learning sheet participant 20 has one more Random row (265) than the 264 in the paper, and one participant has no accuracy for 132 trials and a few trials have no initiating finger; these are left empty as in the sheet."
+ ],
+ "sources": [
+  {
+   "file": "Hamel_data.xlsx",
+   "url": "https://osf.io/download/9jbvn/",
+   "bytes": 2357773,
+   "sha256": "d7349282e9d8ed697345c66c6f62e6b589552034a3304e98236d423e68a7dd78",
+   "fetched_utc": "2026-11-09T11:16:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hamel2024_BrainStimul.zip"
+}

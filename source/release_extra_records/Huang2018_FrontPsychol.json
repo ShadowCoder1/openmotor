@@ -1,0 +1,296 @@
+{
+ "id": "Huang2018_FrontPsychol",
+ "module": "summary",
+ "rows": 1044,
+ "subjects": 67,
+ "persons": 67,
+ "zip_bytes": 13808,
+ "zip_sha256": "0b8dd00ad195e544c68ce003c5ef0872505cc825ae84335430d0a2630633b6da",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "final participants are the non-excluded ones of the total file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shared measures agree between the two files (learning rate, final direction, retention dir, savings)",
+   "ok": true,
+   "detail": "0.0000 0.0000 0.0000 0.0000"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 67x6 + 55x12 minus 29 empty point cells",
+   "ok": true,
+   "detail": "1044"
+  },
+  {
+   "kind": "published",
+   "what": "young adults recruited",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older adults recruited",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age young (years)",
+   "computed": 25.285714285714285,
+   "reported": 25.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age young (years)",
+   "computed": 4.315304014724315,
+   "reported": 4.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age older (years)",
+   "computed": 68.4375,
+   "reported": 68.4,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD age older (years)",
+   "computed": 4.976963058967042,
+   "reported": 5.0,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final sample young",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Data Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final sample older",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Data Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited younger neutral",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited younger reward",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited younger punishment",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited older neutral",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited older reward",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recruited older punishment",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young reward points/trial",
+   "computed": 2.72,
+   "reported": 2.72,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older reward points/trial",
+   "computed": 1.8980000000000001,
+   "reported": 1.9,
+   "tol": 0.005,
+   "source": "Results, Visuomotor Learning",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT younger neutral",
+   "computed": 402.88333333333327,
+   "reported": 403.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT younger neutral",
+   "computed": 123.25333333333334,
+   "reported": 123.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT younger reward",
+   "computed": 413.17285714285714,
+   "reported": 413.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT younger reward",
+   "computed": 131.27285714285716,
+   "reported": 131.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT younger punishment",
+   "computed": 423.808,
+   "reported": 424.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT younger punishment",
+   "computed": 143.69299999999998,
+   "reported": 144.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT older neutral",
+   "computed": 481.33666666666664,
+   "reported": 481.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT older neutral",
+   "computed": 143.63666666666666,
+   "reported": 144.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT older reward",
+   "computed": 514.387,
+   "reported": 514.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT older reward",
+   "computed": 137.21099999999998,
+   "reported": 137.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline RT older punishment",
+   "computed": 529.012,
+   "reported": 529.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline MT older punishment",
+   "computed": 139.952,
+   "reported": 140.0,
+   "tol": 0.5,
+   "source": "Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Points per adaptation trial in the punishment condition are positive in the file (young about 2.45, older about 1.71), whereas the paper reports mean losses of -1.55 and -2.30 per trial; the definition of the file's column is not documented, so these were not used as a check.",
+  "The paper's Table 1 gives means with SEM; only the means were compared."
+ ],
+ "sources": [
+  {
+   "file": "MotReachAdapt.zip",
+   "url": "https://zenodo.org/api/records/1461957/files/MotReachAdapt.zip/content",
+   "bytes": 6127,
+   "sha256": "8f467f290c8d87742a028293441b7c71c14b0bee5d6290628f76734386e7be66",
+   "fetched_utc": "2026-11-09T14:43:44Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Huang2018_FrontPsychol.zip"
+}

@@ -1,0 +1,719 @@
+{
+ "id": "Matsuda2024_SciRep",
+ "module": "reach90",
+ "rows": 10152,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 195845,
+ "zip_sha256": "1a95c971f02733e7b53557388d96bfaef1f7ff04d9972c0050e0c7ef64355f5c",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "participant 1: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 2: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 3: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 4: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 5: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 6: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 7: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 8: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 9: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 10: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 11: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 12: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 13: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 14: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 15: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 16: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 17: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 18: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 19: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 20: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 21: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 22: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 23: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant 24: 45 baseline and 378 main trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = 24 x (45 + 378)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no hand angle beyond +-180",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "mean SMD on null trials is near 0 for every target (SMD is relative to the target)",
+   "ok": true,
+   "detail": "{'1': 1.05, '2': 1.27, '3': 1.04}"
+  },
+  {
+   "kind": "internal",
+   "what": "the change in SMD on the next no-feedback trial has a negative slope on the clamp for 22 or more of 24 participants (sign check: SMD is counter-clockwise positive)",
+   "ok": true,
+   "detail": "24 of 24, mean slope -0.313"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 young adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline trials per participant",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods (45 null trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-phase trials per participant",
+   "computed": 378.0,
+   "reported": 378.0,
+   "tol": 0,
+   "source": "Methods (378 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-phase no-feedback trials per participant",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods (81 no-feedback trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-phase perturbation trials per participant",
+   "computed": 81.0,
+   "reported": 81.0,
+   "tol": 0,
+   "source": "Methods (81 perturbation trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "main-phase null trials per participant",
+   "computed": 216.0,
+   "reported": 216.0,
+   "tol": 0,
+   "source": "Methods (216 null trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 110 deg target: mean over participants",
+   "computed": 11.912672664125967,
+   "reported": 11.9,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 110 deg target: SD over participants",
+   "computed": 3.7441500738430187,
+   "reported": 3.7,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 90 deg target: mean over participants",
+   "computed": 5.939743937026216,
+   "reported": 6.0,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 90 deg target: SD over participants",
+   "computed": 2.3822117800253144,
+   "reported": 2.4,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 70 deg target: mean over participants",
+   "computed": 10.8311086805416,
+   "reported": 10.8,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline SD of stick direction, 70 deg target: SD over participants",
+   "computed": 3.3504285274082903,
+   "reported": 3.4,
+   "tol": 0.1,
+   "source": "Results, movement variability in the baseline phase",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "misses, % of perturbation trials: mean",
+   "computed": 1.9547325102880657,
+   "reported": 1.95,
+   "tol": 0.005,
+   "source": "Methods, secondary task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "misses, % of perturbation trials: SD",
+   "computed": 1.7803950833561633,
+   "reported": 1.78,
+   "tol": 0.005,
+   "source": "Methods, secondary task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "false alarms, % of null and no-feedback trials: mean",
+   "computed": 0.15484234234234234,
+   "reported": 0.15,
+   "tol": 0.005,
+   "source": "Methods, secondary task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "false alarms, % of null and no-feedback trials: SD",
+   "computed": 0.26318501223138957,
+   "reported": 0.26,
+   "tol": 0.005,
+   "source": "Methods, secondary task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials with stick direction beyond 90 deg, % of main-phase trials",
+   "computed": 0.03306878306878307,
+   "reported": 0.03,
+   "tol": 0.005,
+   "source": "Methods, exclusions (0.03%)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The baseline SD of stick direction for the 90 deg target is 5.94 deg here (and in the authors' sd_baseline.csv) against 6.0 in the paper text, so a tolerance of 0.1 deg is used for the 70/90/110 deg baseline SDs.",
+  "Trials beyond 90 deg are counted before wrapping (3 raw values, 0.03% of main-phase trials as in the paper).",
+  "Misses and false alarms were reproduced as: a miss is a perturbation trial whose next trial has no trigger pull, a false alarm a trigger pull on any other trial after the first; the paper does not define them beyond the percentages."
+ ],
+ "sources": [
+  {
+   "file": "Description of individual data file.txt",
+   "url": "https://ndownloader.figshare.com/files/45561087",
+   "bytes": 831,
+   "sha256": "e5b528626e8acda0a1e6e1705a9336022d5a571342c03b088c66aced4a9051d5",
+   "fetched_utc": "2026-11-09T08:16:29Z"
+  },
+  {
+   "file": "main_1.txt",
+   "url": "https://ndownloader.figshare.com/files/45561090",
+   "bytes": 8520,
+   "sha256": "ad1824ac5260498d4327842e1aa7a89f21e45cdb9e07050ac1dfd26960fc96eb",
+   "fetched_utc": "2026-11-09T08:20:25Z"
+  },
+  {
+   "file": "ba_1.txt",
+   "url": "https://ndownloader.figshare.com/files/45561015",
+   "bytes": 900,
+   "sha256": "11df85f48016430b998e4dd568adc56ea61f5dbb8d060619e8354b0b41f7a9bf",
+   "fetched_utc": "2026-11-09T08:20:29Z"
+  },
+  {
+   "file": "AFC_25.txt",
+   "url": "https://ndownloader.figshare.com/files/45561162",
+   "bytes": 4527,
+   "sha256": "18ca0dbf9d49a41830507e1ef049466a1bac71517b42c4f3f541d2e8019c9ef2",
+   "fetched_utc": "2026-11-09T08:20:32Z"
+  },
+  {
+   "file": "afc2_figshare.m",
+   "url": "https://ndownloader.figshare.com/files/47913820",
+   "bytes": 6259,
+   "sha256": "985801cfacf27922bef01f41a196b6748fbdcf5490fdea583894e97cc4523043",
+   "fetched_utc": "2026-11-09T08:20:49Z"
+  },
+  {
+   "file": "ana_figshare_new.m",
+   "url": "https://ndownloader.figshare.com/files/47913823",
+   "bytes": 10257,
+   "sha256": "b0a1788ef1130c0985ae5eca4e92458b16fea3cbf2a2b3f2d1c425656b646df9",
+   "fetched_utc": "2026-11-09T08:20:53Z"
+  },
+  {
+   "file": "sd_baseline.csv",
+   "url": "https://ndownloader.figshare.com/files/47913826",
+   "bytes": 1251,
+   "sha256": "a9e925a17eaffe41f93eff0f4c38d7364dd7760911640693071af54d13293ae6",
+   "fetched_utc": "2026-11-09T08:20:57Z"
+  },
+  {
+   "file": "PSE.csv",
+   "url": "https://ndownloader.figshare.com/files/47913835",
+   "bytes": 843,
+   "sha256": "45bbfdffd39d4ea251a7985b5c383ea5ee6e7603ce471f8e1221c12841a147ff",
+   "fetched_utc": "2026-11-09T08:21:00Z"
+  },
+  {
+   "file": "main_24.txt",
+   "url": "https://ndownloader.figshare.com/files/45561012",
+   "bytes": 8461,
+   "sha256": "144b574cd10270d7814a0e9c94cfaa783445f3815d7d3afff882a479c86662f6",
+   "fetched_utc": "2026-11-09T08:21:56Z"
+  },
+  {
+   "file": "ba_2.txt",
+   "url": "https://ndownloader.figshare.com/files/45561018",
+   "bytes": 885,
+   "sha256": "88030fbf31608f5eb485bd3d3b1a36f7530efc981c5c4709fbd1fd1e012ddd44",
+   "fetched_utc": "2026-11-09T08:22:19Z"
+  },
+  {
+   "file": "ba_3.txt",
+   "url": "https://ndownloader.figshare.com/files/45561021",
+   "bytes": 893,
+   "sha256": "6b34bbf53bcf0daf2405041b59eef4c6f94e846349d263c19732385e4778e020",
+   "fetched_utc": "2026-11-09T08:22:24Z"
+  },
+  {
+   "file": "ba_4.txt",
+   "url": "https://ndownloader.figshare.com/files/45561024",
+   "bytes": 900,
+   "sha256": "7c601c59adcb59ec2a79fdfaefa77a2b81229c6b095b95073293d7b77fef752c",
+   "fetched_utc": "2026-11-09T08:22:29Z"
+  },
+  {
+   "file": "ba_5.txt",
+   "url": "https://ndownloader.figshare.com/files/45561027",
+   "bytes": 899,
+   "sha256": "6f9d70da7e78312bd900539bbcd554cd86480e3822734d48ab1749d4de9ffff3",
+   "fetched_utc": "2026-11-09T08:22:33Z"
+  },
+  {
+   "file": "ba_6.txt",
+   "url": "https://ndownloader.figshare.com/files/45561030",
+   "bytes": 890,
+   "sha256": "784e2a521109a72b80c552a8c887e4ccfe521aeeafab92e5510ed68362ae10bb",
+   "fetched_utc": "2026-11-09T08:22:37Z"
+  },
+  {
+   "file": "ba_7.txt",
+   "url": "https://ndownloader.figshare.com/files/45561033",
+   "bytes": 901,
+   "sha256": "26cef4785d0f814547123bf589fee95dfc12adb3a51f7987714165bc797c5fa6",
+   "fetched_utc": "2026-11-09T08:22:42Z"
+  },
+  {
+   "file": "ba_8.txt",
+   "url": "https://ndownloader.figshare.com/files/45561036",
+   "bytes": 903,
+   "sha256": "6dbda6935f977ed895a2dfdd7fe5f684a344c2117cd27255070a1beb58cf07d7",
+   "fetched_utc": "2026-11-09T08:22:47Z"
+  },
+  {
+   "file": "ba_9.txt",
+   "url": "https://ndownloader.figshare.com/files/45561039",
+   "bytes": 875,
+   "sha256": "6c92df912fc531f2306b48e4afdc68852e044a066f5932809bf6ee142984f53a",
+   "fetched_utc": "2026-11-09T08:22:52Z"
+  },
+  {
+   "file": "ba_10.txt",
+   "url": "https://ndownloader.figshare.com/files/45561042",
+   "bytes": 901,
+   "sha256": "9b0c0c6c7a2a51c73f9f4383bc098287edaf11ca392f4ae34a5d43241af80e5c",
+   "fetched_utc": "2026-11-09T08:23:10Z"
+  },
+  {
+   "file": "ba_11.txt",
+   "url": "https://ndownloader.figshare.com/files/45561045",
+   "bytes": 901,
+   "sha256": "040fff5744fdba89fe18ef23261051075d132c3e46d07e9a6c938265b3e3267c",
+   "fetched_utc": "2026-11-09T08:23:15Z"
+  },
+  {
+   "file": "ba_12.txt",
+   "url": "https://ndownloader.figshare.com/files/45561048",
+   "bytes": 903,
+   "sha256": "b2e72a3d548e3d84b1fc213fe79d15df3d6399944abc426f6f7960d1d8830884",
+   "fetched_utc": "2026-11-09T08:23:18Z"
+  },
+  {
+   "file": "ba_13.txt",
+   "url": "https://ndownloader.figshare.com/files/45561051",
+   "bytes": 895,
+   "sha256": "1a040052bbfe69ee79cc6fb33a6d25cdd5b11e59fd0cffabe993804ef115edf8",
+   "fetched_utc": "2026-11-09T08:23:22Z"
+  },
+  {
+   "file": "ba_14.txt",
+   "url": "https://ndownloader.figshare.com/files/45561054",
+   "bytes": 902,
+   "sha256": "ae28844c8606fc85df2ca06355d30fe8100b98b5f0af0bd29d99554289c60049",
+   "fetched_utc": "2026-11-09T08:23:26Z"
+  },
+  {
+   "file": "ba_15.txt",
+   "url": "https://ndownloader.figshare.com/files/45561057",
+   "bytes": 887,
+   "sha256": "5eb9dc9096d9d38259b712465096afc4bfa719d216555f7faacd3b429a9d0853",
+   "fetched_utc": "2026-11-09T08:23:29Z"
+  },
+  {
+   "file": "ba_16.txt",
+   "url": "https://ndownloader.figshare.com/files/45561060",
+   "bytes": 895,
+   "sha256": "172ee569acac880d0730609ee8328aed3bde1f4095ab158d989361148f242f36",
+   "fetched_utc": "2026-11-09T08:23:32Z"
+  },
+  {
+   "file": "ba_17.txt",
+   "url": "https://ndownloader.figshare.com/files/45561063",
+   "bytes": 901,
+   "sha256": "1d3b67b5961bffc9c03962228bffd44ae2a20c959c882ce5ae42c250c672ac0f",
+   "fetched_utc": "2026-11-09T08:23:36Z"
+  },
+  {
+   "file": "ba_18.txt",
+   "url": "https://ndownloader.figshare.com/files/45561066",
+   "bytes": 905,
+   "sha256": "2be8ced7e1fc70a507ad4c47ce5bfe4dbb1269ce96909770cc552dd422f12ff0",
+   "fetched_utc": "2026-11-09T08:23:38Z"
+  },
+  {
+   "file": "ba_20.txt",
+   "url": "https://ndownloader.figshare.com/files/45561072",
+   "bytes": 906,
+   "sha256": "6a7cccdb8ea89136f3be7d377d3c38adfbc3e73629c4e3e7025b503e8d6a81e1",
+   "fetched_utc": "2026-11-09T08:23:44Z"
+  },
+  {
+   "file": "ba_21.txt",
+   "url": "https://ndownloader.figshare.com/files/45561075",
+   "bytes": 891,
+   "sha256": "90dfad2a1a24d3be01e7826f37dfd8e2da466d0ea0f6b0a2ea7079824d053f85",
+   "fetched_utc": "2026-11-09T08:23:47Z"
+  },
+  {
+   "file": "ba_22.txt",
+   "url": "https://ndownloader.figshare.com/files/45561078",
+   "bytes": 904,
+   "sha256": "10743786c8d2fbadf625aa73bdedce699de5906575f9e52baa0a1322a4ea6970",
+   "fetched_utc": "2026-11-09T08:23:50Z"
+  },
+  {
+   "file": "ba_23.txt",
+   "url": "https://ndownloader.figshare.com/files/45561081",
+   "bytes": 896,
+   "sha256": "e49b731492c1818c1d00cb23489139d1f45608aa53699aecb32c0f79cba3b958",
+   "fetched_utc": "2026-11-09T08:23:53Z"
+  },
+  {
+   "file": "ba_24.txt",
+   "url": "https://ndownloader.figshare.com/files/45561084",
+   "bytes": 892,
+   "sha256": "61deaa01701bb11793c472e3399fe0f2c7a158de96162d735a349289450a40a2",
+   "fetched_utc": "2026-11-09T08:23:56Z"
+  },
+  {
+   "file": "main_2.txt",
+   "url": "https://ndownloader.figshare.com/files/45561093",
+   "bytes": 8466,
+   "sha256": "f367140051c585457e2ed4233e044e160ff36f825eac6a33b541b4dbda9f900d",
+   "fetched_utc": "2026-11-09T08:23:59Z"
+  },
+  {
+   "file": "main_3.txt",
+   "url": "https://ndownloader.figshare.com/files/45561096",
+   "bytes": 8538,
+   "sha256": "79e650c34beca90be20b073a63d07522369621e4e1897900956cc99979f20553",
+   "fetched_utc": "2026-11-09T08:24:02Z"
+  },
+  {
+   "file": "main_4.txt",
+   "url": "https://ndownloader.figshare.com/files/45561099",
+   "bytes": 8493,
+   "sha256": "475f94ba991ccdbc1db6023d995f5b50e746359d5258fa8d050433b80ec5f986",
+   "fetched_utc": "2026-11-09T08:24:12Z"
+  },
+  {
+   "file": "main_5.txt",
+   "url": "https://ndownloader.figshare.com/files/45561102",
+   "bytes": 8518,
+   "sha256": "45ff557bb57ecd672ac2814295cabbed70ccd78afccb86d136f056b5a13e3dc3",
+   "fetched_utc": "2026-11-09T08:24:16Z"
+  },
+  {
+   "file": "main_6.txt",
+   "url": "https://ndownloader.figshare.com/files/45561105",
+   "bytes": 8472,
+   "sha256": "45f36092456adf5e25b037d00a80fbaaa5ff074a853944dd92cf11c860ff465e",
+   "fetched_utc": "2026-11-09T08:24:19Z"
+  },
+  {
+   "file": "main_7.txt",
+   "url": "https://ndownloader.figshare.com/files/45561108",
+   "bytes": 8506,
+   "sha256": "2fbdca9df47e97b9368545133a79bd03a9f18b93bd28030e2f5fdab0dece168d",
+   "fetched_utc": "2026-11-09T08:24:23Z"
+  },
+  {
+   "file": "main_8.txt",
+   "url": "https://ndownloader.figshare.com/files/45561111",
+   "bytes": 8529,
+   "sha256": "af11e1926f5fd6376825eea443060197aa9f5f669a2693dc04e72a5c032ff9da",
+   "fetched_utc": "2026-11-09T08:24:27Z"
+  },
+  {
+   "file": "main_9.txt",
+   "url": "https://ndownloader.figshare.com/files/45561114",
+   "bytes": 8238,
+   "sha256": "19433a5f04db24996bcad1637b744443732d5a8a0379d114c3a6af3fbe7639d9",
+   "fetched_utc": "2026-11-09T08:24:34Z"
+  },
+  {
+   "file": "main_10.txt",
+   "url": "https://ndownloader.figshare.com/files/45561117",
+   "bytes": 8394,
+   "sha256": "982eb171ef5aa953d634cf066cb74475821e7172c459d11fa4d7a61fe97043da",
+   "fetched_utc": "2026-11-09T08:24:38Z"
+  },
+  {
+   "file": "main_11.txt",
+   "url": "https://ndownloader.figshare.com/files/45561120",
+   "bytes": 8422,
+   "sha256": "8aa9795e2744b7709e07a66145c5ac9a1f354a7f8a4f34608b64dca912d6af26",
+   "fetched_utc": "2026-11-09T08:24:42Z"
+  },
+  {
+   "file": "main_12.txt",
+   "url": "https://ndownloader.figshare.com/files/45561123",
+   "bytes": 8428,
+   "sha256": "00d3af82edc7618c8981943c3c804ade9f8a1c3c5e6f320742ee849aa034a0fa",
+   "fetched_utc": "2026-11-09T08:24:45Z"
+  },
+  {
+   "file": "main_13.txt",
+   "url": "https://ndownloader.figshare.com/files/45561126",
+   "bytes": 8416,
+   "sha256": "cec4bb1ded2db0e5f65298cd5531adf8bdfd385cb9d64c8755dc30b48256c521",
+   "fetched_utc": "2026-11-09T08:24:48Z"
+  },
+  {
+   "file": "main_14.txt",
+   "url": "https://ndownloader.figshare.com/files/45561129",
+   "bytes": 8381,
+   "sha256": "31381e3f5597bb9513c3cd11b10ee4db471431e64c5864164c2eb3952540f25c",
+   "fetched_utc": "2026-11-09T08:24:53Z"
+  },
+  {
+   "file": "main_15.txt",
+   "url": "https://ndownloader.figshare.com/files/45561132",
+   "bytes": 8435,
+   "sha256": "5a21da661ed413aa913d3ca5165ff5818b1d11737e73135d1fe61edfe65d3275",
+   "fetched_utc": "2026-11-09T08:24:58Z"
+  },
+  {
+   "file": "main_16.txt",
+   "url": "https://ndownloader.figshare.com/files/45561135",
+   "bytes": 8490,
+   "sha256": "c2a0c222d831f6afc9b7b988a2b7ceeeaf4cb85bd9d313907d048c422066d0cd",
+   "fetched_utc": "2026-11-09T08:25:03Z"
+  },
+  {
+   "file": "main_17.txt",
+   "url": "https://ndownloader.figshare.com/files/45561138",
+   "bytes": 8458,
+   "sha256": "f620673bef237de9370a7c04f24bbf26d58430fd59402578a0e1183dd98c1cb8",
+   "fetched_utc": "2026-11-09T08:25:09Z"
+  },
+  {
+   "file": "main_18.txt",
+   "url": "https://ndownloader.figshare.com/files/45561141",
+   "bytes": 8544,
+   "sha256": "f4c44f2c1e39be24d1583034bd04347be93ffb2841ac7a376769f42648332381",
+   "fetched_utc": "2026-11-09T08:25:30Z"
+  },
+  {
+   "file": "main_19.txt",
+   "url": "https://ndownloader.figshare.com/files/45561144",
+   "bytes": 8414,
+   "sha256": "e10eff05979657ffb1dce41fef0671f7481422f8037dfc46289845039998fdce",
+   "fetched_utc": "2026-11-09T08:25:39Z"
+  },
+  {
+   "file": "main_20.txt",
+   "url": "https://ndownloader.figshare.com/files/45561147",
+   "bytes": 8467,
+   "sha256": "ebc8d4849d039dc8a01ddb36cc3872cb0844222ed6467160df7a5ac378510607",
+   "fetched_utc": "2026-11-09T08:25:46Z"
+  },
+  {
+   "file": "main_21.txt",
+   "url": "https://ndownloader.figshare.com/files/45561150",
+   "bytes": 8407,
+   "sha256": "ae3fed3045ad5711c611a628b89b49dbb7de09f61a4e98a7d524143e66df1c3f",
+   "fetched_utc": "2026-11-09T08:25:52Z"
+  },
+  {
+   "file": "main_22.txt",
+   "url": "https://ndownloader.figshare.com/files/45561153",
+   "bytes": 8533,
+   "sha256": "8f2940fd2e39ce471be58a376d2429c81ba26ccb07f4c936ca8870fe302beb3f",
+   "fetched_utc": "2026-11-09T08:25:58Z"
+  },
+  {
+   "file": "main_23.txt",
+   "url": "https://ndownloader.figshare.com/files/45561156",
+   "bytes": 8388,
+   "sha256": "b32568ac3ae025fd0cecc89c81971c594c66c90bd841bad69d98b56026e03d29",
+   "fetched_utc": "2026-11-09T08:26:04Z"
+  },
+  {
+   "file": "ba_19.txt",
+   "url": "https://ndownloader.figshare.com/files/45561069",
+   "bytes": 894,
+   "sha256": "0e4caa33cd7d4fdff79bf5fe64d1a333444c21d83d5a689a5fa9faa295759c94",
+   "fetched_utc": "2026-11-09T08:27:08Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Matsuda2024_SciRep.zip"
+}

@@ -1,0 +1,98 @@
+{
+ "id": "Delhaye2024_SciAdv",
+ "module": "timeseries",
+ "rows": 900,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 166361683,
+ "zip_sha256": "91b517317591cfe6dbb634aa24beb0a9304b766fb5ba81d85d786aa870d613ff",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants starting with high friction (Fig. 1D, n = 9 and n = 9)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Fig. 1D",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks of five trials",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Fig. 1C",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials analysed after dropping the two training blocks",
+   "computed": 720.0,
+   "reported": 720.0,
+   "tol": 0,
+   "source": "Methods (Inspection and sorting of trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "weight of the object in the static phase (N), mean across participants",
+   "computed": 2.215242849279269,
+   "reported": 2.22,
+   "tol": 0.01,
+   "source": "Results (first paragraph)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of that weight across participants (N)",
+   "computed": 0.07264429064360566,
+   "reported": 0.07,
+   "tol": 0.01,
+   "source": "Results (first paragraph)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has 17 raw plus 4 derived channels and 1990-2000 samples (6 files are shorter than 2000)",
+   "ok": true,
+   "detail": "6 short"
+  },
+  {
+   "kind": "internal",
+   "what": "authors' derived signals line up with the raw files (index normal force vs FTcam_Fz, |r| > 0.9 in every trial)",
+   "ok": true,
+   "detail": "min |r| 0.999"
+  },
+  {
+   "kind": "internal",
+   "what": "friction alternates every five trials",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Two friction-fit parameters in index_CF.mat/thumb_CF.mat are complex numbers in the deposit and are left empty in participants.csv.",
+  "Six recordings have 1998 or 1999 samples instead of 2000 (S06 trial 10, S07 trial 13, S08 trials 44 and 50, S11 trial 10, S15 trial 42; the derived signals are cut to the same length, assuming they start together). The deposit's Position column cannot be used in pandas-style readers because each row ends with an extra comma; the converter reads it by hand. Strain-related results (most of the paper) could not be reproduced because the strain arrays were not converted."
+ ],
+ "sources": [
+  {
+   "file": "afd.zip",
+   "url": "https://zenodo.org/api/records/5213702/files/Active_friction_dataset.zip/content",
+   "bytes": 1710415847,
+   "sha256": "735c32772a5a0eed338c703ad3e0c485661f03a43bb33b773089943ba37ccb70",
+   "fetched_utc": "2026-11-09T04:32:49Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Delhaye2024_SciAdv.zip"
+}

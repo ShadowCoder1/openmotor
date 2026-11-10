@@ -1,0 +1,159 @@
+{
+ "id": "Jin2026_SciRep",
+ "module": "walking",
+ "rows": 47228,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 1719082,
+ "zip_sha256": "ea72a240388d0b4fcf19d698487ea1f6e8ddd552f2a3eedaa9450e9bef17a068",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "SLA equals (fast - slow) / (fast + slow) of the shared step lengths in every file",
+   "ok": true,
+   "detail": "0 files differ"
+  },
+  {
+   "kind": "internal",
+   "what": "file names, order list and target array agree except in one participant's last two guided trials",
+   "ok": true,
+   "detail": "participant 7, trial 8: file says zero, list says zero, target array says -0.10; participant 7, trial 9: file says neg10, list says neg15, target array says -0.15"
+  },
+  {
+   "kind": "internal",
+   "what": "slow step times stored one position later match slow minus fast heel-strike times (within 0.01 s)",
+   "ok": true,
+   "detail": "0 files differ"
+  },
+  {
+   "kind": "internal",
+   "what": "stance times found for at least 99% of strides (toe-off before the leg's next heel strike)",
+   "ok": true,
+   "detail": "134 of 94456 empty"
+  },
+  {
+   "kind": "internal",
+   "what": "15 participants x 11 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "slow-belt stance is longer than fast-belt stance in split-belt trials",
+   "ok": true,
+   "detail": "0.938 vs 0.642"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Abstract and Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking trials per participant",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Fig. 1 caption",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "guided exploration trials per participant",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Study design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean steady-state SLA, free exploration 1 (SBR 3; last 100 strides)",
+   "computed": 0.009693351377609323,
+   "reported": 0.01,
+   "tol": 0.0005,
+   "source": "Results, free exploration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD across participants, same",
+   "computed": 0.059090495265597884,
+   "reported": 0.059,
+   "tol": 0.0005,
+   "source": "Results, free exploration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean steady-state SLA, free exploration 2 (SBR 2)",
+   "computed": 0.012624048982260473,
+   "reported": 0.013,
+   "tol": 0.0005,
+   "source": "Results, free exploration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean tied-belt baseline SLA (last 100 strides)",
+   "computed": -0.005831162599724549,
+   "reported": -0.006,
+   "tol": 0.0005,
+   "source": "Results, free exploration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD across participants, same",
+   "computed": 0.026400819761225214,
+   "reported": 0.026,
+   "tol": 0.0005,
+   "source": "Results, free exploration",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean body mass (kg)",
+   "computed": 76.06666666666666,
+   "reported": 76.1,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean leg length (cm)",
+   "computed": 83.29333333333334,
+   "reported": 83.3,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "For participant 7 the deposit's Subject_data.m disagrees with the file names: its order list gives neg15 as the last guided trial where the file is named neg10 (so neg10 appears twice and neg15 never), and its target array gives -0.10 for the trial named zero. The rows follow the file names, which label the data directly (participant 7, trial 8: file says zero, list says zero, target array says -0.10; participant 7, trial 9: file says neg10, list says neg15, target array says -0.15).",
+  "Three numbers of the paper do not reproduce and are not used as checks: the SD of steady-state SLA in the second free exploration (0.0525 here, 0.052 in the paper), and the SDs of body mass and leg length (15.0 kg and 5.50 cm here, 14.5 kg and 5.31 cm in the paper; the paper's values match the population SD, 14.5 and 5.31)."
+ ],
+ "sources": [
+  {
+   "file": "Processed_data.zip",
+   "url": "https://zenodo.org/api/records/16970717/files/Processed_data.zip/content",
+   "bytes": 365686788,
+   "sha256": "96bcb1e3702f53ea1573931bc208335d7c0177f6826a62840ecd121e851051aa",
+   "fetched_utc": "2026-11-09T21:04:49Z"
+  },
+  {
+   "file": "ReadME.md",
+   "url": "https://zenodo.org/api/records/16970717/files/ReadME.md/content",
+   "bytes": 3095,
+   "sha256": "c41a2e7607f6f6a96de70b1e04ad09ac7226930e4c1eeb840ff04db4bfcb17f9",
+   "fetched_utc": "2026-11-09T21:04:54Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jin2026_SciRep.zip"
+}

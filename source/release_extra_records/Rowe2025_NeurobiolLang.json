@@ -1,0 +1,140 @@
+{
+ "id": "Rowe2025_NeurobiolLang",
+ "module": "speech",
+ "rows": 17280,
+ "subjects": 108,
+ "persons": 108,
+ "zip_bytes": 391008,
+ "zip_sha256": "981cedac139e0fc27f395abb1d1d359767ab2187d068edf16e5146f1800e781c",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "test trials per participant (80 trained + 80 novel)",
+   "computed": 160.0,
+   "reported": 160.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trained trials per participant",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repetitions of each trained stimulus",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "repetitions of each novel stimulus",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of trained stimuli",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Training)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of novel stimuli",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Methods (Testing)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy, trained stimuli (mean of the three Table 3 condition means 0.42, 0.35, 0.27)",
+   "computed": 0.348467254993033,
+   "reported": 0.3466666666666667,
+   "tol": 0.01,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "accuracy, novel stimuli (0.37, 0.30, 0.29)",
+   "computed": 0.32210868555503946,
+   "reported": 0.32,
+   "tol": 0.01,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration, trained stimuli, s (0.64, 0.65, 0.62)",
+   "computed": 0.6303618443861417,
+   "reported": 0.6366666666666667,
+   "tol": 0.01,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "duration, novel stimuli, s (0.65, 0.67, 0.64)",
+   "computed": 0.6518222241132309,
+   "reported": 0.6533333333333333,
+   "tol": 0.01,
+   "source": "Rowe et al. 2025, Neurobiology of Language, Table 3",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "108 participants, 17,280 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "an accurate word has accurate onset and offset clusters",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers 1-160 in each file, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one item set",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analysed N = 105 participants (35 per stimulation condition); the deposit holds 108 participants (numbers 1 to 109 without 14) and does not say which three were left out, so no row is marked excluded.",
+  "Table 3 means are given per stimulation condition; only the pooled means (mean of the three condition means) can be compared, within 0.01."
+ ],
+ "sources": [
+  {
+   "file": "Data_NOL2025.zip",
+   "url": "https://osf.io/download/c8m2j/",
+   "bytes": 447048,
+   "sha256": "5873233a1f886858008bd3d6c93b40114dad1b542308a6d1bac8f449a3e51967",
+   "fetched_utc": "2026-11-09T03:55:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Rowe2025_NeurobiolLang.zip"
+}

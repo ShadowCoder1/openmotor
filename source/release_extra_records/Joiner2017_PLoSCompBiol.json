@@ -1,0 +1,125 @@
+{
+ "id": "Joiner2017_PLoSCompBiol",
+ "module": "timeseries",
+ "rows": 20371,
+ "subjects": 11,
+ "persons": 11,
+ "zip_bytes": 110455701,
+ "zip_sha256": "bc4fc0e0b31525add3a6eb24b171b1bc2ac8f1d45923cd5bc340a8039c9af63e",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "rows + dropped all-NaN movements = 11 x 1856",
+   "ok": true,
+   "detail": "20371 rows, 45 all-NaN movements dropped"
+  },
+  {
+   "kind": "internal",
+   "what": "blocksize sums to 1856 movements in 16 blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants recruited (11; one later excluded by the authors)",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants ('11 recruited, 1 excluded')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "force-field exposures per participant (224)",
+   "computed": 224.0,
+   "reported": 224.0,
+   "tol": 0,
+   "source": "Methods, Main experiment ('224 force-field exposures')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "familiarization trials (no force field), participant 1",
+   "computed": 270.0,
+   "reported": 270.0,
+   "tol": 0,
+   "source": "Methods, Familiarization (270 trials in 3 blocks)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no force-field trial in the three familiarization blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "largest velocity-dependent field (Ns/m)",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Force-field sizes (alpha = +-15 N/(m/s))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "largest position-dependent field (N/m)",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Force-field sizes (delta = +-45 N/m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "movement distance: median final x position (m)",
+   "computed": 0.09994030743837357,
+   "reported": 0.1,
+   "tol": 0.01,
+   "source": "Methods (targets 10 cm apart)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "peak force on force-field trials, median over trials (N)",
+   "computed": 4.328289985656738,
+   "reported": 4.5,
+   "tol": 1.0,
+   "source": "Deposit readme (peak force 'about 4.5N' in both field types)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "movement directions are 90 or 270 deg, half each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every sample file has 241 samples",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper analyses 10 of the 11 participants and separates 'solitary' from 'shared' triplets; the deposit does not mark either, so neither is applied."
+ ],
+ "sources": [
+  {
+   "file": "joineretal2017data.mat",
+   "url": "https://zenodo.org/api/records/4991069/files/joineretal2017data.mat/content",
+   "bytes": 72788310,
+   "sha256": "55a69e3617e0a96fc183d2ec44ac5e4f9c87db23c34c508d415ba11cfd91d03f",
+   "fetched_utc": "2026-11-09T07:39:21Z"
+  },
+  {
+   "file": "README_for_joineretal2017data.pdf",
+   "url": "https://zenodo.org/api/records/4991069/files/README_for_joineretal2017data.pdf/content",
+   "bytes": 29550,
+   "sha256": "e6c2a9759a11c228663c20d560d1c81e0373da1ef25958ef0588de1bca2d1946",
+   "fetched_utc": "2026-11-09T07:39:28Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Joiner2017_PLoSCompBiol.zip"
+}

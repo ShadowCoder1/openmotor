@@ -1,0 +1,7 @@
+{
+ "id": "Vachon2020_PLoSONE",
+ "skipped": true,
+ "reason": "other",
+ "details": "Duplicate of released Gastrock2020_SciRep: the OSF deposit holds only the 41 younger adults (20 non-instructed 30implicit, 21 instructed 30explicit, same group sizes and sex counts as Gastrock2020), with hand_angle values in the localization files identical to Gastrock2020 (5980 of 5980 rows of 30explicit); tap angles and learning-curve values differ slightly (a re-processed version). None of the 38 older adults, the paper's subject, are in the deposit. Not re-released to avoid double counting the same participants; retry only if the curator wants the re-processed values.",
+ "sources": []
+}

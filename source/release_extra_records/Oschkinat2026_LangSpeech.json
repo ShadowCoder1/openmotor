@@ -1,0 +1,517 @@
+{
+ "id": "Oschkinat2026_LangSpeech",
+ "module": "speech",
+ "rows": 105056,
+ "subjects": 121,
+ "persons": 61,
+ "zip_bytes": 2071741,
+ "zip_sha256": "88cf9c5e0d432d25b6164543a7454a0859417e2c94cbdb0daed2b4d7ffb2619f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "257752 long rows: 105056 spoken, 105056 heard and 47640 simulated-perturbation rows, 61 speakers, no duplicate speaker x word x trial x segment x channel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "phases follow the trial number (baseline 1-20, ramp 21-50, hold 51-80, after-effect 81-110); simulated perturbation rows exist only in baseline and after-effect",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every spoken segment has a heard segment; heard equals spoken in baseline and after-effect",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the word named in order_first is one of the speaker's words for all 60 speakers that have two words",
+   "ok": true,
+   "detail": "60 of 61 speakers overall"
+  },
+  {
+   "kind": "internal",
+   "what": "105056 rows = 61 speakers' segments; 121 speaker x word sequences (one speaker has one word); every utterance has all 8 segments",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "bad-trial flag: ramp/hold utterances with the perturbation check failed (pcf_ok = 0) are flagged; baseline and after-effect trials are never flagged for it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "tested participants",
+   "computed": 61.0,
+   "reported": 61.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants saying Staat",
+   "computed": 38.0,
+   "reported": 38.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants saying Stab",
+   "computed": 37.0,
+   "reported": 37.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants saying Stadt",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants saying Stamm",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the tested participants (years)",
+   "computed": 23.016393442622952,
+   "reported": 23.0,
+   "tol": 0.05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants: men",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "tested participants: women",
+   "computed": 51.0,
+   "reported": 51.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Staat: speakers kept by the trial-count rule (exclude = no)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Staat: speakers excluded by the trial-count rule (exclude = yes)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stab: speakers kept by the trial-count rule (exclude = no)",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stab: speakers excluded by the trial-count rule (exclude = yes)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stadt: speakers kept by the trial-count rule (exclude = no)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stadt: speakers excluded by the trial-count rule (exclude = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stamm: speakers kept by the trial-count rule (exclude = no)",
+   "computed": 22.0,
+   "reported": 22.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stamm: speakers excluded by the trial-count rule (exclude = yes)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Staat: kept speakers with a non-stretched preV",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Staat: kept speakers with a stretched preV (excluded from the analyses)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stab: kept speakers with a non-stretched preV",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Stab: kept speakers with a stretched preV (excluded from the analyses)",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the final data",
+   "computed": 46.0,
+   "reported": 46.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the final participants (years)",
+   "computed": 22.91304347826087,
+   "reported": 22.9,
+   "tol": 0.05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final participants: men",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final participants: women",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final participants with both words, vowel compression",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "final participants with both words, vowel stretching",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Oschkinat, Reinisch & Hoole 2026, authors' script 1 output (paper section 2.5)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Table 1 has 10 word x segment rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat C1: perturbation magnitude in the hold phase (ms)",
+   "computed": 92.04605040063105,
+   "reported": 92.04605,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat C1: SD across speakers (ms)",
+   "computed": 26.818831645425732,
+   "reported": 26.81883,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat C2: perturbation magnitude in the hold phase (ms)",
+   "computed": 46.85143078598818,
+   "reported": 46.85143,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat C2: SD across speakers (ms)",
+   "computed": 21.644113849176314,
+   "reported": 21.64411,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat V: perturbation magnitude in the hold phase (ms)",
+   "computed": -139.41126576652556,
+   "reported": -139.41127,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Staat V: SD across speakers (ms)",
+   "computed": 21.45554656006795,
+   "reported": 21.45555,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab C1: perturbation magnitude in the hold phase (ms)",
+   "computed": 88.51825819933164,
+   "reported": 88.51826,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab C1: SD across speakers (ms)",
+   "computed": 25.198353319584857,
+   "reported": 25.19835,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab C2: perturbation magnitude in the hold phase (ms)",
+   "computed": 40.787895227195676,
+   "reported": 40.7879,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab C2: SD across speakers (ms)",
+   "computed": 27.84945473910736,
+   "reported": 27.84945,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab V: perturbation magnitude in the hold phase (ms)",
+   "computed": -129.12822770236923,
+   "reported": -129.12823,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stab V: SD across speakers (ms)",
+   "computed": 20.185179788054796,
+   "reported": 20.18518,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stadt Ccoda: perturbation magnitude in the hold phase (ms)",
+   "computed": -58.97294435864307,
+   "reported": -58.97294,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stadt Ccoda: SD across speakers (ms)",
+   "computed": 27.986538810860647,
+   "reported": 27.98654,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stadt V: perturbation magnitude in the hold phase (ms)",
+   "computed": 74.76985275981343,
+   "reported": 74.76985,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stadt V: SD across speakers (ms)",
+   "computed": 18.396953008665502,
+   "reported": 18.39695,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stamm Ccoda: perturbation magnitude in the hold phase (ms)",
+   "computed": -75.45810219478119,
+   "reported": -75.4581,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stamm Ccoda: SD across speakers (ms)",
+   "computed": 15.443221191984078,
+   "reported": 15.44322,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stamm V: perturbation magnitude in the hold phase (ms)",
+   "computed": 78.92892690999389,
+   "reported": 78.92893,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1, Stamm V: SD across speakers (ms)",
+   "computed": 15.593337397878324,
+   "reported": 15.59334,
+   "tol": 6e-05,
+   "source": "Oschkinat, Reinisch & Hoole 2026, Table 1 (perturbation magnitude)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The exclusion flags are not stored in the authors' data file; they were rebuilt from script 1 and reproduce the participant counts the script prints and all 20 numbers of Table 1.",
+  "The authors' absdiff_ms is not copied (it is duration minus baseline mean)."
+ ],
+ "sources": [
+  {
+   "file": "0_README.txt",
+   "url": "https://osf.io/download/5rcv9/",
+   "bytes": 2394,
+   "sha256": "b75072671effc0dca0b62010968c0e81c03dc385dadfe4bf436c92b546b99f1c",
+   "fetched_utc": "2026-11-08T21:53:36Z"
+  },
+  {
+   "file": "0_Perturbation_data_Stadt_Staat.RData",
+   "url": "https://osf.io/download/6995e6674d2948eae26561ea/",
+   "bytes": 2289107,
+   "sha256": "d0c1a46f78808cf2a281186a60afdbdf05ff7fec92afe8d282e6b8f014d29279",
+   "fetched_utc": "2026-11-08T21:53:43Z"
+  },
+  {
+   "file": "1_Data_preparation_and_exclusions.Rmd",
+   "url": "https://osf.io/download/stjgw/",
+   "bytes": 28368,
+   "sha256": "a6a946dfb1b2effe74b00c8aaf2e06883a551634021006015216887ea41bb4f6",
+   "fetched_utc": "2026-11-08T21:53:48Z"
+  },
+  {
+   "file": "2_Analyses_Vowels_section_3.1.Rmd",
+   "url": "https://osf.io/download/6995e5315d6a6e7983656375/",
+   "bytes": 38376,
+   "sha256": "f8b3056c855fde477bbca195dd400467aa71894180635e189d18fc0a7d7db81f",
+   "fetched_utc": "2026-11-08T21:54:06Z"
+  },
+  {
+   "file": "Table_1.docx",
+   "url": "https://osf.io/download/mgvz8/",
+   "bytes": 13836,
+   "sha256": "c3590869cfdb5be372af1f460d61842329769c8a463bbfa0e57cc3210df0e6cf",
+   "fetched_utc": "2026-11-08T22:18:34Z"
+  },
+  {
+   "file": "1_Data_preparation_and_exclusions.html",
+   "url": "https://osf.io/download/ke8ys/",
+   "bytes": 1935010,
+   "sha256": "04bf6f6a6a2a23a25f0a8d70bfbc312248115c3125890fbf1aed31c953507b9c",
+   "fetched_utc": "2026-11-08T22:20:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Oschkinat2026_LangSpeech.zip"
+}

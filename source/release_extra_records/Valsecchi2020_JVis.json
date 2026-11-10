@@ -1,0 +1,103 @@
+{
+ "id": "Valsecchi2020_JVis",
+ "module": "saccade",
+ "rows": 5040,
+ "subjects": 24,
+ "persons": 12,
+ "zip_bytes": 181652,
+ "zip_sha256": "a6ab16042d0a7681604c7dff64ba3682e9020c8f1ef357872baf5bccb04e7202",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 2: observers",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Experiment 2 (Space), Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: trials per session (120 test + 90 training)",
+   "computed": 210.0,
+   "reported": 210.0,
+   "tol": 0,
+   "source": "Experiment 2, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: sessions (two days per observer)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Experiment 2, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: test trials per session (12 blocks of 10)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Experiment 2, Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of saccades with gain below 0.5 (discarded)",
+   "computed": 1.8569903948772677,
+   "reported": 2.2,
+   "tol": 0.5,
+   "source": "Experiment 2, Methods (2.2% of trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: % of saccades with gain above 1.5 (discarded)",
+   "computed": 0.10672358591248667,
+   "reported": 0.2,
+   "tol": 0.2,
+   "source": "Experiment 2, Methods (0.2% of trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "training trials: gain is about 1 in no-step trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "210 rows per session, 24 sessions, 5040 rows",
+   "ok": true,
+   "detail": "5040"
+  },
+  {
+   "kind": "internal",
+   "what": "target position 1 is the left target: test saccades to position 1 go left in more than 98% of trials",
+   "ok": true,
+   "detail": "0.995"
+  },
+  {
+   "kind": "internal",
+   "what": "training gain is higher in outward-step trials than in inward-step trials",
+   "ok": true,
+   "detail": "1.041 vs 0.980"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Gain discard rates are computed from the saccades chosen here (EyeLink events, 24 sessions); see the checks for how they compare with the paper's 2.2% below 0.5 and 0.2% above 1.5. Training trials in which no saccade started between trial start and the step message (about 7%) have no saccade values and are marked excluded."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/records/3607596/files/ZENODO_Sacc_Size.zip?download=1",
+   "bytes": 348693318,
+   "sha256": "2cfcda980f2b53009879aea1e5b6ccc1c4dd192ef619707a2e95db56ba19410e",
+   "fetched_utc": "2026-11-09T06:21:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Valsecchi2020_JVis.zip"
+}

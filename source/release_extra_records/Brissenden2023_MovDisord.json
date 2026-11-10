@@ -1,0 +1,838 @@
+{
+ "id": "Brissenden2023_MovDisord",
+ "module": "joystick_vigor",
+ "rows": 6840,
+ "subjects": 38,
+ "persons": 10,
+ "zip_bytes": 238707,
+ "zip_sha256": "1773ce6c34c11b18472345ed19a4f6a1c6e16e682800635ba3b9c0c8617e21f9",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "REDCap export: 12 participants consented, 11 reached visit 2 (one withdrew)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant with a retain-data answer: yes (1) or no (0); exactly one no",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the one 'no' matches the consent-form note ('did not give permission to retain data for future studies')",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_102a_210702.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_102b_210707.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_102c_210903.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_102d_210913.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_103a_210812.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_103b_210818.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_103c_211208.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_103d_211209.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_104c_210915.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_104d_210916.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_105a_211018.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_105b_211020.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_105c_211203.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_105d_211206.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_106a_220103.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_106b_220107.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_106c_220309.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_106d_220311.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_107a_220131.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_107b_220207.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_107c_220321.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_107d_220404.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_108a_220210.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_108b_220217.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_108c_220316.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_108d_220323.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_109a_220523.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_109b_220527.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_109c_220901.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_109d_220908.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_110a_220513.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_110b_220520.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_110c_220815.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_110d_220817.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_112a_220822.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_112b_220921.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_112c_221031.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_112d_221104.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_113a_220824.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_113b_220825.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_113c_221215.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_113d_221216.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "t_redcap_export.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "joystick sessions (11 participants x 4 visits, minus the 2 first sessions one participant could not do)",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants and Results (one participant could not perform the task in the first two sessions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who did the joystick task",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (n = 11)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "session letters a-d match REDCap visits 1-4 (file date within 31 days of the visit date, all 42)",
+   "ok": true,
+   "detail": "42 of 42"
+  },
+  {
+   "kind": "internal",
+   "what": "session tables: 13 columns each, subject id column constant and equal to the file name",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "sessions that stopped after block 9 of 10 (one LDR session)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Results/Methods (task aborted after block 9 of 10 in one participant's LDR session)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the stopped session has 9 blocks of 18 trials (162); all others have 10 blocks of 18 (180)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "bounding-circle radius (cm), 9.13",
+   "computed": 9.13,
+   "reported": 9.13,
+   "tol": 0.005,
+   "source": "Methods, Joystick task (target radii 9.13, 11.41, 13.69 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bounding-circle radius (cm), 11.41",
+   "computed": 11.41,
+   "reported": 11.41,
+   "tol": 0.005,
+   "source": "Methods, Joystick task (target radii 9.13, 11.41, 13.69 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "bounding-circle radius (cm), 13.69",
+   "computed": 13.69,
+   "reported": 13.69,
+   "tol": 0.005,
+   "source": "Methods, Joystick task (target radii 9.13, 11.41, 13.69 cm)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "reward levels ($5, $10, $20): number of levels",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods, Joystick task",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest hold before the go signal (s)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Methods, Joystick task (uniformly random 1-2 s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest hold before the go signal (s)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Joystick task (uniformly random 1-2 s)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age of the 11 participants (years)",
+   "computed": 66.72727272727273,
+   "reported": 66.73,
+   "tol": 0.005,
+   "source": "Results, Participants (mean 66.73)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age",
+   "computed": 6.325992555969523,
+   "reported": 6.33,
+   "tol": 0.005,
+   "source": "Results, Participants (SD 6.33)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Abstract and Results (6 male : 5 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Abstract and Results (6 male : 5 female)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean interval SDR to LDR visit (days)",
+   "computed": 62.72727272727273,
+   "reported": 62.73,
+   "tol": 0.005,
+   "source": "Results, Participants (62.73 days)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "shortest interval (days)",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Results, Participants (range 27-112)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "longest interval (days)",
+   "computed": 112.0,
+   "reported": 112.0,
+   "tol": 0,
+   "source": "Results, Participants (range 27-112)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MDS-UPDRS III: improvement of the group mean from baseline, SDR (%)",
+   "computed": 22.543352601156066,
+   "reported": 22.5,
+   "tol": 0.1,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MDS-UPDRS III: improvement of the group mean from baseline, LDR (%)",
+   "computed": 40.7514450867052,
+   "reported": 40.75,
+   "tol": 0.1,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MDS-UPDRS III: improvement of the group mean from baseline, SDR+LDR (%)",
+   "computed": 52.890173410404614,
+   "reported": 52.98,
+   "tol": 0.1,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "finger tapping: improvement of the group mean from baseline, SDR (%)",
+   "computed": 16.615258071149494,
+   "reported": 16.6,
+   "tol": 0.05,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "finger tapping: improvement of the group mean from baseline, LDR (%)",
+   "computed": 25.25190211803415,
+   "reported": 25.25,
+   "tol": 0.05,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "finger tapping: improvement of the group mean from baseline, SDR+LDR (%)",
+   "computed": 31.976146411680052,
+   "reported": 31.98,
+   "tol": 0.05,
+   "source": "Results, Clinical measures",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept for every session of the 10 participants who allowed their data to be retained",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "blocks of 18 trials: each reward x radius cell twice per block",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "crossing angle within [-180, 180] and time to bound within the 1.5 s window",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "a trial without a crossing has no time, angle or path error",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports a baseline MDS-UPDRS total (parts I-III) of 43.64 (SD 8.23, range 34-59); the export's parts I, II and III add to 42.64 (SD 7.78, range 34-57), so that one number does not reproduce. The improvements of the group-mean MDS-UPDRS III are 22.54, 40.75 and 52.89 percent here against 22.5, 40.75 and 52.98 in the paper.",
+  "The paper says the task stopped after block 9 of 10 in one participant's LDR session; in the deposit the one session with 9 blocks is the baseline session (a) of the participant who did not consent to retention, so it is not in this file.",
+  "The deposit lists no license (the paper itself is CC BY-NC-ND 4.0); the data are shared with credit to the authors and removed on request.",
+  "Rows cover 10 of the paper's 11 participants (one did not agree to data retention); the paper's counts and clinical numbers were reproduced on all 11 from the authors' clinical export."
+ ],
+ "sources": [
+  {
+   "file": "t_102a_210702.csv",
+   "url": "https://osf.io/download/65008e60767f4a2297de8e4a/",
+   "bytes": 31554,
+   "sha256": "4eebc8287ec5a80e260208c150365c8039e52b921a8b6ab57563b80fd48664f1",
+   "fetched_utc": "2026-11-09T05:57:30Z"
+  },
+  {
+   "file": "t_102b_210707.csv",
+   "url": "https://osf.io/download/65008e67767f4a229bde8e94/",
+   "bytes": 31901,
+   "sha256": "fdffdf4a7b3636f03d8729fdd15ab34b1b2bd5747115f4f58978d846c6d7e097",
+   "fetched_utc": "2026-11-09T05:57:37Z"
+  },
+  {
+   "file": "t_102c_210903.csv",
+   "url": "https://osf.io/download/65008e733b15681bc6d9565e/",
+   "bytes": 31468,
+   "sha256": "554692b17147bc0d6aeca0bcc7ac2376667eac8042fccdeb5241e5363dc02af2",
+   "fetched_utc": "2026-11-09T05:57:43Z"
+  },
+  {
+   "file": "t_102d_210913.csv",
+   "url": "https://osf.io/download/65008e7b3b15681bc5d95626/",
+   "bytes": 31914,
+   "sha256": "1c0f0da89a40dcf773a16d59a65adcf2b41da61b86804dd5b3e36429e0cc81cb",
+   "fetched_utc": "2026-11-09T05:57:51Z"
+  },
+  {
+   "file": "t_103a_210812.csv",
+   "url": "https://osf.io/download/65008e883b15681bc6d95669/",
+   "bytes": 32013,
+   "sha256": "6df7207dae44e014111678d8f4bbb9159de2182604a391f841e55da3bb2e30fc",
+   "fetched_utc": "2026-11-09T05:57:58Z"
+  },
+  {
+   "file": "t_103b_210818.csv",
+   "url": "https://osf.io/download/65008e8ef3dcd15f11ddd35c/",
+   "bytes": 32235,
+   "sha256": "01e0bc79506a16bfc4e480347e1b66b8e4d1e0f6e0450f84e1bd4325ac0b9a4c",
+   "fetched_utc": "2026-11-09T05:59:46Z"
+  },
+  {
+   "file": "t_103c_211208.csv",
+   "url": "https://osf.io/download/65008e9ad9f2c95b1fd04817/",
+   "bytes": 31134,
+   "sha256": "8aeafe9241dbb514965373d0e75bb2105f7fede30eacc15f5793203894f527ef",
+   "fetched_utc": "2026-11-09T06:00:07Z"
+  },
+  {
+   "file": "t_103d_211209.csv",
+   "url": "https://osf.io/download/65008ea13b15681bc6d9567e/",
+   "bytes": 32088,
+   "sha256": "bdf7f2c05638a16f909c2aab0dfeeb1d57f79fd414df95c7a95aa23c23424f22",
+   "fetched_utc": "2026-11-09T06:00:13Z"
+  },
+  {
+   "file": "t_104c_210915.csv",
+   "url": "https://osf.io/download/65008ead767f4a2292de8e05/",
+   "bytes": 31501,
+   "sha256": "92cad548c45101fee2ad19a0c9f078a696a62ca6167aa8eec75d9560d88c36a5",
+   "fetched_utc": "2026-11-09T06:03:09Z"
+  },
+  {
+   "file": "t_104d_210916.csv",
+   "url": "https://osf.io/download/65008eb73b15681bc2d955e5/",
+   "bytes": 31203,
+   "sha256": "a4055af84fc4cc7330040d83a2ea90e742e8c7b12c82eb4a5e3e7a90971a5df2",
+   "fetched_utc": "2026-11-09T06:03:16Z"
+  },
+  {
+   "file": "t_105a_211018.csv",
+   "url": "https://osf.io/download/65008ec0f3dcd15f15ddd458/",
+   "bytes": 31439,
+   "sha256": "ecddf6d6d0c997b2110140b8976217da7ad5e93c1b58b84271dd01a1a528f8a3",
+   "fetched_utc": "2026-11-09T06:03:23Z"
+  },
+  {
+   "file": "t_105b_211020.csv",
+   "url": "https://osf.io/download/65008eca767f4a229bde8fd3/",
+   "bytes": 31864,
+   "sha256": "61a7dd81ce38e835846c46c76ccb6c26c215a35507a7cf255cdfb11fd27294fb",
+   "fetched_utc": "2026-11-09T06:03:31Z"
+  },
+  {
+   "file": "t_105c_211203.csv",
+   "url": "https://osf.io/download/65008ed2f3dcd15f14ddd46d/",
+   "bytes": 31814,
+   "sha256": "ed3b8badc487fbfc8b8a782c916b6d62b36912e1e69dc140cd6dbca5c0fec501",
+   "fetched_utc": "2026-11-09T06:03:45Z"
+  },
+  {
+   "file": "t_105d_211206.csv",
+   "url": "https://osf.io/download/65008edb3b15681bc5d95665/",
+   "bytes": 31865,
+   "sha256": "ded60b917fdf790082b414754a7e72d315446b7da54831a44e137dea507ac0bf",
+   "fetched_utc": "2026-11-09T06:03:52Z"
+  },
+  {
+   "file": "t_106a_220103.csv",
+   "url": "https://osf.io/download/65008ee36d1e8959e81515b3/",
+   "bytes": 32321,
+   "sha256": "685a3297eef437466b99479cc2c97783101420ffc97f934fabf4bf006a0f5d83",
+   "fetched_utc": "2026-11-09T06:03:59Z"
+  },
+  {
+   "file": "t_106b_220107.csv",
+   "url": "https://osf.io/download/65008eedd9f2c95b20d047f0/",
+   "bytes": 31759,
+   "sha256": "cef7b87062eccb758aacde4d2f5467d2583c90b490acfa6ebc37c880d468fa5c",
+   "fetched_utc": "2026-11-09T06:04:06Z"
+  },
+  {
+   "file": "t_106c_220309.csv",
+   "url": "https://osf.io/download/65008ef2767f4a228fde8e0a/",
+   "bytes": 31665,
+   "sha256": "9e166c13e9d92942f38c4295fe4a5ec050827b1db1b8299435b182833cf35ebd",
+   "fetched_utc": "2026-11-09T06:04:13Z"
+  },
+  {
+   "file": "t_106d_220311.csv",
+   "url": "https://osf.io/download/65008efdd9f2c95b1fd0481d/",
+   "bytes": 32172,
+   "sha256": "aa8ce7091b75d9afc5e9fd1f4ae3a147be3f0f4a24d8006ff840dc5dda745ced",
+   "fetched_utc": "2026-11-09T06:04:22Z"
+  },
+  {
+   "file": "t_107a_220131.csv",
+   "url": "https://osf.io/download/65008f046d1e8959db15193e/",
+   "bytes": 32102,
+   "sha256": "50cfc39ec2821133d6b80ed1092d912f2256d66b3a3683062e5f9e5f2091b3e5",
+   "fetched_utc": "2026-11-09T06:04:30Z"
+  },
+  {
+   "file": "t_107b_220207.csv",
+   "url": "https://osf.io/download/65008f0d767f4a2293de8e16/",
+   "bytes": 32106,
+   "sha256": "3fb343b32caade96c73a0e1ec12b9009b2a3d661dbca6b37fa1009de185772e7",
+   "fetched_utc": "2026-11-09T06:04:38Z"
+  },
+  {
+   "file": "t_107c_220321.csv",
+   "url": "https://osf.io/download/65008f15d9f2c95b20d0480e/",
+   "bytes": 32355,
+   "sha256": "185355ac117d75b4f3fe680692cf26a49e64b73798ea5b83da7a581b36148618",
+   "fetched_utc": "2026-11-09T06:04:55Z"
+  },
+  {
+   "file": "t_107d_220404.csv",
+   "url": "https://osf.io/download/65008f21d9f2c95b1fd04827/",
+   "bytes": 32249,
+   "sha256": "ec1c180c42fce40e4b70bb5d4cc4628269dcecf0f56e9f6edd8e419e77f8adca",
+   "fetched_utc": "2026-11-09T06:05:05Z"
+  },
+  {
+   "file": "t_108a_220210.csv",
+   "url": "https://osf.io/download/65008f2d767f4a229bde900f/",
+   "bytes": 29552,
+   "sha256": "cde638af502918df83d727bf5b47a78a90119b18ec275b43f8590488750d039d",
+   "fetched_utc": "2026-11-09T06:05:30Z"
+  },
+  {
+   "file": "t_108b_220217.csv",
+   "url": "https://osf.io/download/65008f39767f4a2297de8e8e/",
+   "bytes": 29013,
+   "sha256": "78f0eca0d43f6aff4f77845f6a5df4fa409af3dc58e3981564438afe13d56496",
+   "fetched_utc": "2026-11-09T06:05:38Z"
+  },
+  {
+   "file": "t_108c_220316.csv",
+   "url": "https://osf.io/download/65008f44d9f2c95b20d04820/",
+   "bytes": 29945,
+   "sha256": "4a8bbca39e6589ccb0cae68934e1dbfdb3b9ab6090c55f56405ccf3d3e1a8e1e",
+   "fetched_utc": "2026-11-09T06:06:35Z"
+  },
+  {
+   "file": "t_108d_220323.csv",
+   "url": "https://osf.io/download/65008f533b15681bc6d956f4/",
+   "bytes": 29570,
+   "sha256": "89392275276072caa7a5e3f7ad2a860ce005ee5e12166f9288f8cc04073208fb",
+   "fetched_utc": "2026-11-09T06:06:42Z"
+  },
+  {
+   "file": "t_109a_220523.csv",
+   "url": "https://osf.io/download/65008f5ef3dcd15f11ddd3ce/",
+   "bytes": 32439,
+   "sha256": "bda3171918bfdd47b85bb88cd4b618e140fbd3c6e4d1d856a12e44ac08837be0",
+   "fetched_utc": "2026-11-09T06:06:49Z"
+  },
+  {
+   "file": "t_109b_220527.csv",
+   "url": "https://osf.io/download/65008f686d1e8959ec151634/",
+   "bytes": 32307,
+   "sha256": "1377af47674f65d5da45ba1624552d0644b060765a99edca2df3af2264dd09a9",
+   "fetched_utc": "2026-11-09T06:07:19Z"
+  },
+  {
+   "file": "t_109c_220901.csv",
+   "url": "https://osf.io/download/65008f713b15681bc1d95666/",
+   "bytes": 32330,
+   "sha256": "dcc7f20a027b375409ca863339d3c9aa39852cfa2f38e1bf5280a70d5198a0ca",
+   "fetched_utc": "2026-11-09T06:07:25Z"
+  },
+  {
+   "file": "t_109d_220908.csv",
+   "url": "https://osf.io/download/65008f7ad9f2c95b23d048d7/",
+   "bytes": 32536,
+   "sha256": "580e34c9a8b5067bf1ec7e4d2210b600f2371d753aea3e6c2927b52ad4c573cf",
+   "fetched_utc": "2026-11-09T06:07:33Z"
+  },
+  {
+   "file": "t_110a_220513.csv",
+   "url": "https://osf.io/download/65008f87f3dcd15f15ddd4d1/",
+   "bytes": 30871,
+   "sha256": "3e92d5966365eeaf8466d173df1af2b3b43b389251294b59d5c0120825dc899b",
+   "fetched_utc": "2026-11-09T06:07:41Z"
+  },
+  {
+   "file": "t_110b_220520.csv",
+   "url": "https://osf.io/download/65008f8d6d1e8959e7151581/",
+   "bytes": 31002,
+   "sha256": "e3b4ca6c3496f5edbc81c38d7d417584d460e7832d265cce2697564df18bf911",
+   "fetched_utc": "2026-11-09T06:07:49Z"
+  },
+  {
+   "file": "t_110c_220815.csv",
+   "url": "https://osf.io/download/65008f98767f4a2296de8e5a/",
+   "bytes": 30867,
+   "sha256": "bca5279da43e9e5cfb7da170e950efa4f1165f7e4a3aa9fbc6be55282d22fb20",
+   "fetched_utc": "2026-11-09T06:08:15Z"
+  },
+  {
+   "file": "t_110d_220817.csv",
+   "url": "https://osf.io/download/65008f9e3b15681bc5d956f6/",
+   "bytes": 31081,
+   "sha256": "599e344e2cf6e806b53087157c32a1ffc224bb2849f823a38a7b3c3dc6af5043",
+   "fetched_utc": "2026-11-09T06:11:02Z"
+  },
+  {
+   "file": "t_112a_220822.csv",
+   "url": "https://osf.io/download/65008fa96d1e8959ec151652/",
+   "bytes": 31710,
+   "sha256": "cf84899e23302a1d767354fb50265724b8bbacb4ee9501f2db6b22bd700288ec",
+   "fetched_utc": "2026-11-09T06:11:10Z"
+  },
+  {
+   "file": "t_112b_220921.csv",
+   "url": "https://osf.io/download/65008fb26d1e8959e315153f/",
+   "bytes": 32182,
+   "sha256": "8b20f6446f0b5d0522f2df2de763a47b75d48d6d63ccc26a042012b8d48efdc8",
+   "fetched_utc": "2026-11-09T06:11:18Z"
+  },
+  {
+   "file": "t_112c_221031.csv",
+   "url": "https://osf.io/download/65008fbb767f4a229ade8efe/",
+   "bytes": 32295,
+   "sha256": "a45854c4a300483125e3da3cb53368ee99074aeab27259f975fe08233a8cc98f",
+   "fetched_utc": "2026-11-09T06:11:25Z"
+  },
+  {
+   "file": "t_112d_221104.csv",
+   "url": "https://osf.io/download/65008fc13b15681bc2d955f5/",
+   "bytes": 32189,
+   "sha256": "f1e0100189bf0f12df281907b6ecfe2938bf28d5d50d0aabbb3d760366484193",
+   "fetched_utc": "2026-11-09T06:11:32Z"
+  },
+  {
+   "file": "t_113a_220824.csv",
+   "url": "https://osf.io/download/65008fc5f3dcd15f14ddd4d7/",
+   "bytes": 27707,
+   "sha256": "75bfcb9c09953698ca67553cc4c0e043add87fa56e6f12cdc2863c6ab850c820",
+   "fetched_utc": "2026-11-09T06:11:40Z"
+  },
+  {
+   "file": "t_113b_220825.csv",
+   "url": "https://osf.io/download/65008fcd6d1e8959ed15169a/",
+   "bytes": 31788,
+   "sha256": "dbf47ba509ada641929acf0335a3961003228d2018c9fd1d629e88dfc1724618",
+   "fetched_utc": "2026-11-09T06:11:46Z"
+  },
+  {
+   "file": "t_113c_221215.csv",
+   "url": "https://osf.io/download/65008fda3b15681bc1d95688/",
+   "bytes": 31206,
+   "sha256": "4b26dae27debfea899e3763844ffc7fc3db30856bff56a21943deefea7025e5b",
+   "fetched_utc": "2026-11-09T06:11:54Z"
+  },
+  {
+   "file": "t_113d_221216.csv",
+   "url": "https://osf.io/download/65008fe1f3dcd15f10ddd369/",
+   "bytes": 31061,
+   "sha256": "3104ff2f6bb375952b17600ab78a164a033fbeaf6ce9d229e3cda917eb6e447a",
+   "fetched_utc": "2026-11-09T06:12:04Z"
+  },
+  {
+   "file": "t_redcap_export.csv",
+   "url": "https://osf.io/download/xhmt2/",
+   "bytes": 37077,
+   "sha256": "2d83c553720bcdb6ae94101bfc130a68d3fb8774582ef3eeac1409bf6281e3ba",
+   "fetched_utc": "2026-11-09T06:12:12Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Brissenden2023_MovDisord.zip"
+}

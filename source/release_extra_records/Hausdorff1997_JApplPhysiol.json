@@ -1,0 +1,119 @@
+{
+ "id": "Hausdorff1997_JApplPhysiol",
+ "module": "walking",
+ "rows": 9144,
+ "subjects": 15,
+ "persons": 15,
+ "zip_bytes": 132372,
+ "zip_sha256": "7cb475d2f6bd4d4e5b457d872ac0d41aef386c0c90bea43b62e2f739ae853075",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "subjects",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young subjects",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "older subjects",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Parkinson's disease subjects",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest older adult (years)",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description (older adults 71-77 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest older adult (years)",
+   "computed": 71.0,
+   "reported": 71.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description (older adults 71-77 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest young adult (years)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "PhysioNet database page, Data Description (young adults 23-29 years)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "healthy series end near 14.5 min",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PD series end near 5 min",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every line of every file kept",
+   "ok": true,
+   "detail": "9144 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "stride times positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "heel-strike times increase within each subject",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's page cites Hausdorff et al. 1997 (young, elderly and Huntington's disease subjects) and Hausdorff et al. 1998, Mov Disord 13:428-437 (Parkinson's and Huntington's disease), but contains 5 young, 5 older and 5 Parkinson's disease recordings and no Huntington's disease; the 1997 paper's DFA exponents (young 0.87, elderly 0.68) are therefore not checked here, only the dataset description.",
+  "The page gives the young adults as 23-29 years; one young file name carries age 21. The page says PD participants walked 6 min and healthy participants 15 min; the series end at about 5 min and 14.5 min (heel-strike times), and begin 22-31 s in, so the deposit holds a trimmed part of each walk."
+ ],
+ "sources": [
+  {
+   "file": "gaitdb.zip",
+   "url": "https://physionet.org/static/published-projects/gaitdb/gait-in-aging-and-disease-database-1.0.0.zip",
+   "bytes": 372572,
+   "sha256": "07b899ab33910912798a5b3db224394d52ed72c91d95d51e283a16b1086eabb0",
+   "fetched_utc": "2026-11-09T01:00:52Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Hausdorff1997_JApplPhysiol.zip"
+}

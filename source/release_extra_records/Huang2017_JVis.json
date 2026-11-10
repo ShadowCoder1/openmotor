@@ -1,0 +1,277 @@
+{
+ "id": "Huang2017_JVis",
+ "module": "saccade",
+ "rows": 25850,
+ "subjects": 61,
+ "persons": 61,
+ "zip_bytes": 474549,
+ "zip_sha256": "785760320f2a25506ee9aadd0d4d8454c48b1c194b16bb48fae207b4f1611430",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 32 participants (16 young, 16 senior) x 400 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 29 participants (17 young, 12 senior) x 450 trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "cognitive files hold the same participants and groups as the eye files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers run 1..400 and 1..450 in file order within every participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: horizontal amplitude has the sign of the README's horizontal direction code in >95% of trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: in adaptation trials vertical amplitude follows the sign of the vertical code (mean x code > 0 when coded 1, < 0 when coded -1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp 2: every participant has exactly two (direction, shift) pairings (shift coupled to saccade direction)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean saccadic gain, baseline (both age groups, 32 participants)",
+   "computed": 0.9746193626101277,
+   "reported": 0.98,
+   "tol": 0.006,
+   "source": "Experiment 1, Results (M = 0.98, 0.93, 0.78, 0.82), saccade amplitude / 10 deg step",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean saccadic gain, initial adaptation (both age groups, 32 participants)",
+   "computed": 0.9338929748909871,
+   "reported": 0.93,
+   "tol": 0.006,
+   "source": "Experiment 1, Results (M = 0.98, 0.93, 0.78, 0.82), saccade amplitude / 10 deg step",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean saccadic gain, final adaptation (both age groups, 32 participants)",
+   "computed": 0.7778388131897148,
+   "reported": 0.78,
+   "tol": 0.006,
+   "source": "Experiment 1, Results (M = 0.98, 0.93, 0.78, 0.82), saccade amplitude / 10 deg step",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean saccadic gain, postadaptation (both age groups, 32 participants)",
+   "computed": 0.8164654748813165,
+   "reported": 0.82,
+   "tol": 0.006,
+   "source": "Experiment 1, Results (M = 0.98, 0.93, 0.78, 0.82), saccade amplitude / 10 deg step",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: SD of baseline gain across participants",
+   "computed": 0.061124315872088726,
+   "reported": 0.06,
+   "tol": 0.006,
+   "source": "Experiment 1, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: SD of % trials excluded, young adults",
+   "computed": 11.054363768816971,
+   "reported": 11.1,
+   "tol": 0.1,
+   "source": "Exp 1, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: SD of % trials excluded, senior adults",
+   "computed": 12.113310516397517,
+   "reported": 12.1,
+   "tol": 0.1,
+   "source": "Exp 1, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean % trials excluded, young adults",
+   "computed": 15.21875,
+   "reported": 15.5,
+   "tol": 0.4,
+   "source": "Exp 1, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: mean % trials excluded, senior adults",
+   "computed": 22.59375,
+   "reported": 22.9,
+   "tol": 0.4,
+   "source": "Exp 1, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 1: participants kept after dismissing 5 of 37 (2 young, 3 senior)",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Exp 1, Participants and Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: % trials excluded by the latency criterion, young adults",
+   "computed": 3.7908496732026142,
+   "reported": 3.8,
+   "tol": 0.1,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: % trials excluded by the latency criterion, senior adults",
+   "computed": 10.055555555555555,
+   "reported": 10.1,
+   "tol": 0.1,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: % trials excluded by the duration criterion, young adults",
+   "computed": 1.1895424836601307,
+   "reported": 1.3,
+   "tol": 0.15,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: % trials excluded by the duration criterion, senior adults",
+   "computed": 2.055555555555556,
+   "reported": 2.3,
+   "tol": 0.3,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: discrimination accuracy, young adults (%)",
+   "computed": 98.15686274509802,
+   "reported": 98.2,
+   "tol": 0.15,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: discrimination accuracy, senior adults (%)",
+   "computed": 93.68518518518518,
+   "reported": 93.7,
+   "tol": 0.15,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: participants kept (17 young + 16 senior - 3 dismissed - 1 at chance)",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Exp 2, Data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: size of baseline vertical amplitude, young adults (deg)",
+   "computed": 0.06273414681160185,
+   "reported": 0.06,
+   "tol": 0.03,
+   "source": "Experiment 2, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: size of baseline vertical amplitude, senior adults (deg)",
+   "computed": 0.06806357758821356,
+   "reported": 0.07,
+   "tol": 0.03,
+   "source": "Experiment 2, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: vertical amplitude at the end of adaptation, young adults (deg)",
+   "computed": 1.0194515923556722,
+   "reported": 1.06,
+   "tol": 0.06,
+   "source": "Experiment 2, Results",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Exp 2: vertical amplitude at the end of adaptation, senior adults (deg)",
+   "computed": 0.8919920832888889,
+   "reported": 0.84,
+   "tol": 0.06,
+   "source": "Experiment 2, Results",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every eye-data row of both experiments is kept in the authors' order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participants table: 32 + 29 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "TMT-B values are in a plausible range for seconds (20-150)",
+   "ok": true,
+   "detail": "23.5-142.0"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1 exclusion rates computed from the paper's criteria are 15.2% (young) and 22.6% (senior) against 15.5% and 22.9% in the paper (SDs match); the cause is not stated in the paper.",
+  "The deposit's column description for the Trail Making Test says milliseconds; the values are in seconds.",
+  "Experiment 2: trials excluded by the latency criterion (3.8% young, 10.1% senior) and the duration criterion (1.2% and 2.1%) reproduce the paper, but the horizontal-amplitude criterion removes 5.7% and 15.5% of trials here against 7.5% and 20.4% in the paper, so the total exclusion rates are lower here (6.6% and 17.2%, paper 9.1% and 20.7%). The paper does not say how the amplitude was measured for that criterion.",
+  "Four participants in Experiment 2 and one in Experiment 1 have an incomplete row in the cognitive file; missing values are left empty."
+ ],
+ "sources": [
+  {
+   "file": "SaccadicAdaptation.zip",
+   "url": "https://zenodo.org/records/546106/files/SaccadicAdaptation.zip?download=1",
+   "bytes": 337023,
+   "sha256": "bd79b20fe507023be9fde27dec18611db3acc9b7f8f4f76ad94745dd005ed038",
+   "fetched_utc": "2026-11-09T03:34:02Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Huang2017_JVis.zip"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "Viglialoro2025_SciData",
+ "module": "timeseries",
+ "rows": 718,
+ "subjects": 24,
+ "persons": 24,
+ "zip_bytes": 179372897,
+ "zip_sha256": "cdf7dd2571b9c80bb8816981437a0c2dc50563cdd6d61ab934f6446375ddb217",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "48 trial folders (24 participants x pre/post x S,T1,T2,T3) with markers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants (final sample of 24)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the Nordic walking group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Group allocation (NW n = 14)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the control group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Group allocation (APA n = 10)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Participants (19 men and 5 women)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 74.91666666666667,
+   "reported": 74.92,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 6.526978571694741,
+   "reported": 6.53,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of body mass (kg)",
+   "computed": 12.371001037372306,
+   "reported": 12.37,
+   "tol": 0.005,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers per recording",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Methods, Procedure (55 reflective skin markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking trials per participant and session (minimum)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Technical Validation (three repeated trials, pre and post)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking trials per participant and session (maximum)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Technical Validation",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "motion capture frame rate, most common (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods, Experimental set-up (100 fps)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has pre and post sessions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "192 marker recordings and 192 joint-angle and force-plate recordings",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 2 gives a mean body mass of 74.46 kg (SD 12.37) for the 24 participants, while the text says 74.60 kg; the table values are used and the mean was not used as a check.",
+  "One participant's four pre-training recordings (S, T1, T2, T3) were captured at 120 Hz instead of 100 Hz (TRC header); their sample rates (markers, angles, EMG, force plates) follow that rate and are stated per row.",
+  "The deposit's readme and metadata give 1000 Hz for the force plates and EMG; the files are sampled at 2000 Hz.",
+  "The deposit's Partecipants.xls is cited by the paper but is not among the Figshare files; demographics come from the paper's Table 2."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://ndownloader.figshare.com/files/55530800",
+   "bytes": 1546816943,
+   "sha256": "20ff701602d825a43ad114b644427c717aee3169a87e1bbb8dc3b11e6fbc0dce",
+   "fetched_utc": "2026-11-09T13:34:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Viglialoro2025_SciData.zip"
+}

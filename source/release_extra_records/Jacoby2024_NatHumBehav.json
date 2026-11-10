@@ -1,0 +1,173 @@
+{
+ "id": "Jacoby2024_NatHumBehav",
+ "module": "tapping",
+ "rows": 4826080,
+ "subjects": 1216,
+ "persons": 1216,
+ "zip_bytes": 101160589,
+ "zip_sha256": "012fa878c4be246637b827d5a592b55af68844e691c6c2c458b718a6a039feea",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "03_main.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "04_fast.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participant groups (main experiment)",
+   "computed": 39.0,
+   "reported": 39.0,
+   "tol": 0,
+   "source": "Results / Methods, Participants (39 participant groups)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "countries",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Results (15 countries)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 923.0,
+   "reported": 923.0,
+   "tol": 0,
+   "source": "Methods, Participants (923 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "online participants",
+   "computed": 131.0,
+   "reported": 131.0,
+   "tol": 0,
+   "source": "Methods, Participants (131 online)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "face-to-face participants",
+   "computed": 792.0,
+   "reported": 792.0,
+   "tol": 0,
+   "source": "Methods, Participants (792 face-to-face)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "groups run at the fast tempo",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Results (fast tempo in 13 of the 39 groups, 6 of the 15 countries)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "countries run at the fast tempo",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Results (fast tempo in 6 of the 15 countries)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials (seeds) in the authors' per-participant counts",
+   "computed": 20287.0,
+   "reported": 20287.0,
+   "tol": 0,
+   "source": "Methods, Participants (20,287 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean trials per participant",
+   "computed": 21.979414951245936,
+   "reported": 22.0,
+   "tol": 0.05,
+   "source": "Methods, Overview of procedure (mean 22.0)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of trials per participant",
+   "computed": 6.573577966756021,
+   "reported": 6.6,
+   "tol": 0.1,
+   "source": "Methods, Overview of procedure (s.d. 6.6)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant of the raw files is in the authors' demography file and the reverse",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group sizes equal the authors' group summary N",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' per-group trial totals (Total_Trials) sum to the participants' trial counts",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "females in the demography file equal the group summaries",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial in the export has 2-5 iterations and repetitions are numbered 1-10",
+   "ok": true,
+   "detail": "main 19339 trials with 91375 iterations; fast 7384 trials with 35777"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Trials: the export contains 19,339 (main) trials but the paper's 20,287 trials are the authors' per-participant counts, which include trials aborted after three invalid iterations (the export keeps only trials that completed).",
+  "Taps: the paper reports 2,319,095 taps; the rows hold 2,371,405 tap onsets at click positions 1-3 of the main experiment's repetitions (3,208,107 including position 4), so the paper's count was not reproduced.",
+  "Trials per participant: the paper says participants performed 10-30 trials; the demography file gives up to 74 for some participants (e.g. one Boston musician group 20-70), while the mean 22.0 and SD 6.6 reproduce."
+ ],
+ "sources": [
+  {
+   "file": "README.md",
+   "url": "https://osf.io/download/ynq6v/",
+   "bytes": 2692,
+   "sha256": "5163989a88cbcab72d4515c9def07bba9b13775cdd0216aa244d3063c34e950b",
+   "fetched_utc": "2026-11-09T04:00:55Z"
+  },
+  {
+   "file": "04_fast.zip",
+   "url": "https://osf.io/download/x2qkv/",
+   "bytes": 98366633,
+   "sha256": "f3f58e58488d8d8d590b47185644a9aa12fca3c52b0bb125ced83a98715fb64b",
+   "fetched_utc": "2026-11-09T04:17:39Z"
+  },
+  {
+   "file": "03_main.zip",
+   "url": "https://osf.io/download/s7ujm/",
+   "bytes": 222138912,
+   "sha256": "00ad11ee4c4bb8cf3f3b1e8540d37b393b4e05c5e46a86043cdd5aab046c1a1c",
+   "fetched_utc": "2026-11-09T04:17:55Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Jacoby2024_NatHumBehav.zip"
+}

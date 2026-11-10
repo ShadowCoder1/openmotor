@@ -1,0 +1,290 @@
+{
+ "id": "Karlin2025_JNeurophysiol",
+ "module": "speech",
+ "rows": 32400,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 808767,
+ "zip_sha256": "192ea0bb982e59d042ea35db836400181ec83ef0d63581617e4ff10ba8237cbb",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "60 participants x 540 trials, trials 1-540 in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "phases on trials 1-90, 91-180, 181-450, 451-540 (30/30/90/30 repetitions of 3 words)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one shift condition per word and participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' baselineF1 is the mean F1 of the word's last 10 Baseline repetitions, and distF1 is F1 minus it (in Hz)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the file's f1out column equals f1in on every trial (it is left out)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials excluded, mean",
+   "computed": 1.3981481481481481,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Methods, Experiment 1 data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials excluded, maximum participant",
+   "computed": 3.5185185185185186,
+   "reported": 3.5,
+   "tol": 0.05,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Methods, Experiment 1 data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of trials excluded, minimum participant",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0.05,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Methods, Experiment 1 data analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation (shiftDown - shiftUp), hold, mean (Hz)",
+   "computed": 69.0189709734941,
+   "reported": 69.02,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation, hold, SD (Hz)",
+   "computed": 68.25790990977023,
+   "reported": 68.3,
+   "tol": 0.05,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation (shiftDown - shiftUp), washout, mean (Hz)",
+   "computed": 72.00717628036573,
+   "reported": 72.01,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation, washout, SD (Hz)",
+   "computed": 55.783154323546846,
+   "reported": 55.78,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation (shiftDown - shiftUp), hold, mean (Hz)",
+   "computed": 46.899990197649636,
+   "reported": 46.9,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation, hold, SD (Hz)",
+   "computed": 61.976187384778406,
+   "reported": 61.98,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation (shiftDown - shiftUp), washout, mean (Hz)",
+   "computed": 45.413343320940236,
+   "reported": 45.41,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation, washout, SD (Hz)",
+   "computed": 56.29400720855996,
+   "reported": 56.29,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: non-matchers",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation of matchers, hold (Hz)",
+   "computed": 49.91783037749294,
+   "reported": 49.92,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation of non-matchers, hold (Hz)",
+   "computed": 42.37322992788467,
+   "reported": 42.37,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Welch t, matchers vs non-matchers, hold",
+   "computed": 0.2570274394497085,
+   "reported": 0.26,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Welch df, matchers vs non-matchers, hold",
+   "computed": 14.544082377253757,
+   "reported": 14.544,
+   "tol": 0.0005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation of matchers, washout (Hz)",
+   "computed": 52.66817678062694,
+   "reported": 52.67,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation of non-matchers, washout (Hz)",
+   "computed": 34.531093131410174,
+   "reported": 34.53,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Welch t, matchers vs non-matchers, washout",
+   "computed": 0.662965853037936,
+   "reported": 0.66,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: Welch df, matchers vs non-matchers, washout",
+   "computed": 12.64694751044066,
+   "reported": 12.647,
+   "tol": 0.0005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Pitch-matching ability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Welch t, English (Experiment 2) vs Mandarin (Experiment 1) differential adaptation, hold",
+   "computed": -1.072916169886372,
+   "reported": -1.07,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Welch df, English vs Mandarin, hold",
+   "computed": 37.65123821199148,
+   "reported": 37.65,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Welch t, English (Experiment 2) vs Mandarin (Experiment 1) differential adaptation, washout",
+   "computed": -1.5006841561359796,
+   "reported": -1.5,
+   "tol": 0.005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Welch df, English vs Mandarin, washout",
+   "computed": 37.99684247419815,
+   "reported": 37.997,
+   "tol": 0.0005,
+   "source": "Karlin et al. 2025 (preprint on OSF v7zaf), Results, Comparison across experiments",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports differential adaptation, its SDs and the t-tests in mels; they reproduce exactly from F1 in Hz (the authors' distF1, F1 minus the mean of the word's last 10 Baseline repetitions), so those numbers are in Hz. The shift itself was applied in mels.",
+  "Experiment 3: the paper analyses 19 of 21 participants; the shared file has 20, including one the authors' code drops after the fact (sp726), whom the de-identified codes do not let us mark."
+ ],
+ "sources": [
+  {
+   "file": "deidToneData.csv",
+   "url": "https://osf.io/download/bznuw/",
+   "bytes": 7000515,
+   "sha256": "cc0ec8b3e62658bafda58c6d8cfed56f296de2a9d073f1fc697da1e74b640e49",
+   "fetched_utc": "2026-11-08T19:59:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Karlin2025_JNeurophysiol.zip"
+}

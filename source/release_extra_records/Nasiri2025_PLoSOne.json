@@ -1,0 +1,211 @@
+{
+ "id": "Nasiri2025_PLoSOne",
+ "module": "timeseries",
+ "rows": 55,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 363364569,
+ "zip_sha256": "1952a75841f3c0bc3eb32141ad75b4ac7a5bcfae89a075b28a3a3e06f639cdeb",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods 3.1 (9 in Experiment 1, 3 in Experiment 2); figshare description sub1-12",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 1",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods 3.1.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods 3.1.2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exoskeleton sampling rate (Hz)",
+   "computed": 200.0,
+   "reported": 200.0,
+   "tol": 0,
+   "source": "Methods 3.2: exoskeleton measures at 200 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "marker sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "figshare description: marker data 100 Hz",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Active VER duration (s), mean over exoskeleton trials",
+   "computed": 119.995,
+   "reported": 120.0,
+   "tol": 0.5,
+   "source": "Methods 3.1.1: active VER for two minutes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Passive-before duration (s), mean over participants 1 and 3-7",
+   "computed": 120.00500000000001,
+   "reported": 120.0,
+   "tol": 0.5,
+   "source": "Methods 3.1.1: passive for two minutes",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "exoskeleton trials per participant with exoskeleton files",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Methods 3.1.1: three exoskeleton trials (0.60, 0.75, 0.85 m/s)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "all manifest files present as reduced CSV",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recording counts as probed: exo 24 + 3, marker 21 + 7",
+   "ok": true,
+   "detail": "24 3 21 7"
+  },
+  {
+   "kind": "internal",
+   "what": "sample intervals regular in all exo files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each Experiment 1 exo trial: ctrl_en is only 0/1 and switches on once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows",
+   "ok": true,
+   "detail": "55"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Not every participant has every file converted. Participants 2 and 8 have exoskeleton files only (their markers are inside 230 MB emg_marker_imu .mat files, not converted); participant 9 has marker files only (its three exoskeleton .mat files are raw Simulink workspace dumps named sub9_exo_v2, v3 and v4 without the controller-state variable, not documented, so not converted); participants 1 and 3-7 have both. Natural-walking marker files run 360-452 s rather than the six minutes the protocol implies, so no duration check is made on them. For participants 2 and 8 the passive-before stretch is 180 s, not two minutes (the active stretch is 120 s). Participant 4's third marker file lacks one frame number (time_s is computed from the frame number, so it jumps by 0.02 s there). The paper says each exoskeleton trial lasts five minutes with the final passive stretch lasting one minute; the exoskeleton files run 290-295 s and the last passive stretch about 50-55 s, so the five-minute figure is not used as a check. The paper says Experiment 2 had two consecutive trials, one per controller; each exo_compare file holds two blocks 400 s apart in which VER, the phase-based path controller and a disturbance each appear once, so the controller order within them is not what the paper describes. The paper's participant age, mass and height are not in the deposit, so they could not be checked."
+ ],
+ "sources": [
+  {
+   "file": "Sub11.zip",
+   "url": "https://ndownloader.figshare.com/files/44161703",
+   "bytes": 79681277,
+   "sha256": "d1b9e829038e551bccf115239f7d7ff17da2bf5a945d3e17412d7025897d01cc",
+   "fetched_utc": "2026-11-09T21:29:36Z"
+  },
+  {
+   "file": "Sub1.zip",
+   "url": "https://ndownloader.figshare.com/files/44161676",
+   "bytes": 357993464,
+   "sha256": "d2de41391071103923731369c1e7d7339fc7898efbb83d1639e31f6a15c4a183",
+   "fetched_utc": "2026-11-09T21:31:12Z"
+  },
+  {
+   "file": "Sub10.zip",
+   "url": "https://ndownloader.figshare.com/files/44161706",
+   "bytes": 116186889,
+   "sha256": "68077e3f42aa2760ae7f959eea418765b01cfa0dfabafccfd86ebf0d64a200db",
+   "fetched_utc": "2026-11-09T21:33:25Z"
+  },
+  {
+   "file": "Sub12.zip",
+   "url": "https://ndownloader.figshare.com/files/44161709",
+   "bytes": 120636451,
+   "sha256": "41db6c1d0414a4549ced9612affd081911fd8fe323ebffd0bb87419d1dcbe3ea",
+   "fetched_utc": "2026-11-09T21:33:47Z"
+  },
+  {
+   "file": "Sub4.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161691",
+   "bytes": 350501165,
+   "sha256": "1577edc499eb472ad16cd2c8fe40e0699cb23530ae6b8be5980073e670d83075",
+   "fetched_utc": "2026-11-09T21:34:23Z"
+  },
+  {
+   "file": "Sub6.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161697",
+   "bytes": 354031265,
+   "sha256": "57448510b695b265f70e7366feb96b5f38c56847495223cef835dd9f89fb7858",
+   "fetched_utc": "2026-11-09T21:35:10Z"
+  },
+  {
+   "file": "Sub7.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161700",
+   "bytes": 356843084,
+   "sha256": "8d3c863c1a33e7c85a3cf6e6262771d38782657cfc8847b31fc3e6bd71e3a0c6",
+   "fetched_utc": "2026-11-09T21:35:57Z"
+  },
+  {
+   "file": "Sub1.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161676",
+   "bytes": 357993464,
+   "sha256": "d2de41391071103923731369c1e7d7339fc7898efbb83d1639e31f6a15c4a183",
+   "fetched_utc": "2026-11-09T21:36:40Z"
+  },
+  {
+   "file": "Sub3.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161688",
+   "bytes": 362102847,
+   "sha256": "a936cf1b4bd6fea01617d4a9b618f669db4659d440d628bd301bb5dc787535a6",
+   "fetched_utc": "2026-11-09T21:37:32Z"
+  },
+  {
+   "file": "Sub5.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161694",
+   "bytes": 373613710,
+   "sha256": "b274a31b4f683258f630db8dd2f4ae95a471ccd988a812589b3c2d9f31549642",
+   "fetched_utc": "2026-11-09T21:38:40Z"
+  },
+  {
+   "file": "Sub9.zip.zip",
+   "url": "https://ndownloader.figshare.com/files/44161715",
+   "bytes": 407605517,
+   "sha256": "e3ae33f769404ef36ad31c80e61e5ed5752713e3432e39ab03501fd8973e59bb",
+   "fetched_utc": "2026-11-09T21:39:34Z"
+  },
+  {
+   "file": "Sub8.zip",
+   "url": "https://ndownloader.figshare.com/files/44161712",
+   "bytes": 717622416,
+   "sha256": "26bb7ecff071b0977751c72dbc5d334bc18c03e2f0c23e04bbb71a6a89581271",
+   "fetched_utc": "2026-11-09T21:40:13Z"
+  },
+  {
+   "file": "Sub2.zip",
+   "url": "https://ndownloader.figshare.com/files/44161679",
+   "bytes": 730794692,
+   "sha256": "eb22390a40952a6613a5a7cc5e4a8f102c9f4d4a30e9771b103f87aaf3def0db",
+   "fetched_utc": "2026-11-09T21:41:11Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nasiri2025_PLoSOne.zip"
+}

@@ -1,0 +1,91 @@
+{
+ "id": "Borders2025_Cerebellum",
+ "module": "summary",
+ "rows": 3205,
+ "subjects": 8,
+ "persons": 8,
+ "zip_bytes": 35208,
+ "zip_sha256": "0239e91c26f0de012c2668d5293e4a5a110b7a893054a1cfb24f4a7aa641185e",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "people analysed",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "abstract: seven people with genetically confirmed CA",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the people analysed",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "abstract: 6 female, 1 male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men among the people analysed",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "abstract: 6 female, 1 male",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training trials with biofeedback (7 people x 15)",
+   "computed": 105.0,
+   "reported": 105.0,
+   "tol": 0,
+   "source": "Methods: all participants completed every training trial (15 per condition), abstract and Methods (Cerebellum 24(5):129), OSF project description",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "training trials with no biofeedback (7 people x 15)",
+   "computed": 105.0,
+   "reported": 105.0,
+   "tol": 0,
+   "source": "Methods: all participants completed every training trial (15 per condition), abstract and Methods (Cerebellum 24(5):129), OSF project description",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "analysis file ids match 7 raw ids and the one left out has partial data",
+   "ok": true,
+   "detail": "{1}"
+  },
+  {
+   "kind": "internal",
+   "what": "cough trials with at least one value are carried over",
+   "ok": true,
+   "detail": "422 of 430 trials have a value"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "cpd, pefrt and the second-cough columns are not defined in the deposit; their meaning (compression phase duration, peak flow rise time, in seconds) is inferred from the lab's usual measures and the names.",
+  "Reflex-cough rows are in the raw sheet only (not in the authors' analysis file) and are carried over as shared; capsaicin concentration is appended to the condition.",
+  "The paper's effect sizes are Bayesian model estimates and were not recomputed."
+ ],
+ "sources": [
+  {
+   "file": "sca_biofeedback_data.xlsx",
+   "url": "https://osf.io/download/uske5/",
+   "bytes": 47447,
+   "sha256": "3c68496acb700ac1486a0c4fed5d43ea69cf8d61009ac6aa7667b9d463940ee6",
+   "fetched_utc": "2026-11-09T14:14:18Z"
+  },
+  {
+   "file": "sca_biofeedback_data_raw.xlsx",
+   "url": "https://osf.io/download/zb56f/",
+   "bytes": 84867,
+   "sha256": "05944c945912d96d33f3952c70d55cd8b259d1ba8eeea559d0a3b83b99c7bc72",
+   "fetched_utc": "2026-11-09T14:14:23Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Borders2025_Cerebellum.zip"
+}

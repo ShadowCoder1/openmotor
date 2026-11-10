@@ -1,0 +1,119 @@
+{
+ "id": "Sombric2019_SciRep",
+ "module": "walking",
+ "rows": 96512,
+ "subjects": 35,
+ "persons": 35,
+ "zip_bytes": 4318151,
+ "zip_sha256": "4756c2c86430219f296abcc396cf0ea022a2bde56e84d951707764a47a92606f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every stride falls in one of the authors' conditions",
+   "ok": true,
+   "detail": "0 unassigned"
+  },
+  {
+   "kind": "internal",
+   "what": "each active participant's target takes three values, 0.06 apart (the paper's targets are 6 cm apart)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "active perceptual blocks hold the planned 455 strides and map tests the planned 150, within -5/+2",
+   "ok": true,
+   "detail": "{'Error Clamp': (453, 455), 'Washout Error Clamp': (453, 456), 'Map': (148, 152), 'Washout Map': (147, 150)}"
+  },
+  {
+   "kind": "internal",
+   "what": "normalized step lengths average about 0 in TM base, as the normalization implies",
+   "ok": true,
+   "detail": "-0.0014, -0.0044"
+  },
+  {
+   "kind": "internal",
+   "what": "belt speeds read from every condition description, except the passive group's gradual ramp and its standing tasks",
+   "ok": true,
+   "detail": "PerceptionAbru/TM base: 1.0/1.0 m/s, 150 strides; PerceptionAbru/Familiarization: 1.0/1.0 m/s, 600 strides; PerceptionAbru/Map: 1.0/1.0 m/s, 150 strides; PerceptionAbru/Error Clamp: 1.0/1.0 m/s, 455 strides; PerceptionAbru/adaptation: 1.5/0.5 m/s, 650 strides; PerceptionAbru/catch: 1.0/1.0 m/s, 9 strides; PerceptionAbru/re-adaptation: 1.5/0.5 m/s, 149 strides; PerceptionAbru/Washout Error Clamp: 1.0/1.0 m/s, 455 strides; PerceptionAbru/Washout: 1.0/1.0 m/s, 150 strides; PerceptionAbru/Washout Map: 1.0/1.0 m/s, 149 strides; PerceptionAbru/TM base: 1.0/1.0 m/s, 150 strides; PerceptionAbru/Familiarization: 1.0/1.0 m/s, 720 strides; PerceptionAbru/Map: 1.0/1.0 m/s, 150 strides; PerceptionAbru/Error Clamp: 1.0/1.0 m/s, 454 strides; PerceptionAbru/adaptation: 1.5/0.5 m/s, 650 strides; PerceptionAbru/catch: 1.0/1.0 m/s, 9 strides; PerceptionAbru/re-adaptation: 1.5/0.5 m/s, 151 strides; PerceptionAbru/Washout Error Clamp: 1.0/1.0 m/s, 454 strides; PerceptionAbru/Washout: 1.0/1.0 m/s, 149 strides; PerceptionAbru/Washout Map: 1.0/1.0 m/s, 149 strides; PerceptionAbru/Medium baseline: 1.0/1.0 m/s, 149 strides; PerceptionAbru/TM base: 0.5/0.5 m/s, 149 strides; PerceptionAbru/Familiarization: 0.5/0.5 m/s, 717 strides; PerceptionAbru/Map: 0.5/0.5 m/s, 148 strides; PerceptionAbru/Error Clamp: 0.5/0.5 m/s, 453 strides; PerceptionAbru/adaptation: 1.5/0.5 m/s, 648 strides; PerceptionAbru/catch: 0.5/0.5 m/s, 7 strides; PerceptionAbru/re-adaptation: 1.5/0.5 m/s, 149 strides; PerceptionAbru/Washout Error Clamp: 0.5/0.5 m/s, 453 strides; PerceptionAbru/Washout: 0.5/0.5 m/s, 149 strides; PerceptionAbru/Washout Map: 0.5/0.5 m/s, 148 strides; PassivePercept/TM base: 1.0/1.0 m/s, 149 strides; PassivePercept/Map: nan/nan m/s, 0 strides; PassivePercept/Analog: nan/nan m/s, 0 strides; PassivePercept/adaptation: 1.5/0.5 m/s, 795 strides; PassivePercept/PA Analog: nan/nan m/s, 0 strides; PassivePercept/re-adaptation: 1.5/0.5 m/s, 298 strides; PassivePercept/Washout: 1.0/1.0 m/s, 449 strides; PassivePercept/Washout Map: nan/nan m/s, 0 strides"
+  },
+  {
+   "kind": "internal",
+   "what": "ages: all but two participants 19-39 years; the deposit's age is below 1 year for two participants (left empty)",
+   "ok": true,
+   "detail": "[0.33, -0.08]"
+  },
+  {
+   "kind": "published",
+   "what": "active perception (Experiment 2): participants",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "active perception (Experiment 2): women",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive perception (Experiment 1): participants",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive perception (Experiment 1): women",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Methods, Subjects",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Ages do not reproduce the paper's means: the deposit's age is below 1 year for two participants (left empty here) and the others give active perception (Experiment 2): mean age 25.52 +- 5.47 over 26 valid ages (paper 25.1 +- 5.4); passive perception (Experiment 1): mean age 25.67 +- 4.95 over 7 valid ages (paper 24.8 +- 4.8).",
+  "The condition descriptions in the deposit give 650 and 150 strides for adaptation and re-adaptation of the active groups, where the paper says 600 and 200; the rows follow the deposit."
+ ],
+ "sources": [
+  {
+   "file": "NormalizedStudyData.mat",
+   "url": "https://osf.io/download/zkgdq/",
+   "bytes": 6549617,
+   "sha256": "229f3d5a43755033fb3d63aef802eff7e141d4b7e1a1daa5acc6a7b22aee4f19",
+   "fetched_utc": "2026-11-08T19:54:52Z"
+  },
+  {
+   "file": "R_Active.mat",
+   "url": "https://osf.io/download/m3b9n/",
+   "bytes": 11521,
+   "sha256": "365fb687a89dfd445f86d46973259579c7e273851063da687e7013b5d3e47ba3",
+   "fetched_utc": "2026-11-08T19:54:54Z"
+  },
+  {
+   "file": "R_Passive.mat",
+   "url": "https://osf.io/download/cfr6x/",
+   "bytes": 6905,
+   "sha256": "e05126fb64c5d4a010e8954e5ea2a9ad00e781a32b37f875ff66f6d4f4d7826b",
+   "fetched_utc": "2026-11-08T19:54:57Z"
+  },
+  {
+   "file": "R_PT.mat",
+   "url": "https://osf.io/download/2rt54/",
+   "bytes": 428294,
+   "sha256": "dc70551f5621fe938312fb44995cc427af197f085be487c05e5c1c3ed9ab64f2",
+   "fetched_utc": "2026-11-08T19:55:05Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Sombric2019_SciRep.zip"
+}

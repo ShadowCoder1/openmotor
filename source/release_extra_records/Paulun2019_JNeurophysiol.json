@@ -1,0 +1,272 @@
+{
+ "id": "Paulun2019_JNeurophysiol",
+ "module": "weight_illusion",
+ "rows": 5234,
+ "subjects": 122,
+ "persons": 122,
+ "zip_bytes": 100077,
+ "zip_sha256": "61b2394ae9272e76eee75d8d6b266dfb6949d367c3c318f15be0ea43329d2beb",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Experiment 1 trials (rows) in the deposit's description file (1911)",
+   "computed": 1911.0,
+   "reported": 1911.0,
+   "tol": 0,
+   "source": "Exeriment_1_Description.txt, ROW CODES",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 trials (rows) in the deposit's description file (912)",
+   "computed": 912.0,
+   "reported": 912.0,
+   "tol": 0,
+   "source": "Exeriment_2_Description.txt, ROW CODES",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 trials (rows) in the deposit's description file (936)",
+   "computed": 936.0,
+   "reported": 936.0,
+   "tol": 0,
+   "source": "Exeriment_3_Description.txt, ROW CODES",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 4 trials (rows) in the deposit's description file (1475)",
+   "computed": 1475.0,
+   "reported": 1475.0,
+   "tol": 0,
+   "source": "Exeriment_4_Description.txt, ROW CODES",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants analysed (49)",
+   "computed": 49.0,
+   "reported": 49.0,
+   "tol": 0,
+   "source": "Results, Experiment 1 (49 participants), Methods exclusions",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 numerical-rating participants (24)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (24 numerical ratings)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 centre-of-mass participants (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Methods, Experiment 1 (25 CoM judgements)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants (24)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants (24)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Experiment 3, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 illusion index after lifting (stone - Styrofoam) vs 0, t(48) = 8.03",
+   "computed": 8.029317752594254,
+   "reported": 8.03,
+   "tol": 0.01,
+   "source": "Results, Experiment 1, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 net peak torque vs 0, t(48) = -0.35",
+   "computed": -0.34593174165000773,
+   "reported": -0.35,
+   "tol": 0.01,
+   "source": "Results, Experiment 1, Torque",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 expected heaviness before lifting, Styrofoam (-2.93)",
+   "computed": -2.9277499999999996,
+   "reported": -2.93,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 expected heaviness before lifting, wood (-1.22)",
+   "computed": -1.2167279583333332,
+   "reported": -1.22,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 expected heaviness before lifting, stone (0.60)",
+   "computed": 0.6035846666666665,
+   "reported": 0.6,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 perceived heaviness after lifting, stone (-0.03)",
+   "computed": -0.02925380000000001,
+   "reported": -0.03,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 perceived heaviness after lifting, wood (0.25)",
+   "computed": 0.24551970833333334,
+   "reported": 0.25,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, Perception",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 peak grip-force rate in the first lift, Styrofoam (47.96 N/s)",
+   "computed": 47.95666666666667,
+   "reported": 47.96,
+   "tol": 0.01,
+   "source": "Results, Experiment 2, Forces",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 peak grip-force rate in the first lift, wood (63.64 N/s)",
+   "computed": 63.63899999999999,
+   "reported": 63.64,
+   "tol": 0.01,
+   "source": "Results, Experiment 2, Forces",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 peak grip-force rate in the first lift, stone (78.86 N/s)",
+   "computed": 78.85475000000001,
+   "reported": 78.86,
+   "tol": 0.02,
+   "source": "Results, Experiment 2, Forces",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 6 practice rows and 33 main rows (3 objects x lift 0-10) per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 5 practice rows and 33 main rows per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 4: 25 participants x 59 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all rows kept: 1911 + 912 + 936 + 1475",
+   "ok": true,
+   "detail": "5234"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 4: the deposit's CSV holds 25 participants (59 rows each: 6 practice and 53 main rows), whereas the paper reports 24 (15 men, 9 women). All 25 are released; the deposit gives no reason for the extra one.",
+  "Experiment 2: the paper's peak load-force-rate means in the first lift (Styrofoam 44.80 N/s, stone 60.16, wood 59.91) are about twice the deposit's values (22.40, 29.58, 29.95); the deposit's description does not define LFR. The deposit's peak grip force means of the later lifts (7.41, 7.76, 8.04 N) also differ from the paper's overall means (7.14, 7.89, 8.62 N), which the paper does not define precisely.",
+  "Experiment 2: the illusion index after lifting gives t(23) = -3.80 from the rows (all lifts after the first rating), against t(23) = -3.74 in the paper; Experiment 1's reproduces exactly (8.03).",
+  "Experiment 1: the paper reports mean ratings per material (Styrofoam -1.21, stone 0.96, wood -0.04) that were not reproduced from the rows; the way these were averaged is not described."
+ ],
+ "sources": [
+  {
+   "file": "Experiment_1_Data.csv",
+   "url": "https://zenodo.org/api/records/1345746/files/Experiment_1_Data.csv/content",
+   "bytes": 162505,
+   "sha256": "5eb0f85352959fab4334a3d7cc0c8bfdddac3589c72a7b5dddfe84fc7d2ebeaa",
+   "fetched_utc": "2026-11-09T08:57:41Z"
+  },
+  {
+   "file": "Experiment_2_Data.csv",
+   "url": "https://zenodo.org/api/records/1345746/files/Experiment_2_Data.csv/content",
+   "bytes": 55911,
+   "sha256": "0d6b04deaa0848728e97bc6030cb029a713b8dc19222fe08faeb56cad6c241ed",
+   "fetched_utc": "2026-11-09T08:57:47Z"
+  },
+  {
+   "file": "Experiment_3_Data.csv",
+   "url": "https://zenodo.org/api/records/1345746/files/Experiment_3_Data.csv/content",
+   "bytes": 34692,
+   "sha256": "15a6c41d9a773df9112079c33c7df30edbc352c6851945b86b188ef58bc71261",
+   "fetched_utc": "2026-11-09T08:57:52Z"
+  },
+  {
+   "file": "Experiment_4_Data.csv",
+   "url": "https://zenodo.org/api/records/1345746/files/Experiment_4_Data.csv/content",
+   "bytes": 196411,
+   "sha256": "e40d9fe8e2b3e25185f26e84939438c7ebf5fb4c81c7d5441fd96d4f37fdef66",
+   "fetched_utc": "2026-11-09T08:57:58Z"
+  },
+  {
+   "file": "Exeriment_1_Description.txt",
+   "url": "https://zenodo.org/api/records/1345746/files/Exeriment_1_Description.txt/content",
+   "bytes": 1082,
+   "sha256": "0a6ee6694b19b124bffbe476492b69bb8484e791fc447e585494a4c02135d001",
+   "fetched_utc": "2026-11-09T08:58:04Z"
+  },
+  {
+   "file": "Exeriment_2_Description.txt",
+   "url": "https://zenodo.org/api/records/1345746/files/Exeriment_2_Description.txt/content",
+   "bytes": 719,
+   "sha256": "e8f21a03dd38a650d7acf84199d33e8151fb86e1dcf3c61d0fc962302d4566f8",
+   "fetched_utc": "2026-11-09T08:58:10Z"
+  },
+  {
+   "file": "Exeriment_3_Description.txt",
+   "url": "https://zenodo.org/api/records/1345746/files/Exeriment_3_Description.txt/content",
+   "bytes": 587,
+   "sha256": "713b3e814fb363be843890b3bf5574eaba086369825bc2929a7c677696322183",
+   "fetched_utc": "2026-11-09T08:58:15Z"
+  },
+  {
+   "file": "Exeriment_4_Description.txt",
+   "url": "https://zenodo.org/api/records/1345746/files/Exeriment_4_Description.txt/content",
+   "bytes": 1967,
+   "sha256": "897661148b223056d58059891a984be9ae9c54cedac16ee93b1f4f0f0deaeb05",
+   "fetched_utc": "2026-11-09T08:58:19Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Paulun2019_JNeurophysiol.zip"
+}

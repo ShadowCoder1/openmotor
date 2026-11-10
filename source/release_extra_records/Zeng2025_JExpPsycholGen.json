@@ -1,0 +1,383 @@
+{
+ "id": "Zeng2025_JExpPsycholGen",
+ "module": "speech",
+ "rows": 26086,
+ "subjects": 55,
+ "persons": 53,
+ "zip_bytes": 790502,
+ "zip_sha256": "0cf3407590644886253b81339eee2f8b9e85557514c0f2e853e9407e8237e279",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: F0 and intensity files hold the same rows as the F1 file, in the same order",
+   "ok": true,
+   "detail": "8001 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: F0 and intensity files hold the same rows as the F1 file, in the same order",
+   "ok": true,
+   "detail": "7735 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: F0 and intensity files hold the same rows as the F1 file, in the same order",
+   "ok": true,
+   "detail": "10350 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "rows per experiment as in the authors' files",
+   "ok": true,
+   "detail": "{1: 8001, 2: 7735, 3: 10350}"
+  },
+  {
+   "kind": "internal",
+   "what": "participants per experiment = 15, 20, 20 (paper, Methods, Participants)",
+   "ok": true,
+   "detail": "{1: 15, 2: 20, 3: 20}"
+  },
+  {
+   "kind": "internal",
+   "what": "53 people: two participant numbers appear in both Experiments 1 and 3; Experiment 2 shares none",
+   "ok": true,
+   "detail": "53 codes"
+  },
+  {
+   "kind": "internal",
+   "what": "subject x experiment x trial is unique and trials increase within each sequence",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers within the design (540, 390, 520 trials)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' phase labels match the design's trial ranges",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each word keeps one shift condition per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "counterbalancing as described: opposite shifts on the two test words, fillers unshifted",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "shift 0 in Baseline and Washout, +-125 mel in Hold for shifted words, 0-125 mel in Ramp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "f1_mel present on every row and within 300-1100",
+   "ok": true,
+   "detail": "334.744-1093.946"
+  },
+  {
+   "kind": "internal",
+   "what": "f0_hz present on every row and within 70-320",
+   "ok": true,
+   "detail": "84.066-290.876"
+  },
+  {
+   "kind": "internal",
+   "what": "duration_ms present on every row and within 10-700",
+   "ok": true,
+   "detail": "15.316-623.688"
+  },
+  {
+   "kind": "internal",
+   "what": "intensity_au present on every row and within 0-100",
+   "ok": true,
+   "detail": "0.149-69.461"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: mean % of trials removed per participant",
+   "computed": 1.222222222222222,
+   "reported": 1.22,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Methods, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: mean % of trials removed per participant",
+   "computed": 0.8333333333333334,
+   "reported": 0.83,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Methods, Data processing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SE of F1 change, Upshift, analysed Hold and Washout blocks (mel)",
+   "computed": 2.343594716877805,
+   "reported": 2.34,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SE of F1 change, Downshift, analysed Hold and Washout blocks (mel)",
+   "computed": 2.628516488736966,
+   "reported": 2.63,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: SE of F1 change, Unshifted, analysed Hold and Washout blocks (mel)",
+   "computed": 2.4580353714430334,
+   "reported": 2.45,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, Upshift, analysed Hold and Washout blocks (mel)",
+   "computed": 2.2891736412821113,
+   "reported": 2.29,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, Downshift, analysed Hold and Washout blocks (mel)",
+   "computed": 2.3336632412014024,
+   "reported": 2.33,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: SE of F1 change, Unshifted, analysed Hold and Washout blocks (mel)",
+   "computed": 2.5473310896800654,
+   "reported": 2.55,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SE of F1 change, Upshift, analysed Hold and Washout blocks (mel)",
+   "computed": 1.8204923526305532,
+   "reported": 1.82,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SE of F1 change, Downshift, analysed Hold and Washout blocks (mel)",
+   "computed": 1.5659337983687958,
+   "reported": 1.57,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: SE of F1 change, Unshifted, analysed Hold and Washout blocks (mel)",
+   "computed": 1.4486343122804672,
+   "reported": 1.45,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of participants with F1 change Downshift > Upshift, Hold",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0.5,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: % of participants with F1 change Downshift > Upshift, Washout",
+   "computed": 93.33333333333333,
+   "reported": 93.0,
+   "tol": 0.5,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation (Downshift - Upshift), mean (mel)",
+   "computed": 17.390899743298597,
+   "reported": 17.39,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments (Figure 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation, SE over participant x phase means (mel)",
+   "computed": 6.771062822399011,
+   "reported": 6.77,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments (Figure 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: differential adaptation, SE over participant x phase means (mel)",
+   "computed": 3.5846949213504993,
+   "reported": 3.58,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments (Figure 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: differential adaptation, SE over participant x phase means (mel)",
+   "computed": 3.1457464809634863,
+   "reported": 3.15,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments (Figure 6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: differential adaptation, model mean (Diff ~ Experiment * Phase + (1 | Speaker)) (mel)",
+   "computed": 62.17190063127573,
+   "reported": 62.17,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: differential adaptation, model mean (Diff ~ Experiment * Phase + (1 | Speaker)) (mel)",
+   "computed": 8.43554732627902,
+   "reported": 8.44,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: vowel duration of the shifted words, model mean (ms)",
+   "computed": 247.36354726738026,
+   "reported": 247.36,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: vowel duration of the shifted words, model mean (ms)",
+   "computed": 121.7938072109861,
+   "reported": 121.79,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3: vowel duration of the shifted words, model mean (ms)",
+   "computed": 61.884688717753285,
+   "reported": 61.89,
+   "tol": 0.01,
+   "source": "Zeng, Niziolek & Parrell 2025 (accepted manuscript, PsyArXiv ceqan v2), Results, Comparisons of differential adaptation across experiments",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Trials removed per speaker: the shared files give a mean of 0.48% in Experiment 3 (the paper reports 0.44%; the SD and range match) and a maximum of 5.00% in Experiment 1 (the paper reports 3.52%).",
+  "Share of speakers who adapted: the shared files give 85% in the Experiment 2 Hold phase (paper: 95%) and 75% and 95% in Experiment 3 (paper: 95% and 90%)."
+ ],
+ "sources": [
+  {
+   "file": "F1_Exp1.csv",
+   "url": "https://osf.io/download/kx82m/",
+   "bytes": 417349,
+   "sha256": "41c2a0a6533a9cf8143dc3e6b34170f9a09d4f22bfdea14c7c0342cb92f31b7c",
+   "fetched_utc": "2026-11-08T19:04:22Z"
+  },
+  {
+   "file": "F1_Exp2.csv",
+   "url": "https://osf.io/download/awz9f/",
+   "bytes": 423908,
+   "sha256": "2809ef3a4cbc4d6010cb21041f5c90df2ddd2232a083520f697fe0c685e03cd6",
+   "fetched_utc": "2026-11-08T19:04:23Z"
+  },
+  {
+   "file": "F1_Exp3.csv",
+   "url": "https://osf.io/download/97cpd/",
+   "bytes": 612216,
+   "sha256": "a2a74ff3bb452e236cbe38e5db25acd55193c5beaf1fa73f36ef3d1b18db9edf",
+   "fetched_utc": "2026-11-08T19:04:25Z"
+  },
+  {
+   "file": "F0_Exp1.csv",
+   "url": "https://osf.io/download/myv2t/",
+   "bytes": 288234,
+   "sha256": "fe738aca6e27e646a241d29aaf4e2170e6ebf2f3eac6a7f92754d172b3412486",
+   "fetched_utc": "2026-11-08T19:04:26Z"
+  },
+  {
+   "file": "F0_Exp2.csv",
+   "url": "https://osf.io/download/yajhd/",
+   "bytes": 290936,
+   "sha256": "3a5ae67d1e4e3bfb434f481ea7ba1f8430a7a408b27da5ba02d4bab33ad98250",
+   "fetched_utc": "2026-11-08T19:04:27Z"
+  },
+  {
+   "file": "F0_Exp3.csv",
+   "url": "https://osf.io/download/pga2c/",
+   "bytes": 423678,
+   "sha256": "01a9c837f8e724756a77100da3ad5810815bc72788dca8f9e73aca50d2c55e48",
+   "fetched_utc": "2026-11-08T19:04:28Z"
+  },
+  {
+   "file": "Int_Exp1.csv",
+   "url": "https://osf.io/download/9pb8g/",
+   "bytes": 288262,
+   "sha256": "46eed59834ca94187f76456fe520a81096bce863f0d14de33dbad88eaed9f819",
+   "fetched_utc": "2026-11-08T19:04:29Z"
+  },
+  {
+   "file": "Int_Exp2.csv",
+   "url": "https://osf.io/download/4gxcm/",
+   "bytes": 291267,
+   "sha256": "ff159851573538aaddde10646a4ac51ec1b5a7688fdf2873b1854ae17c12db25",
+   "fetched_utc": "2026-11-08T19:04:30Z"
+  },
+  {
+   "file": "Int_Exp3.csv",
+   "url": "https://osf.io/download/982eb/",
+   "bytes": 423893,
+   "sha256": "c40530bbfc8f386546dbd632b85b0fad9bd7e9c60ffeb83f7c8285b7a84bd325",
+   "fetched_utc": "2026-11-08T19:04:30Z"
+  },
+  {
+   "file": "readme.txt",
+   "url": "https://osf.io/download/d5wb3/",
+   "bytes": 385,
+   "sha256": "674ade26094606820290721d8adb3e77f0c5df475d9d336b89b386bf5b5a269b",
+   "fetched_utc": "2026-11-08T19:04:32Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/Zeng2025_JExpPsycholGen.zip"
+}

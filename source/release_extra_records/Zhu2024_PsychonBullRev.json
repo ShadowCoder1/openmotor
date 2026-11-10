@@ -1,0 +1,154 @@
+{
+ "id": "Zhu2024_PsychonBullRev",
+ "module": "summary",
+ "rows": 180,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 6672,
+ "zip_sha256": "119990bcb0d12e49077f15c648e27a0d18be92a3ffd2b30b2d1719d33c20e96d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Zhu et al. 2024, Abstract (sixty Mandarin-speaking adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PLV values (60 participants x 3 conditions)",
+   "computed": 180.0,
+   "reported": 180.0,
+   "tol": 0,
+   "source": "Zhu et al. 2024, Abstract (three onset conditions, 60 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "high synchronizers",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "PLVscript.R printed summary (n = 25 per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "low synchronizers",
+   "computed": 35.0,
+   "reported": 35.0,
+   "tol": 0,
+   "source": "PLVscript.R printed summary (n = 35 per condition)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, high synchronizers, aspirated",
+   "computed": 0.5188,
+   "reported": 0.519,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, high synchronizers, mixed",
+   "computed": 0.4456,
+   "reported": 0.446,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, high synchronizers, unaspirated",
+   "computed": 0.5276,
+   "reported": 0.528,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, low synchronizers, aspirated",
+   "computed": 0.32142857142857145,
+   "reported": 0.321,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, low synchronizers, mixed",
+   "computed": 0.3022857142857143,
+   "reported": 0.302,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean PLV, low synchronizers, unaspirated",
+   "computed": 0.3211428571428572,
+   "reported": 0.321,
+   "tol": 0.0005,
+   "source": "PLVscript.R printed summary of mean PLV by onset and cluster",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has 3 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "PLV in 0..1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant mean PLV matches the authors' per-participant table",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The full text was behind a paywall, so the published checks use the abstract and the values the authors printed in the comments of their analysis script (PLVscript.R)."
+ ],
+ "sources": [
+  {
+   "file": "kcluster60new1.csv",
+   "url": "https://osf.io/download/nu37y/",
+   "bytes": 4093,
+   "sha256": "d6f535510dcc94d49c1081ee9a2cd3fd13a0f2f285ae74e5ec5790573ea86da3",
+   "fetched_utc": "2026-11-09T15:31:09Z"
+  },
+  {
+   "file": "speechplv60.csv",
+   "url": "https://osf.io/download/5tcp8/",
+   "bytes": 3866,
+   "sha256": "e07e4db87ec4458baa673132c7927851e2c551f4a11e07925afa6b176a09410e",
+   "fetched_utc": "2026-11-09T15:31:14Z"
+  },
+  {
+   "file": "plvnew60sum.csv",
+   "url": "https://osf.io/download/d3v9f/",
+   "bytes": 1354,
+   "sha256": "ef59537a5f9b29097cc08bad8452e6b0759ffdbb1e8c64533323a6a449fdbbd0",
+   "fetched_utc": "2026-11-09T15:31:20Z"
+  },
+  {
+   "file": "correlation_musical.csv",
+   "url": "https://osf.io/download/2k6nb/",
+   "bytes": 920,
+   "sha256": "65c1db4de7c4e09a327523d1086d4c078fb01f590bfba0a10963f5e72e566af4",
+   "fetched_utc": "2026-11-09T15:31:26Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Zhu2024_PsychonBullRev.zip"
+}

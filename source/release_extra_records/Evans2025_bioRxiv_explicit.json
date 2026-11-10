@@ -1,0 +1,131 @@
+{
+ "id": "Evans2025_bioRxiv_explicit",
+ "module": "reach90",
+ "rows": 24060,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 1059306,
+ "zip_sha256": "9919ad8672c919631fd4e386606df212a10a5f4f16edab8adf613015ac8d1b03",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "explicitAdaptation_repo.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Participants ('Sixteen self-reported right-handed individuals'; deposit README)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "control task: endPtAngle equals the direction of the stored screen endpoint from the start (y up), and the confidence task's stored target and endpoint angles equal the pixel geometry with y down (sin sign flipped here)",
+   "ok": true,
+   "detail": "4.3e-13 8.5e-14; 0 of 19200 confidence-task endpoints differ from the stored feedback point (alignedEnd is the displayed feedback, on the target circle) (max 0 deg)"
+  },
+  {
+   "kind": "internal",
+   "what": "cursor_error - hand_angle equals the signed rotation (-20 deg blocks 1 and 3, +20 deg blocks 2 and 4) on trials 20-70 and 0 elsewhere, every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "learning: late in the rotation the hand is shifted against the cursor rotation in most blocks (compensation > 0)",
+   "ok": true,
+   "detail": "0.90"
+  },
+  {
+   "kind": "internal",
+   "what": "1200 confidence-task reaches per participant (3 sessions x 4 blocks x 100)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the first file of each split control task holds the authors' joined reach and report angle arrays, equal to the two files in order",
+   "ok": true,
+   "detail": "[True, True]"
+  },
+  {
+   "kind": "internal",
+   "what": "control task: 15 participants have 300 reaches, one has 360 (two files of 180); one more has its 300 in two files (180 + 120)",
+   "ok": true,
+   "detail": "[300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 360]"
+  },
+  {
+   "kind": "internal",
+   "what": "control task: report and reach angles correlate positively in most participants (report in the reach frame)",
+   "ok": true,
+   "detail": "16 of 16, median r 0.29"
+  },
+  {
+   "kind": "published",
+   "what": "points earned over the 12 runs, mean over participants",
+   "computed": 4809.258720930233,
+   "reported": 4809.0,
+   "tol": 0.5,
+   "source": "Results, task performance (4809)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "points possible, mean over participants",
+   "computed": 9662.30026124216,
+   "reported": 9662.0,
+   "tol": 0.5,
+   "source": "Results, task performance (9662)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "points possible, SD across participants",
+   "computed": 662.0517720782242,
+   "reported": 662.05,
+   "tol": 0.005,
+   "source": "Results, task performance (SD 662.05)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of reaches whose feedback fell inside the confidence arc (points earned), mean %",
+   "computed": 67.41145833333333,
+   "reported": 67.4,
+   "tol": 0.05,
+   "source": "Results, task performance (67.4%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "points earned as % of possible, mean over participants",
+   "computed": 49.335663733564125,
+   "reported": 49.3,
+   "tol": 0.05,
+   "source": "Results, task performance (49.3%)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Numbers that did not reproduce (the converted rows are unchanged): motor noise sigma_m (SD of reach angles, outliers removed), mean over participants, deg: 3.015 here, 2.98 in the paper (Results, motor-awareness task (sigma_m mean 2.98 deg)). sigma_m SD across participants, deg: 1.184 here, 1.26 in the paper (Results, motor-awareness task (SD 1.26)). points earned, SD across participants: 1018.607 here, 1018 in the paper (Results, task performance (SD 1018)).",
+  "The authors' code calls the 20 deg rotation of blocks 1 and 3 'rotate left'. The stored angles are computed from screen pixels with y down, so adding 20 deg turns the feedback clockwise on the screen; this file records the rotation by that screen geometry (-20 deg in counter-clockwise-positive terms in blocks 1 and 3). Each rotated block is mirrored in the authors' own analysis (LSoutMatGen.m multiplies odd blocks by -1), so their figures are unaffected.",
+  "Unlike the implicit-adaptation deposit, reportAngle is not negated here: it is saved as the plain angle of the reported point and the authors' scripts use it as reportAngle - 90, which hand_report keeps.",
+  "The paper says the motor-awareness task gave no feedback on experimental trials (only on practice trials), although the control-task code has a feedback screen; the rows follow the paper (fb_visible none).",
+  "The paper replaced one outlying feedback error and one confidence report of one participant before fitting; the rows here keep the raw values."
+ ],
+ "sources": [
+  {
+   "file": "explicitAdaptation_repo.zip",
+   "url": "https://github.com/marissahevans/explicitAdaptation/archive/bfcfa0fff6a45611aff6554cd6f76298a1bfcb15.zip",
+   "bytes": 108275573,
+   "sha256": "028832119f17419626ba8dfd4da82159842b3bcff9d6eb4355d7eced53656e23",
+   "fetched_utc": "2026-11-09T05:04:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Evans2025_bioRxiv_explicit.zip"
+}

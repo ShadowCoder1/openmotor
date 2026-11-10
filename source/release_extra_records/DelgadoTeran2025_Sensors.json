@@ -1,0 +1,217 @@
+{
+ "id": "DelgadoTeran2025_Sensors",
+ "module": "timeseries",
+ "rows": 42,
+ "subjects": 21,
+ "persons": 21,
+ "zip_bytes": 597777814,
+ "zip_sha256": "beb78bc675200b1e23a357e41b3700332ad54966ef50a67b83243c4fc5eacdbd",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Results (24 recruited, 3 without FoG excluded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "window length in samples (2 s at 60 Hz)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Methods 2.4, Preprocessing",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "windows in the first participant's All-Activities file",
+   "computed": 9096.0,
+   "reported": 9096.0,
+   "tol": 0,
+   "source": "dataset README (xTensor shape)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "42 recordings: 21 participants x morning and afternoon",
+   "ok": true,
+   "detail": "42"
+  },
+  {
+   "kind": "internal",
+   "what": "every window kept",
+   "ok": true,
+   "detail": "257243"
+  },
+  {
+   "kind": "internal",
+   "what": "FoG windows are the label-1 windows",
+   "ok": true,
+   "detail": "57387"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Numbers in the paper that the windows do not reproduce: 811 FoG episodes (the windows give 1,088 separate runs of FoG windows, and the windows do not mark episodes), 67.78 h of All-Activities and 3.61 h of FoG (the 257,243 windows cover about 59.5 h of unique time at 1 s per non-FoG and 0.25 s per FoG window, and 4.0 h for FoG), and a FoG-window share of 22.1% (22.3% here). No participant, age or clinical scores are in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/4150aea5-3974-498a-9b83-88f691017e5c",
+   "bytes": 4569,
+   "sha256": "ea6d98c86410f0727e2bdef61d740aff53acf819e6d3b8032e96e5337ed37749",
+   "fetched_utc": "2026-11-09T20:40:39Z"
+  },
+  {
+   "file": "PD001_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/df9b3430-d20d-4f89-912b-970a0d05569a",
+   "bytes": 55304442,
+   "sha256": "e5abf4786a715c2733914faa8ae2d322c141463fbcd5e1fd8d085de421679315",
+   "fetched_utc": "2026-11-09T20:40:51Z"
+  },
+  {
+   "file": "PD002_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/2cfe386e-d6f1-4ea9-afdd-73638e3d975d",
+   "bytes": 48847482,
+   "sha256": "291b1ca563f14dc05e15f8108ab3ef53b762ffedb4941639b23d3a45c12d10c0",
+   "fetched_utc": "2026-11-09T20:43:05Z"
+  },
+  {
+   "file": "PD003_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/c2eae8b0-fae6-4988-a12c-b2f46d38305e",
+   "bytes": 50008762,
+   "sha256": "bb0cf8f8f1ae3cbc7688ab4056eb00c82a77a1b1d2dfd091798af861600bd29d",
+   "fetched_utc": "2026-11-09T20:43:50Z"
+  },
+  {
+   "file": "PD004_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/f647c88b-025f-4511-b377-8ee571c99b80",
+   "bytes": 42341882,
+   "sha256": "f410675c6f3dc0a88ff191ffa633acffd90f62764752598e2826713ea7eec5c7",
+   "fetched_utc": "2026-11-09T20:44:08Z"
+  },
+  {
+   "file": "PD005_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/4c070d56-867f-4945-a8dd-41bd4b5af12f",
+   "bytes": 87546682,
+   "sha256": "7cbb9134375495ca296da82f8fc3079aca0108925294dba81a7918dfa7b92329",
+   "fetched_utc": "2026-11-09T20:44:23Z"
+  },
+  {
+   "file": "PD006_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/ed6bf232-bc79-45bb-b8e8-35dbc7932449",
+   "bytes": 89255162,
+   "sha256": "def4464c471119e1d95cb2bc262ce5e44d8098b7eff1777c92cc9d823f889977",
+   "fetched_utc": "2026-11-09T20:44:39Z"
+  },
+  {
+   "file": "PD007_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/13d3c63a-9b36-4854-8674-d51855a79762",
+   "bytes": 73708602,
+   "sha256": "4670e86399c555b369012a89c9b7dff3263592f742d2777db253f982e3605b59",
+   "fetched_utc": "2026-11-09T20:45:01Z"
+  },
+  {
+   "file": "PD008_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/d133c626-f20c-4b61-a5d4-b78d011d92fc",
+   "bytes": 62235642,
+   "sha256": "91bb466788bf466722e30279a8d89ae9bba36dbf006e17f37a1433f854ac5220",
+   "fetched_utc": "2026-11-09T20:45:22Z"
+  },
+  {
+   "file": "PD009_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/53dcdd61-cab7-4b73-82c0-3a01211e432d",
+   "bytes": 59675962,
+   "sha256": "eb05dbf552be7cad054e2fc1f6fca7acd3907774a30735aea0308ccc6aca1bfb",
+   "fetched_utc": "2026-11-09T20:45:30Z"
+  },
+  {
+   "file": "PD010_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/70e8fddd-a745-4bb4-a5cd-edd2cfb55114",
+   "bytes": 69872122,
+   "sha256": "b3f203288d031d26e75345d4867a3ff824834dc7553eb3b1c5d7a0278162bbe1",
+   "fetched_utc": "2026-11-09T20:45:50Z"
+  },
+  {
+   "file": "PD011_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/b8f47410-8e4d-44c9-b2e9-54284e41f0b5",
+   "bytes": 128191482,
+   "sha256": "a4d4de8230e44d80ab1e9f39c4788b0f5ab0d75870d542ea2bcf81799ba1b599",
+   "fetched_utc": "2026-11-09T20:46:13Z"
+  },
+  {
+   "file": "PD012_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/0c72ed7d-b67d-415e-b574-9ddfcd439c8e",
+   "bytes": 89358522,
+   "sha256": "db83c11d8a737f9d77c403b868bcd91bec04bcd1a92d6c78373049a0d068345c",
+   "fetched_utc": "2026-11-09T20:46:28Z"
+  },
+  {
+   "file": "PD013_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/407cf451-1ad0-41fd-ae29-322b78eec33c",
+   "bytes": 90890682,
+   "sha256": "5a3a3e0e06300450d7d44757525d11b54eb48ff35b362b5e53b8123a15adf664",
+   "fetched_utc": "2026-11-09T20:46:52Z"
+  },
+  {
+   "file": "PD014_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/50f802d9-0b18-44a3-a5c2-5de050faab71",
+   "bytes": 101463802,
+   "sha256": "46e8046d4a5c6cb68867182e5c7c03edfea198c380548c34d2f1ff13fe50012b",
+   "fetched_utc": "2026-11-09T20:47:07Z"
+  },
+  {
+   "file": "PD015_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/f5de5665-0a5d-4e71-b0f1-ab55a43a25c9",
+   "bytes": 82165882,
+   "sha256": "13dd3dbc83d1fd4802b1d20af2197e8bd6fd87a1ababf326fafc3a33e9cc44cc",
+   "fetched_utc": "2026-11-09T20:47:23Z"
+  },
+  {
+   "file": "PD016_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/92b2f830-b716-4614-9ea4-6cb9048a5c1a",
+   "bytes": 65166202,
+   "sha256": "d65519378d757c3f9358c6d4e99a09af0afa02fd28d58a8d5f51911517f38d35",
+   "fetched_utc": "2026-11-09T20:47:36Z"
+  },
+  {
+   "file": "PD017_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/c79116c0-bbeb-4ae5-81b0-9025c2b458fd",
+   "bytes": 69768762,
+   "sha256": "519da3358612d89fefe5030b43ae8f243bd9e8f233272ad587ccddf2a9a9c067",
+   "fetched_utc": "2026-11-09T20:47:51Z"
+  },
+  {
+   "file": "PD018_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/33bd31e6-dca5-400e-ab31-217ae6c4e283",
+   "bytes": 64460922,
+   "sha256": "65fa4d8a2c21f4d1344d91f2e68692b2e86c9f508a26ff7d781b8171e9e23a79",
+   "fetched_utc": "2026-11-09T20:48:04Z"
+  },
+  {
+   "file": "PD019_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/6706467c-7aa3-42d9-a341-aa24cca2802c",
+   "bytes": 69793082,
+   "sha256": "86501433d25c047514c158aae6820259223d2387ec08b9e1e3cdb510ebb11511",
+   "fetched_utc": "2026-11-09T20:48:21Z"
+  },
+  {
+   "file": "PD020_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/c36b32a6-1fe5-4f56-9cb2-5227993de512",
+   "bytes": 66218042,
+   "sha256": "5a19315352329ac9be8c752c403044c42cd9b251a66fd6998395225c342d7ef8",
+   "fetched_utc": "2026-11-09T20:48:39Z"
+  },
+  {
+   "file": "PD021_AllActivities_FOG.npz",
+   "url": "https://data.4tu.nl/file/40e06061-f441-43b5-9235-006829206509/c08e86bb-6d98-4ec3-8f8e-14a1691f9a89",
+   "bytes": 97779322,
+   "sha256": "a77c0669f2d9f1c6e49a9e35e8cdd670cf2038d7a457ef35ee2f421fff5b59f3",
+   "fetched_utc": "2026-11-09T20:48:58Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/DelgadoTeran2025_Sensors.zip"
+}

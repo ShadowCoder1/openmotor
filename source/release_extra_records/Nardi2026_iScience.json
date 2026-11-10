@@ -1,0 +1,106 @@
+{
+ "id": "Nardi2026_iScience",
+ "module": "game",
+ "rows": 640,
+ "subjects": 32,
+ "persons": 32,
+ "zip_bytes": 26584,
+ "zip_sha256": "836a8f451c5498e1429100368530fb9f2dc4c27f7ce67fa6494083df0731cafe",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Participants, Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per participant (2 sessions x (3 baseline + 6 rotation + 1 washout))",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Design, Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "every participant has 20 blocks",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Design, Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with usable EEG, error session",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "EEG exclusions, Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants with usable EEG, reward session",
+   "computed": 28.0,
+   "reported": 28.0,
+   "tol": 0,
+   "source": "EEG exclusions, Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who did the error session first",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Design (two groups of 16), Methods and Results (iScience 29(10):117523)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "success rates are multiples of 1/25",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has one error and one reward session",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's derived tables (intertrialvariability.csv, tbt_between.csv, tbt_within.csv: inter-trial variability decay and success-dependent trial-to-trial change statistics) are not carried over; they are computed from shot-level data that the authors did not share.",
+  "Per-participant age and sex are not in the deposit (the paper reports 11 women and 21 men, mean age 25.9)."
+ ],
+ "sources": [
+  {
+   "file": "all_subjects_full.csv",
+   "url": "https://ndownloader.figshare.com/files/61569325",
+   "bytes": 56638,
+   "sha256": "f5bc326efd084db7561a967e6ad4efdbef660b761b03acf3598000a4b4b7db6d",
+   "fetched_utc": "2026-11-09T14:08:08Z"
+  },
+  {
+   "file": "tbt_between.csv",
+   "url": "https://ndownloader.figshare.com/files/61569331",
+   "bytes": 5644,
+   "sha256": "009b77a90c48f9653b114016e24ebe4bc94cd6e75e7cc533769e8628536920eb",
+   "fetched_utc": "2026-11-09T14:08:13Z"
+  },
+  {
+   "file": "tbt_within.csv",
+   "url": "https://ndownloader.figshare.com/files/61569334",
+   "bytes": 8343,
+   "sha256": "4879281b946f7c8f748f409ed559528013de8cafe7123f540ebc27e9a7b62586",
+   "fetched_utc": "2026-11-09T14:08:17Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Nardi2026_iScience.zip"
+}

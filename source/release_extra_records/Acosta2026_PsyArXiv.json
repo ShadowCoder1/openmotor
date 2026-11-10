@@ -1,0 +1,345 @@
+{
+ "id": "Acosta2026_PsyArXiv",
+ "module": "timeseries",
+ "rows": 552,
+ "subjects": 23,
+ "persons": 23,
+ "zip_bytes": 3673435,
+ "zip_sha256": "36a96d3f0b001b32e3b8da8a0b978371cec5f176c99a9d6d70fe96540b10a395",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "24 files = 6 types x 4 sessions, each 951 samples x (1 + 23 participants)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "response columns follow the sorted participant numbers (correlation of column mean with that participant's baseline mean above 0.95 in all 8 type x session sets)",
+   "ok": true,
+   "detail": "8/8"
+  },
+  {
+   "kind": "internal",
+   "what": "person codes of baseline_trials.csv follow the release's order of first appearance",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "one row per participant x session x condition = 23 x 4 x 6",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no shift in the N conditions, perturbation present in the others",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "perturbation column identical in all four sessions of a type",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sessions per participant",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Methods, Experimental Design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "F1 shift size, from the perturbation column (percent)",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0.05,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Methods, Experimental Design and Procedures",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline f0 in session 1 (Hz)",
+   "computed": 182.0927469304974,
+   "reported": 182.09,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline f0 in session 3 (Hz)",
+   "computed": 189.39444998757327,
+   "reported": 189.39,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline f0 in session 4 (Hz)",
+   "computed": 193.2845570238959,
+   "reported": 193.28,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline F1 in session 1 (Hz)",
+   "computed": 640.1252700042617,
+   "reported": 640.13,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline F1 in session 2 (Hz)",
+   "computed": 645.0163658343456,
+   "reported": 645.02,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline F1 in session 3 (Hz)",
+   "computed": 637.1741350318342,
+   "reported": 637.17,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Table 1: mean baseline F1 in session 4 (Hz)",
+   "computed": 631.5561780610913,
+   "reported": 631.56,
+   "tol": 0.005,
+   "source": "Acosta et al. 2026 (PsyArXiv preprint c56ka), Results, Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Table 1 baselines: the session means of f0 in sessions 1, 3 and 4 and of F1 in all four sessions reproduce, but the f0 mean of session 2 is 186.83 Hz here (paper 186.93), and the time-of-day means are 186.05 / 189.78 Hz (f0, morning / afternoon) and 632.90 / 644.10 Hz (F1) against the reported 186.05 / 189.75 and 632.87 / 644.07; the SDs are not reproduced either (the table's SD definition is not stated).",
+  "The size of the f0 shift (100 cents) is not used as a check: the deposit stores the perturbation as a 4-decimal fraction, which gives 100.0 and 100.06 cents for the two directions."
+ ],
+ "sources": [
+  {
+   "file": "README.txt",
+   "url": "https://osf.io/download/wg3km/",
+   "bytes": 2034,
+   "sha256": "2211ba07e4e1d03d4fd54d5ea528604fdc2c0f57b9b0055b1dc1592e016302b5",
+   "fetched_utc": "2026-11-09T11:47:18Z"
+  },
+  {
+   "file": "PTP_U1-Session1-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ebc1900f16748096ab/",
+   "bytes": 373153,
+   "sha256": "fa2be83653ed533572524996e9d5b2a9fab3f5bc3d3b211ff38dba4f32d5fe01",
+   "fetched_utc": "2026-11-09T11:47:21Z"
+  },
+  {
+   "file": "PTP_U0-Session3-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ebb157bf162dfd2917/",
+   "bytes": 373731,
+   "sha256": "acfddbf374ae1413bc6e999004b4abdaaf5de0b2afee3f8dd0fccdcb1e840de6",
+   "fetched_utc": "2026-11-09T11:47:25Z"
+  },
+  {
+   "file": "PTP_U0-Session2-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ec7092aa48518291f6/",
+   "bytes": 373872,
+   "sha256": "a6c0e0bbbdaabbc6d4be12cb5ba2641b4ba7f0440eb111b61130083428b509a3",
+   "fetched_utc": "2026-11-09T11:47:31Z"
+  },
+  {
+   "file": "PTP_N0-Session2-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/sbxhq/",
+   "bytes": 371342,
+   "sha256": "f9ed5eb2e6d6ac1580fc4053b47db3812cf60ec59f546f3acb423f2fd0b9f49b",
+   "fetched_utc": "2026-11-09T11:47:38Z"
+  },
+  {
+   "file": "PTP_N1-Session4-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ec94e1465aa3cc6e3f/",
+   "bytes": 371325,
+   "sha256": "c5103e54fb3b160aebc378333b9b844df28a02edcffbc23bd396b423b4143de0",
+   "fetched_utc": "2026-11-09T11:47:43Z"
+  },
+  {
+   "file": "PTP_N0-Session4-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/7qmk3/",
+   "bytes": 371257,
+   "sha256": "922f9e9779c107a29058a6fed891b6b8431df4b7569e432c6ed14ddb8ed69d74",
+   "fetched_utc": "2026-11-09T11:47:49Z"
+  },
+  {
+   "file": "PTP_U1-Session2-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/dau5h/",
+   "bytes": 373195,
+   "sha256": "e6502de8e645e4decabffe7792ba91ed01562d5d9d16cce074a443d38c27252e",
+   "fetched_utc": "2026-11-09T11:48:08Z"
+  },
+  {
+   "file": "PTP_D1-Session3-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ecbd83d8171ecc6e76/",
+   "bytes": 374220,
+   "sha256": "b27ffdcebd27d4e6e6454de1e2fe936bb5906f8c10c643d57c7b19a7c797ede7",
+   "fetched_utc": "2026-11-09T11:48:14Z"
+  },
+  {
+   "file": "PTP_D1-Session1-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/pm37k/",
+   "bytes": 374211,
+   "sha256": "f04698cff4f22334e6d86022b3011a3da69482b12e940acd6a0cc5237f1d1906",
+   "fetched_utc": "2026-11-09T11:48:19Z"
+  },
+  {
+   "file": "PTP_D1-Session4-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/qk7ym/",
+   "bytes": 374202,
+   "sha256": "47fc417d014356bd17ce5463cc1db910c241746d9821d6387e41af00f59af441",
+   "fetched_utc": "2026-11-09T11:48:23Z"
+  },
+  {
+   "file": "PTP_N1-Session1-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/xwjs8/",
+   "bytes": 371272,
+   "sha256": "33476672dbbb4c95fd94b00634bae12a63eb847e51534375b061725b6706cab5",
+   "fetched_utc": "2026-11-09T11:48:27Z"
+  },
+  {
+   "file": "PTP_D0-Session4-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703ee5720fc8dbacc70e8/",
+   "bytes": 374288,
+   "sha256": "b801fdd2f3562cdd94fc799d9cd03d3bea4312572726e25bdc9b5895f09ef2eb",
+   "fetched_utc": "2026-11-09T11:48:30Z"
+  },
+  {
+   "file": "PTP_U1-Session3-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/am2bx/",
+   "bytes": 373201,
+   "sha256": "31ba249ea37a8796adb6964f3ec5373933ea3a76b529e4988800ffad7ff28ed8",
+   "fetched_utc": "2026-11-09T11:49:20Z"
+  },
+  {
+   "file": "PTP_D1-Session2-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/j6ug2/",
+   "bytes": 374157,
+   "sha256": "18b64b380dbd52f306d8acf5c07b40b73e0b1f1be3c8214c077711bbcae9cd36",
+   "fetched_utc": "2026-11-09T11:49:43Z"
+  },
+  {
+   "file": "PTP_U0-Session1-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703eeccc54b8dfd8095d9/",
+   "bytes": 373851,
+   "sha256": "414467187645112e72a55b32dda526cce696131cfa4e16f519df92863fa681be",
+   "fetched_utc": "2026-11-09T11:49:56Z"
+  },
+  {
+   "file": "PTP_N1-Session2-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/wjyft/",
+   "bytes": 371191,
+   "sha256": "02271a3565e0cc013f7df6e9bb98ec0711bbb3651b0ae3eeed6a8edccbb9aeb7",
+   "fetched_utc": "2026-11-09T11:50:01Z"
+  },
+  {
+   "file": "PTP_N1-Session3-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/sxugk/",
+   "bytes": 371264,
+   "sha256": "b47e18b13cf27f9360dc2672ad705d4e5f958c811b6fc1da8ee09b6bef09d8d8",
+   "fetched_utc": "2026-11-09T11:50:07Z"
+  },
+  {
+   "file": "PTP_U1-Session4-F1-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703f06fb1cf1f6c8291fb/",
+   "bytes": 373264,
+   "sha256": "d00b416c865b1a5b0a53a3efdb819de2a91f98991aaa7ccbbe57ab227c1cf8d9",
+   "fetched_utc": "2026-11-09T11:50:21Z"
+  },
+  {
+   "file": "PTP_D0-Session2-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703f001ef215282fd2755/",
+   "bytes": 374386,
+   "sha256": "7a71d72c6d76d3b9b95609ec3833fa2364ddc05b356244cb2cb151d5d74c7ad7",
+   "fetched_utc": "2026-11-09T11:50:24Z"
+  },
+  {
+   "file": "PTP_U0-Session4-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/6a1703f0b157bf162dfd2920/",
+   "bytes": 373872,
+   "sha256": "e850095f9dba343a444ee517f2b1a26ed394f98f62650c917c76fbe8b0ec6590",
+   "fetched_utc": "2026-11-09T11:50:28Z"
+  },
+  {
+   "file": "PTP_N0-Session3-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/vrxay/",
+   "bytes": 371305,
+   "sha256": "4f91afd66c3037b66d60315f06a0f8160a770567f9676d403d84f2c307ade279",
+   "fetched_utc": "2026-11-09T11:50:35Z"
+  },
+  {
+   "file": "PTP_D0-Session1-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/jzev2/",
+   "bytes": 374293,
+   "sha256": "f65ca3d6f6f8672c7b3aa8bd1b0fddfc12161a83344bcc23d60574c1b9022181",
+   "fetched_utc": "2026-11-09T11:50:41Z"
+  },
+  {
+   "file": "PTP_D0-Session3-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/3eg2t/",
+   "bytes": 374306,
+   "sha256": "f3213415d0aae16cc830cb5bb274549e8ed1c7067c95fbc1dc6cf2106d650d4d",
+   "fetched_utc": "2026-11-09T11:50:47Z"
+  },
+  {
+   "file": "baseline_trials_measures_table.csv",
+   "url": "https://osf.io/download/gpeyj/",
+   "bytes": 208760,
+   "sha256": "f60058c97bb8c1e8f23d6c23b5cc856252182fe1835d3ca47191b3ff108e1d3f",
+   "fetched_utc": "2026-11-09T11:50:52Z"
+  },
+  {
+   "file": "PTP_N0-Session1-F0-hz-Response-First-Level.csv",
+   "url": "https://osf.io/download/3xcpe/",
+   "bytes": 371315,
+   "sha256": "d4589c0bfe622e77168b50f3bf1e2ec125db4c1aadebdf63e564b3a5bd99a802",
+   "fetched_utc": "2026-11-09T12:04:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Acosta2026_PsyArXiv.zip"
+}

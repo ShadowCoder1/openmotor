@@ -1,0 +1,127 @@
+{
+ "id": "PenalverAndres2021_FrontNeurosci",
+ "module": "timeseries",
+ "rows": 288,
+ "subjects": 36,
+ "persons": 36,
+ "zip_bytes": 392655378,
+ "zip_sha256": "5afe27ad6ff78ba30a50f2f004453e6cd737f13c6ec559fc6af4d5d7f2339f66",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "288 recordings = 36 participants x 8 blocks",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant numbers match the demographics sheet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "task of each block follows the deposit's block scheme",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "group in file names is the group of the demographics sheet for all but one participant (whose files say impExp, sheet says i; the sheet, which the deposit names as the group source, is used)",
+   "ok": true,
+   "detail": "1"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Methods, Participants (36 healthy volunteers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per instruction group",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Limitations (12 participants per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Methods, Participants (14 women)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age (years)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (age 20-59 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age (years)",
+   "computed": 59.0,
+   "reported": 59.0,
+   "tol": 0,
+   "source": "Methods, Participants (age 20-59 years)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "each participant has 4 Horizon and 4 Obstacle recordings",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "typical sampling interval 15-20 ms",
+   "ok": true,
+   "detail": "median 16.6 ms, max 4.52 s"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "For one participant the file names carry the both-instructions label (impExp) while the demographics sheet says implicit; the sheet is used (it gives 12 participants per group, as the paper states; the file names would give 13 and 11). The age in the deposit has a mean of 27.6 (SD 6.60), the paper reports 27.9 (SD 6.64); the paper's mean and SD are therefore not used as checks. Sex 22 men and 14 women, and ages 20-59, match the paper. The paper reports kinematics at 50 Hz after linear interpolation, the deposit's logs come at about 59 Hz (irregular)."
+ ],
+ "sources": [
+  {
+   "file": "HT_Kinematic.zip",
+   "url": "https://zenodo.org/api/records/5111830/files/HT_Kinematic.zip/content",
+   "bytes": 168658960,
+   "sha256": "b175e70c086ed3b4b77bb8882e32347d9bdc72d12b73f7826b422ceb2d6d126e",
+   "fetched_utc": "2026-11-09T10:50:11Z"
+  },
+  {
+   "file": "OT_Kinematic.zip",
+   "url": "https://zenodo.org/api/records/5111830/files/OT_Kinematic.zip/content",
+   "bytes": 239819707,
+   "sha256": "f9dfe09a6a654720b1413e4cd2878d7b1cf9501676a5ac8cedbdc394bea10de5",
+   "fetched_utc": "2026-11-09T10:51:15Z"
+  },
+  {
+   "file": "DemoGraphicsZenodo.xlsx",
+   "url": "https://zenodo.org/api/records/5111830/files/DemoGraphicsZenodo.xlsx/content",
+   "bytes": 21187,
+   "sha256": "c7b87fcf34b5bcbe5315201adcdd517c855772d5135795b44bcef31dd2ce3537",
+   "fetched_utc": "2026-11-09T10:51:23Z"
+  },
+  {
+   "file": "Dataset%20description.docx",
+   "url": "https://zenodo.org/api/records/5111830/files/Dataset%20description.docx/content",
+   "bytes": 24464,
+   "sha256": "9f801a36b2d8fb5f5f1679e50fab10d202d998b89058ad6557813f66a81feac0",
+   "fetched_utc": "2026-11-09T10:51:32Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/PenalverAndres2021_FrontNeurosci.zip"
+}

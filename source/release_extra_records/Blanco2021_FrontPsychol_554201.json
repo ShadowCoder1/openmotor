@@ -1,0 +1,189 @@
+{
+ "id": "Blanco2021_FrontPsychol_554201",
+ "module": "violin_bowing",
+ "rows": 2803,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 28162195,
+ "zip_sha256": "eab0e9cc4420ec0f45ca1a93e00d80643cc0aa52ea1cd2346eca3e4cf4f08e35",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "72 participants (29 FG, 28 CG, 15 EG)",
+   "ok": true,
+   "detail": "72"
+  },
+  {
+   "kind": "published",
+   "what": "beginners (no violin experience)",
+   "computed": 57.0,
+   "reported": 57.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "expert violinists",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the experts",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men among the experts",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the feedback group",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the feedback group",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in the control group",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men in the control group",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed beginners, control group",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 3.3 Statistical Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed beginners, feedback group",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 3.3 Statistical Analysis",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean satisfaction score, feedback group",
+   "computed": 33.51724137931034,
+   "reported": 33.517,
+   "tol": 0.0005,
+   "source": "Blanco et al. 2021 (bow technique), 4.5.1 Satisfaction",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean satisfaction score, expert group",
+   "computed": 33.76923076923077,
+   "reported": 33.769,
+   "tol": 0.0005,
+   "source": "Blanco et al. 2021 (bow technique), 4.5.1 Satisfaction",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the Baseline block (median)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.2.1 Experimental Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in the Transfer block (median)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Blanco et al. 2021 (bow technique), 2.2.1 Experimental Procedure",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every participant has all five conditions",
+   "ok": true,
+   "detail": "5"
+  },
+  {
+   "kind": "internal",
+   "what": "no participant lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "bow skewness is within +-90 deg",
+   "ok": true,
+   "detail": "62.736382000000404"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "mean age, expert group: 32.07 here, 32.4 printed in the paper (not used as a check)",
+  "SD of age, expert group: 8.932 here, 10.06 printed in the paper (not used as a check)",
+  "mean age, feedback group: 29.97 here, 29.915 printed in the paper (not used as a check)",
+  "SD of age, feedback group: 4.799 here, 4.88 printed in the paper (not used as a check)",
+  "mean age, control group: 28.86 here, 28.91 printed in the paper (not used as a check)",
+  "SD of age, control group: 7.276 here, 7.5 printed in the paper (not used as a check)",
+  "experts' mean years of experience: 16.4 here, 18.6 printed in the paper (not used as a check)",
+  "experts' SD of years of experience: 6.057 here, 5.53 printed in the paper (not used as a check)",
+  "beginners' mean years of training: 0.8947 here, 0.06 printed in the paper (not used as a check)",
+  "beginners' SD of years of training: 2.596 here, 0.23 printed in the paper (not used as a check)",
+  "mean satisfaction score, control group: 35.04 here, 34.611 printed in the paper (not used as a check)",
+  "feedback group bow skewness improvement over Baseline, Acquisition-NIC (%): 11.59 here, 14.5 printed in the paper (not used as a check)",
+  "feedback group bow skewness improvement over Baseline, Acquisition-KIC (%): 28.33 here, 31.0 printed in the paper (not used as a check)",
+  "feedback group bow skewness improvement over Baseline, Acquisition-SQIC (%): 24.87 here, 27.8 printed in the paper (not used as a check)",
+  "The paper's mixed-design ANOVAs and post-hoc tests were not recomputed. The paper's outlier removal could not be reproduced, because the Readme does not name every removed participant."
+ ],
+ "sources": [
+  {
+   "file": "Sound_and_Motion_Data.rar",
+   "url": "https://zenodo.org/records/4554201/files/Sound_and_Motion_Data.rar?download=1",
+   "bytes": 468988201,
+   "sha256": "dde1717818007970e499ec7c451991a4ab3386dfab865270511fe1e5269dcc55",
+   "fetched_utc": "2026-11-10T00:50:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Blanco2021_FrontPsychol_554201.zip"
+}

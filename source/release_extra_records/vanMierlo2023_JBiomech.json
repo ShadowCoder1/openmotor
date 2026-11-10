@@ -1,0 +1,80 @@
+{
+ "id": "vanMierlo2023_JBiomech",
+ "module": "timeseries",
+ "rows": 170,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 2358274,
+ "zip_sha256": "35848757859030b25c07b6be6c5119e489571074da9da6ed96e120abf104f5bb",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "170 recordings = 10 participants x 17 conditions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has 250 samples of 9 channels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "perturbation magnitudes (4, 8, 12, 16 % body weight)",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "perturbation types (linear vs angular momentum)",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "perturbation conditions per participant (2 types x 2 directions x 4 magnitudes)",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Abstract / Methods design",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "samples per curve (5 gait phases x 50 samples)",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Dataset README",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "Data.zip",
+   "url": "https://data.4tu.nl/file/a7e3c02f-9883-43bb-bb1d-2a77ff714eea/2bb0376e-db03-45fb-8545-3c6598675000",
+   "bytes": 3013551,
+   "sha256": "1dc67ae9d1472830c471cba4eaff562ac1a6992795933b8c68d0db1a5e33bb4b",
+   "fetched_utc": "2026-11-09T13:59:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/vanMierlo2023_JBiomech.zip"
+}

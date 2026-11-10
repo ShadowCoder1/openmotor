@@ -1,0 +1,392 @@
+{
+ "id": "Apsvalka2018_NeuralPlast",
+ "module": "summary",
+ "rows": 2000,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 19725,
+ "zip_sha256": "b87e38892773b9f18e495f0e217fe53270596a4d6d1da129f166674756038556",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "raw file matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "50 rows with unique participant numbers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "stimulation is 0 (sham) or 1 (active)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all measure columns numeric, none missing",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "error rates between 0 and 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "50 participants x (3 phases x 2 sequence types x 4 measures + 4 days x 4) = 2000 rows",
+   "ok": true,
+   "detail": "2000"
+  },
+  {
+   "kind": "published",
+   "what": "sham group size",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Table 1, Sham (N = 24)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "active group size",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Table 1, Active (N = 26)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sham males",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Table 1, Gender 8 : 16",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sham females",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Table 1, Gender 8 : 16",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "active males",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Table 1, Gender 6 : 20",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "active females",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Table 1, Gender 6 : 20",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, all participants, mean",
+   "computed": 20.6,
+   "reported": 20.6,
+   "tol": 0.005,
+   "source": "Methods, Participants (M = 20.60 years, SD = 2.40)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, all participants, SD",
+   "computed": 2.3989793748209522,
+   "reported": 2.4,
+   "tol": 0.005,
+   "source": "Methods, Participants (M = 20.60 years, SD = 2.40)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age sham, mean",
+   "computed": 20.958333333333332,
+   "reported": 20.96,
+   "tol": 0.005,
+   "source": "Table 1, Age",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age sham, SD",
+   "computed": 2.9705681884647657,
+   "reported": 2.97,
+   "tol": 0.005,
+   "source": "Table 1, Age",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age active, mean",
+   "computed": 20.26923076923077,
+   "reported": 20.27,
+   "tol": 0.005,
+   "source": "Table 1, Age",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age active, SD",
+   "computed": 1.7101506906162933,
+   "reported": 1.71,
+   "tol": 0.005,
+   "source": "Table 1, Age",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest initiation time sham, mean (s)",
+   "computed": 0.7682847916666667,
+   "reported": 0.77,
+   "tol": 0.005,
+   "source": "Table 1, Pretest initiation time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest initiation time sham, SD (s)",
+   "computed": 0.24549540685723262,
+   "reported": 0.25,
+   "tol": 0.005,
+   "source": "Table 1, Pretest initiation time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest execution time sham, mean (s)",
+   "computed": 1.9204081249999998,
+   "reported": 1.92,
+   "tol": 0.005,
+   "source": "Table 1, Pretest execution time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest execution time sham, SD (s)",
+   "computed": 0.5737610615696271,
+   "reported": 0.57,
+   "tol": 0.005,
+   "source": "Table 1, Pretest execution time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest error rate sham, mean (%)",
+   "computed": 24.6875,
+   "reported": 25.0,
+   "tol": 0.5,
+   "source": "Table 1, Pretest error rate (printed as integers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest error rate sham, SD (%)",
+   "computed": 13.194047159032843,
+   "reported": 13.0,
+   "tol": 0.5,
+   "source": "Table 1, Pretest error rate (printed as integers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest initiation time active, mean (s)",
+   "computed": 0.8928771153846153,
+   "reported": 0.89,
+   "tol": 0.005,
+   "source": "Table 1, Pretest initiation time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest initiation time active, SD (s)",
+   "computed": 0.30424017081632426,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Table 1, Pretest initiation time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest execution time active, mean (s)",
+   "computed": 2.016548076923077,
+   "reported": 2.02,
+   "tol": 0.005,
+   "source": "Table 1, Pretest execution time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest execution time active, SD (s)",
+   "computed": 0.6771817145317449,
+   "reported": 0.68,
+   "tol": 0.005,
+   "source": "Table 1, Pretest execution time",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest error rate active, mean (%)",
+   "computed": 29.903846153846153,
+   "reported": 30.0,
+   "tol": 0.5,
+   "source": "Table 1, Pretest error rate (printed as integers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pretest error rate active, SD (%)",
+   "computed": 15.337548194394847,
+   "reported": 15.0,
+   "tol": 0.5,
+   "source": "Table 1, Pretest error rate (printed as integers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strongest_sensation sham, mean over four days",
+   "computed": 1.2291666666666667,
+   "reported": 1.23,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strongest_sensation sham, SD",
+   "computed": 0.49407723975161993,
+   "reported": 0.49,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strongest_sensation active, mean over four days",
+   "computed": 1.4615384615384615,
+   "reported": 1.46,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "strongest_sensation active, SD",
+   "computed": 0.7864232565619728,
+   "reported": 0.79,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_affected_performance sham, mean over four days",
+   "computed": 0.15625,
+   "reported": 0.16,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_affected_performance sham, SD",
+   "computed": 0.3197527917408806,
+   "reported": 0.32,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_affected_performance active, mean over four days",
+   "computed": 0.2980769230769231,
+   "reported": 0.3,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_affected_performance active, SD",
+   "computed": 0.36068844429251384,
+   "reported": 0.36,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_lasted sham, mean over four days",
+   "computed": 1.1354166666666667,
+   "reported": 1.14,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_lasted sham, SD",
+   "computed": 0.4833036597587813,
+   "reported": 0.48,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_lasted active, mean over four days",
+   "computed": 1.7884615384615385,
+   "reported": 1.79,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensation_lasted active, SD",
+   "computed": 0.7095502367426414,
+   "reported": 0.71,
+   "tol": 0.005,
+   "source": "Table 1, Sensations",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "error detection accuracy, active group, mean (%)",
+   "computed": 80.50216346153846,
+   "reported": 81.0,
+   "tol": 0.5,
+   "source": "Discussion (active M = 81%)",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "tDCSraw.csv",
+   "url": "https://osf.io/download/56bes/",
+   "bytes": 11941,
+   "sha256": "737ba417554f176fc252713fd24ea74507b3db3be4619435d2c8adbc5a0d16d6",
+   "fetched_utc": "2026-11-09T15:27:47Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Apsvalka2018_NeuralPlast.zip"
+}

@@ -1,0 +1,725 @@
+{
+ "id": "Parrell2026_PLoSBiol",
+ "module": "speech",
+ "rows": 12960,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 254284,
+ "zip_sha256": "3a9426d57df0610a978eb359d90ebbe38a48fd3ba0d60f1da744371f1a8bf823",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 30 participants x 216 triplets (36 go and 72 noGo per direction), trial numbers unique within a participant, 2-755, at least 3 apart",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 1: no go triplet is marked failed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 30 participants x 216 triplets (36 go and 72 noGo per direction), trial numbers unique within a participant, 2-755, at least 3 apart",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: no go triplet is marked failed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "12,960 triplets = 2 experiments x 30 participants x 216; fVal missing on 328 and fValreten on 393, as shared",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 changes within -700 to 700 mel (a few tracking errors are left in by the authors)",
+   "ok": true,
+   "detail": "-642 to 383, -641 to 595"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: triplets per participant (36 blocks x 6)",
+   "computed": 216.0,
+   "reported": 216.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: movement perturbations per direction",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: no-movement perturbations per direction",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: no-movement triplets excluded for speech on the middle trial, median",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... lowest across participants",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... highest across participants",
+   "computed": 89.0,
+   "reported": 89.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: analysed movement triplets per participant, median",
+   "computed": 71.0,
+   "reported": 71.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... lowest",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... highest",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: analysed no-movement triplets per participant, median",
+   "computed": 111.0,
+   "reported": 111.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... lowest",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... highest",
+   "computed": 140.0,
+   "reported": 140.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: triplets per participant (36 blocks x 6)",
+   "computed": 216.0,
+   "reported": 216.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: movement perturbations per direction",
+   "computed": 36.0,
+   "reported": 36.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: no-movement perturbations per direction",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Procedure)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: no-movement triplets excluded for speech on the middle trial, median",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: ... lowest across participants",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: ... highest across participants",
+   "computed": 115.0,
+   "reported": 115.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: analysed movement triplets per participant, median",
+   "computed": 70.0,
+   "reported": 70.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: ... lowest",
+   "computed": 63.0,
+   "reported": 63.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: ... highest",
+   "computed": 72.0,
+   "reported": 72.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2: analysed no-movement triplets per participant, median",
+   "computed": 137.0,
+   "reported": 137.0,
+   "tol": 0,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: no-movement triplets with speech on the middle trial, lowest % across participants",
+   "computed": 2.7777777777777777,
+   "reported": 3.0,
+   "tol": 0.5,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: ... highest % across participants",
+   "computed": 61.80555555555556,
+   "reported": 62.0,
+   "tol": 0.5,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1: no-movement triplets with speech on the middle trial, % across participants (the paper's 'average of 22%' is the median here; the mean is 23.4%)",
+   "computed": 22.22222222222222,
+   "reported": 22.0,
+   "tol": 0.5,
+   "source": "Parrell et al. 2026, PLoS Biol, Methods (Data analysis)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: F1 change with the F1 shift down (mel)",
+   "computed": 2.309004525917029,
+   "reported": 2.3,
+   "tol": 0.050001000000000004,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: SE, shift down",
+   "computed": 0.8841367194723044,
+   "reported": 0.8,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: F1 change with the F1 shift up (mel)",
+   "computed": -6.241276495811572,
+   "reported": -6.2,
+   "tol": 0.050001000000000004,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: SE, shift up",
+   "computed": 0.8860786398690996,
+   "reported": 0.8,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: t of down minus up",
+   "computed": 7.536854117420524,
+   "reported": 7.5,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, movement: d of down minus up",
+   "computed": 0.23180243959234842,
+   "reported": 0.23,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: F1 change with the F1 shift down (mel)",
+   "computed": 0.5380588003516201,
+   "reported": 0.5,
+   "tol": 0.050001000000000004,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: SE, shift down",
+   "computed": 0.7485794420265456,
+   "reported": 0.7,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: F1 change with the F1 shift up (mel)",
+   "computed": -2.1237456945231967,
+   "reported": -2.1,
+   "tol": 0.050001000000000004,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: SE, shift up",
+   "computed": 0.7500887594776353,
+   "reported": 0.8,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: t of down minus up",
+   "computed": 2.9133040690748677,
+   "reported": 2.9,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, combined index, no movement: d of down minus up",
+   "computed": 0.07216286506395089,
+   "reported": 0.07,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: F1 change with the F1 shift down (mel)",
+   "computed": 1.1584204435086936,
+   "reported": 1.16,
+   "tol": 0.005001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: SE, shift down",
+   "computed": 0.744520080502715,
+   "reported": 0.75,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: F1 change with the F1 shift up (mel)",
+   "computed": -6.927939802704889,
+   "reported": -6.93,
+   "tol": 0.005001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: SE, shift up",
+   "computed": 0.7446937749310001,
+   "reported": 0.75,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: t of down minus up",
+   "computed": 7.834552356940516,
+   "reported": 7.84,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, movement: d of down minus up",
+   "computed": 0.24302963013448825,
+   "reported": 0.24,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, no movement: F1 change with the F1 shift down (mel)",
+   "computed": -0.8000936753982203,
+   "reported": -0.8,
+   "tol": 0.005001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, no movement: SE, shift down",
+   "computed": 0.5636959641035145,
+   "reported": 0.56,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, no movement: F1 change with the F1 shift up (mel)",
+   "computed": -1.277800368519455,
+   "reported": -1.28,
+   "tol": 0.005001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, no movement: SE, shift up",
+   "computed": 0.55107794558359,
+   "reported": 0.55,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, combined index, no movement: t of down minus up",
+   "computed": 0.6293908729091953,
+   "reported": 0.63,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), movement: down minus up (mel)",
+   "computed": 8.626497730806244,
+   "reported": 8.6,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), movement: SE of the difference",
+   "computed": 1.5083767551043445,
+   "reported": 1.5,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), movement: t",
+   "computed": 5.719060375078169,
+   "reported": 5.7,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), movement: d",
+   "computed": 0.2484382082171704,
+   "reported": 0.24,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), no movement: down minus up (mel)",
+   "computed": 2.4456120577452696,
+   "reported": 2.5,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), no movement: SE of the difference",
+   "computed": 1.2140961550234088,
+   "reported": 1.2,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), no movement: t",
+   "computed": 2.0143479143940755,
+   "reported": 2.014,
+   "tol": 0.001001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, adaptation (+1), no movement: d",
+   "computed": 0.07043223062017269,
+   "reported": 0.07,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), movement: down minus up (mel)",
+   "computed": 8.469141283240198,
+   "reported": 8.5,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), movement: SE of the difference",
+   "computed": 1.6947886929631168,
+   "reported": 1.7,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), movement: t",
+   "computed": 4.99716650128991,
+   "reported": 4.997,
+   "tol": 0.001001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), movement: d",
+   "computed": 0.2176196002673735,
+   "reported": 0.22,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), no movement: down minus up (mel)",
+   "computed": 2.880788545027398,
+   "reported": 2.9,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), no movement: SE of the difference",
+   "computed": 1.3652481061484723,
+   "reported": 1.4,
+   "tol": 0.100001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), no movement: t",
+   "computed": 2.1100842638445005,
+   "reported": 2.11,
+   "tol": 0.001001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1, aftereffects (+2), no movement: d",
+   "computed": 0.07402356752086675,
+   "reported": 0.07,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adaptation (+1), movement: t",
+   "computed": 5.284868353067082,
+   "reported": 5.29,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adaptation (+1), movement: d",
+   "computed": 0.2313742662350998,
+   "reported": 0.23,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, adaptation (+1), no movement: t",
+   "computed": -0.383412641040231,
+   "reported": -0.38,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, aftereffects (+2), movement: t",
+   "computed": 5.787508434699878,
+   "reported": 5.79,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, aftereffects (+2), movement: d",
+   "computed": 0.2544092529483618,
+   "reported": 0.256,
+   "tol": 0.01,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2, aftereffects (+2), no movement: t",
+   "computed": 1.238064620015665,
+   "reported": 1.24,
+   "tol": 0.010001,
+   "source": "Parrell et al. 2026, PLoS Biol, Results, Experiment 2",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 1: the paper's 'average of 22%' of no-movement triplets with speech on the middle trial is the median across participants here (22.2%); the mean is 23.4%.",
+  "Experiment 2: the paper gives 127-140 analysed no-movement triplets per participant (median 137); the rows give a median of 137 but a range of 27 to 144, which fits the paper's own 0-115 excluded triplets (144 - 115 = 29).",
+  "Standard errors of the model means, some contrasts and some d values are truncated or differ by one unit of the last printed digit in the paper (SE 0.884 is printed 0.8, d 0.248 is printed 0.24, d 0.254 is printed .256, a contrast of 2.45 is printed 2.5), so they are checked to one unit of the last printed digit; every t statistic agrees to its printed decimals."
+ ],
+ "sources": [
+  {
+   "file": "EXP1_statTable_30s_50-125.txt",
+   "url": "https://osf.io/download/b4khu/",
+   "bytes": 347023,
+   "sha256": "abf73dffad20a768924c798362084f6cb26091a17d85d030a746278de5c79dd0",
+   "fetched_utc": "2026-11-08T19:42:32Z"
+  },
+  {
+   "file": "EXP2_statTable_30s_50-125.txt",
+   "url": "https://osf.io/download/3murf/",
+   "bytes": 348163,
+   "sha256": "4153e78615ea200b77c5bb37e7d0d4284cb2edf5c9397430e5b8025d50de2e4f",
+   "fetched_utc": "2026-11-08T19:42:35Z"
+  },
+  {
+   "file": "analyze_EXP1_EXP2.Rmd",
+   "url": "https://osf.io/download/sejyv/",
+   "bytes": 4695,
+   "sha256": "2c8ddcdce3dd9292e279da2d784997f8c6d9615a9c9f6be4f9b8d902cf912310",
+   "fetched_utc": "2026-11-08T19:42:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Parrell2026_PLoSBiol.zip"
+}

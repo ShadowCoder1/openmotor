@@ -1,0 +1,146 @@
+Codol2018_SciRep: rows 64755, subjects 123, persons 123, zip 1.81 MB
+Tsay2020_JNeurophysiol: rows 14720, subjects 32, persons 32, zip 0.49 MB
+Avraham2021_PLoSBiol: rows 109440, subjects 104, persons 104, zip 2.94 MB
+Tsay2021_NBDT: rows 46944, subjects 264, persons 255, zip 1.51 MB
+Tsay2021_JNeurophysiol_proprioception: rows 52968, subjects 62, persons 62, zip 1.79 MB
+Tsay2021_JNeurophysiol_uncertainty: rows 135420, subjects 141, persons 141, zip 3.79 MB
+Tsay2022_Cerebellum: rows 5120, subjects 32, persons 32, zip 0.16 MB
+Tsay2022_BrainCommun: rows 10560, subjects 32, persons 32, zip 0.17 MB
+Avraham2022_eLife: rows 135000, subjects 166, persons 166, zip 2.79 MB
+Tsay2023_ProcRSocB: rows 124200, subjects 360, persons 360, zip 2.59 MB
+Tsay2023_JCognNeurosci: rows 17550, subjects 40, persons 40, zip 0.40 MB
+vanMastrigt2023_ExpBrainRes: rows 68680, subjects 68, persons 68, zip 1.73 MB
+Tsay2024_NatHumBehav: rows 347520, subjects 2547, persons 2547, zip 12.28 MB
+Tsay2024_JNeurophysiol: rows 29040, subjects 66, persons 66, zip 0.62 MB
+Chen2024_bioRxiv: rows 94350, subjects 415, persons 415, zip 1.75 MB
+Wang2024_eLife: rows 152512, subjects 406, persons 406, zip 3.33 MB
+Niyogi2026_bioRxiv: rows 16000, subjects 100, persons 100, zip 0.61 MB
+Avraham2025_eNeuro: rows 220752, subjects 236, persons 236, zip 4.69 MB
+Cipleu2026_NeurorehabilNeuralRepair: rows 7360, subjects 46, persons 46, zip 0.24 MB
+Padmanabhan2026_JNeurophysiol: rows 44000, subjects 200, persons 198, zip 1.52 MB
+Wang2025_SciAdv: rows 77760, subjects 106, persons 106, zip 1.94 MB
+Ding2026_npjSciLearn: rows 73920, subjects 560, persons 560, zip 1.90 MB [formerly held out]
+Cisneros2026_NatHumBehav: rows 34800, subjects 100, persons 100, zip 0.72 MB [formerly held out]
+Nyamsuren2026_bioRxiv: rows 175248, subjects 491, persons 489, zip 4.02 MB [formerly held out]
+Abekawa2022_CurrBiol: rows 6967, subjects 10, persons 10, zip 0.17 MB
+Areshenkoff2024_PLoSBiol: rows 15200, subjects 38, persons 38, zip 0.29 MB
+Arrighi2016_PLoSOne: rows 1475, subjects 12, persons 12, zip 0.03 MB
+  Arrighi check: experiments ['Arrighi2016_PLoSOne_Exp1'] | reasons ['']
+Ayala2021_PLoSONE: rows 112752, subjects 132, persons 132, zip 2.33 MB
+Bansal2023_ExpBrainRes: rows 50592, subjects 130, persons 130, zip 1.04 MB
+Barzi2026_ExpBrainRes: rows 18600, subjects 31, persons 31, zip 0.54 MB
+Berland2025_JNeurophysiol: rows 6930, subjects 33, persons 33, zip 0.14 MB [formerly held out]
+Bromberg2019_eNeuro: rows 51672, subjects 106, persons 106, zip 0.97 MB [formerly held out]
+Brudner2016_JNeurophysiol: rows 11520, subjects 40, persons 40, zip 0.25 MB
+Buggeln2026_PLoSComputBiol: rows 74150, subjects 111, persons 111, zip 1.22 MB
+Casasnovas2024_JNeurophysiol: rows 26057, subjects 60, persons 60, zip 0.77 MB [formerly held out]
+Cesanek2024_NatHumBehav_dual: rows 1300, subjects 10, persons 10, zip 0.03 MB
+Cesanek2024_NatHumBehav_sr: rows 1200, subjects 10, persons 10, zip 0.03 MB
+Clayton2024_PLoSONE: rows 11970, subjects 133, persons 133, zip 0.25 MB
+Cook2026_InfantChildDev: rows 10140, subjects 78, persons 78, zip 0.28 MB [formerly held out]
+Crossley2023_BlockedUncertainty: rows 12000, subjects 40, persons 40, zip 0.26 MB
+DAmario2024_bioRxiv: rows 141040, subjects 458, persons 458, zip 2.53 MB
+Goldschmidt2016_Joystick: rows 13200, subjects 33, persons 33, zip 0.28 MB
+Guo2023_SciRep: rows 47040, subjects 74, persons 74, zip 0.96 MB
+Hadjiosif2023_PLoSBiol: rows 122080, subjects 106, persons 106, zip 3.06 MB
+Henriques2026_DiscovNeurosci: rows 81600, subjects 85, persons 85, zip 1.94 MB
+Hewitson2023_JNeurophysiol: rows 11280, subjects 38, persons 38, zip 0.36 MB
+Hewitson2023_PLoSComputBiol: rows 33600, subjects 120, persons 120, zip 0.66 MB
+Holland2018_JNeurophysiol: rows 45600, subjects 70, persons 70, zip 0.89 MB
+Holland2019_JNeurosci: rows 81070, subjects 121, persons 121, zip 1.83 MB
+Hulst2024_bioRxiv: rows 73920, subjects 40, persons 40, zip 1.59 MB [formerly held out]
+Johnson2017_PLoSOne: rows 7200, subjects 8, persons 8, zip 0.15 MB
+Kim2015_PLoSOne: rows 13050, subjects 45, persons 45, zip 0.40 MB [formerly held out]
+Kim2018_CommunBiol: rows 89040, subjects 126, persons 126, zip 2.50 MB
+Kim2019_eLife: rows 138880, subjects 116, persons 116, zip 3.65 MB
+Kim2025_ProcRSocB: rows 29920, subjects 16, persons 16, zip 0.92 MB
+King2025_bioRxiv: rows 55296, subjects 144, persons 144, zip 1.45 MB
+Kobayashi2024_eLife: rows 7680, subjects 32, persons 32, zip 0.16 MB [formerly held out]
+Korka2023_Cortex: rows 32400, subjects 30, persons 30, zip 1.19 MB
+Kunavar2023_PLoSONE: rows 1280, subjects 8, persons 8, zip 0.03 MB [formerly held out]
+LangHodge2023_PLOSONE: rows 2185, subjects 23, persons 23, zip 0.05 MB
+Li2021_FrontAgingNeurosci: rows 14400, subjects 120, persons 120, zip 0.46 MB
+Liddy2026_eNeuro: rows 26208, subjects 72, persons 72, zip 0.52 MB
+Xu2023_JBBS: rows 5670, subjects 26, persons 26, zip 0.12 MB
+Luo2025_bioRxiv: rows 25200, subjects 60, persons 60, zip 0.70 MB [formerly held out]
+Maresch2022_eNeuro: rows 31200, subjects 78, persons 78, zip 0.65 MB [formerly held out]
+Matsuda2023_ExpBrainRes: rows 11700, subjects 30, persons 30, zip 0.23 MB
+MillerMills2026_EJN: rows 13520, subjects 52, persons 52, zip 0.37 MB [formerly held out]
+Modchalingam2023_SciRep: rows 42246, subjects 105, persons 105, zip 0.85 MB
+Morehead2017_JCogNeurosci: rows 38720, subjects 110, persons 110, zip 0.96 MB
+Moskowitz2020_PLoSCompBiol: rows 6426, subjects 17, persons 17, zip 0.17 MB
+Nakano2024_bioRxiv: rows 13125, subjects 35, persons 35, zip 0.34 MB
+Nettekoven2022_BrainStimul: rows 28080, subjects 27, persons 27, zip 0.58 MB
+OBryan2025_bioRxiv: rows 36424, subjects 87, persons 87, zip 0.83 MB
+Petitet2021_NeuroImage: rows 49262, subjects 57, persons 33, zip 1.33 MB [formerly held out]
+Ruttle2016_PLoSONE: rows 44280, subjects 41, persons 41, zip 0.68 MB
+Ruttle2021_SciRep: rows 37888, subjects 80, persons 80, zip 0.72 MB
+Ruttle2022_JNeurophysiol: rows 55296, subjects 96, persons 96, zip 0.85 MB
+Senna2022_eLife: rows 8208, subjects 59, persons 59, zip 0.09 MB
+Sharma2026_PLoSCompBiol: rows 87000, subjects 29, persons 29, zip 2.47 MB
+Shingane2025_JNeurophysiol: rows 9000, subjects 60, persons 60, zip 0.11 MB [formerly held out]
+Slade2026_ExpBrainRes: rows 24960, subjects 52, persons 52, zip 0.30 MB [formerly held out]
+Spang2017_iPerception: rows 7200, subjects 20, persons 20, zip 0.13 MB [formerly held out]
+Stroh2024_JDeafStudDeafEduc: rows 79464, subjects 64, persons 64, zip 2.00 MB
+Sugiyama2024_PNAS: rows 8944, subjects 44, persons 44, zip 0.17 MB [formerly held out]
+Szarka2025_PLoSONE: rows 7200, subjects 12, persons 12, zip 0.15 MB
+Takada2025_PsyArXiv: rows 4440, subjects 40, persons 40, zip 0.09 MB [formerly held out]
+Todorov2025_bioRxiv: rows 15360, subjects 20, persons 20, zip 0.45 MB [formerly held out]
+Tsay2024_JCogNeurosci: rows 28800, subjects 48, persons 48, zip 0.94 MB
+VelazquezVargas2024_JNeurophysiol: rows 20325, subjects 45, persons 45, zip 0.76 MB
+Wang2022_BrainSci: rows 124640, subjects 82, persons 82, zip 2.31 MB [formerly held out]
+Wang2024_CurrBiol: rows 224640, subjects 432, persons 432, zip 4.71 MB
+Wang2025_JNeurosci: rows 110320, subjects 197, persons 197, zip 2.10 MB
+Wang2026_PLoSBiol: rows 82532, subjects 270, persons 270, zip 1.80 MB
+Warburton2025_JNeurosci: rows 213851, subjects 273, persons 273, zip 7.97 MB
+Will2024_JNeurophysiol: rows 55003, subjects 92, persons 92, zip 1.85 MB
+Wilterson2021_eNeuro: rows 96768, subjects 24, persons 24, zip 3.09 MB
+Zhu2023_PLoSComputBiol: rows 69498, subjects 162, persons 162, zip 2.69 MB
+tHart2016_PLoSOne: rows 11235, subjects 21, persons 21, zip 0.21 MB
+tHart2024_eNeuro: rows 19008, subjects 72, persons 72, zip 0.43 MB
+REASONS AFTER CLEANING:
+   13 or more trials removed by the authors' rule
+   2.5-SD outlier of the mean adaptation (the authors' analysis script)
+   average error more than 3 SD from the group median in adaptation and readaptation (Experiment 1 Rmd)
+   baseline SD of 40 deg or more
+   circular SD of the endpoint direction below 12 deg over some 20 consecutive trials (Methods; filterSubjects.m)
+   compensated less than 50 % of the rotation over the last 20 rotated trials (final_adaptation < 0.5 x rotation, learners.csv; the paper removes 80 of 458)
+   did not follow instructions (e.g. closed the eyes while reaching; Methods)
+   did not use the apparatus correctly (scratched the tablet)
+   experienced an equipment failure (the screen turned off)
+   extreme baseline reach trajectories (more than 3 SD from the mean), identified from the published means
+   failed to make straight reaches on more than 20 % of the learning trials / did not follow the instructions
+   fell asleep during the task
+   fewer than 70% valid trials
+   fewer than 70% valid trials; secondary-task accuracy below 70%
+   in the authors' badsubject list (more than 30% excluded trials, or the files' lefth / badbl lists)
+   left out of the analysis by the authors' code (see the Participants section of the paper)
+   matched control of the excluded outlier (Experiment 1 Rmd)
+   mean post-block validation endpoint error > 3 SD from the group mean (the paper's rule)
+   median time limit after main trial 700 >= 5 s (Experiment2a/R/main.R timeout_outlier)
+   more than 10% of the trials removed by the authors' rule
+   non-learner: late-learning error in the higher-error component of the paper's two-component GMM
+   not a trackpad user (input device optical): Figure 2i analyses the trackpad users only
+   not a trackpad user (input device trackball): Figure 2i analyses the trackpad users only
+   not among the 131 participants of the authors' processed files (raw files of 133)
+   not among the 8 participants per condition analysed in the article (24 = 3 x 8; the authors' BUMProcessor.m reads participant folders 1-8)
+   not in the published sample: started after the paper's last session (2022-03-25)
+   not in the published sample: started after the paper's last session (2022-03-25); the authors' movement criteria: erratic movements (detrended hand SD above 25 deg)
+   not in the published sample: started after the paper's last session (2022-03-25); the authors' movement criteria: more than 20 outlier trials at one target
+   not in the published sample: started after the paper's last session (2022-03-25); the authors' movement criteria: systematic movements in the wrong direction
+   post-experiment questionnaire (Question 4): reported aiming to the left or right of the target in the aftereffect phase, i.e. did not follow the instructions
+   reported, after the experiment, having performed in a similar experiment
+   secondary-task accuracy below 70%
+   session not in the authors' aggregated analysis file (48 of 52)
+   success rate below 40% in the asymptote blocks (the authors' reorganise.m: the cursor, hand angle - 20 deg, within 5 deg of the target on fewer than 80 of the 200 asymptote trials, outlier trials counted as misses)
+   the authors' 2 x 2 table holds this run twice (the source stores it twice, an exact copy): their analysis drops every id with more than 220 rows
+   the authors' movement criteria: erratic movements (detrended hand SD above 25 deg)
+   the authors' movement criteria: erratic movements (detrended hand SD above 25 deg), systematic movements in the wrong direction
+   the authors' movement criteria: more than 20 outlier trials at one target
+   the authors' movement criteria: more than 20 outlier trials at one target, erratic movements (detrended hand SD above 25 deg)
+   the authors' movement criteria: more than 20 outlier trials at one target, erratic movements (detrended hand SD above 25 deg), systematic movements in the wrong direction
+   the authors' movement criteria: more than 20 outlier trials at one target, systematic movements in the wrong direction
+   the authors' movement criteria: systematic movements in the wrong direction
+   the id has two runs in the authors' 2 x 2 table (440 rows): their analysis drops every id with more than 220 rows
+TOTAL zips 99 bytes 132157249 rows 5286546
+PROBLEMS 0

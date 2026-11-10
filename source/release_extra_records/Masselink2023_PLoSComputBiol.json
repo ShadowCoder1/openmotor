@@ -1,0 +1,113 @@
+{
+ "id": "Masselink2023_PLoSComputBiol",
+ "module": "saccade",
+ "rows": 13440,
+ "subjects": 48,
+ "persons": 16,
+ "zip_bytes": 202949,
+ "zip_sha256": "2424deb68fb5d61809b3b49ebc03e0bb99e52e8bdb4cd30efcc96448e2e69637",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "280 trials with types 1 (pre-saccadic localization) x40, 2 (post-saccadic localization) x40, 3 (saccade) x200",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "pre-exposure = trials 1-60 (40 localization + 20 saccade trials), exposure = 61-180 all saccade trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each measure is filled only on its own trial type (preloc on 1; postloc and sac on 2; sac, sacpv, sacdur on 3)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 participants (8 control, 8 patient) x 3 conditions x 280 trials = 13440 rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "pre-exposure saccade variability (standard error), controls (deg)",
+   "computed": 0.28964423383134696,
+   "reported": 0.28,
+   "tol": 0.02,
+   "source": "Results, Saccade variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "pre-exposure saccade variability (standard error), patients (deg)",
+   "computed": 0.5696266626090025,
+   "reported": 0.54,
+   "tol": 0.05,
+   "source": "Results, Saccade variability",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls: saccade amplitude change in the last 20 exposure trials vs pre-exposure, inward step (deg)",
+   "computed": -3.9326714041110113,
+   "reported": -3.9,
+   "tol": 0.1,
+   "source": "Results, Motor command change",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls: same, SD across participants, inward step (deg)",
+   "computed": 1.8359777121083072,
+   "reported": 1.8,
+   "tol": 0.1,
+   "source": "Results, Motor command change",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls: saccade amplitude change in the last 20 exposure trials vs pre-exposure, outward step (deg)",
+   "computed": 3.577150623162953,
+   "reported": 3.6,
+   "tol": 0.1,
+   "source": "Results, Motor command change",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls: same, SD across participants, outward step (deg)",
+   "computed": 1.9824609488642375,
+   "reported": 2.0,
+   "tol": 0.1,
+   "source": "Results, Motor command change",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants: 8 controls + 8 patients",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's motor-command changes come from a model fit; the converted rows give controls' change in mean saccade amplitude between the 20 pre-exposure saccade trials and the last 20 exposure trials, which agrees (-3.9 and +3.6 deg), but the patient values and the localization-based measures were not reproduced from the rows (they depend on the authors' model).",
+  "The deposit does not state the units of the fields; amplitudes (about 20), peak velocity (about 440) and duration (about 65) were read as deg, deg/s and ms from the 20 deg target and the paper."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://zenodo.org/records/8156033/files/Masselink_etal_2023_data.zip?download=1",
+   "bytes": 1030425,
+   "sha256": "5c71654371be6c31c47f601a7fd19646f7bc30533daf7d91e828daf14d82d66d",
+   "fetched_utc": "2026-11-09T03:34:25Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Masselink2023_PLoSComputBiol.zip"
+}

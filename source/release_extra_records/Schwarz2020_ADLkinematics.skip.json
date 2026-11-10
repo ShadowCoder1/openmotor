@@ -1,0 +1,7 @@
+{
+ "id": "Schwarz2020_ADLkinematics",
+ "skipped": true,
+ "reason": "too large",
+ "details": "Zenodo 3713449 holds one 9.8 GB archive (ULF_in_ADL.zip) of full-body inertial-sensor .mvnx XML files, one per trial, for 30 daily-living tasks (gestures, grasping, tool use), which are not target reaches with a hand direction per trial; the whole archive is over the 5 GB limit. CC BY 4.0; the record cites no paper (NCT03135093, SoftPro grant 688857).",
+ "sources": []
+}

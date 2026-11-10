@@ -1,0 +1,194 @@
+{
+ "id": "Feit2016_CHI",
+ "module": "keypress",
+ "rows": 36955,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 670779,
+ "zip_sha256": "e4c2808b4ad67c81d05a85bf6d4948175c5ca90ba6488140a9502fd63cca88ef",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "typing.zip matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Background.xlsx matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "30 participants, rows grouped by participant in the authors' file order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the stimulus sentence changes exactly where input_index returns to 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "input_index mostly counts 0,1,2... within a sentence (the authors' own index is kept)",
+   "ok": true,
+   "detail": "2 steps other than +1 of 35456"
+  },
+  {
+   "kind": "internal",
+   "what": "49 or 50 sentences per participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "timestamps run forward within a participant except in a few places the authors' file has",
+   "ok": true,
+   "detail": "1 backward steps"
+  },
+  {
+   "kind": "internal",
+   "what": "every key press has an executing finger",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "questionnaire rows found for all 30 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 30.0,
+   "reported": 30.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female participants",
+   "computed": 17.0,
+   "reported": 17.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "left-handed participants",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, mean (years, paper rounds to 31)",
+   "computed": 30.633333333333333,
+   "reported": 31.0,
+   "tol": 0.5,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, youngest",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age, oldest",
+   "computed": 55.0,
+   "reported": 55.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who typed in Finnish",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants who typed in English",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "key presses in the sentences condition",
+   "computed": 36955.0,
+   "reported": 36955.0,
+   "tol": 0,
+   "source": "Results (first paragraph)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sentences per participant (50 chosen; one participant has 49)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Materials",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "Readme.txt",
+   "url": "https://zenodo.org/api/records/4047775/files/Readme.txt/content",
+   "bytes": 6827,
+   "sha256": "4d62ebde494ead2a5ddbef0fafe4a3a49ff579e10c8216eaf5340f471221252c",
+   "fetched_utc": "2026-11-09T00:01:59Z"
+  },
+  {
+   "file": "typing.zip",
+   "url": "https://zenodo.org/api/records/4047775/files/Typing%20data%20v2.0.zip/content",
+   "bytes": 386519,
+   "sha256": "c35a17c2c6ffaf0c8a044d60e99b25a7e3cedfe16bd24eecbb70304c3b47c85d",
+   "fetched_utc": "2026-11-09T00:02:12Z"
+  },
+  {
+   "file": "Background.xlsx",
+   "url": "https://zenodo.org/api/records/4047775/files/Background.xlsx/content",
+   "bytes": 16224,
+   "sha256": "5686f7f5ea787761187de65323f4297184f384354bbbe49e13a526d540d370bd",
+   "fetched_utc": "2026-11-09T00:02:22Z"
+  },
+  {
+   "file": "keyboard_flat_coordinates.csv",
+   "url": "https://zenodo.org/api/records/4047775/files/keyboard_flat_coordinates.csv/content",
+   "bytes": 1594,
+   "sha256": "b2c4648d31b47af49a4a08873f9a7e9d380f732807b926f7336e903a27bf1a30",
+   "fetched_utc": "2026-11-09T00:02:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Feit2016_CHI.zip"
+}

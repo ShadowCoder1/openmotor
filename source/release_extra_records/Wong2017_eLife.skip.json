@@ -1,0 +1,7 @@
+{
+ "id": "Wong2017_eLife",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "The repository holds per-session raw MATLAB files in folders named by session date and participant initials (analysed only through the authors MATLAB/Kinereach code) plus processed R tables (reaction time, peak velocity and an error value per trial) with no hand direction and no documentation of the error unit or block coding; the raw files also carry identifying folder names.",
+ "sources": []
+}

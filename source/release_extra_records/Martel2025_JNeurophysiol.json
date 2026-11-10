@@ -1,0 +1,61 @@
+{
+ "id": "Martel2025_JNeurophysiol",
+ "module": "summary",
+ "rows": 1696,
+ "subjects": 106,
+ "persons": 106,
+ "zip_bytes": 22090,
+ "zip_sha256": "b25307bcc4e5894c3bb08596991fcd554b789bc281c47dbddf7681b462544a24",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every participant row kept: 106 x (2 x 5 + 6) rows",
+   "ok": true,
+   "detail": "1696"
+  },
+  {
+   "kind": "internal",
+   "what": "participant numbers are unique within each experiment",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 11 experiments are all present",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 106.0,
+   "reported": 106.0,
+   "tol": 0,
+   "source": "Dataset ReadMe (106 participants included; the abstract's design has the same experiments)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "experiments",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Dataset ReadMe (11 experimental conditions); abstract: nine cue types plus two report experiments",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text was not accessible (publisher and HAL block automated access), so the checks use the counts given in the dataset ReadMe: 106 participants and 11 experiments."
+ ],
+ "sources": [
+  {
+   "file": "table.xlsx",
+   "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/634916?format=original",
+   "bytes": 34804,
+   "sha256": "802f0236208386b773407be2b428fe91a4727b97c07b2d089edd2663319bf886",
+   "fetched_utc": "2026-11-09T13:40:53Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Martel2025_JNeurophysiol.zip"
+}

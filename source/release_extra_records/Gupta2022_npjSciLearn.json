@@ -1,0 +1,297 @@
+{
+ "id": "Gupta2022_npjSciLearn",
+ "module": "keypress",
+ "rows": 244454,
+ "subjects": 160,
+ "persons": 160,
+ "zip_bytes": 3001460,
+ "zip_sha256": "befb0814eab8d492f09080e0682a196ef1acf3ecc5903510ac38f849c7dcec43",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "brM10RT.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "brM30RT.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "brS10RT.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "brS30RT.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each file lists a participant's rows in one run (no interleaving)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "160 participant sequences in the four files (37 + 41 + 43 + 39)",
+   "ok": true,
+   "detail": "160"
+  },
+  {
+   "kind": "internal",
+   "what": "exactly one ID code occurs in two files (two separate sequences; kept as two participants)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "RT is the time since the previous key press (first press of a trial: since trial start): RT sums to the last totalTime in the trial for every trial of the two massed files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "16 trials in the massed files, 44 in the spaced files",
+   "ok": true,
+   "detail": "{'brM10RT.csv': 16, 'brM30RT.csv': 16, 'brS10RT.csv': 44, 'brS30RT.csv': 44}"
+  },
+  {
+   "kind": "internal",
+   "what": "keys are 1-4 (plus 56 presses of the letters a-d, all coded incorrect)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row kept, in the authors' order",
+   "ok": true,
+   "detail": "244454"
+  },
+  {
+   "kind": "internal",
+   "what": "massed (30 s trials), 10 s breaks: 41 participants after the authors' removals",
+   "ok": true,
+   "detail": "41"
+  },
+  {
+   "kind": "internal",
+   "what": "massed (30 s trials), 30 s breaks: 37 participants after the authors' removals",
+   "ok": true,
+   "detail": "37"
+  },
+  {
+   "kind": "internal",
+   "what": "spaced (10 s trials), 10 s breaks: 42 participants after the authors' removals",
+   "ok": true,
+   "detail": "42"
+  },
+  {
+   "kind": "internal",
+   "what": "spaced (10 s trials), 30 s breaks: 39 participants after the authors' removals",
+   "ok": true,
+   "detail": "39"
+  },
+  {
+   "kind": "published",
+   "what": "massed (30 s trials), 10 s breaks: post-rest vs last training trials, paired t (df 40)",
+   "computed": -9.010343462033855,
+   "reported": -9.01,
+   "tol": 0.06,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "massed (30 s trials), 10 s breaks: its effect size d",
+   "computed": -1.4071792343742338,
+   "reported": -1.41,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "massed (30 s trials), 30 s breaks: post-rest vs last training trials, paired t (df 36)",
+   "computed": -3.96636538316867,
+   "reported": -3.97,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "massed (30 s trials), 30 s breaks: its effect size d",
+   "computed": -0.6520664522759548,
+   "reported": -0.65,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 30 s breaks: post-rest vs last training trials, paired t (df 38)",
+   "computed": -0.7028212905890637,
+   "reported": -0.7,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 30 s breaks: its effect size d",
+   "computed": -0.11254147571693543,
+   "reported": -0.11,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 10 s breaks: post-rest vs last training trials, paired t (df 41)",
+   "computed": -7.904929246157574,
+   "reported": -7.9,
+   "tol": 0.06,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 10 s breaks: its effect size d",
+   "computed": -1.2197570638954276,
+   "reported": -1.22,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (t-tests of trials 11-12 vs 13-14 in each group)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "ANOVA error df = 155",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "ANOVA: effect of on-task trial length, F(1, 155) (the paper labels this value 'break time')",
+   "computed": 14.489599959615378,
+   "reported": 14.49,
+   "tol": 0.01,
+   "source": "Results, 'Post-rest improvement' (2 x 2 ANOVA on RT improvement; sequential sums of squares as in R aov)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ANOVA: its partial eta squared",
+   "computed": 0.0854896109440806,
+   "reported": 0.08,
+   "tol": 0.006,
+   "source": "Results, 'Post-rest improvement' (2 x 2 ANOVA on RT improvement; sequential sums of squares as in R aov)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ANOVA: effect of break length, partial eta squared (paper labels it 'on-task trial time')",
+   "computed": 0.04315308668301824,
+   "reported": 0.04,
+   "tol": 0.005,
+   "source": "Results, 'Post-rest improvement' (2 x 2 ANOVA on RT improvement; sequential sums of squares as in R aov)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ANOVA: interaction F(1, 155)",
+   "computed": 1.2169652354245795,
+   "reported": 1.217,
+   "tol": 0.001,
+   "source": "Results, 'Post-rest improvement' (2 x 2 ANOVA on RT improvement; sequential sums of squares as in R aov)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 30 s breaks: first vs third 3.33 s of a trial, paired t (reactive inhibition)",
+   "computed": -8.220053957163858,
+   "reported": -8.2,
+   "tol": 0.06,
+   "source": "Results, 'Reactive inhibition'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 30 s breaks: its effect size d",
+   "computed": -1.3162620643388492,
+   "reported": -1.32,
+   "tol": 0.006,
+   "source": "Results, 'Reactive inhibition'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 10 s breaks: first vs third 3.33 s of a trial, paired t (reactive inhibition)",
+   "computed": -6.327639238560922,
+   "reported": -6.3,
+   "tol": 0.06,
+   "source": "Results, 'Reactive inhibition'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "spaced (10 s trials), 10 s breaks: its effect size d",
+   "computed": -0.9763759318615307,
+   "reported": -0.98,
+   "tol": 0.006,
+   "source": "Results, 'Reactive inhibition'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants analysed (abstract: N = 159)",
+   "computed": 159.0,
+   "reported": 159.0,
+   "tol": 0,
+   "source": "Abstract",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The ANOVA of the post-rest RT improvement: the paper reports F(1, 155) = 14.49 (eta2 = .08) for break time and 5.79 (eta2 = .04) for on-task trial time. In the converted rows 14.49 and eta2 = .08 belong to the on-task trial length (30 s vs 10 s trials) and eta2 = .04 to the break length, so the labels appear swapped in the text; the break-length F is 6.99 here, not 5.79 (probably a typing slip). The interaction F = 1.217 matches.",
+  "The paper's reactive-inhibition t-tests for the 30 s trials (t(36) = -3.42 and t(40) = -3.26) cannot be reproduced: the authors' script has no code for them, and the closest version computed here gives t = -4.19 and -3.49. The same tests for the 10 s trials, the four post-rest t-tests and the ANOVA reproduce.",
+  "The authors' script treats trial 38 (the second warm-up of the spaced groups) as part of the post-rest window for the paired t-tests (trial >= 37); that is reproduced as is in the checks."
+ ],
+ "sources": [
+  {
+   "file": "brM30RT.csv",
+   "url": "https://osf.io/download/aur92/",
+   "bytes": 2727878,
+   "sha256": "270c6ca5ea6044f377d4a0989826fbcfc9d0205b0f05b4355890064b260a55ee",
+   "fetched_utc": "2026-11-08T23:56:22Z"
+  },
+  {
+   "file": "brM10RT.csv",
+   "url": "https://osf.io/download/y43su/",
+   "bytes": 2833171,
+   "sha256": "e15b821cff59871bf976a9f4862f6dc4a3dacc842d723153a4775a5a603acbcb",
+   "fetched_utc": "2026-11-08T23:56:27Z"
+  },
+  {
+   "file": "brS10RT.csv",
+   "url": "https://osf.io/download/un4sp/",
+   "bytes": 3188818,
+   "sha256": "a6229b1da26e4780274f16b8085e4593cbfd3d8ce5ae6fccdda11f3def4fbf6d",
+   "fetched_utc": "2026-11-08T23:56:32Z"
+  },
+  {
+   "file": "brS30RT.csv",
+   "url": "https://osf.io/download/gd58y/",
+   "bytes": 3269923,
+   "sha256": "61ecf3bb8468c0b7f7b61e6c1afe9b03eff2f9c3634e456b687d7a7db7c53607",
+   "fetched_utc": "2026-11-08T23:56:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Gupta2022_npjSciLearn.zip"
+}

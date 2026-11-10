@@ -1,0 +1,94 @@
+{
+ "id": "Goettker2019_JVis",
+ "module": "timeseries",
+ "rows": 53278,
+ "subjects": 82,
+ "persons": 12,
+ "zip_bytes": 819550797,
+ "zip_sha256": "b22436f5f53478e140fcc0ddd5a079f743f461dfdaa81bb96e8a2b40accc2003",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants, main step-ramp experiment",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (eleven volunteers in the main and first control experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, control experiment 1",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Methods, Participants (eleven volunteers in the main and first control experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "planned trials per participant, main experiment (2 speed sets x 3 contrasts x 4 blocks x 120)",
+   "computed": 2880.0,
+   "reported": 2880.0,
+   "tol": 0,
+   "source": "Methods, Experimental setup and condition (a total of 2,880 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "planned trials per participant, control experiment 1 (3 contrasts x 2 speed sets x 2 blocks x 120)",
+   "computed": 1440.0,
+   "reported": 1440.0,
+   "tol": 0,
+   "source": "Methods, Control Experiment 1 (a total of 1,440 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per participant in each contrast condition of control experiment 2 (3 blocks x 120)",
+   "computed": 360.0,
+   "reported": 360.0,
+   "tol": 0,
+   "source": "Methods, Control Experiment 2 (three blocks in each condition, 120 trials per block, 720 trials per participant for both conditions)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling interval (ms)",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0.05,
+   "source": "Methods, Experimental setup (EyeLink 1000 Plus, 1000 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "one row and one samples file per converted trial",
+   "ok": true,
+   "detail": "53278 trials"
+  },
+  {
+   "kind": "internal",
+   "what": "trials of the log without a gaze file are few",
+   "ok": true,
+   "detail": "[('SR', 'Low Contrast', 13, 3, 60), ('SR', 'Low Contrast', 13, 3, 77)]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper says six volunteers took part in control experiment 2; the deposit has eight participant numbers in that experiment (each with 360 trials per contrast, as the paper's trial count implies), so all are rows.",
+  "2 planned trials have no gaze file in the deposit (Low Contrast step-ramp, one participant, block 3), so they are not rows.",
+  "The paper excluded trials during analysis (for example with blinks or anticipatory pursuit); the deposit has no exclusion flags, so excluded_by_authors is False throughout. The EyeLink flags mark blinks and saccades.",
+  "The paper's saccade latencies, landing errors and pursuit values are not in the deposit as numbers (it holds raw gaze only), so none of them was reproduced; the published checks are counts of participants, trials and the sampling rate."
+ ],
+ "sources": [
+  {
+   "file": "Data_Contrast.zip",
+   "url": "https://zenodo.org/records/3244152/files/Data_Contrast.zip?download=1",
+   "bytes": 882823838,
+   "sha256": "c2e7f6f6eee3620cf5d5a4f26d1310287113d480cbdf496c09c428b88ed75508",
+   "fetched_utc": "2026-11-09T10:35:59Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Goettker2019_JVis.zip"
+}

@@ -1,0 +1,114 @@
+{
+ "id": "Maiello2019_iPerception",
+ "module": "grasp_contacts",
+ "rows": 1750,
+ "subjects": 14,
+ "persons": 14,
+ "zip_bytes": 129068,
+ "zip_sha256": "6c550a360a62fc866ca32a4b7a3b8bd3529a8601030630bf16ef312e5d80b7b4",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "1750 rows = 14 participants x (5 practice + 120 recorded)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "GrTp VN = slippery (Vaseline) block before the other trials, NV = after",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "object number matches object type",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "MovementDur equals TouchedTime - StartTime",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants (14)",
+   "computed": 14.0,
+   "reported": 14.0,
+   "tol": 0,
+   "source": "Maiello 2019 text: reanalysed data, N = 14",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recorded trials per participant at each orientation (20 = 4 materials x 5 repetitions)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Maiello 2019 text, 'i.e., 20 trials per participant at each orientation'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recorded trials per participant (120 = 4 materials x 6 orientations x 5 repetitions)",
+   "computed": 120.0,
+   "reported": 120.0,
+   "tol": 0,
+   "source": "Paulun et al. 2016, Procedure (the source of the data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials without a determinable first contact (1.25%)",
+   "computed": 1.25,
+   "reported": 1.25,
+   "tol": 0.05,
+   "source": "Paulun et al. 2016, Data analysis (the source of the data)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "grasps excluded as lying along the long axis of the object (4%)",
+   "computed": 4.3478260869565215,
+   "reported": 4.0,
+   "tol": 0.5,
+   "source": "Maiello 2019 text: 'We excluded from the analysis the 4% of grasps that fell along the long axis'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "distance to the minimum-reach prediction vs the object-visibility prediction, paired t(13) = 5.66",
+   "computed": 5.658777831727603,
+   "reported": 5.66,
+   "tol": 0.01,
+   "source": "Maiello 2019 text, Results (paired samples t-test)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "same test, p = 7.8e-5 (p in units of 1e-5)",
+   "computed": 7.813861947034396,
+   "reported": 7.8,
+   "tol": 0.15,
+   "source": "Maiello 2019 text, Results",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (Methods) and Paulun et al. 2016 give 100 Hz for the Optotrak, but the deposit's time columns advance in 5 ms per frame; times are copied as the deposit gives them.",
+  "The age, sex and handedness of the 14 analysed participants are not in the deposit; the original study reports 24 participants (17 women), 14 of whom had usable data, all right-handed by self-report.",
+  "Start position of the hand is a fixed marker and is not in the deposit's table, so start_x/y/z are empty."
+ ],
+ "sources": [
+  {
+   "file": "Data_and_Analyses.zip",
+   "url": "https://zenodo.org/api/records/2247284/files/Data_and_Analyses.zip/content",
+   "bytes": 334629,
+   "sha256": "88e96125152c74df2f3f8e2db9f76873e894c31ab3fb81143d5534c837cf43f0",
+   "fetched_utc": "2026-11-09T08:59:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Maiello2019_iPerception.zip"
+}

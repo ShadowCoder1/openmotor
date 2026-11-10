@@ -1,0 +1,223 @@
+{
+ "id": "Narayanan2014_JASA",
+ "module": "timeseries",
+ "rows": 368,
+ "subjects": 4,
+ "persons": 4,
+ "zip_bytes": 77577822,
+ "zip_sha256": "dae9416ab9b0a13d1a713222fa4e8071212f8347bf6d954f5dbe538a5e96aa1f",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "speakers with EMA data",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Table I (EMA column)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "male speakers with EMA data",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "female speakers with EMA data",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Table I",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA sensors per recording",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Sec. III (six 5-DOF sensors)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA sensors on the tongue midline (TT, TB, TD)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Sec. III (three sensors on the midline of the tongue)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA sensors on lower incisor, lower lip and upper lip (JAW, LL, UL)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Sec. III (the other three sensors)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMA sampling rate (Hz), median over the files' own rates",
+   "computed": 100.0806725047059,
+   "reported": 100.0,
+   "tol": 0.1,
+   "source": "Sec. III (100 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sentences read per speaker (sum over the speaker's files, smallest)",
+   "computed": 460.0,
+   "reported": 460.0,
+   "tol": 0,
+   "source": "Sec. IV (the 460 sentences of MOCHA-TIMIT)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sentences read per speaker (sum over the speaker's files, largest)",
+   "computed": 460.0,
+   "reported": 460.0,
+   "tol": 0,
+   "source": "Sec. IV",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sentences with speech labelled in the alignment of each speaker whose alignment is kept (smallest)",
+   "computed": 460.0,
+   "reported": 460.0,
+   "tol": 0,
+   "source": "Sec. IV (460 sentences)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median share of a sensor signal's power above 20 Hz, over all recordings (20 Hz low-pass filter)",
+   "computed": 7.010480169461113e-05,
+   "reported": 0.0,
+   "tol": 0.001,
+   "source": "Sec. III (trajectories smoothed with a 20 Hz low-pass filter)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "92 files of 5 sentences for each of the 4 speakers, covering sentences 1-460 once",
+   "ok": true,
+   "detail": "368 recordings"
+  },
+  {
+   "kind": "internal",
+   "what": "sensors found by name in every file, all six with the same number of samples and 3 columns (asserted); each speaker's 92 files list them in one order, and the order differs between speakers",
+   "ok": true,
+   "detail": "m1: TT TB TD UL LL JAW; m3: UL LL JAW TD TB TT; f1: UL LL JAW TD TB TT; f5: TT TB TD UL LL JAW"
+  },
+  {
+   "kind": "internal",
+   "what": "missing sensor samples always lack all three coordinates (asserted); counted and left as empty cells",
+   "ok": true,
+   "detail": "2825 sensor samples (8475 values) in 136 of 368 files"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: upper lip ahead of the tongue tip and tongue tip ahead of tongue body ahead of rear tongue on x, in 99% of the files of every speaker",
+   "ok": true,
+   "detail": "m1: 1.00, 1.00; m3: 1.00, 1.00; f1: 1.00, 1.00; f5: 1.00, 1.00"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: upper lip above lower lip and above lower incisor on y, in 99% of the files of every speaker",
+   "ok": true,
+   "detail": "m1: 1.00, 1.00; m3: 1.00, 1.00; f1: 1.00, 1.00; f5: 1.00, 1.00"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: the tongue sensors move less along z than along x and y (mean range on z below 0.6 of that on x and y) for every speaker",
+   "ok": true,
+   "detail": "m1: 6.1 vs 18.7; m3: 8.7 vs 22.3; f1: 4.2 vs 18.1; f5: 5.9 vs 19.7"
+  },
+  {
+   "kind": "internal",
+   "what": "unit: median distance between the tongue-tip and rear-tongue sensors is 15-60 units for every speaker (1.5-6 cm in mm), and the median of the largest lip distance per file is 20-60 units",
+   "ok": true,
+   "detail": "m1: 31.6, 35.4; m3: 27.7, 32.4; f1: 22.0, 30.8; f5: 23.3, 34.2"
+  },
+  {
+   "kind": "internal",
+   "what": "20 Hz filter: the average power spectrum falls at least 1.3 times as steeply (dB per Hz) between 22 and 32 Hz as between 10 and 20 Hz, for every speaker",
+   "ok": true,
+   "detail": "m1: -0.9 then -2.3 dB/Hz; m3: -1.0 then -1.8 dB/Hz; f1: -1.4 then -3.2 dB/Hz; f5: -1.2 then -2.9 dB/Hz"
+  },
+  {
+   "kind": "internal",
+   "what": "EMA and audio of the same file are in step: the audio level and the speed of the articulators correlate best within 0.3 s in at least 95% of the files of every speaker",
+   "ok": true,
+   "detail": "m1: 1.00; m3: 1.00; f1: 1.00; f5: 1.00"
+  },
+  {
+   "kind": "internal",
+   "what": "alignments: in at least 90% of the files the speech labels track the audio level of the file (r >= 0.5) for the speakers whose alignment is kept",
+   "ok": true,
+   "detail": "m1: share 1.00, median r 0.76; m3: share 0.32, median r 0.36; f1: share 1.00, median r 0.71; f5: share 1.00, median r 0.79"
+  },
+  {
+   "kind": "internal",
+   "what": "alignments: the text the authors give for a sentence number shares at least half of its words with that numbered sentence of the list (what was said, including slips, against what was asked) in every file, so the numbers point at the right sentences",
+   "ok": true,
+   "detail": "1454 (file, sentence) pairs, lowest overlap 0.67, median 1.00, 96% identical word sets"
+  },
+  {
+   "kind": "internal",
+   "what": "the 92 transcripts named usctimit_mri_m3_ in the EMA folder have the names, CRC32s and sizes of the MRI part's transcripts of that speaker (digest taken from the ZIP's central directory)",
+   "ok": true,
+   "detail": "685890889c7aaf6f..."
+  },
+  {
+   "kind": "internal",
+   "what": "the alignment left out (transcripts named usctimit_mri_) does not fit its audio: share of files with r >= 0.5 below 50%",
+   "ok": true,
+   "detail": "share 0.32, median r 0.36, median best shift 0.56 s"
+  },
+  {
+   "kind": "internal",
+   "what": "every file has a sample file; every kept alignment has an alignment file",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "ASSUMED, not stated by the authors, the deposit or the paper: (1) the unit of the positions is mm; (2) x runs front-back (larger towards the lips), y runs vertically (larger upwards) and z is the lateral axis. They were worked out from the data (sensor distances; the order of the sensors along x and y; the small movement along z), as described under How this file was made. The sign of z and the origin of each speaker's coordinates (which differs between speakers) are not known.",
+  "The paper says missing sensor points were filled by piecewise cubic Hermite interpolation, but 2825 sensor samples (8475 values, always all three coordinates of one sensor) are still missing in 136 of the 368 files (303 in 50 files for speaker Narayanan2014_JASA_P0001, 2473 in 78 files for speaker Narayanan2014_JASA_P0002, 26 in 5 files for speaker Narayanan2014_JASA_P0003, 23 in 3 files for speaker Narayanan2014_JASA_P0004; the longest gap is 144 samples (1.44 s) of sensor TT in recording 92 of speaker Narayanan2014_JASA_P0002). They are empty cells here, not filled, and processing names them for each file.",
+  "The paper gives a sampling rate of 100 Hz; the files carry a rate of their own: 100.0752-100.0838 Hz in 362 files and 97.5-98.7 Hz in 6 files (those hold fewer samples than 100 Hz times the length of their audio). time_s is the sample index divided by the file's own rate.",
+  "For speaker Narayanan2014_JASA_P0001 the EMA signal and the audio of a file have the same length (to 0.1 ms); for the other speakers the EMA signal is 0.06-0.96 s shorter than the audio (median 0.09 s). The audio inside the files is sampled at 22,050 Hz, where the paper says 44.1 kHz downsampled to 16 kHz; it is not part of this conversion.",
+  "The deposit's transcripts for speaker Narayanan2014_JASA_P0002 are named usctimit_mri_..., not usctimit_ema_..., and are byte-identical (CRC32 and size, checked against the ZIP's file directory) to the transcripts of the MRI recordings of that speaker; 1 of them has no sentence label at all. They do not fit the audio inside this speaker's EMA files: the correlation between the audio level and the speech labels is 0.36 (median over files) against 0.71-0.79 for the three other speakers; the labels fit best when shifted by 0.6 s (median over files; from -1.8 to 1.3 s, positive meaning the label lies later than the sound), so no single correction repairs them. The EMA and the audio of these files are in step with each other (see How this file was made), so it is the transcripts that do not belong to them. They are therefore not copied: no alignments and no events for this speaker.",
+  "In 272 of the 276 alignments that are kept the last interval ends 0.1-2.3 s after the end of the EMA signal (median 1.1 s), and 15 lines (all of them the first line of a file) have an end before their start. 44 gaps of more than 0.3 s (longest 4.6 s) separate consecutive lines. The alignment times are copied as the authors give them.",
+  "In 2 sentences the end given in events lies after the end of the EMA signal of the file (the alignment is longer than the signal there).",
+  "The deposit has two further transcripts and WAV files for speaker Narayanan2014_JASA_P0004 (sentences 461-470) with no EMA file; they are not converted.",
+  "The 20 Hz low-pass filter shows in the data as a steeper roll-off above 20 Hz, not as an absence of power: the median share of a sensor signal's power above 20 Hz is 0.007%, and up to 2.6% in single channels."
+ ],
+ "sources": [
+  {
+   "file": "USC-TIMIT.zip members meta/ (4 files; prefixes USC-TIMIT/EMA/Software/README.txt, USC-TIMIT/list_of_sentences.txt, USC-TIMIT/EMA/Data/M1/mat/usctimit_ema_m1_011_015.mat, USC-TIMIT/EMA/Data/M1/trans/usctimit_ema_m1_011_015.trans)",
+   "url": "https://zenodo.org/api/records/19422914/files/USC-TIMIT.zip/content",
+   "bytes": 1081125,
+   "sha256": "3e1b8b9349b5c79e0c29b12d4b1fd5c37e6749e7c3571103119f80be81d61bcf",
+   "fetched_utc": "2026-11-08T21:42:47Z"
+  },
+  {
+   "file": "USC-TIMIT.zip members ema/ (736 files; prefixes USC-TIMIT/EMA/Data/F1/mat/, USC-TIMIT/EMA/Data/F1/trans/, USC-TIMIT/EMA/Data/F5/mat/, USC-TIMIT/EMA/Data/F5/trans/, USC-TIMIT/EMA/Data/M1/mat/, USC-TIMIT/EMA/Data/M1/trans/, USC-TIMIT/EMA/Data/M3/mat/, USC-TIMIT/EMA/Data/M3/trans/)",
+   "url": "https://zenodo.org/api/records/19422914/files/USC-TIMIT.zip/content",
+   "bytes": 451331823,
+   "sha256": "ca9c3b42a18d8da0a7fd7ed6ba690d7f7c5a8dacff0a6a2680f306ed0126fc35",
+   "fetched_utc": "2026-11-08T22:36:22Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Narayanan2014_JASA.zip"
+}

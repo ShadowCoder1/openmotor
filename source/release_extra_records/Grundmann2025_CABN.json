@@ -1,0 +1,176 @@
+{
+ "id": "Grundmann2025_CABN",
+ "module": "keypress",
+ "rows": 221578,
+ "subjects": 29,
+ "persons": 29,
+ "zip_bytes": 2363351,
+ "zip_sha256": "1dceee1dd6da2f07a7e5db44b3155e197cf7907039838ea2b5f5705900bfed7b",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "learning.RData matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "test.RData matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "29 participants in both tables",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Accuracy is 1 exactly when the box pressed is the cued box (misses are Choice 0)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Session in the tables matches the run names (learning1, learning2, test1 in Session 1; learning3, test2 in Session 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every trial of both tables kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "the 27 blocks of each run are numbered 1-27 within every participant and run",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "MeanRT per participant and learning run (87 values): largest difference to the authors' table",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "authors' learn_subjects_run table in learning.RData (used by MSLT_behavioral_analyses_OSF.R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "MeanRT_correct per participant and learning run (87 values): largest difference to the authors' table",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "authors' learn_subjects_run table in learning.RData (used by MSLT_behavioral_analyses_OSF.R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "RelErrors per participant and learning run (87 values): largest difference to the authors' table",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "authors' learn_subjects_run table in learning.RData (used by MSLT_behavioral_analyses_OSF.R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Nmiss per participant and learning run (87 values): largest difference to the authors' table",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "authors' learn_subjects_run table in learning.RData (used by MSLT_behavioral_analyses_OSF.R)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "learning runs per participant",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "analysis script: 'LME RTs run (3) x block (27)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per learning run",
+   "computed": 27.0,
+   "reported": 27.0,
+   "tol": 0,
+   "source": "analysis script: 'LME RTs run (3) x block (27)'",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean RT of the test runs (58 values): largest difference to the authors' test_subjects_run",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "test_subjects_run in test.RData",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "action slips (NSoA) of the test runs (58 values): largest difference to the authors' test_subjects_run",
+   "computed": 0.0,
+   "reported": 0.0,
+   "tol": 1e-06,
+   "source": "test_subjects_run in test.RData",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of mean RT and number of action slips across participants, Session 1",
+   "computed": -0.7994274335020627,
+   "reported": -0.8,
+   "tol": 0.01,
+   "source": "analysis script comment: cor.test(MeanRT, NSoA) in test_subjects_run",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "correlation of mean RT and number of action slips across participants, Session 2",
+   "computed": -0.8338386561571306,
+   "reported": -0.83,
+   "tol": 0.01,
+   "source": "analysis script comment: cor.test(MeanRT, NSoA) in test_subjects_run",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "analysis.R",
+   "url": "https://osf.io/download/6a677066f7de1ecff11172e4/",
+   "bytes": 1494,
+   "sha256": "b6cae4a5aa9ecbfecedbaff5a8e0f229e74a4451d363ddc87d1193693193f0e1",
+   "fetched_utc": "2026-11-08T21:28:03Z"
+  },
+  {
+   "file": "learning.RData",
+   "url": "https://osf.io/download/6a677066fdc6df30bf135b26/",
+   "bytes": 1614643,
+   "sha256": "ca4d3355e31e82f39f13e7b989d42318764256dec4388ca4c40ea4acce3b0401",
+   "fetched_utc": "2026-11-08T21:28:20Z"
+  },
+  {
+   "file": "test.RData",
+   "url": "https://osf.io/download/6a677068635d4bf698135c3c/",
+   "bytes": 1091154,
+   "sha256": "f31f0c1c5aec8e00ea07f3cc43e4c3964301d18a605bfbaf514e61c489a937c0",
+   "fetched_utc": "2026-11-08T21:28:25Z"
+  },
+  {
+   "file": "Pilot306.mat",
+   "url": "https://osf.io/download/6a676c2d8be9690de9135bb4/",
+   "bytes": 199204,
+   "sha256": "e533403a2a8a0e51a8a52f9cd54d597de6b4044a20845c176b45ab8062e5b1c1",
+   "fetched_utc": "2026-11-08T21:28:30Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Grundmann2025_CABN.zip"
+}

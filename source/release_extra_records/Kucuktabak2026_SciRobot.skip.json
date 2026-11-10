@@ -1,0 +1,7 @@
+{
+ "id": "Kucuktabak2026_SciRobot",
+ "skipped": true,
+ "reason": "other",
+ "details": "Dryad download needs a token (single 20.8 GB step-normalized .mat, which would also fail the size gate; no Zenodo copy found)",
+ "sources": []
+}

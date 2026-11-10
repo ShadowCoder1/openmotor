@@ -1,0 +1,192 @@
+{
+ "id": "Li2023_FrontAgingNeurosci",
+ "module": "timeseries",
+ "rows": 988,
+ "subjects": 52,
+ "persons": 52,
+ "zip_bytes": 1072009938,
+ "zip_sha256": "652109a54317903e94836583c1519d0c91b2d8917d3b3ca6633829bc175392bd",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "older participants",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Methods, Participants: older group n = 29",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "young participants",
+   "computed": 23.0,
+   "reported": 23.0,
+   "tol": 0,
+   "source": "Methods, Participants: young group n = 23",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, older group (years)",
+   "computed": 65.97126436781608,
+   "reported": 65.97,
+   "tol": 0.005,
+   "source": "Participants: 65.97 y (SD 3.8)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, older group",
+   "computed": 3.804516156563154,
+   "reported": 3.8,
+   "tol": 0.05,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age, young group (years)",
+   "computed": 22.93115942028986,
+   "reported": 22.93,
+   "tol": 0.005,
+   "source": "Participants: 22.93 y (SD 1.97)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age, young group",
+   "computed": 1.967644237957492,
+   "reported": 1.97,
+   "tol": 0.005,
+   "source": "Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in older group",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Participants: 13 women",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women in young group",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Participants: 11 women",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "formal trials per participant (4 baseline + 12 adaptation + 3 post-test)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Methods, Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trial length (s)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods: each formal trial 60 s",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adaptation trials per participant",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods: 12 adaptation trials with a 200 ms delay",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline target-cursor RMSE, older (deg)",
+   "computed": 1.5496314147581718,
+   "reported": 1.55,
+   "tol": 0.005,
+   "source": "Results, tracking error: older 1.55 +/- 0.08",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline target-cursor RMSE, young (deg)",
+   "computed": 1.162980655981508,
+   "reported": 1.16,
+   "tol": 0.005,
+   "source": "Results, tracking error: young 1.16 +/- 0.05",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline target-cursor lag, older (ms)",
+   "computed": 89.46551724137932,
+   "reported": 89.466,
+   "tol": 0.0005,
+   "source": "Results, lag: older 89.466",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "baseline target-cursor lag, young (ms)",
+   "computed": 43.26086956521739,
+   "reported": 43.261,
+   "tol": 0.0005,
+   "source": "Results, lag: young 43.261",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has 60000 samples at 1 ms steps in hand and eye arrays",
+   "ok": true,
+   "detail": "0 bad shapes"
+  },
+  {
+   "kind": "internal",
+   "what": "each participant's own cursor-to-target pixel RMSE profile matches one row of the authors' RMSE matrix at r > 0.99 with a clear margin, one-to-one (the matrices are ordered older group first, unlike info.mat)",
+   "ok": true,
+   "detail": "min r 0.9994"
+  },
+  {
+   "kind": "internal",
+   "what": "authors' RMSE (deg) = pixel RMSE of the cursor (hand delayed 200 ms in trials 5-16) to the target after 2 s, divided by 15 pixels per unit (median slope within 0.5 percent)",
+   "ok": true,
+   "detail": "median slope 15.010"
+  },
+  {
+   "kind": "internal",
+   "what": "recordings = 52 x 19",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "two trials (two participants) have an empty EyeTotal in the deposit; one participant's EyeTotal has 9 instead of 10 columns (first four columns read the same)",
+   "ok": true,
+   "detail": "2 empty, nine-column participants [41]"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' summary matrices (RMSE, lags, saccade counts; 52 x 19) are ordered with the 29 older participants first and the 23 young second, not in the order of info.mat. Each participant was matched to a matrix row by the profile of cursor-to-target pixel RMSE over the 19 trials (r above 0.99, one-to-one); the baseline means by group then equal the paper's.",
+  "The authors' RMSE (called degrees) equals the pixel RMSE of the cursor to the target divided by 15 pixels per unit (median slope 15.01); the paper's 12.9 deg for 387 px implies about 30 pixels per degree, so the unit of the deposited RMSE could not be reconciled with the paper's pixel size.",
+  "The paper says 56 volunteers were tested and 4 excluded for noisy or missing eye data; the 4 are not in the deposit, so all 52 participants have no exclusion flag. The 4 practice trials are not in the deposit."
+ ],
+ "sources": [
+  {
+   "file": "data.rar",
+   "url": "https://osf.io/download/v9ed7/",
+   "bytes": 2417943390,
+   "sha256": "e062fe3f7c119981cbca79282a6b3d878cccbf6deaa549b5f9c03fa6dd4f322f",
+   "fetched_utc": "2026-11-09T20:18:36Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Li2023_FrontAgingNeurosci.zip"
+}

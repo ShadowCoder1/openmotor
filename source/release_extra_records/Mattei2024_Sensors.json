@@ -1,0 +1,56 @@
+{
+ "id": "Mattei2024_Sensors",
+ "module": "timeseries",
+ "rows": 20,
+ "subjects": 10,
+ "persons": 10,
+ "zip_bytes": 56194668,
+ "zip_sha256": "4f4a97b5e7d9ac3be3d9c50bb5a7d7f367bb20a0770156aa3e61e3af2ac33bd8",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "Leap Motion controllers (orthogonal sensors) per subject",
+   "computed": 2.0,
+   "reported": 2.0,
+   "tol": 0,
+   "source": "Abstract / Section 2 (two orthogonal Leap Motion Controllers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "recording length per sensor (min)",
+   "computed": 10.299165663333333,
+   "reported": 10.0,
+   "tol": 0.5,
+   "source": "Section 2 (each recording about 10 min)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 recordings, 10 subjects",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has frames and a tracked hand in most of them",
+   "ok": true,
+   "detail": "frames 32950 to 35884, hand present 1.000 to 1.000"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper (and the Zenodo description) states eleven subjects, but virtual_glove.rar holds 20 files = 10 subjects x 2 sensors: the authors' subject numbers run 1 to 8, 10 and 11, subject 9 has no Leap Motion files, so this release has 10 persons, not 11. The deposit does not say why.",
+  "The paper does not state the sensor frame rate, units or axis definitions, so none of them could be checked against it."
+ ],
+ "sources": [
+  {
+   "file": "virtual_glove.rar",
+   "url": "https://zenodo.org/api/records/17152403/files/virtual_glove.rar/content",
+   "bytes": 2348701074,
+   "sha256": "0c5567dc1f3bce018622a31fbd4c47f1d21c2fe9326e536f2430aa1199df330a",
+   "fetched_utc": "2026-11-10T07:10:38Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Mattei2024_Sensors.zip"
+}

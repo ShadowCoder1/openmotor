@@ -1,0 +1,71 @@
+{
+ "id": "Pinsard2019_eLife",
+ "module": "summary",
+ "rows": 2298,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 24493,
+ "zip_sha256": "fbcb7667324c1eac3acb9bcb31acaed3fa2a182e61cedefc43ede0f22f84b2c1",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants analysed",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (group of 18 retained)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per sequence",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, MVPA task (16 blocks of each sequence)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "blocks per participant",
+   "computed": 64.0,
+   "reported": 64.0,
+   "tol": 0,
+   "source": "Methods, MVPA task (total of 64 blocks)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sequences",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Methods, MVPA task (four sequences)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "1152 block rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "2 consolidated and 2 new sequences",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [],
+ "sources": [
+  {
+   "file": "mvpa_task_behavioral_data.csv",
+   "url": "https://osf.io/download/tr7zj/",
+   "bytes": 44084,
+   "sha256": "7b35b78b3cfcf9606fadca8d0edb1dc03fa9d1c3ae7629d18135a9b31f67abcc",
+   "fetched_utc": "2026-11-09T15:15:10Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Pinsard2019_eLife.zip"
+}

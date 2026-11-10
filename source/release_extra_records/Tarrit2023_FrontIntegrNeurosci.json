@@ -1,0 +1,57 @@
+{
+ "id": "Tarrit2023_FrontIntegrNeurosci",
+ "module": "timeseries",
+ "rows": 109,
+ "subjects": 109,
+ "persons": 109,
+ "zip_bytes": 467632108,
+ "zip_sha256": "66c98f2d9975a34c263725ec0e52fac599c87a9e3293b1272bab1de1dd742300",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "sample rate in every file",
+   "ok": true,
+   "detail": "[np.float64(500.0)]"
+  },
+  {
+   "kind": "published",
+   "what": "participants with autism recruited (EDF files in the deposit)",
+   "computed": 41.0,
+   "reported": 41.0,
+   "tol": 0,
+   "source": "Tarrit et al. 2023, Front Integr Neurosci 17:1232474, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing participants recruited (EDF files in the deposit)",
+   "computed": 68.0,
+   "reported": 68.0,
+   "tol": 0,
+   "source": "Tarrit et al. 2023, Front Integr Neurosci 17:1232474, Participants",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "EDF files that could not be decoded are listed in the README",
+   "ok": true,
+   "detail": "0 unreadable of 109"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "All 109 EDF files in the deposit (41 ASD, 68 TD) were decoded and none is left out. The paper states a sampling rate of 1,000 Hz, but the EDF files are recorded at 500 Hz (sample_rate_hz of each row).",
+  "Two participants recruited into the autism group were excluded from the paper's analysis; the deposit does not say which, so no participant is flagged.",
+  "The paper's saccade amplitudes were extracted by the authors' own MATLAB script, which is not in the deposit, so no amplitude statistic was re-derived."
+ ],
+ "sources": [
+  {
+   "file": "data.zip",
+   "url": "https://ndownloader.figshare.com/files/42441729",
+   "bytes": 497734957,
+   "sha256": "7e0f57be5ac5115fdabd599141df3f46de4ed28df5f5ce5f6f6b19aa88d06e8b",
+   "fetched_utc": "2026-11-09T15:47:31Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tarrit2023_FrontIntegrNeurosci.zip"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "Boebinger2024_PLoSCompBiol",
+ "skipped": true,
+ "reason": "not motor behaviour",
+ "details": "OpenNeuro ds004785 v1.0.1 (CC0) holds only preprocessed 32-channel EEG (EEGLAB .set) for 17 participants; the events files carry numbered markers with no perturbation magnitude, direction or step labels, and there are no EMG, kinematic or force data, so there is no motor behaviour to standardize.",
+ "sources": []
+}

@@ -1,0 +1,184 @@
+{
+ "id": "Stewart2022_EurJNeurosci",
+ "module": "summary",
+ "rows": 1269,
+ "subjects": 30,
+ "persons": 30,
+ "zip_bytes": 19276,
+ "zip_sha256": "d0546809e696aabbe3ba31c24af93f2a285366bdbbdbbcd273cb6d3d008232be",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "joystick and clinical files list the same 32 participants in the same order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "each of the 16 rows of the paper's Table 1 (sex, age, months post stroke, lesion side) matches exactly one deposit participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "all 16 matched participants have MRI-task data (24 do in the deposit)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every non-empty cell kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every participant with at least one value is released (30 of the 32; two have no joystick values at all)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "matched sample: 11 men, mean age 56.1, mean 40.0 months post stroke, 9 left lesions (Table 1 totals)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Day 1 response time cost, mean (s)",
+   "computed": 0.5523582108681664,
+   "reported": 0.552,
+   "tol": 0.0005,
+   "source": "Section 3 (Results), subset matched through Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Day 1 response time cost, SD (s)",
+   "computed": 0.23750866308379812,
+   "reported": 0.238,
+   "tol": 0.0005,
+   "source": "Section 3 (Results), subset matched through Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Day 4 response time cost, mean (s)",
+   "computed": 0.3529435273764233,
+   "reported": 0.353,
+   "tol": 0.0005,
+   "source": "Section 3 (Results), subset matched through Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Day 4 response time cost, SD (s)",
+   "computed": 0.09923306018776717,
+   "reported": 0.099,
+   "tol": 0.0005,
+   "source": "Section 3 (Results), subset matched through Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Execute Day1, mean (%)",
+   "computed": 98.125,
+   "reported": 98.1,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Execute Day1, SD (%)",
+   "computed": 7.5,
+   "reported": 7.5,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Select Day1, mean (%)",
+   "computed": 90.3125,
+   "reported": 90.3,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Select Day1, SD (%)",
+   "computed": 15.10725543130408,
+   "reported": 15.1,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Execute Day4, mean (%)",
+   "computed": 98.4375,
+   "reported": 98.4,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Execute Day4, SD (%)",
+   "computed": 3.966001344763598,
+   "reported": 4.0,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Select Day4, mean (%)",
+   "computed": 94.6875,
+   "reported": 94.7,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "scanner direction accuracy Select Day4, SD (%)",
+   "computed": 10.562315087138805,
+   "reported": 10.6,
+   "tol": 0.05,
+   "source": "Results, behavioural results during fMRI",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit lists 32 participants (30 with joystick values, 24 with MRI-task data) but the paper analyses 16; all 30 with values are released and the 16 are flagged (in_paper_sample), identified by matching the paper's Table 1 rows to the clinical file. Over all 32 (or all 24 with MRI data) the paper's numbers do not reproduce (for example Day 1 response time cost 0.606 s over 28 with practice data).",
+  "For the 16 flagged participants the practice-task means that the paper quotes do not reproduce: Day 1 Execute response time 0.536 s (paper 0.542), Select response time 1.124 s (paper 1.11), Execute accuracy 98.6% (paper 98.2), Select accuracy 85.4% (paper 87.3). The response time cost, its SD and the scanner accuracies do reproduce and are the checks. These four values are not used as checks."
+ ],
+ "sources": [
+  {
+   "file": "clin.xlsx",
+   "url": "https://osf.io/download/xuwkz/",
+   "bytes": 40178,
+   "sha256": "f62719f4809ab0a3505c1b40213993695861801cf1959a5ca935e72e641e97a3",
+   "fetched_utc": "2026-11-10T06:15:14Z"
+  },
+  {
+   "file": "joy.xlsx",
+   "url": "https://osf.io/download/jcp7q/",
+   "bytes": 24219,
+   "sha256": "005dd686ddefdbf5a379165437c6cf5ff45d8c6571cfb81932b2415b9084c567",
+   "fetched_utc": "2026-11-10T06:15:17Z"
+  },
+  {
+   "file": "codebook_joy.xlsx",
+   "url": "https://osf.io/download/u7eyz/",
+   "bytes": 10252,
+   "sha256": "f4ed414bb35ca0a296818601ab02614af597cca53fa2b3ab5e20687b982298c3",
+   "fetched_utc": "2026-11-10T06:15:21Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Stewart2022_EurJNeurosci.zip"
+}

@@ -1,0 +1,342 @@
+{
+ "id": "Tyralla2023_ProcRSocB",
+ "module": "saccade",
+ "rows": 17252,
+ "subjects": 61,
+ "persons": 25,
+ "zip_bytes": 175466,
+ "zip_sha256": "0757826324706df33e4febd4ca1904879fbfe6f1e5f7b289efddbc75dd91b3e2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "exp1 short: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 medium: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp1 long: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 short: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 medium: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp2 long: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "exp3 long: saccade values sit only on saccade trials, localization clicks only on localization trials",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants",
+   "computed": 7.0,
+   "reported": 7.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session, short condition",
+   "computed": 244.0,
+   "reported": 244.0,
+   "tol": 0,
+   "source": "Methods, Procedure (244, 270 and 320 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session, medium condition",
+   "computed": 270.0,
+   "reported": 270.0,
+   "tol": 0,
+   "source": "Methods, Procedure (244, 270 and 320 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "trials per session, long condition",
+   "computed": 320.0,
+   "reported": 320.0,
+   "tol": 0,
+   "source": "Methods, Procedure (244, 270 and 320 trials)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' example participant (mymat_Subj1) is one column of Experiment 1, long session",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain (landing / 6.5 deg), baseline saccades: mean",
+   "computed": 0.9597633136094673,
+   "reported": 0.96,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain, baseline saccades: SD",
+   "computed": 0.11841631863169243,
+   "reported": 0.12,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain (landing / 6.5 deg), adaptation: mean",
+   "computed": 1.080691192865106,
+   "reported": 1.08,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain, adaptation: SD",
+   "computed": 0.1627439476535724,
+   "reported": 0.16,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain (landing / 6.5 deg), no-error trials early: mean",
+   "computed": 1.071031894934334,
+   "reported": 1.07,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain, no-error trials early: SD",
+   "computed": 0.14881102842912236,
+   "reported": 0.15,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain (landing / 6.5 deg), no-error trials late: mean",
+   "computed": 0.945759368836292,
+   "reported": 0.95,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain, no-error trials late: SD",
+   "computed": 0.16215180185572978,
+   "reported": 0.16,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain (landing / 6.5 deg), final saccades: mean",
+   "computed": 0.9569230769230772,
+   "reported": 0.95,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, saccadic gain, final saccades: SD",
+   "computed": 0.10826737217407642,
+   "reported": 0.11,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, baseline localization: mean",
+   "computed": 0.8487903654744368,
+   "reported": 0.85,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, baseline localization: SD",
+   "computed": 0.10923461657183643,
+   "reported": 0.11,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, post-adaptation localization: mean",
+   "computed": 0.8808366083490922,
+   "reported": 0.88,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, post-adaptation localization: SD",
+   "computed": 0.10068863047336393,
+   "reported": 0.1,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, localization after early no-error trials: mean",
+   "computed": 0.7759296270511035,
+   "reported": 0.78,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, localization after early no-error trials: SD",
+   "computed": 0.06668583257961808,
+   "reported": 0.07,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, localization after late no-error trials: mean",
+   "computed": 0.8201161447796191,
+   "reported": 0.82,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "example participant, localization gain, localization after late no-error trials: SD",
+   "computed": 0.09704500853674422,
+   "reported": 0.1,
+   "tol": 0.0105,
+   "source": "Results, Example subject (Fig. 2)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "participant means of baseline and adaptation saccade landing positions equal the authors' LandPos values in all three sessions (mymat_Exp1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "participant means of the four localization blocks equal the authors' values in the short session (mymat_Exp1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "row count: 9 x (244 + 270 + 320) + 9 x (244 + 270 + 320) + 7 x 320",
+   "ok": true,
+   "detail": "17252"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The authors' summary values for saccades after the early and late no-error blocks (NoErrorEarly, NoErrorLate in mymat_Exp1) could not be reproduced from the raw rows with any block window that the README or paper describes, and the baseline and post-adaptation localization means of the medium and long sessions of experiment 1 differ slightly from the authors' values for a few participants; the saccade baseline and adaptation means and the short-session localization means match exactly, and the paper's example-participant gains reproduce."
+ ],
+ "sources": [
+  {
+   "file": "mymat_Exp1.mat",
+   "url": "https://zenodo.org/records/7626001/files/mymat_Exp1.mat?download=1",
+   "bytes": 3900,
+   "sha256": "92d061326c9be150e5a9a7e342dea5dd259594e55e62c9d5a1dfda859b77f3b8",
+   "fetched_utc": "2026-11-09T06:18:17Z"
+  },
+  {
+   "file": "mymat_Exp2.mat",
+   "url": "https://zenodo.org/records/7626001/files/mymat_Exp2.mat?download=1",
+   "bytes": 3892,
+   "sha256": "d7006e5924bd744a9ab8514af06940fe6bf78158ab975effbebf0e54cbe481c3",
+   "fetched_utc": "2026-11-09T06:18:24Z"
+  },
+  {
+   "file": "mymat_Exp3.mat",
+   "url": "https://zenodo.org/records/7626001/files/mymat_Exp3.mat?download=1",
+   "bytes": 1345,
+   "sha256": "eff97b39a99d40279f93df9c1d6fca8b6ea36066f7701bf30d35aeb2d850c6c2",
+   "fetched_utc": "2026-11-09T06:18:30Z"
+  },
+  {
+   "file": "mymat_rawData.mat",
+   "url": "https://zenodo.org/records/7626001/files/mymat_rawData.mat?download=1",
+   "bytes": 60284,
+   "sha256": "4e3d33d2df699b6832d7f0499dbf61c63dd5d13f82f6fac81131ba24f4ef0581",
+   "fetched_utc": "2026-11-09T06:18:37Z"
+  },
+  {
+   "file": "mymat_Subj1.mat",
+   "url": "https://zenodo.org/records/7626001/files/mymat_Subj1.mat?download=1",
+   "bytes": 1566,
+   "sha256": "66e96e19821ae24684b19c9ff2d40688a5413ec5708c35dc1959fede500b2a88",
+   "fetched_utc": "2026-11-09T06:18:44Z"
+  },
+  {
+   "file": "README.md",
+   "url": "https://zenodo.org/records/7626001/files/README.md?download=1",
+   "bytes": 2659,
+   "sha256": "221c2ba2fde7f8372ed3e7375284958ca33105e7da8c5866cd7963f085a9f669",
+   "fetched_utc": "2026-11-09T06:18:51Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tyralla2023_ProcRSocB.zip"
+}

@@ -1,0 +1,691 @@
+{
+ "id": "Lametti2025_PsychonBullRev",
+ "module": "reach90",
+ "rows": 28778,
+ "subjects": 60,
+ "persons": 60,
+ "zip_bytes": 631056,
+ "zip_sha256": "51b1b033a6522d063c332a5b74aadf410da72d6d049a235a6e02a2f1b24223c3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "60 files, all with the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows kept: every trial the authors shared (57 files with 480 trials, P02_EX1 and P07_EX1 with 479, P18_EX1 with 460)",
+   "ok": true,
+   "detail": "28778 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "the authors' rotation column (-30 on 320 trials) equals the rule used here (rows 81 to the first after-effect row - 1) in every file except the short P18_EX1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "on trials where the logged position is the hand (no cursor, or no rotation) its direction at peak speed equals hand_angle (median difference below 2 deg, 95th percentile below 12 deg)",
+   "ok": true,
+   "detail": "n=11384, median 1.18, 95th percentile 8.9 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "on cursor trials during adaptation the logged position is the cursor: its direction equals hand_angle + 30 (median difference below 2 deg, 95th percentile below 12 deg)",
+   "ok": true,
+   "detail": "n=17210, median 1.15, 95th percentile 8.7 deg"
+  },
+  {
+   "kind": "published",
+   "what": "participants in group adapt_with_speech",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental Design (15 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group adapt_without_speech",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental Design (15 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group adapt_with_tap",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental Design (15 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in group adapt_with_hit",
+   "computed": 15.0,
+   "reported": 15.0,
+   "tol": 0,
+   "source": "Methods, Participants and Experimental Design (15 per group)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, both experiments",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0,
+   "source": "Methods, Participants (60 adults, 30 per experiment)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women among the 60 participants",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants (42 female, 18 male)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest participant (years)",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (age 18 to 26)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest participant (years)",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants (age 18 to 26)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "median age (years)",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (median 20)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_speech: mean error in the first 20 adaptation trials (deg, authors' sign)",
+   "computed": -19.40088856706904,
+   "reported": -19.4,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_speech: mean error in the last 20 adaptation trials (deg, authors' sign)",
+   "computed": -4.4141017899378205,
+   "reported": -4.41,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_speech: mean after-effect, BAD trials (deg, authors' sign)",
+   "computed": 19.27413238012967,
+   "reported": 19.27,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_speech: mean after-effect, DOT trials (deg, authors' sign)",
+   "computed": 17.39512183502057,
+   "reported": 17.4,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_without_speech: mean error in the first 20 adaptation trials (deg, authors' sign)",
+   "computed": -20.73769110095442,
+   "reported": -20.74,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_without_speech: mean error in the last 20 adaptation trials (deg, authors' sign)",
+   "computed": -3.570596538421121,
+   "reported": -3.57,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_without_speech: mean after-effect, DOT trials (deg, authors' sign)",
+   "computed": 19.411639019274297,
+   "reported": 19.41,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_without_speech: mean after-effect, BAD trials (deg, authors' sign)",
+   "computed": 15.0225563244704,
+   "reported": 15.02,
+   "tol": 0.005,
+   "source": "Results, Experiment 1, group 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_tap: mean error in the first 20 adaptation trials (deg, authors' sign)",
+   "computed": -21.637923383589868,
+   "reported": -21.64,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, tap-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_tap: mean error in the last 20 adaptation trials (deg, authors' sign)",
+   "computed": -3.380945735802675,
+   "reported": -3.38,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, tap-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_tap: mean after-effect, TAP trials (deg, authors' sign)",
+   "computed": 21.85637358673066,
+   "reported": 21.86,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, tap-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_tap: mean after-effect, HIT trials (deg, authors' sign)",
+   "computed": 20.401627829754247,
+   "reported": 20.4,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, tap-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_hit: mean error in the first 20 adaptation trials (deg, authors' sign)",
+   "computed": -19.833403457729048,
+   "reported": -19.83,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, hit-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_hit: mean after-effect, HIT trials (deg, authors' sign)",
+   "computed": 21.995639127959137,
+   "reported": 22.0,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, hit-adapted group",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "adapt_with_hit: mean after-effect, TAP trials (deg, authors' sign)",
+   "computed": 20.981621473380425,
+   "reported": 20.98,
+   "tol": 0.005,
+   "source": "Results, Experiment 2, hit-adapted group",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "adapt_with_hit: mean error in the last 20 adaptation trials (deg, authors' sign): the paper prints -4.03, the shared rows give -4.025."
+ ],
+ "sources": [
+  {
+   "file": "P01_EX1.mat",
+   "url": "https://osf.io/download/ygwqr/",
+   "bytes": 3192700,
+   "sha256": "e1eb6b9da3943c598802377f355f0c44b5f51f79946dba660e0b940839113316",
+   "fetched_utc": "2026-11-09T10:19:36Z"
+  },
+  {
+   "file": "P01_EX2.mat",
+   "url": "https://osf.io/download/cy8nf/",
+   "bytes": 3219998,
+   "sha256": "2d7dde1f668f9ee763e01e1243454226a4ecd5da245253f33dfbe715944ff296",
+   "fetched_utc": "2026-11-09T10:19:41Z"
+  },
+  {
+   "file": "figures_stats.m",
+   "url": "https://osf.io/download/tsm2f/",
+   "bytes": 18001,
+   "sha256": "e7a9b6c7cb186c312ad4836f5339d5f96c6970e1b1ebf65ec01e518baa38c22d",
+   "fetched_utc": "2026-11-09T10:19:59Z"
+  },
+  {
+   "file": "P02_EX1.mat",
+   "url": "https://osf.io/download/vt7qk/",
+   "bytes": 3239372,
+   "sha256": "0c8a2dab154d8ac76cae8227aa912daf79486604148a0abfc47ed7caeb3ff912",
+   "fetched_utc": "2026-11-09T10:25:58Z"
+  },
+  {
+   "file": "P02_EX2.mat",
+   "url": "https://osf.io/download/z32ry/",
+   "bytes": 3218753,
+   "sha256": "13a26a9ac3a37da61c07fade9190d7a3afd73a4a7eb51781fe4aaff6067d261d",
+   "fetched_utc": "2026-11-09T10:26:05Z"
+  },
+  {
+   "file": "P03_EX1.mat",
+   "url": "https://osf.io/download/649cbfdc6513ba0d1d3a3c1d/",
+   "bytes": 3137195,
+   "sha256": "4bac1a2526ddbda7b0b2aaf5fd23862aa33ad1e086b2640cda7b3232d71b2a34",
+   "fetched_utc": "2026-11-09T10:26:11Z"
+  },
+  {
+   "file": "P03_EX2.mat",
+   "url": "https://osf.io/download/649cbfdd6c09810d1b7d1f4d/",
+   "bytes": 3178623,
+   "sha256": "ed45db45922f90441571263bac95f59a0c9625547625e41c191e3d56d1ff49ce",
+   "fetched_utc": "2026-11-09T10:26:15Z"
+  },
+  {
+   "file": "P04_EX1.mat",
+   "url": "https://osf.io/download/4bcvg/",
+   "bytes": 3072574,
+   "sha256": "7b99a52f1aca1412ab97559e1992da1e6a2c13afbf642f246f4a7d0edd90adf6",
+   "fetched_utc": "2026-11-09T10:26:21Z"
+  },
+  {
+   "file": "P04_EX2.mat",
+   "url": "https://osf.io/download/649cbfe4a2a2f40e1e4363ab/",
+   "bytes": 3220959,
+   "sha256": "2dbd2880a61bae16b76339e53ee6f21392e96dc80095295e0236b3ea5a908de6",
+   "fetched_utc": "2026-11-09T10:26:25Z"
+  },
+  {
+   "file": "P05_EX1.mat",
+   "url": "https://osf.io/download/649cbfe66513ba0d1d3a3c28/",
+   "bytes": 3047385,
+   "sha256": "f24af4d56562af1997b349f7d9392cf84006672b7d20ff7b31c98e72f95fd37a",
+   "fetched_utc": "2026-11-09T10:26:29Z"
+  },
+  {
+   "file": "P05_EX2.mat",
+   "url": "https://osf.io/download/649cbfe9a2a2f40e1e4363b0/",
+   "bytes": 3259274,
+   "sha256": "bc06c39e97051b305480e702e26456d4e082a8b640761664af36667a6071a56e",
+   "fetched_utc": "2026-11-09T10:26:33Z"
+  },
+  {
+   "file": "P06_EX1.mat",
+   "url": "https://osf.io/download/4fe9b/",
+   "bytes": 3147210,
+   "sha256": "27d9c34cd1caaf6e118f556665e80933ed49605dbab9ab4b43f2fdc57b2ab941",
+   "fetched_utc": "2026-11-09T10:26:37Z"
+  },
+  {
+   "file": "P06_EX2.mat",
+   "url": "https://osf.io/download/649cbff06513ba0d1d3a3c2a/",
+   "bytes": 3237041,
+   "sha256": "9c99a15f3570a096d231f99c247009ae2667ecebe9607b1d67cf387f67d763f7",
+   "fetched_utc": "2026-11-09T10:26:55Z"
+  },
+  {
+   "file": "P07_EX1.mat",
+   "url": "https://osf.io/download/dfgq4/",
+   "bytes": 3115668,
+   "sha256": "e2ed94c2e03f1febe88f72334e14d72b7322d06a317763f917f80573acfd88b2",
+   "fetched_utc": "2026-11-09T10:27:01Z"
+  },
+  {
+   "file": "P07_EX2.mat",
+   "url": "https://osf.io/download/n7kmp/",
+   "bytes": 3227322,
+   "sha256": "8d76da7500c467e68137edeb9591d6afeef22eb601412cc0c6735f636769b3bd",
+   "fetched_utc": "2026-11-09T10:27:06Z"
+  },
+  {
+   "file": "P08_EX1.mat",
+   "url": "https://osf.io/download/649cbff96513ba0d253a3349/",
+   "bytes": 3100987,
+   "sha256": "1937e3892a2a9d71c129e6499e17c55c65304a36882100f4b4988091e5d87f36",
+   "fetched_utc": "2026-11-09T10:27:10Z"
+  },
+  {
+   "file": "P08_EX2.mat",
+   "url": "https://osf.io/download/bvu7c/",
+   "bytes": 3215507,
+   "sha256": "38a4e07a37a966334f3db878a3dd4d765395c62c676a817c280e8e770d9175b8",
+   "fetched_utc": "2026-11-09T10:27:16Z"
+  },
+  {
+   "file": "P09_EX1.mat",
+   "url": "https://osf.io/download/rqz7u/",
+   "bytes": 3147569,
+   "sha256": "9cf428ea187985d3aa16b7157ab971f5e4ecf3c7a01f509cdf5cb2c3e57e7ed0",
+   "fetched_utc": "2026-11-09T10:27:21Z"
+  },
+  {
+   "file": "P09_EX2.mat",
+   "url": "https://osf.io/download/649cc00167aff80e06edfac9/",
+   "bytes": 3194851,
+   "sha256": "e1480b4a75287f3803c84d52e67d1bfe518792ead49e7322e2c5758a8dc1e697",
+   "fetched_utc": "2026-11-09T10:27:26Z"
+  },
+  {
+   "file": "P10_EX1.mat",
+   "url": "https://osf.io/download/649cc00467aff80e11edf4b5/",
+   "bytes": 3203260,
+   "sha256": "16ca2ecc43e8f93fa01a190688da69c2b3e92c8eeec50752c458629704ee6f6e",
+   "fetched_utc": "2026-11-09T10:27:30Z"
+  },
+  {
+   "file": "P10_EX2.mat",
+   "url": "https://osf.io/download/649cc0066c09810d167d1bca/",
+   "bytes": 3214807,
+   "sha256": "9c8196917e01ad02cf5536c5d7728f84962ec592d73b1140c79e62594d728224",
+   "fetched_utc": "2026-11-09T10:27:34Z"
+  },
+  {
+   "file": "P11_EX1.mat",
+   "url": "https://osf.io/download/649cc0096c09810d277d1cdd/",
+   "bytes": 3144206,
+   "sha256": "d687cae74c65dae2b79c4c1a8c63ecaf0eff7c049479af03a86b29dd53330ead",
+   "fetched_utc": "2026-11-09T10:27:38Z"
+  },
+  {
+   "file": "P11_EX2.mat",
+   "url": "https://osf.io/download/649cc00b67aff80e11edf4b9/",
+   "bytes": 3220419,
+   "sha256": "7e517c55055649da99b71bacca8d9bc7a306c3d6e64b96d82f64eeb9f98ad081",
+   "fetched_utc": "2026-11-09T10:27:42Z"
+  },
+  {
+   "file": "P12_EX1.mat",
+   "url": "https://osf.io/download/rufvd/",
+   "bytes": 3141917,
+   "sha256": "dc16e44da2afd73dae20c2d8e42f741a06a97f806bf1e1fed37c923387051298",
+   "fetched_utc": "2026-11-09T10:27:46Z"
+  },
+  {
+   "file": "P12_EX2.mat",
+   "url": "https://osf.io/download/649cc01167aff80e11edf4bb/",
+   "bytes": 3219898,
+   "sha256": "e97b6c02b2f3d71276313dc9ffb26d09c7a8d3e90d94f8461cde1f8652b42be2",
+   "fetched_utc": "2026-11-09T10:28:04Z"
+  },
+  {
+   "file": "P13_EX1.mat",
+   "url": "https://osf.io/download/kuqtr/",
+   "bytes": 3114789,
+   "sha256": "c31e8c3828ffa757e551541edea733c0c8a3e775f0e9ff212053abe96edcc522",
+   "fetched_utc": "2026-11-09T10:28:10Z"
+  },
+  {
+   "file": "P13_EX2.mat",
+   "url": "https://osf.io/download/649cc0163809110d683c2b55/",
+   "bytes": 3214027,
+   "sha256": "ea5e805a09041898e2a385707b95ba1a56a3ddbef09ce8ec3bbd813de0339fa8",
+   "fetched_utc": "2026-11-09T10:28:16Z"
+  },
+  {
+   "file": "P14_EX1.mat",
+   "url": "https://osf.io/download/qh3du/",
+   "bytes": 3164873,
+   "sha256": "2ee66b0f422b7add058c91b2a9a55bc2e5e976b5aceb1b69665361412fd50e4e",
+   "fetched_utc": "2026-11-09T10:28:21Z"
+  },
+  {
+   "file": "P14_EX2.mat",
+   "url": "https://osf.io/download/7sqmn/",
+   "bytes": 3202494,
+   "sha256": "b26e351a89ad9a8f3da651ec2b46fcdecfba47cff9de62fcad810a7e2c3f7299",
+   "fetched_utc": "2026-11-09T10:28:26Z"
+  },
+  {
+   "file": "P15_EX1.mat",
+   "url": "https://osf.io/download/4ne6f/",
+   "bytes": 3230361,
+   "sha256": "4ce2961ce4b6bd663d9f268eea98ca2bab4c5ffa47a4d619df31c66cee30b756",
+   "fetched_utc": "2026-11-09T10:28:31Z"
+  },
+  {
+   "file": "P15_EX2.mat",
+   "url": "https://osf.io/download/649cc0213809110d653c2ceb/",
+   "bytes": 3211639,
+   "sha256": "dab29c2c42e38320080e5300ff569aa3d0fa3d554277b9b92e2bdc91d51f5f7c",
+   "fetched_utc": "2026-11-09T10:28:37Z"
+  },
+  {
+   "file": "P16_EX1.mat",
+   "url": "https://osf.io/download/649cc026a2a2f40e1d4363ac/",
+   "bytes": 3125908,
+   "sha256": "98c4e6108e2f64b4e48f63b87f9911e84127f09c88fdb291ff8cfdbb0164ca5b",
+   "fetched_utc": "2026-11-09T10:28:42Z"
+  },
+  {
+   "file": "P16_EX2.mat",
+   "url": "https://osf.io/download/qr9bt/",
+   "bytes": 3230699,
+   "sha256": "54f3197e0c0c1d5827790c57f5906d4b50b7cc5aa92d89df164b756052d6644d",
+   "fetched_utc": "2026-11-09T10:28:47Z"
+  },
+  {
+   "file": "P17_EX1.mat",
+   "url": "https://osf.io/download/649cc02b6513ba0d253a3365/",
+   "bytes": 3171128,
+   "sha256": "40e503e676c56a600419794fcaebe865881e217e3cf5a8b586ade8f4ea6e6442",
+   "fetched_utc": "2026-11-09T10:28:51Z"
+  },
+  {
+   "file": "P17_EX2.mat",
+   "url": "https://osf.io/download/sjt5z/",
+   "bytes": 3220322,
+   "sha256": "b0c4f60fedbd8e399503870dcca61880adaed2c94cd2ec4ab08bacdae6731dbf",
+   "fetched_utc": "2026-11-09T10:28:55Z"
+  },
+  {
+   "file": "P18_EX1.mat",
+   "url": "https://osf.io/download/649cc03167aff80e11edf4c9/",
+   "bytes": 3103961,
+   "sha256": "2cf2a57420120fb3584d8d2c79f776ab0ad730ef2bed4e4d1ec200e1957ff8ed",
+   "fetched_utc": "2026-11-09T10:29:12Z"
+  },
+  {
+   "file": "P18_EX2.mat",
+   "url": "https://osf.io/download/649cc032a2a2f40e19436791/",
+   "bytes": 3226054,
+   "sha256": "05b2771587888a73a8611eecc4b2d26a1fcfe4ce772ec233d8d3663495f39290",
+   "fetched_utc": "2026-11-09T10:29:17Z"
+  },
+  {
+   "file": "P19_EX1.mat",
+   "url": "https://osf.io/download/8yvqp/",
+   "bytes": 3183379,
+   "sha256": "1f29f17a10143a901f3418ce76e7e7961414f60b33113b8f1c4bd2bdd8d763bc",
+   "fetched_utc": "2026-11-09T10:29:23Z"
+  },
+  {
+   "file": "P19_EX2.mat",
+   "url": "https://osf.io/download/5dqna/",
+   "bytes": 3244849,
+   "sha256": "54d6dba0654851045d73c1d111ff718b7db5867a937479b6af6f00a75f7ba5b4",
+   "fetched_utc": "2026-11-09T10:29:30Z"
+  },
+  {
+   "file": "P20_EX1.mat",
+   "url": "https://osf.io/download/swn5j/",
+   "bytes": 3229628,
+   "sha256": "06c8ae23cca6c552a69d3cd38ae187e74e4bc7f49e0e607b7666f6ede19839de",
+   "fetched_utc": "2026-11-09T10:29:35Z"
+  },
+  {
+   "file": "P20_EX2.mat",
+   "url": "https://osf.io/download/649cc03e3809110d733c2a01/",
+   "bytes": 3212997,
+   "sha256": "96a53e9061d35af3f13d1548124c693aa9090ee20de3eff27a6d96cb416b4905",
+   "fetched_utc": "2026-11-09T10:29:40Z"
+  },
+  {
+   "file": "P21_EX1.mat",
+   "url": "https://osf.io/download/h5xmg/",
+   "bytes": 3279464,
+   "sha256": "892c7c1fd8005e5b1eb17ca8c9822e1fd094757f81c928e39dfc9ba3fa37d236",
+   "fetched_utc": "2026-11-09T10:29:46Z"
+  },
+  {
+   "file": "P21_EX2.mat",
+   "url": "https://osf.io/download/649cc0443809110d703c2c73/",
+   "bytes": 3214751,
+   "sha256": "1b05da4e76bb8545c3cc6c2e1c657c865f325925498dc2b742c41dda7df6da01",
+   "fetched_utc": "2026-11-09T10:29:54Z"
+  },
+  {
+   "file": "P22_EX1.mat",
+   "url": "https://osf.io/download/ygqad/",
+   "bytes": 3334094,
+   "sha256": "1235b15eece7257d9351222a00cc2332175d4bb78bff4f5d676ff4a388eaa4e9",
+   "fetched_utc": "2026-11-09T10:30:00Z"
+  },
+  {
+   "file": "P22_EX2.mat",
+   "url": "https://osf.io/download/649cc04a6c09810d247d2219/",
+   "bytes": 3247593,
+   "sha256": "8b39ea849ee4096deb11ee879fbf6fa093abfcfb017eda9362df1b8ba6f9c311",
+   "fetched_utc": "2026-11-09T10:30:04Z"
+  },
+  {
+   "file": "P23_EX1.mat",
+   "url": "https://osf.io/download/b2g6j/",
+   "bytes": 3245020,
+   "sha256": "8d1785e8dbfed344d49e5d3c1bd0f19624bb38e6207307cb9b6a849f4bb7233a",
+   "fetched_utc": "2026-11-09T10:30:19Z"
+  },
+  {
+   "file": "P23_EX2.mat",
+   "url": "https://osf.io/download/649cc04f67aff80e11edf4de/",
+   "bytes": 3249119,
+   "sha256": "8534ebe49793434edffbbe3bc9b410e67897a14723489743d8699cdf185ae3d2",
+   "fetched_utc": "2026-11-09T10:30:23Z"
+  },
+  {
+   "file": "P24_EX1.mat",
+   "url": "https://osf.io/download/649cc053a2a2f40e1d4363bf/",
+   "bytes": 3296415,
+   "sha256": "922b3947997eb3bec993bf1ba178696935cd0b7db37bc7dcdc1882883f650d0e",
+   "fetched_utc": "2026-11-09T10:30:28Z"
+  },
+  {
+   "file": "P24_EX2.mat",
+   "url": "https://osf.io/download/r5vkf/",
+   "bytes": 3251846,
+   "sha256": "efcc4bed2461ff6b21c6d3cfc18a9e3ff89252078269cc38b45518fd5860efb5",
+   "fetched_utc": "2026-11-09T10:30:33Z"
+  },
+  {
+   "file": "P25_EX1.mat",
+   "url": "https://osf.io/download/649cc0586513ba0d193a3b69/",
+   "bytes": 3261065,
+   "sha256": "d709d2b0874e465fd8ac9b38c351eb40e18455781319f06ec7d468e22609c79d",
+   "fetched_utc": "2026-11-09T10:30:40Z"
+  },
+  {
+   "file": "P25_EX2.mat",
+   "url": "https://osf.io/download/9ycbh/",
+   "bytes": 3273610,
+   "sha256": "9cff0223ca5d1f8856b10245cd1d8ff50344fd0fa998a77e21d29bd92b460de6",
+   "fetched_utc": "2026-11-09T10:30:46Z"
+  },
+  {
+   "file": "P26_EX1.mat",
+   "url": "https://osf.io/download/649cc05d3809110d733c2a10/",
+   "bytes": 3302976,
+   "sha256": "b7b6c90e43b54d315f111803862185a54bdd93eff8911c8db9bfd4b673156a72",
+   "fetched_utc": "2026-11-09T10:30:54Z"
+  },
+  {
+   "file": "P26_EX2.mat",
+   "url": "https://osf.io/download/649cc05e6513ba0d253a3382/",
+   "bytes": 3288428,
+   "sha256": "d249b6df63bea205f9cbf6fb17b19334289be61e813d6f268cb0b0073b1bed09",
+   "fetched_utc": "2026-11-09T10:31:02Z"
+  },
+  {
+   "file": "P27_EX1.mat",
+   "url": "https://osf.io/download/649cc063a2a2f40e1d4363c8/",
+   "bytes": 3256793,
+   "sha256": "6f195efceed539d88282277a16de653a139dd4401352007cd20db77c32e7e71e",
+   "fetched_utc": "2026-11-09T10:31:10Z"
+  },
+  {
+   "file": "P27_EX2.mat",
+   "url": "https://osf.io/download/t8ndw/",
+   "bytes": 3288695,
+   "sha256": "b8d57989fdafd1e8b71fc41da233d7880d3e9119232c510c6281244cf2cf0ecd",
+   "fetched_utc": "2026-11-09T10:31:33Z"
+  },
+  {
+   "file": "P28_EX1.mat",
+   "url": "https://osf.io/download/649cc0686513ba0d253a338a/",
+   "bytes": 3271715,
+   "sha256": "91346ceb48ed1270726a9b035a034a78089ab13478f3c4009b78fdb55cb9b89c",
+   "fetched_utc": "2026-11-09T10:31:39Z"
+  },
+  {
+   "file": "P28_EX2.mat",
+   "url": "https://osf.io/download/wptcq/",
+   "bytes": 3305894,
+   "sha256": "7c75829c798e559e8c98973216e5951b675ae504d59d86cde9e3b05d4c4ff2bd",
+   "fetched_utc": "2026-11-09T10:31:44Z"
+  },
+  {
+   "file": "P29_EX1.mat",
+   "url": "https://osf.io/download/649cc06e6513ba0d1d3a3c6b/",
+   "bytes": 3277234,
+   "sha256": "571305123d842257a6033efe5e43ad4c106b073783b1a340816dad60cdab3815",
+   "fetched_utc": "2026-11-09T10:31:49Z"
+  },
+  {
+   "file": "P29_EX2.mat",
+   "url": "https://osf.io/download/kjn9a/",
+   "bytes": 3320001,
+   "sha256": "a4228bfb79d07d890701be51dc3815de85f1f142bab615b5cfe69733bf4a791c",
+   "fetched_utc": "2026-11-09T10:31:53Z"
+  },
+  {
+   "file": "P30_EX1.mat",
+   "url": "https://osf.io/download/3vxjm/",
+   "bytes": 3303845,
+   "sha256": "dafc8b67fb6ec4173d7cb641e11a93d427e6bde369ed847f195bb63d864a1fbe",
+   "fetched_utc": "2026-11-09T10:31:58Z"
+  },
+  {
+   "file": "P30_EX2.mat",
+   "url": "https://osf.io/download/38qyf/",
+   "bytes": 3298021,
+   "sha256": "088bcb93c3d27e47ef6fd26be44b16deae7f13fcd8679542ba77e903c1b4ad9e",
+   "fetched_utc": "2026-11-09T10:32:03Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Lametti2025_PsychonBullRev.zip"
+}

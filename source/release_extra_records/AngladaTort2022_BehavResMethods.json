@@ -1,0 +1,320 @@
+{
+ "id": "AngladaTort2022_BehavResMethods",
+ "module": "tapping",
+ "rows": 144747,
+ "subjects": 246,
+ "persons": 246,
+ "zip_bytes": 2635983,
+ "zip_sha256": "3df147326100755520952f8d54bd874e95498ae7c32c9c25dc7840d2cd09da10",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Exp2_raw_data.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3_raw_data.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Exp3_Figure4A.csv matches the downloaded hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 20 participants x 2 methods x 2 tests x 4 stimuli x 2 trials = 640 trials (Methods, Experiment 2: four isochronous and four music trials per battery, done twice with each method)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: at most 2 trials per participant, test and stimulus (16 per participant)",
+   "ok": true,
+   "detail": "3095 trials; trials per participant 1-16"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 deposit holds only trials that pass the authors' criteria (Supplementary, Failing Criteria): none failed, all six markers found, marker error at most 5 ms, 50-200% taps per stimulus",
+   "ok": true,
+   "detail": "max marker error 4.98 ms; taps per stimulus 52-148%"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3: OS, batch and musical training are constant within each participant; batch is the participant code's suffix",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "OS code 1 = Windows and 2 = macOS: marker errors M = 1.74 and 1.48 ms, t(2812) = 9.36 (Results, Experiment 3; Fig. 4c)",
+   "ok": true,
+   "detail": "Windows 1.745 (1392 trials), macOS 1.476 (1422), t = 9.361"
+  },
+  {
+   "kind": "internal",
+   "what": "OS code 0 = Chrome OS: every laptop model these participants reported is a Chromebook or Pixelbook",
+   "ok": true,
+   "detail": "15 participants"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial's arrays are consistent: equal lengths, stimulus onsets on the recording clock (shifted by the first detected marker), asynchrony = tap - stimulus, iti and ioi = differences of consecutive positions (all within the deposit's 1-ms rounding), paired taps in order, counts equal to the authors' per-trial counts",
+   "ok": true,
+   "detail": "{}"
+  },
+  {
+   "kind": "internal",
+   "what": "each paired tap is one of the detected taps",
+   "ok": true,
+   "detail": "45 of 127389 paired taps are 1 ms from their detected tap (rounding); the row keeps the paired value"
+  },
+  {
+   "kind": "internal",
+   "what": "rows = stimulus positions + taps paired with no stimulus; every detected tap appears once",
+   "ok": true,
+   "detail": "144747 rows: 136981 stimulus positions, 7766 unpaired taps, 9592 stimulus positions without a tap"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial kept, each as one contiguous run of rows, in the authors' file order (Experiment 2 file, then Experiment 3); event_in_trial counts up from 1 within each trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial counts each participant's rows from 1 without gaps",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "ranges: tap and stimulus times 2-38 s into the recording, |asynchrony| < 400 ms, stimulus intervals 400-1200 ms (isochronous trials exactly 600 or 800 ms)",
+   "ok": true,
+   "detail": "taps 2545-37330 ms, asynchrony -360 to 369 ms, ioi 428-1175 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "excluded_by_authors = metronome-marked beats of the music trials",
+   "ok": true,
+   "detail": "34441 of 144747 rows (23.8%)"
+  },
+  {
+   "kind": "internal",
+   "what": "every trial has at least two analysed asynchronies",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "per trial, the SD (population SD, as REPP computes it) and mean of the analysed asynchronies equal the authors' per-trial values (all onsets for isochronous trials, beats without the metronome for music) within 0.5 ms, the most that rounding every asynchrony to 1 ms can move a mean or an SD (plus 1e-6 for the 10 significant digits the authors' file keeps)",
+   "ok": true,
+   "detail": "max difference 0.431 ms (SD), 0.500 ms (mean); median 0.040 and 0.043 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 test and retest scores equal the authors' Figure 4A data file, participant by participant",
+   "ok": true,
+   "detail": "max difference 0.076 ms; Pearson r here 0.820, in the authors' file 0.820 (the paper prints r = .80)"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 3 Pearson test-retest r agrees with the authors' figure data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants with valid tapping data",
+   "computed": 226.0,
+   "reported": 226.0,
+   "tol": 0,
+   "source": "Results, Experiment 3 (and Supplementary, Participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 tapping trials recorded on Windows or macOS laptops",
+   "computed": 2814.0,
+   "reported": 2814.0,
+   "tol": 0,
+   "source": "Fig. 4 legend (2814 trials in total) and Results, Experiment 3 (t(2812))",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 participants in the test-retest analysis (a valid trial for each stimulus in each task and test)",
+   "computed": 166.0,
+   "reported": 166.0,
+   "tol": 0,
+   "source": "Results, Experiment 3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 test-retest Spearman rho of SD of asynchrony",
+   "computed": 0.8095742796990903,
+   "reported": 0.81,
+   "tol": 0.005,
+   "source": "Results, Experiment 3; Fig. 4a",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 isochronous task: mean SD of asynchrony (ms)",
+   "computed": 40.68432726395483,
+   "reported": 40.68,
+   "tol": 0.01,
+   "source": "Discussion, third paragraph (N = 166; labelled Experiment 2 there, the online sample is Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 isochronous task: SD across participants (ms)",
+   "computed": 11.984617398407615,
+   "reported": 11.98,
+   "tol": 0.01,
+   "source": "Discussion, third paragraph (N = 166; labelled Experiment 2 there, the online sample is Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 music task: mean SD of asynchrony (ms)",
+   "computed": 42.684451812832066,
+   "reported": 42.68,
+   "tol": 0.01,
+   "source": "Discussion, third paragraph (N = 166; labelled Experiment 2 there, the online sample is Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 music task: SD across participants (ms)",
+   "computed": 15.821154458743411,
+   "reported": 15.82,
+   "tol": 0.01,
+   "source": "Discussion, third paragraph (N = 166; labelled Experiment 2 there, the online sample is Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 3 correlation of the isochronous and music scores",
+   "computed": 0.5771801589765259,
+   "reported": 0.58,
+   "tol": 0.005,
+   "source": "Discussion, third paragraph (N = 166; labelled Experiment 2 there, the online sample is Experiment 3)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Experiment 2; Supplementary, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 test-retest Pearson r, REPP",
+   "computed": 0.8725897178135763,
+   "reported": 0.87,
+   "tol": 0.005,
+   "source": "Results, Experiment 2; Fig. 3b-c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 test-retest Pearson r, in-lab loop-back method",
+   "computed": 0.8932318312552044,
+   "reported": 0.89,
+   "tol": 0.005,
+   "source": "Results, Experiment 2; Fig. 3b-c",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 test-retest Spearman rho, in-lab loop-back method",
+   "computed": 0.825563909774436,
+   "reported": 0.83,
+   "tol": 0.005,
+   "source": "Results, Experiment 2; Fig. 3b-c",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2 REPP test-retest Spearman rho = .81 (Results, Experiment 2) from the authors' per-trial SDs",
+   "ok": true,
+   "detail": "0.812 from their per-trial values, 0.800 from the rows: the deposit's 1-ms rounding of the asynchronies swaps 1 pair(s) of participants whose scores are 0.018 ms apart"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 concurrent validity r (REPP vs in-lab method)",
+   "computed": 0.9386523736962125,
+   "reported": 0.94,
+   "tol": 0.005,
+   "source": "Results, Experiment 2; Fig. 3b-c",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Experiment 3 test-retest r: the rows and the authors' own Figure 4A data file both give 0.82; the paper prints .80.",
+  "Experiment 2 REPP test-retest rho: 0.800 from the rows against .81 in the paper, because the deposit rounds asynchronies to 1 ms (the authors' unrounded values give .812)."
+ ],
+ "sources": [
+  {
+   "file": "Exp2_raw_data.csv",
+   "url": "https://osf.io/download/hczqg/",
+   "bytes": 3482533,
+   "sha256": "a44fe1aa07593e64acd38a7e7cc23819acf54db97d7e8ff2e6db530240dcb4c7",
+   "fetched_utc": "2026-11-08T18:15:34Z"
+  },
+  {
+   "file": "Exp3_raw_data.csv",
+   "url": "https://osf.io/download/4a5yb/",
+   "bytes": 14317949,
+   "sha256": "2de234594fef396bf7137c66a6025e76ef9ed30d07d8d491b128d42258333828",
+   "fetched_utc": "2026-11-08T18:15:38Z"
+  },
+  {
+   "file": "Exp2_Figure3B.csv",
+   "url": "https://osf.io/download/xpv3u/",
+   "bytes": 3544,
+   "sha256": "12c2b02e840ae68b6ef0d12a62445d0886f637244a720a585f0acaf0f22a4dd2",
+   "fetched_utc": "2026-11-08T19:02:49Z"
+  },
+  {
+   "file": "Exp2_Figure3C.csv",
+   "url": "https://osf.io/download/613238a426daad00a4b008e3/",
+   "bytes": 775,
+   "sha256": "59b007439fd0434913891ca5cfa07e437462ab350da29d6f2cde460709695525",
+   "fetched_utc": "2026-11-08T19:02:53Z"
+  },
+  {
+   "file": "Exp3_Figure4A.csv",
+   "url": "https://osf.io/download/613238d1a2619b00ac3aae4f/",
+   "bytes": 5893,
+   "sha256": "b4c76a9d172f0f04378ff2ebbd427ad77c4d4f8afd927a4f48f30c65777f039c",
+   "fetched_utc": "2026-11-08T19:02:55Z"
+  },
+  {
+   "file": "Exp3_Figure4B.csv",
+   "url": "https://osf.io/download/613238d226daad00a7b00ba4/",
+   "bytes": 7379,
+   "sha256": "bd2cdf01a6db34207829eaf828eef80c4f747129fc59339fce79cc3b3617e233",
+   "fetched_utc": "2026-11-08T19:02:58Z"
+  },
+  {
+   "file": "Exp3_Figure4C.csv",
+   "url": "https://osf.io/download/613238d1d1b14400a96ab4fb/",
+   "bytes": 88521,
+   "sha256": "e23bb11e1a6287a7d7e991b8ab9984f05aac9d0c3cbab9b70c9376672270264e",
+   "fetched_utc": "2026-11-08T19:03:00Z"
+  }
+ ],
+ "url": "https://github.com/ShadowCoder1/openmotor/releases/download/standardized/AngladaTort2022_BehavResMethods.zip"
+}

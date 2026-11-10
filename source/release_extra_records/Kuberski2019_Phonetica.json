@@ -1,0 +1,80 @@
+{
+ "id": "Kuberski2019_Phonetica",
+ "module": "timeseries",
+ "rows": 417,
+ "subjects": 6,
+ "persons": 6,
+ "zip_bytes": 11663717,
+ "zip_sha256": "cab8630be4060f4b82d732702241cff661a0aa4916a38ae8cb3d42f0d73f305a",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "sampling rate is 104 Hz (103.9 to 104.3, the authors store a per-trial value) in every recording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of metronome rates",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Abstract (8 distinct rates)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "slowest rate is 30 bpm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "fastest rate is 570 bpm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "speakers",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Kuberski & Gafos 2019, Abstract (6 adult speakers)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "rates are exactly the paper's eight",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has at least one channel and 80+ samples",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings",
+   "ok": true,
+   "detail": "417"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's full text could not be read (publisher page blocked), so published checks cover only what the abstract states (6 speakers, 8 rates); the Fitts' law results were not recomputed.",
+  "The README says movement onset and offset are indices into the time vector; they are converted to seconds here by interpolating the time vector (1-based indices)."
+ ],
+ "sources": [
+  {
+   "file": "signals.zip",
+   "url": "https://zenodo.org/api/records/3247110/files/signals.zip/content",
+   "bytes": 186827497,
+   "sha256": "048395990bc21ae2c3c172f66ffc200ffdbb57ff1afc7289ebebfde2a19b6bc5",
+   "fetched_utc": "2026-11-09T19:17:00Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Kuberski2019_Phonetica.zip"
+}

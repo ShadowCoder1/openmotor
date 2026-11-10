@@ -1,0 +1,106 @@
+{
+ "id": "Browne2017_RSOS",
+ "module": "timeseries",
+ "rows": 180,
+ "subjects": 22,
+ "persons": 22,
+ "zip_bytes": 16511685,
+ "zip_sha256": "20c1194e83581d8d01a1f3240c8af30a3b80a57f70815484cbec2a13abb0ead3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "Experiment 1: 10 conditions (5 speeds, 5 biofeedback) x 12 participants = 120 recordings",
+   "ok": true,
+   "detail": "{'Experiment 1': (10, 12), 'Experiment 2': (6, 10)}"
+  },
+  {
+   "kind": "internal",
+   "what": "Experiment 2: 6 conditions (-20, -10, 0, +10, +20% targets and normal walking without feedback) x 10 participants = 60 recordings",
+   "ok": true,
+   "detail": "{'Experiment 1': (10, 12), 'Experiment 2': (6, 10)}"
+  },
+  {
+   "kind": "internal",
+   "what": "X, Y and Z have equal length and are missing on the same frames; the only missing frames are 62 in one recording (Experiment 1, participant 9, biofeedback 1.3), left empty",
+   "ok": true,
+   "detail": "6000-6001 samples; gaps [('Experiment 1', 'Sub09', 'Biofeedback 1.3', 62)]"
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 participants",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 participants",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods 2.1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 speeds walked (0.9, 1.0, 1.1, 1.2, 1.3 m/s)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 biofeedback targets from the five speeds",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods 2.3",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 2 biofeedback targets (mean, +-10%, +-20%)",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods 2.4",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "marker sampling rate (Hz)",
+   "computed": 100.0,
+   "reported": 100.0,
+   "tol": 0,
+   "source": "Methods 2.5",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Experiment 1 trial length, median (1 min each)",
+   "computed": 60.0,
+   "reported": 60.0,
+   "tol": 0.1,
+   "source": "Methods 2.3",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper does not state the treadmill speed of Experiment 2 or the length of its trials; the sheet labels the sixth condition 'No Feedback at 1.3 m/s' and every recording has 6000-6001 samples (60 s). The paper's results (step lengths and widths, sacrum variability, divergence exponents) need the heel markers and force data, which the workbook does not contain, so only counts and recording properties are checked."
+ ],
+ "sources": [
+  {
+   "file": "SubjectData.xlsx",
+   "url": "https://zenodo.org/api/records/5001364/files/Subject%20Data.xlsx/content",
+   "bytes": 40856030,
+   "sha256": "7e37140c3c40b916790e46ab11ed310538673b759c97e27e07285e2b018714d0",
+   "fetched_utc": "2026-11-09T02:07:35Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Browne2017_RSOS.zip"
+}

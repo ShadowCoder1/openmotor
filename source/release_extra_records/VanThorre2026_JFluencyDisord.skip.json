@@ -1,0 +1,7 @@
+{
+ "id": "VanThorre2026_JFluencyDisord",
+ "skipped": true,
+ "reason": "not motor behaviour",
+ "details": "The deposit (Raw_data.xlsx, 5760 rows) holds only recall scores (correct items per sequence, percent recalled, technical-problem flag) of phonological and visuospatial memory span tasks in adults who stutter and fluent adults; covert articulation is inferred from memory accuracy, and no speech, articulatory or timing measurement is shared.",
+ "sources": []
+}

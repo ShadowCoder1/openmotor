@@ -1,0 +1,7 @@
+{
+ "id": "vanLeeuwen2020_PLoSOne",
+ "skipped": true,
+ "reason": "not documented enough",
+ "details": "Single 75 GB Zenodo zip (61,343 members; its 32-bit offsets wrap past 4 GB, so members can only be pulled with custom range reading) with per-trial CoM, centre of pressure, gait-event, marker (29 GB), EMG and treadmill-projector files but no readme: trials are numbered per participant and the deposit does not say which of the 4 constraint conditions x 2 speeds each trial is (randomized order; the code zip on record 4292212 is a foot-placement-model function with test data only). Retry by decoding the projector parameter XML per trial, or by asking the authors.",
+ "sources": []
+}

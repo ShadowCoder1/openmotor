@@ -1,0 +1,410 @@
+{
+ "id": "EbnerKarestinos2018_PLoSONE",
+ "module": "summary",
+ "rows": 1924,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 27245,
+ "zip_sha256": "2e825890ac0e576f641fa80cf5f02952c43e007195789f9a5f7fef4890354c00",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "children with UCP (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Abstract; Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "typically developing children (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Abstract; Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand delay_LFmin_to_GFmin mean",
+   "computed": -42.370087719298226,
+   "reported": -42.37,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand delay_LFmin_to_GFmin SD",
+   "computed": 108.61268736064761,
+   "reported": 108.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand delay_LFmin_to_GFmin mean",
+   "computed": 1.4223333333331407,
+   "reported": 1.42,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand delay_LFmin_to_GFmin SD",
+   "computed": 114.28480453637161,
+   "reported": 114.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand delay_LFmin_to_GFmin mean",
+   "computed": 36.57552083333334,
+   "reported": 36.58,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand delay_LFmin_to_GFmin SD",
+   "computed": 48.601574345420254,
+   "reported": 48.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand delay_LFmin_to_GFmin mean",
+   "computed": 30.549066666666707,
+   "reported": 30.55,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand delay_LFmin_to_GFmin SD",
+   "computed": 61.18819306171256,
+   "reported": 61.2,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand delay_LFmax_to_GFmax mean",
+   "computed": 24.93048245614034,
+   "reported": 24.93,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand delay_LFmax_to_GFmax SD",
+   "computed": 68.45834122388753,
+   "reported": 68.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand delay_GFmin_to_LFmax mean",
+   "computed": 208.15926666666664,
+   "reported": 208.16,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand delay_GFmin_to_LFmax SD",
+   "computed": 56.50605418866392,
+   "reported": 56.5,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand LF_at_LFmin mean",
+   "computed": 1.639570350877193,
+   "reported": 1.64,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand LF_at_LFmin SD",
+   "computed": 0.7231621305465741,
+   "reported": 0.7,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand LF_at_LFmax mean",
+   "computed": 3.66085526,
+   "reported": 3.66,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand LF_at_LFmax SD",
+   "computed": 0.5541477055710234,
+   "reported": 0.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand LF_at_GFmax mean",
+   "computed": 2.1345742361111113,
+   "reported": 2.13,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand LF_at_GFmax SD",
+   "computed": 0.26192232809523114,
+   "reported": 0.3,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_at_LFmin mean",
+   "computed": 7.126863368421051,
+   "reported": 7.13,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_at_LFmin SD",
+   "computed": 7.6460238853075495,
+   "reported": 7.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand GF_at_GFmax mean",
+   "computed": 5.396963066666666,
+   "reported": 5.4,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand GF_at_GFmax SD",
+   "computed": 1.865669717053995,
+   "reported": 1.9,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand GF_at_GFmax mean",
+   "computed": 11.062830960000001,
+   "reported": 11.06,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand GF_at_GFmax SD",
+   "computed": 11.677681802379258,
+   "reported": 11.7,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_LF_ratio_at_LFmin mean",
+   "computed": 6.1967722544777395,
+   "reported": 6.2,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_LF_ratio_at_LFmin SD",
+   "computed": 3.6157711556194108,
+   "reported": 3.6,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand GF_LF_ratio_at_GFmax mean",
+   "computed": 2.2071351448869616,
+   "reported": 2.21,
+   "tol": 0.0051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand GF_LF_ratio_at_GFmax SD",
+   "computed": 0.835024683457439,
+   "reported": 0.8,
+   "tol": 0.051,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand MVC_static mean",
+   "computed": 16.726552631578947,
+   "reported": 16.73,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand MVC_static SD",
+   "computed": 7.605950041423594,
+   "reported": 7.6,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand MVC_static mean",
+   "computed": 40.34890000000001,
+   "reported": 40.35,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP less affected hand MVC_static SD",
+   "computed": 21.725330342405996,
+   "reported": 21.7,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand MVC_static mean",
+   "computed": 37.70420934782609,
+   "reported": 37.7,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD nondominant hand MVC_static SD",
+   "computed": 16.024149826428484,
+   "reported": 16.0,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand MVC_static mean",
+   "computed": 43.19063270833333,
+   "reported": 43.19,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand MVC_static SD",
+   "computed": 15.554913865393775,
+   "reported": 15.6,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_pct_MVC_at_LFmin mean",
+   "computed": 44.60522301287029,
+   "reported": 44.61,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "UCP more affected hand GF_pct_MVC_at_LFmin SD",
+   "computed": 34.321658473918326,
+   "reported": 34.3,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand GF_pct_MVC_at_GFmax mean",
+   "computed": 14.19134599700462,
+   "reported": 14.19,
+   "tol": 0.0051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TD dominant hand GF_pct_MVC_at_GFmax SD",
+   "computed": 7.515394458591015,
+   "reported": 7.5,
+   "tol": 0.051,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "every child has data for at least one hand",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Some children have values for only one hand (empty cells in the deposit, for example children whose more affected hand could not be measured), so their other-hand rows are absent.",
+  "Age, sex and affected side per child are not in the deposit (the paper gives group means only)."
+ ],
+ "sources": [
+  {
+   "file": "data2018.zip",
+   "url": "https://zenodo.org/api/records/4987178/files/DRYAD.zip/content",
+   "bytes": 307585,
+   "sha256": "02b586857ec4248799b9aaacbe7994ec28137971945b694f5a5a6a24182d34c7",
+   "fetched_utc": "2026-11-09T12:07:39Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/EbnerKarestinos2018_PLoSONE.zip"
+}

@@ -1,0 +1,362 @@
+{
+ "id": "Li2026_FrontHumNeurosci",
+ "module": "speech",
+ "rows": 2315,
+ "subjects": 58,
+ "persons": 58,
+ "zip_bytes": 57155,
+ "zip_sha256": "60c655ac50e8206c804373fc2b1448f5a6f5183f914e988d4142aaba8d7077c1",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "the two model files give the same learner covariates",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every covariate is constant within a learner in both model files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "height class and sex are constant within a participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every row of subject_combined.csv and control_combined.csv kept, in the file order",
+   "ok": true,
+   "detail": "2315 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "58 participants (1001-1041 learners, 2001-2022 controls), none lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "learner tokens: 797 /u/ and 800 /y/; control tokens: 359 each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "model rows: 760 for /u/ and 777 for /y/, all of the learners",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "F1 and F2 plausible (Hz)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "accuracy shared for 1,537 model rows, all positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "learners",
+   "computed": 40.0,
+   "reported": 40.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "native controls",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "learners, women",
+   "computed": 31.0,
+   "reported": 31.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "learners, men",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls, men",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "controls, women",
+   "computed": 9.0,
+   "reported": 9.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "share of learner tokens removed as outliers (21 tokens), %",
+   "computed": 1.3149655604257984,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.4 Data analysis (21 data points, 1.3%)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Auditory JND: mean",
+   "computed": 22.68125,
+   "reported": 22.68,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Auditory JND: SD",
+   "computed": 11.027498772009302,
+   "reported": 11.03,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Auditory JND: minimum",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Auditory JND: maximum",
+   "computed": 49.75,
+   "reported": 49.75,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PAT (%): mean",
+   "computed": 72.50386997000001,
+   "reported": 72.5,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PAT (%): SD",
+   "computed": 11.566385974669071,
+   "reported": 11.57,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PAT (%): minimum",
+   "computed": 41.17647059,
+   "reported": 41.18,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PAT (%): maximum",
+   "computed": 94.11764706,
+   "reported": 94.12,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PACS: mean",
+   "computed": 101.375,
+   "reported": 101.38,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PACS: SD",
+   "computed": 11.074774987585121,
+   "reported": 11.07,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PACS: minimum",
+   "computed": 77.0,
+   "reported": 77.0,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "PACS: maximum",
+   "computed": 122.0,
+   "reported": 122.0,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TPT_variability: maximum",
+   "computed": 12.43169045,
+   "reported": 12.43,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "TPT_ED: mean",
+   "computed": 1.3662173582750001,
+   "reported": 1.36,
+   "tol": 0.01,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Variability_u: minimum",
+   "computed": 0.362692011,
+   "reported": 0.36,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Variability_y: minimum",
+   "computed": 0.221924546,
+   "reported": 0.22,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Proficiency: lowest self-rating",
+   "computed": 1.0,
+   "reported": 1.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants (range 1-6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Proficiency: highest self-rating",
+   "computed": 6.0,
+   "reported": 6.0,
+   "tol": 0,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants (range 1-6)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "L2 exposure: shortest (years; 4 months)",
+   "computed": 0.33,
+   "reported": 0.33,
+   "tol": 0.006,
+   "source": "Li et al. 2026, Front Hum Neurosci, 2.1 Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/y/ accuracy model without participant 1025: PAT coefficient",
+   "computed": -0.022004658183518426,
+   "reported": -0.02,
+   "tol": 0.005,
+   "source": "Li et al. 2026, Front Hum Neurosci, 3.2 Predictors of accuracy (random intercept per participant)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "/y/ accuracy model without participant 1025: PAT standard error",
+   "computed": 0.00931372331628786,
+   "reported": 0.01,
+   "tol": 0.005,
+   "source": "Li et al. 2026, Front Hum Neurosci, 3.2 Predictors of accuracy",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The shared accuracy values equal the Bark distance recomputed from the shared F1 and F2 (Traunmueller's formula, mean target of the controls of the same sex and height class) in 56 of the 80 learner-vowel sets (to 0.0025); in the other 24 sets they do not: 1 sets differ by less than 0.05 on every token, 13 sets by more (up to 9.3 Bark), and 10 have a different number of tokens in the two files. The model files therefore seem to come from another pass over the formants (or the targets) than the shared formants; that is why accuracy is shared in its own table.",
+  "The paper removed 21 outlier tokens from the 1,597 learner tokens, but the model files hold 1,537 rows (60 fewer; 34 of the missing tokens fall in the sets that match).",
+  "Table 1 of the paper does not match the deposit for several covariates: TPT_variability (paper mean 3.72, minimum 0.28; deposit 4.12, 0.93), TPT_ED (SD 0.54, minimum 0.40, maximum 3.01; deposit 0.53, 0.42, 2.99), Variability_u (mean 2.02, maximum 4.27; deposit 3.73, 29.6) and Variability_y (mean 1.64, maximum 14.96; deposit 2.49, 13.6); the paper's mean Mandarin study time is 4.37 years (SD 2.79, up to 12 years), the deposit's 4.74 (SD 3.09, up to 14).",
+  "The paper's other coefficients (variability in /u/ and /y/, beta 0.31 and 0.36) and the Wilcoxon test of /y/ against /u/ variability (V = 593) were not reproduced from the deposit's variability values (0.07 and 0.24; V = 252)."
+ ],
+ "sources": [
+  {
+   "file": "README_Data_Description.txt",
+   "url": "https://osf.io/download/j542d/",
+   "bytes": 4064,
+   "sha256": "c0895857d426d560fe250ac5a08565867809dc40e6a67d269bf89d21474e6ede",
+   "fetched_utc": "2026-11-08T22:47:26Z"
+  },
+  {
+   "file": "subject_combined.csv",
+   "url": "https://osf.io/download/9gwxr/",
+   "bytes": 44085,
+   "sha256": "ad3934dc8e7ec34f9a9a52acbf5eeee0e7939f7a554bd104c3e7fa78348dc5f9",
+   "fetched_utc": "2026-11-08T22:47:29Z"
+  },
+  {
+   "file": "control_combined.csv",
+   "url": "https://osf.io/download/pvm62/",
+   "bytes": 19991,
+   "sha256": "49ae8ee141a91bcf72f8e03b677e522b8e574868a69e0640215455dcb2593b4e",
+   "fetched_utc": "2026-11-08T22:47:32Z"
+  },
+  {
+   "file": "mixed_model_y.csv",
+   "url": "https://osf.io/download/rwq9s/",
+   "bytes": 62530,
+   "sha256": "f0db5d8b8064bbe1dff155075d94e18957dbf8cf1f9d85df49241735d6cab22c",
+   "fetched_utc": "2026-11-08T22:47:34Z"
+  },
+  {
+   "file": "mixed_model_u.csv",
+   "url": "https://osf.io/download/h9zre/",
+   "bytes": 61194,
+   "sha256": "4ae87d7006dd356f1ad45bcd832653a9af7bb3da8bb1a5514a2d36fcdb09fef6",
+   "fetched_utc": "2026-11-08T22:47:37Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Li2026_FrontHumNeurosci.zip"
+}

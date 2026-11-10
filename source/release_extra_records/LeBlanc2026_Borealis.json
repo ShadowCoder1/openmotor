@@ -1,0 +1,171 @@
+{
+ "id": "LeBlanc2026_Borealis",
+ "module": "timeseries",
+ "rows": 7694,
+ "subjects": 51,
+ "persons": 51,
+ "zip_bytes": 189492678,
+ "zip_sha256": "27d40bc7f8daa3c33a9b2670522bdbfd2609b0cdff29bdf381d61e573bfe1862",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every trial of ref_time has a 1000-sample series and vice versa",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "1000 samples in every trial",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target/distractor sizes and location agree between the two files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "recordings = rows of ref_time",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants in Experiment 2 (25)",
+   "computed": 25.0,
+   "reported": 25.0,
+   "tol": 0,
+   "source": "Experiment 2, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "test trials per condition numbered up to 80",
+   "computed": 80.0,
+   "reported": 80.0,
+   "tol": 0,
+   "source": "Materials and methods, Experiment 1, Procedure (80 test trials per condition)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no participant has more than 160 kept trials (2 conditions x 80 test trials)",
+   "ok": true,
+   "detail": "158"
+  },
+  {
+   "kind": "published",
+   "what": "most trials of one target size x distractor size x location combination (10)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Procedure (10 trials per combination)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "combinations of target size, distractor size and target location (8)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Procedure",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "percent of trials removed, all participants x 160 (5.7)",
+   "computed": 5.710784313725492,
+   "reported": 5.7,
+   "tol": 0.05,
+   "source": "Experiment 1, Data Processing (5.7% of trials removed)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "both conditions and both experiments present",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper reports 23 participants in Experiment 1; the deposit holds trials of 26 participants in Experiment 1 (three more than reported), and 25 in Experiment 2 as reported. The extra three participants were not identified in the deposit and are kept.",
+  "The paper's 5.7% of trials removed is given under Experiment 1; it reproduces over both experiments combined (51 participants x 160 trials), not for Experiment 1 alone (5.0% with 26 participants).",
+  "Age, sex and handedness are not in the deposit (ref_demographic.csv is mentioned in its README but not shared); the paper gives 17 of 23 and 17 of 25 women."
+ ],
+ "sources": [
+  {
+   "file": "README.docx",
+   "url": "https://borealisdata.ca/api/access/datafile/1231722",
+   "bytes": 27486,
+   "sha256": "d86ee6e719a0db153df0bd9435e573fa302bb5888679063180175d9d49ec4828",
+   "fetched_utc": "2026-11-09T12:11:51Z"
+  },
+  {
+   "file": "ref_time.tab",
+   "url": "https://borealisdata.ca/api/access/datafile/1231727",
+   "bytes": 1009515,
+   "sha256": "030fcc09bbbacd583d4e82ae79845e38874cc6a3b6daf8d0efcb3a9dd3b49c16",
+   "fetched_utc": "2026-11-09T12:11:59Z"
+  },
+  {
+   "file": "1_Prep_Info.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231725",
+   "bytes": 4842,
+   "sha256": "083c9b9f3b099cbfcdb81d96ef98f015d0b06e561b63393ca389be78c957ceef",
+   "fetched_utc": "2026-11-09T12:12:04Z"
+  },
+  {
+   "file": "2_Prep_Trials.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231718",
+   "bytes": 4889,
+   "sha256": "c9f50ce87682d0402afcccd6cc3d317edbbeda77f3131fa0bcc00aa9656b4f96",
+   "fetched_utc": "2026-11-09T12:12:09Z"
+  },
+  {
+   "file": "3_Calculations.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231726",
+   "bytes": 3076,
+   "sha256": "d88b1d604ab6551d33c994dfb13708960a79f7e4906fc29135eb75a89d0ede45",
+   "fetched_utc": "2026-11-09T12:12:13Z"
+  },
+  {
+   "file": "4_Bounds.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231721",
+   "bytes": 4758,
+   "sha256": "0e4090105fe016737364c2eefe3bf18873b3e36a6e029c92d6f8780177c48023",
+   "fetched_utc": "2026-11-09T12:12:21Z"
+  },
+  {
+   "file": "5_Cleaning.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231723",
+   "bytes": 3296,
+   "sha256": "397fe9487b2552ad90618d2be38e6677a0e95572b369d8fc9ca3cd7b66577848",
+   "fetched_utc": "2026-11-09T12:12:27Z"
+  },
+  {
+   "file": "6_Reference.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231719",
+   "bytes": 2935,
+   "sha256": "75a87267a3bb4c412d6195830844f379a3c548c2b168b303dc22ef67fc1b0ed9",
+   "fetched_utc": "2026-11-09T12:12:34Z"
+  },
+  {
+   "file": "7_Spline_Final.Rmd",
+   "url": "https://borealisdata.ca/api/access/datafile/1231724",
+   "bytes": 3241,
+   "sha256": "78f02697704f45a9717615453032be1a52aa2c18f1dc87ec1f5e39cbfc3b0b9c",
+   "fetched_utc": "2026-11-09T12:12:39Z"
+  },
+  {
+   "file": "Grasp_T_UnC_data.tab",
+   "url": "https://borealisdata.ca/api/access/datafile/1231720",
+   "bytes": 973302603,
+   "sha256": "d067c5f9f195600bcbad99541d05515b1091b5f199245faecd10c7d1682aa937",
+   "fetched_utc": "2026-11-09T12:20:21Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/LeBlanc2026_Borealis.zip"
+}

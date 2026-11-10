@@ -1,0 +1,109 @@
+{
+ "id": "Muecke2026_SpeechProsody",
+ "module": "timeseries",
+ "rows": 1150,
+ "subjects": 12,
+ "persons": 12,
+ "zip_bytes": 8881700,
+ "zip_sha256": "ca53b788c20feeeb6dfd06166984ce1bb84eea2ddd0bce8c9f563c8e18c5f97d",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "native Persian speakers",
+   "computed": 12.0,
+   "reported": 12.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Sec. 2.1 (12 native speakers of Persian)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target sentences recorded (8 words x 4 focus conditions x 12 speakers x 3 repetitions) minus the 2 discarded",
+   "computed": 1150.0,
+   "reported": 1150.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Sec. 2.1 (1152 target sentences recorded, 2 utterances discarded)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "target words",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Sec. 2.2 (8 Persian-sounding pseudo-names)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "focus conditions",
+   "computed": 4.0,
+   "reported": 4.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Abstract and Sec. 1.3 (background, broad, narrow and corrective focus)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sampling rate of the shared kinematic data (Hz)",
+   "computed": 250.0,
+   "reported": 250.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Sec. 2.1 (sampled at 1250 Hz and downsampled to 250 Hz)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "sensors tracking the head (behind both ears and on the bridge of the nose)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Muecke et al. 2026, Sec. 2.1 and Fig. 1",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values; all time steps 4 ms within recordings",
+   "ok": true,
+   "detail": "nan 0, steps [4.0]"
+  },
+  {
+   "kind": "internal",
+   "what": "window runs from 100 ms (within one sample) before syllable 1 to 100 ms after the end of syllable 3 in every recording",
+   "ok": true,
+   "detail": "start 96.0-100.0, end 96.0-100.0 ms"
+  },
+  {
+   "kind": "internal",
+   "what": "3 repetitions per speaker, focus and word, except the 2 discarded",
+   "ok": true,
+   "detail": "cells with 3: 382, with 2: 2"
+  },
+  {
+   "kind": "internal",
+   "what": "rows in the file equal samples in the sample files",
+   "ok": true,
+   "detail": "227449 rows"
+  },
+  {
+   "kind": "internal",
+   "what": "axes: nose at larger x than both ears, nose above the ears (larger y) and left ear at larger z than the right ear in all recordings",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The paper's results (displacement and velocity of the nose sensor under the four focus conditions) were fitted with models on the authors' processed data and were not reproduced here; only the design counts and the sampling rate are checked."
+ ],
+ "sources": [
+  {
+   "file": "persian_head_movement_data_target_raw.csv",
+   "url": "https://osf.io/download/nvypg/",
+   "bytes": 45120110,
+   "sha256": "653328457596232d0bf667ee909a255c30c2d948281dd2e1ec075f16bf87ab13",
+   "fetched_utc": "2026-11-09T19:20:45Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Muecke2026_SpeechProsody.zip"
+}

@@ -1,0 +1,210 @@
+{
+ "id": "Schreiber2019_SciData",
+ "module": "timeseries",
+ "rows": 2336,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 508250146,
+ "zip_sha256": "9d4033bcf068b63909267c56872082b575e05450955f247cf991ff72b20a819a",
+ "checks": [
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Abstract / Methods, Participants (50 adults)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "women",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 women and 26 men)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "men",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants (24 women and 26 men)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 36.96,
+   "reported": 37.0,
+   "tol": 0.05,
+   "source": "Methods, Participants (37.0 +- 13.6 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 13.56309518584929,
+   "reported": 13.6,
+   "tol": 0.05,
+   "source": "Methods, Participants (37.0 +- 13.6 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "youngest age (years)",
+   "computed": 19.0,
+   "reported": 19.0,
+   "tol": 0,
+   "source": "Background (aged between 19 and 67 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "oldest age (years)",
+   "computed": 67.0,
+   "reported": 67.0,
+   "tol": 0,
+   "source": "Background (aged between 19 and 67 years)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean height (m)",
+   "computed": 1.7384,
+   "reported": 1.74,
+   "tol": 0.005,
+   "source": "Methods, Participants (1.74 +- 0.09 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of height (m)",
+   "computed": 0.09194852153376311,
+   "reported": 0.09,
+   "tol": 0.005,
+   "source": "Methods, Participants (1.74 +- 0.09 m)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of weight (kg)",
+   "computed": 12.34376716222005,
+   "reported": 12.3,
+   "tol": 0.05,
+   "source": "Methods, Participants (71.0 +- 12.3 kg)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking trials",
+   "computed": 1143.0,
+   "reported": 1143.0,
+   "tol": 0,
+   "source": "Abstract / Data Records (a total of 1143 trials)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "static trials (one per participant)",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Data Records (at least 3 trials per condition plus one static, for each of the 50 participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "markers (most in a file)",
+   "computed": 52.0,
+   "reported": 52.0,
+   "tol": 0,
+   "source": "Records / Table 1 (52 cutaneous reflective markers)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "EMG probes",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Records (8 probes) / Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "walking speed conditions",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Methods, Procedure (C1-C5)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "at least 3 trials per participant and condition",
+   "ok": true,
+   "detail": "min 3"
+  },
+  {
+   "kind": "internal",
+   "what": "analog labels identical in every walking file; marker labels of every file are a subset of the 52",
+   "ok": true,
+   "detail": "{52: 1127, 51: 8, 44: 23, 48: 35}"
+  },
+  {
+   "kind": "internal",
+   "what": "analog samples = 15 per marker frame in every walking file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "event times lie inside the recording",
+   "ok": true,
+   "detail": "['left_foot_off', 'left_foot_strike1', 'left_foot_strike2', 'right_foot_off', 'right_foot_strike1', 'right_foot_strike2']"
+  },
+  {
+   "kind": "internal",
+   "what": "no NaN coordinates",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's anthropometric table lists one participant as 2015016; no such folder exists and the folder 2014016 (absent from the table) has the same height and weight, so the row is assigned to 2014016.",
+  "Age, sex, height, mass and leg lengths are those of the deposit's anthropometric table (a PDF), which reproduces the paper's 24 women, 26 men and age 37.0 +- 13.6 years. The SUBJECT parameters inside the C3D files disagree with that table for 1 participant(s) in gender and 27 in age and were not used.",
+  "The paper gives a mean mass of 71.0 kg; the deposit's table gives 71.2 kg, so that number is not used as a check.",
+  "66 of the 1193 files (marker count by file: {44: 23, 48: 35, 51: 8, 52: 1127}) hold fewer than 52 markers: the authors left out markers that could not be tracked; each row lists its own markers in channels.",
+  "0 of 14690383 marker positions are all zero (0.000%): markers the authors could not reconstruct; kept as shared.",
+  "The paper counts 1143 trials as walking trials; the 50 static trials (one per participant) are carried as well, as one-frame marker recordings.",
+  "The force and moment channels (Fx1...Mz2) are the C3D's analog channels, expressed in each force plate's coordinate system; the force plate structures that the authors describe (centre of pressure, force and moment in the laboratory frame) are not stored in the C3D files and are not reconstructed here."
+ ],
+ "sources": [
+  {
+   "file": "gait.zip",
+   "url": "https://ndownloader.figshare.com/files/22295019",
+   "bytes": 381392112,
+   "sha256": "e11f0f85424e7630d32dbeb8b37bf78d470dcb34c0f461417671ce7d146eaec5",
+   "fetched_utc": "2026-11-09T12:34:25Z"
+  },
+  {
+   "file": "stored_data_details.pdf",
+   "url": "https://ndownloader.figshare.com/files/14870426",
+   "bytes": 724614,
+   "sha256": "9a7a32710ec18d7390ec3fd1cc3ecac92fce6646ead1ef76b97b4636bd3f12cd",
+   "fetched_utc": "2026-11-09T12:34:30Z"
+  },
+  {
+   "file": "anthropometry.pdf",
+   "url": "https://ndownloader.figshare.com/files/22177209",
+   "bytes": 576029,
+   "sha256": "4a90cbc962b0feb6f25a9cf6b56e3e7b37bbeb923e74eecc16fab198a7656b8b",
+   "fetched_utc": "2026-11-09T12:34:34Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Schreiber2019_SciData.zip"
+}

@@ -1,31 +1,45 @@
-# Publishes the repository as-is (no Jekyll) to GitHub Pages.
-# Replaces GitHub's built-in "pages build and deployment", whose deploy step gives up after 10 minutes;
-# here the deploy step may wait up to 30 minutes while GitHub syncs the files.
-name: Deploy site
+# Builds the site from source/, site/ and tools/ and publishes it to GitHub Pages.
+# Runs on every push to main that touches the site, by hand, and at the end of the finder and intake workflows
+# (pushes made with the workflow token do not start other workflows, so those call this one directly).
+name: Build and deploy site
 on:
   push:
     branches: [main]
+    paths: ["source/**", "site/**", "tools/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
+  workflow_call:
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build
+        run: |
+          python -I tools/build_page.py
+          rm -f dist/artifact.html
+          touch dist/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1800000

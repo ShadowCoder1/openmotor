@@ -1,0 +1,118 @@
+{
+ "id": "Maurer2022_Neuroscience",
+ "module": "summary",
+ "rows": 960,
+ "subjects": 16,
+ "persons": 16,
+ "zip_bytes": 13582,
+ "zip_sha256": "5182e54b1275b8adea549a503fe3c01f0a086d0ef65eaf6df2361cede4c787f2",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "all tables are 16 participants x 10 sessions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hit rates between 0 and 100 (percent), Dmin positive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "no missing values",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "960 rows = 16 participants x 10 sessions x 6 measures",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "number of participants",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Abstract ('16 participants')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "number of sessions",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Abstract ('ten sessions')",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "total number of practice trials per participant (10 sessions x 400 trials per session)",
+   "computed": 4000.0,
+   "reported": 4000.0,
+   "tol": 0,
+   "source": "Abstract ('4000 trials over ten sessions'); 400 trials per session = 4 blocks of 100 from the deposit's EEG description",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "hit rate rose from session 1 to session 10 in the group mean (the paper reports significant improvement)",
+   "ok": true,
+   "detail": "24.3 -> 51.0"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit holds only per-session summaries; the trial-level throws are inside the EEG files and not released here.",
+  "The paper's full text could not be read (Elsevier, not open access), so the published checks are limited to the counts in its abstract."
+ ],
+ "sources": [
+  {
+   "file": "Description_performance.txt",
+   "url": "https://zenodo.org/api/records/5006535/files/Description_performance.txt/content",
+   "bytes": 146,
+   "sha256": "db10a8d9f68abeb6fd7188c409c5d3fb3eff2ddc04389ee65c8fbafa112df444",
+   "fetched_utc": "2026-11-09T15:40:29Z"
+  },
+  {
+   "file": "Description_Mean_and_SD_Ang_Velo.txt",
+   "url": "https://zenodo.org/api/records/5006535/files/Description_Mean_and_SD_Ang_Velo.txt/content",
+   "bytes": 818,
+   "sha256": "194dfe32284362000ce65bac849fdbbaae470dabf08979395c563c845deaa308",
+   "fetched_utc": "2026-11-09T15:40:33Z"
+  },
+  {
+   "file": "Description_EEG_data.txt",
+   "url": "https://zenodo.org/api/records/5006535/files/Description_EEG_data.txt/content",
+   "bytes": 992,
+   "sha256": "257911a18ca3a82ec28205c664834a48cfd1721270636a306334d2f2400cf288",
+   "fetched_utc": "2026-11-09T15:40:38Z"
+  },
+  {
+   "file": "Mean_Ang_Velo.txt",
+   "url": "https://zenodo.org/api/records/5006535/files/Mean_Ang_Velo.txt/content",
+   "bytes": 2275,
+   "sha256": "4529456f199d62bb7b9ef0614f0df8bb8cfbd8974353d020ccf9ce08f289bdf3",
+   "fetched_utc": "2026-11-09T15:40:42Z"
+  },
+  {
+   "file": "performance.mat",
+   "url": "https://zenodo.org/api/records/5006535/files/performance.mat/content",
+   "bytes": 1869,
+   "sha256": "c0472059fe2fc756f8b804bb8076640d79d0602e4b95454df1528eac35f6bad5",
+   "fetched_utc": "2026-11-09T15:40:46Z"
+  },
+  {
+   "file": "SD_Ang_Velo.txt",
+   "url": "https://zenodo.org/api/records/5006535/files/SD_Ang_Velo.txt/content",
+   "bytes": 2465,
+   "sha256": "8dbc2f2eb73fdcc2a6e863e4aadbb229ff8ea551b9bbee81e02de8df6dbc9030",
+   "fetched_utc": "2026-11-09T15:40:50Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Maurer2022_Neuroscience.zip"
+}

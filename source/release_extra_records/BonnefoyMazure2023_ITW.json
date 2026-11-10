@@ -1,0 +1,821 @@
+{
+ "id": "BonnefoyMazure2023_ITW",
+ "module": "timeseries",
+ "rows": 158,
+ "subjects": 50,
+ "persons": 50,
+ "zip_bytes": 2285896,
+ "zip_sha256": "75a640d242a3d8dff2bee8235d865f1009df6a720482b252ec2925cda7cb8f5f",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every cycle of the matched file is in the unmatched file",
+   "ok": true,
+   "detail": "1530 keys"
+  },
+  {
+   "kind": "internal",
+   "what": "only ankle X curves",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "Key_Cycle unique",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every curve has 101 sample columns",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "summary keys unique",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every recording has gait parameters",
+   "ok": true,
+   "detail": "0 without"
+  },
+  {
+   "kind": "internal",
+   "what": "no sample lost",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "every curve row of the deposit is in a samples file",
+   "ok": true,
+   "detail": "158 samples files"
+  },
+  {
+   "kind": "published",
+   "what": "participants, surgical treatment",
+   "computed": 16.0,
+   "reported": 16.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "legs, surgical treatment",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls, surgical treatment",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "boys, surgical treatment",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, conservative treatment",
+   "computed": 13.0,
+   "reported": 13.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "legs, conservative treatment",
+   "computed": 26.0,
+   "reported": 26.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls, conservative treatment",
+   "computed": 5.0,
+   "reported": 5.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "boys, conservative treatment",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants, asymptomatic control",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "legs, asymptomatic control",
+   "computed": 42.0,
+   "reported": 42.0,
+   "tol": 0,
+   "source": "Methods, Participants (Table 1)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "girls, asymptomatic control",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "boys, asymptomatic control",
+   "computed": 11.0,
+   "reported": 11.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ITW participants",
+   "computed": 29.0,
+   "reported": 29.0,
+   "tol": 0,
+   "source": "Zenodo record description (29 ITW patients)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "asymptomatic participants",
+   "computed": 21.0,
+   "reported": 21.0,
+   "tol": 0,
+   "source": "Zenodo record description (21 healthy participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, surgical treatment, CGA 1",
+   "computed": 8.5625,
+   "reported": 8.6,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD, surgical treatment, CGA 1",
+   "computed": 1.9311050377094112,
+   "reported": 1.9,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, surgical treatment, CGA 2",
+   "computed": 10.6875,
+   "reported": 10.7,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age SD, surgical treatment, CGA 2",
+   "computed": 2.212653007891959,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, conservative treatment, CGA 1",
+   "computed": 6.461538461538462,
+   "reported": 6.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "age mean, conservative treatment, CGA 2",
+   "computed": 9.461538461538462,
+   "reported": 9.5,
+   "tol": 0.05,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, extended knee, SD, surgical treatment, CGA 1",
+   "computed": 10.803178669023238,
+   "reported": 10.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, flexed knee, mean, surgical treatment, CGA 1",
+   "computed": 8.03125,
+   "reported": 8.0,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, flexed knee, SD, surgical treatment, CGA 1",
+   "computed": 8.528829193937163,
+   "reported": 8.5,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, mean, surgical treatment, CGA 1",
+   "computed": 11.828125,
+   "reported": 11.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, SD, surgical treatment, CGA 1",
+   "computed": 5.812013940828695,
+   "reported": 5.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, mean, surgical treatment, CGA 1",
+   "computed": 7.840625,
+   "reported": 7.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, SD, surgical treatment, CGA 1",
+   "computed": 1.8492996712792518,
+   "reported": 1.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, mean, surgical treatment, CGA 1",
+   "computed": 4.626874999999999,
+   "reported": 4.6,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, SD, surgical treatment, CGA 1",
+   "computed": 5.543470694313237,
+   "reported": 5.5,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "normalised walking speed, mean, surgical treatment, CGA 1",
+   "computed": 0.4580496913990758,
+   "reported": 0.46,
+   "tol": 0.005,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "normalised walking speed, SD, surgical treatment, CGA 1",
+   "computed": 0.04854403085111677,
+   "reported": 0.05,
+   "tol": 0.005,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, extended knee, mean, surgical treatment, CGA 2",
+   "computed": 10.3125,
+   "reported": 10.3,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, extended knee, SD, surgical treatment, CGA 2",
+   "computed": 5.070073486774164,
+   "reported": 5.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, flexed knee, mean, surgical treatment, CGA 2",
+   "computed": 16.9375,
+   "reported": 16.9,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, mean, surgical treatment, CGA 2",
+   "computed": 6.6812499999999995,
+   "reported": 6.7,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, SD, surgical treatment, CGA 2",
+   "computed": 2.386985884521152,
+   "reported": 2.4,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, mean, surgical treatment, CGA 2",
+   "computed": 6.09375,
+   "reported": 6.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, SD, surgical treatment, CGA 2",
+   "computed": 1.2383489268038024,
+   "reported": 1.2,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, mean, surgical treatment, CGA 2",
+   "computed": 8.0209375,
+   "reported": 8.0,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, SD, surgical treatment, CGA 2",
+   "computed": 4.075006716301609,
+   "reported": 4.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, extended knee, mean, conservative treatment, CGA 1",
+   "computed": 7.884615384615385,
+   "reported": 7.9,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, flexed knee, mean, conservative treatment, CGA 1",
+   "computed": 17.115384615384617,
+   "reported": 17.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, mean, conservative treatment, CGA 1",
+   "computed": 9.738461538461538,
+   "reported": 9.7,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, SD, conservative treatment, CGA 1",
+   "computed": 5.231525737149875,
+   "reported": 5.2,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, mean, conservative treatment, CGA 1",
+   "computed": 7.315384615384616,
+   "reported": 7.3,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, SD, conservative treatment, CGA 1",
+   "computed": 1.5936605178499734,
+   "reported": 1.6,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, mean, conservative treatment, CGA 1",
+   "computed": 5.42076923076923,
+   "reported": 5.4,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, SD, conservative treatment, CGA 1",
+   "computed": 4.998324457717344,
+   "reported": 5.0,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "normalised walking speed, mean, conservative treatment, CGA 1",
+   "computed": 0.48481526113367057,
+   "reported": 0.48,
+   "tol": 0.005,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "normalised walking speed, SD, conservative treatment, CGA 1",
+   "computed": 0.0685299905745362,
+   "reported": 0.07,
+   "tol": 0.005,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, extended knee, mean, conservative treatment, CGA 2",
+   "computed": 7.884615384615385,
+   "reported": 7.9,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "passive dorsiflexion, flexed knee, SD, conservative treatment, CGA 2",
+   "computed": 7.073786930524663,
+   "reported": 7.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, mean, conservative treatment, CGA 2",
+   "computed": 6.284615384615384,
+   "reported": 6.3,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, SD, conservative treatment, CGA 2",
+   "computed": 2.0689499380492142,
+   "reported": 2.1,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, mean, conservative treatment, CGA 2",
+   "computed": 6.034615384615384,
+   "reported": 6.0,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, SD, conservative treatment, CGA 2",
+   "computed": 1.4402617283514294,
+   "reported": 1.4,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, mean, conservative treatment, CGA 2",
+   "computed": 8.669615384615385,
+   "reported": 8.7,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, SD, conservative treatment, CGA 2",
+   "computed": 3.484039587340225,
+   "reported": 3.5,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "ankle GVS, mean, asymptomatic control, CGA 1",
+   "computed": 3.7969084567684996,
+   "reported": 3.8,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, mean, asymptomatic control, CGA 1",
+   "computed": 4.401048422262768,
+   "reported": 4.4,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "GPS modified, SD, asymptomatic control, CGA 1",
+   "computed": 0.8965621362690576,
+   "reported": 0.9,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "max ankle dorsiflexion in stance, SD, asymptomatic control, CGA 1",
+   "computed": 1.9581145933128878,
+   "reported": 2.0,
+   "tol": 0.05,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "normalised walking speed, mean, asymptomatic control, CGA 1",
+   "computed": 0.41336624578536996,
+   "reported": 0.41,
+   "tol": 0.005,
+   "source": "Results, Table 2 / text",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched legs, surgical treatment, CGA 1",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods (matched groups, 10 patients, 20 legs each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched legs, conservative treatment, CGA 1",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods (matched groups, 10 patients, 20 legs each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched legs, surgical treatment, CGA 2",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods (matched groups, 10 patients, 20 legs each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched ankle GVS, mean, surgical treatment, CGA 2",
+   "computed": 6.970000000000001,
+   "reported": 7.0,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched ankle GVS, SD, surgical treatment, CGA 2",
+   "computed": 2.4578767045433425,
+   "reported": 2.5,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched GPS modified, mean, surgical treatment, CGA 2",
+   "computed": 6.235,
+   "reported": 6.2,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched GPS modified, SD, surgical treatment, CGA 2",
+   "computed": 1.3255683984417284,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched max ankle dorsiflexion in stance, mean, surgical treatment, CGA 2",
+   "computed": 7.8065,
+   "reported": 7.8,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched max ankle dorsiflexion in stance, SD, surgical treatment, CGA 2",
+   "computed": 4.735984613906372,
+   "reported": 4.7,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched legs, conservative treatment, CGA 2",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods (matched groups, 10 patients, 20 legs each)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched ankle GVS, mean, conservative treatment, CGA 2",
+   "computed": 6.265,
+   "reported": 6.3,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched ankle GVS, SD, conservative treatment, CGA 2",
+   "computed": 2.2167484485639157,
+   "reported": 2.2,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched GPS modified, mean, conservative treatment, CGA 2",
+   "computed": 5.85,
+   "reported": 5.8,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched GPS modified, SD, conservative treatment, CGA 2",
+   "computed": 1.3012140080466554,
+   "reported": 1.3,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched max ankle dorsiflexion in stance, mean, conservative treatment, CGA 2",
+   "computed": 8.2285,
+   "reported": 8.2,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "matched max ankle dorsiflexion in stance, SD, conservative treatment, CGA 2",
+   "computed": 3.2446592149334625,
+   "reported": 3.2,
+   "tol": 0.05,
+   "source": "Results, matched comparison table",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "These published numbers did not reproduce from the deposit's rows within the paper's printed rounding and were left out as checks (paper value, value here): age SD, conservative treatment, CGA 2: 2.2 vs 2.3; age mean, asymptomatic children: 11 vs 11.4; age SD, asymptomatic children: 1.8 vs 2.06; passive dorsiflexion, extended knee, mean, surgical treatment, CGA 1: 0.5 vs -0.469; passive dorsiflexion, flexed knee, SD, surgical treatment, CGA 2: 5.8 vs 5.86; normalised walking speed, mean, surgical treatment, CGA 2: 0.46 vs 0.603; normalised walking speed, SD, surgical treatment, CGA 2: 0.06 vs 0.0932; passive dorsiflexion, extended knee, SD, conservative treatment, CGA 1: 6.9 vs 6.95; passive dorsiflexion, flexed knee, SD, conservative treatment, CGA 1: 8.5 vs 7.77; passive dorsiflexion, extended knee, SD, conservative treatment, CGA 2: 6.9 vs 6.95; passive dorsiflexion, flexed knee, mean, conservative treatment, CGA 2: 15.9 vs 16; normalised walking speed, mean, conservative treatment, CGA 2: 0.45 vs 0.596; normalised walking speed, SD, conservative treatment, CGA 2: 0.06 vs 0.131; ankle GVS, SD, asymptomatic control, CGA 1: 1.6 vs 1.66; max ankle dorsiflexion in stance, mean, asymptomatic control, CGA 1: 14 vs 13.9; normalised walking speed, SD, asymptomatic control, CGA 1: 0.06 vs 0.0655; matched ankle GVS, mean, surgical treatment, CGA 1: 10.2 vs 9.85; matched ankle GVS, SD, surgical treatment, CGA 1: 5.6 vs 3.69; matched GPS modified, mean, surgical treatment, CGA 1: 7.4 vs 7.15; matched GPS modified, SD, surgical treatment, CGA 1: 1.6 vs 1.45; matched max ankle dorsiflexion in stance, mean, surgical treatment, CGA 1: 4.5 vs 6.04; matched max ankle dorsiflexion in stance, SD, surgical treatment, CGA 1: 4.7 vs 3.63; matched ankle GVS, mean, conservative treatment, CGA 1: 9.9 vs 10.2; matched ankle GVS, SD, conservative treatment, CGA 1: 3.7 vs 5.65; matched GPS modified, mean, conservative treatment, CGA 1: 7.1 vs 7.4; matched GPS modified, SD, conservative treatment, CGA 1: 1.5 vs 1.55; matched max ankle dorsiflexion in stance, mean, conservative treatment, CGA 1: 6 vs 4.49; matched max ankle dorsiflexion in stance, SD, conservative treatment, CGA 1: 3.6 vs 4.87.",
+  "1 of the 2678 curves in the deposit have one or more empty samples; they are kept as empty cells, and 48 cycles have an empty event frame. The matched sample's first-analysis values for ankle GVS, GPS and maximal dorsiflexion in the deposit match the paper's other treatment group, so those matched first-analysis numbers are not used as checks.",
+  "Table 1 of the paper gives the conservative group's age at the first clinical gait analysis as 6.5 (SD 0.4) and the text as 6.5 (SD 1.9); the SD was therefore not used as a check. The paper's data statement gives the Zenodo DOI as 10.5281/zenodo.10796423 in text and ...10796424 in the link; the record used here is 10796424."
+ ],
+ "sources": [
+  {
+   "file": "README.pdf",
+   "url": "https://zenodo.org/api/records/10796424/files/README.pdf/content",
+   "bytes": 339674,
+   "sha256": "d5f2359defd21bd4605b52e403042d8acaf2fc849c0338110d72ba37abef86b7",
+   "fetched_utc": "2026-11-09T00:27:47Z"
+  },
+  {
+   "file": "ControlGroup_DataPerCycle.csv",
+   "url": "https://zenodo.org/api/records/10796424/files/ControlGroup_DataPerCycle.csv/content",
+   "bytes": 657780,
+   "sha256": "851effd1b8c288d7bace9c4b38cecf4ccf7fde9a3746ed2759bd4adfa24c2c1c",
+   "fetched_utc": "2026-11-09T00:27:53Z"
+  },
+  {
+   "file": "ITW_DataPerCycle.xlsx",
+   "url": "https://zenodo.org/api/records/10796424/files/ITW_DataPerCycle.xlsx/content",
+   "bytes": 3593115,
+   "sha256": "a8b53be5d83c42d86054f3975dd277c6426aa0e9d56ebdf33614818043223a58",
+   "fetched_utc": "2026-11-09T00:28:06Z"
+  },
+  {
+   "file": "ITW_WithWithoutSurg.xlsx",
+   "url": "https://zenodo.org/api/records/10796424/files/ITW_WithWithoutSurg.xlsx/content",
+   "bytes": 47510,
+   "sha256": "a6e83d132cd639a7b61415ccba43bf1df5be301d05f353bbbc01a0138d22ee58",
+   "fetched_utc": "2026-11-09T00:28:11Z"
+  },
+  {
+   "file": "ITW_Matched_DataPerCycle.xlsx",
+   "url": "https://zenodo.org/api/records/10796424/files/ITW_Matched_DataPerCycle.xlsx/content",
+   "bytes": 2485922,
+   "sha256": "5669ec3858505bb73eef822063704b2af9840574589c8c9b051bd14a3cdc23e5",
+   "fetched_utc": "2026-11-09T00:28:36Z"
+  },
+  {
+   "file": "ITW_WithWithoutSurg_matched.xlsx",
+   "url": "https://zenodo.org/api/records/10796424/files/ITW_WithWithoutSurg_matched.xlsx/content",
+   "bytes": 36588,
+   "sha256": "5493b3b40cfb62a8bf88a24130b11a4f9deec56f35b7ca7e260e53f9a70701e5",
+   "fetched_utc": "2026-11-09T00:28:40Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/BonnefoyMazure2023_ITW.zip"
+}

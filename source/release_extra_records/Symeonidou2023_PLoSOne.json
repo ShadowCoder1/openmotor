@@ -1,0 +1,854 @@
+{
+ "id": "Symeonidou2023_PLoSOne",
+ "module": "summary",
+ "rows": 972,
+ "subjects": 18,
+ "persons": 18,
+ "zip_bytes": 15986,
+ "zip_sha256": "8656ee0de3023968d1930ca4d202d3f33ba64a959c2f8ff9cf40d9b8ffa4f7ce",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "40 lines (10 participants x 2 groups x Pre/Post)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rows = non-empty cells",
+   "ok": true,
+   "detail": "972"
+  },
+  {
+   "kind": "internal",
+   "what": "2 participants (one per group) have completely empty lines, so 18 have rows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 20.0,
+   "reported": 20.0,
+   "tol": 0,
+   "source": "Methods, Participants (twenty healthy young participants)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants per group",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Methods, Beam training (4F+6M and 5F+5M)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Unperturbed Vision Pre mean (n=9)",
+   "computed": 15.50093670067873,
+   "reported": 15.5,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Unperturbed Vision Pre SD",
+   "computed": 5.14554061849986,
+   "reported": 5.15,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Unperturbed Vision Post mean (n=9)",
+   "computed": 11.969001360938686,
+   "reported": 11.97,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Unperturbed Vision Post SD",
+   "computed": 5.901015419455876,
+   "reported": 5.9,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Visual Occlusions Pre mean (n=9)",
+   "computed": 9.738287059182733,
+   "reported": 9.74,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Visual Occlusions Pre SD",
+   "computed": 4.670260039941228,
+   "reported": 4.67,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Visual Occlusions Post mean (n=9)",
+   "computed": 2.429147965567731,
+   "reported": 2.43,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Step-Offs/min: Visual Occlusions Post SD",
+   "computed": 2.088395438790943,
+   "reported": 2.09,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Unperturbed Vision Pre mean (n=9)",
+   "computed": 3.7851565107354253,
+   "reported": 3.79,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Unperturbed Vision Pre SD",
+   "computed": 1.3914025927624927,
+   "reported": 1.39,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Unperturbed Vision Post mean (n=9)",
+   "computed": 3.396203496393946,
+   "reported": 3.4,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Unperturbed Vision Post SD",
+   "computed": 1.7629791453135712,
+   "reported": 1.76,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Visual Occlusions Pre mean (n=9)",
+   "computed": 3.3208497023316657,
+   "reported": 3.32,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Visual Occlusions Pre SD",
+   "computed": 1.6624402730541152,
+   "reported": 1.66,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Visual Occlusions Post mean (n=9)",
+   "computed": 2.3166978853333626,
+   "reported": 2.32,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation ML: Visual Occlusions Post SD",
+   "computed": 0.8755278821678651,
+   "reported": 0.88,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Unperturbed Vision Pre mean (n=9)",
+   "computed": 1.277123211950891,
+   "reported": 1.28,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Unperturbed Vision Pre SD",
+   "computed": 0.27167482020748257,
+   "reported": 0.27,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Unperturbed Vision Post mean (n=9)",
+   "computed": 1.4098212314317193,
+   "reported": 1.41,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Unperturbed Vision Post SD",
+   "computed": 0.8088651215598579,
+   "reported": 0.81,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Visual Occlusions Pre mean (n=9)",
+   "computed": 1.1087551353308096,
+   "reported": 1.11,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Visual Occlusions Pre SD",
+   "computed": 0.206667864543375,
+   "reported": 0.21,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Visual Occlusions Post mean (n=9)",
+   "computed": 1.1710999944822558,
+   "reported": 1.17,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation Vert.: Visual Occlusions Post SD",
+   "computed": 0.3926050894081491,
+   "reported": 0.39,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Unperturbed Vision Pre mean (n=9)",
+   "computed": 6.716041985476631,
+   "reported": 6.72,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Unperturbed Vision Pre SD",
+   "computed": 1.7664976306382079,
+   "reported": 1.77,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Unperturbed Vision Post mean (n=9)",
+   "computed": 5.506175932601041,
+   "reported": 5.51,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Unperturbed Vision Post SD",
+   "computed": 1.417836527015029,
+   "reported": 1.42,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Visual Occlusions Pre mean (n=9)",
+   "computed": 5.720752892893415,
+   "reported": 5.72,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Visual Occlusions Pre SD",
+   "computed": 1.2370569327838945,
+   "reported": 1.24,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Visual Occlusions Post mean (n=9)",
+   "computed": 5.098563701772965,
+   "reported": 5.1,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Standard Deviation AP: Visual Occlusions Post SD",
+   "computed": 1.1921688923422287,
+   "reported": 1.19,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Unperturbed Vision Pre mean (n=9)",
+   "computed": 13.341794601914009,
+   "reported": 13.34,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Unperturbed Vision Pre SD",
+   "computed": 2.728913820790008,
+   "reported": 2.73,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Unperturbed Vision Post mean (n=9)",
+   "computed": 13.316801237732442,
+   "reported": 13.32,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Unperturbed Vision Post SD",
+   "computed": 5.387727808052976,
+   "reported": 5.39,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Visual Occlusions Pre mean (n=9)",
+   "computed": 12.605455870126372,
+   "reported": 12.61,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Visual Occlusions Pre SD",
+   "computed": 4.11677736710018,
+   "reported": 4.12,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Visual Occlusions Post mean (n=9)",
+   "computed": 9.171120325466417,
+   "reported": 9.17,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement ML: Visual Occlusions Post SD",
+   "computed": 4.028684006198154,
+   "reported": 4.03,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Unperturbed Vision Pre mean (n=9)",
+   "computed": 4.489810408110959,
+   "reported": 4.49,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Unperturbed Vision Pre SD",
+   "computed": 1.245696941772197,
+   "reported": 1.25,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Unperturbed Vision Post mean (n=9)",
+   "computed": 4.840108541197782,
+   "reported": 4.84,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Unperturbed Vision Post SD",
+   "computed": 2.0524568317387586,
+   "reported": 2.05,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Visual Occlusions Pre mean (n=9)",
+   "computed": 4.540618043366511,
+   "reported": 4.54,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Visual Occlusions Pre SD",
+   "computed": 1.03757156429013,
+   "reported": 1.04,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Visual Occlusions Post mean (n=9)",
+   "computed": 4.455853379876381,
+   "reported": 4.46,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement Vert: Visual Occlusions Post SD",
+   "computed": 1.7572305959559156,
+   "reported": 1.76,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Unperturbed Vision Pre mean (n=9)",
+   "computed": 19.272244756930565,
+   "reported": 19.27,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Unperturbed Vision Pre SD",
+   "computed": 5.554099591016888,
+   "reported": 5.55,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Unperturbed Vision Post mean (n=9)",
+   "computed": 18.028966809249415,
+   "reported": 18.03,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Unperturbed Vision Post SD",
+   "computed": 4.910154754515218,
+   "reported": 4.91,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Visual Occlusions Pre mean (n=9)",
+   "computed": 17.089097746197798,
+   "reported": 17.09,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Visual Occlusions Pre SD",
+   "computed": 4.161027299588072,
+   "reported": 4.16,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Visual Occlusions Post mean (n=9)",
+   "computed": 14.759666868326933,
+   "reported": 14.76,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Displacement AP: Visual Occlusions Post SD",
+   "computed": 3.4155261368294405,
+   "reported": 3.42,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Unperturbed Vision Pre mean (n=9)",
+   "computed": 45.24000000000021,
+   "reported": 45.24,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Unperturbed Vision Pre SD",
+   "computed": 7.093856496998106,
+   "reported": 7.09,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Unperturbed Vision Post mean (n=9)",
+   "computed": 45.88555555555547,
+   "reported": 45.89,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Unperturbed Vision Post SD",
+   "computed": 11.359813060864282,
+   "reported": 11.36,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Visual Occlusions Pre mean (n=9)",
+   "computed": 39.76000000000005,
+   "reported": 39.76,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Visual Occlusions Pre SD",
+   "computed": 6.847534227735043,
+   "reported": 6.85,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Visual Occlusions Post mean (n=9)",
+   "computed": 34.602222222222466,
+   "reported": 34.6,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity ML: Visual Occlusions Post SD",
+   "computed": 12.017190580349576,
+   "reported": 12.02,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Unperturbed Vision Pre mean (n=9)",
+   "computed": 30.688888888889853,
+   "reported": 30.69,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Unperturbed Vision Pre SD",
+   "computed": 7.24739857542762,
+   "reported": 7.25,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Unperturbed Vision Post mean (n=9)",
+   "computed": 35.8777777777777,
+   "reported": 35.88,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Unperturbed Vision Post SD",
+   "computed": 15.612020030875447,
+   "reported": 15.61,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Visual Occlusions Pre mean (n=9)",
+   "computed": 18.05555555555591,
+   "reported": 18.06,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Visual Occlusions Pre SD",
+   "computed": 6.377244920636466,
+   "reported": 6.38,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Visual Occlusions Post mean (n=9)",
+   "computed": 21.577777777777758,
+   "reported": 21.58,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity Vert.: Visual Occlusions Post SD",
+   "computed": 10.38266798296319,
+   "reported": 10.38,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Unperturbed Vision Pre mean (n=9)",
+   "computed": 34.50555555555549,
+   "reported": 34.51,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Unperturbed Vision Pre SD",
+   "computed": 7.001483969686519,
+   "reported": 7.0,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Unperturbed Vision Post mean (n=9)",
+   "computed": 37.07333333333331,
+   "reported": 37.07,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Unperturbed Vision Post SD",
+   "computed": 11.959216111434777,
+   "reported": 11.96,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Visual Occlusions Pre mean (n=9)",
+   "computed": 32.49222222222221,
+   "reported": 32.49,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Visual Occlusions Pre SD",
+   "computed": 8.208105411387269,
+   "reported": 8.21,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Visual Occlusions Post mean (n=9)",
+   "computed": 33.57111111111109,
+   "reported": 33.57,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Sac Max Velocity AP: Visual Occlusions Post SD",
+   "computed": 10.923926085025938,
+   "reported": 10.92,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Unperturbed Vision Pre mean (n=9)",
+   "computed": 100.70892944850746,
+   "reported": 100.71,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Unperturbed Vision Pre SD",
+   "computed": 1.0846139816677396,
+   "reported": 1.08,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Unperturbed Vision Post mean (n=9)",
+   "computed": 99.00116634319336,
+   "reported": 99.0,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Unperturbed Vision Post SD",
+   "computed": 1.3282762823841618,
+   "reported": 1.33,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Visual Occlusions Pre mean (n=9)",
+   "computed": 100.25650147934306,
+   "reported": 100.26,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Visual Occlusions Pre SD",
+   "computed": 0.9540030477293162,
+   "reported": 0.95,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Visual Occlusions Post mean (n=9)",
+   "computed": 99.59031112532807,
+   "reported": 99.59,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "Norm Ankle-Sacral Distance: Visual Occlusions Post SD",
+   "computed": 1.0728477285381246,
+   "reported": 1.07,
+   "tol": 0.005,
+   "source": "Table 1",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "Two of the 20 participants (one per group) have completely blank Pre and Post lines in the deposit, so no rows exist for them (18 participants in the release, 9 per group, which matches the 9 per group of the paper's Table 1).",
+  "Table 1 of the paper is computed on 9 participants per group (the caption says so); the deposit lists 10 per group, one of whom is blank, and all Table 1 means and SDs reproduce on the 9 with values."
+ ],
+ "sources": [
+  {
+   "file": "symeonidou.xlsx",
+   "url": "https://ndownloader.figshare.com/files/40987292",
+   "bytes": 23700,
+   "sha256": "f114ec1a3554a62aaf359222d609d5ca84988962f92714266255e276f4ac66fa",
+   "fetched_utc": "2026-11-09T15:41:14Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Symeonidou2023_PLoSOne.zip"
+}

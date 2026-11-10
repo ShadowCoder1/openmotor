@@ -1,0 +1,151 @@
+{
+ "id": "Billino2016_eNeuro",
+ "module": "summary",
+ "rows": 1210,
+ "subjects": 110,
+ "persons": 110,
+ "zip_bytes": 18848,
+ "zip_sha256": "5c20ca30db9280f369a67794ccfee95cf8de06d3c294a88e076cdc5ab49b7b14",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "both files hold the same 110 participants with the same age, sex and genotypes in the same order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "DAT code 99 (missing) only for 4 participants",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "110 participants x (8 + 3) measures kept",
+   "ok": true,
+   "detail": "1210"
+  },
+  {
+   "kind": "published",
+   "what": "participants",
+   "computed": 110.0,
+   "reported": 110.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "males",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "mean age (years)",
+   "computed": 23.70909090909091,
+   "reported": 23.7,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "SD of age (years)",
+   "computed": 5.1372813546106615,
+   "reported": 5.1,
+   "tol": 0.05,
+   "source": "Methods, Participants",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "minimum age",
+   "computed": 18.0,
+   "reported": 18.0,
+   "tol": 0,
+   "source": "Methods, Participants (range 18-45)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "maximum age",
+   "computed": 45.0,
+   "reported": 45.0,
+   "tol": 0,
+   "source": "Methods, Participants (range 18-45)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "COMT genotype Val/Val count",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "COMT genotype Val/Met count",
+   "computed": 54.0,
+   "reported": 54.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "COMT genotype Met/Met count",
+   "computed": 32.0,
+   "reported": 32.0,
+   "tol": 0,
+   "source": "Table 1",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DAT9+ participants",
+   "computed": 50.0,
+   "reported": 50.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "DAT9- participants",
+   "computed": 56.0,
+   "reported": 56.0,
+   "tol": 0,
+   "source": "Table 2",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "participants in the analysis (110 minus 4 excluded)",
+   "computed": 106.0,
+   "reported": 106.0,
+   "tol": 0,
+   "source": "Methods, Genotyping",
+   "ok": true
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "The deposit's description file says the visual-pursuit file has 'a single trial' per row; it has one row per participant."
+ ],
+ "sources": [
+  {
+   "file": "PursuitDopamine.zip",
+   "url": "https://zenodo.org/api/records/197059/files/PursuitDopamine.zip/content",
+   "bytes": 9296,
+   "sha256": "67b952f3c3ac61c492c4b24bc0d94543f185ad7f848fd562d3d59b76d3ff3db6",
+   "fetched_utc": "2026-11-09T13:38:20Z"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Billino2016_eNeuro.zip"
+}

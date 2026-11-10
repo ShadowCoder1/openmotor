@@ -1,0 +1,7 @@
+{
+ "id": "Heyne2025_DataBrief",
+ "skipped": true,
+ "reason": "too large",
+ "details": "The OSF project (vz6uh; CC BY 4.0, as in extra_studies.json) holds the speech only as audio: the open-access segment is 23 speakers, 40 sessions and 27,780 mono 16-bit 48 kHz WAV files (paper Table 3: 4,952 3-syllable, 4,898 4-syllable and 4,000 sentence trials, each as a production and a feedback file, plus 80 reading-passage recordings), served through the project OneDrive add-on. One 3-syllable feedback file is 558 kB (checked with a range request), so the audio is about 15 GB, over the 5 GB gate and the 1.9 GB output limit. The small xlsx tables give only the stimulus and feedback delay (0, 150, 200 or 250 ms) of each trial plus per-session reading-passage measures (speech rate, articulation rate, median f0, f0 and intensity IQR, vowel space area, F1 just-noticeable difference, SSS index); no per-trial acoustic values are shared. They could be released alone as a summary or trial-design table if wanted; the audio cannot.",
+ "sources": []
+}
