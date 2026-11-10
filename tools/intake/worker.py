@@ -108,7 +108,7 @@ def make_id(meta):
     if re.fullmatch(r"[A-Z][A-Za-z-]{1,40}\d{4}(_[A-Za-z0-9]{2,40})?", name):
         base = name
     else:
-        last = re.sub(r"[^A-Za-z-]", "", (meta.get("author") or "Anon").split(",")[0].split()[-1] if meta.get("author") else "Anon")
+        last = re.sub(r"[^A-Za-z-]", "", last_name(meta.get("author") or "Anon")) or "Anon"
         year = meta.get("year") or time.strftime("%Y")
         base = f"{last[:1].upper()}{last[1:]}{year}_OpenMotor"
     ids, cand, n = existing_ids(), base, 1
@@ -395,9 +395,22 @@ def finish():
         report("failed", "Something went wrong. Please email physical.intelligence.lab@gmail.com.")
 
 
+def last_name(person):
+    """'Tsay JS' -> 'Tsay'; 'Jonathan S. Tsay' -> 'Tsay'; 'Tsay, Jonathan' -> 'Tsay'."""
+    person = person.strip()
+    if "," in person:
+        return person.split(",")[0].strip() or "Anonymous"
+    parts = person.replace(".", " ").split()
+    if not parts:
+        return "Anonymous"
+    if len(parts) > 1 and re.fullmatch(r"[A-Z]{1,3}", parts[-1]):
+        return parts[0]
+    return parts[-1]
+
+
 def label_for(m):
-    a = (m.get("authors") or m.get("author") or "").split(",")
-    last = a[0].split()[-1] if a and a[0].split() else "Anonymous"
+    a = re.split(r";|,(?=\s*[A-Z][a-z])", m.get("authors") or m.get("author") or "")
+    last = last_name(a[0]) if a else "Anonymous"
     more = len([x for x in (m.get("authors") or "").split(",") if x.strip()]) > 2
     return f"{last}{' et al.' if more else ''} {m.get('year') or time.strftime('%Y')}"
 
@@ -422,7 +435,7 @@ def git(*args, check=True):
     return subprocess.run(["git", *args], cwd=HERE, check=check, capture_output=True, text=True)
 
 
-def commit_files(message, dsid, entries):
+def commit_files(message, dsid, entries, branch="main"):
     """Commit a dataset's converter, record, new modules and listing entries on top of the newest main, retrying when
     another run pushed first. Files are re-applied onto a fresh checkout each attempt, so concurrent runs cannot clash."""
     keep = [f"source/release_extra_records/{dsid}.json", f"tools/std/convert/{dsid}.py"]
@@ -442,7 +455,7 @@ def commit_files(message, dsid, entries):
         path.write_text(json.dumps(studies, indent=1, ensure_ascii=False))
         git("add", "source/extra_studies.json", *saved)
         git("-c", "user.name=OpenMotor bot", "-c", "user.email=physical.intelligence.lab@gmail.com", "commit", "-q", "-m", message)
-        if git("push", "-q", "origin", "HEAD:main", check=False).returncode == 0:
+        if git("push", "-q", "origin", f"HEAD:{branch}", *(["--force"] if branch != "main" else []), check=False).returncode == 0:
             return
         time.sleep(10 * (attempt + 1))
     raise SystemExit("could not push")
@@ -461,11 +474,17 @@ def publish():
     import stdlib
     assert stdlib.sha256(zpath) == rec["zip_sha256"], "the approved ZIP is not the one that was checked"
     # host the ZIP as a release asset
-    up = subprocess.run(["gh", "release", "upload", RELEASE_TAG, str(zpath), "--clobber", "-R", REPO],
+    test = dsid.startswith("Selftest")
+    tag = "intake-test" if test else RELEASE_TAG
+    if test:
+        subprocess.run(["gh", "release", "create", tag, "--prerelease", "--title", "Intake pipeline tests (not data)",
+                        "--notes", "Files from test submissions of the intake pipeline. Not datasets.", "-R", REPO],
+                       capture_output=True, text=True)
+    up = subprocess.run(["gh", "release", "upload", tag, str(zpath), "--clobber", "-R", REPO],
                         capture_output=True, text=True)
     if up.returncode != 0:
         raise SystemExit("release upload failed: " + up.stderr[-500:])
-    rec["url"] = f"https://github.com/{REPO}/releases/download/{RELEASE_TAG}/{dsid}.zip"
+    rec["url"] = f"https://github.com/{REPO}/releases/download/{tag}/{dsid}.zip"
     rec["contributed"] = {"submission": sid, "approved_utc": (sub.get("report") or {}).get("approval", {}).get("at")}
     json.dump(rec, open(rec_path, "w"), indent=1)
     # the listing entry
@@ -490,8 +509,8 @@ def publish():
              "populations": [str(x) for x in listing.get("populations") or []][:5],
              "license": None if m.get("license") == "Other or not sure" else m.get("license"),
              "license_note": "", "contributed": True}
-    commit_files(f"Add {dsid} (contributed by its authors through the site)", dsid, [entry])
-    git("checkout", "-q", "HEAD", "--", "source/extra_studies.json", check=False)
+    commit_files(f"Add {dsid} (contributed by its authors through the site)", dsid, [entry],
+                 branch="intake-test" if test else "main")
     report("published", "Published. Your dataset will be on the site within a few minutes.",
            published={"url": SITE + "#study/" + dsid, "zip_url": rec["url"], "dataset_id": dsid})
     blob("del", f"submissions/{sid}/raw/")
