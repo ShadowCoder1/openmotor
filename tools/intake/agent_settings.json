@@ -1,0 +1,47 @@
+{
+  "env": {
+    "CLAUDE_CODE_SUBPROCESS_ENV_SCRUB": "1",
+    "DISABLE_UPDATES": "1"
+  },
+  "permissions": {
+    "deny": [
+      "WebSearch",
+      "Read(//proc/**)",
+      "Read(~/.claude/**)",
+      "Read(~/.config/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/.gitconfig)",
+      "Read(//home/runner/work/_temp/**)",
+      "Edit(//home/runner/work/openmotor/openmotor/.github/**)",
+      "Edit(//home/runner/work/openmotor/openmotor/tools/intake/**)",
+      "Edit(//home/runner/work/openmotor/openmotor/tools/std/stdlib.py)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": false,
+    "allowUnsandboxedCommands": false,
+    "network": {
+      "allowedDomains": [
+        "osf.io", "api.osf.io", "files.osf.io", "*.osf.io",
+        "zenodo.org", "*.zenodo.org",
+        "figshare.com", "api.figshare.com", "ndownloader.figshare.com", "*.figshare.com", "figshare-*.s3.amazonaws.com",
+        "github.com", "api.github.com", "codeload.github.com", "raw.githubusercontent.com", "objects.githubusercontent.com",
+        "dataverse.harvard.edu", "*.dataverse.org", "datadryad.org", "physionet.org", "openneuro.org", "*.openneuro.org",
+        "data.mendeley.com", "*.mendeley.com", "gin.g-node.org", "doi.gin.g-node.org", "researchdata.edu.au",
+        "api.crossref.org", "doi.org", "api.datacite.org", "www.ebi.ac.uk", "europepmc.org", "www.ncbi.nlm.nih.gov",
+        "eutils.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov", "api.openalex.org", "www.biorxiv.org", "api.biorxiv.org",
+        "psyarxiv.com", "*.box.com", "drive.google.com", "drive.usercontent.google.com", "www.dropbox.com", "dl.dropboxusercontent.com"
+      ]
+    },
+    "credentials": {
+      "envVars": [
+        { "name": "CLAUDE_CODE_OAUTH_TOKEN", "mode": "deny" },
+        { "name": "GITHUB_TOKEN", "mode": "deny" },
+        { "name": "GH_TOKEN", "mode": "deny" },
+        { "name": "ACTIONS_RUNTIME_TOKEN", "mode": "deny" },
+        { "name": "ACTIONS_ID_TOKEN_REQUEST_TOKEN", "mode": "deny" }
+      ]
+    }
+  }
+}

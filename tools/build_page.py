@@ -381,25 +381,22 @@ page = tpl.replace("/*CATALOG*/", data)
 assert "/*CATALOG*/" not in page
 (OUT / "artifact.html").write_text(page, encoding="utf-8")
 head, sep, rest = page.partition('<a class="skip"')
-# Visitor counts (2026-11-10, the user): GoatCounter, no cookies. Only on the public index.html, and only when
-# source/release_config.json names the GoatCounter site code. Counts every page of the hash-routed site
-# (#studies, #study/<id>, ...) and every click on a dataset ZIP link as a "download/<file>" event.
-GC = cfg.get("goatcounter")
+# Visitor and download counts (2026-11-10, the user): our own counter at <api_base>/api/hit (openmotor-api on Vercel;
+# no cookies, no stored IP addresses; a visitor is a daily-salted hash). Only on the public index.html. Counts every page
+# of the hash-routed site (#studies, #study/<id>, ...) and every click on a dataset ZIP link as a download.
+# Downloads are also counted by GitHub itself (release asset download counts, read by <api_base>/api/stats).
+API = cfg.get("api_base")
 counter = ""
-if GC:
-    assert re.fullmatch(r"[a-z0-9-]+", GC), GC
-    counter = ('<script>window.goatcounter = {no_onload: true};</script>\n'
-               f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
-               '<script>\n(function () {\n'
-               '  function ready() { return window.goatcounter && window.goatcounter.count; }\n'
-               '  function hit() { if (ready()) window.goatcounter.count({path: location.pathname + (location.hash || "#home").split("?")[0], title: document.title}); }\n'
-               '  var n = 0; (function wait() { if (ready()) hit(); else if (n++ < 50) setTimeout(wait, 200); })();\n'
-               '  window.addEventListener("hashchange", function () { setTimeout(hit, 0); });\n'
+if API:
+    assert re.fullmatch(r"https://[a-z0-9.-]+", API), API
+    counter = ('<script>\n(function () {\n'
+               f'  var U = "{API}/api/hit", last = "";\n'
+               '  function send(o) { var b = JSON.stringify(o); try { if (!(navigator.sendBeacon && navigator.sendBeacon(U, b))) fetch(U, {method: "POST", body: b, keepalive: true}); } catch (e) {} }\n'
+               '  function view() { var p = location.pathname + (location.hash || "#home").split("?")[0]; if (p === last) return; last = p; send({p: p, e: "view", r: document.referrer}); }\n'
+               '  view(); window.addEventListener("hashchange", function () { setTimeout(view, 0); });\n'
                '  document.addEventListener("click", function (e) {\n'
                '    var a = e.target.closest && e.target.closest(\'a[href*="/releases/download/"]\');\n'
-               '    if (!a || !ready()) return;\n'
-               '    var f = a.getAttribute("href").split("/").pop();\n'
-               '    window.goatcounter.count({path: "download/" + f, title: "Download " + f, event: true});\n'
+               '    if (a) send({p: "download/" + a.getAttribute("href").split("/").pop(), e: "download", r: location.hash});\n'
                '  }, true);\n})();\n</script>\n')
 (OUT / "index.html").write_text('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
                                  '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'

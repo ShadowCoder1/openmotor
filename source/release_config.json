@@ -23,5 +23,6 @@
  "repo": "physicalintelligencelab/openmotor",
  "bundle_tag": "data-2026-11-04",
  "submit_endpoint": "",
- "bundle_bytes": 137559780
+ "bundle_bytes": 137559780,
+ "api_base": "https://openmotor-api.vercel.app"
 }

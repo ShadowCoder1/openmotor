@@ -1,0 +1,7 @@
+{
+  "name": "openmotor-intake",
+  "private": true,
+  "type": "module",
+  "description": "Helpers for the intake workflow (GitHub Actions): Vercel Blob access",
+  "dependencies": { "@vercel/blob": "2.8.2" }
+}

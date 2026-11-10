@@ -1,0 +1,148 @@
+# Dataset submissions from the site's "Add your data" page (API: openmotor-api on Vercel).
+# One run handles one step of one submission: analyze (first look), continue (after the contributor answered questions)
+# or publish (after the contributor approved the preview). The API starts a run at once when it has a dispatch token;
+# the schedule below picks up anything still queued.
+#
+# Secrets: CLAUDE_CODE_OAUTH_TOKEN (AI steps only), INTAKE_SECRET and BLOB_READ_WRITE_TOKEN (worker steps only).
+# Logs are public (this repository is public), so no step prints the contributor's data: the worker prints one status
+# line, and the AI steps write their transcripts to files that are never uploaded.
+name: Intake
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Submission id (or 'next')"
+        required: true
+        default: next
+      step:
+        description: "analyze, continue or publish (informational; the API knows the step)"
+        required: false
+  schedule:
+    - cron: "*/10 * * * *"
+permissions:
+  contents: read
+concurrency:
+  group: intake-${{ github.event.inputs.id || 'next' }}
+  cancel-in-progress: false
+env:
+  OM_API: https://openmotor-api.vercel.app
+  CLAUDE_CODE_VERSION: "2.1.311"
+jobs:
+  work:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write   # publish: release asset + listing commit
+    outputs:
+      published: ${{ steps.pub.outputs.published }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Claim
+        id: claim
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+        run: python3 -I tools/intake/worker.py claim "${{ github.event.inputs.id || 'next' }}"
+      - uses: actions/setup-python@v5
+        if: steps.claim.outputs.id != ''
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        if: steps.claim.outputs.id != ''
+        with:
+          node-version: "22"
+      - name: Install
+        if: steps.claim.outputs.id != ''
+        run: |
+          python -m pip install -q pandas numpy scipy h5py openpyxl xlrd pyreadr pyreadstat statsmodels
+          (cd tools/intake && npm ci --silent)
+          npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+          sudo apt-get install -y -q bubblewrap socat >/dev/null 2>&1 || true
+      - name: Prepare
+        id: prep
+        if: steps.claim.outputs.id != ''
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: python -I tools/intake/worker.py prepare > work/prepare.log 2>&1 || { tail -c 300 work/prepare.log | sed 's/[^[:print:]]//g' | head -3; exit 1; }
+
+      # ---------------- analyze / continue
+      - name: Already in the OpenMotor format?
+        id: fast
+        if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish'
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+        run: python -I tools/intake/worker.py fastpath > work/fastpath.out 2>&1 || echo "fast path not taken"
+      - name: Standardize (AI)
+        if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish' && steps.fast.outputs.fast != 'yes'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+          DS: ${{ steps.prep.outputs.dsid }}
+        run: |
+          timeout 55m claude -p "Read tools/intake/BRIEF.md and follow it for the submission described in work/context.md. The dataset id is ${DS}." \
+            --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/intake/agent_settings.json \
+            --disallowedTools "WebSearch" --max-turns 250 --output-format json > work/agent.json 2> work/agent.err || true
+          python3 -I -c "import json; d=json.load(open('work/agent.json')); print('agent turns', d.get('num_turns'), 'error', d.get('is_error'))" || echo "agent output unreadable"
+          test -f work/result.json && python3 -I -c "import json; print('result:', json.load(open('work/result.json')).get('status'))" || echo "no result.json"
+      - name: Report back
+        if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish'
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: python -I tools/intake/worker.py finish > work/finish.log 2>&1 || { python -I tools/intake/worker.py fail "We could not finish processing your files. Please try again or email physical.intelligence.lab@gmail.com." ; exit 1; }
+
+      # ---------------- publish (after the contributor approved)
+      - name: Final checks
+        id: gates
+        if: steps.claim.outputs.id != '' && steps.claim.outputs.step == 'publish'
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: python -I tools/intake/worker.py gates > work/gates.log 2>&1; cat work/gates.json | python3 -I -c "import json,sys; d=json.load(sys.stdin); print('gates ok' if d['ok'] else 'gates failed: %d problems' % len(d['problems']))"
+      - name: Independent review (AI)
+        if: steps.gates.outputs.gates == 'pass'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+          DS: ${{ steps.prep.outputs.dsid }}
+        run: |
+          timeout 30m claude -p "Read tools/intake/REVIEW.md and review dataset ${DS}." \
+            --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/intake/agent_settings.json \
+            --disallowedTools "WebSearch" "WebFetch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
+          test -f work/review.json && python3 -I -c "import json; print('verdict:', json.load(open('work/review.json')).get('verdict'))" || echo "no review.json"
+      - name: Act on the review
+        id: rv
+        if: steps.gates.outputs.gates == 'pass'
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: python -I tools/intake/worker.py review_result
+      - name: Publish
+        id: pub
+        if: steps.rv.outputs.review == 'pass'
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+          python -I tools/intake/worker.py publish > work/publish.log 2>&1 || { tail -c 400 work/publish.log | sed 's/[^[:print:]]//g'; python -I tools/intake/worker.py fail "Publishing failed after your approval. We will retry; email physical.intelligence.lab@gmail.com if it does not appear within a day."; exit 1; }
+          echo "published=yes" >> "$GITHUB_OUTPUT"
+      - name: Report a crash
+        if: failure() && steps.claim.outputs.id != ''
+        env:
+          INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
+        run: python -I tools/intake/worker.py fail "Processing stopped unexpectedly. Please try again, or email physical.intelligence.lab@gmail.com." || true
+
+  site:
+    needs: work
+    if: needs.work.outputs.published == 'yes'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
