@@ -161,7 +161,8 @@
         var method = dv.getUint16(p + 10, true), csize = dv.getUint32(p + 20, true), usize = dv.getUint32(p + 24, true);
         var nl = dv.getUint16(p + 28, true), xl = dv.getUint16(p + 30, true), cl = dv.getUint16(p + 32, true), off = dv.getUint32(p + 42, true);
         var name = dec.decode(u8.subarray(p + 46, p + 46 + nl));
-        if (/\.(csv|tsv|txt)$/i.test(name) && !/(^|\/)(columns\.csv|README\.txt)$/i.test(name) && (!best || usize > best.usize)) best = { name: name, method: method, csize: csize, usize: usize, off: off };
+        var mainCsv = /^([^\/]+)\/\1\.csv$/.test(name);
+        if (/\.(csv|tsv|txt)$/i.test(name) && !/(^|\/)(columns\.csv|README\.txt)$/i.test(name) && (!best || (mainCsv && !best.main) || (mainCsv === !!best.main && usize > best.usize))) best = { name: name, method: method, csize: csize, usize: usize, off: off, main: mainCsv };
         p += 46 + nl + xl + cl;
       }
       if (!best) return Promise.reject(new Error("no CSV file inside the ZIP"));
@@ -383,7 +384,117 @@
       if (!out.error) { out.subset = f1 >= 0 ? cols[f1] + " = " + s.v1 : ""; out.start -= off; }
       return out;
     }
-    return { readTable: readTable, unzipCsv: unzipCsv, isOpenMotor: isOpenMotor, guess: guess, computeLine: computeLine, fromTable: fromTable };
+
+    /* families made by series_lines() in tools/explore_build.py (walking, saccades, force fields, speech): the same steps.
+       recs: [{s: sequence, p: person, t: order, v: value or NaN, st: "base" | "pert" | "post" | "other", size}];
+       o: {meta: the family entry, base: subtract the baseline mean, baseN: baseline units used (0 = all), scale} */
+    function winMean(y, x, full, post, w, L) {
+      var v = [], need, i;
+      if (w[0] === "minus") return winMean(y, x, full, post, w[1], L) - winMean(y, x, full, post, w[2], L);
+      if (w[0] === "x") { for (i = 0; i < y.length; i++) if (x[i] >= w[1] && x[i] < w[2]) v.push(y[i]); need = w.length > 3 ? w[3] : Math.max(1, Math.floor((w[2] - w[1]) / 2)); }
+      else if (w[0] === "last") { for (i = 0; i < y.length; i++) if (x[i] >= L - w[1]) v.push(y[i]); need = w.length > 2 ? w[2] : Math.max(1, Math.floor(w[1] / 2)); }
+      else if (w[0] === "full_first" || w[0] === "full_last") {
+        if (w[0] === "full_first" && full.length && !full[0]) return NaN;  /* a ramp came first: no "early" at full size */
+        var f = []; for (i = 0; i < y.length; i++) if (full[i] && isFinite(y[i])) f.push(y[i]);
+        v = w[0] === "full_first" ? f.slice(0, w[1]) : f.slice(-w[1]); need = w.length > 2 ? w[2] : Math.max(1, Math.floor(w[1] / 2));
+      } else if (w[0] === "post") { v = post.filter(isFinite).slice(0, w[1]); need = w.length > 2 ? w[2] : Math.max(1, Math.floor(w[1] / 2)); }
+      v = v.filter(isFinite);
+      return v.length >= need ? meanOf(v) : NaN;
+    }
+    function computeSeries(recs, o) {
+      var M = o.meta, pre = M.pre || 0, maxX = M.maxX || 400, subs = [], by = {}, per = [];
+      recs.forEach(function (r) { if (!by[r.s]) { by[r.s] = []; subs.push(r.s); } by[r.s].push(r); });
+      if (!subs.length) return { error: "No rows to use." };
+      subs.forEach(function (sq) {
+        var rs = by[sq].sort(function (a, b) { return a.t - b.t; }), on = -1, i;
+        for (i = 0; i < rs.length; i++) if (rs[i].st === "pert") { on = i; break; }
+        if (on < 0) return;
+        var end = on; while (end + 1 < rs.length && (rs[end + 1].st === "pert" || rs[end + 1].st === "probe")) end++;
+        var base = rs.slice(0, on).filter(function (r) { return r.st === "base"; }).map(function (r) { return r.v; });
+        var bw = o.baseN ? base.slice(-o.baseN) : base, b0 = o.ref === "first" ? rs[on].v : o.base ? meanOf(bw) : 0;
+        if (!isFinite(b0)) return;
+        var f = function (v) { return isFinite(v) ? (v - b0) * o.scale : NaN; };
+        var blk = rs.slice(on, end + 1), size = 0;
+        blk.forEach(function (r) { if (isFinite(r.size) && Math.abs(r.size) > size) size = Math.abs(r.size); });
+        var k = end + 1; while (k < rs.length && rs[k].st !== "post" && rs[k].st !== "pert" && rs[k].st !== "base" && k <= end + 3) k++;
+        var q = k; while (q < rs.length && rs[q].st === "post") q++;
+        per.push({ p: rs[0].p, on: rs[on].t, y: blk.map(function (r) { return r.st === "pert" ? f(r.v) : NaN; }), full: blk.map(function (r) { return Math.abs(Math.abs(r.size) - size) <= 0.006; }),
+                   post: rs.slice(k, q).map(function (r) { return f(r.v); }), base: pre ? bw.map(f).slice(-pre) : [] });
+      });
+      if (!per.length) return { error: "No participant has perturbed " + (M.xunit || "trial") + "s" + (o.base ? " after baseline " + (M.xunit || "trial") + "s" : "") + ". Check the perturbation choices." };
+      var lens = per.map(function (r) { return r.y.length; }), L = median(lens), end = Math.min(L, maxX + 1), y = [], x, i;
+      var bmean = [];
+      for (x = 0; x < pre; x++) bmean.push(meanOf(per.map(function (r) { var j = x - (pre - r.base.length); return j >= 0 ? r.base[j] : NaN; })));
+      var first = 0; while (first < pre && !isFinite(bmean[first])) first++;
+      for (x = first; x < pre; x++) y.push(isFinite(bmean[x]) ? +bmean[x].toFixed(M.yround) : null);
+      for (x = 0; x < end; x++) { var mv = meanOf(per.map(function (r) { return x < r.y.length ? r.y[x] : NaN; })); y.push(isFinite(mv) ? +mv.toFixed(M.yround) : null); }
+      var m = {};
+      M.measures.forEach(function (ms) {
+        var acc = {}, order = [];
+        per.forEach(function (r) {
+          var xs = r.y.map(function (_, j) { return j; }), v = winMean(r.y, xs, r.full, r.post, ms.w, r.y.length);
+          if (!isFinite(v)) return;
+          if (!acc[r.p]) { acc[r.p] = []; order.push(r.p); } acc[r.p].push(v);
+        });
+        var v = order.map(function (p) { return meanOf(acc[p]); }).filter(isFinite);  /* as stat() above, not rounded */
+        if (v.length < P.minPeople) return;
+        var mu = meanOf(v), ss = 0; v.forEach(function (q) { ss += (q - mu) * (q - mu); });
+        m[ms.key] = [mu, Math.sqrt(ss / (v.length - 1)) / Math.sqrt(v.length), v.length];
+      });
+      var people = {}, all = {};
+      per.forEach(function (r) { people[r.p] = 1; });
+      recs.forEach(function (r) { all[r.p] = 1; });
+      var n = Object.keys(people).length, why = null, unit = M.xunit || "trial", need = (M.measures.filter(function (q) { return q.key === "late"; })[0] || M.measures[0]);
+      if (L < (M.minBlock || 1)) why = "the perturbation block has " + L + " " + unit + "s (fewer than " + M.minBlock + ")";
+      else if (n < P.minPeople) why = "fewer than " + P.minPeople + " participants";
+      else if (!m[need.key]) why = "fewer than " + P.minPeople + " participants with enough usable " + unit + "s for the " + need.label.toLowerCase();
+      var nfb = median(per.map(function (r) { return r.y.filter(isFinite).length; }));
+      return { family: M.id, size: o.size, x0: -(pre - first), y: y, m: m, n: n, nall: Object.keys(all).length, blk: L, nfb: nfb, start: per[0].on, why: why, series: true };
+    }
+    function guessSeries(cols, meta) {
+      var low = cols.map(function (c) { return c.toLowerCase().replace(/[^a-z0-9]/g, ""); });
+      function find(names) { for (var i = 0; i < names.length; i++) { var j = low.indexOf(names[i].replace(/[^a-z0-9]/g, "")); if (j >= 0) return String(j); } return ""; }
+      var g = guess(cols);
+      return { subj: g.subj, trial: find(["trial", "stride", "stridenumber", "trialnumber", "trialnum", "utterance", "order", "n"]) || g.trial,
+               val: find((meta.cmp && meta.cmp.guess) || []) || "2", pert: find(["pert_value", "perturbation", "pert", "ratio", "step", "field", "shift", "size"]),
+               f1: "", size: "", a: "", b: "", dir: "back", shift: "" };
+    }
+    /* the visitor's table and choices -> computeSeries */
+    function fromSeries(c, s, meta) {
+      var C = meta.cmp || {}, cols = c.cols, recs = [];
+      var si = +s.subj, ti = +s.trial, vi = +s.val, pi = s.pert === "" || s.pert == null ? -1 : +s.pert, f1 = s.f1 === "" || s.f1 == null ? -1 : +s.f1;
+      var ex = cols.indexOf("excluded_by_authors"), sx = cols.indexOf("subject_excluded_by_authors"), pc = cols.indexOf("person");
+      var size = numv(s.size), a = numv(s.a), b = numv(s.b), scale = C.scale || 1;
+      if (pi < 0 && !(isFinite(a) && isFinite(b) && b >= a)) return { error: "Give the first and last perturbed " + (meta.xunit || "trial") + ", or choose a perturbation column." };
+      if (C.ask === "dir") scale *= s.dir === "back" ? -1 : 1;
+      if (C.ask === "shift") { var sh = numv(s.shift); if (!isFinite(sh) || sh === 0) return { error: "Give the shift, signed, in the unit of the formant column." }; scale = -100 / sh; }
+      var dropSub = {};
+      if (sx >= 0) c.rows.forEach(function (r) { if (istrue(r[sx])) dropSub[r[si]] = 1; });
+      var rows = c.rows.filter(function (r) { return !dropSub[r[si]] && (f1 < 0 || r[f1] === s.v1) && isFinite(numv(r[ti])); });
+      var by = {};
+      rows.forEach(function (r) { (by[r[si]] = by[r[si]] || []).push(r); });
+      Object.keys(by).forEach(function (sq) {
+        var rs = by[sq].sort(function (p, q) { return numv(p[ti]) - numv(q[ti]); });
+        var pv = rs.map(function (r) { var t = numv(r[ti]), q = pi >= 0 ? numv(r[pi]) : (t >= a && t <= b ? (isFinite(size) ? size : 1) : 0); return isFinite(q) ? q : 0; });
+        /* the first block: from the first perturbed row to the last one before a run of more than 15 unperturbed rows
+           (shorter runs inside it, such as catch or no-feedback trials, are probes without a value) */
+        var on = pv.findIndex(function (q) { return q !== 0; }), end = on;
+        if (on >= 0) for (var i = on + 1; i < pv.length; i++) { if (pv[i] !== 0) { if (i - end > 16) break; end = i; } }
+        var again = false;  /* a later perturbation: the rows after it are neither baseline nor aftereffect */
+        rs.forEach(function (r, i) {
+          if (on >= 0 && i > end && pv[i] !== 0) again = true;
+          var st = on < 0 || i < on ? "base" : i <= end ? (pv[i] !== 0 ? "pert" : "probe") : again ? "other" : "post";
+          var v = numv(r[vi]);
+          if (ex >= 0 && istrue(r[ex])) v = NaN;
+          recs.push({ s: sq, p: pc >= 0 && r[pc] !== "" ? r[pc] : sq, t: numv(r[ti]), v: v, st: st, size: pv[i] });
+        });
+      });
+      var out = computeSeries(recs, { meta: meta, base: !!C.base, baseN: C.baseN || 0, ref: C.ref, scale: scale, size: isFinite(size) ? Math.abs(size) : null });
+      if (!out.error) { if (out.size == null) out.size = NaN; out.subset = f1 >= 0 ? cols[f1] + " = " + s.v1 : ""; }
+      return out;
+    }
+    return { readTable: readTable, unzipCsv: unzipCsv, isOpenMotor: isOpenMotor, guess: guess, computeLine: computeLine, fromTable: fromTable,
+             computeSeries: computeSeries, guessSeries: guessSeries, fromSeries: fromSeries };
   })();
   /* COMPARE-END */
 
@@ -422,6 +533,8 @@
   var ICON_DL = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>';
   var ICON_UP = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg>';
 
+  var YD = 1;  /* decimals of y values in the family on screen (dec in its entry) */
+  function td(step) { return step >= 1 ? 0 : Math.max(1, Math.ceil(-Math.log10(step) - 1e-9)); }  /* tick decimals */
   var S = { fam: "", term: "", size: "all", unit: "", measure: "late", win: 0, q: "", sort: "count" };
   var IDX = null, FAMS = {}, PAGE = null, USER = null, CMPS = null, CUR = null, active = false, renderToken = 0;
 
@@ -528,21 +641,26 @@
   /* ---------- units and sizes ---------- */
   function unitOf(F) { return F.meta.pct && S.unit !== "deg" ? "pct" : "y"; }
   function scale(l, v) { return unitOf(CUR.F) === "pct" ? v / l.size * 100 : v; }
+  function dec(F) { return F.meta.dec == null ? 1 : F.meta.dec; }  /* decimals of y values */
+  function xu(F) { return F.meta.xunit || "trial"; }  /* what x counts: trial, stride */
+  function Xu(F) { var w = xu(F); return w.charAt(0).toUpperCase() + w.slice(1); }
+  function gapOf(F) { return F.meta.gap || GAP; }
+  function unitWords(F) { return F.meta.unit === "deg" ? "degrees" : F.meta.unitName || F.meta.unit; }
   function suffix(F, kind) {
     if (kind === "trials") return "";
     if (unitOf(F) === "pct") return "%";
-    return F.meta.unit === "deg" ? "°" : " " + F.meta.unit;
+    return F.meta.unit === "deg" ? "°" : F.meta.unit === "%" ? "%" : F.meta.unit ? " " + F.meta.unit : "";
   }
   function yLabel(F) {
-    return F.meta.y + (unitOf(F) === "pct" ? " (% of " + F.meta.size.toLowerCase() + ")" : F.meta.unit === "deg" ? " (degrees)" : " (" + F.meta.unit + ")");
+    return F.meta.y + (unitOf(F) === "pct" ? " (% of " + F.meta.size.toLowerCase() + ")" : F.meta.unit === "deg" ? " (degrees)" : F.meta.unit ? " (" + unitWords(F) + ")" : "");
   }
-  function fv(F, v, kind, d) { return num(v, d == null ? (kind === "trials" ? 0 : 1) : d) + suffix(F, kind); }
-  function sizeTxt(F, v) { return num(v, v % 1 ? 1 : 0) + (F.meta.sizeUnit === "deg" ? "°" : " " + F.meta.sizeUnit); }
+  function fv(F, v, kind, d) { return num(v, d == null ? (kind === "trials" ? 0 : dec(F)) : d) + suffix(F, kind); }
+  function sizeTxt(F, v) { if (v == null) return "-"; var u = F.meta.sizeUnit; return num(v, v % 1 ? 1 : 0) + (u === "deg" ? "°" : u === "%" || u.charAt(0) === ":" ? u : " " + u); }
   function sizeOptions(F) {
     var opts = [["all", "All sizes", F.pooled.length]], cnt = {};
     (F.meta.sizeBins || []).forEach(function (b, i) {
       var n = F.pooled.filter(function (l) { return l.size >= b[0] && l.size < b[1]; }).length;
-      var lab = b[0] === 0 ? "Under " + sizeTxt(F, b[1]) : b[1] >= 180 ? sizeTxt(F, b[0]) + " or more" : sizeTxt(F, b[0]) + " to under " + sizeTxt(F, b[1]);
+      var lab = b[0] === 0 ? "Under " + sizeTxt(F, b[1]) : i === F.meta.sizeBins.length - 1 ? sizeTxt(F, b[0]) + " or more" : sizeTxt(F, b[0]) + " to under " + sizeTxt(F, b[1]);
       if (n) opts.push(["r" + i, lab, n]);
     });
     F.pooled.forEach(function (l) { cnt[l.size] = (cnt[l.size] || 0) + 1; });
@@ -596,6 +714,7 @@
     var A = (T ? T.lines : F.lines).filter(function (l) { return l.ok && inSize(l); });
     var B = T ? F.pooled.filter(function (l) { return inSize(l) && !T.ids[l.id]; }) : null;
     CUR = { F: F, T: T, A: A, B: B };
+    YD = dec(F);
     document.title = (T ? T.label + " | " : "") + "Explore " + F.meta.label.toLowerCase() + " | OpenMotor";
     renderSide(F);
     var main = $("#ex-main");
@@ -670,22 +789,22 @@
   function filtersHtml(F) {
     var o = sizeOptions(F);
     var sel = function (v) { return v === S.size ? " selected" : ""; };
-    var h = "<div class=\"ex-filters\" role=\"group\" aria-label=\"Filters for everything below\">" +
-      "<label class=\"st-filter\">" + esc(F.meta.size) + " size <select id=\"ex-size\">" +
+    var h = "<div class=\"ex-filters\" role=\"group\" aria-label=\"Filters for everything below\">" + (F.meta.noSize ? "" :
+      "<label class=\"st-filter\">" + esc(F.meta.sizeLabel || F.meta.size + " size") + " <select id=\"ex-size\">" +
       o.ranges.map(function (r) { return "<option value=\"" + r[0] + "\"" + sel(r[0]) + ">" + esc(r[1]) + " (" + r[2] + ")</option>"; }).join("") +
-      "<optgroup label=\"One size\">" + o.exact.map(function (r) { return "<option value=\"" + r[0] + "\"" + sel(r[0]) + ">" + esc(r[1]) + " (" + r[2] + ")</option>"; }).join("") + "</optgroup></select></label>";
-    if (F.meta.pct) h += "<label class=\"st-filter\">Units <select id=\"ex-unit\"><option value=\"pct\"" + (unitOf(F) === "pct" ? " selected" : "") + ">% of " + esc(F.meta.size.toLowerCase()) + "</option><option value=\"deg\"" + (unitOf(F) === "pct" ? "" : " selected") + ">" + (F.meta.unit === "deg" ? "degrees" : esc(F.meta.unit)) + "</option></select></label>";
-    var maxX = (IDX.rules && IDX.rules.max_x) || 400;
-    h += "<label class=\"st-filter\">Trials <select id=\"ex-win\">" + [F.meta.window[1], maxX].filter(function (v, i, a) { return a.indexOf(v) === i; }).map(function (v) {
+      "<optgroup label=\"One size\">" + o.exact.map(function (r) { return "<option value=\"" + r[0] + "\"" + sel(r[0]) + ">" + esc(r[1]) + " (" + r[2] + ")</option>"; }).join("") + "</optgroup></select></label>");
+    if (F.meta.pct) h += "<label class=\"st-filter\">Units <select id=\"ex-unit\"><option value=\"pct\"" + (unitOf(F) === "pct" ? " selected" : "") + ">% of " + esc(F.meta.size.toLowerCase()) + "</option><option value=\"deg\"" + (unitOf(F) === "pct" ? "" : " selected") + ">" + esc(unitWords(F)) + "</option></select></label>";
+    var maxX = F.meta.maxX || (IDX.rules && IDX.rules.max_x) || 400;
+    h += "<label class=\"st-filter\">" + esc(F.meta.xname || "Trials") + " <select id=\"ex-win\">" + [F.meta.window[1], maxX].filter(function (v, i, a) { return a.indexOf(v) === i; }).map(function (v) {
       return "<option value=\"" + v + "\"" + (v === S.win ? " selected" : "") + ">" + F.meta.window[0] + " to " + v + "</option>";
     }).join("") + "</select></label></div>";
     return h;
   }
 
   function curveHtml(F, T) {
-    return "<figure class=\"ex-fig\" id=\"ex-curve-fig\"><figcaption class=\"ex-figh\"><b>Learning curves</b><span>" + esc(F.meta.x) + "; trials before 0 are baseline</span></figcaption>" +
+    return "<figure class=\"ex-fig\" id=\"ex-curve-fig\"><figcaption class=\"ex-figh\"><b>Learning curves</b><span>" + esc(F.meta.x) + "; " + xu(F) + "s before 0 are baseline</span></figcaption>" +
       "<div class=\"ex-legend\" id=\"ex-legend\"></div><div class=\"ex-chart\" id=\"ex-curve\"></div>" +
-      "<p class=\"ex-note\">Thin lines: one group each. Thick line: the mean of the lines at each trial, every line weighted equally, drawn where at least " + MINK + " lines from 2 or more studies contribute; the band is its 95% CI with lines from the same study treated as one cluster, drawn where " + MINM_BAND + " or more studies contribute. The strip under the curve counts the lines in the mean, which falls as shorter blocks end. Gaps in thin lines are no-feedback trials; for the mean, gaps of up to " + GAP + " trials are bridged by linear interpolation.</p>" +
+      "<p class=\"ex-note\">Thin lines: one group each. Thick line: the mean of the lines at each " + xu(F) + ", every line weighted equally, drawn where at least " + MINK + " lines from 2 or more studies contribute; the band is its 95% CI with lines from the same study treated as one cluster, drawn where " + MINM_BAND + " or more studies contribute. The strip under the curve counts the lines in the mean, which falls as shorter blocks end. Gaps in thin lines are " + (F.meta.xunit ? xu(F) + "s without a value" : "no-feedback trials") + "; for the mean, gaps of up to " + gapOf(F) + " " + xu(F) + "s are bridged by linear interpolation.</p>" +
       "<details class=\"ex-details\"><summary>Curve values as a table</summary><div class=\"table-wrap\" id=\"ex-curve-table\"></div></details></figure>";
   }
 
@@ -705,9 +824,9 @@
   function metaCell(F, r, kind, label) {
     var dl = " data-label=\"" + esc(label) + "\"";
     if (!r) return "<td class=\"ex-mc\"" + dl + "><span class=\"muted\">Fewer than 2 lines</span></td>";
-    return "<td class=\"ex-mc\"" + dl + "><b>" + fv(F, r.est, kind, 1) + "</b> <span class=\"ex-ci\">[" + num(r.lo, 1) + ", " + num(r.hi, 1) + "]</span>" +
-      "<small>" + (r.loR != null ? "clustered by study [" + num(r.loR, 1) + ", " + num(r.hiR, 1) + "]; " : "") +
-      "k = " + r.k + " lines, " + plural(r.m, "study", "studies") + ", N = " + fmtInt(r.N) + "; τ² = " + num(r.tau2, r.tau2 < 10 ? 2 : 1) + ", I² = " + num(r.I2, 0) + "%</small></td>";
+    return "<td class=\"ex-mc\"" + dl + "><b>" + fv(F, r.est, kind, YD) + "</b> <span class=\"ex-ci\">[" + num(r.lo, YD) + ", " + num(r.hi, YD) + "]</span>" +
+      "<small>" + (r.loR != null ? "clustered by study [" + num(r.loR, YD) + ", " + num(r.hiR, YD) + "]; " : "") +
+      "k = " + r.k + " lines, " + plural(r.m, "study", "studies") + ", N = " + fmtInt(r.N) + "; τ² = " + num(r.tau2, YD > 1 ? 2 * YD : r.tau2 < 10 ? 2 : 1) + ", I² = " + num(r.I2, 0) + "%</small></td>";
   }
   function metaHtml(F, T) {
     var rows = F.meta.measures.map(function (ms) {
@@ -751,24 +870,24 @@
       var dl = files.map(function (f) {
         return f.url ? "<a class=\"ex-zip\" href=\"" + esc(f.url) + "\">" + ICON_DL + "ZIP" + (files.length > 1 ? " " + esc(f.name.replace(sid, "").replace(/^_/, "") || f.name) : "") + " <small>" + mb(f.bytes) + "</small></a>" : "";
       }).join(" ");
-      var head = "<tr class=\"ex-srow\"><th colspan=\"" + (M.length + 3) + "\" scope=\"rowgroup\"><a href=\"#study/" + encodeURIComponent(sid) + "\">" + esc(studyName(sid)) + "</a>" +
+      var head = "<tr class=\"ex-srow\"><th colspan=\"" + (M.length + (F.meta.noSize ? 2 : 3)) + "\" scope=\"rowgroup\"><a href=\"#study/" + encodeURIComponent(sid) + "\">" + esc(studyName(sid)) + "</a>" +
         (T ? "<span class=\"ex-how\">" + esc(T.how[sid] || "") + "</span>" : "") + "<span class=\"ex-dls\">" + dl + "</span></th></tr>";
       return "<tbody>" + head + by[sid].map(function (l) {
         var used = l.ok && inSize(l);
         var why = !l.ok ? "Not pooled: " + l.why : !inSize(l) ? "Outside the size filter" : "";
         return "<tr" + (used ? "" : " class=\"ex-off\"") + "><td>" + esc(lineName(l, true)) + (l.nall && l.ok ? "<small>" + l.n + " of the group's " + l.nall + " people had this schedule; the others are left out</small>" : "") + (why ? "<small>" + esc(why) + "</small>" : "") + "</td>" +
-          "<td class=\"num\" data-label=\"n\">" + (l.ok ? l.n : l.nall || l.n) + "</td><td class=\"num\" data-label=\"" + esc(F.meta.size) + "\">" + sizeTxt(F, l.size) + "</td>" + M.map(function (ms) {
+          "<td class=\"num\" data-label=\"n\">" + (l.ok ? l.n : l.nall || l.n) + "</td>" + (F.meta.noSize ? "" : "<td class=\"num\" data-label=\"" + esc(F.meta.size) + "\">" + sizeTxt(F, l.size) + "</td>") + M.map(function (ms) {
             var m = l.m[ms.key];
             if (!m) return "<td class=\"num ex-nil\" data-label=\"" + esc(ms.label) + "\">-</td>";
             var f = ms.unit === "trials" ? 1 : unitOf(F) === "pct" ? 100 / l.size : 1;
-            return "<td class=\"num\" data-label=\"" + esc(ms.label) + "\">" + num(m[0] * f, ms.unit === "trials" ? 0 : 1) + (m[1] != null ? " <span class=\"ex-se\">± " + num(m[1] * f, 1) + "</span>" : "") + "</td>";
+            return "<td class=\"num\" data-label=\"" + esc(ms.label) + "\">" + num(m[0] * f, ms.unit === "trials" ? 0 : YD) + (m[1] != null ? " <span class=\"ex-se\">± " + num(m[1] * f, YD) + "</span>" : "") + "</td>";
           }).join("") + "</tr>";
       }).join("") + "</tbody>";
     }).join("");
-    var units = unitOf(F) === "pct" ? "% of the " + F.meta.size.toLowerCase() : F.meta.unit === "deg" ? "degrees" : F.meta.unit;
-    return "<h3 class=\"ex-h3\">Studies</h3><p class=\"ex-note ex-note-top\">" + plural(order.length, "study", "studies") + ", every line with its mean ± SE (in " + esc(units) + "; trials to half in trials). Grey rows are not in the pooled results." +
+    var units = unitOf(F) === "pct" ? "% of the " + F.meta.size.toLowerCase() : unitWords(F);
+    return "<h3 class=\"ex-h3\">Studies</h3><p class=\"ex-note ex-note-top\">" + plural(order.length, "study", "studies") + ", every line with its mean ± SE (in " + esc(units) + (M.some(function (ms) { return ms.unit === "trials"; }) ? "; trials to half in trials" : "") + "). Grey rows are not in the pooled results." +
       (T ? " Under each study: how it was linked to this term." : "") + "</p>" +
-      "<div class=\"table-card\"><div class=\"table-wrap\"><table class=\"data ex-studies\"><thead><tr><th scope=\"col\">Line</th><th scope=\"col\" class=\"num\">n</th><th scope=\"col\" class=\"num\">" + esc(F.meta.size) + "</th>" +
+      "<div class=\"table-card\"><div class=\"table-wrap\"><table class=\"data ex-studies\"><thead><tr><th scope=\"col\">Line</th><th scope=\"col\" class=\"num\">n</th>" + (F.meta.noSize ? "" : "<th scope=\"col\" class=\"num\">" + esc(F.meta.size) + "</th>") +
       M.map(function (ms) { return "<th scope=\"col\" class=\"num\">" + esc(ms.label) + "</th>"; }).join("") + "</tr></thead>" + body + "</table></div></div>";
   }
 
@@ -784,7 +903,7 @@
     var cmd = "curl -L --remote-name-all " + files.map(function (f) { return f.url; }).join(" ");
     return "<h3 class=\"ex-h3\">Download these data</h3><p class=\"ex-dltext\">The " + plural(files.length, "standardized dataset") + " of these studies (" + mb(bytes) + " in all), one ZIP each with the trial table, a README and columns.csv.</p>" +
       "<ul class=\"ex-dlist\"><li><button type=\"button\" class=\"linkbutton\" data-get=\"urls\">" + ICON_DL + "ZIP links as a text file</button> <span class=\"muted\">then <code>wget -i " + esc(baseName(F, T)) + "-zips.txt</code></span></li>" +
-      "<li><button type=\"button\" class=\"linkbutton\" data-get=\"csv\">" + ICON_DL + "Line summaries as CSV</button> <span class=\"muted\">every line above with its measures, in degrees" + (F.meta.pct ? " and in % of the " + esc(F.meta.size.toLowerCase()) : "") + "</span></li></ul>" +
+      "<li><button type=\"button\" class=\"linkbutton\" data-get=\"csv\">" + ICON_DL + "Line summaries as CSV</button> <span class=\"muted\">every line above with its measures, in " + esc(unitWords(F)) + (F.meta.pct ? " and in % of the " + esc(F.meta.size.toLowerCase()) : "") + "</span></li></ul>" +
       "<div class=\"ex-cmdbox\"><pre class=\"ex-cmd\" id=\"ex-cmd\" tabindex=\"0\" aria-label=\"curl command\">" + esc(cmd) + "</pre><button type=\"button\" class=\"btn btn-outline ex-copy\" data-copy=\"ex-cmd\">Copy command</button></div>" +
       "<p class=\"ex-note\">GitHub serves these files without the headers a web page needs to read them, so this page cannot pack them into one ZIP for you; the list and the command fetch them all.</p>";
   }
@@ -795,13 +914,16 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
   }
   function csvCell(v) { v = v == null ? "" : String(v); return /[",\n]/.test(v) ? "\"" + v.replace(/"/g, "\"\"") + "\"" : v; }
+  /* CSV column names: deg stays deg (as before); % is pct, a ratio unit like ":1" is ratio, no unit is value */
+  function slugU(u) { return u === "%" ? "pct" : u.charAt(0) === ":" ? "ratio" : u ? u.replace(/[^A-Za-z0-9]+/g, "_") : "value"; }
+  function pctCol(F) { return F.meta.unit === "%" ? "_pct_of_" + slugU(F.meta.size.toLowerCase()) : "_pct"; }
   function linesCsv(F, T) {
     var M = F.meta.measures, inSize = sizeTest(F);
-    var head = ["family", "term", "study", "dataset", "experiment", "line", "n", "size_" + F.meta.sizeUnit, "pooled", "in_size_filter", "reason", "linked_by"];
+    var head = ["family", "term", "study", "dataset", "experiment", "line", "n", "size_" + slugU(F.meta.sizeUnit), "pooled", "in_size_filter", "reason", "linked_by"];
     M.forEach(function (ms) {
-      var u = ms.unit === "trials" ? "trials" : F.meta.unit;
+      var u = ms.unit === "trials" ? "trials" : slugU(F.meta.unit);
       head.push(ms.key + "_" + u, ms.key + "_se_" + u, ms.key + "_n");
-      if (F.meta.pct && ms.unit !== "trials") head.push(ms.key + "_pct", ms.key + "_se_pct");
+      if (F.meta.pct && ms.unit !== "trials") head.push(ms.key + pctCol(F), ms.key + "_se" + pctCol(F));
     });
     head.push("zip_url");
     var rows = (T ? T.lines : F.lines).map(function (l) {
@@ -821,16 +943,25 @@
   /* ---------- compare your data (markup; the computation is CMP above) ---------- */
   function compareHtml(F) {
     return "<h3 class=\"ex-h3\" id=\"ex-cmp-h\">Compare your data</h3><div class=\"ex-cmp\">" +
-      "<p class=\"ex-cmptext\">Add a CSV file with one row per trial, or a standardized OpenMotor ZIP. Your group's mean curve is drawn on the learning curves and its early, late and aftereffect values are placed among this term's lines. <b>The file is read by this page in your browser; nothing is uploaded.</b></p>" +
+      "<p class=\"ex-cmptext\">Add a CSV file with one row per " + xu(F) + ", or a standardized OpenMotor ZIP. Your group's mean curve is drawn on the learning curves and its early, late and aftereffect values are placed among this term's lines. <b>The file is read by this page in your browser; nothing is uploaded.</b></p>" +
       "<div class=\"ex-drop\" id=\"ex-drop\" tabindex=\"0\" role=\"button\" aria-describedby=\"ex-drop-note\">" + ICON_UP + "<b>Drop a CSV or ZIP file here</b><span>or click to choose one</span></div>" +
       "<input type=\"file\" id=\"ex-file\" accept=\".csv,.txt,.tsv,.zip,text/csv\" hidden>" +
-      "<p class=\"ex-note\" id=\"ex-drop-note\">OpenMotor's columns (subject, trial, hand_angle, rotation, clamp, fb_mode, fb_visible, ...) are recognised. Any other file needs a participant, a trial number and a hand angle column; you choose them, and the perturbation, below.</p>" +
+      "<p class=\"ex-note\" id=\"ex-drop-note\">" + (F.meta.cmp ? "The file needs a participant, a " + xu(F) + " number and a " + esc(F.meta.cmp.what) + " column; you choose them, and the perturbed " + xu(F) + "s, below." :
+      "OpenMotor's columns (subject, trial, hand_angle, rotation, clamp, fb_mode, fb_visible, ...) are recognised. Any other file needs a participant, a trial number and a hand angle column; you choose them, and the perturbation, below.") + "</p>" +
       "<div id=\"ex-map\"></div><div id=\"ex-user\"></div></div>";
   }
 
   function methodsHtml(F) {
     var R = IDX.rules || {};
     var early = R.early ? R.early[0] + " to " + R.early[1] : "2 to 11";
+    if (F.meta.xunit) {  /* the series families: their own first paragraphs, the shared ones from Meta-analysis on */
+      var u = xu(F), full = methodsHtml({ meta: {} });
+      return "<h3 class=\"ex-h3\" id=\"ex-methods\">How the numbers are computed</h3><div class=\"ex-methods\">" +
+        "<p><b>Lines.</b> Each line is one group of participants from one experiment who " + esc(F.meta.lineWord || "got the same perturbation") + ", and " + u + " 0 is the first " + esc(F.meta.onsetWord || "perturbed " + u) + ". " + esc(F.meta.methods || "") + "</p>" +
+        "<p><b>Which lines are pooled.</b> A line is pooled when its " + esc(F.meta.blockWord || "first perturbation block") + " has at least " + F.meta.minBlock + " " + u + "s and at least " + R.min_people + " participants. Designs that do not fit, as listed above, are shown but not pooled; the study table says why.</p>" +
+        "<p><b>Pooled curve.</b> At each " + u + " we average the lines, each line counting once, with a 95% CI that treats lines from the same study as one cluster. The measures and their windows are listed in the table above; error bars are SEs across participants.</p>" +
+        full.slice(full.indexOf("<p><b>Meta-analysis.</b>"));
+    }
     return "<h3 class=\"ex-h3\" id=\"ex-methods\">How the numbers are computed</h3><div class=\"ex-methods\">" +
       "<p><b>Lines.</b> Each line is one group of participants from one experiment who got the same perturbation schedule. Trials and participants the authors excluded are left out. Hand angles are flipped for each participant so that compensating for the first perturbation is positive, and trial 0 is the first perturbed trial.</p>" +
       "<p><b>Which lines are pooled.</b> A line is pooled when its first perturbation block has at least " + R.min_fb + " feedback trials, it has at least " + R.min_people + " participants, and nobody was told where to aim. Gradual and trial-by-trial schedules are listed but not pooled; the study table says why.</p>" +
@@ -953,7 +1084,7 @@
       for (var i = a; i < b;) {
         if (y[i] != null) { i++; continue; }
         var j = i; while (j < b && y[j] == null) j++;
-        if (i > a && j < b && j - i <= GAP) for (var k = i; k < j; k++) y[k] = y[i - 1] + (y[j] - y[i - 1]) * (k - i + 1) / (j - i + 1);
+        if (i > a && j < b && j - i <= gapOf(CUR.F)) for (var k = i; k < j; k++) y[k] = y[i - 1] + (y[j] - y[i - 1]) * (k - i + 1) / (j - i + 1);
         i = j;
       }
     }
@@ -1007,7 +1138,7 @@
     yt.ticks.forEach(function (t) {
       if (t < y0 || t > y1) return;
       s += "<line class=\"ex-grid" + (t === 0 ? " ex-zero" : "") + "\" x1=\"" + ml + "\" x2=\"" + (W - mr) + "\" y1=\"" + py(t).toFixed(1) + "\" y2=\"" + py(t).toFixed(1) + "\"/>";
-      s += "<text class=\"ex-tick\" x=\"" + (ml - 8) + "\" y=\"" + (py(t) + 4).toFixed(1) + "\" text-anchor=\"end\">" + num(t, yt.step < 1 ? 1 : 0) + "</text>";
+      s += "<text class=\"ex-tick\" x=\"" + (ml - 8) + "\" y=\"" + (py(t) + 4).toFixed(1) + "\" text-anchor=\"end\">" + num(t, td(yt.step)) + "</text>";
     });
     if (unitOf(F) === "pct" && 100 <= y1) s += "<text class=\"ex-ref\" x=\"" + (W - mr - 4) + "\" y=\"" + (py(100) - 5).toFixed(1) + "\" text-anchor=\"end\">full compensation</text>";
     var xt = niceTicks(x0, x1, phone ? 5 : 9).ticks;
@@ -1088,9 +1219,9 @@
       function row(cls, val, label) { return "<div class=\"ex-tr\"><i class=\"ex-key " + cls + "\"></i><b>" + val + "</b> " + label + "</div>"; }
       function pr(r, label) {
         if (!drawn(r)) return row(label[0], "-", esc(label[1]) + " (" + (r ? plural(r.k, "line") + " from " + plural(r.m || 0, "study", "studies") : "no lines") + ")");
-        return row(label[0], num(r.est, 1) + su, (r.lo != null && r.m >= MINM_BAND ? "[" + num(r.lo, 1) + ", " + num(r.hi, 1) + "] " : "") + esc(label[1]) + ", " + r.k + " lines from " + plural(r.m, "study", "studies"));
+        return row(label[0], num(r.est, YD) + su, (r.lo != null && r.m >= MINM_BAND ? "[" + num(r.lo, YD) + ", " + num(r.hi, YD) + "] " : "") + esc(label[1]) + ", " + r.k + " lines from " + plural(r.m, "study", "studies"));
       }
-      var html = "<div class=\"ex-tt\">Trial " + x + (x < 0 ? " (baseline)" : x === 0 ? " (onset)" : "") + "</div>" + pr(ra, ["ex-k-t", T ? "this term" : "all lines"]);
+      var html = "<div class=\"ex-tt\">" + Xu(F) + " " + x + (x < 0 ? " (baseline)" : x === 0 ? " (onset)" : "") + "</div>" + pr(ra, ["ex-k-t", T ? "this term" : "all lines"]);
       if (pB) html += pr(rb, ["ex-k-o", "other lines"]);
       var u = userAt(x); if (u != null) html += row("ex-k-u", num(u, 1) + su, "your data");
       if (near) html += "<div class=\"ex-tn2\">Nearest line: " + esc(lineName(near.l)) + ", " + num(near.v, 1) + su + " (n = " + near.l.n + ")</div>";
@@ -1113,19 +1244,19 @@
 
     /* the same numbers as a table, every 10 trials */
     var rows = [];
-    for (var tx = x0; tx <= x1; tx += (tx < 0 ? 5 : 10)) {
+    for (var tx = x0; tx <= x1; tx += (tx < 0 ? 5 : x1 > 600 ? 20 : 10)) {
       var ra = pA[tx - x0], rb = pB ? pB[tx - x0] : null;
-      var cells = function (r) { return "<td class=\"num\">" + (drawn(r) ? num(r.est, 1) : "-") + "</td><td class=\"num\">" + (drawn(r) && r.m >= MINM_BAND && r.lo != null ? num(r.lo, 1) + " to " + num(r.hi, 1) : "-") + "</td><td class=\"num\">" + r.k + "</td><td class=\"num\">" + (r.m || 0) + "</td>"; };
+      var cells = function (r) { return "<td class=\"num\">" + (drawn(r) ? num(r.est, YD) : "-") + "</td><td class=\"num\">" + (drawn(r) && r.m >= MINM_BAND && r.lo != null ? num(r.lo, YD) + " to " + num(r.hi, YD) : "-") + "</td><td class=\"num\">" + r.k + "</td><td class=\"num\">" + (r.m || 0) + "</td>"; };
       rows.push("<tr><td class=\"num\">" + tx + "</td>" + cells(ra) + (pB ? cells(rb) : "") + "</tr>");
     }
-    $("#ex-curve-table").innerHTML = "<table class=\"data compact ex-ctable\"><thead><tr><th scope=\"col\" class=\"num\">Trial</th><th scope=\"col\" class=\"num\">" + (T ? "Term" : "All") + " mean (" + esc(su.trim() || F.meta.unit) + ")</th><th scope=\"col\" class=\"num\">95% CI</th><th scope=\"col\" class=\"num\">Lines</th><th scope=\"col\" class=\"num\">Studies</th>" +
+    $("#ex-curve-table").innerHTML = "<table class=\"data compact ex-ctable\"><thead><tr><th scope=\"col\" class=\"num\">" + Xu(F) + "</th><th scope=\"col\" class=\"num\">" + (T ? "Term" : "All") + " mean (" + esc(su.trim() || F.meta.unit) + ")</th><th scope=\"col\" class=\"num\">95% CI</th><th scope=\"col\" class=\"num\">Lines</th><th scope=\"col\" class=\"num\">Studies</th>" +
       (pB ? "<th scope=\"col\" class=\"num\">Other mean</th><th scope=\"col\" class=\"num\">95% CI</th><th scope=\"col\" class=\"num\">Lines</th><th scope=\"col\" class=\"num\">Studies</th>" : "") + "</tr></thead><tbody>" + rows.join("") + "</tbody></table>";
   }
   function curveDesc(F, T, pA, pB, x1) {
-    function at(p, x) { var r = p && p[x - F.meta.window[0]]; return drawn(r) ? num(r.est, 1) + suffix(F, "y") + " (" + r.k + " lines)" : "too few lines"; }
+    function at(p, x) { var r = p && p[x - F.meta.window[0]]; return drawn(r) ? num(r.est, YD) + suffix(F, "y") + " (" + r.k + " lines)" : "too few lines"; }
     var marks = [10, 50, 100, x1].filter(function (x, i, a) { return x <= x1 && a.indexOf(x) === i; });
-    return "Mean hand angle across lines, by trial from perturbation onset. " + (T ? "This term: " : "All lines: ") + marks.map(function (x) { return "trial " + x + ", " + at(pA, x); }).join("; ") + "." +
-      (pB ? " Other lines: " + marks.map(function (x) { return "trial " + x + ", " + at(pB, x); }).join("; ") + "." : "") + " The table below the figure lists the values.";
+    return "Mean " + F.meta.y.toLowerCase() + " across lines, by " + xu(F) + " from perturbation onset. " + (T ? "This term: " : "All lines: ") + marks.map(function (x) { return xu(F) + " " + x + ", " + at(pA, x); }).join("; ") + "." +
+      (pB ? " Other lines: " + marks.map(function (x) { return xu(F) + " " + x + ", " + at(pB, x); }).join("; ") + "." : "") + " The table below the figure lists the values.";
   }
 
   /* ---------- forest plot ---------- */
@@ -1166,9 +1297,9 @@
     xt.ticks.forEach(function (t) {
       if (t < d0 || t > d1) return;
       s += "<line class=\"ex-grid" + (t === 0 ? " ex-zero" : "") + "\" x1=\"" + px(t).toFixed(1) + "\" x2=\"" + px(t).toFixed(1) + "\" y1=\"" + (top - 4) + "\" y2=\"" + bottom + "\"/>";
-      s += "<text class=\"ex-tick\" x=\"" + px(t).toFixed(1) + "\" y=\"" + (bottom + 16) + "\" text-anchor=\"middle\">" + num(t, xt.step < 1 ? 1 : 0) + "</text>";
+      s += "<text class=\"ex-tick\" x=\"" + px(t).toFixed(1) + "\" y=\"" + (bottom + 16) + "\" text-anchor=\"middle\">" + num(t, td(xt.step)) + "</text>";
     });
-    s += "<text class=\"ex-axis\" x=\"" + ((pl + pr) / 2).toFixed(1) + "\" y=\"" + (bottom + 34) + "\" text-anchor=\"middle\">" + esc(ms.label + (kind === "trials" ? " (trials)" : unitOf(F) === "pct" ? " (% of " + F.meta.size.toLowerCase() + ")" : F.meta.unit === "deg" ? " (degrees)" : " (" + F.meta.unit + ")")) + "</text>";
+    s += "<text class=\"ex-axis\" x=\"" + ((pl + pr) / 2).toFixed(1) + "\" y=\"" + (bottom + 34) + "\" text-anchor=\"middle\">" + esc(ms.label + (kind === "trials" ? " (trials)" : unitOf(F) === "pct" ? " (% of " + F.meta.size.toLowerCase() + ")" : F.meta.unit === "deg" ? " (degrees)" : F.meta.unit ? " (" + unitWords(F) + ")" : "")) + "</text>";
     if (a) s += "<line class=\"ex-pooled-ref\" x1=\"" + px(a.est).toFixed(1) + "\" x2=\"" + px(a.est).toFixed(1) + "\" y1=\"" + (top - 4) + "\" y2=\"" + bottom + "\"/>";
     var lfont = phone ? 12 : rowH < 20 ? 12.5 : 13.5;
     rows.forEach(function (r, i) {
@@ -1181,14 +1312,14 @@
       if (px(lo) < pl) s += "<path class=\"ex-arrow\" d=\"M" + (pl + 5) + " " + (cy - 3.5) + "L" + pl + " " + cy + "L" + (pl + 5) + " " + (cy + 3.5) + "\"/>";
       if (px(hi) > pr) s += "<path class=\"ex-arrow\" d=\"M" + (pr - 5) + " " + (cy - 3.5) + "L" + pr + " " + cy + "L" + (pr - 5) + " " + (cy + 3.5) + "\"/>";
       if (r.est >= d0 && r.est <= d1) s += "<rect class=\"ex-sq\" x=\"" + (px(r.est) - side / 2).toFixed(1) + "\" y=\"" + (cy - side / 2).toFixed(1) + "\" width=\"" + side.toFixed(1) + "\" height=\"" + side.toFixed(1) + "\"/>";
-      if (!phone && !dense) s += "<text class=\"ex-fval\" x=\"" + W + "\" y=\"" + (cy + 4.5).toFixed(1) + "\" text-anchor=\"end\" style=\"font-size:" + lfont + "px\">" + num(r.est, kind === "trials" ? 0 : 1) + " [" + num(lo, kind === "trials" ? 0 : 1) + ", " + num(hi, kind === "trials" ? 0 : 1) + "]</text>";
+      if (!phone && !dense) s += "<text class=\"ex-fval\" x=\"" + W + "\" y=\"" + (cy + 4.5).toFixed(1) + "\" text-anchor=\"end\" style=\"font-size:" + lfont + "px\">" + num(r.est, kind === "trials" ? 0 : YD) + " [" + num(lo, kind === "trials" ? 0 : YD) + ", " + num(hi, kind === "trials" ? 0 : YD) + "]</text>";
       s += "</g>";
     });
     function diamond(r, cy, cls, label) {
-      var lab = label + " (" + r.k + " lines)" + (dense && !phone ? ": " + num(r.est, 1) + " [" + num(r.lo, 1) + ", " + num(r.hi, 1) + "]" : "");
+      var lab = label + " (" + r.k + " lines)" + (dense && !phone ? ": " + num(r.est, YD) + " [" + num(r.lo, YD) + ", " + num(r.hi, YD) + "]" : "");
       s += "<text class=\"ex-flab ex-fpool\" x=\"" + (dense && !phone ? pr : 0) + "\" y=\"" + (cy + 4.5) + "\"" + (dense && !phone ? " text-anchor=\"end\"" : "") + ">" + esc(dense && !phone ? lab : fit(lab, 13.5, labelW)) + "</text>";
       s += "<path class=\"" + cls + "\" d=\"M" + px(r.lo).toFixed(1) + " " + cy + "L" + px(r.est).toFixed(1) + " " + (cy - 7) + "L" + px(r.hi).toFixed(1) + " " + cy + "L" + px(r.est).toFixed(1) + " " + (cy + 7) + "Z\"/>";
-      if (!phone && !dense) s += "<text class=\"ex-fval ex-fpool\" x=\"" + W + "\" y=\"" + (cy + 4.5) + "\" text-anchor=\"end\">" + num(r.est, 1) + " [" + num(r.lo, 1) + ", " + num(r.hi, 1) + "]</text>";
+      if (!phone && !dense) s += "<text class=\"ex-fval ex-fpool\" x=\"" + W + "\" y=\"" + (cy + 4.5) + "\" text-anchor=\"end\">" + num(r.est, YD) + " [" + num(r.lo, YD) + ", " + num(r.hi, YD) + "]</text>";
     }
     var dy = top + rows.length * rowH + 12 + 12;
     s += "<line class=\"ex-grid\" x1=\"0\" x2=\"" + W + "\" y1=\"" + (dy - 12) + "\" y2=\"" + (dy - 12) + "\"/>";
@@ -1204,7 +1335,7 @@
       var g = e.target.closest(".ex-frow");
       if (!g) { tipHide(box); return; }
       var r = rows[+g.getAttribute("data-i")], lo = r.est - 1.959964 * r.se, hi = r.est + 1.959964 * r.se, rc = svg.getBoundingClientRect();
-      tipShow(box, "<div class=\"ex-tr\"><b>" + num(r.est, kind === "trials" ? 0 : 1) + su + "</b> [" + num(lo, 1) + ", " + num(hi, 1) + "]</div><div class=\"ex-tt\">" + esc(lineName(r.l)) + "</div><div class=\"ex-tn2\">n = " + r.n + ", " + esc(F.meta.size.toLowerCase()) + " " + sizeTxt(F, r.l.size) + ", weight " + num(100 * ws[+g.getAttribute("data-i")] / wsum, 1) + "%</div>",
+      tipShow(box, "<div class=\"ex-tr\"><b>" + num(r.est, kind === "trials" ? 0 : YD) + su + "</b> [" + num(lo, YD) + ", " + num(hi, YD) + "]</div><div class=\"ex-tt\">" + esc(lineName(r.l)) + "</div><div class=\"ex-tn2\">n = " + r.n + ", " + (F.meta.noSize ? "" : esc(F.meta.size.toLowerCase()) + " " + sizeTxt(F, r.l.size) + ", ") + "weight " + num(100 * ws[+g.getAttribute("data-i")] / wsum, 1) + "%</div>",
         e.clientX - rc.left, e.clientY - rc.top);
     });
     svg.addEventListener("pointerleave", function () { tipHide(box); });
@@ -1222,7 +1353,9 @@
     var U = USER, F = CUR.F;
     if (!U) { box.innerHTML = ""; return; }
     var fam = famMeta(U.family);
-    var h = "<div class=\"ex-ures\"><p><b>Your data</b>: " + esc(U.name) + (U.subset ? " (" + esc(U.subset) + ")" : "") + ". " + plural(U.n, "participant") + ", " + (fam ? esc(fam.size.toLowerCase()) : "perturbation") + " of " + num(U.size, U.size % 1 ? 1 : 0) + "° from trial " + U.start + ", first block " + plural(U.blk, "trial") + " (" + U.nfb + " with feedback)." +
+    var h = "<div class=\"ex-ures\"><p><b>Your data</b>: " + esc(U.name) + (U.subset ? " (" + esc(U.subset) + ")" : "") + ". " + plural(U.n, "participant") + ", " +
+      (U.series ? (fam && !fam.noSize ? esc(fam.size.toLowerCase()) + " " + (isFinite(U.size) ? sizeTxt(fam ? { meta: fam } : F, U.size) : "not given") + ", " : "") + "perturbed from " + xu(F) + " " + U.start + ", first block " + plural(U.blk, xu(F)) + " (" + U.nfb + " with a value)."
+       : (fam ? esc(fam.size.toLowerCase()) : "perturbation") + " of " + num(U.size, U.size % 1 ? 1 : 0) + "° from trial " + U.start + ", first block " + plural(U.blk, "trial") + " (" + U.nfb + " with feedback).") +
       (U.nall && U.nall !== U.n ? " " + U.n + " of " + U.nall + " participants had the group's schedule; the others are left out." : "") + "</p>";
     if (U.family !== F.meta.id) {
       h += "<p>Your file is " + (fam ? "a " + esc(fam.label.toLowerCase()) + " experiment" : "not a rotation or clamp experiment") + ". " + (fam ? "<a href=\"#explore/" + esc(fam.id) + (FAMS[fam.id] && FAMS[fam.id].termBy[S.term] ? "/" + esc(S.term) : "") + "\">Compare it with " + esc(fam.label.toLowerCase()) + " lines</a>." : "") + "</p>";
@@ -1234,11 +1367,11 @@
           var vals = CUR.A.filter(function (l) { return l.m[ms.key]; }).map(function (l) { return ms.key === "half" ? l.m.half[0] : scale(l, l.m[ms.key][0]); });
           var pc = uv == null ? NaN : STATS.percentile(vals, uv);
           var se = U.m[ms.key] && U.m[ms.key][1] != null ? (ms.key === "half" ? U.m[ms.key][1] : unitOf(F) === "pct" ? U.m[ms.key][1] / U.size * 100 : U.m[ms.key][1]) : null;
-          return "<tr><th scope=\"row\">" + esc(ms.label) + "</th><td class=\"num\" data-label=\"Yours\">" + (uv == null ? "-" : fv(F, uv, kind, kind === "trials" ? 0 : 1) + (se != null ? " ± " + num(se, 1) : "")) + "</td><td class=\"num\" data-label=\"Pooled\">" + (r ? fv(F, r.est, kind, 1) : "-") + "</td><td data-label=\"\">" +
+          return "<tr><th scope=\"row\">" + esc(ms.label) + "</th><td class=\"num\" data-label=\"Yours\">" + (uv == null ? "-" : fv(F, uv, kind, kind === "trials" ? 0 : YD) + (se != null ? " ± " + num(se, YD) : "")) + "</td><td class=\"num\" data-label=\"Pooled\">" + (r ? fv(F, r.est, kind, YD) : "-") + "</td><td data-label=\"\">" +
             (isFinite(pc) ? "percentile " + num(pc, 0) + " of " + vals.length + " lines" : "-") + "</td></tr>";
         }).join("") + "</tbody></table></div></div>";
       h += "<p class=\"ex-note\">Your mean curve is the blue line in the learning curves, and the forest plot marks your value. Percentile: the share of lines with a lower value (ties count half). Values are computed as for every line here (see How the numbers are computed).</p>";
-      if (U.m.late && U.m.late[0] < 0) h += "<p class=\"ex-warn\">Your late value is negative. If your hand angles are positive when people compensate, change the sign setting above and compute again.</p>";
+      if (!U.series && U.m.late && U.m.late[0] < 0) h += "<p class=\"ex-warn\">Your late value is negative. If your hand angles are positive when people compensate, change the sign setting above and compute again.</p>";
     }
     h += "<p><button type=\"button\" class=\"btn btn-outline\" id=\"ex-uclear\">Remove your data</button></p></div>";
     box.innerHTML = h;
@@ -1264,8 +1397,11 @@
     p.then(function (got) {
       var tab = CMP.readTable(got.text);
       if (!tab.cols.length || !tab.rows.length) throw new Error("no rows found");
-      CMPS = { file: file.name, inner: got.name, cols: tab.cols, rows: tab.rows, om: CMP.isOpenMotor(tab.cols), sel: CMP.guess(tab.cols) };
-      CMPS.sel.type = CUR.F.meta.id === "clamp" ? "clamp" : "rotation";
+      if (CUR.F.meta.cmp) CMPS = { file: file.name, inner: got.name, cols: tab.cols, rows: tab.rows, series: CUR.F.meta.id, om: false, sel: CMP.guessSeries(tab.cols, CUR.F.meta) };
+      else {
+        CMPS = { file: file.name, inner: got.name, cols: tab.cols, rows: tab.rows, om: CMP.isOpenMotor(tab.cols), sel: CMP.guess(tab.cols) };
+        CMPS.sel.type = CUR.F.meta.id === "clamp" ? "clamp" : "rotation";
+      }
       renderMap();
     }).catch(function (err) { setMapStatus("This file could not be read: " + (err && err.message || err) + ".", true); });
   }
@@ -1280,6 +1416,7 @@
   function renderMap() {
     var box = $("#ex-map");
     if (!box || !CMPS) return;
+    if (CMPS.series) { if (CMPS.series !== CUR.F.meta.id) { CMPS.series = CUR.F.meta.id; CMPS.sel = CMP.guessSeries(CMPS.cols, CUR.F.meta); } return renderMapSeries(box); }
     var c = CMPS, s = c.sel, h = "<form class=\"ex-mapf\" id=\"ex-mapf\"><p class=\"ex-maph\"><b>" + esc(c.file) + "</b>: " + fmtInt(c.rows.length) + " rows, " + c.cols.length + " columns." + (c.om ? " The OpenMotor format was recognised." : "") + "</p><div class=\"ex-mgrid\">";
     function sel(id, label, opts) { return "<label class=\"ex-ff\"><span>" + esc(label) + "</span><select id=\"" + id + "\">" + opts + "</select></label>"; }
     if (!c.om) {
@@ -1336,6 +1473,46 @@
       USER = res;
       render(CUR.F, false);
       var u = $("#ex-user"); if (u) u.scrollIntoView({ block: "nearest" });
+      $("#ex-status").textContent = "Your data were added to the curves and the forest plot.";
+    });
+  }
+
+  /* column choices for the series families (one row per stride, trial or utterance) */
+  function renderMapSeries(box) {
+    var c = CMPS, s = c.sel, F = CUR.F, C = F.meta.cmp || {}, u = xu(F);
+    function sel(id, label, opts) { return "<label class=\"ex-ff\"><span>" + esc(label) + "</span><select id=\"" + id + "\">" + opts + "</select></label>"; }
+    function inp(id, label, v, step) { return "<label class=\"ex-ff\"><span>" + esc(label) + "</span><input id=\"" + id + "\" type=\"number\" step=\"" + (step || "any") + "\" value=\"" + esc(v || "") + "\"></label>"; }
+    var h = "<form class=\"ex-mapf\" id=\"ex-mapf\"><p class=\"ex-maph\"><b>" + esc(c.file) + "</b>: " + fmtInt(c.rows.length) + " rows, " + c.cols.length + " columns.</p><div class=\"ex-mgrid\">" +
+      sel("ex-c-subj", "Participant column", colOpts(s.subj)) + sel("ex-c-trial", Xu(F) + " number column", colOpts(s.trial)) + sel("ex-c-val", C.value || "Value column", colOpts(s.val)) +
+      sel("ex-c-pert", "Perturbation column (0 when off)", colOpts(s.pert, "(none: give the perturbed " + u + "s below)")) +
+      inp("ex-c-size", F.meta.size + " (" + F.meta.sizeUnit.replace(/^:/, "x:") + ")", s.size);
+    if (s.pert === "" || s.pert == null) h += inp("ex-c-a", "First perturbed " + u + " (your numbering)", s.a, 1) + inp("ex-c-b", "Last perturbed " + u, s.b, 1);
+    if (C.ask === "dir") h += sel("ex-c-dir", "Step direction", "<option value=\"back\"" + (s.dir !== "fwd" ? " selected" : "") + ">backward (gain down)</option><option value=\"fwd\"" + (s.dir === "fwd" ? " selected" : "") + ">forward (gain up)</option>");
+    if (C.ask === "shift") h += inp("ex-c-shift", "Shift of that formant, signed, in the column's unit", s.shift);
+    h += sel("ex-c-f1", "Use only rows where", colOpts(s.f1, "(use every row)"));
+    if (s.f1 !== "" && s.f1 != null) h += sel("ex-c-v1", "equals", distinct(+s.f1).map(function (v) { return "<option" + (v === s.v1 ? " selected" : "") + ">" + esc(v) + "</option>"; }).join(""));
+    h += "</div><p class=\"ex-note\">" + esc(C.note || "") + " " + Xu(F) + "s before the first perturbed " + u + " are the baseline and the ones after the block the aftereffect; runs of up to 15 unperturbed " + u + "s inside the block (catch " + u + "s) are left out of it.</p>" +
+      "<p class=\"ex-mact\"><button type=\"submit\" class=\"btn btn-primary\">Compute and compare</button> <button type=\"button\" class=\"linkbutton\" id=\"ex-c-forget\">Choose another file</button></p></form>";
+    box.innerHTML = h;
+    function read() {
+      var g = function (id) { var e = document.getElementById(id); return e ? e.value : undefined; };
+      ["subj", "trial", "val", "pert", "size", "a", "b", "dir", "shift", "f1", "v1"].forEach(function (k) { var v = g("ex-c-" + k); if (v !== undefined) s[k] = v; });
+      if (g("ex-c-f1") === "") s.v1 = undefined;
+    }
+    box.querySelectorAll("select").forEach(function (el) {
+      el.addEventListener("change", function () { var before = [s.pert, s.f1]; read(); if (before[0] !== s.pert || before[1] !== s.f1) renderMapSeries(box); });
+    });
+    $("#ex-c-forget").addEventListener("click", function () { CMPS = null; box.innerHTML = ""; $("#ex-drop").focus(); });
+    $("#ex-mapf").addEventListener("submit", function (e) {
+      e.preventDefault();
+      read();
+      var res;
+      try { res = CMP.fromSeries(c, s, F.meta); } catch (err) { res = { error: err.message || String(err) }; }
+      if (res.error) { var p = box.querySelector(".ex-merr") || box.appendChild(document.createElement("p")); p.className = "ex-warn ex-merr"; p.textContent = res.error; return; }
+      res.name = c.file;
+      USER = res;
+      render(CUR.F, false);
+      var ub = $("#ex-user"); if (ub) ub.scrollIntoView({ block: "nearest" });
       $("#ex-status").textContent = "Your data were added to the curves and the forest plot.";
     });
   }
