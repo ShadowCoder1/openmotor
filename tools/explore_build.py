@@ -592,7 +592,7 @@ assert len({s for _, s, _ in VOCAB_RE}) == len(VOCAB_RE), "two vocabulary terms 
 
 
 def mine_terms(study_ids, texts, pooled_studies):
-    """Neurosynth-style links between the studies of one family and the vocabulary.
+    """Term links (tf-idf) between the studies of one family and the vocabulary.
     Returns (terms, doc facts). Within the family's studies: tf = mentions / words of titles and abstracts,
     idf = ln(N / studies that mention the term), weight = tf * idf; a study is linked when weight >= TFIDF_MIN."""
     docs = {}
