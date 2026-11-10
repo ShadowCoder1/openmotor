@@ -11,7 +11,8 @@ Browse and download: https://physicalintelligencelab.github.io/openmotor/
 
 ## Files
 
-- `data/<dataset>.zip`: one file per dataset, with the trial table as CSV, a README (citation, lab, license,
+- Dataset ZIPs (one per dataset, linked from the site) are attached to this repository's Releases: the first release's
+  reaching datasets under "OpenMotor data, version frozen 4 November 2026", the other tasks under "Standardized datasets". Each holds the trial table as CSV, a README (citation, lab, license,
   original deposit) and `columns.csv`.
 - `catalog.csv`: every study with its paper, lab, number of participants, license, tags, and a link to the
   authors' original data and its file format.
