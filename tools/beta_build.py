@@ -83,9 +83,20 @@ def schedule_text(sig, mode_at):
     return word + " " + ", then ".join(txt(v) for v in vals[:3]) + (", ..." if len(vals) > 3 else "")
 
 
-def build_dataset(name, paradigms):
-    with zipfile.ZipFile(REL / f"{name}.zip") as z:
-        df = pd.read_csv(z.open(f"{name}/{name}.csv"), usecols=COLS, low_memory=False)
+def read_dataset(zip_path, name, cols=COLS):
+    """The trial table of one standardized reaching ZIP (any reach90 dataset: the first release in source/release/,
+    or a later one downloaded from its release URL), with only the columns asked for."""
+    with zipfile.ZipFile(zip_path) as z:
+        member = f"{name}/{name}.csv"
+        if member not in z.namelist():  # one data CSV next to columns.csv and the README
+            member, = [m for m in z.namelist() if m.endswith(".csv") and not m.endswith("columns.csv")]
+        return pd.read_csv(z.open(member), usecols=list(cols), low_memory=False)
+
+
+def build_dataset(name, paradigms, zip_path=None, extra_cols=(), on_line=None):
+    """Preview lines of one dataset. zip_path defaults to source/release/<name>.zip. extra_cols are read as well
+    (for callers, unused here); on_line(**context) is called for every line, with the line's trials (tools/explore_build.py)."""
+    df = read_dataset(zip_path or REL / f"{name}.zip", name, COLS + [c for c in extra_cols if c not in COLS])
     df["group"] = df["group"].astype("string").fillna("")
     out = {"name": name, "experiments": []}
     summary_points = []
@@ -176,6 +187,9 @@ def build_dataset(name, paradigms):
             if aim.notna().sum() >= 5:
                 ser["aim"] = [r1(v) for v in aim]
             series.append(ser)
+            if on_line is not None:
+                on_line(exp=exp, exp_label=exp_label(name, exp), group=g, schedule=c, subs=subs, varies=varies, d=d,
+                        sched=sched, modes=modes, nofb=nofb, phases=phases, series=ser, paradigms=paradigms.get(exp, []))
 
             # cross-study summary: the first block of a constant rotation or clamp
             if varies or len(subs) < MIN_N or "cue_context" in paradigms.get(exp, []):

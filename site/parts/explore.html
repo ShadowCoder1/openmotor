@@ -1,0 +1,20 @@
+<section class="view page explore" data-view="explore" aria-labelledby="h-explore" hidden>
+  <div class="wrap">
+    <h1 id="h-explore">Explore</h1>
+    <p class="lead ex-lead">Pick a kind of experiment and a term to see the learning curves of every standardized group of participants that matches it, their pooled average next to all other groups, a random-effects meta-analysis, the studies, their data, and how your own data compare. This page is in beta. The pooled studies differ in design, instructions and equipment, so the numbers describe this collection of data; they are a starting point, not a substitute for a planned meta-analysis. <a href="#explore" data-ex-goto="ex-methods">How the numbers are computed</a>.</p>
+    <div class="ex-layout">
+      <aside class="ex-side" id="ex-side" aria-label="Experiments and terms">
+        <p class="ex-side-h" id="ex-fam-h">Experiment</p>
+        <nav class="ex-fams" id="ex-fams" aria-labelledby="ex-fam-h"></nav>
+        <p class="ex-side-h" id="ex-term-h">Terms</p>
+        <label class="dl-search ex-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="ex-q" type="search" placeholder="Find a term" aria-label="Find a term" aria-controls="ex-terms" autocomplete="off"></label>
+        <p class="ex-sort" id="ex-sort">Sort by <button type="button" class="linkbutton" data-sort="count" aria-pressed="true">studies</button> or <button type="button" class="linkbutton" data-sort="name" aria-pressed="false">name</button></p>
+        <div class="ex-terms" id="ex-terms" aria-labelledby="ex-term-h"></div>
+      </aside>
+      <div class="ex-main" id="ex-main">
+        <p class="muted" id="ex-loading">Loading the data...</p>
+      </div>
+      <p class="sr" role="status" id="ex-status"></p>
+    </div>
+  </div>
+</section>

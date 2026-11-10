@@ -27,6 +27,9 @@ jobs:
           python-version: "3.12"
       - name: Build
         run: |
+          python -m pip install -q numpy pandas
+          # Explore page data: only datasets not yet in source/explore/ds are downloaded and computed
+          python -I tools/explore_build.py > explore_build.log 2>&1 || { echo "explore data not rebuilt"; tail -5 explore_build.log; }
           python -I tools/build_page.py
           rm -f dist/artifact.html
           touch dist/.nojekyll

@@ -299,6 +299,12 @@ if SHIP_BETA_PLOTS:
         if f.name != "index.json":
             shutil.copy2(f, OUT / "beta" / f.name)
 
+# ---- Explore page data (2026-11-10): tools/explore_build.py writes source/explore/site/ (index.json and one file per
+# family); the Explore part (site/parts/explore.js) loads them from dist/explore/ when someone opens #explore.
+shutil.rmtree(OUT / "explore", ignore_errors=True)
+if (HERE / "source/explore/site").is_dir():
+    shutil.copytree(HERE / "source/explore/site", OUT / "explore")
+
 # ---- sample rows for the Data Format page (real rows from a published file)
 import io as _io, zipfile as _zf
 SNAME = "Cipleu2026_NeurorehabilNeuralRepair"
