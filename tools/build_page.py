@@ -301,9 +301,8 @@ if SHIP_BETA_PLOTS:
 
 # ---- Explore page data (2026-11-10): tools/explore_build.py writes source/explore/site/ (index.json and one file per
 # family); the Explore part (site/parts/explore.js) loads them from dist/explore/ when someone opens #explore.
+# (copied only when the Explore part is on the page: the public site leaves it out until the PI approves, 2026-11-10)
 shutil.rmtree(OUT / "explore", ignore_errors=True)
-if (HERE / "source/explore/site").is_dir():
-    shutil.copytree(HERE / "source/explore/site", OUT / "explore")
 
 # ---- sample rows for the Data Format page (real rows from a published file)
 import io as _io, zipfile as _zf
@@ -372,6 +371,8 @@ tpl = (HERE / "site/template.html").read_text(encoding="utf-8")
 # Each .js registers window.OM_PARTS[<name>] before the main script runs; site/parts/ORDER lists the parts to include.
 PARTS_DIR = HERE / "site/parts"
 _order = [l.strip() for l in (PARTS_DIR / "ORDER").read_text().splitlines() if l.strip() and not l.startswith("#")] if (PARTS_DIR / "ORDER").exists() else []
+import os as _os  # OM_EXTRA_PARTS=explore,... adds parts that are not on the public page (local tests, previews)
+_order += [p.strip() for p in _os.environ.get("OM_EXTRA_PARTS", "").split(",") if p.strip() and p.strip() not in _order]
 _ph, _pc, _pj = [], [], []
 for _n in _order:
     for _ext, _acc in (("html", _ph), ("css", _pc), ("js", _pj)):
@@ -380,6 +381,8 @@ for _n in _order:
             _acc.append(_f.read_text(encoding="utf-8"))
 tpl = (tpl.replace("<!--PARTS-HTML-->", "\n".join(_ph)).replace("/*PARTS-CSS*/", "\n".join(_pc))
           .replace("<!--PARTS-JS-->", "\n".join("<script>\n" + j.replace("</script", "<\\/script") + "\n</script>" for j in _pj)))
+if "explore" in _order and (HERE / "source/explore/site").is_dir():
+    shutil.copytree(HERE / "source/explore/site", OUT / "explore")
 # public settings for the parts (the API base for counts and uploads, data files for Explore)
 payload["meta"]["api"] = cfg.get("api_base") or None
 data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

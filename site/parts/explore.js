@@ -4,6 +4,14 @@
 (function () {
   "use strict";
   var PARTS = window.OM_PARTS = window.OM_PARTS || {};
+  /* the nav tab: added here, so it exists only on pages that include this part */
+  (function () {
+    var nav = document.querySelector(".site-nav");
+    if (!nav || nav.querySelector('a[data-view="explore"]')) return;
+    var a = document.createElement("a"); a.href = "#explore"; a.setAttribute("data-view", "explore"); a.textContent = "Explore";
+    var std = nav.querySelector('a[data-view="standardization"]');
+    nav.insertBefore(a, std ? std.nextSibling : null);
+  })();
 
   /* STATS-BEGIN: plain statistics, checked against metafor 4.6 (rma method "DL", robust(), see the build notes) */
   var STATS = (function () {
