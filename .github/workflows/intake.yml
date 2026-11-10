@@ -43,7 +43,8 @@ jobs:
         id: claim
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
-        run: python3 -I tools/intake/worker.py claim "${{ github.event.inputs.id || 'next' }}"
+        run: |
+          python3 -I tools/intake/worker.py claim "${{ github.event.inputs.id || 'next' }}"
       - uses: actions/setup-python@v5
         if: steps.claim.outputs.id != ''
         with:
@@ -65,7 +66,8 @@ jobs:
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
-        run: python -I tools/intake/worker.py prepare > work/prepare.log 2>&1 || { tail -c 300 work/prepare.log | sed 's/[^[:print:]]//g' | head -3; exit 1; }
+        run: |
+          python -I tools/intake/worker.py prepare > work/prepare.log 2>&1 || { tail -c 300 work/prepare.log | sed 's/[^[:print:]]//g' | head -3; exit 1; }
 
       # ---------------- analyze / continue
       - name: Already in the OpenMotor format?
@@ -73,7 +75,8 @@ jobs:
         if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish'
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
-        run: python -I tools/intake/worker.py fastpath > work/fastpath.out 2>&1 || echo "fast path not taken"
+        run: |
+          python -I tools/intake/worker.py fastpath > work/fastpath.out 2>&1 || echo "fast path not taken"
       - name: Standardize (AI)
         if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish' && steps.fast.outputs.fast != 'yes'
         env:
@@ -92,7 +95,8 @@ jobs:
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
-        run: python -I tools/intake/worker.py finish > work/finish.log 2>&1 || { python -I tools/intake/worker.py fail "We could not finish processing your files. Please try again or email physical.intelligence.lab@gmail.com." ; exit 1; }
+        run: |
+          python -I tools/intake/worker.py finish > work/finish.log 2>&1 || { python -I tools/intake/worker.py fail "We could not finish processing your files. Please try again or email physical.intelligence.lab@gmail.com." ; exit 1; }
 
       # ---------------- publish (after the contributor approved)
       - name: Final checks
@@ -101,7 +105,8 @@ jobs:
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
-        run: python -I tools/intake/worker.py gates > work/gates.log 2>&1; cat work/gates.json | python3 -I -c "import json,sys; d=json.load(sys.stdin); print('gates ok' if d['ok'] else 'gates failed: %d problems' % len(d['problems']))"
+        run: |
+          python -I tools/intake/worker.py gates > work/gates.log 2>&1; cat work/gates.json | python3 -I -c "import json,sys; d=json.load(sys.stdin); print('gates ok' if d['ok'] else 'gates failed: %d problems' % len(d['problems']))"
       - name: Independent review (AI)
         if: steps.gates.outputs.gates == 'pass'
         env:
@@ -136,7 +141,8 @@ jobs:
         if: failure() && steps.claim.outputs.id != ''
         env:
           INTAKE_SECRET: ${{ secrets.INTAKE_SECRET }}
-        run: python -I tools/intake/worker.py fail "Processing stopped unexpectedly. Please try again, or email physical.intelligence.lab@gmail.com." || true
+        run: |
+          python -I tools/intake/worker.py fail "Processing stopped unexpectedly. Please try again, or email physical.intelligence.lab@gmail.com." || true
 
   site:
     needs: work
