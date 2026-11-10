@@ -700,7 +700,6 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
         </ol>
         <div class="ct-btns">
           <a class="ct-btn-primary" href="#contribute" id="ct-start">Start submission</a>
-          <a class="ct-btn-outline" href="#contribute" id="ct-how"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>How it works</a>
         </div>
       </div>
       <div class="ct-card ct-need">
@@ -1126,7 +1125,6 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
     $("#om-fallback").hidden = false;
   });
 
-  $("#ct-how").addEventListener("click", function (e) { e.preventDefault(); document.querySelector(".ct-review").scrollIntoView({ behavior: "smooth", block: "start" }); });
   function readB64(f) { return new Promise(function (res, rej) { var r = new FileReader(); r.onload = function () { res(String(r.result).split(",")[1]); }; r.onerror = rej; r.readAsDataURL(f); }); }
   function sendSubmission() {
     var total = ctFiles.reduce(function (t, f) { return t + f.size; }, 0);
