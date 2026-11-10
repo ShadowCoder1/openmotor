@@ -687,33 +687,6 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
       <h1 id="h-contribute">Add your dataset</h1>
       <p class="ct-lead">Labs can contribute any motor control or motor learning dataset to OpenMotor by sharing their data, citation information, and license details.</p>
     </div>
-    <div class="ct-top">
-      <div class="ct-card ct-submit">
-        <h2 class="ct-h">Submit a study to OpenMotor</h2>
-        <p class="ct-desc">Share your experiment with the community. Upload your data as it is, or link to where you shared it: we list your study with a link to your data, convert it to the OpenMotor format, and check the conversion against your paper.</p>
-        <ol class="steps">
-          <li><span class="step-n">1</span><div><b>Upload your data</b><span>Drop your trial-level files as they are. No reformatting needed.</span></div></li>
-          <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-          <li><span class="step-n">2</span><div><b>Add the details</b><span>The paper, your lab, and how the data can be shared.</span></div></li>
-          <li class="step-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></li>
-          <li><span class="step-n">3</span><div><b>Review &amp; submit</b><span>Send it to the OpenMotor team. We do the rest.</span></div></li>
-        </ol>
-        <div class="ct-btns">
-          <a class="ct-btn-primary" href="#contribute" id="ct-start">Start submission</a>
-        </div>
-      </div>
-      <div class="ct-card ct-need">
-        <h2 class="ct-h">What you'll need</h2>
-        <ul class="needs">
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Your data, in any layout</span></li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>README or study notes</span></li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Citation / paper information</span></li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>License information</span></li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Contact email</span></li>
-        </ul>
-        <p class="ct-help"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>No reformatting needed: we convert your files for you.</span></p>
-      </div>
-    </div>
     <form class="ct-card ct-form" id="ct-form" novalidate>
       <h2 class="ct-h">Dataset details</h2>
       <input type="text" id="om-website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
@@ -1095,7 +1068,6 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
     try { localStorage.setItem(DRAFT, JSON.stringify(v)); $("#om-status").textContent = "Draft saved in this browser."; }
     catch (err) { $("#om-status").textContent = "This browser would not save the draft; keep this page open instead."; }
   });
-  $("#ct-start").addEventListener("click", function (e) { e.preventDefault(); ctForm.scrollIntoView({ behavior: "smooth", block: "start" }); setTimeout(function () { $("#om-name").focus({ preventScroll: true }); }, 400); });
   var SUBMIT_TO = "physical.intelligence.lab@gmail.com";
   function ctText() {
     function v(id) { return $("#" + id).value.trim(); }
