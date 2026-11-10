@@ -394,11 +394,7 @@ table.sample td, table.sample th { white-space: nowrap; }
 .ct-wrap .ct-help .icon { width: 20px; height: 20px; color: #4a4b4f; stroke-width: 1.8; }
 .ct-wrap .ct-help a { color: #b8022b; text-decoration: underline; }
 
-.ct-fallback { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; background: #fff5f6; border: 1px solid #f1c2cc; border-radius: 10px; font-size: 15px; }
-.ct-fallback .btn { padding: 6px 14px; font-size: 14.5px; }
-.sel { user-select: all; }
-.ct-thanks { margin-top: 24px; border-color: #f4b8c4; background: #fff7f8; }
-.ct-thanks p { font-size: 17px; }
+/* the upload flow, submission status and preview are styled in site/parts/contribute.css */
 button.ct-btn-primary { border: 0; cursor: pointer; }
 .ct-form { position: relative; }
 @media (max-width: 1100px) {
@@ -677,10 +673,11 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
 <section class="view page" data-view="contribute" aria-labelledby="h-contribute" hidden>
   <div class="wrap ct-wrap">
     <div class="ct-head">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
+      <nav class="crumbs" aria-label="Breadcrumb" id="ct-crumbs"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Add your dataset</span></nav>
       <h1 id="h-contribute">Add your dataset</h1>
-      <p class="ct-lead">Labs can contribute any motor control or motor learning dataset to OpenMotor by sharing their data, citation information, and license details.</p>
+      <p class="ct-lead">Labs can contribute any motor control or motor learning dataset to OpenMotor. Upload your files or link to them, check the preview, and the dataset is published.</p>
     </div>
+    <div class="ct-card ct-mine" id="ct-mine" hidden></div>
     <form class="ct-card ct-form" id="ct-form" novalidate>
       <h2 class="ct-h">Dataset details</h2>
       <input type="text" id="om-website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
@@ -688,8 +685,9 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
         <div class="ct-fields">
           <div class="frow two-f"><div class="ff"><label for="om-name">Dataset name <span class="req" aria-hidden="true">*</span></label><input id="om-name" name="om-name" type="text" placeholder="e.g., FirstAuthor2025_Journal" required></div><div class="ff"><label for="om-title">Study or paper title <span class="req" aria-hidden="true">*</span></label><input id="om-title" name="om-title" type="text" placeholder="e.g., Implicit adaptation in older adults" required></div></div>
           <div class="frow two-f"><div class="ff"><label for="om-author">Lead author <span class="req" aria-hidden="true">*</span></label><input id="om-author" name="om-author" type="text" placeholder="Last name and initials" required></div><div class="ff"><label for="om-lab">Lab or institution <span class="req" aria-hidden="true">*</span></label><input id="om-lab" name="om-lab" type="text" placeholder="e.g., Tsay lab, Carnegie Mellon University" required></div></div>
-          <div class="frow three-f"><div class="ff"><label for="om-year">Publication year</label><input id="om-year" name="om-year" type="number" placeholder="e.g., 2025" min="1950" max="2100"></div><div class="ff"><label for="om-email">Contact email <span class="req" aria-hidden="true">*</span></label><input id="om-email" name="om-email" type="email" placeholder="name@university.edu" required></div><div class="ff"><label for="om-license">License <span class="req" aria-hidden="true">*</span></label><select id="om-license" name="om-license" required><option value="">Select a license</option><option>CC BY 4.0</option><option>CC0</option><option>CC BY-NC 4.0</option><option>MIT</option><option>GPL-3.0</option><option>Other or not sure</option></select></div></div>
+          <div class="frow three-f"><div class="ff"><label for="om-year">Publication year</label><input id="om-year" name="om-year" type="number" placeholder="e.g., 2025" min="1950" max="2100"></div><div class="ff"><label for="om-email">Contact email <span class="req" aria-hidden="true">*</span></label><input id="om-email" name="om-email" type="email" placeholder="name@university.edu" required></div><div class="ff"><label for="om-license">License <span class="req" aria-hidden="true">*</span></label><select id="om-license" name="om-license" required><option value="">Select a license</option><option>CC BY 4.0</option><option>CC0</option><option>CC BY-NC 4.0</option><option>CC BY-SA 4.0</option><option>MIT</option><option>GPL-3.0</option><option>Other or not sure</option></select></div></div>
           <div class="frow two-f"><div class="ff"><label for="om-task">Task</label><input id="om-task" name="om-task" type="text" placeholder="e.g., visuomotor rotation, sequence learning"></div><div class="ff"><label for="om-repo">Repository link (OSF, GitHub, Zenodo or other)</label><div class="in-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><input id="om-repo" name="om-repo" type="url" placeholder="https://"></div></div></div>
+          <div class="frow two-f"><div class="ff"><label for="om-doi">Paper DOI</label><input id="om-doi" name="om-doi" type="text" placeholder="e.g., 10.1152/jn.00123.2025" autocomplete="off"></div><div class="ff"><label for="om-authors">All authors</label><input id="om-authors" name="om-authors" type="text" placeholder="As in the paper, e.g., Tsay JS, Ivry RB"></div></div>
           <div class="ff"><label for="om-notes">Notes</label><textarea id="om-notes" name="om-notes" rows="3" placeholder="Any additional details about the dataset, experimental setup, or known caveats (optional)."></textarea></div>
         </div>
         <div class="ct-upload">
@@ -697,29 +695,24 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
           <div class="drop" id="om-drop" tabindex="0" role="button" aria-describedby="om-drop-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg><b>Drop a ZIP, CSV, or supporting files here</b><span>or click to browse</span></div>
           <input id="om-files" type="file" multiple hidden>
           <ul class="file-list" id="om-file-list"></ul>
-          <p class="drop-note" id="om-drop-note">Upload your data as you have it, from any motor task and in any format (CSV, ZIP, MATLAB, Excel). Or just give the repository link above.</p>
+          <p class="drop-note" id="om-drop-note">Upload your data as you have it, from any motor task and in any format (CSV, ZIP, MATLAB, Excel), up to 60 files and 500 MB. Or leave this empty and give the repository link; the files are downloaded from there.</p>
+          <p class="drop-note ct-kind" id="om-kind-note" hidden></p>
           <div class="ct-actions">
             <button type="button" class="btn btn-outline" id="om-save">Save draft</button>
-            <button type="submit" class="btn btn-primary">Submit for review</button>
+            <button type="submit" class="btn btn-primary" id="om-submit">Submit dataset</button>
           </div>
           <p class="ct-status" id="om-status" role="status"></p>
         </div>
       </div>
-      <p class="ct-public">Submitting opens an email to the OpenMotor team at <b>physical.intelligence.lab@gmail.com</b> with your details filled in; attach your files and press send.</p>
-      <div class="ct-fallback" id="om-fallback" hidden>No email window? Send your details and files to <b class="sel">physical.intelligence.lab@gmail.com</b> <button type="button" class="btn btn-outline" id="om-copy">Copy details</button></div>
+      <p class="ct-public">As part of the automatic standardization, your files are read and converted by an AI model (Claude, made by Anthropic). Nothing is public until you approve the preview. You can withdraw a submission at any time, which deletes its files.</p>
     </form>
 
-    <div class="ct-card ct-thanks" id="ct-thanks" hidden>
-      <h2 class="ct-h">Thank you for contributing to OpenMotor</h2>
-      <p>We received <b id="ct-thanks-name"></b>. The OpenMotor team will review it and contact you at <b id="ct-thanks-email"></b>.</p>
-      <p>Do you have another dataset to add?</p>
-      <div class="ct-btns"><button type="button" class="ct-btn-primary" id="ct-another">Add another dataset</button><a class="ct-btn-outline" href="#home">Back to home</a></div>
-    </div>
-    <div class="ct-card ct-review">
-      <div><h2 class="ct-h">Review process</h2><p>After you submit, our team will review your dataset:</p></div>
-      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><div><b>We check the data</b><span>Make sure the files open and match what the paper reports.</span></div></div>
-      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg><div><b>We reproduce at least one reported result</b><span>Run an analysis to confirm the dataset matches the paper.</span></div></div>
-      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><div><b>We confirm metadata and licensing</b><span>Make sure the study details, citation and license are complete.</span></div></div>
+    <div class="ct-card ct-sub" id="ct-sub" hidden></div>
+    <div class="ct-card ct-review" id="ct-review">
+      <div><h2 class="ct-h">What happens next</h2><p>The process is automatic. Most datasets take 2 to 15 minutes once processing starts.</p></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><div><b>Your files are read and standardized</b><span>They are converted to the OpenMotor format. Files already in the format are checked as they are.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg><div><b>Checked against your paper</b><span>When there is a paper, numbers such as the participant count are compared with it. If something is unclear, you are asked on this page.</span></div></div>
+      <div class="rv"><svg class="icon rv-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><div><b>You review, then it is published</b><span>You see the dataset as it will appear, with its files and checks. It is published only after you approve it.</span></div></div>
     </div>
   </div>
 </section>
@@ -1044,92 +1037,7 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
     setTimeout(function () { b.textContent = "Copy all references"; }, 2000);
   });
 
-  /* ---------- add your dataset ---------- */
-  var ctForm = $("#ct-form"), ctFiles = [], DRAFT = "openmotor-draft";
-  var FIELDS = ["om-name", "om-title", "om-author", "om-lab", "om-year", "om-email", "om-license", "om-task", "om-repo", "om-notes"];
-  function fileListRender() {
-    $("#om-file-list").innerHTML = ctFiles.map(function (f) { return "<li><span>" + esc(f.name) + "</span><span>" + mb(f.size) + "</span></li>"; }).join("");
-  }
-  function addFiles(list) { Array.prototype.forEach.call(list, function (f) { if (!ctFiles.some(function (g) { return g.name === f.name && g.size === f.size; })) { ctFiles.push({ name: f.name, size: f.size, file: f }); } }); fileListRender(); }
-  var drop = $("#om-drop"), picker = $("#om-files");
-  drop.addEventListener("click", function () { picker.click(); });
-  drop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); picker.click(); } });
-  picker.addEventListener("change", function () { addFiles(picker.files); picker.value = ""; });
-  ["dragenter", "dragover"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add("over"); }); });
-  ["dragleave", "drop"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove("over"); }); });
-  drop.addEventListener("drop", function (e) { if (e.dataTransfer && e.dataTransfer.files) addFiles(e.dataTransfer.files); });
-  try { var saved = JSON.parse(localStorage.getItem(DRAFT) || "null"); if (saved) FIELDS.forEach(function (id) { if (saved[id] != null) $("#" + id).value = saved[id]; }); } catch (err) {}
-  $("#om-save").addEventListener("click", function () {
-    var v = {}; FIELDS.forEach(function (id) { v[id] = $("#" + id).value; });
-    try { localStorage.setItem(DRAFT, JSON.stringify(v)); $("#om-status").textContent = "Draft saved in this browser."; }
-    catch (err) { $("#om-status").textContent = "This browser would not save the draft; keep this page open instead."; }
-  });
-  var SUBMIT_TO = "physical.intelligence.lab@gmail.com";
-  function ctText() {
-    function v(id) { return $("#" + id).value.trim(); }
-    var lines = [
-      "OpenMotor dataset submission", "",
-      "Dataset name: " + v("om-name"), "Study or paper title: " + v("om-title"), "Lead author: " + v("om-author"),
-      "Lab or institution: " + v("om-lab"), "Publication year: " + v("om-year"), "Contact email: " + v("om-email"),
-      "License: " + v("om-license"), "Task: " + v("om-task"), "Repository link: " + v("om-repo"), "", "Notes:", v("om-notes") || "(none)", "",
-      "Files:", ctFiles.length ? ctFiles.map(function (f) { return "- " + f.name + " (" + mb(f.size) + ")"; }).join("\n") : "(attached to this email, or see the repository link)"
-    ];
-    return { subject: "OpenMotor dataset submission: " + v("om-name"), body: lines.join("\n") };
-  }
-  ctForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var bad = null;
-    ["om-name", "om-title", "om-author", "om-lab", "om-email", "om-license"].forEach(function (id) {
-      var el = $("#" + id), ok = el.value.trim() && (id !== "om-email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim()));
-      el.setAttribute("aria-invalid", ok ? "false" : "true"); if (!ok && !bad) bad = el;
-    });
-    if (bad) { $("#om-status").textContent = "Fill in the fields marked with a star; the email needs to be a full address."; bad.focus(); return; }
-    if (META.submitEndpoint) { sendSubmission(); return; }
-    var m = ctText();
-    var a = document.createElement("a");
-    a.href = "mailto:" + SUBMIT_TO + "?subject=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body + "\n\n(Attach your files to this email before sending.)");
-    document.body.appendChild(a); a.click(); a.remove();
-    $("#om-status").textContent = "An email to the OpenMotor team should have opened with your details filled in. Attach your files and press send.";
-    $("#om-fallback").hidden = false;
-  });
-
-  function readB64(f) { return new Promise(function (res, rej) { var r = new FileReader(); r.onload = function () { res(String(r.result).split(",")[1]); }; r.onerror = rej; r.readAsDataURL(f); }); }
-  function sendSubmission() {
-    var total = ctFiles.reduce(function (t, f) { return t + f.size; }, 0);
-    if (total > 35e6) { $("#om-status").textContent = "The files add up to " + mb(total) + "; the limit is 35 MB. Give a repository or Drive link for the larger files and remove them here."; return; }
-    var btn = ctForm.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = "Sending...";
-    $("#om-status").textContent = ctFiles.length ? "Uploading " + ctFiles.length + " file" + (ctFiles.length > 1 ? "s" : "") + "..." : "Sending...";
-    function v(id) { return $("#" + id).value.trim(); }
-    Promise.all(ctFiles.map(function (f) { return readB64(f.file).then(function (d) { return { name: f.name, type: f.file.type, data: d }; }); }))
-      .then(function (files) {
-        var task = v("om-task") ? "Task: " + v("om-task") + "\n\n" : "";
-        var payload = { name: v("om-name"), title: v("om-title"), author: v("om-author"), lab: v("om-lab"), year: v("om-year"), email: v("om-email"),
-                        license: v("om-license"), task: v("om-task"), repo: v("om-repo"), notes: task + v("om-notes"), website: $("#om-website").value, files: files };
-        return fetch(META.submitEndpoint, { method: "POST", body: JSON.stringify(payload) }).then(function (r) { return r.json(); });
-      })
-      .then(function (r) {
-        if (!r || !r.ok) throw new Error((r && r.error) || "no reply");
-        $("#ct-thanks-name").textContent = v("om-name"); $("#ct-thanks-email").textContent = v("om-email");
-        ctForm.hidden = true; $("#ct-thanks").hidden = false;
-        try { localStorage.removeItem(DRAFT); } catch (err) {}
-        $("#ct-thanks").scrollIntoView({ behavior: "smooth", block: "start" });
-      })
-      .catch(function () {
-        $("#om-status").textContent = "Sending failed. Check your connection and try again, or email physical.intelligence.lab@gmail.com.";
-        $("#om-fallback").hidden = false;
-      })
-      .then(function () { btn.disabled = false; btn.textContent = "Submit for review"; });
-  }
-  $("#ct-another").addEventListener("click", function () {
-    ctForm.reset(); ctFiles = []; fileListRender(); $("#om-status").textContent = ""; $("#om-fallback").hidden = true;
-    $("#ct-thanks").hidden = true; ctForm.hidden = false;
-    ctForm.scrollIntoView({ behavior: "smooth", block: "start" }); setTimeout(function () { $("#om-name").focus({ preventScroll: true }); }, 400);
-  });
-  $("#om-copy").addEventListener("click", function () {
-    var b = this, m = ctText();
-    navigator.clipboard.writeText("To: " + SUBMIT_TO + "\nSubject: " + m.subject + "\n\n" + m.body).then(function () { b.textContent = "Copied"; }, function () { b.textContent = "Select the address and copy it"; });
-    setTimeout(function () { b.textContent = "Copy details"; }, 2000);
-  });
+  /* ---------- add your dataset: site/parts/contribute.js ---------- */
 
   /* ---------- standardization ---------- */
   var FILES_OF = {};
