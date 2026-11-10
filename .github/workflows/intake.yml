@@ -137,6 +137,11 @@ jobs:
           git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
           python -I tools/intake/worker.py publish > work/publish.log 2>&1 || { tail -c 400 work/publish.log | sed 's/[^[:print:]]//g'; python -I tools/intake/worker.py fail "Publishing failed after your approval. We will retry; email physical.intelligence.lab@gmail.com if it does not appear within a day."; exit 1; }
           echo "published=yes" >> "$GITHUB_OUTPUT"
+      - name: Keep logs (private store)
+        if: always() && steps.claim.outputs.id != ''
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: python3 -I tools/intake/worker.py logs || true
       - name: Report a crash
         if: failure() && steps.claim.outputs.id != ''
         env:

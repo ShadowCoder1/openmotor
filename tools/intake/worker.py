@@ -224,7 +224,7 @@ def fastpath():
     with open(tables[0], newline="", encoding="utf-8-sig") as fh:
         head = next(csv.reader(fh, delimiter="\t" if tables[0].suffix.lower() == ".tsv" else ","))
     module = None
-    if set(stdlib.reach90_columns()) <= set(head):
+    if {c[1] for c in stdlib.reach90_columns()} <= set(head):
         module = "reach90"
     else:
         for mf in sorted((HERE / "tools/std/modules").glob("*.py")):
@@ -291,7 +291,7 @@ def preview(dsid, plots_spec=None):
             d = d.assign(_i=d.groupby("subject").cumcount())
             x = "_i"
         series = []
-        groups = list(d[g].dropna().unique())[:6] if g and g in d.columns else [None]
+        groups = (list(d[g].dropna().unique())[:6] if g and g in d.columns else []) or [None]
         for gv in groups:
             dd = d if gv is None else d[d[g] == gv]
             mm = dd.groupby(x)[y].mean()
@@ -304,7 +304,10 @@ def preview(dsid, plots_spec=None):
                       "ylabel": p.get("ylabel") or y, "series": series})
     def sect(title):
         m = re.search(r"\r?\n" + re.escape(title) + r"\r?\n((?:  .*\r?\n?)+)", readme)
-        return [l.strip() for l in m.group(1).splitlines()] if m else []
+        if not m:
+            return []
+        text = " ".join(l.strip() for l in m.group(1).splitlines())
+        return [x.strip() for x in re.split(r"(?<=[.!?])\s+(?=[A-Z])", text) if x.strip()]
     checks = [{"what": c["what"], "computed": c.get("computed"), "reported": c.get("reported"), "ok": c["ok"],
                "kind": c["kind"], "source": c.get("source", c.get("detail", ""))} for c in rec["checks"]]
     return {
@@ -562,6 +565,20 @@ def review_result():
         report("failed", "The final review could not be completed. Please try approving again later.", report=rep)
 
 
+def logs():
+    """Keep this run's logs and AI transcripts in the private store (never in the public Actions log)."""
+    sub = json.load(open(WORK / "sub.json")) if (WORK / "sub.json").exists() else None
+    if not sub:
+        return
+    stamp = time.strftime("%Y%m%dT%H%M%S")
+    for f in sorted(WORK.glob("*")):
+        if f.is_file() and f.suffix in (".log", ".err", ".out", ".json", ".md") and f.stat().st_size < 50_000_000:
+            try:
+                blob("put", str(f), f"submissions/{sub['id']}/logs/{stamp}/{f.name}")
+            except subprocess.CalledProcessError:
+                pass
+
+
 def fail(message):
     report("failed", message[:1000] or "Processing failed.")
 
@@ -569,5 +586,5 @@ def fail(message):
 if __name__ == "__main__":
     cmd = sys.argv[1]
     {"claim": lambda: claim(sys.argv[2]), "prepare": prepare, "fastpath": fastpath, "finish": finish, "publish": publish,
-     "gates": gates, "review_result": review_result,
+     "gates": gates, "review_result": review_result, "logs": logs,
      "fail": lambda: fail(" ".join(sys.argv[2:]))}[cmd]()
