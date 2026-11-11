@@ -54,6 +54,23 @@ about tasks: everything it draws comes from the family entry below and from the 
      a       line attributes used by term rules: pop (population code), age (median years), setting, device,
              fb (online or endpoint), strategy, goal, prior (share with earlier exposure), ae_instr
      ok      1 when the line enters the pooled curve and the meta-analysis; 0 with why = the plain reason
+   Reaching lines also carry (EXTRACT_VERSION 4):
+     baseline  y and m are baseline-corrected: each sequence's mean hand angle over its last BASE_N (20) feedback trials
+             at the unperturbed mapping before the onset (at least BASE_MIN, 5) is subtracted. a.bc = 1 when the line is
+             corrected (at least half of its people, and 3, have a baseline; sequences without one are left out of the
+             values), 0 when it keeps raw hand angles (bcwhy says why); m0 = the same measures without correction
+     onset   a perturbation already on at the first trial of the file counts as an onset only for the datasets in
+             ONSET_AT_FIRST_TRIAL (checked by hand: the file starts at the perturbation; onset0 quotes why); otherwise
+             it may be a constant offset of the session's mapping (Chu 2014) and the line is not pooled
+     first exposures  people with prior_exposure true are left out (nprior counts them); a line where they are the
+             majority is not pooled. Series lines whose people had adapted before in the dataset (a.prior > 0) are
+             listed, not pooled (finish())
+     a.age_lo, a.age_hi  youngest and oldest analysed participant (all families), for the age-group rule of the engine
+     nohalf  why trials to half is missing for a line that has late adaptation (it is defined only for clear learning)
+     ae      the aftereffect is stored under the measure of its instruction (AE_KINDS: ae_stop, ae_noaim, ae_keep,
+             ae_allowed, ae_unrec), so aftereffects after different instructions are never pooled
+   Each dataset cache also has "overlap": the people in more than one line, as counts by set of line ids (no codes),
+   and each family file has "overlap" per study, so that totals count each person once.
    Families whose datasets are not trial tables (walking strides, speech trials, saccades, force-field trials, key-press
    blocks) still produce these fields: each has a prepare_<family>() that turns a dataset into units (one row per stride,
    trial or block, with y signed and baseline-corrected as the family defines it) and series_lines() makes the lines and
@@ -84,7 +101,21 @@ HERE = Path(__file__).resolve().parent.parent
 OUT = HERE / "source/explore"
 DS_DIR, SITE_DIR = OUT / "ds", OUT / "site"
 ABS_CACHE = OUT / "abstracts.json"
-EXTRACT_VERSION = 3      # bump when an extractor changes: every cached dataset is read again
+EXTRACT_VERSION = 4      # bump when an extractor changes: every cached dataset is read again
+
+# The aftereffect of reaching is measured after different instructions (stop aiming, keep aiming, nothing said), and
+# these measure different things (implicit adaptation alone, or with what is left of a strategy), so each instruction is
+# its own measure: aftereffects are never pooled or compared across instructions. instr_strategy on the no-feedback
+# trials -> measure key. "unspecified" and an empty column are one measure: no instruction recorded.
+AE_KINDS = [("remove", "ae_stop", "Aftereffect, told to stop aiming", "told to stop aiming and reach straight to the target"),
+            ("forbidden", "ae_noaim", "Aftereffect, aiming forbidden", "told not to aim (for example, to keep ignoring the cursor)"),
+            ("maintain", "ae_keep", "Aftereffect, told to keep aiming", "told to keep aiming as during the block"),
+            ("allowed", "ae_allowed", "Aftereffect, aiming allowed", "told they may aim"),
+            (None, "ae_unrec", "Aftereffect, no instruction recorded", "no instruction recorded for these trials")]
+AE_KEY = {code: key for code, key, _, _ in AE_KINDS}
+AE_MEASURES = [{"key": key, "label": label, "unit": "y", "aeInstr": code or "unrecorded",
+                "text": "mean of the first 10 no-feedback trials right after the block, when such trials follow it; " + what}
+               for code, key, label, what in AE_KINDS]
 
 FAMILIES = [
     {"id": "rotation", "label": "Visuomotor rotation", "task": "reaching", "module": "reach90",
@@ -93,20 +124,20 @@ FAMILIES = [
      "y": "Hand angle", "unit": "deg", "pct": True, "size": "Rotation", "sizeUnit": "deg",
      "x": "Trials from rotation onset", "window": [-20, 300], "sizeBins": [[0, 25], [25, 40], [40, 55], [55, 180]],
      "measures": [
-         {"key": "early", "label": "Early adaptation", "unit": "y", "text": "mean of feedback trials 2 to 11 of the first rotation block"},
-         {"key": "late", "label": "Late adaptation", "unit": "y", "text": "mean of the last 20 feedback trials of the first rotation block"},
-         {"key": "ae", "label": "Aftereffect", "unit": "y", "text": "mean of the first 10 no-feedback trials right after that block, when such a block follows it"},
-         {"key": "half", "label": "Trials to half", "unit": "trials", "text": "rotation trials until the group mean (5-trial moving average) first reaches half of its late value"}]},
+         {"key": "early", "label": "Early adaptation", "unit": "y", "text": "mean of feedback trials 2 to 11 of the first rotation block, minus the participant's baseline"},
+         {"key": "late", "label": "Late adaptation", "unit": "y", "text": "mean of the last 20 feedback trials of the first rotation block, minus the participant's baseline"},
+         *AE_MEASURES,
+         {"key": "half", "label": "Trials to half", "unit": "trials", "text": "rotation trials until the group mean (5-trial moving average) first reaches half of its late value; only for groups that learned clearly"}]},
     {"id": "clamp", "label": "Error clamp", "task": "reaching", "module": "reach90",
      "about": "Each line is one group of participants who saw a cursor that always moved at a fixed angle from the target, whatever their hand did, and were told to ignore it. "
               "Hand angles are flipped so that moving away from the clamp (implicit adaptation) is positive. Clamp sizes differ between studies; the size filter keeps one range.",
      "y": "Hand angle", "unit": "deg", "pct": False, "size": "Clamp", "sizeUnit": "deg",
      "x": "Trials from clamp onset", "window": [-20, 300], "sizeBins": [[0, 5], [5, 25], [25, 180]],
      "measures": [
-         {"key": "early", "label": "Early adaptation", "unit": "y", "text": "mean of feedback trials 2 to 11 of the first clamp block"},
-         {"key": "late", "label": "Late adaptation", "unit": "y", "text": "mean of the last 20 feedback trials of the first clamp block"},
-         {"key": "ae", "label": "Aftereffect", "unit": "y", "text": "mean of the first 10 no-feedback trials right after that block, when such a block follows it"},
-         {"key": "half", "label": "Trials to half", "unit": "trials", "text": "clamp trials until the group mean (5-trial moving average) first reaches half of its late value"}]},
+         {"key": "early", "label": "Early adaptation", "unit": "y", "text": "mean of feedback trials 2 to 11 of the first clamp block, minus the participant's baseline"},
+         {"key": "late", "label": "Late adaptation", "unit": "y", "text": "mean of the last 20 feedback trials of the first clamp block, minus the participant's baseline"},
+         *AE_MEASURES,
+         {"key": "half", "label": "Trials to half", "unit": "trials", "text": "clamp trials until the group mean (5-trial moving average) first reaches half of its late value; only for groups that learned clearly"}]},
     # Families made by series_lines() (see "series families" below). Extra keys the page reads: xname and xunit (what x
     # counts), dec (decimals of y), gap (longest gap bridged in the pooled mean), maxX, unitName (the y unit in words),
     # methods (one or two plain sentences for "How the numbers are computed"); each measure's "w" is its window.
@@ -252,6 +283,19 @@ SMOOTH = 5        # moving average for trials to half
 BOOT = 1000       # bootstrap resamples of participants for the SE of trials to half (200 left the SE unstable by up to 50%)
 HALF_SE_MIN = 0.29  # floor for that SE: the error of rounding to whole trials (1 / sqrt(12)), so a line never gets infinite weight
 FAMILY_OF_MODE = {"rotated": "rotation", "clamped": "clamp"}
+BASE_N = 20        # baseline: each sequence's last 20 feedback trials at the unperturbed mapping before the onset ...
+BASE_MIN = 5       # ... at least 5 of them, or the sequence has no baseline (see reach90_lines)
+# Lines whose perturbation is on from the first trial of the file have no trial before the onset. Most such lines in the
+# archive are rotated training released without its unperturbed baseline; each dataset below was checked by hand against
+# its conversion notes. Any other line whose perturbation is on from the first trial is not pooled: its first "perturbed"
+# trial may be a constant offset of the session's mapping (Chu 2014: a 10 deg baseline offset for the whole session).
+ONSET_AT_FIRST_TRIAL = {
+    "Gastrock2020_SciRep": "the file starts at the rotated training: the aligned session is not in the deposit (conversion notes: 'Aligned-session and top-up training trials are not in the deposit')",
+    "Ruttle2016_PLoSONE": "the file starts at the rotated training: the aligned baseline (270 trials on day 1) is not in the deposit (conversion notes)",
+    "Modchalingam2023_SciRep": "the file starts at the rotated training: the aligned baseline block (66 cursor and 18 no-cursor reaches) is not in the deposit (conversion notes)",
+    "Kobayashi2024_eLife": "each sequence starts at the rotation onset after 360 veridical baseline reaches that the deposit does not encode (conversion notes)",
+    "Avraham2022_eLife": "the design has no baseline: the clamp starts on the first trial (conversion notes: 'No baseline')",
+}
 
 
 def _beta():
@@ -297,7 +341,25 @@ def _half(curve, xs):
     return float(xs[hit[0]] + 1) if len(hit) else np.nan
 
 
+def _partition(people):
+    """[[sorted line ids], count] for every distinct set of lines a person is in (counts only, no participant codes);
+    None when nobody is in more than one line"""
+    of = {}
+    for lid, ps in people.items():
+        for q in ps:
+            of.setdefault(q, set()).add(lid)
+    if not any(len(v) > 1 for v in of.values()):
+        return None
+    cnt = {}
+    for q, ls in of.items():
+        key = tuple(sorted(ls))
+        cnt[key] = cnt.get(key, 0) + 1
+    return [[list(k), v] for k, v in sorted(cnt.items())]
+
+
 def reach90_lines(zip_path, ds):
+    """Lines of one reach90 dataset. Each line carries "_people" (the set of analysed person codes) for the overlap
+    counts; build() turns it into counts and drops it, so no participant code is written."""
     bb = _beta()
     lines = []
     count = {}
@@ -339,11 +401,37 @@ def reach90_lines(zip_path, ds):
         own_first = pn[pn["pert_n"] != 0].groupby("subject")["trial"].min()
         inblk = pn[(pn["trial"] >= start) & (pn["trial"] <= end)].groupby("subject")["pert_n"].apply(lambda v: bool((v == P).all()))
         cons = [s for s in subs if own_first.get(s) == start and bool(inblk.get(s, False))]
-        dA = d[d["subject"].isin(cons)]
+        n_sched = len(cons)
+        # first exposures only: people who had adapted to a perturbation before (prior_exposure true) are left out; a
+        # line where they are the majority is listed but not pooled
+        prior_s = d.groupby("subject")["prior_exposure"].first().astype(str).str.lower().eq("true")
+        prior_share = round(float(np.mean([bool(prior_s.get(s, False)) for s in cons])), 2) if cons else 0.0
+        cons_first = [s for s in cons if not bool(prior_s.get(s, False))]
+        mostly_prior = len({p_of[s] for s in cons_first}) < 0.5 * len({p_of[s] for s in cons}) if cons else False
+        n_prior_out = 0
+        if cons_first != cons and not mostly_prior:
+            n_prior_out = len({p_of[s] for s in cons}) - len({p_of[s] for s in cons_first})
+            cons = cons_first
+        dA = d[d["subject"].isin(cons)].copy()
         hasA = dA[dA["hand_n"].notna()].groupby("trial").size().reindex(range(T), fill_value=0).to_numpy()
 
+        # baseline correction: each sequence's mean hand angle over its last BASE_N feedback trials at the unperturbed
+        # mapping before the onset (at least BASE_MIN) is subtracted. A line is corrected when at least half of its people
+        # (and at least MIN_PEOPLE) have such a baseline; sequences without one are then left out of the corrected values.
+        # Otherwise the line keeps raw hand angles and is flagged (bc = 0). The raw values stay in "m0".
+        bmask = (dA["trial"] < start) & (dA["pert_n"] == 0) & dA["hand_n"].notna() & dA["fb_visible"].ne("none")
+        bser = dA[bmask].sort_values(["subject", "trial"]).groupby("subject")["hand_n"].apply(
+            lambda v: float(v.tail(BASE_N).mean()) if len(v) >= BASE_MIN else np.nan)
+        base_of = {s: float(bser[s]) for s in bser.index if np.isfinite(bser[s])}
+        people_all = {p_of[s] for s in cons}
+        people_base = {p_of[s] for s in cons if s in base_of}
+        corrected = len(people_base) >= MIN_PEOPLE and len(people_base) >= 0.5 * len(people_all)
+        dA["hand_r"] = dA["hand_n"]
+        dA["hand_c"] = dA["hand_n"] - dA["subject"].map(base_of) if corrected else dA["hand_n"]
+        col = "hand_c" if corrected else "hand_r"
+
         # group mean per trial: baseline window, then the first block (feedback trials only)
-        hand = dA.groupby("trial")["hand_n"].mean().reindex(range(T))
+        hand = dA.groupby("trial")[col].mean().reindex(range(T))
         x0 = -min(PRE, start)
         y = []
         for x in range(x0, min(end - start, MAX_X) + 1):
@@ -353,70 +441,93 @@ def reach90_lines(zip_path, ds):
             else:
                 y.append(bb.r1(hand.iloc[t]) if np.isfinite(hand.iloc[t]) else None)
 
-        blk = dA[(dA["trial"] >= start) & (dA["trial"] <= end) & dA["fb_mode"].eq(mode0) & dA["pert_n"].eq(P) & dA["hand_n"].notna()]
-        blk = blk.sort_values(["subject", "trial"])
-        g = blk.groupby("subject", sort=False)["hand_n"]
+        blk_all = dA[(dA["trial"] >= start) & (dA["trial"] <= end) & dA["fb_mode"].eq(mode0) & dA["pert_n"].eq(P) & dA["hand_n"].notna()]
+        blk_all = blk_all.sort_values(["subject", "trial"])
 
         def per_person(v):
             v = v.dropna()
             return v.groupby(v.index.map(p_of)).mean().to_numpy() if len(v) else np.array([])
 
-        early = per_person(g.apply(lambda v: v.iloc[EARLY[0]:EARLY[1]].mean() if len(v) >= EARLY[1] else np.nan))
-        late = per_person(g.apply(lambda v: v.tail(LATE_N).mean() if len(v) >= LATE_N else np.nan))
-        m = {}
-        if nfb >= MIN_FB:
-            for key, v in (("early", early), ("late", late)):
-                st = _stat(v)
-                if st:
-                    m[key] = st
-
-        # aftereffect: a run of no-feedback trials right after the block (up to 2 empty trials between)
-        ae_instr = None
-        t = end + 1
-        while t < T and hasA[t] == 0 and t <= end + 2:
-            t += 1
-        if t < T and nf[t] and nfb >= MIN_FB:
-            run = []
-            while t < T and nf[t] and len(run) < AE_N:
-                if hasA[t] > 0:
-                    run.append(t)
+        def measures(c):
+            """early, late, aftereffect and trials to half from value column c; also the aftereffect instruction and
+            why trials to half is missing"""
+            blk = blk_all[blk_all[c].notna()]
+            g = blk.groupby("subject", sort=False)[c]
+            early = per_person(g.apply(lambda v: v.iloc[EARLY[0]:EARLY[1]].mean() if len(v) >= EARLY[1] else np.nan))
+            late = per_person(g.apply(lambda v: v.tail(LATE_N).mean() if len(v) >= LATE_N else np.nan))
+            m, ae_instr, nohalf = {}, None, None
+            if nfb >= MIN_FB:
+                for key, v in (("early", early), ("late", late)):
+                    st = _stat(v)
+                    if st:
+                        m[key] = st
+            # aftereffect: a run of no-feedback trials right after the block (up to 2 empty trials between)
+            t = end + 1
+            while t < T and hasA[t] == 0 and t <= end + 2:
                 t += 1
-            if len(run) >= 3:
-                ae_rows = dA[dA["trial"].isin(run) & dA["hand_n"].notna() & dA["fb_visible"].eq("none")]
-                st = _stat(per_person(ae_rows.groupby("subject")["hand_n"].mean()))
-                if st:
-                    m["ae"] = st
-                    ae_instr = _mode(ae_rows["instr_strategy"])
+            if t < T and nf[t] and nfb >= MIN_FB:
+                run = []
+                while t < T and nf[t] and len(run) < AE_N:
+                    if hasA[t] > 0:
+                        run.append(t)
+                    t += 1
+                if len(run) >= 3:
+                    ae_rows = dA[dA["trial"].isin(run) & dA[c].notna() & dA["fb_visible"].eq("none")]
+                    st = _stat(per_person(ae_rows.groupby("subject")[c].mean()))
+                    if st:
+                        m["ae"] = st
+                        ae_instr = _mode(ae_rows["instr_strategy"])
+            # trials to half of the late value, with a bootstrap SE over participants; defined only for lines that
+            # learned clearly (late > 2 SE); otherwise "nohalf" says why it is missing
+            if "late" in m and m["late"][0] > 2 * m["late"][1]:
+                piv = blk.assign(p=blk["subject"].map(p_of)).pivot_table(index="p", columns="trial", values=c, aggfunc="mean")
+                xs = piv.columns.to_numpy() - start
+                M = piv.to_numpy(dtype=float)
+                h0 = _half(np.nanmean(M, axis=0), xs)
+                if np.isfinite(h0):
+                    rng = np.random.default_rng(zlib.crc32(f"{ds['name']}|{exp}|{k}".encode()))
+                    with warnings.catch_warnings():
+                        warnings.simplefilter("ignore", RuntimeWarning)  # a resample can leave a trial with no data
+                        hb = np.array([_half(np.nanmean(M[rng.integers(0, len(M), len(M))], axis=0), xs) for _ in range(BOOT)])
+                    fin = hb[np.isfinite(hb)]
+                    if len(fin) >= 0.8 * BOOT:
+                        m["half"] = [int(h0), round(max(float(fin.std(ddof=1)), HALF_SE_MIN), 2), int(len(M))]
+                    else:
+                        nohalf = "unstable: fewer than 80% of the bootstrap resamples reach half of their late value"
+                else:
+                    nohalf = "the smoothed curve never reached half of its late value within the block"
+            elif "late" in m:
+                nohalf = "no clear learning (late adaptation within 2 SE of 0)"
+            return m, ae_instr, nohalf
 
-        # trials to half of the late value, with a bootstrap SE over participants
-        if "late" in m and m["late"][0] > 2 * m["late"][1]:
-            piv = blk.assign(p=blk["subject"].map(p_of)).pivot_table(index="p", columns="trial", values="hand_n", aggfunc="mean")
-            xs = piv.columns.to_numpy() - start
-            M = piv.to_numpy(dtype=float)
-            h0 = _half(np.nanmean(M, axis=0), xs)
-            if np.isfinite(h0):
-                rng = np.random.default_rng(zlib.crc32(f"{ds['name']}|{exp}|{k}".encode()))
-                with warnings.catch_warnings():
-                    warnings.simplefilter("ignore", RuntimeWarning)  # a resample can leave a trial with no data
-                    hb = np.array([_half(np.nanmean(M[rng.integers(0, len(M), len(M))], axis=0), xs) for _ in range(BOOT)])
-                fin = hb[np.isfinite(hb)]
-                se = round(max(float(fin.std(ddof=1)), HALF_SE_MIN), 2) if len(fin) >= 0.8 * BOOT else None
-                m["half"] = [int(h0), se, int(len(M))]
+        m, ae_instr, nohalf = measures(col)
+        m0 = measures("hand_r")[0] if corrected else None
 
         first = (dA if len(dA) else d).groupby("subject").first()
-        age = pd.to_numeric(first["age"], errors="coerce").dropna() if "age" in first else pd.Series(dtype=float)
-        a = {"pop": _mode(first["population"]), "age": round(float(age.median()), 1) if len(age) >= max(1, 0.5 * len(first)) else None,
+        age = pd.to_numeric(first.assign(p=first.index.map(p_of)).drop_duplicates("p")["age"], errors="coerce").dropna() if "age" in first else pd.Series(dtype=float)
+        n_first = len({p_of[s] for s in first.index})
+        known_age = len(age) >= max(1, 0.5 * n_first)
+        a = {"pop": _mode(first["population"]), "age": round(float(age.median()), 1) if known_age else None,
+             "age_lo": round(float(age.min()), 1) if known_age else None, "age_hi": round(float(age.max()), 1) if known_age else None,
              "setting": _mode(first["setting"]), "device": _mode(first["device"]) if "device" in first else None,
-             "fb": _mode(blk["fb_visible"]), "strategy": _mode(blk["instr_strategy"]), "goal": _mode(blk["instr_goal"]),
-             "prior": round(float((first["prior_exposure"].astype(str).str.lower() == "true").mean()), 2), "ae_instr": ae_instr}
+             "fb": _mode(blk_all["fb_visible"]), "strategy": _mode(blk_all["instr_strategy"]), "goal": _mode(blk_all["instr_goal"]),
+             "prior": prior_share, "ae_instr": ae_instr, "bc": 1 if corrected else 0}
         n_all = len({p_of[s] for s in subs if s in p_of})
         n_people = len({p_of[s] for s in cons})
         word = "rotation" if fam == "rotation" else "clamp"
         why = None
-        if len(cons) < 0.9 * len(subs):
+        onset_note = ONSET_AT_FIRST_TRIAL.get(ds["name"]) if start == 0 else None
+        if start == 0 and onset_note is None:
+            later = [v for v in vals[end + 1:] if np.isfinite(v)]
+            why = (f"no perturbation relative to the session's own mapping: the same {word} is on from the first trial and never changes (a constant offset)"
+                   if all(v == P for v in later) else
+                   f"the session starts with a {word} already on (an offset of the mapping) and its unperturbed baseline is not in the file, so the onset is not known")
+        elif n_sched < 0.9 * len(subs):
             why = f"participants in this group followed different {word} schedules"
         elif nfb < MIN_FB:
             why = f"the first {word} changed after {nfb} feedback trial{'' if nfb == 1 else 's'} (fewer than {MIN_FB}: a gradual or changing schedule)"
+        elif mostly_prior:
+            why = "most participants had adapted to a perturbation before (a repeated exposure); only first exposures are pooled"
         elif n_people < MIN_PEOPLE:
             why = f"fewer than {MIN_PEOPLE} participants"
         elif a["goal"] == "hand_to_angle" or a["strategy"] == "given_with_angle":
@@ -426,12 +537,24 @@ def reach90_lines(zip_path, ds):
         line = {"id": f"{ds['name']}|{exp}|{k}", "family": fam, "ds": ds["name"], "study": ds["study"], "exp": exp, "el": exp_label,
                 "label": series["label"], "n": n_people, "size": round(P, 2), "x0": x0, "y": y, "blk": int(end - start + 1), "nfb": int(nfb),
                 "m": m, "a": a, "ok": 0 if why else 1}
+        if m0 is not None:
+            line["m0"] = m0
+        if not corrected:
+            line["bcwhy"] = ("no feedback trials at the unperturbed mapping before the onset in the file" if not len(bser) else
+                             f"fewer than half of the participants have {BASE_MIN} baseline feedback trials")
+        if nohalf:
+            line["nohalf"] = nohalf
+        if onset_note:
+            line["onset0"] = onset_note
+        if n_prior_out:
+            line["nprior"] = n_prior_out  # people left out because they had adapted before
         if n_all != n_people:
-            line["nall"] = n_all  # people in the group, when some had another schedule and are left out
+            line["nall"] = n_all  # people in the group, when some had another schedule (or a prior exposure) and are left out
         if len(cons) != n_people:
             line["seq"] = len(cons)
         if why:
             line["why"] = why
+        line["_people"] = {p_of[s] for s in cons}
         lines.append(line)
 
     bb.build_dataset(ds["name"], ds.get("paradigms") or {}, zip_path=zip_path, extra_cols=("person", "age", "device"), on_line=on_line)
@@ -454,7 +577,7 @@ def reach90_lines(zip_path, ds):
 #   prior        optional: True when the person already had a perturbation earlier in the dataset
 #   age, population, setting, device   optional participant columns, as in the standardized files
 
-MODULE_VERSION = {"walking": 1, "saccade": 1, "force_field_reaching": 1, "speech": 1, "keypress": 1}  # per-module cache version (reach90 uses EXTRACT_VERSION)
+MODULE_VERSION = {"walking": 2, "saccade": 2, "force_field_reaching": 2, "speech": 2, "keypress": 2}  # per-module cache version (reach90 uses EXTRACT_VERSION)
 
 
 def module_version(module):
@@ -647,7 +770,9 @@ def series_lines(ds, fam, u):
             rows = pd.DataFrame([per[s]["row"] for s in cons])
             prs = rows.drop_duplicates("person")
             age = pd.to_numeric(prs["age"], errors="coerce").dropna()
-            a = {"pop": _pop_code(_mode(prs["population"])), "age": round(float(age.median()), 1) if len(age) >= max(1, 0.5 * len(prs)) else None,
+            known_age = len(age) >= max(1, 0.5 * len(prs))
+            a = {"pop": _pop_code(_mode(prs["population"])), "age": round(float(age.median()), 1) if known_age else None,
+                 "age_lo": round(float(age.min()), 1) if known_age else None, "age_hi": round(float(age.max()), 1) if known_age else None,
                  "setting": _mode(prs["setting"]), "device": _device_code(_mode(prs["device"])),
                  "prior": round(float(np.mean([_share(per[s]["prior"]) for s in cons])), 2)}
             whys = pd.Series([per[s]["row"]["why"] for s in cons]).dropna()
@@ -678,6 +803,7 @@ def series_lines(ds, fam, u):
                 line["seq"] = len(cons)
             if why:
                 line["why"] = why
+            line["_people"] = set(people)
             lines.append(line)
     return lines
 
@@ -2029,6 +2155,28 @@ def mine_terms(study_ids, texts, pooled_studies):
 
 # ---------------------------------------------------------------- build
 
+SERIES_FAMS = {f["id"] for f in FAMILIES if "series" in f}
+
+
+def finish(l):
+    """rules applied when the page data are written (to every cached line, read this run or earlier)"""
+    if l["family"] in ("rotation", "clamp"):
+        # the aftereffect goes under the measure of its instruction (AE_KINDS): never pooled across instructions
+        code = l["a"].get("ae_instr")
+        code = None if code in (None, "unspecified") else code
+        for mk in ("m", "m0"):
+            if l.get(mk) and "ae" in l[mk]:
+                l[mk][AE_KEY.get(code, f"ae_{code}")] = l[mk].pop("ae")
+    elif l["family"] in SERIES_FAMS and l["ok"] and (l["a"].get("prior") or 0) > 0:
+        # first exposures only: a line of people who had already adapted in this dataset (a later session, or sequences
+        # averaged over first and later exposures) is listed, not pooled
+        l["ok"] = 0
+        l["why"] = ("every participant had adapted before in this dataset (a repeated exposure); only first exposures are pooled"
+                    if l["a"]["prior"] >= 1 else
+                    "the line averages first and repeated exposures of the same people (in an order the file does not always record); only first exposures are pooled")
+    return l
+
+
 def build(fetch=True):
     DS_DIR.mkdir(parents=True, exist_ok=True)
     SITE_DIR.mkdir(parents=True, exist_ok=True)
@@ -2057,8 +2205,12 @@ def build(fetch=True):
             finally:
                 if downloaded:
                     zp.unlink(missing_ok=True)
+            # which lines share people, as counts by set of lines (the person codes are dropped here and never written)
+            people = {l["id"]: l.pop("_people", set()) for l in lines}
+            ov = _partition({lid: ps for lid, ps in people.items() if ps})
             cp.write_text(json.dumps({"dataset": ds["name"], "study": ds["study"], "module": ds["module"], "sha256": ds["sha256"],
-                                      "version": module_version(ds["module"]), "lines": lines}, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+                                      "version": module_version(ds["module"]), "lines": lines, **({"overlap": ov} if ov else {})},
+                                     separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
             n_new += 1
             fams = {}
             for l in lines:
@@ -2072,10 +2224,14 @@ def build(fetch=True):
             cp.unlink()
 
     lines_by_fam = {f["id"]: [] for f in FAMILIES}
+    overlap = {}
     for cp in sorted(DS_DIR.glob("*.json")):
-        for l in load_json(cp)["lines"]:
+        c = load_json(cp)
+        for l in c["lines"]:
             if l["family"] in lines_by_fam:
-                lines_by_fam[l["family"]].append(l)
+                lines_by_fam[l["family"]].append(finish(l))
+        if c.get("overlap"):
+            overlap[c["dataset"]] = c["overlap"]
     texts = studies_text()
     if fetch:
         fetch_missing_abstracts(texts, {l["study"] for ls in lines_by_fam.values() for l in ls})
@@ -2083,16 +2239,30 @@ def build(fetch=True):
 
     index = {"built": datetime.now().strftime("%Y-%m-%d"), "families": [],
              "rules": {"tfidf_min": TFIDF_MIN, "min_studies": MIN_STUDIES, "vocabulary": len(VOCAB), "min_fb": MIN_FB, "min_people": MIN_PEOPLE,
-                       "late_n": LATE_N, "early": [EARLY[0] + 1, EARLY[1]], "ae_n": AE_N, "smooth": SMOOTH, "boot": BOOT, "half_se_min": HALF_SE_MIN, "pre": PRE, "max_x": MAX_X}}
+                       "late_n": LATE_N, "early": [EARLY[0] + 1, EARLY[1]], "ae_n": AE_N, "smooth": SMOOTH, "boot": BOOT, "half_se_min": HALF_SE_MIN, "pre": PRE, "max_x": MAX_X,
+                       "base_n": BASE_N, "base_min": BASE_MIN, "onset_first_trial": ONSET_AT_FIRST_TRIAL}}
     for fam in FAMILIES:
         L = sorted(lines_by_fam[fam["id"]], key=lambda l: (l["study"].lower(), l["ds"], l["exp"], l["id"]))
         sids = sorted({l["study"] for l in L})
         pooled = {l["study"] for l in L if l["ok"]}
         terms, docs = mine_terms(sids, texts, pooled)
         studies = {sid: {"ds": sorted({l["ds"] for l in L if l["study"] == sid}), **docs[sid]} for sid in sids}
-        body = {"family": fam["id"], "lines": L, "studies": studies, "terms": terms}
+        # people in more than one line of this family (within-participant designs, repeated sessions): counts by set of
+        # lines, per study, so that totals count each person once
+        ids, study_of, ov = {l["id"] for l in L}, {l["id"]: l["study"] for l in L}, {}
+        for dsn, groups in sorted(overlap.items()):
+            merged = {}
+            for g, c in groups:
+                g2 = tuple(i for i in g if i in ids)
+                if g2:
+                    merged[g2] = merged.get(g2, 0) + c
+            if any(len(g2) > 1 for g2 in merged):
+                for g2, c in sorted(merged.items()):
+                    ov.setdefault(study_of[g2[0]], []).append([list(g2), c])
+        body = {"family": fam["id"], "lines": L, "studies": studies, "terms": terms, "overlap": ov}
         (SITE_DIR / f"{fam['id']}.json").write_text(json.dumps(body, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
-        entry = dict(fam, file=f"{fam['id']}.json", lines=len(L), pooled=sum(l["ok"] for l in L), studies=len(sids),
+        measures = [m for m in fam["measures"] if not m["key"].startswith("ae_") or any(m["key"] in l["m"] for l in L if l["ok"])]
+        entry = dict(fam, measures=measures, file=f"{fam['id']}.json", lines=len(L), pooled=sum(l["ok"] for l in L), studies=len(sids),
                      pooledStudies=len(pooled), terms=len(terms), bytes=(SITE_DIR / f"{fam['id']}.json").stat().st_size)
         entry.pop("module")
         ser = entry.pop("series", None)

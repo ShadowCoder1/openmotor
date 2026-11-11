@@ -33,6 +33,29 @@ MIN_BLOCK = 40      # trials in that block, for the cross-study summary
 MIN_N = 5           # participants per line, for the cross-study summary
 GENERIC_GROUPS = {"Arrighi2016_PLoSOne"}  # group labels never shown for these datasets
 PHASE_ORDER = ["practice", "baseline", "learning", "aftereffect", "washout", "relearning", "probe"]
+# Datasets whose file puts several experiments under one experiment id: the experiment is read from the group name instead
+# (dataset -> (pattern on the group name, the experiment id in the file)). Tsay et al. 2023 (Proc R Soc B) codes Exp 1
+# (90-trial blocks, clamps of 30, 45 and 60 deg) and Exp 2 (270-trial blocks, four training schedules) as one experiment,
+# "All"; its group names start with "Exp1" or "Exp2".
+EXPERIMENT_FROM_GROUP = {"Tsay2023_ProcRSocB": (r"^(Exp\d+)\b", "Tsay2023_ProcRSocB_All")}
+
+
+def split_experiments(name, df):
+    """df with its experiment column split by group name where EXPERIMENT_FROM_GROUP says so (the same table otherwise)"""
+    rule = EXPERIMENT_FROM_GROUP.get(name)
+    if not rule:
+        return df
+    pre = df["group"].astype("string").fillna("").str.extract(rule[0], expand=False)
+    hit = pre.notna() & df["experiment"].astype(str).eq(rule[1])
+    df = df.copy()
+    df.loc[hit, "experiment"] = name + "_" + pre[hit].astype(str)
+    return df
+
+
+def source_experiment(name, exp):
+    """the experiment id in the dataset's file for an experiment id made by split_experiments()"""
+    rule = EXPERIMENT_FROM_GROUP.get(name)
+    return rule[1] if rule and re.fullmatch(re.escape(name) + r"_Exp\d+", str(exp)) else exp
 
 
 def r1(x):
@@ -98,6 +121,7 @@ def build_dataset(name, paradigms, zip_path=None, extra_cols=(), on_line=None):
     (for callers, unused here); on_line(**context) is called for every line, with the line's trials (tools/explore_build.py)."""
     df = read_dataset(zip_path or REL / f"{name}.zip", name, COLS + [c for c in extra_cols if c not in COLS])
     df["group"] = df["group"].astype("string").fillna("")
+    df = split_experiments(name, df)
     out = {"name": name, "experiments": []}
     summary_points = []
     for exp, de in df.groupby("experiment", sort=True):
