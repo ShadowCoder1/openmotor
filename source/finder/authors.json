@@ -1,0 +1,2673 @@
+{
+ "authors": {
+  "10.1002/hbm.70579": {
+   "id": "A5024490605",
+   "name": "Bradley R. King"
+  },
+  "10.1002/icd.70121": {
+   "id": "A5010374456",
+   "name": "Hee Yeon Im"
+  },
+  "10.1002/mds.29659": {
+   "id": "A5017394461",
+   "name": "Taraz G. Lee"
+  },
+  "10.1002/mds.870130310": {
+   "id": "A5110570701",
+   "name": "Ary L. Goldberger"
+  },
+  "10.1007/978-3-031-45461-5_2": {
+   "id": "A5056214167",
+   "name": "Marcos Faúndez-Zanuy"
+  },
+  "10.1007/978-3-642-31401-8_10": {
+   "id": "A5078628299",
+   "name": "Alan Miles Wing"
+  },
+  "10.1007/s00221-017-5160-8": {
+   "id": "A5003910525",
+   "name": "Peter John Bex"
+  },
+  "10.1007/s00221-018-5257-8": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1007/s00221-020-05768-0": {
+   "id": "A5080441481",
+   "name": "Ellen Poliakoff"
+  },
+  "10.1007/s00221-021-06141-5": {
+   "id": "A5078960649",
+   "name": "Nadia Bolognini"
+  },
+  "10.1007/s00221-022-06506-4": {
+   "id": "A5031873460",
+   "name": "Willemijn D. Schot"
+  },
+  "10.1007/s00221-023-06634-5": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1007/s00221-023-06667-w": {
+   "id": "A5066190478",
+   "name": "Masaki Abe"
+  },
+  "10.1007/s00221-023-06683-w": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1007/s00221-023-06699-2": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1007/s00221-024-06898-5": {
+   "id": "A5035315239",
+   "name": "Hannah J. Block"
+  },
+  "10.1007/s00221-025-07083-y": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1007/s00221-026-07273-2": {
+   "id": "A5062353209",
+   "name": "Christopher L. Striemer"
+  },
+  "10.1007/s00221-026-07304-y": {
+   "id": "A5135863124",
+   "name": "Christopher M. Hill"
+  },
+  "10.1007/s00426-022-01646-2": {
+   "id": "A5082494917",
+   "name": "Clemens Wöllner"
+  },
+  "10.1007/s00426-024-02037-5": {
+   "id": "A5016282648",
+   "name": "Maarten A. Immink"
+  },
+  "10.1007/s10579-011-9145-0": {
+   "id": "A5055592637",
+   "name": "Talya Wolff"
+  },
+  "10.1007/s11517-015-1276-9": {
+   "id": "A5062776728",
+   "name": "Eugenio Guglielmelli"
+  },
+  "10.1007/s12311-022-01500-6": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1007/s12311-025-01884-1": {
+   "id": "A5023057003",
+   "name": "Michelle S. Troche"
+  },
+  "10.1007/s12559-024-10360-7": {
+   "id": "A5056214167",
+   "name": "Marcos Faúndez-Zanuy"
+  },
+  "10.1007/s42113-025-00245-9": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1016/j.actpsy.2026.106849": {
+   "id": "A5017715494",
+   "name": "Janeen D. Loehr"
+  },
+  "10.1016/j.brs.2022.10.006": {
+   "id": "A5044570092",
+   "name": "Charlotte Jane Stagg"
+  },
+  "10.1016/j.brs.2023.08.022": {
+   "id": "A5083658031",
+   "name": "Geneviève Albouy"
+  },
+  "10.1016/j.brs.2024.03.009": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1016/j.bspc.2020.102232": {
+   "id": "A5064947412",
+   "name": "Sandro Fioretti"
+  },
+  "10.1016/j.cct.2012.09.006": {
+   "id": "A5035589814",
+   "name": "Lewis Arnold Lipsitz"
+  },
+  "10.1016/j.celrep.2021.109193": {
+   "id": "A5111547554",
+   "name": "Leonardo G. Cohen"
+  },
+  "10.1016/j.cmpb.2016.08.005": {
+   "id": "A5003275797",
+   "name": "João Paulo Papa"
+  },
+  "10.1016/j.cognition.2018.08.001": {
+   "id": "A5015215355",
+   "name": "Günther Knoblich"
+  },
+  "10.1016/j.cognition.2019.05.010": {
+   "id": "A5009983988",
+   "name": "Amélie Rochet‐Capellan"
+  },
+  "10.1016/j.cognition.2024.106010": {
+   "id": "A5039055119",
+   "name": "Douglas M. Shiller"
+  },
+  "10.1016/j.cogpsych.2026.101798": {
+   "id": "A5001165944",
+   "name": "Zhongting Chen"
+  },
+  "10.1016/j.concog.2022.103332": {
+   "id": "A5012588217",
+   "name": "Marie Postma"
+  },
+  "10.1016/j.cortex.2018.11.014": {
+   "id": "A5081308782",
+   "name": "Dylan J. Edwards"
+  },
+  "10.1016/j.cortex.2020.04.006": {
+   "id": "A5027153230",
+   "name": "Jeremy Goslin"
+  },
+  "10.1016/j.cortex.2020.10.001": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1016/j.cortex.2021.09.008": {
+   "id": "A5062262344",
+   "name": "Kate Emma Watkins"
+  },
+  "10.1016/j.cortex.2023.05.002": {
+   "id": "A5022932083",
+   "name": "Max‐Philipp Stenner"
+  },
+  "10.1016/j.cortex.2025.03.005": {
+   "id": "A5087014332",
+   "name": "Hikari Kirimoto"
+  },
+  "10.1016/j.cortex.2025.09.007": {
+   "id": "A5062262344",
+   "name": "Kate Emma Watkins"
+  },
+  "10.1016/j.cub.2019.02.049": {
+   "id": "A5050316387",
+   "name": "Leonardo G. Cohen"
+  },
+  "10.1016/j.cub.2022.04.065": {
+   "id": "A5090680634",
+   "name": "Hiroaki Gomi"
+  },
+  "10.1016/j.cub.2024.01.073": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1016/j.cub.2026.06.059": {
+   "id": "A5059314195",
+   "name": "Anna Christina Nobre"
+  },
+  "10.1016/j.dib.2020.106044": {
+   "id": "A5080560885",
+   "name": "Elana Zion Golumbic"
+  },
+  "10.1016/j.dib.2021.107635": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1016/j.dib.2024.110968": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1016/j.dib.2025.111300": {
+   "id": "A5027240688",
+   "name": "Jason W. Bohland"
+  },
+  "10.1016/j.ergon.2025.103710": {
+   "id": "A5091915486",
+   "name": "Vincent Ferrandez"
+  },
+  "10.1016/j.exger.2019.110695": {
+   "id": "A5018262693",
+   "name": "Catherine Denis"
+  },
+  "10.1016/j.gaitpost.2020.06.018": {
+   "id": "A5022013226",
+   "name": "Lena H. Ting"
+  },
+  "10.1016/j.gaitpost.2023.07.038": {
+   "id": "A5014613835",
+   "name": "Stéphane Armand"
+  },
+  "10.1016/j.isci.2022.104096": {
+   "id": "A5010216362",
+   "name": "Alessandro D’Ausilio"
+  },
+  "10.1016/j.isci.2026.117523": {
+   "id": "A5037584185",
+   "name": "Shlomi Haar"
+  },
+  "10.1016/j.isci.2026.117915": {
+   "id": "A5152110575",
+   "name": "Puzi Sun"
+  },
+  "10.1016/j.isci.2026.117993": {
+   "id": "A5008006939",
+   "name": "Domenica Bueti"
+  },
+  "10.1016/j.jbiomech.2019.109529": {
+   "id": "A5050195536",
+   "name": "Julie Nantel"
+  },
+  "10.1016/j.jbiomech.2021.110320": {
+   "id": "A5009266368",
+   "name": "Aaron J. Young"
+  },
+  "10.1016/j.jbiomech.2022.111349": {
+   "id": "A5045763007",
+   "name": "Sjoerd M. Bruijn"
+  },
+  "10.1016/j.jbiomech.2023.111580": {
+   "id": "A5083232835",
+   "name": "Herman van der Kooij"
+  },
+  "10.1016/j.jfludis.2026.106241": {
+   "id": "A5046834894",
+   "name": "Gilles Vannuscorps"
+  },
+  "10.1016/j.jneumeth.2020.108580": {
+   "id": "A5088200466",
+   "name": "Antonie J. van den Bogert"
+  },
+  "10.1016/j.jvoice.2026.01.020": {
+   "id": null
+  },
+  "10.1016/j.mex.2018.12.017": {
+   "id": "A5088972172",
+   "name": "James Robert Brašić"
+  },
+  "10.1016/j.neulet.2023.137442": {
+   "id": "A5032070422",
+   "name": "Sydney Y. Schaefer"
+  },
+  "10.1016/j.neurobiolaging.2019.03.020": {
+   "id": "A5090664889",
+   "name": "Jean‐Jacques Orban de Xivry"
+  },
+  "10.1016/j.neuroimage.2020.117076": {
+   "id": "A5053241501",
+   "name": "Gernot Müller-Putz"
+  },
+  "10.1016/j.neuroimage.2021.118681": {
+   "id": "A5010466286",
+   "name": "Jacinta O’Shea"
+  },
+  "10.1016/j.neuroimage.2022.119459": {
+   "id": "A5015963444",
+   "name": "Hyeon‐Ae Jeon"
+  },
+  "10.1016/j.neuroimage.2023.120098": {
+   "id": "A5043941542",
+   "name": "Edward G. Freedman"
+  },
+  "10.1016/j.neuropsychologia.2023.108662": {
+   "id": "A5062353209",
+   "name": "Christopher L. Striemer"
+  },
+  "10.1016/j.neuroscience.2021.05.007": {
+   "id": "A5110104712",
+   "name": "Hermann Müller"
+  },
+  "10.1016/j.neuroscience.2026.06.037": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1016/j.nlm.2018.06.002": {
+   "id": "A5058257453",
+   "name": "Erin J. Wamsley"
+  },
+  "10.1016/j.ridd.2025.105170": {
+   "id": "A5061827120",
+   "name": "Frederik J.A. Deconinck"
+  },
+  "10.1016/j.specom.2025.103205": {
+   "id": "A5087456271",
+   "name": "Justin J. H. Lo"
+  },
+  "10.1016/j.visres.2014.08.009": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1016/j.visres.2016.03.008": {
+   "id": "A5005405457",
+   "name": "Katja Fiehler"
+  },
+  "10.1016/j.wocn.2025.101432": {
+   "id": "A5108629319",
+   "name": "Phil Hoole"
+  },
+  "10.1016/j.ynirp.2021.100009": {
+   "id": "A5067819860",
+   "name": "Jeffery J. Summers"
+  },
+  "10.1016/s0140-6736(03)14470-4": {
+   "id": "A5065209470",
+   "name": "James J. Collins"
+  },
+  "10.1017/s0025100317000494": {
+   "id": "A5071664247",
+   "name": "Grant L. McGuire"
+  },
+  "10.1017/s1472928801000206": {
+   "id": "A5111633494",
+   "name": "Dominique Guehl"
+  },
+  "10.1037/xge0001421": {
+   "id": "A5069100359",
+   "name": "Maryellen C. MacDonald"
+  },
+  "10.1037/xge0001456": {
+   "id": "A5026077105",
+   "name": "Daniel Robert Lametti"
+  },
+  "10.1037/xge0001612": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1037/xge0001744": {
+   "id": "A5005944306",
+   "name": "Benjamin Parrell"
+  },
+  "10.1037/xhp0000407": {
+   "id": "A5055698931",
+   "name": "Joost C. Dessing"
+  },
+  "10.1037/xhp0001124": {
+   "id": "A5040973812",
+   "name": "Pratik K. Mutha"
+  },
+  "10.1037/xlm0001551": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.1038/s41467-021-25740-y": {
+   "id": "A5017075432",
+   "name": "Merav Ahissar"
+  },
+  "10.1038/s41467-024-49027-0": {
+   "id": "A5019442831",
+   "name": "Jeffrey M. Hausdorff"
+  },
+  "10.1038/s41467-024-53416-w": {
+   "id": "A5062283980",
+   "name": "Manoj Srinivasan"
+  },
+  "10.1038/s41467-026-74824-0": {
+   "id": "A5035809054",
+   "name": "Romain Quentin"
+  },
+  "10.1038/s41531-023-00625-7": {
+   "id": "A5026939234",
+   "name": "Tobias Warnecke"
+  },
+  "10.1038/s41531-026-01528-z": {
+   "id": "A5071020663",
+   "name": "Aaron L. Wong"
+  },
+  "10.1038/s41539-022-00140-z": {
+   "id": "A5069855831",
+   "name": "Timothy Charles Rickard"
+  },
+  "10.1038/s41539-024-00258-2": {
+   "id": "A5008183934",
+   "name": "Amy J. Bastian"
+  },
+  "10.1038/s41539-025-00373-8": {
+   "id": "A5037584185",
+   "name": "Shlomi Haar"
+  },
+  "10.1038/s41539-026-00428-4": {
+   "id": "A5047199707",
+   "name": "Jonathan S. Tsay"
+  },
+  "10.1038/s41562-019-0678-3": {
+   "id": "A5060950565",
+   "name": "Kai Joshua Miller"
+  },
+  "10.1038/s41562-023-01798-0": {
+   "id": null
+  },
+  "10.1038/s41562-023-01800-9": {
+   "id": "A5110628266",
+   "name": "Josh H. McDermott"
+  },
+  "10.1038/s41562-024-01834-7": {
+   "id": "A5024986150",
+   "name": "Daniel M. Wolpert"
+  },
+  "10.1038/s41562-025-02217-2": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1038/s41562-026-02468-7": {
+   "id": "A5041459591",
+   "name": "Jonathan Sanching Tsay"
+  },
+  "10.1038/s41586-021-04129-3": {
+   "id": "A5024986150",
+   "name": "Daniel M. Wolpert"
+  },
+  "10.1038/s41586-025-09255-w": {
+   "id": null
+  },
+  "10.1038/s41593-023-01457-7": {
+   "id": "A5075916057",
+   "name": "Friedhelm Christoph Hummel"
+  },
+  "10.1038/s41597-019-0124-4": {
+   "id": "A5085279919",
+   "name": "Florent Moissenet"
+  },
+  "10.1038/s41597-019-0323-z": {
+   "id": "A5089262137",
+   "name": "Maurizio Ferrarin"
+  },
+  "10.1038/s41597-020-0380-3": {
+   "id": "A5061961859",
+   "name": "Henning Müller"
+  },
+  "10.1038/s41597-020-0494-7": {
+   "id": "A5055693210",
+   "name": "Tommaso Lenzi"
+  },
+  "10.1038/s41597-021-00843-9": {
+   "id": "A5056882508",
+   "name": "Christian Antfolk"
+  },
+  "10.1038/s41597-021-00881-3": {
+   "id": "A5067484406",
+   "name": "Cristina P. Santos"
+  },
+  "10.1038/s41597-021-00883-1": {
+   "id": "A5100671882",
+   "name": "Bin He"
+  },
+  "10.1038/s41597-021-00976-x": {
+   "id": null
+  },
+  "10.1038/s41597-021-01057-9": {
+   "id": "A5051369788",
+   "name": "Robert D. Gregg"
+  },
+  "10.1038/s41597-022-01713-8": {
+   "id": "A5050112775",
+   "name": "Piu Chan"
+  },
+  "10.1038/s41597-022-01817-1": {
+   "id": "A5086150799",
+   "name": "Arthur D. Kuo"
+  },
+  "10.1038/s41597-022-01836-y": {
+   "id": "A5052756710",
+   "name": "Ning Jiang"
+  },
+  "10.1038/s41597-023-02375-w": {
+   "id": "A5037771946",
+   "name": "Moi Hoon Yap"
+  },
+  "10.1038/s41597-023-02767-y": {
+   "id": "A5082875899",
+   "name": "Ann Hallemans"
+  },
+  "10.1038/s41597-024-03444-4": {
+   "id": "A5078570390",
+   "name": "Ying Tan"
+  },
+  "10.1038/s41597-024-03765-4": {
+   "id": "A5068551141",
+   "name": "Aymar de Rugy"
+  },
+  "10.1038/s41597-024-04011-7": {
+   "id": "A5042628196",
+   "name": "Sean T. Osis"
+  },
+  "10.1038/s41597-025-04433-x": {
+   "id": "A5001117964",
+   "name": "Panagiotis Artemiadis"
+  },
+  "10.1038/s41597-025-04680-y": {
+   "id": "A5102809890",
+   "name": "Sheng K. Wu"
+  },
+  "10.1038/s41597-025-05959-w": {
+   "id": "A5090929380",
+   "name": "Laurent Oudre"
+  },
+  "10.1038/s41597-025-06174-3": {
+   "id": "A5079844094",
+   "name": "Tiziana Lencioni"
+  },
+  "10.1038/s41597-025-06209-9": {
+   "id": "A5083709624",
+   "name": "Francesca Di Puccio"
+  },
+  "10.1038/s41597-025-06472-w": {
+   "id": "A5001190915",
+   "name": "Dante A. Elías"
+  },
+  "10.1038/s41597-026-06645-1": {
+   "id": "A5081285710",
+   "name": "Carlo Alberto Artusi"
+  },
+  "10.1038/s41597-026-07146-x": {
+   "id": "A5134218400",
+   "name": "Fangyao Xu"
+  },
+  "10.1038/s41597-026-07242-y": {
+   "id": "A5044263691",
+   "name": "Luca Fornia"
+  },
+  "10.1038/s41597-026-08111-4": {
+   "id": "A5012740096",
+   "name": "Elisabeth Wilhelm"
+  },
+  "10.1038/s41597-026-08424-4": {
+   "id": "A5046246761",
+   "name": "Mario Martínez‐Zarzuela"
+  },
+  "10.1038/s41598-018-26069-1": {
+   "id": "A5055698931",
+   "name": "Joost C. Dessing"
+  },
+  "10.1038/s41598-018-27378-1": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1038/s41598-018-29470-y": {
+   "id": "A5066700427",
+   "name": "Paolo Bonato"
+  },
+  "10.1038/s41598-018-36326-y": {
+   "id": "A5053241501",
+   "name": "Gernot Müller-Putz"
+  },
+  "10.1038/s41598-019-38748-8": {
+   "id": "A5052704769",
+   "name": "Wolfgang Immanuel Schöllhorn"
+  },
+  "10.1038/s41598-019-41857-z": {
+   "id": "A5011810902",
+   "name": "Cristina de la Malla"
+  },
+  "10.1038/s41598-019-52860-9": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1038/s41598-019-53913-9": {
+   "id": "A5090785678",
+   "name": "Raoul M. Bongers"
+  },
+  "10.1038/s41598-019-55560-6": {
+   "id": "A5090589338",
+   "name": "Robert J. van Beers"
+  },
+  "10.1038/s41598-020-68069-0": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1038/s41598-020-76220-0": {
+   "id": "A5020548890",
+   "name": "Kunlin Wei"
+  },
+  "10.1038/s41598-020-76940-3": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1038/s41598-020-78418-8": {
+   "id": "A5018812989",
+   "name": "Anastasios N. Delopoulos"
+  },
+  "10.1038/s41598-021-00173-1": {
+   "id": "A5033101535",
+   "name": "Jennifer Louise Cook"
+  },
+  "10.1038/s41598-021-81031-y": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1038/s41598-021-87572-6": {
+   "id": "A5053733727",
+   "name": "Alexander C. Schütz"
+  },
+  "10.1038/s41598-021-95791-0": {
+   "id": "A5020095718",
+   "name": "Linda Drijvers"
+  },
+  "10.1038/s41598-021-97749-8": {
+   "id": "A5076030236",
+   "name": "Marius Klug"
+  },
+  "10.1038/s41598-022-12630-6": {
+   "id": "A5055929283",
+   "name": "Atsushi Mizota"
+  },
+  "10.1038/s41598-022-18789-2": {
+   "id": "A5079122994",
+   "name": "Rouwen Cañal‐Bruland"
+  },
+  "10.1038/s41598-022-26397-3": {
+   "id": "A5054409623",
+   "name": "Joo‐Hyun Song"
+  },
+  "10.1038/s41598-023-29231-6": {
+   "id": "A5044347263",
+   "name": "Kimitaka Nakazawa"
+  },
+  "10.1038/s41598-023-32068-8": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1038/s41598-023-33290-0": {
+   "id": "A5035315239",
+   "name": "Hannah J. Block"
+  },
+  "10.1038/s41598-023-34854-w": {
+   "id": "A5046163110",
+   "name": "Bryan Gick"
+  },
+  "10.1038/s41598-024-54176-9": {
+   "id": "A5080646031",
+   "name": "Sungshin Kim"
+  },
+  "10.1038/s41598-024-62335-1": {
+   "id": "A5014613835",
+   "name": "Stéphane Armand"
+  },
+  "10.1038/s41598-024-71925-y": {
+   "id": "A5066190478",
+   "name": "Masaki Abe"
+  },
+  "10.1038/s41598-025-20775-3": {
+   "id": "A5110608153",
+   "name": "Shivananda Pai"
+  },
+  "10.1038/s41598-025-20895-w": {
+   "id": "A5090785678",
+   "name": "Raoul M. Bongers"
+  },
+  "10.1038/s41598-025-85172-2": {
+   "id": "A5053159524",
+   "name": "Moustafa Al-Mawaldi"
+  },
+  "10.1038/s41598-025-87441-6": {
+   "id": "A5033973546",
+   "name": "Gudrun Schwarzer"
+  },
+  "10.1038/s41598-025-93948-9": {
+   "id": "A5024247169",
+   "name": "Ferenc Honbolygó"
+  },
+  "10.1038/s41598-025-98652-2": {
+   "id": "A5028147110",
+   "name": "Maurice A. Smith"
+  },
+  "10.1038/s41598-026-46937-5": {
+   "id": "A5034165167",
+   "name": "Kimberly A. Ingraham"
+  },
+  "10.1038/s41598-026-54948-5": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1038/s42003-018-0021-y": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1038/s42003-023-05578-4": {
+   "id": "A5014481437",
+   "name": "Daichi Nozaki"
+  },
+  "10.1038/s42003-024-06808-z": {
+   "id": "A5080646031",
+   "name": "Sungshin Kim"
+  },
+  "10.1038/s43856-023-00342-5": {
+   "id": "A5086033088",
+   "name": "Peter B. Marschik"
+  },
+  "10.1038/s43856-024-00701-w": {
+   "id": "A5086033088",
+   "name": "Peter B. Marschik"
+  },
+  "10.1038/s44271-023-00053-6": {
+   "id": "A5029970541",
+   "name": "Johanna Maria Rimmele"
+  },
+  "10.1038/s44271-024-00082-9": {
+   "id": "A5024490605",
+   "name": "Bradley R. King"
+  },
+  "10.1038/s44271-025-00304-8": {
+   "id": "A5088857712",
+   "name": "Ludo Max"
+  },
+  "10.1038/sdata.2014.47": {
+   "id": "A5075205438",
+   "name": "Benoni B. Edin"
+  },
+  "10.1038/sdata.2014.53": {
+   "id": "A5061961859",
+   "name": "Henning Müller"
+  },
+  "10.1038/sdata.2018.133": {
+   "id": "A5028200774",
+   "name": "Jose Luis Contreras-Vidal"
+  },
+  "10.1038/srep34468": {
+   "id": null
+  },
+  "10.1044/2021_jslhr-20-00240": {
+   "id": "A5062552320",
+   "name": "Adam B. Buchwald"
+  },
+  "10.1044/2021_jslhr-20-00507": {
+   "id": "A5062262344",
+   "name": "Kate Emma Watkins"
+  },
+  "10.1044/2021_persp-20-00218": {
+   "id": "A5032844376",
+   "name": "Tara McAllister"
+  },
+  "10.1044/2022_jslhr-22-00322": {
+   "id": "A5011774041",
+   "name": "Hung-Shao Cheng"
+  },
+  "10.1044/2022_jslhr-22-00496": {
+   "id": "A5032844376",
+   "name": "Tara McAllister"
+  },
+  "10.1044/2023_jslhr-22-00472": {
+   "id": "A5075948249",
+   "name": "Joanne Cleland"
+  },
+  "10.1044/2023_jslhr-23-00126": {
+   "id": "A5093110138",
+   "name": "Alison Arseneault"
+  },
+  "10.1044/2024_jslhr-23-00516": {
+   "id": "A5023057003",
+   "name": "Michelle S. Troche"
+  },
+  "10.1044/2024_jslhr-24-00025": {
+   "id": "A5062552320",
+   "name": "Adam B. Buchwald"
+  },
+  "10.1044/2024_jslhr-24-00098": {
+   "id": "A5005944306",
+   "name": "Benjamin Parrell"
+  },
+  "10.1044/2025_jslhr-25-00503": {
+   "id": "A5005944306",
+   "name": "Benjamin Parrell"
+  },
+  "10.1044/2026_jslhr-25-00612": {
+   "id": "A5008391593",
+   "name": "Isabell Wartenburger"
+  },
+  "10.1044/2026_jslhr-25-00874": {
+   "id": "A5032844376",
+   "name": "Tara McAllister"
+  },
+  "10.1073/pnas.2001179117": {
+   "id": "A5040973812",
+   "name": "Pratik K. Mutha"
+  },
+  "10.1073/pnas.2209960119": {
+   "id": "A5047144483",
+   "name": "Jason P. Gallivan"
+  },
+  "10.1073/pnas.2212726120": {
+   "id": "A5018143444",
+   "name": "Nicolas Schweighofer"
+  },
+  "10.1073/pnas.2411459121": {
+   "id": "A5028147110",
+   "name": "Maurice A. Smith"
+  },
+  "10.1073/pnas.2417543121": {
+   "id": "A5058738138",
+   "name": "Jun Izawa"
+  },
+  "10.1073/pnas.2525468123": {
+   "id": "A5065002254",
+   "name": "David J. Ostry"
+  },
+  "10.1080/00222895.2026.2659046": {
+   "id": "A5089843782",
+   "name": "Robert A. Scheidt"
+  },
+  "10.1080/02643294.2024.2315831": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.1080/87565641.2021.1966431": {
+   "id": "A5029474702",
+   "name": "Inês R. Violante"
+  },
+  "10.1093/brain/awag162": {
+   "id": "A5009889086",
+   "name": "Nick Ward"
+  },
+  "10.1093/braincomms/fcac303": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1093/braincomms/fcaf255": {
+   "id": "A5017645785",
+   "name": "Brett W. Fling"
+  },
+  "10.1093/cercor/bhaa234": {
+   "id": "A5100671882",
+   "name": "Bin He"
+  },
+  "10.1093/deafed/enae010": {
+   "id": "A5038240399",
+   "name": "Brigitte Röder"
+  },
+  "10.1093/gigascience/giab043": {
+   "id": "A5004273214",
+   "name": "Matteo Bianchi"
+  },
+  "10.1098/rsbl.2014.0405": {
+   "id": "A5062283980",
+   "name": "Manoj Srinivasan"
+  },
+  "10.1098/rsbl.2015.0486": {
+   "id": "A5062283980",
+   "name": "Manoj Srinivasan"
+  },
+  "10.1098/rsif.2022.0024": {
+   "id": "A5053488609",
+   "name": "Gregory S. Sawicki"
+  },
+  "10.1098/rsos.160627": {
+   "id": "A5062283980",
+   "name": "Manoj Srinivasan"
+  },
+  "10.1098/rsos.160961": {
+   "id": "A5025807459",
+   "name": "Etienne Burdet"
+  },
+  "10.1098/rsos.160993": {
+   "id": "A5060418599",
+   "name": "Marc Bolliger"
+  },
+  "10.1098/rsos.171544": {
+   "id": "A5061783725",
+   "name": "Sonja A. Kotz"
+  },
+  "10.1098/rsos.171673": {
+   "id": "A5022259086",
+   "name": "Jason R. Franz"
+  },
+  "10.1098/rsos.221473": {
+   "id": "A5045671536",
+   "name": "Roy Müller"
+  },
+  "10.1098/rsos.231210": {
+   "id": "A5067590269",
+   "name": "James M. Finley"
+  },
+  "10.1098/rspb.2013.2952": {
+   "id": "A5101647210",
+   "name": "Daniel A. Braun"
+  },
+  "10.1098/rspb.2014.0896": {
+   "id": "A5053572791",
+   "name": "Mark A Mon-Williams"
+  },
+  "10.1098/rspb.2018.1597": {
+   "id": "A5013246017",
+   "name": "Maria Concetta Morrone"
+  },
+  "10.1098/rspb.2019.1116": {
+   "id": "A5061783725",
+   "name": "Sonja A. Kotz"
+  },
+  "10.1098/rspb.2022.2491": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1098/rspb.2022.2566": {
+   "id": "A5064085866",
+   "name": "Eckart Zimmermann"
+  },
+  "10.1098/rspb.2023.1475": {
+   "id": "A5002416229",
+   "name": "Joshua G. A. Cashaback"
+  },
+  "10.1098/rspb.2025.1320": {
+   "id": "A5069993221",
+   "name": "Davin Hu"
+  },
+  "10.1098/rstb.2020.0331": {
+   "id": "A5040044002",
+   "name": "Justin London"
+  },
+  "10.1101/2020.06.29.177295": {
+   "id": "A5069075357",
+   "name": "Joan López‐Moliner"
+  },
+  "10.1101/2020.07.03.185959": {
+   "id": "A5069855716",
+   "name": "Opher Donchin"
+  },
+  "10.1101/2023.07.19.549705": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1101/2023.10.11.561423": {
+   "id": null
+  },
+  "10.1101/2023.11.28.569131": {
+   "id": null
+  },
+  "10.1101/2024.04.10.588930": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1101/2024.05.10.593506": {
+   "id": "A5059580603",
+   "name": "Akihiko Murai"
+  },
+  "10.1101/2024.06.28.601293": {
+   "id": null
+  },
+  "10.1101/2024.08.04.606537": {
+   "id": null
+  },
+  "10.1101/2025.02.22.639647": {
+   "id": null
+  },
+  "10.1101/2025.04.11.648414": {
+   "id": "A5054409623",
+   "name": "Joo‐Hyun Song"
+  },
+  "10.1101/2025.05.30.656374": {
+   "id": "A5035809054",
+   "name": "Romain Quentin"
+  },
+  "10.1101/2025.07.22.666199": {
+   "id": null
+  },
+  "10.1101/2025.09.02.673800": {
+   "id": null
+  },
+  "10.1101/2025.10.31.685783": {
+   "id": "A5069621196",
+   "name": "Michael S. Landy"
+  },
+  "10.1101/385286": {
+   "id": "A5025701459",
+   "name": "Warwick R. Adams"
+  },
+  "10.1109/embc53108.2024.10782489": {
+   "id": "A5036649778",
+   "name": "Alexander H. Nave"
+  },
+  "10.1109/sibgrapi.2016.054": {
+   "id": "A5003275797",
+   "name": "João Paulo Papa"
+  },
+  "10.1109/slt.2014.7078549": {
+   "id": "A5015602781",
+   "name": "Karen Livescu"
+  },
+  "10.1109/slt48900.2021.9383619": {
+   "id": "A5027442277",
+   "name": "Steve J. Renals"
+  },
+  "10.1109/titb.2009.2036165": {
+   "id": "A5017473656",
+   "name": "Gerhard Tröster"
+  },
+  "10.1109/tnsre.2014.2328495": {
+   "id": "A5024757596",
+   "name": "Barbara Caputo B"
+  },
+  "10.1109/tnsre.2021.3082551": {
+   "id": "A5100344582",
+   "name": "Wei Chen"
+  },
+  "10.1109/tnsre.2022.3147260": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.1109/tnsre.2025.3568269": {
+   "id": "A5066842476",
+   "name": "Teemu Roos"
+  },
+  "10.1109/tnsre.2026.3696575": {
+   "id": "A5045432789",
+   "name": "Meghan E. Huber"
+  },
+  "10.1111/bjop.12299": {
+   "id": "A5022462941",
+   "name": "Irina Baetu"
+  },
+  "10.1111/ejn.15175": {
+   "id": "A5088857712",
+   "name": "Ludo Max"
+  },
+  "10.1111/ejn.15754": {
+   "id": "A5004519450",
+   "name": "Julius Fridriksson"
+  },
+  "10.1111/ejn.16173": {
+   "id": "A5059575238",
+   "name": "Natacha Deroost"
+  },
+  "10.1111/ejn.16476": {
+   "id": "A5022932083",
+   "name": "Max‐Philipp Stenner"
+  },
+  "10.1111/ejn.70260": {
+   "id": "A5022932083",
+   "name": "Max‐Philipp Stenner"
+  },
+  "10.1111/ejn.70442": {
+   "id": "A5016299942",
+   "name": "Eugene Poh"
+  },
+  "10.1111/j.1460-9568.2005.04298.x": {
+   "id": "A5019442831",
+   "name": "Jeffrey M. Hausdorff"
+  },
+  "10.1111/j.1460-9568.2007.05810.x": {
+   "id": "A5039274182",
+   "name": "Nir Giladi"
+  },
+  "10.1111/tops.70086": {
+   "id": null
+  },
+  "10.1113/jp284505": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1121/1.4890284": {
+   "id": "A5026964583",
+   "name": "Michael Proctor"
+  },
+  "10.1121/1.5089218": {
+   "id": "A5032844376",
+   "name": "Tara McAllister"
+  },
+  "10.1121/1.5134449": {
+   "id": "A5036579135",
+   "name": "Andreas Lind"
+  },
+  "10.1121/10.0000672": {
+   "id": "A5039055119",
+   "name": "Douglas M. Shiller"
+  },
+  "10.1121/10.0034762": {
+   "id": "A5091292711",
+   "name": "Jason Anthony Shaw"
+  },
+  "10.1121/10.0036217": {
+   "id": "A5045092960",
+   "name": "Clara D. Martin"
+  },
+  "10.1121/10.0043950": {
+   "id": "A5003189184",
+   "name": "Suzanne Aussems"
+  },
+  "10.1121/10.0044347": {
+   "id": "A5005944306",
+   "name": "Benjamin Parrell"
+  },
+  "10.1123/jmld.2022-0021": {
+   "id": "A5090783545",
+   "name": "Keith R. Lohse"
+  },
+  "10.1126/sciadv.abo3505": {
+   "id": "A5075916057",
+   "name": "Friedhelm Christoph Hummel"
+  },
+  "10.1126/sciadv.adh9344": {
+   "id": "A5075471566",
+   "name": "Philippe Lefèvre"
+  },
+  "10.1126/sciadv.adv6572": {
+   "id": "A5047462600",
+   "name": "David C. Whitney"
+  },
+  "10.1126/scirobotics.adn3802": {
+   "id": "A5036188375",
+   "name": "Masato Hirano"
+  },
+  "10.1126/scirobotics.adz9628": {
+   "id": "A5004065024",
+   "name": "José Luis Pons"
+  },
+  "10.1126/scitranslmed.abo1800": {
+   "id": "A5069196546",
+   "name": "Eduardo Martin Moraud"
+  },
+  "10.1136/jnnp-2022-330154": {
+   "id": "A5082128655",
+   "name": "Nandakumar S. Narayanan"
+  },
+  "10.1145/2858036.2858233": {
+   "id": "A5003084232",
+   "name": "Antti Oulasvirta"
+  },
+  "10.1145/3173574.3174220": {
+   "id": "A5003084232",
+   "name": "Antti Oulasvirta"
+  },
+  "10.1145/3338286.3340120": {
+   "id": "A5003084232",
+   "name": "Antti Oulasvirta"
+  },
+  "10.1145/3577016": {
+   "id": "A5042409370",
+   "name": "Jörg Müller"
+  },
+  "10.1152/jappl.1996.80.5.1448": {
+   "id": "A5110570701",
+   "name": "Ary L. Goldberger"
+  },
+  "10.1152/jappl.1997.82.1.262": {
+   "id": "A5110570701",
+   "name": "Ary L. Goldberger"
+  },
+  "10.1152/jappl.1999.86.3.1040": {
+   "id": "A5110570701",
+   "name": "Ary L. Goldberger"
+  },
+  "10.1152/jappl.2000.88.6.2045": {
+   "id": "A5110570701",
+   "name": "Ary L. Goldberger"
+  },
+  "10.1152/jn.00008.2025": {
+   "id": "A5028635251",
+   "name": "Guido Maiello"
+  },
+  "10.1152/jn.00021.2021": {
+   "id": "A5018120969",
+   "name": "Dimitris Voudouris"
+  },
+  "10.1152/jn.00021.2022": {
+   "id": "A5035350092",
+   "name": "Jeffrey Weiler"
+  },
+  "10.1152/jn.00022.2023": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1152/jn.00029.2025": {
+   "id": "A5018120969",
+   "name": "Dimitris Voudouris"
+  },
+  "10.1152/jn.00041.2025": {
+   "id": "A5060496993",
+   "name": "Emmanuel Guigon"
+  },
+  "10.1152/jn.00061.2023": {
+   "id": "A5075040361",
+   "name": "Olivia A. Kim"
+  },
+  "10.1152/jn.00066.2015": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1152/jn.00082.2022": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1152/jn.00088.2026": {
+   "id": "A5022980780",
+   "name": "John Randall Flanagan"
+  },
+  "10.1152/jn.00095.2022": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.1152/jn.00096.2024": {
+   "id": "A5000344500",
+   "name": "Fabrice R. Sarlegna"
+  },
+  "10.1152/jn.00105.2025": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1152/jn.00110.2017": {
+   "id": "A5078814645",
+   "name": "Petroc Sumner"
+  },
+  "10.1152/jn.00122.2024": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1152/jn.00148.2025": {
+   "id": "A5108897985",
+   "name": "Laurent Madelain"
+  },
+  "10.1152/jn.00156.2024": {
+   "id": "A5081525481",
+   "name": "Hyosub E. Kim"
+  },
+  "10.1152/jn.00165.2023": {
+   "id": "A5014823963",
+   "name": "Frédéric Crevecoeur"
+  },
+  "10.1152/jn.00167.2022": {
+   "id": "A5088857712",
+   "name": "Ludo Max"
+  },
+  "10.1152/jn.00180.2024": {
+   "id": "A5008513913",
+   "name": "Alexander Gail"
+  },
+  "10.1152/jn.00199.2018": {
+   "id": "A5048566788",
+   "name": "Roland W. Fleming"
+  },
+  "10.1152/jn.00240.2024": {
+   "id": "A5031973133",
+   "name": "Taijing Chen"
+  },
+  "10.1152/jn.00240.2025": {
+   "id": "A5040705421",
+   "name": "Wouter Hoogkamer"
+  },
+  "10.1152/jn.00242.2020": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1152/jn.00265.2021": {
+   "id": "A5082110630",
+   "name": "Marco Davare"
+  },
+  "10.1152/jn.00314.2023": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1152/jn.00419.2022": {
+   "id": "A5053733727",
+   "name": "Alexander C. Schütz"
+  },
+  "10.1152/jn.00432.2023": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1152/jn.00432.2025": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1152/jn.00447.2023": {
+   "id": "A5022932083",
+   "name": "Max‐Philipp Stenner"
+  },
+  "10.1152/jn.00453.2025": {
+   "id": "A5041459591",
+   "name": "Jonathan Sanching Tsay"
+  },
+  "10.1152/jn.00478.2022": {
+   "id": "A5010335917",
+   "name": "Christoph Kayser"
+  },
+  "10.1152/jn.00493.2020": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1152/jn.00493.2022": {
+   "id": "A5100355898",
+   "name": "Yang Liu"
+  },
+  "10.1152/jn.00511.2024": {
+   "id": "A5040973812",
+   "name": "Pratik K. Mutha"
+  },
+  "10.1152/jn.00520.2021": {
+   "id": "A5049665568",
+   "name": "Wilsaan Mychal Joiner"
+  },
+  "10.1152/jn.00525.2025": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1152/jn.00573.2025": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1152/jn.00574.2016": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1152/jn.00585.2020": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1152/jn.00605.2024": {
+   "id": "A5005944306",
+   "name": "Benjamin Parrell"
+  },
+  "10.1152/jn.00659.2019": {
+   "id": "A5090664889",
+   "name": "Jean‐Jacques Orban de Xivry"
+  },
+  "10.1152/jn.00847.2018": {
+   "id": "A5069532304",
+   "name": "Miriam S. Welgampola"
+  },
+  "10.1152/jn.00901.2017": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1155/2018/1237962": {
+   "id": "A5017782429",
+   "name": "Emily S. Cross"
+  },
+  "10.1155/np/3295986": {
+   "id": "A5017050634",
+   "name": "Alessandra Finisguerra"
+  },
+  "10.1159/000501644": {
+   "id": "A5073290003",
+   "name": "Adamantios I. Gafos"
+  },
+  "10.1159/fpl/acvag022": {
+   "id": "A5158170037",
+   "name": "Tara McAllister"
+  },
+  "10.1162/imag.a.1039": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1162/imag_a_00431": {
+   "id": "A5079902276",
+   "name": "Lucas C. Parra"
+  },
+  "10.1162/jocn_a_01108": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1162/jocn_a_01717": {
+   "id": "A5111921004",
+   "name": "Adam Robert Aron"
+  },
+  "10.1162/jocn_a_01969": {
+   "id": "A5012456820",
+   "name": "Emily A. Cooper"
+  },
+  "10.1162/jocn_a_02160": {
+   "id": "A5011671202",
+   "name": "J. Ryan Morehead"
+  },
+  "10.1162/nol.a.18": {
+   "id": "A5025328957",
+   "name": "Frank H. Guenther"
+  },
+  "10.1162/nol.a.22": {
+   "id": "A5062262344",
+   "name": "Kate Emma Watkins"
+  },
+  "10.1162/nol.a.281": {
+   "id": "A5025328957",
+   "name": "Frank H. Guenther"
+  },
+  "10.1162/nol_a_00139": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.1162/opmi_a_00161": {
+   "id": "A5060226400",
+   "name": "Jennifer Scapetis-Tycer"
+  },
+  "10.1167/14.5.4": {
+   "id": "A5025145968",
+   "name": "David Souto"
+  },
+  "10.1167/16.13.4": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1167/17.6.9": {
+   "id": "A5059185241",
+   "name": "Jutta Billino"
+  },
+  "10.1167/18.8.16": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1167/19.14.26": {
+   "id": "A5053733727",
+   "name": "Alexander C. Schütz"
+  },
+  "10.1167/19.7.2": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1167/jov.20.4.2": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1167/jov.23.12.7": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1167/jov.26.6.10": {
+   "id": "A5052693004",
+   "name": "Martin Rolfs"
+  },
+  "10.1177/00187208251358637": {
+   "id": "A5087769469",
+   "name": "Frédéric Danion"
+  },
+  "10.1177/00238309211064857": {
+   "id": "A5065326106",
+   "name": "Christine R. Mooshammer"
+  },
+  "10.1177/00238309241252983": {
+   "id": "A5013859294",
+   "name": "Maria I. Grigos"
+  },
+  "10.1177/00238309261426375": {
+   "id": "A5108528834",
+   "name": "Philip Hoole"
+  },
+  "10.1177/0956797613511466": {
+   "id": "A5088240380",
+   "name": "Michael Dewar"
+  },
+  "10.1177/09567976231221756": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1177/13623613231171980": {
+   "id": "A5110220412",
+   "name": "Alice Catherine Roy"
+  },
+  "10.1177/1545968313491004": {
+   "id": "A5019442831",
+   "name": "Jeffrey M. Hausdorff"
+  },
+  "10.1177/15459683261445439": {
+   "id": "A5041459591",
+   "name": "Jonathan Sanching Tsay"
+  },
+  "10.1177/2041669517701458": {
+   "id": "A5064880955",
+   "name": "Manfred W. Fahle"
+  },
+  "10.1177/2041669519827608": {
+   "id": "A5048566788",
+   "name": "Roland W. Fleming"
+  },
+  "10.1177/20592043241276959": {
+   "id": "A5083831995",
+   "name": "Yutaka Sakaguchi"
+  },
+  "10.1186/s11689-025-09668-8": {
+   "id": "A5033101535",
+   "name": "Jennifer Louise Cook"
+  },
+  "10.1186/s12886-023-02944-y": {
+   "id": "A5067052984",
+   "name": "Paweł J. Matusz"
+  },
+  "10.1186/s12984-020-00698-y": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1186/s12984-021-00979-0": {
+   "id": "A5035483036",
+   "name": "Andreas Rüdiger Luft"
+  },
+  "10.1186/s12984-022-00992-x": {
+   "id": "A5089617159",
+   "name": "Helen M Bronte-Stewart"
+  },
+  "10.1186/s12984-022-00993-w": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.1186/s12984-022-01101-8": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.1186/s12984-023-01198-5": {
+   "id": "A5059213065",
+   "name": "Silvia Del Din"
+  },
+  "10.1186/s12984-025-01592-1": {
+   "id": "A5042190963",
+   "name": "Jason Friedman"
+  },
+  "10.1186/s12984-025-01709-6": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.1186/s12984-026-01996-7": {
+   "id": "A5138911456",
+   "name": "William R. Young"
+  },
+  "10.1186/s13064-026-00240-1": {
+   "id": "A5079544909",
+   "name": "Bernard Marius ’t Hart"
+  },
+  "10.1186/s13064-026-00260-x": {
+   "id": "A5079544909",
+   "name": "Bernard Marius ’t Hart"
+  },
+  "10.1186/s40814-025-01640-6": {
+   "id": "A5075948249",
+   "name": "Joanne Cleland"
+  },
+  "10.1242/jeb.243104": {
+   "id": "A5088627891",
+   "name": "Keith E. Gordon"
+  },
+  "10.1242/jeb.249840": {
+   "id": "A5086150799",
+   "name": "Arthur D. Kuo"
+  },
+  "10.12688/f1000research.3676.2": {
+   "id": "A5052151688",
+   "name": "Terence D. Sanger"
+  },
+  "10.1371/journal.pbio.1002429": {
+   "id": "A5053884602",
+   "name": "Julien Doyon"
+  },
+  "10.1371/journal.pbio.1002451": {
+   "id": "A5115601534",
+   "name": "Penelope A. Lewis"
+  },
+  "10.1371/journal.pbio.3001147": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1371/journal.pbio.3001799": {
+   "id": "A5028147110",
+   "name": "Maurice A. Smith"
+  },
+  "10.1371/journal.pbio.3002934": {
+   "id": "A5047144483",
+   "name": "Jason P. Gallivan"
+  },
+  "10.1371/journal.pbio.3003862": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.1371/journal.pbio.3004057": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1371/journal.pcbi.1000856": {
+   "id": "A5010574700",
+   "name": "Joseph P. Cusumano"
+  },
+  "10.1371/journal.pcbi.1004171": {
+   "id": "A5000991643",
+   "name": "John W. Krakauer"
+  },
+  "10.1371/journal.pcbi.1004950": {
+   "id": "A5109336779",
+   "name": "Kazuo Tsuchiya"
+  },
+  "10.1371/journal.pcbi.1005119": {
+   "id": "A5009901321",
+   "name": "Blaise Yvert"
+  },
+  "10.1371/journal.pcbi.1005438": {
+   "id": "A5028147110",
+   "name": "Maurice A. Smith"
+  },
+  "10.1371/journal.pcbi.1005492": {
+   "id": "A5049665568",
+   "name": "Wilsaan Mychal Joiner"
+  },
+  "10.1371/journal.pcbi.1005503": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1371/journal.pcbi.1006850": {
+   "id": "A5010574700",
+   "name": "Joseph P. Cusumano"
+  },
+  "10.1371/journal.pcbi.1007632": {
+   "id": "A5022980780",
+   "name": "John Randall Flanagan"
+  },
+  "10.1371/journal.pcbi.1008081": {
+   "id": "A5048566788",
+   "name": "Roland W. Fleming"
+  },
+  "10.1371/journal.pcbi.1008373": {
+   "id": "A5067865785",
+   "name": "David W. Franklin"
+  },
+  "10.1371/journal.pcbi.1008481": {
+   "id": "A5028840283",
+   "name": "Mitsuo Kawato"
+  },
+  "10.1371/journal.pcbi.1009966": {
+   "id": "A5075471566",
+   "name": "Philippe Lefèvre"
+  },
+  "10.1371/journal.pcbi.1010005": {
+   "id": "A5081525481",
+   "name": "Hyosub E. Kim"
+  },
+  "10.1371/journal.pcbi.1010035": {
+   "id": "A5027792075",
+   "name": "Jonathan B. Dingwell"
+  },
+  "10.1371/journal.pcbi.1010192": {
+   "id": "A5067865785",
+   "name": "David W. Franklin"
+  },
+  "10.1371/journal.pcbi.1010526": {
+   "id": "A5037165386",
+   "name": "Matthew J. Crossley"
+  },
+  "10.1371/journal.pcbi.1010740": {
+   "id": "A5069621196",
+   "name": "Michael S. Landy"
+  },
+  "10.1371/journal.pcbi.1011189": {
+   "id": "A5067865785",
+   "name": "David W. Franklin"
+  },
+  "10.1371/journal.pcbi.1011322": {
+   "id": "A5072874283",
+   "name": "Markus Lappe"
+  },
+  "10.1371/journal.pcbi.1011493": {
+   "id": "A5014823963",
+   "name": "Frédéric Crevecoeur"
+  },
+  "10.1371/journal.pcbi.1011562": {
+   "id": "A5022013226",
+   "name": "Lena H. Ting"
+  },
+  "10.1371/journal.pcbi.1011596": {
+   "id": "A5022980780",
+   "name": "John Randall Flanagan"
+  },
+  "10.1371/journal.pcbi.1011951": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1371/journal.pcbi.1012209": {
+   "id": "A5044782627",
+   "name": "Friedl De Groote"
+  },
+  "10.1371/journal.pcbi.1012471": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1371/journal.pcbi.1012474": {
+   "id": "A5002416229",
+   "name": "Joshua G. A. Cashaback"
+  },
+  "10.1371/journal.pcbi.1012492": {
+   "id": "A5011671202",
+   "name": "J. Ryan Morehead"
+  },
+  "10.1371/journal.pcbi.1013041": {
+   "id": "A5072874283",
+   "name": "Markus Lappe"
+  },
+  "10.1371/journal.pcbi.1013937": {
+   "id": "A5016807277",
+   "name": "Mireille E. Broucke"
+  },
+  "10.1371/journal.pcbi.1014574": {
+   "id": "A5002416229",
+   "name": "Joshua G. A. Cashaback"
+  },
+  "10.1371/journal.pdig.0001503": {
+   "id": "A5054957578",
+   "name": "Simona Ferrante"
+  },
+  "10.1371/journal.pone.0075129": {
+   "id": "A5034377021",
+   "name": "Andrew Henrey"
+  },
+  "10.1371/journal.pone.0109968": {
+   "id": "A5030403625",
+   "name": "Jeffery A. Jones"
+  },
+  "10.1371/journal.pone.0117901": {
+   "id": "A5010868929",
+   "name": "Jeroen B. J. Smeets"
+  },
+  "10.1371/journal.pone.0129388": {
+   "id": "A5067865785",
+   "name": "David W. Franklin"
+  },
+  "10.1371/journal.pone.0129543": {
+   "id": "A5113542197",
+   "name": "Kelly J. Cole"
+  },
+  "10.1371/journal.pone.0137260": {
+   "id": "A5044977965",
+   "name": "Michelle W. Voss"
+  },
+  "10.1371/journal.pone.0142963": {
+   "id": "A5018143444",
+   "name": "Nicolas Schweighofer"
+  },
+  "10.1371/journal.pone.0146864": {
+   "id": "A5018709359",
+   "name": "Eli Brenner"
+  },
+  "10.1371/journal.pone.0150265": {
+   "id": "A5112355060",
+   "name": "Paolo André"
+  },
+  "10.1371/journal.pone.0159589": {
+   "id": "A5050263538",
+   "name": "Jesper Lundbye‐Jensen"
+  },
+  "10.1371/journal.pone.0163556": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0163695": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0165549": {
+   "id": "A5030367102",
+   "name": "Yannick Bleyenheuft"
+  },
+  "10.1371/journal.pone.0170473": {
+   "id": "A5019682319",
+   "name": "Jonathon W. Sensinger"
+  },
+  "10.1371/journal.pone.0180803": {
+   "id": "A5017065424",
+   "name": "Jörn Diedrichsen"
+  },
+  "10.1371/journal.pone.0182578": {
+   "id": "A5053241501",
+   "name": "Gernot Müller-Putz"
+  },
+  "10.1371/journal.pone.0188226": {
+   "id": "A5025701459",
+   "name": "Warwick R. Adams"
+  },
+  "10.1371/journal.pone.0191684": {
+   "id": "A5030367102",
+   "name": "Yannick Bleyenheuft"
+  },
+  "10.1371/journal.pone.0193580": {
+   "id": "A5080392138",
+   "name": "Caroline Palmėr"
+  },
+  "10.1371/journal.pone.0202180": {
+   "id": "A5009507416",
+   "name": "Thomas Francis Quatieri"
+  },
+  "10.1371/journal.pone.0207326": {
+   "id": "A5047375036",
+   "name": "Marc Himmelbach"
+  },
+  "10.1371/journal.pone.0207482": {
+   "id": "A5024986150",
+   "name": "Daniel M. Wolpert"
+  },
+  "10.1371/journal.pone.0213851": {
+   "id": "A5073290003",
+   "name": "Adamantios I. Gafos"
+  },
+  "10.1371/journal.pone.0218644": {
+   "id": "A5050195536",
+   "name": "Julie Nantel"
+  },
+  "10.1371/journal.pone.0220748": {
+   "id": "A5069855716",
+   "name": "Opher Donchin"
+  },
+  "10.1371/journal.pone.0220884": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0221593": {
+   "id": "A5065298754",
+   "name": "Ferdinand van der Heijden"
+  },
+  "10.1371/journal.pone.0221861": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0224055": {
+   "id": "A5053572791",
+   "name": "Mark A Mon-Williams"
+  },
+  "10.1371/journal.pone.0224099": {
+   "id": "A5036419426",
+   "name": "Grant D. Tays"
+  },
+  "10.1371/journal.pone.0224187": {
+   "id": "A5067590269",
+   "name": "James M. Finley"
+  },
+  "10.1371/journal.pone.0231996": {
+   "id": "A5053488609",
+   "name": "Gregory S. Sawicki"
+  },
+  "10.1371/journal.pone.0239032": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0242215": {
+   "id": "A5045763007",
+   "name": "Sjoerd M. Bruijn"
+  },
+  "10.1371/journal.pone.0242818": {
+   "id": "A5051067760",
+   "name": "Emanuelle Reynaud"
+  },
+  "10.1371/journal.pone.0245184": {
+   "id": "A5034320832",
+   "name": "Erin Krista Cressman"
+  },
+  "10.1371/journal.pone.0245717": {
+   "id": "A5060700722",
+   "name": "A. Aldo Faisal"
+  },
+  "10.1371/journal.pone.0252119": {
+   "id": "A5022013226",
+   "name": "Lena H. Ting"
+  },
+  "10.1371/journal.pone.0253467": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1371/journal.pone.0253948": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0258242": {
+   "id": "A5108509252",
+   "name": "John R. Anderson"
+  },
+  "10.1371/journal.pone.0262480": {
+   "id": "A5034320832",
+   "name": "Erin Krista Cressman"
+  },
+  "10.1371/journal.pone.0269417": {
+   "id": "A5087245979",
+   "name": "Adamantios Arampatzis"
+  },
+  "10.1371/journal.pone.0278646": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1371/journal.pone.0282693": {
+   "id": "A5032119888",
+   "name": "Alaa A. Ahmed"
+  },
+  "10.1371/journal.pone.0283310": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1371/journal.pone.0286649": {
+   "id": "A5049103439",
+   "name": "Jaimie A. Roper"
+  },
+  "10.1371/journal.pone.0292334": {
+   "id": "A5086675520",
+   "name": "Arash Arami"
+  },
+  "10.1371/journal.pone.0292518": {
+   "id": "A5015424302",
+   "name": "Daniel S. Marigold"
+  },
+  "10.1371/journal.pone.0294241": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.1371/journal.pone.0295274": {
+   "id": "A5060743876",
+   "name": "Jan Babič"
+  },
+  "10.1371/journal.pone.0301514": {
+   "id": "A5088857712",
+   "name": "Ludo Max"
+  },
+  "10.1371/journal.pone.0306276": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1371/journal.pone.0309612": {
+   "id": "A5062262344",
+   "name": "Kate Emma Watkins"
+  },
+  "10.1371/journal.pone.0316545": {
+   "id": "A5051568032",
+   "name": "Antonino Vallesi"
+  },
+  "10.1371/journal.pone.0317943": {
+   "id": "A5067590269",
+   "name": "James M. Finley"
+  },
+  "10.1371/journal.pone.0321949": {
+   "id": "A5011635808",
+   "name": "Sergiy Yakovenko"
+  },
+  "10.1371/journal.pone.0322627": {
+   "id": "A5036832372",
+   "name": "Romeo Chua"
+  },
+  "10.1371/journal.pone.0326692": {
+   "id": "A5067590269",
+   "name": "James M. Finley"
+  },
+  "10.1523/eneuro.0021-23.2024": {
+   "id": "A5010023906",
+   "name": "Denise Y. P. Henriques"
+  },
+  "10.1523/eneuro.0088-21.2021": {
+   "id": "A5014823963",
+   "name": "Frédéric Crevecoeur"
+  },
+  "10.1523/eneuro.0100-24.2024": {
+   "id": "A5049665568",
+   "name": "Wilsaan Mychal Joiner"
+  },
+  "10.1523/eneuro.0132-25.2025": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1523/eneuro.0190-16.2016": {
+   "id": "A5072520381",
+   "name": "Karl R. Gegenfurtner"
+  },
+  "10.1523/eneuro.0196-18.2019": {
+   "id": "A5069659697",
+   "name": "Gunnar Blohm"
+  },
+  "10.1523/eneuro.0243-25.2026": {
+   "id": "A5054409623",
+   "name": "Joo‐Hyun Song"
+  },
+  "10.1523/eneuro.0255-26.2026": {
+   "id": "A5067889626",
+   "name": "Pierre‐Michel Bernier"
+  },
+  "10.1523/eneuro.0286-25.2025": {
+   "id": "A5059859995",
+   "name": "Nicole C. Swann"
+  },
+  "10.1523/eneuro.0308-19.2019": {
+   "id": "A5037584185",
+   "name": "Shlomi Haar"
+  },
+  "10.1523/eneuro.0312-20.2021": {
+   "id": "A5003789152",
+   "name": "Jordan A. Taylor"
+  },
+  "10.1523/eneuro.0343-23.2025": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1523/eneuro.0357-23.2024": {
+   "id": "A5008455786",
+   "name": "Amanda S. Therrien"
+  },
+  "10.1523/eneuro.0358-18.2019": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.1523/eneuro.0360-23.2023": {
+   "id": "A5062056682",
+   "name": "Hannah L. Filmer"
+  },
+  "10.1523/eneuro.0371-21.2022": {
+   "id": null
+  },
+  "10.1523/eneuro.0423-25.2026": {
+   "id": null
+  },
+  "10.1523/eneuro.0439-21.2022": {
+   "id": null
+  },
+  "10.1523/eneuro.0447-21.2022": {
+   "id": "A5069855716",
+   "name": "Opher Donchin"
+  },
+  "10.1523/eneuro.0503-21.2022": {
+   "id": "A5024457437",
+   "name": "Mitchell W. Isaacs"
+  },
+  "10.1523/eneuro.0514-19.2020": {
+   "id": "A5067865785",
+   "name": "David W. Franklin"
+  },
+  "10.1523/jneurosci.0069-24.2024": {
+   "id": "A5014823963",
+   "name": "Frédéric Crevecoeur"
+  },
+  "10.1523/jneurosci.0117-25.2025": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.1523/jneurosci.0181-25.2025": {
+   "id": "A5035315239",
+   "name": "Hannah J. Block"
+  },
+  "10.1523/jneurosci.0583-19.2019": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1523/jneurosci.1884-24.2025": {
+   "id": "A5011671202",
+   "name": "J. Ryan Morehead"
+  },
+  "10.1523/jneurosci.2193-24.2025": {
+   "id": "A5024490605",
+   "name": "Bradley R. King"
+  },
+  "10.1523/jneurosci.2646-19.2020": {
+   "id": "A5073168232",
+   "name": "Joseph M. Galea"
+  },
+  "10.1523/jneurosci.3543-15.2016": {
+   "id": "A5053241501",
+   "name": "Gernot Müller-Putz"
+  },
+  "10.1525/mp.2020.37.4.263": {
+   "id": "A5082494917",
+   "name": "Clemens Wöllner"
+  },
+  "10.16995/labphon.26525": {
+   "id": "A5137606263",
+   "name": "Jason Shaw"
+  },
+  "10.21203/rs.3.rs-3186155/v1": {
+   "id": "A5109386628",
+   "name": "Chuck Larson"
+  },
+  "10.21203/rs.3.rs-7594824/v1": {
+   "id": "A5076754247",
+   "name": "Cheryl L. Brandmeir"
+  },
+  "10.21437/interspeech.2009-640": {
+   "id": "A5029779616",
+   "name": "Panikos Heracleous"
+  },
+  "10.21437/interspeech.2018-1736": {
+   "id": "A5064637774",
+   "name": "Alan Wrench"
+  },
+  "10.21437/speechprosody.2026-116": {
+   "id": "A5022221149",
+   "name": "Simon Roessig"
+  },
+  "10.21801/ppcrj.2020.64.3": {
+   "id": "A5078960649",
+   "name": "Nadia Bolognini"
+  },
+  "10.31219/osf.io/ceurq_v1": {
+   "id": "A5054126543",
+   "name": "Daichi Iimura"
+  },
+  "10.31234/osf.io/3m6tx_v1": {
+   "id": null
+  },
+  "10.31234/osf.io/6xyr2_v1": {
+   "id": "A5008886006",
+   "name": "Lori L. Holt"
+  },
+  "10.31234/osf.io/9fncx": {
+   "id": null
+  },
+  "10.31234/osf.io/c56ka_v1": {
+   "id": "A5025328957",
+   "name": "Frank H. Guenther"
+  },
+  "10.31234/osf.io/epz2u": {
+   "id": null
+  },
+  "10.31234/osf.io/jr4bp_v1": {
+   "id": "A5023263204",
+   "name": "Matthew H. Davis"
+  },
+  "10.31234/osf.io/pzse8_v1": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.31234/osf.io/qwy9v": {
+   "id": "A5003746260",
+   "name": "Nazbanou Nozari"
+  },
+  "10.31234/osf.io/ucagp_v1": {
+   "id": "A5041658140",
+   "name": "Tom Froese"
+  },
+  "10.31234/osf.io/xysc5": {
+   "id": "A5045092960",
+   "name": "Clara D. Martin"
+  },
+  "10.31234/osf.io/y6bqg_v1": {
+   "id": "A5026077105",
+   "name": "Daniel Robert Lametti"
+  },
+  "10.31234/osf.io/ypt7n": {
+   "id": null
+  },
+  "10.3389/fbioe.2020.620805": {
+   "id": "A5035483036",
+   "name": "Andreas Rüdiger Luft"
+  },
+  "10.3389/fnagi.2017.00040": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.3389/fnagi.2021.610359": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.3389/fnagi.2021.643132": {
+   "id": "A5063397302",
+   "name": "Tibor Hortobágyi"
+  },
+  "10.3389/fnagi.2021.729284": {
+   "id": "A5103134262",
+   "name": "Kristan A. Leech"
+  },
+  "10.3389/fnagi.2021.742928": {
+   "id": "A5001165944",
+   "name": "Zhongting Chen"
+  },
+  "10.3389/fnagi.2023.1147079": {
+   "id": "A5001165944",
+   "name": "Zhongting Chen"
+  },
+  "10.3389/fneur.2023.1326640": {
+   "id": "A5062724436",
+   "name": "Ignacio Pavón"
+  },
+  "10.3389/fnhum.2015.00566": {
+   "id": "A5025145968",
+   "name": "David Souto"
+  },
+  "10.3389/fnhum.2016.00227": {
+   "id": "A5053733727",
+   "name": "Alexander C. Schütz"
+  },
+  "10.3389/fnhum.2019.00207": {
+   "id": "A5050253642",
+   "name": "Gelsy Torres‐Oviedo"
+  },
+  "10.3389/fnhum.2021.660948": {
+   "id": "A5032844376",
+   "name": "Tara McAllister"
+  },
+  "10.3389/fnhum.2022.905365": {
+   "id": "A5111685841",
+   "name": "Kevin G. Munhall"
+  },
+  "10.3389/fnhum.2022.977032": {
+   "id": "A5033862542",
+   "name": "Hendrik Reimann"
+  },
+  "10.3389/fnhum.2022.998843": {
+   "id": "A5049225128",
+   "name": "Benjamin Straube"
+  },
+  "10.3389/fnhum.2023.1221944": {
+   "id": "A5033142056",
+   "name": "Jaeseung Jeong"
+  },
+  "10.3389/fnhum.2026.1744572": {
+   "id": "A5013859294",
+   "name": "Maria I. Grigos"
+  },
+  "10.3389/fnins.2020.591898": {
+   "id": "A5048566788",
+   "name": "Roland W. Fleming"
+  },
+  "10.3389/fnins.2020.600059": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.3389/fnins.2021.755721": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.3389/fnins.2022.832463": {
+   "id": "A5064383058",
+   "name": "Daniel Boari Coelho"
+  },
+  "10.3389/fnins.2023.992585": {
+   "id": "A5064383058",
+   "name": "Daniel Boari Coelho"
+  },
+  "10.3389/fnins.2024.1433867": {
+   "id": "A5059575238",
+   "name": "Natacha Deroost"
+  },
+  "10.3389/fnins.2025.1553548": {
+   "id": "A5014834937",
+   "name": "Rebecca Schaefer"
+  },
+  "10.3389/fnint.2023.1232474": {
+   "id": "A5069449714",
+   "name": "John J. Foxe"
+  },
+  "10.3389/fphys.2018.01271": {
+   "id": "A5050166261",
+   "name": "John J. Jeka"
+  },
+  "10.3389/fpsyg.2018.02285": {
+   "id": "A5059185241",
+   "name": "Jutta Billino"
+  },
+  "10.3389/fpsyg.2020.574396": {
+   "id": "A5024032023",
+   "name": "Yvonne Delevoye"
+  },
+  "10.3389/fpsyg.2021.648479": {
+   "id": "A5030098068",
+   "name": "Rafael Ramírez"
+  },
+  "10.3389/fpsyg.2021.677201": {
+   "id": "A5082494917",
+   "name": "Clemens Wöllner"
+  },
+  "10.3389/fpsyg.2021.684693": {
+   "id": "A5030098068",
+   "name": "Rafael Ramírez"
+  },
+  "10.3389/fpsyg.2024.1493434": {
+   "id": "A5109166606",
+   "name": "Guanlan Kang"
+  },
+  "10.3389/fpsyg.2026.1929677": {
+   "id": "A5088238552",
+   "name": "Dongho Kwak"
+  },
+  "10.3389/frobt.2023.1108114": {
+   "id": "A5072567867",
+   "name": "Annemieke I. Buizer"
+  },
+  "10.3389/frvir.2023.1104638": {
+   "id": "A5062116358",
+   "name": "Laura Marchal–Crespo"
+  },
+  "10.3390/bioengineering12050523": {
+   "id": "A5021255536",
+   "name": "Martin J. McKeown"
+  },
+  "10.3390/biomechanics2030031": {
+   "id": "A5071438849",
+   "name": "Chris J. Hass"
+  },
+  "10.3390/brainsci12101325": {
+   "id": "A5020548890",
+   "name": "Kunlin Wei"
+  },
+  "10.3390/brainsci14050472": {
+   "id": "A5000302615",
+   "name": "Carlotta Lega"
+  },
+  "10.3390/children9111760": {
+   "id": "A5020041586",
+   "name": "Emilia Biffi"
+  },
+  "10.3390/data10120197": {
+   "id": "A5056807926",
+   "name": "Taehong Cho"
+  },
+  "10.3390/data7100136": {
+   "id": "A5055867647",
+   "name": "Walter Maetzler"
+  },
+  "10.3390/s20174770": {
+   "id": "A5080611863",
+   "name": "Petrus H. Veltink"
+  },
+  "10.3390/s21175833": {
+   "id": "A5066284696",
+   "name": "Clint Hansen"
+  },
+  "10.3390/s23208621": {
+   "id": "A5054591613",
+   "name": "Till A. Dembek"
+  },
+  "10.3390/s24165207": {
+   "id": "A5037825805",
+   "name": "Giuseppe Placidi"
+  },
+  "10.3390/s25061895": {
+   "id": "A5083581941",
+   "name": "Tjitske Heida"
+  },
+  "10.3390/signals2020016": {
+   "id": "A5065731178",
+   "name": "Panagiotis Polychronopoulos"
+  },
+  "10.3758/s13414-022-02441-2": {
+   "id": "A5036579135",
+   "name": "Andreas Lind"
+  },
+  "10.3758/s13415-025-01300-5": {
+   "id": "A5026786065",
+   "name": "Tanja Endraß"
+  },
+  "10.3758/s13423-023-02399-8": {
+   "id": "A5008886006",
+   "name": "Lori L. Holt"
+  },
+  "10.3758/s13423-023-02446-4": {
+   "id": "A5100354569",
+   "name": "Yang Zhang"
+  },
+  "10.3758/s13423-024-02536-x": {
+   "id": "A5026077105",
+   "name": "Daniel Robert Lametti"
+  },
+  "10.3758/s13423-024-02618-w": {
+   "id": "A5063944170",
+   "name": "Jeremy I Skipper"
+  },
+  "10.3758/s13428-021-01722-2": {
+   "id": "A5021757437",
+   "name": "Nori Jacoby"
+  },
+  "10.3758/s13428-022-02038-5": {
+   "id": "A5013688631",
+   "name": "Dezső Németh"
+  },
+  "10.4236/jbbs.2023.137009": {
+   "id": "A5040456537",
+   "name": "Xueqian Deng"
+  },
+  "10.48550/arxiv.2109.10743": {
+   "id": "A5013573136",
+   "name": "Michael S. Eggleston"
+  },
+  "10.48550/arxiv.2410.20081": {
+   "id": null
+  },
+  "10.48550/arxiv.2412.02725": {
+   "id": null
+  },
+  "10.51628/001c.26985": {
+   "id": "A5020506716",
+   "name": "Guy Avraham"
+  },
+  "10.5334/jors.234": {
+   "id": "A5032931755",
+   "name": "Eric Van Horenbeeck"
+  },
+  "10.6084/m9.figshare.13542995.v2": {
+   "id": null
+  },
+  "10.6084/m9.figshare.33326679.v1": {
+   "id": null
+  },
+  "10.64898/2025.12.12.694069": {
+   "id": null
+  },
+  "10.64898/2025.12.15.694412": {
+   "id": "A5069621196",
+   "name": "Michael S. Landy"
+  },
+  "10.64898/2026.01.15.699672": {
+   "id": null
+  },
+  "10.64898/2026.02.28.708705": {
+   "id": null
+  },
+  "10.64898/2026.03.02.709033": {
+   "id": "A5085820652",
+   "name": "Nidhi Seethapathi"
+  },
+  "10.64898/2026.04.17.719269": {
+   "id": "A5009048090",
+   "name": "Tobias Heed"
+  },
+  "10.64898/2026.07.07.736915": {
+   "id": null
+  },
+  "10.64898/2026.07.13.737385": {
+   "id": "A5028347532",
+   "name": "Hiroki R. Sato"
+  },
+  "10.64898/2026.07.17.739258": {
+   "id": "A5041459591",
+   "name": "Jonathan Sanching Tsay"
+  },
+  "10.64898/2026.08.27.747554": {
+   "id": "A5009048090",
+   "name": "Tobias Heed"
+  },
+  "10.64898/2026.09.05.749306": {
+   "id": "A5041459591",
+   "name": "Jonathan Sanching Tsay"
+  },
+  "10.64898/2026.09.10.750443": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.64898/2026.10.08.757378": {
+   "id": "A5008757494",
+   "name": "Heather F. Neyedli"
+  },
+  "10.7554/elife.100715": {
+   "id": null
+  },
+  "10.7554/elife.101036": {
+   "id": "A5008183934",
+   "name": "Amy J. Bastian"
+  },
+  "10.7554/elife.101671.3": {
+   "id": "A5008183934",
+   "name": "Amy J. Bastian"
+  },
+  "10.7554/elife.109734": {
+   "id": "A5002416229",
+   "name": "Joshua G. A. Cashaback"
+  },
+  "10.7554/elife.111537": {
+   "id": "A5014481437",
+   "name": "Daichi Nozaki"
+  },
+  "10.7554/elife.28075": {
+   "id": "A5000991643",
+   "name": "John W. Krakauer"
+  },
+  "10.7554/elife.39324": {
+   "id": "A5053884602",
+   "name": "Julien Doyon"
+  },
+  "10.7554/elife.39882": {
+   "id": "A5079012482",
+   "name": "Richard B. Ivry"
+  },
+  "10.7554/elife.40145": {
+   "id": null
+  },
+  "10.7554/elife.40578": {
+   "id": "A5029383812",
+   "name": "Pablo A. Celnik"
+  },
+  "10.7554/elife.52507": {
+   "id": "A5028793301",
+   "name": "Reza Shadmehr"
+  },
+  "10.7554/elife.55241": {
+   "id": "A5017065424",
+   "name": "Jörn Diedrichsen"
+  },
+  "10.7554/elife.64893": {
+   "id": "A5088062261",
+   "name": "Roozbeh Kiani"
+  },
+  "10.7554/elife.65361": {
+   "id": "A5028793301",
+   "name": "Reza Shadmehr"
+  },
+  "10.7554/elife.66761": {
+   "id": "A5086868696",
+   "name": "Kerstin Hoedlmoser"
+  },
+  "10.7554/elife.69517": {
+   "id": "A5017065424",
+   "name": "Jörn Diedrichsen"
+  },
+  "10.7554/elife.73694": {
+   "id": "A5088705250",
+   "name": "Caroline A. Niziolek"
+  },
+  "10.7554/elife.75126": {
+   "id": "A5039521481",
+   "name": "Wolf‐Julian Neumann"
+  },
+  "10.7554/elife.75801": {
+   "id": "A5052140576",
+   "name": "Samuel D. McDougle"
+  },
+  "10.7554/elife.78734": {
+   "id": "A5065382337",
+   "name": "Marc O. Ernst"
+  },
+  "10.7554/elife.81325": {
+   "id": "A5044806170",
+   "name": "Paul L. Gribble"
+  },
+  "10.7554/elife.81939": {
+   "id": "A5086150799",
+   "name": "Arthur D. Kuo"
+  },
+  "10.7554/elife.88514": {
+   "id": null
+  },
+  "10.7554/elife.90780": {
+   "id": null
+  },
+  "10.7554/elife.91928": {
+   "id": null
+  },
+  "10.7554/elife.94485": {
+   "id": null
+  },
+  "10.7554/elife.94608": {
+   "id": null
+  },
+  "10.7554/elife.96665": {
+   "id": null
+  },
+  "10.7717/peerj.15406": {
+   "id": "A5086213684",
+   "name": "Deborah Apthorp"
+  },
+  "10.7717/peerj.15775": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.7717/peerj.16374": {
+   "id": "A5005308382",
+   "name": "Michelle L. Harris-Love"
+  },
+  "10.7717/peerj.17451": {
+   "id": "A5086984561",
+   "name": "Daniel Perry Ferris"
+  },
+  "10.7717/peerj.2648": {
+   "id": "A5080200443",
+   "name": "Marcos Duarte"
+  },
+  "10.7717/peerj.3298": {
+   "id": "A5080200443",
+   "name": "Marcos Duarte"
+  },
+  "10.7717/peerj.3626": {
+   "id": "A5080200443",
+   "name": "Marcos Duarte"
+  },
+  "10.7717/peerj.4640": {
+   "id": "A5080200443",
+   "name": "Marcos Duarte"
+  },
+  "10.7717/peerj.918": {
+   "id": "A5088200466",
+   "name": "Antonie J. van den Bogert"
+  }
+ },
+ "key_papers": {
+  "10.1016/0010-0285(87)90002-8": {
+   "id": "W1985454926",
+   "title": "Attentional requirements of learning: Evidence from performance measures"
+  },
+  "10.1523/jneurosci.14-05-03208.1994": {
+   "id": "W1922715780",
+   "title": "Adaptive representation of dynamics during learning of a motor task"
+  },
+  "10.1007/bf00237997": {
+   "id": "W2045222441",
+   "title": "Roles of glabrous skin receptors and sensorimotor memory in automatic control of precision grip when lifting rougher or more slippery objects"
+  },
+  "10.3758/s13423-012-0371-2": {
+   "id": "W2118607666",
+   "title": "Sensorimotor synchronization: A review of recent research (2006–2012)"
+  },
+  "10.1371/journal.pbio.0040179": {
+   "id": "W2028612696",
+   "title": "Interacting Adaptive Processes with Different Timescales Underlie Short-Term Motor Learning"
+  },
+  "10.1002/j.2040-4603.2019.tb00069.x": {
+   "id": "W4211200399",
+   "title": "Motor Learning"
+  },
+  "10.1523/jneurosci.5317-05.2006": {
+   "id": "W2016154932",
+   "title": "An Implicit Plan Overrides an Explicit Strategy during Visuomotor Adaptation"
+  },
+  "10.1523/jneurosci.3619-13.2014": {
+   "id": "W2083905756",
+   "title": "Explicit and Implicit Contributions to Learning in a Sensorimotor Adaptation Task"
+  },
+  "10.1126/science.279.5354.1213": {
+   "id": "W2039201033",
+   "title": "Sensorimotor Adaptation in Speech Production"
+  },
+  "10.1038/nn.3616": {
+   "id": "W2021742495",
+   "title": "Temporal structure of motor variability is dynamically regulated and predicts motor learning ability"
+  },
+  "10.1152/jn.00089.2005": {
+   "id": "W2128191380",
+   "title": "Interlimb Coordination During Locomotion: What Can be Adapted and Stored?"
+  },
+  "10.1121/1.2217714": {
+   "id": "W2153538418",
+   "title": "Adaptive control of vowel formant frequency: Evidence from real-time formant manipulation"
+  },
+  "10.1162/jocn_a_01108": {
+   "id": "W2588400776",
+   "title": "Characteristics of Implicit Sensorimotor Adaptation Revealed by Task-irrelevant Clamped Feedback"
+  },
+  "10.1038/s41586-021-04129-3": {
+   "id": "W3215906447",
+   "title": "Contextual inference underlies the learning of sensorimotor repertoires"
+  },
+  "10.1016/j.neubiorev.2009.12.010": {
+   "id": "W2048203959",
+   "title": "Sensorimotor adaptation of saccadic eye movements"
+  },
+  "10.7554/elife.76639": {
+   "id": "W4291624926",
+   "title": "Understanding implicit sensorimotor adaptation as a process of proprioceptive re-alignment"
+  },
+  "10.1002/cphy.c170043": {
+   "id": null
+  }
+ }
+}

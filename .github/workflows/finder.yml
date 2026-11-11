@@ -1,0 +1,304 @@
+# Weekly finder: finds newly shared human motor control / motor learning datasets, lists them on the site, standardizes
+# up to N of them, checks them (deterministic gates + an independent AI review), publishes them and reports in an issue.
+# How it works and how to turn it off: tools/finder/README.md.
+#
+# Jobs: find (find + screen + listing) -> standardize (one job per study, at most 3 at once) -> publish (release assets,
+# one commit on main) -> site (pages.yml; pushes made with the workflow token do not trigger it) and report (an issue).
+# Secrets: CLAUDE_CODE_OAUTH_TOKEN (AI steps only), OPENALEX_API_KEY (optional, find and listing steps only).
+# Logs are public (this repository is public): steps print counts and statuses only; AI transcripts are written to files
+# that are never uploaded.
+name: Weekly finder
+on:
+  schedule:
+    - cron: "0 3 * * 0"   # Sunday 03:00 UTC = Saturday 22:00 EST / 23:00 EDT
+  workflow_dispatch:
+    inputs:
+      max_standardize:
+        description: "How many studies to standardize in this run (0 = list only)"
+        required: false
+        default: "6"
+      dry_run:
+        description: "Dry run: find, screen, list and standardize, but publish nothing (report goes to the run summary)"
+        type: boolean
+        required: false
+        default: false
+      since:
+        description: "Search from this date (YYYY-MM-DD); empty = from the last run"
+        required: false
+        default: ""
+permissions:
+  contents: read
+concurrency:
+  group: finder
+  cancel-in-progress: false
+env:
+  CLAUDE_CODE_VERSION: "2.1.311"
+  DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150  # sources are capped at about 90 minutes in total; weekly runs take far less
+    permissions:
+      contents: read
+    outputs:
+      queue: ${{ steps.queue.outputs.queue }}
+      n: ${{ steps.queue.outputs.n }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Claude Code
+        run: npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+      - name: Find
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          SINCE: ${{ github.event.inputs.since }}
+        run: |
+          mkdir -p work/finder
+          cp source/finder/authors.json work/finder/authors.json 2>/dev/null || true
+          ARGS=""
+          if printf '%s' "${SINCE}" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then ARGS="--since ${SINCE}"; fi
+          python -I tools/finder/find.py ${ARGS} --authors work/finder/authors.json > work/finder/find.log 2>&1 \
+            || { echo "find failed"; tail -3 work/finder/find.log | cut -c1-160; exit 1; }
+          tail -1 work/finder/find.log
+      - name: Screen (AI, no tools)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+        run: |
+          python -I tools/finder/screen.py > work/finder/screen.log 2>&1 || { echo "screen failed"; exit 1; }
+          tail -1 work/finder/screen.log
+      - name: Listing
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          python -I tools/finder/listing.py > work/finder/listing.log 2>&1 || { echo "listing failed"; exit 1; }
+          tail -1 work/finder/listing.log
+      - name: Queue
+        id: queue
+        env:
+          MAX_STD: ${{ github.event.inputs.max_standardize || '6' }}
+        run: |
+          case "${MAX_STD}" in ''|*[!0-9]*) MAX_STD=6;; esac
+          python -I tools/finder/standardize.py queue --max "${MAX_STD}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: finder-run
+          path: work/finder/
+          retention-days: 7
+          if-no-files-found: ignore
+
+  standardize:
+    needs: find
+    if: needs.find.result == 'success' && needs.find.outputs.n != '0' && needs.find.outputs.n != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        id: ${{ fromJSON(needs.find.outputs.queue) }}
+    env:
+      DS: ${{ matrix.id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install
+        id: install
+        run: |
+          python -m pip install -q pandas numpy scipy h5py openpyxl xlrd pyreadr pyreadstat statsmodels
+          npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+          sudo apt-get install -y -q bubblewrap socat >/dev/null 2>&1 || true
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 >/dev/null 2>&1 || true
+          if bwrap --ro-bind / / --dev /dev --proc /proc true 2>/dev/null; then echo "sandbox=yes" >> "$GITHUB_OUTPUT"; echo "sandbox available";
+          else echo "sandbox=no" >> "$GITHUB_OUTPUT"; echo "sandbox NOT available: the agent is not started"; fi
+      - uses: actions/download-artifact@v4
+        with:
+          name: finder-run
+          path: work/finder
+      - name: Prepare and snapshot
+        id: snap
+        run: |
+          printf '%s' "${DS}" | grep -Eq '^[A-Za-z][A-Za-z0-9_-]{2,80}$' || { echo "bad id"; exit 1; }
+          python -I tools/finder/standardize.py prepare "${DS}" > work/prepare.log 2>&1 || { echo "prepare failed"; exit 1; }
+          tail -1 work/prepare.log
+          P="${RUNNER_TEMP}/pristine"
+          mkdir -p "${P}"
+          cp -r tools/finder tools/std "${P}/"
+          cp source/columns.csv "${P}/columns.csv"
+          find "${P}" -name __pycache__ -prune -exec rm -rf {} +
+          python3 -I -B -X pycache_prefix="${RUNNER_TEMP}/pyc" "${P}/finder/standardize.py" manifest --root "${GITHUB_WORKSPACE}" --out "${RUNNER_TEMP}/manifest.json"
+          echo "sha=$(cd "${P}" && find . -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -c1-64)" >> "$GITHUB_OUTPUT"
+      - name: Standardize (AI)
+        if: steps.install.outputs.sandbox == 'yes'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+        run: |
+          timeout 50m claude -p "Read tools/finder/BRIEF.md and follow it for dataset ${DS}, described in work/context.md." \
+            --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/finder/agent_settings.json \
+            --strict-mcp-config --disallowedTools "WebSearch" --max-turns 300 --output-format json > work/agent.json 2> work/agent.err || true
+          echo "agent finished"
+      - name: Gates
+        id: gates
+        env:
+          PRISTINE_SHA: ${{ steps.snap.outputs.sha }}
+        run: |
+          P="${RUNNER_TEMP}/pristine"
+          NOW="$(cd "${P}" && find . -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -c1-64)"
+          [ "${NOW}" = "${PRISTINE_SHA}" ] || { echo "the pristine copy of tools/ changed; stopping"; exit 1; }
+          find . \( -name CLAUDE.md -o -name CLAUDE.local.md -o -name .mcp.json \) -not -path './.git/*' -delete
+          find . -name .claude -type d -not -path './.git/*' -prune -exec rm -rf {} +
+          rm -f work/review.json work/gates.json work/agent_summary.json
+          python3 -I -B -c "import json; d=json.load(open('work/agent.json')); json.dump({'turns': d.get('num_turns'), 'is_error': d.get('is_error'), 'cost_usd': d.get('total_cost_usd'), 'stop': str(d.get('subtype'))[:40]}, open('work/agent_summary.json', 'w'))" 2>/dev/null || echo '{"turns": null, "is_error": true, "stop": "no output (time limit?)"}' > work/agent_summary.json
+          python3 -I -B -X pycache_prefix="${RUNNER_TEMP}/pyc" "${P}/finder/standardize.py" gates "${DS}" --root "${GITHUB_WORKSPACE}" \
+            --manifest "${RUNNER_TEMP}/manifest.json" --pristine "${P}"
+      - name: Independent review (AI)
+        if: steps.gates.outputs.gates == 'pass'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+        run: |
+          timeout 12m claude -p "Read tools/finder/REVIEW.md and review dataset ${DS}." \
+            --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings "${RUNNER_TEMP}/pristine/finder/agent_settings.json" \
+            --strict-mcp-config --disallowedTools "WebSearch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
+          test -f work/review.json && python3 -I -B -c "import json; print('verdict:', str(json.load(open('work/review.json')).get('verdict'))[:10])" || echo "no review.json"
+      - name: Collect
+        if: always() && steps.snap.outcome == 'success'
+        env:
+          SANDBOX: ${{ steps.install.outputs.sandbox }}
+          PRISTINE_SHA: ${{ steps.snap.outputs.sha }}
+        run: |
+          NOW="$(cd "${RUNNER_TEMP}/pristine" && find . -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -c1-64)"
+          [ "${NOW}" = "${PRISTINE_SHA}" ] || { echo "the pristine copy of tools/ changed; nothing is collected"; exit 1; }
+          INFRA=""
+          if [ "${SANDBOX}" != "yes" ]; then INFRA="the agent sandbox (bubblewrap) was not available on the runner"; fi
+          python3 -I -B -X pycache_prefix="${RUNNER_TEMP}/pyc" "${RUNNER_TEMP}/pristine/finder/standardize.py" collect "${DS}" \
+            --root "${GITHUB_WORKSPACE}" --manifest "${RUNNER_TEMP}/manifest.json" --pristine "${RUNNER_TEMP}/pristine" --out "${RUNNER_TEMP}/out/${DS}" --infra "${INFRA}"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.snap.outcome == 'success'
+        with:
+          name: std-${{ matrix.id }}
+          path: ${{ runner.temp }}/out/${{ matrix.id }}/
+          retention-days: 3
+          if-no-files-found: ignore
+
+  publish:
+    needs: [find, standardize]
+    if: always() && needs.find.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write   # release assets + one commit on main
+    outputs:
+      changed: ${{ steps.pub.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          name: finder-run
+          path: work/finder
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: std-*
+          path: work/std
+      - name: Publish
+        id: pub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+          ARGS=""
+          if [ "${DRY_RUN}" = "true" ]; then ARGS="--dry-run"; fi
+          python -I tools/finder/publish.py ${ARGS} > work/finder/publish.log 2>&1 || { echo "publish failed"; tail -c 300 work/finder/publish.log | sed 's/[^[:print:]]//g'; exit 1; }
+          tail -1 work/finder/publish.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: finder-published
+          path: work/finder/publish_result.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+  site:
+    needs: publish
+    if: needs.publish.outputs.changed == 'yes'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+  report:
+    needs: [find, standardize, publish]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: finder-run
+          path: work/finder
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: std-*
+          path: work/std
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: finder-published
+          path: work/finder
+      - name: Write the report
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ARGS=""
+          if [ "${DRY_RUN}" = "true" ]; then ARGS="--dry-run"; fi
+          python -I tools/finder/report.py --run-url "${RUN_URL}" ${ARGS}
+          cat work/finder/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Post the report as an issue
+        if: env.DRY_RUN != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Weekly finder report $(date -u +%F)"
+          gh label create finder --color 0E8A16 --description "Weekly finder reports" -R "${GITHUB_REPOSITORY}" >/dev/null 2>&1 || true
+          gh issue create -R "${GITHUB_REPOSITORY}" --title "${TITLE}" --body-file work/finder/report.md --label finder >/dev/null \
+            || gh issue create -R "${GITHUB_REPOSITORY}" --title "${TITLE}" --body-file work/finder/report.md >/dev/null
+          echo "report posted"

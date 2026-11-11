@@ -480,11 +480,11 @@ def publish():
         subprocess.run(["gh", "release", "create", tag, "--prerelease", "--title", "Intake pipeline tests (not data)",
                         "--notes", "Files from test submissions of the intake pipeline. Not datasets.", "-R", REPO],
                        capture_output=True, text=True)
-    up = subprocess.run(["gh", "release", "upload", tag, str(zpath), "--clobber", "-R", REPO],
-                        capture_output=True, text=True)
-    if up.returncode != 0:
-        raise SystemExit("release upload failed: " + up.stderr[-500:])
-    rec["url"] = f"https://github.com/{REPO}/releases/download/{tag}/{dsid}.zip"
+    from versioning import publish_zip  # never overwrites a published file: a changed dataset becomes <id>.v2.zip
+    try:
+        publish_zip(dsid, zpath, tag, repo=REPO, record=rec)  # sets rec url, zip_sha256, zip_bytes, versions
+    except Exception as e:  # noqa: BLE001
+        raise SystemExit("release upload failed: " + str(e)[-500:])
     rec["contributed"] = {"submission": sid, "approved_utc": (sub.get("report") or {}).get("approval", {}).get("at")}
     json.dump(rec, open(rec_path, "w"), indent=1)
     # the listing entry

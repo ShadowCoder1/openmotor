@@ -60,6 +60,8 @@ jobs:
           (cd tools/intake && npm ci --silent)
           npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
           sudo apt-get install -y -q bubblewrap socat >/dev/null 2>&1 || true
+          # Ubuntu 24.04 blocks the user namespaces the agent sandbox needs; allow them on this throwaway runner
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 >/dev/null 2>&1 || true
       - name: Prepare
         id: prep
         if: steps.claim.outputs.id != ''
