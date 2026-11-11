@@ -24,5 +24,10 @@
  "bundle_tag": "data-2026-11-04",
  "submit_endpoint": "",
  "bundle_bytes": 137559780,
- "api_base": "https://openmotor-api.vercel.app"
+ "api_base": "https://openmotor-api.vercel.app",
+ "counter_start": {
+  "visitors": 472,
+  "downloads": 365,
+  "since": "2026-11-10"
+ }
 }

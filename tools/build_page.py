@@ -385,6 +385,7 @@ if "explore" in _order and (HERE / "source/explore/site").is_dir():
     shutil.copytree(HERE / "source/explore/site", OUT / "explore")
 # public settings for the parts (the API base for counts and uploads, data files for Explore)
 payload["meta"]["api"] = cfg.get("api_base") or None
+payload["meta"]["counterStart"] = cfg.get("counter_start") or None  # home page: visitors and downloads (JT, 2026-11-11)
 data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 page = tpl.replace("/*CATALOG*/", data)
 assert "/*CATALOG*/" not in page

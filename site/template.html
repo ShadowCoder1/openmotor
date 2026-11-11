@@ -90,6 +90,8 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--icon-bg); 
 .stats2 { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 18px; margin-top: 46px; }
 .stat2 { display: flex; align-items: center; gap: 18px; padding: 6px 56px 6px 0; }
 .stat2 + .stat2 { padding-left: 56px; border-left: 1px solid var(--border-2); }
+.stats2:has(.stat2:nth-child(5)) .stat2 { padding-right: 34px; }
+.stats2:has(.stat2:nth-child(5)) .stat2 + .stat2 { padding-left: 34px; }
 .stat2:last-child { padding-right: 0; }
 .stat2 .icon { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.6; }
 .stat2 b { display: block; font-size: 36px; line-height: 1.08; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
@@ -409,6 +411,12 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   .site-footer .wrap { grid-template-columns: minmax(0, 1fr); }
   .foot-sep { display: none; }
 }
+/* five numbers between phone and wide screens: three on the first row, two centred under them */
+@media (max-width: 1240px) and (min-width: 761px) {
+  .stats2:has(.stat2:nth-child(5)) { display: grid; grid-template-columns: repeat(6, auto); justify-content: center; column-gap: 0; }
+  .stats2:has(.stat2:nth-child(5)) .stat2 { grid-column: span 2; justify-content: center; padding: 6px 30px; }
+  .stats2:has(.stat2:nth-child(5)) .stat2:nth-child(4) { grid-column: 2 / span 2; border-left: 0; }
+}
 @media (max-width: 760px) {
   body { font-size: 16px; }
   .hero2 { padding-top: 30px; }
@@ -420,6 +428,10 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   .stat2 .icon { width: 26px; height: 26px; }
   .stat2 b { font-size: 20px; }
   .stat2 span { font-size: 14px; }
+  /* five numbers on phones: three on the first row, two centred under them */
+  .stats2:has(.stat2:nth-child(5)) { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .stats2:has(.stat2:nth-child(5)) .stat2 { grid-column: span 2; }
+  .stats2:has(.stat2:nth-child(5)) .stat2:nth-child(4) { grid-column: 2 / span 2; border-left: 0; }
   .chip { padding: 8px 16px; font-size: 15px; }
   .page h1.sp-title { font-size: 30px; }
   .page h2.sp-sub { font-size: 19px; }
@@ -807,8 +819,18 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   var avail = FILES.filter(function (f) { return f.status === "available"; });
 
   /* ---------- home ---------- */
+  var EYE = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>';
+  var CS = META.counterStart || {};  /* visitors and downloads: the lab's starting figures, then live counts from the API */
   var stats = [[ICON.layers, fmt(T.studies), "Studies"], [ICON.users, fmt(T.people), "Participants"], [ICON.activity, fmt(T.trials), "Trials"]];
-  $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b>" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
+  if (CS.visitors) stats.push([EYE, fmt(CS.visitors), "Visitors", "st-visitors"], [ICON.download, fmt(CS.downloads), "Downloads", "st-downloads"]);
+  $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b" + (s[3] ? " id=\"" + s[3] + "\"" : "") + ">" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
+  if (CS.visitors && META.api) {
+    fetch(META.api + "/api/public-stats").then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d) return;
+      if (d.visitors >= CS.visitors) $("#st-visitors").textContent = fmt(d.visitors);
+      if (d.downloads >= CS.downloads) $("#st-downloads").textContent = fmt(d.downloads);
+    }).catch(function () {});
+  }
 
   /* ---------- downloads ---------- */
   document.addEventListener("click", function (e) {
