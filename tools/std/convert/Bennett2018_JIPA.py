@@ -103,7 +103,7 @@ meta = dict(
                venue="J Int Phon Assoc 48(3):261-304", doi="10.1017/S0025100317000494"),
     lab="Bennett / Padgett (UC Santa Cruz)",
     data_url="https://doi.org/10.7291/D1WC74 (the files were read from the deposit's Zenodo copy, https://zenodo.org/records/4934835)",
-    license="CC BY 4.0", license_url="https://creativecommons.org/licenses/by/4.0/",
+    license="CC0", license_url="https://creativecommons.org/publicdomain/zero/1.0/",
     changes=("Only the tongue-contour table of the deposit (Phase_1_results) was converted: its 249,900 lines (one per contour point) "
              "became 833 rows, one per spoken token, with the 100 points of each of the 3 landmark contours as lists in six columns. "
              "The audio, the Praat TextGrids, the ultrasound video and frames, the EdgeTrak tracing files and the SSANOVA plots were not "
@@ -133,4 +133,8 @@ meta = dict(
 )
 if not ck.passed():
     sys.exit("checks failed")
+# columns that other studies added to the module later (single-frame contours, NINFL, ...) do not exist in this deposit: left empty
+for _c in stdlib.load_module("tongue_ultrasound"):
+    if _c[0] == "Task-specific" and _c[1] not in out.columns:
+        out[_c[1]] = ""
 rec = stdlib.release(ID, "tongue_ultrasound", out, meta, ck)

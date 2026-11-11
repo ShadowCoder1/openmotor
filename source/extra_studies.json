@@ -7465,8 +7465,8 @@
   ],
   "data_url": "https://osf.io/4n2ux/",
   "host": "OSF",
-  "license": "CC BY 4.0",
-  "license_note": null,
+  "license": "CC BY-NC-SA 4.0",
+  "license_note": "The OSF project lists CC BY-NC-SA 4.0 (attribution, non-commercial, share-alike).",
   "formats": [
    "CSV"
   ],
@@ -8221,7 +8221,7 @@
   "data_url": "https://doi.org/10.5281/zenodo.6390598",
   "host": "Zenodo",
   "license": "CC BY-SA 4.0",
-  "license_note": null,
+  "license_note": "The Zenodo record shows CC BY 4.0, but the deposit's own readme says CC BY-SA (no version). The converted copy follows the stricter CC BY-SA.",
   "formats": [
    "ZIP"
   ],
@@ -8379,8 +8379,8 @@
   ],
   "data_url": "https://doi.org/10.7291/D1WC74",
   "host": "Dryad",
-  "license": "CC BY 4.0",
-  "license_note": null,
+  "license": "CC0",
+  "license_note": "The Dryad record states CC0 (public domain).",
   "formats": [
    "text",
    "audio"

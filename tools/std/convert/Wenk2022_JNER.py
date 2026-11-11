@@ -92,6 +92,22 @@ def b(x):
     return bool(x) if x == x else None
 
 out = []
+_bad_said = []
+
+
+def _said(v):
+    """Count.Said is an integer. Ten cells of the authors' file are text instead (three look like day-month dates from a spreadsheet,
+    for example 03.avr; the others are s, a or ?). The original number cannot be recovered, so those cells are left empty."""
+    if isinstance(v, str):
+        if not v.strip().isdigit():
+            _bad_said.append(v)
+            return None
+        return int(v.strip())
+    if v != v:
+        return None
+    return v
+
+
 for subj, k, exp, sex, age, excl, r in rows:
     onset = r["Movement.Onset"]
     out.append({
@@ -110,10 +126,11 @@ for subj, k, exp, sex, age, excl, r in rows:
         "straightness_ratio": r["Movement.Straightness"], "peak_velocity_m_s": r["Movement.PeakVelocity"],
         "peak_velocity_time_s": r["Movement.PeakVelocityTime"], "peak_velocity_time_norm": r["Movement.PeakVelocityTime.Normalized"],
         "n_velocity_peaks": r["Movement.NbPeaks"], "onset_s": None if onset != onset else onset,
-        "endpoint_velocity_m_s": r["Movement.EndPointVelocity"], "count_said": r["Count.Said"],
+        "endpoint_velocity_m_s": r["Movement.EndPointVelocity"], "count_said": _said(r["Count.Said"]),
         "type_said": None if r["Type.Said"] != r["Type.Said"] else r["Type.Said"],
         "fruit_correct": bool(r["Fruit.Correctness.Binary"]), "fruit_correctness": r["Fruit.Correctness.Detailed"],
     })
+checks.internal("ten cells of Count.Said that are not numbers were set empty (3 date-like, 3 s, 1 a, 3 ?)", len(_bad_said) == 10, str(sorted(_bad_said)))
 checks.internal("every row kept: 5886 + 719", len(out) == 5886 + 719)
 checks.internal("subjects: 20 + 5", len({o["subject"] for o in out}) == 25)
 
@@ -145,6 +162,10 @@ meta = dict(
     ],
     unit_note="reach to a virtual fruit",
     differences=[
+        "Ten cells of Count.Said (the counting value said by the participant, an integer) hold text in the authors' file: three look like "
+        "day-month dates made by a spreadsheet (03.avr, 02.mars, 01.fevr), and seven are a single letter s or a, or a question mark. "
+        "The original numbers cannot be recovered without doubt (a date cannot be turned back into one integer), so count_said is empty "
+        "in these ten rows; the rest of each row is unchanged.",
         "The paper reports the table ages of the 20 older adults as 74.22 +/- 8.11 years; the ages printed in its Table 1 give 73.75 +/- 8.12, and "
         "the patients' Table 2 ages give 49.8 +/- 13.9 against 49.88 +/- 12.55 printed in the text, so these were not used as checks.",
         "The paper says 5886 reaching movements were performed by 17 participants; the deposit's 5886 rows come from all 20 participants "

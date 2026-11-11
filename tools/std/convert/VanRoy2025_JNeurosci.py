@@ -116,6 +116,16 @@ part_cols = [("disease_duration_years", "number", "years", "Disease duration (Ta
              ("updrs_right", "number", "", "UPDRS motor score, right side.")]
 keys = ["disease duration (years)", "Education (years)", "MMSE", "GDS", "H&Y ", "UPDRS1", "UPDRS2", "UPDRS3", "UPDRS - L", "UPDRS - R"]
 parts = [dict(person=f"P{pid}", **{c[0]: p.get(k) for c, k in zip(part_cols, keys)}) for pid, p in people.items()]
+# one cell of the UPDRS3 column holds the word "fracture" instead of a score: the score is left empty (no number is guessed)
+n_text = 0
+for _p in parts:
+    for _c, _k in zip(part_cols, keys):
+        _v = _p[_c[0]]
+        if isinstance(_v, str):
+            assert _c[0] == "updrs3" and _v.strip().lower() == "fracture", (_c[0], _v)
+            _p[_c[0]] = None
+            n_text += 1
+assert n_text == 1, n_text
 paper = dict(authors="Van Roy A, Dan X, Micca L, Gilat M, Chan P, Doyon J, Albouy G, King BR", year=2025,
              title="Impaired Online and Enhanced Offline Motor Sequence Learning in Individuals with Parkinson's Disease",
              venue="J Neurosci 45(35):e2193242025", doi="10.1523/jneurosci.2193-24.2025")
@@ -129,5 +139,7 @@ meta = dict(paper=paper, lab="King & Albouy (University of Utah)", data_url="htt
                  "two Parkinson's subgroups (24 and 18 people, together the 42 reported). The deposit does not define the letters, so no meaning is assumed here.",
                  "Sex was coded F or M from the deposit's gender column; the table1 clinical scores are in participants.csv. Sequence and device details are not in the deposit "
                  "and are not stated in the rows."],
-            unit_note="participant, measure and block (long form)")
+            unit_note="participant, measure and block (long form)",
+            differences=["In the deposit's Table1 sheet, one participant's UPDRS3 cell holds the word \"fracture\" instead of a score. "
+                         "That UPDRS3 value is left empty in participants.csv; no number was guessed."])
 stdlib.release(ID, "summary", rows, meta, checks, participants=parts, participant_columns=part_cols)

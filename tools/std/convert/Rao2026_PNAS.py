@@ -85,11 +85,11 @@ def main():
     for c in checks.items:
         if not c["ok"]:
             print("FAILED:", c)
-    s = next(x for x in json.load(open(stdlib.HERE / "source/extra_studies.json")) if x["id"] == ID)
+    s = next(x for x in json.load(open(stdlib.HERE / "source/extra_studies.json", encoding="utf-8")) if x["id"] == ID)
     p0 = dict(s["papers"][0])
     meta = dict(
         study=ID, paper={k: p0[k] for k in ("authors", "year", "title", "venue", "doi")}, lab=s["lab"], data_url=s["data_url"],
-        license="CC BY 4.0", license_url="https://creativecommons.org/licenses/by/4.0/",
+        license="CC BY-NC-SA 4.0", license_url="https://creativecommons.org/licenses/by-nc-sa/4.0/",
         changes="Reshaped the authors' ten participant-by-condition tables into one long table and replaced participant numbers with codes.",
         how=[
             "Each row is one participant's percent change in F1 or F2 from his or her own baseline in one stage of the experiment: the three "

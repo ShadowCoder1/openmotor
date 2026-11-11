@@ -4,8 +4,8 @@
  "rows": 6605,
  "subjects": 25,
  "persons": 25,
- "zip_bytes": 422487,
- "zip_sha256": "0c000c0a4b677c3c554a123ac0b6b22efc690c4707835e80ba14c2f337f2a840",
+ "zip_bytes": 422660,
+ "zip_sha256": "f596c1f75949ac8f2c99bbeb0eececebd1b0cfcfce4df22957044a1413bb9a25",
  "checks": [
   {
    "kind": "internal",
@@ -138,6 +138,12 @@
   },
   {
    "kind": "internal",
+   "what": "ten cells of Count.Said that are not numbers were set empty (3 date-like, 3 s, 1 a, 3 ?)",
+   "ok": true,
+   "detail": "['01.f\u00e9vr', '02.mars', '03.avr', '?', '?', '?', 'a', 's', 's', 's']"
+  },
+  {
+   "kind": "internal",
    "what": "every row kept: 5886 + 719",
    "ok": true,
    "detail": ""
@@ -151,6 +157,7 @@
  ],
  "no_published_reason": null,
  "differences": [
+  "Ten cells of Count.Said (the counting value said by the participant, an integer) hold text in the authors' file: three look like day-month dates made by a spreadsheet (03.avr, 02.mars, 01.fevr), and seven are a single letter s or a, or a question mark. The original numbers cannot be recovered without doubt (a date cannot be turned back into one integer), so count_said is empty in these ten rows; the rest of each row is unchanged.",
   "The paper reports the table ages of the 20 older adults as 74.22 +/- 8.11 years; the ages printed in its Table 1 give 73.75 +/- 8.12, and the patients' Table 2 ages give 49.8 +/- 13.9 against 49.88 +/- 12.55 printed in the text, so these were not used as checks.",
   "The paper says 5886 reaching movements were performed by 17 participants; the deposit's 5886 rows come from all 20 participants (17 with complete data). The 280 reaches without a movement onset also count all 20 (250 in the 17).",
   "The paper's counts of extreme outliers removed per metric (for example 140 for normalized duration) were not reproduced with a Q1 - 3 IQR / Q3 + 3 IQR rule per participant or per participant and display, so no outlier flag is given."
@@ -161,22 +168,43 @@
    "url": "https://zenodo.org/api/records/6631771/files/ARVR2D_elderlies_DataCatchBased.csv/content",
    "bytes": 1209491,
    "sha256": "e91f756da5904f79eae2f3a6fe3669b190c42f36b02573841fa2b0f005bb94d9",
-   "fetched_utc": "2026-11-09T10:18:13Z"
+   "fetched_utc": "2026-11-11T01:05:58Z"
   },
   {
    "file": "ARVR2D_patients_DataCatchBased.csv",
    "url": "https://zenodo.org/api/records/6631771/files/ARVR2D_patients_DataCatchBased.csv/content",
    "bytes": 146262,
    "sha256": "e06e47269c11914f111d07c7aa18c6dba73503fced29b31daec6ab1c732fe6ad",
-   "fetched_utc": "2026-11-09T10:18:21Z"
+   "fetched_utc": "2026-11-11T01:06:02Z"
   },
   {
    "file": "DataFrameDescription.rtf",
    "url": "https://zenodo.org/api/records/6631771/files/DataFrameDescription.rtf/content",
    "bytes": 125011,
    "sha256": "a0582b3e75c280022bfdf3ea5da07c7ca792b4531b7999b2300361a21061a5e3",
-   "fetched_utc": "2026-11-09T10:18:29Z"
+   "fetched_utc": "2026-11-11T01:06:07Z"
   }
  ],
- "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_JNER.zip"
+ "versions": [
+  {
+   "version": 1,
+   "release": "standardized",
+   "file": "Wenk2022_JNER.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_JNER.zip",
+   "sha256": "0c000c0a4b677c3c554a123ac0b6b22efc690c4707835e80ba14c2f337f2a840",
+   "bytes": 422487,
+   "date": "2026-11-09"
+  },
+  {
+   "version": 2,
+   "release": "standardized",
+   "file": "Wenk2022_JNER.v2.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_JNER.v2.zip",
+   "sha256": "f596c1f75949ac8f2c99bbeb0eececebd1b0cfcfce4df22957044a1413bb9a25",
+   "bytes": 422660,
+   "date": "2026-11-11",
+   "content_sha256": "78c1d9c8a9744d51e5a11fc347b448701592df0f9666326d070d0c27f98ecdbb"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Wenk2022_JNER.v2.zip"
 }

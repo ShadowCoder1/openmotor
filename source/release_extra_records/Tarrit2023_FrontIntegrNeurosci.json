@@ -5,7 +5,7 @@
  "subjects": 109,
  "persons": 109,
  "zip_bytes": 467632108,
- "zip_sha256": "66c98f2d9975a34c263725ec0e52fac599c87a9e3293b1272bab1de1dd742300",
+ "zip_sha256": "d74fe7a5c98c3e009121e237580200875799b5ba3b7c3e9d6f0820b8b2d6867a",
  "checks": [
   {
    "kind": "internal",
@@ -53,5 +53,6 @@
    "fetched_utc": "2026-11-09T15:47:31Z"
   }
  ],
- "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tarrit2023_FrontIntegrNeurosci.zip"
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Tarrit2023_FrontIntegrNeurosci.zip",
+ "note": "sha256 corrected 2026-11-11: the served file is a rebuild of the same data (rows and participants checked)"
 }

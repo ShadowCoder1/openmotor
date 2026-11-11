@@ -4,8 +4,8 @@
  "rows": 6624,
  "subjects": 72,
  "persons": 72,
- "zip_bytes": 74997,
- "zip_sha256": "2adce5f246cd9d58c20a04345177d90bf048d76542be5e3837892807f6fe7264",
+ "zip_bytes": 75092,
+ "zip_sha256": "b4f442d488a3dc90fcc554bbc88ae481d97080d4164d2ddea7a01cbc8bed223f",
  "checks": [
   {
    "kind": "published",
@@ -48,15 +48,38 @@
   }
  ],
  "no_published_reason": null,
- "differences": [],
+ "differences": [
+  "In the deposit's Table1 sheet, one participant's UPDRS3 cell holds the word \"fracture\" instead of a score. That UPDRS3 value is left empty in participants.csv; no number was guessed."
+ ],
  "sources": [
   {
    "file": "VanRoy_MicroPD_FigureData.xlsx",
    "url": "https://zenodo.org/api/records/15864553/files/VanRoy_MicroPD_FigureData.xlsx/content",
    "bytes": 110747,
    "sha256": "b8e71c95efd9d02cb3f477f390565fd21b8ba05a58ff3b8c26c4eb639a34ca60",
-   "fetched_utc": "2026-11-09T15:21:01Z"
+   "fetched_utc": "2026-11-11T01:05:53Z"
   }
  ],
- "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2025_JNeurosci.zip"
+ "versions": [
+  {
+   "version": 1,
+   "release": "standardized",
+   "file": "VanRoy2025_JNeurosci.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2025_JNeurosci.zip",
+   "sha256": "2adce5f246cd9d58c20a04345177d90bf048d76542be5e3837892807f6fe7264",
+   "bytes": 74997,
+   "date": "2026-11-09"
+  },
+  {
+   "version": 2,
+   "release": "standardized",
+   "file": "VanRoy2025_JNeurosci.v2.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2025_JNeurosci.v2.zip",
+   "sha256": "b4f442d488a3dc90fcc554bbc88ae481d97080d4164d2ddea7a01cbc8bed223f",
+   "bytes": 75092,
+   "date": "2026-11-11",
+   "content_sha256": "3a4a29f303d8f29defea3d79e274c76ceb400fbf99879e165052f9ec93b5809e"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/VanRoy2025_JNeurosci.v2.zip"
 }

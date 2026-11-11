@@ -4,8 +4,8 @@
  "rows": 833,
  "subjects": 5,
  "persons": 5,
- "zip_bytes": 1370758,
- "zip_sha256": "031115ab59ae8db137e882502f55c2e6b0d15db494887e7faf029f1b32b673a6",
+ "zip_bytes": 1371901,
+ "zip_sha256": "e0d810192861a7fc45dc3667a9f6535b145344eea08923aeba7f4ac16df28beb",
  "checks": [
   {
    "kind": "published",
@@ -163,8 +163,29 @@
    "url": "https://zenodo.org/api/records/4934835/files/Phase_1_results.zip/content",
    "bytes": 280242194,
    "sha256": "3e7fb15c71ab5f62a2ff2c9ba5612abf3fd16fdb88dc60f62722741e63c0f4c2",
-   "fetched_utc": "2026-11-08T22:40:15Z"
+   "fetched_utc": "2026-11-11T01:04:45Z"
   }
  ],
- "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bennett2018_JIPA.zip"
+ "versions": [
+  {
+   "version": 1,
+   "release": "standardized",
+   "file": "Bennett2018_JIPA.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bennett2018_JIPA.zip",
+   "sha256": "031115ab59ae8db137e882502f55c2e6b0d15db494887e7faf029f1b32b673a6",
+   "bytes": 1370758,
+   "date": "2026-11-08"
+  },
+  {
+   "version": 2,
+   "release": "standardized",
+   "file": "Bennett2018_JIPA.v2.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bennett2018_JIPA.v2.zip",
+   "sha256": "e0d810192861a7fc45dc3667a9f6535b145344eea08923aeba7f4ac16df28beb",
+   "bytes": 1371901,
+   "date": "2026-11-11",
+   "content_sha256": "6939f60bc0b5085b68fde1352a4b4223b7b6db3165d921690656100cb39d7187"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Bennett2018_JIPA.v2.zip"
 }

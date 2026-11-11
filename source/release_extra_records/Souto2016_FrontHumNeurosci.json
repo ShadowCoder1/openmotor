@@ -4,8 +4,8 @@
  "rows": 28624,
  "subjects": 66,
  "persons": 33,
- "zip_bytes": 462676,
- "zip_sha256": "ec7824c42b2638a8f3800dbccbe8370926f0feeb788ebad87a22650c06005689",
+ "zip_bytes": 479862,
+ "zip_sha256": "8595926ae54c8a0636145d74162df85f2f57b314fb644e15f7677a994b39dffe",
  "checks": [
   {
    "kind": "published",
@@ -91,7 +91,7 @@
  ],
  "no_published_reason": null,
  "differences": [
-  "The paper describes Experiment 2 as five backward step sizes (0.25-1.25 deg) in separate sessions. The deposit's exp2 folder holds only the 1.5 deg adaptation session: its adaptation rows are the same trials and saccade values as the exp1 folder's for most observers (a copy with the step in pixels instead of the contrast), and its perception rows are the same trials as exp1's with step sizes instead of contrasts. So the exp2 folder is not an independent experiment, and the five-step-size data are not in the deposit. The exp1 adaptation contrast column holds 0.1 and 0.5 where the paper has 10% and 100% contrast, while the perception files hold 0.1 and 1.0.",
+  "The paper describes Experiment 2 as five backward step sizes (0.25-1.25 deg) in separate sessions. The deposit's exp2 folder holds only the 1.5 deg adaptation session: its adaptation rows are the same trials and saccade values as the exp1 folder's for most observers (a copy with the step in pixels instead of the contrast), and its perception rows are the same trials as exp1's with step sizes instead of contrasts. So the exp2 folder is not an independent experiment, and the five-step-size data are not in the deposit. The paper has two target contrasts, 10% and 100% (Weber), for all 19 Experiment 1 observers. The perception files hold 0.1 and 1.0 for every observer, and the exp1 adaptation files hold 0.1 and 1.0 for 16 observers; for three observers (about 765 of the 9,946 adaptation trials) the adaptation block that the other observers ran at 1.0 is coded 0.5, although their own perception files hold 1.0. The label 'contrast 0.5' is the deposit's value, kept as shared; it is probably the paper's 100% condition for these three observers, but nothing in the deposit or the paper states that, so it was not relabelled.",
   "A few exp1/exp2 files have fewer columns (no saccade end values in some exp2 adaptation files) or an extra block, and the paper's analysis excludes observers whose psychometric function was flat; the deposit does not say which ones, so none is flagged."
  ],
  "sources": [
@@ -100,8 +100,29 @@
    "url": "https://zenodo.org/records/579839/files/SoutoGegenfurtnerSchutz_FrontHumNeurosci_2016.zip?download=1",
    "bytes": 247702,
    "sha256": "ff1e25185036e6e3791190dc91c2f148be5d0af781f9f393fb7ea7be3cf67368",
-   "fetched_utc": "2026-11-09T06:17:40Z"
+   "fetched_utc": "2026-11-11T01:10:38Z"
   }
  ],
- "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Souto2016_FrontHumNeurosci.zip"
+ "versions": [
+  {
+   "version": 1,
+   "release": "standardized",
+   "file": "Souto2016_FrontHumNeurosci.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Souto2016_FrontHumNeurosci.zip",
+   "sha256": "ec7824c42b2638a8f3800dbccbe8370926f0feeb788ebad87a22650c06005689",
+   "bytes": 462676,
+   "date": "2026-11-09"
+  },
+  {
+   "version": 2,
+   "release": "standardized",
+   "file": "Souto2016_FrontHumNeurosci.v2.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Souto2016_FrontHumNeurosci.v2.zip",
+   "sha256": "8595926ae54c8a0636145d74162df85f2f57b314fb644e15f7677a994b39dffe",
+   "bytes": 479862,
+   "date": "2026-11-11",
+   "content_sha256": "3548743693b6581a10ef9f007487dc95d851b12aca687ffb10d72446148741c0"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/standardized/Souto2016_FrontHumNeurosci.v2.zip"
 }

@@ -232,9 +232,11 @@ def main():
              "is the right heel strike time from the start of that phase and walking_trial numbers the phases 1-4.",
              "The leg that took the longer step at baseline walked on the fast belt (fast_leg). Step lengths are the authors' real-time "
              "motion-capture values in cm, here in metres (step_length_fast_m, step_length_slow_m), and the kinematic values from the "
-             "offline heel markers in metres. step_length_asymmetry is (fast - slow) / (fast + slow) as a fraction (the authors give it in "
-             "percent), then baseline-corrected (their baseline phase mean subtracted), with an empty value for the first stride of each "
-             "phase and for the last.",
+             "offline heel markers in metres. step_length_asymmetry is (fast - slow) / (fast + slow) of the real-time step lengths as a fraction "
+             "(the authors give it in percent); it is NOT baseline-corrected (the mean of the baseline phase is not zero: from -0.2 to 55 percent "
+             "across the 36 participants). step_length_asymmetry_baseline_corrected is the authors' baseline-corrected version (each "
+             "participant's baseline phase mean subtracted, so the baseline mean is 0), and step_length_asymmetry_kinematic is not baseline-corrected "
+             "either. The asymmetry columns are empty for the first stride of each phase and for the last.",
              "excluded_by_authors marks strides with no usable baseline-corrected asymmetry: the first stride of each phase, the last, "
              "and the strides the authors dropped as outliers (further than 3 x the interquartile range from the mean). "
              "adaptation_index is the authors' symmetry_change, released for the adaptation and washout phases only (for baseline and "
