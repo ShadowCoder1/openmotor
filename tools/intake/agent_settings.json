@@ -66,7 +66,16 @@
         "drive.google.com",
         "drive.usercontent.google.com",
         "www.dropbox.com",
-        "dl.dropboxusercontent.com"
+        "dl.dropboxusercontent.com",
+        "files.de-1.osf.io",
+        "files.au-1.osf.io",
+        "files.ca-1.osf.io",
+        "files.uk-1.osf.io",
+        "idvyorynw6xy.compat.objectstorage.us-ashburn-1.oraclecloud.com",
+        "idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com",
+        "idvyorynw6xy.compat.objectstorage.ap-sydney-1.oraclecloud.com",
+        "idvyorynw6xy.compat.objectstorage.ca-montreal-1.oraclecloud.com",
+        "idvyorynw6xy.compat.objectstorage.uk-london-1.oraclecloud.com"
       ]
     },
     "credentials": {
