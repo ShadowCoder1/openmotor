@@ -383,10 +383,11 @@ def finish():
         pv = preview(dsid, spec)
         listing = json.load(open(WORK / "listing.json")) if (WORK / "listing.json").exists() else res.get("listing") or {}
         m = sub["meta"]
-        pv["listing"] = {"label": listing.get("label") or label_for(m), "title": m.get("title"),
-                         "authors": m.get("authors") or m.get("author"), "year": m.get("year"), "venue": listing.get("venue", ""),
-                         "doi": m.get("doi", ""), "task": listing.get("task") or m.get("task", ""), "license": m.get("license")}
-        pv["notes"] = [str(x)[:500] for x in (res.get("notes") or [])][:10]
+        paper, why = paper_for(m, listing)
+        pv["listing"] = {"label": listing.get("label") or label_for(paper), "title": paper.get("title"),
+                         "authors": paper.get("authors"), "year": paper.get("year"), "venue": paper.get("venue") or listing.get("venue", ""),
+                         "doi": paper.get("doi", ""), "task": listing.get("task") or m.get("task", ""), "license": m.get("license")}
+        pv["notes"] = [str(x)[:500] for x in (res.get("notes") or [])][:10] + ([why] if why else [])
         blob("put", str(zpath), f"submissions/{sid}/out/{dsid}.zip")
         report("preview", msg or "Your standardized data are ready. Check them, then publish.", preview=pv)
     elif status == "rejected":
@@ -429,6 +430,30 @@ def crossref(doi):
         return {"authors": authors, "year": year, "title": (w.get("title") or [""])[0], "venue": venue, "doi": doi.lower()}
     except Exception:
         return None
+
+
+def clean_doi(s):
+    s = re.sub(r"^(https?://(dx\.)?doi\.org/|doi:\s*)", "", str(s or "").strip(), flags=re.I).strip()
+    return s if re.fullmatch(r"10\.\d{4,9}/\S+", s) else ""
+
+
+def paper_for(m, listing):
+    """The citation to show and publish. The AI never writes a title or author list: it may only propose a corrected DOI
+    (work/listing.json "doi", e.g. after the contributor fixed it in an answer), which is used only when Crossref knows it,
+    and then Crossref supplies the title, authors and year. Otherwise the form's DOI (if Crossref knows it), else the
+    form's own fields. Returns (paper, note for the contributor or "")."""
+    proposed, given = clean_doi(listing.get("doi")), clean_doi(m.get("doi"))
+    why = ""
+    if proposed and proposed.lower() != given.lower():
+        p = crossref(proposed)
+        if p:
+            return p, f"The citation now uses DOI {proposed} (looked up in Crossref) instead of the one on the form."
+        why = f"The corrected DOI {proposed} could not be found in Crossref, so the citation from the form is shown."
+    p = crossref(given) if given else None
+    if p:
+        return p, why
+    return {"authors": m.get("authors") or m.get("author"), "year": int(m.get("year") or time.strftime("%Y")),
+            "title": m.get("title"), "venue": listing.get("venue") or "Contributed to OpenMotor", "doi": m.get("doi", "")}, why
 
 
 def git(*args, check=True):
@@ -489,10 +514,7 @@ def publish():
     json.dump(rec, open(rec_path, "w"), indent=1)
     # the listing entry
     listing = json.load(open(WORK / "listing.json")) if (WORK / "listing.json").exists() else {}
-    paper = crossref(m["doi"]) if m.get("doi") else None
-    if not paper:
-        paper = {"authors": m.get("authors") or m.get("author"), "year": int(m.get("year") or time.strftime("%Y")),
-                 "title": m.get("title"), "venue": listing.get("venue") or "Contributed to OpenMotor", "doi": m.get("doi", "")}
+    paper, _ = paper_for(m, listing)
     tasks = {e["task"] for e in json.load(open(HERE / "source/extra_studies.json"))}
     task = listing.get("task") if listing.get("task") in tasks else "other"
     link = sub.get("link") or m.get("repo") or rec["url"]

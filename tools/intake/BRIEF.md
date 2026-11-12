@@ -48,6 +48,8 @@ total under 5 GB.
    questions, make the best decision you can, state it in the README, and go to the preview.
 5. Write tools/std/convert/<dataset id>.py following the existing converters: keep every row the contributor shared, in
    order; recode nothing you do not have to; mark their exclusions; subject and person codes are reassigned by release().
+   A placeholder that the files or the contributor say means "not recorded" or "unknown" (0, -999, NaN codes, "NA") is
+   written empty, never kept as a real-looking value: a rotation of 0 would read as "no rotation". Say so in `how`.
    meta: paper (authors, year, title, venue, doi: from the form or the DOI; for unpublished data venue "Contributed to
    OpenMotor" and doi ""), lab, data_url (their repository link, or "uploaded to OpenMotor by the authors"), license
    exactly as chosen, license_url, changes, how (2-4 plain sentences: what one row is, units, signs), unit_note, and
@@ -68,7 +70,9 @@ total under 5 GB.
      speech, sequence learning, finger tapping and timing, eye movements, tracking, grasping and lifting, sports and games,
      finger movements, typing, balance and posture, handwriting and drawing, hand gestures and grasps, robot-assisted
      training, infant movements, running, other), "methods": [...], "populations": [...], "venue": "...", "label":
-     "<Last> et al. <year>" or "<Last> & <Last> <year>"}
+     "<Last> et al. <year>" or "<Last> & <Last> <year>", "doi": "<only when the form's DOI is wrong and the contributor
+     gave, or the files state, the right one>"}. The title, authors and year always come from the form or from Crossref
+     for that DOI, never from you; a DOI Crossref does not know is ignored.
    - work/plots.json (optional, for preview): up to 3 plots of what matters most in this dataset, as
      [{"title": ..., "x": "<column or null>", "y": "<column>", "group": "<column or null>", "xlabel": ..., "ylabel": ...}];
      the page computes them from the released file.
