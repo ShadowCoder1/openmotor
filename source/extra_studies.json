@@ -18347,7 +18347,9 @@
   "formats": [],
   "n_participants": 3,
   "task": "other",
-  "methods": [],
+  "methods": [
+   "brain-computer interface"
+  ],
   "populations": [],
   "lab": "Pandarinath (Georgia Institute of Technology)",
   "extra_tags": []
@@ -19734,7 +19736,9 @@
   "formats": [],
   "n_participants": null,
   "task": "finger movements",
-  "methods": [],
+  "methods": [
+   "brain-computer interface"
+  ],
   "populations": [],
   "lab": "Danziger (Emory University)",
   "extra_tags": []
@@ -37843,7 +37847,9 @@
   "formats": [],
   "n_participants": 27,
   "task": "other",
-  "methods": [],
+  "methods": [
+   "brain-computer interface"
+  ],
   "populations": [
    "children"
   ],
@@ -42015,6 +42021,241 @@
    [
     "measure",
     "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "Karpowicz2025_NatCommun",
+  "label": "Karpowicz et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Karpowicz BM, Ali YH, Wimalasena LN, Sedler AR, Keshtkaran MR, Bodkin K, Ma X, Rubin DB, Williams ZM, Cash SS, Hochberg LR, Miller LE, Pandarinath C",
+    "year": 2025,
+    "title": "Stabilizing brain-computer interfaces through alignment of latent dynamics",
+    "venue": "Nat Commun 16(1):4662",
+    "doi": "10.1038/s41467-025-59652-y"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.q83bk3jtp",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 1,
+  "task": "other",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Pandarinath (Georgia Institute of Technology)",
+  "extra_tags": []
+ },
+ {
+  "id": "Wilson2025_NatBiomedEng",
+  "label": "Wilson et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Wilson GH, Stein EA, Kamdar F, Avansino DT, Pun TK, Gross R, Hosman T, Singer-Clark T, Kapitonava A, Hochberg LR, Simeral JD, Shenoy KV, Druckmann S, Henderson JM, Willett FR",
+    "year": 2025,
+    "title": "Long-term unsupervised recalibration of cursor-based intracortical brain–computer interfaces using a hidden Markov model",
+    "venue": "Nat Biomed Eng 10(7):1466-1484",
+    "doi": "10.1038/s41551-025-01536-z"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.1jwstqk6g",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 1,
+  "task": "tracking",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Willett (Stanford Medicine)",
+  "extra_tags": []
+ },
+ {
+  "id": "Willsey2025_NatMed",
+  "label": "Willsey et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Willsey MS, Shah NP, Avansino DT, Hahn NV, Jamiolkowski RM, Kamdar FB, Hochberg LR, Willett FR, Henderson JM",
+    "year": 2025,
+    "title": "A high-performance brain–computer interface for finger decoding and quadcopter game control in an individual with paralysis",
+    "venue": "Nat Med 31(1):96-104",
+    "doi": "10.1038/s41591-024-03341-8"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.1jwstqk4f",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 1,
+  "task": "finger movements",
+  "methods": [
+   "exoskeleton or prosthesis",
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Henderson (Stanford Medicine)",
+  "extra_tags": []
+ },
+ {
+  "id": "Pun2024_CommunBiol",
+  "label": "Pun et al. 2024",
+  "year": 2024,
+  "papers": [
+   {
+    "authors": "Pun TK, Khoshnevis M, Hosman T, Wilson GH, Kapitonava A, Kamdar F, Henderson JM, Simeral JD, Vargas-Irwin CE, Harrison MT, Hochberg LR",
+    "year": 2024,
+    "title": "Measuring instability in chronic human intracortical neural recordings towards stable, long-term brain-computer interfaces",
+    "venue": "Commun Biol 7(1):1363",
+    "doi": "10.1038/s42003-024-06784-4"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.n2z34tn5s",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 2,
+  "task": "reaching",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Hochberg (Harvard University)",
+  "extra_tags": []
+ },
+ {
+  "id": "Singer-Clark2025_JNeuralEng",
+  "label": "Singer-Clark et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Singer-Clark T, Hou X, Card NS, Wairagkar M, Iacobacci C, Peracha H, Hochberg LR, Stavisky SD, Brandman DM",
+    "year": 2025,
+    "title": "Speech motor cortex enables BCI cursor control and click",
+    "venue": "J Neural Eng 22(3):036015",
+    "doi": "10.1088/1741-2552/add0e5"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.prr4xgxzq",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 1,
+  "task": "other",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [
+   "ALS"
+  ],
+  "lab": "Brandman (University of California, Davis)",
+  "extra_tags": []
+ },
+ {
+  "id": "Soekadar2016_SciRobot",
+  "label": "Soekadar et al. 2016",
+  "year": 2016,
+  "papers": [
+   {
+    "authors": "Soekadar SR, Witkowski M, Gómez C, Opisso E, Medina J, Cortese M, Cempini M, Carrozza MC, Cohen LG, Birbaumer N, Vitiello N",
+    "year": 2016,
+    "title": "Hybrid EEG/EOG-based brain/neural hand exoskeleton restores fully independent daily living activities after quadriplegia",
+    "venue": "Sci Robot 1(1):eaag3296",
+    "doi": "10.1126/scirobotics.aag3296"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.k486f",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 6,
+  "task": "grasping and lifting",
+  "methods": [
+   "exoskeleton or prosthesis",
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Vitiello (Scuola Superiore Sant'Anna)",
+  "extra_tags": [
+   [
+    "measure",
+    "EEG"
+   ]
+  ]
+ },
+ {
+  "id": "Meng2019_FrontHumNeurosci",
+  "label": "Meng & He 2019",
+  "year": 2019,
+  "papers": [
+   {
+    "authors": "Meng J, He B",
+    "year": 2019,
+    "title": "Exploring Training Effect in 42 Human Subjects Using a Non-invasive Sensorimotor Rhythm Based Online BCI",
+    "venue": "Front Hum Neurosci 13:128",
+    "doi": "10.3389/fnhum.2019.00128"
+   }
+  ],
+  "data_url": "https://doi.org/10.6084/m9.figshare.7959572",
+  "host": "Figshare",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": 42,
+  "task": "other",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "He (Carnegie Mellon University)",
+  "extra_tags": [
+   [
+    "measure",
+    "EEG"
+   ]
+  ]
+ },
+ {
+  "id": "Kim2022_FrontHumNeurosci",
+  "label": "Kim et al. 2022",
+  "year": 2022,
+  "papers": [
+   {
+    "authors": "Kim J, Jiang X, Forenzo D, Liu Y, Anderson N, Greco CM, He B",
+    "year": 2022,
+    "title": "Immediate effects of short-term meditation on sensorimotor rhythm-based brain–computer interface performance",
+    "venue": "Front Hum Neurosci 16:1019279",
+    "doi": "10.3389/fnhum.2022.1019279"
+   }
+  ],
+  "data_url": "https://doi.org/10.6084/m9.figshare.21644429",
+  "host": "Figshare",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": 37,
+  "task": "other",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "He (Carnegie Mellon University)",
+  "extra_tags": [
+   [
+    "measure",
+    "EEG"
    ]
   ]
  }

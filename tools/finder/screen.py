@@ -30,7 +30,8 @@ METHODS = ["formant perturbation", "visuomotor rotation", "brain stimulation", "
            "smooth pursuit", "virtual reality", "mechanical perturbations", "cursor or target jumps", "de novo learning",
            "force channel", "exoskeleton or prosthesis", "somatosensory perturbation", "pitch perturbation", "Fitts' law pointing",
            "bimanual coordination", "speed-accuracy trade-off", "delayed visual feedback", "intermanual transfer",
-           "sequence learning", "mirror reversal", "delayed auditory feedback", "prism adaptation", "VOR adaptation"]
+           "sequence learning", "mirror reversal", "delayed auditory feedback", "prism adaptation", "VOR adaptation",
+           "brain-computer interface"]
 POPULATIONS = ["older adults", "Parkinson's disease", "children", "stroke", "cerebellar ataxia", "stuttering", "cerebral palsy",
                "autism", "limb amputation", "essential tremor", "multiple sclerosis", "infants", "speech sound disorder",
                "brain injury", "aphasia", "developmental coordination disorder", "ALS", "Huntington's disease", "dysarthria",
@@ -54,6 +55,9 @@ responses, key presses, gaze and saccades, gait, posture, speech acoustics or ar
 2. the data location is the authors' own deposit for this study (not a public dataset they reused, not a copy re-hosted or \
 harmonized by an aggregator or another group, not only analysis code, model fits, simulations, stimuli or preregistration);
 3. the deposit probably holds per-trial or per-participant values (not only figures, group means, or a supplementary document).
+Brain-computer interface studies count (PI's decision, 2026-11-12) when the deposit holds behaviour of the brain-controlled \
+task (cursor, effector or decoded movement trajectories, clicks, task performance) or recorded body movement; neural \
+recordings alone do not.
 include = "no" when one of these clearly fails, for example: animals or cells; simulations, robots or engineering without \
 human movement data; questionnaires, perception-only or cognition-only tasks without a motor measure; brain recordings \
 with no movement measure shared; clinical scales only; reviews, meta-analyses, protocols; code only; a reused dataset.
