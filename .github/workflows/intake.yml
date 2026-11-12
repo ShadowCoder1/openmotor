@@ -89,7 +89,7 @@ jobs:
         run: |
           timeout 55m claude -p "Read tools/intake/BRIEF.md and follow it for the submission described in work/context.md. The dataset id is ${DS}." \
             --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/intake/agent_settings.json \
-            --disallowedTools "WebSearch" --max-turns 250 --output-format json > work/agent.json 2> work/agent.err || true
+            --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" "WebFetch" --disallowedTools "WebSearch" --max-turns 250 --output-format json > work/agent.json 2> work/agent.err || true
           python3 -I -c "import json; d=json.load(open('work/agent.json')); print('agent turns', d.get('num_turns'), 'error', d.get('is_error'))" || echo "agent output unreadable"
           test -f work/result.json && python3 -I -c "import json; print('result:', json.load(open('work/result.json')).get('status'))" || echo "no result.json"
       - name: Report back
@@ -119,7 +119,7 @@ jobs:
         run: |
           timeout 30m claude -p "Read tools/intake/REVIEW.md and review dataset ${DS}." \
             --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/intake/agent_settings.json \
-            --disallowedTools "WebSearch" "WebFetch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
+            --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" --disallowedTools "WebSearch" "WebFetch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
           test -f work/review.json && python3 -I -c "import json; print('verdict:', json.load(open('work/review.json')).get('verdict'))" || echo "no review.json"
       - name: Act on the review
         id: rv

@@ -155,7 +155,7 @@ jobs:
         run: |
           timeout 50m claude -p "Read tools/finder/BRIEF.md and follow it for dataset ${DS}, described in work/context.md." \
             --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/finder/agent_settings.json \
-            --strict-mcp-config --disallowedTools "WebSearch" --max-turns 300 --output-format json > work/agent.json 2> work/agent.err || true
+            --strict-mcp-config --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" "WebFetch" --disallowedTools "WebSearch" --max-turns 300 --output-format json > work/agent.json 2> work/agent.err || true
           echo "agent finished"
       - name: Gates
         id: gates
@@ -180,7 +180,7 @@ jobs:
         run: |
           timeout 12m claude -p "Read tools/finder/REVIEW.md and review dataset ${DS}." \
             --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings "${RUNNER_TEMP}/pristine/finder/agent_settings.json" \
-            --strict-mcp-config --disallowedTools "WebSearch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
+            --strict-mcp-config --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" "WebFetch" --disallowedTools "WebSearch" --max-turns 120 --output-format json > work/review_agent.json 2> work/review.err || true
           test -f work/review.json && python3 -I -B -c "import json; print('verdict:', str(json.load(open('work/review.json')).get('verdict'))[:10])" || echo "no review.json"
       - name: Collect
         if: always() && steps.snap.outcome == 'success'
