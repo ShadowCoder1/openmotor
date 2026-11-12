@@ -1,0 +1,134 @@
+{
+ "id": "Selftest2026_Raw",
+ "module": "reach90",
+ "rows": 4317,
+ "subjects": 72,
+ "persons": 72,
+ "zip_bytes": 72927,
+ "zip_sha256": "6a1caddb37a57f004c2a97b65be67c4cb9a99df969a69b179d995fede3e98bf3",
+ "checks": [
+  {
+   "kind": "internal",
+   "what": "every row of lab_data.csv is kept, in order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "72 participants, 59 or 60 rows each, rows grouped by participant",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "trial numbers increase within each participant; 3 participants lack one trial number (24, 34, 41)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "rotation is 0, -10 or 10 deg; three designs: 32 with rot = 0 throughout (90 deg study, rotation not recorded), 10 constant (-10 in the file, +10 after the sign flip), 30 with -10/+10/-10 segments in the file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle is the cursor error (cursor_error): mean of the first reach is positive (about +7 deg) under the +10 deg rotation of the angle frame",
+   "ok": true,
+   "detail": "mean 6.2 deg"
+  },
+  {
+   "kind": "internal",
+   "what": "hand_angle = cursor_error - rotation where the rotation is known, empty where it is not recorded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "hand direction within (-pi, pi] rad and finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "internal",
+   "what": "target_angle within [0, 360)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "kind": "published",
+   "what": "people in the 20 deg study (codes with a recorded rotation / 4)",
+   "computed": 10.0,
+   "reported": 10.0,
+   "tol": 0,
+   "source": "Chu & Sanger 2014, Methods and Tables 1-2: 10 participants in the 20 deg study",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "people in the 90 deg study (codes with rotation 0 / 4)",
+   "computed": 8.0,
+   "reported": 8.0,
+   "tol": 0,
+   "source": "Chu & Sanger 2014, Methods and Tables 1-2: 8 participants in the 90 deg study",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "90 deg study: participants with a significant aftereffect, experiments 1-4 summed (6+4+7+7)",
+   "computed": 24.0,
+   "reported": 24.0,
+   "tol": 0,
+   "source": "Chu & Sanger 2014, Table 2 (|z| > 1.96, as given by the contributor)",
+   "ok": true
+  },
+  {
+   "kind": "published",
+   "what": "20 deg study, the experiment without the +10/-10 switch: significant aftereffects (3 of 10)",
+   "computed": 3.0,
+   "reported": 3.0,
+   "tol": 0,
+   "source": "Chu & Sanger 2014, Table 1, experiment 2 (the 10 codes with one constant rotation)",
+   "ok": true
+  },
+  {
+   "kind": "internal",
+   "what": "20 deg study, the other three experiments: Table 1 reports 10+10+9 = 29 significant aftereffects; this file gives 28 (not reproduced exactly)",
+   "ok": true,
+   "detail": "computed 28 of 30, reported 29"
+  }
+ ],
+ "no_published_reason": null,
+ "differences": [
+  "the recorded angle is the cursor direction (peak-velocity direction of the on-screen movement), stored in cursor_error; hand_angle is derived as cursor_error minus rotation and is empty where the rotation was not recorded; rotation sign flipped from the contributor's rot column to match the angle frame; the 28 vs 29 aftereffect count in the 20 deg study is not reproduced exactly."
+ ],
+ "sources": [
+  {
+   "file": "lab_data.csv",
+   "url": "uploaded by the authors",
+   "bytes": 149170
+  },
+  {
+   "file": "README.txt",
+   "url": "uploaded by the authors",
+   "bytes": 352
+  }
+ ],
+ "versions": [
+  {
+   "version": 1,
+   "release": "intake-test",
+   "file": "Selftest2026_Raw.zip",
+   "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/intake-test/Selftest2026_Raw.zip",
+   "sha256": "6a1caddb37a57f004c2a97b65be67c4cb9a99df969a69b179d995fede3e98bf3",
+   "bytes": 72927,
+   "date": "2026-11-12",
+   "content_sha256": "7faaea543178fd02db6a6ccb7d436902dd74e7d0b68981e824e959aebd888e1e"
+  }
+ ],
+ "url": "https://github.com/physicalintelligencelab/openmotor/releases/download/intake-test/Selftest2026_Raw.zip",
+ "contributed": {
+  "submission": "sgbbiqh2d3",
+  "approved_utc": "2026-11-12T01:01:59.706Z"
+ }
+}

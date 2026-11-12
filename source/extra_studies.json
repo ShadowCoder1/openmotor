@@ -17535,5 +17535,37 @@
   "populations": [],
   "lab": "Furuya (Sony CSL / Sophia University)",
   "extra_tags": []
+ },
+ {
+  "id": "Selftest2026_Raw",
+  "label": "Chu & Sanger 2014",
+  "year": 2014,
+  "lab": "OpenMotor test",
+  "papers": [
+   {
+    "authors": "Chu VWT, Sanger TD",
+    "year": 2014,
+    "title": "Two different motor learning mechanisms contribute to learning reaching movements in a rotated visual environment",
+    "venue": "F1000Research",
+    "doi": "10.12688/f1000research.3676.2"
+   }
+  ],
+  "data_url": "https://github.com/physicalintelligencelab/openmotor/releases/download/intake-test/Selftest2026_Raw.zip",
+  "host": "GitHub",
+  "formats": [
+   "CSV",
+   "Text"
+  ],
+  "n_participants": 72,
+  "task": "reaching",
+  "methods": [
+   "visuomotor rotation"
+  ],
+  "populations": [
+   "healthy"
+  ],
+  "license": "CC BY 4.0",
+  "license_note": "",
+  "contributed": true
  }
 ]
