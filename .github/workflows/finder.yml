@@ -54,7 +54,12 @@ jobs:
         with:
           node-version: "22"
       - name: Install Claude Code
-        run: npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+        run: |
+          npm install -g --silent @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+          # CLAUDE_CODE_SUBPROCESS_ENV_SCRUB makes the CLI refuse to start without its sandbox (bubblewrap); Ubuntu 24.04
+          # also blocks the user namespaces it needs, so allow them on this throwaway runner (as the standardize job does)
+          sudo apt-get install -y -q bubblewrap socat >/dev/null 2>&1 || true
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 >/dev/null 2>&1 || true
       - name: Find
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
