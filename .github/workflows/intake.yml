@@ -92,6 +92,25 @@ jobs:
             --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" "WebFetch" --disallowedTools "WebSearch" --max-turns 250 --output-format json > work/agent.json 2> work/agent.err || true
           python3 -I -c "import json; d=json.load(open('work/agent.json')); print('agent turns', d.get('num_turns'), 'error', d.get('is_error'))" || echo "agent output unreadable"
           test -f work/result.json && python3 -I -c "import json; print('result:', json.load(open('work/result.json')).get('status'))" || echo "no result.json"
+      - name: Plausibility check (one automatic fix round)
+        if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish' && steps.fast.outputs.fast != 'yes'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
+          DISABLE_UPDATES: "1"
+          DS: ${{ steps.prep.outputs.dsid }}
+        run: |
+          # the findings go to a file only (they describe the contributor's data; these logs are public)
+          Z="source/release_extra/${DS}.zip"
+          if [ -f "$Z" ] && ! python3 -I tools/std/sanity.py "$Z" > work/sanity.txt 2>&1; then
+            echo "plausibility check flagged the conversion; one fix round"
+            timeout 25m claude -p "The automatic plausibility check found problems in ${Z}; they are listed in work/sanity.txt. Read tools/intake/BRIEF.md again (step 5, Reaching), fix the converter, rerun it and the check, and rewrite your outputs. If the data truly behave this way, ask the contributor in a needs_answers result instead. The dataset id is ${DS}." \
+              --model claude-sonnet-5-5 --permission-mode bypassPermissions --settings tools/intake/agent_settings.json \
+              --allowedTools "Bash" "Read" "Write" "Edit" "Glob" "Grep" --disallowedTools "WebSearch" "WebFetch" --max-turns 120 --output-format json > work/agent_fix.json 2> work/agent_fix.err || true
+            python3 -I tools/std/sanity.py "$Z" > work/sanity.txt 2>&1 && echo "check passes after the fix round" || echo "still flagged (the contributor will be asked)"
+          else
+            echo "plausibility check ok"
+          fi
       - name: Report back
         if: steps.claim.outputs.id != '' && steps.claim.outputs.step != 'publish'
         env:

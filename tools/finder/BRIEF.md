@@ -53,7 +53,9 @@ and stop, using exactly one of these reasons:
    preprint has since been published, use the published paper and say so in work/notes.md.
 5. Choose the format exactly as the curators do: reach90 when people reach to targets and a hand direction per trial exists
    (trial is 0-based; angles in the screen frame, 0 deg right, counter-clockwise positive; hand_angle relative to the
-   target; check signs against the paper); otherwise the closest existing module (speech, walking, saccade, tapping,
+   target; check signs against the paper; hand_angle is always the hand: a recorded cursor direction goes in
+   cursor_error, with hand_angle = cursor_error - rotation where the rotation is known; then run
+   `python3 -I tools/std/sanity.py source/release_extra/<id>.zip` and fix the converter until it prints ok); otherwise the closest existing module (speech, walking, saccade, tapping,
    keypress, force_field_reaching, grasp_lift, summary for one value per participant and condition, timeseries for
    continuous recordings with samples/*.csv inside the ZIP through release(..., extra_files=...)). There are about 45
    modules: first look for one that fits once you add a few columns. Add columns to an existing module only with

@@ -25,7 +25,8 @@ Check:
    names; participants the deposit marks as not consenting to sharing are left out.
 2. Fidelity: rows were not dropped or altered silently (compare row and participant counts with the raw files); units and
    sign conventions match what the README says and what the raw files and the paper support; reach90 angles follow the
-   convention (0 deg right, counter-clockwise positive, hand_angle relative to the target); exclusions are marked, not
+   convention (0 deg right, counter-clockwise positive, hand_angle relative to the target, and the hand, not the cursor:
+   `python3 -I tools/std/sanity.py source/release_extra/<id>.zip` must print ok); exclusions are marked, not
    deleted (unless the README says why); the converter re-encodes and does not re-analyse.
 3. Honesty: every published check compares against a number printed in the paper or the deposit's documentation (open the
    paper and confirm at least two of them, or all if there are fewer), never a number computed from the deposit's own data;

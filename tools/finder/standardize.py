@@ -323,6 +323,16 @@ def zip_problems(zpath, ds, rec, names_expected, stdlib, scan_bytes=50_000_000):
     return problems, warnings
 
 
+def plausibility(zpath):
+    """tools/std/sanity.py: cursor directions stored as hand_angle, or reversed signs (reaching with rotations)."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "std"))
+        import sanity
+        return sanity.problems(sanity.read_rows(zpath))
+    except Exception:  # noqa: BLE001
+        return []
+
+
 def gates(ds, root, man_path, pristine):
     ds = safe_id(ds)
     root = Path(root)
@@ -360,6 +370,8 @@ def gates(ds, root, man_path, pristine):
         if (rec.get("persons") or 0) < 1 or (rec.get("rows") or 0) < 1:
             res["problems"].append("the record has no rows or no participants")
         zpath = root / "source/release_extra" / f"{ds}.zip"
+        if zpath.exists():
+            res["problems"] += [f"plausibility: {x}" for x in plausibility(zpath)]
         if not zpath.exists():
             res["problems"].append("the ZIP was not written")
         else:

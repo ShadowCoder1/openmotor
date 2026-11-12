@@ -11,7 +11,10 @@ Working directory: a checkout of the OpenMotor repository. Read:
   source/release_extra_records/<dataset id>.json (checks);
 - the raw files in raw_extra/<dataset id>/ when you need to verify something (read with plain readers only; never execute
   or unpickle anything from them);
-- tools/std/stdlib.py and the module file for the format used.
+- tools/std/stdlib.py and the module file for the format used;
+- work/sanity.txt: problems found by the automatic plausibility check (tools/std/sanity.py; empty when none). Treat
+  each as a likely error (cursor directions stored as hand_angle, or a reversed sign) unless the contributor's answers
+  and the raw files clearly explain it.
 
 Check:
 1. Privacy: no names, initials, emails, dates of birth, free-text that could identify a person, faces, voices or video;

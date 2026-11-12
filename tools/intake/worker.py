@@ -379,6 +379,19 @@ def finish():
         if not zpath.exists():
             report("failed", "The standardized file was not produced. Please email physical.intelligence.lab@gmail.com.")
             return
+        flags = plausibility(zpath)
+        st_ = state()
+        if flags and not st_.get("sanity_asked"):
+            # ask once; after the contributor answered, the flags are shown as notes and the reviewer weighs them
+            st_["sanity_asked"] = True
+            save_state(st_)
+            save_state_blob(sid, dsid)
+            report("needs_answers", "One thing to check about the angles before the preview.", questions=[{
+                "id": "angles", "kind": "text", "help": "", "choices": [], "optional": False,
+                "text": ("An automatic check of the converted data found: " + "; ".join(flags[:2]))[:450]
+                        + ". Is the angle in your files the direction of the hand or of the cursor on the screen, and "
+                          "which way are angles and rotations signed (counter-clockwise or clockwise positive)?"}])
+            return
         spec = json.load(open(WORK / "plots.json")) if (WORK / "plots.json").exists() else None
         pv = preview(dsid, spec)
         listing = json.load(open(WORK / "listing.json")) if (WORK / "listing.json").exists() else res.get("listing") or {}
@@ -387,7 +400,8 @@ def finish():
         pv["listing"] = {"label": listing.get("label") or label_for(paper), "title": paper.get("title"),
                          "authors": paper.get("authors"), "year": paper.get("year"), "venue": paper.get("venue") or listing.get("venue", ""),
                          "doi": paper.get("doi", ""), "task": listing.get("task") or m.get("task", ""), "license": m.get("license")}
-        pv["notes"] = [str(x)[:500] for x in (res.get("notes") or [])][:10] + ([why] if why else [])
+        pv["notes"] = [str(x)[:500] for x in (res.get("notes") or [])][:10] + ([why] if why else []) \
+            + [f"Automatic check, still flagged after your answer: {x}"[:500] for x in flags[:3]]
         blob("put", str(zpath), f"submissions/{sid}/out/{dsid}.zip")
         report("preview", msg or "Your standardized data are ready. Check them, then publish.", preview=pv)
     elif status == "rejected":
@@ -430,6 +444,15 @@ def crossref(doi):
         return {"authors": authors, "year": year, "title": (w.get("title") or [""])[0], "venue": venue, "doi": doi.lower()}
     except Exception:
         return None
+
+
+def plausibility(zpath):
+    """tools/std/sanity.py on a released ZIP: [problem, ...] (empty when fine or when the format has no rotations)."""
+    try:
+        import sanity
+        return sanity.problems(sanity.read_rows(zpath))
+    except Exception:  # noqa: BLE001  (a check that cannot run must not block the contributor)
+        return []
 
 
 def clean_doi(s):
@@ -577,6 +600,8 @@ def gates():
                             if v and not stdlib._PLAIN_NUMBER.fullmatch(v) and pat.search(v):
                                 problems.append(f"identifier-like text ({pn}) in {n.split('/')[-1]}")
                                 break
+    # plausibility flags are evidence for the reviewer (the contributor may have explained them), not a hard stop
+    (WORK / "sanity.txt").write_text("\n".join(plausibility(zpath)) + "\n")
     problems = list(dict.fromkeys(problems))
     json.dump({"ok": not problems, "problems": problems}, open(WORK / "gates.json", "w"), indent=1)
     gh_output(gates="pass" if not problems else "fail")

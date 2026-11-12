@@ -78,7 +78,7 @@ def verify_release(ds, files_dir):
     except Exception as e:  # noqa: BLE001
         return problems + [f"module {rec.get('module')!r} unreadable: {type(e).__name__}"], rec
     zp, _ = S.zip_problems(zpath, ds, rec, cols, stdlib)
-    return problems + zp, rec
+    return problems + zp + [f"plausibility: {x}" for x in S.plausibility(zpath)], rec
 
 
 def merge_module(main_text, ours_text):

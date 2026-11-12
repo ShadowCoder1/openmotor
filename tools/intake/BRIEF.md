@@ -50,6 +50,9 @@ total under 5 GB.
    order; recode nothing you do not have to; mark their exclusions; subject and person codes are reassigned by release().
    A placeholder that the files or the contributor say means "not recorded" or "unknown" (0, -999, NaN codes, "NA") is
    written empty, never kept as a real-looking value: a rotation of 0 would read as "no rotation". Say so in `how`.
+   Reaching: hand_angle is always the hand. When the recorded angle is the cursor as seen on the screen, put it in
+   cursor_error and set hand_angle = cursor_error - rotation where the rotation is known (cursor = hand + rotation),
+   empty where it is not. Never store a cursor direction in hand_angle, even with a note.
    meta: paper (authors, year, title, venue, doi: from the form or the DOI; for unpublished data venue "Contributed to
    OpenMotor" and doi ""), lab, data_url (their repository link, or "uploaded to OpenMotor by the authors"), license
    exactly as chosen, license_url, changes, how (2-4 plain sentences: what one row is, units, signs), unit_note, and
@@ -62,6 +65,8 @@ total under 5 GB.
 7. Run `python3 -I tools/std/convert/<dataset id>.py` until release() succeeds (it writes
    source/release_extra/<id>.zip and source/release_extra_records/<id>.json and refuses identifier-like values).
    Leave out any participant whose files say they did not agree to sharing.
+   Then run `python3 -I tools/std/sanity.py source/release_extra/<id>.zip` and fix the converter until it prints ok. If
+   the data truly behave the way it flags, ask the contributor instead of forcing it.
 8. Write your outputs (always, in every round):
    - work/result.json: {"status": "preview" | "needs_answers" | "rejected", "message": "<one or two plain sentences to
      the contributor>", "questions": [{"id": "q1", "text": "...", "help": "...", "kind": "choice"|"text"|"number",
