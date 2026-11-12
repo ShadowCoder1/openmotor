@@ -10,16 +10,16 @@ trap 'rm -f "$LOG"' EXIT
 
 echo
 echo "== Step 1 of 2: a Claude token for the automation (it runs on your Claude plan) =="
-echo "A browser window will open. Log in to Claude and approve. The token is saved into the GitHub"
-echo "repository's secrets; you do not need to copy it anywhere."
+echo "A browser window will open. Log in to Claude and approve. Then copy the token it prints; this script saves it"
+echo "into the GitHub repository's secrets straight from the clipboard and clears the clipboard."
 read -r -p "Press Enter to start (or type s and Enter to skip): " a
 if [ "${a:-}" != "s" ]; then
   claude setup-token
   echo
-  echo "Copy the whole token it printed (it starts with sk-ant-oat and may wrap over several lines),"
-  echo "then paste it here and press Enter (it will not be shown):"
-  read -r -s TOKEN
-  TOKEN="$(printf '%s' "$TOKEN" | tr -d '[:space:]')"
+  echo "Select and copy the whole token it printed (it starts with sk-ant-oat and may wrap over several lines)."
+  read -r -p "Press Enter once it is copied; it is read from the clipboard, not shown: " _
+  TOKEN="$(pbpaste | tr -d '[:space:]')"
+  printf '' | pbcopy
   case "$TOKEN" in sk-ant-oat*) ;; *) echo "That does not look like a Claude token (it should start with sk-ant-oat). Nothing saved."; exit 1;; esac
   printf '%s' "$TOKEN" | gh secret set CLAUDE_CODE_OAUTH_TOKEN -R "$REPO"
   unset TOKEN
