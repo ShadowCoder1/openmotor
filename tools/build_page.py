@@ -246,6 +246,15 @@ files += extra_files
 meta["standardizedExtra"] = {"studies": len(extra_files), "skipped": n_skipped, "rows": sum(f["rows"] for f in extra_files),
                              "people": sum(f["persons"] for f in extra_files if f["name"] not in HEADLINE_EXCLUDE),
                              "reaching": sum(1 for f in extra_files if f["module"] == "reach90")}
+# home page "Trials" (the user, 2026-11-12): trials across every standardized dataset, not only the first release. A format
+# counts when one row is one trial or attempt (a reach, lift, utterance, game attempt, ...). Left out: rows that are single
+# key presses, taps, strides, articulatory gestures or corrective saccades, rater-scored video segments, model output,
+# per-participant summaries and whole recordings; and the two very large online datasets, as in the participant count.
+NOT_TRIAL_ROWS = {"keypress", "tapping", "walking", "summary", "timeseries", "articulography", "gesture_labels",
+                  "head_impulse", "model_choice_curve"}
+meta["total"]["trials_first_release"] = meta["total"]["trials"]
+meta["total"]["trials"] += sum(f["rows"] for f in extra_files
+                               if f["module"] not in NOT_TRIAL_ROWS and f["name"] not in HEADLINE_EXCLUDE)
 
 # formats of the other tasks: the core columns and each task module (tools/std/stdlib.py, tools/std/modules/*.py)
 import importlib.util as _ilu
