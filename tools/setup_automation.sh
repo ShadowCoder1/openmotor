@@ -14,12 +14,13 @@ echo "A browser window will open. Log in to Claude and approve. The token is sav
 echo "repository's secrets; you do not need to copy it anywhere."
 read -r -p "Press Enter to start (or type s and Enter to skip): " a
 if [ "${a:-}" != "s" ]; then
-  script -q "$LOG" claude setup-token
-  TOKEN="$(tr -d '\r' < "$LOG" | grep -Eo 'sk-ant-oat[0-9]{2}-[A-Za-z0-9_-]{20,}' | tail -1 || true)"
-  if [ -z "$TOKEN" ]; then
-    echo "Could not find the token in the output. Paste it here instead (it will not be shown):"
-    read -r -s TOKEN
-  fi
+  claude setup-token
+  echo
+  echo "Copy the whole token it printed (it starts with sk-ant-oat and may wrap over several lines),"
+  echo "then paste it here and press Enter (it will not be shown):"
+  read -r -s TOKEN
+  TOKEN="$(printf '%s' "$TOKEN" | tr -d '[:space:]')"
+  case "$TOKEN" in sk-ant-oat*) ;; *) echo "That does not look like a Claude token (it should start with sk-ant-oat). Nothing saved."; exit 1;; esac
   printf '%s' "$TOKEN" | gh secret set CLAUDE_CODE_OAUTH_TOKEN -R "$REPO"
   unset TOKEN
   : > "$LOG"
