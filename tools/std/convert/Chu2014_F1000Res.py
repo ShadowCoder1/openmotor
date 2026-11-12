@@ -74,7 +74,12 @@ for (study, L), rep in zip([(1, x) for x in "abcd"] + [(2, x) for x in "abcd"], 
                      f"experiment {'abcd'.index(L) + 1}", sig[(study, L)], rep, 1 if (study, L) == (1, "c") else 0,
                      "Results, Table 1 and Table 2")
 
-ROT = {"a": {"B": 10}, "b": {"B": -10}, "c": {"B": 10}, "d": {"B": 10}}  # 20 deg study: baseline -10 (cw), interference +10
+# The authors' angles are the cursor ("the movement observed on screen", Methods) relative to the files' Target column.
+# Rotations are given in the files' own angle frame, which is the mirror image of the paper's wording: the cursor errors
+# start each baseline about +6 deg off and fade (baseline +10), and jump about -17 deg on the first interference trial of
+# experiments 1, 3 and 4 (interference -10, i.e. 20 deg from baseline); experiment 2 keeps the baseline rotation.
+ROT = {"a": {"B": -10}, "b": {"B": 10}, "c": {"B": -10}, "d": {"B": -10}}
+BASE_ROT = 10
 rows = []
 tids = {}
 for study in (1, 2):
@@ -88,7 +93,7 @@ for study in (1, 2):
                     miss = v[t] is None
                     b = bname[0]
                     if study == 1:
-                        rot = ROT[L]["B"] if b == "B" else -10
+                        rot = ROT[L]["B"] if b == "B" else BASE_ROT
                     else:
                         rot = None
                     if L == "b" and b != "A":
@@ -105,7 +110,8 @@ for study in (1, 2):
                         trial_kind="missing" if miss else "reach", break_before=tf(t == 0),
                         target_angle=ta, target_id=tid, target_distance_norm=1, target_event="none", target_jump=0,
                         probe_kind="none", instr_goal="cursor_to_target", hand_used="right" if study == 1 else "",
-                        hand_angle="" if miss else wrap(v[t] - ta), hand_measure="peak_velocity",
+                        cursor_error="" if miss else wrap(v[t] - ta),
+                        hand_angle="" if miss or rot is None else wrap(v[t] - ta - rot), hand_measure="peak_velocity",
                         excluded_by_authors=tf(miss), fb_visible="unknown", fb_mode="rotated", fb_form="cursor",
                         online_cursor="perturbed", fb_endpoint_transform_only="False",
                         rotation="" if rot is None else rot,
@@ -113,6 +119,21 @@ for study in (1, 2):
                     rows.append(row)
 checks.internal("every reach of every participant kept: 10 x 4 x 60 + 8 x 4 x 60 = 4320 rows", len(rows) == 4320)
 checks.internal("hand angles within (-180, 180]", all(-180 < float(r["hand_angle"]) <= 180 for r in rows if r["hand_angle"] != ""))
+checks.internal("cursor errors within (-180, 180]", all(-180 < float(r["cursor_error"]) <= 180 for r in rows if r["cursor_error"] != ""))
+
+
+def mean_err(exp, trials):
+    v = [float(r["cursor_error"]) for r in rows if r["experiment"].startswith(exp) and r["trial"] in trials and r["cursor_error"] != ""]
+    return st.mean(v)
+
+
+# the rotation signs follow the files: a cursor error moves with the rotation on the first trial after it changes
+checks.internal("20 deg study: first baseline trial's cursor error is positive (baseline rotation +10 in the files' frame)",
+                all(mean_err(f"rot20_{EXPS[L]}", {0}) > 2 for L in "abcd"))
+checks.internal("20 deg study, experiments 1, 3, 4: cursor error drops on the first interference trial (rotation -10)",
+                all(mean_err(f"rot20_{EXPS[L]}", {20}) - mean_err(f"rot20_{EXPS[L]}", set(range(15, 20))) < -8 for L in "acd"))
+checks.internal("20 deg study, experiments 1, 3, 4: cursor error rises on the first re-adaptation trial (rotation back to +10)",
+                all(mean_err(f"rot20_{EXPS[L]}", {40}) - mean_err(f"rot20_{EXPS[L]}", set(range(35, 40))) > 5 for L in "acd"))
 nmiss = sum(r["trial_kind"] == "missing" for r in rows)
 checks.internal("missing ('-') hand angles are marked as missing rows", nmiss == sum(v is None for d in data.values() for x in d[1].values() for v in x))
 
@@ -124,22 +145,29 @@ meta = dict(
     data_url="https://doi.org/10.6084/m9.figshare.957526",
     license="CC BY 4.0",
     license_url="https://creativecommons.org/licenses/by/4.0/",
-    changes="converted to the OpenMotor format, participant codes replaced, hand angle expressed relative to the target; "
-            "model simulation columns not included.",
+    changes="converted to the OpenMotor format, participant codes replaced, the authors' cursor directions expressed "
+            "relative to the target (cursor_error), hand angle derived as cursor error minus rotation (20 deg study); "
+            "model simulation columns not included. Version 2 (2026-11-12): version 1 put the cursor directions in "
+            "hand_angle and gave the rotations the paper's signs, which are the reverse of the files' frame.",
     unit_note="reach of one participant in one experiment",
     how=[
         "One row is one reach. Each participant did four experiments of 60 reaches (block A baseline, block B interference, "
         "block C re-adaptation, 20 reaches each); 10 participants in the 20 deg study (rot20) and 8 other participants in the "
         "90 deg study (rot90). Subject is one participant in one experiment, person is one participant.",
-        "hand_angle is the authors' initial direction (start to the point of maximum velocity, in degrees) minus the target "
-        "angle, wrapped to (-180, 180]; target_angle is the authors' Target column. Block A hand angles sit near the target, "
-        "and in block B of experiments 1, 3 and 4 they fall below it, as expected when the feedback is rotated counter-clockwise "
-        "and people compensate clockwise, so angles are counter-clockwise positive. A '-' in the authors' file is a missing "
-        "measurement, kept as a row with trial_kind missing.",
-        "rotation (20 deg study only) is the authors' description of the feedback: baseline 10 deg clockwise (-10), then 20 deg "
-        "counter-clockwise relative to baseline in block B of experiments 1, 3 and 4 (+10), none relative to baseline in "
-        "experiment 2 (the target moves instead); it is left empty for the 90 deg study because the paper does not give the "
-        "direction or the baseline there.",
+        "The authors' angles are the initial direction of the cursor as seen on the screen (start to the point of maximum "
+        "velocity, Methods), not of the hand. cursor_error is that direction minus the target angle, wrapped to (-180, 180]; "
+        "target_angle is the authors' Target column, kept as given. It behaves like a cursor error: it jumps on the first "
+        "trial after each rotation change and then fades. A '-' in the authors' file is a missing measurement, kept as a row "
+        "with trial_kind missing.",
+        "rotation (20 deg study only) is given in the files' own angle frame, which is the mirror image of the paper's "
+        "wording (the paper calls the baseline rotation 10 deg clockwise): in the files, the cursor errors start each "
+        "baseline about +6 deg off and fade, and drop by about 17 deg on the first interference trial of experiments 1, 3 "
+        "and 4, so the baseline is +10 and the interference -10 (20 deg from baseline); experiment 2 keeps +10 throughout "
+        "(the target moves instead). Either the files measure angles clockwise or the paper's wording is reversed; the "
+        "files' numbers are kept so that cursor_error, rotation and hand_angle agree with each other.",
+        "hand_angle (20 deg study only) is cursor_error minus rotation, the hand direction that produced the cursor. In "
+        "the 90 deg study the baseline rotation is not reported (the first baseline errors show there was one), so only "
+        "cursor_error is given there and hand_angle and rotation are empty.",
         "trial_orig is the position within the block (1-20). In experiment 4 the target column is 40, 20, 40 and the paper "
         "describes a target at 20 with a 40 deg reach goal; the Target column is kept as given.",
     ],
