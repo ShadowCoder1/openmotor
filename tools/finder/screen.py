@@ -113,7 +113,9 @@ def call_claude(model, batch, claude_bin, timeout=600):
     try:
         out = json.loads(r.stdout)
     except json.JSONDecodeError:
-        return None, 0.0, f"CLI output was not JSON (exit {r.returncode})"
+        # the CLI's own error text (about the CLI, not the candidates), so the cause is visible in the summary
+        tail = re.sub(r"[^ -~]+", " ", (r.stderr or r.stdout or "")[-300:]).strip()
+        return None, 0.0, f"CLI output was not JSON (exit {r.returncode}): {tail}"
     cost = float(out.get("total_cost_usd") or 0)
     if out.get("is_error"):
         return None, cost, f"CLI error: {str(out.get('result') or out.get('subtype'))[:200]}"
@@ -239,6 +241,11 @@ def main():
     C.save_json(Path(a.out).with_name("screen_summary.json"), summ)
     print(f"screen: {counts['yes']} yes, {counts['no']} no, {counts['unclear']} unclear, {counts['no answer']} unanswered "
           f"({len(unclear)} sent to {a.escalate_model}); ${summ['cost_usd']}")
+    if counts["no answer"] == len(cands):
+        # nothing was screened: the model calls are failing (token, CLI or quota). Fail the run so it is noticed
+        # instead of a silent success; the candidates were not marked seen and come back next run.
+        print("screen: no candidate got a decision; first problem: " + (summ["problems"][:1] or ["none recorded"])[0][:300])
+        sys.exit(2)
 
 
 if __name__ == "__main__":

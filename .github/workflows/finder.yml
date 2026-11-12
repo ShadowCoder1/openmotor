@@ -73,7 +73,7 @@ jobs:
           CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: "1"
           DISABLE_UPDATES: "1"
         run: |
-          python -I tools/finder/screen.py > work/finder/screen.log 2>&1 || { echo "screen failed"; exit 1; }
+          python -I tools/finder/screen.py > work/finder/screen.log 2>&1 || { echo "screen failed"; tail -1 work/finder/screen.log | cut -c1-400; exit 1; }
           tail -1 work/finder/screen.log
       - name: Listing
         env:
