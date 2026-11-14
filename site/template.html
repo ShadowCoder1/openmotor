@@ -823,13 +823,19 @@ button.ct-btn-primary { border: 0; cursor: pointer; }
   var CS = META.counterStart || {};  /* visitors and downloads: the lab's starting figures, then live counts from the API */
   var stats = [[ICON.layers, fmt(T.studies), "Studies"], [ICON.users, fmt(T.people), "Participants"], [ICON.activity, fmt(T.trials), "Trials"]];
   if (CS.visitors) stats.push([EYE, fmt(CS.visitors), "Visitors", "st-visitors"], [ICON.download, fmt(CS.downloads), "Downloads", "st-downloads"]);
-  $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b" + (s[3] ? " id=\"" + s[3] + "\"" : "") + ">" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
-  if (CS.visitors && META.api) {
-    fetch(META.api + "/api/public-stats").then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
-      if (!d) return;
-      if (d.visitors >= CS.visitors) $("#st-visitors").textContent = fmt(d.visitors);
-      if (d.downloads >= CS.downloads) $("#st-downloads").textContent = fmt(d.downloads);
-    }).catch(function () {});
+  var live = CS.visitors && META.api;  /* hold the counts hidden until the live figures arrive, so the old starting figures never flash */
+  $("#stats").innerHTML = stats.map(function (s) { return "<div class=\"stat2\">" + s[0] + "<div><b" + (s[3] ? " id=\"" + s[3] + "\"" + (live ? " style=\"visibility:hidden\"" : "") : "") + ">" + s[1] + "</b><span>" + s[2] + "</span></div></div>"; }).join("");
+  if (live) {
+    var shown = false;
+    var reveal = function (d) {
+      if (shown) return;
+      shown = true;
+      if (d && d.visitors >= CS.visitors) $("#st-visitors").textContent = fmt(d.visitors);
+      if (d && d.downloads >= CS.downloads) $("#st-downloads").textContent = fmt(d.downloads);
+      $("#st-visitors").style.visibility = $("#st-downloads").style.visibility = "";
+    };
+    setTimeout(function () { reveal(null); }, 4000);  /* API slow or down: show the starting figures */
+    fetch(META.api + "/api/public-stats").then(function (r) { return r.ok ? r.json() : null; }).then(reveal).catch(function () { reveal(null); });
   }
 
   /* ---------- downloads ---------- */
