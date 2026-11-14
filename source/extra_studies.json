@@ -42258,5 +42258,775 @@
     "EEG"
    ]
   ]
+ },
+ {
+  "id": "Warburton2025_PsycholRes",
+  "label": "Warburton et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Warburton M, Campagnoli C, Mon-Williams M, Mushtaq F, Morehead JR",
+    "year": 2025,
+    "title": "Input device matters for measures of behaviour in online experiments",
+    "venue": "Psychol Res 89(1):29",
+    "doi": "10.1007/s00426-024-02065-1"
+   }
+  ],
+  "data_url": "https://osf.io/4m8hb/",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Morehead (University of Leeds)",
+  "extra_tags": [
+   [
+    "setting",
+    "online"
+   ]
+  ]
+ },
+ {
+  "id": "Fasola2026_iScience",
+  "label": "Fasola et al. 2026",
+  "year": 2026,
+  "papers": [
+   {
+    "authors": "Fasola J, Betka S, Faivre N, Blanke O, Kannape OA",
+    "year": 2026,
+    "title": "Motor equivalence in motor awareness",
+    "venue": "iScience 29(6):115835",
+    "doi": "10.1016/j.isci.2026.115835"
+   }
+  ],
+  "data_url": "https://osf.io/s63vw/",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Kannape (University Hospital of Geneva)",
+  "extra_tags": []
+ },
+ {
+  "id": "Tanaka2025_CommunPsychol",
+  "label": "Tanaka & Imamizu 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Tanaka T, Imamizu H",
+    "year": 2025,
+    "title": "Sense of agency for a new motor skill emerges via the formation of a structural internal model",
+    "venue": "Commun Psychol 3(1):70",
+    "doi": "10.1038/s44271-025-00240-7"
+   }
+  ],
+  "data_url": "https://osf.io/uw3he/",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "other",
+  "methods": [
+   "de novo learning"
+  ],
+  "populations": [],
+  "lab": "Imamizu (Advanced Telecommunications Research Institute International)",
+  "extra_tags": []
+ },
+ {
+  "id": "Sohn2021_PNAS",
+  "label": "Sohn & Jazayeri 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Sohn H, Jazayeri M",
+    "year": 2021,
+    "title": "Validating model-based Bayesian integration using prior–cost metamers",
+    "venue": "Proc Natl Acad Sci USA 118(25):e2021531118",
+    "doi": "10.1073/pnas.2021531118"
+   }
+  ],
+  "data_url": "https://github.com/jazlab/hs_mj_metamer_2021",
+  "host": "GitHub",
+  "license": null,
+  "license_note": null,
+  "formats": [
+   "MATLAB",
+   "text"
+  ],
+  "n_participants": null,
+  "task": "finger tapping and timing",
+  "methods": [],
+  "populations": [],
+  "lab": "Jazayeri (McGovern Institute for Brain Research)",
+  "extra_tags": []
+ },
+ {
+  "id": "Morasso2020_RSOS",
+  "label": "Morasso 2020",
+  "year": 2020,
+  "papers": [
+   {
+    "authors": "Morasso P",
+    "year": 2020,
+    "title": "Centre of pressure versus centre of mass stabilization strategies: the tightrope balancing case",
+    "venue": "R Soc Open Sci 7(9):200111",
+    "doi": "10.1098/rsos.200111"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.q573n5tff",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "balance and posture",
+  "methods": [],
+  "populations": [],
+  "lab": "Morasso (Italian Institute of Technology)",
+  "extra_tags": [
+   [
+    "measure",
+    "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "Koren2021_RSOS",
+  "label": "Koren et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Koren Y, Mairon R, Sofer I, Parmet Y, Ben-Shahar O, Bar-Haim S",
+    "year": 2021,
+    "title": "Gazing down increases standing and walking postural steadiness",
+    "venue": "R Soc open sci 8(3):rsos.201556",
+    "doi": "10.1098/rsos.201556"
+   }
+  ],
+  "data_url": "https://rs.figshare.com/articles/dataset/ForcePlate_csv_from_Gazing_down_increases_standing_and_walking_postural_steadiness/14179343/1",
+  "host": "Figshare",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [
+   "CSV"
+  ],
+  "n_participants": null,
+  "task": "balance and posture",
+  "methods": [],
+  "populations": [],
+  "lab": "Bar-Haim (Ben-Gurion University of the Negev)",
+  "extra_tags": [
+   [
+    "measure",
+    "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "Ghosh2014_ProcRSocB",
+  "label": "Ghosh et al. 2014",
+  "year": 2014,
+  "papers": [
+   {
+    "authors": "Ghosh A, Rothwell J, Haggard P",
+    "year": 2014,
+    "title": "Using voluntary motor commands to inhibit involuntary arm movements",
+    "venue": "Proc R Soc B 281(1794):20141139",
+    "doi": "10.1098/rspb.2014.1139"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.j6kd3",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "other",
+  "methods": [],
+  "populations": [],
+  "lab": "Haggard (University College London)",
+  "extra_tags": [
+   [
+    "measure",
+    "EMG"
+   ]
+  ]
+ },
+ {
+  "id": "Tsay2022_ProcRSocB",
+  "label": "Tsay et al. 2022",
+  "year": 2022,
+  "papers": [
+   {
+    "authors": "Tsay JS, Kim HE, Saxena A, Parvin DE, Verstynen T, Ivry RB",
+    "year": 2022,
+    "title": "Dissociable use-dependent processes for volitional goal-directed reaching",
+    "venue": "Proc R Soc B 289(1973):20220415",
+    "doi": "10.1098/rspb.2022.0415"
+   }
+  ],
+  "data_url": "https://doi.org/10.6078/D1MX4P",
+  "host": "Dryad",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Ivry (University of California, Berkeley)",
+  "extra_tags": [
+   [
+    "measure",
+    "reaction time"
+   ]
+  ]
+ },
+ {
+  "id": "Ejaz2017_bioRxiv",
+  "label": "Ejaz et al. 2017",
+  "year": 2017,
+  "papers": [
+   {
+    "authors": "Ejaz N, Xu J, Branscheidt M, Hertler B, Schambra H, Widmer M, Faria AV, Harran M, Cortes JC, Kim N, Kitago T, Celnik PA, Luft A, Krakauer JW, Diedrichsen J",
+    "year": 2017,
+    "title": "Finger recruitment patterns during mirror movements suggest two systems for hand recovery after stroke",
+    "venue": "",
+    "doi": "10.1101/129510"
+   }
+  ],
+  "data_url": "https://github.com/nejaz1/mirroring2017",
+  "host": "GitHub",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": 67,
+  "task": "finger movements",
+  "methods": [],
+  "populations": [
+   "stroke"
+  ],
+  "lab": "Diedrichsen (Western University)",
+  "extra_tags": []
+ },
+ {
+  "id": "Hinze2021_JNeurophysiol",
+  "label": "Hinze et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Hinze VK, Uslu O, Antono JE, Wilke M, Pooresmaeili A",
+    "year": 2021,
+    "title": "The effect of subliminal incentives on goal-directed eye movements",
+    "venue": "J Neurophysiol 126(6):2014-2026",
+    "doi": "10.1152/jn.00414.2021"
+   }
+  ],
+  "data_url": "https://doi.org/10.17605/osf.io/bfszw",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "eye movements",
+  "methods": [
+   "reward-based learning"
+  ],
+  "populations": [],
+  "lab": "Pooresmaeili (Max Planck Society)",
+  "extra_tags": [
+   [
+    "measure",
+    "eye tracking"
+   ]
+  ]
+ },
+ {
+  "id": "vantVeld2021_JNeurophysiol",
+  "label": "van ’t Veld et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "van ’t Veld RC, van Asseldonk EHF, van der Kooij H, Schouten AC",
+    "year": 2021,
+    "title": "Disentangling acceleration-, velocity-, and duration-dependency of the short- and medium-latency stretch reflexes in the ankle plantarflexors",
+    "venue": "J Neurophysiol 126(4):1015-1029",
+    "doi": "10.1152/jn.00704.2020"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/15281625",
+  "host": "4TU.ResearchData",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "other",
+  "methods": [
+   "mechanical perturbations"
+  ],
+  "populations": [],
+  "lab": "Schouten (University of Twente)",
+  "extra_tags": [
+   [
+    "measure",
+    "EMG"
+   ]
+  ]
+ },
+ {
+  "id": "Dialynas2020_ProcInstitutionMechanicalEng",
+  "label": "Dialynas et al. 2020",
+  "year": 2020,
+  "papers": [
+   {
+    "authors": "Dialynas G, de Haan JW, Schouten AC, Happee R, Schwab AL",
+    "year": 2020,
+    "title": "The dynamic response of the bicycle rider’s body to vertical, fore-and-aft, and lateral perturbations",
+    "venue": "Proc Institution Mechanical Engineers Part D J Automobile Eng 234(7):1944-1957",
+    "doi": "10.1177/0954407019891289"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/uuid:826b3dbe-886d-40f7-9f67-31f801cdc2f9",
+  "host": "4TU.ResearchData",
+  "license": "MIT",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "balance and posture",
+  "methods": [
+   "mechanical perturbations"
+  ],
+  "populations": [],
+  "lab": "Schwab (Delft University of Technology)",
+  "extra_tags": []
+ },
+ {
+  "id": "vantVeld2021_JNER",
+  "label": "van ’t Veld et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "van ’t Veld RC, Schouten AC, van der Kooij H, van Asseldonk EHF",
+    "year": 2021,
+    "title": "Neurophysiological validation of simultaneous intrinsic and reflexive joint impedance estimates",
+    "venue": "J NeuroEngineering Rehabil 18(1):36",
+    "doi": "10.1186/s12984-021-00809-3"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/13642952",
+  "host": "4TU.ResearchData",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "other",
+  "methods": [
+   "mechanical perturbations"
+  ],
+  "populations": [],
+  "lab": "van Asseldonk (University of Twente)",
+  "extra_tags": [
+   [
+    "measure",
+    "EMG"
+   ]
+  ]
+ },
+ {
+  "id": "vantVeld2023_JNER",
+  "label": "van’t Veld et al. 2023",
+  "year": 2023,
+  "papers": [
+   {
+    "authors": "van’t Veld RC, Flux E, van Oorschot W, Schouten AC, van der Krogt MM, van der Kooij H, Vos-van der Hulst M, Keijsers NLW, van Asseldonk EHF",
+    "year": 2023,
+    "title": "Examining the role of intrinsic and reflexive contributions to ankle joint hyper-resistance treated with botulinum toxin-A",
+    "venue": "J NeuroEngineering Rehabil 20(1):19",
+    "doi": "10.1186/s12984-023-01141-8"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/22002185",
+  "host": "4TU.ResearchData",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "other",
+  "methods": [
+   "mechanical perturbations"
+  ],
+  "populations": [],
+  "lab": "van Asseldonk (University of Twente)",
+  "extra_tags": []
+ },
+ {
+  "id": "Brill2021_JEB",
+  "label": "Brill & Kram 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Brill JW, Kram R",
+    "year": 2021,
+    "title": "Does the preferred walk–run transition speed on steep inclines minimize energetic cost, heart rate or neither?",
+    "venue": "J Exp Biol 224(3):jeb233056",
+    "doi": "10.1242/jeb.233056"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.00000002r",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "walking",
+  "methods": [],
+  "populations": [],
+  "lab": "Kram (University of Colorado Boulder)",
+  "extra_tags": []
+ },
+ {
+  "id": "Noel2025_PLoSBiol",
+  "label": "Noel et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Noel JP, Bockbrader M, Bertoni T, Colachis S, Solca M, Orepic P, Ganzer PD, Haggard P, Rezai A, Blanke O, Serino A",
+    "year": 2025,
+    "title": "Neuronal responses in the human primary motor cortex coincide with the subjective onset of movement intention in brain–machine interface-mediated actions",
+    "venue": "PLoS Biol 23(4):e3003118",
+    "doi": "10.1371/journal.pbio.3003118"
+   }
+  ],
+  "data_url": "https://osf.io/k8r93/",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": 1,
+  "task": "other",
+  "methods": [
+   "brain-computer interface"
+  ],
+  "populations": [],
+  "lab": "Serino (Centre Hospitalier Universitaire Vaudois)",
+  "extra_tags": []
+ },
+ {
+  "id": "Pierella2019_PLoSCompBiol",
+  "label": "Pierella et al. 2019",
+  "year": 2019,
+  "papers": [
+   {
+    "authors": "Pierella C, Casadio M, Mussa-Ivaldi FA, Solla SA",
+    "year": 2019,
+    "title": "The dynamics of motor learning through the formation of internal models",
+    "venue": "PLoS Comput Biol 15(12):e1007118",
+    "doi": "10.1371/journal.pcbi.1007118"
+   }
+  ],
+  "data_url": "https://github.com/camillapierella/dynamics-of-motor-learning",
+  "host": "GitHub",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Solla (Northwestern University)",
+  "extra_tags": []
+ },
+ {
+  "id": "Enachescu2021_PLoSCompBiol",
+  "label": "Enachescu et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Enachescu V, Schrater P, Schaal S, Christopoulos V",
+    "year": 2021,
+    "title": "Action planning and control under uncertainty emerge through a desirability-driven competition between parallel encoding motor plans",
+    "venue": "PLoS Comput Biol 17(10):e1009429",
+    "doi": "10.1371/journal.pcbi.1009429"
+   }
+  ],
+  "data_url": "https://osf.io/a4mkt/",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Christopoulos (University of California, Riverside)",
+  "extra_tags": [
+   [
+    "measure",
+    "reaction time"
+   ]
+  ]
+ },
+ {
+  "id": "Laboissiere2015_PLoSONE",
+  "label": "Laboissière et al. 2015",
+  "year": 2015,
+  "papers": [
+   {
+    "authors": "Laboissière R, Letievant JC, Ionescu E, Barraud PA, Mazzuca M, Cian C",
+    "year": 2015,
+    "title": "Relationship between Spectral Characteristics of Spontaneous Postural Sway and Motion Sickness Susceptibility",
+    "venue": "PLoS ONE 10(12):e0144466",
+    "doi": "10.1371/journal.pone.0144466"
+   }
+  ],
+  "data_url": "https://doi.org/10.5061/dryad.c1jr3",
+  "host": "Dryad",
+  "license": "CC0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "balance and posture",
+  "methods": [],
+  "populations": [],
+  "lab": "Cian (Centre National de la Recherche Scientifique)",
+  "extra_tags": [
+   [
+    "measure",
+    "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "Dounskaia2020_PLoSONE",
+  "label": "Dounskaia et al. 2020",
+  "year": 2020,
+  "papers": [
+   {
+    "authors": "Dounskaia N, Shimansky Y, Ganter BK, Vidt ME",
+    "year": 2020,
+    "title": "A simple joint control pattern dominates performance of unconstrained arm movements of daily living tasks",
+    "venue": "PLoS ONE 15(7):e0235813",
+    "doi": "10.1371/journal.pone.0235813"
+   }
+  ],
+  "data_url": "https://doi.org/10.6084/m9.figshare.9968450",
+  "host": "Figshare",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [
+   "Excel"
+  ],
+  "n_participants": null,
+  "task": "reaching",
+  "methods": [],
+  "populations": [],
+  "lab": "Vidt (Pennsylvania State University)",
+  "extra_tags": [
+   [
+    "measure",
+    "motion capture"
+   ]
+  ]
+ },
+ {
+  "id": "Dida2021_PLoSONE",
+  "label": "Dida et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "Dida M, Cian C, Barraud PA, Guerraz M, Laboissière R",
+    "year": 2021,
+    "title": "Idiosyncratic multisensory reweighting as the common cause for motion sickness susceptibility and adaptation to postural perturbation",
+    "venue": "PLoS ONE 16(12):e0260863",
+    "doi": "10.1371/journal.pone.0260863"
+   }
+  ],
+  "data_url": "https://doi.org/10.17605/osf.io/buk74",
+  "host": "OSF",
+  "license": null,
+  "license_note": null,
+  "formats": [],
+  "n_participants": null,
+  "task": "balance and posture",
+  "methods": [],
+  "populations": [],
+  "lab": "Laboissière (Centre National de la Recherche Scientifique)",
+  "extra_tags": [
+   [
+    "measure",
+    "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "Hibino2024_PLoSONE",
+  "label": "Hibino & Gorniak 2024",
+  "year": 2024,
+  "papers": [
+   {
+    "authors": "Hibino H, Gorniak SL",
+    "year": 2024,
+    "title": "Preliminary report: Reduced hand sensory and motor function in persons living with heart failure",
+    "venue": "PLoS ONE 19(11):e0312468",
+    "doi": "10.1371/journal.pone.0312468"
+   }
+  ],
+  "data_url": "https://doi.org/10.5281/zenodo.13621001",
+  "host": "Zenodo",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [
+   "Excel"
+  ],
+  "n_participants": 20,
+  "task": "finger movements",
+  "methods": [],
+  "populations": [],
+  "lab": "Gorniak (University of Houston)",
+  "extra_tags": []
+ },
+ {
+  "id": "DeCarvalho2025_PLoSONE",
+  "label": "De Carvalho et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "De Carvalho GB, Chandran VD, Spungen AM, Harel NY, Bauman WA, Pal S",
+    "year": 2025,
+    "title": "Hip, knee, and ankle joint forces during exoskeletal-assisted walking: Comparison of approaches to simulate human-robot interactions",
+    "venue": "PLoS One 20(8):e0322247",
+    "doi": "10.1371/journal.pone.0322247"
+   }
+  ],
+  "data_url": "https://doi.org/10.6084/m9.figshare.29891924",
+  "host": "Figshare",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [
+   "Excel"
+  ],
+  "n_participants": 1,
+  "task": "walking",
+  "methods": [
+   "exoskeleton or prosthesis"
+  ],
+  "populations": [],
+  "lab": "Pal (New Jersey Institute of Technology)",
+  "extra_tags": [
+   [
+    "measure",
+    "motion capture"
+   ],
+   [
+    "measure",
+    "force plates"
+   ],
+   [
+    "measure",
+    "EMG"
+   ]
+  ]
+ },
+ {
+  "id": "Aquino2023_FrontNetwPhysiol",
+  "label": "Aquino et al. 2023",
+  "year": 2023,
+  "papers": [
+   {
+    "authors": "Aquino MRC, Liddy JJ, Napoli CD, Fonseca ST, van Emmerik REA, Busa MA",
+    "year": 2023,
+    "title": "Changes to balance dynamics following a high-intensity run are associated with future injury occurrence in recreational runners",
+    "venue": "Front Netw Physiol 3:1227861",
+    "doi": "10.3389/fnetp.2023.1227861"
+   }
+  ],
+  "data_url": "https://doi.org/10.5281/zenodo.10070118",
+  "host": "Zenodo",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [
+   "ZIP"
+  ],
+  "n_participants": 31,
+  "task": "balance and posture",
+  "methods": [],
+  "populations": [],
+  "lab": "Busa (University of Massachusetts Amherst)",
+  "extra_tags": [
+   [
+    "measure",
+    "force plates"
+   ]
+  ]
+ },
+ {
+  "id": "vantVeld2021_FrontRehabilitSci",
+  "label": "van 't Veld et al. 2021",
+  "year": 2021,
+  "papers": [
+   {
+    "authors": "van 't Veld RC, Flux E, Schouten AC, van der Krogt MM, van der Kooij H, van Asseldonk EHF",
+    "year": 2021,
+    "title": "Reducing the Soleus Stretch Reflex With Conditioning: Exploring Game- and Impedance-Based Biofeedback",
+    "venue": "Front Rehabilit Sci 2:742030",
+    "doi": "10.3389/fresc.2021.742030"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/16587095",
+  "host": "4TU.ResearchData",
+  "license": "CC BY 4.0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 9,
+  "task": "other",
+  "methods": [
+   "mechanical perturbations"
+  ],
+  "populations": [],
+  "lab": "van Asseldonk (University of Twente)",
+  "extra_tags": [
+   [
+    "measure",
+    "EMG"
+   ]
+  ]
+ },
+ {
+  "id": "Hernandez2025_Prosthesis",
+  "label": "Hernandez et al. 2025",
+  "year": 2025,
+  "papers": [
+   {
+    "authors": "Hernandez KER, de Groot JH, Grootendorst-Heemskerk ERM, Baas F, Stijntjes M, Schiemanck SK, van der Helm FCT, van der Kooij H, Mugge W",
+    "year": 2025,
+    "title": "Compensating the Symptomatic Increase in Plantarflexion Torque and Mechanical Work for Dorsiflexion in Patients with Spastic Paresis Using the “Hermes” Ankle–Foot Orthosis",
+    "venue": "Prosthesis 7(1):12",
+    "doi": "10.3390/prosthesis7010012"
+   }
+  ],
+  "data_url": "https://doi.org/10.4121/fab1a54d-3e68-4d6f-8d94-161c16539760.v1",
+  "host": "4TU.ResearchData",
+  "license": "ODbL-1.0",
+  "license_note": null,
+  "formats": [],
+  "n_participants": 12,
+  "task": "other",
+  "methods": [
+   "exoskeleton or prosthesis"
+  ],
+  "populations": [
+   "stroke"
+  ],
+  "lab": "Mugge (Delft University of Technology)",
+  "extra_tags": []
  }
 ]
